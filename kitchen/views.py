@@ -4,11 +4,7 @@ from django.template.loader import render_to_string
 
 # Create your views here.
 def home(request):
-    t = render_to_string('kitchen/index.html')
-    return HttpResponse(t)
-
+    return render(request, 'kitchen/index.html')
 
 def recipe(request):
-    print(f'recipe view here!')
-    t = render_to_string('kitchen/cooking_recipe.html')
-    return HttpResponse(t)
+    return render(request, 'kitchen/cooking_recipe.html')
