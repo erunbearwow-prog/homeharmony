@@ -1,152 +1,409 @@
-
-<!DOCTYPE html>
+{% extends "base.html" %}
 {% load static %}
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Борщ сибирский — пошаговый рецепт | Семейные ценности</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Georgia:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{% static 'kitchen/css/recipe.css' %}">
 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        h1, h2, h3, .serif { font-family: 'Georgia', serif; }
-        .card-hover { transition: all 0.3s ease; }
-        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.1); }
-        .step-card { transition: all 0.2s; }
-        .step-card:hover { background-color: #fef9e6; }
+{% block title %}Борщ сибирский — пошаговый рецепт | Семейные ценности{% endblock %}
 
-        @media print {
-            nav, footer, .no-print, .print-hide, button, .no-print {
-                display: none !important;
-            }
-            body { padding: 0; margin: 0; font-size: 12pt; }
-            .recipe-card, .step-card { break-inside: avoid; }
-        }
-    </style>
-</head>
-<body class="bg-white text-gray-800">
+{% block extra_css %}
+<style>
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.1); }
 
-    <!-- ======================= НАВИГАЦИЯ ======================= -->
-    <nav class="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-100 shadow-sm no-print">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center space-x-2">
-                    <i class="fas fa-home text-amber-700 text-xl"></i>
-                    <span class="text-xl font-bold text-gray-800 serif">Семейные <span class="text-amber-700">ценности</span></span>
-                </div>
-                <div class="hidden md:flex space-x-6 text-gray-600 font-medium">
-                    <a href="#" class="hover:text-amber-700">Главная</a>
-                    <a href="#" class="hover:text-amber-700">Кулинария</a>
-                    <a href="#" class="hover:text-amber-700">Уборка</a>
-                    <a href="#" class="hover:text-amber-700">Бюджет</a>
-                    <a href="#" class="hover:text-amber-700">Ремонт</a>
-                    <a href="#" class="hover:text-amber-700">Здоровье</a>
-                    <a href="#" class="hover:text-amber-700">Сезонное</a>
-                    <a href="#" class="hover:text-amber-700">Сообщество</a>
-                    <a href="#" class="hover:text-amber-700">База знаний</a>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <i class="fas fa-search text-gray-500 hover:text-amber-700 cursor-pointer"></i>
-                    <i class="fas fa-user-circle text-gray-500 text-2xl"></i>
-                </div>
-            </div>
-        </div>
-    </nav>
+    /* Стили для шагов */
+    .step-card {
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    .step-card:hover {
+        background-color: #fef9e6;
+    }
+    .step-card:active {
+        transform: scale(0.99);
+    }
+    .step-card.completed {
+        background-color: #f4f9e8;
+        border-left: 4px solid #8bc34a;
+    }
+    .step-checkbox:checked + .step-title,
+    .step-checkbox:checked ~ .step-title {
+        text-decoration: line-through;
+        color: #9ca3af;
+    }
+</style>
+{% endblock %}
 
-    <!-- ======================= ХЛЕБНЫЕ КРОШКИ ======================= -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 text-sm text-gray-500 no-print">
-        <a href="#" class="hover:text-amber-700">Главная</a> / <a href="#" class="hover:text-amber-700">Кулинария</a> / <a href="#" class="hover:text-amber-700">Супы</a> / <span class="text-gray-800 font-medium">Борщ сибирский</span>
+{% block content %}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- Хлебные крошки -->
+    <div class="text-sm text-gray-500 mb-6 no-print">
+        <a href="{% url 'home' %}" class="hover:text-amber-700">Главная</a> /
+        <a href="{% url 'kitchen:index' %}" class="hover:text-amber-700">Кулинария</a> /
+        <a href="{% url 'kitchen:soups' %}" class="hover:text-amber-700">Супы</a> /
+        <span class="text-gray-800 font-medium">Борщ сибирский</span>
     </div>
 
-    <!-- ======================= ОСНОВНОЙ КОНТЕНТ ======================= -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div class="grid lg:grid-cols-3 gap-8">
-            <!-- ЛЕВАЯ КОЛОНКА: ФОТО + ОПИСАНИЕ + ШАГИ -->
-            <div class="lg:col-span-2">
-                <img src="https://placehold.co/800x500/cc7b2b/ffffff?text=Борщ+сибирский" alt="Борщ сибирский" class="w-full rounded-2xl shadow-lg object-cover">
+    <div class="grid lg:grid-cols-3 gap-8">
+        <!-- ЛЕВАЯ КОЛОНКА: ФОТО + ОПИСАНИЕ + ШАГИ -->
+        <div class="lg:col-span-2">
+            <img src="https://placehold.co/800x500/cc7b2b/ffffff?text=Борщ+сибирский" alt="Борщ сибирский" class="w-full rounded-2xl shadow-lg object-cover">
 
-                <!-- Блок информации с КБЖУ -->
-                <div class="flex flex-wrap gap-2 sm:gap-3 mt-4 text-sm text-gray-600">
-                    <span class="bg-amber-100 text-amber-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"><i class="far fa-clock mr-1"></i> 1.5 часа</span>
-                    <span class="bg-green-100 text-green-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"><i class="fas fa-chart-line mr-1"></i> Средний</span>
-                    <span class="bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"><i class="fas fa-utensils mr-1"></i> 6 порций</span>
-                    <span class="bg-purple-100 text-purple-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"><i class="fas fa-fire mr-1"></i> <span class="calories-value" data-base="380">380</span> ккал</span>
-                    <span class="bg-indigo-100 text-indigo-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"><i class="fas fa-dumbbell mr-1"></i> 18г белков</span>
-                    <span class="bg-pink-100 text-pink-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"><i class="fas fa-oil-can mr-1"></i> 12г жиров</span>
-                    <span class="bg-teal-100 text-teal-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"><i class="fas fa-bread-slice mr-1"></i> 42г углеводов</span>
+            <!-- Блок информации с КБЖУ -->
+            <div class="flex flex-wrap gap-2 sm:gap-3 mt-4 text-sm text-gray-600">
+                <span class="bg-amber-100 text-amber-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"><i class="far fa-clock mr-1"></i> 1.5 часа</span>
+                <span class="bg-green-100 text-green-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"><i class="fas fa-chart-line mr-1"></i> Средний</span>
+                <span class="bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"><i class="fas fa-utensils mr-1"></i> 6 порций</span>
+                <span class="bg-purple-100 text-purple-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"><i class="fas fa-fire mr-1"></i> <span class="calories-value" data-base="380">380</span> ккал</span>
+                <span class="bg-indigo-100 text-indigo-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"><i class="fas fa-dumbbell mr-1"></i> 18г белков</span>
+                <span class="bg-pink-100 text-pink-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"><i class="fas fa-oil-can mr-1"></i> 12г жиров</span>
+                <span class="bg-teal-100 text-teal-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"><i class="fas fa-bread-slice mr-1"></i> 42г углеводов</span>
+            </div>
+
+            <div class="flex flex-wrap gap-3 mt-5 no-print">
+                <button onclick="window.print()" class="border border-gray-300 text-gray-700 px-5 py-2 rounded-lg hover:bg-gray-50 transition">
+                    <i class="fas fa-print mr-1"></i> Печать
+                </button>
+                <button onclick="shareRecipe()" class="border border-gray-300 text-gray-700 px-5 py-2 rounded-lg hover:bg-gray-50 transition">
+                    <i class="fas fa-share-alt mr-1"></i> Поделиться
+                </button>
+            </div>
+
+            <!-- ПОШАГОВЫЙ РЕЦЕПТ С ПРОГРЕСС-БАРОМ -->
+            <div class="mt-10">
+                <h2 class="text-2xl md:text-3xl font-bold serif mb-6">🥣 Пошаговое приготовление</h2>
+
+                <!-- Прогресс-бар -->
+                <div class="mb-6 no-print">
+                    <div class="flex justify-between text-sm text-gray-600 mb-1">
+                        <span>Прогресс приготовления</span>
+                        <span id="stepsProgress">0/4</span>
+                    </div>
+                    <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                        <div id="stepsProgressBar" class="h-full bg-amber-600 rounded-full transition-all duration-300" style="width: 0%"></div>
+                    </div>
                 </div>
 
-                <div class="flex flex-wrap gap-3 mt-5 no-print">
-                    <button onclick="window.print()" class="border border-gray-300 text-gray-700 px-5 py-2 rounded-lg hover:bg-gray-50"><i class="fas fa-print mr-1"></i> Печать</button>
-                    <button onclick="shareRecipe()" class="border border-gray-300 text-gray-700 px-5 py-2 rounded-lg hover:bg-gray-50"><i class="fas fa-share-alt mr-1"></i> Поделиться</button>
-                </div>
+                <div class="space-y-6" id="stepsList">
+                    <!-- Шаг 1 -->
+                    <div class="flex gap-5 bg-white p-4 rounded-xl border shadow-sm step-card" data-step-id="0">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" id="step_0" class="step-checkbox mt-1 w-5 h-5 accent-amber-700">
+                            <div class="text-2xl font-bold text-amber-700">1</div>
+                        </div>
+                        <div class="flex-1">
+                            <label for="step_0" class="font-semibold text-lg cursor-pointer hover:text-amber-700 transition step-title">Варим бульон</label>
+                            <p class="text-gray-600 mt-1">Мясо залейте 2,5 л холодной воды, доведите до кипения, снимите пену. Варите на медленном огне 1 час.</p>
+                            <img src="https://placehold.co/600x300/fdf4e8/92400e?text=Бульон" class="mt-2 rounded-lg max-h-32 w-auto object-cover">
+                        </div>
+                    </div>
 
-                <!-- ПОШАГОВЫЙ РЕЦЕПТ -->
-                <div class="mt-10">
-                    <h2 class="text-2xl md:text-3xl font-bold serif mb-6">🥣 Пошаговое приготовление</h2>
-                    <div class="space-y-6">
-                        <div class="flex gap-5 bg-white p-4 rounded-xl border shadow-sm step-card"><div class="text-2xl font-bold text-amber-700 w-10">1</div><div><h3 class="font-semibold">Варим бульон</h3><p class="text-gray-600">Мясо залейте 2,5 л холодной воды, доведите до кипения, снимите пену. Варите на медленном огне 1 час.</p><img src="https://placehold.co/600x300/fdf4e8/92400e?text=Бульон" class="mt-2 rounded-lg max-h-32 w-auto object-cover"></div></div>
-                        <div class="flex gap-5 bg-white p-4 rounded-xl border shadow-sm step-card"><div class="text-2xl font-bold text-amber-700 w-10">2</div><div><h3 class="font-semibold">Готовим зажарку</h3><p class="text-gray-600">Лук, морковь и свёклу нарезать соломкой. Обжарить 5 мин, добавить томатную пасту и тушить ещё 3 мин.</p><img src="https://placehold.co/600x300/fdf4e8/92400e?text=Зажарка" class="mt-2 rounded-lg max-h-32 w-auto object-cover"></div></div>
-                        <div class="flex gap-5 bg-white p-4 rounded-xl border shadow-sm step-card"><div class="text-2xl font-bold text-amber-700 w-10">3</div><div><h3 class="font-semibold">Собираем борщ</h3><p class="text-gray-600">В бульон добавьте картофель и капусту. Через 10 минут — зажарку. Варите ещё 15 минут. Добавьте специи и чеснок.</p></div></div>
-                        <div class="flex gap-5 bg-white p-4 rounded-xl border shadow-sm step-card"><div class="text-2xl font-bold text-amber-700 w-10">4</div><div><h3 class="font-semibold">Даём настояться</h3><p class="text-gray-600">Выключите огонь, накройте крышкой и оставьте на 20 минут. Подавайте со сметаной и зеленью.</p><img src="https://placehold.co/600x300/fdf4e8/92400e?text=Борщ+готов" class="mt-2 rounded-lg max-h-32 w-auto object-cover"></div></div>
+                    <!-- Шаг 2 -->
+                    <div class="flex gap-5 bg-white p-4 rounded-xl border shadow-sm step-card" data-step-id="1">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" id="step_1" class="step-checkbox mt-1 w-5 h-5 accent-amber-700">
+                            <div class="text-2xl font-bold text-amber-700">2</div>
+                        </div>
+                        <div class="flex-1">
+                            <label for="step_1" class="font-semibold text-lg cursor-pointer hover:text-amber-700 transition step-title">Готовим зажарку</label>
+                            <p class="text-gray-600 mt-1">Лук, морковь и свёклу нарезать соломкой. Обжарить 5 мин, добавить томатную пасту и тушить ещё 3 мин.</p>
+                            <img src="https://placehold.co/600x300/fdf4e8/92400e?text=Зажарка" class="mt-2 rounded-lg max-h-32 w-auto object-cover">
+                        </div>
+                    </div>
+
+                    <!-- Шаг 3 -->
+                    <div class="flex gap-5 bg-white p-4 rounded-xl border shadow-sm step-card" data-step-id="2">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" id="step_2" class="step-checkbox mt-1 w-5 h-5 accent-amber-700">
+                            <div class="text-2xl font-bold text-amber-700">3</div>
+                        </div>
+                        <div class="flex-1">
+                            <label for="step_2" class="font-semibold text-lg cursor-pointer hover:text-amber-700 transition step-title">Собираем борщ</label>
+                            <p class="text-gray-600 mt-1">В бульон добавьте картофель и капусту. Через 10 минут — зажарку. Варите ещё 15 минут. Добавьте специи и чеснок.</p>
+                        </div>
+                    </div>
+
+                    <!-- Шаг 4 -->
+                    <div class="flex gap-5 bg-white p-4 rounded-xl border shadow-sm step-card" data-step-id="3">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" id="step_3" class="step-checkbox mt-1 w-5 h-5 accent-amber-700">
+                            <div class="text-2xl font-bold text-amber-700">4</div>
+                        </div>
+                        <div class="flex-1">
+                            <label for="step_3" class="font-semibold text-lg cursor-pointer hover:text-amber-700 transition step-title">Даём настояться</label>
+                            <p class="text-gray-600 mt-1">Выключите огонь, накройте крышкой и оставьте на 20 минут. Подавайте со сметаной и зеленью.</p>
+                            <img src="https://placehold.co/600x300/fdf4e8/92400e?text=Борщ+готов" class="mt-2 rounded-lg max-h-32 w-auto object-cover">
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- ПРАВАЯ КОЛОНКА: ИНГРЕДИЕНТЫ + УМНЫЙ ПЕРЕСЧЁТ -->
-            <div class="bg-gray-50 p-6 rounded-2xl self-start">
-                <h3 class="text-xl font-bold serif mb-4">📝 Ингредиенты</h3>
+        <!-- ПРАВАЯ КОЛОНКА: ИНГРЕДИЕНТЫ + УМНЫЙ ПЕРЕСЧЁТ -->
+        <div class="bg-gray-50 p-6 rounded-2xl self-start">
+            <h3 class="text-xl font-bold serif mb-4">📝 Ингредиенты</h3>
 
-                <!-- Блок пересчёта по основному ингредиенту -->
-                <div class="mb-5 p-3 bg-amber-50 rounded-xl border border-amber-100 no-print">
-                    <div class="flex items-center gap-2 mb-2"><i class="fas fa-link text-amber-700"></i><span class="font-medium text-sm">Пересчитать под свой вес продуктов</span></div>
-                    <div class="flex flex-wrap items-center gap-2">
+            <!-- Переключатель режимов -->
+            <div class="mb-5 bg-white rounded-xl p-1 flex gap-1 no-print border border-gray-200">
+                <button id="modeProductsBtn" class="flex-1 py-2 rounded-lg text-sm font-medium transition bg-amber-100 text-amber-800">
+                    🥩 По продуктам
+                </button>
+                <button id="modePortionsBtn" class="flex-1 py-2 rounded-lg text-sm font-medium transition text-gray-500">
+                    👥 По порциям (гости)
+                </button>
+            </div>
+
+            <!-- РЕЖИМ 1: ПО ПРОДУКТАМ -->
+            <div id="modeProductsPanel" class="mode-panel">
+                <div class="p-3 bg-amber-50 rounded-xl border border-amber-100">
+                    <div class="flex items-center gap-2 mb-2">
+                        <i class="fas fa-link text-amber-700"></i>
+                        <span class="font-medium text-sm">Пересчитать по <span id="baseIngredientName" class="font-bold text-amber-700">говядине</span></span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-2" id="baseIngredientRow">
                         <span class="text-sm font-medium">🥩 Говядина:</span>
                         <span class="text-sm text-gray-500 line-through">500 г</span>
-                        <input type="number" id="customMeatWeight" value="500" step="10" class="w-24 px-2 py-1 border border-gray-300 rounded-lg text-center">
+                        <input type="number" id="customMeatWeight" value="500" step="10"
+                               class="w-24 px-2 py-1 border border-gray-300 rounded-lg text-center">
                         <span class="text-sm">г</span>
-                        <button id="applyRatioBtn" class="bg-amber-700 text-white px-3 py-1 rounded-lg text-sm">Пересчитать</button>
-                        <button id="resetIngredientsBtn" class="text-gray-500 text-sm underline ml-auto">Сбросить</button>
+                        <button id="applyMeatBtn" class="bg-amber-700 text-white px-3 py-1 rounded-lg text-sm">Пересчитать</button>
+                        <button id="resetProductsBtn" class="text-gray-500 text-sm underline ml-auto">Сбросить</button>
                     </div>
-                    <div id="ratioInfo" class="text-xs text-gray-500 mt-2"></div>
+                    <div id="meatRatioInfo" class="text-xs text-gray-500 mt-2"></div>
                 </div>
-
-                <!-- Список ингредиентов (с data-атрибутами) -->
-                <ul class="space-y-3 text-gray-700" id="ingredientsList">
-                    <li class="ingredient-item flex justify-between items-center flex-wrap gap-2" data-original="500" data-unit="г"><div><input type="checkbox" class="accent-amber-700"> 🥩 говядина на кости</div><span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border">500 г</span></li>
-                    <li class="ingredient-item flex justify-between items-center flex-wrap gap-2" data-original="2" data-unit="шт."><div><input type="checkbox" class="accent-amber-700"> свекла</div><span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border">2 шт.</span></li>
-                    <li class="ingredient-item flex justify-between items-center flex-wrap gap-2" data-original="300" data-unit="г"><div><input type="checkbox" class="accent-amber-700"> капуста</div><span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border">300 г</span></li>
-                    <li class="ingredient-item flex justify-between items-center flex-wrap gap-2" data-original="4" data-unit="шт."><div><input type="checkbox" class="accent-amber-700"> картофель</div><span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border">4 шт.</span></li>
-                    <li class="ingredient-item flex justify-between items-center flex-wrap gap-2" data-original="1" data-unit="шт."><div><input type="checkbox" class="accent-amber-700"> морковь</div><span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border">1 шт.</span></li>
-                    <li class="ingredient-item flex justify-between items-center flex-wrap gap-2" data-original="1" data-unit="шт."><div><input type="checkbox" class="accent-amber-700"> лук</div><span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border">1 шт.</span></li>
-                    <li class="ingredient-item flex justify-between items-center flex-wrap gap-2" data-original="2" data-unit="ст. л."><div><input type="checkbox" class="accent-amber-700"> томатная паста</div><span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border">2 ст. л.</span></li>
-                    <li class="ingredient-item flex justify-between items-center flex-wrap gap-2" data-original="2" data-unit="зубч."><div><input type="checkbox" class="accent-amber-700"> чеснок</div><span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border">2 зубч.</span></li>
-                </ul>
-
-                <div class="mt-4 pt-4 border-t border-gray-200 text-sm text-gray-500"><i class="fas fa-lightbulb text-amber-600"></i> Совет: измените вес говядины — все ингредиенты пересчитаются автоматически.</div>
             </div>
-        </div>
 
-        <!-- ОТЗЫВЫ И ПОХОЖИЕ РЕЦЕПТЫ (как раньше) -->
-        <div class="mt-12 border-t pt-8 no-print"><div class="flex justify-between items-center flex-wrap"><h2 class="text-2xl font-bold serif">⭐ Отзывы (12)</h2><div class="flex gap-1 text-amber-500"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.7</div></div>
-            <div class="mt-6 space-y-5"><div class="bg-gray-50 p-4 rounded-xl"><p class="font-semibold">Анна</p><p class="text-gray-600">Очень вкусно! Добавила ложку уксуса.</p><div class="flex text-amber-500 text-sm mt-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div></div>
-            <a href="#" class="inline-block mt-4 text-amber-700">Оставить отзыв →</a>
-        </div>
+            <!-- РЕЖИМ 2: ПО ПОРЦИЯМ -->
+            <div id="modePortionsPanel" class="mode-panel hidden">
+                <div class="p-3 bg-green-50 rounded-xl border border-green-100">
+                    <div class="flex items-center gap-2 mb-2">
+                        <i class="fas fa-users text-green-700"></i>
+                        <span class="font-medium text-sm">Сколько гостей планируете кормить?</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-3">
+                        <input type="range" id="portionsSlider" min="1" max="20" value="6" step="1"
+                               class="flex-1 h-2 bg-gray-200 rounded-lg accent-green-600">
+                        <span class="text-lg font-bold text-green-700 min-w-[60px]" id="portionsValue">6</span>
+                        <span class="text-sm">порций</span>
+                        <button id="resetPortionsBtn" class="text-gray-500 text-sm underline ml-auto">Сбросить</button>
+                    </div>
+                    <div id="portionsRatioInfo" class="text-xs text-gray-500 mt-2"></div>
+                    <p class="text-xs text-gray-500 mt-2 flex items-center gap-1">
+                        <i class="fas fa-info-circle"></i> Рецепт рассчитан на 6 порций.
+                    </p>
+                </div>
+            </div>
 
-        <div class="mt-16 no-print"><h2 class="text-2xl font-bold serif mb-6">🍲 Похожие рецепты</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover"><img src="https://placehold.co/400x240/fde68a/92400e?text=Щи" class="h-36 w-full object-cover"><div class="p-3"><h3 class="font-bold">Щи из свежей капусты</h3><p class="text-sm text-gray-500">1 час | Средний</p><a href="#" class="text-amber-700 text-sm">Смотреть →</a></div></div>
-                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover"><img src="https://placehold.co/400x240/fef9c3/78350f?text=Солянка" class="h-36 w-full object-cover"><div class="p-3"><h3 class="font-bold">Солянка сборная</h3><p class="text-sm text-gray-500">1 час 20 мин | Средний</p><a href="#" class="text-amber-700 text-sm">Смотреть →</a></div></div>
+            <!-- Кнопки управления чекбоксами -->
+            <div class="flex flex-wrap gap-2 mt-2 mb-3 no-print">
+                <button id="checkAllBtn" class="text-xs bg-gray-100 hover:bg-gray-200 text-gray-700 px-2 py-1 rounded">
+                    ☑ Отметить всё
+                </button>
+                <button id="uncheckAllBtn" class="text-xs bg-gray-100 hover:bg-gray-200 text-gray-700 px-2 py-1 rounded">
+                    ☐ Снять всё
+                </button>
+                <button id="copyCheckedBtn" class="text-xs bg-amber-100 hover:bg-amber-200 text-amber-800 px-2 py-1 rounded">
+                    📋 Скопировать отмеченное
+                </button>
+            </div>
+
+            <!-- Список ингредиентов -->
+            <ul class="space-y-3 text-gray-700" id="ingredientsList">
+                <li class="ingredient-item flex justify-between items-center flex-wrap gap-2" data-original="500" data-unit="г" data-ingredient-id="0" data-ingredient-name="говядина">
+                    <div class="flex items-center gap-2 flex-1">
+                        <input type="checkbox" id="ingredient_0" class="accent-amber-700 ingredient-checkbox">
+                        <label for="ingredient_0">🥩 говядина на кости</label>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border">500 г</span>
+                        <button class="ingredient-chain-btn text-gray-400 hover:text-amber-600 transition p-1 rounded" data-ingredient-id="0" data-ingredient-name="говядина" data-original-value="500" data-unit="г" title="Сделать основным для пересчёта"><i class="fas fa-link"></i></button>
+                        <a href="#" class="ingredient-link text-gray-400 hover:text-amber-600 transition" data-ingredient="beef" data-ingredient-name="говядина"><i class="fas fa-info-circle"></i></a>
+                        <button class="ingredient-replace-btn text-gray-400 hover:text-blue-600 transition p-1 rounded" data-ingredient-id="0" data-ingredient-name="говядина" data-original-value="500" data-unit="г" title="Заменить ингредиент"><i class="fas fa-exchange-alt"></i></button>
+                    </div>
+                </li>
+                <li class="ingredient-item flex justify-between items-center flex-wrap gap-2" data-original="2" data-unit="шт." data-ingredient-id="1" data-ingredient-name="свекла">
+                    <div class="flex items-center gap-2 flex-1">
+                        <input type="checkbox" id="ingredient_1" class="accent-amber-700 ingredient-checkbox">
+                        <label for="ingredient_1"> свекла</label>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border">2 шт.</span>
+                        <button class="ingredient-chain-btn text-gray-400 hover:text-amber-600 transition p-1 rounded" data-ingredient-id="1" data-ingredient-name="свекла" data-original-value="2" data-unit="шт." title="Сделать основным для пересчёта"><i class="fas fa-link"></i></button>
+                        <a href="#" class="ingredient-link text-gray-400 hover:text-amber-600 transition" data-ingredient="beet" data-ingredient-name="свекла"><i class="fas fa-info-circle"></i></a>
+                        <button class="ingredient-replace-btn text-gray-400 hover:text-blue-600 transition p-1 rounded" data-ingredient-id="1" data-ingredient-name="свекла" data-original-value="2" data-unit="шт." title="Заменить ингредиент"><i class="fas fa-exchange-alt"></i></button>
+                    </div>
+                </li>
+                <li class="ingredient-item flex justify-between items-center flex-wrap gap-2" data-original="300" data-unit="г" data-ingredient-id="2" data-ingredient-name="капуста">
+                    <div class="flex items-center gap-2 flex-1">
+                        <input type="checkbox" id="ingredient_2" class="accent-amber-700 ingredient-checkbox">
+                        <label for="ingredient_2"> капуста</label>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border">300 г</span>
+                        <button class="ingredient-chain-btn text-gray-400 hover:text-amber-600 transition p-1 rounded" data-ingredient-id="2" data-ingredient-name="капуста" data-original-value="300" data-unit="г" title="Сделать основным для пересчёта"><i class="fas fa-link"></i></button>
+                        <a href="#" class="ingredient-link text-gray-400 hover:text-amber-600 transition" data-ingredient="cabbage" data-ingredient-name="капуста"><i class="fas fa-info-circle"></i></a>
+                        <button class="ingredient-replace-btn text-gray-400 hover:text-blue-600 transition p-1 rounded" data-ingredient-id="2" data-ingredient-name="капуста" data-original-value="300" data-unit="г" title="Заменить ингредиент"><i class="fas fa-exchange-alt"></i></button>
+                    </div>
+                </li>
+                <li class="ingredient-item flex justify-between items-center flex-wrap gap-2" data-original="4" data-unit="шт." data-ingredient-id="3" data-ingredient-name="картофель">
+                    <div class="flex items-center gap-2 flex-1">
+                        <input type="checkbox" id="ingredient_3" class="accent-amber-700 ingredient-checkbox">
+                        <label for="ingredient_3">🥔 картофель</label>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border">4 шт.</span>
+                        <button class="ingredient-chain-btn text-gray-400 hover:text-amber-600 transition p-1 rounded" data-ingredient-id="3" data-ingredient-name="картофель" data-original-value="4" data-unit="шт." title="Сделать основным для пересчёта"><i class="fas fa-link"></i></button>
+                        <a href="#" class="ingredient-link text-gray-400 hover:text-amber-600 transition" data-ingredient="potato" data-ingredient-name="картофель"><i class="fas fa-info-circle"></i></a>
+                        <button class="ingredient-replace-btn text-gray-400 hover:text-blue-600 transition p-1 rounded" data-ingredient-id="3" data-ingredient-name="картофель" data-original-value="4" data-unit="шт." title="Заменить ингредиент"><i class="fas fa-exchange-alt"></i></button>
+                    </div>
+                </li>
+                <li class="ingredient-item flex justify-between items-center flex-wrap gap-2" data-original="1" data-unit="шт." data-ingredient-id="4" data-ingredient-name="морковь">
+                    <div class="flex items-center gap-2 flex-1">
+                        <input type="checkbox" id="ingredient_4" class="accent-amber-700 ingredient-checkbox">
+                        <label for="ingredient_4">🥕 морковь</label>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border">1 шт.</span>
+                        <button class="ingredient-chain-btn text-gray-400 hover:text-amber-600 transition p-1 rounded" data-ingredient-id="4" data-ingredient-name="морковь" data-original-value="1" data-unit="шт." title="Сделать основным для пересчёта"><i class="fas fa-link"></i></button>
+                        <a href="#" class="ingredient-link text-gray-400 hover:text-amber-600 transition" data-ingredient="carrot" data-ingredient-name="морковь"><i class="fas fa-info-circle"></i></a>
+                        <button class="ingredient-replace-btn text-gray-400 hover:text-blue-600 transition p-1 rounded" data-ingredient-id="4" data-ingredient-name="морковь" data-original-value="1" data-unit="шт." title="Заменить ингредиент"><i class="fas fa-exchange-alt"></i></button>
+                    </div>
+                </li>
+                <li class="ingredient-item flex justify-between items-center flex-wrap gap-2" data-original="1" data-unit="шт." data-ingredient-id="5" data-ingredient-name="лук">
+                    <div class="flex items-center gap-2 flex-1">
+                        <input type="checkbox" id="ingredient_5" class="accent-amber-700 ingredient-checkbox">
+                        <label for="ingredient_5">🧅 лук</label>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border">1 шт.</span>
+                        <button class="ingredient-chain-btn text-gray-400 hover:text-amber-600 transition p-1 rounded" data-ingredient-id="5" data-ingredient-name="лук" data-original-value="1" data-unit="шт." title="Сделать основным для пересчёта"><i class="fas fa-link"></i></button>
+                        <a href="#" class="ingredient-link text-gray-400 hover:text-amber-600 transition" data-ingredient="onion" data-ingredient-name="лук"><i class="fas fa-info-circle"></i></a>
+                        <button class="ingredient-replace-btn text-gray-400 hover:text-blue-600 transition p-1 rounded" data-ingredient-id="5" data-ingredient-name="лук" data-original-value="1" data-unit="шт." title="Заменить ингредиент"><i class="fas fa-exchange-alt"></i></button>
+                    </div>
+                </li>
+                <li class="ingredient-item flex justify-between items-center flex-wrap gap-2" data-original="2" data-unit="ст. л." data-ingredient-id="6" data-ingredient-name="томатная паста">
+                    <div class="flex items-center gap-2 flex-1">
+                        <input type="checkbox" id="ingredient_6" class="accent-amber-700 ingredient-checkbox">
+                        <label for="ingredient_6">🍅 томатная паста</label>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border">2 ст. л.</span>
+                        <button class="ingredient-chain-btn text-gray-400 hover:text-amber-600 transition p-1 rounded" data-ingredient-id="6" data-ingredient-name="томатная паста" data-original-value="2" data-unit="ст. л." title="Сделать основным для пересчёта"><i class="fas fa-link"></i></button>
+                        <a href="#" class="ingredient-link text-gray-400 hover:text-amber-600 transition" data-ingredient="tomato-paste" data-ingredient-name="томатная паста"><i class="fas fa-info-circle"></i></a>
+                        <button class="ingredient-replace-btn text-gray-400 hover:text-blue-600 transition p-1 rounded" data-ingredient-id="6" data-ingredient-name="томатная паста" data-original-value="2" data-unit="ст. л." title="Заменить ингредиент"><i class="fas fa-exchange-alt"></i></button>
+                    </div>
+                </li>
+                <li class="ingredient-item flex justify-between items-center flex-wrap gap-2" data-original="2" data-unit="зубч." data-ingredient-id="7" data-ingredient-name="чеснок">
+                    <div class="flex items-center gap-2 flex-1">
+                        <input type="checkbox" id="ingredient_7" class="accent-amber-700 ingredient-checkbox">
+                        <label for="ingredient_7">🧄 чеснок</label>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border">2 зубч.</span>
+                        <button class="ingredient-chain-btn text-gray-400 hover:text-amber-600 transition p-1 rounded" data-ingredient-id="7" data-ingredient-name="чеснок" data-original-value="2" data-unit="зубч." title="Сделать основным для пересчёта"><i class="fas fa-link"></i></button>
+                        <a href="#" class="ingredient-link text-gray-400 hover:text-amber-600 transition" data-ingredient="garlic" data-ingredient-name="чеснок"><i class="fas fa-info-circle"></i></a>
+                        <button class="ingredient-replace-btn text-gray-400 hover:text-blue-600 transition p-1 rounded" data-ingredient-id="7" data-ingredient-name="чеснок" data-original-value="2" data-unit="зубч." title="Заменить ингредиент"><i class="fas fa-exchange-alt"></i></button>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="mt-4 pt-4 border-t border-gray-200 text-sm text-gray-500">
+                <i class="fas fa-lightbulb text-amber-600"></i> Совет: нажмите 🔗 у любого ингредиента, чтобы пересчитать рецепт по его количеству. Нажмите ⟳, чтобы заменить ингредиент.
             </div>
         </div>
     </div>
 
-    <footer class="bg-gray-900 text-gray-300 py-8 mt-12 no-print"><div class="max-w-7xl mx-auto px-4 text-center text-sm"><p>© 2026 Семейные ценности — рецепты, уют, забота о доме.</p></div></footer>
+    <!-- ОТЗЫВЫ И ПОХОЖИЕ РЕЦЕПТЫ -->
+    <div class="mt-12 border-t pt-8 no-print">
+        <div class="flex justify-between items-center flex-wrap">
+            <h2 class="text-2xl font-bold serif">⭐ Отзывы (12)</h2>
+            <div class="flex gap-1 text-amber-500">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.7
+            </div>
+        </div>
+        <div class="mt-6 space-y-5">
+            <div class="bg-gray-50 p-4 rounded-xl">
+                <p class="font-semibold">Анна</p>
+                <p class="text-gray-600">Очень вкусно! Добавила ложку уксуса.</p>
+                <div class="flex text-amber-500 text-sm mt-1">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="inline-block mt-4 text-amber-700">Оставить отзыв →</a>
+    </div>
 
-    <script src="{% static 'kitchen/js/recipe.js' %}"></script>
-</body>
-</html>
+    <div class="mt-16 no-print">
+        <h2 class="text-2xl font-bold serif mb-6">🍲 Похожие рецепты</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                <img src="https://placehold.co/400x240/fde68a/92400e?text=Щи" class="h-36 w-full object-cover">
+                <div class="p-3">
+                    <h3 class="font-bold">Щи из свежей капусты</h3>
+                    <p class="text-sm text-gray-500">1 час | Средний</p>
+                    <a href="#" class="text-amber-700 text-sm">Смотреть →</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                <img src="https://placehold.co/400x240/fef9c3/78350f?text=Солянка" class="h-36 w-full object-cover">
+                <div class="p-3">
+                    <h3 class="font-bold">Солянка сборная</h3>
+                    <p class="text-sm text-gray-500">1 час 20 мин | Средний</p>
+                    <a href="#" class="text-amber-700 text-sm">Смотреть →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- МОДАЛЬНОЕ ОКНО ДЛЯ ЗАМЕНЫ ИНГРЕДИЕНТОВ -->
+<div id="replaceModal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden no-print">
+    <div class="bg-white rounded-2xl p-6 max-w-md w-full mx-4 shadow-xl">
+        <h3 class="text-xl font-bold serif mb-4">🔄 Замена ингредиента</h3>
+        <p class="text-gray-600 mb-2">Заменить <span id="replaceOriginalName" class="font-semibold text-amber-700"></span></p>
+        <p id="replacementNote" class="text-xs text-gray-500 mt-0 mb-3 hidden"></p>
+
+        <div class="mb-4">
+            <label class="block text-sm font-medium text-gray-700 mb-1">Заменить на:</label>
+            <select id="replaceWithSelect" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500">
+                <option value="">-- Загрузка... --</option>
+            </select>
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-sm font-medium text-gray-700 mb-1">Соотношение:</label>
+            <div class="flex items-center gap-2 flex-wrap">
+                <span class="text-sm">1</span>
+                <span id="replaceOriginalUnit" class="text-sm bg-gray-100 px-2 py-0.5 rounded"></span>
+                <span class="text-sm">=</span>
+                <input type="number" id="replaceRatio" value="1" step="0.1" class="w-20 px-2 py-1 border border-gray-300 rounded-lg text-center focus:outline-none focus:ring-2 focus:ring-amber-500">
+                <span id="replaceNewUnit" class="text-sm bg-gray-100 px-2 py-0.5 rounded"></span>
+                <span id="replaceNewName" class="text-sm font-medium text-gray-700"></span>
+            </div>
+            <p id="autoRatioNote" class="text-xs text-green-600 mt-1 hidden">✅ Рекомендованный коэффициент из базы знаний</p>
+        </div>
+
+        <div class="flex justify-end gap-3 mt-6">
+            <button id="cancelReplaceBtn" class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition">Отмена</button>
+            <button id="confirmReplaceBtn" class="px-4 py-2 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition">Применить замену</button>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'kitchen/js/recipe.js' %}"></script>
+<script>
+    // Функция для шеринга (должна быть доступна глобально)
+    window.shareRecipe = function() {
+        if (navigator.share) {
+            navigator.share({
+                title: 'Борщ сибирский',
+                text: 'Проверенный рецепт борща от Семейных ценностей',
+                url: window.location.href
+            });
+        } else {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                alert('Ссылка скопирована!');
+            });
+        }
+    };
+</script>
+{% endblock %}

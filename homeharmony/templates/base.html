@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>{% block title %}Семейные ценности — дом, уют, забота{% endblock %}</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Georgia:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Дополнительные CSS (можно переопределить в дочерних шаблонах) -->
+    {% block extra_css %}{% endblock %}
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .serif { font-family: 'Georgia', serif; }
+
+        @media print {
+            nav, footer, .no-print, .print-hide, button, .no-print {
+                display: none !important;
+            }
+            body { padding: 0; margin: 0; font-size: 12pt; }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- ======================= НАВИГАЦИЯ ======================= -->
+    <nav class="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-100 shadow-sm no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Логотип -->
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-home text-amber-700 text-xl"></i>
+                    <a href="{% url 'home' %}" class="text-xl font-bold text-gray-800 serif">Семейные <span class="text-amber-700">ценности</span></a>
+                </div>
+
+                <!-- Десктопное меню -->
+                <div class="hidden md:flex space-x-6 text-gray-600 font-medium">
+                    <a href="{% url 'home' %}" class="hover:text-amber-700 transition">Главная</a>
+                    <a href="{% url 'kitchen:index' %}" class="hover:text-amber-700 transition">Кулинария</a>
+                    <a href="{% url 'cleaning:index' %}" class="hover:text-amber-700 transition">Уборка</a>
+                    <a href="{% url 'budget:index' %}" class="hover:text-amber-700 transition">Бюджет</a>
+                    <a href="{% url 'repair:index' %}" class="hover:text-amber-700 transition">Ремонт</a>
+                    <a href="{% url 'health:index' %}" class="hover:text-amber-700 transition">Здоровье</a>
+                    <a href="{% url 'seasonal:index' %}" class="hover:text-amber-700 transition">Сезонное</a>
+                    <a href="{% url 'community:index' %}" class="hover:text-amber-700 transition">Сообщество</a>
+                    <a href="{% url 'knowledge:index' %}" class="hover:text-amber-700 transition">База знаний</a>
+                </div>
+
+                <!-- Правая панель -->
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-search text-gray-500 hover:text-amber-700 cursor-pointer transition"></i>
+                    <i class="fas fa-user-circle text-gray-500 text-2xl hover:text-amber-700 cursor-pointer transition"></i>
+                </div>
+
+                <!-- Мобильное меню (гамбургер) -->
+                <div class="md:hidden">
+                    <button id="mobileMenuBtn" class="text-gray-500 hover:text-amber-700 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Мобильное выпадающее меню -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-gray-100 py-2">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col space-y-2">
+                <a href="{% url 'home' %}" class="py-2 text-gray-600 hover:text-amber-700 transition">Главная</a>
+                <a href="{% url 'kitchen:index' %}" class="py-2 text-gray-600 hover:text-amber-700 transition">Кулинария</a>
+                <a href="{% url 'cleaning:index' %}" class="py-2 text-gray-600 hover:text-amber-700 transition">Уборка</a>
+                <a href="{% url 'budget:index' %}" class="py-2 text-gray-600 hover:text-amber-700 transition">Бюджет</a>
+                <a href="{% url 'repair:index' %}" class="py-2 text-gray-600 hover:text-amber-700 transition">Ремонт</a>
+                <a href="{% url 'health:index' %}" class="py-2 text-gray-600 hover:text-amber-700 transition">Здоровье</a>
+                <a href="{% url 'seasonal:index' %}" class="py-2 text-gray-600 hover:text-amber-700 transition">Сезонное</a>
+                <a href="{% url 'community:index' %}" class="py-2 text-gray-600 hover:text-amber-700 transition">Сообщество</a>
+                <a href="{% url 'knowledge:index' %}" class="py-2 text-gray-600 hover:text-amber-700 transition">База знаний</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======================= ОСНОВНОЕ СОДЕРЖИМОЕ ======================= -->
+    <main>
+        {% block content %}
+        <!-- Содержимое дочерних шаблонов будет вставляться сюда -->
+        {% endblock %}
+    </main>
+
+    <!-- ======================= ФУТЕР ======================= -->
+    <footer class="bg-gray-900 text-gray-300 py-8 mt-12 no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="font-semibold text-white mb-3">О проекте</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="{% url 'about' %}" class="hover:text-white transition">О нас</a></li>
+                        <li><a href="{% url 'contacts' %}" class="hover:text-white transition">Контакты</a></li>
+                        <li><a href="{% url 'advertising' %}" class="hover:text-white transition">Реклама</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-3">Разделы</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="{% url 'kitchen:index' %}" class="hover:text-white transition">Кулинария</a></li>
+                        <li><a href="{% url 'cleaning:index' %}" class="hover:text-white transition">Уборка</a></li>
+                        <li><a href="{% url 'budget:index' %}" class="hover:text-white transition">Бюджет</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-3">Помощь</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="{% url 'faq' %}" class="hover:text-white transition">Частые вопросы</a></li>
+                        <li><a href="{% url 'privacy' %}" class="hover:text-white transition">Политика конфиденциальности</a></li>
+                        <li><a href="{% url 'terms' %}" class="hover:text-white transition">Пользовательское соглашение</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-3">Соцсети</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Telegram</a></li>
+                        <li><a href="#" class="hover:text-white transition">VK</a></li>
+                        <li><a href="#" class="hover:text-white transition">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+                <p>© 2026 Семейные ценности. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ======================= БАЗОВЫЙ JS ======================= -->
+    <script>
+        // Мобильное меню
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+
+    <!-- Дополнительные JS (можно переопределить в дочерних шаблонах) -->
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

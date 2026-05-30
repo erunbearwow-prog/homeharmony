@@ -1,0 +1,12 @@
+/* Карточка шага — кликабельная */
+.step-card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.step-card:active {
+    transform: scale(0.99);
+}
+/* Запрещаем распространение клика на чекбокс внутри */
+.step-checkbox {
+    cursor: pointer;
+}
