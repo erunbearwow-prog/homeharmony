@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гармония Дома — рецепты и уют для вашей семьи</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .recipe-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .recipe-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.15);
+        }
+        .collection-badge {
+            transition: all 0.2s ease;
+        }
+        .collection-badge:hover {
+            background-color: #f97316;
+            color: white;
+            border-color: #f97316;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Навигация -->
+    <nav class="border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Логотип -->
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-gray-800">Гармония <span class="text-orange-500">Дома</span></span>
+                </div>
+
+                <!-- Центральное меню -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-600 hover:text-orange-500 transition font-medium">Рецепты</a>
+                    <a href="#" class="text-gray-600 hover:text-orange-500 transition font-medium">Подборки</a>
+                    <a href="#" class="text-gray-600 hover:text-orange-500 transition font-medium">Открытия</a>
+                </div>
+
+                <!-- Кнопки входа -->
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-orange-500 transition font-medium">Присоединиться</a>
+                    <a href="#" class="bg-orange-500 text-white px-5 py-2 rounded-lg hover:bg-orange-600 transition font-medium">Войти</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero секция -->
+    <section class="py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-gray-800 mb-4">
+                Ищите и готовьте рецепты<br>с Гармонией Дома
+            </h1>
+            <p class="text-xl text-gray-500 mb-10">
+                50 000+ проверенных рецептов для любого уровня мастерства
+            </p>
+
+            <!-- Поисковая форма -->
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row gap-3">
+                    <input type="text" placeholder="Что вы готовите?"
+                           class="flex-1 px-5 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-orange-300 focus:ring-1 focus:ring-orange-300">
+                    <select class="px-5 py-3 border border-gray-200 rounded-lg bg-white text-gray-600 focus:outline-none focus:border-orange-300">
+                        <option>Кухня</option>
+                        <option>Итальянская</option>
+                        <option>Азиатская</option>
+                        <option>Мексиканская</option>
+                    </select>
+                    <select class="px-5 py-3 border border-gray-200 rounded-lg bg-white text-gray-600 focus:outline-none focus:border-orange-300">
+                        <option>Особенности</option>
+                        <option>Вегетарианское</option>
+                        <option>Без глютена</option>
+                        <option>Низкокалорийное</option>
+                    </select>
+                    <select class="px-5 py-3 border border-gray-200 rounded-lg bg-white text-gray-600 focus:outline-none focus:border-orange-300">
+                        <option>Фильтры</option>
+                        <option>До 30 минут</option>
+                        <option>До 1 часа</option>
+                        <option>Низкая сложность</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подборки -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">Популярные подборки</h2>
+        <div class="flex flex-wrap gap-3">
+            <span class="collection-badge px-6 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium cursor-pointer border border-gray-200 transition">На ужин</span>
+            <span class="collection-badge px-6 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium cursor-pointer border border-gray-200 transition">Выпечка</span>
+            <span class="collection-badge px-6 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium cursor-pointer border border-gray-200 transition">Салаты</span>
+            <span class="collection-badge px-6 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium cursor-pointer border border-gray-200 transition">Без мяса</span>
+            <span class="collection-badge px-6 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium cursor-pointer border border-gray-200 transition">На гриле</span>
+        </div>
+    </div>
+
+    <!-- Любимые рецепты -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h2 class="text-2xl font-bold text-gray-800 mb-8">Любимые рецепты наших читателей</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            <!-- Карточка 1 -->
+            <div class="recipe-card bg-white rounded-xl border border-gray-100 overflow-hidden cursor-pointer">
+                <div class="h-32 bg-gradient-to-br from-orange-100 to-orange-200"></div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-800 mb-1">Морковь, запечённая с кленовым сиропом</h3>
+                    <div class="flex items-center gap-2 text-xs text-gray-500 mb-2">
+                        <span>Вегетарианское</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-gray-500">45 мин</span>
+                        <span class="text-orange-500 font-medium">4.9 ★</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="recipe-card bg-white rounded-xl border border-gray-100 overflow-hidden cursor-pointer">
+                <div class="h-32 bg-gradient-to-br from-green-100 to-green-200"></div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-800 mb-1">Цыплёнок с лимоном на сковороде</h3>
+                    <div class="flex items-center gap-2 text-xs text-gray-500 mb-2">
+                        <span>Средиземноморская</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-gray-500">30 мин</span>
+                        <span class="text-orange-500 font-medium">4.8 ★</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 3 -->
+            <div class="recipe-card bg-white rounded-xl border border-gray-100 overflow-hidden cursor-pointer">
+                <div class="h-32 bg-gradient-to-br from-yellow-100 to-yellow-200"></div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-800 mb-1">Хлеб без замеса</h3>
+                    <div class="flex items-center gap-2 text-xs text-gray-500 mb-2">
+                        <span>Выпечка</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-gray-500">2 часа</span>
+                        <span class="text-orange-500 font-medium">4.7 ★</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 4 -->
+            <div class="recipe-card bg-white rounded-xl border border-gray-100 overflow-hidden cursor-pointer">
+                <div class="h-32 bg-gradient-to-br from-green-100 to-green-200"></div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-800 mb-1">Киноа с травами</h3>
+                    <div class="flex items-center gap-2 text-xs text-gray-500 mb-2">
+                        <span>Без мяса</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-gray-500">25 мин</span>
+                        <span class="text-orange-500 font-medium">4.9 ★</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 5 -->
+            <div class="recipe-card bg-white rounded-xl border border-gray-100 overflow-hidden cursor-pointer">
+                <div class="h-32 bg-gradient-to-br from-orange-100 to-orange-200"></div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-800 mb-1">Шоколадный тарт</h3>
+                    <div class="flex items-center gap-2 text-xs text-gray-500 mb-2">
+                        <span>Десерт</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-gray-500">1 час</span>
+                        <span class="text-orange-500 font-medium">4.6 ★</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Баннер Кулинарного клуба -->
+    <div class="bg-gray-50 py-12 mt-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div>
+                    <p class="text-orange-500 font-medium mb-2">Тссс!</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Хотите готовые планы меню на неделю, эксклюзивные рецепты по сезону и умные списки покупок?</h3>
+                    <p class="text-gray-600">Вступайте в наш Кулинарный клуб — вас ждут готовые подборки, ранний доступ к видеоурокам и рецепты от редакции.</p>
+                </div>
+                <button class="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition whitespace-nowrap">
+                    Вступить в клуб →
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="bg-gray-900 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-8">
+                <div>
+                    <div class="text-2xl font-bold text-white mb-2">Гармония <span class="text-orange-500">Дома</span></div>
+                    <p class="text-gray-400 text-sm">Ваш кухонный помощник для домашних уютных блюд</p>
+                </div>
+                <div>
+                    <button class="bg-orange-500 text-white px-8 py-2 rounded-lg font-semibold hover:bg-orange-600 transition">
+                        Подписаться
+                    </button>
+                </div>
+                <div class="text-left">
+                    <h4 class="font-semibold text-white mb-3">Помощь</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Частые вопросы</a></li>
+                        <li><a href="#" class="hover:text-white transition">Поддержка</a></li>
+                        <li><a href="#" class="hover:text-white transition">Инструкции</a></li>
+                        <li><a href="#" class="hover:text-white transition">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
+                © 2026 Гармония Дома. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
