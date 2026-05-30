@@ -116,3 +116,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+# Если вы будете собирать статику из всех приложений (для продакшена)
+STATICFILES_DIRS = [
+    BASE_DIR / "static",  # если есть общая статика в корне проекта
+]
+
+STATIC_ROOT = BASE_DIR / "staticfiles"  # куда collectstatic складывает файлы для деплоя
