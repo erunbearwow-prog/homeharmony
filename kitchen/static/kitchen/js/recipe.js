@@ -965,6 +965,104 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Инициализация завершена');
 });
 
-    // Делаем функции глобальными для доступа из HTML
-    window.showMethodDetails = showMethodDetails;
-    window.closeMethodModal = closeMethodModal;
+// ======================= ПОДГОТОВКА ПРОДУКТОВ =======================
+let preparationsCache = {};
+
+async function showPreparationDetails(button) {
+    const preparationId = button.dataset.preparationId;
+    const preparationName = button.dataset.preparationName;
+
+    const modal = document.getElementById('preparationModal');
+    if (!modal) return;
+
+    // Демо-данные
+    const demoData = {
+        name: preparationName,
+        description: 'Подробное описание техники подготовки продуктов.',
+        tips: '• Полезный совет 1\n• Полезный совет 2',
+        time_factor: 'Увеличивает время приготовления на 10%'
+    };
+
+    document.getElementById('preparationModalName').innerText = demoData.name;
+    document.getElementById('preparationModalDesc').innerHTML = demoData.description;
+
+    const tipsBlock = document.getElementById('preparationModalTips');
+    const tipsText = document.getElementById('preparationModalTipsText');
+    if (demoData.tips) {
+        tipsText.innerText = demoData.tips;
+        tipsBlock.classList.remove('hidden');
+    } else {
+        tipsBlock.classList.add('hidden');
+    }
+
+    const timeBlock = document.getElementById('preparationModalTime');
+    const timeText = document.getElementById('preparationModalTimeText');
+    if (demoData.time_factor) {
+        timeText.innerText = demoData.time_factor;
+        timeBlock.classList.remove('hidden');
+    } else {
+        timeBlock.classList.add('hidden');
+    }
+
+    modal.classList.remove('hidden');
+}
+
+function closePreparationModal() {
+    const modal = document.getElementById('preparationModal');
+    if (modal) modal.classList.add('hidden');
+}
+
+// ======================= РЕКОМЕНДОВАННАЯ УТВАРЬ =======================
+let utensilsCache = {};
+
+async function showUtensilDetails(button) {
+    const utensilId = button.dataset.utensilId;
+    const utensilName = button.dataset.utensilName;
+
+    const modal = document.getElementById('utensilModal');
+    if (!modal) return;
+
+    // Демо-данные
+    const demoData = {
+        name: utensilName,
+        description: 'Описание рекомендуемой утвари и её назначения.',
+        alternative: 'Можно заменить обычным ножом',
+        care: 'Мыть в тёплой воде, сушить в вертикальном положении'
+    };
+
+    document.getElementById('utensilModalName').innerText = demoData.name;
+    document.getElementById('utensilModalDesc').innerHTML = demoData.description;
+
+    const altBlock = document.getElementById('utensilModalAlternative');
+    const altText = document.getElementById('utensilModalAlternativeText');
+    if (demoData.alternative) {
+        altText.innerText = demoData.alternative;
+        altBlock.classList.remove('hidden');
+    } else {
+        altBlock.classList.add('hidden');
+    }
+
+    const careBlock = document.getElementById('utensilModalCare');
+    const careText = document.getElementById('utensilModalCareText');
+    if (demoData.care) {
+        careText.innerText = demoData.care;
+        careBlock.classList.remove('hidden');
+    } else {
+        careBlock.classList.add('hidden');
+    }
+
+    modal.classList.remove('hidden');
+}
+
+function closeUtensilModal() {
+    const modal = document.getElementById('utensilModal');
+    if (modal) modal.classList.add('hidden');
+}
+
+// Делаем функции глобальными
+window.showPreparationDetails = showPreparationDetails;
+window.closePreparationModal = closePreparationModal;
+window.showUtensilDetails = showUtensilDetails;
+window.closeUtensilModal = closeUtensilModal;
+window.showMethodDetails = showMethodDetails;
+window.closeMethodModal = closeMethodModal;

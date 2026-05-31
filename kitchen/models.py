@@ -99,3 +99,49 @@ class CookingMethod(models.Model):
     class Meta:
         verbose_name = 'Метод приготовления'
         verbose_name_plural = 'Методы приготовления'
+
+
+class IngredientPreparation(models.Model):
+    """Подготовка продуктов (нарезка, замачивание, маринование)"""
+    name = models.CharField(max_length=100)  # "шинковка", "кубики", "соломка"
+    description = models.TextField()
+    image = models.ImageField(upload_to='preparations/', null=True, blank=True)
+    video_url = models.URLField(blank=True)
+    time_factor = models.FloatField(default=1.0, help_text="Коэффициент увеличения времени")
+    tips = models.TextField(blank=True)
+
+    def __str__(self):
+        return self.name
+
+
+class RecommendedUtensil(models.Model):
+    """Рекомендованная утварь для шага"""
+    name = models.CharField(max_length=100)  # "нож для удаления косточек", "трубчатый нож"
+    description = models.TextField()
+    image = models.ImageField(upload_to='utensils/', null=True, blank=True)
+    alternative = models.CharField(max_length=200, blank=True, help_text="Чем можно заменить")
+    care_instructions = models.TextField(blank=True)
+
+    def __str__(self):
+        return self.name
+
+
+class CookingStep(models.Model):
+    """Шаг приготовления (расширенный)"""
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name='steps')
+    order = models.IntegerField()
+    title = models.CharField(max_length=200)
+    instruction = models.TextField()
+    image = models.ImageField(upload_to='steps/', null=True, blank=True)
+
+    # Связи с новыми модулями
+    preparation = models.ForeignKey(IngredientPreparation, on_delete=models.SET_NULL, null=True, blank=True)
+    cooking_method = models.ForeignKey(CookingMethod, on_delete=models.SET_NULL, null=True, blank=True)
+    utensils = models.ManyToManyField(RecommendedUtensil, blank=True)
+
+    # Параметры
+    duration = models.IntegerField(default=0, help_text="Длительность шага в минутах")
+    temperature = models.IntegerField(null=True, blank=True)
+
+    def __str__(self):
+        return f"{self.order}. {self.title}"

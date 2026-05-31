@@ -13,7 +13,7 @@
     </div>
 
     <div class="space-y-6" id="stepsList">
-        <!-- Шаг 1 -->
+        <!-- Шаг 1: Варим бульон -->
         <div class="flex gap-5 bg-white p-4 rounded-xl border shadow-sm step-card" data-step-id="0">
             <div class="flex items-start gap-3">
                 <input type="checkbox" id="step_0" class="step-checkbox mt-1 w-5 h-5 accent-amber-700">
@@ -22,13 +22,32 @@
             <div class="flex-1">
                 <div class="flex items-start justify-between flex-wrap gap-2 mb-1">
                     <label for="step_0" class="font-semibold text-lg cursor-pointer hover:text-amber-700 transition step-title">Варим бульон</label>
-                    <button class="method-info-btn text-gray-400 hover:text-amber-600 transition p-2 -mt-1 -mr-1"
-                            data-method-id="boiling"
-                            data-method-name="Варка бульона"
-                            onclick="showMethodDetails(this)"
-                            title="Подробнее о методе приготовления">
-                        <i class="fas fa-info-circle text-lg"></i>
-                    </button>
+                    <div class="flex gap-1">
+                        <!-- Кнопка: Подготовка продуктов (🔪) -->
+                        <button class="preparation-info-btn text-gray-400 hover:text-green-600 transition p-2 -mt-1 -mr-1"
+                                data-preparation-id="soaking"
+                                data-preparation-name="Замачивание мяса"
+                                onclick="showPreparationDetails(this)"
+                                title="Подготовка продуктов">
+                            <i class="fas fa-kitchen-set text-lg"></i>
+                        </button>
+                        <!-- Кнопка: Метод приготовления (🍳) -->
+                        <button class="method-info-btn text-gray-400 hover:text-amber-600 transition p-2 -mt-1 -mr-1"
+                                data-method-id="boiling"
+                                data-method-name="Варка бульона"
+                                onclick="showMethodDetails(this)"
+                                title="Метод приготовления">
+                            <i class="fas fa-fire text-lg"></i>
+                        </button>
+                        <!-- Кнопка: Рекомендованная утварь (🍴) -->
+                        <button class="utensil-info-btn text-gray-400 hover:text-blue-600 transition p-2 -mt-1 -mr-1"
+                                data-utensil-id="pot"
+                                data-utensil-name="Кастрюля"
+                                onclick="showUtensilDetails(this)"
+                                title="Рекомендованная утварь">
+                            <i class="fas fa-utensils text-lg"></i>
+                        </button>
+                    </div>
                 </div>
                 <p class="text-gray-600 mt-1">Мясо залейте 2,5 л холодной воды, доведите до кипения, снимите пену. Варите на медленном огне 1 час.</p>
                 <img src="https://placehold.co/600x300/fdf4e8/92400e?text=Бульон" class="mt-2 rounded-lg max-h-32 w-auto object-cover">
