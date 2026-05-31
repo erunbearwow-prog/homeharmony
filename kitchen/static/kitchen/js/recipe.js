@@ -698,6 +698,7 @@ function makeStepCardsClickable() {
 }
 
 // ======================= МЕТОДЫ ПРИГОТОВЛЕНИЯ =======================
+// ======================= МЕТОДЫ ПРИГОТОВЛЕНИЯ =======================
 async function showMethodDetails(button) {
     const methodId = button.dataset.methodId;
     const methodName = button.dataset.methodName;
@@ -705,113 +706,87 @@ async function showMethodDetails(button) {
     const modal = document.getElementById('methodModal');
     if (!modal) return;
 
-    // Заглушка для демонстрации
+    // Демо-данные для всех методов
     const demoData = {
         name: methodName,
         icon: 'fa-utensils',
-        short_description: 'Классический метод приготовления бульона',
-        description: 'Для получения качественного бульона мясо заливают холодной водой и медленно нагревают. При таком подходе экстрактивные вещества переходят в воду, делая бульон наваристым и ароматным.',
-        scientific_background: 'При медленном нагреве белки мяса сворачиваются постепенно, что позволяет сохранить максимум питательных веществ в бульоне.',
-        typical_temperature: '90-95°C (слабое кипение)',
-        typical_duration: '1.5-3 часа',
-        tips: '• Мясо перед варкой лучше вымочить в холодной воде 1-2 часа\n• Снимайте пену в начале кипения\n• Солите в конце варки',
-        common_mistakes: '• Закладка мяса в кипящую воду\n• Слишком сильное кипение\n• Пересол в начале',
-        advanced_notes: 'Для костного бульона кости предварительно запекают в духовке при 200°C до золотистого цвета.'
+        short_description: `Метод приготовления "${methodName}"`,
+        description: `Подробное описание метода "${methodName}". Здесь будет информация о технике, советы и рекомендации.`,
+        scientific_background: 'Научное обоснование метода будет добавлено позже.',
+        typical_temperature: 'По ситуации',
+        typical_duration: 'По ситуации',
+        tips: '• Совет 1\n• Совет 2\n• Совет 3',
+        common_mistakes: '• Типичная ошибка 1\n• Типичная ошибка 2',
+        advanced_notes: 'Для опытных кулинаров: дополнительные нюансы.'
     };
 
-    document.getElementById('methodModalName').innerText = methodName;
-    document.getElementById('methodModalDesc').innerHTML = '<div class="text-center py-4"><i class="fas fa-spinner fa-spin"></i> Загрузка...</div>';
-    modal.classList.remove('hidden');
+    // Заполняем модальное окно
+    document.getElementById('methodModalName').innerText = demoData.name;
+    document.getElementById('methodModalIcon').className = `fas ${demoData.icon} text-amber-600`;
+    document.getElementById('methodModalShortDesc').innerText = demoData.short_description;
+    document.getElementById('methodModalDesc').innerHTML = demoData.description;
 
-    let methodData = methodsCache[methodId];
-    if (!methodData) {
-        try {
-            const response = await fetch(`/api/methods/${methodId}/`);
-            if (response.ok) {
-                methodData = await response.json();
-                methodsCache[methodId] = methodData;
-            } else {
-                throw new Error('Не удалось загрузить');
-            }
-        } catch (error) {
-            document.getElementById('methodModalDesc').innerHTML = '<p class="text-red-600">Не удалось загрузить описание метода. Попробуйте позже.</p>';
-            return;
-        }
-    }
-
-    document.getElementById('methodModalName').innerText = methodData.name;
-    const iconElement = document.getElementById('methodModalIcon');
-    if (iconElement) iconElement.className = `fas ${methodData.icon || 'fa-fire'} text-amber-600`;
-    const shortDescEl = document.getElementById('methodModalShortDesc');
-    if (shortDescEl) shortDescEl.innerText = methodData.short_description || '';
-    const descEl = document.getElementById('methodModalDesc');
-    if (descEl) descEl.innerHTML = methodData.description || '';
-
+    // Научное обоснование
     const scienceBlock = document.getElementById('methodModalScience');
     const scienceText = document.getElementById('methodModalScienceText');
-    if (scienceBlock && scienceText) {
-        if (methodData.scientific_background) {
-            scienceText.innerText = methodData.scientific_background;
-            scienceBlock.classList.remove('hidden');
-        } else {
-            scienceBlock.classList.add('hidden');
-        }
+    if (demoData.scientific_background) {
+        scienceText.innerText = demoData.scientific_background;
+        scienceBlock.classList.remove('hidden');
+    } else {
+        scienceBlock.classList.add('hidden');
     }
 
+    // Температура
     const tempBlock = document.getElementById('methodModalTemp');
     const tempText = document.getElementById('methodModalTempText');
-    if (tempBlock && tempText) {
-        if (methodData.typical_temperature) {
-            tempText.innerText = methodData.typical_temperature;
-            tempBlock.classList.remove('hidden');
-        } else {
-            tempBlock.classList.add('hidden');
-        }
+    if (demoData.typical_temperature) {
+        tempText.innerText = demoData.typical_temperature;
+        tempBlock.classList.remove('hidden');
+    } else {
+        tempBlock.classList.add('hidden');
     }
 
+    // Длительность
     const durationBlock = document.getElementById('methodModalDuration');
     const durationText = document.getElementById('methodModalDurationText');
-    if (durationBlock && durationText) {
-        if (methodData.typical_duration) {
-            durationText.innerText = methodData.typical_duration;
-            durationBlock.classList.remove('hidden');
-        } else {
-            durationBlock.classList.add('hidden');
-        }
+    if (demoData.typical_duration) {
+        durationText.innerText = demoData.typical_duration;
+        durationBlock.classList.remove('hidden');
+    } else {
+        durationBlock.classList.add('hidden');
     }
 
+    // Советы
     const tipsBlock = document.getElementById('methodModalTips');
     const tipsText = document.getElementById('methodModalTipsText');
-    if (tipsBlock && tipsText) {
-        if (methodData.tips) {
-            tipsText.innerText = methodData.tips;
-            tipsBlock.classList.remove('hidden');
-        } else {
-            tipsBlock.classList.add('hidden');
-        }
+    if (demoData.tips) {
+        tipsText.innerText = demoData.tips;
+        tipsBlock.classList.remove('hidden');
+    } else {
+        tipsBlock.classList.add('hidden');
     }
 
+    // Типичные ошибки
     const mistakesBlock = document.getElementById('methodModalMistakes');
     const mistakesText = document.getElementById('methodModalMistakesText');
-    if (mistakesBlock && mistakesText) {
-        if (methodData.common_mistakes) {
-            mistakesText.innerText = methodData.common_mistakes;
-            mistakesBlock.classList.remove('hidden');
-        } else {
-            mistakesBlock.classList.add('hidden');
-        }
+    if (demoData.common_mistakes) {
+        mistakesText.innerText = demoData.common_mistakes;
+        mistakesBlock.classList.remove('hidden');
+    } else {
+        mistakesBlock.classList.add('hidden');
     }
 
+    // Для опытных
     const advancedBlock = document.getElementById('methodModalAdvanced');
     const advancedText = document.getElementById('methodModalAdvancedText');
-    if (advancedBlock && advancedText) {
-        if (methodData.advanced_notes) {
-            advancedText.innerText = methodData.advanced_notes;
-            advancedBlock.classList.remove('hidden');
-        } else {
-            advancedBlock.classList.add('hidden');
-        }
+    if (demoData.advanced_notes) {
+        advancedText.innerText = demoData.advanced_notes;
+        advancedBlock.classList.remove('hidden');
+    } else {
+        advancedBlock.classList.add('hidden');
     }
+
+    modal.classList.remove('hidden');
 }
 
 function closeMethodModal() {
@@ -989,3 +964,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log('Инициализация завершена');
 });
+
+    // Делаем функции глобальными для доступа из HTML
+    window.showMethodDetails = showMethodDetails;
+    window.closeMethodModal = closeMethodModal;
