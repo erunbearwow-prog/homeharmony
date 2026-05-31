@@ -27,6 +27,9 @@ let currentBaseIngredient = {
 // Хранилище замен ингредиентов
 let ingredientReplacements = {};
 
+// Кэш для методов приготовления
+let methodsCache = {};
+
 // ======================= БАЗА ЗНАНИЙ ЗАМЕН ИНГРЕДИЕНТОВ =======================
 const REPLACEMENTS_DB = {
     'чеснок': {
@@ -348,14 +351,11 @@ function showReplaceModal(ingredientId, ingredientName, originalValue, unit) {
     if (originalNameSpan) originalNameSpan.innerText = ingredientName;
     if (originalUnitSpan) originalUnitSpan.innerText = unit;
 
-    // Ищем замены в базе
     const replacementsData = findReplacementsForIngredient(ingredientName);
 
-    // Очищаем select
     replaceSelect.innerHTML = '';
 
     if (replacementsData && replacementsData.replacements.length > 0) {
-        // Показываем рекомендованные замены
         if (replacementNote) {
             replacementNote.innerHTML = `💡 Для <strong>${ingredientName}</strong> найдены рекомендованные замены:`;
             replacementNote.classList.remove('hidden');
@@ -372,14 +372,12 @@ function showReplaceModal(ingredientId, ingredientName, originalValue, unit) {
             replaceSelect.appendChild(option);
         });
 
-        // Добавляем опцию для ручного ввода
         const customOption = document.createElement('option');
         customOption.value = 'custom';
         customOption.textContent = '✏️ Другой ингредиент (ввести вручную)';
         replaceSelect.appendChild(customOption);
 
     } else {
-        // Нет рекомендованных замен
         if (replacementNote) {
             replacementNote.innerHTML = `❓ Для <strong>${ingredientName}</strong> нет рекомендованных замен. Вы можете ввести коэффициент вручную.`;
             replacementNote.classList.remove('hidden');
@@ -391,12 +389,10 @@ function showReplaceModal(ingredientId, ingredientName, originalValue, unit) {
         replaceSelect.appendChild(customOption);
     }
 
-    // Обработчик выбора
     replaceSelect.onchange = () => {
         const selected = replaceSelect.options[replaceSelect.selectedIndex];
 
         if (selected && selected.value !== 'custom' && selected.dataset.ratio) {
-            // Автоматическая подстановка коэффициента
             const ratio = parseFloat(selected.dataset.ratio);
             ratioInput.value = ratio;
             newUnitSpan.innerText = selected.dataset.unit;
@@ -411,7 +407,6 @@ function showReplaceModal(ingredientId, ingredientName, originalValue, unit) {
                 note: selected.dataset.note
             };
         } else {
-            // Ручной ввод
             ratioInput.value = '';
             newUnitSpan.innerText = unit;
             if (newNameSpan) newNameSpan.innerText = '';
@@ -420,7 +415,6 @@ function showReplaceModal(ingredientId, ingredientName, originalValue, unit) {
         }
     };
 
-    // Запускаем обработчик для первого элемента (если есть)
     if (replaceSelect.options.length > 0) {
         replaceSelect.selectedIndex = 0;
         replaceSelect.dispatchEvent(new Event('change'));
@@ -440,12 +434,10 @@ function applyReplacement() {
     let newName, ratio, newUnit;
 
     if (selectedOption && selectedOption.value !== 'custom' && selectedOption.dataset.ratio) {
-        // Используем рекомендованный коэффициент
         newName = selectedOption.dataset.displayName || selectedOption.value;
         ratio = parseFloat(selectedOption.dataset.ratio);
         newUnit = selectedOption.dataset.unit;
     } else {
-        // Ручной ввод
         newName = prompt('Введите название ингредиента-заменителя:', activeReplaceIngredient.name);
         if (!newName) return;
 
@@ -460,7 +452,6 @@ function applyReplacement() {
     const ingredientItem = document.querySelector(`.ingredient-item[data-ingredient-id="${activeReplaceIngredient.id}"]`);
     if (!ingredientItem) return;
 
-    // Сохраняем замену
     ingredientReplacements[activeReplaceIngredient.id] = {
         originalName: activeReplaceIngredient.name,
         replacementName: newName,
@@ -468,14 +459,12 @@ function applyReplacement() {
         unit: newUnit
     };
 
-    // Обновляем отображение
     const label = ingredientItem.querySelector('label');
     if (label) {
         const oldText = label.innerText;
         label.innerText = oldText.replace(activeReplaceIngredient.name, newName);
     }
 
-    // Пересчитываем количество
     const currentRatio = getCurrentGlobalRatio();
     const newAmount = activeReplaceIngredient.originalValue * currentRatio * ratio;
     const amountSpan = ingredientItem.querySelector('.ingredient-amount');
@@ -484,7 +473,6 @@ function applyReplacement() {
         amountSpan.innerText = `${displayAmount} ${newUnit}`;
     }
 
-    // Меняем иконку
     const replaceBtn = ingredientItem.querySelector('.ingredient-replace-btn');
     if (replaceBtn) {
         replaceBtn.innerHTML = '<i class="fas fa-undo-alt"></i>';
@@ -492,7 +480,6 @@ function applyReplacement() {
         replaceBtn.classList.add('hover:text-red-600');
         replaceBtn.title = 'Сбросить замену';
 
-        // Удаляем старый обработчик и ставим новый
         const newBtn = replaceBtn.cloneNode(true);
         replaceBtn.parentNode.replaceChild(newBtn, replaceBtn);
         newBtn.addEventListener('click', (e) => {
@@ -501,7 +488,6 @@ function applyReplacement() {
         });
     }
 
-    // Закрываем модалку
     document.getElementById('replaceModal').classList.add('hidden');
     saveReplacementsToLocal();
     activeReplaceIngredient = null;
@@ -524,12 +510,10 @@ function resetReplacement(ingredientId) {
     const label = ingredientItem.querySelector('label');
     const amountSpan = ingredientItem.querySelector('.ingredient-amount');
 
-    // Возвращаем исходное название
     if (label) {
         label.innerText = label.innerText.replace(replacement.replacementName, replacement.originalName);
     }
 
-    // Возвращаем исходное количество
     const currentRatio = getCurrentGlobalRatio();
     const originalAmount = replacement.originalValue * currentRatio;
     if (amountSpan) {
@@ -537,11 +521,9 @@ function resetReplacement(ingredientId) {
         amountSpan.innerText = `${displayAmount} ${replacement.unit}`;
     }
 
-    // Удаляем из хранилища
     delete ingredientReplacements[ingredientId];
     saveReplacementsToLocal();
 
-    // Меняем иконку обратно на ⟳
     const replaceBtn = ingredientItem.querySelector('.ingredient-replace-btn');
     if (replaceBtn) {
         replaceBtn.innerHTML = '<i class="fas fa-exchange-alt"></i>';
@@ -549,7 +531,6 @@ function resetReplacement(ingredientId) {
         replaceBtn.classList.add('hover:text-blue-600');
         replaceBtn.title = 'Заменить ингредиент';
 
-        // Удаляем старый обработчик и ставим новый
         const newBtn = replaceBtn.cloneNode(true);
         replaceBtn.parentNode.replaceChild(newBtn, replaceBtn);
         newBtn.addEventListener('click', (e) => {
@@ -716,6 +697,128 @@ function makeStepCardsClickable() {
     });
 }
 
+// ======================= МЕТОДЫ ПРИГОТОВЛЕНИЯ =======================
+async function showMethodDetails(button) {
+    const methodId = button.dataset.methodId;
+    const methodName = button.dataset.methodName;
+
+    const modal = document.getElementById('methodModal');
+    if (!modal) return;
+
+    // Заглушка для демонстрации
+    const demoData = {
+        name: methodName,
+        icon: 'fa-utensils',
+        short_description: 'Классический метод приготовления бульона',
+        description: 'Для получения качественного бульона мясо заливают холодной водой и медленно нагревают. При таком подходе экстрактивные вещества переходят в воду, делая бульон наваристым и ароматным.',
+        scientific_background: 'При медленном нагреве белки мяса сворачиваются постепенно, что позволяет сохранить максимум питательных веществ в бульоне.',
+        typical_temperature: '90-95°C (слабое кипение)',
+        typical_duration: '1.5-3 часа',
+        tips: '• Мясо перед варкой лучше вымочить в холодной воде 1-2 часа\n• Снимайте пену в начале кипения\n• Солите в конце варки',
+        common_mistakes: '• Закладка мяса в кипящую воду\n• Слишком сильное кипение\n• Пересол в начале',
+        advanced_notes: 'Для костного бульона кости предварительно запекают в духовке при 200°C до золотистого цвета.'
+    };
+
+    document.getElementById('methodModalName').innerText = methodName;
+    document.getElementById('methodModalDesc').innerHTML = '<div class="text-center py-4"><i class="fas fa-spinner fa-spin"></i> Загрузка...</div>';
+    modal.classList.remove('hidden');
+
+    let methodData = methodsCache[methodId];
+    if (!methodData) {
+        try {
+            const response = await fetch(`/api/methods/${methodId}/`);
+            if (response.ok) {
+                methodData = await response.json();
+                methodsCache[methodId] = methodData;
+            } else {
+                throw new Error('Не удалось загрузить');
+            }
+        } catch (error) {
+            document.getElementById('methodModalDesc').innerHTML = '<p class="text-red-600">Не удалось загрузить описание метода. Попробуйте позже.</p>';
+            return;
+        }
+    }
+
+    document.getElementById('methodModalName').innerText = methodData.name;
+    const iconElement = document.getElementById('methodModalIcon');
+    if (iconElement) iconElement.className = `fas ${methodData.icon || 'fa-fire'} text-amber-600`;
+    const shortDescEl = document.getElementById('methodModalShortDesc');
+    if (shortDescEl) shortDescEl.innerText = methodData.short_description || '';
+    const descEl = document.getElementById('methodModalDesc');
+    if (descEl) descEl.innerHTML = methodData.description || '';
+
+    const scienceBlock = document.getElementById('methodModalScience');
+    const scienceText = document.getElementById('methodModalScienceText');
+    if (scienceBlock && scienceText) {
+        if (methodData.scientific_background) {
+            scienceText.innerText = methodData.scientific_background;
+            scienceBlock.classList.remove('hidden');
+        } else {
+            scienceBlock.classList.add('hidden');
+        }
+    }
+
+    const tempBlock = document.getElementById('methodModalTemp');
+    const tempText = document.getElementById('methodModalTempText');
+    if (tempBlock && tempText) {
+        if (methodData.typical_temperature) {
+            tempText.innerText = methodData.typical_temperature;
+            tempBlock.classList.remove('hidden');
+        } else {
+            tempBlock.classList.add('hidden');
+        }
+    }
+
+    const durationBlock = document.getElementById('methodModalDuration');
+    const durationText = document.getElementById('methodModalDurationText');
+    if (durationBlock && durationText) {
+        if (methodData.typical_duration) {
+            durationText.innerText = methodData.typical_duration;
+            durationBlock.classList.remove('hidden');
+        } else {
+            durationBlock.classList.add('hidden');
+        }
+    }
+
+    const tipsBlock = document.getElementById('methodModalTips');
+    const tipsText = document.getElementById('methodModalTipsText');
+    if (tipsBlock && tipsText) {
+        if (methodData.tips) {
+            tipsText.innerText = methodData.tips;
+            tipsBlock.classList.remove('hidden');
+        } else {
+            tipsBlock.classList.add('hidden');
+        }
+    }
+
+    const mistakesBlock = document.getElementById('methodModalMistakes');
+    const mistakesText = document.getElementById('methodModalMistakesText');
+    if (mistakesBlock && mistakesText) {
+        if (methodData.common_mistakes) {
+            mistakesText.innerText = methodData.common_mistakes;
+            mistakesBlock.classList.remove('hidden');
+        } else {
+            mistakesBlock.classList.add('hidden');
+        }
+    }
+
+    const advancedBlock = document.getElementById('methodModalAdvanced');
+    const advancedText = document.getElementById('methodModalAdvancedText');
+    if (advancedBlock && advancedText) {
+        if (methodData.advanced_notes) {
+            advancedText.innerText = methodData.advanced_notes;
+            advancedBlock.classList.remove('hidden');
+        } else {
+            advancedBlock.classList.add('hidden');
+        }
+    }
+}
+
+function closeMethodModal() {
+    const modal = document.getElementById('methodModal');
+    if (modal) modal.classList.add('hidden');
+}
+
 // ======================= ВОССТАНОВЛЕНИЕ ИЗ URL =======================
 function restoreStateFromURL() {
     const urlParams = new URLSearchParams(window.location.search);
@@ -838,6 +941,13 @@ document.addEventListener('DOMContentLoaded', function() {
         activeReplaceIngredient = null;
     });
     document.getElementById('confirmReplaceBtn')?.addEventListener('click', () => applyReplacement());
+
+    // Закрытие модалки методов по клику вне области
+    document.getElementById('methodModal')?.addEventListener('click', (e) => {
+        if (e.target === document.getElementById('methodModal')) {
+            closeMethodModal();
+        }
+    });
 
     restoreCheckboxStates();
     document.querySelectorAll('.ingredient-checkbox').forEach(cb => {

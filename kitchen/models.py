@@ -55,3 +55,47 @@ class Recipe(models.Model):
     class Meta:
         verbose_name = 'Рецепт'
         verbose_name_plural = 'Рецепты'
+
+
+class CookingMethod(models.Model):
+    """Метод приготовления — кулинарная техника"""
+
+    CATEGORY_CHOICES = [
+        ('thermal', 'Тепловая обработка'),
+        ('preparation', 'Подготовка продуктов'),
+        ('shaping', 'Формование'),
+        ('other', 'Прочее'),
+    ]
+
+    # Основная информация
+    name = models.CharField(max_length=100, unique=True, verbose_name='Название')
+    category = models.CharField(max_length=20, choices=CATEGORY_CHOICES, default='thermal')
+    short_description = models.CharField(max_length=200, verbose_name='Краткое описание')
+
+    # Развёрнутое описание
+    description = models.TextField(verbose_name='Подробное описание техники')
+    scientific_background = models.TextField(blank=True, verbose_name='Научное обоснование')
+
+    # Параметры
+    typical_temperature = models.CharField(max_length=50, blank=True, verbose_name='Типичная температура')
+    typical_duration = models.CharField(max_length=50, blank=True, verbose_name='Типичная длительность')
+
+    # Советы
+    tips = models.TextField(blank=True, verbose_name='Советы и хитрости')
+    common_mistakes = models.TextField(blank=True, verbose_name='Типичные ошибки')
+
+    # Визуальный контент
+    icon = models.CharField(max_length=50, default='fa-fire', verbose_name='Иконка (FontAwesome)')
+    color = models.CharField(max_length=20, default='amber', verbose_name='Цвет темы')
+
+    # Для продвинутых пользователей
+    advanced_notes = models.TextField(blank=True, verbose_name='Для опытных кулинаров')
+
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'Метод приготовления'
+        verbose_name_plural = 'Методы приготовления'
