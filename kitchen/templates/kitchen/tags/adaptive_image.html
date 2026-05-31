@@ -1,0 +1,24 @@
+<picture>
+    <!-- WebP для современных браузеров -->
+    <source
+        srcset="{{ url_400w }} 400w,
+                {{ url_800w }} 800w,
+                {{ url_1200w }} 1200w"
+        sizes="(max-width: 640px) 100vw,
+               (max-width: 1024px) 80vw,
+               50vw"
+        type="image/webp"
+    >
+    <!-- Fallback для старых браузеров -->
+    <img
+        src="{{ url_fallback }}"
+        srcset="{{ url_fallback }} 800w"
+        sizes="(max-width: 640px) 100vw,
+               (max-width: 1024px) 80vw,
+               50vw"
+        alt="{{ alt }}"
+        class="{{ css_class }}"
+        loading="lazy"
+        decoding="async"
+    >
+</picture>

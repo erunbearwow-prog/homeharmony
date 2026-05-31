@@ -1,0 +1,77 @@
+<!-- Виджет ингредиентов -->
+<div class="bg-gray-50 p-6 rounded-2xl self-start">
+    <h3 class="text-xl font-bold serif mb-4">📝 Ингредиенты</h3>
+
+    <!-- Переключатель режимов -->
+    <div class="mb-5 bg-white rounded-xl p-1 flex gap-1 no-print border border-gray-200">
+        <button id="modeProductsBtn" class="flex-1 py-2 rounded-lg text-sm font-medium transition bg-amber-100 text-amber-800">
+            🥩 По продуктам
+        </button>
+        <button id="modePortionsBtn" class="flex-1 py-2 rounded-lg text-sm font-medium transition text-gray-500">
+            👥 По порциям
+        </button>
+    </div>
+
+    <!-- РЕЖИМ 1: ПО ПРОДУКТАМ -->
+    <div id="modeProductsPanel" class="mode-panel">
+        <div class="p-3 bg-amber-50 rounded-xl border border-amber-100">
+            <div class="flex items-center gap-2 mb-2">
+                <span class="font-medium text-sm">Пересчитать по <span id="baseIngredientName" class="font-bold text-amber-700">говядине</span></span>
+            </div>
+            <div class="flex flex-wrap items-center gap-2" id="baseIngredientRow">
+                <span class="text-sm font-medium">🥩 Говядина:</span>
+                <span class="text-sm text-gray-500 line-through">500 г</span>
+                <input type="number" id="customMeatWeight" value="500" step="10"
+                       class="w-24 px-2 py-1 border border-gray-300 rounded-lg text-center">
+                <span class="text-sm">г</span>
+                <button id="applyMeatBtn" class="bg-amber-700 text-white px-3 py-1 rounded-lg text-sm">Пересчитать</button>
+                <button id="resetProductsBtn" class="text-gray-500 text-sm underline ml-auto">Сбросить</button>
+            </div>
+            <div id="meatRatioInfo" class="text-xs text-gray-500 mt-2"></div>
+        </div>
+    </div>
+
+<!-- РЕЖИМ 2: ПО ПОРЦИЯМ -->
+<div id="modePortionsPanel" class="mode-panel hidden">
+    <div class="p-3 bg-green-50 rounded-xl border border-green-100">
+        <div class="flex items-center gap-2 mb-2">
+            <i class="fas fa-users text-green-700"></i>
+            <span class="font-medium text-sm">Сколько гостей планируете кормить?</span>
+        </div>
+        <div class="flex items-center gap-3">
+            <span class="text-2xl font-bold text-green-700 min-w-[60px]" id="portionsValue">6</span>
+            <input type="range" id="portionsSlider" min="1" max="20" value="6" step="1"
+                   class="flex-1 h-2 bg-gray-200 rounded-lg accent-green-600">
+            <button id="resetPortionsBtn" class="text-gray-500 text-sm underline whitespace-nowrap">Сбросить</button>
+        </div>
+        <div id="portionsRatioInfo" class="text-xs text-gray-500 mt-2"></div>
+        <p class="text-xs text-gray-500 mt-2 flex items-center gap-1">
+            <i class="fas fa-info-circle"></i> Рецепт рассчитан на 6 порций.
+        </p>
+    </div>
+</div>
+
+    <!-- Кнопки управления чекбоксами -->
+    <div class="flex flex-wrap gap-2 mt-2 mb-3 no-print">
+        <button id="checkAllBtn" class="text-xs bg-gray-100 hover:bg-gray-200 text-gray-700 px-2 py-1 rounded">
+            ☑ Отметить всё
+        </button>
+        <button id="uncheckAllBtn" class="text-xs bg-gray-100 hover:bg-gray-200 text-gray-700 px-2 py-1 rounded">
+            ☐ Снять всё
+        </button>
+        <button id="copyCheckedBtn" class="text-xs bg-amber-100 hover:bg-amber-200 text-amber-800 px-2 py-1 rounded">
+            📋 Скопировать отмеченное
+        </button>
+    </div>
+
+    <!-- Список ингредиентов -->
+    <ul class="space-y-3 text-gray-700" id="ingredientsList">
+        {% block ingredients_list %}
+        <!-- Список ингредиентов будет переопределён в дочернем шаблоне -->
+        {% endblock %}
+    </ul>
+
+    <div class="mt-4 pt-4 border-t border-gray-200 text-sm text-gray-500">
+        <i class="fas fa-lightbulb text-amber-600"></i> Совет: нажмите 🔗 у любого ингредиента, чтобы пересчитать рецепт по его количеству. Нажмите ⟳, чтобы заменить ингредиент.
+    </div>
+</div>
