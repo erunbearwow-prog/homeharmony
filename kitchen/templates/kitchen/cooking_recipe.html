@@ -8,7 +8,6 @@
     .card-hover { transition: all 0.3s ease; }
     .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.1); }
 
-    /* Стили для шагов */
     .step-card {
         transition: all 0.3s ease;
         cursor: pointer;
@@ -28,6 +27,19 @@
         text-decoration: line-through;
         color: #9ca3af;
     }
+
+    .progress-bar {
+        height: 0.5rem;
+        background-color: #e5e7eb;
+        border-radius: 9999px;
+        overflow: hidden;
+    }
+    .progress-fill {
+        height: 100%;
+        background-color: #d97706;
+        border-radius: 9999px;
+        transition: width 0.3s ease;
+    }
 </style>
 {% endblock %}
 
@@ -35,9 +47,9 @@
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <!-- Хлебные крошки -->
     <div class="text-sm text-gray-500 mb-6 no-print">
-        <a href="{% url 'home' %}" class="hover:text-amber-700">Главная</a> /
-        <a href="{% url 'kitchen:index' %}" class="hover:text-amber-700">Кулинария</a> /
-        <a href="{% url 'kitchen:soups' %}" class="hover:text-amber-700">Супы</a> /
+        <a href="/" class="hover:text-amber-700">Главная</a> /
+        <a href="/kitchen/" class="hover:text-amber-700">Кулинария</a> /
+        <a href="/kitchen/" class="hover:text-amber-700">Супы</a> /
         <span class="text-gray-800 font-medium">Борщ сибирский</span>
     </div>
 
@@ -76,8 +88,8 @@
                         <span>Прогресс приготовления</span>
                         <span id="stepsProgress">0/4</span>
                     </div>
-                    <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
-                        <div id="stepsProgressBar" class="h-full bg-amber-600 rounded-full transition-all duration-300" style="width: 0%"></div>
+                    <div class="progress-bar">
+                        <div id="stepsProgressBar" class="progress-fill" style="width: 0%"></div>
                     </div>
                 </div>
 
@@ -134,9 +146,52 @@
                     </div>
                 </div>
             </div>
+
+            <!-- ОТЗЫВЫ -->
+            <div class="mt-12 border-t pt-8 no-print">
+                <div class="flex justify-between items-center flex-wrap">
+                    <h2 class="text-2xl font-bold serif">⭐ Отзывы (12)</h2>
+                    <div class="flex gap-1 text-amber-500">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.7
+                    </div>
+                </div>
+                <div class="mt-6 space-y-5">
+                    <div class="bg-gray-50 p-4 rounded-xl">
+                        <p class="font-semibold">Анна</p>
+                        <p class="text-gray-600">Очень вкусно! Добавила ложку уксуса.</p>
+                        <div class="flex text-amber-500 text-sm mt-1">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="inline-block mt-4 text-amber-700">Оставить отзыв →</a>
+            </div>
+
+            <!-- ПОХОЖИЕ РЕЦЕПТЫ -->
+            <div class="mt-16 no-print">
+                <h2 class="text-2xl font-bold serif mb-6">🍲 Похожие рецепты</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                        <img src="https://placehold.co/400x240/fde68a/92400e?text=Щи" class="h-36 w-full object-cover">
+                        <div class="p-3">
+                            <h3 class="font-bold">Щи из свежей капусты</h3>
+                            <p class="text-sm text-gray-500">1 час | Средний</p>
+                            <a href="#" class="text-amber-700 text-sm">Смотреть →</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                        <img src="https://placehold.co/400x240/fef9c3/78350f?text=Солянка" class="h-36 w-full object-cover">
+                        <div class="p-3">
+                            <h3 class="font-bold">Солянка сборная</h3>
+                            <p class="text-sm text-gray-500">1 час 20 мин | Средний</p>
+                            <a href="#" class="text-amber-700 text-sm">Смотреть →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!-- ПРАВАЯ КОЛОНКА: ИНГРЕДИЕНТЫ + УМНЫЙ ПЕРЕСЧЁТ -->
+        <!-- ПРАВАЯ КОЛОНКА: ИНГРЕДИЕНТЫ -->
         <div class="bg-gray-50 p-6 rounded-2xl self-start">
             <h3 class="text-xl font-bold serif mb-4">📝 Ингредиенты</h3>
 
@@ -204,12 +259,12 @@
                 </button>
             </div>
 
-            <!-- Список ингредиентов -->
+            <!-- Список ингредиентов (без эмодзи) -->
             <ul class="space-y-3 text-gray-700" id="ingredientsList">
                 <li class="ingredient-item flex justify-between items-center flex-wrap gap-2" data-original="500" data-unit="г" data-ingredient-id="0" data-ingredient-name="говядина">
                     <div class="flex items-center gap-2 flex-1">
                         <input type="checkbox" id="ingredient_0" class="accent-amber-700 ingredient-checkbox">
-                        <label for="ingredient_0">🥩 говядина на кости</label>
+                        <label for="ingredient_0">говядина на кости</label>
                     </div>
                     <div class="flex items-center gap-2">
                         <span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border">500 г</span>
@@ -221,7 +276,7 @@
                 <li class="ingredient-item flex justify-between items-center flex-wrap gap-2" data-original="2" data-unit="шт." data-ingredient-id="1" data-ingredient-name="свекла">
                     <div class="flex items-center gap-2 flex-1">
                         <input type="checkbox" id="ingredient_1" class="accent-amber-700 ingredient-checkbox">
-                        <label for="ingredient_1"> свекла</label>
+                        <label for="ingredient_1">свекла</label>
                     </div>
                     <div class="flex items-center gap-2">
                         <span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border">2 шт.</span>
@@ -233,7 +288,7 @@
                 <li class="ingredient-item flex justify-between items-center flex-wrap gap-2" data-original="300" data-unit="г" data-ingredient-id="2" data-ingredient-name="капуста">
                     <div class="flex items-center gap-2 flex-1">
                         <input type="checkbox" id="ingredient_2" class="accent-amber-700 ingredient-checkbox">
-                        <label for="ingredient_2"> капуста</label>
+                        <label for="ingredient_2">капуста</label>
                     </div>
                     <div class="flex items-center gap-2">
                         <span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border">300 г</span>
@@ -245,7 +300,7 @@
                 <li class="ingredient-item flex justify-between items-center flex-wrap gap-2" data-original="4" data-unit="шт." data-ingredient-id="3" data-ingredient-name="картофель">
                     <div class="flex items-center gap-2 flex-1">
                         <input type="checkbox" id="ingredient_3" class="accent-amber-700 ingredient-checkbox">
-                        <label for="ingredient_3">🥔 картофель</label>
+                        <label for="ingredient_3">картофель</label>
                     </div>
                     <div class="flex items-center gap-2">
                         <span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border">4 шт.</span>
@@ -257,7 +312,7 @@
                 <li class="ingredient-item flex justify-between items-center flex-wrap gap-2" data-original="1" data-unit="шт." data-ingredient-id="4" data-ingredient-name="морковь">
                     <div class="flex items-center gap-2 flex-1">
                         <input type="checkbox" id="ingredient_4" class="accent-amber-700 ingredient-checkbox">
-                        <label for="ingredient_4">🥕 морковь</label>
+                        <label for="ingredient_4">морковь</label>
                     </div>
                     <div class="flex items-center gap-2">
                         <span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border">1 шт.</span>
@@ -269,7 +324,7 @@
                 <li class="ingredient-item flex justify-between items-center flex-wrap gap-2" data-original="1" data-unit="шт." data-ingredient-id="5" data-ingredient-name="лук">
                     <div class="flex items-center gap-2 flex-1">
                         <input type="checkbox" id="ingredient_5" class="accent-amber-700 ingredient-checkbox">
-                        <label for="ingredient_5">🧅 лук</label>
+                        <label for="ingredient_5">лук</label>
                     </div>
                     <div class="flex items-center gap-2">
                         <span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border">1 шт.</span>
@@ -281,7 +336,7 @@
                 <li class="ingredient-item flex justify-between items-center flex-wrap gap-2" data-original="2" data-unit="ст. л." data-ingredient-id="6" data-ingredient-name="томатная паста">
                     <div class="flex items-center gap-2 flex-1">
                         <input type="checkbox" id="ingredient_6" class="accent-amber-700 ingredient-checkbox">
-                        <label for="ingredient_6">🍅 томатная паста</label>
+                        <label for="ingredient_6">томатная паста</label>
                     </div>
                     <div class="flex items-center gap-2">
                         <span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border">2 ст. л.</span>
@@ -293,7 +348,7 @@
                 <li class="ingredient-item flex justify-between items-center flex-wrap gap-2" data-original="2" data-unit="зубч." data-ingredient-id="7" data-ingredient-name="чеснок">
                     <div class="flex items-center gap-2 flex-1">
                         <input type="checkbox" id="ingredient_7" class="accent-amber-700 ingredient-checkbox">
-                        <label for="ingredient_7">🧄 чеснок</label>
+                        <label for="ingredient_7">чеснок</label>
                     </div>
                     <div class="flex items-center gap-2">
                         <span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border">2 зубч.</span>
@@ -306,48 +361,6 @@
 
             <div class="mt-4 pt-4 border-t border-gray-200 text-sm text-gray-500">
                 <i class="fas fa-lightbulb text-amber-600"></i> Совет: нажмите 🔗 у любого ингредиента, чтобы пересчитать рецепт по его количеству. Нажмите ⟳, чтобы заменить ингредиент.
-            </div>
-        </div>
-    </div>
-
-    <!-- ОТЗЫВЫ И ПОХОЖИЕ РЕЦЕПТЫ -->
-    <div class="mt-12 border-t pt-8 no-print">
-        <div class="flex justify-between items-center flex-wrap">
-            <h2 class="text-2xl font-bold serif">⭐ Отзывы (12)</h2>
-            <div class="flex gap-1 text-amber-500">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.7
-            </div>
-        </div>
-        <div class="mt-6 space-y-5">
-            <div class="bg-gray-50 p-4 rounded-xl">
-                <p class="font-semibold">Анна</p>
-                <p class="text-gray-600">Очень вкусно! Добавила ложку уксуса.</p>
-                <div class="flex text-amber-500 text-sm mt-1">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-            </div>
-        </div>
-        <a href="#" class="inline-block mt-4 text-amber-700">Оставить отзыв →</a>
-    </div>
-
-    <div class="mt-16 no-print">
-        <h2 class="text-2xl font-bold serif mb-6">🍲 Похожие рецепты</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
-                <img src="https://placehold.co/400x240/fde68a/92400e?text=Щи" class="h-36 w-full object-cover">
-                <div class="p-3">
-                    <h3 class="font-bold">Щи из свежей капусты</h3>
-                    <p class="text-sm text-gray-500">1 час | Средний</p>
-                    <a href="#" class="text-amber-700 text-sm">Смотреть →</a>
-                </div>
-            </div>
-            <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
-                <img src="https://placehold.co/400x240/fef9c3/78350f?text=Солянка" class="h-36 w-full object-cover">
-                <div class="p-3">
-                    <h3 class="font-bold">Солянка сборная</h3>
-                    <p class="text-sm text-gray-500">1 час 20 мин | Средний</p>
-                    <a href="#" class="text-amber-700 text-sm">Смотреть →</a>
-                </div>
             </div>
         </div>
     </div>
@@ -391,7 +404,6 @@
 {% block extra_js %}
 <script src="{% static 'kitchen/js/recipe.js' %}"></script>
 <script>
-    // Функция для шеринга (должна быть доступна глобально)
     window.shareRecipe = function() {
         if (navigator.share) {
             navigator.share({

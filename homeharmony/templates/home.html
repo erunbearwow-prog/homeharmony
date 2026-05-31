@@ -29,10 +29,10 @@
             Рецепты, советы по уборке, планирование бюджета и сообщество единомышленников
         </p>
         <div class="flex flex-wrap gap-4 justify-center">
-            <a href="{% url 'kitchen:index' %}" class="bg-amber-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-amber-800 transition">
+            <a href="/kitchen/cooking_recipe/" class="bg-amber-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-amber-800 transition">
                 🍳 Перейти к рецептам
             </a>
-            <a href="{% url 'community:index' %}" class="bg-white text-amber-800 px-6 py-3 rounded-lg font-semibold border border-amber-200 hover:bg-amber-50 transition">
+            <a href="/community/" class="bg-white text-amber-800 px-6 py-3 rounded-lg font-semibold border border-amber-200 hover:bg-amber-50 transition">
                 💬 Присоединиться к сообществу
             </a>
         </div>
@@ -42,22 +42,22 @@
 <!-- Популярные разделы -->
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <a href="{% url 'kitchen:index' %}" class="bg-white p-6 rounded-xl shadow-sm text-center card-hover border border-gray-100">
+        <a href="/kitchen/cooking_recipe/" class="bg-white p-6 rounded-xl shadow-sm text-center card-hover border border-gray-100">
             <i class="fas fa-utensils text-amber-700 text-3xl"></i>
             <h3 class="font-bold mt-2">Кулинария</h3>
             <p class="text-sm text-gray-500">5000+ рецептов</p>
         </a>
-        <a href="{% url 'cleaning:index' %}" class="bg-white p-6 rounded-xl shadow-sm text-center card-hover border border-gray-100">
+        <a href="#" class="bg-white p-6 rounded-xl shadow-sm text-center card-hover border border-gray-100">
             <i class="fas fa-broom text-amber-700 text-3xl"></i>
             <h3 class="font-bold mt-2">Уборка</h3>
             <p class="text-sm text-gray-500">Чек-листы и лайфхаки</p>
         </a>
-        <a href="{% url 'budget:index' %}" class="bg-white p-6 rounded-xl shadow-sm text-center card-hover border border-gray-100">
+        <a href="#" class="bg-white p-6 rounded-xl shadow-sm text-center card-hover border border-gray-100">
             <i class="fas fa-chart-line text-amber-700 text-3xl"></i>
             <h3 class="font-bold mt-2">Бюджет</h3>
             <p class="text-sm text-gray-500">Планирование расходов</p>
         </a>
-        <a href="{% url 'community:index' %}" class="bg-white p-6 rounded-xl shadow-sm text-center card-hover border border-gray-100">
+        <a href="#" class="bg-white p-6 rounded-xl shadow-sm text-center card-hover border border-gray-100">
             <i class="fas fa-users text-amber-700 text-3xl"></i>
             <h3 class="font-bold mt-2">Сообщество</h3>
             <p class="text-sm text-gray-500">Обмен опытом</p>

@@ -17,21 +17,21 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import TemplateView
-from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),  # используем свою функцию
+    path('', TemplateView.as_view(template_name='home.html'), name='home'),
     path('kitchen/', include('kitchen.urls', namespace='kitchen')),
-    # path('cleaning/', include('cleaning.urls', namespace='cleaning')),
-    # path('budget/', include('budget.urls', namespace='budget')),
-    # path('repair/', include('repair.urls', namespace='repair')),
-    # path('health/', include('health.urls', namespace='health')),
-    # path('seasonal/', include('seasonal.urls', namespace='seasonal')),
-    # path('community/', include('community.urls', namespace='community')),
-    # path('knowledge/', include('knowledge.urls', namespace='knowledge')),
 
-    # Статические страницы (пока заглушки)
+    # Временные маршруты для других разделов
+    path('cleaning/', TemplateView.as_view(template_name='coming_soon.html'), name='cleaning'),
+    path('budget/', TemplateView.as_view(template_name='coming_soon.html'), name='budget'),
+    path('repair/', TemplateView.as_view(template_name='coming_soon.html'), name='repair'),
+    path('health/', TemplateView.as_view(template_name='coming_soon.html'), name='health'),
+    path('seasonal/', TemplateView.as_view(template_name='coming_soon.html'), name='seasonal'),
+    path('community/', TemplateView.as_view(template_name='coming_soon.html'), name='community'),
+    path('knowledge/', TemplateView.as_view(template_name='coming_soon.html'), name='knowledge'),
+
     path('about/', TemplateView.as_view(template_name='about.html'), name='about'),
     path('contacts/', TemplateView.as_view(template_name='contacts.html'), name='contacts'),
     path('faq/', TemplateView.as_view(template_name='faq.html'), name='faq'),
