@@ -98,12 +98,18 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
         {% for recipe in recipes %}
         <a href="{% url 'kitchen:recipe_detail' recipe.id %}" class="recipe-card bg-white rounded-xl border border-gray-100 overflow-hidden cursor-pointer hover:shadow-lg transition block">
-            <div class="h-32 bg-gradient-to-br
-                {% if forloop.counter0|divisibleby:5 %}from-orange-100 to-orange-200
-                {% elif forloop.counter0|divisibleby:4 %}from-green-100 to-green-200
-                {% elif forloop.counter0|divisibleby:3 %}from-yellow-100 to-yellow-200
-                {% elif forloop.counter0|divisibleby:2 %}from-blue-100 to-blue-200
-                {% else %}from-purple-100 to-purple-200{% endif %}">
+            <div class="h-32 overflow-hidden">
+                {% if recipe.image %}
+                <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}" class="w-full h-full object-cover">
+                {% else %}
+                <div class="w-full h-full bg-gradient-to-br
+                    {% if forloop.counter0|divisibleby:5 %}from-orange-100 to-orange-200
+                    {% elif forloop.counter0|divisibleby:4 %}from-green-100 to-green-200
+                    {% elif forloop.counter0|divisibleby:3 %}from-yellow-100 to-yellow-200
+                    {% elif forloop.counter0|divisibleby:2 %}from-blue-100 to-blue-200
+                    {% else %}from-purple-100 to-purple-200{% endif %}">
+                </div>
+                {% endif %}
             </div>
             <div class="p-4">
                 <div class="flex justify-between items-start">

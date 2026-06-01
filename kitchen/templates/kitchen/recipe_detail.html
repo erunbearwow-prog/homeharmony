@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{{ recipe.title }} | Семейные ценности{% endblock %}
+
+{% block extra_css %}
+<style>
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.1); }
+
+    .step-card {
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    .step-card:hover {
+        background-color: #fef9e6;
+    }
+    .step-card.completed {
+        background-color: #f4f9e8;
+        border-left: 4px solid #8bc34a;
+    }
+    .step-checkbox:checked + .step-title,
+    .step-checkbox:checked ~ .step-title {
+        text-decoration: line-through;
+        color: #9ca3af;
+    }
+
+    .progress-bar {
+        height: 0.5rem;
+        background-color: #e5e7eb;
+        border-radius: 9999px;
+        overflow: hidden;
+    }
+    .progress-fill {
+        height: 100%;
+        background-color: #d97706;
+        border-radius: 9999px;
+        transition: width 0.3s ease;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- Хлебные крошки -->
+    <div class="text-sm text-gray-500 mb-6 no-print">
+        <a href="/" class="hover:text-amber-700">Главная</a> /
+        <a href="{% url 'kitchen:index' %}" class="hover:text-amber-700">Кулинария</a> /
+        <span class="text-gray-800 font-medium">{{ recipe.title }}</span>
+    </div>
+
+    <div class="grid lg:grid-cols-3 gap-8">
+        <!-- ЛЕВАЯ КОЛОНКА: ФОТО + ОПИСАНИЕ + ШАГИ -->
+        <div class="lg:col-span-2">
+            {% if recipe.image %}
+            <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}" class="w-full rounded-2xl shadow-lg object-cover">
+            {% else %}
+            <img src="https://placehold.co/800x500/cc7b2b/ffffff?text={{ recipe.title|urlencode }}" alt="{{ recipe.title }}" class="w-full rounded-2xl shadow-lg object-cover">
+            {% endif %}
+
+            <!-- Блок информации -->
+            <div class="flex flex-wrap gap-2 sm:gap-3 mt-4 text-sm text-gray-600">
+                <span class="bg-amber-100 text-amber-800 px-2 sm:px-3 py-1 rounded-full"><i class="far fa-clock mr-1"></i> {{ recipe.total_time }} мин</span>
+                <span class="bg-green-100 text-green-800 px-2 sm:px-3 py-1 rounded-full"><i class="fas fa-chart-line mr-1"></i> {{ recipe.get_difficulty_display }}</span>
+                <span class="bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full"><i class="fas fa-utensils mr-1"></i> {{ recipe.servings }} порций</span>
+                <span class="bg-purple-100 text-purple-800 px-2 sm:px-3 py-1 rounded-full"><i class="fas fa-fire mr-1"></i> {{ recipe.calories }} ккал</span>
+                <span class="bg-indigo-100 text-indigo-800 px-2 sm:px-3 py-1 rounded-full"><i class="fas fa-dumbbell mr-1"></i> {{ recipe.protein }}г белков</span>
+                <span class="bg-pink-100 text-pink-800 px-2 sm:px-3 py-1 rounded-full"><i class="fas fa-oil-can mr-1"></i> {{ recipe.fat }}г жиров</span>
+                <span class="bg-teal-100 text-teal-800 px-2 sm:px-3 py-1 rounded-full"><i class="fas fa-bread-slice mr-1"></i> {{ recipe.carbs }}г углеводов</span>
+            </div>
+
+            <div class="flex flex-wrap gap-3 mt-5 no-print">
+                <button onclick="window.print()" class="border border-gray-300 text-gray-700 px-5 py-2 rounded-lg hover:bg-gray-50 transition">
+                    <i class="fas fa-print mr-1"></i> Печать
+                </button>
+                <button onclick="shareRecipe()" class="border border-gray-300 text-gray-700 px-5 py-2 rounded-lg hover:bg-gray-50 transition">
+                    <i class="fas fa-share-alt mr-1"></i> Поделиться
+                </button>
+            </div>
+
+            <!-- Описание -->
+            {% if recipe.description %}
+            <div class="mt-8">
+                <h2 class="text-xl font-bold serif mb-3">📖 Описание</h2>
+                <p class="text-gray-700 leading-relaxed">{{ recipe.description }}</p>
+            </div>
+            {% endif %}
+
+            <!-- ПОШАГОВОЕ ПРИГОТОВЛЕНИЕ -->
+            <div class="mt-10">
+                <h2 class="text-2xl md:text-3xl font-bold serif mb-6">🥣 Пошаговое приготовление</h2>
+
+                <div class="mb-6 no-print">
+                    <div class="flex justify-between text-sm text-gray-600 mb-1">
+                        <span>Прогресс приготовления</span>
+                        <span id="stepsProgress">0/{{ steps|length }}</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div id="stepsProgressBar" class="progress-fill" style="width: 0%"></div>
+                    </div>
+                </div>
+
+                <div class="space-y-6" id="stepsList">
+                    {% for step in steps %}
+                    <div class="flex gap-5 bg-white p-4 rounded-xl border shadow-sm step-card" data-step-id="{{ forloop.counter0 }}">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" id="step_{{ forloop.counter0 }}" class="step-checkbox mt-1 w-5 h-5 accent-amber-700">
+                            <div class="step-number text-2xl font-bold text-amber-700">{{ step.order }}</div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-start justify-between flex-wrap gap-2 mb-1">
+                                <label for="step_{{ forloop.counter0 }}" class="step-title font-semibold text-lg cursor-pointer hover:text-amber-700 transition">
+                                    {{ step.title }}
+                                </label>
+                            </div>
+                            <p class="step-description text-gray-600 mt-1">{{ step.instruction }}</p>
+                            {% if step.duration %}
+                            <div class="text-xs text-gray-400 mt-1">
+                                <i class="far fa-clock"></i> {{ step.duration }} мин
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% empty %}
+                    <p class="text-gray-500">Инструкция по приготовлению будет добавлена позже.</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <!-- ПРАВАЯ КОЛОНКА: ИНГРЕДИЕНТЫ -->
+        <div class="bg-gray-50 p-6 rounded-2xl self-start">
+            <h3 class="text-xl font-bold serif mb-4">📝 Ингредиенты</h3>
+
+            <ul class="space-y-3 text-gray-700" id="ingredientsList">
+                {% for item in ingredients %}
+                <li class="ingredient-item flex justify-between items-center flex-wrap gap-2"
+                    data-ingredient-id="{{ item.ingredient.id }}"
+                    data-original="{{ item.quantity }}"
+                    data-unit="{{ item.unit }}">
+                    <div class="flex items-center gap-2 flex-1">
+                        <input type="checkbox" id="ingredient_{{ forloop.counter0 }}" class="accent-amber-700 ingredient-checkbox">
+                        <label for="ingredient_{{ forloop.counter0 }}">{{ item.ingredient.name }}</label>
+                    </div>
+                    <span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border text-sm">
+                        {{ item.quantity }} {{ item.unit }}
+                    </span>
+                </li>
+                {% empty %}
+                <li class="text-gray-500">Список ингредиентов будет добавлен позже.</li>
+                {% endfor %}
+            </ul>
+
+            <!-- Пищевая ценность -->
+            {% if recipe.calories or recipe.protein or recipe.fat or recipe.carbs %}
+            <div class="mt-6 pt-4 border-t border-gray-200">
+                <h4 class="font-semibold text-gray-700 text-sm mb-2">📊 Пищевая ценность (на порцию)</h4>
+                <div class="grid grid-cols-4 gap-2 text-center text-xs">
+                    <div><span class="font-semibold text-amber-700">{{ recipe.calories }}</span> <span class="text-gray-500">ккал</span></div>
+                    <div><span class="font-semibold text-amber-700">{{ recipe.protein }}</span> <span class="text-gray-500">белки</span></div>
+                    <div><span class="font-semibold text-amber-700">{{ recipe.fat }}</span> <span class="text-gray-500">жиры</span></div>
+                    <div><span class="font-semibold text-amber-700">{{ recipe.carbs }}</span> <span class="text-gray-500">углеводы</span></div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    window.shareRecipe = function() {
+        if (navigator.share) {
+            navigator.share({
+                title: '{{ recipe.title|escapejs }}',
+                text: 'Проверенный рецепт от Семейных ценностей',
+                url: window.location.href
+            });
+        } else {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                alert('Ссылка скопирована!');
+            });
+        }
+    };
+
+    // Сохранение состояния чекбоксов
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.step-checkbox').forEach(cb => {
+            const saved = localStorage.getItem(`step_${cb.id}`);
+            if (saved === 'true') cb.checked = true;
+            cb.addEventListener('change', function() {
+                localStorage.setItem(`step_${cb.id}`, cb.checked);
+                updateProgress();
+            });
+        });
+
+        function updateProgress() {
+            const checkboxes = document.querySelectorAll('.step-checkbox');
+            const total = checkboxes.length;
+            const completed = Array.from(checkboxes).filter(cb => cb.checked).length;
+            const percent = total ? (completed / total) * 100 : 0;
+            document.getElementById('stepsProgress').innerText = `${completed}/${total}`;
+            document.getElementById('stepsProgressBar').style.width = `${percent}%`;
+
+            document.querySelectorAll('.step-card').forEach((card, idx) => {
+                if (checkboxes[idx]?.checked) {
+                    card.classList.add('completed');
+                } else {
+                    card.classList.remove('completed');
+                }
+            });
+        }
+
+        updateProgress();
+
+        // Кликабельные карточки шагов
+        document.querySelectorAll('.step-card').forEach(card => {
+            card.addEventListener('click', (e) => {
+                if (e.target.closest('a') || e.target.closest('button')) return;
+                const checkbox = card.querySelector('.step-checkbox');
+                if (checkbox) {
+                    checkbox.checked = !checkbox.checked;
+                    checkbox.dispatchEvent(new Event('change'));
+                }
+            });
+        });
+    });
+</script>
+{% endblock %}
