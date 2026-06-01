@@ -131,13 +131,11 @@ function updateIngredientsDisplay(ratio, skipReplacements = false) {
         let newVal = originalValues[idx] * ratio;
         const unit = item.dataset.unit;
 
-        // Применяем замену, если есть
         if (!skipReplacements && ingredientReplacements[item.dataset.ingredientId]) {
             const replacement = ingredientReplacements[item.dataset.ingredientId];
             newVal = newVal * replacement.ratio;
         }
 
-        // Умное округление
         if (unit === 'шт.' || unit === 'зубч.' || unit === 'ст. л.') {
             newVal = Math.ceil(newVal);
         } else if (unit === 'г' || unit === 'мл') {
@@ -705,7 +703,6 @@ async function showMethodDetails(button) {
     const modal = document.getElementById('methodModal');
     if (!modal) return;
 
-    // Демо-данные для всех методов
     const demoData = {
         name: methodName,
         icon: 'fa-utensils',
@@ -719,13 +716,11 @@ async function showMethodDetails(button) {
         advanced_notes: 'Для опытных кулинаров: дополнительные нюансы.'
     };
 
-    // Заполняем модальное окно
     document.getElementById('methodModalName').innerText = demoData.name;
     document.getElementById('methodModalIcon').className = `fas ${demoData.icon} text-amber-600`;
     document.getElementById('methodModalShortDesc').innerText = demoData.short_description;
     document.getElementById('methodModalDesc').innerHTML = demoData.description;
 
-    // Научное обоснование
     const scienceBlock = document.getElementById('methodModalScience');
     const scienceText = document.getElementById('methodModalScienceText');
     if (demoData.scientific_background) {
@@ -735,7 +730,6 @@ async function showMethodDetails(button) {
         scienceBlock.classList.add('hidden');
     }
 
-    // Температура
     const tempBlock = document.getElementById('methodModalTemp');
     const tempText = document.getElementById('methodModalTempText');
     if (demoData.typical_temperature) {
@@ -745,7 +739,6 @@ async function showMethodDetails(button) {
         tempBlock.classList.add('hidden');
     }
 
-    // Длительность
     const durationBlock = document.getElementById('methodModalDuration');
     const durationText = document.getElementById('methodModalDurationText');
     if (demoData.typical_duration) {
@@ -755,7 +748,6 @@ async function showMethodDetails(button) {
         durationBlock.classList.add('hidden');
     }
 
-    // Советы
     const tipsBlock = document.getElementById('methodModalTips');
     const tipsText = document.getElementById('methodModalTipsText');
     if (demoData.tips) {
@@ -765,7 +757,6 @@ async function showMethodDetails(button) {
         tipsBlock.classList.add('hidden');
     }
 
-    // Типичные ошибки
     const mistakesBlock = document.getElementById('methodModalMistakes');
     const mistakesText = document.getElementById('methodModalMistakesText');
     if (demoData.common_mistakes) {
@@ -775,7 +766,6 @@ async function showMethodDetails(button) {
         mistakesBlock.classList.add('hidden');
     }
 
-    // Для опытных
     const advancedBlock = document.getElementById('methodModalAdvanced');
     const advancedText = document.getElementById('methodModalAdvancedText');
     if (demoData.advanced_notes) {
@@ -791,6 +781,141 @@ async function showMethodDetails(button) {
 function closeMethodModal() {
     const modal = document.getElementById('methodModal');
     if (modal) modal.classList.add('hidden');
+}
+
+// ======================= ПОДГОТОВКА ПРОДУКТОВ =======================
+let preparationsCache = {};
+
+async function showPreparationDetails(button) {
+    const preparationId = button.dataset.preparationId;
+    const preparationName = button.dataset.preparationName;
+
+    const modal = document.getElementById('preparationModal');
+    if (!modal) return;
+
+    const demoData = {
+        name: preparationName,
+        description: 'Подробное описание техники подготовки продуктов.',
+        tips: '• Полезный совет 1\n• Полезный совет 2',
+        time_factor: 'Увеличивает время приготовления на 10%'
+    };
+
+    document.getElementById('preparationModalName').innerText = demoData.name;
+    document.getElementById('preparationModalDesc').innerHTML = demoData.description;
+
+    const tipsBlock = document.getElementById('preparationModalTips');
+    const tipsText = document.getElementById('preparationModalTipsText');
+    if (demoData.tips) {
+        tipsText.innerText = demoData.tips;
+        tipsBlock.classList.remove('hidden');
+    } else {
+        tipsBlock.classList.add('hidden');
+    }
+
+    const timeBlock = document.getElementById('preparationModalTime');
+    const timeText = document.getElementById('preparationModalTimeText');
+    if (demoData.time_factor) {
+        timeText.innerText = demoData.time_factor;
+        timeBlock.classList.remove('hidden');
+    } else {
+        timeBlock.classList.add('hidden');
+    }
+
+    modal.classList.remove('hidden');
+}
+
+function closePreparationModal() {
+    const modal = document.getElementById('preparationModal');
+    if (modal) modal.classList.add('hidden');
+}
+
+// ======================= РЕКОМЕНДОВАННАЯ УТВАРЬ =======================
+let utensilsCache = {};
+
+async function showUtensilDetails(button) {
+    const utensilId = button.dataset.utensilId;
+    const utensilName = button.dataset.utensilName;
+
+    const modal = document.getElementById('utensilModal');
+    if (!modal) return;
+
+    const demoData = {
+        name: utensilName,
+        description: 'Описание рекомендуемой утвари и её назначения.',
+        alternative: 'Можно заменить обычным ножом',
+        care: 'Мыть в тёплой воде, сушить в вертикальном положении'
+    };
+
+    document.getElementById('utensilModalName').innerText = demoData.name;
+    document.getElementById('utensilModalDesc').innerHTML = demoData.description;
+
+    const altBlock = document.getElementById('utensilModalAlternative');
+    const altText = document.getElementById('utensilModalAlternativeText');
+    if (demoData.alternative) {
+        altText.innerText = demoData.alternative;
+        altBlock.classList.remove('hidden');
+    } else {
+        altBlock.classList.add('hidden');
+    }
+
+    const careBlock = document.getElementById('utensilModalCare');
+    const careText = document.getElementById('utensilModalCareText');
+    if (demoData.care) {
+        careText.innerText = demoData.care;
+        careBlock.classList.remove('hidden');
+    } else {
+        careBlock.classList.add('hidden');
+    }
+
+    modal.classList.remove('hidden');
+}
+
+function closeUtensilModal() {
+    const modal = document.getElementById('utensilModal');
+    if (modal) modal.classList.add('hidden');
+}
+
+// ======================= ПЕРЕКЛЮЧЕНИЕ РЕЖИМОВ ОТОБРАЖЕНИЯ =======================
+const modeNormalBtn = document.getElementById('modeNormalBtn');
+const modeCompactBtn = document.getElementById('modeCompactBtn');
+const stepsContainer = document.getElementById('stepsList');
+
+function setStepsMode(mode) {
+    if (!stepsContainer) return;
+
+    if (mode === 'compact') {
+        stepsContainer.classList.add('compact-mode');
+        if (modeCompactBtn) {
+            modeCompactBtn.classList.add('bg-white', 'shadow-sm');
+            modeCompactBtn.classList.remove('text-gray-600');
+        }
+        if (modeNormalBtn) {
+            modeNormalBtn.classList.remove('bg-white', 'shadow-sm');
+            modeNormalBtn.classList.add('text-gray-600');
+        }
+        localStorage.setItem('steps_display_mode', 'compact');
+    } else {
+        stepsContainer.classList.remove('compact-mode');
+        if (modeNormalBtn) {
+            modeNormalBtn.classList.add('bg-white', 'shadow-sm');
+            modeNormalBtn.classList.remove('text-gray-600');
+        }
+        if (modeCompactBtn) {
+            modeCompactBtn.classList.remove('bg-white', 'shadow-sm');
+            modeCompactBtn.classList.add('text-gray-600');
+        }
+        localStorage.setItem('steps_display_mode', 'normal');
+    }
+}
+
+if (modeNormalBtn && modeCompactBtn) {
+    modeNormalBtn.addEventListener('click', () => setStepsMode('normal'));
+    modeCompactBtn.addEventListener('click', () => setStepsMode('compact'));
+
+    const savedMode = localStorage.getItem('steps_display_mode');
+    if (savedMode === 'compact') {
+        setStepsMode('compact');
+    }
 }
 
 // ======================= ВОССТАНОВЛЕНИЕ ИЗ URL =======================
@@ -916,11 +1041,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     document.getElementById('confirmReplaceBtn')?.addEventListener('click', () => applyReplacement());
 
-    // Закрытие модалки методов по клику вне области
+    // Закрытие модальных окон по клику вне области
     document.getElementById('methodModal')?.addEventListener('click', (e) => {
-        if (e.target === document.getElementById('methodModal')) {
-            closeMethodModal();
-        }
+        if (e.target === document.getElementById('methodModal')) closeMethodModal();
+    });
+    document.getElementById('preparationModal')?.addEventListener('click', (e) => {
+        if (e.target === document.getElementById('preparationModal')) closePreparationModal();
+    });
+    document.getElementById('utensilModal')?.addEventListener('click', (e) => {
+        if (e.target === document.getElementById('utensilModal')) closeUtensilModal();
     });
 
     restoreCheckboxStates();
@@ -961,141 +1090,26 @@ document.addEventListener('DOMContentLoaded', function() {
     applyStoredReplacements();
     updateIngredientLinks();
 
+    // Привязываем функции к window
+    window.showMethodDetails = showMethodDetails;
+    window.closeMethodModal = closeMethodModal;
+    window.showPreparationDetails = showPreparationDetails;
+    window.closePreparationModal = closePreparationModal;
+    window.showUtensilDetails = showUtensilDetails;
+    window.closeUtensilModal = closeUtensilModal;
+
     console.log('Инициализация завершена');
+    console.log('Глобальные функции:', {
+        showMethodDetails: typeof window.showMethodDetails,
+        showPreparationDetails: typeof window.showPreparationDetails,
+        showUtensilDetails: typeof window.showUtensilDetails,
+    });
 });
 
-// ======================= ПОДГОТОВКА ПРОДУКТОВ =======================
-let preparationsCache = {};
-
-async function showPreparationDetails(button) {
-    const preparationId = button.dataset.preparationId;
-    const preparationName = button.dataset.preparationName;
-
-    const modal = document.getElementById('preparationModal');
-    if (!modal) return;
-
-    // Демо-данные
-    const demoData = {
-        name: preparationName,
-        description: 'Подробное описание техники подготовки продуктов.',
-        tips: '• Полезный совет 1\n• Полезный совет 2',
-        time_factor: 'Увеличивает время приготовления на 10%'
-    };
-
-    document.getElementById('preparationModalName').innerText = demoData.name;
-    document.getElementById('preparationModalDesc').innerHTML = demoData.description;
-
-    const tipsBlock = document.getElementById('preparationModalTips');
-    const tipsText = document.getElementById('preparationModalTipsText');
-    if (demoData.tips) {
-        tipsText.innerText = demoData.tips;
-        tipsBlock.classList.remove('hidden');
-    } else {
-        tipsBlock.classList.add('hidden');
-    }
-
-    const timeBlock = document.getElementById('preparationModalTime');
-    const timeText = document.getElementById('preparationModalTimeText');
-    if (demoData.time_factor) {
-        timeText.innerText = demoData.time_factor;
-        timeBlock.classList.remove('hidden');
-    } else {
-        timeBlock.classList.add('hidden');
-    }
-
-    modal.classList.remove('hidden');
-}
-
-function closePreparationModal() {
-    const modal = document.getElementById('preparationModal');
-    if (modal) modal.classList.add('hidden');
-}
-
-// ======================= РЕКОМЕНДОВАННАЯ УТВАРЬ =======================
-let utensilsCache = {};
-
-async function showUtensilDetails(button) {
-    const utensilId = button.dataset.utensilId;
-    const utensilName = button.dataset.utensilName;
-
-    const modal = document.getElementById('utensilModal');
-    if (!modal) return;
-
-    // Демо-данные
-    const demoData = {
-        name: utensilName,
-        description: 'Описание рекомендуемой утвари и её назначения.',
-        alternative: 'Можно заменить обычным ножом',
-        care: 'Мыть в тёплой воде, сушить в вертикальном положении'
-    };
-
-    document.getElementById('utensilModalName').innerText = demoData.name;
-    document.getElementById('utensilModalDesc').innerHTML = demoData.description;
-
-    const altBlock = document.getElementById('utensilModalAlternative');
-    const altText = document.getElementById('utensilModalAlternativeText');
-    if (demoData.alternative) {
-        altText.innerText = demoData.alternative;
-        altBlock.classList.remove('hidden');
-    } else {
-        altBlock.classList.add('hidden');
-    }
-
-    const careBlock = document.getElementById('utensilModalCare');
-    const careText = document.getElementById('utensilModalCareText');
-    if (demoData.care) {
-        careText.innerText = demoData.care;
-        careBlock.classList.remove('hidden');
-    } else {
-        careBlock.classList.add('hidden');
-    }
-
-    modal.classList.remove('hidden');
-}
-
-function closeUtensilModal() {
-    const modal = document.getElementById('utensilModal');
-    if (modal) modal.classList.add('hidden');
-}
-
-// ======================= ПЕРЕКЛЮЧЕНИЕ РЕЖИМОВ ОТОБРАЖЕНИЯ =======================
-const modeNormalBtn = document.getElementById('modeNormalBtn');
-const modeCompactBtn = document.getElementById('modeCompactBtn');
-const stepsContainer = document.getElementById('stepsList');
-
-function setStepsMode(mode) {
-    if (mode === 'compact') {
-        stepsContainer.classList.add('compact-mode');
-        modeCompactBtn.classList.add('bg-white', 'shadow-sm');
-        modeCompactBtn.classList.remove('text-gray-600');
-        modeNormalBtn.classList.remove('bg-white', 'shadow-sm');
-        modeNormalBtn.classList.add('text-gray-600');
-        localStorage.setItem('steps_display_mode', 'compact');
-    } else {
-        stepsContainer.classList.remove('compact-mode');
-        modeNormalBtn.classList.add('bg-white', 'shadow-sm');
-        modeNormalBtn.classList.remove('text-gray-600');
-        modeCompactBtn.classList.remove('bg-white', 'shadow-sm');
-        modeCompactBtn.classList.add('text-gray-600');
-        localStorage.setItem('steps_display_mode', 'normal');
-    }
-}
-
-if (modeNormalBtn && modeCompactBtn) {
-    modeNormalBtn.addEventListener('click', () => setStepsMode('normal'));
-    modeCompactBtn.addEventListener('click', () => setStepsMode('compact'));
-
-    // Восстанавливаем сохранённый режим
-    const savedMode = localStorage.getItem('steps_display_mode');
-    if (savedMode === 'compact') {
-        setStepsMode('compact');
-    }
-}
-
-// Делаем функции глобальными
+// Дублируем привязку на всякий случай
+window.showMethodDetails = showMethodDetails;
+window.closeMethodModal = closeMethodModal;
 window.showPreparationDetails = showPreparationDetails;
 window.closePreparationModal = closePreparationModal;
 window.showUtensilDetails = showUtensilDetails;
 window.closeUtensilModal = closeUtensilModal;
-window.showMethodDetails = showMethodDetails;
-window.closeMethodModal = closeMethodModal;
