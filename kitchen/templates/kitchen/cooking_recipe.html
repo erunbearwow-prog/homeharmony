@@ -69,6 +69,19 @@
                 <span class="bg-teal-100 text-teal-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"><i class="fas fa-bread-slice mr-1"></i> 42г углеводов</span>
             </div>
 
+            <!-- ТЕГИ -->
+            <div class="flex flex-wrap gap-2 mt-4">
+                <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">
+                    <i class="fas fa-globe mr-1"></i> Русская кухня
+                </span>
+                <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">
+                    <i class="fas fa-leaf mr-1"></i> Традиционное блюдо
+                </span>
+                <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">
+                    <i class="fas fa-snowflake mr-1"></i> Зимнее блюдо
+                </span>
+            </div>
+
             <div class="flex flex-wrap gap-3 mt-5 no-print">
                 <button onclick="window.print()" class="border border-gray-300 text-gray-700 px-5 py-2 rounded-lg hover:bg-gray-50 transition">
                     <i class="fas fa-print mr-1"></i> Печать
@@ -81,8 +94,67 @@
             <!-- ПОДКЛЮЧАЕМ ВИДЖЕТ ПОШАГОВОГО ПРИГОТОВЛЕНИЯ -->
             {% include 'kitchen/includes/cooking_steps.html' %}
 
+            <!-- НЕОБХОДИМАЯ УТВАРЬ -->
+            <div class="mt-8 pt-4 border-t border-gray-200">
+                <h3 class="font-semibold text-gray-800 mb-3 flex items-center gap-2">
+                    <i class="fas fa-utensils text-amber-600"></i>
+                    Потребуется:
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-sm bg-gray-100 px-3 py-1.5 rounded-full">кастрюля 3-4 л</span>
+                    <span class="text-sm bg-gray-100 px-3 py-1.5 rounded-full">сковорода</span>
+                    <span class="text-sm bg-gray-100 px-3 py-1.5 rounded-full">разделочная доска</span>
+                    <span class="text-sm bg-gray-100 px-3 py-1.5 rounded-full">нож</span>
+                    <span class="text-sm bg-gray-100 px-3 py-1.5 rounded-full">шумовка</span>
+                </div>
+            </div>
+
+            <!-- С ЧЕМ ПОДАВАТЬ -->
+            <div class="mt-6 pt-4 border-t border-gray-200">
+                <h3 class="font-semibold text-gray-800 mb-3 flex items-center gap-2">
+                    <i class="fas fa-wine-bottle text-amber-600"></i>
+                    Идеально подавать с:
+                </h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                    <div class="bg-gray-50 p-2 rounded-lg text-center">
+                        <i class="fas fa-bread-slice text-gray-500 text-sm"></i>
+                        <span class="text-xs text-gray-600 block">пампушки</span>
+                    </div>
+                    <div class="bg-gray-50 p-2 rounded-lg text-center">
+                        <i class="fas fa-cheese text-gray-500 text-sm"></i>
+                        <span class="text-xs text-gray-600 block">сметана</span>
+                    </div>
+                    <div class="bg-gray-50 p-2 rounded-lg text-center">
+                        <i class="fas fa-wine-bottle text-gray-500 text-sm"></i>
+                        <span class="text-xs text-gray-600 block">холодная горилка</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- СОВЕТ ДНЯ -->
+            <div class="mt-6 p-4 bg-amber-50 rounded-xl border border-amber-100">
+                <div class="flex gap-3">
+                    <i class="fas fa-lightbulb text-amber-500 text-xl"></i>
+                    <div>
+                        <h4 class="font-semibold text-amber-800 text-sm">Совет дня</h4>
+                        <p class="text-sm text-gray-700">Чтобы борщ получился ярко-красным, добавьте в него чайную ложку лимонного сока или уксуса в конце варки — это сохранит цвет свёклы.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ПИЩЕВАЯ ЦЕННОСТЬ НА 100 Г -->
+            <div class="mt-4 p-3 bg-gray-50 rounded-lg">
+                <h4 class="font-semibold text-gray-700 text-sm mb-2">📊 Пищевая ценность (на 100 г)</h4>
+                <div class="grid grid-cols-4 gap-2 text-center text-xs">
+                    <div><span class="font-semibold text-amber-700">65</span> <span class="text-gray-500">ккал</span></div>
+                    <div><span class="font-semibold text-amber-700">3</span> <span class="text-gray-500">белки</span></div>
+                    <div><span class="font-semibold text-amber-700">2</span> <span class="text-gray-500">жиры</span></div>
+                    <div><span class="font-semibold text-amber-700">8</span> <span class="text-gray-500">углеводы</span></div>
+                </div>
+            </div>
+
             <!-- ОТЗЫВЫ -->
-            <div class="mt-12 border-t pt-8 no-print">
+            <div class="mt-8 border-t pt-8 no-print">
                 <div class="flex justify-between items-center flex-wrap">
                     <h2 class="text-2xl font-bold serif">⭐ Отзывы (12)</h2>
                     <div class="flex gap-1 text-amber-500">
@@ -121,6 +193,22 @@
                             <a href="#" class="text-amber-700 text-sm">Смотреть →</a>
                         </div>
                     </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                        <img src="https://placehold.co/400x240/cc7b2b/ffffff?text=Рассольник" class="h-36 w-full object-cover">
+                        <div class="p-3">
+                            <h3 class="font-bold">Рассольник</h3>
+                            <p class="text-sm text-gray-500">1 час 15 мин | Средний</p>
+                            <a href="#" class="text-amber-700 text-sm">Смотреть →</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                        <img src="https://placehold.co/400x240/fde68a/92400e?text=Окрошка" class="h-36 w-full object-cover">
+                        <div class="p-3">
+                            <h3 class="font-bold">Окрошка</h3>
+                            <p class="text-sm text-gray-500">45 мин | Лёгкий</p>
+                            <a href="#" class="text-amber-700 text-sm">Смотреть →</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -130,7 +218,7 @@
     </div>
 </div>
 
-<!-- МОДАЛЬНОЕ ОКНО ДЛЯ ЗАМЕНЫ ИНГРЕДИЕНТОВ -->
+<!-- МОДАЛЬНЫЕ ОКНА -->
 <div id="replaceModal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden no-print">
     <div class="bg-white rounded-2xl p-6 max-w-md w-full mx-4 shadow-xl">
         <h3 class="text-xl font-bold serif mb-4">🔄 Замена ингредиента</h3>
@@ -164,17 +252,11 @@
     </div>
 </div>
 
-<!-- МОДАЛЬНОЕ ОКНО ДЛЯ МЕТОДОВ ПРИГОТОВЛЕНИЯ -->
 {% include 'kitchen/includes/method_modal.html' %}
-
-<!-- МОДАЛЬНОЕ ОКНО ДЛЯ ПОДГОТОВКИ ПРОДУКТОВ -->
 {% include 'kitchen/includes/preparation_modal.html' %}
-
-<!-- МОДАЛЬНОЕ ОКНО ДЛЯ УТВАРИ -->
 {% include 'kitchen/includes/utensil_modal.html' %}
 
 {% endblock %}
-
 
 {% block extra_js %}
 <script src="{% static 'kitchen/js/recipe.js' %}"></script>

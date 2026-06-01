@@ -1,65 +1,213 @@
 from django.db import models
+from django.core.validators import MinValueValidator
 from imagekit.models import ImageSpecField
-from imagekit.processors import ResizeToFill, ResizeToFit
+from imagekit.processors import ResizeToFill
 
 
+# ======================= КУХНИ МИРА =======================
+class Cuisine(models.Model):
+    """Кухня мира"""
+    name = models.CharField(max_length=100, verbose_name='Название')
+    region = models.CharField(max_length=100, blank=True, verbose_name='Регион')
+    description = models.TextField(blank=True, verbose_name='Описание')
+    traditions = models.TextField(blank=True, verbose_name='Традиции')
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        verbose_name = 'Кухня мира'
+        verbose_name_plural = 'Кухни мира'
+
+    def __str__(self):
+        return self.name
+
+
+# ======================= ДИЕТЫ =======================
+class Diet(models.Model):
+    """Диета"""
+    name = models.CharField(max_length=100, verbose_name='Название')
+    authority = models.CharField(max_length=200, blank=True, verbose_name='Утвердивший орган')
+    description = models.TextField(blank=True, verbose_name='Описание')
+    allowed_ingredients = models.ManyToManyField('Ingredient', blank=True, related_name='allowed_for_diets')
+    prohibited_ingredients = models.ManyToManyField('Ingredient', blank=True, related_name='prohibited_for_diets')
+    allowed_methods = models.TextField(blank=True, verbose_name='Разрешённые методы приготовления')
+    nutritional_guidelines = models.TextField(blank=True, verbose_name='Нормы КБЖУ')
+    medical_indications = models.TextField(blank=True, verbose_name='Медицинские показания')
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        verbose_name = 'Диета'
+        verbose_name_plural = 'Диеты'
+
+    def __str__(self):
+        return self.name
+
+
+# ======================= КАТЕГОРИИ ИНГРЕДИЕНТОВ =======================
+class IngredientCategory(models.Model):
+    """Категория ингредиентов"""
+    name = models.CharField(max_length=100, unique=True, verbose_name='Название')
+    parent = models.ForeignKey('self', on_delete=models.SET_NULL, null=True, blank=True,
+                               related_name='subcategories', verbose_name='Родительская категория')
+    icon = models.CharField(max_length=50, blank=True, verbose_name='Иконка')
+    sort_order = models.IntegerField(default=0, verbose_name='Порядок сортировки')
+
+    class Meta:
+        verbose_name = 'Категория ингредиентов'
+        verbose_name_plural = 'Категории ингредиентов'
+        ordering = ['sort_order', 'name']
+
+    def __str__(self):
+        return self.name
+
+
+# ======================= ИНГРЕДИЕНТЫ =======================
+class Ingredient(models.Model):
+    """Ингредиент"""
+    UNIT_CHOICES = [
+        ('г', 'грамм'),
+        ('кг', 'килограмм'),
+        ('мл', 'миллилитр'),
+        ('л', 'литр'),
+        ('шт', 'штука'),
+        ('ст.л.', 'столовая ложка'),
+        ('ч.л.', 'чайная ложка'),
+        ('щеп.', 'щепотка'),
+    ]
+
+    name = models.CharField(max_length=200, unique=True, verbose_name='Название')
+    category = models.ForeignKey(IngredientCategory, on_delete=models.SET_NULL, null=True, blank=True,
+                                 related_name='ingredients', verbose_name='Категория')
+    description = models.TextField(blank=True, verbose_name='Описание')
+    default_unit = models.CharField(max_length=20, choices=UNIT_CHOICES, default='г', verbose_name='Единица измерения')
+
+    # Пищевая ценность
+    calories_per_100g = models.IntegerField(default=0, verbose_name='Калории (ккал на 100г)')
+    protein_per_100g = models.FloatField(default=0, verbose_name='Белки (г на 100г)')
+    fat_per_100g = models.FloatField(default=0, verbose_name='Жиры (г на 100г)')
+    carbs_per_100g = models.FloatField(default=0, verbose_name='Углеводы (г на 100г)')
+
+    # Сезонность
+    season_start = models.IntegerField(null=True, blank=True, verbose_name='Начало сезона (месяц)')
+    season_end = models.IntegerField(null=True, blank=True, verbose_name='Конец сезона (месяц)')
+
+    # Хранение
+    storage_conditions = models.TextField(blank=True, verbose_name='Условия хранения')
+    shelf_life_days = models.IntegerField(default=7, verbose_name='Срок хранения (дни)')
+
+    # Аллергены
+    allergens = models.JSONField(default=list, blank=True, verbose_name='Аллергены')
+
+    # Плотность
+    density_data = models.JSONField(default=dict, blank=True, verbose_name='Плотность')
+
+    # Диетические метки
+    is_common = models.BooleanField(default=False, verbose_name='Часто используемый')
+    is_vegetarian = models.BooleanField(default=True, verbose_name='Вегетарианский')
+    is_vegan = models.BooleanField(default=True, verbose_name='Веганский')
+    is_gluten_free = models.BooleanField(default=True, verbose_name='Без глютена')
+
+    # Изображение
+    image = models.ImageField(upload_to='ingredients/', null=True, blank=True, verbose_name='Изображение')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        verbose_name = 'Ингредиент'
+        verbose_name_plural = 'Ингредиенты'
+        ordering = ['name']
+
+    def __str__(self):
+        return self.name
+
+
+# ======================= РЕЦЕПТЫ =======================
 class Recipe(models.Model):
-    title = models.CharField(max_length=200, verbose_name='Название')
-    description = models.TextField(verbose_name='Описание', blank=True)
-    cooking_time = models.IntegerField(verbose_name='Время приготовления (мин)')
-    difficulty = models.CharField(max_length=20, choices=[
+    DIFFICULTY_CHOICES = [
         ('easy', 'Лёгкий'),
         ('medium', 'Средний'),
         ('hard', 'Сложный'),
-    ], default='medium', verbose_name='Сложность')
+    ]
+
+    title = models.CharField(max_length=200, verbose_name='Название')
+    cuisine = models.ForeignKey(Cuisine, on_delete=models.SET_NULL, null=True, blank=True, verbose_name='Кухня')
+    author = models.CharField(max_length=100, blank=True, verbose_name='Автор')
+    description = models.TextField(blank=True, verbose_name='Описание')
+
+    total_time = models.IntegerField(default=0, verbose_name='Время приготовления (мин)')
     servings = models.IntegerField(default=4, verbose_name='Порций')
+    difficulty = models.CharField(max_length=10, choices=DIFFICULTY_CHOICES, default='medium', verbose_name='Сложность')
+
+    # Изображения
+    image = models.ImageField(upload_to='recipes/', null=True, blank=True, verbose_name='Изображение')
+    video = models.URLField(blank=True, verbose_name='Видео')
+
+    # Пищевая ценность блюда
     calories = models.IntegerField(default=0, verbose_name='Калории')
     protein = models.IntegerField(default=0, verbose_name='Белки')
     fat = models.IntegerField(default=0, verbose_name='Жиры')
     carbs = models.IntegerField(default=0, verbose_name='Углеводы')
 
-    # Оригинальное изображение
-    image = models.ImageField(upload_to='recipes/original/', verbose_name='Изображение')
+    # Диеты
+    diet_tags = models.ManyToManyField(Diet, blank=True, verbose_name='Диеты')
+    related_recipes = models.ManyToManyField('self', blank=True, verbose_name='Связанные рецепты')
 
-    # Автоматически генерируемые версии
-    image_400w = ImageSpecField(
-        source='image',
-        processors=[ResizeToFit(400, 250)],
-        format='WEBP',
-        options={'quality': 85}
-    )
-    image_800w = ImageSpecField(
-        source='image',
-        processors=[ResizeToFit(800, 500)],
-        format='WEBP',
-        options={'quality': 85}
-    )
-    image_1200w = ImageSpecField(
-        source='image',
-        processors=[ResizeToFit(1200, 750)],
-        format='WEBP',
-        options={'quality': 85}
-    )
-
-    # Для старых браузеров (fallback)
-    image_fallback = ImageSpecField(
-        source='image',
-        processors=[ResizeToFit(800, 500)],
-        format='JPEG',
-        options={'quality': 85}
-    )
-
-    def __str__(self):
-        return self.title
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
         verbose_name = 'Рецепт'
         verbose_name_plural = 'Рецепты'
 
+    def __str__(self):
+        return self.title
 
+
+# ======================= ИНГРЕДИЕНТЫ РЕЦЕПТА =======================
+class RecipeIngredient(models.Model):
+    """Связь рецепта и ингредиента"""
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name='recipe_ingredients')
+    ingredient = models.ForeignKey(Ingredient, on_delete=models.CASCADE, related_name='recipe_uses')
+    quantity = models.FloatField(verbose_name='Количество', validators=[MinValueValidator(0)])
+    unit = models.CharField(max_length=20, choices=Ingredient.UNIT_CHOICES, default='г',
+                            verbose_name='Единица измерения')
+    notes = models.CharField(max_length=500, blank=True, verbose_name='Примечания')
+    is_scalable = models.BooleanField(default=True, verbose_name='Масштабируется')
+
+    class Meta:
+        verbose_name = 'Ингредиент рецепта'
+        verbose_name_plural = 'Ингредиенты рецептов'
+        unique_together = ['recipe', 'ingredient']
+
+    def __str__(self):
+        return f"{self.ingredient.name}: {self.quantity} {self.unit}"
+
+
+# ======================= ШАГИ ПРИГОТОВЛЕНИЯ =======================
+class RecipeStep(models.Model):
+    """Шаг приготовления"""
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name='steps')
+    order = models.IntegerField(verbose_name='Порядок')
+    title = models.CharField(max_length=200, verbose_name='Заголовок')
+    instruction = models.TextField(verbose_name='Инструкция')
+    duration = models.IntegerField(default=0, verbose_name='Длительность (мин)')
+    temperature = models.IntegerField(null=True, blank=True, verbose_name='Температура')
+
+    # Вложенный рецепт
+    subrecipe = models.ForeignKey(Recipe, on_delete=models.SET_NULL, null=True, blank=True,
+                                  related_name='used_in_steps', verbose_name='Вложенный рецепт')
+
+    class Meta:
+        verbose_name = 'Шаг приготовления'
+        verbose_name_plural = 'Шаги приготовления'
+        ordering = ['order']
+
+    def __str__(self):
+        return f"{self.order}. {self.title}"
+
+
+# ======================= МЕТОДЫ ПРИГОТОВЛЕНИЯ =======================
 class CookingMethod(models.Model):
-    """Метод приготовления — кулинарная техника"""
-
+    """Метод приготовления"""
     CATEGORY_CHOICES = [
         ('thermal', 'Тепловая обработка'),
         ('preparation', 'Подготовка продуктов'),
@@ -67,81 +215,63 @@ class CookingMethod(models.Model):
         ('other', 'Прочее'),
     ]
 
-    # Основная информация
     name = models.CharField(max_length=100, unique=True, verbose_name='Название')
-    category = models.CharField(max_length=20, choices=CATEGORY_CHOICES, default='thermal')
+    category = models.CharField(max_length=20, choices=CATEGORY_CHOICES, default='thermal', verbose_name='Категория')
     short_description = models.CharField(max_length=200, verbose_name='Краткое описание')
-
-    # Развёрнутое описание
-    description = models.TextField(verbose_name='Подробное описание техники')
+    description = models.TextField(verbose_name='Подробное описание')
     scientific_background = models.TextField(blank=True, verbose_name='Научное обоснование')
 
-    # Параметры
     typical_temperature = models.CharField(max_length=50, blank=True, verbose_name='Типичная температура')
     typical_duration = models.CharField(max_length=50, blank=True, verbose_name='Типичная длительность')
 
-    # Советы
-    tips = models.TextField(blank=True, verbose_name='Советы и хитрости')
+    tips = models.TextField(blank=True, verbose_name='Советы')
     common_mistakes = models.TextField(blank=True, verbose_name='Типичные ошибки')
+    advanced_notes = models.TextField(blank=True, verbose_name='Для опытных')
 
-    # Визуальный контент
-    icon = models.CharField(max_length=50, default='fa-fire', verbose_name='Иконка (FontAwesome)')
-    color = models.CharField(max_length=20, default='amber', verbose_name='Цвет темы')
-
-    # Для продвинутых пользователей
-    advanced_notes = models.TextField(blank=True, verbose_name='Для опытных кулинаров')
+    icon = models.CharField(max_length=50, default='fa-fire', verbose_name='Иконка')
+    color = models.CharField(max_length=20, default='amber', verbose_name='Цвет')
 
     created_at = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return self.name
 
     class Meta:
         verbose_name = 'Метод приготовления'
         verbose_name_plural = 'Методы приготовления'
 
+    def __str__(self):
+        return self.name
 
+
+# ======================= ПОДГОТОВКА ПРОДУКТОВ =======================
 class IngredientPreparation(models.Model):
-    """Подготовка продуктов (нарезка, замачивание, маринование)"""
-    name = models.CharField(max_length=100)  # "шинковка", "кубики", "соломка"
-    description = models.TextField()
-    image = models.ImageField(upload_to='preparations/', null=True, blank=True)
-    video_url = models.URLField(blank=True)
-    time_factor = models.FloatField(default=1.0, help_text="Коэффициент увеличения времени")
-    tips = models.TextField(blank=True)
+    """Способ подготовки продуктов (нарезка, замачивание)"""
+    name = models.CharField(max_length=100, verbose_name='Название')
+    description = models.TextField(blank=True, verbose_name='Описание')
+    image = models.ImageField(upload_to='preparations/', null=True, blank=True, verbose_name='Изображение')
+    video_url = models.URLField(blank=True, verbose_name='Видео')
+    time_factor = models.FloatField(default=1.0, verbose_name='Коэффициент времени')
+    waste_percentage = models.FloatField(default=0, verbose_name='Процент отходов')
+    tips = models.TextField(blank=True, verbose_name='Советы')
+
+    class Meta:
+        verbose_name = 'Подготовка продукта'
+        verbose_name_plural = 'Подготовка продуктов'
 
     def __str__(self):
         return self.name
 
 
+# ======================= РЕКОМЕНДОВАННАЯ УТВАРЬ =======================
 class RecommendedUtensil(models.Model):
-    """Рекомендованная утварь для шага"""
-    name = models.CharField(max_length=100)  # "нож для удаления косточек", "трубчатый нож"
-    description = models.TextField()
-    image = models.ImageField(upload_to='utensils/', null=True, blank=True)
-    alternative = models.CharField(max_length=200, blank=True, help_text="Чем можно заменить")
-    care_instructions = models.TextField(blank=True)
+    """Рекомендованная утварь"""
+    name = models.CharField(max_length=100, verbose_name='Название')
+    description = models.TextField(blank=True, verbose_name='Описание')
+    image = models.ImageField(upload_to='utensils/', null=True, blank=True, verbose_name='Изображение')
+    alternative = models.CharField(max_length=200, blank=True, verbose_name='Чем заменить')
+    care_instructions = models.TextField(blank=True, verbose_name='Уход')
+
+    class Meta:
+        verbose_name = 'Утварь'
+        verbose_name_plural = 'Утварь'
 
     def __str__(self):
         return self.name
-
-
-class CookingStep(models.Model):
-    """Шаг приготовления (расширенный)"""
-    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name='steps')
-    order = models.IntegerField()
-    title = models.CharField(max_length=200)
-    instruction = models.TextField()
-    image = models.ImageField(upload_to='steps/', null=True, blank=True)
-
-    # Связи с новыми модулями
-    preparation = models.ForeignKey(IngredientPreparation, on_delete=models.SET_NULL, null=True, blank=True)
-    cooking_method = models.ForeignKey(CookingMethod, on_delete=models.SET_NULL, null=True, blank=True)
-    utensils = models.ManyToManyField(RecommendedUtensil, blank=True)
-
-    # Параметры
-    duration = models.IntegerField(default=0, help_text="Длительность шага в минутах")
-    temperature = models.IntegerField(null=True, blank=True)
-
-    def __str__(self):
-        return f"{self.order}. {self.title}"

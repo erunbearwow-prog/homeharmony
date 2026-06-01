@@ -1,11 +1,157 @@
 {% extends "base.html" %}
+{% load static %}
 
-{% block title %}Кулинария | Семейные ценности{% endblock %}
+{% block title %}Кулинария — рецепты на любой вкус | Семейные ценности{% endblock %}
+
+{% block extra_css %}
+<style>
+    .hero-gradient {
+        background: linear-gradient(135deg, #fdf8f0 0%, #f0f4f0 100%);
+    }
+    .recipe-card {
+        transition: all 0.3s ease;
+    }
+    .recipe-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.1);
+    }
+    .collection-badge {
+        transition: all 0.2s ease;
+    }
+    .collection-badge:hover {
+        background-color: #d97706;
+        color: white;
+        border-color: #d97706;
+    }
+
+    .custom-select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: right 0.75rem center;
+        background-size: 1rem;
+        padding-right: 2rem !important;
+    }
+    .custom-select:focus {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d97706' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+        outline: none;
+    }
+    .custom-select::-ms-expand {
+        display: none;
+    }
+</style>
+{% endblock %}
 
 {% block content %}
-<div class="max-w-7xl mx-auto px-4 py-8">
-    <h1 class="text-3xl font-bold serif mb-6">🍳 Кулинария</h1>
-    <p class="text-gray-600">ZZZZZZZZРаздел в разработке. Скоро здесь появятся рецепты!</p>
-    <a href="/kitchen/cooking_recipe/" class="inline-block mt-4 bg-amber-700 text-white px-4 py-2 rounded-lg hover:bg-amber-800">Пример рецепта</a>
+
+<!-- Hero секция -->
+<section class="hero-gradient py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+            Готовьте с удовольствием вместе с <span class="text-amber-700">Семейными ценностями</span>
+        </h1>
+        <p class="text-xl text-gray-600 mb-10">
+            {{ recipes|length }} рецептов для любого уровня мастерства
+        </p>
+
+        <!-- Поиск и фильтры -->
+        <div class="max-w-4xl mx-auto">
+            <div class="flex flex-col md:flex-row gap-3">
+                <input type="text" placeholder="Что вы готовите?"
+                       class="flex-1 px-5 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-amber-300 focus:ring-1 focus:ring-amber-300">
+
+                <select class="custom-select px-5 py-3 border border-gray-200 rounded-lg bg-white text-gray-600 focus:border-amber-300">
+                    <option>Все кухни</option>
+                    {% for cuisine in cuisines %}
+                    <option>{{ cuisine.name }}</option>
+                    {% endfor %}
+                </select>
+
+                <select class="custom-select px-5 py-3 border border-gray-200 rounded-lg bg-white text-gray-600">
+                    <option>Тип блюда</option>
+                    <option>Завтрак</option>
+                    <option>Обед</option>
+                    <option>Ужин</option>
+                    <option>Десерт</option>
+                </select>
+
+                <select class="custom-select px-5 py-3 border border-gray-200 rounded-lg bg-white text-gray-600">
+                    <option>Фильтры</option>
+                    <option>До 30 минут</option>
+                    <option>До 1 часа</option>
+                    <option>Низкая сложность</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Рецепты -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="flex justify-between items-center flex-wrap mb-8">
+        <h2 class="text-2xl font-bold text-gray-800">🍲 Все рецепты</h2>
+    </div>
+
+    {% if recipes %}
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        {% for recipe in recipes %}
+        <a href="{% url 'kitchen:recipe_detail' recipe.id %}" class="recipe-card bg-white rounded-xl border border-gray-100 overflow-hidden cursor-pointer hover:shadow-lg transition block">
+            <div class="h-32 bg-gradient-to-br
+                {% if forloop.counter0|divisibleby:5 %}from-orange-100 to-orange-200
+                {% elif forloop.counter0|divisibleby:4 %}from-green-100 to-green-200
+                {% elif forloop.counter0|divisibleby:3 %}from-yellow-100 to-yellow-200
+                {% elif forloop.counter0|divisibleby:2 %}from-blue-100 to-blue-200
+                {% else %}from-purple-100 to-purple-200{% endif %}">
+            </div>
+            <div class="p-4">
+                <div class="flex justify-between items-start">
+                    <h3 class="font-semibold text-gray-800 line-clamp-2">{{ recipe.title }}</h3>
+                    <span class="bg-{% if recipe.difficulty == 'easy' %}green{% elif recipe.difficulty == 'medium' %}yellow{% else %}red{% endif %}-100
+                               text-{% if recipe.difficulty == 'easy' %}green{% elif recipe.difficulty == 'medium' %}yellow{% else %}red{% endif %}-800
+                               text-xs px-2 py-1 rounded-full whitespace-nowrap ml-2">
+                        {{ recipe.get_difficulty_display }}
+                    </span>
+                </div>
+                {% if recipe.cuisine %}
+                <div class="flex items-center gap-2 text-xs text-gray-500 mt-1">
+                    <span>{{ recipe.cuisine.name }} кухня</span>
+                </div>
+                {% endif %}
+                <div class="flex justify-between items-center mt-3 text-sm">
+                    <span class="text-gray-500">⏱ {{ recipe.total_time }} мин</span>
+                    <span class="text-amber-600">⭐ {{ recipe.calories|default:"4.5" }}★</span>
+                </div>
+                <span class="inline-block mt-3 text-amber-700 text-sm font-medium">Смотреть →</span>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="text-center py-12">
+        <p class="text-gray-500">Пока нет рецептов. Добавьте первый рецепт через админку!</p>
+        <a href="/admin/kitchen/recipe/add/" class="inline-block mt-4 bg-amber-700 text-white px-6 py-2 rounded-lg hover:bg-amber-800 transition">
+            + Добавить рецепт
+        </a>
+    </div>
+    {% endif %}
 </div>
+
+<!-- Баннер подписки -->
+<div class="bg-amber-50 py-12 mt-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+                <p class="text-amber-700 font-medium mb-2">Тссс!</p>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Хотите готовые планы меню на неделю?</h3>
+                <p class="text-gray-600">Вступайте в наш Кулинарный клуб — вас ждут готовые подборки и рецепты от редакции.</p>
+            </div>
+            <button class="bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-amber-800 transition">
+                Вступить в клуб →
+            </button>
+        </div>
+    </div>
+</div>
+
 {% endblock %}

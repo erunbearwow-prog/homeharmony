@@ -883,40 +883,59 @@ const stepsContainer = document.getElementById('stepsList');
 function setStepsMode(mode) {
     if (!stepsContainer) return;
 
+    // Обновляем классы контейнера
     if (mode === 'compact') {
         stepsContainer.classList.add('compact-mode');
-        if (modeCompactBtn) {
-            modeCompactBtn.classList.add('bg-white', 'shadow-sm');
-            modeCompactBtn.classList.remove('text-gray-600');
-        }
-        if (modeNormalBtn) {
-            modeNormalBtn.classList.remove('bg-white', 'shadow-sm');
-            modeNormalBtn.classList.add('text-gray-600');
-        }
         localStorage.setItem('steps_display_mode', 'compact');
     } else {
         stepsContainer.classList.remove('compact-mode');
-        if (modeNormalBtn) {
+        localStorage.setItem('steps_display_mode', 'normal');
+    }
+
+    // Обновляем стили кнопок
+    if (modeNormalBtn) {
+        if (mode === 'normal') {
             modeNormalBtn.classList.add('bg-white', 'shadow-sm');
             modeNormalBtn.classList.remove('text-gray-600');
+        } else {
+            modeNormalBtn.classList.remove('bg-white', 'shadow-sm');
+            modeNormalBtn.classList.add('text-gray-600');
         }
-        if (modeCompactBtn) {
+    }
+
+    if (modeCompactBtn) {
+        if (mode === 'compact') {
+            modeCompactBtn.classList.add('bg-white', 'shadow-sm');
+            modeCompactBtn.classList.remove('text-gray-600');
+        } else {
             modeCompactBtn.classList.remove('bg-white', 'shadow-sm');
             modeCompactBtn.classList.add('text-gray-600');
         }
-        localStorage.setItem('steps_display_mode', 'normal');
     }
 }
 
-if (modeNormalBtn && modeCompactBtn) {
+// Инициализация при загрузке
+document.addEventListener('DOMContentLoaded', () => {
+    // Проверяем существование всех элементов
+    if (!modeNormalBtn || !modeCompactBtn || !stepsContainer) {
+        console.warn('Не все элементы переключения режимов найдены в DOM');
+        return;
+    }
+
+    // Навешиваем обработчики событий
     modeNormalBtn.addEventListener('click', () => setStepsMode('normal'));
     modeCompactBtn.addEventListener('click', () => setStepsMode('compact'));
 
+    // Восстанавливаем сохранённый режим или устанавливаем по умолчанию
     const savedMode = localStorage.getItem('steps_display_mode');
     if (savedMode === 'compact') {
         setStepsMode('compact');
+    } else {
+        // Если режим не сохранён, устанавливаем нормальный вид по умолчанию
+        setStepsMode('normal');
     }
-}
+});
+
 
 // ======================= ВОССТАНОВЛЕНИЕ ИЗ URL =======================
 function restoreStateFromURL() {
@@ -1106,6 +1125,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// ======================= ВЛОЖЕННЫЕ РЕЦЕПТЫ =======================
+function showSubrecipeModal(stepId) {
+    // Здесь можно открыть модальное окно с полным рецептом
+    // или загрузить данные через AJAX
+
+    // Для демо:
+    alert('Открыть полный рецепт бешамеля с ингредиентами и шагами');
+    // В реальности — открыть модальное окно или перейти на страницу рецепта
+}
+
+
+
 // Дублируем привязку на всякий случай
 window.showMethodDetails = showMethodDetails;
 window.closeMethodModal = closeMethodModal;
@@ -1113,3 +1144,4 @@ window.showPreparationDetails = showPreparationDetails;
 window.closePreparationModal = closePreparationModal;
 window.showUtensilDetails = showUtensilDetails;
 window.closeUtensilModal = closeUtensilModal;
+window.showSubrecipeModal = showSubrecipeModal;
