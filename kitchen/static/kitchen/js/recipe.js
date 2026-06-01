@@ -698,7 +698,6 @@ function makeStepCardsClickable() {
 }
 
 // ======================= МЕТОДЫ ПРИГОТОВЛЕНИЯ =======================
-// ======================= МЕТОДЫ ПРИГОТОВЛЕНИЯ =======================
 async function showMethodDetails(button) {
     const methodId = button.dataset.methodId;
     const methodName = button.dataset.methodName;
@@ -1057,6 +1056,40 @@ async function showUtensilDetails(button) {
 function closeUtensilModal() {
     const modal = document.getElementById('utensilModal');
     if (modal) modal.classList.add('hidden');
+}
+
+// ======================= ПЕРЕКЛЮЧЕНИЕ РЕЖИМОВ ОТОБРАЖЕНИЯ =======================
+const modeNormalBtn = document.getElementById('modeNormalBtn');
+const modeCompactBtn = document.getElementById('modeCompactBtn');
+const stepsContainer = document.getElementById('stepsList');
+
+function setStepsMode(mode) {
+    if (mode === 'compact') {
+        stepsContainer.classList.add('compact-mode');
+        modeCompactBtn.classList.add('bg-white', 'shadow-sm');
+        modeCompactBtn.classList.remove('text-gray-600');
+        modeNormalBtn.classList.remove('bg-white', 'shadow-sm');
+        modeNormalBtn.classList.add('text-gray-600');
+        localStorage.setItem('steps_display_mode', 'compact');
+    } else {
+        stepsContainer.classList.remove('compact-mode');
+        modeNormalBtn.classList.add('bg-white', 'shadow-sm');
+        modeNormalBtn.classList.remove('text-gray-600');
+        modeCompactBtn.classList.remove('bg-white', 'shadow-sm');
+        modeCompactBtn.classList.add('text-gray-600');
+        localStorage.setItem('steps_display_mode', 'normal');
+    }
+}
+
+if (modeNormalBtn && modeCompactBtn) {
+    modeNormalBtn.addEventListener('click', () => setStepsMode('normal'));
+    modeCompactBtn.addEventListener('click', () => setStepsMode('compact'));
+
+    // Восстанавливаем сохранённый режим
+    const savedMode = localStorage.getItem('steps_display_mode');
+    if (savedMode === 'compact') {
+        setStepsMode('compact');
+    }
 }
 
 // Делаем функции глобальными

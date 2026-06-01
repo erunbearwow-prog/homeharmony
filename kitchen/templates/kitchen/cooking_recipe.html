@@ -166,7 +166,15 @@
 
 <!-- МОДАЛЬНОЕ ОКНО ДЛЯ МЕТОДОВ ПРИГОТОВЛЕНИЯ -->
 {% include 'kitchen/includes/method_modal.html' %}
+
+<!-- МОДАЛЬНОЕ ОКНО ДЛЯ ПОДГОТОВКИ ПРОДУКТОВ -->
+{% include 'kitchen/includes/preparation_modal.html' %}
+
+<!-- МОДАЛЬНОЕ ОКНО ДЛЯ УТВАРИ -->
+{% include 'kitchen/includes/utensil_modal.html' %}
+
 {% endblock %}
+
 
 {% block extra_js %}
 <script src="{% static 'kitchen/js/recipe.js' %}"></script>

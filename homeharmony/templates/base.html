@@ -26,6 +26,57 @@
                 font-size: 1.25rem;
             }
         }
+
+        /* Компактный режим — как таблица */
+        .compact-mode .step-card {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 1rem;
+            align-items: start;
+            padding: 0.75rem 1rem;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #e5e7eb;
+            border-radius: 0;
+            box-shadow: none;
+        }
+
+        .compact-mode .step-card:hover {
+            background-color: #f9fafb;
+        }
+
+        .compact-mode .step-checkbox {
+            margin-top: 0.2rem;
+        }
+
+        .compact-mode .step-title {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+
+        .compact-mode .step-description {
+            font-size: 0.875rem;
+            color: #6b7280;
+            margin-top: 0;
+        }
+
+        .compact-mode .step-methods {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .compact-mode .step-image {
+            display: none;
+        }
+
+        .compact-mode .step-number {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #9ca3af;
+            min-width: 2rem;
+        }
     </style>
 
     {% block extra_css %}{% endblock %}
