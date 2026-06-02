@@ -463,21 +463,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Кликабельные карточки шагов
     document.querySelectorAll('.step-card').forEach(card => {
-    card.addEventListener('click', (e) => {
-        // Если кликнули на чекбокс или на его label — ничего не делаем
-        if (e.target.type === 'checkbox' || e.target.closest('.step-checkbox')) {
-            return;
-        }
-        if (e.target.closest('a') || e.target.closest('button')) return;
-        const checkbox = card.querySelector('.step-checkbox');
-        if (checkbox) {
-            checkbox.checked = !checkbox.checked;
-            checkbox.dispatchEvent(new Event('change'));
-        }
+        card.addEventListener('click', (e) => {
+            // Если кликнули на чекбокс или на его label — ничего не делаем
+            if (e.target.type === 'checkbox' || e.target.closest('.step-checkbox')) {
+                return;
+            }
+            if (e.target.closest('a') || e.target.closest('button')) return;
+            const checkbox = card.querySelector('.step-checkbox');
+            if (checkbox) {
+                checkbox.checked = !checkbox.checked;
+                checkbox.dispatchEvent(new Event('change', { bubbles: true }));
+            }
+        });
     });
+
+    console.log('Виджет инициализирован');
 });
 
 // ======================= МЕТОДЫ ПРИГОТОВЛЕНИЯ =======================
+let methodsCache = {};
+
 async function showMethodDetails(button) {
     const methodId = button.dataset.methodId;
     const methodName = button.dataset.methodName;
@@ -485,93 +490,99 @@ async function showMethodDetails(button) {
     const modal = document.getElementById('methodModal');
     if (!modal) return;
 
-    // Показываем загрузку
     document.getElementById('methodModalName').innerText = methodName;
     document.getElementById('methodModalDesc').innerHTML = '<div class="text-center py-4"><i class="fas fa-spinner fa-spin"></i> Загрузка...</div>';
     modal.classList.remove('hidden');
 
     try {
-        const response = await fetch(`/api/methods/${methodId}/`);
+        if (methodsCache[methodId]) {
+            displayMethodData(methodsCache[methodId]);
+            return;
+        }
+
+        const response = await fetch(`/api/method/${methodId}/`);
         if (response.ok) {
             const data = await response.json();
-
-            document.getElementById('methodModalName').innerText = data.name;
-            document.getElementById('methodModalIcon').className = `fas ${data.icon || 'fa-fire'} text-amber-600`;
-            document.getElementById('methodModalShortDesc').innerText = data.short_description || '';
-            document.getElementById('methodModalDesc').innerHTML = data.description || '';
-
-            // Научное обоснование
-            const scienceBlock = document.getElementById('methodModalScience');
-            const scienceText = document.getElementById('methodModalScienceText');
-            if (data.scientific_background) {
-                scienceText.innerText = data.scientific_background;
-                scienceBlock.classList.remove('hidden');
-            } else {
-                scienceBlock.classList.add('hidden');
-            }
-
-            // Температура
-            const tempBlock = document.getElementById('methodModalTemp');
-            const tempText = document.getElementById('methodModalTempText');
-            if (data.typical_temperature) {
-                tempText.innerText = data.typical_temperature;
-                tempBlock.classList.remove('hidden');
-            } else {
-                tempBlock.classList.add('hidden');
-            }
-
-            // Длительность
-            const durationBlock = document.getElementById('methodModalDuration');
-            const durationText = document.getElementById('methodModalDurationText');
-            if (data.typical_duration) {
-                durationText.innerText = data.typical_duration;
-                durationBlock.classList.remove('hidden');
-            } else {
-                durationBlock.classList.add('hidden');
-            }
-
-            // Советы
-            const tipsBlock = document.getElementById('methodModalTips');
-            const tipsText = document.getElementById('methodModalTipsText');
-            if (data.tips) {
-                tipsText.innerText = data.tips;
-                tipsBlock.classList.remove('hidden');
-            } else {
-                tipsBlock.classList.add('hidden');
-            }
-
-            // Ошибки
-            const mistakesBlock = document.getElementById('methodModalMistakes');
-            const mistakesText = document.getElementById('methodModalMistakesText');
-            if (data.common_mistakes) {
-                mistakesText.innerText = data.common_mistakes;
-                mistakesBlock.classList.remove('hidden');
-            } else {
-                mistakesBlock.classList.add('hidden');
-            }
-
-            // Для опытных
-            const advancedBlock = document.getElementById('methodModalAdvanced');
-            const advancedText = document.getElementById('methodModalAdvancedText');
-            if (data.advanced_notes) {
-                advancedText.innerText = data.advanced_notes;
-                advancedBlock.classList.remove('hidden');
-            } else {
-                advancedBlock.classList.add('hidden');
-            }
+            methodsCache[methodId] = data;
+            displayMethodData(data);
         } else {
             throw new Error('Метод не найден');
         }
     } catch (error) {
+        console.error('Ошибка загрузки метода:', error);
         document.getElementById('methodModalDesc').innerHTML = '<p class="text-red-600">Не удалось загрузить описание метода.</p>';
     }
 }
 
+function displayMethodData(data) {
+    document.getElementById('methodModalName').innerText = data.name;
+    document.getElementById('methodModalIcon').className = `fas ${data.icon || 'fa-fire'} text-amber-600`;
+    document.getElementById('methodModalShortDesc').innerText = data.short_description || '';
+    document.getElementById('methodModalDesc').innerHTML = data.description || '';
+
+    const scienceBlock = document.getElementById('methodModalScience');
+    const scienceText = document.getElementById('methodModalScienceText');
+    if (data.scientific_background) {
+        scienceText.innerText = data.scientific_background;
+        scienceBlock.classList.remove('hidden');
+    } else {
+        scienceBlock.classList.add('hidden');
+    }
+
+    const tempBlock = document.getElementById('methodModalTemp');
+    const tempText = document.getElementById('methodModalTempText');
+    if (data.typical_temperature) {
+        tempText.innerText = data.typical_temperature;
+        tempBlock.classList.remove('hidden');
+    } else {
+        tempBlock.classList.add('hidden');
+    }
+
+    const durationBlock = document.getElementById('methodModalDuration');
+    const durationText = document.getElementById('methodModalDurationText');
+    if (data.typical_duration) {
+        durationText.innerText = data.typical_duration;
+        durationBlock.classList.remove('hidden');
+    } else {
+        durationBlock.classList.add('hidden');
+    }
+
+    const tipsBlock = document.getElementById('methodModalTips');
+    const tipsText = document.getElementById('methodModalTipsText');
+    if (data.tips) {
+        tipsText.innerText = data.tips;
+        tipsBlock.classList.remove('hidden');
+    } else {
+        tipsBlock.classList.add('hidden');
+    }
+
+    const mistakesBlock = document.getElementById('methodModalMistakes');
+    const mistakesText = document.getElementById('methodModalMistakesText');
+    if (data.common_mistakes) {
+        mistakesText.innerText = data.common_mistakes;
+        mistakesBlock.classList.remove('hidden');
+    } else {
+        mistakesBlock.classList.add('hidden');
+    }
+
+    const advancedBlock = document.getElementById('methodModalAdvanced');
+    const advancedText = document.getElementById('methodModalAdvancedText');
+    if (data.advanced_notes) {
+        advancedText.innerText = data.advanced_notes;
+        advancedBlock.classList.remove('hidden');
+    } else {
+        advancedBlock.classList.add('hidden');
+    }
+}
+
 function closeMethodModal() {
-    document.getElementById('methodModal')?.classList.add('hidden');
+    const modal = document.getElementById('methodModal');
+    if (modal) modal.classList.add('hidden');
 }
 
 // ======================= ПОДГОТОВКА ПРОДУКТОВ =======================
+let preparationsCache = {};
+
 async function showPreparationDetails(button) {
     const preparationId = button.dataset.preparationId;
     const preparationName = button.dataset.preparationName;
@@ -584,43 +595,56 @@ async function showPreparationDetails(button) {
     modal.classList.remove('hidden');
 
     try {
-        const response = await fetch(`/api/preparations/${preparationId}/`);
+        if (preparationsCache[preparationId]) {
+            displayPreparationData(preparationsCache[preparationId]);
+            return;
+        }
+
+        const response = await fetch(`/api/preparation/${preparationId}/`);
         if (response.ok) {
             const data = await response.json();
-
-            document.getElementById('preparationModalName').innerText = data.name;
-            document.getElementById('preparationModalDesc').innerHTML = data.description || '';
-
-            const tipsBlock = document.getElementById('preparationModalTips');
-            const tipsText = document.getElementById('preparationModalTipsText');
-            if (data.tips) {
-                tipsText.innerText = data.tips;
-                tipsBlock.classList.remove('hidden');
-            } else {
-                tipsBlock.classList.add('hidden');
-            }
-
-            const timeBlock = document.getElementById('preparationModalTime');
-            const timeText = document.getElementById('preparationModalTimeText');
-            if (data.time_factor) {
-                timeText.innerText = `Увеличивает время приготовления в ${data.time_factor} раз`;
-                timeBlock.classList.remove('hidden');
-            } else {
-                timeBlock.classList.add('hidden');
-            }
+            preparationsCache[preparationId] = data;
+            displayPreparationData(data);
         } else {
             throw new Error('Подготовка не найдена');
         }
     } catch (error) {
+        console.error('Ошибка загрузки подготовки:', error);
         document.getElementById('preparationModalDesc').innerHTML = '<p class="text-red-600">Не удалось загрузить описание.</p>';
     }
 }
 
+function displayPreparationData(data) {
+    document.getElementById('preparationModalName').innerText = data.name;
+    document.getElementById('preparationModalDesc').innerHTML = data.description || '';
+
+    const tipsBlock = document.getElementById('preparationModalTips');
+    const tipsText = document.getElementById('preparationModalTipsText');
+    if (data.tips) {
+        tipsText.innerText = data.tips;
+        tipsBlock.classList.remove('hidden');
+    } else {
+        tipsBlock.classList.add('hidden');
+    }
+
+    const timeBlock = document.getElementById('preparationModalTime');
+    const timeText = document.getElementById('preparationModalTimeText');
+    if (data.time_factor) {
+        timeText.innerText = `Увеличивает время приготовления в ${data.time_factor} раз`;
+        timeBlock.classList.remove('hidden');
+    } else {
+        timeBlock.classList.add('hidden');
+    }
+}
+
 function closePreparationModal() {
-    document.getElementById('preparationModal')?.classList.add('hidden');
+    const modal = document.getElementById('preparationModal');
+    if (modal) modal.classList.add('hidden');
 }
 
 // ======================= РЕКОМЕНДОВАННАЯ УТВАРЬ =======================
+let utensilsCache = {};
+
 async function showUtensilDetails(button) {
     const utensilId = button.dataset.utensilId;
     const utensilName = button.dataset.utensilName;
@@ -633,41 +657,100 @@ async function showUtensilDetails(button) {
     modal.classList.remove('hidden');
 
     try {
-        const response = await fetch(`/api/utensils/${utensilId}/`);
+        if (utensilsCache[utensilId]) {
+            displayUtensilData(utensilsCache[utensilId]);
+            return;
+        }
+
+        const response = await fetch(`/api/utensil/${utensilId}/`);
         if (response.ok) {
             const data = await response.json();
-
-            document.getElementById('utensilModalName').innerText = data.name;
-            document.getElementById('utensilModalDesc').innerHTML = data.description || '';
-
-            const altBlock = document.getElementById('utensilModalAlternative');
-            const altText = document.getElementById('utensilModalAlternativeText');
-            if (data.alternative) {
-                altText.innerText = data.alternative;
-                altBlock.classList.remove('hidden');
-            } else {
-                altBlock.classList.add('hidden');
-            }
-
-            const careBlock = document.getElementById('utensilModalCare');
-            const careText = document.getElementById('utensilModalCareText');
-            if (data.care_instructions) {
-                careText.innerText = data.care_instructions;
-                careBlock.classList.remove('hidden');
-            } else {
-                careBlock.classList.add('hidden');
-            }
+            utensilsCache[utensilId] = data;
+            displayUtensilData(data);
         } else {
             throw new Error('Утварь не найдена');
         }
     } catch (error) {
+        console.error('Ошибка загрузки утвари:', error);
         document.getElementById('utensilModalDesc').innerHTML = '<p class="text-red-600">Не удалось загрузить описание.</p>';
     }
 }
 
-function closeUtensilModal() {
-    document.getElementById('utensilModal')?.classList.add('hidden');
+function displayUtensilData(data) {
+    document.getElementById('utensilModalName').innerText = data.name;
+    document.getElementById('utensilModalDesc').innerHTML = data.description || '';
+
+    const altBlock = document.getElementById('utensilModalAlternative');
+    const altText = document.getElementById('utensilModalAlternativeText');
+    if (data.alternative) {
+        altText.innerText = data.alternative;
+        altBlock.classList.remove('hidden');
+    } else {
+        altBlock.classList.add('hidden');
+    }
+
+    const careBlock = document.getElementById('utensilModalCare');
+    const careText = document.getElementById('utensilModalCareText');
+    if (data.care_instructions) {
+        careText.innerText = data.care_instructions;
+        careBlock.classList.remove('hidden');
+    } else {
+        careBlock.classList.add('hidden');
+    }
 }
 
-    console.log('Виджет инициализирован');
-});
+function closeUtensilModal() {
+    const modal = document.getElementById('utensilModal');
+    if (modal) modal.classList.add('hidden');
+}
+
+// ======================= ПЕРЕКЛЮЧЕНИЕ РЕЖИМОВ ОТОБРАЖЕНИЯ =======================
+const modeNormalBtn = document.getElementById('modeNormalBtn');
+const modeCompactBtn = document.getElementById('modeCompactBtn');
+const stepsContainer = document.getElementById('stepsList');
+
+function setStepsMode(mode) {
+    if (!stepsContainer) return;
+
+    if (mode === 'compact') {
+        stepsContainer.classList.add('compact-mode');
+        if (modeCompactBtn) {
+            modeCompactBtn.classList.add('bg-white', 'shadow-sm');
+            modeCompactBtn.classList.remove('text-gray-600');
+        }
+        if (modeNormalBtn) {
+            modeNormalBtn.classList.remove('bg-white', 'shadow-sm');
+            modeNormalBtn.classList.add('text-gray-600');
+        }
+        localStorage.setItem('steps_display_mode', 'compact');
+    } else {
+        stepsContainer.classList.remove('compact-mode');
+        if (modeNormalBtn) {
+            modeNormalBtn.classList.add('bg-white', 'shadow-sm');
+            modeNormalBtn.classList.remove('text-gray-600');
+        }
+        if (modeCompactBtn) {
+            modeCompactBtn.classList.remove('bg-white', 'shadow-sm');
+            modeCompactBtn.classList.add('text-gray-600');
+        }
+        localStorage.setItem('steps_display_mode', 'normal');
+    }
+}
+
+if (modeNormalBtn && modeCompactBtn) {
+    modeNormalBtn.addEventListener('click', () => setStepsMode('normal'));
+    modeCompactBtn.addEventListener('click', () => setStepsMode('compact'));
+
+    const savedMode = localStorage.getItem('steps_display_mode');
+    if (savedMode === 'compact') {
+        setStepsMode('compact');
+    }
+}
+
+// ======================= ГЛОБАЛЬНЫЕ ПРИВЯЗКИ =======================
+window.showMethodDetails = showMethodDetails;
+window.closeMethodModal = closeMethodModal;
+window.showPreparationDetails = showPreparationDetails;
+window.closePreparationModal = closePreparationModal;
+window.showUtensilDetails = showUtensilDetails;
+window.closeUtensilModal = closeUtensilModal;

@@ -109,6 +109,7 @@ class RecipeIngredientAdmin(admin.ModelAdmin):
 
 @admin.register(Recipe)
 class RecipeAdmin(admin.ModelAdmin):
+    save_on_top = True
     list_display = ['title', 'cuisine', 'difficulty', 'total_time', 'servings', 'created_at']
     list_filter = ['cuisine', 'difficulty', 'created_at', 'updated_at']
     search_fields = ['title', 'description', 'author']

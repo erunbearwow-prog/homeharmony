@@ -219,15 +219,15 @@ css
                                     {{ step.title }}
                                 </label>
                                 <div class="step-methods flex gap-1">
-                                    <!-- Кнопка: Подготовка продуктов -->
+                                    <!-- Подготовка продуктов -->
                                     <button class="preparation-info-btn text-gray-400 hover:text-green-600 transition p-2 -mt-1 -mr-1"
-                                            data-preparation-id="{% if step.preparation %}{{ step.preparation.id }}{% else %}default{% endif %}"
+                                            data-preparation-id="default"
                                             data-preparation-name="Подготовка продуктов"
                                             onclick="window.showPreparationDetails(this)"
                                             title="Подготовка продуктов">
                                         <i class="fas fa-kitchen-set text-lg"></i>
                                     </button>
-                                    <!-- Кнопка: Метод приготовления -->
+                                    <!-- Метод приготовления -->
                                     <button class="method-info-btn text-gray-400 hover:text-amber-600 transition p-2 -mt-1 -mr-1"
                                             data-method-id="{% if step.cooking_method %}{{ step.cooking_method.id }}{% else %}default{% endif %}"
                                             data-method-name="{% if step.cooking_method %}{{ step.cooking_method.name }}{% else %}Метод приготовления{% endif %}"
@@ -235,9 +235,9 @@ css
                                             title="Метод приготовления">
                                         <i class="fas fa-fire text-lg"></i>
                                     </button>
-                                    <!-- Кнопка: Рекомендованная утварь -->
+                                    <!-- Рекомендованная утварь -->
                                     <button class="utensil-info-btn text-gray-400 hover:text-blue-600 transition p-2 -mt-1 -mr-1"
-                                            data-utensil-id="step_{{ forloop.counter0 }}"
+                                            data-utensil-id="default"
                                             data-utensil-name="Рекомендованная утварь"
                                             onclick="window.showUtensilDetails(this)"
                                             title="Рекомендованная утварь">
@@ -246,6 +246,23 @@ css
                                 </div>
                             </div>
                             <p class="step-description text-gray-600 mt-1">{{ step.instruction }}</p>
+
+                            <!-- Вложенный рецепт -->
+                            {% if step.subrecipe %}
+                            <div class="mt-2 p-3 bg-amber-50 rounded-lg border border-amber-200">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="fas fa-utensil-spoon text-amber-600"></i>
+                                    <span class="font-medium text-sm">Вложенный рецепт:</span>
+                                    <a href="{% url 'kitchen:recipe_detail' step.subrecipe.id %}" class="text-amber-700 hover:underline font-medium">
+                                        {{ step.subrecipe.title }}
+                                    </a>
+                                </div>
+                                {% if step.subrecipe_usage %}
+                                <p class="text-sm text-gray-600">{{ step.subrecipe_usage }}</p>
+                                {% endif %}
+                            </div>
+                            {% endif %}
+
                             {% if step.duration %}
                             <div class="text-xs text-gray-400 mt-1"><i class="far fa-clock"></i> {{ step.duration }} мин</div>
                             {% endif %}

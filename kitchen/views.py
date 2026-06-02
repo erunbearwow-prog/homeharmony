@@ -53,6 +53,7 @@ def get_preparation_details(request, preparation_id):
 
 
 def get_utensil_details(request, utensil_id):
+    print('Here is get_utensil_details !!!')
     try:
         utensil = RecommendedUtensil.objects.get(id=utensil_id)
         data = {
