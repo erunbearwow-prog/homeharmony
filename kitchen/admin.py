@@ -3,7 +3,7 @@ from django.utils.html import format_html
 from .models import (
     Cuisine, Diet, IngredientCategory, Ingredient,
     Recipe, RecipeStep, RecipeIngredient, CookingMethod,
-    IngredientPreparation, RecommendedUtensil
+    IngredientPreparation, RecommendedUtensil, IngredientSubstitution
 )
 
 
@@ -71,14 +71,13 @@ class IngredientAdmin(admin.ModelAdmin):
     image_preview.short_description = 'Изображение'
 
 
-class RecipeStepInline(admin.TabularInline):
-    """Встроенная форма для шагов приготовления"""
-    model = RecipeStep
-    fk_name = 'recipe'  # ← указываем, какой ForeignKey использовать
+class IngredientSubstitutionInline(admin.TabularInline):
+    """Встроенная форма для допустимых замен ингредиента"""
+    model = IngredientSubstitution
     extra = 1
-    ordering = ['order']
-    fields = ['order', 'title', 'instruction', 'duration', 'subrecipe']
-    autocomplete_fields = ['subrecipe']
+    fields = ['substitute_name', 'substitute_unit', 'ratio', 'notes']
+    verbose_name = 'Допустимая замена'
+    verbose_name_plural = 'Допустимые замены'
 
 
 class RecipeIngredientInline(admin.TabularInline):
@@ -87,6 +86,25 @@ class RecipeIngredientInline(admin.TabularInline):
     extra = 3
     fields = ['ingredient', 'quantity', 'unit', 'notes', 'is_scalable']
     autocomplete_fields = ['ingredient']
+
+
+class RecipeStepInline(admin.TabularInline):
+    """Встроенная форма для шагов приготовления"""
+    model = RecipeStep
+    fk_name = 'recipe'
+    extra = 1
+    ordering = ['order']
+    fields = ['order', 'title', 'instruction', 'duration', 'subrecipe']
+    autocomplete_fields = ['subrecipe']
+
+
+@admin.register(RecipeIngredient)
+class RecipeIngredientAdmin(admin.ModelAdmin):
+    list_display = ['recipe', 'ingredient', 'quantity', 'unit']
+    list_filter = ['unit', 'is_scalable']
+    search_fields = ['recipe__title', 'ingredient__name']
+    autocomplete_fields = ['recipe', 'ingredient']
+    inlines = [IngredientSubstitutionInline]  # Добавляем замены прямо здесь
 
 
 @admin.register(Recipe)
@@ -122,14 +140,6 @@ class RecipeStepAdmin(admin.ModelAdmin):
     list_filter = ['recipe']
     search_fields = ['title', 'instruction']
     autocomplete_fields = ['recipe', 'subrecipe']
-
-
-@admin.register(RecipeIngredient)
-class RecipeIngredientAdmin(admin.ModelAdmin):
-    list_display = ['recipe', 'ingredient', 'quantity', 'unit']
-    list_filter = ['unit', 'is_scalable']
-    search_fields = ['recipe__title', 'ingredient__name']
-    autocomplete_fields = ['recipe', 'ingredient']
 
 
 @admin.register(CookingMethod)
@@ -171,3 +181,19 @@ class RecommendedUtensilAdmin(admin.ModelAdmin):
         return '-'
 
     image_preview.short_description = 'Изображение'
+
+
+@admin.register(IngredientSubstitution)
+class IngredientSubstitutionAdmin(admin.ModelAdmin):
+    list_display = ['recipe_ingredient', 'substitute_name', 'substitute_unit', 'ratio']
+    list_filter = ['substitute_unit']
+    search_fields = ['substitute_name', 'recipe_ingredient__ingredient__name']
+    autocomplete_fields = ['recipe_ingredient']
+    fieldsets = [
+        ('Основная информация', {
+            'fields': ['recipe_ingredient', 'substitute_name', 'substitute_unit', 'ratio']
+        }),
+        ('Дополнительно', {
+            'fields': ['notes']
+        }),
+    ]

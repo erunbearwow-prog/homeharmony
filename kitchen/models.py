@@ -275,3 +275,27 @@ class RecommendedUtensil(models.Model):
 
     def __str__(self):
         return self.name
+
+
+# ======================= ДОПУСТИМАЯ ЗАМЕНА ИНГРЕДИЕНТА =======================
+class IngredientSubstitution(models.Model):
+    """Допустимая замена для ингредиента в конкретном рецепте"""
+    recipe_ingredient = models.ForeignKey(
+        'RecipeIngredient',
+        on_delete=models.CASCADE,
+        related_name='substitutions',
+        verbose_name='Исходный ингредиент в рецепте'
+    )
+    substitute_name = models.CharField(max_length=200, verbose_name='Название заменителя')
+    substitute_unit = models.CharField(max_length=20, choices=Ingredient.UNIT_CHOICES,
+                                       verbose_name='Единица измерения заменителя')
+    ratio = models.FloatField(default=1.0, verbose_name='Коэффициент пересчёта',
+                              help_text='Например: 1 ст.л. пасты = 2 ст.л. помидоров')
+    notes = models.CharField(max_length=500, blank=True, verbose_name='Примечания по замене')
+
+    class Meta:
+        verbose_name = 'Допустимая замена'
+        verbose_name_plural = 'Допустимые замены'
+
+    def __str__(self):
+        return f"{self.recipe_ingredient.ingredient.name} → {self.substitute_name}"

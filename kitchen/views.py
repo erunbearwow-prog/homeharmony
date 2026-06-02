@@ -2,9 +2,10 @@ from django.shortcuts import render
 from django.template.loader import render_to_string
 from django.http import JsonResponse, HttpResponse
 from django.views.decorators.http import require_http_methods
-from .models import CookingMethod
+from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404
-from .models import Recipe, RecipeStep, RecipeIngredient
+from .models import Recipe, RecipeIngredient, RecipeStep, Cuisine
+from .models import CookingMethod, IngredientPreparation, RecommendedUtensil
 
 # Create your views here.
 def home(request):
@@ -36,8 +37,34 @@ def get_method_details(request, method_id):
         return JsonResponse({'error': 'Method not found'}, status=404)
 
 
-from django.shortcuts import render, get_object_or_404
-from .models import Recipe, RecipeIngredient, RecipeStep, Cuisine
+def get_preparation_details(request, preparation_id):
+    try:
+        prep = IngredientPreparation.objects.get(id=preparation_id)
+        data = {
+            'id': prep.id,
+            'name': prep.name,
+            'description': prep.description,
+            'tips': prep.tips,
+            'time_factor': prep.time_factor,
+        }
+        return JsonResponse(data)
+    except IngredientPreparation.DoesNotExist:
+        return JsonResponse({'error': 'Preparation not found'}, status=404)
+
+
+def get_utensil_details(request, utensil_id):
+    try:
+        utensil = RecommendedUtensil.objects.get(id=utensil_id)
+        data = {
+            'id': utensil.id,
+            'name': utensil.name,
+            'description': utensil.description,
+            'alternative': utensil.alternative,
+            'care_instructions': utensil.care_instructions,
+        }
+        return JsonResponse(data)
+    except RecommendedUtensil.DoesNotExist:
+        return JsonResponse({'error': 'Utensil not found'}, status=404)
 
 
 def index(request):
@@ -74,3 +101,25 @@ def recipe_old(request):
         from django.shortcuts import redirect
         return redirect('kitchen:recipe_detail', recipe_id=first_recipe.id)
     return render(request, 'kitchen/cooking_recipe.html')
+
+
+def get_substitutions(request, recipe_ingredient_id):
+    """Возвращает список допустимых замен для ингредиента в рецепте"""
+    try:
+        recipe_ingredient = RecipeIngredient.objects.get(id=recipe_ingredient_id)
+        substitutions = recipe_ingredient.substitutions.all()
+        data = {
+            'original_name': recipe_ingredient.ingredient.name,
+            'original_unit': recipe_ingredient.unit,
+            'substitutions': [
+                {
+                    'name': sub.substitute_name,
+                    'unit': sub.substitute_unit,
+                    'ratio': sub.ratio,
+                    'notes': sub.notes,
+                } for sub in substitutions
+            ]
+        }
+        return JsonResponse(data)
+    except RecipeIngredient.DoesNotExist:
+        return JsonResponse({'error': 'Ингредиент не найден'}, status=404)

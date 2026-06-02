@@ -37,6 +37,115 @@
         border-radius: 9999px;
         transition: width 0.3s ease;
     }
+
+    /* Переключатель режимов */
+    .mode-switch {
+        transition: all 0.2s ease;
+    }
+
+    /* Кастомный ползунок */
+    input[type="range"] {
+        -webkit-appearance: none;
+        appearance: none;
+        background: #e5e7eb;
+        border-radius: 9999px;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 18px;
+        height: 18px;
+        background: #d97706;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .ingredient-row {
+        transition: all 0.2s ease;
+    }
+    .ingredient-row.completed {
+        opacity: 0.6;
+    }
+
+    /* Переключение панелей */
+.mode-panel.hidden {
+    display: none;
+}
+
+#portionsPanel, #productsPanel {
+    transition: all 0.2s ease;
+}
+
+/* Зебра для списка ингредиентов (тёплая палитра) */
+.ingredient-row:nth-child(even) {
+    background-color: #fffbeb;  /* очень светлый янтарный */
+}
+
+.ingredient-row:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.ingredient-row {
+    transition: background-color 0.2s ease;
+    padding: 0.75rem;
+    margin: 0 -0.75rem;
+    border-radius: 0.5rem;
+}
+
+.ingredient-row:hover {
+    background-color: #fef3c7 !important;  /* янтарный при наведении */
+}
+🎯 Полный блок extra_css в recipe_detail.html
+css
+
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.1); }
+
+    .step-card {
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    .step-card:hover {
+        background-color: #fef9e6;
+    }
+    .step-card.completed {
+        background-color: #f4f9e8;
+        border-left: 4px solid #8bc34a;
+    }
+    .step-checkbox:checked + .step-title,
+    .step-checkbox:checked ~ .step-title {
+        text-decoration: line-through;
+        color: #9ca3af;
+    }
+
+    .progress-bar {
+        height: 0.5rem;
+        background-color: #e5e7eb;
+        border-radius: 9999px;
+        overflow: hidden;
+    }
+    .progress-fill {
+        height: 100%;
+        background-color: #d97706;
+        border-radius: 9999px;
+        transition: width 0.3s ease;
+    }
+
+    /* Зебра для списка ингредиентов */
+    .ingredient-row:nth-child(even) {
+        background-color: #fffbeb;
+    }
+    .ingredient-row:nth-child(odd) {
+        background-color: #ffffff;
+    }
+    .ingredient-row {
+        transition: background-color 0.2s ease;
+        padding: 0.75rem;
+        margin: 0 -0.75rem;
+        border-radius: 0.5rem;
+    }
+    .ingredient-row:hover {
+        background-color: #fef3c7 !important;
+    }
 </style>
 {% endblock %}
 
@@ -64,9 +173,6 @@
                 <span class="bg-green-100 text-green-800 px-2 sm:px-3 py-1 rounded-full"><i class="fas fa-chart-line mr-1"></i> {{ recipe.get_difficulty_display }}</span>
                 <span class="bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full"><i class="fas fa-utensils mr-1"></i> {{ recipe.servings }} порций</span>
                 <span class="bg-purple-100 text-purple-800 px-2 sm:px-3 py-1 rounded-full"><i class="fas fa-fire mr-1"></i> {{ recipe.calories }} ккал</span>
-                <span class="bg-indigo-100 text-indigo-800 px-2 sm:px-3 py-1 rounded-full"><i class="fas fa-dumbbell mr-1"></i> {{ recipe.protein }}г белков</span>
-                <span class="bg-pink-100 text-pink-800 px-2 sm:px-3 py-1 rounded-full"><i class="fas fa-oil-can mr-1"></i> {{ recipe.fat }}г жиров</span>
-                <span class="bg-teal-100 text-teal-800 px-2 sm:px-3 py-1 rounded-full"><i class="fas fa-bread-slice mr-1"></i> {{ recipe.carbs }}г углеводов</span>
             </div>
 
             <div class="flex flex-wrap gap-3 mt-5 no-print">
@@ -99,7 +205,7 @@
                         <div id="stepsProgressBar" class="progress-fill" style="width: 0%"></div>
                     </div>
                 </div>
-
+                -------------------------------------
                 <div class="space-y-6" id="stepsList">
                     {% for step in steps %}
                     <div class="flex gap-5 bg-white p-4 rounded-xl border shadow-sm step-card" data-step-id="{{ forloop.counter0 }}">
@@ -112,12 +218,36 @@
                                 <label for="step_{{ forloop.counter0 }}" class="step-title font-semibold text-lg cursor-pointer hover:text-amber-700 transition">
                                     {{ step.title }}
                                 </label>
+                                <div class="step-methods flex gap-1">
+                                    <!-- Кнопка: Подготовка продуктов -->
+                                    <button class="preparation-info-btn text-gray-400 hover:text-green-600 transition p-2 -mt-1 -mr-1"
+                                            data-preparation-id="{% if step.preparation %}{{ step.preparation.id }}{% else %}default{% endif %}"
+                                            data-preparation-name="Подготовка продуктов"
+                                            onclick="window.showPreparationDetails(this)"
+                                            title="Подготовка продуктов">
+                                        <i class="fas fa-kitchen-set text-lg"></i>
+                                    </button>
+                                    <!-- Кнопка: Метод приготовления -->
+                                    <button class="method-info-btn text-gray-400 hover:text-amber-600 transition p-2 -mt-1 -mr-1"
+                                            data-method-id="{% if step.cooking_method %}{{ step.cooking_method.id }}{% else %}default{% endif %}"
+                                            data-method-name="{% if step.cooking_method %}{{ step.cooking_method.name }}{% else %}Метод приготовления{% endif %}"
+                                            onclick="window.showMethodDetails(this)"
+                                            title="Метод приготовления">
+                                        <i class="fas fa-fire text-lg"></i>
+                                    </button>
+                                    <!-- Кнопка: Рекомендованная утварь -->
+                                    <button class="utensil-info-btn text-gray-400 hover:text-blue-600 transition p-2 -mt-1 -mr-1"
+                                            data-utensil-id="step_{{ forloop.counter0 }}"
+                                            data-utensil-name="Рекомендованная утварь"
+                                            onclick="window.showUtensilDetails(this)"
+                                            title="Рекомендованная утварь">
+                                        <i class="fas fa-utensils text-lg"></i>
+                                    </button>
+                                </div>
                             </div>
                             <p class="step-description text-gray-600 mt-1">{{ step.instruction }}</p>
                             {% if step.duration %}
-                            <div class="text-xs text-gray-400 mt-1">
-                                <i class="far fa-clock"></i> {{ step.duration }} мин
-                            </div>
+                            <div class="text-xs text-gray-400 mt-1"><i class="far fa-clock"></i> {{ step.duration }} мин</div>
                             {% endif %}
                         </div>
                     </div>
@@ -125,35 +255,102 @@
                     <p class="text-gray-500">Инструкция по приготовлению будет добавлена позже.</p>
                     {% endfor %}
                 </div>
+                ---------------------------------------
             </div>
         </div>
 
-        <!-- ПРАВАЯ КОЛОНКА: ИНГРЕДИЕНТЫ -->
+        <!-- ПРАВАЯ КОЛОНКА: ВИДЖЕТ ИНГРЕДИЕНТОВ -->
         <div class="bg-gray-50 p-6 rounded-2xl self-start">
             <h3 class="text-xl font-bold serif mb-4">📝 Ингредиенты</h3>
 
-            <ul class="space-y-3 text-gray-700" id="ingredientsList">
+            <!-- Переключатель режимов -->
+            <div class="flex gap-2 mb-4 no-print">
+                <button id="modePortionsBtn" class="mode-switch flex-1 py-2 rounded-lg text-sm font-medium bg-amber-600 text-white transition">
+                    👥 По порциям
+                </button>
+                <button id="modeProductsBtn" class="mode-switch flex-1 py-2 rounded-lg text-sm font-medium bg-white text-gray-700 border border-gray-200 transition">
+                    🥩 По продуктам
+                </button>
+            </div>
+
+            <!-- РЕЖИМ 1: ПО ПОРЦИЯМ -->
+            <div id="portionsPanel" class="mode-panel">
+                <div class="p-3 bg-green-50 rounded-xl border border-green-100 mb-4">
+                    <div class="flex items-center gap-2 mb-2">
+                        <i class="fas fa-users text-green-700"></i>
+                        <span class="font-medium text-sm">Сколько гостей?</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl font-bold text-green-700 min-w-[60px]" id="portionsValue">{{ recipe.servings }}</span>
+                        <input type="range" id="portionsSlider" min="1" max="20" value="{{ recipe.servings }}" step="1"
+                               class="flex-1 h-2 bg-gray-200 rounded-lg accent-green-600">
+                        <button id="resetPortionsBtn" class="text-gray-500 text-sm underline">Сбросить</button>
+                    </div>
+                    <div id="portionsRatioInfo" class="text-xs text-gray-500 mt-2"></div>
+                </div>
+            </div>
+
+            <!-- РЕЖИМ 2: ПО ПРОДУКТАМ -->
+            <div id="productsPanel" class="mode-panel hidden">
+                <div class="p-3 bg-amber-50 rounded-xl border border-amber-100 mb-4">
+                    <div class="flex items-center gap-2 mb-2">
+                        <i class="fas fa-link text-amber-700"></i>
+                        <span class="font-medium text-sm">Пересчитать по <span id="baseIngredientName" class="font-bold text-amber-700">выбранному</span> продукту</span>
+                    </div>
+                    <div id="baseIngredientRow" class="hidden">
+                        <div class="flex flex-wrap items-center gap-2 mt-2">
+                            <span class="text-sm text-gray-500 line-through" id="baseOriginalValue">0</span>
+                            <input type="number" id="baseIngredientWeight" step="10" class="w-24 px-2 py-1 border border-gray-300 rounded-lg text-center">
+                            <span id="baseIngredientUnit" class="text-sm"></span>
+                            <button id="applyBaseBtn" class="bg-amber-700 text-white px-3 py-1 rounded-lg text-sm">Пересчитать</button>
+                            <button id="resetBaseBtn" class="text-gray-500 text-sm underline ml-auto">Сбросить</button>
+                        </div>
+                    </div>
+                    <div id="baseRatioInfo" class="text-xs text-gray-500 mt-2"></div>
+                    <div class="text-xs text-gray-400 mt-2 italic">Нажмите 🔗 у ингредиента, чтобы сделать его базовым</div>
+                </div>
+            </div>
+
+            <!-- Список ингредиентов -->
+            <ul class="space-y-2 text-gray-700" id="ingredientsList">
                 {% for item in ingredients %}
-                <li class="ingredient-item flex justify-between items-center flex-wrap gap-2"
-                    data-ingredient-id="{{ item.ingredient.id }}"
-                    data-original="{{ item.quantity }}"
+                <li class="ingredient-row flex justify-between items-center gap-2 py-2 border-b border-gray-100 last:border-0"
+                    data-id="{{ item.id }}"
+                    data-name="{{ item.ingredient.name }}"
+                    data-base-quantity="{{ item.quantity }}"
                     data-unit="{{ item.unit }}">
                     <div class="flex items-center gap-2 flex-1">
-                        <input type="checkbox" id="ingredient_{{ forloop.counter0 }}" class="accent-amber-700 ingredient-checkbox">
-                        <label for="ingredient_{{ forloop.counter0 }}">{{ item.ingredient.name }}</label>
+                        <input type="checkbox" id="ingredient_{{ item.id }}" class="ingredient-checkbox accent-amber-700 w-4 h-4">
+                        <label for="ingredient_{{ item.id }}" class="text-sm cursor-pointer">{{ item.ingredient.name }}</label>
                     </div>
-                    <span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded border text-sm">
-                        {{ item.quantity }} {{ item.unit }}
-                    </span>
+                    <div class="flex items-center gap-1">
+                        <span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded text-sm border">{{ item.quantity }} {{ item.unit }}</span>
+                        <button class="chain-btn text-gray-400 hover:text-amber-600 transition p-1" data-id="{{ item.id }}" data-name="{{ item.ingredient.name }}" data-quantity="{{ item.quantity }}" data-unit="{{ item.unit }}" title="Сделать основным для пересчёта">
+                            <i class="fas fa-link"></i>
+                        </button>
+                        <button class="replace-btn text-gray-400 hover:text-blue-600 transition p-1" data-id="{{ item.id }}" data-name="{{ item.ingredient.name }}" title="Заменить ингредиент">
+                            <i class="fas fa-exchange-alt"></i>
+                        </button>
+                        <button class="info-btn text-gray-400 hover:text-amber-600 transition p-1" data-id="{{ item.id }}" data-name="{{ item.ingredient.name }}" title="Информация об ингредиенте">
+                            <i class="fas fa-info-circle"></i>
+                        </button>
+                    </div>
                 </li>
                 {% empty %}
                 <li class="text-gray-500">Список ингредиентов будет добавлен позже.</li>
                 {% endfor %}
             </ul>
 
+            <!-- Кнопки управления чекбоксами -->
+            <div class="flex gap-3 mt-4 pt-2 border-t border-gray-200 no-print">
+                <button id="checkAllBtn" class="text-xs text-gray-500 hover:text-amber-600 transition">☑ Отметить всё</button>
+                <button id="uncheckAllBtn" class="text-xs text-gray-500 hover:text-amber-600 transition">☐ Снять всё</button>
+                <button id="copyCheckedBtn" class="text-xs text-gray-500 hover:text-amber-600 transition ml-auto">📋 Копировать отмеченное</button>
+            </div>
+
             <!-- Пищевая ценность -->
             {% if recipe.calories or recipe.protein or recipe.fat or recipe.carbs %}
-            <div class="mt-6 pt-4 border-t border-gray-200">
+            <div class="mt-4 pt-3 border-t border-gray-200">
                 <h4 class="font-semibold text-gray-700 text-sm mb-2">📊 Пищевая ценность (на порцию)</h4>
                 <div class="grid grid-cols-4 gap-2 text-center text-xs">
                     <div><span class="font-semibold text-amber-700">{{ recipe.calories }}</span> <span class="text-gray-500">ккал</span></div>
@@ -166,9 +363,103 @@
         </div>
     </div>
 </div>
+
+<!-- МОДАЛЬНОЕ ОКНО ДЛЯ ЗАМЕНЫ ИНГРЕДИЕНТА -->
+<div id="replaceModal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden no-print">
+    <div class="bg-white rounded-2xl p-6 max-w-md w-full mx-4 shadow-xl">
+        <h3 class="text-xl font-bold serif mb-4">🔄 Замена ингредиента</h3>
+        <p class="text-gray-600 mb-2">Заменить <span id="replaceOriginalName" class="font-semibold text-amber-700"></span></p>
+        <div class="mb-4">
+            <label class="block text-sm font-medium text-gray-700 mb-1">Заменить на:</label>
+            <select id="replaceWithSelect" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500 bg-white">
+                <option value="custom">✏️ Другой ингредиент (ввести вручную)</option>
+                <option value="томатная паста">🍅 Томатная паста</option>
+                <option value="перетёртые помидоры">🍅 Перетёртые помидоры (1:2)</option>
+                <option value="томатный сок">🧃 Томатный сок (1:3)</option>
+            </select>
+        </div>
+        <div class="mb-4">
+            <label class="block text-sm font-medium text-gray-700 mb-1">Соотношение:</label>
+            <div class="flex items-center gap-2 flex-wrap">
+                <span class="text-sm">1</span>
+                <span id="replaceOriginalUnit" class="text-sm bg-gray-100 px-2 py-0.5 rounded"></span>
+                <span class="text-sm">=</span>
+                <input type="number" id="replaceRatio" value="1" step="0.1" class="w-20 px-2 py-1 border border-gray-300 rounded-lg text-center focus:outline-none focus:ring-2 focus:ring-amber-500">
+                <span id="replaceNewUnit" class="text-sm bg-gray-100 px-2 py-0.5 rounded"></span>
+                <span id="replaceNewName" class="text-sm font-medium text-gray-700"></span>
+            </div>
+            <p class="text-xs text-gray-500 mt-1">Пример: 1 ст.л. томатной пасты = 2 ст.л. перетёртых помидоров</p>
+        </div>
+        <div class="flex justify-between items-center gap-3 mt-6">
+            <a href="#" id="fullReplaceInfoLink" class="text-sm text-amber-600 hover:text-amber-800 transition">📖 Подробнее о заменах →</a>
+            <div class="flex gap-3">
+                <button id="cancelReplaceBtn" class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition">Отмена</button>
+                <button id="confirmReplaceBtn" class="px-4 py-2 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition">Применить замену</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- МОДАЛЬНОЕ ОКНО ДЛЯ ИНФОРМАЦИИ ОБ ИНГРЕДИЕНТЕ -->
+<div id="infoModal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden no-print">
+    <div class="bg-white rounded-2xl p-6 max-w-2xl w-full mx-4 shadow-xl max-h-[85vh] overflow-y-auto">
+        <div class="flex justify-between items-start mb-4">
+            <h3 class="text-2xl font-bold serif flex items-center gap-2">
+                <i class="fas fa-info-circle text-amber-600"></i>
+                <span id="infoModalName">Ингредиент</span>
+            </h3>
+            <button onclick="closeInfoModal()" class="text-gray-400 hover:text-gray-600 transition">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+
+        <div id="infoModalContent" class="space-y-4">
+            <div class="bg-gray-50 p-4 rounded-xl">
+                <h4 class="font-semibold text-gray-800 mb-2 flex items-center gap-2">
+                    <i class="fas fa-chart-line text-amber-600"></i> Пищевая ценность (на 100г)
+                </h4>
+                <div class="grid grid-cols-4 gap-2 text-center" id="infoModalNutrition">
+                    <div><span class="font-bold text-amber-700">65</span><br><span class="text-xs text-gray-500">ккал</span></div>
+                    <div><span class="font-bold text-amber-700">3</span><br><span class="text-xs text-gray-500">белки</span></div>
+                    <div><span class="font-bold text-amber-700">2</span><br><span class="text-xs text-gray-500">жиры</span></div>
+                    <div><span class="font-bold text-amber-700">8</span><br><span class="text-xs text-gray-500">углеводы</span></div>
+                </div>
+            </div>
+
+            <div class="bg-green-50 p-4 rounded-xl">
+                <h4 class="font-semibold text-green-800 mb-2 flex items-center gap-2">
+                    <i class="fas fa-lightbulb"></i> Советы по выбору
+                </h4>
+                <p id="infoModalTips" class="text-green-700 text-sm">Выбирайте свежие продукты без повреждений. Овощи должны быть упругими, без пятен.</p>
+            </div>
+
+            <div class="bg-blue-50 p-4 rounded-xl">
+                <h4 class="font-semibold text-blue-800 mb-2 flex items-center gap-2">
+                    <i class="fas fa-box"></i> Хранение
+                </h4>
+                <p id="infoModalStorage" class="text-blue-700 text-sm">Хранить в прохладном тёмном месте. Срок хранения: 5-7 дней.</p>
+            </div>
+
+            <div class="bg-amber-50 p-4 rounded-xl">
+                <h4 class="font-semibold text-amber-800 mb-2 flex items-center gap-2">
+                    <i class="fas fa-exchange-alt"></i> Чем можно заменить
+                </h4>
+                <p id="infoModalSubstitutes" class="text-amber-700 text-sm">Нет точной замены, можно использовать аналоги по вкусу.</p>
+            </div>
+        </div>
+
+        <div class="flex justify-between items-center mt-6 pt-4 border-t border-gray-200">
+            <a href="#" id="fullIngredientInfoLink" class="text-sm text-amber-600 hover:text-amber-800 transition flex items-center gap-1">
+                <i class="fas fa-external-link-alt"></i> Подробнее об ингредиенте →
+            </a>
+            <button onclick="closeInfoModal()" class="px-5 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition">Закрыть</button>
+        </div>
+    </div>
+</div>
 {% endblock %}
 
 {% block extra_js %}
+<script src="{% static 'kitchen/js/recipe_widget.js' %}"></script>
 <script>
     window.shareRecipe = function() {
         if (navigator.share) {
@@ -184,47 +475,8 @@
         }
     };
 
-    // Сохранение состояния чекбоксов
-    document.addEventListener('DOMContentLoaded', function() {
-        document.querySelectorAll('.step-checkbox').forEach(cb => {
-            const saved = localStorage.getItem(`step_${cb.id}`);
-            if (saved === 'true') cb.checked = true;
-            cb.addEventListener('change', function() {
-                localStorage.setItem(`step_${cb.id}`, cb.checked);
-                updateProgress();
-            });
-        });
-
-        function updateProgress() {
-            const checkboxes = document.querySelectorAll('.step-checkbox');
-            const total = checkboxes.length;
-            const completed = Array.from(checkboxes).filter(cb => cb.checked).length;
-            const percent = total ? (completed / total) * 100 : 0;
-            document.getElementById('stepsProgress').innerText = `${completed}/${total}`;
-            document.getElementById('stepsProgressBar').style.width = `${percent}%`;
-
-            document.querySelectorAll('.step-card').forEach((card, idx) => {
-                if (checkboxes[idx]?.checked) {
-                    card.classList.add('completed');
-                } else {
-                    card.classList.remove('completed');
-                }
-            });
-        }
-
-        updateProgress();
-
-        // Кликабельные карточки шагов
-        document.querySelectorAll('.step-card').forEach(card => {
-            card.addEventListener('click', (e) => {
-                if (e.target.closest('a') || e.target.closest('button')) return;
-                const checkbox = card.querySelector('.step-checkbox');
-                if (checkbox) {
-                    checkbox.checked = !checkbox.checked;
-                    checkbox.dispatchEvent(new Event('change'));
-                }
-            });
-        });
-    });
+    window.closeInfoModal = function() {
+        document.getElementById('infoModal')?.classList.add('hidden');
+    };
 </script>
 {% endblock %}
