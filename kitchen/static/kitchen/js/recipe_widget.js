@@ -747,7 +747,7 @@ if (modeNormalBtn && modeCompactBtn) {
     }
 }
 
-// ======================= ГЛОБАЛЬНЫЕ ПРИВЯЗКИ =======================
+// Делаем функции глобальными для доступа из HTML
 window.showMethodDetails = showMethodDetails;
 window.closeMethodModal = closeMethodModal;
 window.showPreparationDetails = showPreparationDetails;
