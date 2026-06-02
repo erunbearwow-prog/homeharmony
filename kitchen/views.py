@@ -81,15 +81,45 @@ def index(request):
 
 
 def recipe_detail(request, recipe_id):
-    """Детальная страница рецепта"""
     recipe = get_object_or_404(Recipe, id=recipe_id)
     ingredients = recipe.recipe_ingredients.all()
     steps = recipe.steps.all().order_by('order')
+
+    # Получаем параметры возврата
+    return_to = request.GET.get('return_to')
+    return_title = request.GET.get('return_title')
+    return_step = request.GET.get('return_step')
+    return_context = request.GET.get('return_context')
+    return_mode = request.GET.get('return_mode', 'portions')
+    return_meat = request.GET.get('return_meat')
+    return_portions = request.GET.get('return_portions')
+
+    # Получаем изображение основного рецепта
+    return_image = None
+    if return_to and 'recipe/' in return_to:
+        try:
+            # Извлекаем ID рецепта из URL
+            import re
+            match = re.search(r'/recipe/(\d+)/', return_to)
+            if match:
+                return_recipe_id = match.group(1)
+                return_recipe = Recipe.objects.get(id=return_recipe_id)
+                return_image = return_recipe.image.url if return_recipe.image else None
+        except:
+            pass
 
     context = {
         'recipe': recipe,
         'ingredients': ingredients,
         'steps': steps,
+        'return_to': return_to,
+        'return_title': return_title,
+        'return_step': return_step,
+        'return_context': return_context,
+        'return_mode': return_mode,
+        'return_meat': return_meat,
+        'return_portions': return_portions,
+        'return_image': return_image,
     }
     return render(request, 'kitchen/recipe_detail.html', context)
 

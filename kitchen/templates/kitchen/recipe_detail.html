@@ -158,14 +158,41 @@ css
         <span class="text-gray-800 font-medium">{{ recipe.title }}</span>
     </div>
 
+
+
     <div class="grid lg:grid-cols-3 gap-8">
         <!-- ЛЕВАЯ КОЛОНКА: ФОТО + ОПИСАНИЕ + ШАГИ -->
         <div class="lg:col-span-2">
-            {% if recipe.image %}
-            <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}" class="w-full rounded-2xl shadow-lg object-cover">
-            {% else %}
-            <img src="https://placehold.co/800x500/cc7b2b/ffffff?text={{ recipe.title|urlencode }}" alt="{{ recipe.title }}" class="w-full rounded-2xl shadow-lg object-cover">
-            {% endif %}
+            <!-- ФОТО РЕЦЕПТА С НАЗВАНИЕМ ПОВЕРХ -->
+            <div class="relative">
+                {% if recipe.image %}
+                <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}" class="w-full rounded-2xl shadow-lg object-cover h-64 md:h-96">
+                {% else %}
+                <div class="w-full rounded-2xl shadow-lg bg-gradient-to-br from-amber-400 to-orange-600 h-64 md:h-96 flex items-center justify-center relative overflow-hidden">
+                    <!-- Декоративные элементы -->
+                    <div class="absolute inset-0 opacity-20">
+                        <svg class="w-full h-full" pattern="M0 0 L100 100 M100 0 L0 100" stroke="white" stroke-width="1"></svg>
+                    </div>
+                    <div class="text-center z-10">
+                        <i class="fas fa-utensils text-white text-6xl mb-4 opacity-80"></i>
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg px-4">
+                            {{ recipe.title }}
+                        </h1>
+                        {% if recipe.cuisine %}
+                        <p class="text-white/90 text-lg mt-2 drop-shadow">{{ recipe.cuisine.name }} кухня</p>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
+                <!-- Название поверх изображения (если изображение есть) -->
+                {% if recipe.image %}
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent rounded-2xl flex items-end">
+                    <h1 class="text-3xl md:text-4xl font-bold text-white drop-shadow-lg p-6">
+                        {{ recipe.title }}
+                    </h1>
+                </div>
+                {% endif %}
+            </div>
 
             <!-- Блок информации -->
             <div class="flex flex-wrap gap-2 sm:gap-3 mt-4 text-sm text-gray-600">
@@ -191,6 +218,45 @@ css
                 <p class="text-gray-700 leading-relaxed">{{ recipe.description }}</p>
             </div>
             {% endif %}
+
+                -------------------------------------------
+                <!-- БЛОК ВОЗВРАТА К ОСНОВНОМУ РЕЦЕПТУ -->
+                {% if return_to %}
+                <div class="mb-6 p-4 bg-amber-50 rounded-xl border border-amber-200 flex flex-col sm:flex-row gap-4 items-start sm:items-center" id="returnBanner">
+                    <div class="flex items-center gap-3">
+                        <!-- КАРТИНКА ОСНОВНОГО РЕЦЕПТА (вместо иконки) -->
+                        {% if return_image %}
+                        <img src="{{ return_image }}" alt="{{ return_title }}" class="w-16 h-16 rounded-lg object-cover shadow-sm">
+                        {% else %}
+                        <div class="w-16 h-16 bg-amber-100 rounded-lg flex items-center justify-center">
+                            <svg class="w-8 h-8 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        {% endif %}
+                        <div>
+                            <div class="text-sm text-gray-500 mb-1">
+                                <i class="fas fa-arrow-left text-amber-600 mr-1"></i> Вы готовите это для:
+                            </div>
+                            <a href="{{ return_to }}" class="font-semibold text-gray-800 hover:text-amber-700 transition">
+                                {{ return_title }}
+                            </a>
+                            {% if return_step %}
+                            <div class="text-xs text-gray-500 mt-1">
+                                <i class="fas fa-list-ol mr-1"></i> Шаг {{ return_step }}: {{ return_context|default:"Добавьте приготовленный соус" }}
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="ml-auto">
+                        <a href="{{ return_to }}?step={{ return_step }}&mode={{ return_mode }}&{% if return_mode == 'products' %}meat={{ return_meat }}{% else %}portions={{ return_portions }}{% endif %}"
+                           class="bg-amber-700 text-white px-4 py-2 rounded-lg hover:bg-amber-800 transition flex items-center gap-2">
+                            <i class="fas fa-arrow-left"></i> Вернуться к основному рецепту
+                        </a>
+                    </div>
+                </div>
+                {% endif %}
+                -------------------------------------------
 
             <!-- ПОШАГОВОЕ ПРИГОТОВЛЕНИЕ -->
             <div class="mt-10">
@@ -247,21 +313,22 @@ css
                             </div>
                             <p class="step-description text-gray-600 mt-1">{{ step.instruction }}</p>
 
-                            <!-- Вложенный рецепт -->
-                            {% if step.subrecipe %}
-                            <div class="mt-2 p-3 bg-amber-50 rounded-lg border border-amber-200">
-                                <div class="flex items-center gap-2 mb-2">
-                                    <i class="fas fa-utensil-spoon text-amber-600"></i>
-                                    <span class="font-medium text-sm">Вложенный рецепт:</span>
-                                    <a href="{% url 'kitchen:recipe_detail' step.subrecipe.id %}" class="text-amber-700 hover:underline font-medium">
-                                        {{ step.subrecipe.title }}
-                                    </a>
+                            <!-- ВЛОЖЕННЫЙ РЕЦЕПТ С ПАРАМЕТРАМИ ВОЗВРАТА -->
+                                {% if step.subrecipe %}
+                                <div class="mt-2 p-3 bg-amber-50 rounded-lg border border-amber-200">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <i class="fas fa-utensil-spoon text-amber-600"></i>
+                                        <span class="font-medium text-sm">Вложенный рецепт:</span>
+                                        <a href="{% url 'kitchen:recipe_detail' step.subrecipe.id %}?return_to={{ request.path|urlencode }}&return_title={{ recipe.title|urlencode }}&return_step={{ step.order }}&return_context={{ step.title|urlencode }}&return_mode={{ request.GET.mode|default:'portions' }}&return_meat={{ request.GET.meat }}&return_portions={{ request.GET.portions }}"
+                                           class="text-amber-700 hover:underline font-medium">
+                                            {{ step.subrecipe.title }}
+                                        </a>
+                                    </div>
+                                    {% if step.subrecipe_usage %}
+                                    <p class="text-sm text-gray-600">{{ step.subrecipe_usage }}</p>
+                                    {% endif %}
                                 </div>
-                                {% if step.subrecipe_usage %}
-                                <p class="text-sm text-gray-600">{{ step.subrecipe_usage }}</p>
                                 {% endif %}
-                            </div>
-                            {% endif %}
 
                             {% if step.duration %}
                             <div class="text-xs text-gray-400 mt-1"><i class="far fa-clock"></i> {{ step.duration }} мин</div>
@@ -500,5 +567,56 @@ css
     window.closeInfoModal = function() {
         document.getElementById('infoModal')?.classList.add('hidden');
     };
+
+     // Восстановление состояния при возврате из вложенного рецепта
+    document.addEventListener('DOMContentLoaded', function() {
+        // Получаем параметры из URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const stepParam = urlParams.get('step');
+        const modeParam = urlParams.get('mode');
+        const portionsParam = urlParams.get('portions');
+        const meatParam = urlParams.get('meat');
+
+        // Если есть параметр step — прокручиваем и подсвечиваем шаг
+        if (stepParam) {
+            const targetStep = document.querySelector(`.step-card[data-step-id="${parseInt(stepParam) - 1}"]`);
+            if (targetStep) {
+                setTimeout(() => {
+                    targetStep.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    targetStep.classList.add('ring-2', 'ring-amber-400', 'ring-offset-2');
+                    setTimeout(() => {
+                        targetStep.classList.remove('ring-2', 'ring-amber-400', 'ring-offset-2');
+                    }, 3000);
+                }, 500);
+            }
+        }
+
+        // Восстанавливаем режим пересчёта, если передан
+        if (modeParam === 'products' && meatParam) {
+            const modeProductsBtn = document.getElementById('modeProductsBtn');
+            if (modeProductsBtn) modeProductsBtn.click();
+
+            // Устанавливаем значение мяса
+            setTimeout(() => {
+                const meatInput = document.getElementById('customMeatWeight');
+                if (meatInput) {
+                    meatInput.value = meatParam;
+                    const applyBtn = document.getElementById('applyMeatBtn');
+                    if (applyBtn) applyBtn.click();
+                }
+            }, 100);
+        } else if (modeParam === 'portions' && portionsParam) {
+            const modePortionsBtn = document.getElementById('modePortionsBtn');
+            if (modePortionsBtn) modePortionsBtn.click();
+
+            setTimeout(() => {
+                const portionsSlider = document.getElementById('portionsSlider');
+                if (portionsSlider) {
+                    portionsSlider.value = portionsParam;
+                    portionsSlider.dispatchEvent(new Event('input'));
+                }
+            }, 100);
+        }
+    });
 </script>
 {% endblock %}
