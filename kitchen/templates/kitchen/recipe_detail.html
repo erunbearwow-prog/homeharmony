@@ -158,8 +158,6 @@ css
         <span class="text-gray-800 font-medium">{{ recipe.title }}</span>
     </div>
 
-
-
     <div class="grid lg:grid-cols-3 gap-8">
         <!-- ЛЕВАЯ КОЛОНКА: ФОТО + ОПИСАНИЕ + ШАГИ -->
         <div class="lg:col-span-2">
@@ -427,9 +425,11 @@ css
 
             <!-- Кнопки управления чекбоксами -->
             <div class="flex gap-3 mt-4 pt-2 border-t border-gray-200 no-print">
-                <button id="checkAllBtn" class="text-xs text-gray-500 hover:text-amber-600 transition">☑ Отметить всё</button>
+                <button id="checkAllBtn" class="text-xs text-gray-500 hover:text-amber-600 transition">☑ Отметить всё (есть в наличии)</button>
                 <button id="uncheckAllBtn" class="text-xs text-gray-500 hover:text-amber-600 transition">☐ Снять всё</button>
-                <button id="copyCheckedBtn" class="text-xs text-gray-500 hover:text-amber-600 transition ml-auto">📋 Копировать отмеченное</button>
+                <button id="copyCheckedBtn" class="text-xs bg-amber-100 text-amber-800 px-3 py-1 rounded-lg hover:bg-amber-200 transition ml-auto">
+                    📋 Скопировать список покупок (чего нет)
+                </button>
             </div>
 
             <!-- Пищевая ценность -->

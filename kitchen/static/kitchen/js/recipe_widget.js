@@ -410,7 +410,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Копировать отмеченное
+    // Копировать НЕОТМЕЧЕННЫЕ ингредиенты (то, чего нет в наличии)
     if (copyCheckedBtn) {
         copyCheckedBtn.addEventListener('click', () => {
             const items = [];
@@ -418,12 +418,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 const cb = row.querySelector('.ingredient-checkbox');
                 const label = row.querySelector('label');
                 const amount = row.querySelector('.ingredient-amount')?.innerText;
-                if (cb && cb.checked && label) {
+                // Изменение: берём НЕотмеченные чекбоксы (!cb.checked)
+                if (cb && !cb.checked && label) {
                     items.push(`${label.innerText} — ${amount}`);
                 }
             });
-            if (items.length === 0) alert('Ничего не отмечено');
-            else navigator.clipboard.writeText(items.join('\n')).then(() => alert(`Скопировано ${items.length} ингредиентов`));
+            if (items.length === 0) {
+                alert('Все ингредиенты есть в наличии! 🎉');
+            } else {
+                navigator.clipboard.writeText(items.join('\n')).then(() => {
+                    alert(`Скопировано ${items.length} ингредиентов для покупки`);
+                });
+            }
         });
     }
 
