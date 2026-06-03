@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentRatio = 1;
     let currentBaseIngredient = null;
     let currentReplaceIngredient = null;
+    let currentMode = 'portions';
 
     // Базовые значения
     const baseServings = parseInt(document.getElementById('portionsSlider')?.value) || 4;
@@ -65,6 +66,93 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // ======================= ОБРАБОТЧИК КЛИКОВ ПО ССЫЛКАМ НА ВЛОЖЕННЫЕ РЕЦЕПТЫ =======================
+    function setupSubrecipeLinks() {
+        document.querySelectorAll('.subrecipe-link').forEach(link => {
+            // Удаляем старый обработчик, чтобы не навешивать несколько
+            if (link._handler) {
+                link.removeEventListener('click', link._handler);
+            }
+
+            const handler = function(e) {
+                e.preventDefault();
+
+                // Получаем текущий ratio в зависимости от режима
+                let currentRatioValue;
+
+                if (currentMode === 'products' && currentBaseIngredient) {
+                    currentRatioValue = currentBaseIngredient.currentValue / currentBaseIngredient.originalValue;
+                } else if (currentMode === 'portions' && portionsSlider) {
+                    currentRatioValue = parseInt(portionsSlider.value) / baseServings;
+                } else {
+                    currentRatioValue = currentRatio;
+                }
+
+                // Получаем базовый URL
+                let url = new URL(this.href);
+
+                // Добавляем или обновляем параметры
+                url.searchParams.set('ratio', currentRatioValue.toFixed(3));
+                url.searchParams.set('mode', currentMode);
+
+                if (currentMode === 'products' && currentBaseIngredient) {
+                    url.searchParams.set('base_ingredient', currentBaseIngredient.id);
+                    url.searchParams.set('base_value', currentBaseIngredient.currentValue);
+                    url.searchParams.delete('portions');
+                } else if (currentMode === 'portions' && portionsSlider) {
+                    url.searchParams.set('portions', portionsSlider.value);
+                    url.searchParams.delete('base_ingredient');
+                    url.searchParams.delete('base_value');
+                }
+
+                console.log('Переход по ссылке:', url.toString());
+
+                // Переходим по обновлённой ссылке
+                window.location.href = url.toString();
+            };
+
+            link._handler = handler;
+            link.addEventListener('click', handler);
+        });
+    }
+
+    // ======================= ОБНОВЛЕНИЕ ССЫЛОК НА ВЛОЖЕННЫЕ РЕЦЕПТЫ =======================
+    function updateSubrecipeLinks() {
+        // Получаем текущий ratio в зависимости от режима
+        let currentRatioValue;
+
+        if (currentMode === 'products' && currentBaseIngredient) {
+            currentRatioValue = currentBaseIngredient.currentValue / currentBaseIngredient.originalValue;
+        } else if (currentMode === 'portions' && portionsSlider) {
+            currentRatioValue = parseInt(portionsSlider.value) / baseServings;
+        } else {
+            currentRatioValue = currentRatio;
+        }
+
+        document.querySelectorAll('.subrecipe-link').forEach(link => {
+            try {
+                const url = new URL(link.href);
+                // Обновляем параметры в href (для случаев, если нужно показать правильную ссылку)
+                url.searchParams.set('ratio', currentRatioValue.toFixed(3));
+                url.searchParams.set('mode', currentMode);
+
+                if (currentMode === 'products' && currentBaseIngredient) {
+                    url.searchParams.set('base_ingredient', currentBaseIngredient.id);
+                    url.searchParams.set('base_value', currentBaseIngredient.currentValue);
+                    url.searchParams.delete('portions');
+                } else if (currentMode === 'portions' && portionsSlider) {
+                    url.searchParams.set('portions', portionsSlider.value);
+                    url.searchParams.delete('base_ingredient');
+                    url.searchParams.delete('base_value');
+                }
+
+                link.href = url.toString();
+            } catch(e) {
+                console.error('Ошибка обновления ссылки:', e);
+            }
+        });
+    }
+
     // Функция обновления всех ингредиентов
     function updateAllIngredients(ratio) {
         ingredients.forEach(ing => {
@@ -82,11 +170,165 @@ document.addEventListener('DOMContentLoaded', function() {
             ing.element.innerText = `${displayValue} ${ing.unit}`;
             ing.currentQuantity = displayValue;
         });
+        updateSubrecipeLinks();
+        setupSubrecipeLinks();
     }
+
+    // ======================= ОБНОВЛЕНИЕ URL =======================
+    function updateURL() {
+        // Получаем существующие параметры из текущего URL
+        const currentParams = new URLSearchParams(window.location.search);
+
+        // Сохраняем параметры возврата, если они есть
+        const returnTo = currentParams.get('return_to');
+        const returnTitle = currentParams.get('return_title');
+        const returnStep = currentParams.get('return_step');
+        const returnContext = currentParams.get('return_context');
+        const returnMode = currentParams.get('return_mode');
+        const returnMeat = currentParams.get('return_meat');
+        const returnPortions = currentParams.get('return_portions');
+
+        // Создаём новые параметры
+        const params = new URLSearchParams();
+
+        // Восстанавливаем параметры возврата
+        if (returnTo) params.set('return_to', returnTo);
+        if (returnTitle) params.set('return_title', returnTitle);
+        if (returnStep) params.set('return_step', returnStep);
+        if (returnContext) params.set('return_context', returnContext);
+        if (returnMode) params.set('return_mode', returnMode);
+        if (returnMeat) params.set('return_meat', returnMeat);
+        if (returnPortions) params.set('return_portions', returnPortions);
+
+        // Добавляем параметры режима
+        params.set('mode', currentMode);
+
+        let ratioValue = 1;
+
+        if (currentMode === 'products' && currentBaseIngredient) {
+            params.set('base_ingredient', currentBaseIngredient.id);
+            params.set('base_value', currentBaseIngredient.currentValue);
+            ratioValue = currentBaseIngredient.currentValue / currentBaseIngredient.originalValue;
+            params.set('ratio', ratioValue.toFixed(3));
+        } else if (currentMode === 'products' && !currentBaseIngredient) {
+            const firstIngredient = document.querySelector('.ingredient-row');
+            if (firstIngredient) {
+                const originalValue = parseFloat(firstIngredient.dataset.baseQuantity);
+                const currentValue = parseFloat(firstIngredient.querySelector('.ingredient-amount').innerText);
+                ratioValue = currentValue / originalValue;
+                params.set('ratio', ratioValue.toFixed(3));
+            }
+        } else {
+            const portionsVal = portionsSlider ? parseInt(portionsSlider.value) : baseServings;
+            params.set('portions', portionsVal);
+            ratioValue = portionsVal / baseServings;
+            params.set('ratio', ratioValue.toFixed(3));
+        }
+
+        // Формируем новый URL
+        const newUrl = `${window.location.pathname}?${params.toString()}`;
+        window.history.pushState({}, '', newUrl);
+    }
+
+    // ======================= ВОССТАНОВЛЕНИЕ RATIO ИЗ URL =======================
+function restoreRatioFromURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const ratioFromURL = urlParams.get('ratio');
+
+    console.log('restoreRatioFromURL - ratioFromURL:', ratioFromURL);
+
+    if (ratioFromURL && !isNaN(parseFloat(ratioFromURL))) {
+        const ratio = parseFloat(ratioFromURL);
+        currentRatio = ratio;
+
+        // Проверяем, есть ли параметры базового ингредиента
+        const baseIngredientId = urlParams.get('base_ingredient');
+        const baseValue = urlParams.get('base_value');
+
+        if (baseIngredientId && baseValue) {
+            // Режим продуктов
+            console.log('Восстанавливаем режим продуктов, base_ingredient:', baseIngredientId, 'base_value:', baseValue);
+
+            // Находим кнопку chain-btn для этого ингредиента
+            const baseBtn = document.querySelector(`.chain-btn[data-id="${baseIngredientId}"]`);
+            if (baseBtn) {
+                // Устанавливаем режим вручную
+                currentMode = 'products';
+
+                // Получаем данные ингредиента
+                const originalValue = parseFloat(baseBtn.dataset.quantity);
+                const newValue = parseFloat(baseValue);
+                const name = baseBtn.dataset.name;
+                const unit = baseBtn.dataset.unit;
+
+                // Создаём объект currentBaseIngredient
+                currentBaseIngredient = {
+                    id: baseIngredientId,
+                    name: name,
+                    originalValue: originalValue,
+                    unit: unit,
+                    currentValue: newValue
+                };
+
+                // Обновляем UI
+                baseIngredientName.innerText = name;
+                baseOriginalValue.innerText = `${originalValue} ${unit}`;
+                baseIngredientWeight.value = newValue;
+                baseIngredientRow.classList.remove('hidden');
+
+                // Подсвечиваем кнопку
+                document.querySelectorAll('.chain-btn').forEach(btn => {
+                    btn.classList.remove('text-amber-600');
+                    btn.classList.add('text-gray-400');
+                });
+                baseBtn.classList.remove('text-gray-400');
+                baseBtn.classList.add('text-amber-600');
+
+                // Переключаем панели
+                if (portionsPanel) portionsPanel.classList.add('hidden');
+                if (productsPanel) productsPanel.classList.remove('hidden');
+
+                if (modePortionsBtn) {
+                    modePortionsBtn.classList.remove('bg-amber-600', 'text-white');
+                    modePortionsBtn.classList.add('bg-white', 'text-gray-700', 'border-gray-200');
+                }
+                if (modeProductsBtn) {
+                    modeProductsBtn.classList.add('bg-amber-600', 'text-white');
+                    modeProductsBtn.classList.remove('bg-white', 'text-gray-700', 'border-gray-200');
+                }
+
+                // Пересчитываем ингредиенты
+                const newRatio = newValue / originalValue;
+                updateAllIngredients(newRatio);
+
+                if (baseRatioInfo) {
+                    baseRatioInfo.innerText = `Коэффициент: ${newRatio.toFixed(2)} (на ${newValue} ${unit} ${name})`;
+                }
+
+                localStorage.setItem('recipe_mode', 'products');
+                updateURL();
+            }
+        } else {
+            // Режим порций
+            console.log('Восстанавливаем режим порций, ratio:', ratio);
+
+            const portions = Math.round(ratio * baseServings);
+            if (portionsSlider && portions > 0 && portions <= 20) {
+                portionsSlider.value = portions;
+                if (portionsValue) portionsValue.innerText = portions;
+                updateAllIngredients(ratio);
+                if (portionsRatioInfo) {
+                    portionsRatioInfo.innerText = `Коэффициент: ${ratio.toFixed(2)} (на ${portions} порций)`;
+                }
+            }
+        }
+    }
+}
 
     // ======================= ПЕРЕКЛЮЧЕНИЕ РЕЖИМОВ =======================
     function setMode(mode) {
         console.log('Switching to mode:', mode);
+        currentMode = mode;
 
         if (mode === 'portions') {
             if (portionsPanel) portionsPanel.classList.remove('hidden');
@@ -129,6 +371,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
         localStorage.setItem('recipe_mode', mode);
+        updateURL();
     }
 
     // Навешиваем обработчики на кнопки режимов
@@ -201,6 +444,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (baseRatioInfo) {
                 baseRatioInfo.innerText = `Коэффициент: ${ratio.toFixed(2)} (на ${newValue} ${currentBaseIngredient.unit} ${currentBaseIngredient.name})`;
             }
+            updateURL();
         });
     }
 
@@ -218,6 +462,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
             setMode('portions');
+            updateURL();
         });
     }
 
@@ -362,6 +607,7 @@ document.addEventListener('DOMContentLoaded', function() {
             updateAllIngredients(currentRatio);
             if (portionsRatioInfo) {
                 portionsRatioInfo.innerText = `Коэффициент: ${currentRatio.toFixed(2)} (на ${val} порций)`;
+                updateURL();
             }
         });
     }
@@ -373,6 +619,7 @@ document.addEventListener('DOMContentLoaded', function() {
             currentRatio = 1;
             updateAllIngredients(1);
             if (portionsRatioInfo) portionsRatioInfo.innerText = '';
+            updateURL();
         });
     }
 
@@ -418,7 +665,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 const cb = row.querySelector('.ingredient-checkbox');
                 const label = row.querySelector('label');
                 const amount = row.querySelector('.ingredient-amount')?.innerText;
-                // Изменение: берём НЕотмеченные чекбоксы (!cb.checked)
                 if (cb && !cb.checked && label) {
                     items.push(`${label.innerText} — ${amount}`);
                 }
@@ -433,22 +679,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Восстановление режима
-    const savedMode = localStorage.getItem('recipe_mode');
-    if (savedMode === 'products') {
-        setMode('products');
-    } else {
-        setMode('portions');
-    }
-
     // ======================= ШАГИ ПРИГОТОВЛЕНИЯ =======================
     function updateStepsProgress() {
         const stepCheckboxes = document.querySelectorAll('.step-checkbox');
         const total = stepCheckboxes.length;
         const completed = Array.from(stepCheckboxes).filter(cb => cb.checked).length;
         const percent = total ? (completed / total) * 100 : 0;
-        document.getElementById('stepsProgress').innerText = `${completed}/${total}`;
-        document.getElementById('stepsProgressBar').style.width = `${percent}%`;
+        const stepsProgressSpan = document.getElementById('stepsProgress');
+        const stepsProgressBar = document.getElementById('stepsProgressBar');
+        if (stepsProgressSpan) stepsProgressSpan.innerText = `${completed}/${total}`;
+        if (stepsProgressBar) stepsProgressBar.style.width = `${percent}%`;
 
         document.querySelectorAll('.step-card').forEach((card, idx) => {
             if (stepCheckboxes[idx]?.checked) card.classList.add('completed');
@@ -470,7 +710,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Кликабельные карточки шагов
     document.querySelectorAll('.step-card').forEach(card => {
         card.addEventListener('click', (e) => {
-            // Если кликнули на чекбокс или на его label — ничего не делаем
             if (e.target.type === 'checkbox' || e.target.closest('.step-checkbox')) {
                 return;
             }
@@ -482,6 +721,20 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Восстановление режима
+    const savedMode = localStorage.getItem('recipe_mode');
+    if (savedMode === 'products') {
+        setMode('products');
+    } else {
+        setMode('portions');
+    }
+
+    // Настройка обработчиков для ссылок на вложенные рецепты
+    setupSubrecipeLinks();
+
+    // Восстанавливаем ratio из URL после инициализации
+    setTimeout(restoreRatioFromURL, 100);
 
     console.log('Виджет инициализирован');
 });
@@ -522,61 +775,63 @@ async function showMethodDetails(button) {
 
 function displayMethodData(data) {
     document.getElementById('methodModalName').innerText = data.name;
-    document.getElementById('methodModalIcon').className = `fas ${data.icon || 'fa-fire'} text-amber-600`;
-    document.getElementById('methodModalShortDesc').innerText = data.short_description || '';
+    const iconElem = document.getElementById('methodModalIcon');
+    if (iconElem) iconElem.className = `fas ${data.icon || 'fa-fire'} text-amber-600`;
+    const shortDescElem = document.getElementById('methodModalShortDesc');
+    if (shortDescElem) shortDescElem.innerText = data.short_description || '';
     document.getElementById('methodModalDesc').innerHTML = data.description || '';
 
     const scienceBlock = document.getElementById('methodModalScience');
     const scienceText = document.getElementById('methodModalScienceText');
-    if (data.scientific_background) {
+    if (data.scientific_background && scienceBlock && scienceText) {
         scienceText.innerText = data.scientific_background;
         scienceBlock.classList.remove('hidden');
-    } else {
+    } else if (scienceBlock) {
         scienceBlock.classList.add('hidden');
     }
 
     const tempBlock = document.getElementById('methodModalTemp');
     const tempText = document.getElementById('methodModalTempText');
-    if (data.typical_temperature) {
+    if (data.typical_temperature && tempBlock && tempText) {
         tempText.innerText = data.typical_temperature;
         tempBlock.classList.remove('hidden');
-    } else {
+    } else if (tempBlock) {
         tempBlock.classList.add('hidden');
     }
 
     const durationBlock = document.getElementById('methodModalDuration');
     const durationText = document.getElementById('methodModalDurationText');
-    if (data.typical_duration) {
+    if (data.typical_duration && durationBlock && durationText) {
         durationText.innerText = data.typical_duration;
         durationBlock.classList.remove('hidden');
-    } else {
+    } else if (durationBlock) {
         durationBlock.classList.add('hidden');
     }
 
     const tipsBlock = document.getElementById('methodModalTips');
     const tipsText = document.getElementById('methodModalTipsText');
-    if (data.tips) {
+    if (data.tips && tipsBlock && tipsText) {
         tipsText.innerText = data.tips;
         tipsBlock.classList.remove('hidden');
-    } else {
+    } else if (tipsBlock) {
         tipsBlock.classList.add('hidden');
     }
 
     const mistakesBlock = document.getElementById('methodModalMistakes');
     const mistakesText = document.getElementById('methodModalMistakesText');
-    if (data.common_mistakes) {
+    if (data.common_mistakes && mistakesBlock && mistakesText) {
         mistakesText.innerText = data.common_mistakes;
         mistakesBlock.classList.remove('hidden');
-    } else {
+    } else if (mistakesBlock) {
         mistakesBlock.classList.add('hidden');
     }
 
     const advancedBlock = document.getElementById('methodModalAdvanced');
     const advancedText = document.getElementById('methodModalAdvancedText');
-    if (data.advanced_notes) {
+    if (data.advanced_notes && advancedBlock && advancedText) {
         advancedText.innerText = data.advanced_notes;
         advancedBlock.classList.remove('hidden');
-    } else {
+    } else if (advancedBlock) {
         advancedBlock.classList.add('hidden');
     }
 }
@@ -626,19 +881,19 @@ function displayPreparationData(data) {
 
     const tipsBlock = document.getElementById('preparationModalTips');
     const tipsText = document.getElementById('preparationModalTipsText');
-    if (data.tips) {
+    if (data.tips && tipsBlock && tipsText) {
         tipsText.innerText = data.tips;
         tipsBlock.classList.remove('hidden');
-    } else {
+    } else if (tipsBlock) {
         tipsBlock.classList.add('hidden');
     }
 
     const timeBlock = document.getElementById('preparationModalTime');
     const timeText = document.getElementById('preparationModalTimeText');
-    if (data.time_factor) {
+    if (data.time_factor && timeBlock && timeText) {
         timeText.innerText = `Увеличивает время приготовления в ${data.time_factor} раз`;
         timeBlock.classList.remove('hidden');
-    } else {
+    } else if (timeBlock) {
         timeBlock.classList.add('hidden');
     }
 }
@@ -688,19 +943,19 @@ function displayUtensilData(data) {
 
     const altBlock = document.getElementById('utensilModalAlternative');
     const altText = document.getElementById('utensilModalAlternativeText');
-    if (data.alternative) {
+    if (data.alternative && altBlock && altText) {
         altText.innerText = data.alternative;
         altBlock.classList.remove('hidden');
-    } else {
+    } else if (altBlock) {
         altBlock.classList.add('hidden');
     }
 
     const careBlock = document.getElementById('utensilModalCare');
     const careText = document.getElementById('utensilModalCareText');
-    if (data.care_instructions) {
+    if (data.care_instructions && careBlock && careText) {
         careText.innerText = data.care_instructions;
         careBlock.classList.remove('hidden');
-    } else {
+    } else if (careBlock) {
         careBlock.classList.add('hidden');
     }
 }

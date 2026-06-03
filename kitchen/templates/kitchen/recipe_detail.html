@@ -247,7 +247,7 @@ css
                         </div>
                     </div>
                     <div class="ml-auto">
-                        <a href="{{ return_to }}?step={{ return_step }}&mode={{ return_mode }}&{% if return_mode == 'products' %}meat={{ return_meat }}{% else %}portions={{ return_portions }}{% endif %}"
+                        <a href="{{ return_to }}?step={{ return_step }}&mode={{ return_mode }}&{% if return_mode == 'products' %}meat={{ return_meat }}{% else %}portions={{ return_portions }}{% endif %}{% if ratio and ratio != 1 %}&ratio={{ ratio }}{% endif %}"
                            class="bg-amber-700 text-white px-4 py-2 rounded-lg hover:bg-amber-800 transition flex items-center gap-2">
                             <i class="fas fa-arrow-left"></i> Вернуться к основному рецепту
                         </a>
@@ -318,7 +318,8 @@ css
                                         <i class="fas fa-utensil-spoon text-amber-600"></i>
                                         <span class="font-medium text-sm">Вложенный рецепт:</span>
                                         <a href="{% url 'kitchen:recipe_detail' step.subrecipe.id %}?return_to={{ request.path|urlencode }}&return_title={{ recipe.title|urlencode }}&return_step={{ step.order }}&return_context={{ step.title|urlencode }}&return_mode={{ request.GET.mode|default:'portions' }}&return_meat={{ request.GET.meat }}&return_portions={{ request.GET.portions }}"
-                                           class="text-amber-700 hover:underline font-medium">
+                                           class="subrecipe-link text-amber-700 hover:underline font-medium"
+                                           data-subrecipe-id="{{ step.subrecipe.id }}">
                                             {{ step.subrecipe.title }}
                                         </a>
                                     </div>
@@ -568,55 +569,5 @@ css
         document.getElementById('infoModal')?.classList.add('hidden');
     };
 
-     // Восстановление состояния при возврате из вложенного рецепта
-    document.addEventListener('DOMContentLoaded', function() {
-        // Получаем параметры из URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const stepParam = urlParams.get('step');
-        const modeParam = urlParams.get('mode');
-        const portionsParam = urlParams.get('portions');
-        const meatParam = urlParams.get('meat');
-
-        // Если есть параметр step — прокручиваем и подсвечиваем шаг
-        if (stepParam) {
-            const targetStep = document.querySelector(`.step-card[data-step-id="${parseInt(stepParam) - 1}"]`);
-            if (targetStep) {
-                setTimeout(() => {
-                    targetStep.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    targetStep.classList.add('ring-2', 'ring-amber-400', 'ring-offset-2');
-                    setTimeout(() => {
-                        targetStep.classList.remove('ring-2', 'ring-amber-400', 'ring-offset-2');
-                    }, 3000);
-                }, 500);
-            }
-        }
-
-        // Восстанавливаем режим пересчёта, если передан
-        if (modeParam === 'products' && meatParam) {
-            const modeProductsBtn = document.getElementById('modeProductsBtn');
-            if (modeProductsBtn) modeProductsBtn.click();
-
-            // Устанавливаем значение мяса
-            setTimeout(() => {
-                const meatInput = document.getElementById('customMeatWeight');
-                if (meatInput) {
-                    meatInput.value = meatParam;
-                    const applyBtn = document.getElementById('applyMeatBtn');
-                    if (applyBtn) applyBtn.click();
-                }
-            }, 100);
-        } else if (modeParam === 'portions' && portionsParam) {
-            const modePortionsBtn = document.getElementById('modePortionsBtn');
-            if (modePortionsBtn) modePortionsBtn.click();
-
-            setTimeout(() => {
-                const portionsSlider = document.getElementById('portionsSlider');
-                if (portionsSlider) {
-                    portionsSlider.value = portionsParam;
-                    portionsSlider.dispatchEvent(new Event('input'));
-                }
-            }, 100);
-        }
-    });
 </script>
 {% endblock %}

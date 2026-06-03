@@ -66,7 +66,7 @@
                     <div class="flex items-center gap-2 mb-2">
                         <i class="fas fa-utensil-spoon text-amber-600"></i>
                         <span class="font-medium text-sm">Вложенный рецепт:</span>
-                        <a href="{% url 'kitchen:recipe_detail' step.subrecipe.id %}?return_to={{ request.path|urlencode }}&return_title={{ recipe.title|urlencode }}&return_step={{ step.order }}&return_context={{ step.title|urlencode }}&return_mode={{ request.GET.mode|default:'portions' }}&return_meat={{ request.GET.meat }}&return_portions={{ request.GET.portions }}"
+                        <a href="{% url 'kitchen:recipe_detail' step.subrecipe.id %}?return_to={{ request.path|urlencode }}&return_title={{ recipe.title|urlencode }}&return_step={{ step.order }}&return_context={{ step.title|urlencode }}&return_mode={{ request.GET.mode|default:'portions' }}&return_meat={{ request.GET.meat }}&return_portions={{ request.GET.portions }}&ratio={{ request.GET.ratio|default:1 }}"
                            class="text-amber-700 hover:underline font-medium">
                             {{ step.subrecipe.title }}
                         </a>
