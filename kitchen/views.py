@@ -105,11 +105,6 @@ def recipe_detail(request, recipe_id):
         ratio = None
 
     context = {
-        # ... остальные параметры ...
-        'ratio': ratio,
-    }
-
-    context = {
         'recipe': recipe,
         'ingredients': ingredients,
         'steps': steps,

@@ -196,6 +196,22 @@ class RecipeStep(models.Model):
     subrecipe = models.ForeignKey(Recipe, on_delete=models.SET_NULL, null=True, blank=True,
                                   related_name='used_in_steps', verbose_name='Вложенный рецепт')
 
+    # НОВЫЕ ПОЛЯ: Базовый ингредиент из вложенного рецепта
+    subrecipe_base_ingredient = models.ForeignKey(
+        'RecipeIngredient',
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='base_for_steps',
+        verbose_name='Базовый ингредиент из вложенного рецепта'
+    )
+    subrecipe_base_quantity = models.FloatField(
+        null=True,
+        blank=True,
+        validators=[MinValueValidator(0)],
+        verbose_name='Количество базового ингредиента'
+    )
+
     class Meta:
         verbose_name = 'Шаг приготовления'
         verbose_name_plural = 'Шаги приготовления'

@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}{{ recipe.title }} | Семейные ценности{% endblock %}
+{% block title %}
+    {{ recipe.title }} | Семейные ценности
+{% endblock %}
 
 {% block extra_css %}
 <style>
@@ -317,7 +319,7 @@ css
                                     <div class="flex items-center gap-2 mb-2">
                                         <i class="fas fa-utensil-spoon text-amber-600"></i>
                                         <span class="font-medium text-sm">Вложенный рецепт:</span>
-                                        <a href="{% url 'kitchen:recipe_detail' step.subrecipe.id %}?return_to={{ request.path|urlencode }}&return_title={{ recipe.title|urlencode }}&return_step={{ step.order }}&return_context={{ step.title|urlencode }}&return_mode={{ request.GET.mode|default:'portions' }}&return_meat={{ request.GET.meat }}&return_portions={{ request.GET.portions }}"
+                                        <a href="{% url 'kitchen:recipe_detail' step.subrecipe.id %}?return_to={{ request.path|urlencode }}&return_title={{ recipe.title|urlencode }}&return_step={{ step.order }}&return_context={{ step.title|urlencode }}&return_mode={{ request.GET.mode|default:'portions' }}"
                                            class="subrecipe-link text-amber-700 hover:underline font-medium"
                                            data-subrecipe-id="{{ step.subrecipe.id }}">
                                             {{ step.subrecipe.title }}
@@ -551,23 +553,23 @@ css
 {% block extra_js %}
 <script src="{% static 'kitchen/js/recipe_widget.js' %}"></script>
 <script>
-    window.shareRecipe = function() {
-        if (navigator.share) {
-            navigator.share({
-                title: '{{ recipe.title|escapejs }}',
-                text: 'Проверенный рецепт от Семейных ценностей',
-                url: window.location.href
-            });
-        } else {
-            navigator.clipboard.writeText(window.location.href).then(() => {
-                alert('Ссылка скопирована!');
-            });
-        }
-    };
+<!--    window.shareRecipe = function() {-->
+<!--        if (navigator.share) {-->
+<!--            navigator.share({-->
+<!--                title: '{{ recipe.title|escapejs }}',-->
+<!--                text: 'Проверенный рецепт от Семейных ценностей',-->
+<!--                url: window.location.href-->
+<!--            });-->
+<!--        } else {-->
+<!--            navigator.clipboard.writeText(window.location.href).then(() => {-->
+<!--                alert('Ссылка скопирована!');-->
+<!--            });-->
+<!--        }-->
+<!--    };-->
 
-    window.closeInfoModal = function() {
-        document.getElementById('infoModal')?.classList.add('hidden');
-    };
+<!--    window.closeInfoModal = function() {-->
+<!--        document.getElementById('infoModal')?.classList.add('hidden');-->
+<!--    };-->
 
 </script>
 {% endblock %}

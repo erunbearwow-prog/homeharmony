@@ -155,16 +155,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Функция обновления всех ингредиентов
     function updateAllIngredients(ratio) {
+
+        console.log('updateAllIngredients вызван с ratio:', ratio);
+        console.log('Ингредиентов для обновления:', ingredients.length);
+
         ingredients.forEach(ing => {
-            let newValue = ing.baseQuantity * ratio;
+
+            const calculatedValue = ing.baseQuantity * ratio;
+            console.log(`${ing.name}: ${ing.baseQuantity} * ${ratio} = ${calculatedValue}`);
+
             let displayValue;
 
             if (ing.unit === 'шт.' || ing.unit === 'зубч.' || ing.unit === 'ст. л.') {
                 displayValue = Math.ceil(newValue);
             } else if (ing.unit === 'г' || ing.unit === 'мл') {
-                displayValue = Math.round(newValue);
+                displayValue = Math.round(calculatedValue);
             } else {
-                displayValue = Math.round(newValue * 10) / 10;
+                displayValue = Math.round(calculatedValue * 10) / 10;
             }
 
             ing.element.innerText = `${displayValue} ${ing.unit}`;
@@ -230,99 +237,221 @@ document.addEventListener('DOMContentLoaded', function() {
         window.history.pushState({}, '', newUrl);
     }
 
-    // ======================= ВОССТАНОВЛЕНИЕ RATIO ИЗ URL =======================
+// ======================= ВОССТАНОВЛЕНИЕ RATIO ИЗ URL =======================
+// ======================= ВОССТАНОВЛЕНИЕ RATIO ИЗ URL =======================
 function restoreRatioFromURL() {
     const urlParams = new URLSearchParams(window.location.search);
     const ratioFromURL = urlParams.get('ratio');
+    const modeFromURL = urlParams.get('mode');
+    const baseIngredientId = urlParams.get('base_ingredient');
+    const baseValue = urlParams.get('base_value');
+    const portionsFromURL = urlParams.get('portions');
 
-    console.log('restoreRatioFromURL - ratioFromURL:', ratioFromURL);
+    console.log('=== restoreRatioFromURL ===');
+    console.log('modeFromURL:', modeFromURL);
+    console.log('ratioFromURL:', ratioFromURL);
+    console.log('baseIngredientId:', baseIngredientId);
+    console.log('baseValue:', baseValue);
+    console.log('portionsFromURL:', portionsFromURL);
 
+    // Проверяем, есть ли такой ингредиент на этой странице
+    let baseBtn = null;
+    if (baseIngredientId) {
+        baseBtn = document.querySelector(`.chain-btn[data-id="${baseIngredientId}"]`);
+        console.log('Поиск ингредиента с id', baseIngredientId, ':', baseBtn ? 'найден' : 'не найден');
+    }
+
+    // Если есть параметры базового ингредиента И он существует на странице - восстанавливаем режим продуктов
+    if (modeFromURL === 'products' && baseIngredientId && baseValue && baseBtn) {
+        // Режим продуктов
+        console.log('Восстанавливаем режим продуктов (ингредиент найден)');
+
+        // Устанавливаем режим без вызова setMode (чтобы не было лишних обновлений)
+        currentMode = 'products';
+
+        // Обновляем UI панелей
+        if (portionsPanel) portionsPanel.classList.add('hidden');
+        if (productsPanel) productsPanel.classList.remove('hidden');
+
+        if (modePortionsBtn) {
+            modePortionsBtn.classList.remove('bg-amber-600', 'text-white');
+            modePortionsBtn.classList.add('bg-white', 'text-gray-700', 'border-gray-200');
+        }
+        if (modeProductsBtn) {
+            modeProductsBtn.classList.add('bg-amber-600', 'text-white');
+            modeProductsBtn.classList.remove('bg-white', 'text-gray-700', 'border-gray-200');
+        }
+
+        // Получаем данные ингредиента
+        const originalValue = parseFloat(baseBtn.dataset.quantity);
+        const newValue = parseFloat(baseValue);
+        const name = baseBtn.dataset.name;
+        const unit = baseBtn.dataset.unit;
+
+        // Создаём объект currentBaseIngredient
+        currentBaseIngredient = {
+            id: baseIngredientId,
+            name: name,
+            originalValue: originalValue,
+            unit: unit,
+            currentValue: newValue
+        };
+
+        // Обновляем UI
+        baseIngredientName.innerText = name;
+        baseOriginalValue.innerText = `${originalValue} ${unit}`;
+        baseIngredientWeight.value = newValue;
+        baseIngredientRow.classList.remove('hidden');
+        applyBaseBtn.classList.remove('hidden');
+
+        // Подсвечиваем кнопку
+        document.querySelectorAll('.chain-btn').forEach(btn => {
+            btn.classList.remove('text-amber-600');
+            btn.classList.add('text-gray-400');
+        });
+        baseBtn.classList.remove('text-gray-400');
+        baseBtn.classList.add('text-amber-600');
+
+        // Пересчитываем ингредиенты
+        if (ratioFromURL && !isNaN(parseFloat(ratioFromURL))) {
+            const ratio = parseFloat(ratioFromURL);
+            currentRatio = ratio;
+            updateAllIngredients(ratio);
+            console.log('Вызов updateAllIngredients с ratio:', ratio);
+        }
+
+        if (baseRatioInfo) {
+            baseRatioInfo.innerText = `Коэффициент: ${currentRatio.toFixed(2)} (на ${newValue} ${unit} ${name})`;
+        }
+
+        // Обновляем ссылки после восстановления
+        updateSubrecipeLinks();
+        setupSubrecipeLinks();
+        updateURL();
+
+        console.log('=== restoreRatioFromURL END (products) ===');
+        console.log('currentMode:', currentMode);
+        console.log('currentRatio:', currentRatio);
+
+        return; // ВЫХОДИМ ИЗ ФУНКЦИИ
+    }
+
+    // Если есть параметр ratio - восстанавливаем режим порций (для вложенных рецептов)
     if (ratioFromURL && !isNaN(parseFloat(ratioFromURL))) {
+        console.log('Восстанавливаем режим порций из ratio');
+
+        // Устанавливаем режим
+        currentMode = 'portions';
+
+        // Обновляем UI панелей
+        if (portionsPanel) portionsPanel.classList.remove('hidden');
+        if (productsPanel) productsPanel.classList.add('hidden');
+
+        if (modePortionsBtn) {
+            modePortionsBtn.classList.add('bg-amber-600', 'text-white');
+            modePortionsBtn.classList.remove('bg-white', 'text-gray-700', 'border-gray-200');
+        }
+        if (modeProductsBtn) {
+            modeProductsBtn.classList.remove('bg-amber-600', 'text-white');
+            modeProductsBtn.classList.add('bg-white', 'text-gray-700', 'border-gray-200');
+        }
+
+        // Восстанавливаем количество порций
         const ratio = parseFloat(ratioFromURL);
-        currentRatio = ratio;
+        const portions = Math.round(ratio * baseServings);
 
-        // Проверяем, есть ли параметры базового ингредиента
-        const baseIngredientId = urlParams.get('base_ingredient');
-        const baseValue = urlParams.get('base_value');
+        if (portionsSlider && portions > 0 && portions <= 20) {
+            portionsSlider.value = portions;
+            if (portionsValue) portionsValue.innerText = portions;
+            currentRatio = ratio;
+            updateAllIngredients(ratio);
+            console.log('Вызов updateAllIngredients с ratio:', ratio);
 
-        if (baseIngredientId && baseValue) {
-            // Режим продуктов
-            console.log('Восстанавливаем режим продуктов, base_ingredient:', baseIngredientId, 'base_value:', baseValue);
-
-            // Находим кнопку chain-btn для этого ингредиента
-            const baseBtn = document.querySelector(`.chain-btn[data-id="${baseIngredientId}"]`);
-            if (baseBtn) {
-                // Устанавливаем режим вручную
-                currentMode = 'products';
-
-                // Получаем данные ингредиента
-                const originalValue = parseFloat(baseBtn.dataset.quantity);
-                const newValue = parseFloat(baseValue);
-                const name = baseBtn.dataset.name;
-                const unit = baseBtn.dataset.unit;
-
-                // Создаём объект currentBaseIngredient
-                currentBaseIngredient = {
-                    id: baseIngredientId,
-                    name: name,
-                    originalValue: originalValue,
-                    unit: unit,
-                    currentValue: newValue
-                };
-
-                // Обновляем UI
-                baseIngredientName.innerText = name;
-                baseOriginalValue.innerText = `${originalValue} ${unit}`;
-                baseIngredientWeight.value = newValue;
-                baseIngredientRow.classList.remove('hidden');
-
-                // Подсвечиваем кнопку
-                document.querySelectorAll('.chain-btn').forEach(btn => {
-                    btn.classList.remove('text-amber-600');
-                    btn.classList.add('text-gray-400');
-                });
-                baseBtn.classList.remove('text-gray-400');
-                baseBtn.classList.add('text-amber-600');
-
-                // Переключаем панели
-                if (portionsPanel) portionsPanel.classList.add('hidden');
-                if (productsPanel) productsPanel.classList.remove('hidden');
-
-                if (modePortionsBtn) {
-                    modePortionsBtn.classList.remove('bg-amber-600', 'text-white');
-                    modePortionsBtn.classList.add('bg-white', 'text-gray-700', 'border-gray-200');
-                }
-                if (modeProductsBtn) {
-                    modeProductsBtn.classList.add('bg-amber-600', 'text-white');
-                    modeProductsBtn.classList.remove('bg-white', 'text-gray-700', 'border-gray-200');
-                }
-
-                // Пересчитываем ингредиенты
-                const newRatio = newValue / originalValue;
-                updateAllIngredients(newRatio);
-
-                if (baseRatioInfo) {
-                    baseRatioInfo.innerText = `Коэффициент: ${newRatio.toFixed(2)} (на ${newValue} ${unit} ${name})`;
-                }
-
-                localStorage.setItem('recipe_mode', 'products');
-                updateURL();
-            }
-        } else {
-            // Режим порций
-            console.log('Восстанавливаем режим порций, ratio:', ratio);
-
-            const portions = Math.round(ratio * baseServings);
-            if (portionsSlider && portions > 0 && portions <= 20) {
-                portionsSlider.value = portions;
-                if (portionsValue) portionsValue.innerText = portions;
-                updateAllIngredients(ratio);
-                if (portionsRatioInfo) {
-                    portionsRatioInfo.innerText = `Коэффициент: ${ratio.toFixed(2)} (на ${portions} порций)`;
-                }
+            if (portionsRatioInfo) {
+                portionsRatioInfo.innerText = `Коэффициент: ${ratio.toFixed(2)} (на ${portions} порций)`;
             }
         }
+
+        // Обновляем ссылки после восстановления
+        updateSubrecipeLinks();
+        setupSubrecipeLinks();
+        updateURL();
+
+        console.log('=== restoreRatioFromURL END (portions from ratio) ===');
+        console.log('currentMode:', currentMode);
+        console.log('currentRatio:', currentRatio);
+
+        return; // ВЫХОДИМ ИЗ ФУНКЦИИ
     }
+
+    // Режим порций из параметра portions
+    if (modeFromURL === 'portions' || portionsFromURL) {
+        console.log('Восстанавливаем режим порций');
+
+        // Устанавливаем режим
+        currentMode = 'portions';
+
+        // Обновляем UI панелей
+        if (portionsPanel) portionsPanel.classList.remove('hidden');
+        if (productsPanel) productsPanel.classList.add('hidden');
+
+        if (modePortionsBtn) {
+            modePortionsBtn.classList.add('bg-amber-600', 'text-white');
+            modePortionsBtn.classList.remove('bg-white', 'text-gray-700', 'border-gray-200');
+        }
+        if (modeProductsBtn) {
+            modeProductsBtn.classList.remove('bg-amber-600', 'text-white');
+            modeProductsBtn.classList.add('bg-white', 'text-gray-700', 'border-gray-200');
+        }
+
+        // Восстанавливаем количество порций
+        let portions;
+        if (portionsFromURL) {
+            portions = parseInt(portionsFromURL);
+        } else if (ratioFromURL && !isNaN(parseFloat(ratioFromURL))) {
+            portions = Math.round(parseFloat(ratioFromURL) * baseServings);
+        } else {
+            portions = baseServings;
+        }
+
+        if (portionsSlider && portions > 0 && portions <= 20) {
+            portionsSlider.value = portions;
+            if (portionsValue) portionsValue.innerText = portions;
+
+            const ratio = portions / baseServings;
+            currentRatio = ratio;
+            updateAllIngredients(ratio);
+
+            if (portionsRatioInfo) {
+                portionsRatioInfo.innerText = `Коэффициент: ${ratio.toFixed(2)} (на ${portions} порций)`;
+            }
+        }
+
+        // Обновляем ссылки после восстановления
+        updateSubrecipeLinks();
+        setupSubrecipeLinks();
+        updateURL();
+
+        console.log('=== restoreRatioFromURL END (portions) ===');
+        console.log('currentMode:', currentMode);
+        console.log('currentRatio:', currentRatio);
+
+        return;
+    }
+
+    // Нет параметров - используем порции по умолчанию
+    console.log('Нет параметров, используем порции по умолчанию');
+    currentMode = 'portions';
+    updateAllIngredients(1);
+
+    // Обновляем ссылки после восстановления
+    updateSubrecipeLinks();
+    setupSubrecipeLinks();
+    updateURL();
+
+    console.log('=== restoreRatioFromURL END (default) ===');
+    console.log('currentMode:', currentMode);
+    console.log('currentRatio:', currentRatio);
 }
 
     // ======================= ПЕРЕКЛЮЧЕНИЕ РЕЖИМОВ =======================
@@ -370,7 +499,6 @@ function restoreRatioFromURL() {
                 }
             }
         }
-        localStorage.setItem('recipe_mode', mode);
         updateURL();
     }
 
@@ -721,14 +849,6 @@ function restoreRatioFromURL() {
             }
         });
     });
-
-    // Восстановление режима
-    const savedMode = localStorage.getItem('recipe_mode');
-    if (savedMode === 'products') {
-        setMode('products');
-    } else {
-        setMode('portions');
-    }
 
     // Настройка обработчиков для ссылок на вложенные рецепты
     setupSubrecipeLinks();

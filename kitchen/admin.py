@@ -1,4 +1,5 @@
 from django.contrib import admin
+from django import forms
 from django.utils.html import format_html
 from .models import (
     Cuisine, Diet, IngredientCategory, Ingredient,
@@ -72,7 +73,6 @@ class IngredientAdmin(admin.ModelAdmin):
 
 
 class IngredientSubstitutionInline(admin.TabularInline):
-    """Встроенная форма для допустимых замен ингредиента"""
     model = IngredientSubstitution
     extra = 1
     fields = ['substitute_name', 'substitute_unit', 'ratio', 'notes']
@@ -81,21 +81,50 @@ class IngredientSubstitutionInline(admin.TabularInline):
 
 
 class RecipeIngredientInline(admin.TabularInline):
-    """Встроенная форма для ингредиентов рецепта"""
     model = RecipeIngredient
     extra = 3
     fields = ['ingredient', 'quantity', 'unit', 'notes', 'is_scalable']
     autocomplete_fields = ['ingredient']
 
 
+class RecipeStepForm(forms.ModelForm):
+    class Meta:
+        model = RecipeStep
+        fields = '__all__'
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        subrecipe_id = None
+
+        if self.data.get('subrecipe'):
+            try:
+                subrecipe_id = int(self.data.get('subrecipe'))
+            except (ValueError, TypeError):
+                pass
+        elif self.instance and self.instance.subrecipe_id:
+            subrecipe_id = self.instance.subrecipe_id
+
+        if subrecipe_id:
+            self.fields['subrecipe_base_ingredient'].queryset = RecipeIngredient.objects.filter(
+                recipe_id=subrecipe_id
+            ).select_related('ingredient')
+        else:
+            self.fields['subrecipe_base_ingredient'].queryset = RecipeIngredient.objects.none()
+
+
 class RecipeStepInline(admin.TabularInline):
-    """Встроенная форма для шагов приготовления"""
     model = RecipeStep
+    form = RecipeStepForm
     fk_name = 'recipe'
     extra = 1
     ordering = ['order']
-    fields = ['order', 'title', 'instruction', 'duration', 'subrecipe']
-    autocomplete_fields = ['subrecipe']
+    fields = [
+        'order', 'title', 'instruction', 'duration', 'temperature',
+        'subrecipe', 'subrecipe_base_ingredient', 'subrecipe_base_quantity'
+    ]
+    autocomplete_fields = ['subrecipe', 'subrecipe_base_ingredient']
+    verbose_name = 'Шаг приготовления'
+    verbose_name_plural = 'Шаги приготовления'
 
 
 @admin.register(RecipeIngredient)
@@ -104,7 +133,7 @@ class RecipeIngredientAdmin(admin.ModelAdmin):
     list_filter = ['unit', 'is_scalable']
     search_fields = ['recipe__title', 'ingredient__name']
     autocomplete_fields = ['recipe', 'ingredient']
-    inlines = [IngredientSubstitutionInline]  # Добавляем замены прямо здесь
+    inlines = [IngredientSubstitutionInline]
 
 
 @admin.register(Recipe)
@@ -190,11 +219,3 @@ class IngredientSubstitutionAdmin(admin.ModelAdmin):
     list_filter = ['substitute_unit']
     search_fields = ['substitute_name', 'recipe_ingredient__ingredient__name']
     autocomplete_fields = ['recipe_ingredient']
-    fieldsets = [
-        ('Основная информация', {
-            'fields': ['recipe_ingredient', 'substitute_name', 'substitute_unit', 'ratio']
-        }),
-        ('Дополнительно', {
-            'fields': ['notes']
-        }),
-    ]
