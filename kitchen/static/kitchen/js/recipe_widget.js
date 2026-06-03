@@ -42,6 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const cancelReplaceBtn = document.getElementById('cancelReplaceBtn');
     const confirmReplaceBtn = document.getElementById('confirmReplaceBtn');
     const infoModal = document.getElementById('infoModal');
+    const modeNormalBtn = document.getElementById('modeNormalBtn');
+    const modeCompactBtn = document.getElementById('modeCompactBtn');
+    const stepsContainer = document.getElementById('stepsList');
 
     // Проверка наличия элементов
     console.log('Mode buttons:', { modePortionsBtn, modeProductsBtn });
@@ -155,31 +158,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Функция обновления всех ингредиентов
     function updateAllIngredients(ratio) {
+    console.log('updateAllIngredients вызван с ratio:', ratio);
+    console.log('Ингредиентов для обновления:', ingredients.length);
 
-        console.log('updateAllIngredients вызван с ratio:', ratio);
-        console.log('Ингредиентов для обновления:', ingredients.length);
+    ingredients.forEach(ing => {
+        const calculatedValue = ing.baseQuantity * ratio;
+        console.log(`${ing.name}: ${ing.baseQuantity} * ${ratio} = ${calculatedValue}`);
 
-        ingredients.forEach(ing => {
+        let displayValue;
 
-            const calculatedValue = ing.baseQuantity * ratio;
-            console.log(`${ing.name}: ${ing.baseQuantity} * ${ratio} = ${calculatedValue}`);
+        if (ing.unit === 'шт.' || ing.unit === 'зубч.' || ing.unit === 'ст. л.') {
+            displayValue = Math.ceil(calculatedValue);  // ← исправлено!
+        } else if (ing.unit === 'г' || ing.unit === 'мл') {
+            displayValue = Math.round(calculatedValue);
+        } else {
+            displayValue = Math.round(calculatedValue * 10) / 10;
+        }
 
-            let displayValue;
-
-            if (ing.unit === 'шт.' || ing.unit === 'зубч.' || ing.unit === 'ст. л.') {
-                displayValue = Math.ceil(newValue);
-            } else if (ing.unit === 'г' || ing.unit === 'мл') {
-                displayValue = Math.round(calculatedValue);
-            } else {
-                displayValue = Math.round(calculatedValue * 10) / 10;
-            }
-
-            ing.element.innerText = `${displayValue} ${ing.unit}`;
-            ing.currentQuantity = displayValue;
-        });
-        updateSubrecipeLinks();
-        setupSubrecipeLinks();
-    }
+        ing.element.innerText = `${displayValue} ${ing.unit}`;
+        ing.currentQuantity = displayValue;
+    });
+    updateSubrecipeLinks();
+    setupSubrecipeLinks();
+}
 
     // ======================= ОБНОВЛЕНИЕ URL =======================
     function updateURL() {
@@ -237,7 +238,6 @@ document.addEventListener('DOMContentLoaded', function() {
         window.history.pushState({}, '', newUrl);
     }
 
-// ======================= ВОССТАНОВЛЕНИЕ RATIO ИЗ URL =======================
 // ======================= ВОССТАНОВЛЕНИЕ RATIO ИЗ URL =======================
 function restoreRatioFromURL() {
     const urlParams = new URLSearchParams(window.location.search);
@@ -606,7 +606,7 @@ function restoreRatioFromURL() {
         replaceModal.classList.remove('hidden');
 
         try {
-            const response = await fetch(`/api/substitutions/${recipeIngredientId}/`);
+            const response = await fetch(`/kitchen/api/substitutions/${recipeIngredientId}/`);
             if (response.ok) {
                 const data = await response.json();
 
@@ -725,6 +725,8 @@ function restoreRatioFromURL() {
             if (e.target === infoModal) infoModal.classList.add('hidden');
         });
     }
+
+
 
     // ======================= ПОРЦИИ =======================
     if (portionsSlider) {
@@ -856,6 +858,45 @@ function restoreRatioFromURL() {
     // Восстанавливаем ratio из URL после инициализации
     setTimeout(restoreRatioFromURL, 100);
 
+        // ======================= ПЕРЕКЛЮЧЕНИЕ РЕЖИМОВ ОТОБРАЖЕНИЯ ШАГОВ =======================
+    function setStepsMode(mode) {
+        if (!stepsContainer) return;
+
+        if (mode === 'compact') {
+            stepsContainer.classList.add('compact-mode');
+            if (modeCompactBtn) {
+                modeCompactBtn.classList.add('bg-white', 'shadow-sm');
+                modeCompactBtn.classList.remove('text-gray-600');
+            }
+            if (modeNormalBtn) {
+                modeNormalBtn.classList.remove('bg-white', 'shadow-sm');
+                modeNormalBtn.classList.add('text-gray-600');
+            }
+            localStorage.setItem('steps_display_mode', 'compact');
+        } else {
+            stepsContainer.classList.remove('compact-mode');
+            if (modeNormalBtn) {
+                modeNormalBtn.classList.add('bg-white', 'shadow-sm');
+                modeNormalBtn.classList.remove('text-gray-600');
+            }
+            if (modeCompactBtn) {
+                modeCompactBtn.classList.remove('bg-white', 'shadow-sm');
+                modeCompactBtn.classList.add('text-gray-600');
+            }
+            localStorage.setItem('steps_display_mode', 'normal');
+        }
+    }
+
+    if (modeNormalBtn && modeCompactBtn) {
+        modeNormalBtn.addEventListener('click', () => setStepsMode('normal'));
+        modeCompactBtn.addEventListener('click', () => setStepsMode('compact'));
+
+        const savedMode = localStorage.getItem('steps_display_mode');
+        if (savedMode === 'compact') {
+            setStepsMode('compact');
+        }
+    }
+
     console.log('Виджет инициализирован');
 });
 
@@ -865,6 +906,16 @@ let methodsCache = {};
 async function showMethodDetails(button) {
     const methodId = button.dataset.methodId;
     const methodName = button.dataset.methodName;
+
+    // Если нет метода (ID = none или default), показываем сообщение
+    if (!methodId || methodId === 'none' || methodId === 'default') {
+        const modal = document.getElementById('methodModal');
+        if (!modal) return;
+        document.getElementById('methodModalName').innerText = 'Нет информации';
+        document.getElementById('methodModalDesc').innerHTML = '<p class="text-gray-500">Для этого шага не указан метод приготовления.</p>';
+        modal.classList.remove('hidden');
+        return;
+    }
 
     const modal = document.getElementById('methodModal');
     if (!modal) return;
@@ -879,7 +930,7 @@ async function showMethodDetails(button) {
             return;
         }
 
-        const response = await fetch(`/api/method/${methodId}/`);
+        const response = await fetch(`/kitchen/api/method/${methodId}/`);
         if (response.ok) {
             const data = await response.json();
             methodsCache[methodId] = data;
@@ -900,6 +951,27 @@ function displayMethodData(data) {
     const shortDescElem = document.getElementById('methodModalShortDesc');
     if (shortDescElem) shortDescElem.innerText = data.short_description || '';
     document.getElementById('methodModalDesc').innerHTML = data.description || '';
+
+    // Добавляем информацию о заменах
+    if (data.substitutions && data.substitutions.length > 0) {
+        const substitutionsHtml = data.substitutions.map(sub =>
+            `<div class="mt-3 p-3 bg-amber-50 rounded-lg">
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-exchange-alt text-amber-500"></i>
+                    <span class="font-medium text-sm">Можно заменить на:</span>
+                    <span class="text-sm font-semibold text-amber-700">${sub.name || sub.substitute_method?.name || ''}</span>
+                </div>
+                ${sub.reason ? `<p class="text-xs text-gray-600 mt-1 ml-6">${sub.reason}</p>` : ''}
+                ${sub.notes ? `<p class="text-xs text-gray-500 mt-1 ml-6">${sub.notes}</p>` : ''}
+            </div>`
+        ).join('');
+
+        const modalContent = document.getElementById('methodModalDesc');
+        modalContent.innerHTML += `<div class="mt-4 border-t border-gray-200 pt-3">
+            <h4 class="font-semibold text-sm text-gray-700 mb-2">✨ Возможные замены:</h4>
+            ${substitutionsHtml}
+        </div>`;
+    }
 
     const scienceBlock = document.getElementById('methodModalScience');
     const scienceText = document.getElementById('methodModalScienceText');
@@ -968,6 +1040,16 @@ async function showPreparationDetails(button) {
     const preparationId = button.dataset.preparationId;
     const preparationName = button.dataset.preparationName;
 
+    // Если нет подготовки (ID = none или default)
+    if (!preparationId || preparationId === 'none' || preparationId === 'default') {
+        const modal = document.getElementById('preparationModal');
+        if (!modal) return;
+        document.getElementById('preparationModalName').innerText = 'Нет информации';
+        document.getElementById('preparationModalDesc').innerHTML = '<p class="text-gray-500">Для этого шага не указана подготовка продуктов.</p>';
+        modal.classList.remove('hidden');
+        return;
+    }
+
     const modal = document.getElementById('preparationModal');
     if (!modal) return;
 
@@ -981,7 +1063,7 @@ async function showPreparationDetails(button) {
             return;
         }
 
-        const response = await fetch(`/api/preparation/${preparationId}/`);
+        const response = await fetch(`/kitchen/api/preparation/${preparationId}/`);
         if (response.ok) {
             const data = await response.json();
             preparationsCache[preparationId] = data;
@@ -1030,6 +1112,16 @@ async function showUtensilDetails(button) {
     const utensilId = button.dataset.utensilId;
     const utensilName = button.dataset.utensilName;
 
+    // Если нет утвари (ID = none или default)
+    if (!utensilId || utensilId === 'none' || utensilId === 'default') {
+        const modal = document.getElementById('utensilModal');
+        if (!modal) return;
+        document.getElementById('utensilModalName').innerText = 'Нет информации';
+        document.getElementById('utensilModalDesc').innerHTML = '<p class="text-gray-500">Для этого шага не указана рекомендуемая утварь.</p>';
+        modal.classList.remove('hidden');
+        return;
+    }
+
     const modal = document.getElementById('utensilModal');
     if (!modal) return;
 
@@ -1043,7 +1135,7 @@ async function showUtensilDetails(button) {
             return;
         }
 
-        const response = await fetch(`/api/utensil/${utensilId}/`);
+        const response = await fetch(`/kitchen/api/utensil/${utensilId}/`);
         if (response.ok) {
             const data = await response.json();
             utensilsCache[utensilId] = data;
@@ -1061,6 +1153,27 @@ function displayUtensilData(data) {
     document.getElementById('utensilModalName').innerText = data.name;
     document.getElementById('utensilModalDesc').innerHTML = data.description || '';
 
+    // Добавляем информацию о заменах утвари
+    if (data.substitutions && data.substitutions.length > 0) {
+        const substitutionsHtml = data.substitutions.map(sub =>
+            `<div class="mt-2 p-2 bg-blue-50 rounded-lg">
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-exchange-alt text-blue-500"></i>
+                    <span class="font-medium text-sm">Можно заменить на:</span>
+                    <span class="text-sm font-semibold text-blue-700">${sub.name || sub.substitute_utensil?.name || ''}</span>
+                </div>
+                ${sub.reason ? `<p class="text-xs text-gray-600 mt-1 ml-6">${sub.reason}</p>` : ''}
+            </div>`
+        ).join('');
+
+        const modalContent = document.getElementById('utensilModalDesc');
+        modalContent.innerHTML += `<div class="mt-3">
+            <h4 class="font-semibold text-sm text-gray-700 mb-1">🔄 Возможные замены:</h4>
+            ${substitutionsHtml}
+        </div>`;
+    }
+
+    // Альтернатива и уход
     const altBlock = document.getElementById('utensilModalAlternative');
     const altText = document.getElementById('utensilModalAlternativeText');
     if (data.alternative && altBlock && altText) {
@@ -1080,52 +1193,25 @@ function displayUtensilData(data) {
     }
 }
 
-function closeUtensilModal() {
+
+function closeMethodModal() {
+    const modal = document.getElementById('methodModal');
+    if (modal) modal.classList.add('hidden');
+}
+
+function closePreparationModal() {
+    const modal = document.getElementById('preparationModal');
+    if (modal) modal.classList.add('hidden');
+}
+
+function closeUtensilModal() {  // ← ДОБАВИТЬ ЭТУ ФУНКЦИЮ
     const modal = document.getElementById('utensilModal');
     if (modal) modal.classList.add('hidden');
 }
 
-// ======================= ПЕРЕКЛЮЧЕНИЕ РЕЖИМОВ ОТОБРАЖЕНИЯ =======================
-const modeNormalBtn = document.getElementById('modeNormalBtn');
-const modeCompactBtn = document.getElementById('modeCompactBtn');
-const stepsContainer = document.getElementById('stepsList');
-
-function setStepsMode(mode) {
-    if (!stepsContainer) return;
-
-    if (mode === 'compact') {
-        stepsContainer.classList.add('compact-mode');
-        if (modeCompactBtn) {
-            modeCompactBtn.classList.add('bg-white', 'shadow-sm');
-            modeCompactBtn.classList.remove('text-gray-600');
-        }
-        if (modeNormalBtn) {
-            modeNormalBtn.classList.remove('bg-white', 'shadow-sm');
-            modeNormalBtn.classList.add('text-gray-600');
-        }
-        localStorage.setItem('steps_display_mode', 'compact');
-    } else {
-        stepsContainer.classList.remove('compact-mode');
-        if (modeNormalBtn) {
-            modeNormalBtn.classList.add('bg-white', 'shadow-sm');
-            modeNormalBtn.classList.remove('text-gray-600');
-        }
-        if (modeCompactBtn) {
-            modeCompactBtn.classList.remove('bg-white', 'shadow-sm');
-            modeCompactBtn.classList.add('text-gray-600');
-        }
-        localStorage.setItem('steps_display_mode', 'normal');
-    }
-}
-
-if (modeNormalBtn && modeCompactBtn) {
-    modeNormalBtn.addEventListener('click', () => setStepsMode('normal'));
-    modeCompactBtn.addEventListener('click', () => setStepsMode('compact'));
-
-    const savedMode = localStorage.getItem('steps_display_mode');
-    if (savedMode === 'compact') {
-        setStepsMode('compact');
-    }
+function closeInfoModal() {
+    const modal = document.getElementById('infoModal');
+    if (modal) modal.classList.add('hidden');
 }
 
 // Делаем функции глобальными для доступа из HTML
@@ -1134,4 +1220,5 @@ window.closeMethodModal = closeMethodModal;
 window.showPreparationDetails = showPreparationDetails;
 window.closePreparationModal = closePreparationModal;
 window.showUtensilDetails = showUtensilDetails;
-window.closeUtensilModal = closeUtensilModal;
+window.closeUtensilModal = closeUtensilModal;  // ← теперь функция существует
+window.closeInfoModal = closeInfoModal;

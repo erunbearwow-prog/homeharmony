@@ -2,10 +2,13 @@ from django.shortcuts import render
 from django.template.loader import render_to_string
 from django.http import JsonResponse, HttpResponse
 from django.views.decorators.http import require_http_methods
-from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404
-from .models import Recipe, RecipeIngredient, RecipeStep, Cuisine
-from .models import CookingMethod, IngredientPreparation, RecommendedUtensil
+from .models import (
+    Recipe, RecipeIngredient, RecipeStep, Cuisine,
+    CookingMethod, CookingMethodSubstitution,
+    IngredientPreparation,
+    RecommendedUtensil, UtensilSubstitution
+)
 
 # Create your views here.
 def home(request):
@@ -14,11 +17,16 @@ def home(request):
 def recipe(request):
     return render(request, 'kitchen/cooking_recipe.html')
 
+
 @require_http_methods(['GET'])
 def get_method_details(request, method_id):
     """API для получения деталей метода приготовления"""
     try:
         method = CookingMethod.objects.get(id=method_id)
+        # Получаем замены для этого метода
+        substitutions = CookingMethodSubstitution.objects.filter(original_method=method).select_related(
+            'substitute_method')
+
         data = {
             'id': method.id,
             'name': method.name,
@@ -31,6 +39,14 @@ def get_method_details(request, method_id):
             'tips': method.tips,
             'common_mistakes': method.common_mistakes,
             'advanced_notes': method.advanced_notes,
+            'substitutions': [
+                {
+                    'id': sub.id,
+                    'name': sub.substitute_method.name,
+                    'reason': sub.reason,
+                    'notes': sub.notes,
+                } for sub in substitutions
+            ]
         }
         return JsonResponse(data)
     except CookingMethod.DoesNotExist:
@@ -53,15 +69,28 @@ def get_preparation_details(request, preparation_id):
 
 
 def get_utensil_details(request, utensil_id):
+    """API для получения деталей утвари"""
     print('Here is get_utensil_details !!!')
     try:
         utensil = RecommendedUtensil.objects.get(id=utensil_id)
+        # Получаем замены для этой утвари
+        substitutions = UtensilSubstitution.objects.filter(original_utensil=utensil).select_related(
+            'substitute_utensil')
+
         data = {
             'id': utensil.id,
             'name': utensil.name,
             'description': utensil.description,
             'alternative': utensil.alternative,
             'care_instructions': utensil.care_instructions,
+            'substitutions': [
+                {
+                    'id': sub.id,
+                    'name': sub.substitute_utensil.name,
+                    'reason': sub.reason,
+                    'notes': sub.notes,
+                } for sub in substitutions
+            ]
         }
         return JsonResponse(data)
     except RecommendedUtensil.DoesNotExist:
@@ -83,7 +112,15 @@ def index(request):
 def recipe_detail(request, recipe_id):
     recipe = get_object_or_404(Recipe, id=recipe_id)
     ingredients = recipe.recipe_ingredients.select_related('ingredient').all()
-    steps = recipe.steps.all().order_by('order')
+
+    # Подгружаем все связанные данные для шагов
+    steps = recipe.steps.all().order_by('order').select_related(
+        'cooking_method',
+        'ingredient_preparation',
+        'subrecipe'  # тоже подгружаем вложенный рецепт, если есть
+    ).prefetch_related(
+        'recommended_utensils'
+    )
 
     # Получаем параметры возврата
     return_to = request.GET.get('return_to')
@@ -104,6 +141,21 @@ def recipe_detail(request, recipe_id):
     else:
         ratio = None
 
+    # Получаем изображение основного рецепта для блока возврата
+    return_image = None
+    if return_to:
+        # Извлекаем ID рецепта из URL return_to
+        import re
+        match = re.search(r'/recipe/(\d+)/', return_to)
+        if match:
+            parent_recipe_id = match.group(1)
+            try:
+                parent_recipe = Recipe.objects.get(id=parent_recipe_id)
+                if parent_recipe.image:
+                    return_image = parent_recipe.image.url
+            except Recipe.DoesNotExist:
+                pass
+
     context = {
         'recipe': recipe,
         'ingredients': ingredients,
@@ -116,8 +168,18 @@ def recipe_detail(request, recipe_id):
         'return_meat': return_meat,
         'return_portions': return_portions,
         'ratio': ratio,  # ← передаём в шаблон
+        'return_image': return_image,
     }
-    print(context)
+    print("\n=== CONTEXT DEBUG ===")
+    print(f"Recipe: {recipe.title} (ID: {recipe.id})")
+    print(f"Ingredients count: {ingredients.count()}")
+    print(f"Steps count: {steps.count()}")
+    for step in steps:
+        print(f"  Step {step.order}: {step.title}")
+        print(f"    - Cooking method: {step.cooking_method.name if step.cooking_method else 'None'}")
+        print(f"    - Preparation: {step.ingredient_preparation.name if step.ingredient_preparation else 'None'}")
+        print(f"    - Utensils: {[u.name for u in step.recommended_utensils.all()]}")
+    print("==================\n")
     return render(request, 'kitchen/recipe_detail.html', context)
 
 

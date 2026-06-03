@@ -1,26 +1,38 @@
-<!-- Модальное окно для рекомендуемой утвари -->
+<!-- kitchen/templates/kitchen/includes/utensil_modal.html -->
 <div id="utensilModal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden no-print">
-    <div class="bg-white rounded-2xl p-6 max-w-2xl w-full mx-4 shadow-xl max-h-[90vh] overflow-y-auto">
+    <div class="bg-white rounded-2xl p-6 max-w-2xl w-full mx-4 shadow-xl max-h-[85vh] overflow-y-auto">
         <div class="flex justify-between items-start mb-4">
             <h3 class="text-2xl font-bold serif flex items-center gap-2">
-                <i class="fas fa-utensils text-blue-600"></i>
-                <span id="utensilModalName">Рекомендованная утварь</span>
+                <i class="fas fa-utensils text-amber-600"></i>
+                <span id="utensilModalName">Утварь</span>
             </h3>
-            <button onclick="closeUtensilModal()" class="text-gray-400 hover:text-gray-600">
+            <button onclick="window.closeUtensilModal()" class="text-gray-400 hover:text-gray-600 transition">
                 <i class="fas fa-times text-xl"></i>
             </button>
         </div>
-        <div id="utensilModalDesc" class="text-gray-700 leading-relaxed mb-4"></div>
-        <div id="utensilModalAlternative" class="mb-4 bg-yellow-50 p-3 rounded-lg hidden">
-            <h4 class="font-semibold text-yellow-800 mb-2">🔄 Чем можно заменить</h4>
-            <p id="utensilModalAlternativeText" class="text-yellow-700"></p>
+
+        <div id="utensilModalDesc" class="prose max-w-none">
+            <!-- Описание утвари -->
         </div>
-        <div id="utensilModalCare" class="mb-4 bg-gray-50 p-3 rounded-lg hidden">
-            <h4 class="font-semibold text-gray-800 mb-2">🧼 Уход и обслуживание</h4>
-            <p id="utensilModalCareText" class="text-gray-700"></p>
+
+        <div id="utensilModalAlternative" class="mt-4 p-3 bg-blue-50 rounded-lg hidden">
+            <h4 class="font-semibold text-blue-800 mb-1 flex items-center gap-2">
+                <i class="fas fa-exchange-alt"></i> Чем заменить:
+            </h4>
+            <p id="utensilModalAlternativeText" class="text-blue-700 text-sm"></p>
         </div>
-        <div class="flex justify-end mt-4 pt-3 border-t">
-            <button onclick="closeUtensilModal()" class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition">Закрыть</button>
+
+        <div id="utensilModalCare" class="mt-4 p-3 bg-green-50 rounded-lg hidden">
+            <h4 class="font-semibold text-green-800 mb-1 flex items-center gap-2">
+                <i class="fas fa-hand-sparkles"></i> Уход:
+            </h4>
+            <p id="utensilModalCareText" class="text-green-700 text-sm"></p>
+        </div>
+
+        <div class="flex justify-end mt-6 pt-4 border-t border-gray-200">
+            <button onclick="window.closeUtensilModal()" class="px-5 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition">
+                Закрыть
+            </button>
         </div>
     </div>
 </div>

@@ -286,53 +286,82 @@ css
                                 </label>
                                 <div class="step-methods flex gap-1">
                                     <!-- Подготовка продуктов -->
-                                    <button class="preparation-info-btn text-gray-400 hover:text-green-600 transition p-2 -mt-1 -mr-1"
-                                            data-preparation-id="default"
-                                            data-preparation-name="Подготовка продуктов"
+                                    <button class="preparation-info-btn text-gray-600 hover:text-green-600 transition p-2 -mt-1 -mr-1"
+                                            data-preparation-id="{% if step.ingredient_preparation %}{{ step.ingredient_preparation.id }}{% else %}none{% endif %}"
+                                            data-preparation-name="{% if step.ingredient_preparation %}{{ step.ingredient_preparation.name|escapejs }}{% else %}Нет подготовки{% endif %}"
                                             onclick="window.showPreparationDetails(this)"
                                             title="Подготовка продуктов">
-                                        <i class="fas fa-kitchen-set text-lg"></i>
+                                        <i class="fas fa-grip-vertical text-lg"></i>
                                     </button>
                                     <!-- Метод приготовления -->
                                     <button class="method-info-btn text-gray-400 hover:text-amber-600 transition p-2 -mt-1 -mr-1"
-                                            data-method-id="{% if step.cooking_method %}{{ step.cooking_method.id }}{% else %}default{% endif %}"
-                                            data-method-name="{% if step.cooking_method %}{{ step.cooking_method.name }}{% else %}Метод приготовления{% endif %}"
+                                            data-method-id="{% if step.cooking_method %}{{ step.cooking_method.id }}{% else %}none{% endif %}"
+                                            data-method-name="{% if step.cooking_method %}{{ step.cooking_method.name|escapejs }}{% else %}Нет метода{% endif %}"
                                             onclick="window.showMethodDetails(this)"
                                             title="Метод приготовления">
                                         <i class="fas fa-fire text-lg"></i>
                                     </button>
-                                    <!-- Рекомендованная утварь -->
+                                    <!-- Рекомендованная утварь (если есть несколько, показываем первую как основную) -->
+                                    {% with first_utensil=step.recommended_utensils.all|first %}
                                     <button class="utensil-info-btn text-gray-400 hover:text-blue-600 transition p-2 -mt-1 -mr-1"
-                                            data-utensil-id="default"
-                                            data-utensil-name="Рекомендованная утварь"
+                                            data-utensil-id="{% if first_utensil %}{{ first_utensil.id }}{% else %}none{% endif %}"
+                                            data-utensil-name="{% if first_utensil %}{{ first_utensil.name|escapejs }}{% else %}Нет утвари{% endif %}"
                                             onclick="window.showUtensilDetails(this)"
                                             title="Рекомендованная утварь">
                                         <i class="fas fa-utensils text-lg"></i>
                                     </button>
+                                    {% endwith %}
                                 </div>
                             </div>
+
                             <p class="step-description text-gray-600 mt-1">{{ step.instruction }}</p>
 
-                            <!-- ВЛОЖЕННЫЙ РЕЦЕПТ С ПАРАМЕТРАМИ ВОЗВРАТА -->
-                                {% if step.subrecipe %}
-                                <div class="mt-2 p-3 bg-amber-50 rounded-lg border border-amber-200">
-                                    <div class="flex items-center gap-2 mb-2">
-                                        <i class="fas fa-utensil-spoon text-amber-600"></i>
-                                        <span class="font-medium text-sm">Вложенный рецепт:</span>
-                                        <a href="{% url 'kitchen:recipe_detail' step.subrecipe.id %}?return_to={{ request.path|urlencode }}&return_title={{ recipe.title|urlencode }}&return_step={{ step.order }}&return_context={{ step.title|urlencode }}&return_mode={{ request.GET.mode|default:'portions' }}"
-                                           class="subrecipe-link text-amber-700 hover:underline font-medium"
-                                           data-subrecipe-id="{{ step.subrecipe.id }}">
-                                            {{ step.subrecipe.title }}
-                                        </a>
-                                    </div>
-                                    {% if step.subrecipe_usage %}
-                                    <p class="text-sm text-gray-600">{{ step.subrecipe_usage }}</p>
-                                    {% endif %}
-                                </div>
+                            <!-- Мета-информация: метод, подготовка, утварь -->
+                            <div class="step-meta mt-3 flex flex-wrap gap-2 text-xs">
+                                {% if step.cooking_method %}
+                                <span class="bg-amber-50 px-2 py-1 rounded-full inline-flex items-center gap-1">
+                                    <i class="fas fa-fire text-amber-600 text-xs"></i>
+                                    <span class="text-gray-700">{{ step.cooking_method.name }}</span>
+                                </span>
                                 {% endif %}
 
+                                {% if step.ingredient_preparation %}
+                                <span class="bg-green-50 px-2 py-1 rounded-full inline-flex items-center gap-1">
+                                    <i class="fas fa-grip-vertical text-lg"></i>
+                                    <span class="text-gray-700">{{ step.ingredient_preparation.name }}</span>
+                                </span>
+                                {% endif %}
+
+                                {% for utensil in step.recommended_utensils.all %}
+                                <span class="bg-blue-50 px-2 py-1 rounded-full inline-flex items-center gap-1">
+                                    <i class="fas fa-utensils text-blue-600 text-xs"></i>
+                                    <span class="text-gray-700">{{ utensil.name }}</span>
+                                </span>
+                                {% endfor %}
+                            </div>
+
+                            <!-- ВЛОЖЕННЫЙ РЕЦЕПТ -->
+                            {% if step.subrecipe %}
+                            <div class="mt-3 p-3 bg-amber-50 rounded-lg border border-amber-200">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="fas fa-utensil-spoon text-amber-600"></i>
+                                    <span class="font-medium text-sm">Вложенный рецепт:</span>
+                                    <a href="{% url 'kitchen:recipe_detail' step.subrecipe.id %}?return_to={{ request.path|urlencode }}&return_title={{ recipe.title|urlencode }}&return_step={{ step.order }}&return_context={{ step.title|urlencode }}&return_mode={{ request.GET.mode|default:'portions' }}&subrecipe_base_ingredient={{ step.subrecipe_base_ingredient.id|default:'' }}&subrecipe_base_quantity={{ step.subrecipe_base_quantity|default:'' }}"
+                                       class="subrecipe-link text-amber-700 hover:underline font-medium"
+                                       data-subrecipe-id="{{ step.subrecipe.id }}"
+                                       data-base-ingredient-id="{{ step.subrecipe_base_ingredient.id|default:'' }}"
+                                       data-base-quantity="{{ step.subrecipe_base_quantity|default:'' }}">
+                                        {{ step.subrecipe.title }}
+                                    </a>
+                                </div>
+                                {% if step.subrecipe_usage %}
+                                <p class="text-sm text-gray-600">{{ step.subrecipe_usage }}</p>
+                                {% endif %}
+                            </div>
+                            {% endif %}
+
                             {% if step.duration %}
-                            <div class="text-xs text-gray-400 mt-1"><i class="far fa-clock"></i> {{ step.duration }} мин</div>
+                            <div class="text-xs text-gray-400 mt-2"><i class="far fa-clock"></i> {{ step.duration }} мин</div>
                             {% endif %}
                         </div>
                     </div>
@@ -552,7 +581,7 @@ css
 
 {% block extra_js %}
 <script src="{% static 'kitchen/js/recipe_widget.js' %}"></script>
-<script>
+<!--<script>-->
 <!--    window.shareRecipe = function() {-->
 <!--        if (navigator.share) {-->
 <!--            navigator.share({-->
@@ -571,5 +600,5 @@ css
 <!--        document.getElementById('infoModal')?.classList.add('hidden');-->
 <!--    };-->
 
-</script>
+<!--</script>-->
 {% endblock %}

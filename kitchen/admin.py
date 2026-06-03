@@ -4,9 +4,9 @@ from django.utils.html import format_html
 from .models import (
     Cuisine, Diet, IngredientCategory, Ingredient,
     Recipe, RecipeStep, RecipeIngredient, CookingMethod,
-    IngredientPreparation, RecommendedUtensil, IngredientSubstitution
+    IngredientPreparation, RecommendedUtensil, IngredientSubstitution,
+    CookingMethodSubstitution, UtensilSubstitution  # ← добавьте эти две
 )
-
 
 @admin.register(Cuisine)
 class CuisineAdmin(admin.ModelAdmin):
@@ -120,11 +120,28 @@ class RecipeStepInline(admin.TabularInline):
     ordering = ['order']
     fields = [
         'order', 'title', 'instruction', 'duration', 'temperature',
+        'cooking_method', 'ingredient_preparation', 'recommended_utensils',
         'subrecipe', 'subrecipe_base_ingredient', 'subrecipe_base_quantity'
     ]
-    autocomplete_fields = ['subrecipe', 'subrecipe_base_ingredient']
+    autocomplete_fields = ['subrecipe', 'subrecipe_base_ingredient', 'cooking_method', 'ingredient_preparation']
+    filter_horizontal = ['recommended_utensils']
     verbose_name = 'Шаг приготовления'
     verbose_name_plural = 'Шаги приготовления'
+
+
+@admin.register(CookingMethodSubstitution)
+class CookingMethodSubstitutionAdmin(admin.ModelAdmin):
+    list_display = ['original_method', 'substitute_method', 'reason']
+    list_filter = ['original_method__category']
+    search_fields = ['original_method__name', 'substitute_method__name', 'reason']
+    autocomplete_fields = ['original_method', 'substitute_method']
+
+
+@admin.register(UtensilSubstitution)
+class UtensilSubstitutionAdmin(admin.ModelAdmin):
+    list_display = ['original_utensil', 'substitute_utensil', 'reason']
+    search_fields = ['original_utensil__name', 'substitute_utensil__name', 'reason']
+    autocomplete_fields = ['original_utensil', 'substitute_utensil']
 
 
 @admin.register(RecipeIngredient)

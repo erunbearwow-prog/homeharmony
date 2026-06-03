@@ -182,45 +182,6 @@ class RecipeIngredient(models.Model):
         return f"{self.ingredient.name}: {self.quantity} {self.unit}"
 
 
-# ======================= ШАГИ ПРИГОТОВЛЕНИЯ =======================
-class RecipeStep(models.Model):
-    """Шаг приготовления"""
-    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name='steps')
-    order = models.IntegerField(verbose_name='Порядок')
-    title = models.CharField(max_length=200, verbose_name='Заголовок')
-    instruction = models.TextField(verbose_name='Инструкция')
-    duration = models.IntegerField(default=0, verbose_name='Длительность (мин)')
-    temperature = models.IntegerField(null=True, blank=True, verbose_name='Температура')
-
-    # Вложенный рецепт
-    subrecipe = models.ForeignKey(Recipe, on_delete=models.SET_NULL, null=True, blank=True,
-                                  related_name='used_in_steps', verbose_name='Вложенный рецепт')
-
-    # НОВЫЕ ПОЛЯ: Базовый ингредиент из вложенного рецепта
-    subrecipe_base_ingredient = models.ForeignKey(
-        'RecipeIngredient',
-        on_delete=models.SET_NULL,
-        null=True,
-        blank=True,
-        related_name='base_for_steps',
-        verbose_name='Базовый ингредиент из вложенного рецепта'
-    )
-    subrecipe_base_quantity = models.FloatField(
-        null=True,
-        blank=True,
-        validators=[MinValueValidator(0)],
-        verbose_name='Количество базового ингредиента'
-    )
-
-    class Meta:
-        verbose_name = 'Шаг приготовления'
-        verbose_name_plural = 'Шаги приготовления'
-        ordering = ['order']
-
-    def __str__(self):
-        return f"{self.order}. {self.title}"
-
-
 # ======================= МЕТОДЫ ПРИГОТОВЛЕНИЯ =======================
 class CookingMethod(models.Model):
     """Метод приготовления"""
@@ -302,11 +263,29 @@ class IngredientSubstitution(models.Model):
         related_name='substitutions',
         verbose_name='Исходный ингредиент в рецепте'
     )
-    substitute_name = models.CharField(max_length=200, verbose_name='Название заменителя')
-    substitute_unit = models.CharField(max_length=20, choices=Ingredient.UNIT_CHOICES,
-                                       verbose_name='Единица измерения заменителя')
-    ratio = models.FloatField(default=1.0, verbose_name='Коэффициент пересчёта',
-                              help_text='Например: 1 ст.л. пасты = 2 ст.л. помидоров')
+    substitute_ingredient = models.ForeignKey(
+        Ingredient,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='substitutions',
+        verbose_name='Ингредиент-заменитель'
+    )
+    substitute_name = models.CharField(
+        max_length=200,
+        blank=True,
+        verbose_name='Название заменителя (свободный ввод)'
+    )
+    substitute_unit = models.CharField(
+        max_length=20,
+        choices=Ingredient.UNIT_CHOICES,
+        verbose_name='Единица измерения заменителя'
+    )
+    ratio = models.FloatField(
+        default=1.0,
+        verbose_name='Коэффициент пересчёта',
+        help_text='Например: 1 ст.л. пасты = 2 ст.л. помидоров'
+    )
     notes = models.CharField(max_length=500, blank=True, verbose_name='Примечания по замене')
 
     class Meta:
@@ -314,4 +293,133 @@ class IngredientSubstitution(models.Model):
         verbose_name_plural = 'Допустимые замены'
 
     def __str__(self):
+        if self.substitute_ingredient:
+            return f"{self.recipe_ingredient.ingredient.name} → {self.substitute_ingredient.name}"
         return f"{self.recipe_ingredient.ingredient.name} → {self.substitute_name}"
+
+
+# ======================= ЗАМЕНА МЕТОДА ПРИГОТОВЛЕНИЯ =======================
+class CookingMethodSubstitution(models.Model):
+    """Замена метода приготовления (например, для диет)"""
+    original_method = models.ForeignKey(
+        CookingMethod,
+        on_delete=models.CASCADE,
+        related_name='substitutions',
+        verbose_name='Исходный метод'
+    )
+    substitute_method = models.ForeignKey(
+        CookingMethod,
+        on_delete=models.CASCADE,
+        related_name='original_for',
+        verbose_name='Метод-заменитель'
+    )
+    reason = models.CharField(max_length=200, blank=True, verbose_name='Причина замены')
+    notes = models.TextField(blank=True, verbose_name='Примечания')
+
+    class Meta:
+        verbose_name = 'Замена метода приготовления'
+        verbose_name_plural = 'Замены методов приготовления'
+        unique_together = ['original_method', 'substitute_method']
+
+    def __str__(self):
+        return f"{self.original_method.name} → {self.substitute_method.name}"
+
+
+# ======================= ЗАМЕНА УТВАРИ =======================
+class UtensilSubstitution(models.Model):
+    """Замена утвари"""
+    original_utensil = models.ForeignKey(
+        RecommendedUtensil,
+        on_delete=models.CASCADE,
+        related_name='substitutions',
+        verbose_name='Исходная утварь'
+    )
+    substitute_utensil = models.ForeignKey(
+        RecommendedUtensil,
+        on_delete=models.CASCADE,
+        related_name='original_for',
+        verbose_name='Утварь-заменитель'
+    )
+    reason = models.CharField(max_length=200, blank=True, verbose_name='Причина замены')
+    notes = models.TextField(blank=True, verbose_name='Примечания')
+
+    class Meta:
+        verbose_name = 'Замена утвари'
+        verbose_name_plural = 'Замены утвари'
+        unique_together = ['original_utensil', 'substitute_utensil']
+
+    def __str__(self):
+        return f"{self.original_utensil.name} → {self.substitute_utensil.name}"
+
+
+# ======================= ШАГИ ПРИГОТОВЛЕНИЯ =======================
+class RecipeStep(models.Model):
+    """Шаг приготовления"""
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name='steps')
+    order = models.IntegerField(verbose_name='Порядок')
+    title = models.CharField(max_length=200, verbose_name='Заголовок')
+    instruction = models.TextField(verbose_name='Инструкция')
+    duration = models.IntegerField(default=0, verbose_name='Длительность (мин)')
+    temperature = models.IntegerField(null=True, blank=True, verbose_name='Температура')
+
+    # Вложенный рецепт
+    subrecipe = models.ForeignKey(
+        Recipe,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='used_in_steps',
+        verbose_name='Вложенный рецепт'
+    )
+
+    # Базовый ингредиент из вложенного рецепта
+    subrecipe_base_ingredient = models.ForeignKey(
+        'RecipeIngredient',
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='base_for_steps',
+        verbose_name='Базовый ингредиент из вложенного рецепта'
+    )
+    subrecipe_base_quantity = models.FloatField(
+        null=True,
+        blank=True,
+        validators=[MinValueValidator(0)],
+        verbose_name='Количество базового ингредиента'
+    )
+
+    # Метод приготовления для этого шага
+    cooking_method = models.ForeignKey(
+        CookingMethod,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='steps',
+        verbose_name='Метод приготовления'
+    )
+
+    # Подготовка продуктов для этого шага
+    ingredient_preparation = models.ForeignKey(
+        IngredientPreparation,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='steps',
+        verbose_name='Подготовка продуктов'
+    )
+
+    # Рекомендованная утварь для этого шага
+    recommended_utensils = models.ManyToManyField(
+        RecommendedUtensil,
+        blank=True,
+        related_name='steps',
+        verbose_name='Рекомендованная утварь'
+    )
+
+    class Meta:
+        verbose_name = 'Шаг приготовления'
+        verbose_name_plural = 'Шаги приготовления'
+        ordering = ['order']
+
+    def __str__(self):
+        return f"{self.order}. {self.title}"
