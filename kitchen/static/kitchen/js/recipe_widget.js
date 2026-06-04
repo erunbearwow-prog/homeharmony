@@ -800,10 +800,12 @@ function restoreRatioFromURL() {
                 }
             });
             if (items.length === 0) {
-                alert('Все ингредиенты есть в наличии! 🎉');
+                showToast('Все ингредиенты есть в наличии! 🎉', 'Отлично!', 'success');
             } else {
                 navigator.clipboard.writeText(items.join('\n')).then(() => {
-                    alert(`Скопировано ${items.length} ингредиентов для покупки`);
+                    showToast(`Скопировано ${items.length} ингредиентов для покупки`, 'Готово!', 'success');
+                }).catch(() => {
+                    showToast('Не удалось скопировать список', 'Ошибка', 'error');
                 });
             }
         });
@@ -1214,6 +1216,61 @@ function closeInfoModal() {
     if (modal) modal.classList.add('hidden');
 }
 
+// Тост-уведомление
+let toastTimeout = null;
+
+function showToast(message, title = 'Готово!', type = 'success') {
+    const toast = document.getElementById('toastNotification');
+    if (!toast) return;
+
+    // Очищаем предыдущий таймер
+    if (toastTimeout) clearTimeout(toastTimeout);
+
+    // Настройка иконки и цвета в зависимости от типа
+    const configs = {
+        success: { icon: 'fa-check-circle', color: 'text-green-400', bg: 'bg-gray-800/95' },
+        error: { icon: 'fa-exclamation-circle', color: 'text-red-400', bg: 'bg-gray-800/95' },
+        warning: { icon: 'fa-exclamation-triangle', color: 'text-yellow-400', bg: 'bg-gray-800/95' },
+        info: { icon: 'fa-info-circle', color: 'text-blue-400', bg: 'bg-gray-800/95' }
+    };
+
+    const config = configs[type] || configs.success;
+
+    // Обновляем содержимое
+    const iconSpan = toast.querySelector('#toastIcon');
+    const titleSpan = toast.querySelector('#toastTitle');
+    const messageSpan = toast.querySelector('#toastMessage');
+    const container = toast.querySelector('div:first-child');
+
+    if (iconSpan) iconSpan.className = `fas ${config.icon} ${config.color} text-xl`;
+    if (titleSpan) titleSpan.innerText = title;
+    if (messageSpan) messageSpan.innerHTML = message;
+    if (container) container.className = `${config.bg} backdrop-blur-sm text-white rounded-xl shadow-2xl px-5 py-3.5 flex items-center gap-3 min-w-[260px]`;
+
+    // Показываем тост
+    toast.classList.remove('hidden');
+    toast.classList.add('toast-show');
+    toast.classList.remove('toast-hide');
+
+    // Автоматическое скрытие через 3 секунды
+    toastTimeout = setTimeout(() => {
+        closeToast();
+    }, 3000);
+}
+
+function closeToast() {
+    const toast = document.getElementById('toastNotification');
+    if (!toast) return;
+
+    toast.classList.remove('toast-show');
+    toast.classList.add('toast-hide');
+
+    setTimeout(() => {
+        toast.classList.add('hidden');
+        toast.classList.remove('toast-hide');
+    }, 300);
+}
+
 // Делаем функции глобальными для доступа из HTML
 window.showMethodDetails = showMethodDetails;
 window.closeMethodModal = closeMethodModal;
@@ -1222,3 +1279,36 @@ window.closePreparationModal = closePreparationModal;
 window.showUtensilDetails = showUtensilDetails;
 window.closeUtensilModal = closeUtensilModal;  // ← теперь функция существует
 window.closeInfoModal = closeInfoModal;
+window.showToast = showToast;
+window.closeToast = closeToast;
+
+//Дополнительно: очередь тостов (для нескольких уведомлений):
+//javascript
+//let toastQueue = [];
+//let isToastShowing = false;
+//
+//function showToast(message, title = 'Готово!', type = 'success') {
+//    toastQueue.push({ message, title, type });
+//    processToastQueue();
+//}
+//
+//function processToastQueue() {
+//    if (isToastShowing || toastQueue.length === 0) return;
+//
+//    isToastShowing = true;
+//    const { message, title, type } = toastQueue.shift();
+//
+//    // Показываем тост (как в предыдущем примере)
+//    const toast = document.getElementById('toastNotification');
+//    if (!toast) return;
+//
+//    // ... код отображения тоста (из пункта 3) ...
+//
+//    toastTimeout = setTimeout(() => {
+//        closeToast();
+//        setTimeout(() => {
+//            isToastShowing = false;
+//            processToastQueue();
+//        }, 300);
+//    }, 3000);
+//}

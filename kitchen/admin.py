@@ -94,35 +94,64 @@ class RecipeStepForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        subrecipe_id = None
 
-        if self.data.get('subrecipe'):
-            try:
-                subrecipe_id = int(self.data.get('subrecipe'))
-            except (ValueError, TypeError):
-                pass
-        elif self.instance and self.instance.subrecipe_id:
-            subrecipe_id = self.instance.subrecipe_id
+        # Безопасная проверка — только если поле есть в форме
+        if 'subrecipe_base_ingredient' in self.fields:
+            subrecipe_id = None
 
-        if subrecipe_id:
-            self.fields['subrecipe_base_ingredient'].queryset = RecipeIngredient.objects.filter(
-                recipe_id=subrecipe_id
-            ).select_related('ingredient')
-        else:
-            self.fields['subrecipe_base_ingredient'].queryset = RecipeIngredient.objects.none()
+            if self.data.get('subrecipe'):
+                try:
+                    subrecipe_id = int(self.data.get('subrecipe'))
+                except (ValueError, TypeError):
+                    pass
+            elif self.instance and self.instance.subrecipe_id:
+                subrecipe_id = self.instance.subrecipe_id
+
+            if subrecipe_id:
+                self.fields['subrecipe_base_ingredient'].queryset = RecipeIngredient.objects.filter(
+                    recipe_id=subrecipe_id
+                ).select_related('ingredient')
+            else:
+                self.fields['subrecipe_base_ingredient'].queryset = RecipeIngredient.objects.none()
 
 
-class RecipeStepInline(admin.TabularInline):
+# class RecipeStepInline(admin.StackedInline):
+#     model = RecipeStep
+#     form = RecipeStepForm
+#     fk_name = 'recipe'
+#     extra = 1
+#     ordering = ['order']
+#
+#     fields = (
+#         ('order', 'title'),  # два поля в одной строке
+#         ('instruction',),
+#         ('duration', 'temperature'),
+#         ('cooking_method', 'ingredient_preparation'),
+#         ('recommended_utensils',),
+#         ('subrecipe', 'subrecipe_base_ingredient', 'subrecipe_base_quantity'),
+#     )
+#
+#     autocomplete_fields = ['subrecipe', 'subrecipe_base_ingredient', 'cooking_method', 'ingredient_preparation']
+#     filter_horizontal = ['recommended_utensils']
+#     verbose_name = 'Шаг приготовления'
+#     verbose_name_plural = 'Шаги приготовления'
+
+class RecipeStepInline(admin.StackedInline):
     model = RecipeStep
     form = RecipeStepForm
     fk_name = 'recipe'
     extra = 1
     ordering = ['order']
-    fields = [
-        'order', 'title', 'instruction', 'duration', 'temperature',
-        'cooking_method', 'ingredient_preparation', 'recommended_utensils',
-        'subrecipe', 'subrecipe_base_ingredient', 'subrecipe_base_quantity'
-    ]
+
+    fields = (
+        ('order', 'title'),  # два поля в одной строке
+        ('instruction'),
+        # ('cooking_method', 'ingredient_preparation'),
+        # ('duration', 'temperature'),
+        # ('recommended_utensils',),
+        # ('subrecipe', 'subrecipe_base_ingredient', 'subrecipe_base_quantity'),
+    )
+
     autocomplete_fields = ['subrecipe', 'subrecipe_base_ingredient', 'cooking_method', 'ingredient_preparation']
     filter_horizontal = ['recommended_utensils']
     verbose_name = 'Шаг приготовления'
@@ -164,17 +193,20 @@ class RecipeAdmin(admin.ModelAdmin):
 
     fieldsets = [
         ('Основная информация', {
-            'fields': ['title', 'cuisine', 'author', 'description', 'image', 'video']
+            'fields': ['title', 'cuisine', 'author', 'description', 'image'], # , 'video'
+            'classes': ['collapse']
         }),
         ('Параметры', {
-            'fields': ['total_time', 'servings', 'difficulty']
+            'fields': ['servings', 'difficulty'],
+            'classes': ['collapse']
         }),
         ('Пищевая ценность', {
             'fields': ['calories', 'protein', 'fat', 'carbs'],
             'classes': ['collapse']
         }),
         ('Диеты и связи', {
-            'fields': ['diet_tags', 'related_recipes']
+            'fields': ['diet_tags', 'related_recipes'],
+            'classes': ['collapse']
         }),
     ]
 

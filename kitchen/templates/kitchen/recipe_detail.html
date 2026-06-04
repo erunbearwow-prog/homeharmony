@@ -214,12 +214,11 @@ css
             <!-- Описание -->
             {% if recipe.description %}
             <div class="mt-8">
-                <h2 class="text-xl font-bold serif mb-3">📖 Описание</h2>
+                <h2 class="text-xl font-bold serif mb-3">Описание</h2>
                 <p class="text-gray-700 leading-relaxed">{{ recipe.description }}</p>
             </div>
             {% endif %}
 
-                -------------------------------------------
                 <!-- БЛОК ВОЗВРАТА К ОСНОВНОМУ РЕЦЕПТУ -->
                 {% if return_to %}
                 <div class="mb-6 p-4 bg-amber-50 rounded-xl border border-amber-200 flex flex-col sm:flex-row gap-4 items-start sm:items-center" id="returnBanner">
@@ -256,11 +255,10 @@ css
                     </div>
                 </div>
                 {% endif %}
-                -------------------------------------------
 
             <!-- ПОШАГОВОЕ ПРИГОТОВЛЕНИЕ -->
             <div class="mt-10">
-                <h2 class="text-2xl md:text-3xl font-bold serif mb-6">🥣 Пошаговое приготовление</h2>
+                <h2 class="text-2xl md:text-3xl font-bold serif mb-6">Пошаговое приготовление</h2>
 
                 <div class="mb-6 no-print">
                     <div class="flex justify-between text-sm text-gray-600 mb-1">
@@ -271,7 +269,6 @@ css
                         <div id="stepsProgressBar" class="progress-fill" style="width: 0%"></div>
                     </div>
                 </div>
-                -------------------------------------
                 <div class="space-y-6" id="stepsList">
                     {% for step in steps %}
                     <div class="flex gap-5 bg-white p-4 rounded-xl border shadow-sm step-card" data-step-id="{{ forloop.counter0 }}">
@@ -286,7 +283,7 @@ css
                                 </label>
                                 <div class="step-methods flex gap-1">
                                     <!-- Подготовка продуктов -->
-                                    <button class="preparation-info-btn text-gray-600 hover:text-green-600 transition p-2 -mt-1 -mr-1"
+                                    <button class="preparation-info-btn text-gray-400 hover:text-green-600 transition p-2 -mt-1 -mr-1"
                                             data-preparation-id="{% if step.ingredient_preparation %}{{ step.ingredient_preparation.id }}{% else %}none{% endif %}"
                                             data-preparation-name="{% if step.ingredient_preparation %}{{ step.ingredient_preparation.name|escapejs }}{% else %}Нет подготовки{% endif %}"
                                             onclick="window.showPreparationDetails(this)"
@@ -369,21 +366,26 @@ css
                     <p class="text-gray-500">Инструкция по приготовлению будет добавлена позже.</p>
                     {% endfor %}
                 </div>
-                ---------------------------------------
             </div>
         </div>
 
         <!-- ПРАВАЯ КОЛОНКА: ВИДЖЕТ ИНГРЕДИЕНТОВ -->
         <div class="bg-gray-50 p-6 rounded-2xl self-start">
-            <h3 class="text-xl font-bold serif mb-4">📝 Ингредиенты</h3>
+            <h3 class="text-xl font-bold serif mb-4">Ингредиенты</h3>
 
             <!-- Переключатель режимов -->
-            <div class="flex gap-2 mb-4 no-print">
-                <button id="modePortionsBtn" class="mode-switch flex-1 py-2 rounded-lg text-sm font-medium bg-amber-600 text-white transition">
-                    👥 По порциям
+            <div class="flex gap-3 mb-4 no-print">
+                <button id="modePortionsBtn"
+                        class="mode-switch flex-1 py-2 rounded-lg text-sm font-medium
+                               bg-amber-50 text-amber-700 border border-amber-200
+                               hover:bg-amber-100 transition-colors duration-200">
+                    <i class="fas fa-users mr-2"></i> По порциям
                 </button>
-                <button id="modeProductsBtn" class="mode-switch flex-1 py-2 rounded-lg text-sm font-medium bg-white text-gray-700 border border-gray-200 transition">
-                    🥩 По продуктам
+                <button id="modeProductsBtn"
+                        class="mode-switch flex-1 py-2 rounded-lg text-sm font-medium
+                               bg-gray-50 text-gray-600 border border-gray-200
+                               hover:bg-amber-50 hover:text-amber-700 hover:border-amber-200 transition-all duration-200">
+                    <i class="fas fa-weight-hanging mr-2"></i> По продуктам
                 </button>
             </div>
 
@@ -392,7 +394,7 @@ css
                 <div class="p-3 bg-green-50 rounded-xl border border-green-100 mb-4">
                     <div class="flex items-center gap-2 mb-2">
                         <i class="fas fa-users text-green-700"></i>
-                        <span class="font-medium text-sm">Сколько гостей?</span>
+                        <span class="font-medium text-sm">Сколько порций?</span>
                     </div>
                     <div class="flex items-center gap-3">
                         <span class="text-2xl font-bold text-green-700 min-w-[60px]" id="portionsValue">{{ recipe.servings }}</span>
@@ -457,17 +459,17 @@ css
 
             <!-- Кнопки управления чекбоксами -->
             <div class="flex gap-3 mt-4 pt-2 border-t border-gray-200 no-print">
-                <button id="checkAllBtn" class="text-xs text-gray-500 hover:text-amber-600 transition">☑ Отметить всё (есть в наличии)</button>
-                <button id="uncheckAllBtn" class="text-xs text-gray-500 hover:text-amber-600 transition">☐ Снять всё</button>
+                <button id="checkAllBtn" class="text-xs text-gray-500 hover:text-amber-600 transition">☑ Все есть</button>
+                <button id="uncheckAllBtn" class="text-xs text-gray-500 hover:text-amber-600 transition">☐ Ничего нет</button>
                 <button id="copyCheckedBtn" class="text-xs bg-amber-100 text-amber-800 px-3 py-1 rounded-lg hover:bg-amber-200 transition ml-auto">
-                    📋 Скопировать список покупок (чего нет)
+                    📋 Список покупок
                 </button>
             </div>
 
             <!-- Пищевая ценность -->
             {% if recipe.calories or recipe.protein or recipe.fat or recipe.carbs %}
             <div class="mt-4 pt-3 border-t border-gray-200">
-                <h4 class="font-semibold text-gray-700 text-sm mb-2">📊 Пищевая ценность (на порцию)</h4>
+                <h4 class="font-semibold text-gray-700 text-sm mb-2">Пищевая ценность (на порцию)</h4>
                 <div class="grid grid-cols-4 gap-2 text-center text-xs">
                     <div><span class="font-semibold text-amber-700">{{ recipe.calories }}</span> <span class="text-gray-500">ккал</span></div>
                     <div><span class="font-semibold text-amber-700">{{ recipe.protein }}</span> <span class="text-gray-500">белки</span></div>
@@ -573,6 +575,20 @@ css
     </div>
 </div>
 
+<!-- Тост-уведомление -->
+<div id="toastNotification" class="fixed bottom-6 right-6 z-50 hidden">
+    <div class="bg-gray-800/95 backdrop-blur-sm text-white rounded-xl shadow-2xl px-5 py-3.5 flex items-center gap-3 min-w-[260px] transform transition-all duration-300 translate-y-0">
+        <i id="toastIcon" class="fas fa-check-circle text-green-400 text-xl"></i>
+        <div class="flex-1">
+            <p id="toastTitle" class="text-xs font-semibold uppercase tracking-wider opacity-80">Успешно</p>
+            <p id="toastMessage" class="text-sm font-medium"></p>
+        </div>
+        <button onclick="closeToast()" class="text-gray-400 hover:text-white transition-colors">
+            <i class="fas fa-times text-sm"></i>
+        </button>
+    </div>
+</div>
+
 <!-- МОДАЛЬНЫЕ ОКНА -->
 {% include 'kitchen/includes/method_modal.html' %}
 {% include 'kitchen/includes/preparation_modal.html' %}
@@ -581,24 +597,47 @@ css
 
 {% block extra_js %}
 <script src="{% static 'kitchen/js/recipe_widget.js' %}"></script>
-<!--<script>-->
-<!--    window.shareRecipe = function() {-->
-<!--        if (navigator.share) {-->
-<!--            navigator.share({-->
-<!--                title: '{{ recipe.title|escapejs }}',-->
-<!--                text: 'Проверенный рецепт от Семейных ценностей',-->
-<!--                url: window.location.href-->
-<!--            });-->
-<!--        } else {-->
-<!--            navigator.clipboard.writeText(window.location.href).then(() => {-->
-<!--                alert('Ссылка скопирована!');-->
-<!--            });-->
-<!--        }-->
-<!--    };-->
+<script>
+    window.shareRecipe = function() {
+        if (navigator.share) {
+            navigator.share({
+                title: '{{ recipe.title|escapejs }}',
+                text: 'Проверенный рецепт от Семейных ценностей',
+                url: window.location.href
+            });
+        } else {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                alert('Ссылка скопирована!');
+            });
+        }
+    };
 
-<!--    window.closeInfoModal = function() {-->
-<!--        document.getElementById('infoModal')?.classList.add('hidden');-->
-<!--    };-->
+    window.closeInfoModal = function() {
+        document.getElementById('infoModal')?.classList.add('hidden');
+    };
 
-<!--</script>-->
+    // Восстановление состояния при возврате из вложенного рецепта
+    document.addEventListener('DOMContentLoaded', function() {
+        // Получаем параметры из URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const stepParam = urlParams.get('step');
+        const modeParam = urlParams.get('mode');
+        const portionsParam = urlParams.get('portions');
+        const meatParam = urlParams.get('meat');
+
+        // Если есть параметр step — прокручиваем и подсвечиваем шаг
+        if (stepParam) {
+            const targetStep = document.querySelector(`.step-card[data-step-id="${parseInt(stepParam) - 1}"]`);
+            if (targetStep) {
+                setTimeout(() => {
+                    targetStep.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    targetStep.classList.add('ring-2', 'ring-amber-400', 'ring-offset-2');
+                    setTimeout(() => {
+                        targetStep.classList.remove('ring-2', 'ring-amber-400', 'ring-offset-2');
+                    }, 3000);
+                }, 500);
+            }
+        }
+    });
+</script>
 {% endblock %}

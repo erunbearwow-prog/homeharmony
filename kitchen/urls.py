@@ -14,4 +14,21 @@ urlpatterns = [
     path('cooking_recipe/', views.recipe_old, name='cooking_recipe'),
     path('recipe/<int:recipe_id>/', views.recipe_detail, name='recipe_detail'),
 
+    # Страницы ингредиентов
+    path('ingredients/', views.ingredient_list, name='ingredient_list'),
+    path('ingredient/<int:ingredient_id>/', views.ingredient_detail, name='ingredient_detail'),
+
+    # Страницы утвари
+    path('utensils/', views.utensil_list, name='utensil_list'),
+    path('utensil/<int:utensil_id>/', views.utensil_detail, name='utensil_detail'),
+
+    # Страницы методов приготовления
+    path('methods/', views.cooking_method_list, name='cooking_method_list'),
+    path('method/<int:method_id>/', views.cooking_method_detail, name='cooking_method_detail'),
+
+    # Страницы подготовки продуктов
+    path('preparations/', views.preparation_list, name='preparation_list'),
+    path('preparation/<int:preparation_id>/', views.preparation_detail, name='preparation_detail'),
+]
+
 ]
