@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Ингредиенты | Семейные ценности{% endblock %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <h1 class="text-3xl font-bold serif mb-2">🍎 Ингредиенты</h1>
+    <p class="text-gray-600 mb-6">База продуктов с пищевой ценностью и использованием в рецептах</p>
+    
+    <!-- Поиск -->
+    <form method="get" class="mb-8">
+        <div class="flex gap-3 max-w-md">
+            <input type="text" name="q" value="{{ query|default:'' }}" 
+                   placeholder="Поиск ингредиента..."
+                   class="flex-1 border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-amber-500 focus:border-transparent">
+            <button type="submit" class="bg-amber-600 text-white px-6 py-2 rounded-lg hover:bg-amber-700 transition">
+                <i class="fas fa-search"></i> Найти
+            </button>
+        </div>
+    </form>
+    
+    <!-- Сетка ингредиентов -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        {% for ingredient in page_obj %}
+        <a href="{% url 'kitchen:ingredient_detail' ingredient.id %}"
+           class="bg-white rounded-xl border border-gray-200 p-4 text-center hover:shadow-lg hover:border-amber-300 transition group">
+            {{ ingredient.id }}
+            <div class="w-16 h-16 mx-auto bg-amber-100 rounded-full flex items-center justify-center mb-3 group-hover:bg-amber-200 transition">
+                <i class="fas fa-carrot text-amber-600 text-2xl"></i>
+            </div>
+            <h3 class="font-medium text-gray-800 group-hover:text-amber-700">{{ ingredient.name }}</h3>
+            <p class="text-xs text-gray-500 mt-1">{{ ingredient.recipes_count }} рецептов</p>
+        </a>
+        {% empty %}
+        <p class="col-span-full text-gray-500 text-center py-8">Ингредиенты не найдены</p>
+        {% endfor %}
+    </div>
+    
+    <!-- Пагинация -->
+{% include "./includes/pagination.html" %}-->
+</div>
+{% endblock %}

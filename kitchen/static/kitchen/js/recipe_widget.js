@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentBaseIngredient = null;
     let currentReplaceIngredient = null;
     let currentMode = 'portions';
+    let currentIngredientId = null;
 
     // Базовые значения
     const baseServings = parseInt(document.getElementById('portionsSlider')?.value) || 4;
@@ -700,19 +701,14 @@ function restoreRatioFromURL() {
     }
 
     // ======================= КНОПКА ℹ️ (информация об ингредиенте) =======================
-    function openInfoModal(ingredientId, ingredientName) {
-        document.getElementById('infoModalName').innerText = ingredientName;
-        infoModal.classList.remove('hidden');
-    }
-
     document.querySelectorAll('.info-btn').forEach(btn => {
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            const id = this.dataset.id;
-            const name = this.dataset.name;
-            openInfoModal(id, name);
-        });
+    btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const id = this.dataset.id;
+        const name = this.dataset.name;
+        openInfoModal(id, name);
     });
+});
 
     // Закрытие модалок по клику на фон
     if (replaceModal) {
@@ -1211,6 +1207,19 @@ function closeUtensilModal() {  // ← ДОБАВИТЬ ЭТУ ФУНКЦИЮ
     if (modal) modal.classList.add('hidden');
 }
 
+function openInfoModal(ingredientId, ingredientName) {
+    currentIngredientId = ingredientId;
+    document.getElementById('infoModalName').innerText = ingredientName;
+
+    const link = document.getElementById('fullIngredientInfoLink');
+    if (link) {
+        link.href = `/kitchen/ingredient/${ingredientId}/`;
+    }
+
+    const modal = document.getElementById('infoModal');
+    if (modal) modal.classList.remove('hidden');
+}
+
 function closeInfoModal() {
     const modal = document.getElementById('infoModal');
     if (modal) modal.classList.add('hidden');
@@ -1281,6 +1290,7 @@ window.closeUtensilModal = closeUtensilModal;  // ← теперь функци�
 window.closeInfoModal = closeInfoModal;
 window.showToast = showToast;
 window.closeToast = closeToast;
+window.openInfoModal = openInfoModal;
 
 //Дополнительно: очередь тостов (для нескольких уведомлений):
 //javascript

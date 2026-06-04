@@ -30,5 +30,3 @@ urlpatterns = [
     path('preparations/', views.preparation_list, name='preparation_list'),
     path('preparation/<int:preparation_id>/', views.preparation_detail, name='preparation_detail'),
 ]
-
-]
