@@ -256,27 +256,43 @@ def ingredient_list(request):
     return render(request, 'kitchen/ingredient_list.html', context)
 
 
+# kitchen/views.py
+
 def ingredient_detail(request, ingredient_id):
-    """Детальная страница ингредиента"""
+    """Детальная страница ингредиента с поддержкой возврата в рецепт"""
     ingredient = get_object_or_404(Ingredient, id=ingredient_id)
+
+    # Получаем параметры возврата (как в recipe_detail)
+    return_to = request.GET.get('return_to')
+    return_title = request.GET.get('return_title')
+    return_step = request.GET.get('return_step')
+    return_context = request.GET.get('return_context')
+    return_mode = request.GET.get('return_mode')
+    return_meat = request.GET.get('return_meat')
+    return_portions = request.GET.get('return_portions')
+    ratio = request.GET.get('ratio')
 
     # Рецепты с этим ингредиентом
     recipe_ingredients = RecipeIngredient.objects.filter(
         ingredient=ingredient
     ).select_related('recipe').order_by('-recipe__created_at')
 
-    # Пагинация рецептов
+    # Пагинация
     paginator = Paginator(recipe_ingredients, 12)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
 
-    # Информация о заменах
-    # substitutions = ingredient.ingredient_substitutions.all()  # если добавите такую связь
-
     context = {
         'ingredient': ingredient,
         'page_obj': page_obj,
-        # 'substitutions': substitutions,
+        'return_to': return_to,
+        'return_title': return_title,
+        'return_step': return_step,
+        'return_context': return_context,
+        'return_mode': return_mode,
+        'return_meat': return_meat,
+        'return_portions': return_portions,
+        'ratio': ratio,
         'title': ingredient.name,
     }
     return render(request, 'kitchen/ingredient_detail.html', context)

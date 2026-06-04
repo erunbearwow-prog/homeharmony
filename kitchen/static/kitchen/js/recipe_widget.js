@@ -1213,7 +1213,39 @@ function openInfoModal(ingredientId, ingredientName) {
 
     const link = document.getElementById('fullIngredientInfoLink');
     if (link) {
-        link.href = `/kitchen/ingredient/${ingredientId}/`;
+        // Получаем параметры из текущего URL
+        const urlParams = new URLSearchParams(window.location.search);
+
+        // Сохраняем параметры возврата из текущей страницы
+        const returnTo = window.location.pathname;
+        const returnTitle = document.querySelector('h1')?.innerText || document.title || 'Рецепт';
+        const returnStep = urlParams.get('step') || '';
+        const returnContext = urlParams.get('return_context') || '';
+        const returnMode = urlParams.get('mode') || '';
+        const returnMeat = urlParams.get('meat') || '';
+        const returnPortions = urlParams.get('portions') || '';
+        const ratio = urlParams.get('ratio') || '';
+
+        // Формируем URL для страницы ингредиента
+        let url = `/kitchen/ingredient/${ingredientId}/`;
+        const params = new URLSearchParams();
+
+        if (returnTo) params.set('return_to', returnTo);
+        if (returnTitle) params.set('return_title', returnTitle);
+        if (returnStep) params.set('return_step', returnStep);
+        if (returnContext) params.set('return_context', returnContext);
+        if (returnMode) params.set('return_mode', returnMode);
+        if (returnMeat) params.set('return_meat', returnMeat);
+        if (returnPortions) params.set('return_portions', returnPortions);
+        if (ratio) params.set('ratio', ratio);
+
+        const queryString = params.toString();
+        if (queryString) {
+            url += '?' + queryString;
+        }
+
+        console.log('Redirecting to:', url);  // для отладки
+        link.href = url;
     }
 
     const modal = document.getElementById('infoModal');

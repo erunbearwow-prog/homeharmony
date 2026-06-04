@@ -265,16 +265,9 @@ class IngredientSubstitution(models.Model):
     )
     substitute_ingredient = models.ForeignKey(
         Ingredient,
-        on_delete=models.SET_NULL,
-        null=True,
-        blank=True,
+        on_delete=models.CASCADE,  # ← меняем с SET_NULL на CASCADE
         related_name='substitutions',
         verbose_name='Ингредиент-заменитель'
-    )
-    substitute_name = models.CharField(
-        max_length=200,
-        blank=True,
-        verbose_name='Название заменителя (свободный ввод)'
     )
     substitute_unit = models.CharField(
         max_length=20,
@@ -291,11 +284,10 @@ class IngredientSubstitution(models.Model):
     class Meta:
         verbose_name = 'Допустимая замена'
         verbose_name_plural = 'Допустимые замены'
+        unique_together = ['recipe_ingredient', 'substitute_ingredient']  # ← защита от дублей
 
     def __str__(self):
-        if self.substitute_ingredient:
-            return f"{self.recipe_ingredient.ingredient.name} → {self.substitute_ingredient.name}"
-        return f"{self.recipe_ingredient.ingredient.name} → {self.substitute_name}"
+        return f"{self.recipe_ingredient.ingredient.name} → {self.substitute_ingredient.name}"
 
 
 # ======================= ЗАМЕНА МЕТОДА ПРИГОТОВЛЕНИЯ =======================

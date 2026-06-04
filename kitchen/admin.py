@@ -5,8 +5,11 @@ from .models import (
     Cuisine, Diet, IngredientCategory, Ingredient,
     Recipe, RecipeStep, RecipeIngredient, CookingMethod,
     IngredientPreparation, RecommendedUtensil, IngredientSubstitution,
-    CookingMethodSubstitution, UtensilSubstitution  # ← добавьте эти две
+    CookingMethodSubstitution, UtensilSubstitution
 )
+
+
+# ======================= БАЗОВЫЕ РЕГИСТРАЦИИ =======================
 
 @admin.register(Cuisine)
 class CuisineAdmin(admin.ModelAdmin):
@@ -33,7 +36,6 @@ class IngredientCategoryAdmin(admin.ModelAdmin):
         if obj.icon:
             return format_html('<i class="fas fa-{}"></i>', obj.icon)
         return '-'
-
     icon_preview.short_description = 'Иконка'
 
 
@@ -65,26 +67,43 @@ class IngredientAdmin(admin.ModelAdmin):
 
     def image_preview(self, obj):
         if obj.image:
-            return format_html('<img src="{}" width="50" height="50" style="object-fit: cover; border-radius: 8px;" />',
-                               obj.image.url)
+            return format_html('<img src="{}" width="50" height="50" style="object-fit: cover; border-radius: 8px;" />', obj.image.url)
         return '-'
-
     image_preview.short_description = 'Изображение'
 
+
+# ======================= INLINE КЛАССЫ =======================
 
 class IngredientSubstitutionInline(admin.TabularInline):
     model = IngredientSubstitution
     extra = 1
-    fields = ['substitute_name', 'substitute_unit', 'ratio', 'notes']
-    verbose_name = 'Допустимая замена'
-    verbose_name_plural = 'Допустимые замены'
+    fields = ['substitute_ingredient', 'substitute_unit', 'ratio', 'notes']
+    autocomplete_fields = ['substitute_ingredient']
+    verbose_name = '✅ Замена'
+    verbose_name_plural = '✅ Возможные замены (прямо в этом рецепте)'
+    classes = ['collapse']
 
 
 class RecipeIngredientInline(admin.TabularInline):
     model = RecipeIngredient
     extra = 3
-    fields = ['ingredient', 'quantity', 'unit', 'notes', 'is_scalable']
+    fields = ['ingredient', 'quantity', 'unit', 'notes', 'is_scalable', 'edit_substitutions']
     autocomplete_fields = ['ingredient']
+    readonly_fields = ['edit_substitutions']
+    verbose_name = 'Ингредиент'
+    verbose_name_plural = 'Ингредиенты (есть в наличии)'
+
+    def edit_substitutions(self, obj):
+        """Ссылка на редактирование замен для этого ингредиента"""
+        if obj and obj.pk:
+            from django.urls import reverse
+            url = reverse('admin:kitchen_recipeingredient_change', args=[obj.pk])
+            return format_html(
+                '<a href="{}" target="_blank" style="background: #f8f9fa; padding: 4px 8px; border-radius: 4px; text-decoration: none; color: #0d6efd;">'
+                '🔄 Управление заменами</a>', url
+            )
+        return '—'
+    edit_substitutions.short_description = 'Замены'
 
 
 class RecipeStepForm(forms.ModelForm):
@@ -95,7 +114,6 @@ class RecipeStepForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        # Безопасная проверка — только если поле есть в форме
         if 'subrecipe_base_ingredient' in self.fields:
             subrecipe_id = None
 
@@ -115,27 +133,6 @@ class RecipeStepForm(forms.ModelForm):
                 self.fields['subrecipe_base_ingredient'].queryset = RecipeIngredient.objects.none()
 
 
-# class RecipeStepInline(admin.StackedInline):
-#     model = RecipeStep
-#     form = RecipeStepForm
-#     fk_name = 'recipe'
-#     extra = 1
-#     ordering = ['order']
-#
-#     fields = (
-#         ('order', 'title'),  # два поля в одной строке
-#         ('instruction',),
-#         ('duration', 'temperature'),
-#         ('cooking_method', 'ingredient_preparation'),
-#         ('recommended_utensils',),
-#         ('subrecipe', 'subrecipe_base_ingredient', 'subrecipe_base_quantity'),
-#     )
-#
-#     autocomplete_fields = ['subrecipe', 'subrecipe_base_ingredient', 'cooking_method', 'ingredient_preparation']
-#     filter_horizontal = ['recommended_utensils']
-#     verbose_name = 'Шаг приготовления'
-#     verbose_name_plural = 'Шаги приготовления'
-
 class RecipeStepInline(admin.StackedInline):
     model = RecipeStep
     form = RecipeStepForm
@@ -144,12 +141,12 @@ class RecipeStepInline(admin.StackedInline):
     ordering = ['order']
 
     fields = (
-        ('order', 'title'),  # два поля в одной строке
-        ('instruction'),
-        # ('cooking_method', 'ingredient_preparation'),
-        # ('duration', 'temperature'),
-        # ('recommended_utensils',),
-        # ('subrecipe', 'subrecipe_base_ingredient', 'subrecipe_base_quantity'),
+        ('order', 'title'),
+        ('instruction',),
+        ('cooking_method', 'ingredient_preparation'),
+        ('duration', 'temperature'),
+        ('recommended_utensils',),
+        ('subrecipe', 'subrecipe_base_ingredient', 'subrecipe_base_quantity'),
     )
 
     autocomplete_fields = ['subrecipe', 'subrecipe_base_ingredient', 'cooking_method', 'ingredient_preparation']
@@ -158,29 +155,7 @@ class RecipeStepInline(admin.StackedInline):
     verbose_name_plural = 'Шаги приготовления'
 
 
-@admin.register(CookingMethodSubstitution)
-class CookingMethodSubstitutionAdmin(admin.ModelAdmin):
-    list_display = ['original_method', 'substitute_method', 'reason']
-    list_filter = ['original_method__category']
-    search_fields = ['original_method__name', 'substitute_method__name', 'reason']
-    autocomplete_fields = ['original_method', 'substitute_method']
-
-
-@admin.register(UtensilSubstitution)
-class UtensilSubstitutionAdmin(admin.ModelAdmin):
-    list_display = ['original_utensil', 'substitute_utensil', 'reason']
-    search_fields = ['original_utensil__name', 'substitute_utensil__name', 'reason']
-    autocomplete_fields = ['original_utensil', 'substitute_utensil']
-
-
-@admin.register(RecipeIngredient)
-class RecipeIngredientAdmin(admin.ModelAdmin):
-    list_display = ['recipe', 'ingredient', 'quantity', 'unit']
-    list_filter = ['unit', 'is_scalable']
-    search_fields = ['recipe__title', 'ingredient__name']
-    autocomplete_fields = ['recipe', 'ingredient']
-    inlines = [IngredientSubstitutionInline]
-
+# ======================= ОСНОВНАЯ РЕГИСТРАЦИЯ RECIPE =======================
 
 @admin.register(Recipe)
 class RecipeAdmin(admin.ModelAdmin):
@@ -193,7 +168,7 @@ class RecipeAdmin(admin.ModelAdmin):
 
     fieldsets = [
         ('Основная информация', {
-            'fields': ['title', 'cuisine', 'author', 'description', 'image'], # , 'video'
+            'fields': ['title', 'cuisine', 'author', 'description', 'image'],
             'classes': ['collapse']
         }),
         ('Параметры', {
@@ -211,6 +186,17 @@ class RecipeAdmin(admin.ModelAdmin):
     ]
 
     inlines = [RecipeStepInline, RecipeIngredientInline]
+
+
+# ======================= ОСТАЛЬНЫЕ РЕГИСТРАЦИИ =======================
+
+@admin.register(RecipeIngredient)
+class RecipeIngredientAdmin(admin.ModelAdmin):
+    list_display = ['recipe', 'ingredient', 'quantity', 'unit']
+    list_filter = ['unit', 'is_scalable']
+    search_fields = ['recipe__title', 'ingredient__name']
+    autocomplete_fields = ['recipe', 'ingredient']
+    inlines = [IngredientSubstitutionInline]
 
 
 @admin.register(RecipeStep)
@@ -255,16 +241,30 @@ class RecommendedUtensilAdmin(admin.ModelAdmin):
 
     def image_preview(self, obj):
         if obj.image:
-            return format_html('<img src="{}" width="40" height="40" style="object-fit: cover; border-radius: 8px;" />',
-                               obj.image.url)
+            return format_html('<img src="{}" width="40" height="40" style="object-fit: cover; border-radius: 8px;" />', obj.image.url)
         return '-'
-
     image_preview.short_description = 'Изображение'
+
+
+@admin.register(CookingMethodSubstitution)
+class CookingMethodSubstitutionAdmin(admin.ModelAdmin):
+    list_display = ['original_method', 'substitute_method', 'reason']
+    list_filter = ['original_method__category']
+    search_fields = ['original_method__name', 'substitute_method__name', 'reason']
+    autocomplete_fields = ['original_method', 'substitute_method']
+
+
+@admin.register(UtensilSubstitution)
+class UtensilSubstitutionAdmin(admin.ModelAdmin):
+    list_display = ['original_utensil', 'substitute_utensil', 'reason']
+    search_fields = ['original_utensil__name', 'substitute_utensil__name', 'reason']
+    autocomplete_fields = ['original_utensil', 'substitute_utensil']
 
 
 @admin.register(IngredientSubstitution)
 class IngredientSubstitutionAdmin(admin.ModelAdmin):
-    list_display = ['recipe_ingredient', 'substitute_name', 'substitute_unit', 'ratio']
+    list_display = ['recipe_ingredient', 'substitute_ingredient', 'ratio', 'substitute_unit']
     list_filter = ['substitute_unit']
-    search_fields = ['substitute_name', 'recipe_ingredient__ingredient__name']
-    autocomplete_fields = ['recipe_ingredient']
+    search_fields = ['recipe_ingredient__ingredient__name', 'substitute_ingredient__name']
+    autocomplete_fields = ['recipe_ingredient', 'substitute_ingredient']
+    fields = ['recipe_ingredient', 'substitute_ingredient', 'substitute_unit', 'ratio', 'notes']

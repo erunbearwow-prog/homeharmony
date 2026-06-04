@@ -5,15 +5,49 @@
 
 {% block content %}
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <!-- Хлебные крошки -->
+
+    <!-- БЛОК ВОЗВРАТА К РЕЦЕПТУ (аналогично recipe_detail) -->
+    {% if return_to %}
+    <div class="mb-6 p-4 bg-amber-50 rounded-xl border border-amber-200 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+        <div class="flex items-center gap-3">
+            <div class="w-16 h-16 bg-amber-100 rounded-lg flex items-center justify-center">
+                <i class="fas fa-arrow-left text-amber-500 text-2xl"></i>
+            </div>
+            <div>
+                <div class="text-sm text-gray-500 mb-1">
+                    <i class="fas fa-arrow-left text-amber-600 mr-1"></i> Вы просматриваете ингредиент из рецепта:
+                </div>
+                <a href="{{ return_to }}{% if return_step %}?step={{ return_step }}&mode={{ return_mode }}{% if return_mode == 'products' %}&meat={{ return_meat }}{% else %}&portions={{ return_portions }}{% endif %}{% if ratio %}&ratio={{ ratio }}{% endif %}{% endif %}"
+                   class="font-semibold text-gray-800 hover:text-amber-700 transition">
+                    {{ return_title }}
+                </a>
+                {% if return_step %}
+                <div class="text-xs text-gray-500 mt-1">
+                    <i class="fas fa-list-ol mr-1"></i> Шаг {{ return_step }}: {{ return_context|default:"Добавьте приготовленный соус" }}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="ml-auto">
+            <a href="{{ return_to }}{% if return_step %}?step={{ return_step }}&mode={{ return_mode }}{% if return_mode == 'products' %}&meat={{ return_meat }}{% else %}&portions={{ return_portions }}{% endif %}{% if ratio %}&ratio={{ ratio }}{% endif %}{% endif %}"
+               class="bg-amber-700 text-white px-4 py-2 rounded-lg hover:bg-amber-800 transition flex items-center gap-2">
+                <i class="fas fa-arrow-left"></i> Вернуться к рецепту
+            </a>
+        </div>
+    </div>
+    {% else %}
+    <!-- Хлебные крошки (только если нет блока возврата) -->
     <div class="text-sm text-gray-500 mb-6">
         <a href="/" class="hover:text-amber-700">Главная</a> /
+        <a href="{% url 'kitchen:index' %}" class="hover:text-amber-700">Кулинария</a> /
         <a href="{% url 'kitchen:ingredient_list' %}" class="hover:text-amber-700">Ингредиенты</a> /
         <span class="text-gray-800">{{ ingredient.name }}</span>
     </div>
-    
+    {% endif %}
+
+    <!-- Основное содержимое страницы ингредиента -->
     <div class="grid lg:grid-cols-3 gap-8">
-        <!-- Основная информация -->
+        <!-- Левая колонка: информация об ингредиенте -->
         <div class="lg:col-span-2">
             <div class="bg-white rounded-2xl border border-gray-200 p-6">
                 <div class="flex items-start gap-4 mb-4">
@@ -25,7 +59,7 @@
                         <p class="text-gray-600 mt-1">{{ ingredient.description|default:"Описание отсутствует" }}</p>
                     </div>
                 </div>
-                
+
                 <!-- Пищевая ценность -->
                 <div class="grid grid-cols-4 gap-4 text-center p-4 bg-gray-50 rounded-xl mt-4">
                     <div>
@@ -45,30 +79,39 @@
                         <div class="text-xs text-gray-500">углеводы, г</div>
                     </div>
                 </div>
-                
-                <!-- Замены -->
-                {% if substitutions %}
-                <div class="mt-6">
-                    <h3 class="font-semibold text-gray-800 mb-3">🔄 Чем можно заменить</h3>
-                    <div class="flex flex-wrap gap-2">
-                        {% for sub in substitutions %}
-                        <span class="bg-amber-50 text-amber-700 px-3 py-1 rounded-full text-sm">
-                            {{ sub.substitute_name }}
-                        </span>
-                        {% endfor %}
+
+                <!-- Сезонность и хранение -->
+                <div class="grid grid-cols-2 gap-4 mt-4">
+                    {% if ingredient.season_start or ingredient.season_end %}
+                    <div class="p-3 bg-green-50 rounded-lg">
+                        <h4 class="font-semibold text-green-800 text-sm mb-1">🌿 Сезон</h4>
+                        <p class="text-green-700 text-sm">
+                            {% if ingredient.season_start and ingredient.season_end %}
+                                {{ ingredient.season_start }} - {{ ingredient.season_end }} месяц
+                            {% else %}
+                                Круглый год
+                            {% endif %}
+                        </p>
                     </div>
+                    {% endif %}
+
+                    {% if ingredient.storage_conditions %}
+                    <div class="p-3 bg-blue-50 rounded-lg">
+                        <h4 class="font-semibold text-blue-800 text-sm mb-1">📦 Хранение</h4>
+                        <p class="text-blue-700 text-sm">{{ ingredient.storage_conditions }}</p>
+                    </div>
+                    {% endif %}
                 </div>
-                {% endif %}
             </div>
         </div>
-        
-        <!-- Рецепты с этим ингредиентом -->
+
+        <!-- Правая колонка: рецепты с этим ингредиентом -->
         <div class="lg:col-span-1">
             <div class="bg-gray-50 rounded-2xl p-6">
                 <h3 class="font-bold text-lg mb-4">📖 Рецепты с этим ингредиентом</h3>
                 <div class="space-y-3">
                     {% for recipe_ing in page_obj %}
-                    <a href="{% url 'kitchen:recipe_detail' recipe_ing.recipe.id %}" 
+                    <a href="{% url 'kitchen:recipe_detail' recipe_ing.recipe.id %}"
                        class="block bg-white rounded-lg p-3 hover:shadow-md transition border border-gray-100">
                         <div class="font-medium text-gray-800">{{ recipe_ing.recipe.title }}</div>
                         <div class="text-sm text-gray-500 mt-1">
@@ -79,7 +122,29 @@
                     <p class="text-gray-500 text-sm">Нет рецептов с этим ингредиентом</p>
                     {% endfor %}
                 </div>
-                {% include "./includes/pagination.html" %}
+
+                <!-- Пагинация -->
+                {% if page_obj.has_other_pages %}
+                <div class="flex justify-center mt-6">
+                    <nav class="flex gap-2">
+                        {% if page_obj.has_previous %}
+                        <a href="?page={{ page_obj.previous_page_number }}{% if return_to %}&return_to={{ return_title|urlencode }}&return_title={{ return_title|urlencode }}{% endif %}"
+                           class="px-3 py-1 border border-gray-300 rounded-lg hover:bg-gray-50 transition text-sm">
+                            ←
+                        </a>
+                        {% endif %}
+                        <span class="px-3 py-1 bg-amber-600 text-white rounded-lg text-sm">
+                            {{ page_obj.number }}
+                        </span>
+                        {% if page_obj.has_next %}
+                        <a href="?page={{ page_obj.next_page_number }}{% if return_to %}&return_to={{ return_to|urlencode }}&return_title={{ return_title|urlencode }}{% endif %}"
+                           class="px-3 py-1 border border-gray-300 rounded-lg hover:bg-gray-50 transition text-sm">
+                            →
+                        </a>
+                        {% endif %}
+                    </nav>
+                </div>
+                {% endif %}
             </div>
         </div>
     </div>
