@@ -29,4 +29,10 @@ urlpatterns = [
     # Страницы подготовки продуктов
     path('preparations/', views.preparation_list, name='preparation_list'),
     path('preparation/<int:preparation_id>/', views.preparation_detail, name='preparation_detail'),
+
+    path('api/steps/<int:recipe_id>/', views.get_step_states, name='get_step_states'),
+
+    path('api/update_progress/', views.update_component_progress, name='update_progress'),
+
+
 ]

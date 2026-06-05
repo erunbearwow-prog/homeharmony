@@ -137,6 +137,15 @@ class Recipe(models.Model):
     servings = models.IntegerField(default=4, verbose_name='Порций')
     difficulty = models.CharField(max_length=10, choices=DIFFICULTY_CHOICES, default='medium', verbose_name='Сложность')
 
+    # Компоненты составного блюда (связь многие-ко-многим с самим собой)
+    components = models.ManyToManyField(
+        'self',
+        symmetrical=False,
+        blank=True,
+        related_name='parent_recipes',
+        verbose_name='Компоненты блюда'
+    )
+
     # Изображения
     image = models.ImageField(upload_to='recipes/', null=True, blank=True, verbose_name='Изображение')
     video = models.URLField(blank=True, verbose_name='Видео')

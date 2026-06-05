@@ -180,7 +180,7 @@ class RecipeAdmin(admin.ModelAdmin):
             'classes': ['collapse']
         }),
         ('Диеты и связи', {
-            'fields': ['diet_tags', 'related_recipes'],
+            'fields': ['diet_tags', 'related_recipes', 'components'],
             'classes': ['collapse']
         }),
     ]

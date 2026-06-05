@@ -1,8 +1,10 @@
 from django.shortcuts import render
 from django.template.loader import render_to_string
 from django.http import JsonResponse, HttpResponse
+from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_http_methods
 from django.shortcuts import render, get_object_or_404
+import json
 from .models import (
     Recipe, RecipeIngredient, RecipeStep, Cuisine,
     CookingMethod, CookingMethodSubstitution,
@@ -10,7 +12,6 @@ from .models import (
     RecommendedUtensil, UtensilSubstitution
 )
 
-# Create your views here.
 def home(request):
     return render(request, 'kitchen/index.html')
 
@@ -97,6 +98,28 @@ def get_utensil_details(request, utensil_id):
         return JsonResponse({'error': 'Utensil not found'}, status=404)
 
 
+@require_http_methods(['POST'])
+@csrf_exempt
+def update_component_progress(request):
+    """Обновляет прогресс приготовления компонента"""
+    try:
+        data = json.loads(request.body)
+        recipe_id = data.get('recipe_id')
+        progress = data.get('progress')
+
+        print(f"DEBUG: update_component_progress - recipe_id={recipe_id}, progress={progress}")  # отладка
+
+        if recipe_id and progress is not None:
+            progress_key = f'recipe_progress_{recipe_id}'
+            request.session[progress_key] = progress
+            request.session.modified = True
+            return JsonResponse({'status': 'ok', 'progress': progress})
+
+        return JsonResponse({'error': 'Invalid data'}, status=400)
+    except Exception as e:
+        print(f"ERROR: {e}")
+        return JsonResponse({'error': str(e)}, status=500)
+
 def index(request):
     """Главная страница раздела кулинарии (список рецептов)"""
     recipes = Recipe.objects.all().order_by('-created_at')[:10]
@@ -112,17 +135,42 @@ def index(request):
 def recipe_detail(request, recipe_id):
     recipe = get_object_or_404(Recipe, id=recipe_id)
     ingredients = recipe.recipe_ingredients.select_related('ingredient').all()
-
-    # Подгружаем все связанные данные для шагов
     steps = recipe.steps.all().order_by('order').select_related(
         'cooking_method',
         'ingredient_preparation',
-        'subrecipe'  # тоже подгружаем вложенный рецепт, если есть
+        'subrecipe'
     ).prefetch_related(
         'recommended_utensils'
     )
 
-    # Получаем параметры возврата
+    components = recipe.components.all()
+
+    # ======================= РАСЧЁТ ПРОГРЕССА ПО ШАГАМ =======================
+    total_steps = steps.count()
+    completed_steps = 0
+
+    # Получаем сохранённые состояния шагов из сессии
+    for step in steps:
+        step_key = f'step_{recipe_id}_{step.id}'
+        if request.session.get(step_key, False):
+            completed_steps += 1
+
+    # Вычисляем процент
+    if total_steps > 0:
+        current_recipe_progress = int((completed_steps / total_steps) * 100)
+    else:
+        current_recipe_progress = request.session.get(f'recipe_progress_{recipe_id}', 0)
+
+    # Сохраняем прогресс в сессию
+    request.session[f'recipe_progress_{recipe_id}'] = current_recipe_progress
+
+    # ======================= ПРОГРЕСС КОМПОНЕНТОВ =======================
+    progress_data = {}
+    for component in components:
+        progress_key = f'recipe_progress_{component.id}'
+        progress_data[component.id] = request.session.get(progress_key, 0)
+
+    # ======================= ПАРАМЕТРЫ ВОЗВРАТА =======================
     return_to = request.GET.get('return_to')
     return_title = request.GET.get('return_title')
     return_step = request.GET.get('return_step')
@@ -130,6 +178,13 @@ def recipe_detail(request, recipe_id):
     return_mode = request.GET.get('return_mode')
     return_meat = request.GET.get('return_meat')
     return_portions = request.GET.get('return_portions')
+
+    # Добавляем прогресс в параметры возврата
+    if current_recipe_progress > 0 and return_to:
+        if '?' in return_to:
+            return_to += f'&progress={current_recipe_progress}'
+        else:
+            return_to += f'?progress={current_recipe_progress}'
 
     # Получаем ratio из GET параметров
     ratio = request.GET.get('ratio')
@@ -144,7 +199,6 @@ def recipe_detail(request, recipe_id):
     # Получаем изображение основного рецепта для блока возврата
     return_image = None
     if return_to:
-        # Извлекаем ID рецепта из URL return_to
         import re
         match = re.search(r'/recipe/(\d+)/', return_to)
         if match:
@@ -160,6 +214,9 @@ def recipe_detail(request, recipe_id):
         'recipe': recipe,
         'ingredients': ingredients,
         'steps': steps,
+        'components': components,
+        'components_progress': progress_data,
+        'current_recipe_progress': current_recipe_progress,
         'return_to': return_to,
         'return_title': return_title,
         'return_step': return_step,
@@ -167,20 +224,22 @@ def recipe_detail(request, recipe_id):
         'return_mode': return_mode,
         'return_meat': return_meat,
         'return_portions': return_portions,
-        'ratio': ratio,  # ← передаём в шаблон
+        'ratio': ratio,
         'return_image': return_image,
     }
-    print("\n=== CONTEXT DEBUG ===")
-    print(f"Recipe: {recipe.title} (ID: {recipe.id})")
-    print(f"Ingredients count: {ingredients.count()}")
-    print(f"Steps count: {steps.count()}")
-    for step in steps:
-        print(f"  Step {step.order}: {step.title}")
-        print(f"    - Cooking method: {step.cooking_method.name if step.cooking_method else 'None'}")
-        print(f"    - Preparation: {step.ingredient_preparation.name if step.ingredient_preparation else 'None'}")
-        print(f"    - Utensils: {[u.name for u in step.recommended_utensils.all()]}")
-    print("==================\n")
+
     return render(request, 'kitchen/recipe_detail.html', context)
+
+
+@require_http_methods(['GET'])
+def get_step_states(request, recipe_id):
+    """Возвращает состояния всех шагов рецепта"""
+    steps = RecipeStep.objects.filter(recipe_id=recipe_id)
+    states = {}
+    for step in steps:
+        step_key = f'step_{recipe_id}_{step.id}'
+        states[step.id] = request.session.get(step_key, False)
+    return JsonResponse(states)
 
 
 def recipe_old(request):
