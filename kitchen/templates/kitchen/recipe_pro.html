@@ -1,0 +1,364 @@
+{% extends "base.html" %}
+{% load static %}
+{% load custom_filters %}
+
+{% block title %}
+    ТТК №{{ recipe.id }} {{ recipe.title }} | Семейные ценности
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    /* Стили для профессионального режима */
+    .tech-card {
+        border-left: 4px solid #d97706;
+    }
+
+    .ingredients-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.875rem;
+    }
+
+    .ingredients-table th {
+        text-align: left;
+        padding: 0.75rem 0.5rem;
+        background-color: #fef3c7;
+        font-weight: 600;
+        color: #92400e;
+        border-bottom: 2px solid #fcd34d;
+    }
+
+    .ingredients-table td {
+        padding: 0.5rem;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .ingredients-table tr:hover {
+        background-color: #fffbeb;
+    }
+
+    .gross-cell, .net-cell {
+        text-align: right;
+        font-family: monospace;
+    }
+
+    .yield-badge {
+        background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%);
+    }
+
+    .step-number-pro {
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: #fef3c7;
+        color: #d97706;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1.25rem;
+        flex-shrink: 0;
+    }
+
+    .subrecipe-link-pro {
+        border-left: 3px solid #d97706;
+        background-color: #fffbeb;
+    }
+
+    /* Компактный режим для шагов (опционально) */
+    .steps-list-pro .step-item:last-child {
+        border-bottom: none;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+    <!-- ======================= ХЛЕБНЫЕ КРОШКИ ======================= -->
+    <div class="text-sm text-gray-500 mb-6">
+        <a href="/" class="hover:text-amber-700">Главная</a> /
+        <a href="{% url 'kitchen:index' %}" class="hover:text-amber-700">Кулинария</a> /
+        <span class="text-amber-700 font-medium">ТТК №{{ recipe.id }}</span>
+        <span class="text-gray-400 ml-2">| Профессиональный режим</span>
+    </div>
+
+    <!-- ======================= ОСНОВНАЯ СЕТКА ======================= -->
+    <div class="grid lg:grid-cols-3 gap-8">
+
+        <!-- ЛЕВАЯ КОЛОНКА (2/3): ТЕХНОЛОГИЯ ПРИГОТОВЛЕНИЯ -->
+        <div class="lg:col-span-2">
+
+            <!-- ШАПКА ТЕХКАРТЫ -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden mb-6">
+                <div class="yield-badge px-6 py-3 text-white">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <span class="text-xs uppercase tracking-wide opacity-90">Технологическая карта</span>
+                            <h1 class="text-2xl md:text-3xl font-bold mt-1">{{ recipe.title }}</h1>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-sm opacity-90">Выход</div>
+                            <div class="text-2xl font-bold" id="totalYield">-- г</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6">
+                    <!-- Мета-информация -->
+                    <div class="flex flex-wrap gap-4 text-sm text-gray-600 mb-4">
+                        {% if recipe.cuisine %}
+                        <span><i class="fas fa-globe mr-1 text-amber-600"></i> {{ recipe.cuisine.name }} кухня</span>
+                        {% endif %}
+                        <span><i class="far fa-clock mr-1 text-amber-600"></i> {{ recipe.total_time }} мин</span>
+                        <span><i class="fas fa-chart-line mr-1 text-amber-600"></i> {{ recipe.get_difficulty_display }}</span>
+                        <span><i class="fas fa-utensils mr-1 text-amber-600"></i> {{ recipe.servings }} порций</span>
+                    </div>
+
+                    <!-- Описание -->
+                    {% if recipe.description %}
+                    <div class="bg-gray-50 rounded-lg p-4 italic text-gray-600">
+                        {{ recipe.description }}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <!-- ТЕХНОЛОГИЯ ПРИГОТОВЛЕНИЯ -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                <div class="border-b border-gray-200 px-6 py-4">
+                    <h2 class="text-xl font-bold serif flex items-center gap-2">
+                        <i class="fas fa-cogs text-amber-700"></i>
+                        Технология приготовления
+                    </h2>
+                </div>
+
+                <div class="p-6">
+                    <div class="space-y-6 steps-list-pro">
+                        {% for step in steps %}
+                        <div class="step-item flex gap-4 pb-5 {% if not forloop.last %}border-b border-gray-100{% endif %}">
+                            <div class="step-number-pro">{{ step.order }}</div>
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800 mb-2">{{ step.title }}</h3>
+                                <div class="text-gray-700 leading-relaxed">
+                                    {{ step.instruction|linebreaks }}
+                                </div>
+
+                                <!-- ВЛОЖЕННЫЙ РЕЦЕПТ -->
+                                {% if step.subrecipe %}
+                                <div class="mt-3 subrecipe-link-pro p-3 rounded-lg">
+                                    <div class="flex items-start gap-3">
+                                        <i class="fas fa-link text-amber-600 mt-0.5"></i>
+                                        <div>
+                                            <div class="text-sm font-medium text-gray-700">По ссылке:</div>
+                                            <a href="{% url 'kitchen:recipe_detail' step.subrecipe.id %}?mode=pro"
+                                               class="text-amber-700 hover:underline font-medium">
+                                                {{ step.subrecipe.title }}
+                                            </a>
+                                            {% if step.subrecipe_usage %}
+                                            <p class="text-sm text-gray-500 mt-1">{{ step.subrecipe_usage }}</p>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endif %}
+
+                                <!-- МЕТА: метод, температура, время -->
+                                <div class="mt-3 flex flex-wrap gap-3 text-xs text-gray-400">
+                                    {% if step.cooking_method %}
+                                    <span><i class="fas fa-fire text-amber-500"></i> {{ step.cooking_method.name }}</span>
+                                    {% endif %}
+                                    {% if step.temperature %}
+                                    <span><i class="fas fa-thermometer-half"></i> {{ step.temperature }}°C</span>
+                                    {% endif %}
+                                    {% if step.duration %}
+                                    <span><i class="far fa-clock"></i> {{ step.duration }} мин</span>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        {% empty %}
+                        <p class="text-gray-500 text-center py-8">Технология приготовления будет добавлена позже.</p>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ПРАВАЯ КОЛОНКА (1/3): СПЕЦИФИКАЦИЯ ИНГРЕДИЕНТОВ -->
+        <div class="lg:col-span-1">
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 sticky top-4">
+
+                <!-- ЗАГОЛОВОК -->
+                <div class="border-b border-gray-200 px-5 py-4">
+                    <h3 class="text-lg font-bold serif flex items-center gap-2">
+                        <i class="fas fa-clipboard-list text-amber-700"></i>
+                        Спецификация
+                    </h3>
+                    <p class="text-xs text-gray-400 mt-1">Брутто / Нетто (г)</p>
+                </div>
+
+                <!-- ТАБЛИЦА ИНГРЕДИЕНТОВ -->
+                <div class="p-4">
+                    <table class="ingredients-table">
+                        <thead>
+                            <tr>
+                                <th>Ингредиент</th>
+                                <th class="text-right">Брутто</th>
+                                <th class="text-right">Нетто</th>
+                            </tr>
+                        </thead>
+                        <tbody id="proIngredientsTable">
+                            {% for item in pro_ingredients %}
+                            <tr data-id="{{ item.id }}"
+                                data-gross="{{ item.gross_weight }}"
+                                data-net="{{ item.net_weight }}"
+                                data-loss="{{ item.loss_factor|default:1 }}">
+                                <td>{{ item.ingredient.name }}</td>
+                                <td class="gross-cell" data-original="{{ item.gross_weight }}">
+                                    {{ item.gross_weight|floatformat:0 }} {{ item.unit }}
+                                </td>
+                                <td class="net-cell" data-original="{{ item.net_weight }}">
+                                    {{ item.net_weight|floatformat:0 }} {{ item.unit }}
+                                </td>
+                                <!-- В recipe_pro.html, внутри таблицы -->
+                                <td class="text-center">
+                                    <button class="chain-btn-pro text-gray-400 hover:text-amber-600 transition p-1"
+                                            title="Сделать базовым для пересчёта">
+                                        <i class="fas fa-link"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            {% empty %}
+                            <tr>
+                                <td colspan="3" class="text-center text-gray-400 py-6">
+                                    Ингредиенты не добавлены
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                        {% if pro_ingredients %}
+                        <tfoot class="border-t-2 border-amber-200">
+                            <tr class="font-semibold">
+                                <td>ВСЕГО (нетто):</td>
+                                <td class="text-right"></td>
+                                <td class="text-right text-amber-700" id="totalNetValue">--</td>
+                            </tr>
+                        </tfoot>
+                        {% endif %}
+                    </table>
+                </div>
+
+                <!-- ВИДЖЕТ ПЕРЕСЧЁТА -->
+                <div class="border-t border-gray-200 p-4 bg-gray-50">
+                    <!-- Переключатель режимов -->
+                    <div class="flex gap-2 mb-4">
+                        <button id="proModePortionsBtn"
+                                class="flex-1 py-2 rounded-lg text-sm font-medium transition-all
+                                       bg-amber-600 text-white">
+                            <i class="fas fa-users mr-1"></i> По порциям
+                        </button>
+                        <button id="proModeProductsBtn"
+                                class="flex-1 py-2 rounded-lg text-sm font-medium transition-all
+                                       bg-white text-gray-600 border border-gray-200">
+                            <i class="fas fa-weight-hanging mr-1"></i> По продуктам
+                        </button>
+                    </div>
+
+                    <!-- Панель: по порциям -->
+                    <div id="proPortionsPanel">
+                        <div class="flex items-center gap-3">
+                            <span class="text-sm text-gray-600">Порций:</span>
+                            <input type="range" id="proPortionsSlider" min="1" max="50" value="{{ recipe.servings }}" step="1" class="flex-1">
+                            <span id="proPortionsValue" class="font-bold text-amber-700 min-w-[40px]">{{ recipe.servings }}</span>
+                            <button id="proResetPortionsBtn" class="text-xs text-gray-400 hover:text-amber-600">Сброс</button>
+                        </div>
+                        <div id="proPortionsRatioInfo" class="text-xs text-gray-400 mt-2"></div>
+                    </div>
+
+                    <!-- Панель: по продуктам -->
+                    <div id="proProductsPanel" class="hidden">
+                        <div class="text-sm text-gray-600 mb-2">
+                            Базовый ингредиент:
+                            <span id="proBaseIngredientName" class="font-semibold text-amber-700">—</span>
+                        </div>
+                        <div id="proBaseIngredientRow" class="hidden">
+                            <div class="flex gap-2">
+                                <input type="number" id="proBaseIngredientWeight" step="10" class="flex-1 px-3 py-2 border rounded-lg text-sm">
+                                <span id="proBaseIngredientUnit" class="text-sm text-gray-500 self-center">г</span>
+                                <button id="proApplyBaseBtn" class="bg-amber-600 text-white px-3 py-2 rounded-lg text-sm">Применить</button>
+                                <button id="proResetBaseBtn" class="text-gray-400 text-sm underline">Сброс</button>
+                            </div>
+                        </div>
+                        <div id="proBaseRatioInfo" class="text-xs text-gray-400 mt-2"></div>
+                        <div class="text-xs text-gray-400 mt-2 italic">Нажмите на 🔗 у ингредиента в таблице</div>
+                    </div>
+                </div>
+
+                <!-- КНОПКА КАЛЬКУЛЯЦИИ -->
+                <div class="border-t border-gray-200 p-4">
+                    <button id="proCalculateCostBtn" class="w-full bg-gray-100 hover:bg-amber-100 text-gray-700 hover:text-amber-800 py-2 rounded-lg transition text-sm font-medium">
+                        <i class="fas fa-calculator mr-2"></i> Калькуляция себестоимости
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- КОМПОНЕНТЫ БЛЮДА (если есть) -->
+    {% if recipe.components.exists %}
+    <div class="mt-8 bg-gray-50 rounded-xl p-5">
+        <h3 class="font-semibold text-gray-700 mb-3 flex items-center gap-2">
+            <i class="fas fa-puzzle-piece text-amber-600"></i> Составные части
+        </h3>
+        <div class="flex flex-wrap gap-3">
+            {% for component in recipe.components.all %}
+            <a href="{% url 'kitchen:recipe_detail' component.id %}?mode=pro"
+               class="text-sm bg-white px-4 py-2 rounded-lg border hover:bg-amber-50 hover:border-amber-200 transition">
+                {{ component.title }}
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+<!-- МОДАЛЬНОЕ ОКНО КАЛЬКУЛЯЦИИ -->
+<div id="proCostModal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-2xl p-6 max-w-md w-full mx-4">
+        <div class="flex justify-between items-center mb-4">
+            <h3 class="text-xl font-bold serif">📊 Калькуляция себестоимости</h3>
+            <button onclick="closeProCostModal()" class="text-gray-400 hover:text-gray-600">✕</button>
+        </div>
+        <div id="proCostContent">
+            <!-- сюда подставится результат -->
+        </div>
+        <button onclick="closeProCostModal()" class="mt-4 w-full bg-gray-200 py-2 rounded-lg">Закрыть</button>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'kitchen/js/recipe_pro_widget.js' %}"></script>
+<script>
+    // Функция для закрытия модалки
+    window.closeProCostModal = function() {
+        document.getElementById('proCostModal')?.classList.add('hidden');
+    };
+
+    // Инициализация после загрузки DOM
+    document.addEventListener('DOMContentLoaded', function() {
+        // Рассчитываем общий выход
+        const totalNet = document.getElementById('totalNetValue');
+        if (totalNet) {
+            let sum = 0;
+            document.querySelectorAll('#proIngredientsTable .net-cell').forEach(cell => {
+                const val = parseFloat(cell.getAttribute('data-original') || cell.innerText);
+                if (!isNaN(val)) sum += val;
+            });
+            totalNet.innerText = Math.round(sum) + ' г';
+            document.getElementById('totalYield').innerText = Math.round(sum) + ' г';
+        }
+    });
+</script>
+{% endblock %}

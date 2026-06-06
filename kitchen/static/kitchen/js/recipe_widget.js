@@ -331,16 +331,22 @@ document.addEventListener('DOMContentLoaded', function() {
             const ratio = parseFloat(ratioFromURL);
             const portions = Math.round(ratio * baseServings);
 
-            if (portionsSlider && portions > 0 && portions <= 20) {
-                portionsSlider.value = portions;
-                if (portionsValue) portionsValue.innerText = portions;
-                currentRatio = ratio;
-                updateAllIngredients(ratio);
-                console.log('Вызов updateAllIngredients с ratio:', ratio);
+            // ======================= ПОРЦИИ =======================
+            if (portionsSlider) {
+                portionsSlider.addEventListener('input', function() {
+                    const val = parseInt(this.value);
+                    portionsValue.innerText = val;
+                    currentRatio = val / baseServings;
 
-                if (portionsRatioInfo) {
-                    portionsRatioInfo.innerText = `Коэффициент: ${ratio.toFixed(2)} (на ${portions} порций)`;
-                }
+                    // 🔥 ВАЖНО: обновляем currentRatio глобально
+                    window.currentRatio = currentRatio;
+
+                    updateAllIngredients(currentRatio);
+                    if (portionsRatioInfo) {
+                        portionsRatioInfo.innerText = `Коэффициент: ${currentRatio.toFixed(2)} (на ${val} порций)`;
+                        updateURL();
+                    }
+                });
             }
 
             updateSubrecipeLinks();
@@ -420,6 +426,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // ======================= ПЕРЕКЛЮЧЕНИЕ РЕЖИМОВ =======================
     function setMode(mode) {
         console.log('Switching to mode:', mode);
+
+        // Запоминаем текущий коэффициент ДО переключения
+        const previousMode = currentMode;
+        const previousRatio = currentRatio;
+
         currentMode = mode;
 
         if (mode === 'portions') {
@@ -435,13 +446,34 @@ document.addEventListener('DOMContentLoaded', function() {
                 modeProductsBtn.classList.add('bg-white', 'text-gray-700', 'border-gray-200');
             }
 
-            const portions = parseInt(portionsSlider.value);
-            currentRatio = portions / baseServings;
-            updateAllIngredients(currentRatio);
-            if (portionsRatioInfo) {
-                portionsRatioInfo.innerText = `Коэффициент: ${currentRatio.toFixed(2)} (на ${portions} порций)`;
+            // При переключении из режима продуктов в режим порций
+            if (previousMode === 'products' && currentBaseIngredient) {
+                // Берём текущий коэффициент из базового ингредиента
+                const ratioFromProduct = currentBaseIngredient.currentValue / currentBaseIngredient.originalValue;
+                const newPortions = Math.round(ratioFromProduct * baseServings);
+
+                if (portionsSlider && newPortions >= 1 && newPortions <= 20) {
+                    portionsSlider.value = newPortions;
+                    if (portionsValue) portionsValue.innerText = newPortions;
+                    currentRatio = ratioFromProduct;
+                    updateAllIngredients(currentRatio);
+                    if (portionsRatioInfo) {
+                        portionsRatioInfo.innerText = `Коэффициент: ${currentRatio.toFixed(2)} (на ${newPortions} порций)`;
+                    }
+                }
+            } else {
+                // Обычное переключение
+                const portions = parseInt(portionsSlider.value);
+                currentRatio = portions / baseServings;
+                updateAllIngredients(currentRatio);
+                if (portionsRatioInfo) {
+                    portionsRatioInfo.innerText = `Коэффициент: ${currentRatio.toFixed(2)} (на ${portions} порций)`;
+                }
             }
-        } else {
+
+            updateURL();
+
+        } else { // mode === 'products'
             if (portionsPanel) portionsPanel.classList.add('hidden');
             if (productsPanel) productsPanel.classList.remove('hidden');
 
@@ -454,15 +486,64 @@ document.addEventListener('DOMContentLoaded', function() {
                 modePortionsBtn.classList.add('bg-white', 'text-gray-700', 'border-gray-200');
             }
 
-            if (currentBaseIngredient) {
+            // При переключении из режима порций в режим продуктов
+            if (previousMode === 'portions') {
+                // Берём текущий коэффициент из режима порций
+                const ratioFromPortions = currentRatio;
+
+                // Находим первый ингредиент для создания базового
+                if (ingredients.length > 0) {
+                    const firstIngredient = ingredients[0];
+                    const newBaseValue = firstIngredient.baseQuantity * ratioFromPortions;
+
+                    // Создаём базовый ингредиент с правильным коэффициентом
+                    currentBaseIngredient = {
+                        id: firstIngredient.id,
+                        name: firstIngredient.name,
+                        originalValue: firstIngredient.baseQuantity,
+                        unit: firstIngredient.unit,
+                        currentValue: newBaseValue
+                    };
+
+                    // Обновляем UI
+                    baseIngredientName.innerText = firstIngredient.name;
+                    baseOriginalValue.innerText = `${firstIngredient.baseQuantity} ${firstIngredient.unit}`;
+                    baseIngredientWeight.value = newBaseValue;
+                    baseIngredientRow.classList.remove('hidden');
+                    applyBaseBtn.classList.remove('hidden');
+
+                    // Подсвечиваем соответствующую кнопку 🔗
+                    document.querySelectorAll('.chain-btn').forEach(btn => {
+                        btn.classList.remove('text-amber-600');
+                        btn.classList.add('text-gray-400');
+                        if (btn.dataset.id == firstIngredient.id) {
+                            btn.classList.remove('text-gray-400');
+                            btn.classList.add('text-amber-600');
+                        }
+                    });
+
+                    // Обновляем ингредиенты с новым коэффициентом
+                    currentRatio = ratioFromPortions;
+                    updateAllIngredients(currentRatio);
+
+                    if (baseRatioInfo) {
+                        baseRatioInfo.innerText = `Коэффициент: ${currentRatio.toFixed(2)} (на ${newBaseValue.toFixed(1)} ${firstIngredient.unit} ${firstIngredient.name})`;
+                    }
+                } else {
+                    // Если нет ингредиентов, просто обновляем
+                    updateAllIngredients(currentRatio);
+                }
+            } else if (currentBaseIngredient) {
+                // Уже есть базовый ингредиент, просто обновляем
                 const ratio = currentBaseIngredient.currentValue / currentBaseIngredient.originalValue;
                 updateAllIngredients(ratio);
                 if (baseRatioInfo) {
                     baseRatioInfo.innerText = `Коэффициент: ${ratio.toFixed(2)} (на ${currentBaseIngredient.currentValue} ${currentBaseIngredient.unit} ${currentBaseIngredient.name})`;
                 }
             }
+
+            updateURL();
         }
-        updateURL();
     }
 
     // Навешиваем обработчики на кнопки режимов

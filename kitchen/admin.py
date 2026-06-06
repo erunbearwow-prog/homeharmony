@@ -5,7 +5,7 @@ from .models import (
     Cuisine, Diet, IngredientCategory, Ingredient,
     Recipe, RecipeStep, RecipeIngredient, CookingMethod,
     IngredientPreparation, RecommendedUtensil, IngredientSubstitution,
-    CookingMethodSubstitution, UtensilSubstitution
+    CookingMethodSubstitution, UtensilSubstitution, ProfessionalIngredient
 )
 
 
@@ -74,6 +74,28 @@ class IngredientAdmin(admin.ModelAdmin):
 
 # ======================= INLINE КЛАССЫ =======================
 
+# ========== INLINE ДЛЯ ПРОФЕССИОНАЛЬНЫХ ИНГРЕДИЕНТОВ ==========
+class ProfessionalIngredientInline(admin.TabularInline):
+    """Inline-форма для брутто/нетто ингредиентов (проф. режим)"""
+    model = ProfessionalIngredient
+    extra = 1
+    fields = ['ingredient', 'gross_weight', 'net_weight', 'unit']
+    autocomplete_fields = ['ingredient']
+    verbose_name = 'Ингредиент (профессиональный)'
+    verbose_name_plural = 'Ингредиенты (брутто/нетто)'
+
+    # Отображаем коэффициент потерь только для чтения
+    readonly_fields = ['loss_factor_display']
+
+    def loss_factor_display(self, obj):
+        """Отображаем коэффициент потерь, если он есть"""
+        if obj.pk and obj.loss_factor:
+            return f"{obj.loss_factor:.2f}"
+        return "-"
+
+    loss_factor_display.short_description = 'Коэф. потерь (брутто/нетто)'
+
+
 class IngredientSubstitutionInline(admin.TabularInline):
     model = IngredientSubstitution
     extra = 1
@@ -86,12 +108,19 @@ class IngredientSubstitutionInline(admin.TabularInline):
 
 class RecipeIngredientInline(admin.TabularInline):
     model = RecipeIngredient
-    extra = 3
+    extra = 0  # ← не создаём пустых форм
+    min_num = 0  # ← минимум 0 форм
     fields = ['ingredient', 'quantity', 'unit', 'notes', 'is_scalable', 'edit_substitutions']
     autocomplete_fields = ['ingredient']
     readonly_fields = ['edit_substitutions']
     verbose_name = 'Ингредиент'
-    verbose_name_plural = 'Ингредиенты (есть в наличии)'
+    verbose_name_plural = 'Ингредиенты'
+
+    def get_formset(self, request, obj=None, **kwargs):
+        formset = super().get_formset(request, obj, **kwargs)
+        # Добавляем проверку на пустоту
+        formset.validate_min = False
+        return formset
 
     def edit_substitutions(self, obj):
         """Ссылка на редактирование замен для этого ингредиента"""
@@ -114,23 +143,39 @@ class RecipeStepForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
+        print("=== RecipeStepForm.__init__ ===")
+        print(f"args: {args}")
+        print(f"kwargs keys: {kwargs.keys()}")
+
         if 'subrecipe_base_ingredient' in self.fields:
             subrecipe_id = None
 
-            if self.data.get('subrecipe'):
+            # Способ 1: из данных POST (при сохранении)
+            if self.data and self.data.get('subrecipe'):
                 try:
                     subrecipe_id = int(self.data.get('subrecipe'))
+                    print(f"Found subrecipe_id from data: {subrecipe_id}")
                 except (ValueError, TypeError):
                     pass
-            elif self.instance and self.instance.subrecipe_id:
+
+            # Способ 2: из instance (при редактировании существующего)
+            if not subrecipe_id and self.instance and self.instance.pk:
                 subrecipe_id = self.instance.subrecipe_id
+                print(f"Found subrecipe_id from instance: {subrecipe_id}")
+
+            # Способ 3: из initial (при создании нового, если передали)
+            if not subrecipe_id and self.initial.get('subrecipe'):
+                subrecipe_id = self.initial.get('subrecipe')
+                print(f"Found subrecipe_id from initial: {subrecipe_id}")
 
             if subrecipe_id:
                 self.fields['subrecipe_base_ingredient'].queryset = RecipeIngredient.objects.filter(
                     recipe_id=subrecipe_id
                 ).select_related('ingredient')
+                print(f"Filtered queryset count: {self.fields['subrecipe_base_ingredient'].queryset.count()}")
             else:
                 self.fields['subrecipe_base_ingredient'].queryset = RecipeIngredient.objects.none()
+                print("No subrecipe_id found, queryset set to none")
 
 
 class RecipeStepInline(admin.StackedInline):
@@ -149,7 +194,10 @@ class RecipeStepInline(admin.StackedInline):
         ('subrecipe', 'subrecipe_base_ingredient', 'subrecipe_base_quantity'),
     )
 
-    autocomplete_fields = ['subrecipe', 'subrecipe_base_ingredient', 'cooking_method', 'ingredient_preparation']
+    # autocomplete_fields = ['subrecipe', 'subrecipe_base_ingredient', 'cooking_method', 'ingredient_preparation']
+
+
+    autocomplete_fields = ['subrecipe', 'cooking_method', 'ingredient_preparation']
     filter_horizontal = ['recommended_utensils']
     verbose_name = 'Шаг приготовления'
     verbose_name_plural = 'Шаги приготовления'
@@ -160,19 +208,19 @@ class RecipeStepInline(admin.StackedInline):
 @admin.register(Recipe)
 class RecipeAdmin(admin.ModelAdmin):
     save_on_top = True
-    list_display = ['title', 'cuisine', 'difficulty', 'total_time', 'servings', 'created_at']
-    list_filter = ['cuisine', 'difficulty', 'created_at', 'updated_at']
+    list_display = ['title', 'cuisine', 'difficulty', 'servings', 'created_at']
+    list_filter = ['cuisine', 'difficulty', 'is_professional', 'created_at', 'updated_at']
     search_fields = ['title', 'description', 'author']
     filter_horizontal = ['diet_tags', 'related_recipes']
     date_hierarchy = 'created_at'
 
     fieldsets = [
         ('Основная информация', {
-            'fields': ['title', 'cuisine', 'author', 'description', 'image'],
+            'fields': ['title', 'cuisine', 'author', 'description', 'image', 'is_professional'],
             'classes': ['collapse']
         }),
         ('Параметры', {
-            'fields': ['servings', 'difficulty'],
+            'fields': ['servings', 'difficulty', 'total_time'],
             'classes': ['collapse']
         }),
         ('Пищевая ценность', {
@@ -185,7 +233,26 @@ class RecipeAdmin(admin.ModelAdmin):
         }),
     ]
 
-    inlines = [RecipeStepInline, RecipeIngredientInline]
+    # ДОБАВИТЬ ЭТОТ МЕТОД
+    def get_inlines(self, request, obj=None):
+        """Динамически подставляем inline в зависимости от is_professional"""
+        if obj and obj.is_professional:
+            return [RecipeStepInline, ProfessionalIngredientInline]
+        return [RecipeStepInline, RecipeIngredientInline]
+
+    # ДОБАВИТЬ ЭТОТ МЕТОД
+    def recipe_type_badge(self, obj):
+        """Отображаем красивый бейдж в списке рецептов"""
+        if obj.is_professional:
+            return format_html(
+                '<span style="background:#d97706; color:white; padding:2px 8px; border-radius:12px; font-size:11px;">📋 ТТК</span>')
+        return format_html(
+            '<span style="background:#10b981; color:white; padding:2px 8px; border-radius:12px; font-size:11px;">🍳 Рецепт</span>')
+
+    recipe_type_badge.short_description = 'Тип'
+    recipe_type_badge.admin_order_field = 'is_professional'
+
+    # inlines = [RecipeStepInline, RecipeIngredientInline]
 
 
 # ======================= ОСТАЛЬНЫЕ РЕГИСТРАЦИИ =======================

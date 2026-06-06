@@ -134,6 +134,104 @@ def index(request):
 
 def recipe_detail(request, recipe_id):
     recipe = get_object_or_404(Recipe, id=recipe_id)
+
+    # ======================= ПРОФЕССИОНАЛЬНЫЙ РЕЖИМ =======================
+    if recipe.is_professional:
+        # Получаем профессиональные ингредиенты (брутто/нетто)
+        pro_ingredients = recipe.pro_ingredients.select_related('ingredient').all()
+        steps = recipe.steps.all().order_by('order').select_related(
+            'cooking_method',
+            'ingredient_preparation',
+            'subrecipe'
+        ).prefetch_related(
+            'recommended_utensils'
+        )
+
+        components = recipe.components.all()
+
+        # ======================= ПРОГРЕСС ПО ШАГАМ (для проф. режима) =======================
+        total_steps = steps.count()
+        completed_steps = 0
+
+        for step in steps:
+            step_key = f'step_{recipe_id}_{step.id}'
+            if request.session.get(step_key, False):
+                completed_steps += 1
+
+        if total_steps > 0:
+            current_recipe_progress = int((completed_steps / total_steps) * 100)
+        else:
+            current_recipe_progress = request.session.get(f'recipe_progress_{recipe_id}', 0)
+
+        request.session[f'recipe_progress_{recipe_id}'] = current_recipe_progress
+
+        # ======================= ПРОГРЕСС КОМПОНЕНТОВ =======================
+        progress_data = {}
+        for component in components:
+            progress_key = f'recipe_progress_{component.id}'
+            progress_data[component.id] = request.session.get(progress_key, 0)
+
+        # ======================= ПАРАМЕТРЫ ВОЗВРАТА =======================
+        return_to = request.GET.get('return_to')
+        return_title = request.GET.get('return_title')
+        return_step = request.GET.get('return_step')
+        return_context = request.GET.get('return_context')
+        return_mode = request.GET.get('return_mode')
+        return_meat = request.GET.get('return_meat')
+        return_portions = request.GET.get('return_portions')
+
+        if current_recipe_progress > 0 and return_to:
+            if '?' in return_to:
+                return_to += f'&progress={current_recipe_progress}'
+            else:
+                return_to += f'?progress={current_recipe_progress}'
+
+        # Получаем ratio из GET параметров
+        ratio = request.GET.get('ratio')
+        if ratio:
+            try:
+                ratio = float(ratio)
+            except ValueError:
+                ratio = None
+        else:
+            ratio = None
+
+        # Изображение основного рецепта для блока возврата
+        return_image = None
+        if return_to:
+            import re
+            match = re.search(r'/recipe/(\d+)/', return_to)
+            if match:
+                parent_recipe_id = match.group(1)
+                try:
+                    parent_recipe = Recipe.objects.get(id=parent_recipe_id)
+                    if parent_recipe.image:
+                        return_image = parent_recipe.image.url
+                except Recipe.DoesNotExist:
+                    pass
+
+        context = {
+            'recipe': recipe,
+            'pro_ingredients': pro_ingredients,  # ← ключ для проф. ингредиентов
+            'steps': steps,
+            'components': components,
+            'components_progress': progress_data,
+            'current_recipe_progress': current_recipe_progress,
+            'return_to': return_to,
+            'return_title': return_title,
+            'return_step': return_step,
+            'return_context': return_context,
+            'return_mode': return_mode,
+            'return_meat': return_meat,
+            'return_portions': return_portions,
+            'ratio': ratio,
+            'return_image': return_image,
+        }
+
+        return render(request, 'kitchen/recipe_pro.html', context)
+
+    # ======================= ОБЫЧНЫЙ РЕЖИМ (любительский) =======================
+    # Весь ваш существующий код для обычных рецептов
     ingredients = recipe.recipe_ingredients.select_related('ingredient').all()
     steps = recipe.steps.all().order_by('order').select_related(
         'cooking_method',
@@ -145,32 +243,29 @@ def recipe_detail(request, recipe_id):
 
     components = recipe.components.all()
 
-    # ======================= РАСЧЁТ ПРОГРЕССА ПО ШАГАМ =======================
+    # ... и так далее (весь ваш остальной код без изменений)
+    # (ниже идёт ваш существующий код расчёта прогресса и т.д.)
+
     total_steps = steps.count()
     completed_steps = 0
 
-    # Получаем сохранённые состояния шагов из сессии
     for step in steps:
         step_key = f'step_{recipe_id}_{step.id}'
         if request.session.get(step_key, False):
             completed_steps += 1
 
-    # Вычисляем процент
     if total_steps > 0:
         current_recipe_progress = int((completed_steps / total_steps) * 100)
     else:
         current_recipe_progress = request.session.get(f'recipe_progress_{recipe_id}', 0)
 
-    # Сохраняем прогресс в сессию
     request.session[f'recipe_progress_{recipe_id}'] = current_recipe_progress
 
-    # ======================= ПРОГРЕСС КОМПОНЕНТОВ =======================
     progress_data = {}
     for component in components:
         progress_key = f'recipe_progress_{component.id}'
         progress_data[component.id] = request.session.get(progress_key, 0)
 
-    # ======================= ПАРАМЕТРЫ ВОЗВРАТА =======================
     return_to = request.GET.get('return_to')
     return_title = request.GET.get('return_title')
     return_step = request.GET.get('return_step')
@@ -179,14 +274,12 @@ def recipe_detail(request, recipe_id):
     return_meat = request.GET.get('return_meat')
     return_portions = request.GET.get('return_portions')
 
-    # Добавляем прогресс в параметры возврата
     if current_recipe_progress > 0 and return_to:
         if '?' in return_to:
             return_to += f'&progress={current_recipe_progress}'
         else:
             return_to += f'?progress={current_recipe_progress}'
 
-    # Получаем ratio из GET параметров
     ratio = request.GET.get('ratio')
     if ratio:
         try:
@@ -196,7 +289,6 @@ def recipe_detail(request, recipe_id):
     else:
         ratio = None
 
-    # Получаем изображение основного рецепта для блока возврата
     return_image = None
     if return_to:
         import re
