@@ -20,19 +20,22 @@
 
 {% block content %}
 <!-- Hero секция -->
-<section class="hero-gradient py-16 md:py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Дом, где царят <span class="text-amber-700">уют и забота</span>
+<section class="hero-gradient py-16 md:py-20 relative bg-cover bg-center" style="background-image: url('{% static 'kitchen/images/mainHeroBanner.jpg' %}');">
+    <!-- Затемнение для улучшения читаемости текста -->
+    <div class="absolute inset-0 bg-black/40"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
+            Дом, где царят <span class="text-amber-300">уют и забота</span>
         </h1>
-        <p class="text-xl text-gray-600 mb-8">
+        <p class="text-xl text-white/90 mb-8">
             Рецепты, советы по уборке, планирование бюджета и сообщество единомышленников
         </p>
         <div class="flex flex-wrap gap-4 justify-center">
-            <a href="/kitchen/cooking_recipe/" class="bg-amber-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-amber-800 transition">
+            <a href="/kitchen/" class="bg-amber-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-amber-700 transition">
                 🍳 Перейти к рецептам
             </a>
-            <a href="/community/" class="bg-white text-amber-800 px-6 py-3 rounded-lg font-semibold border border-amber-200 hover:bg-amber-50 transition">
+            <a href="/community/" class="bg-white/90 text-amber-800 px-6 py-3 rounded-lg font-semibold border border-amber-200 hover:bg-white transition">
                 💬 Присоединиться к сообществу
             </a>
         </div>
@@ -42,7 +45,7 @@
 <!-- Популярные разделы -->
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <a href="/kitchen/cooking_recipe/" class="bg-white p-6 rounded-xl shadow-sm text-center card-hover border border-gray-100">
+        <a href="/kitchen/" class="bg-white p-6 rounded-xl shadow-sm text-center card-hover border border-gray-100">
             <i class="fas fa-utensils text-amber-700 text-3xl"></i>
             <h3 class="font-bold mt-2">Кулинария</h3>
             <p class="text-sm text-gray-500">5000+ рецептов</p>

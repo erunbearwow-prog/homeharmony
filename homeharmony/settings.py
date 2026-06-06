@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'imagekit',
     'kitchen.apps.KitchenConfig',
+
 ]
 
 MIDDLEWARE = [
