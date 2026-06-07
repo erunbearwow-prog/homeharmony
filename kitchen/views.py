@@ -135,11 +135,15 @@ def index(request):
 def recipe_detail(request, recipe_id):
     recipe = get_object_or_404(Recipe, id=recipe_id)
 
+    print(f'recipe.is_professional = {recipe.is_professional}')
+
     # ======================= ПРОФЕССИОНАЛЬНЫЙ РЕЖИМ =======================
     if recipe.is_professional:
         # Получаем профессиональные ингредиенты (брутто/нетто)
         pro_ingredients = recipe.pro_ingredients.select_related('ingredient').all()
-        steps = recipe.steps.all().order_by('order').select_related(
+
+        # получаем все шаги
+        all_steps = recipe.steps.all().order_by('order').select_related(
             'cooking_method',
             'ingredient_preparation',
             'subrecipe'
@@ -147,13 +151,19 @@ def recipe_detail(request, recipe_id):
             'recommended_utensils'
         )
 
+        # ========== ФИЛЬТРАЦИЯ: только шаги с вложенными рецептами (Полуфабрикаты) ==========
+        steps_with_subrecipes = all_steps.filter(subrecipe__isnull=False)
+
+        # Шаги без subrecipe (не показываем, но можно залогировать при необходимости)
+        steps_without_subrecipes = all_steps.filter(subrecipe__isnull=True)
+
         components = recipe.components.all()
 
         # ======================= ПРОГРЕСС ПО ШАГАМ (для проф. режима) =======================
-        total_steps = steps.count()
+        total_steps = all_steps.count()
         completed_steps = 0
 
-        for step in steps:
+        for step in all_steps:
             step_key = f'step_{recipe_id}_{step.id}'
             if request.session.get(step_key, False):
                 completed_steps += 1
@@ -180,12 +190,6 @@ def recipe_detail(request, recipe_id):
         return_meat = request.GET.get('return_meat')
         return_portions = request.GET.get('return_portions')
 
-        if current_recipe_progress > 0 and return_to:
-            if '?' in return_to:
-                return_to += f'&progress={current_recipe_progress}'
-            else:
-                return_to += f'?progress={current_recipe_progress}'
-
         # Получаем ratio из GET параметров
         ratio = request.GET.get('ratio')
         if ratio:
@@ -195,6 +199,37 @@ def recipe_detail(request, recipe_id):
                 ratio = None
         else:
             ratio = None
+
+        # ======================= ФОРМИРОВАНИЕ ПАРАМЕТРОВ ДЛЯ ВОЗВРАТА =======================
+        return_to_params = ''
+        if return_to:
+            current_params = []
+
+            if return_mode:
+                current_params.append(f'mode={return_mode}')
+            if return_portions:
+                current_params.append(f'portions={return_portions}')
+            if return_meat:
+                current_params.append(f'meat={return_meat}')
+            if ratio:
+                current_params.append(f'ratio={ratio}')
+
+            # Параметры для режима "По продуктам"
+            base_ingredient = request.GET.get('base_ingredient')
+            base_value = request.GET.get('base_value')
+            if base_ingredient and base_value:
+                current_params.append(f'base_ingredient={base_ingredient}')
+                current_params.append(f'base_value={base_value}')
+
+            if current_params:
+                separator = '&' if '?' in return_to else '?'
+                return_to_params = f"{separator}{'&'.join(current_params)}"
+
+        if current_recipe_progress > 0 and return_to:
+            if '?' in return_to:
+                return_to += f'&progress={current_recipe_progress}'
+            else:
+                return_to += f'?progress={current_recipe_progress}'
 
         # Изображение основного рецепта для блока возврата
         return_image = None
@@ -212,12 +247,13 @@ def recipe_detail(request, recipe_id):
 
         context = {
             'recipe': recipe,
-            'pro_ingredients': pro_ingredients,  # ← ключ для проф. ингредиентов
-            'steps': steps,
+            'pro_ingredients': pro_ingredients,
+            'steps_with_subrecipes': steps_with_subrecipes,
             'components': components,
             'components_progress': progress_data,
             'current_recipe_progress': current_recipe_progress,
             'return_to': return_to,
+            'return_to_params': return_to_params,
             'return_title': return_title,
             'return_step': return_step,
             'return_context': return_context,
@@ -232,6 +268,8 @@ def recipe_detail(request, recipe_id):
 
     # ======================= ОБЫЧНЫЙ РЕЖИМ (любительский) =======================
     # Весь ваш существующий код для обычных рецептов
+
+    print(f'Код обычного режима')
     ingredients = recipe.recipe_ingredients.select_related('ingredient').all()
     steps = recipe.steps.all().order_by('order').select_related(
         'cooking_method',

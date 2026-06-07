@@ -620,23 +620,47 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Сброс базового ингредиента
-    if (resetBaseBtn) {
-        resetBaseBtn.addEventListener('click', function() {
-            currentBaseIngredient = null;
-            baseIngredientRow.classList.add('hidden');
+    // Сброс базового ингредиента (остаёмся в режиме продуктов)
+if (resetBaseBtn) {
+    resetBaseBtn.addEventListener('click', function() {
+        // 1. Сбрасываем базовый ингредиент
+        currentBaseIngredient = null;
+
+        // 2. Сбрасываем коэффициент к 1
+        currentRatio = 1;
+
+        // 3. Обновляем все ингредиенты с ratio = 1
+        updateAllIngredients(1);
+
+        // 4. Обновляем UI (убираем отображение базового ингредиента)
+        updateBaseIngredientUI();
+
+        // 5. Очищаем информационную строку
+        if (baseRatioInfo) {
             baseRatioInfo.innerText = '';
-            baseIngredientName.innerText = 'выбранному';
+        }
 
-            document.querySelectorAll('.chain-btn').forEach(btn => {
-                btn.classList.remove('text-amber-600');
-                btn.classList.add('text-gray-400');
-            });
+        // 6. Синхронизируем ползунок порций с базовым значением
+        if (portionsSlider) {
+            portionsSlider.value = baseServings;
+            if (portionsValue) portionsValue.innerText = baseServings;
+        }
 
-            setMode('portions');
-            updateURL();
-        });
-    }
+        // 7. Обновляем ссылки на вложенные рецепты и URL
+        updateSubrecipeLinks();
+        updateURL();
+
+        // 8. Меняем активный класс кнопки "По продуктам" (гарантия)
+        if (modeProductsBtn) {
+            modeProductsBtn.classList.add('bg-amber-600', 'text-white');
+            modeProductsBtn.classList.remove('bg-white', 'text-gray-600', 'border-gray-200');
+        }
+        if (modePortionsBtn) {
+            modePortionsBtn.classList.remove('bg-amber-600', 'text-white');
+            modePortionsBtn.classList.add('bg-white', 'text-gray-600', 'border-gray-200');
+        }
+    });
+}
 
     // ======================= КНОПКА ⟳ (замена ингредиента) =======================
     async function openReplaceModal(recipeIngredientId, ingredientName, unit) {
