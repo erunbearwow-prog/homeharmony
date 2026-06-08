@@ -5,18 +5,16 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-
-    # Основные разделы
     path('', include('pages.urls')),
-    path('cooking/', include('kitchen.urls')),  # Кулинария (существующий)
-    # path('cleaning/', include('cleaning.urls')),
-    # path('budget/', include('budget.urls')),
-    # path('repair/', include('repair.urls')),
-    # path('health/', include('health.urls')),
-    # path('seasonal/', include('seasonal.urls')),
-    # path('community/', include('community.urls')),
-    # path('knowledge/', include('knowledge.urls')),
-    # path('accounts/', include('accounts.urls')),
+    path('cooking/', include('kitchen.urls')),
+    path('cleaning/', include('cleaning.urls')),
+    path('budget/', include('budget.urls')),
+    path('repair/', include('repair.urls')),
+    path('health/', include('health.urls')),
+    path('seasonal/', include('seasonal.urls')),
+    path('community/', include('community.urls')),
+    path('knowledge/', include('knowledge.urls')),
+    path('accounts/', include('accounts.urls')),
 ]
 
 if settings.DEBUG:

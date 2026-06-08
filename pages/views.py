@@ -1,9 +1,9 @@
-# pages/views.py
 from django.shortcuts import render
+from django.core.paginator import Paginator
 
 def home(request):
     """Главная страница"""
-    return render(request, 'pages/home.html', {'title': 'Главная'})
+    return render(request, 'pages/home.html', {'title': 'Семейные ценности'})
 
 def about(request):
     """О проекте"""
@@ -15,11 +15,13 @@ def contacts(request):
 
 def blog_list(request):
     """Список статей блога"""
-    return render(request, 'pages/blog_list.html', {'title': 'Блог'})
+    # Временная заглушка
+    posts = []
+    return render(request, 'pages/blog_list.html', {'posts': posts, 'title': 'Блог'})
 
 def blog_detail(request, slug):
     """Детальная страница статьи"""
-    return render(request, 'pages/blog_detail.html', {'title': 'Статья', 'slug': slug})
+    return render(request, 'pages/blog_detail.html', {'slug': slug, 'title': 'Статья'})
 
 def advertising(request):
     """Реклама"""

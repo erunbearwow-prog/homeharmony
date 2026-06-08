@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Бюджет и планирование | Семейные ценности{% endblock %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <h1 class="text-3xl md:text-4xl font-bold serif mb-6">💰 Бюджет и планирование</h1>
+
+    <!-- Дашборд с графиками -->
+    <div class="grid lg:grid-cols-3 gap-6 mb-8">
+        <div class="lg:col-span-2 bg-white rounded-2xl p-6 shadow-sm">
+            <h2 class="text-xl font-semibold mb-4">Расходы по категориям</h2>
+            <canvas id="expensesChart" height="250"></canvas>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+            <h2 class="text-xl font-semibold mb-4">Быстрое добавление</h2>
+            <form method="post" class="space-y-4">
+                {% csrf_token %}
+                <input type="number" name="amount" placeholder="Сумма" class="w-full px-4 py-2 border rounded-lg">
+                <select name="category" class="w-full px-4 py-2 border rounded-lg">
+                    <option value="">Выберите категорию</option>
+                    {% for cat in categories %}
+                    <option value="{{ cat.id }}">{{ cat.name }}</option>
+                    {% endfor %}
+                </select>
+                <input type="date" name="date" class="w-full px-4 py-2 border rounded-lg">
+                <button type="submit" class="w-full bg-amber-600 text-white py-2 rounded-lg hover:bg-amber-700">Добавить</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Список покупок -->
+    <div class="bg-white rounded-2xl p-6 shadow-sm">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-xl font-semibold">🛒 Список покупок</h2>
+            <button id="addShoppingItemBtn" class="text-amber-600 hover:text-amber-700">+ Добавить</button>
+        </div>
+        <div id="shoppingList" class="space-y-2">
+            {% for item in shopping_items %}
+            <div class="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg">
+                <input type="checkbox" {% if item.is_checked %}checked{% endif %} class="w-5 h-5 accent-amber-600">
+                <span class="flex-1 {% if item.is_checked %}line-through text-gray-400{% endif %}">{{ item.name }}</span>
+                <span class="text-sm text-gray-400">{{ item.quantity }}</span>
+                <button class="text-red-400 hover:text-red-600">🗑</button>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.getElementById('expensesChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: {{ chart_labels|safe }},
+            datasets: [{
+                data: {{ chart_data|safe }},
+                backgroundColor: ['#d97706', '#f59e0b', '#fbbf24', '#fcd34d', '#fde68a']
+            }]
+        }
+    });
+</script>
+{% endblock %}
