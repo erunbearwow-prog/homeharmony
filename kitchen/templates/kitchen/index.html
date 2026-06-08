@@ -98,7 +98,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
         {% for recipe in recipes %}
         <a href="{% url 'kitchen:recipe_detail' recipe.id %}" class="recipe-card bg-white rounded-xl border border-gray-100 overflow-hidden cursor-pointer hover:shadow-lg transition block">
-            <div class="h-32 overflow-hidden">
+            <div class="h-32 overflow-hidden relative">
                 {% if recipe.image %}
                 <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}" class="w-full h-full object-cover">
                 {% else %}
@@ -110,6 +110,15 @@
                     {% else %}from-purple-100 to-purple-200{% endif %}">
                 </div>
                 {% endif %}
+
+                <!-- Бейдж "Профессиональный" -->
+                {% if recipe.is_professional %}
+                <div class="absolute top-2 right-2 bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded-full shadow-md flex items-center gap-1">
+                    <i class="fas fa-clipboard-list text-xs"></i>
+                    ТТК
+                </div>
+                {% endif %}
+
             </div>
             <div class="p-4">
                 <div class="flex justify-between items-start">

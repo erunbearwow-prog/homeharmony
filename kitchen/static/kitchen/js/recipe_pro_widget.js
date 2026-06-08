@@ -181,13 +181,14 @@ document.addEventListener('DOMContentLoaded', function() {
             // Переключаем видимость панелей
             portionsPanel.classList.remove('hidden');
             productsPanel.classList.add('hidden');
-            modePortionsBtn.classList.add('bg-amber-600', 'text-white');
+
+            // Стили для кнопок (как в любительской версии)
             modePortionsBtn.classList.remove('bg-white', 'text-gray-600', 'border-gray-200');
-            modeProductsBtn.classList.remove('bg-amber-600', 'text-white');
-            modeProductsBtn.classList.add('bg-white', 'text-gray-600', 'border-gray-200');
+            modePortionsBtn.classList.add('bg-blue-600', 'text-white');
+            modeProductsBtn.classList.remove('bg-blue-600', 'text-white');
+            modeProductsBtn.classList.add('bg-white', 'text-gray-600', 'border', 'border-gray-200');
 
             if (previousMode === 'products' && currentBaseIngredient) {
-                // Пересчитываем порции из текущего коэффициента
                 const ratioFromProducts = currentRatio;
                 const newPortions = Math.round(ratioFromProducts * baseServings);
 
@@ -201,7 +202,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 }
             } else {
-                // Обычный режим порций
                 const portions = parseInt(portionsSlider.value);
                 currentRatio = portions / baseServings;
                 updateAllIngredients(currentRatio);
@@ -214,21 +214,20 @@ document.addEventListener('DOMContentLoaded', function() {
             // Переключаем видимость панелей
             portionsPanel.classList.add('hidden');
             productsPanel.classList.remove('hidden');
-            modeProductsBtn.classList.add('bg-amber-600', 'text-white');
-            modeProductsBtn.classList.remove('bg-white', 'text-gray-600', 'border-gray-200');
-            modePortionsBtn.classList.remove('bg-amber-600', 'text-white');
-            modePortionsBtn.classList.add('bg-white', 'text-gray-600', 'border-gray-200');
+
+            // Стили для кнопок (как в любительской версии)
+            modeProductsBtn.classList.remove('bg-white', 'text-gray-600', 'border', 'border-gray-200');
+            modeProductsBtn.classList.add('bg-blue-600', 'text-white');
+            modePortionsBtn.classList.remove('bg-blue-600', 'text-white');
+            modePortionsBtn.classList.add('bg-white', 'text-gray-600', 'border', 'border-gray-200');
 
             if (previousMode === 'portions') {
-                // Берём текущий коэффициент из режима порций
                 const ratioFromPortions = currentRatio;
 
-                // Находим первый ингредиент для создания базового
                 if (ingredients.length > 0) {
                     const firstIngredient = ingredients[0];
                     const newBaseValue = firstIngredient.originalNet * ratioFromPortions;
 
-                    // Создаём базовый ингредиент
                     currentBaseIngredient = {
                         id: firstIngredient.id,
                         name: firstIngredient.name,
@@ -237,10 +236,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         unit: firstIngredient.unit
                     };
 
-                    // Обновляем UI
                     updateBaseIngredientUI();
-
-                    // Обновляем ингредиенты
                     currentRatio = ratioFromPortions;
                     updateAllIngredients(currentRatio);
 
@@ -252,7 +248,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
             else if (currentBaseIngredient) {
-                // Уже есть базовый ингредиент
                 const ratio = currentBaseIngredient.currentNet / currentBaseIngredient.originalNet;
                 currentRatio = ratio;
                 updateAllIngredients(currentRatio);

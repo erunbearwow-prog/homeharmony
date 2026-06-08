@@ -331,6 +331,27 @@
         gap: 10px;
     }
 
+    /* Виджет управления */
+    .pro-mode .mode-switch-pro {
+        transition: all 0.2s ease;
+    }
+
+    .pro-mode .mode-switch-pro.bg-blue-600 {
+        background-color: var(--pro-primary);
+        color: white;
+    }
+
+    .pro-mode .mode-switch-pro.bg-white {
+        background-color: white;
+        color: var(--pro-text-light);
+        border: 1px solid var(--pro-border);
+    }
+
+    .pro-mode .mode-switch-pro.bg-white:hover {
+        background-color: var(--pro-primary-bg);
+        border-color: var(--pro-primary);
+    }
+
     @media (max-width: 768px) {
         .pro-mode .nutrition-grid {
             grid-template-columns: 1fr;

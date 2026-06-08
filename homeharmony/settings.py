@@ -38,7 +38,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'imagekit',
+    'accounts.apps.AccountsConfig',
     'kitchen.apps.KitchenConfig',
+    'cleaning.apps.CleaningConfig',
+    'budget.apps.BudgetConfig',
+    'repair.apps.RepairConfig',
+    'health.apps.HealthConfig',
+    'seasonal.apps.SeasonalConfig',
+    'community.apps.CommunityConfig',
+    'knowledge.apps.KnowledgeConfig',
+    'pages.apps.PagesConfig',
 
 ]
 
@@ -107,6 +116,9 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+# settings.py
+AUTH_USER_MODEL = 'accounts.User'
 
 
 # Internationalization
