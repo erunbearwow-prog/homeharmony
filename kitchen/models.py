@@ -2,6 +2,7 @@ from django.db import models
 from django.core.validators import MinValueValidator
 from imagekit.models import ImageSpecField
 from imagekit.processors import ResizeToFill
+from django_localekit.models import TranslatableModel
 
 # ======================= ГЛОБАЛЬНЫЕ КОНСТАНТЫ =======================
 UNIT_CHOICES = [
@@ -203,8 +204,13 @@ class Ingredient(models.Model):
     # ======================= ОСНОВНЫЕ ДАННЫЕ =======================
     fdc_id = models.IntegerField(unique=True, verbose_name="ID в базе USDA", db_index=True, null=True, blank=True)
     name = models.CharField(max_length=300, verbose_name="Название ингредиента", db_index=True)
+    name_ru = models.CharField(max_length=300, blank=True, verbose_name="Название на русском")
     description = models.TextField(blank=True, verbose_name="Описание")
+    description_ru = models.TextField(blank=True, verbose_name="Описание на русском")
     data_source = models.CharField(max_length=50, verbose_name="Источник данных", default='USDA Foundation', blank=True)
+
+    # #======================== ПОЛЯ ДЛЯ ПЕРЕВОДА =====================
+    # translatable_fields = ["name", "description"]
 
     # ======================= МАКРОНУТРИЕНТЫ (г на 100г) =======================
     calories = models.FloatField(null=True, blank=True, verbose_name="Калории, ккал")

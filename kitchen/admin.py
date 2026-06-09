@@ -302,15 +302,16 @@ class IngredientCategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Ingredient)
 class IngredientAdmin(admin.ModelAdmin):
-    list_display = ['name', 'category', 'calories', 'protein', 'fat', 'carbohydrates', 'is_common']
+    save_on_top = True
+    list_display = ['name', 'name_ru', 'category', 'calories', 'protein', 'fat', 'carbohydrates', 'is_common']
     list_filter = ['category', 'is_common']
-    search_fields = ['name']
-    list_editable = ['calories', 'protein', 'fat', 'carbohydrates', 'is_common']
+    search_fields = ['name', 'name_ru']
+    list_editable = ['name_ru', 'calories', 'protein', 'fat', 'carbohydrates', 'is_common']
     fieldsets = (
-        ('Основная информация', {'fields': ('name', 'fdc_id', 'description', 'image', 'category', 'is_common')}),
+        ('Основная информация', {'fields': ('name', 'name_ru', 'fdc_id', 'description', 'description_ru', 'image', 'category', 'is_common')}),
         ('Макронутриенты (на 100г)', {'fields': ('calories', 'protein', 'fat', 'carbohydrates', 'fiber', 'sugar')}),
         ('Жиры и холестерин', {'fields': ('saturated_fat', 'trans_fat', 'cholesterol')}),
         ('Витамины', {'fields': ('vitamin_a', 'vitamin_b1', 'vitamin_b2', 'vitamin_b3', 'vitamin_b6', 'vitamin_b9', 'vitamin_b12', 'vitamin_c', 'vitamin_d', 'vitamin_e', 'vitamin_k')}),
         ('Минералы', {'fields': ('calcium', 'iron', 'magnesium', 'phosphorus', 'potassium', 'sodium', 'zinc', 'copper', 'manganese', 'selenium')}),
-        ('Дополнительно', {'fields': ('water', 'ash', 'data_source', 'last_update'), 'classes': ('collapse',)}),
+        ('Дополнительно', {'fields': ('water', 'ash', 'data_source'), 'classes': ('collapse',)}),
     )

@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'imagekit',
+    'django_localekit',
     'accounts.apps.AccountsConfig',
     'kitchen.apps.KitchenConfig',
     'cleaning.apps.CleaningConfig',
