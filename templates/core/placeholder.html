@@ -1,0 +1,166 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{{ title }} | Семейные ценности{% endblock %}
+
+{% block extra_css %}
+<style>
+    .hero-placeholder {
+        background: linear-gradient(135deg, #fff9e6 0%, #fdf4dc 100%);
+        border-radius: 2rem;
+        padding: 3rem 2rem;
+        margin-bottom: 2rem;
+        position: relative;
+        overflow: hidden;
+    }
+    .hero-placeholder::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -20%;
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(circle, rgba(255,193,7,0.1) 0%, rgba(255,193,7,0) 70%);
+        border-radius: 50%;
+    }
+    .hero-icon {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+    .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    .feature-card {
+        background: white;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        transition: transform 0.2s, box-shadow 0.2s;
+        border: 1px solid #f0e6d2;
+    }
+    .feature-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+    }
+    .feature-icon {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .cta-button {
+        background: #d97706;
+        color: white;
+        padding: 0.75rem 2rem;
+        border-radius: 2rem;
+        font-weight: 600;
+        transition: all 0.2s;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .cta-button:hover {
+        background: #b45309;
+        transform: translateY(-2px);
+    }
+    .quote-block {
+        background: #fef3c7;
+        border-left: 4px solid #d97706;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        margin: 2rem 0;
+        font-style: italic;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    
+    <!-- Hero-секция -->
+<div class="hero-placeholder text-center">
+    <div class="hero-icon">{{ icon|safe }}</div>
+    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
+        {{ hero_title|default:title }}
+    </h1>
+    <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-6">
+        {{ hero_subtitle|default:"Ваш гид по ведению домашнего хозяйства" }}
+    </p>
+    <div class="flex flex-wrap gap-4 justify-center">
+        <a href="#content" class="cta-button">
+            <i class="fas fa-arrow-down"></i> Начать изучение
+        </a>
+        <a href="{% url 'pages:home' %}" class="bg-white text-amber-700 border border-amber-200 px-6 py-3 rounded-full font-semibold hover:bg-amber-50 transition">
+            <i class="fas fa-home"></i> На главную
+        </a>
+    </div>
+</div>
+
+<!-- Основной контент -->
+<div id="content">
+    <div class="text-center mb-8">
+        <h2 class="text-2xl md:text-3xl font-bold serif text-gray-800 mb-2">
+            {{ content_title|default:"Что вас ждёт в этом разделе" }}
+        </h2>
+        <p class="text-gray-500 max-w-2xl mx-auto">
+            {{ content_subtitle|default:"Практичные советы и инструкции для каждого дня" }}
+        </p>
+    </div>
+
+    <!-- Карточки особенностей -->
+    <div class="feature-grid">
+        {% for feature in features %}
+        <div class="feature-card">
+            <div class="feature-icon">{{ feature.icon|safe }}</div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">{{ feature.title }}</h3>
+            <p class="text-gray-600">{{ feature.description }}</p>
+        </div>
+        {% empty %}
+
+
+        <!-- Карточки по умолчанию -->
+        <div class="feature-card">
+            <div class="feature-icon">📚</div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Понятные инструкции</h3>
+            <p class="text-gray-600">Пошаговые руководства для любого уровня подготовки</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">⭐</div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Проверенные советы</h3>
+            <p class="text-gray-600">Только то, что действительно работает на практике</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🤝</div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Сообщество</h3>
+            <p class="text-gray-600">Обменивайтесь опытом и задавайте вопросы</p>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Цитата / Вдохновляющий блок -->
+    <div class="quote-block">
+        <i class="fas fa-quote-left text-amber-400 mr-2"></i>
+        {{ quote|default:"Умение вести дом — это не врожденный талант, а набор навыков. И мы готовы передать вам каждый из них." }}
+        <i class="fas fa-quote-right text-amber-400 ml-2 align-top"></i>
+    </div>
+
+    <!-- Блок с подпиской или дополнительным контентом -->
+    <div class="bg-white rounded-2xl p-6 text-center border border-gray-100 shadow-sm">
+        <h3 class="text-xl font-bold text-gray-800 mb-2">🔥 Скоро здесь появятся статьи</h3>
+        <p class="text-gray-500 mb-4">
+            Мы готовим для вас полезные материалы. Подпишитесь, чтобы не пропустить!
+        </p>
+        <div class="flex flex-wrap gap-3 justify-center">
+            <input type="email" placeholder="Ваш email" class="px-4 py-2 border border-gray-300 rounded-full w-64 focus:outline-none focus:ring-2 focus:ring-amber-500">
+            <button class="bg-amber-600 text-white px-6 py-2 rounded-full hover:bg-amber-700 transition">
+                Подписаться
+            </button>
+        </div>
+    </div>
+
+    {% block extra_content %}{% endblock %}
+</div>
+</div>
+
+{% endblock %}

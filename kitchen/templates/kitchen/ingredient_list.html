@@ -1,43 +1,75 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}Ингредиенты | Семейные ценности{% endblock %}
+{% block title %}{{ title }} | Семейные ценности{% endblock %}
 
 {% block content %}
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <h1 class="text-3xl font-bold serif mb-2">🍎 Ингредиенты</h1>
-    <p class="text-gray-600 mb-6">База продуктов с пищевой ценностью и использованием в рецептах</p>
-    
-    <!-- Поиск -->
-    <form method="get" class="mb-8">
-        <div class="flex gap-3 max-w-md">
-            <input type="text" name="q" value="{{ query|default:'' }}" 
-                   placeholder="Поиск ингредиента..."
-                   class="flex-1 border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-amber-500 focus:border-transparent">
+    <h1 class="text-3xl md:text-4xl font-bold serif mb-6">🥕 База ингредиентов</h1>
+    <p class="text-gray-600 mb-8">Пищевая ценность, витамины и минералы — всё, что нужно знать о продуктах</p>
+
+    <!-- Поиск и фильтры -->
+    <div class="flex flex-wrap gap-4 mb-8">
+        <form method="get" class="flex-1 flex gap-2">
+            <input type="text" name="q" value="{{ query|default:'' }}"
+                   placeholder="Поиск ингредиентов..."
+                   class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
             <button type="submit" class="bg-amber-600 text-white px-6 py-2 rounded-lg hover:bg-amber-700 transition">
                 <i class="fas fa-search"></i> Найти
             </button>
-        </div>
-    </form>
-    
+        </form>
+
+        <select name="category" onchange="this.form.submit()" class="px-4 py-2 border border-gray-300 rounded-lg bg-white">
+            <option value="">Все категории</option>
+            {% for cat in categories %}
+            <option value="{{ cat.id }}" {% if selected_category|stringformat:"s" == cat.id|stringformat:"s" %}selected{% endif %}>
+                {{ cat.name }}
+            </option>
+            {% endfor %}
+        </select>
+    </div>
+
     <!-- Сетка ингредиентов -->
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
         {% for ingredient in page_obj %}
-        <a href="{% url 'kitchen:ingredient_detail' ingredient.id %}"
-           class="bg-white rounded-xl border border-gray-200 p-4 text-center hover:shadow-lg hover:border-amber-300 transition group">
-            {{ ingredient.id }}
-            <div class="w-16 h-16 mx-auto bg-amber-100 rounded-full flex items-center justify-center mb-3 group-hover:bg-amber-200 transition">
-                <i class="fas fa-carrot text-amber-600 text-2xl"></i>
+        <a href="{% url 'kitchen:ingredient_detail' ingredient.pk %}{% if return_to %}?return_to={{ return_to|urlencode }}&return_title={{ return_title|urlencode }}{% endif %}"
+           class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition text-center group">
+            {% if ingredient.image %}
+            <img src="{{ ingredient.image.url }}" alt="{{ ingredient.name }}" class="w-20 h-20 mx-auto object-cover rounded-full mb-3">
+            {% else %}
+            <div class="w-20 h-20 mx-auto bg-amber-100 rounded-full flex items-center justify-center mb-3 group-hover:bg-amber-200 transition">
+                <i class="fas fa-carrot text-3xl text-amber-600"></i>
             </div>
-            <h3 class="font-medium text-gray-800 group-hover:text-amber-700">{{ ingredient.name }}</h3>
-            <p class="text-xs text-gray-500 mt-1">{{ ingredient.recipes_count }} рецептов</p>
+            {% endif %}
+            <h3 class="font-medium text-gray-800 text-sm">{{ ingredient.name }}</h3>
+            {% if ingredient.calories %}
+            <p class="text-xs text-gray-500 mt-1">{{ ingredient.calories|floatformat:0 }} ккал</p>
+            {% endif %}
         </a>
         {% empty %}
-        <p class="col-span-full text-gray-500 text-center py-8">Ингредиенты не найдены</p>
+        <p class="col-span-full text-center text-gray-500 py-8">Ингредиенты не найдены</p>
         {% endfor %}
     </div>
-    
+
     <!-- Пагинация -->
-{% include "./includes/pagination.html" %}-->
+    {% if page_obj.has_other_pages %}
+    <div class="flex justify-center gap-2 mt-8">
+        {% if page_obj.has_previous %}
+        <a href="?page=1{% if query %}&q={{ query }}{% endif %}{% if selected_category %}&category={{ selected_category }}{% endif %}"
+           class="px-3 py-1 border rounded hover:bg-gray-50">««</a>
+        <a href="?page={{ page_obj.previous_page_number }}{% if query %}&q={{ query }}{% endif %}{% if selected_category %}&category={{ selected_category }}{% endif %}"
+           class="px-3 py-1 border rounded hover:bg-gray-50">«</a>
+        {% endif %}
+
+        <span class="px-3 py-1 bg-amber-600 text-white rounded">{{ page_obj.number }}</span>
+
+        {% if page_obj.has_next %}
+        <a href="?page={{ page_obj.next_page_number }}{% if query %}&q={{ query }}{% endif %}{% if selected_category %}&category={{ selected_category }}{% endif %}"
+           class="px-3 py-1 border rounded hover:bg-gray-50">»</a>
+        <a href="?page={{ page_obj.paginator.num_pages }}{% if query %}&q={{ query }}{% endif %}{% if selected_category %}&category={{ selected_category }}{% endif %}"
+           class="px-3 py-1 border rounded hover:bg-gray-50">»»</a>
+        {% endif %}
+    </div>
+    {% endif %}
 </div>
 {% endblock %}

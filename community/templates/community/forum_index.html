@@ -1,0 +1,56 @@
+{% extends "core/placeholder.html" %}
+{% load static %}
+
+{% block title %}Сообщество | Семейные ценности{% endblock %}
+
+{% block content %}
+{% with title="Сообщество" hero_title="Обменивайтесь опытом и вдохновляйтесь" hero_subtitle="Форум, галерея — место, где домашние дела становятся проще и интереснее вместе" icon="💬"%}
+    {{ block.super }}
+{% endwith %}
+
+<!-- Дополнительный контент для сообщества -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="grid md:grid-cols-3 gap-6 mb-12">
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition text-center">
+            <div class="text-3xl mb-3">📝</div>
+            <h3 class="text-xl font-semibold mb-2">Форум</h3>
+            <p class="text-gray-600 mb-4">Обсуждайте рецепты, делитесь лайфхаками и задавайте вопросы</p>
+            <a href="#" class="text-amber-600 hover:underline">Перейти к форуму →</a>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition text-center">
+            <div class="text-3xl mb-3">📸</div>
+            <h3 class="text-xl font-semibold mb-2">Галерея</h3>
+            <p class="text-gray-600 mb-4">Фотографии ваших кулинарных шедевров и домашних проектов</p>
+            <a href="#" class="text-amber-600 hover:underline">Загрузить фото →</a>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition text-center">
+            <div class="text-3xl mb-3">❓</div>
+            <h3 class="text-xl font-semibold mb-2">Вопросы и ответы</h3>
+            <p class="text-gray-600 mb-4">Найдите решение своей проблемы или помогите другим</p>
+            <a href="#" class="text-amber-600 hover:underline">Задать вопрос →</a>
+        </div>
+    </div>
+
+    <!-- Последние темы форума (заглушка) -->
+    <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+        <div class="flex justify-between items-center mb-4">
+            <h3 class="text-xl font-bold text-gray-800">🔥 Активные темы</h3>
+            <a href="#" class="text-amber-600 text-sm hover:underline">Все темы</a>
+        </div>
+        <div class="space-y-3">
+            <div class="flex items-center justify-between p-3 hover:bg-gray-50 rounded-lg transition">
+                <div><span class="font-medium">Как приготовить идеальный бисквит?</span><br><span class="text-xs text-gray-400">Ответов: 12</span></div>
+                <span class="text-xs text-gray-400">2 часа назад</span>
+            </div>
+            <div class="flex items-center justify-between p-3 hover:bg-gray-50 rounded-lg transition">
+                <div><span class="font-medium">Средство для чистки духовки</span><br><span class="text-xs text-gray-400">Ответов: 8</span></div>
+                <span class="text-xs text-gray-400">Вчера</span>
+            </div>
+            <div class="flex items-center justify-between p-3 hover:bg-gray-50 rounded-lg transition">
+                <div><span class="font-medium">Как организовать бюджет семьи?</span><br><span class="text-xs text-gray-400">Ответов: 23</span></div>
+                <span class="text-xs text-gray-400">3 дня назад</span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

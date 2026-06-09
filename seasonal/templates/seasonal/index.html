@@ -1,0 +1,58 @@
+{% extends "core/placeholder.html" %}
+{% load static %}
+{% block title %}Сезонное | Семейные ценности{% endblock %}
+
+{% block content %}
+    {% with title="Сезонное" hero_title="Живите в ритме природы" hero_subtitle="Заготовки, садовые работы и сезонные рецепты — всё, что нужно для каждого времени года" icon="🌿"%}
+    {{ block.super }}
+{% endwith %}
+{% endblock %}
+
+{% block extra_content %}
+<!-- Дополнительный контент для сезонного раздела -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="grid md:grid-cols-4 gap-4 mb-12">
+        <a href="#" class="bg-gradient-to-br from-green-100 to-green-200 p-6 rounded-2xl text-center hover:shadow-md transition">
+            <div class="text-3xl mb-2">🌸</div>
+            <h3 class="font-semibold text-gray-800">Весна</h3>
+            <p class="text-sm text-gray-600">Посевные работы</p>
+        </a>
+        <a href="#" class="bg-gradient-to-br from-yellow-100 to-yellow-200 p-6 rounded-2xl text-center hover:shadow-md transition">
+            <div class="text-3xl mb-2">☀️</div>
+            <h3 class="font-semibold text-gray-800">Лето</h3>
+            <p class="text-sm text-gray-600">Урожай и заготовки</p>
+        </a>
+        <a href="#" class="bg-gradient-to-br from-orange-100 to-orange-200 p-6 rounded-2xl text-center hover:shadow-md transition">
+            <div class="text-3xl mb-2">🍂</div>
+            <h3 class="font-semibold text-gray-800">Осень</h3>
+            <p class="text-sm text-gray-600">Сбор урожая</p>
+        </a>
+        <a href="#" class="bg-gradient-to-br from-blue-100 to-blue-200 p-6 rounded-2xl text-center hover:shadow-md transition">
+            <div class="text-3xl mb-2">❄️</div>
+            <h3 class="font-semibold text-gray-800">Зима</h3>
+            <p class="text-sm text-gray-600">Планирование</p>
+        </a>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+            <h3 class="text-xl font-bold mb-4">🥫 Рецепты заготовок</h3>
+            <ul class="space-y-3">
+                <li><a href="#" class="text-gray-600 hover:text-amber-600 transition">🍅 Маринованные помидоры</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-amber-600 transition">🥒 Хрустящие огурцы на зиму</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-amber-600 transition">🍓 Варенье из клубники</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-amber-600 transition">🥗 Лечо из болгарского перца</a></li>
+            </ul>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm">
+            <h3 class="text-xl font-bold mb-4">🌱 Садовые работы</h3>
+            <ul class="space-y-3">
+                <li><a href="#" class="text-gray-600 hover:text-amber-600 transition">🗓️ Календарь садовода</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-amber-600 transition">💧 Полив и подкормка растений</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-amber-600 transition">🐞 Борьба с вредителями</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-amber-600 transition">✂️ Обрезка деревьев и кустарников</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

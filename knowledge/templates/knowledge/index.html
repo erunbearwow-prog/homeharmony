@@ -1,0 +1,66 @@
+{% extends "core/placeholder.html" %}
+{% load static %}
+
+{% block title %}База знаний | Семейные ценности{% endblock %}
+
+{% block content %}
+{% with title="База знаний" hero_title="Всё, что нужно знать о доме" hero_subtitle="Энциклопедия бытовых терминов, подробные инструкции и проверенные лайфхаки" icon="📚" %}
+    {{ block.super }}
+{% endwith %}
+
+<!-- Дополнительный контент для базы знаний -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="grid md:grid-cols-3 gap-6 mb-12">
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition text-center">
+            <div class="text-3xl mb-3">📖</div>
+            <h3 class="text-xl font-semibold mb-2">Энциклопедия терминов</h3>
+            <p class="text-gray-600 mb-4">Более 500 понятий из мира домоводства</p>
+            <a href="#" class="text-amber-600 hover:underline">Перейти →</a>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition text-center">
+            <div class="text-3xl mb-3">🔧</div>
+            <h3 class="text-xl font-semibold mb-2">Инструкции</h3>
+            <p class="text-gray-600 mb-4">Пошаговые руководства на все случаи жизни</p>
+            <a href="#" class="text-amber-600 hover:underline">Перейти →</a>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition text-center">
+            <div class="text-3xl mb-3">💡</div>
+            <h3 class="text-xl font-semibold mb-2">Лайфхаки</h3>
+            <p class="text-gray-600 mb-4">Короткие советы для быстрых решений</p>
+            <a href="#" class="text-amber-600 hover:underline">Перейти →</a>
+        </div>
+    </div>
+
+    <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-8 text-center">
+        <h3 class="text-2xl font-bold text-gray-800 mb-3">🔍 Поиск по базе знаний</h3>
+        <p class="text-gray-600 mb-4">Найдите ответ на любой вопрос о ведении дома</p>
+        <div class="flex flex-wrap gap-3 justify-center">
+            <input type="text" placeholder="Например: как вывести пятно..." class="px-5 py-3 border border-gray-300 rounded-full w-96 focus:outline-none focus:ring-2 focus:ring-amber-500">
+            <button class="bg-amber-600 text-white px-8 py-3 rounded-full hover:bg-amber-700 transition">Найти</button>
+        </div>
+    </div>
+
+    <!-- Популярные статьи -->
+    <div class="mt-12">
+        <h3 class="text-xl font-bold text-gray-800 mb-4">⭐ Популярные статьи</h3>
+        <div class="grid md:grid-cols-2 gap-4">
+            <a href="#" class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition">
+                <div class="text-3xl">🧼</div>
+                <div><span class="font-medium">Как отстирать жирное пятно</span><br><span class="text-sm text-gray-500">Проверенные способы</span></div>
+            </a>
+            <a href="#" class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition">
+                <div class="text-3xl">🛠️</div>
+                <div><span class="font-medium">Как заменить смеситель на кухне</span><br><span class="text-sm text-gray-500">Пошаговая инструкция</span></div>
+            </a>
+            <a href="#" class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition">
+                <div class="text-3xl">📦</div>
+                <div><span class="font-medium">Системы хранения для малогабаритной кухни</span><br><span class="text-sm text-gray-500">Организуйте пространство</span></div>
+            </a>
+            <a href="#" class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition">
+                <div class="text-3xl">🌿</div>
+                <div><span class="font-medium">Как ухаживать за комнатными растениями</span><br><span class="text-sm text-gray-500">Советы для начинающих</span></div>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

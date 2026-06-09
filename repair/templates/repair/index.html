@@ -1,0 +1,22 @@
+{% extends "core/placeholder.html" %}
+{% load static %}
+{% block title %}Ремонт и обустройство | Семейные ценности{% endblock %}
+
+{% block content %}
+    {% with title="Ремонт и обустройство" hero_title="Муж на час (и жена тоже): Доступный ремонт" hero_subtitle="Мелкий ремонт сантехники, электрики и мебели. Как заменить прокладку в кране или повесить полку без вызова мастера." icon="🛠️" content_title="Сделай сам: просто и надёжно" content_subtitle="Пошаговые инструкции для домашнего мастера" features=features quote="Сэкономьте на вызове мастера — научитесь делать это сами." %}
+    {{ block.super }}
+{% endwith %}
+{% endblock %}
+
+{% block extra_content %}
+<!-- Дополнительный контент для сезонного раздела -->
+{# Дополнительный контент ремонта #}
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <h2 class="text-2xl font-bold mb-4">🔧 Популярные инструкции</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-5 rounded-xl shadow-sm">Как заменить смеситель</div>
+            <div class="bg-white p-5 rounded-xl shadow-sm">Как повесить полку</div>
+            <div class="bg-white p-5 rounded-xl shadow-sm">Как заменить розетку</div>
+        </div>
+    </div>
+{% endblock %}

@@ -25,53 +25,6 @@ class DietAdmin(admin.ModelAdmin):
     filter_horizontal = ['allowed_ingredients', 'prohibited_ingredients']
 
 
-@admin.register(IngredientCategory)
-class IngredientCategoryAdmin(admin.ModelAdmin):
-    list_display = ['name', 'parent', 'sort_order', 'icon_preview']
-    list_filter = ['parent']
-    search_fields = ['name']
-    list_editable = ['sort_order']
-
-    def icon_preview(self, obj):
-        if obj.icon:
-            return format_html('<i class="fas fa-{}"></i>', obj.icon)
-        return '-'
-    icon_preview.short_description = 'Иконка'
-
-
-@admin.register(Ingredient)
-class IngredientAdmin(admin.ModelAdmin):
-    list_display = ['name', 'category', 'default_unit', 'calories_per_100g', 'is_common', 'image_preview']
-    list_filter = ['category', 'default_unit', 'is_common', 'is_vegetarian', 'is_vegan', 'is_gluten_free']
-    search_fields = ['name', 'description']
-    list_editable = ['calories_per_100g', 'is_common']
-
-    fieldsets = [
-        ('Основная информация', {
-            'fields': ['name', 'category', 'description', 'default_unit', 'image']
-        }),
-        ('Пищевая ценность (на 100г)', {
-            'fields': ['calories_per_100g', 'protein_per_100g', 'fat_per_100g', 'carbs_per_100g']
-        }),
-        ('Сезонность и хранение', {
-            'fields': ['season_start', 'season_end', 'storage_conditions', 'shelf_life_days']
-        }),
-        ('Аллергены и диеты', {
-            'fields': ['allergens', 'is_vegetarian', 'is_vegan', 'is_gluten_free']
-        }),
-        ('Дополнительно', {
-            'fields': ['density_data', 'is_common'],
-            'classes': ['collapse']
-        }),
-    ]
-
-    def image_preview(self, obj):
-        if obj.image:
-            return format_html('<img src="{}" width="50" height="50" style="object-fit: cover; border-radius: 8px;" />', obj.image.url)
-        return '-'
-    image_preview.short_description = 'Изображение'
-
-
 # ======================= INLINE КЛАССЫ =======================
 
 # ========== INLINE ДЛЯ ПРОФЕССИОНАЛЬНЫХ ИНГРЕДИЕНТОВ ==========
@@ -335,3 +288,29 @@ class IngredientSubstitutionAdmin(admin.ModelAdmin):
     search_fields = ['recipe_ingredient__ingredient__name', 'substitute_ingredient__name']
     autocomplete_fields = ['recipe_ingredient', 'substitute_ingredient']
     fields = ['recipe_ingredient', 'substitute_ingredient', 'substitute_unit', 'ratio', 'notes']
+
+
+# kitchen/admin.py - добавить в конец файла
+from .models import Ingredient, IngredientCategory
+
+@admin.register(IngredientCategory)
+class IngredientCategoryAdmin(admin.ModelAdmin):
+    list_display = ['name', 'parent', 'sort_order']
+    list_filter = ['parent']
+    search_fields = ['name']
+    list_editable = ['sort_order']
+
+@admin.register(Ingredient)
+class IngredientAdmin(admin.ModelAdmin):
+    list_display = ['name', 'category', 'calories', 'protein', 'fat', 'carbohydrates', 'is_common']
+    list_filter = ['category', 'is_common']
+    search_fields = ['name']
+    list_editable = ['calories', 'protein', 'fat', 'carbohydrates', 'is_common']
+    fieldsets = (
+        ('Основная информация', {'fields': ('name', 'fdc_id', 'description', 'image', 'category', 'is_common')}),
+        ('Макронутриенты (на 100г)', {'fields': ('calories', 'protein', 'fat', 'carbohydrates', 'fiber', 'sugar')}),
+        ('Жиры и холестерин', {'fields': ('saturated_fat', 'trans_fat', 'cholesterol')}),
+        ('Витамины', {'fields': ('vitamin_a', 'vitamin_b1', 'vitamin_b2', 'vitamin_b3', 'vitamin_b6', 'vitamin_b9', 'vitamin_b12', 'vitamin_c', 'vitamin_d', 'vitamin_e', 'vitamin_k')}),
+        ('Минералы', {'fields': ('calcium', 'iron', 'magnesium', 'phosphorus', 'potassium', 'sodium', 'zinc', 'copper', 'manganese', 'selenium')}),
+        ('Дополнительно', {'fields': ('water', 'ash', 'data_source', 'last_update'), 'classes': ('collapse',)}),
+    )

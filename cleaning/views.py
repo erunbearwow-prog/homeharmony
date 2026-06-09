@@ -4,7 +4,25 @@ from .models import CleaningTask, CleaningTip
 def index(request):
     tasks = CleaningTask.objects.all()[:6]
     tips = CleaningTip.objects.all()[:3]
-    return render(request, 'cleaning/index.html', {'tasks': tasks, 'tips': tips, 'title': 'Уборка'})
+
+    context = {
+        'title': 'Уборка и гигиена',  # ← обязательно
+        'tasks': tasks,
+        'tips': tips,
+        'hero_title': "Искусство порядка: Уютный дом без усилий",
+        'hero_subtitle': "Системы хранения, быстрая уборка и организация пространства",
+        'icon': "🧹",
+        'description': "Системы хранения, быстрая уборка и организация пространства",
+        'content_title': "Чистый дом — ясная голова",
+        'content_subtitle': "Эффективные методы уборки для семей с детьми",
+        'features': [
+            {"icon": "🧺", "title": "Быстрая уборка", "description": "Как навести порядок за 15 минут в день"},
+            {"icon": "📦", "title": "Системы хранения", "description": "Организуйте пространство грамотно"},
+            {"icon": "🧼", "title": "Эко-средства", "description": "Натуральные рецепты для чистоты"},
+        ],
+        'quote': "Чистота в доме начинается с порядка в голове и заканчивается чистой тряпкой.",
+    }
+    return render(request, 'cleaning/index.html', context)
 
 def task_list(request):
     tasks = CleaningTask.objects.all()

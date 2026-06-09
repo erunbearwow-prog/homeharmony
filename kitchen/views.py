@@ -447,11 +447,94 @@ def ingredient_list(request):
 
 # kitchen/views.py
 
-def ingredient_detail(request, ingredient_id):
-    """Детальная страница ингредиента с поддержкой возврата в рецепт"""
-    ingredient = get_object_or_404(Ingredient, id=ingredient_id)
 
-    # Получаем параметры возврата (как в recipe_detail)
+
+# kitchen/views.py - добавить в конец файла
+
+from django.shortcuts import render, get_object_or_404
+from django.core.paginator import Paginator
+from django.db.models import Q
+from django.http import JsonResponse
+from .models import Ingredient, IngredientCategory
+
+
+def ingredient_list(request):
+    """Список всех ингредиентов с пагинацией и поиском"""
+    ingredients = Ingredient.objects.select_related('category').all()
+
+    # Поиск
+    query = request.GET.get('q')
+    if query:
+        ingredients = ingredients.filter(
+            Q(name__icontains=query) |
+            Q(description__icontains=query) |
+            Q(category__name__icontains=query)
+        )
+
+    # Фильтр по категории
+    category_id = request.GET.get('category')
+    if category_id:
+        ingredients = ingredients.filter(category_id=category_id)
+
+    # Пагинация
+    paginator = Paginator(ingredients, 24)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+
+    # Категории для фильтра
+    categories = IngredientCategory.objects.all()
+
+    # Параметры возврата (для ссылки "назад" из детальной страницы)
+    return_to = request.GET.get('return_to')
+    return_title = request.GET.get('return_title')
+    return_step = request.GET.get('return_step')
+    return_context = request.GET.get('return_context')
+    return_mode = request.GET.get('return_mode')
+    return_portions = request.GET.get('return_portions')
+    ratio = request.GET.get('ratio')
+
+    context = {
+        'page_obj': page_obj,
+        'categories': categories,
+        'query': query,
+        'selected_category': category_id,
+        'return_to': return_to,
+        'return_title': return_title,
+        'return_step': return_step,
+        'return_context': return_context,
+        'return_mode': return_mode,
+        'return_portions': return_portions,
+        'ratio': ratio,
+        'title': 'Ингредиенты',
+        'description': 'База продуктов с пищевой ценностью и использованием в рецептах'
+    }
+    return render(request, 'kitchen/ingredient_list.html', context)
+
+
+def ingredient_detail(request, pk):
+    """Детальная страница ингредиента по ID"""
+    ingredient = get_object_or_404(Ingredient, pk=pk)
+    return _render_ingredient_detail(request, ingredient)
+
+
+def ingredient_detail_by_slug(request, slug):
+    """Детальная страница ингредиента по slug"""
+    ingredient = get_object_or_404(Ingredient, slug=slug)
+    return _render_ingredient_detail(request, ingredient)
+
+
+def _render_ingredient_detail(request, ingredient):
+    """Общая логика для детальной страницы ингредиента"""
+
+    # Рецепты с этим ингредиентом
+    recipes = ingredient.recipe_uses.select_related('recipe').order_by('-recipe__created_at')
+
+    # Пагинация рецептов
+    paginator = Paginator(recipes, 12)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+
+    # Параметры возврата (для навигации)
     return_to = request.GET.get('return_to')
     return_title = request.GET.get('return_title')
     return_step = request.GET.get('return_step')
@@ -461,19 +544,15 @@ def ingredient_detail(request, ingredient_id):
     return_portions = request.GET.get('return_portions')
     ratio = request.GET.get('ratio')
 
-    # Рецепты с этим ингредиентом
-    recipe_ingredients = RecipeIngredient.objects.filter(
-        ingredient=ingredient
-    ).select_related('recipe').order_by('-recipe__created_at')
-
-    # Пагинация
-    paginator = Paginator(recipe_ingredients, 12)
-    page_number = request.GET.get('page')
-    page_obj = paginator.get_page(page_number)
+    # Похожие ингредиенты (из той же категории)
+    similar_ingredients = Ingredient.objects.filter(
+        category=ingredient.category
+    ).exclude(id=ingredient.id)[:6]
 
     context = {
         'ingredient': ingredient,
         'page_obj': page_obj,
+        'similar_ingredients': similar_ingredients,
         'return_to': return_to,
         'return_title': return_title,
         'return_step': return_step,
@@ -485,6 +564,37 @@ def ingredient_detail(request, ingredient_id):
         'title': ingredient.name,
     }
     return render(request, 'kitchen/ingredient_detail.html', context)
+
+
+def api_ingredient_detail(request, pk):
+    """API для получения данных ингредиента в JSON (для модальных окон)"""
+    try:
+        ingredient = Ingredient.objects.get(pk=pk)
+        data = {
+            'id': ingredient.id,
+            'name': ingredient.name,
+            'description': ingredient.description,
+            'calories': ingredient.calories,
+            'protein': ingredient.protein,
+            'fat': ingredient.fat,
+            'carbohydrates': ingredient.carbohydrates,
+            'fiber': ingredient.fiber,
+            'sugar': ingredient.sugar,
+            'saturated_fat': ingredient.saturated_fat,
+            'cholesterol': ingredient.cholesterol,
+            'vitamin_c': ingredient.vitamin_c,
+            'calcium': ingredient.calcium,
+            'iron': ingredient.iron,
+            'potassium': ingredient.potassium,
+            'sodium': ingredient.sodium,
+            'category': ingredient.category.name if ingredient.category else None,
+            'image_url': ingredient.image.url if ingredient.image else None,
+        }
+        return JsonResponse(data)
+    except Ingredient.DoesNotExist:
+        return JsonResponse({'error': 'Ингредиент не найден'}, status=404)
+
+
 
 
 # ======================= УТВАРЬ =======================

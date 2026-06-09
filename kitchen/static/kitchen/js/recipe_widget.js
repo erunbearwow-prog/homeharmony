@@ -674,7 +674,7 @@ if (resetBaseBtn) {
         replaceModal.classList.remove('hidden');
 
         try {
-            const response = await fetch(`/kitchen/api/substitutions/${recipeIngredientId}/`);
+            const response = await fetch(`/cooking/api/substitutions/${recipeIngredientId}/`);
             if (response.ok) {
                 const data = await response.json();
 
@@ -893,7 +893,7 @@ if (resetBaseBtn) {
             const recipeId = recipeIdMatch ? recipeIdMatch[1] : null;
 
             if (recipeId) {
-                fetch('/kitchen/api/update_progress/', {
+                fetch('/cooking/api/update_progress/', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -1014,7 +1014,7 @@ async function showMethodDetails(button) {
             return;
         }
 
-        const response = await fetch(`/kitchen/api/method/${methodId}/`);
+        const response = await fetch(`/cooking/api/method/${methodId}/`);
         if (response.ok) {
             const data = await response.json();
             methodsCache[methodId] = data;
@@ -1145,7 +1145,7 @@ async function showPreparationDetails(button) {
             return;
         }
 
-        const response = await fetch(`/kitchen/api/preparation/${preparationId}/`);
+        const response = await fetch(`/cooking/api/preparation/${preparationId}/`);
         if (response.ok) {
             const data = await response.json();
             preparationsCache[preparationId] = data;
@@ -1216,7 +1216,7 @@ async function showUtensilDetails(button) {
             return;
         }
 
-        const response = await fetch(`/kitchen/api/utensil/${utensilId}/`);
+        const response = await fetch(`/cooking/api/utensil/${utensilId}/`);
         if (response.ok) {
             const data = await response.json();
             utensilsCache[utensilId] = data;
@@ -1303,7 +1303,7 @@ function openInfoModal(ingredientId, ingredientName) {
         const returnPortions = urlParams.get('portions') || '';
         const ratio = urlParams.get('ratio') || '';
 
-        let url = `/kitchen/ingredient/${ingredientId}/`;
+        let url = `/cooking/ingredient/${ingredientId}/`;
         const params = new URLSearchParams();
 
         if (returnTo) params.set('return_to', returnTo);

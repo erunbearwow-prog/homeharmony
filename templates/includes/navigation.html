@@ -1,0 +1,130 @@
+<!-- НАВИГАЦИЯ -->
+
+<nav class="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-100 shadow-sm no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Логотип -->
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-home text-amber-700 text-xl"></i>
+                <a href="{% url 'pages:home' %}" class="text-xl font-bold text-gray-800 serif">Семейные <span class="text-amber-700">ценности</span></a>
+            </div>
+
+            <!-- Десктопное меню -->
+            <div class="hidden md:flex space-x-6 text-gray-600 font-medium">
+                <a href="{% url 'pages:home' %}" class="hover:text-amber-700 transition">Главная</a>
+                <a href="{% url 'kitchen:index' %}" class="hover:text-amber-700 transition">Кулинария</a>
+                <a href="{% url 'cleaning:index' %}" class="hover:text-amber-700 transition">Уборка</a>
+                <a href="{% url 'budget:dashboard' %}" class="hover:text-amber-700 transition">Бюджет</a>
+                <a href="{% url 'repair:index' %}" class="hover:text-amber-700 transition">Ремонт</a>
+                <a href="{% url 'health:index' %}" class="hover:text-amber-700 transition">Здоровье</a>
+                <a href="{% url 'seasonal:index' %}" class="hover:text-amber-700 transition">Сезонное</a>
+                <a href="{% url 'community:forum_index' %}" class="hover:text-amber-700 transition">Сообщество</a>
+                <a href="{% url 'knowledge:index' %}" class="hover:text-amber-700 transition">База знаний</a>
+            </div>
+
+            <!-- Правая панель -->
+            <div class="flex items-center space-x-4">
+                <i class="fas fa-search text-gray-500 hover:text-amber-700 cursor-pointer transition" id="searchIcon"></i>
+                {% if user.is_authenticated %}
+                <div class="relative group">
+                    <button class="flex items-center gap-2 text-gray-500 hover:text-amber-700 transition">
+                        {% if user.avatar %}
+                        <img src="{{ user.avatar.url }}" class="w-8 h-8 rounded-full object-cover">
+                        {% else %}
+                        <i class="fas fa-user-circle text-2xl"></i>
+                        {% endif %}
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg w-48 right-0 mt-2 z-10 border border-gray-100">
+                        <a href="{% url 'accounts:profile' %}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 hover:text-amber-700 transition">
+                            <i class="fas fa-user mr-2"></i> Профиль
+                        </a>
+                        <a href="{% url 'accounts:favorites' %}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 hover:text-amber-700 transition">
+                            <i class="fas fa-heart mr-2"></i> Избранное
+                        </a>
+                        <a href="{% url 'accounts:user_tasks' %}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 hover:text-amber-700 transition">
+                            <i class="fas fa-check-circle mr-2"></i> Мои задачи
+                        </a>
+                        <hr class="my-1">
+                        <form action="{% url 'accounts:logout' %}" method="post" class="block">
+                            {% csrf_token %}
+                            <button type="submit" class="w-full text-left px-4 py-2 text-sm text-red-600 hover:bg-red-50 transition">
+                                <i class="fas fa-sign-out-alt mr-2"></i> Выйти
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                {% else %}
+                <a href="{% url 'accounts:login' %}" class="text-gray-500 hover:text-amber-700 transition">
+                    <i class="fas fa-user-circle text-2xl"></i>
+                </a>
+                {% endif %}
+            </div>
+
+            <!-- Мобильное меню (гамбургер) -->
+            <div class="md:hidden">
+                <button id="mobileMenuBtn" class="text-gray-500 hover:text-amber-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Мобильное выпадающее меню -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-gray-100 py-2 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col space-y-1">
+            <a href="{% url 'pages:home' %}" class="py-2 px-3 text-gray-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition">Главная</a>
+            <a href="{% url 'kitchen:index' %}" class="py-2 px-3 text-gray-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition">Кулинария</a>
+            <a href="{% url 'cleaning:index' %}" class="py-2 px-3 text-gray-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition">Уборка</a>
+            <a href="{% url 'budget:dashboard' %}" class="py-2 px-3 text-gray-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition">Бюджет</a>
+            <a href="{% url 'repair:index' %}" class="py-2 px-3 text-gray-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition">Ремонт</a>
+            <a href="{% url 'health:index' %}" class="py-2 px-3 text-gray-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition">Здоровье</a>
+            <a href="{% url 'seasonal:index' %}" class="py-2 px-3 text-gray-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition">Сезонное</a>
+            <a href="{% url 'community:forum_index' %}" class="py-2 px-3 text-gray-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition">Сообщество</a>
+            <a href="{% url 'knowledge:index' %}" class="py-2 px-3 text-gray-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition">База знаний</a>
+            <hr class="my-2">
+            {% if user.is_authenticated %}
+            <a href="{% url 'accounts:profile' %}" class="py-2 px-3 text-gray-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition">👤 Профиль</a>
+            <a href="{% url 'accounts:favorites' %}" class="py-2 px-3 text-gray-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition">❤️ Избранное</a>
+            <form action="{% url 'accounts:logout' %}" method="post" class="block">
+                {% csrf_token %}
+                <button type="submit" class="w-full text-left py-2 px-3 text-red-600 hover:bg-red-50 rounded-lg transition">
+                    🚪 Выйти
+                </button>
+            </form>
+            {% else %}
+            <a href="{% url 'accounts:login' %}" class="py-2 px-3 text-gray-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition">🔑 Войти</a>
+            <a href="{% url 'accounts:register' %}" class="py-2 px-3 text-amber-700 hover:bg-amber-50 rounded-lg transition">📝 Регистрация</a>
+            {% endif %}
+        </div>
+    </div>
+</nav>
+
+<script>
+    // Мобильное меню
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
+
+    // Закрытие мобильного меню при клике вне его
+    document.addEventListener('click', function(event) {
+        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+            const isClickInside = mobileMenu.contains(event.target) || mobileMenuBtn.contains(event.target);
+            if (!isClickInside) {
+                mobileMenu.classList.add('hidden');
+            }
+        }
+    });
+
+    // Поиск (пока заглушка)
+    const searchIcon = document.getElementById('searchIcon');
+    if (searchIcon) {
+        searchIcon.addEventListener('click', function() {
+            alert('Функция поиска в разработке');
+        });
+    }
+</script>

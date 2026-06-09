@@ -1,65 +1,78 @@
-<!-- Верхнее меню -->
-<nav class="bg-white shadow-sm sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16">
-            <!-- Логотип -->
-            <a href="{% url 'pages:home' %}" class="flex items-center gap-2">
-                <i class="fas fa-utensils text-2xl text-amber-700"></i>
-                <span class="font-bold text-xl text-gray-800">Семейные <span class="text-amber-700">ценности</span></span>
-            </a>
+{% load static %}
 
-            <!-- Десктопное меню -->
-            <div class="hidden md:flex items-center gap-1">
-                <!-- Основные разделы с выпадающими списками -->
-                <div class="relative group">
-                    <button class="px-3 py-2 text-gray-600 hover:text-amber-700 flex items-center gap-1">
-                        🍳 Кулинария <i class="fas fa-chevron-down text-xs"></i>
-                    </button>
-                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg w-48 mt-1 z-10">
-                        <a href="{% url 'kitchen:index' %}" class="block px-4 py-2 hover:bg-amber-50">Все рецепты</a>
-                        <a href="#" class="block px-4 py-2 hover:bg-amber-50">Первые блюда</a>
-                        <a href="#" class="block px-4 py-2 hover:bg-amber-50">Вторые блюда</a>
-                        <a href="#" class="block px-4 py-2 hover:bg-amber-50">Выпечка</a>
-                        <a href="#" class="block px-4 py-2 hover:bg-amber-50">Технологические карты</a>
-                    </div>
-                </div>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>{% block title %}Семейные ценности — дом, уют, забота{% endblock %}</title>
 
-                <a href="{% url 'cleaning:index' %}" class="px-3 py-2 text-gray-600 hover:text-amber-700">🧹 Уборка</a>
-                <a href="{% url 'budget:dashboard' %}" class="px-3 py-2 text-gray-600 hover:text-amber-700">💰 Бюджет</a>
-                <a href="{% url 'repair:index' %}" class="px-3 py-2 text-gray-600 hover:text-amber-700">🛠️ Ремонт</a>
-                <a href="{% url 'health:index' %}" class="px-3 py-2 text-gray-600 hover:text-amber-700">💚 Здоровье</a>
-                <a href="{% url 'seasonal:index' %}" class="px-3 py-2 text-gray-600 hover:text-amber-700">🌿 Сезонное</a>
-                <a href="{% url 'community:index' %}" class="px-3 py-2 text-gray-600 hover:text-amber-700">💬 Сообщество</a>
-                <a href="{% url 'knowledge:index' %}" class="px-3 py-2 text-gray-600 hover:text-amber-700">📚 База знаний</a>
-            </div>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-            <!-- Поиск и личный кабинет -->
-            <div class="flex items-center gap-4">
-                <button class="text-gray-600 hover:text-amber-700">
-                    <i class="fas fa-search text-xl"></i>
-                </button>
-                {% if user.is_authenticated %}
-                <div class="relative group">
-                    <button class="flex items-center gap-2">
-                        {% if user.avatar %}
-                        <img src="{{ user.avatar.url }}" class="w-8 h-8 rounded-full object-cover">
-                        {% else %}
-                        <i class="fas fa-user-circle text-2xl text-gray-500"></i>
-                        {% endif %}
-                    </button>
-                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg w-48 right-0 mt-1 z-10">
-                        <a href="{% url 'accounts:profile' %}" class="block px-4 py-2 hover:bg-amber-50">📋 Профиль</a>
-                        <a href="{% url 'accounts:favorites' %}" class="block px-4 py-2 hover:bg-amber-50">❤️ Избранное</a>
-                        <a href="{% url 'accounts:tasks' %}" class="block px-4 py-2 hover:bg-amber-50">✅ Мои задачи</a>
-                        <hr class="my-1">
-                        <a href="{% url 'accounts:logout' %}" class="block px-4 py-2 hover:bg-amber-50 text-red-600">🚪 Выйти</a>
-                    </div>
-                </div>
-                {% else %}
-                <a href="{% url 'accounts:login' %}" class="text-gray-600 hover:text-amber-700">Войти</a>
-                <a href="{% url 'accounts:register' %}" class="bg-amber-600 text-white px-4 py-2 rounded-lg hover:bg-amber-700">Регистрация</a>
-                {% endif %}
-            </div>
-        </div>
-    </div>
-</nav>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Georgia:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .serif { font-family: 'Georgia', serif; }
+
+        /* Кастомизация выпадающих списков */
+        .custom-select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 0.75rem center;
+            background-size: 1rem;
+            padding-right: 2rem !important;
+        }
+
+        .custom-select:focus {
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d97706' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+        }
+
+        .custom-select::-ms-expand {
+            display: none;
+        }
+
+        @media print {
+            nav, footer, .no-print {
+                display: none !important;
+            }
+        }
+    </style>
+
+    {% block extra_css %}{% endblock %}
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- НАВИГАЦИЯ -->
+    {% include 'includes/navigation.html' %}
+
+    <!-- ОСНОВНОЕ СОДЕРЖИМОЕ -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- ФУТЕР -->
+    {% include 'includes/footer.html' %}
+
+    <!-- ДОПОЛНИТЕЛЬНЫЕ СКРИПТЫ -->
+    <script>
+        // Мобильное меню
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>
