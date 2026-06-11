@@ -1,0 +1,40 @@
+/* static/admin/css/ingredient_nav.css */
+.ingredient-nav {
+    background: #f8f9fa;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ingredient-nav .nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.ingredient-nav .nav-button {
+    padding: 6px 16px;
+    background: #79aec8;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.ingredient-nav .nav-button:hover {
+    background: #609ab6;
+}
+
+.ingredient-nav .nav-button.disabled {
+    background: #c0c0c0;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ingredient-nav .nav-info {
+    color: #666;
+    font-size: 13px;
+}

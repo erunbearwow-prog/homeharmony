@@ -128,6 +128,7 @@ def index(request):
     context = {
         'recipes': recipes,
         'cuisines': cuisines,
+        'hero_image': 'kitchen/images/recepi_0001.jpg',
     }
     return render(request, 'kitchen/index.html', context)
 
@@ -270,7 +271,27 @@ def recipe_detail(request, recipe_id):
     # Весь ваш существующий код для обычных рецептов
 
     print(f'Код обычного режима')
-    ingredients = recipe.recipe_ingredients.select_related('ingredient').all()
+    food_items = recipe.food_items.select_related('ingredient', 'product').all()
+
+    # Для обратной совместимости (если есть старые RecipeIngredient)
+    # можно объединить или использовать только новый способ
+    if not food_items:
+        # Старый способ (для обратной совместимости)
+        from .models import RecipeIngredient
+        ingredients = recipe.recipe_ingredients.select_related('ingredient').all()
+        # Конвертируем в формат, похожий на food_items
+        food_items = []
+        for ri in ingredients:
+            food_items.append({
+                'id': ri.id,
+                'food_name': ri.ingredient.name,
+                'food_type': 'ingredient',
+                'quantity': ri.quantity,
+                'unit': ri.unit,
+                'original_id': ri.ingredient.id,
+                'original_obj': ri.ingredient,
+            })
+
     steps = recipe.steps.all().order_by('order').select_related(
         'cooking_method',
         'ingredient_preparation',
@@ -342,7 +363,7 @@ def recipe_detail(request, recipe_id):
 
     context = {
         'recipe': recipe,
-        'ingredients': ingredients,
+        'food_items': food_items,
         'steps': steps,
         'components': components,
         'components_progress': progress_data,
@@ -741,3 +762,54 @@ def preparation_detail(request, preparation_id):
         'title': preparation.name,
     }
     return render(request, 'kitchen/preparation_detail.html', context)
+
+
+#====================== import
+# kitchen/views.py
+from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.http import require_http_methods
+from django.http import JsonResponse
+from .models import Ingredient
+import json
+
+
+@csrf_exempt
+@require_http_methods(['POST'])
+def import_ingredient(request):
+    """API для импорта ингредиента из браузерного расширения"""
+    try:
+        data = json.loads(request.body)
+
+        name = data.get('name')
+        if not name:
+            return JsonResponse({'error': 'Название ингредиента обязательно'}, status=400)
+
+        # Автоматически получаем все поля модели
+        model_fields = {f.name for f in Ingredient._meta.get_fields()}
+
+        defaults = {}
+        for key, value in data.items():
+            # Исключаем служебные поля и проверяем существование в модели
+            if key in model_fields and key not in ['id', 'created_at', 'updated_at', 'last_update']:
+                defaults[key] = value
+
+        # Обязательные поля
+        defaults['name_ru'] = data.get('name_ru', name)
+        defaults['data_source'] = data.get('data_source', 'pbprog.ru')
+
+        ingredient, created = Ingredient.objects.update_or_create(
+            name=name,
+            defaults=defaults
+        )
+
+        return JsonResponse({
+            'status': 'ok',
+            'created': created,
+            'ingredient_id': ingredient.id,
+            'name': ingredient.name
+        })
+
+    except json.JSONDecodeError:
+        return JsonResponse({'error': 'Invalid JSON'}, status=400)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)

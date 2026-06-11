@@ -1,8 +1,10 @@
+from django.core.exceptions import ValidationError
 from django.db import models
 from django.core.validators import MinValueValidator
 from imagekit.models import ImageSpecField
 from imagekit.processors import ResizeToFill
 from django_localekit.models import TranslatableModel
+from django.db.models.functions import Lower
 
 # ======================= ГЛОБАЛЬНЫЕ КОНСТАНТЫ =======================
 UNIT_CHOICES = [
@@ -146,7 +148,7 @@ class RecommendedUtensil(models.Model):
 # ======================= РЕЦЕПТЫ =======================
 class Recipe(models.Model):
     DIFFICULTY_CHOICES = [
-        ('easy', 'Лёгкий'),
+        ('easy', 'Легкий'),
         ('medium', 'Средний'),
         ('hard', 'Сложный'),
     ]
@@ -189,12 +191,70 @@ class Recipe(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
+    # Общее время
+    total_time = models.IntegerField(default=0, verbose_name='Время приготовления (мин)')
+
     class Meta:
         verbose_name = 'Рецепт'
         verbose_name_plural = 'Рецепты'
 
+    def calculate_total_time(self):
+        """Рассчитывает общее время из суммы шагов"""
+        total = self.steps.aggregate(total=models.Sum('duration'))['total']
+        return total or 0
+
+    def save(self, *args, **kwargs):
+        # Автоматически обновляем total_time при сохранении рецепта
+        if self.pk:  # Если рецепт уже существует (есть ID)
+            self.total_time = self.calculate_total_time()
+        super().save(*args, **kwargs)
+
     def __str__(self):
         return self.title
+
+
+
+# ======================= PRODUCTS =======================
+class Product(models.Model):
+    """Готовый продукт из Open Food Facts"""
+
+    # Основная информация
+    code = models.CharField(max_length=100, unique=True, blank=True, verbose_name="Штрихкод")
+    name = models.CharField(max_length=300, verbose_name="Название продукта")
+    name_ru = models.CharField(max_length=300, blank=True, verbose_name="Название на русском")
+    brand = models.CharField(max_length=200, blank=True, verbose_name="Бренд")
+    quantity = models.CharField(max_length=100, blank=True, verbose_name="Количество/вес")
+
+    # Состав и категории
+    categories = models.TextField(blank=True, verbose_name="Категории")
+    ingredients_text = models.TextField(blank=True, verbose_name="Состав")
+    countries_tags = models.JSONField(default=list, blank=True, verbose_name="Страны продажи")
+
+    # Оценки качества
+    nutriscore_grade = models.CharField(max_length=1, blank=True, verbose_name="Nutri-Score (a/b/c/d/e)")
+    nova_group = models.IntegerField(null=True, blank=True, verbose_name="Степень обработки NOVA (1-4)")
+
+    # Изображение
+    # image_url = models.URLField(blank=True, verbose_name="URL изображения")
+    image = models.ImageField(upload_to='products/', null=True, blank=True, verbose_name="Изображение")
+
+    # Служебные поля
+    data_source = models.CharField(max_length=50, default='Open Food Facts', verbose_name="Источник")
+    last_update = models.DateField(auto_now=True, verbose_name="Дата обновления")
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата создания")
+
+    class Meta:
+        verbose_name = "Готовый продукт"
+        verbose_name_plural = "Готовые продукты"
+        ordering = ['name']
+
+    def __str__(self):
+        return f"{self.name} ({self.brand})" if self.brand else self.name
+
+    @property
+    def display_name(self):
+        """Возвращает название на русском или английском"""
+        return self.name_ru or self.name
 
 
 # ======================= ИНГРЕДИЕНТЫ (РАСШИРЕННАЯ БАЗА) =======================
@@ -205,6 +265,7 @@ class Ingredient(models.Model):
     fdc_id = models.IntegerField(unique=True, verbose_name="ID в базе USDA", db_index=True, null=True, blank=True)
     name = models.CharField(max_length=300, verbose_name="Название ингредиента", db_index=True)
     name_ru = models.CharField(max_length=300, blank=True, verbose_name="Название на русском")
+    name_normalized = models.CharField(max_length=300, blank=True, null=True, db_index=True)
     description = models.TextField(blank=True, verbose_name="Описание")
     description_ru = models.TextField(blank=True, verbose_name="Описание на русском")
     data_source = models.CharField(max_length=50, verbose_name="Источник данных", default='USDA Foundation', blank=True)
@@ -264,10 +325,15 @@ class Ingredient(models.Model):
     last_update = models.DateField(auto_now=True, verbose_name="Дата последнего обновления")
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата создания")
 
+    def save(self, *args, **kwargs):
+        self.name_normalized = self.name_ru.replace(' ','').lower()
+        super().save(*args, **kwargs)
+
     class Meta:
         verbose_name = "Ингредиент"
         verbose_name_plural = "Ингредиенты"
-        ordering = ['name']
+        ordering = [Lower('name_normalized')]
+
 
     def __str__(self):
         return self.name
@@ -388,7 +454,55 @@ class ProfessionalIngredient(models.Model):
         return f'{self.ingredient.name}: {self.net_weight}/{self.gross_weight}{self.unit}'
 
 
-# ======================= ДОПУСТИМАЯ ЗАМЕНА ИНГРЕДИЕНТА =======================
+# ======================= СВЯЗЬ ПРОДУКТА ИЛИ ИНГРЕДИЕНТА С РЕЦЕПТАМИ ===================
+class RecipeFoodItem(models.Model):
+    """Связь рецепта с продуктом или ингредиентом"""
+    recipe = models.ForeignKey('Recipe', on_delete=models.CASCADE, related_name='food_items')
+
+    # Полиморфная связь (может быть либо Ingredient, либо Product)
+    ingredient = models.ForeignKey('Ingredient', on_delete=models.CASCADE, null=True, blank=True)
+    product = models.ForeignKey('Product', on_delete=models.CASCADE, null=True, blank=True)
+
+    quantity = models.FloatField(verbose_name="Количество", validators=[MinValueValidator(0.01)])
+    unit = models.CharField(max_length=20, choices=UNIT_CHOICES, default='г')
+    notes = models.CharField(max_length=500, blank=True)
+    is_scalable = models.BooleanField(default=True, verbose_name="Масштабируется")
+
+    class Meta:
+        verbose_name = "Ингредиент/продукт в рецепте"
+        verbose_name_plural = "Ингредиенты/продукты в рецептах"
+
+    def clean(self):
+        """Проверка: должен быть указан либо ingredient, либо product"""
+        if not self.ingredient and not self.product:
+            raise ValidationError("Укажите либо ингредиент, либо готовый продукт")
+        if self.ingredient and self.product:
+            raise ValidationError("Нельзя указать и ингредиент, и продукт одновременно")
+
+    @property
+    def food_item(self):
+        """Возвращает объект (ингредиент или продукт)"""
+        return self.ingredient or self.product
+
+    @property
+    def food_name(self):
+        """Возвращает название для отображения"""
+        item = self.food_item
+        if hasattr(item, 'display_name'):
+            return item.display_name
+        return item.name
+
+    @property
+    def food_type(self):
+        """Возвращает тип: 'ingredient' или 'product'"""
+        return 'ingredient' if self.ingredient else 'product'
+
+    def __str__(self):
+        return f"{self.food_name}: {self.quantity} {self.unit}"
+
+
+
+    # ======================= ДОПУСТИМАЯ ЗАМЕНА ИНГРЕДИЕНТА =======================
 class IngredientSubstitution(models.Model):
     """Допустимая замена для ингредиента в конкретном рецепте"""
     recipe_ingredient = models.ForeignKey(
@@ -433,6 +547,7 @@ class RecipeStep(models.Model):
     instruction = models.TextField(verbose_name='Инструкция')
     duration = models.IntegerField(default=0, verbose_name='Длительность (мин)')
     temperature = models.IntegerField(null=True, blank=True, verbose_name='Температура')
+    recipe_step_image = models.ImageField(upload_to='recipe_steps/', null=True, blank=True, verbose_name='Изображение шага')
 
     # Вложенный рецепт
     subrecipe = models.ForeignKey(

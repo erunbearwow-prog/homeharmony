@@ -46,17 +46,31 @@
 
 {% block content %}
 
-<!-- Hero секция -->
-<section class="hero-gradient py-16 md:py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Готовьте с удовольствием вместе с <span class="text-amber-700">Семейными ценностями</span>
+<!-- Hero секция с поддержкой изображения -->
+<section class="hero-gradient py-16 md:py-20 relative overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        {% load static %}
+        {% if hero_image %}
+        <img src="{{ hero_image }}" alt="Кулинария" class="w-full h-full object-cover">
+        {% else %}
+        <img src="{% static hero_image %}" alt="Кулинария" class="w-full h-full object-cover">
+        {% endif %}
+        <div class="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30"></div>
+    </div>
+
+    <!-- Контент поверх фона -->
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold
+                   {% if hero_image %}text-white{% else %}text-gray-800{% endif %} mb-4">
+            Готовьте с удовольствием вместе с <span class="{% if hero_image %}text-amber-300{% else %}text-amber-700{% endif %}">Семейными ценностями</span>
         </h1>
-        <p class="text-xl text-gray-600 mb-10">
+        <p class="text-xl
+                  {% if hero_image %}text-white/90{% else %}text-gray-600{% endif %} mb-10">
             {{ recipes|length }} рецептов для любого уровня мастерства
+            {{ hero_image }}
         </p>
 
-        <!-- Поиск и фильтры -->
+        <!-- Поиск и фильтры (оставляем без изменений) -->
         <div class="max-w-4xl mx-auto">
             <div class="flex flex-col md:flex-row gap-3">
                 <input type="text" placeholder="Что вы готовите?"
@@ -87,6 +101,7 @@
         </div>
     </div>
 </section>
+
 
 <!-- Рецепты -->
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

@@ -100,31 +100,31 @@
     </div>
 </nav>
 
-<script>
-    // Мобильное меню
-    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    if (mobileMenuBtn && mobileMenu) {
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    }
+<!--<script>-->
+<!--    // Мобильное меню-->
+<!--    const mobileMenuBtn = document.getElementById('mobileMenuBtn');-->
+<!--    const mobileMenu = document.getElementById('mobileMenu');-->
+<!--    if (mobileMenuBtn && mobileMenu) {-->
+<!--        mobileMenuBtn.addEventListener('click', () => {-->
+<!--            mobileMenu.classList.toggle('hidden');-->
+<!--        });-->
+<!--    }-->
 
-    // Закрытие мобильного меню при клике вне его
-    document.addEventListener('click', function(event) {
-        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
-            const isClickInside = mobileMenu.contains(event.target) || mobileMenuBtn.contains(event.target);
-            if (!isClickInside) {
-                mobileMenu.classList.add('hidden');
-            }
-        }
-    });
+<!--    // Закрытие мобильного меню при клике вне его-->
+<!--    document.addEventListener('click', function(event) {-->
+<!--        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {-->
+<!--            const isClickInside = mobileMenu.contains(event.target) || mobileMenuBtn.contains(event.target);-->
+<!--            if (!isClickInside) {-->
+<!--                mobileMenu.classList.add('hidden');-->
+<!--            }-->
+<!--        }-->
+<!--    });-->
 
-    // Поиск (пока заглушка)
-    const searchIcon = document.getElementById('searchIcon');
-    if (searchIcon) {
-        searchIcon.addEventListener('click', function() {
-            alert('Функция поиска в разработке');
-        });
-    }
-</script>
+<!--    // Поиск (пока заглушка)-->
+<!--    const searchIcon = document.getElementById('searchIcon');-->
+<!--    if (searchIcon) {-->
+<!--        searchIcon.addEventListener('click', function() {-->
+<!--            alert('Функция поиска в разработке');-->
+<!--        });-->
+<!--    }-->
+<!--</script>-->

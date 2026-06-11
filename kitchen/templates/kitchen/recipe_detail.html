@@ -382,6 +382,14 @@ css
                                     {% endwith %}
                                 </div>
                             </div>
+                            <!-- ========== ИЗОБРАЖЕНИЕ ШАГА ========== -->
+                            {% if step.recipe_step_image %}
+                            <div class="mb-3 rounded-lg overflow-hidden">
+                                <img src="{{ step.recipe_step_image.url }}" alt="{{ step.title }}"
+                                     class="w-full max-h-64 object-cover rounded-lg cursor-pointer hover:opacity-90 transition"
+                                     onclick="openImageModal('{{ step.recipe_step_image.url }}')">
+                            </div>
+                            {% endif %}
 
                             <p class="step-description text-gray-600 mt-1">{{ step.instruction }}</p>
 
@@ -499,28 +507,47 @@ css
                 </div>
             </div>
 
-            <!-- Список ингредиентов -->
+            <!-- Список ингредиентов и продуктов -->
             <ul class="space-y-2 text-gray-700" id="ingredientsList">
-                {% for item in ingredients %}
+                {% for item in recipe.food_items.all %}
                 <li class="ingredient-row flex justify-between items-center gap-2 py-2 border-b border-gray-100 last:border-0"
                     data-id="{{ item.id }}"
-                    data-name="{{ item.ingredient.name }}"
+                    data-type="{{ item.food_type }}"
+                    data-name="{{ item.food_name }}"
                     data-base-quantity="{{ item.quantity }}"
                     data-unit="{{ item.unit }}">
                     <div class="flex items-center gap-2 flex-1">
-                        <input type="checkbox" id="ingredient_{{ item.id }}" class="ingredient-checkbox accent-amber-700 w-4 h-4">
-                        <label for="ingredient_{{ item.id }}" class="text-sm cursor-pointer">{{ item.ingredient.name }}</label>
+                        <input type="checkbox" id="food_{{ item.id }}" class="ingredient-checkbox accent-amber-700 w-4 h-4">
+                        <label for="food_{{ item.id }}" class="text-sm cursor-pointer">
+                            {{ item.food_name }}
+                            {% if item.food_type == 'product' %}
+                            <span class="text-xs text-gray-400 ml-1">🏭 готовый продукт</span>
+                            {% endif %}
+                        </label>
                     </div>
                     <div class="flex items-center gap-1">
                         <span class="ingredient-amount font-mono bg-white px-2 py-0.5 rounded text-sm border">{{ item.quantity }} {{ item.unit }}</span>
-                        <button class="chain-btn text-gray-400 hover:text-amber-600 transition p-1" data-id="{{ item.id }}" data-name="{{ item.ingredient.name }}" data-quantity="{{ item.quantity }}" data-unit="{{ item.unit }}" title="Сделать основным для пересчёта">
+                        <button class="chain-btn text-gray-400 hover:text-amber-600 transition p-1"
+                                data-id="{{ item.id }}"
+                                data-name="{{ item.food_name }}"
+                                data-quantity="{{ item.quantity }}"
+                                data-unit="{{ item.unit }}"
+                                title="Сделать основным для пересчёта">
                             <i class="fas fa-link"></i>
                         </button>
-                        <button class="replace-btn text-gray-400 hover:text-blue-600 transition p-1" data-id="{{ item.id }}" data-name="{{ item.ingredient.name }}" title="Заменить ингредиент">
+                        <!-- Кнопка замены только для ингредиентов, не для продуктов -->
+                        {% if item.food_type == 'ingredient' %}
+                        <button class="replace-btn text-gray-400 hover:text-blue-600 transition p-1"
+                                data-id="{{ item.ingredient.id }}"
+                                data-name="{{ item.food_name }}"
+                                title="Заменить ингредиент">
                             <i class="fas fa-exchange-alt"></i>
                         </button>
+                        {% endif %}
                         <button class="info-btn text-gray-400 hover:text-amber-600 transition p-1"
-                                data-id="{{ item.ingredient.id }}" data-name="{{ item.ingredient.name }}" title="Информация об ингредиенте">
+                                data-id="{% if item.food_type == 'ingredient' %}{{ item.ingredient.id }}{% else %}{{ item.product.id }}{% endif %}"
+                                data-name="{{ item.food_name }}"
+                                title="Информация">
                             <i class="fas fa-info-circle"></i>
                         </button>
                     </div>

@@ -37,5 +37,8 @@ urlpatterns = [
 
     path('api/update_progress/', views.update_component_progress, name='update_progress'),
 
+    # импорт с сайта pbprog
+    path('api/import-ingredient/', views.import_ingredient, name='import_ingredient'),
+
 
 ]

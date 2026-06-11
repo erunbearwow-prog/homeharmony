@@ -1,11 +1,14 @@
 from django.contrib import admin
 from django import forms
 from django.utils.html import format_html
+from django.db.models.functions import Replace
+from django.db.models import F
 from .models import (
     Cuisine, Diet, IngredientCategory, Ingredient,
     Recipe, RecipeStep, RecipeIngredient, CookingMethod,
     IngredientPreparation, RecommendedUtensil, IngredientSubstitution,
-    CookingMethodSubstitution, UtensilSubstitution, ProfessionalIngredient
+    CookingMethodSubstitution, UtensilSubstitution, ProfessionalIngredient,
+    Product, RecipeFoodItem,
 )
 
 
@@ -58,13 +61,25 @@ class IngredientSubstitutionInline(admin.TabularInline):
     verbose_name_plural = '✅ Возможные замены (прямо в этом рецепте)'
     classes = ['collapse']
 
+class RecipeIngredientForm(forms.ModelForm):
+    class Meta:
+        model=RecipeIngredient
+        fields = '__all__'
 
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['ingredient'].queryset = (
+            Ingredient.objects
+            .annotate(lower_name_ru=F('name_ru'))
+            .order_by('lower_name_ru')
+        )
 class RecipeIngredientInline(admin.TabularInline):
     model = RecipeIngredient
+    form = RecipeIngredientForm
     extra = 0  # ← не создаём пустых форм
     min_num = 0  # ← минимум 0 форм
     fields = ['ingredient', 'quantity', 'unit', 'notes', 'is_scalable', 'edit_substitutions']
-    autocomplete_fields = ['ingredient']
+    # autocomplete_fields = ['ingredient']
     readonly_fields = ['edit_substitutions']
     verbose_name = 'Ингредиент'
     verbose_name_plural = 'Ингредиенты'
@@ -137,15 +152,39 @@ class RecipeStepInline(admin.StackedInline):
     fk_name = 'recipe'
     extra = 1
     ordering = ['order']
+    classes = ['collapse']
 
-    fields = (
-        ('order', 'title'),
-        ('instruction',),
-        ('cooking_method', 'ingredient_preparation'),
-        ('duration', 'temperature'),
-        ('recommended_utensils',),
-        ('subrecipe', 'subrecipe_base_ingredient', 'subrecipe_base_quantity'),
-    )
+    fieldsets = [
+        ('Номер и описание', {
+            'fields': ['order', 'title', 'instruction', 'duration', 'temperature', 'recipe_step_image'],
+            'classes': ['collapse'],
+        }),
+        ('Метод и подготовка', {
+            'fields': ['cooking_method', 'ingredient_preparation'],
+            'classes': ['collapse'],
+        }),
+        ('Время и температура', {
+            'fields': ['duration', 'temperature'],
+            'classes': ['collapse'],
+        }),
+        ('Утварь', {
+            'fields': ['recommended_utensils'],
+            'classes': ['collapse'],
+        }),
+        ('Вложенный рецепт', {
+            'fields': ['subrecipe', 'subrecipe_base_ingredient', 'subrecipe_base_quantity'],
+            'classes': ['collapse'],
+        }),
+    ]
+
+    # fields = (
+    #     ('order', 'title'),
+    #     ('instruction',),
+    #     ('cooking_method', 'ingredient_preparation'),
+    #     ('duration', 'temperature'),
+    #     ('recommended_utensils',),
+    #     ('subrecipe', 'subrecipe_base_ingredient', 'subrecipe_base_quantity'),
+    # )
 
     # autocomplete_fields = ['subrecipe', 'subrecipe_base_ingredient', 'cooking_method', 'ingredient_preparation']
 
@@ -154,6 +193,40 @@ class RecipeStepInline(admin.StackedInline):
     filter_horizontal = ['recommended_utensils']
     verbose_name = 'Шаг приготовления'
     verbose_name_plural = 'Шаги приготовления'
+
+
+class RecipeFoodItemForm(forms.ModelForm):
+    """Форма для выбора ингредиента или продукта"""
+
+    class Meta:
+        model = RecipeFoodItem
+        fields = '__all__'
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        # Добавляем оба поля, но один будет скрыт через JS
+        self.fields['ingredient'].queryset = Ingredient.objects.all().order_by('name')
+        self.fields['product'].queryset = Product.objects.all().order_by('name')
+        self.fields['ingredient'].widget.attrs['class'] = 'ingredient-select'
+        self.fields['product'].widget.attrs['class'] = 'product-select'
+        self.fields['unit'].widget.attrs['style'] = 'width: 100px;'
+
+
+class RecipeFoodItemInline(admin.TabularInline):
+    """Inline для добавления ингредиентов/продуктов в рецепт"""
+    model = RecipeFoodItem
+    form = RecipeFoodItemForm
+    extra = 1
+    fields = ['ingredient', 'product', 'quantity', 'unit', 'notes', 'is_scalable']
+    verbose_name = "Ингредиент / продукт"
+    verbose_name_plural = "Ингредиенты и продукты"
+    classes = ['collapse']
+
+    class Media:
+        css = {
+            'all': ('admin/css/food_item.css',)
+        }
+    #     js = ('admin/js/food_item.js',)
 
 
 # ======================= ОСНОВНАЯ РЕГИСТРАЦИЯ RECIPE =======================
@@ -166,6 +239,7 @@ class RecipeAdmin(admin.ModelAdmin):
     search_fields = ['title', 'description', 'author']
     filter_horizontal = ['diet_tags', 'related_recipes']
     date_hierarchy = 'created_at'
+    readonly_fields = ['total_time']
 
     fieldsets = [
         ('Основная информация', {
@@ -191,7 +265,7 @@ class RecipeAdmin(admin.ModelAdmin):
         """Динамически подставляем inline в зависимости от is_professional"""
         if obj and obj.is_professional:
             return [RecipeStepInline, ProfessionalIngredientInline]
-        return [RecipeStepInline, RecipeIngredientInline]
+        return [RecipeStepInline, RecipeFoodItemInline]
 
     # ДОБАВИТЬ ЭТОТ МЕТОД
     def recipe_type_badge(self, obj):
@@ -205,7 +279,7 @@ class RecipeAdmin(admin.ModelAdmin):
     recipe_type_badge.short_description = 'Тип'
     recipe_type_badge.admin_order_field = 'is_professional'
 
-    # inlines = [RecipeStepInline, RecipeIngredientInline]
+    # inlines = [RecipeStepInline, RecipeFoodItemInline]
 
 
 # ======================= ОСТАЛЬНЫЕ РЕГИСТРАЦИИ =======================
@@ -293,6 +367,7 @@ class IngredientSubstitutionAdmin(admin.ModelAdmin):
 # kitchen/admin.py - добавить в конец файла
 from .models import Ingredient, IngredientCategory
 
+
 @admin.register(IngredientCategory)
 class IngredientCategoryAdmin(admin.ModelAdmin):
     list_display = ['name', 'parent', 'sort_order']
@@ -300,13 +375,16 @@ class IngredientCategoryAdmin(admin.ModelAdmin):
     search_fields = ['name']
     list_editable = ['sort_order']
 
+
 @admin.register(Ingredient)
 class IngredientAdmin(admin.ModelAdmin):
+    list_per_page = 10
     save_on_top = True
-    list_display = ['name', 'name_ru', 'category', 'calories', 'protein', 'fat', 'carbohydrates', 'is_common']
+    list_display = ['name', 'name_ru', 'calories', 'protein', 'fat', 'carbohydrates', 'fiber', 'sugar', 'category']
     list_filter = ['category', 'is_common']
     search_fields = ['name', 'name_ru']
-    list_editable = ['name_ru', 'calories', 'protein', 'fat', 'carbohydrates', 'is_common']
+    list_editable = ['name_ru', 'category']
+    ordering = ['name_normalized']
     fieldsets = (
         ('Основная информация', {'fields': ('name', 'name_ru', 'fdc_id', 'description', 'description_ru', 'image', 'category', 'is_common')}),
         ('Макронутриенты (на 100г)', {'fields': ('calories', 'protein', 'fat', 'carbohydrates', 'fiber', 'sugar')}),
@@ -315,3 +393,41 @@ class IngredientAdmin(admin.ModelAdmin):
         ('Минералы', {'fields': ('calcium', 'iron', 'magnesium', 'phosphorus', 'potassium', 'sodium', 'zinc', 'copper', 'manganese', 'selenium')}),
         ('Дополнительно', {'fields': ('water', 'ash', 'data_source'), 'classes': ('collapse',)}),
     )
+
+    def change_view(self, request, object_id, form_url='', extra_context=None):
+        """Добавляем кнопки навигации в контекст"""
+        if object_id:
+            extra_context = extra_context or {}
+            current = Ingredient.objects.get(id=object_id)
+
+            # Находим следующий и предыдущий
+            next_ingredient = Ingredient.objects.filter(id__gt=current.id).order_by('id').first()
+            prev_ingredient = Ingredient.objects.filter(id__lt=current.id).order_by('-id').first()
+
+            extra_context['next_ingredient'] = next_ingredient
+            extra_context['prev_ingredient'] = prev_ingredient
+            extra_context['current_id'] = int(object_id)
+
+            # Общее количество
+            extra_context['total_count'] = Ingredient.objects.count()
+            extra_context['current_index'] = Ingredient.objects.filter(id__lte=current.id).count()
+
+        return super().change_view(request, object_id, form_url, extra_context=extra_context)
+
+    class Media:
+        css = {
+            'all': ('admin/css/ingredient_nav.css',)
+        }
+
+
+@admin.register(Product)
+class ProductAdmin(admin.ModelAdmin):
+    list_display = ['name', 'brand', 'nutriscore_grade', 'nova_group']
+    list_filter = ['nutriscore_grade', 'nova_group']
+    search_fields = ['name', 'brand', 'code']
+    fieldsets = (
+        ('Основная информация', {'fields': ('code', 'name', 'name_ru', 'brand', 'quantity')}),
+        ('Состав', {'fields': ('categories', 'ingredients_text', 'countries_tags')}),
+        ('Оценки', {'fields': ('nutriscore_grade', 'nova_group', 'image')}),
+    )
+

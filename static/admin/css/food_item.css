@@ -1,0 +1,28 @@
+/* static/admin/css/food_item.css */
+.field-ingredient, .field-product {
+    width: 40%;
+}
+
+.field-ingredient select, .field-product select {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Стили для переключателя */
+.food-item-type-switch {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.food-item-type-switch button {
+    padding: 5px 12px;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+    cursor: pointer;
+}
+
+.food-item-type-switch button.active {
+    background: #79aec8;
+    color: white;
+    border-color: #79aec8;
+}
