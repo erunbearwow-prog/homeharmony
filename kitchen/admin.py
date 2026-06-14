@@ -577,18 +577,31 @@ class IngredientAdmin(admin.ModelAdmin):
         from django.shortcuts import render
         from django.http import HttpResponseRedirect
 
-        if 'apply' in request.POST:
+        print(f"=== bulk_assign_category called ===")
+        print(f"Request method: {request.method}")
+        print(f"POST data: {request.POST}")
+
+        if request.method == 'POST' and 'apply' in request.POST:
+            print("=== APPLY BUTTON PRESSED ===")
             category_id = request.POST.get('category_id')
+            print(f"category_id: {category_id}")
+
             if category_id:
                 category = IngredientCategory.objects.get(id=category_id)
                 updated = queryset.update(category=category)
                 self.message_user(request, f'Категория "{category}" назначена {updated} ингредиентам')
                 return HttpResponseRedirect(request.get_full_path())
+            else:
+                self.message_user(request, 'Пожалуйста, выберите категорию', level='ERROR')
+                return HttpResponseRedirect(request.get_full_path())
 
-        # Правильный путь к шаблону
+        # Получаем все категории для отображения
+        all_categories = IngredientCategory.objects.all()
+        print(f"Всего категорий для отображения: {all_categories.count()}")
+
         return render(request, 'admin/kitchen/ingredient/bulk_assign_category.html', {
             'queryset': queryset,
-            'categories': IngredientCategory.objects.all(),
+            'categories': all_categories,
             'title': 'Массовое назначение категории ингредиентам'
         })
 
