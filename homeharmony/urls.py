@@ -2,8 +2,10 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from kitchen.views import get_child_categories
 
 urlpatterns = [
+    path('admin/api/category-children/', get_child_categories, name='category-children'),
     path('admin/', admin.site.urls),
     path('', include('pages.urls')),
     path('cooking/', include('kitchen.urls')),
@@ -15,6 +17,9 @@ urlpatterns = [
     path('community/', include('community.urls')),
     path('knowledge/', include('knowledge.urls')),
     path('accounts/', include('accounts.urls')),
+
+
+
 ]
 
 if settings.DEBUG:

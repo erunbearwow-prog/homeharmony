@@ -860,3 +860,15 @@ def import_ingredient(request):
         return JsonResponse({'error': 'Invalid JSON'}, status=400)
     except Exception as e:
         return JsonResponse({'error': str(e)}, status=500)
+
+
+from django.http import JsonResponse
+from kitchen.models import IngredientCategory
+
+def get_child_categories(request):
+    """Возвращает дочерние категории для AJAX запроса"""
+    parent_id = request.GET.get('parent_id')
+    if parent_id:
+        categories = IngredientCategory.objects.filter(parent_id=parent_id).order_by('name').values('id', 'name')
+        return JsonResponse({'categories': list(categories)})
+    return JsonResponse({'categories': []})

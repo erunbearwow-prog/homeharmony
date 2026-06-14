@@ -1,7 +1,6 @@
 from django.contrib import admin
 from django import forms
 from django.utils.html import format_html
-from django.db.models.functions import Replace
 from django.db.models import F
 from .models import (
     Cuisine, Diet, IngredientCategory, Ingredient,
@@ -63,6 +62,7 @@ class IngredientSubstitutionInline(admin.TabularInline):
     verbose_name_plural = '✅ Возможные замены (прямо в этом рецепте)'
     classes = ['collapse']
 
+
 class RecipeIngredientForm(forms.ModelForm):
     class Meta:
         model=RecipeIngredient
@@ -75,6 +75,8 @@ class RecipeIngredientForm(forms.ModelForm):
             .annotate(lower_name=F('name'))
             .order_by('lower_name')
         )
+
+
 class RecipeIngredientInline(admin.TabularInline):
     model = RecipeIngredient
     form = RecipeIngredientForm
@@ -370,6 +372,138 @@ class IngredientSubstitutionAdmin(admin.ModelAdmin):
 # kitchen/admin.py - добавить в конец файла
 from .models import Ingredient, IngredientCategory
 
+# форма ввода категории ингредиента
+# kitchen/admin.py - ПОЛНОСТЬЮ ЗАМЕНИТЕ класс IngredientCategoryForm на этот:
+
+class IngredientCategoryForm(forms.ModelForm):
+    category_level_1 = forms.ModelChoiceField(
+        queryset=IngredientCategory.objects.filter(parent__isnull=True).order_by('name'),
+        required=False,
+        label='Категория 1-го уровня'
+    )
+    category_level_2 = forms.ModelChoiceField(
+        queryset=IngredientCategory.objects.none(),
+        required=False,
+        label='Категория 2-го уровня'
+    )
+    category_level_3 = forms.ModelChoiceField(
+        queryset=IngredientCategory.objects.none(),
+        required=False,
+        label='Категория 3-го уровня'
+    )
+
+    class Meta:
+        model = Ingredient
+        fields = '__all__'
+        exclude = ['category']
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        # Получаем текущую категорию
+        current_category = self.instance.category if self.instance and self.instance.pk else None
+
+        print(f"=== FORM INIT ===")
+        print(f"current_category: {current_category}")
+
+        if current_category:
+            print(f"current_category.level: {current_category.level}")
+
+            if current_category.level == 0:
+                # Корневая категория
+                self.fields['category_level_1'].initial = current_category
+                self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
+                    parent=current_category
+                ).order_by('name')
+                print(f"Level 0: level1 initial = {current_category}")
+
+            elif current_category.level == 1:
+                # Категория 2-го уровня
+                self.fields['category_level_1'].initial = current_category.parent
+                self.fields['category_level_2'].initial = current_category
+                self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
+                    parent=current_category.parent
+                ).order_by('name')
+                self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
+                    parent=current_category
+                ).order_by('name')
+                print(f"Level 1: level1 initial = {current_category.parent}")
+                print(f"Level 1: level2 initial = {current_category}")
+                print(f"Level 1: level2 queryset count = {self.fields['category_level_2'].queryset.count()}")
+
+            elif current_category.level == 2:
+                # Категория 3-го уровня
+                self.fields['category_level_1'].initial = current_category.root_parent
+                self.fields['category_level_2'].initial = current_category.second_level_parent
+                self.fields['category_level_3'].initial = current_category
+                self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
+                    parent=current_category.root_parent
+                ).order_by('name')
+                self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
+                    parent=current_category.second_level_parent
+                ).order_by('name')
+                print(f"Level 2: level1 initial = {current_category.root_parent}")
+                print(f"Level 2: level2 initial = {current_category.second_level_parent}")
+                print(f"Level 2: level3 initial = {current_category}")
+        else:
+            print("No current_category")
+            self.fields['category_level_2'].queryset = IngredientCategory.objects.none()
+            self.fields['category_level_3'].queryset = IngredientCategory.objects.none()
+
+        # Динамическая загрузка при POST
+        if self.is_bound:
+            if 'category_level_1' in self.data and self.data.get('category_level_1'):
+                try:
+                    level_1_id = int(self.data.get('category_level_1'))
+                    self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
+                        parent_id=level_1_id
+                    ).order_by('name')
+                    print(f"POST: loaded level2 with parent_id={level_1_id}")
+                except (ValueError, TypeError):
+                    pass
+
+            if 'category_level_2' in self.data and self.data.get('category_level_2'):
+                try:
+                    level_2_id = int(self.data.get('category_level_2'))
+                    self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
+                        parent_id=level_2_id
+                    ).order_by('name')
+                    print(f"POST: loaded level3 with parent_id={level_2_id}")
+                except (ValueError, TypeError):
+                    pass
+
+        print(f"=== FINAL INIT VALUES ===")
+        print(f"level1 initial: {self.fields['category_level_1'].initial}")
+        print(f"level2 initial: {self.fields['category_level_2'].initial}")
+        print(f"level3 initial: {self.fields['category_level_3'].initial}")
+        print(f"=== END INIT ===")
+
+    def clean(self):
+        cleaned_data = super().clean()
+        level_1 = cleaned_data.get('category_level_1')
+        level_2 = cleaned_data.get('category_level_2')
+        level_3 = cleaned_data.get('category_level_3')
+
+        if level_3:
+            cleaned_data['category'] = level_3
+        elif level_2:
+            cleaned_data['category'] = level_2
+        elif level_1:
+            cleaned_data['category'] = level_1
+        else:
+            cleaned_data['category'] = None
+
+        return cleaned_data
+
+    def save(self, commit=True):
+        instance = super().save(commit=False)
+        instance.category = self.cleaned_data.get('category')
+
+        if commit:
+            instance.save()
+            self.save_m2m()
+
+        return instance
 
 @admin.register(IngredientCategory)
 class IngredientCategoryAdmin(admin.ModelAdmin):
@@ -382,20 +516,24 @@ class IngredientCategoryAdmin(admin.ModelAdmin):
     ordering = ['sort_order', 'name']
 
 
+# ======================= РЕГИСТРАЦИЯ ИНГРЕДИЕНТОВ =======================
 @admin.register(Ingredient)
 class IngredientAdmin(admin.ModelAdmin):
-    list_per_page = 10
+    form = IngredientCategoryForm
+    list_per_page = 20
     save_on_top = True
     list_display = ['name', 'category', 'calories', 'protein', 'fat', 'carbohydrates', 'fiber', 'sugar', 'is_common']
     list_filter = ['category', 'is_common']
     search_fields = ['name']
-    list_editable = ['category']
     ordering = ['name_normalized']
-    # autocomplete_fields = ['category']
 
     fieldsets = (
         ('Основная информация', {
-            'fields': ('name', 'fdc_id', 'description', 'image', 'category', 'is_common')
+            'fields': ('name', 'fdc_id', 'description', 'image', 'is_common')
+        }),
+        ('Категория', {  # ← Добавили отдельный раздел для категории
+            'fields': ('category_level_1', 'category_level_2', 'category_level_3'),
+            'description': 'Выберите категорию ингредиента (три уровня вложенности)'
         }),
         ('Макронутриенты (на 100г)', {
             'fields': ('calories', 'protein', 'fat', 'carbohydrates', 'fiber', 'sugar')
@@ -420,6 +558,49 @@ class IngredientAdmin(admin.ModelAdmin):
         }),
     )
 
+    def get_category_hierarchy(self, obj):
+        """Отображает иерархию категории в списке"""
+        if obj.category:
+            if obj.category.level == 2:
+                return f"{obj.category.parent.parent} → {obj.category.parent} → {obj.category}"
+            elif obj.category.level == 1:
+                return f"{obj.category.parent} → {obj.category}"
+            else:
+                return obj.category.name
+        return '-'
+
+    get_category_hierarchy.short_description = 'Категория'
+    actions = ['bulk_assign_category']
+
+    def bulk_assign_category(self, request, queryset):
+        """Массовое назначение категории выбранным ингредиентам"""
+        from django.shortcuts import render
+        from django.http import HttpResponseRedirect
+
+        if 'apply' in request.POST:
+            category_id = request.POST.get('category_id')
+            if category_id:
+                category = IngredientCategory.objects.get(id=category_id)
+                updated = queryset.update(category=category)
+                self.message_user(request, f'Категория "{category}" назначена {updated} ингредиентам')
+                return HttpResponseRedirect(request.get_full_path())
+
+        # Правильный путь к шаблону
+        return render(request, 'admin/kitchen/ingredient/bulk_assign_category.html', {
+            'queryset': queryset,
+            'categories': IngredientCategory.objects.all(),
+            'title': 'Массовое назначение категории ингредиентам'
+        })
+
+    bulk_assign_category.short_description = "Назначить категорию выбранным ингредиентам"
+
+
+    class Media:
+        js = ['admin/js/category_chain.js']  # Не нужно подключать jquery.init.js
+        css = {
+            'all': ('admin/css/category_select.css',)
+        }
+
     def change_view(self, request, object_id, form_url='', extra_context=None):
         """Добавляем кнопки навигации в контекст"""
         if object_id:
@@ -440,10 +621,7 @@ class IngredientAdmin(admin.ModelAdmin):
 
         return super().change_view(request, object_id, form_url, extra_context=extra_context)
 
-    class Media:
-        css = {
-            'all': ('admin/css/ingredient_nav.css',)
-        }
+
 
 
 @admin.register(Product)

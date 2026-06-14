@@ -113,6 +113,33 @@ class IngredientCategory(models.Model):
     def __str__(self):
         return self.name
 
+    @property
+    def level(self):
+        """Возвращает уровень вложенности (0, 1, 2)"""
+        if self.parent is None:
+            return 0
+        elif self.parent.parent is None:
+            return 1
+        else:
+            return 2
+
+    @property
+    def root_parent(self):
+        """Возвращает корневую категорию (1 уровень)"""
+        if self.level == 0:
+            return None
+        elif self.level == 1:
+            return self
+        else:  # level == 2
+            return self.parent
+
+    @property
+    def second_level_parent(self):
+        """Возвращает родителя 2 уровня"""
+        if self.level == 2:
+            return self.parent
+        return None
+
 
 # ======================= 3. ИНГРЕДИЕНТЫ =======================
 class Ingredient(models.Model):
