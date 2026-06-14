@@ -91,7 +91,7 @@ WSGI_APPLICATION = 'homeharmony.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'homeharmony_db',
+        'NAME': 'homeharmony_new',
         'USER': 'hh',
         'PASSWORD': 'hh123',
         'HOST': 'localhost',

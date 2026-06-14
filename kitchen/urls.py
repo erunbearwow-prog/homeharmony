@@ -35,6 +35,11 @@ urlpatterns = [
 
     path('api/steps/<int:recipe_id>/', views.get_step_states, name='get_step_states'),
 
+    # Страницы кухонь мира
+    path('cuisine/<slug:slug>/', views.cuisine_detail, name='cuisine_detail'),
+
+
+    # СЛУЖЕБНЫЕ И СЕРВИСНЫЕ API
     path('api/update_progress/', views.update_component_progress, name='update_progress'),
 
     # импорт с сайта pbprog

@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-
-{% block title %}{{ ingredient.name }} | База ингредиентов{% endblock %}
-
+{% block title %}{{ cuisine.name }} | Кухни мира{% endblock %}
 {% block content %}
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
@@ -30,7 +28,7 @@
             <li>
                 <div class="flex items-center">
                     <i class="fas fa-chevron-right text-gray-400 text-xs mx-1"></i>
-                    <span class="text-amber-700 font-medium">{{ ingredient.name }}</span>
+                    <span class="text-amber-700 font-medium">{{ cuisine.name }}</span>
                 </div>
             </li>
         </ol>
@@ -49,8 +47,8 @@
     <div class="grid lg:grid-cols-3 gap-8">
         <!-- Левая колонка: информация -->
         <div class="lg:col-span-2">
-            <h1 class="text-3xl md:text-4xl font-bold serif mb-4">{{ ingredient.name }}</h1>
-            <p class="text-gray-600 mb-6">{{ ingredient.description_ru|default:"Описание ингредиента будет добавлено позже."|safe }}</p>
+            <h1 class="text-3xl md:text-4xl font-bold serif mb-4">{{ cuisine.name }}</h1>
+            <p class="text-gray-600 mb-6">{{ cuisine.description|default:"Описание ингредиента будет добавлено позже."|safe }}</p>
 
             <!-- Полная таблица пищевой ценности -->
             <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden mb-6">
@@ -63,15 +61,15 @@
 <!--                        <h3 class="font-semibold text-gray-700 mb-3 pb-2 border-b">🔥 Макронутриенты</h3>-->
                         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                             <div class="text-center p-3 bg-gray-50 rounded-lg">
-                                <div class="text-2xl font-bold text-amber-700">{{ ingredient.calories|default:"—" }}</div>
+                                <div class="text-2xl font-bold text-amber-700">{{ cuisine.calories|default:"—" }}</div>
                                 <div class="text-sm text-gray-500">ккал</div>
                             </div>
                             <div class="text-center p-3 bg-gray-50 rounded-lg">
-                                <div class="text-2xl font-bold text-amber-700">{{ ingredient.protein|default:"—" }}</div>
+                                <div class="text-2xl font-bold text-amber-700">{{ cuisine.protein|default:"—" }}</div>
                                 <div class="text-sm text-gray-500">Белки, г</div>
                             </div>
                             <div class="text-center p-3 bg-gray-50 rounded-lg">
-                                <div class="text-2xl font-bold text-amber-700">{{ ingredient.fat|default:"—" }}</div>
+                                <div class="text-2xl font-bold text-amber-700">{{ cuisine.fat|default:"—" }}</div>
                                 <div class="text-sm text-gray-500">Жиры, г</div>
                             </div>
                             <div class="text-center p-3 bg-gray-50 rounded-lg">
@@ -130,53 +128,12 @@
                 </div>
             </div>
 
-            <!-- Рецепты с этим ингредиентом -->
-            {% if page_obj %}
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-                <div class="bg-gray-50 px-6 py-3 border-b border-gray-200">
-                    <h2 class="text-xl font-bold serif">🍳 Рецепты с {{ ingredient.name }}</h2>
-                </div>
-                <div class="p-6">
-                    <div class="grid md:grid-cols-2 gap-4">
-                        {% for recipe_ing in page_obj %}
-                        <a href="{% url 'kitchen:recipe_detail' recipe_ing.recipe.id %}"
-                           class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-amber-50 transition">
-                            {% if recipe_ing.recipe.image %}
-                            <img src="{{ recipe_ing.recipe.image.url }}" class="w-12 h-12 rounded-lg object-cover">
-                            {% else %}
-                            <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                                <i class="fas fa-utensils text-amber-600"></i>
-                            </div>
-                            {% endif %}
-                            <div>
-                                <div class="font-medium">{{ recipe_ing.recipe.title }}</div>
-                                <div class="text-xs text-gray-500">{{ recipe_ing.quantity|floatformat:0 }} {{ recipe_ing.unit }}</div>
-                            </div>
-                        </a>
-                        {% endfor %}
-                    </div>
-
-                    <!-- Пагинация рецептов -->
-                    {% if page_obj.has_other_pages %}
-                    <div class="flex justify-center gap-2 mt-6">
-                        {% if page_obj.has_previous %}
-                        <a href="?page={{ page_obj.previous_page_number }}" class="px-3 py-1 border rounded hover:bg-gray-50">←</a>
-                        {% endif %}
-                        <span class="px-3 py-1 bg-amber-600 text-white rounded">{{ page_obj.number }}</span>
-                        {% if page_obj.has_next %}
-                        <a href="?page={{ page_obj.next_page_number }}" class="px-3 py-1 border rounded hover:bg-gray-50">→</a>
-                        {% endif %}
-                    </div>
-                    {% endif %}
-                </div>
-            </div>
-            {% endif %}
         </div>
 
         <!-- Правая колонка: категория, изображение -->
         <div class="lg:col-span-1">
             <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sticky top-4">
-                {% if ingredient.image %}
+                {% if cuisine.image %}
                 <img src="{{ ingredient.image.url }}" alt="{{ ingredient.name }}" class="w-full rounded-xl mb-4">
                 {% else %}
                 <div class="w-full h-48 bg-amber-100 rounded-xl flex items-center justify-center mb-4">
@@ -185,36 +142,8 @@
                 {% endif %}
 
                 <div class="space-y-4">
-                    <div>
-                        <h3 class="font-semibold text-gray-700 mb-1">Категория</h3>
-                        <p class="text-gray-600">{{ ingredient.category|default:"Не указана" }}</p>
-                    </div>
-
-<!--                    <div>-->
-<!--                        <h3 class="font-semibold text-gray-700 mb-1">🔗 Источник данных</h3>-->
-<!--                        <p class="text-gray-600">{{ ingredient.data_source|default:"USDA FoodData Central" }}</p>-->
-<!--                    </div>-->
-
-<!--                    <div>-->
-<!--                        <h3 class="font-semibold text-gray-700 mb-1">📅 Последнее обновление</h3>-->
-<!--                        <p class="text-gray-600">{{ ingredient.last_update|date:"d.m.Y" }}</p>-->
-<!--                    </div>-->
+                    div class="space-y-4"
                 </div>
-
-                <!-- Похожие ингредиенты -->
-                {% if similar_ingredients %}
-                <div class="mt-6 pt-4 border-t">
-                    <h3 class="font-semibold text-gray-700 mb-3">Похожие ингредиенты</h3>
-                    <div class="flex flex-wrap gap-2">
-                        {% for similar in similar_ingredients %}
-                        <a href="{% url 'kitchen:ingredient_detail' similar.pk %}"
-                           class="text-sm bg-gray-100 hover:bg-amber-100 px-3 py-1 rounded-full transition">
-                            {{ similar.name }}
-                        </a>
-                        {% endfor %}
-                    </div>
-                </div>
-                {% endif %}
             </div>
         </div>
     </div>

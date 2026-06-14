@@ -12,13 +12,15 @@ from .models import (
 )
 
 
-# ======================= БАЗОВЫЕ РЕГИСТРАЦИИ =======================
+#======================= БАЗОВЫЕ РЕГИСТРАЦИИ =======================
 
 @admin.register(Cuisine)
 class CuisineAdmin(admin.ModelAdmin):
-    list_display = ['name', 'region', 'created_at']
-    list_filter = ['region']
+    list_display = ['name', 'parent', 'region', 'created_at']
+    list_filter = ['parent', 'region']
     search_fields = ['name', 'region', 'description']
+    list_editable = ['region']
+    readonly_fields = ['slug']
 
 
 @admin.register(Diet)
@@ -70,8 +72,8 @@ class RecipeIngredientForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         self.fields['ingredient'].queryset = (
             Ingredient.objects
-            .annotate(lower_name_ru=F('name_ru'))
-            .order_by('lower_name_ru')
+            .annotate(lower_name=F('name'))
+            .order_by('lower_name')
         )
 class RecipeIngredientInline(admin.TabularInline):
     model = RecipeIngredient
@@ -79,7 +81,7 @@ class RecipeIngredientInline(admin.TabularInline):
     extra = 0  # ← не создаём пустых форм
     min_num = 0  # ← минимум 0 форм
     fields = ['ingredient', 'quantity', 'unit', 'notes', 'is_scalable', 'edit_substitutions']
-    # autocomplete_fields = ['ingredient']
+    autocomplete_fields = ['ingredient']
     readonly_fields = ['edit_substitutions']
     verbose_name = 'Ингредиент'
     verbose_name_plural = 'Ингредиенты'
@@ -205,7 +207,7 @@ class RecipeFoodItemForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         # Добавляем оба поля, но один будет скрыт через JS
-        self.fields['ingredient'].queryset = Ingredient.objects.all().order_by('name')
+        self.fields['ingredient'].queryset = Ingredient.objects.all().order_by('name_normalized')
         self.fields['product'].queryset = Product.objects.all().order_by('name')
         self.fields['ingredient'].widget.attrs['class'] = 'ingredient-select'
         self.fields['product'].widget.attrs['class'] = 'product-select'
@@ -221,6 +223,7 @@ class RecipeFoodItemInline(admin.TabularInline):
     verbose_name = "Ингредиент / продукт"
     verbose_name_plural = "Ингредиенты и продукты"
     classes = ['collapse']
+    # autocomplete_fields = ['ingredient']
 
     class Media:
         css = {
@@ -371,27 +374,50 @@ from .models import Ingredient, IngredientCategory
 @admin.register(IngredientCategory)
 class IngredientCategoryAdmin(admin.ModelAdmin):
     list_display = ['name', 'parent', 'sort_order']
+    list_display_links = ['parent']  # Клик по родителю откроет редактирование
+    list_editable = ['sort_order', 'name']
     list_filter = ['parent']
     search_fields = ['name']
-    list_editable = ['sort_order']
+    list_per_page = 100
+    ordering = ['sort_order', 'name']
 
 
 @admin.register(Ingredient)
 class IngredientAdmin(admin.ModelAdmin):
     list_per_page = 10
     save_on_top = True
-    list_display = ['name', 'name_ru', 'calories', 'protein', 'fat', 'carbohydrates', 'fiber', 'sugar', 'category']
+    list_display = ['name', 'category', 'calories', 'protein', 'fat', 'carbohydrates', 'fiber', 'sugar', 'is_common']
     list_filter = ['category', 'is_common']
-    search_fields = ['name', 'name_ru']
-    list_editable = ['name_ru', 'category']
+    search_fields = ['name']
+    list_editable = ['category']
     ordering = ['name_normalized']
+    # autocomplete_fields = ['category']
+
     fieldsets = (
-        ('Основная информация', {'fields': ('name', 'name_ru', 'fdc_id', 'description', 'description_ru', 'image', 'category', 'is_common')}),
-        ('Макронутриенты (на 100г)', {'fields': ('calories', 'protein', 'fat', 'carbohydrates', 'fiber', 'sugar')}),
-        ('Жиры и холестерин', {'fields': ('saturated_fat', 'trans_fat', 'cholesterol')}),
-        ('Витамины', {'fields': ('vitamin_a', 'vitamin_b1', 'vitamin_b2', 'vitamin_b3', 'vitamin_b6', 'vitamin_b9', 'vitamin_b12', 'vitamin_c', 'vitamin_d', 'vitamin_e', 'vitamin_k')}),
-        ('Минералы', {'fields': ('calcium', 'iron', 'magnesium', 'phosphorus', 'potassium', 'sodium', 'zinc', 'copper', 'manganese', 'selenium')}),
-        ('Дополнительно', {'fields': ('water', 'ash', 'data_source'), 'classes': ('collapse',)}),
+        ('Основная информация', {
+            'fields': ('name', 'fdc_id', 'description', 'image', 'category', 'is_common')
+        }),
+        ('Макронутриенты (на 100г)', {
+            'fields': ('calories', 'protein', 'fat', 'carbohydrates', 'fiber', 'sugar')
+        }),
+        ('Жиры и холестерин', {
+            'fields': ('saturated_fat', 'trans_fat', 'cholesterol'),
+            'classes': ('collapse',)
+        }),
+        ('Витамины', {
+            'fields': ('vitamin_a', 'vitamin_b1', 'vitamin_b2', 'vitamin_b3', 'vitamin_b6',
+                       'vitamin_b9', 'vitamin_b12', 'vitamin_c', 'vitamin_d', 'vitamin_e', 'vitamin_k'),
+            'classes': ('collapse',)
+        }),
+        ('Минералы', {
+            'fields': ('calcium', 'iron', 'magnesium', 'phosphorus', 'potassium', 'sodium',
+                       'zinc', 'copper', 'manganese', 'selenium'),
+            'classes': ('collapse',)
+        }),
+        ('Дополнительно', {
+            'fields': ('water', 'ash', 'data_source'),
+            'classes': ('collapse',)
+        }),
     )
 
     def change_view(self, request, object_id, form_url='', extra_context=None):
@@ -426,7 +452,7 @@ class ProductAdmin(admin.ModelAdmin):
     list_filter = ['nutriscore_grade', 'nova_group']
     search_fields = ['name', 'brand', 'code']
     fieldsets = (
-        ('Основная информация', {'fields': ('code', 'name', 'name_ru', 'brand', 'quantity')}),
+        ('Основная информация', {'fields': ('code', 'name', 'brand', 'quantity')}),
         ('Состав', {'fields': ('categories', 'ingredients_text', 'countries_tags')}),
         ('Оценки', {'fields': ('nutriscore_grade', 'nova_group', 'image')}),
     )

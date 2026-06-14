@@ -18,6 +18,53 @@ def home(request):
 def recipe(request):
     return render(request, 'kitchen/cooking_recipe.html')
 
+def cuisine_detail(request, slug):
+    """Детальная страница кухни мира по slug"""
+    ingredient = get_object_or_404(Cuisine, slug=slug)
+    return _render_quisine_detail(request, ingredient)
+
+def _render_quisine_detail(request, cuisine):
+    """Общая логика для детальной страницы ингредиента"""
+
+    # Рецепты с этим ингредиентом
+    # cuisine = cuisine.recipe_uses.select_related('recipe').order_by('-recipe__created_at')
+
+    # Пагинация рецептов
+    # paginator = Paginator(cuisine, 12)
+    # page_number = request.GET.get('page')
+    # page_obj = paginator.get_page(page_number)
+
+    # Параметры возврата (для навигации)
+    return_to = request.GET.get('return_to')
+    return_title = request.GET.get('return_title')
+    return_step = request.GET.get('return_step')
+    return_context = request.GET.get('return_context')
+    return_mode = request.GET.get('return_mode')
+    return_meat = request.GET.get('return_meat')
+    return_portions = request.GET.get('return_portions')
+    ratio = request.GET.get('ratio')
+
+    # # Похожие ингредиенты (из той же категории)
+    # similar_cuisine = Cuisine.objects.filter(
+    #     category=cuisine.category
+    # ).exclude(id=cuisine.id)[:6]
+
+    context = {
+        'cuisine': cuisine,
+        # 'page_obj': page_obj,
+        # 'similar_ingredients': similar_ingredients,
+        'return_to': return_to,
+        'return_title': return_title,
+        'return_step': return_step,
+        'return_context': return_context,
+        'return_mode': return_mode,
+        'return_meat': return_meat,
+        'return_portions': return_portions,
+        'ratio': ratio,
+        'title': cuisine.name,
+    }
+    return render(request, 'kitchen/cuisine_detail.html', context)
+
 
 @require_http_methods(['GET'])
 def get_method_details(request, method_id):
