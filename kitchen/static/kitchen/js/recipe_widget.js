@@ -172,6 +172,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         updateSubrecipeLinks();
         setupSubrecipeLinks();
+        setTimeout(updateNutritionOnChange, 100);
     }
 
     // ======================= ОБНОВЛЕНИЕ URL =======================
@@ -544,6 +545,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             updateURL();
         }
+        setTimeout(updateNutritionOnChange, 50);
     }
 
     // Навешиваем обработчики на кнопки режимов
@@ -621,7 +623,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Сброс базового ингредиента (остаёмся в режиме продуктов)
-if (resetBaseBtn) {
+    if (resetBaseBtn) {
     resetBaseBtn.addEventListener('click', function() {
         // 1. Сбрасываем базовый ингредиент
         currentBaseIngredient = null;
@@ -1398,6 +1400,169 @@ function getCookie(name) {
     }
     return cookieValue;
 }
+
+
+// ======================= ПЕРЕСЧЕТ КБЖУ ДЛЯ ЛЮБИТЕЛЬСКИХ РЕЦЕПТОВ =======================
+
+// Функция для получения пищевой ценности ингредиента
+const nutritionCache = {};
+
+async function fetchIngredientNutrition(ingredientId) {
+    if (nutritionCache[ingredientId]) return nutritionCache[ingredientId];
+
+    try {
+        const response = await fetch(`/cooking/api/ingredient/${ingredientId}/`);
+        if (response.ok) {
+            const data = await response.json();
+            nutritionCache[ingredientId] = {
+                calories: data.calories || 0,
+                protein: data.protein || 0,
+                fat: data.fat || 0,
+                carbohydrates: data.carbohydrates || 0
+            };
+            return nutritionCache[ingredientId];
+        }
+    } catch (error) {
+        console.error(`Ошибка загрузки данных для ингредиента ${ingredientId}:`, error);
+    }
+    return { calories: 0, protein: 0, fat: 0, carbohydrates: 0 };
+}
+
+// Функция для пересчета КБЖУ
+async function recalculateNutrition() {
+    const rows = document.querySelectorAll('#ingredientsList .ingredient-row');
+    let totalCalories = 0;
+    let totalProtein = 0;
+    let totalFat = 0;
+    let totalCarbs = 0;
+
+    // Проверяем, есть ли ингредиенты
+    if (rows.length === 0) {
+        console.log('Нет ингредиентов для расчета КБЖУ');
+        return;
+    }
+
+    // Собираем все промисы для загрузки данных
+    const nutritionPromises = Array.from(rows).map(async (row) => {
+        const infoBtn = row.querySelector('.info-btn');
+        const ingredientId = infoBtn?.dataset.id;
+        if (!ingredientId) return null;
+
+        const amountSpan = row.querySelector('.ingredient-amount');
+        const amountText = amountSpan?.innerText || '';
+        const amountMatch = amountText.match(/^([\d\.]+)/);
+        if (!amountMatch) return null;
+
+        const amount = parseFloat(amountMatch[1]);
+        const unit = row.dataset.unit || 'г';
+
+        // Получаем КБЖУ на 100г
+        const nutrition = await fetchIngredientNutrition(ingredientId);
+
+        // Пересчитываем КБЖУ в зависимости от единицы измерения
+        let multiplier = 1;
+        if (unit === 'г' || unit === 'мл') {
+            multiplier = amount / 100;
+        } else if (unit === 'кг' || unit === 'л') {
+            multiplier = (amount * 1000) / 100;
+        } else if (unit === 'шт' || unit === 'ст.л.' || unit === 'ч.л.' || unit === 'зубч.') {
+            // Для штучных продуктов нужно приблизительное значение веса
+            let estimatedWeight = 0;
+            if (unit === 'шт') estimatedWeight = 100;
+            else if (unit === 'ст.л.') estimatedWeight = 15;
+            else if (unit === 'ч.л.') estimatedWeight = 5;
+            else if (unit === 'зубч.') estimatedWeight = 10;
+            multiplier = (amount * estimatedWeight) / 100;
+        }
+
+        return {
+            calories: nutrition.calories * multiplier,
+            protein: nutrition.protein * multiplier,
+            fat: nutrition.fat * multiplier,
+            carbs: nutrition.carbohydrates * multiplier
+        };
+    });
+
+    const results = await Promise.all(nutritionPromises);
+
+    for (const result of results) {
+        if (result) {
+            totalCalories += result.calories;
+            totalProtein += result.protein;
+            totalFat += result.fat;
+            totalCarbs += result.carbs;
+        }
+    }
+
+    // Получаем количество порций (используем глобальную переменную currentMode)
+    let servings = parseInt(document.getElementById('portionsSlider')?.value) || 4;
+    const portionsSlider = document.getElementById('portionsSlider');
+    const baseServings = parseInt(portionsSlider?.getAttribute('data-base')) || servings;
+
+    // Если в режиме продуктов, пересчитываем порции
+    if (typeof currentMode !== 'undefined' && currentMode === 'products' && currentBaseIngredient) {
+        const ratio = currentBaseIngredient.currentValue / currentBaseIngredient.originalValue;
+        const currentPortions = Math.round(baseServings * ratio);
+        if (currentPortions > 0 && currentPortions <= 50) {
+            servings = currentPortions;
+        }
+    }
+
+    // Пересчет на порцию
+    const perServingCalories = totalCalories / servings;
+    const perServingProtein = totalProtein / servings;
+    const perServingFat = totalFat / servings;
+    const perServingCarbs = totalCarbs / servings;
+
+    // Обновляем значения на странице - ищем элементы
+    const kcalSpan = document.querySelector('.kcal-value, .nutrition-item:first-child .nutrition-value');
+    const proteinSpan = document.querySelector('.protein-value, .nutrition-item:nth-child(2) .nutrition-value');
+    const fatSpan = document.querySelector('.fat-value, .nutrition-item:nth-child(3) .nutrition-value');
+    const carbsSpan = document.querySelector('.carbs-value, .nutrition-item:nth-child(4) .nutrition-value');
+
+    if (kcalSpan) kcalSpan.innerText = Math.round(perServingCalories);
+    if (proteinSpan) proteinSpan.innerText = Math.round(perServingProtein);
+    if (fatSpan) fatSpan.innerText = Math.round(perServingFat);
+    if (carbsSpan) carbsSpan.innerText = Math.round(perServingCarbs);
+
+    console.log(`КБЖУ пересчитано: ${Math.round(perServingCalories)} ккал, ${Math.round(perServingProtein)}г белков, ${Math.round(perServingFat)}г жиров, ${Math.round(perServingCarbs)}г углеводов на ${servings} порций`);
+}
+
+// Функция для обновления КБЖУ при изменении количества
+async function updateNutritionOnChange() {
+    await recalculateNutrition();
+}
+
+// Инициализация КБЖУ при загрузке
+async function initNutrition() {
+    console.log('Инициализация КБЖУ...');
+    // Небольшая задержка для загрузки ингредиентов
+    setTimeout(async () => {
+        await recalculateNutrition();
+    }, 500);
+
+    // Наблюдатель за изменениями в списке ингредиентов
+    const observer = new MutationObserver(async function() {
+        await recalculateNutrition();
+    });
+
+    const ingredientsList = document.getElementById('ingredientsList');
+    if (ingredientsList) {
+        observer.observe(ingredientsList, { childList: true, subtree: true, characterData: true });
+    }
+}
+
+// Вызываем при загрузке
+document.addEventListener('DOMContentLoaded', async function() {
+    // Данные ингредиентов
+    const ingredients = [];
+    let currentRatio = 1;
+    let currentBaseIngredient = null;
+    let currentReplaceIngredient = null;
+    let currentMode = 'portions';
+    // Даем время на загрузку остальных скриптов
+    setTimeout(initNutrition, 500);
+});
 
 // Делаем функции глобальными для доступа из HTML
 window.showMethodDetails = showMethodDetails;

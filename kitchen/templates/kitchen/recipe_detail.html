@@ -197,10 +197,13 @@ css
 
             <!-- Блок информации -->
             <div class="flex flex-wrap gap-2 sm:gap-3 mt-4 text-sm text-gray-600">
-                <span class="bg-amber-100 text-amber-800 px-2 sm:px-3 py-1 rounded-full"><i class="far fa-clock mr-1"></i> {{ recipe.total_time }} мин</span>
-                <span class="bg-green-100 text-green-800 px-2 sm:px-3 py-1 rounded-full"><i class="fas fa-chart-line mr-1"></i> {{ recipe.get_difficulty_display }}</span>
-                <span class="bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full"><i class="fas fa-utensils mr-1"></i> {{ recipe.servings }} порций</span>
-                <span class="bg-purple-100 text-purple-800 px-2 sm:px-3 py-1 rounded-full"><i class="fas fa-fire mr-1"></i> {{ recipe.calories }} ккал</span>
+                <span class="bg-amber-100 text-amber-800 px-2 sm:px-3 py-1 rounded-full text-xs"><i class="far fa-clock text-xs mr-1"></i> {{ recipe.total_time }} мин</span>
+                <span class="bg-green-100 text-green-800 px-2 sm:px-3 py-1 rounded-full text-xs"><i class="fas fa-chart-line text-xs mr-1"></i> {{ recipe.get_difficulty_display }}</span>
+                <span class="bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs"><i class="fa-sharp fa-solid text-xs fa-utensils"></i> {{ recipe.servings }} порций</span>
+                <span class="bg-purple-100 text-purple-800 px-2 sm:px-3 py-1 rounded-full text-xs"><i class="fas fa-fire mr-1"></i> {{ recipe.calories|default:0 }} ккал</span>
+                <span class="bg-purple-100 text-purple-800 px-2 sm:px-3 py-1 rounded-full text-xs"><i class="fa-sharp fa-solid fa-egg text-xs mr-1"></i> {{ recipe.protein|default:0 }} белки</span>
+                <span class="bg-purple-100 text-purple-800 px-2 sm:px-3 py-1 rounded-full text-xs"><i class="fa-sharp fa-solid fa-droplet text-xs mr-1"></i> {{ recipe.fat|default:0 }} жиры</span>
+                <span class="bg-purple-100 text-purple-800 px-2 sm:px-3 py-1 rounded-full text-xs"><i class="fa-sharp fa-solid fa-bread-slice text-xs mr-1"></i> {{ recipe.carbs|default:0 }} углеводы</span>
             </div>
 
             <div class="flex flex-wrap gap-3 mt-5 no-print">
@@ -568,13 +571,17 @@ css
 
             <!-- Пищевая ценность -->
             {% if recipe.calories or recipe.protein or recipe.fat or recipe.carbs %}
+            <!-- Пищевая ценность -->
             <div class="mt-4 pt-3 border-t border-gray-200">
                 <h4 class="font-semibold text-gray-700 text-sm mb-2">Пищевая ценность (на порцию)</h4>
-                <div class="grid grid-cols-4 gap-2 text-center text-xs">
-                    <div><span class="font-semibold text-amber-700">{{ recipe.calories }}</span> <span class="text-gray-500">ккал</span></div>
-                    <div><span class="font-semibold text-amber-700">{{ recipe.protein }}</span> <span class="text-gray-500">белки</span></div>
-                    <div><span class="font-semibold text-amber-700">{{ recipe.fat }}</span> <span class="text-gray-500">жиры</span></div>
-                    <div><span class="font-semibold text-amber-700">{{ recipe.carbs }}</span> <span class="text-gray-500">углеводы</span></div>
+                <div class="grid grid-cols-4 gap-2 text-center text-xs" id="nutritionValues">
+
+
+
+                    <div><span class="kcal-value font-semibold text-amber-700">{{ recipe.calories|default:0 }}</span> <span class="text-gray-500">ккал</span></div>
+                    <div><span class="protein-value font-semibold text-amber-700">{{ recipe.protein|default:0 }}</span> <span class="text-gray-500">белки</span></div>
+                    <div><span class="fat-value font-semibold text-amber-700">{{ recipe.fat|default:0 }}</span> <span class="text-gray-500">жиры</span></div>
+                    <div><span class="carbs-value font-semibold text-amber-700">{{ recipe.carbs|default:0 }}</span> <span class="text-gray-500">углеводы</span></div>
                 </div>
             </div>
             {% endif %}

@@ -513,14 +513,14 @@ class IngredientCategoryAdmin(admin.ModelAdmin):
     list_filter = ['parent']
     search_fields = ['name']
     list_per_page = 100
-    ordering = ['sort_order', 'name']
+    ordering = ['name']
 
 
 # ======================= РЕГИСТРАЦИЯ ИНГРЕДИЕНТОВ =======================
 @admin.register(Ingredient)
 class IngredientAdmin(admin.ModelAdmin):
     form = IngredientCategoryForm
-    list_per_page = 20
+    list_per_page = 30
     save_on_top = True
     list_display = ['name', 'category', 'calories', 'protein', 'fat', 'carbohydrates', 'fiber', 'sugar', 'is_common']
     list_filter = ['category', 'is_common']

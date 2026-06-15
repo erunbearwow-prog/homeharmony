@@ -108,7 +108,7 @@ class IngredientCategory(models.Model):
     class Meta:
         verbose_name = "Категория ингредиентов"
         verbose_name_plural = "Категории ингредиентов"
-        ordering = ['sort_order', 'name']
+        ordering = ['name']
 
     def __str__(self):
         return self.name

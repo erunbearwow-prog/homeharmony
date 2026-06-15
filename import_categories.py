@@ -1,41 +1,391 @@
-# quick_import_categories.py
-import json
 import os
-import sys
 import django
 
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'homeharmony.settings')
 django.setup()
 
 from kitchen.models import IngredientCategory
 
-# Укажите путь к вашему файлу
-json_file = 'Ingredients_categories/categories_export_20260611_212137.json'
+# Сначала удаляем все существующие категории
+print("Удаляем старые категории...")
+IngredientCategory.objects.all().delete()
+print("Все старые категории удалены\n")
 
-with open(json_file, 'r', encoding='utf-8') as f:
-    data = json.load(f)
+# Создаем корневые категории (уровень 1)
+roots = [
+    'Овощи',
+    'Фрукты и ягоды',
+    'Грибы',
+    'Зелень сушеная, пряности, специи, приправы, соли',
+    'Бобовые, крупы, мука, макароны',
+    'Хлеб, выпечка, хлебобулочные изделия',
+    'Молоко, молочка, яйца',
+    'Мясо, птица, субпродукты',
+    'Мясные деликатесы, колбасы, копчености',
+    'Рыба, морепродукты, икра',
+    'Жиры, масла, соусы, заправки',
+    'Сладости, десерты, выпечка фасованная',
+    'Безалкогольные напитки',
+    'Алкоголь',
+    'Замороженные полуфабрикаты',
+    'Прочее',
+]
 
-created = 0
-for item in data:
-    parent = None
-    if item.get('parent_id'):
-        try:
-            parent = IngredientCategory.objects.get(id=item['parent_id'])
-        except IngredientCategory.DoesNotExist:
-            pass
-
-    obj, is_created = IngredientCategory.objects.update_or_create(
-        id=item['id'],
-        defaults={
-            'name': item['name'],
-            'parent': parent,
-            'icon': item.get('icon', ''),
-            'sort_order': item.get('sort_order', 0),
-        }
+print("Создаем корневые категории:")
+root_objects = {}
+for i, name in enumerate(roots, 1):
+    cat = IngredientCategory.objects.create(
+        name=name,
+        parent=None,
+        sort_order=i
     )
-    if is_created:
-        created += 1
-        print(f"✅ {obj.name}")
+    root_objects[name] = cat
+    print(f"  {i}. {name}")
 
-print(f"\n✅ Импортировано {created} категорий")
+print(f"\nСоздано {len(root_objects)} корневых категорий\n")
+
+# ======================= 1. ОВОЩИ =======================
+print("=" * 50)
+print("1. ОВОЩИ")
+veg = root_objects['Овощи']
+
+# Простые подкатегории овощей (без детей)
+simple_veg = [
+    'Баклажаны', 'Кукуруза', 'Горошек стручковый', 'Стручковая фасоль',
+    'Спаржа', 'Артишоки', 'Оливки/маслины'
+]
+
+for name in simple_veg:
+    cat = IngredientCategory.objects.create(name=name, parent=veg, sort_order=0)
+    print(f"  ├── {name}")
+
+# Сложные подкатегории с детьми
+veg_complex = {
+    'Картофель': ['Картофель мытый', 'Картофель для жарки/фри', 'Картофель для варки/пюре', 'Картофель молодой', 'Картофель сладкий (батат)'],
+    'Морковь': ['Морковь мытая', 'Морковь бэби', 'Морковь пучковая'],
+    'Лук': ['Лук репчатый', 'Лук красный', 'Лук-порей', 'Лук-шалот', 'Лук зеленый', 'Лук-батун', 'Лук-севок'],
+    'Капуста': ['Капуста белокочанная', 'Капуста краснокочанная', 'Капуста пекинская', 'Капуста цветная', 'Брокколи', 'Брюссельская капуста', 'Кольраби', 'Кале'],
+    'Томаты (свежие)': ['Томаты розовые', 'Томаты красные', 'Томаты черри', 'Томаты сливка', 'Томаты бычьи сердца'],
+    'Огурцы (свежие)': ['Огурцы грунтовые', 'Огурцы гладкие', 'Огурцы корнишоны'],
+    'Перцы': ['Перец сладкий болгарский', 'Перец острый (чили, халапеньо)', 'Перец стручковый'],
+    'Зелень': ['Укроп', 'Петрушка', 'Кинза', 'Базилик', 'Розмарин', 'Тимьян', 'Мята', 'Лук зеленый', 'Шпинат', 'Руккола', 'Салат'],
+    'Тыквенные': ['Тыква', 'Кабачок', 'Патиссон', 'Цукини'],
+    'Корнеплоды': ['Свекла', 'Редис', 'Редька', 'Дайкон', 'Хрен (корень)', 'Имбирь (свежий)', 'Сельдерей'],
+    'Овощные консервы': [
+        'Горошек консервированный', 'Кукуруза консервированная', 'Фасоль консервированная',
+        'Огурцы маринованные', 'Томаты цельные (очищенные)', 'Томаты кусочками (в собственном соку)',
+        'Томаты резаные (в соке)', 'Томаты черри консервированные', 'Паста томатная',
+        'Томатный сок', 'Томатный соус (базовый)', 'Лечо', 'Икра кабачковая',
+        'Икра баклажанная', 'Аджика (овощная паста)', 'Соленья', 'Зажарка овощная'
+    ],
+}
+
+for parent_name, children in veg_complex.items():
+    parent = IngredientCategory.objects.create(name=parent_name, parent=veg, sort_order=0)
+    print(f"  ├── {parent_name}")
+    for child_name in children:
+        child = IngredientCategory.objects.create(name=child_name, parent=parent, sort_order=0)
+        print(f"  │   └── {child_name}")
+
+# ======================= 2. ФРУКТЫ И ЯГОДЫ =======================
+print("\n" + "=" * 50)
+print("2. ФРУКТЫ И ЯГОДЫ")
+fruits = root_objects['Фрукты и ягоды']
+
+# Простые подкатегории
+simple_fruits = ['Яблоки', 'Груши', 'Бананы', 'Виноград', 'Арбузы, дыни', 'Авокадо']
+for name in simple_fruits:
+    cat = IngredientCategory.objects.create(name=name, parent=fruits, sort_order=0)
+    print(f"  ├── {name}")
+
+# Сложные подкатегории
+fruits_complex = {
+    'Цитрусы': ['Лимоны', 'Лайм', 'Апельсины', 'Мандарины', 'Грейпфруты', 'Помело'],
+    'Косточковые': ['Персики', 'Нектарины', 'Абрикосы', 'Слива', 'Вишня', 'Черешня'],
+    'Ягоды': ['Клубника', 'Малина', 'Смородина', 'Крыжовник', 'Черника', 'Клюква', 'Ежевика', 'Барбарис'],
+    'Тропические фрукты': ['Ананас', 'Манго', 'Киви', 'Папайя', 'Маракуйя', 'Фейхоа', 'Хурма', 'Гранат'],
+    'Сухофрукты': ['Изюм', 'Курага', 'Урюк', 'Чернослив', 'Финики', 'Инжир сушеный', 'Яблоки сушеные', 'Груши сушеные', 'Вишня сушеная', 'Клюква сушеная', 'Бананы сушеные', 'Манго сушеное', 'Ананас сушеный', 'Папайя сушеная', 'Смесь сухофруктов'],
+    'Фруктовые консервы': ['Персики половинками (в сиропе)', 'Абрикосы половинками (в сиропе)', 'Ананас кусочками', 'Вишня в сиропе', 'Мандарины дольками', 'Компот из фруктов', 'Фрукты в собственном соку', 'Цукаты', 'Сухофрукты в шоколаде'],
+    'Орехи и семена': ['Грецкий орех', 'Фундук', 'Миндаль', 'Кешью', 'Арахис', 'Кедровый орех', 'Пекан', 'Макадамия', 'Фисташки', 'Каштаны', 'Кокос', 'Семена подсолнечника', 'Семена тыквы', 'Семена льна', 'Семена кунжута', 'Семена чиа', 'Семена конопли', 'Мак', 'Орехи в глазури', 'Смесь орехов'],
+}
+
+for parent_name, children in fruits_complex.items():
+    parent = IngredientCategory.objects.create(name=parent_name, parent=fruits, sort_order=0)
+    print(f"  ├── {parent_name}")
+    for child_name in children:
+        child = IngredientCategory.objects.create(name=child_name, parent=parent, sort_order=0)
+        print(f"  │   └── {child_name}")
+
+# ======================= 3. ГРИБЫ =======================
+print("\n" + "=" * 50)
+print("3. ГРИБЫ")
+mushrooms = root_objects['Грибы']
+
+mushrooms_complex = {
+    'Грибы культивируемые': ['Шампиньоны', 'Вешенки', 'Шиитаке', 'Эноки'],
+    'Грибы лесные': ['Белые грибы', 'Подосиновики', 'Подберезовики', 'Лисички', 'Опята', 'Маслята', 'Грузди'],
+    'Грибы сушеные': ['Белые сушеные', 'Подосиновики сушеные', 'Лисички сушеные', 'Шиитаке сушеные', 'Грибной порошок'],
+}
+
+for parent_name, children in mushrooms_complex.items():
+    parent = IngredientCategory.objects.create(name=parent_name, parent=mushrooms, sort_order=0)
+    print(f"  ├── {parent_name}")
+    for child_name in children:
+        child = IngredientCategory.objects.create(name=child_name, parent=parent, sort_order=0)
+        print(f"  │   └── {child_name}")
+
+# ======================= 4. СПЕЦИИ =======================
+print("\n" + "=" * 50)
+print("4. ЗЕЛЕНЬ СУШЕНАЯ, ПРЯНОСТИ, СПЕЦИИ, ПРИПРАВЫ, СОЛИ")
+spices = root_objects['Зелень сушеная, пряности, специи, приправы, соли']
+
+spices_list = [
+    'Соль', 'Перец', 'Паприка', 'Травы сушеные', 'Пряности', 'Семена пряные',
+    'Восточные смеси', 'Приправы для блюд', 'Уксусы', 'Лавровый лист',
+    'Горчица', 'Хрен', 'Аджика', 'Имбирь молотый, куркума, шафран', 'Ваниль', 'Барбарис (сушеный)'
+]
+
+for name in spices_list:
+    cat = IngredientCategory.objects.create(name=name, parent=spices, sort_order=0)
+    print(f"  ├── {name}")
+
+# ======================= 5. БОБОВЫЕ, КРУПЫ, МУКА, МАКАРОНЫ =======================
+print("\n" + "=" * 50)
+print("5. БОБОВЫЕ, КРУПЫ, МУКА, МАКАРОНЫ")
+grains = root_objects['Бобовые, крупы, мука, макароны']
+
+grains_complex = {
+    'Бобовые': ['Горох', 'Фасоль', 'Чечевица', 'Маш', 'Соя'],
+    'Крупы': ['Рис', 'Гречка', 'Овсянка', 'Манка', 'Кукурузная крупа', 'Пшено', 'Перловка', 'Ячка', 'Булгур', 'Кускус', 'Киноа', 'Полба'],
+    'Мука': [],
+    'Отруби': [],
+    'Каши быстрого приготовления': [],
+    'Макароны': ['Спагетти', 'Вермишель', 'Лапша яичная', 'Лазанья', 'Макароны рожки', 'Макароны перья', 'Макароны из твердых сортов', 'Лапша для рамёна', 'Удон', 'Рисовая бумага'],
+    'Смеси для выпечки готовые': [],
+    'Сухие завтраки': [],
+}
+
+for parent_name, children in grains_complex.items():
+    parent = IngredientCategory.objects.create(name=parent_name, parent=grains, sort_order=0)
+    print(f"  ├── {parent_name}")
+    for child_name in children:
+        child = IngredientCategory.objects.create(name=child_name, parent=parent, sort_order=0)
+        print(f"  │   └── {child_name}")
+
+# ======================= 6. ХЛЕБ =======================
+print("\n" + "=" * 50)
+print("6. ХЛЕБ, ВЫПЕЧКА, ХЛЕБОБУЛОЧНЫЕ ИЗДЕЛИЯ")
+bread = root_objects['Хлеб, выпечка, хлебобулочные изделия']
+
+bread_list = [
+    'Хлеб', 'Батоны', 'Булки', 'Лаваш', 'Лепешки',
+    'Тостовый хлеб', 'Сушки, сухари', 'Выпечка свежая',
+    'Замороженное тесто', 'Смеси для выпечки'
+]
+
+for name in bread_list:
+    cat = IngredientCategory.objects.create(name=name, parent=bread, sort_order=0)
+    print(f"  ├── {name}")
+
+# ======================= 7. МОЛОКО, МОЛОЧКА, ЯЙЦА =======================
+print("\n" + "=" * 50)
+print("7. МОЛОКО, МОЛОЧКА, ЯЙЦА")
+dairy = root_objects['Молоко, молочка, яйца']
+
+dairy_simple = [
+    'Молоко', 'Сливки', 'Кефир, йогурт', 'Сметана', 'Творог',
+    'Сливочное масло', 'Маргарин, спреды', 'Сгущенное молоко',
+    'Сухое молоко', 'Растительное молоко', 'Яйца', 'Мороженое', 'Кисломолочные напитки'
+]
+
+for name in dairy_simple:
+    cat = IngredientCategory.objects.create(name=name, parent=dairy, sort_order=0)
+    print(f"  ├── {name}")
+
+# Сыры
+cheeses = IngredientCategory.objects.create(name='Сыры', parent=dairy, sort_order=0)
+print(f"  ├── Сыры")
+
+cheese_types = {
+    'Твердые сыры': ['Пармезан', 'Грюйер', 'Чеддер', 'Российский', 'Голландский', 'Эдам', 'Гауда', 'Маасдам', 'Пекорино', 'Манчего'],
+    'Полутвердые сыры': ['Моцарелла', 'Проволоне', 'Тильзитер', 'Костромской', 'Пошехонский'],
+    'Мягкие сыры': ['Камамбер', 'Бри', 'Рикотта', 'Маскарпоне', 'Филадельфия', 'Фромаж блан'],
+    'Рассольные сыры': ['Фета', 'Брынза', 'Сулугуни', 'Адыгейский', 'Моцарелла (рассольная)', 'Чечил', 'Осетинский'],
+    'Плавленые сыры': ['Янтарь', 'Дружба', 'Колбасный плавленый', 'Сливочный плавленый', 'С сыром и ветчиной'],
+    'Голубые сыры': ['Рокфор', 'Дорблю', 'Горгонзола', 'Стилтон'],
+    'Козьи/овечьи сыры': ['Шевр', 'Брынза овечья', 'Пекорино романо', 'Манаго'],
+}
+
+for cheese_type, cheese_list in cheese_types.items():
+    type_cat = IngredientCategory.objects.create(name=cheese_type, parent=cheeses, sort_order=0)
+    print(f"  │   ├── {cheese_type}")
+    for cheese_name in cheese_list:
+        cheese = IngredientCategory.objects.create(name=cheese_name, parent=type_cat, sort_order=0)
+        print(f"  │   │   └── {cheese_name}")
+
+# ======================= 8. МЯСО, ПТИЦА, СУБПРОДУКТЫ =======================
+print("\n" + "=" * 50)
+print("8. МЯСО, ПТИЦА, СУБПРОДУКТЫ")
+meat = root_objects['Мясо, птица, субпродукты']
+
+meat_complex = {
+    'Говядина': ['Стейк', 'Гуляш', 'Суповой набор', 'Фарш говяжий', 'Вырезка'],
+    'Свинина': ['Окорок', 'Шейка', 'Карбонад', 'Корейка', 'Фарш свиной', 'Ребра'],
+    'Баранина': [],
+    'Курица': ['Филе куриное', 'Окорочка', 'Голень', 'Крылья', 'Фарш куриный'],
+    'Индейка': ['Филе индейки', 'Стейк из индейки'],
+    'Утка': [],
+    'Гусь': [],
+    'Перепел': [],
+    'Цесарка': [],
+    'Мясо кролика': [],
+    'Субпродукты': ['Печень', 'Сердце', 'Язык', 'Почки', 'Желудки'],
+    'Мясные консервы': ['Тушенка говяжья', 'Тушенка свиная', 'Паштет мясной', 'Консервы из птицы'],
+}
+
+for parent_name, children in meat_complex.items():
+    parent = IngredientCategory.objects.create(name=parent_name, parent=meat, sort_order=0)
+    print(f"  ├── {parent_name}")
+    for child_name in children:
+        child = IngredientCategory.objects.create(name=child_name, parent=parent, sort_order=0)
+        print(f"  │   └── {child_name}")
+
+# ======================= 9. МЯСНЫЕ ДЕЛИКАТЕСЫ =======================
+print("\n" + "=" * 50)
+print("9. МЯСНЫЕ ДЕЛИКАТЕСЫ, КОЛБАСЫ, КОПЧЕНОСТИ")
+delicacies = root_objects['Мясные деликатесы, колбасы, копчености']
+
+delicacies_list = [
+    'Колбасы вареные', 'Колбасы копченые', 'Ветчина', 'Бекон, грудинка',
+    'Карбонад, буженина', 'Мясные закуски', 'Паштеты', 'Консервы мясные'
+]
+
+for name in delicacies_list:
+    cat = IngredientCategory.objects.create(name=name, parent=delicacies, sort_order=0)
+    print(f"  ├── {name}")
+
+# Сосиски с подкатегорией
+sausages = IngredientCategory.objects.create(name='Сосиски, сардельки', parent=delicacies, sort_order=0)
+print(f"  ├── Сосиски, сардельки")
+sausage_children = ['Сосиски', 'Сардельки', 'Колбаски для гриля']
+for child_name in sausage_children:
+    child = IngredientCategory.objects.create(name=child_name, parent=sausages, sort_order=0)
+    print(f"  │   └── {child_name}")
+
+# ======================= 10. РЫБА =======================
+print("\n" + "=" * 50)
+print("10. РЫБА, МОРЕПРОДУКТЫ, ИКРА")
+fish = root_objects['Рыба, морепродукты, икра']
+
+fish_complex = {
+    'Рыба морская свежая/мороженая': ['Семга, лосось, форель', 'Треска, минтай', 'Скумбрия, сельдь', 'Сибас, дорадо', 'Палтус, камбала'],
+    'Рыба речная свежая/мороженая': ['Лещ', 'Судак', 'Щука', 'Карп', 'Карась'],
+    'Рыба вяленая, соленая, копченая': [],
+    'Морепродукты': ['Креветки', 'Кальмары', 'Мидии', 'Осьминог', 'Рапаны, гребешок'],
+    'Крабовые палочки, сурими': [],
+    'Икра': [],
+    'Водоросли': ['Нори', 'Ламинария', 'Вакаме', 'Комбу', 'Спирулина'],
+    'Рыбные консервы': ['Тунец', 'Сайра', 'Шпроты', 'Сардины', 'Килька', 'Сельдь в масле', 'Печень трески'],
+    'Пресервы': ['Сельдь в масле', 'Килька анчоусная'],
+}
+
+for parent_name, children in fish_complex.items():
+    parent = IngredientCategory.objects.create(name=parent_name, parent=fish, sort_order=0)
+    print(f"  ├── {parent_name}")
+    for child_name in children:
+        child = IngredientCategory.objects.create(name=child_name, parent=parent, sort_order=0)
+        print(f"  │   └── {child_name}")
+
+# ======================= 11. ЖИРЫ, МАСЛА, СОУСЫ =======================
+print("\n" + "=" * 50)
+print("11. ЖИРЫ, МАСЛА, СОУСЫ, ЗАПРАВКИ")
+oils = root_objects['Жиры, масла, соусы, заправки']
+
+oils_complex = {
+    'Масла растительные': ['Подсолнечное', 'Оливковое', 'Кукурузное', 'Кунжутное', 'Льняное', 'Кокосовое'],
+    'Майонез': [],
+    'Кетчуп': [],
+    'Соусы': ['Тартар', 'Песто', 'Цезарь', 'Терияки', 'Соевый', 'Карри', 'Сырный', 'Грибной'],
+    'Заправки для салатов': [],
+    'Аджика': [],
+    'Горчица': [],
+    'Хрен': [],
+}
+
+for parent_name, children in oils_complex.items():
+    parent = IngredientCategory.objects.create(name=parent_name, parent=oils, sort_order=0)
+    print(f"  ├── {parent_name}")
+    for child_name in children:
+        child = IngredientCategory.objects.create(name=child_name, parent=parent, sort_order=0)
+        print(f"  │   └── {child_name}")
+
+# ======================= 12. СЛАДОСТИ =======================
+print("\n" + "=" * 50)
+print("12. СЛАДОСТИ, ДЕСЕРТЫ, ВЫПЕЧКА ФАСОВАННАЯ")
+sweets = root_objects['Сладости, десерты, выпечка фасованная']
+
+sweets_list = [
+    'Печенье', 'Пряники, коврижка', 'Вафли, бисквиты', 'Кексы, маффины',
+    'Торты', 'Шоколад', 'Конфеты', 'Мармелад, пастила, зефир',
+    'Халва, козинаки', 'Сахар', 'Сиропы', 'Восточные сладости',
+    'Сухофрукты в шоколаде', 'Орехи в глазури'
+]
+
+for name in sweets_list:
+    cat = IngredientCategory.objects.create(name=name, parent=sweets, sort_order=0)
+    print(f"  ├── {name}")
+
+# ======================= 13. БЕЗАЛКОГОЛЬНЫЕ НАПИТКИ =======================
+print("\n" + "=" * 50)
+print("13. БЕЗАЛКОГОЛЬНЫЕ НАПИТКИ")
+soft_drinks = root_objects['Безалкогольные напитки']
+
+soft_drinks_list = ['Вода', 'Соки', 'Лимонады', 'Квас', 'Чай', 'Кофе', 'Какао порошок']
+for name in soft_drinks_list:
+    cat = IngredientCategory.objects.create(name=name, parent=soft_drinks, sort_order=0)
+    print(f"  ├── {name}")
+
+# ======================= 14. АЛКОГОЛЬ =======================
+print("\n" + "=" * 50)
+print("14. АЛКОГОЛЬ")
+alcohol = root_objects['Алкоголь']
+
+alcohol_list = ['Пиво', 'Вино', 'Крепкий алкоголь', 'Ликеры, настойки', 'Вермуты, апероль', 'Сидр, портвейн']
+for name in alcohol_list:
+    cat = IngredientCategory.objects.create(name=name, parent=alcohol, sort_order=0)
+    print(f"  ├── {name}")
+
+# ======================= 15. ЗАМОРОЖЕННЫЕ ПОЛУФАБРИКАТЫ =======================
+print("\n" + "=" * 50)
+print("15. ЗАМОРОЖЕННЫЕ ПОЛУФАБРИКАТЫ")
+frozen = root_objects['Замороженные полуфабрикаты']
+
+frozen_list = [
+    'Овощные смеси замороженные', 'Фрукты/ягоды замороженные', 'Готовые обеды замороженные',
+    'Котлеты замороженные', 'Пельмени, вареники замороженные', 'Блинчики замороженные',
+    'Пицца замороженная', 'Лазанья', 'Картофель фри', 'Морепродукты замороженные',
+    'Рыба замороженная', 'Замороженная выпечка'
+]
+
+for name in frozen_list:
+    cat = IngredientCategory.objects.create(name=name, parent=frozen, sort_order=0)
+    print(f"  ├── {name}")
+
+# ======================= 16. ПРОЧЕЕ =======================
+print("\n" + "=" * 50)
+print("16. ПРОЧЕЕ")
+other = root_objects['Прочее']
+
+other_list = [
+    'Разрыхлители, дрожжи', 'Крахмал', 'Желатин, агар-агар',
+    'Пчелиные продукты', 'Диетические добавки', 'Сублимированные продукты',
+    'Азиатская лапша', 'Загустители, стабилизаторы'
+]
+
+for name in other_list:
+    cat = IngredientCategory.objects.create(name=name, parent=other, sort_order=0)
+    print(f"  ├── {name}")
+
+print("\n" + "=" * 50)
+print(f"✅ ИМПОРТ ЗАВЕРШЕН!")
+print(f"Всего создано категорий: {IngredientCategory.objects.count()}")
