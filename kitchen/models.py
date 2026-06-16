@@ -5,7 +5,7 @@ from slugify import slugify
 from django.urls import reverse
 from django.db.models.functions import Lower
 import os
-from django.db.models.signals import post_delete
+from django.db.models.signals import post_delete, pre_save
 from django.dispatch import receiver
 
 # ======================= ГЛОБАЛЬНЫЕ КОНСТАНТЫ =======================
@@ -232,32 +232,139 @@ class Diet(models.Model):
 
 # ======================= 5. МЕТОДЫ ПРИГОТОВЛЕНИЯ =======================
 class CookingMethod(models.Model):
-    CATEGORY_CHOICES = [
-        ('thermal', 'Тепловая обработка'),
-        ('preparation', 'Подготовка продуктов'),
-        ('shaping', 'Формование'),
-        ('other', 'Прочее'),
+    """Способы кулинарной обработки с научным обоснованием и практическими рекомендациями"""
+
+    # Основные поля
+    name = models.CharField(max_length=100, verbose_name='Название')
+    code = models.CharField(max_length=50, unique=True, verbose_name='Код')
+    description = models.TextField(blank=True, verbose_name='Описание')
+    is_heat_treatment = models.BooleanField(default=True, verbose_name='Тепловая обработка')
+    sort_order = models.IntegerField(default=0, verbose_name='Порядок')
+
+    # Советы и предупреждения
+    tips = models.TextField(blank=True, verbose_name='Советы')
+    common_mistakes = models.TextField(blank=True, verbose_name='Типичные ошибки')
+
+    # Научная база
+    scientific_background = models.TextField(blank=True, verbose_name='Научная база')
+    advanced_notes = models.TextField(blank=True, verbose_name='Для продвинутых')
+
+    # Коэффициенты впитываемости масла для разных продуктов
+    oil_absorption_rates = models.JSONField(
+        default=dict,
+        blank=True,
+        verbose_name='Коэффициенты впитываемости масла',
+        help_text='Формат: {"продукт": 0.08, "продукт2": 0.12}'
+    )
+
+    # Рекомендуемая температура
+    recommended_temperature_min = models.IntegerField(null=True, blank=True, verbose_name='Мин. температура, °C')
+    recommended_temperature_max = models.IntegerField(null=True, blank=True, verbose_name='Макс. температура, °C')
+
+    # Влияние формы нарезки на впитываемость
+    cut_shape_factors = models.JSONField(
+        default=dict,
+        blank=True,
+        verbose_name='Коэффициенты для форм нарезки',
+        help_text='Формат: {"брусочками": 1.0, "соломкой": 1.5, "кубиками": 1.2, "кружочками": 0.8}'
+    )
+
+    BREADING_CHOICES = [
+        ('none', 'Без панировки'),
+        ('flour', 'Только мука'),
+        ('batter', 'Кляр'),
+        ('classic', 'Классическая (мука+яйцо+сухари)'),
+        ('panko', 'Панко (японские сухари)'),
+        ('double', 'Двойная панировка'),
     ]
-    name = models.CharField(max_length=100, unique=True)
-    category = models.CharField(max_length=20, choices=CATEGORY_CHOICES, default='thermal')
-    short_description = models.CharField(max_length=200)
-    description = models.TextField()
-    scientific_background = models.TextField(blank=True)
-    typical_temperature = models.CharField(max_length=50, blank=True)
-    typical_duration = models.CharField(max_length=50, blank=True)
-    tips = models.TextField(blank=True)
-    common_mistakes = models.TextField(blank=True)
-    advanced_notes = models.TextField(blank=True)
-    icon = models.CharField(max_length=50, default='fa-fire')
-    color = models.CharField(max_length=20, default='amber')
-    created_at = models.DateTimeField(auto_now_add=True)
+
+    breading_type = models.CharField(max_length=20, choices=BREADING_CHOICES, default='none',
+                                     verbose_name='Тип панировки')
 
     class Meta:
-        verbose_name = 'Метод приготовления'
-        verbose_name_plural = 'Методы приготовления'
+        verbose_name = 'Способ обработки'
+        verbose_name_plural = 'Способы обработки'
+        ordering = ['sort_order', 'name']
 
     def __str__(self):
         return self.name
+
+# ------------------------ 5.1 Нормы потерь при кулинарной обработке -----------------------------------------
+class ProductLossNorm(models.Model):
+    """Нормы потерь при обработке продуктов"""
+
+    CATEGORY_CHOICES = [
+        ('vegetable', 'Овощи'),
+        ('fruit', 'Фрукты/Ягоды'),
+        ('meat', 'Мясо'),
+        ('poultry', 'Птица'),
+        ('fish', 'Рыба/Морепродукты'),
+        ('grain', 'Крупы/Макароны'),
+        ('mushroom', 'Грибы'),
+        ('dairy', 'Молочные продукты'),
+        ('egg', 'Яйца'),
+    ]
+
+    product_name = models.CharField(max_length=200, verbose_name='Продукт')
+    product_category = models.CharField(max_length=50, choices=CATEGORY_CHOICES, verbose_name='Категория')
+    processing_method = models.ForeignKey(CookingMethod, on_delete=models.CASCADE, verbose_name='Способ обработки')
+
+    # Потери при холодной (механической) обработке, %
+    cold_loss_percent = models.DecimalField(max_digits=5, decimal_places=1, default=0,
+                                            verbose_name='Потери при холодной обработке, %')
+
+    # Потери при тепловой обработке, %
+    heat_loss_percent = models.DecimalField(max_digits=5, decimal_places=1, default=0,
+                                            verbose_name='Потери при тепловой обработке, %')
+
+    # Примечание по сезону (для овощей)
+    season_note = models.CharField(max_length=100, blank=True, verbose_name='Сезон/Примечание')
+
+    # Источник данных
+    source = models.CharField(max_length=100, default='Сборник рецептур', verbose_name='Источник')
+
+    PROCESSING_BEHAVIOR = [
+        ('loss', 'Потери (уменьшение веса)'),
+        ('gain', 'Увеличение веса (впитывание воды)'),
+    ]
+
+    processing_behavior = models.CharField(
+        max_length=10,
+        choices=PROCESSING_BEHAVIOR,
+        default='loss',
+        verbose_name='Поведение при обработке'
+    )
+
+    # Для продуктов, увеличивающихся в весе - коэффициент увеличения
+    # (например, 2.5 для риса: 100г риса = 250г готового)
+    gain_factor = models.DecimalField(
+        max_digits=5,
+        decimal_places=2,
+        null=True,
+        blank=True,
+        verbose_name='Коэффициент увеличения веса'
+    )
+
+    # Для продуктов с потерями - процент потерь
+    # (поля cold_loss_percent и heat_loss_percent уже есть)
+
+    class Meta:
+        verbose_name = 'Норма потерь'
+        verbose_name_plural = 'Нормы потерь'
+        unique_together = ['product_name', 'processing_method', 'season_note']
+
+    def __str__(self):
+        return f'{self.product_name} → {self.processing_method.name}'
+
+    @property
+    def total_loss_percent(self):
+        """Общий процент потерь (холодные + тепловые)"""
+        return (self.cold_loss_percent or 0) + (self.heat_loss_percent or 0)
+
+    @property
+    def yield_coefficient(self):
+        """Коэффициент выхода (1 - потери/100)"""
+        return 1 - self.total_loss_percent / 100
 
 
 # ======================= 6. ПОДГОТОВКА ПРОДУКТОВ =======================
@@ -522,3 +629,9 @@ class UtensilSubstitution(models.Model):
 
     def __str__(self):
         return f"{self.original_utensil.name} → {self.substitute_utensil.name}"
+
+@receiver(pre_save, sender=Recipe)
+def update_recipe_nutrition(sender, instance, **kwargs):
+    if instance.pk:
+        # Пересчитать КБЖУ из ингредиентов
+        pass

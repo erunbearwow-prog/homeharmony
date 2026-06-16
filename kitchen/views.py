@@ -1,16 +1,11 @@
-from django.shortcuts import render
-from django.template.loader import render_to_string
-from django.http import JsonResponse, HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_http_methods
-from django.shortcuts import render, get_object_or_404
-import json
 from .models import (
-    Recipe, RecipeIngredient, RecipeStep, Cuisine,
-    CookingMethod, CookingMethodSubstitution,
-    IngredientPreparation,
-    RecommendedUtensil, UtensilSubstitution
+    RecipeStep, Cuisine,
+    CookingMethodSubstitution,
+    UtensilSubstitution
 )
+from constants.nutrients import NUTRIENTS_MAP, CATEGORY_NAMES, CATEGORY_ORDER
 
 def home(request):
     return render(request, 'kitchen/index.html')
@@ -78,12 +73,8 @@ def get_method_details(request, method_id):
         data = {
             'id': method.id,
             'name': method.name,
-            'icon': method.icon,
-            'short_description': method.short_description,
             'description': method.description,
             'scientific_background': method.scientific_background,
-            'typical_temperature': method.typical_temperature,
-            'typical_duration': method.typical_duration,
             'tips': method.tips,
             'common_mistakes': method.common_mistakes,
             'advanced_notes': method.advanced_notes,
@@ -474,44 +465,15 @@ def get_substitutions(request, recipe_ingredient_id):
 
 # kitchen/views.py
 
-from django.shortcuts import render, get_object_or_404
-from django.core.paginator import Paginator
-from django.db.models import Count, Q
+from django.db.models import Count
 from .models import (
-    Ingredient, RecommendedUtensil, CookingMethod,
+    RecommendedUtensil, CookingMethod,
     IngredientPreparation, Recipe, RecipeIngredient
 )
 
 
 # ======================= ИНГРЕДИЕНТЫ =======================
 
-def ingredient_list(request):
-    """Список всех ингредиентов"""
-    ingredients = Ingredient.objects.annotate(
-        recipes_count=Count('recipe_uses')
-    ).order_by('name')
-
-    print('========================= ingredient_list =========================')
-
-    # Поиск
-    query = request.GET.get('q')
-    if query:
-        ingredients = ingredients.filter(name__icontains=query)
-
-    # Пагинация
-    paginator = Paginator(ingredients, 24)
-    page_number = request.GET.get('page')
-    page_obj = paginator.get_page(page_number)
-
-
-    context = {
-        'page_obj': page_obj,
-        'query': query,
-        'title': 'Ингредиенты',
-        'description': 'База продуктов с пищевой ценностью и использованием в рецептах'
-    }
-    print(request)
-    return render(request, 'kitchen/ingredient_list.html', context)
 
 
 # kitchen/views.py
@@ -523,8 +485,6 @@ def ingredient_list(request):
 from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator
 from django.db.models import Q
-from django.http import JsonResponse
-from .models import Ingredient, IngredientCategory
 
 
 def ingredient_list(request):
@@ -618,10 +578,64 @@ def _render_ingredient_detail(request, ingredient):
         category=ingredient.category
     ).exclude(id=ingredient.id)[:6]
 
+    # Подготавливаем данные о питательных веществах
+    nutrients_data = []
+    for field_name, info in NUTRIENTS_MAP.items():
+        value = getattr(ingredient, field_name, None)
+
+        # Проверяем, что значение существует и не равно 0 (опционально)
+        if value not in (None, '', 0, 0.0):
+            nutrients_data.append({
+                'name': info['name'],
+                'value': value,
+                'unit': info['unit'],
+                'category': info['category'],
+                'icon': info.get('icon', ''),
+                'field': field_name,
+            })
+
+    # Группируем по категориям с сохранением порядка
+    nutrients_by_category = {}
+    for nutrient in nutrients_data:
+        category = nutrient['category']
+        if category not in nutrients_by_category:
+            nutrients_by_category[category] = []
+        nutrients_by_category[category].append(nutrient)
+
+    # Сортируем категории согласно CATEGORY_ORDER
+    sorted_categories = [cat for cat in CATEGORY_ORDER if cat in nutrients_by_category]
+
+    # 👇 ВАЖНО: Подготавливаем данные для каждой категории отдельно
+    # Это позволит обращаться к ним напрямую в шаблоне без фильтров
+    energy_data = nutrients_by_category.get('energy', [])
+    macros_data = nutrients_by_category.get('macros', [])
+    fats_detail_data = nutrients_by_category.get('fats_detail', [])
+    vitamins_data = nutrients_by_category.get('vitamins', [])
+    minerals_data = nutrients_by_category.get('minerals', [])
+    other_data = nutrients_by_category.get('other', [])
+
     context = {
         'ingredient': ingredient,
         'page_obj': page_obj,
         'similar_ingredients': similar_ingredients,
+
+        # Для карточек (все нутриенты)
+        'nutrients_data': nutrients_data,
+
+        # Для таблиц (каждая категория отдельно)
+        'energy_data': energy_data,
+        'macros_data': macros_data,
+        'fats_detail_data': fats_detail_data,
+        'vitamins_data': vitamins_data,
+        'minerals_data': minerals_data,
+        'other_data': other_data,
+
+        # Названия категорий (можно передать или захардкодить в шаблоне)
+        'category_names': CATEGORY_NAMES,
+
+
+        'nutrients_by_category': nutrients_by_category,
+        'sorted_categories': sorted_categories,
         'return_to': return_to,
         'return_title': return_title,
         'return_step': return_step,
@@ -662,8 +676,6 @@ def api_ingredient_detail(request, pk):
         return JsonResponse(data)
     except Ingredient.DoesNotExist:
         return JsonResponse({'error': 'Ингредиент не найден'}, status=404)
-
-
 
 
 # ======================= УТВАРЬ =======================
@@ -815,7 +827,6 @@ def preparation_detail(request, preparation_id):
 # kitchen/views.py
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_http_methods
-from django.http import JsonResponse
 from .models import Ingredient
 import json
 

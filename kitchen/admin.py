@@ -308,21 +308,20 @@ class RecipeStepAdmin(admin.ModelAdmin):
 
 @admin.register(CookingMethod)
 class CookingMethodAdmin(admin.ModelAdmin):
-    list_display = ['name', 'category', 'typical_temperature', 'typical_duration']
-    list_filter = ['category']
+    list_display = ['name', 'code', 'description', 'is_heat_treatment', 'sort_order']
+    # list_filter = ['category']
     search_fields = ['name', 'description']
     fieldsets = [
         ('Основная информация', {
-            'fields': ['name', 'category', 'short_description', 'icon', 'color']
+            'fields': ['name', 'code']
         }),
         ('Подробное описание', {
-            'fields': ['description', 'scientific_background']
-        }),
-        ('Параметры', {
-            'fields': ['typical_temperature', 'typical_duration']
+            'fields': ['description', 'scientific_background'],
+            'classes': ['collapse']
         }),
         ('Советы и ошибки', {
-            'fields': ['tips', 'common_mistakes', 'advanced_notes']
+            'fields': ['tips', 'common_mistakes', 'advanced_notes'],
+            'classes': ['collapse']
         }),
     ]
 
@@ -345,12 +344,12 @@ class RecommendedUtensilAdmin(admin.ModelAdmin):
     image_preview.short_description = 'Изображение'
 
 
-@admin.register(CookingMethodSubstitution)
-class CookingMethodSubstitutionAdmin(admin.ModelAdmin):
-    list_display = ['original_method', 'substitute_method', 'reason']
-    list_filter = ['original_method__category']
-    search_fields = ['original_method__name', 'substitute_method__name', 'reason']
-    autocomplete_fields = ['original_method', 'substitute_method']
+# @admin.register(CookingMethodSubstitution)
+# class CookingMethodSubstitutionAdmin(admin.ModelAdmin):
+#     list_display = ['original_method', 'substitute_method', 'reason']
+#     list_filter = ['original_method__category']
+#     search_fields = ['original_method__name', 'substitute_method__name', 'reason']
+#     autocomplete_fields = ['original_method', 'substitute_method']
 
 
 @admin.register(UtensilSubstitution)
