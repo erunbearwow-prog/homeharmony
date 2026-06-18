@@ -125,20 +125,45 @@ class IngredientCategory(models.Model):
 
     @property
     def root_parent(self):
-        """Возвращает корневую категорию (1 уровень)"""
+        """
+        Возвращает корневую категорию (1-й уровень)
+        Для level 0: возвращает None
+        Для level 1: возвращает саму себя (т.к. это уже категория 1-го уровня)
+        Для level 2: возвращает родителя родителя (категорию 1-го уровня)
+        """
         if self.level == 0:
             return None
         elif self.level == 1:
             return self
         else:  # level == 2
-            return self.parent
+            # Идём вверх до корня
+            current = self
+            while current.parent and current.parent.parent:
+                current = current.parent
+            return current.parent if current.parent else current
 
     @property
     def second_level_parent(self):
-        """Возвращает родителя 2 уровня"""
+        """
+        Возвращает родительскую категорию 2-го уровня (для категорий 3-го уровня)
+        Для level 0: возвращает None
+        Для level 1: возвращает None (т.к. это не 2-й уровень)
+        Для level 2: возвращает родителя (категорию 2-го уровня)
+        """
         if self.level == 2:
             return self.parent
         return None
+
+    @property
+    def full_hierarchy(self):
+        """Возвращает полную иерархию в виде строки"""
+        if self.level == 0:
+            return self.name
+        elif self.level == 1:
+            return f"{self.parent.name} → {self.name}"
+        elif self.level == 2:
+            return f"{self.root_parent.name} → {self.second_level_parent.name} → {self.name}"
+        return self.name
 
 
 # ======================= 3. ИНГРЕДИЕНТЫ =======================

@@ -399,7 +399,6 @@ class IngredientCategoryForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        # Получаем текущую категорию
         current_category = self.instance.category if self.instance and self.instance.pk else None
 
         print(f"=== FORM INIT ===")
@@ -409,40 +408,79 @@ class IngredientCategoryForm(forms.ModelForm):
             print(f"current_category.level: {current_category.level}")
 
             if current_category.level == 0:
-                # Корневая категория
+                # Категория 1-го уровня (корневая)
+                # level1 = текущая категория
+                # level2 = None
+                # level3 = None
+
                 self.fields['category_level_1'].initial = current_category
                 self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
                     parent=current_category
                 ).order_by('name')
                 print(f"Level 0: level1 initial = {current_category}")
 
+
             elif current_category.level == 1:
-                # Категория 2-го уровня
+
+                # Категория 2-го уровня (level 1)
+
+                # level1 = родитель текущей категории (Фрукты и ягоды)
+
+                # level2 = текущая категория (Авокадо)
+
+                # level3 = НЕ ВЫБРАНА (None)
+
                 self.fields['category_level_1'].initial = current_category.parent
+
                 self.fields['category_level_2'].initial = current_category
+
+                # level3 оставляем пустым (None)
+
+                # queryset для level2: дети родителя (т.е. категории 2-го уровня)
+
                 self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
+
                     parent=current_category.parent
+
                 ).order_by('name')
+
+                # queryset для level3: дети текущей категории (т.е. категории 3-го уровня)
+
                 self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
+
                     parent=current_category
+
                 ).order_by('name')
+
                 print(f"Level 1: level1 initial = {current_category.parent}")
+
                 print(f"Level 1: level2 initial = {current_category}")
+
                 print(f"Level 1: level2 queryset count = {self.fields['category_level_2'].queryset.count()}")
 
+                print(f"Level 1: level3 queryset count = {self.fields['category_level_3'].queryset.count()}")
+
             elif current_category.level == 2:
-                # Категория 3-го уровня
-                self.fields['category_level_1'].initial = current_category.root_parent
-                self.fields['category_level_2'].initial = current_category.second_level_parent
+                # Категория 3-го уровня (level 2)
+                # level1 = корневая категория
+                # level2 = родитель (2-й уровень)
+                # level3 = текущая категория
+
+                root = current_category.root_parent
+                second = current_category.second_level_parent
+
+                self.fields['category_level_1'].initial = root
+                self.fields['category_level_2'].initial = second
                 self.fields['category_level_3'].initial = current_category
                 self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
-                    parent=current_category.root_parent
+                    parent=root
                 ).order_by('name')
                 self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
-                    parent=current_category.second_level_parent
+                    parent=second
                 ).order_by('name')
-                print(f"Level 2: level1 initial = {current_category.root_parent}")
-                print(f"Level 2: level2 initial = {current_category.second_level_parent}")
+
+                print(f"Level 2: level1 initial = {root}")
+                print(f"Level 2: level2 initial = {second}")
                 print(f"Level 2: level3 initial = {current_category}")
         else:
             print("No current_category")
@@ -507,8 +545,8 @@ class IngredientCategoryForm(forms.ModelForm):
 @admin.register(IngredientCategory)
 class IngredientCategoryAdmin(admin.ModelAdmin):
     list_display = ['name', 'parent', 'sort_order']
-    list_display_links = ['parent']  # Клик по родителю откроет редактирование
-    list_editable = ['sort_order', 'name']
+    list_display_links = ['name', 'parent']  # Клик по родителю откроет редактирование
+    list_editable = ['sort_order']
     list_filter = ['parent']
     search_fields = ['name']
     list_per_page = 100

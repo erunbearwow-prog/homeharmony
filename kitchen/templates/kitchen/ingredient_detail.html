@@ -36,7 +36,18 @@
         </ol>
     </nav>
 
-    <!-- Блок возврата -->
+    <!-- ======================= ИЗОБРАЖЕНИЕ (только на мобильных) ======================= -->
+    <div class="lg:hidden mb-6">
+        {% if ingredient.image %}
+        <img src="{{ ingredient.image.url }}" alt="{{ ingredient.name }}" class="w-full rounded-xl">
+        {% else %}
+        <div class="w-full h-48 bg-amber-100 rounded-xl flex items-center justify-center">
+            <i class="fas fa-carrot text-6xl text-amber-400"></i>
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- ======================= БЛОК ВОЗВРАТА ======================= -->
     {% if return_to %}
     <div class="mb-4">
         <a href="{{ return_to }}{% if return_mode %}?mode={{ return_mode }}{% endif %}{% if return_portions %}&portions={{ return_portions }}{% endif %}{% if ratio %}&ratio={{ ratio }}{% endif %}"
@@ -46,12 +57,15 @@
     </div>
     {% endif %}
 
+    <!-- ======================= ОСНОВНАЯ СЕТКА ======================= -->
     <div class="grid lg:grid-cols-3 gap-8">
+
+        <!-- Левая колонка -->
         <div class="lg:col-span-2">
             <h1 class="text-3xl md:text-4xl font-bold serif mb-4">{{ ingredient.name }}</h1>
             <p class="text-gray-600 mb-6">{{ ingredient.description|default:"Описание ингредиента будет добавлено позже."|safe }}</p>
 
-            <!-- ПИТАТЕЛЬНАЯ ЦЕННОСТЬ (динамическая, без фильтров) -->
+            <!-- ПИТАТЕЛЬНАЯ ЦЕННОСТЬ (динамическая) -->
             <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden mb-6">
                 <div class="bg-amber-50 px-6 py-3 border-b border-amber-200">
                     <h2 class="text-xl font-bold serif">Пищевая ценность (на 100 г)</h2>
@@ -59,51 +73,27 @@
                 <div class="p-6">
 
                     <!-- Энергия + Макронутриенты (единый блок, 2 колонки, без заголовков) -->
-                        {% if energy_data or macros_data %}
-                        <div class="grid grid-cols-2 md:grid-cols-5 gap-3 mb-6">
-                            {% for nutrient in energy_data %}
-                            <div class="text-center p-3 bg-gray-50 rounded-lg">
-<!--                                <div class="text-xl mb-1">{{ nutrient.icon }}</div>-->
-                                <div class="text-xl font-bold text-amber-700">{{ nutrient.value|floatformat:2 }}</div>
-                                <div class="text-xs text-gray-500">{{ nutrient.name }}</div>
-<!--                                <div class="text-xs text-gray-400">{{ nutrient.unit }}</div>-->
-                            </div>
-                            {% endfor %}
-                            {% for nutrient in macros_data %}
-                            <div class="text-center p-3 bg-gray-50 rounded-lg">
-<!--                                <div class="text-xl mb-1">{{ nutrient.icon }}</div>-->
-                                <div class="text-xl font-bold text-amber-700">{{ nutrient.value|floatformat:2 }}</div>
-                                <div class="text-xs text-gray-500">{{ nutrient.name }}</div>
-<!--                                <div class="text-xs text-gray-400">{{ nutrient.unit }}</div>-->
-                            </div>
-                            {% endfor %}
+                    {% if energy_data or macros_data %}
+                    <div class="grid grid-cols-2 md:grid-cols-5 gap-3 mb-6">
+                        {% for nutrient in energy_data %}
+                        <div class="text-center p-3 bg-gray-50 rounded-lg">
+                            <div class="text-xl font-bold text-amber-700">{{ nutrient.value|floatformat:2 }}</div>
+                            <div class="text-xs text-gray-500">{{ nutrient.name }}</div>
                         </div>
-                        {% endif %}
+                        {% endfor %}
+                        {% for nutrient in macros_data %}
+                        <div class="text-center p-3 bg-gray-50 rounded-lg">
+                            <div class="text-xl font-bold text-amber-700">{{ nutrient.value|floatformat:2 }}</div>
+                            <div class="text-xs text-gray-500">{{ nutrient.name }}</div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
                     <!-- ТАБЛИЦЫ (каждая категория отдельно) -->
                     <div class="grid md:grid-cols-2 gap-6">
 
-                        <!-- Детализация жиров -->
-                        {% if fats_detail_data %}
-                        <div>
-                            <h3 class="font-semibold text-gray-700 mb-3 pb-2 border-b">{{ category_names.fats_detail }}</h3>
-                            <table class="w-full text-sm">
-                                <tbody>
-                                    {% for nutrient in fats_detail_data %}
-                                    <tr class="border-b border-gray-100">
-                                        <td class="py-2 flex items-center gap-2">
-<!--                                            <span>{{ nutrient.icon }}</span>-->
-                                            <span>{{ nutrient.name }}</span>
-                                        </td>
-                                        <td class="py-2 font-semibold text-right">
-                                            {{ nutrient.value|floatformat:2 }} {{ nutrient.unit }}
-                                        </td>
-                                    </tr>
-                                    {% endfor %}
-                                </tbody>
-                            </table>
-                        </div>
-                        {% endif %}
-
+                        <!-- Витамины -->
                         {% if vitamins_data %}
                         <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden mb-6">
                             <div class="bg-amber-50 px-6 py-3 border-b border-amber-200">
@@ -115,13 +105,10 @@
                                         {% for nutrient in vitamins_data %}
                                         <tr class="border-b border-gray-100">
                                             <td class="py-2 flex items-center gap-2">
-<!--                                                <span>{{ nutrient.icon }}</span>-->
                                                 <span>{{ nutrient.name }}</span>
                                             </td>
                                             <td class="py-2 font-semibold text-right">
                                                 {{ nutrient.value|floatformat:2 }}
-
-<!--                                                {{ nutrient.value|floatformat:1 }} {{ nutrient.unit }}-->
                                             </td>
                                         </tr>
                                         {% endfor %}
@@ -143,12 +130,35 @@
                                         {% for nutrient in minerals_data %}
                                         <tr class="border-b border-gray-100">
                                             <td class="py-2 flex items-center gap-2">
-<!--                                                <span>{{ nutrient.icon }}</span>-->
                                                 <span>{{ nutrient.name }}</span>
                                             </td>
                                             <td class="py-2 font-semibold text-right">
                                                 {{ nutrient.value|floatformat:2 }}
-<!--                                                {{ nutrient.value|floatformat:1 }} {{ nutrient.unit }}-->
+                                            </td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        <!-- Детализация жиров -->
+                        {% if fats_detail_data %}
+                        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden mb-6">
+                            <div class="bg-amber-50 px-6 py-3 border-b border-amber-200">
+                                <h3 class="font-semibold text-amber-800">{{ category_names.fats_detail }}, мг</h3>
+                            </div>
+                            <div class="p-6">
+                                <table class="w-full text-sm">
+                                    <tbody>
+                                        {% for nutrient in fats_detail_data %}
+                                        <tr class="border-b border-gray-100">
+                                            <td class="py-2 flex items-center gap-2">
+                                                <span>{{ nutrient.name }}</span>
+                                            </td>
+                                            <td class="py-2 font-semibold text-right">
+                                                {{ nutrient.value|floatformat:2 }}
                                             </td>
                                         </tr>
                                         {% endfor %}
@@ -160,23 +170,26 @@
 
                         <!-- Дополнительно -->
                         {% if other_data %}
-                        <div>
-                            <h3 class="font-semibold text-gray-700 mb-3 pb-2 border-b">{{ category_names.other }}</h3>
-                            <table class="w-full text-sm">
-                                <tbody>
-                                    {% for nutrient in other_data %}
-                                    <tr class="border-b border-gray-100">
-                                        <td class="py-2 flex items-center gap-2">
-<!--                                            <span>{{ nutrient.icon }}</span>-->
-                                            <span>{{ nutrient.name }}</span>
-                                        </td>
-                                        <td class="py-2 font-semibold text-right">
-                                            {{ nutrient.value|floatformat:2 }} {{ nutrient.unit }}
-                                        </td>
-                                    </tr>
-                                    {% endfor %}
-                                </tbody>
-                            </table>
+                        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden mb-6">
+                            <div class="bg-amber-50 px-6 py-3 border-b border-amber-200">
+                                <h3 class="font-semibold text-amber-800">{{ category_names.other }}, мг</h3>
+                            </div>
+                            <div class="p-6">
+                                <table class="w-full text-sm">
+                                    <tbody>
+                                        {% for nutrient in other_data %}
+                                        <tr class="border-b border-gray-100">
+                                            <td class="py-2 flex items-center gap-2">
+                                                <span>{{ nutrient.name }}</span>
+                                            </td>
+                                            <td class="py-2 font-semibold text-right">
+                                                {{ nutrient.value|floatformat:2 }}
+                                            </td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         {% endif %}
 
@@ -227,17 +240,22 @@
             {% endif %}
         </div>
 
-        <!-- Правая колонка: категория, изображение -->
+        <!-- Правая колонка -->
         <div class="lg:col-span-1">
             <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sticky top-4">
-                {% if ingredient.image %}
-                <img src="{{ ingredient.image.url }}" alt="{{ ingredient.name }}" class="w-full rounded-xl mb-4">
-                {% else %}
-                <div class="w-full h-48 bg-amber-100 rounded-xl flex items-center justify-center mb-4">
-                    <i class="fas fa-carrot text-6xl text-amber-400"></i>
-                </div>
-                {% endif %}
 
+                <!-- ИЗОБРАЖЕНИЕ (скрыто на мобильных, показывается на десктопах) -->
+                <div class="hidden lg:block">
+                    {% if ingredient.image %}
+                    <img src="{{ ingredient.image.url }}" alt="{{ ingredient.name }}" class="w-full rounded-xl mb-4">
+                    {% else %}
+                    <div class="w-full h-48 bg-amber-100 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-carrot text-6xl text-amber-400"></i>
+                    </div>
+                    {% endif %}
+                </div>
+
+                <!-- Информация об ингредиенте -->
                 <div class="space-y-4">
                     <div>
                         <h3 class="font-semibold text-gray-700 mb-1">Категория</h3>

@@ -184,7 +184,7 @@ NUTRIENTS_MAP = {
         'icon': '⚙️'
     },
     'selenium': {
-        'name': 'Селен (Se*)',
+        'name': 'Селен (Se)',
         'unit': 'мкг',
         'category': 'minerals',
         'icon': '🛡️'
