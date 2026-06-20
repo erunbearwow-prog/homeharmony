@@ -554,23 +554,52 @@ class IngredientCategoryAdmin(admin.ModelAdmin):
 
 
 # ======================= РЕГИСТРАЦИЯ ИНГРЕДИЕНТОВ =======================
+# kitchen/admin.py
+
+# kitchen/admin.py
+
 @admin.register(Ingredient)
 class IngredientAdmin(admin.ModelAdmin):
     form = IngredientCategoryForm
     list_per_page = 30
     save_on_top = True
-    list_display = ['name', 'category', 'calories', 'protein', 'fat', 'carbohydrates', 'fiber', 'sugar', 'is_common']
-    list_filter = ['category', 'is_common']
-    search_fields = ['name']
+
+    list_display = [
+        'name',
+        'category_display',
+        'calories',
+        'protein',
+        'fat',
+        'carbohydrates',
+        'fiber',
+        'sugar',
+        'is_common'
+    ]
+
+    list_filter = [
+        'abstract__category',
+        'is_semi_finished',
+        'branded__store',
+    ]
+
+    search_fields = ['name', 'abstract__name', 'branded__brand', 'branded__product_name']
+
+    # Убираем created_at и updated_at из readonly_fields
+    readonly_fields = ['id']  # <-- только id, если он есть
+
     ordering = ['name_normalized']
 
     fieldsets = (
-        ('Основная информация', {
-            'fields': ('name', 'fdc_id', 'description', 'image', 'is_common')
+        ('Основное', {
+            'fields': ('name', 'abstract', 'branded')
         }),
-        ('Категория', {  # ← Добавили отдельный раздел для категории
+        ('Категория', {
             'fields': ('category_level_1', 'category_level_2', 'category_level_3'),
             'description': 'Выберите категорию ингредиента (три уровня вложенности)'
+        }),
+        ('Пользовательские корректировки', {
+            'fields': ('custom_calories', 'custom_protein', 'custom_fat', 'custom_carbohydrates'),
+            'classes': ('collapse',)
         }),
         ('Макронутриенты (на 100г)', {
             'fields': ('calories', 'protein', 'fat', 'carbohydrates', 'fiber', 'sugar')
@@ -595,18 +624,15 @@ class IngredientAdmin(admin.ModelAdmin):
         }),
     )
 
-    def get_category_hierarchy(self, obj):
-        """Отображает иерархию категории в списке"""
+    def category_display(self, obj):
+        """Отображает категорию ингредиента"""
         if obj.category:
-            if obj.category.level == 2:
-                return f"{obj.category.parent.parent} → {obj.category.parent} → {obj.category}"
-            elif obj.category.level == 1:
-                return f"{obj.category.parent} → {obj.category}"
-            else:
-                return obj.category.name
+            return obj.category.name
         return '-'
 
-    get_category_hierarchy.short_description = 'Категория'
+    category_display.short_description = 'Категория'
+    category_display.admin_order_field = 'abstract__category__name'
+
     actions = ['bulk_assign_category']
 
     def bulk_assign_category(self, request, queryset):
@@ -614,14 +640,8 @@ class IngredientAdmin(admin.ModelAdmin):
         from django.shortcuts import render
         from django.http import HttpResponseRedirect
 
-        print(f"=== bulk_assign_category called ===")
-        print(f"Request method: {request.method}")
-        print(f"POST data: {request.POST}")
-
         if request.method == 'POST' and 'apply' in request.POST:
-            print("=== APPLY BUTTON PRESSED ===")
             category_id = request.POST.get('category_id')
-            print(f"category_id: {category_id}")
 
             if category_id:
                 category = IngredientCategory.objects.get(id=category_id)
@@ -632,9 +652,7 @@ class IngredientAdmin(admin.ModelAdmin):
                 self.message_user(request, 'Пожалуйста, выберите категорию', level='ERROR')
                 return HttpResponseRedirect(request.get_full_path())
 
-        # Получаем все категории для отображения
         all_categories = IngredientCategory.objects.all()
-        print(f"Всего категорий для отображения: {all_categories.count()}")
 
         return render(request, 'admin/kitchen/ingredient/bulk_assign_category.html', {
             'queryset': queryset,
@@ -644,9 +662,8 @@ class IngredientAdmin(admin.ModelAdmin):
 
     bulk_assign_category.short_description = "Назначить категорию выбранным ингредиентам"
 
-
     class Media:
-        js = ['admin/js/category_chain.js']  # Не нужно подключать jquery.init.js
+        js = ['admin/js/category_chain.js']
         css = {
             'all': ('admin/css/category_select.css',)
         }
@@ -657,21 +674,16 @@ class IngredientAdmin(admin.ModelAdmin):
             extra_context = extra_context or {}
             current = Ingredient.objects.get(id=object_id)
 
-            # Находим следующий и предыдущий
             next_ingredient = Ingredient.objects.filter(id__gt=current.id).order_by('id').first()
             prev_ingredient = Ingredient.objects.filter(id__lt=current.id).order_by('-id').first()
 
             extra_context['next_ingredient'] = next_ingredient
             extra_context['prev_ingredient'] = prev_ingredient
             extra_context['current_id'] = int(object_id)
-
-            # Общее количество
             extra_context['total_count'] = Ingredient.objects.count()
             extra_context['current_index'] = Ingredient.objects.filter(id__lte=current.id).count()
 
         return super().change_view(request, object_id, form_url, extra_context=extra_context)
-
-
 
 
 @admin.register(Product)
