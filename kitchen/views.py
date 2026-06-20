@@ -197,6 +197,8 @@ def recipe_detail(request, recipe_id):
         steps_without_subrecipes = all_steps.filter(subrecipe__isnull=True)
 
         components = recipe.components.all()
+        for c in components:
+            print(f'components: {components}')
 
         # ======================= ПРОГРЕСС ПО ШАГАМ (для проф. режима) =======================
         total_steps = all_steps.count()
@@ -340,9 +342,6 @@ def recipe_detail(request, recipe_id):
 
     components = recipe.components.all()
 
-    # ... и так далее (весь ваш остальной код без изменений)
-    # (ниже идёт ваш существующий код расчёта прогресса и т.д.)
-
     total_steps = steps.count()
     completed_steps = 0
 
@@ -474,14 +473,6 @@ from .models import (
 
 # ======================= ИНГРЕДИЕНТЫ =======================
 
-
-
-# kitchen/views.py
-
-
-
-# kitchen/views.py - добавить в конец файла
-
 from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator
 from django.db.models import Q
@@ -572,6 +563,7 @@ def _render_ingredient_detail(request, ingredient):
     return_meat = request.GET.get('return_meat')
     return_portions = request.GET.get('return_portions')
     ratio = request.GET.get('ratio')
+    return_image = request.GET.get('return_image')
 
     # Похожие ингредиенты (из той же категории)
     similar_ingredients = Ingredient.objects.filter(
@@ -638,6 +630,7 @@ def _render_ingredient_detail(request, ingredient):
         'sorted_categories': sorted_categories,
         'return_to': return_to,
         'return_title': return_title,
+        'return_image': return_image,
         'return_step': return_step,
         'return_context': return_context,
         'return_mode': return_mode,

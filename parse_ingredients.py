@@ -6,8 +6,9 @@
 Запуск: python parse_ingredients.py
 
 Особенности:
-- Автоматическое определение категорий на основе существующей структуры
-- Безопасное обновление (не трогает description, image, category)
+- Автоматическое определение категорий для ВСЕХ ингредиентов
+- Обновляет категории даже у существующих ингредиентов
+- Безопасное обновление (не трогает description, image)
 - Обновляет только пустые поля
 """
 
@@ -599,7 +600,6 @@ PROTECTED_FIELDS = {
     'description',
     'description_ru',
     'image',
-    'category',
     'is_common',
     'fdc_id',
     'created_at',
@@ -811,7 +811,7 @@ def import_ingredients():
         return
 
     print("=" * 70)
-    print("🍽️  ПАРСЕР ИНГРЕДИЕНТОВ")
+    print("🍽️  ПАРСЕР ИНГРЕДИЕНТОВ (с обновлением категорий)")
     print("=" * 70)
     print(f"📁 Найдено {len(html_files)} файлов")
     print("=" * 70)
@@ -825,6 +825,8 @@ def import_ingredients():
         'mapped_fields': 0,
         'total_fields': 0,
         'categories_found': 0,
+        'categories_updated': 0,
+        'categories_skipped': 0,
         'categories_created': 0,
     }
 
@@ -844,7 +846,10 @@ def import_ingredients():
                 print(f"   🆕 Новый ингредиент, создаем...")
                 ingredient = Ingredient(name=product_name)
             else:
-                print(f"   📝 Ингредиент найден (ID: {ingredient.id}), обновляем...")
+                old_category = ingredient.category.name if ingredient.category else None
+                print(f"   📝 Ингредиент найден (ID: {ingredient.id})")
+                if old_category:
+                    print(f"   📂 Текущая категория: {old_category}")
 
             # 3. Читаем HTML
             with open(file_path, 'r', encoding='utf-8') as f:
@@ -895,19 +900,41 @@ def import_ingredients():
             stats['mapped_fields'] += len(updated_fields)
             stats['total_fields'] += len(nutrients)
 
-            # 7. Определяем категорию (только для новых)
-            if is_new:
-                category_name = get_category_for_product(product_name)
-                if category_name:
-                    category = get_or_create_category(category_name)
-                    if category:
-                        ingredient.category = category
+            # ========== 7. ОПРЕДЕЛЯЕМ КАТЕГОРИЮ ДЛЯ ВСЕХ ИНГРЕДИЕНТОВ ==========
+            category_name = get_category_for_product(product_name)
+
+            if category_name:
+                # Ищем категорию
+                category = get_or_create_category(category_name)
+                if category:
+                    # Проверяем, была ли уже категория
+                    old_category = ingredient.category
+
+                    # Назначаем категорию (для всех — и новых, и существующих)
+                    ingredient.category = category
+
+                    if old_category is None:
+                        # У ингредиента не было категории
                         stats['categories_found'] += 1
-                        print(f"   📂 Категория: {category_name}")
+                        if is_new:
+                            print(f"   📂 Категория назначена: {category_name}")
+                        else:
+                            print(f"   📂 Категория добавлена: {category_name} (была пустая)")
+                    elif old_category.name != category_name:
+                        # Была другая категория — заменяем
+                        stats['categories_updated'] += 1
+                        print(f"   📂 Категория обновлена: {old_category.name} → {category_name}")
                     else:
-                        print(f"   ⚠️ Категория не найдена: {category_name}")
+                        # Та же категория
+                        stats['categories_skipped'] += 1
+                        print(f"   📂 Категория уже правильная: {category_name}")
                 else:
+                    print(f"   ⚠️ Не удалось найти/создать категорию: {category_name}")
+            else:
+                if is_new:
                     print(f"   ⚠️ Категория не определена автоматически")
+                else:
+                    print(f"   ⚠️ Категория не определена автоматически (оставляем существующую)")
 
             # 8. Сохраняем ингредиент
             ingredient.save()
@@ -958,7 +985,12 @@ def import_ingredients():
     print(f"  Обновлено полей:        {stats['mapped_fields']}")
     if stats['total_fields'] > 0:
         print(f"  Коэффициент:            {stats['mapped_fields'] / stats['total_fields'] * 100:.1f}%")
-    print(f"  Категорий найдено:      {stats['categories_found']}")
+    print("-" * 70)
+    print("📊 СТАТИСТИКА КАТЕГОРИЙ")
+    print("=" * 70)
+    print(f"  Категорий найдено:      {stats['categories_found']} (были пустые)")
+    print(f"  Категорий обновлено:    {stats['categories_updated']} (были другие)")
+    print(f"  Категорий пропущено:    {stats['categories_skipped']} (уже правильные)")
     print("=" * 70)
 
     if stats['errors'] > 0:

@@ -157,7 +157,7 @@ css
     <!-- Хлебные крошки -->
     <div class="text-sm text-gray-500 mb-6 no-print">
         <a href="/" class="hover:text-amber-700">Главная</a> /
-        <a href="{% url 'kitchen:index' %}" class="hover:text-amber-700">Кулинария</a> /
+        <a href="{% url 'kitchen:index' %}" onclick="if(window.clearRecipeContext) window.clearRecipeContext();">Кулинария (recipe_details_root)</a> /
         <span class="text-gray-800 font-medium">{{ recipe.title }}</span>
     </div>
 
@@ -675,7 +675,7 @@ css
 
         <div class="flex justify-between items-center mt-6 pt-4 border-t border-gray-200">
             <a href="#" id="fullIngredientInfoLink" class="text-sm text-amber-600 hover:text-amber-800 transition flex items-center gap-1">
-                <i class="fas fa-external-link-alt"></i> Подробнее об ингредиенте →
+                <i class="fas fa-external-link-alt"></i> Подробнее об этом ингредиенте →
             </a>
             <button onclick="closeInfoModal()" class="px-5 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition">Закрыть</button>
         </div>

@@ -1,0 +1,21 @@
+# Подключиться к базе
+psql -U your_username -d your_database_name
+
+# Посмотреть список таблиц
+\dt
+
+# Посмотреть структуру таблицы ingredients
+\d kitchen_ingredient
+
+# Посмотреть количество записей
+SELECT COUNT(*) FROM kitchen_ingredient;
+
+# Экспорт только структуры (без данных)
+pg_dump -U your_username -d your_database_name --schema-only > schema.sql
+
+# Экспорт только данных (без структуры)
+pg_dump -U your_username -d your_database_name --data-only > data.sql
+
+# Восстановление с очисткой (пересоздать таблицы)
+psql -U your_username -d your_database_name -c "DROP SCHEMA public CASCADE; CREATE SCHEMA public;"
+psql -U your_username -d your_database_name < backup.sql

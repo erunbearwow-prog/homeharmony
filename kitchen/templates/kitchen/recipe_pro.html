@@ -188,7 +188,7 @@
         border-color: var(--pro-primary);
     }
 
-    /* Таблица ингредиентов (правая колонка) */
+    /* Таблица ингредиентов */
     .pro-mode .ingredients-container {
         overflow-x: auto;
     }
@@ -261,28 +261,22 @@
     /* Карточки полуфабрикатов (как в составе блюда) */
     .pro-mode .semi-finished-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        gap: 16px;
+        grid-template-columns: 1fr;
+        gap: 12px;
     }
 
     .pro-mode .semi-finished-card {
         background: white;
-        border-radius: 16px;
+        border-radius: 12px;
         border: 1px solid var(--pro-border);
         overflow: hidden;
         transition: all 0.2s ease;
+        padding: 12px 16px;
     }
 
     .pro-mode .semi-finished-card:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        border-color: var(--pro-primary-light);
-    }
-
-    .pro-mode .semi-finished-header {
-        background: linear-gradient(135deg, var(--pro-primary-light) 0%, var(--pro-primary-bg) 100%);
-        padding: 12px 16px;
-        border-bottom: 1px solid var(--pro-border);
+        border-color: var(--pro-primary);
+        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
     }
 
     .pro-mode .semi-finished-title {
@@ -299,19 +293,12 @@
         font-size: 0.9rem;
     }
 
-    .pro-mode .semi-finished-body {
-        padding: 16px;
-    }
-
     .pro-mode .semi-finished-instruction {
         color: var(--pro-text-light);
         font-size: 0.8rem;
         line-height: 1.5;
-        margin-bottom: 12px;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
+        margin-top: 4px;
+        padding-left: 28px;
     }
 
     .pro-mode .semi-finished-link {
@@ -350,6 +337,34 @@
     .pro-mode .mode-switch-pro.bg-white:hover {
         background-color: var(--pro-primary-bg);
         border-color: var(--pro-primary);
+    }
+
+    /* Блок ингредиентов в левой колонке */
+    .pro-mode .ingredients-block {
+        background: white;
+        border-radius: 20px;
+        border: 1px solid #e5e7eb;
+        overflow: hidden;
+        margin-bottom: 24px;
+    }
+
+    .pro-mode .ingredients-block .tech-section-header {
+        background: var(--pro-primary-bg);
+        padding: 14px 20px;
+        border-bottom: 1px solid var(--pro-border);
+    }
+
+    .pro-mode .ingredients-block .tech-section-header h2 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--pro-primary-dark);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .pro-mode .ingredients-block .tech-section-body {
+        padding: 16px 20px 20px;
     }
 
     @media (max-width: 768px) {
@@ -440,139 +455,52 @@
                 </div>
             </div>
 
-            <!-- РАЗДЕЛ: ТЕХНОЛОГИЯ ПРИГОТОВЛЕНИЯ (из поля description) -->
-            <div class="tech-section">
+            <!-- ======================= БЛОК ИНГРЕДИЕНТОВ (ПЕРЕНЕСЁН СЮДА) ======================= -->
+            <div class="ingredients-block">
                 <div class="tech-section-header">
-                    <h2><i class="fas fa-cogs"></i> Технология приготовления</h2>
+                    <h2><i class="fas fa-clipboard-list"></i> Спецификация ингредиентов</h2>
                 </div>
                 <div class="tech-section-body">
-                    <div class="description-text">
-                        {{ recipe.description|default:"Технология приготовления будет добавлена позже."|linebreaks }}
-                    </div>
-                </div>
-            </div>
-
-            <!-- РАЗДЕЛ: ПОЛУФАБРИКАТЫ (более минималистичные карточки) -->
-            {% if steps_with_subrecipes %}
-            <div class="tech-section">
-                <div class="tech-section-header">
-                    <h2><i class="fas fa-boxes"></i> Полуфабрикаты</h2>
-                </div>
-                <div class="tech-section-body">
-                    <div class="semi-finished-grid">
-                        {% for step in steps_with_subrecipes %}
-                        <div class="semi-finished-card">
-                            <div class="semi-finished-body">
-                                <div class="semi-finished-title">
-                                    <i class="fas fa-link text-blue-600"></i>
-                                    <a href="{% url 'kitchen:recipe_detail' step.subrecipe.id %}?return_to={{ request.path|urlencode }}&return_title={{ recipe.title|urlencode }}&return_step={{ step.order }}&return_context={{ step.title|urlencode }}&return_mode={{ request.GET.mode|default:'pro' }}"
-                                       class="text-blue-700 hover:underline font-medium">
-                                        {{ step.subrecipe.title }}
-                                    </a>
-                                </div>
-                                {% if step.title and step.title != step.subrecipe.title %}
-                                <div class="text-xs text-gray-400 mt-1">
-                                    <i class="fas fa-tag"></i> {{ step.title }}
-                                </div>
-                                {% endif %}
-                                {% if step.instruction %}
-                                <div class="semi-finished-instruction mt-2">
-                                    {{ step.instruction|truncatechars:80 }}
-                                </div>
-                                {% endif %}
-                            </div>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-            {% endif %}
-
-            <!-- РАЗДЕЛ: ОФОРМЛЕНИЕ И ПОДАЧА -->
-            <div class="tech-section">
-                <div class="tech-section-header">
-                    <h2><i class="fas fa-plate-wheat"></i> Оформление и подача</h2>
-                </div>
-                <div class="tech-section-body">
-                    <div class="description-text">
-                        {{ recipe.plating|default:"Рекомендации по оформлению и подаче блюда будут добавлены позже."|linebreaks }}
-                    </div>
-                </div>
-            </div>
-
-            <!-- РАЗДЕЛ: УСЛОВИЯ И СРОКИ ХРАНЕНИЯ -->
-            <div class="tech-section">
-                <div class="tech-section-header">
-                    <h2><i class="fas fa-thermometer-half"></i> Условия и сроки хранения</h2>
-                </div>
-                <div class="tech-section-body">
-                    <div class="description-text">
-                        {{ recipe.storage_conditions|default:"Условия и сроки хранения будут добавлены позже."|linebreaks }}
-                    </div>
-                </div>
-            </div>
-
-            <!-- КНОПКА СЕБЕСТОИМОСТИ -->
-            <button id="proCalculateCostBtn" class="cost-btn">
-                <i class="fas fa-calculator"></i> Калькуляция себестоимости
-            </button>
-        </div>
-
-        <!-- ПРАВАЯ КОЛОНКА (1/3): СПЕЦИФИКАЦИЯ ИНГРЕДИЕНТОВ (БЕЗ ИЗМЕНЕНИЙ) -->
-        <div class="lg:col-span-1">
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 sticky-top">
-
-                <div class="border-b border-gray-200 px-5 py-4">
-                    <h3 class="text-lg font-bold serif flex items-center gap-2">
-                        <i class="fas fa-clipboard-list text-blue-700"></i>
-                        Спецификация
-                    </h3>
-                    <p class="text-xs text-gray-400 mt-1">Брутто / Нетто (г)</p>
-                </div>
-
-                <!-- Виджет управления -->
-                <div class="p-4 border-b border-gray-100 bg-gray-50">
-                    <div class="flex gap-2 mb-4">
+                    <!-- Виджет управления -->
+                    <div class="flex flex-wrap gap-2 mb-4">
                         <button id="proModePortionsBtn"
-                                class="mode-switch-pro flex-1 py-2 rounded-lg text-sm font-medium active bg-blue-600 text-white">
+                                class="mode-switch-pro px-4 py-2 rounded-lg text-sm font-medium active bg-blue-600 text-white">
                             <i class="fas fa-users mr-1"></i> По порциям
                         </button>
                         <button id="proModeProductsBtn"
-                                class="mode-switch-pro flex-1 py-2 rounded-lg text-sm font-medium bg-white text-gray-600 border border-gray-200">
+                                class="mode-switch-pro px-4 py-2 rounded-lg text-sm font-medium bg-white text-gray-600 border border-gray-200">
                             <i class="fas fa-weight-hanging mr-1"></i> По продуктам
                         </button>
                     </div>
 
-                    <div id="proPortionsPanel">
+                    <div id="proPortionsPanel" class="mb-4">
                         <div class="flex items-center gap-3">
                             <span class="text-sm text-gray-600">Порций:</span>
-                            <input type="range" id="proPortionsSlider" min="1" max="50" value="{{ recipe.servings }}" step="1" class="flex-1">
+                            <input type="range" id="proPortionsSlider" min="1" max="50" value="{{ recipe.servings }}" step="1" class="flex-1 max-w-[200px]">
                             <span id="proPortionsValue" class="font-bold text-blue-700 min-w-[40px]">{{ recipe.servings }}</span>
                             <button id="proResetPortionsBtn" class="text-gray-400 hover:text-blue-600 p-1">↺</button>
                         </div>
                         <div id="proPortionsRatioInfo" class="text-xs text-gray-400 mt-2"></div>
                     </div>
 
-                    <div id="proProductsPanel" class="hidden">
+                    <div id="proProductsPanel" class="hidden mb-4">
                         <div class="text-sm text-gray-600 mb-2">
                             Базовый ингредиент:
                             <span id="proBaseIngredientName" class="font-semibold text-blue-700">—</span>
                         </div>
                         <div id="proBaseIngredientRow" class="hidden">
-                            <div class="flex gap-2">
-                                <input type="number" id="proBaseIngredientWeight" step="10" class="flex-1 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-                                <span id="proBaseIngredientUnit" class="text-sm text-gray-500 self-center">г</span>
+                            <div class="flex flex-wrap gap-2 items-center">
+                                <input type="number" id="proBaseIngredientWeight" step="10" class="w-32 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <span id="proBaseIngredientUnit" class="text-sm text-gray-500">г</span>
                                 <button id="proApplyBaseBtn" class="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm hover:bg-blue-700 transition">Пересчитать</button>
                                 <button id="proResetBaseBtn" class="text-gray-400 text-sm underline hover:text-blue-600">↺</button>
                             </div>
                         </div>
                         <div id="proBaseRatioInfo" class="text-xs text-gray-400 mt-2"></div>
-                        <div class="text-xs text-gray-400 mt-2 italic">Нажмите <i class="fas fa-link"></i> у ингредиента в таблице</div>
+                        <div class="text-xs text-gray-400 mt-1 italic">Нажмите <i class="fas fa-link"></i> у ингредиента в таблице</div>
                     </div>
-                </div>
 
-                <!-- Таблица ингредиентов -->
-                <div class="p-4">
+                    <!-- Таблица ингредиентов -->
                     <div class="ingredients-container">
                         <table class="ingredients-table">
                             <thead>
@@ -624,6 +552,88 @@
                             </tfoot>
                             {% endif %}
                         </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- РАЗДЕЛ: ТЕХНОЛОГИЯ ПРИГОТОВЛЕНИЯ -->
+            <div class="tech-section">
+                <div class="tech-section-header">
+                    <h2><i class="fas fa-cogs"></i> Технология приготовления</h2>
+                </div>
+                <div class="tech-section-body">
+                    <div class="description-text">
+                        {{ recipe.description|default:"Технология приготовления будет добавлена позже."|linebreaks }}
+                    </div>
+                </div>
+            </div>
+
+            <!-- КНОПКА СЕБЕСТОИМОСТИ -->
+            <button id="proCalculateCostBtn" class="cost-btn">
+                <i class="fas fa-calculator"></i> Калькуляция себестоимости
+            </button>
+        </div>
+
+        <!-- ПРАВАЯ КОЛОНКА (1/3): ПОЛУФАБРИКАТЫ, ОФОРМЛЕНИЕ, ХРАНЕНИЕ -->
+        <div class="lg:col-span-1">
+            <!-- ПОЛУФАБРИКАТЫ -->
+            <div class="tech-section">
+                <div class="tech-section-header">
+                    <h2><i class="fas fa-boxes"></i> Полуфабрикаты</h2>
+                </div>
+                <div class="tech-section-body">
+                    {% if steps_with_subrecipes %}
+                        <div class="semi-finished-grid">
+                            {% for step in steps_with_subrecipes %}
+                            <div class="semi-finished-card">
+                                <div class="semi-finished-title">
+                                    <i class="fas fa-link text-blue-600"></i>
+                                    <a href="{% url 'kitchen:recipe_detail' step.subrecipe.id %}?return_to={{ request.path|urlencode }}&return_title={{ recipe.title|urlencode }}&return_step={{ step.order }}&return_context={{ step.title|urlencode }}&return_mode={{ request.GET.mode|default:'pro' }}"
+                                       class="text-blue-700 hover:underline font-medium">
+                                        {{ step.subrecipe.title }}
+                                    </a>
+                                </div>
+                                {% if step.title and step.title != step.subrecipe.title %}
+                                <div class="text-xs text-gray-400 mt-1 pl-7">
+                                    <i class="fas fa-tag"></i> {{ step.title }}
+                                </div>
+                                {% endif %}
+                                {% if step.instruction %}
+                                <div class="semi-finished-instruction">
+                                    {{ step.instruction|truncatechars:80 }}
+                                </div>
+                                {% endif %}
+                            </div>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        <div class="text-gray-400 text-sm py-4 text-center">
+                            Нет полуфабрикатов
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <!-- ОФОРМЛЕНИЕ И ПОДАЧА -->
+            <div class="tech-section">
+                <div class="tech-section-header">
+                    <h2><i class="fas fa-plate-wheat"></i> Оформление и подача</h2>
+                </div>
+                <div class="tech-section-body">
+                    <div class="description-text">
+                        {{ recipe.plating|default:"Рекомендации по оформлению и подаче блюда будут добавлены позже."|linebreaks }}
+                    </div>
+                </div>
+            </div>
+
+            <!-- УСЛОВИЯ И СРОКИ ХРАНЕНИЯ -->
+            <div class="tech-section">
+                <div class="tech-section-header">
+                    <h2><i class="fas fa-thermometer-half"></i> Условия и сроки хранения</h2>
+                </div>
+                <div class="tech-section-body">
+                    <div class="description-text">
+                        {{ recipe.storage_conditions|default:"Условия и сроки хранения будут добавлены позже."|linebreaks }}
                     </div>
                 </div>
             </div>

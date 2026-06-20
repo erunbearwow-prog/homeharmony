@@ -173,7 +173,7 @@ class Ingredient(models.Model):
     name_normalized = models.CharField(max_length=300, blank=True, null=True, db_index=True)
     description = models.TextField(blank=True)
     description_ru = models.TextField(blank=True)
-    data_source = models.CharField(max_length=50, default='USDA Foundation', blank=True)
+    data_source = models.CharField(max_length=500, default='USDA Foundation', blank=True)
 
     # Пищевая ценность
     calories = models.FloatField(null=True, blank=True)
@@ -185,12 +185,13 @@ class Ingredient(models.Model):
     saturated_fat = models.FloatField(null=True, blank=True)
     trans_fat = models.FloatField(null=True, blank=True)
     cholesterol = models.FloatField(null=True, blank=True)
+    omega_3 = models.FloatField(null=True, blank=True, verbose_name='Омега-3 жирные кислоты')
+    omega_6 = models.FloatField(null=True, blank=True, verbose_name='Омега-6 жирные кислоты')
 
     # Витамины
     vitamin_a = models.FloatField(null=True, blank=True)
     vitamin_b1 = models.FloatField(null=True, blank=True)
     vitamin_b2 = models.FloatField(null=True, blank=True)
-    vitamin_b3 = models.FloatField(null=True, blank=True)
     vitamin_b6 = models.FloatField(null=True, blank=True)
     vitamin_b9 = models.FloatField(null=True, blank=True)
     vitamin_b12 = models.FloatField(null=True, blank=True)
@@ -198,6 +199,12 @@ class Ingredient(models.Model):
     vitamin_d = models.FloatField(null=True, blank=True)
     vitamin_e = models.FloatField(null=True, blank=True)
     vitamin_k = models.FloatField(null=True, blank=True)
+    vitamin_b4 = models.FloatField(null=True, blank=True, verbose_name='Витамин B4 (холин)')
+    vitamin_b5 = models.FloatField(null=True, blank=True, verbose_name='Витамин B5 (пантотеновая кислота)')
+    vitamin_b7 = models.FloatField(null=True, blank=True, verbose_name='Витамин B7 (биотин)')
+    vitamin_b3 = models.FloatField(null=True, blank=True, verbose_name='Витамин B3 (ниацин)')
+    vitamin_b9_folate = models.FloatField(null=True, blank=True, verbose_name='Фолаты (витамин B9)')
+    beta_carotene = models.FloatField(null=True, blank=True, verbose_name='Бета-каротин')
 
     # Минералы
     calcium = models.FloatField(null=True, blank=True)
@@ -210,10 +217,26 @@ class Ingredient(models.Model):
     copper = models.FloatField(null=True, blank=True)
     manganese = models.FloatField(null=True, blank=True)
     selenium = models.FloatField(null=True, blank=True)
+    silicon = models.FloatField(null=True, blank=True, verbose_name='Кремний (Si)')
+    sulfur = models.FloatField(null=True, blank=True, verbose_name='Сера (S)')
+    chlorine = models.FloatField(null=True, blank=True, verbose_name='Хлор (Cl)')
+    aluminum = models.FloatField(null=True, blank=True, verbose_name='Алюминий (Al)')
+    boron = models.FloatField(null=True, blank=True, verbose_name='Бор (B)')
+    vanadium = models.FloatField(null=True, blank=True, verbose_name='Ванадий (V)')
+    iodine = models.FloatField(null=True, blank=True, verbose_name='Йод (I)')
+    cobalt = models.FloatField(null=True, blank=True, verbose_name='Кобальт (Co)')
+    lithium = models.FloatField(null=True, blank=True, verbose_name='Литий (Li)')
+    molybdenum = models.FloatField(null=True, blank=True, verbose_name='Молибден (Mo)')
+    nickel = models.FloatField(null=True, blank=True, verbose_name='Никель (Ni)')
+    rubidium = models.FloatField(null=True, blank=True, verbose_name='Рубидий (Rb)')
+    chromium = models.FloatField(null=True, blank=True, verbose_name='Хром (Cr)')
+    fluorine = models.FloatField(null=True, blank=True, verbose_name='Фтор (F)')
 
     # Дополнительно
     water = models.FloatField(null=True, blank=True)
     ash = models.FloatField(null=True, blank=True)
+    starch = models.FloatField(null=True, blank=True, verbose_name='Крахмал и декстрины')
+    organic_acids = models.FloatField(null=True, blank=True, verbose_name='Органические кислоты')
 
     # Локальные поля
     image = models.ImageField(upload_to=ingredient_image_path, null=True, blank=True)
@@ -437,6 +460,8 @@ class Recipe(models.Model):
     cuisine = models.ForeignKey(Cuisine, on_delete=models.SET_NULL, null=True, blank=True)
     author = models.CharField(max_length=100, blank=True)
     description = models.TextField(blank=True)
+    serving_the_dish = models.TextField(blank=True)
+    storage_conditions = models.TextField(blank=True)
     total_time = models.IntegerField(default=0)
     servings = models.IntegerField(default=4)
     difficulty = models.CharField(max_length=10, choices=DIFFICULTY_CHOICES, default='medium')
