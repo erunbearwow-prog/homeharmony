@@ -527,7 +527,7 @@ if __name__ == '__main__':
         print(f"   Ошибка: {e}")
         exit(1)
 
-    # РЕАЛЬНЫЕ URL ДЛЯ ТЕСТИРОВАНИЯ
+    # РЕАЛЬНЫЕ URL ДЛЯ ТЕСТИРОВАНИЯйцук
     test_urls = [
         # URL для тестирования
         # 'https://5ka.ru/product/laym-v-upakovke-3-sht--3358910/',
