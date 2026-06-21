@@ -394,81 +394,39 @@ class IngredientCategoryForm(forms.ModelForm):
     class Meta:
         model = Ingredient
         fields = '__all__'
-        exclude = ['category']
 
     def __init__(self, *args, **kwargs):
+        # Принудительно загружаем abstract с категорией
+        if kwargs.get('instance') and kwargs['instance'].pk:
+            instance = kwargs['instance']
+            if instance.abstract_id and not hasattr(instance, '_abstract_cache'):
+                from .models import AbstractIngredient
+                instance.abstract = AbstractIngredient.objects.select_related('category').get(id=instance.abstract_id)
+
         super().__init__(*args, **kwargs)
 
         current_category = self.instance.category if self.instance and self.instance.pk else None
 
-        print(f"=== FORM INIT ===")
-        print(f"current_category: {current_category}")
-
         if current_category:
-            print(f"current_category.level: {current_category.level}")
-
             if current_category.level == 0:
-                # Категория 1-го уровня (корневая)
-                # level1 = текущая категория
-                # level2 = None
-                # level3 = None
-
                 self.fields['category_level_1'].initial = current_category
                 self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
                     parent=current_category
                 ).order_by('name')
-                print(f"Level 0: level1 initial = {current_category}")
-
 
             elif current_category.level == 1:
-
-                # Категория 2-го уровня (level 1)
-
-                # level1 = родитель текущей категории (Фрукты и ягоды)
-
-                # level2 = текущая категория (Авокадо)
-
-                # level3 = НЕ ВЫБРАНА (None)
-
                 self.fields['category_level_1'].initial = current_category.parent
-
                 self.fields['category_level_2'].initial = current_category
-
-                # level3 оставляем пустым (None)
-
-                # queryset для level2: дети родителя (т.е. категории 2-го уровня)
-
                 self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
-
                     parent=current_category.parent
-
                 ).order_by('name')
-
-                # queryset для level3: дети текущей категории (т.е. категории 3-го уровня)
-
                 self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
-
                     parent=current_category
-
                 ).order_by('name')
-
-                print(f"Level 1: level1 initial = {current_category.parent}")
-
-                print(f"Level 1: level2 initial = {current_category}")
-
-                print(f"Level 1: level2 queryset count = {self.fields['category_level_2'].queryset.count()}")
-
-                print(f"Level 1: level3 queryset count = {self.fields['category_level_3'].queryset.count()}")
 
             elif current_category.level == 2:
-                # Категория 3-го уровня (level 2)
-                # level1 = корневая категория
-                # level2 = родитель (2-й уровень)
-                # level3 = текущая категория
-
                 root = current_category.root_parent
                 second = current_category.second_level_parent
-
                 self.fields['category_level_1'].initial = root
                 self.fields['category_level_2'].initial = second
                 self.fields['category_level_3'].initial = current_category
@@ -478,12 +436,7 @@ class IngredientCategoryForm(forms.ModelForm):
                 self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
                     parent=second
                 ).order_by('name')
-
-                print(f"Level 2: level1 initial = {root}")
-                print(f"Level 2: level2 initial = {second}")
-                print(f"Level 2: level3 initial = {current_category}")
         else:
-            print("No current_category")
             self.fields['category_level_2'].queryset = IngredientCategory.objects.none()
             self.fields['category_level_3'].queryset = IngredientCategory.objects.none()
 
@@ -495,7 +448,6 @@ class IngredientCategoryForm(forms.ModelForm):
                     self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
                         parent_id=level_1_id
                     ).order_by('name')
-                    print(f"POST: loaded level2 with parent_id={level_1_id}")
                 except (ValueError, TypeError):
                     pass
 
@@ -505,15 +457,8 @@ class IngredientCategoryForm(forms.ModelForm):
                     self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
                         parent_id=level_2_id
                     ).order_by('name')
-                    print(f"POST: loaded level3 with parent_id={level_2_id}")
                 except (ValueError, TypeError):
                     pass
-
-        print(f"=== FINAL INIT VALUES ===")
-        print(f"level1 initial: {self.fields['category_level_1'].initial}")
-        print(f"level2 initial: {self.fields['category_level_2'].initial}")
-        print(f"level3 initial: {self.fields['category_level_3'].initial}")
-        print(f"=== END INIT ===")
 
     def clean(self):
         cleaned_data = super().clean()
@@ -522,19 +467,35 @@ class IngredientCategoryForm(forms.ModelForm):
         level_3 = cleaned_data.get('category_level_3')
 
         if level_3:
-            cleaned_data['category'] = level_3
+            selected_category = level_3
         elif level_2:
-            cleaned_data['category'] = level_2
+            selected_category = level_2
         elif level_1:
-            cleaned_data['category'] = level_1
+            selected_category = level_1
         else:
-            cleaned_data['category'] = None
+            selected_category = None
 
+        cleaned_data['selected_category'] = selected_category
         return cleaned_data
 
     def save(self, commit=True):
         instance = super().save(commit=False)
-        instance.category = self.cleaned_data.get('category')
+
+        selected_category = self.cleaned_data.get('selected_category')
+
+        # Сохраняем категорию в abstract
+        if instance.abstract:
+            instance.abstract.category = selected_category
+            if commit:
+                instance.abstract.save()
+        else:
+            from .models import AbstractIngredient
+            abstract = AbstractIngredient.objects.create(
+                name=instance.name,
+                category=selected_category,
+                data_source=instance.data_source or 'manual',
+            )
+            instance.abstract = abstract
 
         if commit:
             instance.save()
@@ -554,9 +515,6 @@ class IngredientCategoryAdmin(admin.ModelAdmin):
 
 
 # ======================= РЕГИСТРАЦИЯ ИНГРЕДИЕНТОВ =======================
-# kitchen/admin.py
-
-# kitchen/admin.py
 
 @admin.register(Ingredient)
 class IngredientAdmin(admin.ModelAdmin):
@@ -567,10 +525,10 @@ class IngredientAdmin(admin.ModelAdmin):
     list_display = [
         'name',
         'category_display',
-        'calories',
-        'protein',
-        'fat',
-        'carbohydrates',
+        'calories_display',  # <-- используем методы вместо свойств
+        'protein_display',
+        'fat_display',
+        'carbohydrates_display',
         'fiber',
         'sugar',
         'is_common'
@@ -601,9 +559,6 @@ class IngredientAdmin(admin.ModelAdmin):
             'fields': ('custom_calories', 'custom_protein', 'custom_fat', 'custom_carbohydrates'),
             'classes': ('collapse',)
         }),
-        ('Макронутриенты (на 100г)', {
-            'fields': ('calories', 'protein', 'fat', 'carbohydrates', 'fiber', 'sugar')
-        }),
         ('Жиры и холестерин', {
             'fields': ('saturated_fat', 'trans_fat', 'cholesterol'),
             'classes': ('collapse',)
@@ -624,10 +579,36 @@ class IngredientAdmin(admin.ModelAdmin):
         }),
     )
 
+    # Добавляем методы для отображения КБЖУ в списке
+    def calories_display(self, obj):
+        return obj.calories if obj.calories is not None else '-'
+
+    calories_display.short_description = 'Калории, ккал'
+    calories_display.admin_order_field = 'abstract__calories'
+
+    def protein_display(self, obj):
+        return obj.protein if obj.protein is not None else '-'
+
+    protein_display.short_description = 'Белки, г'
+    protein_display.admin_order_field = 'abstract__protein'
+
+    def fat_display(self, obj):
+        return obj.fat if obj.fat is not None else '-'
+
+    fat_display.short_description = 'Жиры, г'
+    fat_display.admin_order_field = 'abstract__fat'
+
+    def carbohydrates_display(self, obj):
+        return obj.carbohydrates if obj.carbohydrates is not None else '-'
+
+    carbohydrates_display.short_description = 'Углеводы, г'
+    carbohydrates_display.admin_order_field = 'abstract__carbohydrates'
+
     def category_display(self, obj):
         """Отображает категорию ингредиента"""
-        if obj.category:
-            return obj.category.name
+        # Проверяем через abstract
+        if obj.abstract and obj.abstract.category:
+            return obj.abstract.category.name
         return '-'
 
     category_display.short_description = 'Категория'
@@ -644,10 +625,33 @@ class IngredientAdmin(admin.ModelAdmin):
             category_id = request.POST.get('category_id')
 
             if category_id:
-                category = IngredientCategory.objects.get(id=category_id)
-                updated = queryset.update(category=category)
-                self.message_user(request, f'Категория "{category}" назначена {updated} ингредиентам')
-                return HttpResponseRedirect(request.get_full_path())
+                try:
+                    category = IngredientCategory.objects.get(id=category_id)
+
+                    # Обновляем категорию через abstract
+                    updated = 0
+                    for ingredient in queryset:
+                        if ingredient.abstract:
+                            ingredient.abstract.category = category
+                            ingredient.abstract.save()
+                            updated += 1
+                        else:
+                            # Если нет abstract, создаем его
+                            from .models import AbstractIngredient
+                            abstract = AbstractIngredient.objects.create(
+                                name=ingredient.name,
+                                category=category,
+                                data_source=ingredient.data_source,
+                            )
+                            ingredient.abstract = abstract
+                            ingredient.save()
+                            updated += 1
+
+                    self.message_user(request, f'Категория "{category}" назначена {updated} ингредиентам')
+                    return HttpResponseRedirect(request.get_full_path())
+                except IngredientCategory.DoesNotExist:
+                    self.message_user(request, 'Выбранная категория не найдена', level='ERROR')
+                    return HttpResponseRedirect(request.get_full_path())
             else:
                 self.message_user(request, 'Пожалуйста, выберите категорию', level='ERROR')
                 return HttpResponseRedirect(request.get_full_path())
@@ -672,7 +676,11 @@ class IngredientAdmin(admin.ModelAdmin):
         """Добавляем кнопки навигации в контекст"""
         if object_id:
             extra_context = extra_context or {}
-            current = Ingredient.objects.get(id=object_id)
+            current = Ingredient.objects.select_related(
+                'abstract',  # поле есть в модели
+                'branded'  # поле есть в модели
+            ).get(id=object_id)
+
 
             next_ingredient = Ingredient.objects.filter(id__gt=current.id).order_by('id').first()
             prev_ingredient = Ingredient.objects.filter(id__lt=current.id).order_by('-id').first()
@@ -684,6 +692,7 @@ class IngredientAdmin(admin.ModelAdmin):
             extra_context['current_index'] = Ingredient.objects.filter(id__lte=current.id).count()
 
         return super().change_view(request, object_id, form_url, extra_context=extra_context)
+
 
 
 @admin.register(Product)

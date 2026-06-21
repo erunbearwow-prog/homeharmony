@@ -179,7 +179,7 @@ class AbstractIngredient(models.Model):
     description = models.TextField(blank=True, verbose_name="Описание")
     description_ru = models.TextField(blank=True, verbose_name="Описание RU")
 
-    # ===== КАТЕГОРИЯ =====
+    #===== КАТЕГОРИЯ =====
     category = models.ForeignKey(
         'IngredientCategory',
         on_delete=models.SET_NULL,
@@ -279,7 +279,7 @@ class AbstractIngredient(models.Model):
         ordering = ['name']
         indexes = [
             models.Index(fields=['name']),
-            models.Index(fields=['category']),
+            models.Index(fields=['category']),  # <-- ИСПРАВЛЕНО: было 'abstract__category'
             models.Index(fields=['fdc_id']),
         ]
 
@@ -516,7 +516,6 @@ class Ingredient(models.Model):
 
     # Локальные поля
     image = models.ImageField(upload_to=ingredient_image_path, null=True, blank=True)
-    category = models.ForeignKey(IngredientCategory, on_delete=models.SET_NULL, null=True, blank=True)
     is_common = models.BooleanField(default=False)
 
     # Служебные
@@ -569,9 +568,17 @@ class Ingredient(models.Model):
 
     @category.setter
     def category(self, value):
-        """Заглушка для совместимости"""
+        """Устанавливает категорию в abstract"""
         if self.abstract:
             self.abstract.category = value
+        elif value:
+            # Если нет abstract, создаем его
+            from .models import AbstractIngredient
+            self.abstract = AbstractIngredient.objects.create(
+                name=self.name,
+                category=value,
+                data_source=self.data_source or 'manual'
+            )
 
     @property
     def calories(self):

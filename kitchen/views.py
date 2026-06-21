@@ -480,7 +480,8 @@ from django.db.models import Q
 
 def ingredient_list(request):
     """Список всех ингредиентов с пагинацией и поиском"""
-    ingredients = Ingredient.objects.select_related('category').all()
+    # Используем select_related для подгрузки category через abstract
+    ingredients = Ingredient.objects.select_related('abstract__category').all()
 
     # Поиск
     query = request.GET.get('q')
@@ -488,23 +489,37 @@ def ingredient_list(request):
         ingredients = ingredients.filter(
             Q(name__icontains=query) |
             Q(description__icontains=query) |
-            Q(category__name__icontains=query)
+            Q(abstract__category__name__icontains=query)
         )
 
-    # Фильтр по категории
+    # Фильтр по категории (через abstract)
     category_id = request.GET.get('category')
     if category_id:
-        ingredients = ingredients.filter(category_id=category_id)
+        ingredients = ingredients.filter(abstract__category_id=category_id)
 
     # Пагинация
     paginator = Paginator(ingredients, 24)
-    page_number = request.GET.get('page')
+    page_number = request.GET.get('page', 1)  # <-- добавляем default=1
     page_obj = paginator.get_page(page_number)
 
     # Категории для фильтра
     categories = IngredientCategory.objects.all()
 
-    # Параметры возврата (для ссылки "назад" из детальной страницы)
+    # ========== ФОРМИРУЕМ return_to ДЛЯ ТЕКУЩЕЙ СТРАНИЦЫ ==========
+    # Это URL, на который вернется пользователь из карточки ингредиента
+    list_return_to = request.get_full_path()
+
+    # Если пользователь уже пришел с return_to (из другого места),
+    # то используем его, иначе формируем текущий URL
+    existing_return_to = request.GET.get('return_to')
+    if existing_return_to:
+        # Если пользователь пришел из рецепта или другого места
+        current_return_to = existing_return_to
+    else:
+        # Если пользователь просто открыл список ингредиентов
+        current_return_to = list_return_to
+
+    # Параметры возврата (для передачи в детальную страницу)
     return_to = request.GET.get('return_to')
     return_title = request.GET.get('return_title')
     return_step = request.GET.get('return_step')
@@ -518,7 +533,7 @@ def ingredient_list(request):
         'categories': categories,
         'query': query,
         'selected_category': category_id,
-        'return_to': return_to,
+        'return_to': current_return_to,  # <-- используем для навигации назад
         'return_title': return_title,
         'return_step': return_step,
         'return_context': return_context,
@@ -533,13 +548,19 @@ def ingredient_list(request):
 
 def ingredient_detail(request, pk):
     """Детальная страница ингредиента по ID"""
-    ingredient = get_object_or_404(Ingredient, pk=pk)
+    ingredient = get_object_or_404(
+        Ingredient.objects.select_related('abstract', 'branded', 'abstract__category'),
+        pk=pk
+    )
     return _render_ingredient_detail(request, ingredient)
 
 
 def ingredient_detail_by_slug(request, slug):
     """Детальная страница ингредиента по slug"""
-    ingredient = get_object_or_404(Ingredient, slug=slug)
+    ingredient = get_object_or_404(
+        Ingredient.objects.select_related('abstract', 'branded', 'abstract__category'),
+        slug=slug
+    )
     return _render_ingredient_detail(request, ingredient)
 
 
@@ -565,17 +586,17 @@ def _render_ingredient_detail(request, ingredient):
     ratio = request.GET.get('ratio')
     return_image = request.GET.get('return_image')
 
-    # Похожие ингредиенты (из той же категории)
+    # Похожие ингредиенты (из той же категории) - через abstract
     similar_ingredients = Ingredient.objects.filter(
-        category=ingredient.category
-    ).exclude(id=ingredient.id)[:6]
+        abstract__category=ingredient.abstract.category  # <-- исправлено
+    ).exclude(id=ingredient.id)[:6] if ingredient.abstract and ingredient.abstract.category else []
 
     # Подготавливаем данные о питательных веществах
     nutrients_data = []
     for field_name, info in NUTRIENTS_MAP.items():
         value = getattr(ingredient, field_name, None)
 
-        # Проверяем, что значение существует и не равно 0 (опционально)
+        # Проверяем, что значение существует и не равно 0
         if value not in (None, '', 0, 0.0):
             nutrients_data.append({
                 'name': info['name'],
@@ -597,8 +618,6 @@ def _render_ingredient_detail(request, ingredient):
     # Сортируем категории согласно CATEGORY_ORDER
     sorted_categories = [cat for cat in CATEGORY_ORDER if cat in nutrients_by_category]
 
-    # 👇 ВАЖНО: Подготавливаем данные для каждой категории отдельно
-    # Это позволит обращаться к ним напрямую в шаблоне без фильтров
     energy_data = nutrients_by_category.get('energy', [])
     macros_data = nutrients_by_category.get('macros', [])
     fats_detail_data = nutrients_by_category.get('fats_detail', [])
@@ -610,22 +629,14 @@ def _render_ingredient_detail(request, ingredient):
         'ingredient': ingredient,
         'page_obj': page_obj,
         'similar_ingredients': similar_ingredients,
-
-        # Для карточек (все нутриенты)
         'nutrients_data': nutrients_data,
-
-        # Для таблиц (каждая категория отдельно)
         'energy_data': energy_data,
         'macros_data': macros_data,
         'fats_detail_data': fats_detail_data,
         'vitamins_data': vitamins_data,
         'minerals_data': minerals_data,
         'other_data': other_data,
-
-        # Названия категорий (можно передать или захардкодить в шаблоне)
         'category_names': CATEGORY_NAMES,
-
-
         'nutrients_by_category': nutrients_by_category,
         'sorted_categories': sorted_categories,
         'return_to': return_to,
@@ -639,13 +650,20 @@ def _render_ingredient_detail(request, ingredient):
         'ratio': ratio,
         'title': ingredient.name,
     }
+
+    # Добавьте отладочный вывод
+    print(f"DEBUG: calories = {ingredient.calories}")
+    print(f"DEBUG: protein = {ingredient.protein}")
+    print(f"DEBUG: fat = {ingredient.fat}")
+    print(f"DEBUG: carbohydrates = {ingredient.carbohydrates}")
+
     return render(request, 'kitchen/ingredient_detail.html', context)
 
 
 def api_ingredient_detail(request, pk):
     """API для получения данных ингредиента в JSON (для модальных окон)"""
     try:
-        ingredient = Ingredient.objects.get(pk=pk)
+        ingredient = Ingredient.objects.select_related('abstract__category').get(pk=pk)
         data = {
             'id': ingredient.id,
             'name': ingredient.name,
@@ -663,7 +681,7 @@ def api_ingredient_detail(request, pk):
             'iron': ingredient.iron,
             'potassium': ingredient.potassium,
             'sodium': ingredient.sodium,
-            'category': ingredient.category.name if ingredient.category else None,
+            'category': ingredient.abstract.category.name if ingredient.abstract and ingredient.abstract.category else None,  # <-- исправлено
             'image_url': ingredient.image.url if ingredient.image else None,
         }
         return JsonResponse(data)
