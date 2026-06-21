@@ -8,6 +8,8 @@ from .models import (
     IngredientPreparation, RecommendedUtensil, IngredientSubstitution,
     CookingMethodSubstitution, UtensilSubstitution, ProfessionalIngredient,
     Product, RecipeFoodItem,
+    AbstractIngredient,  # <-- ДОБАВЛЕНО
+    BrandedIngredient,   # <-- ДОБАВЛЕНО
 )
 
 
@@ -181,18 +183,6 @@ class RecipeStepInline(admin.StackedInline):
         }),
     ]
 
-    # fields = (
-    #     ('order', 'title'),
-    #     ('instruction',),
-    #     ('cooking_method', 'ingredient_preparation'),
-    #     ('duration', 'temperature'),
-    #     ('recommended_utensils',),
-    #     ('subrecipe', 'subrecipe_base_ingredient', 'subrecipe_base_quantity'),
-    # )
-
-    # autocomplete_fields = ['subrecipe', 'subrecipe_base_ingredient', 'cooking_method', 'ingredient_preparation']
-
-
     autocomplete_fields = ['subrecipe', 'cooking_method', 'ingredient_preparation']
     filter_horizontal = ['recommended_utensils']
     verbose_name = 'Шаг приготовления'
@@ -225,13 +215,11 @@ class RecipeFoodItemInline(admin.TabularInline):
     verbose_name = "Ингредиент / продукт"
     verbose_name_plural = "Ингредиенты и продукты"
     classes = ['collapse']
-    # autocomplete_fields = ['ingredient']
 
     class Media:
         css = {
             'all': ('admin/css/food_item.css',)
         }
-    #     js = ('admin/js/food_item.js',)
 
 
 # ======================= ОСНОВНАЯ РЕГИСТРАЦИЯ RECIPE =======================
@@ -265,14 +253,12 @@ class RecipeAdmin(admin.ModelAdmin):
         }),
     ]
 
-    # ДОБАВИТЬ ЭТОТ МЕТОД
     def get_inlines(self, request, obj=None):
         """Динамически подставляем inline в зависимости от is_professional"""
         if obj and obj.is_professional:
             return [RecipeStepInline, ProfessionalIngredientInline]
         return [RecipeStepInline, RecipeFoodItemInline]
 
-    # ДОБАВИТЬ ЭТОТ МЕТОД
     def recipe_type_badge(self, obj):
         """Отображаем красивый бейдж в списке рецептов"""
         if obj.is_professional:
@@ -283,8 +269,6 @@ class RecipeAdmin(admin.ModelAdmin):
 
     recipe_type_badge.short_description = 'Тип'
     recipe_type_badge.admin_order_field = 'is_professional'
-
-    # inlines = [RecipeStepInline, RecipeFoodItemInline]
 
 
 # ======================= ОСТАЛЬНЫЕ РЕГИСТРАЦИИ =======================
@@ -309,7 +293,6 @@ class RecipeStepAdmin(admin.ModelAdmin):
 @admin.register(CookingMethod)
 class CookingMethodAdmin(admin.ModelAdmin):
     list_display = ['name', 'code', 'description', 'is_heat_treatment', 'sort_order']
-    # list_filter = ['category']
     search_fields = ['name', 'description']
     fieldsets = [
         ('Основная информация', {
@@ -344,14 +327,6 @@ class RecommendedUtensilAdmin(admin.ModelAdmin):
     image_preview.short_description = 'Изображение'
 
 
-# @admin.register(CookingMethodSubstitution)
-# class CookingMethodSubstitutionAdmin(admin.ModelAdmin):
-#     list_display = ['original_method', 'substitute_method', 'reason']
-#     list_filter = ['original_method__category']
-#     search_fields = ['original_method__name', 'substitute_method__name', 'reason']
-#     autocomplete_fields = ['original_method', 'substitute_method']
-
-
 @admin.register(UtensilSubstitution)
 class UtensilSubstitutionAdmin(admin.ModelAdmin):
     list_display = ['original_utensil', 'substitute_utensil', 'reason']
@@ -368,11 +343,7 @@ class IngredientSubstitutionAdmin(admin.ModelAdmin):
     fields = ['recipe_ingredient', 'substitute_ingredient', 'substitute_unit', 'ratio', 'notes']
 
 
-# kitchen/admin.py - добавить в конец файла
-from .models import Ingredient, IngredientCategory
-
-# форма ввода категории ингредиента
-# kitchen/admin.py - ПОЛНОСТЬЮ ЗАМЕНИТЕ класс IngredientCategoryForm на этот:
+# ======================= ФОРМА ДЛЯ КАТЕГОРИЙ ИНГРЕДИЕНТОВ =======================
 
 class IngredientCategoryForm(forms.ModelForm):
     category_level_1 = forms.ModelChoiceField(
@@ -503,15 +474,86 @@ class IngredientCategoryForm(forms.ModelForm):
 
         return instance
 
+
+# ======================= РЕГИСТРАЦИЯ КАТЕГОРИЙ =======================
+
 @admin.register(IngredientCategory)
 class IngredientCategoryAdmin(admin.ModelAdmin):
     list_display = ['name', 'parent', 'sort_order']
-    list_display_links = ['name', 'parent']  # Клик по родителю откроет редактирование
+    list_display_links = ['name', 'parent']
     list_editable = ['sort_order']
     list_filter = ['parent']
     search_fields = ['name']
     list_per_page = 100
     ordering = ['name']
+
+
+# ======================= РЕГИСТРАЦИЯ АБСТРАКТНЫХ ИНГРЕДИЕНТОВ =======================
+
+@admin.register(AbstractIngredient)
+class AbstractIngredientAdmin(admin.ModelAdmin):
+    list_display = ['name', 'category', 'calories', 'protein', 'fat', 'carbohydrates']
+    list_filter = ['category']
+    search_fields = ['name', 'description']
+    readonly_fields = ['id', 'created_at', 'updated_at']
+    ordering = ['name']
+
+
+# ======================= РЕГИСТРАЦИЯ БРЕНДИРОВАННЫХ ПРОДУКТОВ =======================
+
+@admin.register(BrandedIngredient)
+class BrandedIngredientAdmin(admin.ModelAdmin):
+    list_display = [
+        'brand',
+        'product_name',
+        'abstract',
+        'price',
+        'weight',
+        'price_per_100g',  # <-- оставляем здесь (это метод)
+        'store',
+        'is_available'
+    ]
+    list_filter = ['brand', 'store', 'is_available']
+    search_fields = ['brand', 'product_name', 'barcode']
+    autocomplete_fields = ['abstract']
+    readonly_fields = ['id', 'created_at', 'updated_at']
+
+    fieldsets = (
+        ('Связь с абстрактным ингредиентом', {
+            'fields': ('abstract',)
+        }),
+        ('Основная информация', {
+            'fields': ('brand', 'product_name', 'barcode')
+        }),
+        ('КБЖУ (если отличается)', {
+            'fields': ('calories', 'protein', 'fat', 'carbohydrates'),
+            'classes': ('collapse',)
+        }),
+        ('Цена и вес', {
+            'fields': ('price', 'weight'),  # <-- убрали price_per_100g и price_per_kg
+        }),
+        ('Магазин', {
+            'fields': ('store', 'store_url', 'is_available', 'last_checked')
+        }),
+        ('Служебная информация', {
+            'fields': ('id', 'created_at', 'updated_at', 'created_by'),
+            'classes': ('collapse',)
+        }),
+    )
+
+    def price_per_100g(self, obj):
+        """Цена за 100 грамм"""
+        if obj.price_per_100g:
+            return f"{obj.price_per_100g:.2f} руб."
+        return "-"
+    price_per_100g.short_description = 'Цена за 100г'
+
+    def price_per_kg(self, obj):
+        """Цена за 1 кг"""
+        if obj.price_per_kg:
+            return f"{obj.price_per_kg:.2f} руб."
+        return "-"
+    price_per_kg.short_description = 'Цена за 1 кг'
 
 
 # ======================= РЕГИСТРАЦИЯ ИНГРЕДИЕНТОВ =======================
@@ -525,7 +567,7 @@ class IngredientAdmin(admin.ModelAdmin):
     list_display = [
         'name',
         'category_display',
-        'calories_display',  # <-- используем методы вместо свойств
+        'calories_display',
         'protein_display',
         'fat_display',
         'carbohydrates_display',
@@ -541,10 +583,7 @@ class IngredientAdmin(admin.ModelAdmin):
     ]
 
     search_fields = ['name', 'abstract__name', 'branded__brand', 'branded__product_name']
-
-    # Убираем created_at и updated_at из readonly_fields
-    readonly_fields = ['id']  # <-- только id, если он есть
-
+    readonly_fields = ['id']
     ordering = ['name_normalized']
 
     fieldsets = (
@@ -579,38 +618,30 @@ class IngredientAdmin(admin.ModelAdmin):
         }),
     )
 
-    # Добавляем методы для отображения КБЖУ в списке
     def calories_display(self, obj):
         return obj.calories if obj.calories is not None else '-'
-
     calories_display.short_description = 'Калории, ккал'
     calories_display.admin_order_field = 'abstract__calories'
 
     def protein_display(self, obj):
         return obj.protein if obj.protein is not None else '-'
-
     protein_display.short_description = 'Белки, г'
     protein_display.admin_order_field = 'abstract__protein'
 
     def fat_display(self, obj):
         return obj.fat if obj.fat is not None else '-'
-
     fat_display.short_description = 'Жиры, г'
     fat_display.admin_order_field = 'abstract__fat'
 
     def carbohydrates_display(self, obj):
         return obj.carbohydrates if obj.carbohydrates is not None else '-'
-
     carbohydrates_display.short_description = 'Углеводы, г'
     carbohydrates_display.admin_order_field = 'abstract__carbohydrates'
 
     def category_display(self, obj):
-        """Отображает категорию ингредиента"""
-        # Проверяем через abstract
         if obj.abstract and obj.abstract.category:
             return obj.abstract.category.name
         return '-'
-
     category_display.short_description = 'Категория'
     category_display.admin_order_field = 'abstract__category__name'
 
@@ -627,8 +658,6 @@ class IngredientAdmin(admin.ModelAdmin):
             if category_id:
                 try:
                     category = IngredientCategory.objects.get(id=category_id)
-
-                    # Обновляем категорию через abstract
                     updated = 0
                     for ingredient in queryset:
                         if ingredient.abstract:
@@ -636,7 +665,6 @@ class IngredientAdmin(admin.ModelAdmin):
                             ingredient.abstract.save()
                             updated += 1
                         else:
-                            # Если нет abstract, создаем его
                             from .models import AbstractIngredient
                             abstract = AbstractIngredient.objects.create(
                                 name=ingredient.name,
@@ -676,11 +704,7 @@ class IngredientAdmin(admin.ModelAdmin):
         """Добавляем кнопки навигации в контекст"""
         if object_id:
             extra_context = extra_context or {}
-            current = Ingredient.objects.select_related(
-                'abstract',  # поле есть в модели
-                'branded'  # поле есть в модели
-            ).get(id=object_id)
-
+            current = Ingredient.objects.select_related('abstract', 'branded').get(id=object_id)
 
             next_ingredient = Ingredient.objects.filter(id__gt=current.id).order_by('id').first()
             prev_ingredient = Ingredient.objects.filter(id__lt=current.id).order_by('-id').first()
@@ -694,6 +718,7 @@ class IngredientAdmin(admin.ModelAdmin):
         return super().change_view(request, object_id, form_url, extra_context=extra_context)
 
 
+# ======================= РЕГИСТРАЦИЯ ПРОДУКТОВ =======================
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
@@ -705,4 +730,3 @@ class ProductAdmin(admin.ModelAdmin):
         ('Состав', {'fields': ('categories', 'ingredients_text', 'countries_tags')}),
         ('Оценки', {'fields': ('nutriscore_grade', 'nova_group', 'image')}),
     )
-
