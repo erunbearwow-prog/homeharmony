@@ -9,7 +9,7 @@ from .models import (
     CookingMethodSubstitution, UtensilSubstitution, ProfessionalIngredient,
     Product, RecipeFoodItem,
     AbstractIngredient,  # <-- ДОБАВЛЕНО
-    BrandedIngredient,   # <-- ДОБАВЛЕНО
+    BrandedIngredient, RelationType, SemanticRelation,  # <-- ДОБАВЛЕНО
 )
 
 
@@ -292,21 +292,80 @@ class RecipeStepAdmin(admin.ModelAdmin):
 
 @admin.register(CookingMethod)
 class CookingMethodAdmin(admin.ModelAdmin):
-    list_display = ['name', 'code', 'description', 'is_heat_treatment', 'sort_order']
-    search_fields = ['name', 'description']
+    list_display = [
+        'name',
+        'code',
+        'difficulty_badge',
+        'is_heat_treatment',
+        'can_cook_with_children',
+        'sort_order'
+    ]
+    list_filter = ['is_heat_treatment', 'difficulty', 'can_cook_with_children']
+    search_fields = ['name', 'code', 'description']
+    list_editable = ['sort_order']
+
     fieldsets = [
         ('Основная информация', {
-            'fields': ['name', 'code']
+            'fields': ['name', 'code', 'description', 'is_heat_treatment', 'sort_order']
         }),
-        ('Подробное описание', {
-            'fields': ['description', 'scientific_background'],
-            'classes': ['collapse']
+        ('Для начинающих', {
+            'fields': [
+                'difficulty',
+                'can_cook_with_children',
+                'child_friendly_notes',
+                'beginner_tips'
+            ],
+            'classes': ('collapse',)
         }),
-        ('Советы и ошибки', {
-            'fields': ['tips', 'common_mistakes', 'advanced_notes'],
-            'classes': ['collapse']
+        ('Подробное руководство', {
+            'fields': [
+                'step_by_step_guide',
+                'tips',
+                'common_mistakes'
+            ],
+            'classes': ('collapse',)
+        }),
+        ('Научная база', {
+            'fields': ['scientific_background', 'advanced_notes'],
+            'classes': ('collapse',)
+        }),
+        ('Параметры приготовления', {
+            'fields': [
+                'recommended_temperature_min',
+                'recommended_temperature_max',
+                'breading_type'
+            ],
+            'classes': ('collapse',)
+        }),
+        ('Коэффициенты', {
+            'fields': ['oil_absorption_rates', 'cut_shape_factors'],
+            'classes': ('collapse',)
+        }),
+        ('Визуал', {
+            'fields': ['icon', 'image', 'video_url'],
+            'classes': ('collapse',)
+        }),
+        ('Связи', {
+            'fields': ['best_ingredients'],
+            'classes': ('collapse',)
         }),
     ]
+
+    def difficulty_badge(self, obj):
+        """Отображает сложность в виде бейджа"""
+        colors = {
+            'easy': '🟢',
+            'medium': '🟡',
+            'hard': '🔴',
+        }
+        labels = {
+            'easy': 'Простая',
+            'medium': 'Средняя',
+            'hard': 'Сложная',
+        }
+        return f"{colors.get(obj.difficulty, '⚪')} {labels.get(obj.difficulty, 'Не указана')}"
+
+    difficulty_badge.short_description = 'Сложность'
 
 
 @admin.register(IngredientPreparation)
@@ -573,6 +632,7 @@ class IngredientAdmin(admin.ModelAdmin):
         'carbohydrates_display',
         'fiber',
         'sugar',
+        'relations_count',
         'is_common'
     ]
 
@@ -717,6 +777,17 @@ class IngredientAdmin(admin.ModelAdmin):
 
         return super().change_view(request, object_id, form_url, extra_context=extra_context)
 
+    def relations_count(self, obj):
+        """Количество семантических связей у ингредиента"""
+        if obj.abstract:
+            count = SemanticRelation.objects.filter(
+                from_category=obj.abstract.category
+            ).count()
+            return count
+        return 0
+
+    relations_count.short_description = 'Связей'
+
 
 # ======================= РЕГИСТРАЦИЯ ПРОДУКТОВ =======================
 
@@ -729,4 +800,58 @@ class ProductAdmin(admin.ModelAdmin):
         ('Основная информация', {'fields': ('code', 'name', 'brand', 'quantity')}),
         ('Состав', {'fields': ('categories', 'ingredients_text', 'countries_tags')}),
         ('Оценки', {'fields': ('nutriscore_grade', 'nova_group', 'image')}),
+    )
+
+
+#================================= семантические связи ===============================
+@admin.register(RelationType)
+class RelationTypeAdmin(admin.ModelAdmin):
+    list_display = ['icon', 'name', 'reverse_name', 'slug', 'is_symmetric', 'order']
+    list_filter = ['is_symmetric']
+    search_fields = ['name', 'reverse_name', 'slug', 'description']
+    list_editable = ['order']
+    list_display_links = ['icon', 'name']
+    ordering = ['order', 'name']
+    fieldsets = (
+        ('Основное', {
+            'fields': ('name', 'slug', 'reverse_name', 'description')
+        }),
+        ('Визуал', {
+            'fields': ('icon', 'color')
+        }),
+        ('Настройки', {
+            'fields': ('is_symmetric', 'order')
+        }),
+    )
+
+@admin.register(SemanticRelation)
+class SemanticRelationAdmin(admin.ModelAdmin):
+    list_display = [
+        'from_category',
+        'relation_type_display',
+        'to_category',
+        'weight',
+        'created_at'
+    ]
+    list_filter = ['relation_type', 'created_at']
+    search_fields = ['from_category__name', 'to_category__name', 'notes']
+    autocomplete_fields = ['from_category', 'to_category']
+    readonly_fields = ['created_at', 'updated_at', 'created_by']
+
+    def relation_type_display(self, obj):
+        return f"{obj.relation_type.icon} {obj.relation_type.name}"
+
+    relation_type_display.short_description = 'Тип связи'
+
+    fieldsets = (
+        ('Связь', {
+            'fields': ('from_category', 'relation_type', 'to_category')
+        }),
+        ('Дополнительно', {
+            'fields': ('weight', 'order', 'notes')
+        }),
+        ('Служебное', {
+            'fields': ('created_at', 'updated_at', 'created_by'),
+            'classes': ('collapse',)
+        }),
     )

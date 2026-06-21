@@ -735,6 +735,78 @@ class CookingMethod(models.Model):
     breading_type = models.CharField(max_length=20, choices=BREADING_CHOICES, default='none',
                                      verbose_name='Тип панировки')
 
+    # ===== НОВЫЕ ПОЛЯ =====
+
+    # Для семантической сети (связи будут через SemanticRelation)
+    # но добавим поля для прямого использования в UI
+
+    # Сложность для новичков
+    difficulty = models.CharField(
+        max_length=20,
+        choices=[
+            ('easy', '🟢 Простая — справится каждый'),
+            ('medium', '🟡 Средняя — нужна практика'),
+            ('hard', '🔴 Сложная — для опытных'),
+        ],
+        default='medium',
+        verbose_name='Сложность'
+    )
+
+    # Для обучения
+    step_by_step_guide = models.TextField(
+        blank=True,
+        verbose_name='Пошаговое руководство',
+        help_text='Подробное описание каждого шага'
+    )
+
+    # Визуал
+    icon = models.CharField(
+        max_length=50,
+        blank=True,
+        verbose_name='Иконка (Emoji)',
+        help_text='Например: 🍳, 🔥, 💧'
+    )
+
+    image = models.ImageField(
+        upload_to='cooking_methods/',
+        null=True,
+        blank=True,
+        verbose_name='Изображение'
+    )
+
+    video_url = models.URLField(
+        blank=True,
+        verbose_name='Ссылка на видео-урок',
+        help_text='YouTube или другой видео-хостинг'
+    )
+
+    # Для начинающих
+    beginner_tips = models.TextField(
+        blank=True,
+        verbose_name='Советы для начинающих',
+        help_text='Что важно знать, если делаешь это впервые'
+    )
+
+    # Для детей (важная фича для вашей аудитории!)
+    can_cook_with_children = models.BooleanField(
+        default=False,
+        verbose_name='Можно готовить с детьми'
+    )
+
+    child_friendly_notes = models.TextField(
+        blank=True,
+        verbose_name='Заметки для готовки с детьми'
+    )
+
+    # Связи с ингредиентами (будет через SemanticRelation)
+    # Но добавим поле для ручного указания "лучших" ингредиентов
+    best_ingredients = models.ManyToManyField(
+        'AbstractIngredient',
+        blank=True,
+        related_name='best_methods',
+        verbose_name='Лучшие ингредиенты для этого метода'
+    )
+
     class Meta:
         verbose_name = 'Способ обработки'
         verbose_name_plural = 'Способы обработки'
@@ -742,6 +814,9 @@ class CookingMethod(models.Model):
 
     def __str__(self):
         return self.name
+
+
+#======================== Техники приготовления =======================
 
 # ------------------------ 5.1 Нормы потерь при кулинарной обработке -----------------------------------------
 class ProductLossNorm(models.Model):
@@ -999,6 +1074,104 @@ class RecipeFoodItem(models.Model):
         return f"{self.food_name}: {self.quantity} {self.unit}"
 
 
+# ======================= СЕМАНТИЧЕСКАЯ СВЯЗЬ ИНГРЕДИЕНТОВ =======================
+class RelationType(models.Model):
+    """
+    Типы семантических отношений между сущностями
+    """
+    name = models.CharField(max_length=100, verbose_name="Название")
+    slug = models.SlugField(unique=True, verbose_name="Слаг")
+    reverse_name = models.CharField(
+        max_length=100,
+        blank=True,
+        verbose_name="Обратное название",
+        help_text="Например: 'сделано из' → 'используется в'"
+    )
+    description = models.TextField(blank=True, verbose_name="Описание")
+    is_symmetric = models.BooleanField(
+        default=False,
+        verbose_name="Симметричная связь",
+        help_text="Например: 'похоже на' — симметричная связь"
+    )
+    icon = models.CharField(max_length=50, blank=True, verbose_name="Иконка")
+    color = models.CharField(max_length=20, blank=True, verbose_name="Цвет")
+    order = models.IntegerField(default=0, verbose_name="Порядок")
+
+    class Meta:
+        verbose_name = "Тип связи"
+        verbose_name_plural = "Типы связей"
+        ordering = ['order', 'name']
+
+    def __str__(self):
+        return self.name
+
+
+# kitchen/models.py
+
+class SemanticRelation(models.Model):
+    from_category = models.ForeignKey(
+        'IngredientCategory',
+        on_delete=models.CASCADE,
+        related_name='outgoing_relations',
+        verbose_name="От категории"
+    )
+    to_category = models.ForeignKey(
+        'IngredientCategory',
+        on_delete=models.CASCADE,
+        related_name='incoming_relations',
+        verbose_name="К категории"
+    )
+    relation_type = models.ForeignKey(
+        'RelationType',
+        on_delete=models.CASCADE,
+        verbose_name="Тип связи"
+    )
+
+    weight = models.FloatField(default=1.0, verbose_name="Вес")
+    order = models.IntegerField(default=0, verbose_name="Порядок")
+    notes = models.TextField(blank=True, verbose_name="Примечания")
+
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата создания")
+    updated_at = models.DateTimeField(auto_now=True, verbose_name="Дата обновления")
+    created_by = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        verbose_name="Создал"
+    )
+
+    class Meta:
+        verbose_name = "Семантическая связь"
+        verbose_name_plural = "Семантические связи"
+        unique_together = ['from_category', 'to_category', 'relation_type']
+        indexes = [
+            models.Index(fields=['from_category', 'relation_type']),
+            models.Index(fields=['to_category', 'relation_type']),
+        ]
+
+    def __str__(self):
+        return f"{self.from_category.name} {self.relation_type.name} {self.to_category.name}"
+
+    def save(self, *args, **kwargs):
+        # Проверка на цикл
+        if self.from_category == self.to_category:
+            from django.core.exceptions import ValidationError
+            raise ValidationError("Нельзя создать связь категории с самой собой")
+
+        # Проверка на дубликат
+        if self.pk is None:  # Только для новых записей
+            existing = SemanticRelation.objects.filter(
+                from_category=self.from_category,
+                to_category=self.to_category,
+                relation_type=self.relation_type
+            ).exists()
+            if existing:
+                from django.core.exceptions import ValidationError
+                raise ValidationError("Такая связь уже существует")
+
+        super().save(*args, **kwargs)
+
 # ======================= 13. ШАГИ ПРИГОТОВЛЕНИЯ =======================
 class RecipeStep(models.Model):
     recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name='steps')
@@ -1091,3 +1264,4 @@ def update_recipe_nutrition(sender, instance, **kwargs):
     if instance.pk:
         # Пересчитать КБЖУ из ингредиентов
         pass
+
