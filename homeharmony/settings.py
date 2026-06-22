@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-c!wqv+n@i50ryz#-wbzv=9$n%&h&p%s(#75iirl9oqyqv%@m_8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '192.168.0.10']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 
 # Application definition
@@ -39,17 +39,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'imagekit',
     'django_localekit',
-    'accounts.apps.AccountsConfig',
-    'kitchen.apps.KitchenConfig',
-    'cleaning.apps.CleaningConfig',
-    'budget.apps.BudgetConfig',
-    'repair.apps.RepairConfig',
-    'health.apps.HealthConfig',
-    'seasonal.apps.SeasonalConfig',
-    'community.apps.CommunityConfig',
-    'knowledge.apps.KnowledgeConfig',
-    'pages.apps.PagesConfig',
-
+    'accounts.apps.AccountsConfig',   # ← ВРЕМЕННО
+    'kitchen.apps.KitchenConfig',        # ← ОСТАВЛЯЕМ
+    'cleaning.apps.CleaningConfig',   # ← ВРЕМЕННО
+    'budget.apps.BudgetConfig',       # ← ВРЕМЕННО
+    'repair.apps.RepairConfig',       # ← ВРЕМЕННО
+    'health.apps.HealthConfig',       # ← ВРЕМЕННО
+    'seasonal.apps.SeasonalConfig',   # ← ВРЕМЕННО
+    'community.apps.CommunityConfig', # ← ВРЕМЕННО
+    'knowledge.apps.KnowledgeConfig', # ← ВРЕМЕННО
+    'pages.apps.PagesConfig',         # ← ВРЕМЕННО
 ]
 
 MIDDLEWARE = [
@@ -120,6 +119,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # settings.py
 AUTH_USER_MODEL = 'accounts.User'
+# AUTH_USER_MODEL = 'auth.User'
 
 
 # Internationalization
