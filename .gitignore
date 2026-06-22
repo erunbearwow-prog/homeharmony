@@ -33,4 +33,11 @@ wheels/
 .DS_Store
 ehthumbs.db
 Thumbs.db
+backup.py
+book.pdf
+book_extract.pdf
+food.parquet
+recipe.pdf
+russian_products.csv
 TODO_Later.py
+Палитры.rtf

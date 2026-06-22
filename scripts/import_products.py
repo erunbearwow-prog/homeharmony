@@ -54,4 +54,4 @@ def import_products(csv_file, limit=100):
 
 
 if __name__ == '__main__':
-    import_products('russian_products.csv', limit=100)
+    import_products('../russian_products.csv', limit=100)

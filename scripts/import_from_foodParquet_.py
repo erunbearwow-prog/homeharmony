@@ -1,7 +1,7 @@
 import duckdb
 import os
 
-file_path = './food.parquet'  # или где лежит файл
+file_path = '../food.parquet'  # или где лежит файл
 
 # Проверяем существование
 if not os.path.exists(file_path):

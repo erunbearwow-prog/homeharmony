@@ -13,7 +13,7 @@ from kitchen.models import Ingredient, IngredientCategory
 
 
 def import_ingredients():
-    csv_file = 'Ingredients_categories/ingredients_export_20260611_212137.csv'
+    csv_file = '../Ingredients_categories/ingredients_export_20260611_212137.csv'
 
     with open(csv_file, 'r', encoding='utf-8-sig') as f:
         reader = csv.DictReader(f)
