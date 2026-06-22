@@ -1001,22 +1001,43 @@ class Product(models.Model):
 
 
 # ======================= 10. ИНГРЕДИЕНТЫ РЕЦЕПТА =======================
-class RecipeIngredient(models.Model):
-    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name='recipe_ingredients')
-    ingredient = models.ForeignKey(Ingredient, on_delete=models.CASCADE, related_name='recipe_uses')
+
+
+# ======================== Домашний ингредиент ==========================
+
+
+# ДОБАВЬТЕ ПОСЛЕ НЕГО:
+class HomeIngredient(models.Model):
+    """
+    Ингредиент в домашнем рецепте
+    (заменяет RecipeIngredient)
+    """
+    recipe = models.ForeignKey(
+        'Recipe',
+        on_delete=models.CASCADE,
+        related_name='home_ingredients'
+    )
+    ingredient = models.ForeignKey(
+        'Ingredient',
+        on_delete=models.CASCADE,
+        related_name='home_uses'
+    )
+
+    # Количество и единицы измерения
     quantity = models.FloatField(validators=[MinValueValidator(0.01)])
     unit = models.CharField(max_length=20, choices=UNIT_CHOICES, default='г')
+
+    # Дополнительно
     notes = models.CharField(max_length=500, blank=True)
     is_scalable = models.BooleanField(default=True)
 
     class Meta:
-        verbose_name = 'Ингредиент рецепта'
-        verbose_name_plural = 'Ингредиенты рецептов'
+        verbose_name = 'Ингредиент домашнего рецепта'
+        verbose_name_plural = 'Ингредиенты домашних рецептов'
         unique_together = ['recipe', 'ingredient']
 
     def __str__(self):
         return f"{self.ingredient.name}: {self.quantity} {self.unit}"
-
 
 # ======================= 11. ПРОФЕССИОНАЛЬНЫЙ ИНГРЕДИЕНТ =======================
 class ProfessionalIngredient(models.Model):
@@ -1183,7 +1204,7 @@ class RecipeStep(models.Model):
     recipe_step_image = models.ImageField(upload_to=recipe_step_image_path, null=True, blank=True)
     subrecipe = models.ForeignKey(Recipe, on_delete=models.SET_NULL, null=True, blank=True,
                                   related_name='used_in_steps')
-    subrecipe_base_ingredient = models.ForeignKey(RecipeIngredient, on_delete=models.SET_NULL, null=True, blank=True,
+    subrecipe_base_ingredient = models.ForeignKey(HomeIngredient, on_delete=models.SET_NULL, null=True, blank=True,
                                                   related_name='base_for_steps')
     subrecipe_base_quantity = models.FloatField(null=True, blank=True, validators=[MinValueValidator(0)])
     cooking_method = models.ForeignKey(CookingMethod, on_delete=models.SET_NULL, null=True, blank=True,
@@ -1221,7 +1242,7 @@ def delete_recipe_step_image(sender, instance, **kwargs):
 
 # ======================= 14. ЗАМЕНЫ =======================
 class IngredientSubstitution(models.Model):
-    recipe_ingredient = models.ForeignKey(RecipeIngredient, on_delete=models.CASCADE, related_name='substitutions')
+    recipe_ingredient = models.ForeignKey(HomeIngredient, on_delete=models.CASCADE, related_name='substitutions')
     substitute_ingredient = models.ForeignKey(Ingredient, on_delete=models.CASCADE, related_name='substitutions')
     substitute_unit = models.CharField(max_length=20, choices=UNIT_CHOICES)
     ratio = models.FloatField(default=1.0)

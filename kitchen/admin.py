@@ -4,16 +4,26 @@ from django.utils.html import format_html
 from django.db.models import F
 from .models import (
     Cuisine, Diet, IngredientCategory, Ingredient,
-    Recipe, RecipeStep, RecipeIngredient, CookingMethod,
+    Recipe, RecipeStep, CookingMethod,
     IngredientPreparation, RecommendedUtensil, IngredientSubstitution,
     CookingMethodSubstitution, UtensilSubstitution, ProfessionalIngredient,
     Product, RecipeFoodItem,
     AbstractIngredient,  # <-- ДОБАВЛЕНО
     BrandedIngredient, RelationType, SemanticRelation,  # <-- ДОБАВЛЕНО
+    HomeIngredient,
 )
 
 
 #======================= БАЗОВЫЕ РЕГИСТРАЦИИ =======================
+class IngredientSubstitutionInline(admin.TabularInline):
+    model = IngredientSubstitution
+    extra = 1
+    fields = ['substitute_ingredient', 'substitute_unit', 'ratio', 'notes']
+    autocomplete_fields = ['substitute_ingredient']
+    verbose_name = '✅ Замена'
+    verbose_name_plural = '✅ Возможные замены (прямо в этом рецепте)'
+    classes = ['collapse']
+
 
 @admin.register(Cuisine)
 class CuisineAdmin(admin.ModelAdmin):
@@ -30,6 +40,14 @@ class DietAdmin(admin.ModelAdmin):
     search_fields = ['name', 'description']
     filter_horizontal = ['allowed_ingredients', 'prohibited_ingredients']
 
+
+@admin.register(HomeIngredient)
+class HomeIngredientAdmin(admin.ModelAdmin):
+    list_display = ['recipe', 'ingredient', 'quantity', 'unit']
+    list_filter = ['unit', 'is_scalable']
+    search_fields = ['recipe__title', 'ingredient__name']
+    autocomplete_fields = ['recipe', 'ingredient']
+    inlines = [IngredientSubstitutionInline]
 
 # ======================= INLINE КЛАССЫ =======================
 
@@ -55,60 +73,6 @@ class ProfessionalIngredientInline(admin.TabularInline):
     loss_factor_display.short_description = 'Коэф. потерь (брутто/нетто)'
 
 
-class IngredientSubstitutionInline(admin.TabularInline):
-    model = IngredientSubstitution
-    extra = 1
-    fields = ['substitute_ingredient', 'substitute_unit', 'ratio', 'notes']
-    autocomplete_fields = ['substitute_ingredient']
-    verbose_name = '✅ Замена'
-    verbose_name_plural = '✅ Возможные замены (прямо в этом рецепте)'
-    classes = ['collapse']
-
-
-class RecipeIngredientForm(forms.ModelForm):
-    class Meta:
-        model=RecipeIngredient
-        fields = '__all__'
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.fields['ingredient'].queryset = (
-            Ingredient.objects
-            .annotate(lower_name=F('name'))
-            .order_by('lower_name')
-        )
-
-
-class RecipeIngredientInline(admin.TabularInline):
-    model = RecipeIngredient
-    form = RecipeIngredientForm
-    extra = 0  # ← не создаём пустых форм
-    min_num = 0  # ← минимум 0 форм
-    fields = ['ingredient', 'quantity', 'unit', 'notes', 'is_scalable', 'edit_substitutions']
-    autocomplete_fields = ['ingredient']
-    readonly_fields = ['edit_substitutions']
-    verbose_name = 'Ингредиент'
-    verbose_name_plural = 'Ингредиенты'
-
-    def get_formset(self, request, obj=None, **kwargs):
-        formset = super().get_formset(request, obj, **kwargs)
-        # Добавляем проверку на пустоту
-        formset.validate_min = False
-        return formset
-
-    def edit_substitutions(self, obj):
-        """Ссылка на редактирование замен для этого ингредиента"""
-        if obj and obj.pk:
-            from django.urls import reverse
-            url = reverse('admin:kitchen_recipeingredient_change', args=[obj.pk])
-            return format_html(
-                '<a href="{}" target="_blank" style="background: #f8f9fa; padding: 4px 8px; border-radius: 4px; text-decoration: none; color: #0d6efd;">'
-                '🔄 Управление заменами</a>', url
-            )
-        return '—'
-    edit_substitutions.short_description = 'Замены'
-
-
 class RecipeStepForm(forms.ModelForm):
     class Meta:
         model = RecipeStep
@@ -117,39 +81,28 @@ class RecipeStepForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        print("=== RecipeStepForm.__init__ ===")
-        print(f"args: {args}")
-        print(f"kwargs keys: {kwargs.keys()}")
-
         if 'subrecipe_base_ingredient' in self.fields:
             subrecipe_id = None
 
-            # Способ 1: из данных POST (при сохранении)
             if self.data and self.data.get('subrecipe'):
                 try:
                     subrecipe_id = int(self.data.get('subrecipe'))
-                    print(f"Found subrecipe_id from data: {subrecipe_id}")
                 except (ValueError, TypeError):
                     pass
 
-            # Способ 2: из instance (при редактировании существующего)
             if not subrecipe_id and self.instance and self.instance.pk:
                 subrecipe_id = self.instance.subrecipe_id
-                print(f"Found subrecipe_id from instance: {subrecipe_id}")
 
-            # Способ 3: из initial (при создании нового, если передали)
             if not subrecipe_id and self.initial.get('subrecipe'):
                 subrecipe_id = self.initial.get('subrecipe')
-                print(f"Found subrecipe_id from initial: {subrecipe_id}")
 
             if subrecipe_id:
-                self.fields['subrecipe_base_ingredient'].queryset = RecipeIngredient.objects.filter(
+                # ИСПРАВЛЕНО: RecipeIngredient → HomeIngredient
+                self.fields['subrecipe_base_ingredient'].queryset = HomeIngredient.objects.filter(
                     recipe_id=subrecipe_id
                 ).select_related('ingredient')
-                print(f"Filtered queryset count: {self.fields['subrecipe_base_ingredient'].queryset.count()}")
             else:
-                self.fields['subrecipe_base_ingredient'].queryset = RecipeIngredient.objects.none()
-                print("No subrecipe_id found, queryset set to none")
+                self.fields['subrecipe_base_ingredient'].queryset = HomeIngredient.objects.none()
 
 
 class RecipeStepInline(admin.StackedInline):
@@ -272,14 +225,6 @@ class RecipeAdmin(admin.ModelAdmin):
 
 
 # ======================= ОСТАЛЬНЫЕ РЕГИСТРАЦИИ =======================
-
-@admin.register(RecipeIngredient)
-class RecipeIngredientAdmin(admin.ModelAdmin):
-    list_display = ['recipe', 'ingredient', 'quantity', 'unit']
-    list_filter = ['unit', 'is_scalable']
-    search_fields = ['recipe__title', 'ingredient__name']
-    autocomplete_fields = ['recipe', 'ingredient']
-    inlines = [IngredientSubstitutionInline]
 
 
 @admin.register(RecipeStep)

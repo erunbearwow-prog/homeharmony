@@ -3,7 +3,7 @@ from django.views.decorators.http import require_http_methods
 from .models import (
     RecipeStep, Cuisine,
     CookingMethodSubstitution,
-    UtensilSubstitution
+    UtensilSubstitution, HomeIngredient
 )
 from constants.nutrients import NUTRIENTS_MAP, CATEGORY_NAMES, CATEGORY_ORDER
 
@@ -317,7 +317,6 @@ def recipe_detail(request, recipe_id):
     # можно объединить или использовать только новый способ
     if not food_items:
         # Старый способ (для обратной совместимости)
-        from .models import RecipeIngredient
         ingredients = recipe.recipe_ingredients.select_related('ingredient').all()
         # Конвертируем в формат, похожий на food_items
         food_items = []
@@ -443,7 +442,7 @@ def recipe_old(request):
 def get_substitutions(request, recipe_ingredient_id):
     """Возвращает список допустимых замен для ингредиента в рецепте"""
     try:
-        recipe_ingredient = RecipeIngredient.objects.get(id=recipe_ingredient_id)
+        recipe_ingredient = HomeIngredient.objects.get(id=recipe_ingredient_id)
         substitutions = recipe_ingredient.substitutions.all()
         data = {
             'original_name': recipe_ingredient.ingredient.name,
@@ -458,7 +457,7 @@ def get_substitutions(request, recipe_ingredient_id):
             ]
         }
         return JsonResponse(data)
-    except RecipeIngredient.DoesNotExist:
+    except HomeIngredient.DoesNotExist:
         return JsonResponse({'error': 'Ингредиент не найден'}, status=404)
 
 
@@ -467,7 +466,7 @@ def get_substitutions(request, recipe_ingredient_id):
 from django.db.models import Count
 from .models import (
     RecommendedUtensil, CookingMethod,
-    IngredientPreparation, Recipe, RecipeIngredient
+    IngredientPreparation, Recipe,
 )
 
 
