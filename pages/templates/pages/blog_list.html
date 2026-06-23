@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Блог | Семейные ценности{% endblock %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <h1 class="text-3xl md:text-4xl font-bold serif text-center mb-6">Блог</h1>
+    {% if posts %}
+        <div class="space-y-6">
+            {% for post in posts %}
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
+                <h2 class="text-xl font-semibold"><a href="{% url 'pages:blog_detail' post.slug %}">{{ post.title }}</a></h2>
+                <p class="text-gray-600">{{ post.excerpt }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p class="text-gray-500 text-center py-8">Статей пока нет. Скоро появятся!</p>
+    {% endif %}
+</div>
+{% endblock %}

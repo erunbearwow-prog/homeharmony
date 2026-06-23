@@ -1,17 +1,176 @@
-from django.views.decorators.csrf import csrf_exempt
-from django.views.decorators.http import require_http_methods
+
 from .models import (
-    RecipeStep, Cuisine,
-    CookingMethodSubstitution,
-    UtensilSubstitution, HomeIngredient
+    CookingMethod, HomeIngredient,
+    RecommendedUtensil, Recipe,
+    IngredientPreparation, RecipeStep,
+    Cuisine, CookingMethodSubstitution,
+    UtensilSubstitution, IngredientCategory,
+    BrandedIngredient, Ingredient, AbstractIngredient
 )
 from constants.nutrients import NUTRIENTS_MAP, CATEGORY_NAMES, CATEGORY_ORDER
+from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.http import require_http_methods
+import json
+from django.http import JsonResponse
+from django.db.models import Count
+from django.shortcuts import render
+from django.core.paginator import Paginator
+from rest_framework import viewsets, status
+from rest_framework.decorators import action
+from rest_framework.response import Response
+from django.db.models import Q
+from django.shortcuts import get_object_or_404
+
+from .serializers import (
+    RecipeListSerializer, RecipeDetailSerializer,
+    IngredientSerializer, CuisineSerializer,
+    IngredientCategorySerializer, AbstractIngredientSerializer,
+    BrandedIngredientSerializer
+)
+
 
 def home(request):
     return render(request, 'kitchen/index.html')
 
 def recipe(request):
     return render(request, 'kitchen/cooking_recipe.html')
+
+
+class RecipeViewSet(viewsets.ModelViewSet):
+    """API для рецептов"""
+    queryset = Recipe.objects.all().order_by('-created_at')
+    serializer_class = RecipeListSerializer
+    filterset_fields = ['cuisine', 'difficulty', 'is_professional']
+    search_fields = ['title', 'description', 'author']
+
+    def get_serializer_class(self):
+        if self.action == 'retrieve':
+            return RecipeDetailSerializer
+        return RecipeListSerializer
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+
+        # Фильтр по времени
+        time_max = self.request.query_params.get('time_max')
+        if time_max:
+            queryset = queryset.filter(total_time__lte=int(time_max))
+
+        # Фильтр по сложности
+        difficulty = self.request.query_params.get('difficulty')
+        if difficulty:
+            queryset = queryset.filter(difficulty=difficulty)
+
+        return queryset
+
+    @action(detail=False, methods=['get'])
+    def suitable(self, request):
+        """
+        Поиск рецептов по ингредиентам.
+        Пример: /api/recipes/suitable/?ingredients=1,2,3
+        """
+        ingredients_ids = request.query_params.get('ingredients', '').split(',')
+        if not ingredients_ids or not ingredients_ids[0]:
+            return Response(
+                {'error': 'Укажите ингредиенты через запятую: ?ingredients=1,2,3'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        # Находим рецепты, содержащие хотя бы один из указанных ингредиентов
+        recipes = Recipe.objects.filter(
+            home_ingredients__ingredient__id__in=ingredients_ids
+        ).distinct()
+
+        serializer = RecipeListSerializer(recipes, many=True)
+        return Response(serializer.data)
+
+    @action(detail=True, methods=['get'])
+    def nutrition(self, request, pk=None):
+        """Расчёт КБЖУ для рецепта"""
+        recipe = self.get_object()
+        total_nutrition = {
+            'calories': 0,
+            'protein': 0,
+            'fat': 0,
+            'carbohydrates': 0
+        }
+
+        for ri in recipe.home_ingredients.all():
+            ingredient = ri.ingredient
+            quantity = ri.quantity or 0
+            if ingredient:
+                total_nutrition['calories'] += (ingredient.calories or 0) * quantity / 100
+                total_nutrition['protein'] += (ingredient.protein or 0) * quantity / 100
+                total_nutrition['fat'] += (ingredient.fat or 0) * quantity / 100
+                total_nutrition['carbohydrates'] += (ingredient.carbohydrates or 0) * quantity / 100
+
+        return Response({k: round(v, 1) for k, v in total_nutrition.items()})
+
+
+class IngredientViewSet(viewsets.ReadOnlyModelViewSet):
+    """API для ингредиентов (только чтение)"""
+    queryset = Ingredient.objects.select_related('abstract', 'branded').all()
+    serializer_class = IngredientSerializer
+    search_fields = ['name', 'abstract__name', 'branded__brand', 'branded__product_name']
+    filterset_fields = ['abstract__category', 'is_semi_finished']
+
+
+class CuisineViewSet(viewsets.ReadOnlyModelViewSet):
+    """API для кухонь мира"""
+    queryset = Cuisine.objects.all()
+    serializer_class = CuisineSerializer
+    search_fields = ['name', 'region']
+
+
+class IngredientCategoryViewSet(viewsets.ReadOnlyModelViewSet):
+    """API для категорий ингредиентов"""
+    queryset = IngredientCategory.objects.all()
+    serializer_class = IngredientCategorySerializer
+    search_fields = ['name']
+
+    @action(detail=True, methods=['get'])
+    def children(self, request, pk=None):
+        """Получить дочерние категории"""
+        category = self.get_object()
+        children = category.children.all()
+        serializer = IngredientCategorySerializer(children, many=True)
+        return Response(serializer.data)
+
+
+class AbstractIngredientViewSet(viewsets.ReadOnlyModelViewSet):
+    """API для абстрактных ингредиентов"""
+    queryset = AbstractIngredient.objects.select_related('category').all()
+    serializer_class = AbstractIngredientSerializer
+    search_fields = ['name', 'description']
+    filterset_fields = ['category', 'is_active']
+
+
+class BrandedIngredientViewSet(viewsets.ReadOnlyModelViewSet):
+    """API для брендированных продуктов"""
+    queryset = BrandedIngredient.objects.select_related('abstract').all()
+    serializer_class = BrandedIngredientSerializer
+    search_fields = ['brand', 'product_name', 'barcode']
+    filterset_fields = ['abstract', 'brand', 'store', 'is_available']
+
+    @action(detail=False, methods=['get'])
+    def by_barcode(self, request):
+        """Поиск по штрих-коду"""
+        barcode = request.query_params.get('barcode')
+        if not barcode:
+            return Response(
+                {'error': 'Укажите штрих-код: ?barcode=123456789'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        try:
+            product = BrandedIngredient.objects.get(barcode=barcode)
+            serializer = self.get_serializer(product)
+            return Response(serializer.data)
+        except BrandedIngredient.DoesNotExist:
+            return Response(
+                {'error': 'Товар не найден'},
+                status=status.HTTP_404_NOT_FOUND
+            )
 
 def cuisine_detail(request, slug):
     """Детальная страница кухни мира по slug"""
@@ -461,22 +620,7 @@ def get_substitutions(request, recipe_ingredient_id):
         return JsonResponse({'error': 'Ингредиент не найден'}, status=404)
 
 
-# kitchen/views.py
-
-from django.db.models import Count
-from .models import (
-    RecommendedUtensil, CookingMethod,
-    IngredientPreparation, Recipe,
-)
-
-
 # ======================= ИНГРЕДИЕНТЫ =======================
-
-from django.shortcuts import render, get_object_or_404
-from django.core.paginator import Paginator
-from django.db.models import Q
-
-
 def ingredient_list(request):
     """Список всех ингредиентов с пагинацией и поиском"""
     # Используем select_related для подгрузки category через abstract
@@ -833,14 +977,6 @@ def preparation_detail(request, preparation_id):
     return render(request, 'kitchen/preparation_detail.html', context)
 
 
-#====================== import
-# kitchen/views.py
-from django.views.decorators.csrf import csrf_exempt
-from django.views.decorators.http import require_http_methods
-from .models import Ingredient
-import json
-
-
 @csrf_exempt
 @require_http_methods(['POST'])
 def import_ingredient(request):
@@ -883,11 +1019,222 @@ def import_ingredient(request):
         return JsonResponse({'error': str(e)}, status=500)
 
 
-from django.http import JsonResponse
-from kitchen.models import IngredientCategory
-
 def get_child_categories(request):
     """Возвращает дочерние категории для AJAX запроса"""
+    parent_id = request.GET.get('parent_id')
+    if parent_id:
+        categories = IngredientCategory.objects.filter(parent_id=parent_id).order_by('name').values('id', 'name')
+        return JsonResponse({'categories': list(categories)})
+    return JsonResponse({'categories': []})
+
+
+def api_recipe_list(request):
+    """API: список рецептов с фильтрацией"""
+    recipes = Recipe.objects.all().order_by('-created_at')
+
+    # Фильтры
+    cuisine = request.GET.get('cuisine')
+    if cuisine:
+        recipes = recipes.filter(cuisine_id=cuisine)
+
+    difficulty = request.GET.get('difficulty')
+    if difficulty:
+        recipes = recipes.filter(difficulty=difficulty)
+
+    time_max = request.GET.get('time_max')
+    if time_max:
+        recipes = recipes.filter(total_time__lte=int(time_max))
+
+    # Поиск
+    search = request.GET.get('search')
+    if search:
+        recipes = recipes.filter(title__icontains=search)
+
+    # Пагинация
+    page = request.GET.get('page', 1)
+    paginator = Paginator(recipes, 20)
+    recipes_page = paginator.get_page(page)
+
+    serializer = RecipeListSerializer(recipes_page, many=True)
+    return JsonResponse({
+        'results': serializer.data,
+        'count': paginator.count,
+        'total_pages': paginator.num_pages,
+        'current_page': int(page)
+    })
+
+
+def api_recipe_detail(request, pk):
+    """API: детали рецепта"""
+    try:
+        recipe = Recipe.objects.get(pk=pk)
+    except Recipe.DoesNotExist:
+        return JsonResponse({'error': 'Рецепт не найден'}, status=404)
+
+    serializer = RecipeDetailSerializer(recipe)
+    return JsonResponse(serializer.data)
+
+
+def api_recipe_suitable(request):
+    """
+    API: поиск рецептов по ингредиентам
+    Пример: /api/recipes/suitable/?ingredients=1,2,3
+    """
+    ingredients_ids = request.GET.get('ingredients', '').split(',')
+    if not ingredients_ids or not ingredients_ids[0]:
+        return JsonResponse(
+            {'error': 'Укажите ингредиенты через запятую: ?ingredients=1,2,3'},
+            status=400
+        )
+
+    recipes = Recipe.objects.filter(
+        home_ingredients__ingredient__id__in=ingredients_ids
+    ).distinct()
+
+    serializer = RecipeListSerializer(recipes, many=True)
+    return JsonResponse({'results': serializer.data})
+
+
+def api_ingredient_list(request):
+    """API: список ингредиентов"""
+    ingredients = Ingredient.objects.select_related('abstract', 'branded').all()
+
+    search = request.GET.get('search')
+    if search:
+        ingredients = ingredients.filter(
+            Q(name__icontains=search) |
+            Q(abstract__name__icontains=search) |
+            Q(branded__brand__icontains=search)
+        )
+
+    category = request.GET.get('category')
+    if category:
+        ingredients = ingredients.filter(abstract__category_id=category)
+
+    page = request.GET.get('page', 1)
+    paginator = Paginator(ingredients, 30)
+    ingredients_page = paginator.get_page(page)
+
+    serializer = IngredientSerializer(ingredients_page, many=True)
+    return JsonResponse({
+        'results': serializer.data,
+        'count': paginator.count,
+        'total_pages': paginator.num_pages,
+        'current_page': int(page)
+    })
+
+
+def api_cuisine_list(request):
+    """API: список кухонь мира"""
+    cuisines = Cuisine.objects.all()
+    serializer = CuisineSerializer(cuisines, many=True)
+    return JsonResponse({'results': serializer.data})
+
+
+def api_category_list(request):
+    """API: список категорий ингредиентов"""
+    categories = IngredientCategory.objects.filter(parent__isnull=True)
+    serializer = IngredientCategorySerializer(categories, many=True)
+    return JsonResponse({'results': serializer.data})
+
+
+def api_abstract_ingredient_list(request):
+    """API: список абстрактных ингредиентов"""
+    abstracts = AbstractIngredient.objects.select_related('category').all()
+
+    search = request.GET.get('search')
+    if search:
+        abstracts = abstracts.filter(name__icontains=search)
+
+    category = request.GET.get('category')
+    if category:
+        abstracts = abstracts.filter(category_id=category)
+
+    page = request.GET.get('page', 1)
+    paginator = Paginator(abstracts, 30)
+    abstracts_page = paginator.get_page(page)
+
+    serializer = AbstractIngredientSerializer(abstracts_page, many=True)
+    return JsonResponse({
+        'results': serializer.data,
+        'count': paginator.count,
+        'total_pages': paginator.num_pages,
+        'current_page': int(page)
+    })
+
+
+def api_abstract_ingredient_detail(request, pk):
+    """API: детали абстрактного ингредиента"""
+    try:
+        abstract = AbstractIngredient.objects.select_related('category').get(pk=pk)
+    except AbstractIngredient.DoesNotExist:
+        return JsonResponse({'error': 'Ингредиент не найден'}, status=404)
+
+    serializer = AbstractIngredientSerializer(abstract)
+    return JsonResponse(serializer.data)
+
+
+def api_branded_ingredient_list(request):
+    """API: список брендированных продуктов"""
+    branded = BrandedIngredient.objects.select_related('abstract').all()
+
+    search = request.GET.get('search')
+    if search:
+        branded = branded.filter(
+            Q(brand__icontains=search) |
+            Q(product_name__icontains=search)
+        )
+
+    brand = request.GET.get('brand')
+    if brand:
+        branded = branded.filter(brand__icontains=brand)
+
+    page = request.GET.get('page', 1)
+    paginator = Paginator(branded, 30)
+    branded_page = paginator.get_page(page)
+
+    serializer = BrandedIngredientSerializer(branded_page, many=True)
+    return JsonResponse({
+        'results': serializer.data,
+        'count': paginator.count,
+        'total_pages': paginator.num_pages,
+        'current_page': int(page)
+    })
+
+
+def api_branded_ingredient_detail(request, pk):
+    """API: детали брендированного продукта"""
+    try:
+        branded = BrandedIngredient.objects.select_related('abstract').get(pk=pk)
+    except BrandedIngredient.DoesNotExist:
+        return JsonResponse({'error': 'Продукт не найден'}, status=404)
+
+    serializer = BrandedIngredientSerializer(branded)
+    return JsonResponse(serializer.data)
+
+
+def api_branded_ingredient_by_barcode(request):
+    """API: поиск брендированного продукта по штрих-коду"""
+    barcode = request.GET.get('barcode')
+    if not barcode:
+        return JsonResponse(
+            {'error': 'Укажите штрих-код: ?barcode=123456789'},
+            status=400
+        )
+
+    try:
+        branded = BrandedIngredient.objects.get(barcode=barcode)
+        serializer = BrandedIngredientSerializer(branded)
+        return JsonResponse(serializer.data)
+    except BrandedIngredient.DoesNotExist:
+        return JsonResponse(
+            {'error': 'Товар не найден'},
+            status=404
+        )
+
+
+def api_category_children(request):
+    """Возвращает дочерние категории для AJAX запроса (для админки)"""
     parent_id = request.GET.get('parent_id')
     if parent_id:
         categories = IngredientCategory.objects.filter(parent_id=parent_id).order_by('name').values('id', 'name')

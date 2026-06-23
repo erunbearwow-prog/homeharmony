@@ -35,7 +35,9 @@
                         {% endif %}
                         <i class="fas fa-chevron-down text-xs"></i>
                     </button>
-                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg w-48 right-0 mt-2 z-10 border border-gray-100">
+                    <!-- menu -->
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg w-48 right-0 z-10 border border-gray-100">
+                        <!-- ... пункты меню ... -->
                         <a href="{% url 'accounts:profile' %}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 hover:text-amber-700 transition">
                             <i class="fas fa-user mr-2"></i> Профиль
                         </a>
@@ -52,7 +54,9 @@
                                 <i class="fas fa-sign-out-alt mr-2"></i> Выйти
                             </button>
                         </form>
+                        <!-- ... конец пунктов меню ... -->
                     </div>
+                    <!-- endmenu -->
                 </div>
                 {% else %}
                 <a href="{% url 'accounts:auth-login-phone' %}" class="text-gray-500 hover:text-amber-700 transition">
@@ -69,8 +73,6 @@
             </div>
         </div>
     </div>
-
-     Мобильное выпадающее меню
     <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-gray-100 py-2 shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col space-y-1">
             <a href="{% url 'pages:home' %}" class="py-2 px-3 text-gray-600 hover:bg-amber-50 hover:text-amber-700 rounded-lg transition">Главная</a>

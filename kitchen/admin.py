@@ -12,6 +12,7 @@ from .models import (
     BrandedIngredient, RelationType, SemanticRelation,  # <-- ДОБАВЛЕНО
     HomeIngredient,
 )
+from .admin_mixins import CategoryLevelMixin
 
 
 #======================= БАЗОВЫЕ РЕГИСТРАЦИИ =======================
@@ -349,116 +350,17 @@ class IngredientSubstitutionAdmin(admin.ModelAdmin):
 
 # ======================= ФОРМА ДЛЯ КАТЕГОРИЙ ИНГРЕДИЕНТОВ =======================
 
-class IngredientCategoryForm(forms.ModelForm):
-    category_level_1 = forms.ModelChoiceField(
-        queryset=IngredientCategory.objects.filter(parent__isnull=True).order_by('name'),
-        required=False,
-        label='Категория 1-го уровня'
-    )
-    category_level_2 = forms.ModelChoiceField(
-        queryset=IngredientCategory.objects.none(),
-        required=False,
-        label='Категория 2-го уровня'
-    )
-    category_level_3 = forms.ModelChoiceField(
-        queryset=IngredientCategory.objects.none(),
-        required=False,
-        label='Категория 3-го уровня'
-    )
+class IngredientCategoryForm(CategoryLevelMixin, forms.ModelForm):
+    """Форма для Ingredient с трехуровневым выбором категории"""
 
     class Meta:
         model = Ingredient
         fields = '__all__'
 
-    def __init__(self, *args, **kwargs):
-        # Принудительно загружаем abstract с категорией
-        if kwargs.get('instance') and kwargs['instance'].pk:
-            instance = kwargs['instance']
-            if instance.abstract_id and not hasattr(instance, '_abstract_cache'):
-                from .models import AbstractIngredient
-                instance.abstract = AbstractIngredient.objects.select_related('category').get(id=instance.abstract_id)
-
-        super().__init__(*args, **kwargs)
-
-        current_category = self.instance.category if self.instance and self.instance.pk else None
-
-        if current_category:
-            if current_category.level == 0:
-                self.fields['category_level_1'].initial = current_category
-                self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
-                    parent=current_category
-                ).order_by('name')
-
-            elif current_category.level == 1:
-                self.fields['category_level_1'].initial = current_category.parent
-                self.fields['category_level_2'].initial = current_category
-                self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
-                    parent=current_category.parent
-                ).order_by('name')
-                self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
-                    parent=current_category
-                ).order_by('name')
-
-            elif current_category.level == 2:
-                root = current_category.root_parent
-                second = current_category.second_level_parent
-                self.fields['category_level_1'].initial = root
-                self.fields['category_level_2'].initial = second
-                self.fields['category_level_3'].initial = current_category
-                self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
-                    parent=root
-                ).order_by('name')
-                self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
-                    parent=second
-                ).order_by('name')
-        else:
-            self.fields['category_level_2'].queryset = IngredientCategory.objects.none()
-            self.fields['category_level_3'].queryset = IngredientCategory.objects.none()
-
-        # Динамическая загрузка при POST
-        if self.is_bound:
-            if 'category_level_1' in self.data and self.data.get('category_level_1'):
-                try:
-                    level_1_id = int(self.data.get('category_level_1'))
-                    self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
-                        parent_id=level_1_id
-                    ).order_by('name')
-                except (ValueError, TypeError):
-                    pass
-
-            if 'category_level_2' in self.data and self.data.get('category_level_2'):
-                try:
-                    level_2_id = int(self.data.get('category_level_2'))
-                    self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
-                        parent_id=level_2_id
-                    ).order_by('name')
-                except (ValueError, TypeError):
-                    pass
-
-    def clean(self):
-        cleaned_data = super().clean()
-        level_1 = cleaned_data.get('category_level_1')
-        level_2 = cleaned_data.get('category_level_2')
-        level_3 = cleaned_data.get('category_level_3')
-
-        if level_3:
-            selected_category = level_3
-        elif level_2:
-            selected_category = level_2
-        elif level_1:
-            selected_category = level_1
-        else:
-            selected_category = None
-
-        cleaned_data['selected_category'] = selected_category
-        return cleaned_data
-
     def save(self, commit=True):
         instance = super().save(commit=False)
-
         selected_category = self.cleaned_data.get('selected_category')
 
-        # Сохраняем категорию в abstract
         if instance.abstract:
             instance.abstract.category = selected_category
             if commit:
@@ -492,15 +394,155 @@ class IngredientCategoryAdmin(admin.ModelAdmin):
     ordering = ['name']
 
 
+class AbstractIngredientCategoryForm(CategoryLevelMixin, forms.ModelForm):
+    """Форма для AbstractIngredient с трехуровневым выбором категории"""
+
+    class Meta:
+        model = AbstractIngredient
+        fields = '__all__'
+
+    def save(self, commit=True):
+        instance = super().save(commit=False)
+        instance.category = self.cleaned_data.get('selected_category')
+
+        if commit:
+            instance.save()
+            self.save_m2m()
+
+        return instance
+
+
 # ======================= РЕГИСТРАЦИЯ АБСТРАКТНЫХ ИНГРЕДИЕНТОВ =======================
+
+# admin.py
 
 @admin.register(AbstractIngredient)
 class AbstractIngredientAdmin(admin.ModelAdmin):
-    list_display = ['name', 'category', 'calories', 'protein', 'fat', 'carbohydrates']
-    list_filter = ['category']
+    form = AbstractIngredientCategoryForm
+    list_per_page = 30
+    save_on_top = True
+
+    list_display = [
+        'name',
+        'category_display',
+        'calories_display',
+        'protein_display',
+        'fat_display',
+        'carbohydrates_display',
+        'is_active'
+    ]
+
+    list_filter = ['category', 'is_active']
     search_fields = ['name', 'description']
     readonly_fields = ['id', 'created_at', 'updated_at']
     ordering = ['name']
+
+    fieldsets = (
+        ('Основное', {
+            'fields': ('name', 'description', 'description_ru')
+        }),
+        ('Категория', {
+            'fields': ('category_level_1', 'category_level_2', 'category_level_3'),
+            'description': 'Выберите категорию ингредиента (три уровня вложенности)'
+        }),
+        ('КБЖУ', {
+            'fields': ('calories', 'protein', 'fat', 'carbohydrates'),
+            'classes': ('collapse',)
+        }),
+        ('Дополнительные нутриенты', {
+            'fields': ('fiber', 'sugar', 'water', 'ash', 'starch'),
+            'classes': ('collapse',)
+        }),
+        ('Витамины', {
+            'fields': ('vitamin_a', 'beta_carotene', 'vitamin_b1', 'vitamin_b2',
+                       'vitamin_b3', 'vitamin_b4', 'vitamin_b5', 'vitamin_b6',
+                       'vitamin_b7', 'vitamin_b9_folate', 'vitamin_b12',
+                       'vitamin_c', 'vitamin_d', 'vitamin_e', 'vitamin_k'),
+            'classes': ('collapse',)
+        }),
+        ('Минералы', {
+            'fields': ('potassium', 'calcium', 'magnesium', 'sodium', 'phosphorus',
+                       'iron', 'manganese', 'copper', 'selenium', 'zinc'),
+            'classes': ('collapse',)
+        }),
+        ('Жирные кислоты', {
+            'fields': ('saturated_fat', 'trans_fat', 'cholesterol', 'omega_3', 'omega_6'),
+            'classes': ('collapse',)
+        }),
+        ('Изображение и источник', {
+            'fields': ('image', 'data_source', 'fdc_id', 'is_active'),
+            'classes': ('collapse',)
+        }),
+        ('Служебное', {
+            'fields': ('id', 'created_at', 'updated_at'),
+            'classes': ('collapse',)
+        }),
+    )
+
+    def category_display(self, obj):
+        return obj.category.name if obj.category else '-'
+
+    category_display.short_description = 'Категория'
+    category_display.admin_order_field = 'category__name'
+
+    def calories_display(self, obj):
+        return obj.calories if obj.calories is not None else '-'
+
+    calories_display.short_description = 'Калории, ккал'
+
+    def protein_display(self, obj):
+        return obj.protein if obj.protein is not None else '-'
+
+    protein_display.short_description = 'Белки, г'
+
+    def fat_display(self, obj):
+        return obj.fat if obj.fat is not None else '-'
+
+    fat_display.short_description = 'Жиры, г'
+
+    def carbohydrates_display(self, obj):
+        return obj.carbohydrates if obj.carbohydrates is not None else '-'
+
+    carbohydrates_display.short_description = 'Углеводы, г'
+
+    actions = ['bulk_assign_category']
+
+    def bulk_assign_category(self, request, queryset):
+        """Массовое назначение категории выбранным абстрактным ингредиентам"""
+        from django.shortcuts import render
+        from django.http import HttpResponseRedirect
+
+        if request.method == 'POST' and 'apply' in request.POST:
+            category_id = request.POST.get('category_id')
+
+            if category_id:
+                try:
+                    category = IngredientCategory.objects.get(id=category_id)
+                    updated = queryset.update(category=category)
+                    self.message_user(request, f'Категория "{category}" назначена {updated} ингредиентам')
+                    return HttpResponseRedirect(request.get_full_path())
+                except IngredientCategory.DoesNotExist:
+                    self.message_user(request, 'Выбранная категория не найдена', level='ERROR')
+                    return HttpResponseRedirect(request.get_full_path())
+            else:
+                self.message_user(request, 'Пожалуйста, выберите категорию', level='ERROR')
+                return HttpResponseRedirect(request.get_full_path())
+
+        all_categories = IngredientCategory.objects.all()
+
+        return render(request, 'admin/kitchen/abstractingredient/bulk_assign_category.html', {
+            'queryset': queryset,
+            'categories': all_categories,
+            'title': 'Массовое назначение категории абстрактным ингредиентам'
+        })
+
+    bulk_assign_category.short_description = "Назначить категорию выбранным абстрактным ингредиентам"
+
+    class Media:
+        js = ['admin/js/category_chain.js']
+        css = {
+            'all': ('admin/css/category_select.css',)
+        }
 
 
 # ======================= РЕГИСТРАЦИЯ БРЕНДИРОВАННЫХ ПРОДУКТОВ =======================

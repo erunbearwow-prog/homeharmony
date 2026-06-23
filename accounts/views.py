@@ -1,5 +1,5 @@
 # accounts/views.py
-
+from django.contrib.auth.decorators import login_required
 from rest_framework import viewsets, status, permissions
 from rest_framework.decorators import action
 from rest_framework.response import Response
@@ -20,8 +20,32 @@ User = get_user_model()
 
 
 def profile_page(request):
-    return render(request, 'accounts/profile.html')
+    """Страница профиля пользователя"""
+    return render(request, 'accounts/profile.html', {'title': 'Профиль'})
 
+@login_required
+def favorites_page(request):
+    """Страница избранного"""
+    return render(request, 'accounts/favorites.html', {'title': 'Избранное'})
+
+@login_required
+def tasks_page(request):
+    """Страница задач пользователя"""
+    return render(request, 'accounts/tasks.html', {'title': 'Мои задачи'})
+
+def login_page(request):
+    """Страница входа"""
+    return render(request, 'accounts/login.html', {'title': 'Вход'})
+
+def register_page(request):
+    """Страница регистрации"""
+    return render(request, 'accounts/register.html', {'title': 'Регистрация'})
+
+def logout_view(request):
+    """Выход из системы"""
+    from django.contrib.auth import logout
+    logout(request)
+    return render(request, 'accounts/logout.html', {'title': 'Выход'})
 
 class UserViewSet(viewsets.ModelViewSet):
     """
@@ -61,7 +85,6 @@ class UserViewSet(viewsets.ModelViewSet):
             serializer.save()
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
 
 class FamilyGroupViewSet(viewsets.ModelViewSet):
     """
@@ -164,7 +187,6 @@ class FamilyGroupViewSet(viewsets.ModelViewSet):
                 status=status.HTTP_404_NOT_FOUND
             )
 
-
 class FamilyMembershipViewSet(viewsets.ModelViewSet):
     """ViewSet для управления участием в группах"""
 
@@ -182,7 +204,6 @@ class FamilyMembershipViewSet(viewsets.ModelViewSet):
         memberships = self.get_queryset().select_related('family_group')
         serializer = self.get_serializer(memberships, many=True)
         return Response(serializer.data)
-
 
 class UserProfileViewSet(viewsets.ModelViewSet):
     """
@@ -222,7 +243,6 @@ class UserProfileViewSet(viewsets.ModelViewSet):
             serializer.save()
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
 
 class AuthViewSet(viewsets.GenericViewSet):
     """

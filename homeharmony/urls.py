@@ -2,9 +2,10 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from kitchen.views import get_child_categories
+from kitchen.views import get_child_categories, api_category_children
 
 urlpatterns = [
+    path('admin/api/category-children/', api_category_children, name='api_category_children'),
     path('admin/', admin.site.urls),
     path('', include('pages.urls')),           # ← ВРЕМЕННО
     path('kitchen/', include('kitchen.urls')),   # ← ОСТАВЛЯЕМ
