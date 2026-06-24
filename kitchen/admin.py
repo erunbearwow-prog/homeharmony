@@ -12,7 +12,6 @@ from .models import (
     BrandedIngredient, RelationType, SemanticRelation,  # <-- ДОБАВЛЕНО
     HomeIngredient,
 )
-from .admin_mixins import CategoryLevelMixin
 
 
 #======================= БАЗОВЫЕ РЕГИСТРАЦИИ =======================
@@ -350,12 +349,88 @@ class IngredientSubstitutionAdmin(admin.ModelAdmin):
 
 # ======================= ФОРМА ДЛЯ КАТЕГОРИЙ ИНГРЕДИЕНТОВ =======================
 
-class IngredientCategoryForm(CategoryLevelMixin, forms.ModelForm):
+class IngredientCategoryForm(forms.ModelForm):
     """Форма для Ingredient с трехуровневым выбором категории"""
+
+    # Явно объявляем поля категорий
+    category_level_1 = forms.ModelChoiceField(
+        queryset=IngredientCategory.objects.filter(parent__isnull=True).order_by('name'),
+        required=False,
+        label='Категория 1-го уровня'
+    )
+    category_level_2 = forms.ModelChoiceField(
+        queryset=IngredientCategory.objects.none(),
+        required=False,
+        label='Категория 2-го уровня'
+    )
+    category_level_3 = forms.ModelChoiceField(
+        queryset=IngredientCategory.objects.none(),
+        required=False,
+        label='Категория 3-го уровня'
+    )
 
     class Meta:
         model = Ingredient
         fields = '__all__'
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self._setup_categories()
+
+    def _setup_categories(self):
+        """Настраивает поля категорий"""
+        current_category = None
+        if self.instance and self.instance.pk:
+            # Получаем категорию через abstract
+            if self.instance.abstract:
+                current_category = self.instance.abstract.category
+
+        if current_category:
+            level = current_category.level
+
+            if level == 0:
+                self.fields['category_level_1'].initial = current_category
+                self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
+                    parent=current_category
+                ).order_by('name')
+            elif level == 1:
+                self.fields['category_level_1'].initial = current_category.parent
+                self.fields['category_level_2'].initial = current_category
+                self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
+                    parent=current_category.parent
+                ).order_by('name')
+                self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
+                    parent=current_category
+                ).order_by('name')
+            elif level == 2:
+                root = current_category.root_parent
+                second = current_category.second_level_parent
+                self.fields['category_level_1'].initial = root
+                self.fields['category_level_2'].initial = second
+                self.fields['category_level_3'].initial = current_category
+                self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
+                    parent=root
+                ).order_by('name')
+                self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
+                    parent=second
+                ).order_by('name')
+
+    def clean(self):
+        cleaned_data = super().clean()
+        level_1 = cleaned_data.get('category_level_1')
+        level_2 = cleaned_data.get('category_level_2')
+        level_3 = cleaned_data.get('category_level_3')
+
+        if level_3:
+            cleaned_data['selected_category'] = level_3
+        elif level_2:
+            cleaned_data['selected_category'] = level_2
+        elif level_1:
+            cleaned_data['selected_category'] = level_1
+        else:
+            cleaned_data['selected_category'] = None
+
+        return cleaned_data
 
     def save(self, commit=True):
         instance = super().save(commit=False)
@@ -394,27 +469,108 @@ class IngredientCategoryAdmin(admin.ModelAdmin):
     ordering = ['name']
 
 
-class AbstractIngredientCategoryForm(CategoryLevelMixin, forms.ModelForm):
+# kitchen/admin.py
+
+# kitchen/admin.py
+
+class AbstractIngredientCategoryForm(forms.ModelForm):
     """Форма для AbstractIngredient с трехуровневым выбором категории"""
+
+    # Явно объявляем поля категорий
+    category_level_1 = forms.ModelChoiceField(
+        queryset=IngredientCategory.objects.filter(parent__isnull=True).order_by('name'),
+        required=False,
+        label='Категория 1-го уровня'
+    )
+    category_level_2 = forms.ModelChoiceField(
+        queryset=IngredientCategory.objects.none(),
+        required=False,
+        label='Категория 2-го уровня'
+    )
+    category_level_3 = forms.ModelChoiceField(
+        queryset=IngredientCategory.objects.none(),
+        required=False,
+        label='Категория 3-го уровня'
+    )
 
     class Meta:
         model = AbstractIngredient
         fields = '__all__'
+        exclude = ['category']  # category устанавливается через форму
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self._setup_categories()
+
+    def _setup_categories(self):
+        """Настраивает поля категорий в зависимости от текущей категории"""
+        current_category = None
+        if self.instance and self.instance.pk:
+            current_category = self.instance.category
+
+        if current_category:
+            level = current_category.level
+
+            if level == 0:
+                # Категория 1-го уровня
+                self.fields['category_level_1'].initial = current_category
+                self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
+                    parent=current_category
+                ).order_by('name')
+            elif level == 1:
+                # Категория 2-го уровня
+                self.fields['category_level_1'].initial = current_category.parent
+                self.fields['category_level_2'].initial = current_category
+                self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
+                    parent=current_category.parent
+                ).order_by('name')
+                self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
+                    parent=current_category
+                ).order_by('name')
+            elif level == 2:
+                # Категория 3-го уровня
+                root = current_category.root_parent
+                second = current_category.second_level_parent
+                self.fields['category_level_1'].initial = root
+                self.fields['category_level_2'].initial = second
+                self.fields['category_level_3'].initial = current_category
+                self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
+                    parent=root
+                ).order_by('name')
+                self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
+                    parent=second
+                ).order_by('name')
+
+    def clean(self):
+        cleaned_data = super().clean()
+
+        level_1 = cleaned_data.get('category_level_1')
+        level_2 = cleaned_data.get('category_level_2')
+        level_3 = cleaned_data.get('category_level_3')
+
+        if level_3:
+            cleaned_data['selected_category'] = level_3
+        elif level_2:
+            cleaned_data['selected_category'] = level_2
+        elif level_1:
+            cleaned_data['selected_category'] = level_1
+        else:
+            cleaned_data['selected_category'] = None
+
+        return cleaned_data
 
     def save(self, commit=True):
         instance = super().save(commit=False)
         instance.category = self.cleaned_data.get('selected_category')
-
         if commit:
             instance.save()
             self.save_m2m()
-
         return instance
 
 
 # ======================= РЕГИСТРАЦИЯ АБСТРАКТНЫХ ИНГРЕДИЕНТОВ =======================
 
-# admin.py
+# kitchen/admin.py
 
 @admin.register(AbstractIngredient)
 class AbstractIngredientAdmin(admin.ModelAdmin):
@@ -437,13 +593,10 @@ class AbstractIngredientAdmin(admin.ModelAdmin):
     readonly_fields = ['id', 'created_at', 'updated_at']
     ordering = ['name']
 
+    # ⚠️ В fieldsets НЕТ category_level_*
     fieldsets = (
         ('Основное', {
             'fields': ('name', 'description', 'description_ru')
-        }),
-        ('Категория', {
-            'fields': ('category_level_1', 'category_level_2', 'category_level_3'),
-            'description': 'Выберите категорию ингредиента (три уровня вложенности)'
         }),
         ('КБЖУ', {
             'fields': ('calories', 'protein', 'fat', 'carbohydrates'),
@@ -479,30 +632,52 @@ class AbstractIngredientAdmin(admin.ModelAdmin):
         }),
     )
 
+    def get_fields(self, request, obj=None):
+        """
+        Добавляем поля категорий в список полей формы.
+        Эти поля есть в форме (AbstractIngredientCategoryForm),
+        но их нет в модели, поэтому их нельзя добавлять в fieldsets.
+        """
+        fields = super().get_fields(request, obj)
+        # Добавляем поля категорий в начало списка
+        return ['category_level_1', 'category_level_2', 'category_level_3'] + list(fields)
+
+    def get_fieldsets(self, request, obj=None):
+        """
+        Динамически добавляем блок с категориями в fieldsets для отображения.
+        Важно: эти поля уже добавлены через get_fields,
+        поэтому Django не будет проверять их в модели.
+        """
+        fieldsets = list(super().get_fieldsets(request, obj))
+        # Вставляем блок с категориями после блока "Основное"
+        category_fieldset = (
+            'Категория', {
+                'fields': ('category_level_1', 'category_level_2', 'category_level_3'),
+                'description': 'Выберите категорию ингредиента (три уровня вложенности)'
+            }
+        )
+        fieldsets.insert(1, category_fieldset)
+        return fieldsets
+
     def category_display(self, obj):
         return obj.category.name if obj.category else '-'
-
     category_display.short_description = 'Категория'
     category_display.admin_order_field = 'category__name'
 
     def calories_display(self, obj):
         return obj.calories if obj.calories is not None else '-'
-
     calories_display.short_description = 'Калории, ккал'
 
     def protein_display(self, obj):
         return obj.protein if obj.protein is not None else '-'
-
     protein_display.short_description = 'Белки, г'
 
     def fat_display(self, obj):
         return obj.fat if obj.fat is not None else '-'
-
     fat_display.short_description = 'Жиры, г'
 
     def carbohydrates_display(self, obj):
         return obj.carbohydrates if obj.carbohydrates is not None else '-'
-
     carbohydrates_display.short_description = 'Углеводы, г'
 
     actions = ['bulk_assign_category']
@@ -604,6 +779,8 @@ class BrandedIngredientAdmin(admin.ModelAdmin):
 
 # ======================= РЕГИСТРАЦИЯ ИНГРЕДИЕНТОВ =======================
 
+# kitchen/admin.py
+
 @admin.register(Ingredient)
 class IngredientAdmin(admin.ModelAdmin):
     form = IngredientCategoryForm
@@ -633,13 +810,10 @@ class IngredientAdmin(admin.ModelAdmin):
     readonly_fields = ['id']
     ordering = ['name_normalized']
 
+    # Убираем category_level_* из fieldsets
     fieldsets = (
         ('Основное', {
             'fields': ('name', 'abstract', 'branded')
-        }),
-        ('Категория', {
-            'fields': ('category_level_1', 'category_level_2', 'category_level_3'),
-            'description': 'Выберите категорию ингредиента (три уровня вложенности)'
         }),
         ('Пользовательские корректировки', {
             'fields': ('custom_calories', 'custom_protein', 'custom_fat', 'custom_carbohydrates'),
@@ -664,6 +838,9 @@ class IngredientAdmin(admin.ModelAdmin):
             'classes': ('collapse',)
         }),
     )
+
+    # Поля category_level_* добавляются через форму (IngredientCategoryForm)
+    # Они НЕ ДОЛЖНЫ быть в fieldsets
 
     def calories_display(self, obj):
         return obj.calories if obj.calories is not None else '-'
