@@ -10,7 +10,7 @@ from .models import (
     Product, RecipeFoodItem,
     AbstractIngredient,  # <-- ДОБАВЛЕНО
     BrandedIngredient, RelationType, SemanticRelation,  # <-- ДОБАВЛЕНО
-    HomeIngredient,
+    HomeIngredient, SemanticTag,
 )
 
 
@@ -988,28 +988,48 @@ class RelationTypeAdmin(admin.ModelAdmin):
         }),
     )
 
+# kitchen/admin.py
+
 @admin.register(SemanticRelation)
 class SemanticRelationAdmin(admin.ModelAdmin):
     list_display = [
-        'from_category',
+        'from_display',
         'relation_type_display',
-        'to_category',
+        'to_display',
         'weight',
         'created_at'
     ]
     list_filter = ['relation_type', 'created_at']
-    search_fields = ['from_category__name', 'to_category__name', 'notes']
-    autocomplete_fields = ['from_category', 'to_category']
+    search_fields = [
+        'from_category__name', 'to_category__name',
+        'from_tag__name', 'to_tag__name',
+        'from_method__name', 'to_method__name',
+        'from_utensil__name', 'to_utensil__name',
+        'from_cuisine__name', 'to_cuisine__name',  # ← НОВОЕ!
+        'notes'
+    ]
+    autocomplete_fields = [
+        'from_category', 'to_category',
+        'from_tag', 'to_tag',
+        'from_method', 'to_method',
+        'from_utensil', 'to_utensil',
+        'from_cuisine', 'to_cuisine'  # ← НОВОЕ!
+    ]
     readonly_fields = ['created_at', 'updated_at', 'created_by']
 
-    def relation_type_display(self, obj):
-        return f"{obj.relation_type.icon} {obj.relation_type.name}"
-
-    relation_type_display.short_description = 'Тип связи'
-
     fieldsets = (
-        ('Связь', {
-            'fields': ('from_category', 'relation_type', 'to_category')
+        ('От (источник)', {
+            'fields': (
+                ('from_category', 'from_tag', 'from_method', 'from_utensil', 'from_cuisine'),  # ← НОВОЕ!
+            )
+        }),
+        ('К (цель)', {
+            'fields': (
+                ('to_category', 'to_tag', 'to_method', 'to_utensil', 'to_cuisine'),  # ← НОВОЕ!
+            )
+        }),
+        ('Тип связи', {
+            'fields': ('relation_type',)
         }),
         ('Дополнительно', {
             'fields': ('weight', 'order', 'notes')
@@ -1019,3 +1039,79 @@ class SemanticRelationAdmin(admin.ModelAdmin):
             'classes': ('collapse',)
         }),
     )
+
+    def from_display(self, obj):
+        if obj.from_category:
+            return f"📁 {obj.from_category.name}"
+        if obj.from_tag:
+            return f"🏷️ {obj.from_tag.name}"
+        if obj.from_method:
+            return f"🍳 {obj.from_method.name}"
+        if obj.from_utensil:
+            return f"🔧 {obj.from_utensil.name}"
+        if obj.from_cuisine:  # ← НОВОЕ!
+            return f"🌍 {obj.from_cuisine.name}"
+        return "-"
+    from_display.short_description = 'От'
+
+    def to_display(self, obj):
+        if obj.to_category:
+            return f"📁 {obj.to_category.name}"
+        if obj.to_tag:
+            return f"🏷️ {obj.to_tag.name}"
+        if obj.to_method:
+            return f"🍳 {obj.to_method.name}"
+        if obj.to_utensil:
+            return f"🔧 {obj.to_utensil.name}"
+        if obj.to_cuisine:  # ← НОВОЕ!
+            return f"🌍 {obj.to_cuisine.name}"
+        return "-"
+    to_display.short_description = 'К'
+
+    def relation_type_display(self, obj):
+        return f"{obj.relation_type.icon} {obj.relation_type.name}"
+    relation_type_display.short_description = 'Тип связи'
+
+
+@admin.register(SemanticTag)
+class SemanticTagAdmin(admin.ModelAdmin):
+    list_display = [
+        'name',
+        'tag_type',
+        'icon',
+        'sort_order',
+        'is_active',
+        'ingredient_count'
+    ]
+    list_filter = ['tag_type', 'is_active']
+    search_fields = ['name', 'description']
+    list_editable = ['sort_order', 'is_active']
+    ordering = ['tag_type', 'name']
+    prepopulated_fields = {'slug': ('name',)}
+    filter_horizontal = ['ingredients']
+    readonly_fields = ['ingredient_count']
+
+    fieldsets = (
+        ('Основное', {
+            'fields': ('name', 'slug', 'tag_type', 'icon', 'color')
+        }),
+        ('Описание', {
+            'fields': ('description',)
+        }),
+        ('Связи', {
+            'fields': ('ingredients',)
+        }),
+        ('Настройки', {
+            'fields': ('sort_order', 'is_active')
+        }),
+        ('Служебное', {
+            'fields': ('ingredient_count',),
+            'classes': ('collapse',)
+        }),
+    )
+
+    def ingredient_count(self, obj):
+        """Количество связанных ингредиентов"""
+        return obj.ingredient_count
+
+    ingredient_count.short_description = 'Ингредиентов'

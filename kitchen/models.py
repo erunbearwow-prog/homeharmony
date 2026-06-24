@@ -253,6 +253,7 @@ class AbstractIngredient(models.Model):
     omega_3 = models.FloatField(null=True, blank=True, verbose_name="Омега-3, г")
     omega_6 = models.FloatField(null=True, blank=True, verbose_name="Омега-6, г")
 
+
     # ===== ДРУГИЕ ПОЛЯ =====
     organic_acids = models.FloatField(null=True, blank=True, verbose_name="Органические кислоты, г")
 
@@ -1127,72 +1128,6 @@ class RelationType(models.Model):
         return self.name
 
 
-# kitchen/models.py
-
-class SemanticRelation(models.Model):
-    from_category = models.ForeignKey(
-        'IngredientCategory',
-        on_delete=models.CASCADE,
-        related_name='outgoing_relations',
-        verbose_name="От категории"
-    )
-    to_category = models.ForeignKey(
-        'IngredientCategory',
-        on_delete=models.CASCADE,
-        related_name='incoming_relations',
-        verbose_name="К категории"
-    )
-    relation_type = models.ForeignKey(
-        'RelationType',
-        on_delete=models.CASCADE,
-        verbose_name="Тип связи"
-    )
-
-    weight = models.FloatField(default=1.0, verbose_name="Вес")
-    order = models.IntegerField(default=0, verbose_name="Порядок")
-    notes = models.TextField(blank=True, verbose_name="Примечания")
-
-    created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата создания")
-    updated_at = models.DateTimeField(auto_now=True, verbose_name="Дата обновления")
-    created_by = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.SET_NULL,
-        null=True,
-        blank=True,
-        verbose_name="Создал"
-    )
-
-    class Meta:
-        verbose_name = "Семантическая связь"
-        verbose_name_plural = "Семантические связи"
-        unique_together = ['from_category', 'to_category', 'relation_type']
-        indexes = [
-            models.Index(fields=['from_category', 'relation_type']),
-            models.Index(fields=['to_category', 'relation_type']),
-        ]
-
-    def __str__(self):
-        return f"{self.from_category.name} {self.relation_type.name} {self.to_category.name}"
-
-    def save(self, *args, **kwargs):
-        # Проверка на цикл
-        if self.from_category == self.to_category:
-            from django.core.exceptions import ValidationError
-            raise ValidationError("Нельзя создать связь категории с самой собой")
-
-        # Проверка на дубликат
-        if self.pk is None:  # Только для новых записей
-            existing = SemanticRelation.objects.filter(
-                from_category=self.from_category,
-                to_category=self.to_category,
-                relation_type=self.relation_type
-            ).exists()
-            if existing:
-                from django.core.exceptions import ValidationError
-                raise ValidationError("Такая связь уже существует")
-
-        super().save(*args, **kwargs)
-
 # ======================= 13. ШАГИ ПРИГОТОВЛЕНИЯ =======================
 class RecipeStep(models.Model):
     recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name='steps')
@@ -1285,4 +1220,254 @@ def update_recipe_nutrition(sender, instance, **kwargs):
     if instance.pk:
         # Пересчитать КБЖУ из ингредиентов
         pass
+
+
+# kitchen/models.py
+
+class SemanticTag(models.Model):
+    """
+    Семантический тег для ингредиентов.
+    """
+    TAG_TYPES = [
+        ('vitamin', 'Витамин'),
+        ('mineral', 'Минерал'),
+        ('method', 'Метод приготовления'),
+        ('diet', 'Диета'),
+        ('property', 'Свойство'),
+        ('nutrient', 'Нутриент'),
+        ('other', 'Другое'),
+    ]
+
+    name = models.CharField(max_length=100, unique=True, verbose_name="Название")
+    slug = models.SlugField(unique=True, verbose_name="Слаг", blank=True)
+    tag_type = models.CharField(max_length=20, choices=TAG_TYPES, default='other', verbose_name="Тип тега")
+    icon = models.CharField(max_length=50, blank=True, verbose_name="Иконка")
+    color = models.CharField(max_length=20, blank=True, verbose_name="Цвет")
+    description = models.TextField(blank=True, verbose_name="Описание")
+    sort_order = models.IntegerField(default=0, verbose_name="Порядок")
+    is_active = models.BooleanField(default=True, verbose_name="Активен")
+
+    # Связь с абстрактными ингредиентами
+    ingredients = models.ManyToManyField(
+        'AbstractIngredient',
+        blank=True,
+        related_name='semantic_tags',
+        verbose_name="Ингредиенты"
+    )
+
+    class Meta:
+        verbose_name = "Семантический тег"
+        verbose_name_plural = "Семантические теги"
+        ordering = ['tag_type', 'name']
+        indexes = [
+            models.Index(fields=['slug']),
+            models.Index(fields=['tag_type']),
+        ]
+
+    def __str__(self):
+        return f"{self.get_tag_type_display()}: {self.name}"
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            from slugify import slugify
+            self.slug = slugify(self.name)
+        super().save(*args, **kwargs)
+
+    @property
+    def ingredient_count(self):
+        return self.ingredients.count()
+
+
+class SemanticRelation(models.Model):
+    # ===== ОТ КОГО =====
+    from_category = models.ForeignKey(
+        'IngredientCategory',
+        on_delete=models.CASCADE,
+        related_name='outgoing_relations',
+        verbose_name="От категории",
+        null=True,
+        blank=True
+    )
+    from_tag = models.ForeignKey(
+        'SemanticTag',
+        on_delete=models.CASCADE,
+        related_name='outgoing_relations',
+        verbose_name="От тега",
+        null=True,
+        blank=True
+    )
+    from_method = models.ForeignKey(
+        'CookingMethod',
+        on_delete=models.CASCADE,
+        related_name='outgoing_relations',
+        verbose_name="От метода",
+        null=True,
+        blank=True
+    )
+    from_utensil = models.ForeignKey(
+        'RecommendedUtensil',
+        on_delete=models.CASCADE,
+        related_name='outgoing_relations',
+        verbose_name="От утвари",
+        null=True,
+        blank=True
+    )
+    from_cuisine = models.ForeignKey(  # ← НОВОЕ!
+        'Cuisine',
+        on_delete=models.CASCADE,
+        related_name='outgoing_relations',
+        verbose_name="От кухни",
+        null=True,
+        blank=True
+    )
+
+    # ===== К КОМУ =====
+    to_category = models.ForeignKey(
+        'IngredientCategory',
+        on_delete=models.CASCADE,
+        related_name='incoming_relations',
+        verbose_name="К категории",
+        null=True,
+        blank=True
+    )
+    to_tag = models.ForeignKey(
+        'SemanticTag',
+        on_delete=models.CASCADE,
+        related_name='incoming_relations',
+        verbose_name="К тегу",
+        null=True,
+        blank=True
+    )
+    to_method = models.ForeignKey(
+        'CookingMethod',
+        on_delete=models.CASCADE,
+        related_name='incoming_relations',
+        verbose_name="К методу",
+        null=True,
+        blank=True
+    )
+    to_utensil = models.ForeignKey(
+        'RecommendedUtensil',
+        on_delete=models.CASCADE,
+        related_name='incoming_relations',
+        verbose_name="К утвари",
+        null=True,
+        blank=True
+    )
+    to_cuisine = models.ForeignKey(  # ← НОВОЕ!
+        'Cuisine',
+        on_delete=models.CASCADE,
+        related_name='incoming_relations',
+        verbose_name="К кухне",
+        null=True,
+        blank=True
+    )
+
+    # ===== ТИП СВЯЗИ =====
+    relation_type = models.ForeignKey(
+        'RelationType',
+        on_delete=models.CASCADE,
+        verbose_name="Тип связи"
+    )
+
+    weight = models.FloatField(default=1.0, verbose_name="Вес")
+    order = models.IntegerField(default=0, verbose_name="Порядок")
+    notes = models.TextField(blank=True, verbose_name="Примечания")
+
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата создания")
+    updated_at = models.DateTimeField(auto_now=True, verbose_name="Дата обновления")
+    created_by = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        verbose_name="Создал"
+    )
+
+    class Meta:
+        verbose_name = "Семантическая связь"
+        verbose_name_plural = "Семантические связи"
+        indexes = [
+            models.Index(fields=['from_category', 'relation_type']),
+            models.Index(fields=['to_category', 'relation_type']),
+            models.Index(fields=['from_tag', 'relation_type']),
+            models.Index(fields=['to_tag', 'relation_type']),
+            models.Index(fields=['from_method', 'relation_type']),
+            models.Index(fields=['to_method', 'relation_type']),
+            models.Index(fields=['from_utensil', 'relation_type']),
+            models.Index(fields=['to_utensil', 'relation_type']),
+            models.Index(fields=['from_cuisine', 'relation_type']),  # ← НОВОЕ!
+            models.Index(fields=['to_cuisine', 'relation_type']),  # ← НОВОЕ!
+        ]
+
+    def __str__(self):
+        from_name = self._get_from_name()
+        to_name = self._get_to_name()
+        return f"{from_name} {self.relation_type.name} {to_name}"
+
+    def _get_from_name(self):
+        if self.from_category:
+            return f"📁 {self.from_category.name}"
+        if self.from_tag:
+            return f"🏷️ {self.from_tag.name}"
+        if self.from_method:
+            return f"🍳 {self.from_method.name}"
+        if self.from_utensil:
+            return f"🔧 {self.from_utensil.name}"
+        if self.from_cuisine:  # ← НОВОЕ!
+            return f"🌍 {self.from_cuisine.name}"
+        return '?'
+
+    def _get_to_name(self):
+        if self.to_category:
+            return f"📁 {self.to_category.name}"
+        if self.to_tag:
+            return f"🏷️ {self.to_tag.name}"
+        if self.to_method:
+            return f"🍳 {self.to_method.name}"
+        if self.to_utensil:
+            return f"🔧 {self.to_utensil.name}"
+        if self.to_cuisine:  # ← НОВОЕ!
+            return f"🌍 {self.to_cuisine.name}"
+        return '?'
+
+    def clean(self):
+        # Проверка: должна быть связь хотя бы с одной сущностью
+        has_from = self.from_category or self.from_tag or self.from_method or self.from_utensil or self.from_cuisine
+        has_to = self.to_category or self.to_tag or self.to_method or self.to_utensil or self.to_cuisine
+
+        if not has_from or not has_to:
+            raise ValidationError("Укажите обе стороны связи")
+
+        # Проверка: не больше одной сущности с каждой стороны
+        from_count = sum([
+            bool(self.from_category), bool(self.from_tag),
+            bool(self.from_method), bool(self.from_utensil),
+            bool(self.from_cuisine)  # ← НОВОЕ!
+        ])
+        to_count = sum([
+            bool(self.to_category), bool(self.to_tag),
+            bool(self.to_method), bool(self.to_utensil),
+            bool(self.to_cuisine)  # ← НОВОЕ!
+        ])
+
+        if from_count > 1:
+            raise ValidationError("Укажите только одну сущность в 'от'")
+        if to_count > 1:
+            raise ValidationError("Укажите только одну сущность в 'к'")
+
+        # Проверка на цикл
+        if self.from_category and self.to_category and self.from_category == self.to_category:
+            raise ValidationError("Нельзя создать связь категории с самой собой")
+        if self.from_tag and self.to_tag and self.from_tag == self.to_tag:
+            raise ValidationError("Нельзя создать связь тега с самим собой")
+        if self.from_method and self.to_method and self.from_method == self.to_method:
+            raise ValidationError("Нельзя создать связь метода с самим собой")
+        if self.from_cuisine and self.to_cuisine and self.from_cuisine == self.to_cuisine:  # ← НОВОЕ!
+            raise ValidationError("Нельзя создать связь кухни с самой собой")
+
+    def save(self, *args, **kwargs):
+        self.clean()
+        super().save(*args, **kwargs)
+
 
