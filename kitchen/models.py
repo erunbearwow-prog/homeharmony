@@ -1058,7 +1058,7 @@ class ProfessionalIngredient(models.Model):
         return f'{self.ingredient.name}: {self.net_weight}/{self.gross_weight}{self.unit}'
 
 
-# ======================= 12. СВЯЗЬ РЕЦЕПТА С ИНГРЕДИЕНТОМ/ПРОДУКТОМ =======================
+# ======================= СВЯЗЬ РЕЦЕПТА С ИНГРЕДИЕНТОМ/ПРОДУКТОМ =======================
 class RecipeFoodItem(models.Model):
     recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name='food_items')
     ingredient = models.ForeignKey(Ingredient, on_delete=models.CASCADE, null=True, blank=True)
