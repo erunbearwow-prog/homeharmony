@@ -102,7 +102,7 @@ class Cuisine(models.Model):
 # ======================= 2. КАТЕГОРИИ ИНГРЕДИЕНТОВ =======================
 class IngredientCategory(models.Model):
     name = models.CharField(max_length=100, verbose_name="Название")
-    parent = models.ForeignKey('self', on_delete=models.SET_NULL, null=True, blank=True)
+    parent = models.ForeignKey('self', on_delete=models.SET_NULL, null=True, blank=True, related_name='children')
     icon = models.CharField(max_length=50, blank=True)
     sort_order = models.IntegerField(default=0)
 
