@@ -7,6 +7,19 @@ db.sqlite3
 db.sqlite3-journal
 media/
 staticfiles/
+full_pages/
+scripts/
+
+backup.py
+book.pdf
+book_extract.pdf
+food.parquet
+import_to_abstract.py
+manage.py
+recipe.pdf
+russian_products.csv
+TODO_Later.py
+Палитры.rtf
 
 # Python
 *.py[cod]
