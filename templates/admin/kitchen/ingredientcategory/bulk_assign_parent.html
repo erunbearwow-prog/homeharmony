@@ -1,0 +1,39 @@
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+<div class="module">
+    <h2>Назначить родительскую категорию</h2>
+    <p>Выбрано категорий: {{ queryset|length }}</p>
+
+    <form method="post">
+        {% csrf_token %}
+
+        <!-- Передаём все выбранные объекты -->
+        {% for id in selected_ids %}
+        <input type="hidden" name="_selected_action" value="{{ id }}">
+        {% endfor %}
+
+        <!-- Передаём имя действия -->
+        <input type="hidden" name="action" value="bulk_assign_parent">
+
+        <div class="form-row">
+            <label for="id_parent">Родительская категория:</label>
+            <select name="parent_id" id="id_parent">
+                <option value="">---------</option>
+                {% for category in categories %}
+                <option value="{{ category.id }}" style="padding-left: {{ category.level|add:"1" }}em;">
+                    {% if category.level > 0 %}
+                        {% for i in ""|ljust:category.level %}—{% endfor %}
+                    {% endif %}
+                    {{ category.name }}
+                </option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="submit-row">
+            <input type="submit" value="Назначить" class="default">
+        </div>
+    </form>
+</div>
+{% endblock %}

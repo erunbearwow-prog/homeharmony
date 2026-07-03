@@ -817,7 +817,7 @@ document.addEventListener('DOMContentLoaded', function() {
         replaceModal.classList.remove('hidden');
 
         try {
-            const response = await fetch(`/cooking/api/substitutions/${recipeIngredientId}/`);
+            const response = await fetch(`/kitchen/api/substitutions/${recipeIngredientId}/`);
             if (response.ok) {
                 const data = await response.json();
 
@@ -1036,7 +1036,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const recipeId = recipeIdMatch ? recipeIdMatch[1] : null;
 
             if (recipeId) {
-                fetch('/cooking/api/update_progress/', {
+                fetch('/kitchen/api/update_progress/', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -1157,7 +1157,7 @@ async function showMethodDetails(button) {
             return;
         }
 
-        const response = await fetch(`/cooking/api/method/${methodId}/`);
+        const response = await fetch(`/kitchen/api/method/${methodId}/`);
         if (response.ok) {
             const data = await response.json();
             methodsCache[methodId] = data;
@@ -1288,7 +1288,7 @@ async function showPreparationDetails(button) {
             return;
         }
 
-        const response = await fetch(`/cooking/api/preparation/${preparationId}/`);
+        const response = await fetch(`/kitchen/api/preparation/${preparationId}/`);
         if (response.ok) {
             const data = await response.json();
             preparationsCache[preparationId] = data;
@@ -1359,7 +1359,7 @@ async function showUtensilDetails(button) {
             return;
         }
 
-        const response = await fetch(`/cooking/api/utensil/${utensilId}/`);
+        const response = await fetch(`/kitchen/api/utensil/${utensilId}/`);
         if (response.ok) {
             const data = await response.json();
             utensilsCache[utensilId] = data;
@@ -1468,7 +1468,7 @@ function openInfoModal(ingredientId, ingredientName) {
             returnContext = urlParams.get('return_context') || null;
         }
 
-        let url = `/cooking/ingredient/${ingredientId}/`;
+        let url = `/kitchen/ingredient/${ingredientId}/`;
         const params = new URLSearchParams();
 
         if (returnTo) params.set('return_to', returnTo);
@@ -1573,7 +1573,7 @@ async function fetchIngredientNutrition(ingredientId) {
     if (nutritionCache[ingredientId]) return nutritionCache[ingredientId];
 
     try {
-        const response = await fetch(`/cooking/api/ingredient/${ingredientId}/`);
+        const response = await fetch(`/kitchen/api/ingredient/${ingredientId}/`);
         if (response.ok) {
             const data = await response.json();
             nutritionCache[ingredientId] = {

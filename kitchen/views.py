@@ -4,7 +4,7 @@ from .models import (
     RecommendedUtensil, Recipe,
     IngredientPreparation, RecipeStep,
     Cuisine, CookingMethodSubstitution,
-    UtensilSubstitution, IngredientCategory,
+    UtensilSubstitution, IngredientCategory, HomeIngredient,
     BrandedIngredient, Ingredient, AbstractIngredient
 )
 from constants.nutrients import NUTRIENTS_MAP, CATEGORY_NAMES, CATEGORY_ORDER
@@ -710,8 +710,16 @@ def ingredient_detail_by_slug(request, slug):
 def _render_ingredient_detail(request, ingredient):
     """Общая логика для детальной страницы ингредиента"""
 
-    # Рецепты с этим ингредиентом
-    recipes = ingredient.recipe_uses.select_related('recipe').order_by('-recipe__created_at')
+    # Получаем рецепты, использующие этот ингредиент
+    home_ingredients = HomeIngredient.objects.filter(
+        ingredient=ingredient
+    ).select_related('recipe')
+
+    # Если нужны объекты рецептов
+    recipes = [hi.recipe for hi in home_ingredients if hi.recipe]
+
+    # Если нужны объекты HomeIngredient (с количеством)
+    # recipe_uses = home_ingredients
 
     # Пагинация рецептов
     paginator = Paginator(recipes, 12)
@@ -770,6 +778,7 @@ def _render_ingredient_detail(request, ingredient):
 
     context = {
         'ingredient': ingredient,
+        'recipes': recipes,  # или 'recipe_uses': home_ingredients
         'page_obj': page_obj,
         'similar_ingredients': similar_ingredients,
         'nutrients_data': nutrients_data,

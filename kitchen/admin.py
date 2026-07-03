@@ -12,6 +12,9 @@ from .models import (
     BrandedIngredient, RelationType, SemanticRelation,  # <-- ДОБАВЛЕНО
     HomeIngredient, SemanticTag,
 )
+from django.shortcuts import render
+from django.http import HttpResponseRedirect
+from django.contrib import messages
 
 
 #======================= БАЗОВЫЕ РЕГИСТРАЦИИ =======================
@@ -49,7 +52,6 @@ class HomeIngredientAdmin(admin.ModelAdmin):
     autocomplete_fields = ['recipe', 'ingredient']
     inlines = [IngredientSubstitutionInline]
 
-# ======================= INLINE КЛАССЫ =======================
 
 # ========== INLINE ДЛЯ ПРОФЕССИОНАЛЬНЫХ ИНГРЕДИЕНТОВ ==========
 class ProfessionalIngredientInline(admin.TabularInline):
@@ -347,12 +349,47 @@ class IngredientSubstitutionAdmin(admin.ModelAdmin):
     fields = ['recipe_ingredient', 'substitute_ingredient', 'substitute_unit', 'ratio', 'notes']
 
 
-# ======================= ФОРМА ДЛЯ КАТЕГОРИЙ ИНГРЕДИЕНТОВ =======================
+# ======================= ФОРМА ДЛЯ КАТЕГОРИЙ (иерархический выбор родителя) =======================
+class CategoryForm(forms.ModelForm):
+    """Форма для категорий с иерархическим выбором родителя"""
 
-class IngredientCategoryForm(forms.ModelForm):
+    class Meta:
+        model = IngredientCategory
+        fields = '__all__'
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        def build_tree(parent=None, level=0, prefix=""):
+            options = []
+            children = IngredientCategory.objects.filter(parent=parent).order_by('name')
+            for i, child in enumerate(children):
+                if self.instance and self.instance.pk == child.pk:
+                    continue
+                is_last = (i == len(children) - 1)
+                connector = "└── " if is_last else "├── "
+                display_name = f"{prefix}{connector}{child.name}"
+                options.append((child.id, display_name))
+                next_prefix = prefix + ("    " if is_last else "│   ")
+                options.extend(build_tree(child, level + 1, next_prefix))
+            return options
+
+        tree_options = build_tree()
+        choices = [(None, "--------- (корневая категория)")]
+        choices.extend(tree_options)
+
+        self.fields['parent'].choices = choices
+        self.fields['parent'].required = False
+        self.fields['parent'].empty_label = None
+
+        if self.instance and self.instance.pk and self.instance.parent:
+            self.fields['parent'].initial = self.instance.parent.id
+
+
+# ======================= ФОРМА ДЛЯ ИНГРЕДИЕНТОВ (трехуровневый выбор) =======================
+class IngredientCategorySelectForm(forms.ModelForm):
     """Форма для Ingredient с трехуровневым выбором категории"""
 
-    # Явно объявляем поля категорий
     category_level_1 = forms.ModelChoiceField(
         queryset=IngredientCategory.objects.filter(parent__isnull=True).order_by('name'),
         required=False,
@@ -378,16 +415,12 @@ class IngredientCategoryForm(forms.ModelForm):
         self._setup_categories()
 
     def _setup_categories(self):
-        """Настраивает поля категорий"""
         current_category = None
-        if self.instance and self.instance.pk:
-            # Получаем категорию через abstract
-            if self.instance.abstract:
-                current_category = self.instance.abstract.category
+        if self.instance and self.instance.pk and self.instance.abstract:
+            current_category = self.instance.abstract.category
 
         if current_category:
             level = current_category.level
-
             if level == 0:
                 self.fields['category_level_1'].initial = current_category
                 self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
@@ -417,9 +450,24 @@ class IngredientCategoryForm(forms.ModelForm):
 
     def clean(self):
         cleaned_data = super().clean()
+
         level_1 = cleaned_data.get('category_level_1')
         level_2 = cleaned_data.get('category_level_2')
         level_3 = cleaned_data.get('category_level_3')
+
+        if level_1:
+            self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
+                parent=level_1
+            ).order_by('name')
+        else:
+            self.fields['category_level_2'].queryset = IngredientCategory.objects.none()
+
+        if level_2:
+            self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
+                parent=level_2
+            ).order_by('name')
+        else:
+            self.fields['category_level_3'].queryset = IngredientCategory.objects.none()
 
         if level_3:
             cleaned_data['selected_category'] = level_3
@@ -441,7 +489,6 @@ class IngredientCategoryForm(forms.ModelForm):
             if commit:
                 instance.abstract.save()
         else:
-            from .models import AbstractIngredient
             abstract = AbstractIngredient.objects.create(
                 name=instance.name,
                 category=selected_category,
@@ -456,27 +503,10 @@ class IngredientCategoryForm(forms.ModelForm):
         return instance
 
 
-# ======================= РЕГИСТРАЦИЯ КАТЕГОРИЙ =======================
-
-@admin.register(IngredientCategory)
-class IngredientCategoryAdmin(admin.ModelAdmin):
-    list_display = ['name', 'parent', 'sort_order']
-    list_display_links = ['name', 'parent']
-    list_editable = ['sort_order']
-    list_filter = ['parent']
-    search_fields = ['name']
-    list_per_page = 100
-    ordering = ['name']
-
-
-# kitchen/admin.py
-
-# kitchen/admin.py
-
+# ======================= ФОРМА ДЛЯ ABSTRACTINGREDIENT =======================
 class AbstractIngredientCategoryForm(forms.ModelForm):
     """Форма для AbstractIngredient с трехуровневым выбором категории"""
 
-    # Явно объявляем поля категорий
     category_level_1 = forms.ModelChoiceField(
         queryset=IngredientCategory.objects.filter(parent__isnull=True).order_by('name'),
         required=False,
@@ -496,29 +526,46 @@ class AbstractIngredientCategoryForm(forms.ModelForm):
     class Meta:
         model = AbstractIngredient
         fields = '__all__'
-        exclude = ['category']  # category устанавливается через форму
+        exclude = ['category']
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self._setup_categories()
 
+        if self.is_bound and 'category_level_1' in self.data:
+            level_1_id = self.data.get('category_level_1')
+            if level_1_id:
+                try:
+                    level_1 = IngredientCategory.objects.get(id=level_1_id)
+                    self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
+                        parent=level_1
+                    ).order_by('name')
+                except (ValueError, IngredientCategory.DoesNotExist):
+                    pass
+
+            level_2_id = self.data.get('category_level_2')
+            if level_2_id:
+                try:
+                    level_2 = IngredientCategory.objects.get(id=level_2_id)
+                    self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
+                        parent=level_2
+                    ).order_by('name')
+                except (ValueError, IngredientCategory.DoesNotExist):
+                    pass
+
     def _setup_categories(self):
-        """Настраивает поля категорий в зависимости от текущей категории"""
         current_category = None
         if self.instance and self.instance.pk:
             current_category = self.instance.category
 
         if current_category:
             level = current_category.level
-
             if level == 0:
-                # Категория 1-го уровня
                 self.fields['category_level_1'].initial = current_category
                 self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
                     parent=current_category
                 ).order_by('name')
             elif level == 1:
-                # Категория 2-го уровня
                 self.fields['category_level_1'].initial = current_category.parent
                 self.fields['category_level_2'].initial = current_category
                 self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
@@ -528,7 +575,6 @@ class AbstractIngredientCategoryForm(forms.ModelForm):
                     parent=current_category
                 ).order_by('name')
             elif level == 2:
-                # Категория 3-го уровня
                 root = current_category.root_parent
                 second = current_category.second_level_parent
                 self.fields['category_level_1'].initial = root
@@ -568,9 +614,256 @@ class AbstractIngredientCategoryForm(forms.ModelForm):
         return instance
 
 
-# ======================= РЕГИСТРАЦИЯ АБСТРАКТНЫХ ИНГРЕДИЕНТОВ =======================
+# ======================= РЕГИСТРАЦИЯ КАТЕГОРИЙ =======================
+@admin.register(IngredientCategory)
+class IngredientCategoryAdmin(admin.ModelAdmin):
+    form = CategoryForm
+    list_display_links = ['name', 'parent']
+    list_editable = ['sort_order']
+    list_filter = ['parent']
+    search_fields = ['name']
+    list_per_page = 100
+    ordering = ['name']
 
-# kitchen/admin.py
+    def get_queryset(self, request):
+        """Сортируем категории по иерархии"""
+        qs = super().get_queryset(request)
+        # Сортируем по родителю и имени
+        return qs.order_by('parent__name', 'name')
+
+    def name_with_parent(self, obj):
+        """Отображаем категорию с родителем в списке"""
+        if obj.parent:
+            return f"{obj.parent.name} → {obj.name}"
+        return obj.name
+
+    name_with_parent.short_description = 'Категория'
+    name_with_parent.admin_order_field = 'name'
+
+    list_display = ['name', 'parent', 'sort_order']
+
+
+    actions = ['bulk_assign_parent']
+
+    def bulk_assign_parent(self, request, queryset):
+        """Массовое назначение родительской категории"""
+        from django.shortcuts import render
+        from django.http import HttpResponseRedirect
+
+        # ШАГ 1: Это форма подтверждения (пришла с выбором родителя)
+        if request.method == 'POST' and request.POST.get('parent_id'):
+            parent_id = request.POST.get('parent_id')
+
+            if parent_id and parent_id.isdigit():
+                try:
+                    parent = IngredientCategory.objects.get(id=int(parent_id))
+
+                    # Проверка на циклическую зависимость
+                    for category in queryset:
+                        if category.id == parent.id:
+                            self.message_user(
+                                request,
+                                f'❌ Нельзя назначить категорию "{category.name}" родителем самой себя!',
+                                level='ERROR'
+                            )
+                            return HttpResponseRedirect(request.get_full_path())
+
+                    # Обновляем
+                    count = 0
+                    for category in queryset:
+                        category.parent = parent
+                        category.save(update_fields=['parent'])
+                        count += 1
+
+                    self.message_user(
+                        request,
+                        f'✅ Родительская категория "{parent.name}" назначена для {count} категорий'
+                    )
+                    return HttpResponseRedirect(request.get_full_path())
+
+                except IngredientCategory.DoesNotExist:
+                    self.message_user(request, '❌ Выбранная категория не найдена', level='ERROR')
+                    return HttpResponseRedirect(request.get_full_path())
+            else:
+                self.message_user(request, '❌ Пожалуйста, выберите родительскую категорию', level='ERROR')
+                return HttpResponseRedirect(request.get_full_path())
+
+        # ШАГ 2: Показываем форму выбора родителя (первый шаг)
+        def build_category_tree(parent=None, level=0):
+            options = []
+            children = IngredientCategory.objects.filter(parent=parent).order_by('name')
+            for cat in children:
+                if cat in queryset:
+                    continue
+                indent = '—' * level
+                options.append({
+                    'id': cat.id,
+                    'name': f"{indent} {cat.name}" if level > 0 else cat.name,
+                    'level': level
+                })
+                options.extend(build_category_tree(cat, level + 1))
+            return options
+
+        category_tree = build_category_tree()
+
+        # Получаем ID выбранных объектов из POST
+        selected_ids = request.POST.getlist('_selected_action')
+
+        context = {
+            'queryset': queryset,
+            'categories': category_tree,
+            'selected_ids': selected_ids,
+            'title': 'Назначить родительскую категорию',
+            'opts': self.model._meta,
+            'app_label': self.model._meta.app_label,
+        }
+
+        return render(request, 'admin/kitchen/ingredientcategory/bulk_assign_parent.html', context)
+
+    bulk_assign_parent.short_description = "Назначить родительскую категорию"
+
+class AbstractIngredientCategoryForm(forms.ModelForm):
+    """Форма для AbstractIngredient с трехуровневым выбором категории"""
+
+    category_level_1 = forms.ModelChoiceField(
+        queryset=IngredientCategory.objects.filter(parent__isnull=True).order_by('name'),
+        required=False,
+        label='Категория 1-го уровня'
+    )
+    category_level_2 = forms.ModelChoiceField(
+        queryset=IngredientCategory.objects.none(),
+        required=False,
+        label='Категория 2-го уровня'
+    )
+    category_level_3 = forms.ModelChoiceField(
+        queryset=IngredientCategory.objects.none(),
+        required=False,
+        label='Категория 3-го уровня'
+    )
+
+    class Meta:
+        model = AbstractIngredient
+        fields = '__all__'
+        exclude = ['category']
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self._setup_categories()
+
+        # Если форма привязана (POST) — обновляем queryset ДО валидации
+        if self.is_bound and 'category_level_1' in self.data:
+            level_1_id = self.data.get('category_level_1')
+            if level_1_id:
+                try:
+                    level_1 = IngredientCategory.objects.get(id=level_1_id)
+                    self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
+                        parent=level_1
+                    ).order_by('name')
+                except (ValueError, IngredientCategory.DoesNotExist):
+                    pass
+
+            level_2_id = self.data.get('category_level_2')
+            if level_2_id:
+                try:
+                    level_2 = IngredientCategory.objects.get(id=level_2_id)
+                    self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
+                        parent=level_2
+                    ).order_by('name')
+                except (ValueError, IngredientCategory.DoesNotExist):
+                    pass
+
+    def _setup_categories(self):
+        """Настраивает поля категорий в зависимости от текущей категории"""
+        current_category = None
+        if self.instance and self.instance.pk:
+            current_category = self.instance.category
+
+        if current_category:
+            level = current_category.level
+            if level == 0:
+                self.fields['category_level_1'].initial = current_category
+                self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
+                    parent=current_category
+                ).order_by('name')
+            elif level == 1:
+                self.fields['category_level_1'].initial = current_category.parent
+                self.fields['category_level_2'].initial = current_category
+                self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
+                    parent=current_category.parent
+                ).order_by('name')
+                self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
+                    parent=current_category
+                ).order_by('name')
+            elif level == 2:
+                root = current_category.root_parent
+                second = current_category.second_level_parent
+                self.fields['category_level_1'].initial = root
+                self.fields['category_level_2'].initial = second
+                self.fields['category_level_3'].initial = current_category
+                self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
+                    parent=root
+                ).order_by('name')
+                self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
+                    parent=second
+                ).order_by('name')
+
+    def clean_category_level_2(self):
+        """Валидация поля category_level_2"""
+        level_2 = self.cleaned_data.get('category_level_2')
+        if not level_2:
+            return None
+
+        # level_2 уже является объектом IngredientCategory
+        level_1 = self.cleaned_data.get('category_level_1')
+        if level_1:
+            if level_2.parent != level_1:
+                raise forms.ValidationError("Категория 2-го уровня не соответствует категории 1-го уровня")
+
+        return level_2
+
+    def clean_category_level_3(self):
+        """Валидация поля category_level_3"""
+        level_3 = self.cleaned_data.get('category_level_3')
+        if not level_3:
+            return None
+
+        # level_3 уже является объектом IngredientCategory
+        level_2 = self.cleaned_data.get('category_level_2')
+        if level_2:
+            if level_3.parent != level_2:
+                raise forms.ValidationError("Категория 3-го уровня не соответствует категории 2-го уровня")
+
+        return level_3
+
+    def clean(self):
+        cleaned_data = super().clean()
+
+        level_1 = cleaned_data.get('category_level_1')
+        level_2 = cleaned_data.get('category_level_2')
+        level_3 = cleaned_data.get('category_level_3')
+
+        # Выбираем самую глубокую категорию
+        if level_3:
+            cleaned_data['selected_category'] = level_3
+        elif level_2:
+            cleaned_data['selected_category'] = level_2
+        elif level_1:
+            cleaned_data['selected_category'] = level_1
+        else:
+            cleaned_data['selected_category'] = None
+
+        return cleaned_data
+
+    def save(self, commit=True):
+        instance = super().save(commit=False)
+        instance.category = self.cleaned_data.get('selected_category')
+        if commit:
+            instance.save()
+            self.save_m2m()
+        return instance
+
+
+# ======================= РЕГИСТРАЦИЯ АБСТРАКТНЫХ ИНГРЕДИЕНТОВ =======================
 
 @admin.register(AbstractIngredient)
 class AbstractIngredientAdmin(admin.ModelAdmin):
@@ -593,8 +886,12 @@ class AbstractIngredientAdmin(admin.ModelAdmin):
     readonly_fields = ['id', 'created_at', 'updated_at']
     ordering = ['name']
 
-    # ⚠️ В fieldsets НЕТ category_level_*
+    # ✅ Поля категорий ДОЛЖНЫ быть в fieldsets
     fieldsets = (
+        ('Категория', {
+            'fields': ('category_level_1', 'category_level_2', 'category_level_3'),
+            'description': 'Выберите категорию ингредиента (три уровня вложенности)'
+        }),
         ('Основное', {
             'fields': ('name', 'description', 'description_ru')
         }),
@@ -632,32 +929,7 @@ class AbstractIngredientAdmin(admin.ModelAdmin):
         }),
     )
 
-    def get_fields(self, request, obj=None):
-        """
-        Добавляем поля категорий в список полей формы.
-        Эти поля есть в форме (AbstractIngredientCategoryForm),
-        но их нет в модели, поэтому их нельзя добавлять в fieldsets.
-        """
-        fields = super().get_fields(request, obj)
-        # Добавляем поля категорий в начало списка
-        return ['category_level_1', 'category_level_2', 'category_level_3'] + list(fields)
-
-    def get_fieldsets(self, request, obj=None):
-        """
-        Динамически добавляем блок с категориями в fieldsets для отображения.
-        Важно: эти поля уже добавлены через get_fields,
-        поэтому Django не будет проверять их в модели.
-        """
-        fieldsets = list(super().get_fieldsets(request, obj))
-        # Вставляем блок с категориями после блока "Основное"
-        category_fieldset = (
-            'Категория', {
-                'fields': ('category_level_1', 'category_level_2', 'category_level_3'),
-                'description': 'Выберите категорию ингредиента (три уровня вложенности)'
-            }
-        )
-        fieldsets.insert(1, category_fieldset)
-        return fieldsets
+    # ❌ Убираем get_fields() и get_fieldsets() — они больше не нужны!
 
     def category_display(self, obj):
         return obj.category.name if obj.category else '-'
@@ -687,28 +959,50 @@ class AbstractIngredientAdmin(admin.ModelAdmin):
         from django.shortcuts import render
         from django.http import HttpResponseRedirect
 
-        if request.method == 'POST' and 'apply' in request.POST:
+        # Проверяем, что это POST с выбором категории
+        if request.method == 'POST' and 'category_id' in request.POST:
             category_id = request.POST.get('category_id')
-
             if category_id:
                 try:
                     category = IngredientCategory.objects.get(id=category_id)
-                    updated = queryset.update(category=category)
-                    self.message_user(request, f'Категория "{category}" назначена {updated} ингредиентам')
+                    updated_count = 0
+                    for ingredient in queryset:
+                        ingredient.category = category
+                        ingredient.save()
+                        updated_count += 1
+                    self.message_user(
+                        request,
+                        f'✅ Категория "{category.name}" назначена {updated_count} ингредиентам'
+                    )
                     return HttpResponseRedirect(request.get_full_path())
                 except IngredientCategory.DoesNotExist:
-                    self.message_user(request, 'Выбранная категория не найдена', level='ERROR')
+                    self.message_user(request, '❌ Выбранная категория не найдена', level='ERROR')
                     return HttpResponseRedirect(request.get_full_path())
             else:
-                self.message_user(request, 'Пожалуйста, выберите категорию', level='ERROR')
+                self.message_user(request, '❌ Пожалуйста, выберите категорию', level='ERROR')
                 return HttpResponseRedirect(request.get_full_path())
 
-        all_categories = IngredientCategory.objects.all()
+        # Показываем форму выбора категории
+        def build_tree(parent=None, level=0, prefix=""):
+            items = []
+            children = IngredientCategory.objects.filter(parent=parent).order_by('name')
+            for i, child in enumerate(children):
+                is_last = (i == len(children) - 1)
+                connector = "└── " if is_last else "├── "
+                display_name = f"{prefix}{connector}{child.name}"
+                items.append({'id': child.id, 'name': display_name})
+                next_prefix = prefix + ("    " if is_last else "│   ")
+                items.extend(build_tree(child, level + 1, next_prefix))
+            return items
+
+        tree = build_tree()
 
         return render(request, 'admin/kitchen/abstractingredient/bulk_assign_category.html', {
             'queryset': queryset,
-            'categories': all_categories,
-            'title': 'Массовое назначение категории абстрактным ингредиентам'
+            'categories': tree,
+            'title': 'Массовое назначение категории абстрактным ингредиентам',
+            'opts': self.model._meta,
+            'app_label': self.model._meta.app_label,
         })
 
     bulk_assign_category.short_description = "Назначить категорию выбранным абстрактным ингредиентам"
@@ -721,7 +1015,6 @@ class AbstractIngredientAdmin(admin.ModelAdmin):
 
 
 # ======================= РЕГИСТРАЦИЯ БРЕНДИРОВАННЫХ ПРОДУКТОВ =======================
-
 @admin.register(BrandedIngredient)
 class BrandedIngredientAdmin(admin.ModelAdmin):
     list_display = [
@@ -778,12 +1071,9 @@ class BrandedIngredientAdmin(admin.ModelAdmin):
 
 
 # ======================= РЕГИСТРАЦИЯ ИНГРЕДИЕНТОВ =======================
-
-# kitchen/admin.py
-
 @admin.register(Ingredient)
 class IngredientAdmin(admin.ModelAdmin):
-    form = IngredientCategoryForm
+    form = IngredientCategorySelectForm
     list_per_page = 30
     save_on_top = True
 
@@ -869,7 +1159,7 @@ class IngredientAdmin(admin.ModelAdmin):
     category_display.short_description = 'Категория'
     category_display.admin_order_field = 'abstract__category__name'
 
-    actions = ['bulk_assign_category']
+    # actions = ['bulk_assign_category']
 
     def bulk_assign_category(self, request, queryset):
         """Массовое назначение категории выбранным ингредиентам"""
