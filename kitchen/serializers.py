@@ -2,8 +2,9 @@
 
 from rest_framework import serializers
 from .models import (
-    Recipe, RecipeStep, Ingredient, Cuisine, IngredientCategory,
-    AbstractIngredient, BrandedIngredient, HomeIngredient
+    Recipe, HomeIngredient,  # ← убрали Ingredient
+    RecipeStep, Cuisine, IngredientCategory,
+    AbstractIngredient, BrandedIngredient
 )
 
 
@@ -33,60 +34,158 @@ class IngredientCategorySerializer(serializers.ModelSerializer):
 
 class AbstractIngredientSerializer(serializers.ModelSerializer):
     """Сериализатор для абстрактных ингредиентов"""
-    category_name = serializers.ReadOnlyField(source='category.name')
-    has_complete_nutrients = serializers.ReadOnlyField()
+
+    category_name = serializers.CharField(source='category.name', read_only=True)
 
     class Meta:
         model = AbstractIngredient
         fields = [
-            'id', 'name', 'description', 'category', 'category_name',
-            'calories', 'protein', 'fat', 'carbohydrates',
-            'fiber', 'sugar', 'image',
-            'has_complete_nutrients', 'is_active'
+            'id',
+            'name',
+            'name_normalized',
+            'description',
+            'description_ru',
+            'category',
+            'category_name',
+            'calories',
+            'protein',
+            'fat',
+            'carbohydrates',
+            'fiber',
+            'sugar',
+            'water',
+            'ash',
+            'starch',
+            'vitamin_a',
+            'beta_carotene',
+            'vitamin_b1',
+            'vitamin_b2',
+            'vitamin_b3',
+            'vitamin_b4',
+            'vitamin_b5',
+            'vitamin_b6',
+            'vitamin_b7',
+            'vitamin_b9_folate',
+            'vitamin_b12',
+            'vitamin_c',
+            'vitamin_d',
+            'vitamin_e',
+            'vitamin_k',
+            'potassium',
+            'calcium',
+            'magnesium',
+            'sodium',
+            'phosphorus',
+            'sulfur',
+            'silicon',
+            'chlorine',
+            'iron',
+            'manganese',
+            'copper',
+            'selenium',
+            'zinc',
+            'aluminum',
+            'boron',
+            'vanadium',
+            'iodine',
+            'cobalt',
+            'lithium',
+            'molybdenum',
+            'nickel',
+            'rubidium',
+            'fluorine',
+            'chromium',
+            'saturated_fat',
+            'trans_fat',
+            'cholesterol',
+            'omega_3',
+            'omega_6',
+            'organic_acids',
+            'data_source',
+            'fdc_id',
+            'image',
+            'is_active',
+            'created_at',
+            'updated_at',
         ]
+        read_only_fields = ['created_at', 'updated_at']
 
 
 class BrandedIngredientSerializer(serializers.ModelSerializer):
     """Сериализатор для брендированных продуктов"""
-    abstract_name = serializers.ReadOnlyField(source='abstract.name')
-    price_per_100g = serializers.ReadOnlyField()
-    price_per_kg = serializers.ReadOnlyField()
-    nutrients = serializers.SerializerMethodField()
+
+    abstract_name = serializers.CharField(source='abstract.name', read_only=True)
+    abstract_id = serializers.IntegerField(source='abstract.id', read_only=True)
 
     class Meta:
         model = BrandedIngredient
         fields = [
-            'id', 'abstract', 'abstract_name', 'brand', 'product_name',
-            'barcode', 'calories', 'protein', 'fat', 'carbohydrates',
-            'price', 'weight', 'price_per_100g', 'price_per_kg',
-            'store', 'store_url', 'is_available', 'nutrients'
+            'id',
+            'abstract',
+            'abstract_id',
+            'abstract_name',
+            'brand',
+            'product_name',
+            'barcode',
+            'calories',
+            'protein',
+            'fat',
+            'carbohydrates',
+            'price',
+            'weight',
+            'store',
+            'store_url',
+            'is_available',
+            'last_checked',
+            'created_at',
+            'updated_at',
         ]
+        read_only_fields = ['created_at', 'updated_at']
 
     def get_nutrients(self, obj):
         return obj.get_nutrients()
 
 
 class IngredientSerializer(serializers.ModelSerializer):
-    """Сериализатор для ингредиентов (в рецептах)"""
+    """Сериализатор для ингредиентов"""
+
     display_name = serializers.ReadOnlyField()
-    category = serializers.ReadOnlyField(source='abstract.category.name')
-    abstract_name = serializers.ReadOnlyField(source='abstract.name')
-    branded_name = serializers.SerializerMethodField()
+    branded_count = serializers.SerializerMethodField()
 
     class Meta:
-        model = Ingredient
+        model = AbstractIngredient
         fields = [
-            'id', 'name', 'display_name', 'abstract', 'abstract_name',
-            'branded', 'branded_name', 'category',
-            'custom_calories', 'custom_protein', 'custom_fat', 'custom_carbohydrates',
-            'calories', 'protein', 'fat', 'carbohydrates',
-            'is_semi_finished'
+            'id',
+            'name',
+            'display_name',
+            'name_normalized',
+            'description',
+            'description_ru',
+            'category',
+            'calories',
+            'protein',
+            'fat',
+            'carbohydrates',
+            'fiber',
+            'sugar',
+            'saturated_fat',
+            'cholesterol',
+            'vitamin_c',
+            'calcium',
+            'iron',
+            'potassium',
+            'sodium',
+            'image',
+            'is_active',
+            'created_at',
+            'updated_at',
+            'branded_count',
         ]
+        read_only_fields = ['created_at', 'updated_at']
 
-    def get_branded_name(self, obj):
-        if obj.branded:
-            return f"{obj.branded.brand} {obj.branded.product_name}"
-        return None
+    def get_branded_count(self, obj):
+        """Количество брендированных версий"""
+        return obj.branded_versions.count() if hasattr(obj, 'branded_versions') else 0
 
 
 class RecipeStepSerializer(serializers.ModelSerializer):

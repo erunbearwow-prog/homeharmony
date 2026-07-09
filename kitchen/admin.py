@@ -1,1407 +1,617 @@
+# kitchen/admin.py
+
 from django.contrib import admin
 from django import forms
+from django.urls import reverse
 from django.utils.html import format_html
-from django.db.models import F
+from django.db.models import Count
 from .models import (
-    Cuisine, Diet, IngredientCategory, Ingredient,
-    Recipe, RecipeStep, CookingMethod,
-    IngredientPreparation, RecommendedUtensil, IngredientSubstitution,
-    CookingMethodSubstitution, UtensilSubstitution, ProfessionalIngredient,
-    Product, RecipeFoodItem,
-    AbstractIngredient,  # <-- ДОБАВЛЕНО
-    BrandedIngredient, RelationType, SemanticRelation,  # <-- ДОБАВЛЕНО
-    HomeIngredient, SemanticTag,
+    Recipe, HomeIngredient, RecipeStep,
+    IngredientSubstitution, RecipeFoodItem,
+    Cuisine, Diet, AbstractIngredient, Product,
+    BrandedIngredient,  # <-- Добавляем BrandedIngredient
+    IngredientCategory, SemanticTag, CookingMethod,
+    IngredientPreparation, RecommendedUtensil, ProfessionalIngredient,
 )
-from django.shortcuts import render
-from django.http import HttpResponseRedirect
-from django.contrib import messages
 
 
-#======================= БАЗОВЫЕ РЕГИСТРАЦИИ =======================
-class IngredientSubstitutionInline(admin.TabularInline):
-    model = IngredientSubstitution
-    extra = 1
-    fields = ['substitute_ingredient', 'substitute_unit', 'ratio', 'notes']
-    autocomplete_fields = ['substitute_ingredient']
-    verbose_name = '✅ Замена'
-    verbose_name_plural = '✅ Возможные замены (прямо в этом рецепте)'
-    classes = ['collapse']
+# ======================= INLINE FORMS =======================
+
+class HomeIngredientInlineForm(forms.ModelForm):
+    class Meta:
+        model = HomeIngredient
+        fields = ['ingredient', 'quantity', 'unit', 'notes', 'is_scalable']
+        widgets = {
+            'notes': forms.TextInput(attrs={'style': 'width: 200px;'}),
+        }
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['ingredient'].queryset = AbstractIngredient.objects.filter(is_active=True).order_by('name')
+
+        class ProfessionalIngredientInline(admin.TabularInline):
+            """Inline для профессиональных ингредиентов (брутто/нетто)"""
+            model = ProfessionalIngredient
+            extra = 1
+            fields = ['ingredient', 'gross_weight', 'net_weight', 'unit', 'loss_factor', 'is_base_allowed']
+            autocomplete_fields = ['ingredient']
+
+            def get_queryset(self, request):
+                return super().get_queryset(request).select_related('ingredient')
 
 
-@admin.register(Cuisine)
-class CuisineAdmin(admin.ModelAdmin):
-    list_display = ['name', 'parent', 'region', 'created_at']
-    list_filter = ['parent', 'region']
-    search_fields = ['name', 'region', 'description']
-    list_editable = ['region']
-    readonly_fields = ['slug']
-
-
-@admin.register(Diet)
-class DietAdmin(admin.ModelAdmin):
-    list_display = ['name', 'authority', 'created_at']
-    search_fields = ['name', 'description']
-    filter_horizontal = ['allowed_ingredients', 'prohibited_ingredients']
-
-
-@admin.register(HomeIngredient)
-class HomeIngredientAdmin(admin.ModelAdmin):
-    list_display = ['recipe', 'ingredient', 'quantity', 'unit']
-    list_filter = ['unit', 'is_scalable']
-    search_fields = ['recipe__title', 'ingredient__name']
-    autocomplete_fields = ['recipe', 'ingredient']
-    inlines = [IngredientSubstitutionInline]
-
-
-# ========== INLINE ДЛЯ ПРОФЕССИОНАЛЬНЫХ ИНГРЕДИЕНТОВ ==========
 class ProfessionalIngredientInline(admin.TabularInline):
-    """Inline-форма для брутто/нетто ингредиентов (проф. режим)"""
+    """Inline для профессиональных ингредиентов (брутто/нетто)"""
     model = ProfessionalIngredient
     extra = 1
-    fields = ['ingredient', 'gross_weight', 'net_weight', 'unit']
+    fields = ['ingredient', 'gross_weight', 'net_weight', 'unit', 'loss_factor', 'is_base_allowed']
     autocomplete_fields = ['ingredient']
-    verbose_name = 'Ингредиент (профессиональный)'
-    verbose_name_plural = 'Ингредиенты (брутто/нетто)'
 
-    # Отображаем коэффициент потерь только для чтения
-    readonly_fields = ['loss_factor_display']
+    def get_queryset(self, request):
+        return super().get_queryset(request).select_related('ingredient')
 
-    def loss_factor_display(self, obj):
-        """Отображаем коэффициент потерь, если он есть"""
-        if obj.pk and obj.loss_factor:
-            return f"{obj.loss_factor:.2f}"
-        return "-"
 
-    loss_factor_display.short_description = 'Коэф. потерь (брутто/нетто)'
+class RecipeFoodItemInlineForm(forms.ModelForm):
+    class Meta:
+        model = RecipeFoodItem
+        fields = ['ingredient', 'product', 'quantity', 'unit', 'notes', 'is_scalable']
+        widgets = {
+            'notes': forms.TextInput(attrs={'style': 'width: 200px;'}),
+        }
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['ingredient'].queryset = AbstractIngredient.objects.filter(is_active=True).order_by('name')
+        self.fields['product'].queryset = Product.objects.all().order_by('name')
 
 
 class RecipeStepForm(forms.ModelForm):
     class Meta:
         model = RecipeStep
-        fields = '__all__'
+        fields = [
+            'order', 'title', 'instruction', 'duration', 'temperature',
+            'recipe_step_image', 'subrecipe',
+            'subrecipe_base_ingredient', 'subrecipe_base_quantity',
+            'cooking_method', 'ingredient_preparation', 'recommended_utensils'
+        ]
+        widgets = {
+            'instruction': forms.Textarea(attrs={'rows': 4, 'cols': 80}),
+            'recommended_utensils': forms.SelectMultiple(attrs={'style': 'height: 100px;'}),
+        }
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+        self.fields['subrecipe'].queryset = Recipe.objects.all().order_by('title')
+        self.fields['subrecipe_base_ingredient'].queryset = HomeIngredient.objects.select_related('ingredient').all()
 
-        if 'subrecipe_base_ingredient' in self.fields:
-            subrecipe_id = None
 
-            if self.data and self.data.get('subrecipe'):
-                try:
-                    subrecipe_id = int(self.data.get('subrecipe'))
-                except (ValueError, TypeError):
-                    pass
+# ======================= INLINES =======================
 
-            if not subrecipe_id and self.instance and self.instance.pk:
-                subrecipe_id = self.instance.subrecipe_id
+class HomeIngredientInline(admin.TabularInline):
+    model = HomeIngredient
+    form = HomeIngredientInlineForm
+    extra = 3
+    fields = ['ingredient', 'quantity', 'unit', 'notes', 'is_scalable']
+    show_change_link = True
+    autocomplete_fields = ['ingredient']
 
-            if not subrecipe_id and self.initial.get('subrecipe'):
-                subrecipe_id = self.initial.get('subrecipe')
+    def get_queryset(self, request):
+        return super().get_queryset(request).select_related('ingredient')
 
-            if subrecipe_id:
-                # ИСПРАВЛЕНО: RecipeIngredient → HomeIngredient
-                self.fields['subrecipe_base_ingredient'].queryset = HomeIngredient.objects.filter(
-                    recipe_id=subrecipe_id
-                ).select_related('ingredient')
-            else:
-                self.fields['subrecipe_base_ingredient'].queryset = HomeIngredient.objects.none()
+
+class RecipeFoodItemInline(admin.TabularInline):
+    model = RecipeFoodItem
+    form = RecipeFoodItemInlineForm
+    extra = 2
+    fields = ['ingredient', 'product', 'quantity', 'unit', 'notes', 'is_scalable']
+    show_change_link = True
+    autocomplete_fields = ['ingredient', 'product']
+
+    def get_queryset(self, request):
+        return super().get_queryset(request).select_related('ingredient', 'product')
+
+
+class IngredientSubstitutionInline(admin.TabularInline):
+    model = IngredientSubstitution
+    extra = 1
+    fields = ['substitute_ingredient', 'substitute_unit', 'ratio', 'notes']
+    autocomplete_fields = ['substitute_ingredient']
+
+    def get_queryset(self, request):
+        return super().get_queryset(request).select_related('substitute_ingredient')
 
 
 class RecipeStepInline(admin.StackedInline):
     model = RecipeStep
     form = RecipeStepForm
     fk_name = 'recipe'
-    extra = 1
-    ordering = ['order']
-    classes = ['collapse']
-
-    fieldsets = [
-        ('Номер и описание', {
-            'fields': ['order', 'title', 'instruction', 'duration', 'temperature', 'recipe_step_image'],
-            'classes': ['collapse'],
+    extra = 3
+    fieldsets = (
+        ('Основная информация', {
+            'fields': ('order', 'title', 'instruction', 'duration', 'temperature', 'recipe_step_image')
         }),
-        ('Метод и подготовка', {
-            'fields': ['cooking_method', 'ingredient_preparation'],
-            'classes': ['collapse'],
+        ('Вложенный рецепт (полуфабрикат)', {
+            'fields': ('subrecipe', 'subrecipe_base_ingredient', 'subrecipe_base_quantity'),
+            'classes': ('collapse',),
         }),
-        ('Время и температура', {
-            'fields': ['duration', 'temperature'],
-            'classes': ['collapse'],
+        ('Методы и утварь', {
+            'fields': ('cooking_method', 'ingredient_preparation', 'recommended_utensils'),
         }),
-        ('Утварь', {
-            'fields': ['recommended_utensils'],
-            'classes': ['collapse'],
-        }),
-        ('Вложенный рецепт', {
-            'fields': ['subrecipe', 'subrecipe_base_ingredient', 'subrecipe_base_quantity'],
-            'classes': ['collapse'],
-        }),
-    ]
-
+    )
     autocomplete_fields = ['subrecipe', 'cooking_method', 'ingredient_preparation']
-    filter_horizontal = ['recommended_utensils']
-    verbose_name = 'Шаг приготовления'
-    verbose_name_plural = 'Шаги приготовления'
+
+    def get_queryset(self, request):
+        return super().get_queryset(request).select_related(
+            'cooking_method', 'ingredient_preparation', 'subrecipe', 'subrecipe_base_ingredient'
+        ).prefetch_related('recommended_utensils')
 
 
-class RecipeFoodItemForm(forms.ModelForm):
-    """Форма для выбора ингредиента или продукта"""
-
-    class Meta:
-        model = RecipeFoodItem
-        fields = '__all__'
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        # Добавляем оба поля, но один будет скрыт через JS
-        self.fields['ingredient'].queryset = Ingredient.objects.all().order_by('name_normalized')
-        self.fields['product'].queryset = Product.objects.all().order_by('name')
-        self.fields['ingredient'].widget.attrs['class'] = 'ingredient-select'
-        self.fields['product'].widget.attrs['class'] = 'product-select'
-        self.fields['unit'].widget.attrs['style'] = 'width: 100px;'
-
-
-class RecipeFoodItemInline(admin.TabularInline):
-    """Inline для добавления ингредиентов/продуктов в рецепт"""
-    model = RecipeFoodItem
-    form = RecipeFoodItemForm
+class ComponentInline(admin.TabularInline):
+    model = Recipe.components.through
+    fk_name = 'from_recipe'
+    verbose_name = 'Компонент (вложенный рецепт)'
+    verbose_name_plural = 'Компоненты (вложенные рецепты)'
     extra = 1
-    fields = ['ingredient', 'product', 'quantity', 'unit', 'notes', 'is_scalable']
-    verbose_name = "Ингредиент / продукт"
-    verbose_name_plural = "Ингредиенты и продукты"
-    classes = ['collapse']
+    fields = ['to_recipe', 'get_component_link']
+    readonly_fields = ['get_component_link']
+    autocomplete_fields = ['to_recipe']
 
-    class Media:
-        css = {
-            'all': ('admin/css/food_item.css',)
-        }
+    def get_component_link(self, obj):
+        if obj.to_recipe:
+            url = reverse('admin:kitchen_recipe_change', args=[obj.to_recipe.id])
+            return format_html('<a href="{}" target="_blank">{}</a>', url, obj.to_recipe.title)
+        return '-'
+
+    get_component_link.short_description = 'Ссылка на компонент'
 
 
-# ======================= ОСНОВНАЯ РЕГИСТРАЦИЯ RECIPE =======================
+# ======================= КАСТОМНЫЙ ФИЛЬТР =======================
+
+class RecipeWithSubrecipeFilter(admin.SimpleListFilter):
+    title = 'наличие вложенных рецептов'
+    parameter_name = 'has_subrecipe'
+
+    def lookups(self, request, model_admin):
+        return (
+            ('yes', 'Есть вложенные рецепты'),
+            ('no', 'Нет вложенных рецептов'),
+        )
+
+    def queryset(self, request, queryset):
+        if self.value() == 'yes':
+            return queryset.filter(steps__subrecipe__isnull=False).distinct()
+        if self.value() == 'no':
+            return queryset.exclude(steps__subrecipe__isnull=False).distinct()
+        return queryset
+
+
+class RecipeTypeFilter(admin.SimpleListFilter):
+    title = 'тип рецепта'
+    parameter_name = 'recipe_type'
+
+    def lookups(self, request, model_admin):
+        return (
+            ('home', 'Домашние рецепты'),
+            ('ttk', 'ТТК'),
+            ('semi_finished', 'Полуфабрикаты'),
+        )
+
+    def queryset(self, request, queryset):
+        if self.value():
+            return queryset.filter(recipe_type=self.value())
+        return queryset
+
+
+# ======================= ВСПОМОГАТЕЛЬНАЯ ФУНКЦИЯ =======================
+
+def register_if_not_registered(model, admin_class):
+    """Регистрирует модель в админке, если она ещё не зарегистрирована"""
+    try:
+        admin.site.register(model, admin_class)
+    except admin.sites.AlreadyRegistered:
+        # Модель уже зарегистрирована, пропускаем
+        pass
+
+
+# ======================= ADMIN CLASSES =======================
+
+# kitchen/admin.py - обновить RecipeAdmin
 
 @admin.register(Recipe)
 class RecipeAdmin(admin.ModelAdmin):
-    save_on_top = True
-    list_display = ['title', 'cuisine', 'difficulty', 'servings', 'created_at']
-    list_filter = ['cuisine', 'difficulty', 'is_professional', 'created_at', 'updated_at']
-    search_fields = ['title', 'description', 'author']
-    filter_horizontal = ['diet_tags', 'related_recipes']
-    date_hierarchy = 'created_at'
-    readonly_fields = ['total_time']
-
-    fieldsets = [
-        ('Основная информация', {
-            'fields': ['title', 'cuisine', 'author', 'description', 'image', 'is_professional'],
-            'classes': ['collapse']
-        }),
-        ('Параметры', {
-            'fields': ['servings', 'difficulty', 'total_time'],
-            'classes': ['collapse']
-        }),
-        ('Пищевая ценность', {
-            'fields': ['calories', 'protein', 'fat', 'carbs'],
-            'classes': ['collapse']
-        }),
-        ('Диеты и связи', {
-            'fields': ['diet_tags', 'related_recipes', 'components'],
-            'classes': ['collapse']
-        }),
-    ]
-
-    def get_inlines(self, request, obj=None):
-        """Динамически подставляем inline в зависимости от is_professional"""
-        if obj and obj.is_professional:
-            return [RecipeStepInline, ProfessionalIngredientInline]
-        return [RecipeStepInline, RecipeFoodItemInline]
-
-    def recipe_type_badge(self, obj):
-        """Отображаем красивый бейдж в списке рецептов"""
-        if obj.is_professional:
-            return format_html(
-                '<span style="background:#d97706; color:white; padding:2px 8px; border-radius:12px; font-size:11px;">📋 ТТК</span>')
-        return format_html(
-            '<span style="background:#10b981; color:white; padding:2px 8px; border-radius:12px; font-size:11px;">🍳 Рецепт</span>')
-
-    recipe_type_badge.short_description = 'Тип'
-    recipe_type_badge.admin_order_field = 'is_professional'
-
-
-# ======================= ОСТАЛЬНЫЕ РЕГИСТРАЦИИ =======================
-
-
-@admin.register(RecipeStep)
-class RecipeStepAdmin(admin.ModelAdmin):
-    list_display = ['order', 'title', 'recipe', 'duration']
-    list_filter = ['recipe']
-    search_fields = ['title', 'instruction']
-    autocomplete_fields = ['recipe', 'subrecipe']
-
-
-@admin.register(CookingMethod)
-class CookingMethodAdmin(admin.ModelAdmin):
     list_display = [
-        'name',
-        'code',
-        'difficulty_badge',
-        'is_heat_treatment',
-        'can_cook_with_children',
-        'sort_order'
+        'id', 'title', 'recipe_type', 'is_saved_variant', 'original_recipe',
+        'ttk_code', 'cuisine', 'author', 'difficulty', 'servings',
+        'total_time', 'created_at', 'ingredients_count', 'steps_count'
     ]
-    list_filter = ['is_heat_treatment', 'difficulty', 'can_cook_with_children']
-    search_fields = ['name', 'code', 'description']
-    list_editable = ['sort_order']
+    list_filter = [
+        RecipeTypeFilter,
+        'is_saved_variant',
+        'is_professional',
+        'difficulty',
+        'cuisine',
+        'created_at',
+        RecipeWithSubrecipeFilter
+    ]
+    search_fields = ['title', 'description', 'author', 'ttk_code']
 
-    fieldsets = [
+    readonly_fields = [
+        'total_time', 'calories', 'protein', 'fat', 'carbs',
+        'created_at', 'updated_at', 'saved_at'
+    ]
+
+    fieldsets = (
+        ('Тип рецепта', {
+            'fields': ('recipe_type', 'ttk_code'),
+            'description': 'Выберите тип рецепта'
+        }),
         ('Основная информация', {
-            'fields': ['name', 'code', 'description', 'is_heat_treatment', 'sort_order']
+            'fields': ('title', 'author', 'cuisine', 'description', 'difficulty', 'servings', 'is_professional')
         }),
-        ('Для начинающих', {
-            'fields': [
-                'difficulty',
-                'can_cook_with_children',
-                'child_friendly_notes',
-                'beginner_tips'
-            ],
-            'classes': ('collapse',)
+        ('Сохраненный вариант', {
+            'fields': (
+            'is_saved_variant', 'original_recipe', 'saved_by_session', 'saved_by_user', 'is_favorite', 'saved_notes'),
+            'classes': ('collapse',),
+            'description': 'Информация о сохраненном варианте рецепта'
         }),
-        ('Подробное руководство', {
-            'fields': [
-                'step_by_step_guide',
-                'tips',
-                'common_mistakes'
-            ],
-            'classes': ('collapse',)
+        ('Для ТТК (Технико-технологическая карта)', {
+            'fields': (
+                'technological_process',
+                'quality_requirements',
+                'yield_weight',
+                'portion_size',
+                'consumption_rates',
+                'tech_card_data'
+            ),
+            'classes': ('collapse',),
+            'description': 'Заполняется только для ТТК и полуфабрикатов'
         }),
-        ('Научная база', {
-            'fields': ['scientific_background', 'advanced_notes'],
-            'classes': ('collapse',)
+        ('Оформление и подача', {
+            'fields': ('plating', 'plating_image'),
+            'classes': ('wide',),
+            'description': 'Рекомендации по оформлению и фото готового блюда'
         }),
-        ('Параметры приготовления', {
-            'fields': [
-                'recommended_temperature_min',
-                'recommended_temperature_max',
-                'breading_type'
-            ],
-            'classes': ('collapse',)
+        ('Визуальные материалы', {
+            'fields': ('image', 'video'),
+            'classes': ('collapse',),
         }),
-        ('Коэффициенты', {
-            'fields': ['oil_absorption_rates', 'cut_shape_factors'],
-            'classes': ('collapse',)
+        ('Пищевая ценность (рассчитывается автоматически)', {
+            'fields': ('calories', 'protein', 'fat', 'carbs', 'total_time'),
+            'classes': ('collapse',),
         }),
-        ('Визуал', {
-            'fields': ['icon', 'image', 'video_url'],
-            'classes': ('collapse',)
+        ('Дополнительно', {
+            'fields': ('diet_tags', 'related_recipes', 'components'),
+            'classes': ('collapse',),
         }),
-        ('Связи', {
-            'fields': ['best_ingredients'],
-            'classes': ('collapse',)
+        ('Служебная информация', {
+            'fields': ('created_at', 'updated_at'),
+            'classes': ('collapse',),
         }),
+    )
+
+    inlines = [
+        RecipeStepInline,
+        ComponentInline,
+        ProfessionalIngredientInline,  # <-- добавляем для ТТК
+        RecipeFoodItemInline,  # <-- для домашних
     ]
-
-    def difficulty_badge(self, obj):
-        """Отображает сложность в виде бейджа"""
-        colors = {
-            'easy': '🟢',
-            'medium': '🟡',
-            'hard': '🔴',
-        }
-        labels = {
-            'easy': 'Простая',
-            'medium': 'Средняя',
-            'hard': 'Сложная',
-        }
-        return f"{colors.get(obj.difficulty, '⚪')} {labels.get(obj.difficulty, 'Не указана')}"
-
-    difficulty_badge.short_description = 'Сложность'
-
-
-@admin.register(IngredientPreparation)
-class IngredientPreparationAdmin(admin.ModelAdmin):
-    list_display = ['name', 'time_factor', 'waste_percentage']
-    search_fields = ['name', 'description']
-
-
-@admin.register(RecommendedUtensil)
-class RecommendedUtensilAdmin(admin.ModelAdmin):
-    list_display = ['name', 'image_preview']
-    search_fields = ['name', 'description']
-
-    def image_preview(self, obj):
-        if obj.image:
-            return format_html('<img src="{}" width="40" height="40" style="object-fit: cover; border-radius: 8px;" />', obj.image.url)
-        return '-'
-    image_preview.short_description = 'Изображение'
-
-
-@admin.register(UtensilSubstitution)
-class UtensilSubstitutionAdmin(admin.ModelAdmin):
-    list_display = ['original_utensil', 'substitute_utensil', 'reason']
-    search_fields = ['original_utensil__name', 'substitute_utensil__name', 'reason']
-    autocomplete_fields = ['original_utensil', 'substitute_utensil']
-
-
-@admin.register(IngredientSubstitution)
-class IngredientSubstitutionAdmin(admin.ModelAdmin):
-    list_display = ['recipe_ingredient', 'substitute_ingredient', 'ratio', 'substitute_unit']
-    list_filter = ['substitute_unit']
-    search_fields = ['recipe_ingredient__ingredient__name', 'substitute_ingredient__name']
-    autocomplete_fields = ['recipe_ingredient', 'substitute_ingredient']
-    fields = ['recipe_ingredient', 'substitute_ingredient', 'substitute_unit', 'ratio', 'notes']
-
-
-# ======================= ФОРМА ДЛЯ КАТЕГОРИЙ (иерархический выбор родителя) =======================
-class CategoryForm(forms.ModelForm):
-    """Форма для категорий с иерархическим выбором родителя"""
-
-    class Meta:
-        model = IngredientCategory
-        fields = '__all__'
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-
-        def build_tree(parent=None, level=0, prefix=""):
-            options = []
-            children = IngredientCategory.objects.filter(parent=parent).order_by('name')
-            for i, child in enumerate(children):
-                if self.instance and self.instance.pk == child.pk:
-                    continue
-                is_last = (i == len(children) - 1)
-                connector = "└── " if is_last else "├── "
-                display_name = f"{prefix}{connector}{child.name}"
-                options.append((child.id, display_name))
-                next_prefix = prefix + ("    " if is_last else "│   ")
-                options.extend(build_tree(child, level + 1, next_prefix))
-            return options
-
-        tree_options = build_tree()
-        choices = [(None, "--------- (корневая категория)")]
-        choices.extend(tree_options)
-
-        self.fields['parent'].choices = choices
-        self.fields['parent'].required = False
-        self.fields['parent'].empty_label = None
-
-        if self.instance and self.instance.pk and self.instance.parent:
-            self.fields['parent'].initial = self.instance.parent.id
-
-
-# ======================= ФОРМА ДЛЯ ИНГРЕДИЕНТОВ (трехуровневый выбор) =======================
-class IngredientCategorySelectForm(forms.ModelForm):
-    """Форма для Ingredient с трехуровневым выбором категории"""
-
-    category_level_1 = forms.ModelChoiceField(
-        queryset=IngredientCategory.objects.filter(parent__isnull=True).order_by('name'),
-        required=False,
-        label='Категория 1-го уровня'
-    )
-    category_level_2 = forms.ModelChoiceField(
-        queryset=IngredientCategory.objects.none(),
-        required=False,
-        label='Категория 2-го уровня'
-    )
-    category_level_3 = forms.ModelChoiceField(
-        queryset=IngredientCategory.objects.none(),
-        required=False,
-        label='Категория 3-го уровня'
-    )
-
-    class Meta:
-        model = Ingredient
-        fields = '__all__'
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self._setup_categories()
-
-    def _setup_categories(self):
-        current_category = None
-        if self.instance and self.instance.pk and self.instance.abstract:
-            current_category = self.instance.abstract.category
-
-        if current_category:
-            level = current_category.level
-            if level == 0:
-                self.fields['category_level_1'].initial = current_category
-                self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
-                    parent=current_category
-                ).order_by('name')
-            elif level == 1:
-                self.fields['category_level_1'].initial = current_category.parent
-                self.fields['category_level_2'].initial = current_category
-                self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
-                    parent=current_category.parent
-                ).order_by('name')
-                self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
-                    parent=current_category
-                ).order_by('name')
-            elif level == 2:
-                root = current_category.root_parent
-                second = current_category.second_level_parent
-                self.fields['category_level_1'].initial = root
-                self.fields['category_level_2'].initial = second
-                self.fields['category_level_3'].initial = current_category
-                self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
-                    parent=root
-                ).order_by('name')
-                self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
-                    parent=second
-                ).order_by('name')
-
-    def clean(self):
-        cleaned_data = super().clean()
-
-        level_1 = cleaned_data.get('category_level_1')
-        level_2 = cleaned_data.get('category_level_2')
-        level_3 = cleaned_data.get('category_level_3')
-
-        if level_1:
-            self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
-                parent=level_1
-            ).order_by('name')
-        else:
-            self.fields['category_level_2'].queryset = IngredientCategory.objects.none()
-
-        if level_2:
-            self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
-                parent=level_2
-            ).order_by('name')
-        else:
-            self.fields['category_level_3'].queryset = IngredientCategory.objects.none()
-
-        if level_3:
-            cleaned_data['selected_category'] = level_3
-        elif level_2:
-            cleaned_data['selected_category'] = level_2
-        elif level_1:
-            cleaned_data['selected_category'] = level_1
-        else:
-            cleaned_data['selected_category'] = None
-
-        return cleaned_data
-
-    def save(self, commit=True):
-        instance = super().save(commit=False)
-        selected_category = self.cleaned_data.get('selected_category')
-
-        if instance.abstract:
-            instance.abstract.category = selected_category
-            if commit:
-                instance.abstract.save()
-        else:
-            abstract = AbstractIngredient.objects.create(
-                name=instance.name,
-                category=selected_category,
-                data_source=instance.data_source or 'manual',
-            )
-            instance.abstract = abstract
-
-        if commit:
-            instance.save()
-            self.save_m2m()
-
-        return instance
-
-
-# ======================= ФОРМА ДЛЯ ABSTRACTINGREDIENT =======================
-class AbstractIngredientCategoryForm(forms.ModelForm):
-    """Форма для AbstractIngredient с трехуровневым выбором категории"""
-
-    category_level_1 = forms.ModelChoiceField(
-        queryset=IngredientCategory.objects.filter(parent__isnull=True).order_by('name'),
-        required=False,
-        label='Категория 1-го уровня'
-    )
-    category_level_2 = forms.ModelChoiceField(
-        queryset=IngredientCategory.objects.none(),
-        required=False,
-        label='Категория 2-го уровня'
-    )
-    category_level_3 = forms.ModelChoiceField(
-        queryset=IngredientCategory.objects.none(),
-        required=False,
-        label='Категория 3-го уровня'
-    )
-
-    class Meta:
-        model = AbstractIngredient
-        fields = '__all__'
-        exclude = ['category']
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self._setup_categories()
-
-        if self.is_bound and 'category_level_1' in self.data:
-            level_1_id = self.data.get('category_level_1')
-            if level_1_id:
-                try:
-                    level_1 = IngredientCategory.objects.get(id=level_1_id)
-                    self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
-                        parent=level_1
-                    ).order_by('name')
-                except (ValueError, IngredientCategory.DoesNotExist):
-                    pass
-
-            level_2_id = self.data.get('category_level_2')
-            if level_2_id:
-                try:
-                    level_2 = IngredientCategory.objects.get(id=level_2_id)
-                    self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
-                        parent=level_2
-                    ).order_by('name')
-                except (ValueError, IngredientCategory.DoesNotExist):
-                    pass
-
-    def _setup_categories(self):
-        current_category = None
-        if self.instance and self.instance.pk:
-            current_category = self.instance.category
-
-        if current_category:
-            level = current_category.level
-            if level == 0:
-                self.fields['category_level_1'].initial = current_category
-                self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
-                    parent=current_category
-                ).order_by('name')
-            elif level == 1:
-                self.fields['category_level_1'].initial = current_category.parent
-                self.fields['category_level_2'].initial = current_category
-                self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
-                    parent=current_category.parent
-                ).order_by('name')
-                self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
-                    parent=current_category
-                ).order_by('name')
-            elif level == 2:
-                root = current_category.root_parent
-                second = current_category.second_level_parent
-                self.fields['category_level_1'].initial = root
-                self.fields['category_level_2'].initial = second
-                self.fields['category_level_3'].initial = current_category
-                self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
-                    parent=root
-                ).order_by('name')
-                self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
-                    parent=second
-                ).order_by('name')
-
-    def clean(self):
-        cleaned_data = super().clean()
-
-        level_1 = cleaned_data.get('category_level_1')
-        level_2 = cleaned_data.get('category_level_2')
-        level_3 = cleaned_data.get('category_level_3')
-
-        if level_3:
-            cleaned_data['selected_category'] = level_3
-        elif level_2:
-            cleaned_data['selected_category'] = level_2
-        elif level_1:
-            cleaned_data['selected_category'] = level_1
-        else:
-            cleaned_data['selected_category'] = None
-
-        return cleaned_data
-
-    def save(self, commit=True):
-        instance = super().save(commit=False)
-        instance.category = self.cleaned_data.get('selected_category')
-        if commit:
-            instance.save()
-            self.save_m2m()
-        return instance
-
-
-# ======================= РЕГИСТРАЦИЯ КАТЕГОРИЙ =======================
-@admin.register(IngredientCategory)
-class IngredientCategoryAdmin(admin.ModelAdmin):
-    form = CategoryForm
-    list_display_links = ['name', 'parent']
-    list_editable = ['sort_order']
-    list_filter = ['parent']
-    search_fields = ['name']
-    list_per_page = 100
-    ordering = ['name']
+    filter_horizontal = ['diet_tags', 'related_recipes', 'components']
+    autocomplete_fields = ['cuisine', 'original_recipe']
+    save_on_top = True
 
     def get_queryset(self, request):
-        """Сортируем категории по иерархии"""
-        qs = super().get_queryset(request)
-        # Сортируем по родителю и имени
-        return qs.order_by('parent__name', 'name')
+        return super().get_queryset(request).annotate(
+            ingredients_count=Count('home_ingredients', distinct=True),
+            steps_count=Count('steps', distinct=True)
+        )
 
-    def name_with_parent(self, obj):
-        """Отображаем категорию с родителем в списке"""
-        if obj.parent:
-            return f"{obj.parent.name} → {obj.name}"
-        return obj.name
+    def ingredients_count(self, obj):
+        return obj.ingredients_count
 
-    name_with_parent.short_description = 'Категория'
-    name_with_parent.admin_order_field = 'name'
+    ingredients_count.short_description = 'Ингредиентов'
 
-    list_display = ['name', 'parent', 'sort_order']
+    def steps_count(self, obj):
+        return obj.steps_count
 
+    steps_count.short_description = 'Шагов'
 
-    actions = ['bulk_assign_parent']
+    @admin.display(description='Вложенные рецепты')
+    def components_list(self, obj):
+        components = obj.components.all()
+        if components:
+            return format_html(
+                '<br>'.join([
+                    f'<a href="{reverse("admin:kitchen_recipe_change", args=[c.id])}">{c.title}</a>'
+                    for c in components
+                ])
+            )
+        return '-'
 
-    def bulk_assign_parent(self, request, queryset):
-        """Массовое назначение родительской категории"""
-        from django.shortcuts import render
-        from django.http import HttpResponseRedirect
-
-        # ШАГ 1: Это форма подтверждения (пришла с выбором родителя)
-        if request.method == 'POST' and request.POST.get('parent_id'):
-            parent_id = request.POST.get('parent_id')
-
-            if parent_id and parent_id.isdigit():
-                try:
-                    parent = IngredientCategory.objects.get(id=int(parent_id))
-
-                    # Проверка на циклическую зависимость
-                    for category in queryset:
-                        if category.id == parent.id:
-                            self.message_user(
-                                request,
-                                f'❌ Нельзя назначить категорию "{category.name}" родителем самой себя!',
-                                level='ERROR'
-                            )
-                            return HttpResponseRedirect(request.get_full_path())
-
-                    # Обновляем
-                    count = 0
-                    for category in queryset:
-                        category.parent = parent
-                        category.save(update_fields=['parent'])
-                        count += 1
-
-                    self.message_user(
-                        request,
-                        f'✅ Родительская категория "{parent.name}" назначена для {count} категорий'
-                    )
-                    return HttpResponseRedirect(request.get_full_path())
-
-                except IngredientCategory.DoesNotExist:
-                    self.message_user(request, '❌ Выбранная категория не найдена', level='ERROR')
-                    return HttpResponseRedirect(request.get_full_path())
-            else:
-                self.message_user(request, '❌ Пожалуйста, выберите родительскую категорию', level='ERROR')
-                return HttpResponseRedirect(request.get_full_path())
-
-        # ШАГ 2: Показываем форму выбора родителя (первый шаг)
-        def build_category_tree(parent=None, level=0):
-            options = []
-            children = IngredientCategory.objects.filter(parent=parent).order_by('name')
-            for cat in children:
-                if cat in queryset:
-                    continue
-                indent = '—' * level
-                options.append({
-                    'id': cat.id,
-                    'name': f"{indent} {cat.name}" if level > 0 else cat.name,
-                    'level': level
-                })
-                options.extend(build_category_tree(cat, level + 1))
-            return options
-
-        category_tree = build_category_tree()
-
-        # Получаем ID выбранных объектов из POST
-        selected_ids = request.POST.getlist('_selected_action')
-
-        context = {
-            'queryset': queryset,
-            'categories': category_tree,
-            'selected_ids': selected_ids,
-            'title': 'Назначить родительскую категорию',
-            'opts': self.model._meta,
-            'app_label': self.model._meta.app_label,
-        }
-
-        return render(request, 'admin/kitchen/ingredientcategory/bulk_assign_parent.html', context)
-
-    bulk_assign_parent.short_description = "Назначить родительскую категорию"
-
-class AbstractIngredientCategoryForm(forms.ModelForm):
-    """Форма для AbstractIngredient с трехуровневым выбором категории"""
-
-    category_level_1 = forms.ModelChoiceField(
-        queryset=IngredientCategory.objects.filter(parent__isnull=True).order_by('name'),
-        required=False,
-        label='Категория 1-го уровня'
-    )
-    category_level_2 = forms.ModelChoiceField(
-        queryset=IngredientCategory.objects.none(),
-        required=False,
-        label='Категория 2-го уровня'
-    )
-    category_level_3 = forms.ModelChoiceField(
-        queryset=IngredientCategory.objects.none(),
-        required=False,
-        label='Категория 3-го уровня'
-    )
-
-    class Meta:
-        model = AbstractIngredient
-        fields = '__all__'
-        exclude = ['category']
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self._setup_categories()
-
-        # Если форма привязана (POST) — обновляем queryset ДО валидации
-        if self.is_bound and 'category_level_1' in self.data:
-            level_1_id = self.data.get('category_level_1')
-            if level_1_id:
-                try:
-                    level_1 = IngredientCategory.objects.get(id=level_1_id)
-                    self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
-                        parent=level_1
-                    ).order_by('name')
-                except (ValueError, IngredientCategory.DoesNotExist):
-                    pass
-
-            level_2_id = self.data.get('category_level_2')
-            if level_2_id:
-                try:
-                    level_2 = IngredientCategory.objects.get(id=level_2_id)
-                    self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
-                        parent=level_2
-                    ).order_by('name')
-                except (ValueError, IngredientCategory.DoesNotExist):
-                    pass
-
-    def _setup_categories(self):
-        """Настраивает поля категорий в зависимости от текущей категории"""
-        current_category = None
-        if self.instance and self.instance.pk:
-            current_category = self.instance.category
-
-        if current_category:
-            level = current_category.level
-            if level == 0:
-                self.fields['category_level_1'].initial = current_category
-                self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
-                    parent=current_category
-                ).order_by('name')
-            elif level == 1:
-                self.fields['category_level_1'].initial = current_category.parent
-                self.fields['category_level_2'].initial = current_category
-                self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
-                    parent=current_category.parent
-                ).order_by('name')
-                self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
-                    parent=current_category
-                ).order_by('name')
-            elif level == 2:
-                root = current_category.root_parent
-                second = current_category.second_level_parent
-                self.fields['category_level_1'].initial = root
-                self.fields['category_level_2'].initial = second
-                self.fields['category_level_3'].initial = current_category
-                self.fields['category_level_2'].queryset = IngredientCategory.objects.filter(
-                    parent=root
-                ).order_by('name')
-                self.fields['category_level_3'].queryset = IngredientCategory.objects.filter(
-                    parent=second
-                ).order_by('name')
-
-    def clean_category_level_2(self):
-        """Валидация поля category_level_2"""
-        level_2 = self.cleaned_data.get('category_level_2')
-        if not level_2:
-            return None
-
-        # level_2 уже является объектом IngredientCategory
-        level_1 = self.cleaned_data.get('category_level_1')
-        if level_1:
-            if level_2.parent != level_1:
-                raise forms.ValidationError("Категория 2-го уровня не соответствует категории 1-го уровня")
-
-        return level_2
-
-    def clean_category_level_3(self):
-        """Валидация поля category_level_3"""
-        level_3 = self.cleaned_data.get('category_level_3')
-        if not level_3:
-            return None
-
-        # level_3 уже является объектом IngredientCategory
-        level_2 = self.cleaned_data.get('category_level_2')
-        if level_2:
-            if level_3.parent != level_2:
-                raise forms.ValidationError("Категория 3-го уровня не соответствует категории 2-го уровня")
-
-        return level_3
-
-    def clean(self):
-        cleaned_data = super().clean()
-
-        level_1 = cleaned_data.get('category_level_1')
-        level_2 = cleaned_data.get('category_level_2')
-        level_3 = cleaned_data.get('category_level_3')
-
-        # Выбираем самую глубокую категорию
-        if level_3:
-            cleaned_data['selected_category'] = level_3
-        elif level_2:
-            cleaned_data['selected_category'] = level_2
-        elif level_1:
-            cleaned_data['selected_category'] = level_1
-        else:
-            cleaned_data['selected_category'] = None
-
-        return cleaned_data
-
-    def save(self, commit=True):
-        instance = super().save(commit=False)
-        instance.category = self.cleaned_data.get('selected_category')
-        if commit:
-            instance.save()
-            self.save_m2m()
-        return instance
+    def save_model(self, request, obj, form, change):
+        # Если выбран ТТК или полуфабрикат, автоматически включаем профессиональный режим
+        if obj.recipe_type in ['ttk', 'semi_finished']:
+            obj.is_professional = True
+        super().save_model(request, obj, form, change)
+        obj.save()
 
 
-# ======================= РЕГИСТРАЦИЯ АБСТРАКТНЫХ ИНГРЕДИЕНТОВ =======================
+register_if_not_registered(Recipe, RecipeAdmin)
 
-@admin.register(AbstractIngredient)
-class AbstractIngredientAdmin(admin.ModelAdmin):
-    form = AbstractIngredientCategoryForm
-    list_per_page = 30
-    save_on_top = True
 
-    list_display = [
-        'name',
-        'category_display',
-        'calories_display',
-        'protein_display',
-        'fat_display',
-        'carbohydrates_display',
-        'is_active'
-    ]
+# Cuisine
+class CuisineAdmin(admin.ModelAdmin):
+    list_display = ['name', 'slug', 'parent', 'region', 'created_at']
+    search_fields = ['name', 'region', 'description']
+    list_filter = ['parent', 'region']
+    prepopulated_fields = {'slug': ('name',)}
+    autocomplete_fields = ['parent']
 
-    list_filter = ['category', 'is_active']
+
+register_if_not_registered(Cuisine, CuisineAdmin)
+
+
+# Diet
+class DietAdmin(admin.ModelAdmin):
+    list_display = ['name', 'authority', 'created_at']
     search_fields = ['name', 'description']
-    readonly_fields = ['id', 'created_at', 'updated_at']
-    ordering = ['name']
+    filter_horizontal = ['allowed_ingredients', 'prohibited_ingredients']
 
-    # ✅ Поля категорий ДОЛЖНЫ быть в fieldsets
+
+register_if_not_registered(Diet, DietAdmin)
+
+
+# AbstractIngredient
+class AbstractIngredientAdmin(admin.ModelAdmin):
+    list_display = [
+        'preview_image', 'name', 'name_normalized', 'category',
+        'calories', 'protein', 'fat', 'carbohydrates',
+        'is_active', 'data_source'
+    ]
+    list_filter = ['category', 'is_active', 'data_source', 'created_at']
+    search_fields = ['name', 'name_normalized', 'description']
+    readonly_fields = ['created_at', 'updated_at']
     fieldsets = (
-        ('Категория', {
-            'fields': ('category_level_1', 'category_level_2', 'category_level_3'),
-            'description': 'Выберите категорию ингредиента (три уровня вложенности)'
+        ('Основная информация', {
+            'fields': ('name', 'name_normalized', 'description', 'description_ru', 'category')
         }),
-        ('Основное', {
-            'fields': ('name', 'description', 'description_ru')
+        ('Изображение', {
+            'fields': ('image',),
+            'classes': ('collapse',),
         }),
         ('КБЖУ', {
             'fields': ('calories', 'protein', 'fat', 'carbohydrates'),
-            'classes': ('collapse',)
         }),
-        ('Дополнительные нутриенты', {
+        ('Микронутриенты', {
             'fields': ('fiber', 'sugar', 'water', 'ash', 'starch'),
-            'classes': ('collapse',)
+            'classes': ('collapse',),
         }),
         ('Витамины', {
-            'fields': ('vitamin_a', 'beta_carotene', 'vitamin_b1', 'vitamin_b2',
-                       'vitamin_b3', 'vitamin_b4', 'vitamin_b5', 'vitamin_b6',
-                       'vitamin_b7', 'vitamin_b9_folate', 'vitamin_b12',
-                       'vitamin_c', 'vitamin_d', 'vitamin_e', 'vitamin_k'),
-            'classes': ('collapse',)
+            'fields': (
+                'vitamin_a', 'beta_carotene', 'vitamin_b1', 'vitamin_b2',
+                'vitamin_b3', 'vitamin_b4', 'vitamin_b5', 'vitamin_b6',
+                'vitamin_b7', 'vitamin_b9_folate', 'vitamin_b12', 'vitamin_c',
+                'vitamin_d', 'vitamin_e', 'vitamin_k'
+            ),
+            'classes': ('collapse',),
         }),
-        ('Минералы', {
-            'fields': ('potassium', 'calcium', 'magnesium', 'sodium', 'phosphorus',
-                       'iron', 'manganese', 'copper', 'selenium', 'zinc'),
-            'classes': ('collapse',)
+        ('Минералы (макро)', {
+            'fields': ('potassium', 'calcium', 'magnesium', 'sodium', 'phosphorus', 'sulfur', 'silicon', 'chlorine'),
+            'classes': ('collapse',),
+        }),
+        ('Минералы (микро)', {
+            'fields': (
+                'iron', 'manganese', 'copper', 'selenium', 'zinc',
+                'aluminum', 'boron', 'vanadium', 'iodine', 'cobalt',
+                'lithium', 'molybdenum', 'nickel', 'rubidium', 'fluorine', 'chromium'
+            ),
+            'classes': ('collapse',),
         }),
         ('Жирные кислоты', {
             'fields': ('saturated_fat', 'trans_fat', 'cholesterol', 'omega_3', 'omega_6'),
-            'classes': ('collapse',)
-        }),
-        ('Изображение и источник', {
-            'fields': ('image', 'data_source', 'fdc_id', 'is_active'),
-            'classes': ('collapse',)
-        }),
-        ('Служебное', {
-            'fields': ('id', 'created_at', 'updated_at'),
-            'classes': ('collapse',)
-        }),
-    )
-
-    # ❌ Убираем get_fields() и get_fieldsets() — они больше не нужны!
-
-    def category_display(self, obj):
-        return obj.category.name if obj.category else '-'
-    category_display.short_description = 'Категория'
-    category_display.admin_order_field = 'category__name'
-
-    def calories_display(self, obj):
-        return obj.calories if obj.calories is not None else '-'
-    calories_display.short_description = 'Калории, ккал'
-
-    def protein_display(self, obj):
-        return obj.protein if obj.protein is not None else '-'
-    protein_display.short_description = 'Белки, г'
-
-    def fat_display(self, obj):
-        return obj.fat if obj.fat is not None else '-'
-    fat_display.short_description = 'Жиры, г'
-
-    def carbohydrates_display(self, obj):
-        return obj.carbohydrates if obj.carbohydrates is not None else '-'
-    carbohydrates_display.short_description = 'Углеводы, г'
-
-    actions = ['bulk_assign_category']
-
-    def bulk_assign_category(self, request, queryset):
-        """Массовое назначение категории выбранным абстрактным ингредиентам"""
-        from django.shortcuts import render
-        from django.http import HttpResponseRedirect
-
-        # Проверяем, что это POST с выбором категории
-        if request.method == 'POST' and 'category_id' in request.POST:
-            category_id = request.POST.get('category_id')
-            if category_id:
-                try:
-                    category = IngredientCategory.objects.get(id=category_id)
-                    updated_count = 0
-                    for ingredient in queryset:
-                        ingredient.category = category
-                        ingredient.save()
-                        updated_count += 1
-                    self.message_user(
-                        request,
-                        f'✅ Категория "{category.name}" назначена {updated_count} ингредиентам'
-                    )
-                    return HttpResponseRedirect(request.get_full_path())
-                except IngredientCategory.DoesNotExist:
-                    self.message_user(request, '❌ Выбранная категория не найдена', level='ERROR')
-                    return HttpResponseRedirect(request.get_full_path())
-            else:
-                self.message_user(request, '❌ Пожалуйста, выберите категорию', level='ERROR')
-                return HttpResponseRedirect(request.get_full_path())
-
-        # Показываем форму выбора категории
-        def build_tree(parent=None, level=0, prefix=""):
-            items = []
-            children = IngredientCategory.objects.filter(parent=parent).order_by('name')
-            for i, child in enumerate(children):
-                is_last = (i == len(children) - 1)
-                connector = "└── " if is_last else "├── "
-                display_name = f"{prefix}{connector}{child.name}"
-                items.append({'id': child.id, 'name': display_name})
-                next_prefix = prefix + ("    " if is_last else "│   ")
-                items.extend(build_tree(child, level + 1, next_prefix))
-            return items
-
-        tree = build_tree()
-
-        return render(request, 'admin/kitchen/abstractingredient/bulk_assign_category.html', {
-            'queryset': queryset,
-            'categories': tree,
-            'title': 'Массовое назначение категории абстрактным ингредиентам',
-            'opts': self.model._meta,
-            'app_label': self.model._meta.app_label,
-        })
-
-    bulk_assign_category.short_description = "Назначить категорию выбранным абстрактным ингредиентам"
-
-    class Media:
-        js = ['admin/js/category_chain.js']
-        css = {
-            'all': ('admin/css/category_select.css',)
-        }
-
-
-# ======================= РЕГИСТРАЦИЯ БРЕНДИРОВАННЫХ ПРОДУКТОВ =======================
-@admin.register(BrandedIngredient)
-class BrandedIngredientAdmin(admin.ModelAdmin):
-    list_display = [
-        'brand',
-        'product_name',
-        'abstract',
-        'price',
-        'weight',
-        'price_per_100g',  # <-- оставляем здесь (это метод)
-        'store',
-        'is_available'
-    ]
-    list_filter = ['brand', 'store', 'is_available']
-    search_fields = ['brand', 'product_name', 'barcode']
-    autocomplete_fields = ['abstract']
-    readonly_fields = ['id', 'created_at', 'updated_at']
-
-    fieldsets = (
-        ('Связь с абстрактным ингредиентом', {
-            'fields': ('abstract',)
-        }),
-        ('Основная информация', {
-            'fields': ('brand', 'product_name', 'barcode')
-        }),
-        ('КБЖУ (если отличается)', {
-            'fields': ('calories', 'protein', 'fat', 'carbohydrates'),
-            'classes': ('collapse',)
-        }),
-        ('Цена и вес', {
-            'fields': ('price', 'weight'),  # <-- убрали price_per_100g и price_per_kg
-        }),
-        ('Магазин', {
-            'fields': ('store', 'store_url', 'is_available', 'last_checked')
+            'classes': ('collapse',),
         }),
         ('Служебная информация', {
-            'fields': ('id', 'created_at', 'updated_at', 'created_by'),
-            'classes': ('collapse',)
+            'fields': ('data_source', 'fdc_id', 'is_active', 'created_at', 'updated_at'),
+            'classes': ('collapse',),
         }),
     )
+    filter_horizontal = ['semantic_tags']
+    autocomplete_fields = ['category']
 
-    def price_per_100g(self, obj):
-        """Цена за 100 грамм"""
-        if obj.price_per_100g:
-            return f"{obj.price_per_100g:.2f} руб."
-        return "-"
-    price_per_100g.short_description = 'Цена за 100г'
-
-    def price_per_kg(self, obj):
-        """Цена за 1 кг"""
-        if obj.price_per_kg:
-            return f"{obj.price_per_kg:.2f} руб."
-        return "-"
-    price_per_kg.short_description = 'Цена за 1 кг'
-
-
-# ======================= РЕГИСТРАЦИЯ ИНГРЕДИЕНТОВ =======================
-@admin.register(Ingredient)
-class IngredientAdmin(admin.ModelAdmin):
-    form = IngredientCategorySelectForm
-    list_per_page = 30
-    save_on_top = True
-
-    list_display = [
-        'name',
-        'category_display',
-        'calories_display',
-        'protein_display',
-        'fat_display',
-        'carbohydrates_display',
-        'fiber',
-        'sugar',
-        'relations_count',
-        'is_common'
-    ]
-
-    list_filter = [
-        'abstract__category',
-        'is_semi_finished',
-        'branded__store',
-    ]
-
-    search_fields = ['name', 'abstract__name', 'branded__brand', 'branded__product_name']
-    readonly_fields = ['id']
-    ordering = ['name_normalized']
-
-    # Убираем category_level_* из fieldsets
-    fieldsets = (
-        ('Основное', {
-            'fields': ('name', 'abstract', 'branded')
-        }),
-        ('Пользовательские корректировки', {
-            'fields': ('custom_calories', 'custom_protein', 'custom_fat', 'custom_carbohydrates'),
-            'classes': ('collapse',)
-        }),
-        ('Жиры и холестерин', {
-            'fields': ('saturated_fat', 'trans_fat', 'cholesterol'),
-            'classes': ('collapse',)
-        }),
-        ('Витамины', {
-            'fields': ('vitamin_a', 'vitamin_b1', 'vitamin_b2', 'vitamin_b3', 'vitamin_b6',
-                       'vitamin_b9', 'vitamin_b12', 'vitamin_c', 'vitamin_d', 'vitamin_e', 'vitamin_k'),
-            'classes': ('collapse',)
-        }),
-        ('Минералы', {
-            'fields': ('calcium', 'iron', 'magnesium', 'phosphorus', 'potassium', 'sodium',
-                       'zinc', 'copper', 'manganese', 'selenium'),
-            'classes': ('collapse',)
-        }),
-        ('Дополнительно', {
-            'fields': ('water', 'ash', 'data_source'),
-            'classes': ('collapse',)
-        }),
-    )
-
-    # Поля category_level_* добавляются через форму (IngredientCategoryForm)
-    # Они НЕ ДОЛЖНЫ быть в fieldsets
-
-    def calories_display(self, obj):
-        return obj.calories if obj.calories is not None else '-'
-    calories_display.short_description = 'Калории, ккал'
-    calories_display.admin_order_field = 'abstract__calories'
-
-    def protein_display(self, obj):
-        return obj.protein if obj.protein is not None else '-'
-    protein_display.short_description = 'Белки, г'
-    protein_display.admin_order_field = 'abstract__protein'
-
-    def fat_display(self, obj):
-        return obj.fat if obj.fat is not None else '-'
-    fat_display.short_description = 'Жиры, г'
-    fat_display.admin_order_field = 'abstract__fat'
-
-    def carbohydrates_display(self, obj):
-        return obj.carbohydrates if obj.carbohydrates is not None else '-'
-    carbohydrates_display.short_description = 'Углеводы, г'
-    carbohydrates_display.admin_order_field = 'abstract__carbohydrates'
-
-    def category_display(self, obj):
-        if obj.abstract and obj.abstract.category:
-            return obj.abstract.category.name
+    @admin.display(description='Фото')
+    def preview_image(self, obj):
+        if obj.image and obj.image.url:
+            return format_html(
+                '<img src="{}" style="max-height: 50px; max-width: 50px; border-radius: 4px;" />',
+                obj.image.url
+            )
         return '-'
-    category_display.short_description = 'Категория'
-    category_display.admin_order_field = 'abstract__category__name'
-
-    # actions = ['bulk_assign_category']
-
-    def bulk_assign_category(self, request, queryset):
-        """Массовое назначение категории выбранным ингредиентам"""
-        from django.shortcuts import render
-        from django.http import HttpResponseRedirect
-
-        if request.method == 'POST' and 'apply' in request.POST:
-            category_id = request.POST.get('category_id')
-
-            if category_id:
-                try:
-                    category = IngredientCategory.objects.get(id=category_id)
-                    updated = 0
-                    for ingredient in queryset:
-                        if ingredient.abstract:
-                            ingredient.abstract.category = category
-                            ingredient.abstract.save()
-                            updated += 1
-                        else:
-                            from .models import AbstractIngredient
-                            abstract = AbstractIngredient.objects.create(
-                                name=ingredient.name,
-                                category=category,
-                                data_source=ingredient.data_source,
-                            )
-                            ingredient.abstract = abstract
-                            ingredient.save()
-                            updated += 1
-
-                    self.message_user(request, f'Категория "{category}" назначена {updated} ингредиентам')
-                    return HttpResponseRedirect(request.get_full_path())
-                except IngredientCategory.DoesNotExist:
-                    self.message_user(request, 'Выбранная категория не найдена', level='ERROR')
-                    return HttpResponseRedirect(request.get_full_path())
-            else:
-                self.message_user(request, 'Пожалуйста, выберите категорию', level='ERROR')
-                return HttpResponseRedirect(request.get_full_path())
-
-        all_categories = IngredientCategory.objects.all()
-
-        return render(request, 'admin/kitchen/ingredient/bulk_assign_category.html', {
-            'queryset': queryset,
-            'categories': all_categories,
-            'title': 'Массовое назначение категории ингредиентам'
-        })
-
-    bulk_assign_category.short_description = "Назначить категорию выбранным ингредиентам"
-
-    class Media:
-        js = ['admin/js/category_chain.js']
-        css = {
-            'all': ('admin/css/category_select.css',)
-        }
-
-    def change_view(self, request, object_id, form_url='', extra_context=None):
-        """Добавляем кнопки навигации в контекст"""
-        if object_id:
-            extra_context = extra_context or {}
-            current = Ingredient.objects.select_related('abstract', 'branded').get(id=object_id)
-
-            next_ingredient = Ingredient.objects.filter(id__gt=current.id).order_by('id').first()
-            prev_ingredient = Ingredient.objects.filter(id__lt=current.id).order_by('-id').first()
-
-            extra_context['next_ingredient'] = next_ingredient
-            extra_context['prev_ingredient'] = prev_ingredient
-            extra_context['current_id'] = int(object_id)
-            extra_context['total_count'] = Ingredient.objects.count()
-            extra_context['current_index'] = Ingredient.objects.filter(id__lte=current.id).count()
-
-        return super().change_view(request, object_id, form_url, extra_context=extra_context)
-
-    def relations_count(self, obj):
-        """Количество семантических связей у ингредиента"""
-        if obj.abstract:
-            count = SemanticRelation.objects.filter(
-                from_category=obj.abstract.category
-            ).count()
-            return count
-        return 0
-
-    relations_count.short_description = 'Связей'
 
 
-# ======================= РЕГИСТРАЦИЯ ПРОДУКТОВ =======================
+register_if_not_registered(AbstractIngredient, AbstractIngredientAdmin)
 
-@admin.register(Product)
+
+# Product
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ['name', 'brand', 'nutriscore_grade', 'nova_group']
-    list_filter = ['nutriscore_grade', 'nova_group']
-    search_fields = ['name', 'brand', 'code']
-    fieldsets = (
-        ('Основная информация', {'fields': ('code', 'name', 'brand', 'quantity')}),
-        ('Состав', {'fields': ('categories', 'ingredients_text', 'countries_tags')}),
-        ('Оценки', {'fields': ('nutriscore_grade', 'nova_group', 'image')}),
-    )
+    list_display = ['name', 'brand', 'code', 'nutriscore_grade', 'nova_group', 'last_update']
+    search_fields = ['name', 'brand', 'code', 'ingredients_text']
+    list_filter = ['nutriscore_grade', 'nova_group', 'data_source', 'last_update']
 
 
-#================================= семантические связи ===============================
-@admin.register(RelationType)
-class RelationTypeAdmin(admin.ModelAdmin):
-    list_display = ['icon', 'name', 'reverse_name', 'slug', 'is_symmetric', 'order']
-    list_filter = ['is_symmetric']
-    search_fields = ['name', 'reverse_name', 'slug', 'description']
-    list_editable = ['order']
-    list_display_links = ['icon', 'name']
-    ordering = ['order', 'name']
-    fieldsets = (
-        ('Основное', {
-            'fields': ('name', 'slug', 'reverse_name', 'description')
-        }),
-        ('Визуал', {
-            'fields': ('icon', 'color')
-        }),
-        ('Настройки', {
-            'fields': ('is_symmetric', 'order')
-        }),
-    )
-
-# kitchen/admin.py
-
-@admin.register(SemanticRelation)
-class SemanticRelationAdmin(admin.ModelAdmin):
-    list_display = [
-        'from_display',
-        'relation_type_display',
-        'to_display',
-        'weight',
-        'created_at'
-    ]
-    list_filter = ['relation_type', 'created_at']
-    search_fields = [
-        'from_category__name', 'to_category__name',
-        'from_tag__name', 'to_tag__name',
-        'from_method__name', 'to_method__name',
-        'from_utensil__name', 'to_utensil__name',
-        'from_cuisine__name', 'to_cuisine__name',  # ← НОВОЕ!
-        'notes'
-    ]
-    autocomplete_fields = [
-        'from_category', 'to_category',
-        'from_tag', 'to_tag',
-        'from_method', 'to_method',
-        'from_utensil', 'to_utensil',
-        'from_cuisine', 'to_cuisine'  # ← НОВОЕ!
-    ]
-    readonly_fields = ['created_at', 'updated_at', 'created_by']
-
-    fieldsets = (
-        ('От (источник)', {
-            'fields': (
-                ('from_category', 'from_tag', 'from_method', 'from_utensil', 'from_cuisine'),  # ← НОВОЕ!
-            )
-        }),
-        ('К (цель)', {
-            'fields': (
-                ('to_category', 'to_tag', 'to_method', 'to_utensil', 'to_cuisine'),  # ← НОВОЕ!
-            )
-        }),
-        ('Тип связи', {
-            'fields': ('relation_type',)
-        }),
-        ('Дополнительно', {
-            'fields': ('weight', 'order', 'notes')
-        }),
-        ('Служебное', {
-            'fields': ('created_at', 'updated_at', 'created_by'),
-            'classes': ('collapse',)
-        }),
-    )
-
-    def from_display(self, obj):
-        if obj.from_category:
-            return f"📁 {obj.from_category.name}"
-        if obj.from_tag:
-            return f"🏷️ {obj.from_tag.name}"
-        if obj.from_method:
-            return f"🍳 {obj.from_method.name}"
-        if obj.from_utensil:
-            return f"🔧 {obj.from_utensil.name}"
-        if obj.from_cuisine:  # ← НОВОЕ!
-            return f"🌍 {obj.from_cuisine.name}"
-        return "-"
-    from_display.short_description = 'От'
-
-    def to_display(self, obj):
-        if obj.to_category:
-            return f"📁 {obj.to_category.name}"
-        if obj.to_tag:
-            return f"🏷️ {obj.to_tag.name}"
-        if obj.to_method:
-            return f"🍳 {obj.to_method.name}"
-        if obj.to_utensil:
-            return f"🔧 {obj.to_utensil.name}"
-        if obj.to_cuisine:  # ← НОВОЕ!
-            return f"🌍 {obj.to_cuisine.name}"
-        return "-"
-    to_display.short_description = 'К'
-
-    def relation_type_display(self, obj):
-        return f"{obj.relation_type.icon} {obj.relation_type.name}"
-    relation_type_display.short_description = 'Тип связи'
+register_if_not_registered(Product, ProductAdmin)
 
 
-@admin.register(SemanticTag)
+# BrandedIngredient
+class BrandedIngredientAdmin(admin.ModelAdmin):
+    list_display = ['brand', 'product_name', 'abstract', 'barcode', 'store', 'is_available']
+    search_fields = ['brand', 'product_name', 'barcode']
+    list_filter = ['brand', 'store', 'is_available', 'created_at']
+    autocomplete_fields = ['abstract', 'created_by']
+    readonly_fields = ['price_per_100g', 'price_per_kg', 'created_at', 'updated_at']
+
+
+register_if_not_registered(BrandedIngredient, BrandedIngredientAdmin)
+
+
+@admin.register(ProfessionalIngredient)
+class ProfessionalIngredientAdmin(admin.ModelAdmin):
+    list_display = ['recipe', 'ingredient', 'gross_weight', 'net_weight', 'unit', 'loss_factor']
+    list_filter = ['unit', 'is_base_allowed']
+    search_fields = ['ingredient__name', 'recipe__title']
+    autocomplete_fields = ['recipe', 'ingredient']
+
+
+# IngredientCategory
+class IngredientCategoryAdmin(admin.ModelAdmin):
+    list_display = ['name', 'parent', 'level', 'full_hierarchy', 'icon', 'sort_order']
+    list_filter = ['parent']
+    search_fields = ['name']
+    ordering = ['sort_order', 'name']
+    autocomplete_fields = ['parent']
+
+    @admin.display(description='Полная иерархия')
+    def full_hierarchy(self, obj):
+        return obj.full_hierarchy
+
+
+register_if_not_registered(IngredientCategory, IngredientCategoryAdmin)
+
+
+# SemanticTag
 class SemanticTagAdmin(admin.ModelAdmin):
-    list_display = [
-        'name',
-        'tag_type',
-        'icon',
-        'sort_order',
-        'is_active',
-        'ingredient_count'
-    ]
-    list_filter = ['tag_type', 'is_active']
-    search_fields = ['name', 'description']
-    list_editable = ['sort_order', 'is_active']
-    ordering = ['tag_type', 'name']
+    list_display = ['name', 'slug', 'tag_type', 'group', 'parent', 'is_active', 'ingredient_count']
+    list_filter = ['tag_type', 'group', 'is_active', 'parent']
+    search_fields = ['name', 'group', 'description']
     prepopulated_fields = {'slug': ('name',)}
-    filter_horizontal = ['ingredients']
-    readonly_fields = ['ingredient_count']
-
-    fieldsets = (
-        ('Основное', {
-            'fields': ('name', 'slug', 'tag_type', 'icon', 'color')
-        }),
-        ('Описание', {
-            'fields': ('description',)
-        }),
-        ('Связи', {
-            'fields': ('ingredients',)
-        }),
-        ('Настройки', {
-            'fields': ('sort_order', 'is_active')
-        }),
-        ('Служебное', {
-            'fields': ('ingredient_count',),
-            'classes': ('collapse',)
-        }),
-    )
+    autocomplete_fields = ['parent', 'created_by']
+    readonly_fields = ['created_at', 'updated_at', 'ingredient_count']
 
     def ingredient_count(self, obj):
-        """Количество связанных ингредиентов"""
         return obj.ingredient_count
 
     ingredient_count.short_description = 'Ингредиентов'
+
+
+register_if_not_registered(SemanticTag, SemanticTagAdmin)
+
+
+# CookingMethod
+class CookingMethodAdmin(admin.ModelAdmin):
+    list_display = ['name', 'code', 'is_heat_treatment', 'difficulty', 'sort_order', 'breading_type']
+    search_fields = ['name', 'code', 'description']
+    list_filter = ['is_heat_treatment', 'difficulty', 'breading_type']
+    filter_horizontal = ['best_ingredients']
+    fieldsets = (
+        ('Основная информация', {
+            'fields': ('name', 'code', 'description', 'icon', 'image', 'video_url')
+        }),
+        ('Тип обработки', {
+            'fields': ('is_heat_treatment', 'breading_type', 'difficulty')
+        }),
+        ('Температура', {
+            'fields': ('recommended_temperature_min', 'recommended_temperature_max')
+        }),
+        ('Сложность и обучение', {
+            'fields': (
+                'tips', 'common_mistakes', 'scientific_background',
+                'advanced_notes', 'beginner_tips', 'step_by_step_guide'
+            ),
+            'classes': ('collapse',),
+        }),
+        ('Данные для расчётов', {
+            'fields': ('oil_absorption_rates', 'cut_shape_factors'),
+            'classes': ('collapse',),
+        }),
+        ('Лучшие ингредиенты', {
+            'fields': ('best_ingredients',),
+            'classes': ('collapse',),
+        }),
+        ('Для детей', {
+            'fields': ('can_cook_with_children', 'child_friendly_notes'),
+            'classes': ('collapse',),
+        }),
+        ('Служебное', {
+            'fields': ('sort_order',),
+            'classes': ('collapse',),
+        }),
+    )
+
+
+register_if_not_registered(CookingMethod, CookingMethodAdmin)
+
+
+# IngredientPreparation
+class IngredientPreparationAdmin(admin.ModelAdmin):
+    list_display = ['name', 'time_factor', 'waste_percentage']
+    search_fields = ['name', 'description', 'tips']
+
+
+register_if_not_registered(IngredientPreparation, IngredientPreparationAdmin)
+
+
+# RecommendedUtensil
+class RecommendedUtensilAdmin(admin.ModelAdmin):
+    list_display = ['name', 'alternative']
+    search_fields = ['name', 'description']
+
+
+register_if_not_registered(RecommendedUtensil, RecommendedUtensilAdmin)
+
+
+# RecipeStep
+class RecipeStepAdmin(admin.ModelAdmin):
+    list_display = ['id', 'recipe', 'order', 'title', 'duration', 'cooking_method']
+    list_filter = ['cooking_method', 'ingredient_preparation']
+    search_fields = ['title', 'instruction']
+    autocomplete_fields = ['recipe', 'subrecipe', 'cooking_method', 'ingredient_preparation']
+    filter_horizontal = ['recommended_utensils']
+
+    @admin.display(description='Картинка')
+    def preview_step_image(self, obj):
+        if obj.recipe_step_image and obj.recipe_step_image.url:
+            return format_html(
+                '<img src="{}" style="max-height: 50px; max-width: 50px; border-radius: 4px; object-fit: cover;" />',
+                obj.recipe_step_image.url
+            )
+        return '-'
+
+
+register_if_not_registered(RecipeStep, RecipeStepAdmin)
+
+
+# HomeIngredient
+class HomeIngredientAdmin(admin.ModelAdmin):
+    list_display = ['recipe', 'ingredient', 'quantity', 'unit', 'is_scalable']
+    list_filter = ['unit', 'is_scalable']
+    search_fields = ['ingredient__name', 'recipe__title']
+    autocomplete_fields = ['recipe', 'ingredient']
+
+
+register_if_not_registered(HomeIngredient, HomeIngredientAdmin)
+
+
+# IngredientSubstitution
+class IngredientSubstitutionAdmin(admin.ModelAdmin):
+    list_display = ['recipe_ingredient', 'substitute_ingredient', 'ratio', 'substitute_unit']
+    list_filter = ['substitute_unit']
+    autocomplete_fields = ['recipe_ingredient', 'substitute_ingredient']
+
+
+register_if_not_registered(IngredientSubstitution, IngredientSubstitutionAdmin)
+
+
+# RecipeFoodItem
+class RecipeFoodItemAdmin(admin.ModelAdmin):
+    list_display = ['recipe', 'food_name', 'food_type', 'quantity', 'unit', 'is_scalable']
+    list_filter = ['unit', 'is_scalable']
+    search_fields = ['ingredient__name', 'product__name', 'recipe__title']
+    autocomplete_fields = ['recipe', 'ingredient', 'product']
+
+
+register_if_not_registered(RecipeFoodItem, RecipeFoodItemAdmin)
+
+# ======================= ОФОРМЛЕНИЕ АДМИНКИ =======================
+
+admin.site.site_header = 'Кулинарная книга'
+admin.site.site_title = 'Кулинарная книга'
+admin.site.index_title = 'Управление рецептами и ингредиентами'

@@ -41,3 +41,76 @@
 .toast-hide {
     animation: slideOutRight 0.3s ease forwards;
 }
+
+
+/* ======================= ОФОРМЛЕНИЕ И ПОДАЧА ======================= */
+.plating-section {
+    margin-top: 2.5rem;
+}
+
+.plating-section .section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: serif;
+    margin-bottom: 1.5rem;
+}
+
+.plating-section .plating-text {
+    color: #4b5563;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.plating-section .plating-image {
+    margin-top: 1rem;
+}
+
+.plating-section .plating-image img {
+    width: 100%;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.plating-section .plating-image img:hover {
+    transform: scale(1.01);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.plating-section .plating-image .caption {
+    font-size: 0.875rem;
+    color: #6b7280;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+/* ======================= ПРОФЕССИОНАЛЬНЫЙ РЕЖИМ (ТТК) ======================= */
+.pro-mode .plating-section {
+    /* Специфичные стили для ТТК */
+}
+
+.pro-mode .plating-section .plating-text {
+    color: #1e293b;
+}
+
+.pro-mode .plating-section .plating-image img {
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e5e7eb;
+}
+
+/* ======================= АДАПТИВНОСТЬ ======================= */
+@media (max-width: 768px) {
+    .plating-section .plating-image img {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 640px) {
+    .plating-section .section-title {
+        font-size: 1.25rem;
+    }
+}

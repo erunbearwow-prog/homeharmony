@@ -1,0 +1,76 @@
+<!-- kitchen/templates/kitchen/saved_recipes.html -->
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Мои сохраненные рецепты{% endblock %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">📚 Мои сохраненные рецепты</h1>
+
+    <div id="savedRecipesList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Рецепты будут загружены через JavaScript -->
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('/kitchen/api/saved-recipes/')
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById('savedRecipesList');
+
+            if (data.saved_recipes.length === 0) {
+                container.innerHTML = '<p class="text-gray-500 col-span-full text-center py-12">У вас пока нет сохраненных рецептов</p>';
+                return;
+            }
+
+            container.innerHTML = data.saved_recipes.map(recipe => `
+                <div class="bg-white rounded-xl border border-gray-200 p-4 hover:shadow-lg transition">
+                    <h3 class="font-semibold text-lg mb-2">${recipe.title}</h3>
+                    <p class="text-sm text-gray-500">
+                        Оригинал: ${recipe.original_recipe_title || 'Неизвестно'}
+                    </p>
+                    <div class="flex gap-3 mt-2 text-sm">
+                        <span>🔥 ${recipe.calories} ккал</span>
+                        <span>💪 ${recipe.protein}г</span>
+                        <span>🧈 ${recipe.fat}г</span>
+                        <span>🍞 ${recipe.carbs}г</span>
+                    </div>
+                    <div class="mt-3 flex gap-2">
+                        <a href="/kitchen/recipe/${recipe.id}/"
+                           class="text-amber-700 hover:underline text-sm">
+                            Открыть →
+                        </a>
+                        <button onclick="deleteSavedRecipe(${recipe.id})"
+                                class="text-red-500 hover:text-red-700 text-sm">
+                            🗑 Удалить
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        });
+});
+
+function deleteSavedRecipe(recipeId) {
+    if (!confirm('Удалить сохраненный рецепт?')) return;
+
+    fetch('/kitchen/api/delete-saved-recipe/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]')?.value || ''
+        },
+        body: JSON.stringify({ recipe_id: recipeId })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.status === 'ok') {
+            location.reload();
+        } else {
+            alert('Ошибка: ' + data.error);
+        }
+    });
+}
+</script>
+{% endblock %}

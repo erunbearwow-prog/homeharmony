@@ -51,7 +51,7 @@
     <div class="absolute inset-0 z-0">
         {% load static %}
         {% if hero_image %}
-        <img src="{{ hero_image }}" alt="Кулинария" class="w-full h-full object-cover">
+        <img src="{% static hero_image %}" alt="Кулинария" class="w-full h-full object-cover">
         {% else %}
         <img src="{% static hero_image %}" alt="Кулинария" class="w-full h-full object-cover">
         {% endif %}

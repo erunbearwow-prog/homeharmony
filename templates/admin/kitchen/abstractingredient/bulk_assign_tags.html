@@ -1,0 +1,63 @@
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+<div id="content-main">
+    <form method="post" id="tag-form">
+        {% csrf_token %}
+
+        <!-- ✅ ЯВНЫЙ МАРКЕР -->
+        <input type="hidden" name="apply_tags" value="1">
+
+        <input type="hidden" name="action" value="bulk_assign_tags">
+        <input type="hidden" name="select_across" value="0">
+        <input type="hidden" name="index" value="0">
+
+        {% for obj in queryset %}
+        <input type="hidden" name="_selected_action" value="{{ obj.pk }}">
+        {% endfor %}
+
+        <fieldset class="module aligned">
+            <div class="form-row">
+                <label style="font-weight: bold; display: block; margin-bottom: 10px;">
+                    Выберите теги для {{ queryset.count }} ингредиентов:
+                </label>
+
+                <div style="display: flex; flex-wrap: wrap; gap: 8px; border: 1px solid #ddd; padding: 15px; border-radius: 4px; background: #f9f9f9; max-height: 400px; overflow-y: auto;">
+                    {% for tag in all_tags %}
+                    <label style="display: flex; align-items: center; margin-right: 15px; cursor: pointer; padding: 3px 0; min-width: 120px;">
+                        <input type="checkbox" name="tag_ids" value="{{ tag.id }}" style="margin-right: 5px;">
+                        <span>{{ tag.name }}</span>
+                    </label>
+                    {% empty %}
+                    <p>Нет доступных тегов</p>
+                    {% endfor %}
+                </div>
+
+                <div style="margin-top: 10px;">
+                    <button type="button" onclick="selectAll()" class="button">Выбрать все</button>
+                    <button type="button" onclick="deselectAll()" class="button">Снять все</button>
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="submit-row">
+            <!-- ✅ КНОПКА С ЯВНЫМ NAME -->
+            <button type="submit" name="apply" value="1" class="default">Применить теги</button>
+            <a href="{% url 'admin:kitchen_abstractingredient_changelist' %}" class="button cancel-link">Отмена</a>
+        </div>
+    </form>
+</div>
+
+<script>
+    function selectAll() {
+        document.querySelectorAll('input[name="tag_ids"]').forEach(function(el) {
+            el.checked = true;
+        });
+    }
+    function deselectAll() {
+        document.querySelectorAll('input[name="tag_ids"]').forEach(function(el) {
+            el.checked = false;
+        });
+    }
+</script>
+{% endblock %}

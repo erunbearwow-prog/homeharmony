@@ -24,17 +24,17 @@
             </li>
             <li>
                 <div class="flex items-center">
-        <i class="fas fa-chevron-right text-gray-400 text-xs mx-1"></i>
-        {% if return_to and 'recipe' in return_to %}
-            <a href="{% url 'kitchen:ingredient_list' %}" class="text-gray-500 hover:text-amber-600 transition">
-                Ингредиенты
-            </a>
-        {% else %}
-            <a href="{{ return_to|default:'/kitchen/ingredients/' }}" class="text-gray-500 hover:text-amber-600 transition">
-                Ингредиенты
-            </a>
-        {% endif %}
-    </div>
+                    <i class="fas fa-chevron-right text-gray-400 text-xs mx-1"></i>
+                    {% if return_to and 'recipe' in return_to %}
+                        <a href="{% url 'kitchen:ingredient_list' %}" class="text-gray-500 hover:text-amber-600 transition">
+                            Ингредиенты
+                        </a>
+                    {% else %}
+                        <a href="{{ return_to|default:'/kitchen/ingredients/' }}" class="text-gray-500 hover:text-amber-600 transition">
+                            Ингредиенты
+                        </a>
+                    {% endif %}
+                </div>
             </li>
             <li>
                 <div class="flex items-center">
@@ -233,27 +233,27 @@
                 </div>
             </div>
 
-            <!-- Рецепты с этим ингредиентом -->
-            {% if page_obj %}
+            <!-- Рецепты с этим ингредиентом (исправлено: используем recipes, а не page_obj) -->
+            {% if recipes %}
             <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
                 <div class="bg-gray-50 px-6 py-3 border-b border-gray-200">
                     <h2 class="text-xl font-bold serif">🍳 Рецепты с {{ ingredient.name }}</h2>
                 </div>
                 <div class="p-6">
                     <div class="grid md:grid-cols-2 gap-4">
-                        {% for recipe_ing in page_obj %}
-                        <a href="{% url 'kitchen:recipe_detail' recipe_ing.recipe.id %}"
+                        {% for recipe in recipes %}
+                        <a href="{% url 'kitchen:recipe_detail' recipe.id %}"
                            class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-amber-50 transition">
-                            {% if recipe_ing.recipe.image %}
-                            <img src="{{ recipe_ing.recipe.image.url }}" class="w-12 h-12 rounded-lg object-cover">
+                            {% if recipe.image %}
+                            <img src="{{ recipe.image.url }}" class="w-12 h-12 rounded-lg object-cover">
                             {% else %}
                             <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
                                 <i class="fas fa-utensils text-amber-600"></i>
                             </div>
                             {% endif %}
                             <div>
-                                <div class="font-medium">{{ recipe_ing.recipe.title }}</div>
-                                <div class="text-xs text-gray-500">{{ recipe_ing.quantity|floatformat:0 }} {{ recipe_ing.unit }}</div>
+                                <div class="font-medium">{{ recipe.title }}</div>
+                                <div class="text-xs text-gray-500">{{ recipe.total_time }} мин</div>
                             </div>
                         </a>
                         {% endfor %}
@@ -295,8 +295,8 @@
                 <div class="space-y-4">
                     <div>
                         <h3 class="font-semibold text-gray-700 mb-1">Категория</h3>
-                        <!-- ИСПРАВЛЕНО: используем ingredient.abstract.category вместо ingredient.category -->
-                        <p class="text-gray-600">{{ ingredient.abstract.category.name|default:"Не указана" }}</p>
+                        <!-- ИСПРАВЛЕНО: используем ingredient.category вместо ingredient.abstract.category -->
+                        <p class="text-gray-600">{{ ingredient.category.name|default:"Не указана" }}</p>
                     </div>
 
                     <div>

@@ -1,0 +1,95 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls static %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+<a href="{% url 'admin:index' %}">{% translate 'Home' %}</a>
+&rsaquo; <a href="{% url 'admin:app_list' app_label=opts.app_label %}">{{ opts.app_config.verbose_name }}</a>
+&rsaquo; <a href="{% url opts|admin_urlname:'changelist' %}">{{ opts.verbose_name_plural|capfirst }}</a>
+&rsaquo; {% translate 'Link to Abstract' %}
+</div>
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+    <form method="post">
+        {% csrf_token %}
+
+        <fieldset class="module aligned">
+            <div class="form-row">
+                <div>
+                    <h2>Выбрано ингредиентов: <strong>{{ queryset|length }}</strong></h2>
+                    <div style="max-height: 200px; overflow-y: auto; border: 1px solid #ddd; padding: 10px; background: #f9f9f9; border-radius: 4px; margin: 10px 0;">
+                        {% for ing in queryset %}
+                        <div style="padding: 2px 0;">
+                            {{ ing.name }}
+                            {% if ing.calories %}
+                            <span style="color: #999; font-size: 12px;">
+                                ({{ ing.calories }} ккал, {{ ing.protein }}г б, {{ ing.fat }}г ж, {{ ing.carbohydrates }}г у)
+                            </span>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div>
+                    <label for="id_abstract_id" style="font-weight: bold; display: block; margin-bottom: 5px;">
+                        Выберите абстрактный ингредиент:
+                    </label>
+                    <select name="abstract_id" id="id_abstract_id" style="min-width: 400px; padding: 5px;" required>
+                        <option value="">---------</option>
+                        {% for abstract in abstracts %}
+                        <option value="{{ abstract.id }}">
+                            {{ abstract.name }}
+                            {% if abstract.category %}
+                            ({{ abstract.category.full_hierarchy }})
+                            {% endif %}
+                        </option>
+                        {% endfor %}
+                    </select>
+                    <div class="help" style="font-size: 12px; color: #666; margin-top: 5px;">
+                        Выберите абстрактный ингредиент для связывания с выбранными ингредиентами
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row" style="margin-top: 15px;">
+                <div style="background: #fff3cd; padding: 10px; border-radius: 4px; border-left: 4px solid #ffc107;">
+                    <p style="margin: 0; font-size: 13px;">
+                        ⚠️ Все выбранные ингредиенты будут связаны с одним абстрактным ингредиентом.
+                    </p>
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="submit-row" style="margin-top: 20px;">
+            <input type="submit" value="Связать" class="default" name="_save">
+            <a href="{% url opts|admin_urlname:'changelist' %}" class="button cancel-link">Отмена</a>
+        </div>
+
+        {% for obj in queryset %}
+        <input type="hidden" name="_selected_action" value="{{ obj.pk }}">
+        {% endfor %}
+        <input type="hidden" name="action" value="link_to_abstract">
+        <input type="hidden" name="select_across" value="0">
+        <input type="hidden" name="index" value="0">
+    </form>
+</div>
+
+<script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+        var select = document.getElementById('id_abstract_id');
+        if (!select.value) {
+            e.preventDefault();
+            alert('Пожалуйста, выберите абстрактный ингредиент');
+            select.style.borderColor = '#ff0000';
+            select.style.backgroundColor = '#fff0f0';
+            return false;
+        }
+        return true;
+    });
+</script>
+{% endblock %}

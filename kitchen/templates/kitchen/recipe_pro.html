@@ -620,9 +620,30 @@
                     <h2><i class="fas fa-plate-wheat"></i> Оформление и подача</h2>
                 </div>
                 <div class="tech-section-body">
-                    <div class="description-text">
-                        {{ recipe.plating|default:"Рекомендации по оформлению и подаче блюда будут добавлены позже."|linebreaks }}
+                    <!-- Текст -->
+                    {% if recipe.plating %}
+                    <div class="description-text mb-4">
+                        {{ recipe.plating|linebreaks }}
                     </div>
+                    {% endif %}
+
+                    <!-- Изображение оформления -->
+                    {% if recipe.plating_image %}
+                    <div class="plating-image mt-3">
+                        <img src="{{ recipe.plating_image.url }}"
+                             alt="Оформление блюда {{ recipe.title }}"
+                             class="w-full rounded-lg shadow-md cursor-pointer hover:opacity-95 transition"
+                             onclick="openImageModal('{{ recipe.plating_image.url }}')">
+                        <p class="text-xs text-gray-400 mt-1 text-center">Вариант подачи блюда</p>
+                    </div>
+                    {% endif %}
+
+                    <!-- Если ничего нет -->
+                    {% if not recipe.plating and not recipe.plating_image %}
+                    <div class="description-text text-gray-400">
+                        Рекомендации по оформлению и подаче блюда будут добавлены позже.
+                    </div>
+                    {% endif %}
                 </div>
             </div>
 

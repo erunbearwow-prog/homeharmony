@@ -1,0 +1,86 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls %}
+
+{% block content %}
+<div id="content-main">
+    <form method="post">
+        {% csrf_token %}
+        <input type="hidden" name="action" value="bulk_assign_tags">
+        <input type="hidden" name="select_across" value="0">
+        <input type="hidden" name="index" value="0">
+
+        <!-- ✅ Добавляем management_form -->
+        {{ form.management_form }}
+
+        {% for obj in queryset %}
+        <input type="hidden" name="_selected_action" value="{{ obj.pk }}">
+        {% endfor %}
+
+        <fieldset class="module aligned">
+            <div class="form-row">
+                <label style="font-weight: bold; display: block; margin-bottom: 10px;">
+                    Выберите теги для {{ queryset.count }} ингредиентов:
+                </label>
+
+                {% if tag_tree %}
+                    {% for group in tag_tree %}
+                    <div style="margin-bottom: 15px; border: 1px solid #eee; padding: 10px; border-radius: 4px; background: #f9f9f9;">
+                        <h4 style="margin: 0 0 8px 0; color: #333;">{{ group.type }}</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            {% for tag in group.tags %}
+                            <label style="display: flex; align-items: center; margin-right: 15px; cursor: pointer;">
+                                <input type="checkbox" name="tag_ids" value="{{ tag.id }}" style="margin-right: 5px;">
+                                <span>{{ tag.name }}</span>
+                                {% if tag.icon %}
+                                <span style="margin-left: 3px;">{{ tag.icon }}</span>
+                                {% endif %}
+                            </label>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    <p style="color: #999;">Нет доступных тегов</p>
+                {% endif %}
+
+                <div style="margin-top: 10px;">
+                    <button type="button" onclick="selectAll()" class="button">Выбрать все</button>
+                    <button type="button" onclick="deselectAll()" class="button">Снять все</button>
+                </div>
+            </div>
+
+            <div class="form-row" style="margin-top: 20px;">
+                <p><strong>Выбрано ингредиентов:</strong> {{ queryset.count }}</p>
+                <div style="max-height: 150px; overflow-y: auto; border: 1px solid #ddd; padding: 5px 15px; background: #f9f9f9; border-radius: 4px;">
+                    <ul style="margin: 5px 0;">
+                        {% for ingredient in queryset|slice:":20" %}
+                        <li>{{ ingredient.name }}</li>
+                        {% endfor %}
+                        {% if queryset.count > 20 %}
+                        <li><em>... и еще {{ queryset.count|add:"-20" }}</em></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="submit-row" style="margin-top: 20px;">
+            <input type="submit" value="Применить теги" class="default" name="_save">
+            <a href="{% url 'admin:kitchen_abstractingredient_changelist' %}" class="button cancel-link">Отмена</a>
+        </div>
+    </form>
+</div>
+
+<script>
+    function selectAll() {
+        document.querySelectorAll('input[name="tag_ids"]').forEach(function(el) {
+            el.checked = true;
+        });
+    }
+    function deselectAll() {
+        document.querySelectorAll('input[name="tag_ids"]').forEach(function(el) {
+            el.checked = false;
+        });
+    }
+</script>
+{% endblock %}

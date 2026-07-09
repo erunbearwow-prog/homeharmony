@@ -1,3 +1,5 @@
+// kitchen/static/kitchen/js/recipe_widget.js
+
 // ======================= УПРАВЛЕНИЕ КОНТЕКСТОМ РЕЦЕПТА =======================
 
 /**
@@ -119,13 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const cancelReplaceBtn = document.getElementById('cancelReplaceBtn');
     const confirmReplaceBtn = document.getElementById('confirmReplaceBtn');
     const infoModal = document.getElementById('infoModal');
-    const modeNormalBtn = document.getElementById('modeNormalBtn');
-    const modeCompactBtn = document.getElementById('modeCompactBtn');
     const stepsContainer = document.getElementById('stepsList');
-
-    // Проверка наличия элементов
-    console.log('Mode buttons:', { modePortionsBtn, modeProductsBtn });
-    console.log('Panels:', { portionsPanel, productsPanel });
 
     // Инициализация списка ингредиентов
     document.querySelectorAll('#ingredientsList .ingredient-row').forEach(row => {
@@ -146,169 +142,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // ======================= СОХРАНЯЕМ КОНТЕКСТ ТЕКУЩЕГО РЕЦЕПТА ПРИ ЗАГРУЗКЕ СТРАНИЦЫ =======================
-    const currentRecipeId = window.location.pathname.match(/\/recipe\/(\d+)\//)?.[1] || null;
-    if (currentRecipeId) {
-        const recipeTitle = document.querySelector('h1')?.innerText || document.title || 'Рецепт';
-        const recipeImage = document.querySelector('.relative img:first-child')?.src || '';
-
-        const urlParams = new URLSearchParams(window.location.search);
-        const currentMode = urlParams.get('mode') || 'portions';
-        const currentPortions = urlParams.get('portions') || null;
-        const currentRatio = urlParams.get('ratio') || null;
-
-        saveRecipeContext(
-            currentRecipeId,
-            recipeTitle,
-            recipeImage,
-            window.location.pathname,
-            currentMode,
-            currentPortions,
-            currentRatio ? parseFloat(currentRatio) : 1
-        );
-
-        console.log('📦 Контекст текущего рецепта сохранён при загрузке страницы:', {
-            id: currentRecipeId,
-            title: recipeTitle,
-            path: window.location.pathname
-        });
-    }
-
-    // ВОССТАНАВЛИВАЕМ КОНТЕКСТ
-    const context = getRecipeContext();
-    if (context) {
-        console.log('📦 Восстановлен контекст рецепта:', context);
-    }
-
-    // Очистка при переходе на главную или список
-    document.querySelectorAll('a[href="/"], a[href*="ingredient_list"], a[href*="kitchen:index"]').forEach(link => {
-        link.addEventListener('click', function() {
-            clearRecipeContext();
-        });
-    });
-
-    // ======================= ОБРАБОТЧИК КЛИКОВ ПО ССЫЛКАМ НА ВЛОЖЕННЫЕ РЕЦЕПТЫ =======================
-    function setupSubrecipeLinks() {
-        document.querySelectorAll('.subrecipe-link').forEach(link => {
-            if (link._handler) {
-                link.removeEventListener('click', link._handler);
-            }
-
-            const handler = function(e) {
-                e.preventDefault();
-
-                // СОХРАНЯЕМ КОНТЕКСТ ТЕКУЩЕГО РЕЦЕПТА (перед переходом)
-                const recipeId = window.location.pathname.match(/\/recipe\/(\d+)\//)?.[1] || null;
-                const recipeTitle = document.querySelector('h1')?.innerText || document.title || 'Рецепт';
-                const recipeImage = document.querySelector('.relative img:first-child')?.src || '';
-
-                const urlParams = new URLSearchParams(window.location.search);
-                const currentMode = urlParams.get('mode') || 'portions';
-                const currentPortions = urlParams.get('portions') || null;
-                const currentRatio = urlParams.get('ratio') || null;
-
-                saveRecipeContext(
-                    recipeId,
-                    recipeTitle,
-                    recipeImage,
-                    window.location.pathname,
-                    currentMode,
-                    currentPortions,
-                    currentRatio ? parseFloat(currentRatio) : 1
-                );
-
-                console.log('📦 Контекст сохранён перед переходом на вложенный рецепт:', {
-                    id: recipeId,
-                    title: recipeTitle,
-                    path: window.location.pathname
-                });
-
-                // Формируем URL для перехода
-                let currentRatioValue;
-
-                if (currentMode === 'products' && currentBaseIngredient) {
-                    currentRatioValue = currentBaseIngredient.currentValue / currentBaseIngredient.originalValue;
-                } else if (currentMode === 'portions' && portionsSlider) {
-                    currentRatioValue = parseInt(portionsSlider.value) / baseServings;
-                } else {
-                    currentRatioValue = currentRatio;
-                }
-
-                let url = new URL(this.href);
-                url.searchParams.set('ratio', currentRatioValue.toFixed(3));
-                url.searchParams.set('mode', currentMode);
-
-                if (currentMode === 'products' && currentBaseIngredient) {
-                    url.searchParams.set('base_ingredient', currentBaseIngredient.id);
-                    url.searchParams.set('base_value', currentBaseIngredient.currentValue);
-                    url.searchParams.delete('portions');
-                } else if (currentMode === 'portions' && portionsSlider) {
-                    url.searchParams.set('portions', portionsSlider.value);
-                    url.searchParams.delete('base_ingredient');
-                    url.searchParams.delete('base_value');
-                }
-
-                // Убираем return-параметры из URL
-                url.searchParams.delete('return_to');
-                url.searchParams.delete('return_title');
-                url.searchParams.delete('return_image');
-                url.searchParams.delete('return_step');
-                url.searchParams.delete('return_context');
-                url.searchParams.delete('return_mode');
-                url.searchParams.delete('return_portions');
-
-                console.log('Переход по ссылке:', url.toString());
-                window.location.href = url.toString();
-            };
-
-            link._handler = handler;
-            link.addEventListener('click', handler);
-        });
-    }
-
-    // ======================= ОБНОВЛЕНИЕ ССЫЛОК НА ВЛОЖЕННЫЕ РЕЦЕПТЫ =======================
-    function updateSubrecipeLinks() {
-        let currentRatioValue;
-
-        if (currentMode === 'products' && currentBaseIngredient) {
-            currentRatioValue = currentBaseIngredient.currentValue / currentBaseIngredient.originalValue;
-        } else if (currentMode === 'portions' && portionsSlider) {
-            currentRatioValue = parseInt(portionsSlider.value) / baseServings;
-        } else {
-            currentRatioValue = currentRatio;
-        }
-
-        document.querySelectorAll('.subrecipe-link').forEach(link => {
-            try {
-                const url = new URL(link.href);
-                url.searchParams.set('ratio', currentRatioValue.toFixed(3));
-                url.searchParams.set('mode', currentMode);
-
-                if (currentMode === 'products' && currentBaseIngredient) {
-                    url.searchParams.set('base_ingredient', currentBaseIngredient.id);
-                    url.searchParams.set('base_value', currentBaseIngredient.currentValue);
-                    url.searchParams.delete('portions');
-                } else if (currentMode === 'portions' && portionsSlider) {
-                    url.searchParams.set('portions', portionsSlider.value);
-                    url.searchParams.delete('base_ingredient');
-                    url.searchParams.delete('base_value');
-                }
-
-                link.href = url.toString();
-            } catch(e) {
-                console.error('Ошибка обновления ссылки:', e);
-            }
-        });
-    }
-
-    // Функция обновления всех ингредиентов
+    // ======================= ФУНКЦИЯ ОБНОВЛЕНИЯ ВСЕХ ИНГРЕДИЕНТОВ =======================
     function updateAllIngredients(ratio) {
         console.log('updateAllIngredients вызван с ratio:', ratio);
         console.log('Ингредиентов для обновления:', ingredients.length);
 
         ingredients.forEach(ing => {
             const calculatedValue = ing.baseQuantity * ratio;
-            console.log(`${ing.name}: ${ing.baseQuantity} * ${ratio} = ${calculatedValue}`);
 
             let displayValue;
 
@@ -378,6 +218,110 @@ document.addEventListener('DOMContentLoaded', function() {
         window.history.pushState({}, '', newUrl);
     }
 
+    // ======================= ОБНОВЛЕНИЕ ССЫЛОК НА ВЛОЖЕННЫЕ РЕЦЕПТЫ =======================
+    function updateSubrecipeLinks() {
+        let currentRatioValue;
+
+        if (currentMode === 'products' && currentBaseIngredient) {
+            currentRatioValue = currentBaseIngredient.currentValue / currentBaseIngredient.originalValue;
+        } else if (currentMode === 'portions' && portionsSlider) {
+            currentRatioValue = parseInt(portionsSlider.value) / baseServings;
+        } else {
+            currentRatioValue = currentRatio;
+        }
+
+        document.querySelectorAll('.subrecipe-link').forEach(link => {
+            try {
+                const url = new URL(link.href);
+                url.searchParams.set('ratio', currentRatioValue.toFixed(3));
+                url.searchParams.set('mode', currentMode);
+
+                if (currentMode === 'products' && currentBaseIngredient) {
+                    url.searchParams.set('base_ingredient', currentBaseIngredient.id);
+                    url.searchParams.set('base_value', currentBaseIngredient.currentValue);
+                    url.searchParams.delete('portions');
+                } else if (currentMode === 'portions' && portionsSlider) {
+                    url.searchParams.set('portions', portionsSlider.value);
+                    url.searchParams.delete('base_ingredient');
+                    url.searchParams.delete('base_value');
+                }
+
+                link.href = url.toString();
+            } catch(e) {
+                console.error('Ошибка обновления ссылки:', e);
+            }
+        });
+    }
+
+    // ======================= ОБРАБОТЧИК КЛИКОВ ПО ССЫЛКАМ НА ВЛОЖЕННЫЕ РЕЦЕПТЫ =======================
+    function setupSubrecipeLinks() {
+        document.querySelectorAll('.subrecipe-link').forEach(link => {
+            if (link._handler) {
+                link.removeEventListener('click', link._handler);
+            }
+
+            const handler = function(e) {
+                e.preventDefault();
+
+                const recipeId = window.location.pathname.match(/\/recipe\/(\d+)\//)?.[1] || null;
+                const recipeTitle = document.querySelector('h1')?.innerText || document.title || 'Рецепт';
+                const recipeImage = document.querySelector('.relative img:first-child')?.src || '';
+
+                const urlParams = new URLSearchParams(window.location.search);
+                const currentModeParam = urlParams.get('mode') || 'portions';
+                const currentPortions = urlParams.get('portions') || null;
+                const currentRatioParam = urlParams.get('ratio') || null;
+
+                saveRecipeContext(
+                    recipeId,
+                    recipeTitle,
+                    recipeImage,
+                    window.location.pathname,
+                    currentModeParam,
+                    currentPortions,
+                    currentRatioParam ? parseFloat(currentRatioParam) : 1
+                );
+
+                let currentRatioValue;
+
+                if (currentMode === 'products' && currentBaseIngredient) {
+                    currentRatioValue = currentBaseIngredient.currentValue / currentBaseIngredient.originalValue;
+                } else if (currentMode === 'portions' && portionsSlider) {
+                    currentRatioValue = parseInt(portionsSlider.value) / baseServings;
+                } else {
+                    currentRatioValue = currentRatio;
+                }
+
+                let url = new URL(this.href);
+                url.searchParams.set('ratio', currentRatioValue.toFixed(3));
+                url.searchParams.set('mode', currentMode);
+
+                if (currentMode === 'products' && currentBaseIngredient) {
+                    url.searchParams.set('base_ingredient', currentBaseIngredient.id);
+                    url.searchParams.set('base_value', currentBaseIngredient.currentValue);
+                    url.searchParams.delete('portions');
+                } else if (currentMode === 'portions' && portionsSlider) {
+                    url.searchParams.set('portions', portionsSlider.value);
+                    url.searchParams.delete('base_ingredient');
+                    url.searchParams.delete('base_value');
+                }
+
+                url.searchParams.delete('return_to');
+                url.searchParams.delete('return_title');
+                url.searchParams.delete('return_image');
+                url.searchParams.delete('return_step');
+                url.searchParams.delete('return_context');
+                url.searchParams.delete('return_mode');
+                url.searchParams.delete('return_portions');
+
+                window.location.href = url.toString();
+            };
+
+            link._handler = handler;
+            link.addEventListener('click', handler);
+        });
+    }
+
     // ======================= ВОССТАНОВЛЕНИЕ RATIO ИЗ URL =======================
     function restoreRatioFromURL() {
         const urlParams = new URLSearchParams(window.location.search);
@@ -387,22 +331,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const baseValue = urlParams.get('base_value');
         const portionsFromURL = urlParams.get('portions');
 
-        console.log('=== restoreRatioFromURL ===');
-        console.log('modeFromURL:', modeFromURL);
-        console.log('ratioFromURL:', ratioFromURL);
-        console.log('baseIngredientId:', baseIngredientId);
-        console.log('baseValue:', baseValue);
-        console.log('portionsFromURL:', portionsFromURL);
-
         let baseBtn = null;
         if (baseIngredientId) {
             baseBtn = document.querySelector(`.chain-btn[data-id="${baseIngredientId}"]`);
-            console.log('Поиск ингредиента с id', baseIngredientId, ':', baseBtn ? 'найден' : 'не найден');
         }
 
         if (modeFromURL === 'products' && baseIngredientId && baseValue && baseBtn) {
-            console.log('Восстанавливаем режим продуктов (ингредиент найден)');
-
             currentMode = 'products';
 
             if (portionsPanel) portionsPanel.classList.add('hidden');
@@ -447,7 +381,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 const ratio = parseFloat(ratioFromURL);
                 currentRatio = ratio;
                 updateAllIngredients(ratio);
-                console.log('Вызов updateAllIngredients с ratio:', ratio);
             }
 
             if (baseRatioInfo) {
@@ -457,17 +390,10 @@ document.addEventListener('DOMContentLoaded', function() {
             updateSubrecipeLinks();
             setupSubrecipeLinks();
             updateURL();
-
-            console.log('=== restoreRatioFromURL END (products) ===');
-            console.log('currentMode:', currentMode);
-            console.log('currentRatio:', currentRatio);
-
             return;
         }
 
         if (ratioFromURL && !isNaN(parseFloat(ratioFromURL))) {
-            console.log('Восстанавливаем режим порций из ratio');
-
             currentMode = 'portions';
 
             if (portionsPanel) portionsPanel.classList.remove('hidden');
@@ -485,43 +411,25 @@ document.addEventListener('DOMContentLoaded', function() {
             const ratio = parseFloat(ratioFromURL);
             const portions = Math.round(ratio * baseServings);
 
-            // ======================= ПОРЦИИ =======================
-            if (portionsSlider) {
-                portionsSlider.addEventListener('input', function() {
-                    const val = parseInt(this.value);
-                    portionsValue.innerText = val;
-                    currentRatio = val / baseServings;
+            if (portionsSlider && portions > 0 && portions <= 20) {
+                portionsSlider.value = portions;
+                if (portionsValue) portionsValue.innerText = portions;
 
-                    window.currentRatio = currentRatio;
+                currentRatio = ratio;
+                updateAllIngredients(ratio);
 
-                    updateAllIngredients(currentRatio);
-
-                    updateRecipeContext({
-                        portions: val,
-                        ratio: currentRatio
-                    });
-
-                    if (portionsRatioInfo) {
-                        portionsRatioInfo.innerText = `Коэффициент: ${currentRatio.toFixed(2)} (на ${val} порций)`;
-                        updateURL();
-                    }
-                });
+                if (portionsRatioInfo) {
+                    portionsRatioInfo.innerText = `Коэффициент: ${ratio.toFixed(2)} (на ${portions} порций)`;
+                }
             }
 
             updateSubrecipeLinks();
             setupSubrecipeLinks();
             updateURL();
-
-            console.log('=== restoreRatioFromURL END (portions from ratio) ===');
-            console.log('currentMode:', currentMode);
-            console.log('currentRatio:', currentRatio);
-
             return;
         }
 
         if (modeFromURL === 'portions' || portionsFromURL) {
-            console.log('Восстанавливаем режим порций');
-
             currentMode = 'portions';
 
             if (portionsPanel) portionsPanel.classList.remove('hidden');
@@ -561,31 +469,19 @@ document.addEventListener('DOMContentLoaded', function() {
             updateSubrecipeLinks();
             setupSubrecipeLinks();
             updateURL();
-
-            console.log('=== restoreRatioFromURL END (portions) ===');
-            console.log('currentMode:', currentMode);
-            console.log('currentRatio:', currentRatio);
-
             return;
         }
 
-        console.log('Нет параметров, используем порции по умолчанию');
         currentMode = 'portions';
         updateAllIngredients(1);
 
         updateSubrecipeLinks();
         setupSubrecipeLinks();
         updateURL();
-
-        console.log('=== restoreRatioFromURL END (default) ===');
-        console.log('currentMode:', currentMode);
-        console.log('currentRatio:', currentRatio);
     }
 
     // ======================= ПЕРЕКЛЮЧЕНИЕ РЕЖИМОВ =======================
     function setMode(mode) {
-        console.log('Switching to mode:', mode);
-
         const previousMode = currentMode;
         currentMode = mode;
 
@@ -735,9 +631,6 @@ document.addEventListener('DOMContentLoaded', function() {
             baseIngredientName.innerText = name;
             baseOriginalValue.innerText = `${originalValue} ${unit}`;
             baseIngredientWeight.value = currentValue;
-            baseIngredientWeight.classList.remove('hidden');
-            baseIngredientUnit.innerText = unit;
-            baseIngredientUnit.classList.remove('hidden');
             baseIngredientRow.classList.remove('hidden');
             applyBaseBtn.classList.remove('hidden');
 
@@ -770,165 +663,16 @@ document.addEventListener('DOMContentLoaded', function() {
         resetBaseBtn.addEventListener('click', function() {
             if (!currentBaseIngredient) return;
 
-            const originalValue = currentBaseIngredient.originalValue;
-            const unit = currentBaseIngredient.unit;
-            const name = currentBaseIngredient.name;
-
             currentBaseIngredient = null;
             currentRatio = 1;
             updateAllIngredients(1);
-
-            baseIngredientWeight.value = originalValue;
-            baseOriginalValue.innerText = `${originalValue} ${unit}`;
-            baseIngredientName.innerText = name;
-
-            if (baseRatioInfo) {
-                baseRatioInfo.innerText = `Коэффициент: 1.00 (на ${originalValue} ${unit} ${name})`;
-            }
 
             if (portionsSlider) {
                 portionsSlider.value = baseServings;
                 if (portionsValue) portionsValue.innerText = baseServings;
             }
 
-            updateSubrecipeLinks();
-            updateURL();
-
-            if (modeProductsBtn) {
-                modeProductsBtn.classList.add('bg-amber-600', 'text-white');
-                modeProductsBtn.classList.remove('bg-white', 'text-gray-600', 'border-gray-200');
-            }
-            if (modePortionsBtn) {
-                modePortionsBtn.classList.remove('bg-amber-600', 'text-white');
-                modePortionsBtn.classList.add('bg-white', 'text-gray-600', 'border-gray-200');
-            }
-        });
-    }
-
-    // ======================= КНОПКА ⟳ (замена ингредиента) =======================
-    async function openReplaceModal(recipeIngredientId, ingredientName, unit) {
-        currentReplaceIngredient = { id: recipeIngredientId, name: ingredientName, unit: unit };
-        replaceOriginalName.innerText = ingredientName;
-        replaceOriginalUnit.innerText = unit;
-        replaceNewUnit.innerText = unit;
-        replaceRatio.value = 1;
-
-        replaceWithSelect.innerHTML = '<option value="">Загрузка вариантов замен...</option>';
-        replaceModal.classList.remove('hidden');
-
-        try {
-            const response = await fetch(`/kitchen/api/substitutions/${recipeIngredientId}/`);
-            if (response.ok) {
-                const data = await response.json();
-
-                replaceWithSelect.innerHTML = '<option value="custom">✏️ Другой ингредиент (ввести вручную)</option>';
-
-                if (data.substitutions && data.substitutions.length > 0) {
-                    data.substitutions.forEach(sub => {
-                        const option = document.createElement('option');
-                        option.value = sub.name;
-                        option.textContent = `${sub.name} (${sub.ratio} ${sub.unit} вместо 1 ${unit})`;
-                        option.dataset.ratio = sub.ratio;
-                        option.dataset.unit = sub.unit;
-                        option.dataset.notes = sub.notes || '';
-                        replaceWithSelect.appendChild(option);
-                    });
-
-                    replaceWithSelect.onchange = function() {
-                        const selected = this.options[this.selectedIndex];
-                        if (selected.value !== 'custom' && selected.dataset.ratio) {
-                            replaceRatio.value = selected.dataset.ratio;
-                            replaceNewUnit.innerText = selected.dataset.unit;
-                        } else {
-                            replaceRatio.value = 1;
-                            replaceNewUnit.innerText = unit;
-                        }
-                    };
-                } else {
-                    const noOptionsMsg = document.createElement('option');
-                    noOptionsMsg.value = 'custom';
-                    noOptionsMsg.textContent = '✏️ Другой ингредиент (нет рекомендованных замен)';
-                    replaceWithSelect.innerHTML = '';
-                    replaceWithSelect.appendChild(noOptionsMsg);
-                }
-            } else {
-                throw new Error('Ошибка загрузки замен');
-            }
-        } catch (error) {
-            console.error('Ошибка загрузки замен:', error);
-            replaceWithSelect.innerHTML = '<option value="custom">✏️ Другой ингредиент (ошибка загрузки)</option>';
-        }
-    }
-
-    document.querySelectorAll('.replace-btn').forEach(btn => {
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            const id = this.dataset.id;
-            const name = this.dataset.name;
-            const unit = this.closest('.ingredient-row').dataset.unit;
-            openReplaceModal(id, name, unit);
-        });
-    });
-
-    if (cancelReplaceBtn) {
-        cancelReplaceBtn.addEventListener('click', () => replaceModal.classList.add('hidden'));
-    }
-
-    if (confirmReplaceBtn) {
-        confirmReplaceBtn.addEventListener('click', function() {
-            const selectedOption = replaceWithSelect.options[replaceWithSelect.selectedIndex];
-            const newName = selectedOption.value;
-            const ratio = parseFloat(replaceRatio.value);
-            const ingredientRow = document.querySelector(`.ingredient-row[data-id="${currentReplaceIngredient.id}"]`);
-
-            if (ingredientRow && newName !== 'custom' && selectedOption.dataset.ratio) {
-                const label = ingredientRow.querySelector('label');
-                const amountSpan = ingredientRow.querySelector('.ingredient-amount');
-                const currentAmount = parseFloat(amountSpan.innerText);
-                const newAmount = currentAmount * ratio;
-
-                label.innerText = newName;
-                amountSpan.innerText = `${Math.round(newAmount)} ${selectedOption.dataset.unit}`;
-
-                const replaceBtn = ingredientRow.querySelector('.replace-btn');
-                replaceBtn.innerHTML = '<i class="fas fa-undo-alt"></i>';
-                replaceBtn.classList.remove('hover:text-blue-600');
-                replaceBtn.classList.add('hover:text-red-600');
-                replaceBtn.title = 'Сбросить замену';
-
-                ingredientRow.dataset.replaced = 'true';
-                ingredientRow.dataset.originalName = currentReplaceIngredient.name;
-                ingredientRow.dataset.replacementName = newName;
-                ingredientRow.dataset.replacementRatio = ratio;
-            } else if (ingredientRow && newName !== 'custom') {
-                const newAmount = parseFloat(ingredientRow.querySelector('.ingredient-amount').innerText) * ratio;
-                ingredientRow.querySelector('label').innerText = newName;
-                ingredientRow.querySelector('.ingredient-amount').innerText = `${Math.round(newAmount)} ${currentReplaceIngredient.unit}`;
-            }
-
-            replaceModal.classList.add('hidden');
-        });
-    }
-
-    // ======================= КНОПКА ℹ️ (информация об ингредиенте) =======================
-    document.querySelectorAll('.info-btn').forEach(btn => {
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            const id = this.dataset.id;
-            const name = this.dataset.name;
-            openInfoModal(id, name);
-        });
-    });
-
-    // Закрытие модалок по клику на фон
-    if (replaceModal) {
-        replaceModal.addEventListener('click', (e) => {
-            if (e.target === replaceModal) replaceModal.classList.add('hidden');
-        });
-    }
-    if (infoModal) {
-        infoModal.addEventListener('click', (e) => {
-            if (e.target === infoModal) infoModal.classList.add('hidden');
+            setMode('portions');
         });
     }
 
@@ -1062,7 +806,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Первоначальный расчёт прогресса
     updateStepsProgress();
 
     // Кликабельные карточки шагов
@@ -1080,50 +823,111 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // ======================= КНОПКА ℹ️ (информация об ингредиенте) =======================
+    document.querySelectorAll('.info-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const id = this.dataset.id;
+            const name = this.dataset.name;
+            console.log('Кнопка информации нажата:', { id, name });
+            openInfoModal(id, name);
+        });
+    });
+
+    // ======================= КНОПКА ⟳ (замена ингредиента) =======================
+    document.querySelectorAll('.replace-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const id = this.dataset.id;
+            const name = this.dataset.name;
+            const row = this.closest('.ingredient-row');
+            const unit = row?.dataset?.unit || 'г';
+            console.log('Кнопка замены нажата:', { id, name, unit });
+            openReplaceModal(id, name, unit);
+        });
+    });
+
+    // ======================= ОБРАБОТЧИКИ МОДАЛЬНОГО ОКНА ЗАМЕНЫ =======================
+    if (cancelReplaceBtn) {
+        cancelReplaceBtn.addEventListener('click', function() {
+            if (replaceModal) replaceModal.classList.add('hidden');
+        });
+    }
+
+    if (confirmReplaceBtn) {
+        confirmReplaceBtn.addEventListener('click', function() {
+            const selectedOption = replaceWithSelect;
+            const replaceRatioInput = replaceRatio;
+            const replaceOriginalNameEl = replaceOriginalName;
+
+            if (!selectedOption || !replaceRatioInput) return;
+
+            const newName = selectedOption.value;
+            const ratio = parseFloat(replaceRatioInput.value) || 1;
+
+            // Находим строку ингредиента по имени
+            const rows = document.querySelectorAll('.ingredient-row');
+            let targetRow = null;
+            rows.forEach(row => {
+                const label = row.querySelector('label');
+                if (label && label.innerText === replaceOriginalNameEl?.innerText) {
+                    targetRow = row;
+                }
+            });
+
+            if (targetRow && newName !== 'custom') {
+                const label = targetRow.querySelector('label');
+                const amountSpan = targetRow.querySelector('.ingredient-amount');
+                const currentAmount = parseFloat(amountSpan?.innerText) || 0;
+                const newAmount = currentAmount * ratio;
+
+                if (label) label.innerText = newName;
+                if (amountSpan) {
+                    const unit = targetRow.dataset.unit || 'г';
+                    amountSpan.innerText = `${Math.round(newAmount)} ${unit}`;
+                }
+
+                // Меняем кнопку замены на кнопку сброса
+                const replaceBtn = targetRow.querySelector('.replace-btn');
+                if (replaceBtn) {
+                    replaceBtn.innerHTML = '<i class="fas fa-undo-alt"></i>';
+                    replaceBtn.classList.remove('hover:text-blue-600');
+                    replaceBtn.classList.add('hover:text-red-600');
+                    replaceBtn.title = 'Сбросить замену';
+                    replaceBtn.dataset.replaced = 'true';
+                }
+            }
+
+            if (replaceModal) replaceModal.classList.add('hidden');
+
+            // Пересчитываем КБЖУ
+            setTimeout(updateNutritionOnChange, 100);
+        });
+    }
+
+    // Закрытие по клику на фон
+    if (replaceModal) {
+        replaceModal.addEventListener('click', function(e) {
+            if (e.target === replaceModal) {
+                replaceModal.classList.add('hidden');
+            }
+        });
+    }
+
+    // Закрытие модалки информации по клику на фон
+    if (infoModal) {
+        infoModal.addEventListener('click', function(e) {
+            if (e.target === infoModal) {
+                infoModal.classList.add('hidden');
+            }
+        });
+    }
+
     // Настройка обработчиков для ссылок на вложенные рецепты
     setupSubrecipeLinks();
 
     // Восстанавливаем ratio из URL после инициализации
     setTimeout(restoreRatioFromURL, 100);
-
-    // ======================= ПЕРЕКЛЮЧЕНИЕ РЕЖИМОВ ОТОБРАЖЕНИЯ ШАГОВ =======================
-    function setStepsMode(mode) {
-        if (!stepsContainer) return;
-
-        if (mode === 'compact') {
-            stepsContainer.classList.add('compact-mode');
-            if (modeCompactBtn) {
-                modeCompactBtn.classList.add('bg-white', 'shadow-sm');
-                modeCompactBtn.classList.remove('text-gray-600');
-            }
-            if (modeNormalBtn) {
-                modeNormalBtn.classList.remove('bg-white', 'shadow-sm');
-                modeNormalBtn.classList.add('text-gray-600');
-            }
-            localStorage.setItem('steps_display_mode', 'compact');
-        } else {
-            stepsContainer.classList.remove('compact-mode');
-            if (modeNormalBtn) {
-                modeNormalBtn.classList.add('bg-white', 'shadow-sm');
-                modeNormalBtn.classList.remove('text-gray-600');
-            }
-            if (modeCompactBtn) {
-                modeCompactBtn.classList.remove('bg-white', 'shadow-sm');
-                modeCompactBtn.classList.add('text-gray-600');
-            }
-            localStorage.setItem('steps_display_mode', 'normal');
-        }
-    }
-
-    if (modeNormalBtn && modeCompactBtn) {
-        modeNormalBtn.addEventListener('click', () => setStepsMode('normal'));
-        modeCompactBtn.addEventListener('click', () => setStepsMode('compact'));
-
-        const savedMode = localStorage.getItem('steps_display_mode');
-        if (savedMode === 'compact') {
-            setStepsMode('compact');
-        }
-    }
 
     console.log('Виджет инициализирован');
 });
@@ -1173,85 +977,7 @@ async function showMethodDetails(button) {
 
 function displayMethodData(data) {
     document.getElementById('methodModalName').innerText = data.name;
-    const iconElem = document.getElementById('methodModalIcon');
-    if (iconElem) iconElem.className = `fas ${data.icon || 'fa-fire'} text-amber-600`;
-    const shortDescElem = document.getElementById('methodModalShortDesc');
-    if (shortDescElem) shortDescElem.innerText = data.short_description || '';
     document.getElementById('methodModalDesc').innerHTML = data.description || '';
-
-    if (data.substitutions && data.substitutions.length > 0) {
-        const substitutionsHtml = data.substitutions.map(sub =>
-            `<div class="mt-3 p-3 bg-amber-50 rounded-lg">
-                <div class="flex items-center gap-2">
-                    <i class="fas fa-exchange-alt text-amber-500"></i>
-                    <span class="font-medium text-sm">Можно заменить на:</span>
-                    <span class="text-sm font-semibold text-amber-700">${sub.name || sub.substitute_method?.name || ''}</span>
-                </div>
-                ${sub.reason ? `<p class="text-xs text-gray-600 mt-1 ml-6">${sub.reason}</p>` : ''}
-                ${sub.notes ? `<p class="text-xs text-gray-500 mt-1 ml-6">${sub.notes}</p>` : ''}
-            </div>`
-        ).join('');
-
-        const modalContent = document.getElementById('methodModalDesc');
-        modalContent.innerHTML += `<div class="mt-4 border-t border-gray-200 pt-3">
-            <h4 class="font-semibold text-sm text-gray-700 mb-2">✨ Возможные замены:</h4>
-            ${substitutionsHtml}
-        </div>`;
-    }
-
-    const scienceBlock = document.getElementById('methodModalScience');
-    const scienceText = document.getElementById('methodModalScienceText');
-    if (data.scientific_background && scienceBlock && scienceText) {
-        scienceText.innerText = data.scientific_background;
-        scienceBlock.classList.remove('hidden');
-    } else if (scienceBlock) {
-        scienceBlock.classList.add('hidden');
-    }
-
-    const tempBlock = document.getElementById('methodModalTemp');
-    const tempText = document.getElementById('methodModalTempText');
-    if (data.typical_temperature && tempBlock && tempText) {
-        tempText.innerText = data.typical_temperature;
-        tempBlock.classList.remove('hidden');
-    } else if (tempBlock) {
-        tempBlock.classList.add('hidden');
-    }
-
-    const durationBlock = document.getElementById('methodModalDuration');
-    const durationText = document.getElementById('methodModalDurationText');
-    if (data.typical_duration && durationBlock && durationText) {
-        durationText.innerText = data.typical_duration;
-        durationBlock.classList.remove('hidden');
-    } else if (durationBlock) {
-        durationBlock.classList.add('hidden');
-    }
-
-    const tipsBlock = document.getElementById('methodModalTips');
-    const tipsText = document.getElementById('methodModalTipsText');
-    if (data.tips && tipsBlock && tipsText) {
-        tipsText.innerText = data.tips;
-        tipsBlock.classList.remove('hidden');
-    } else if (tipsBlock) {
-        tipsBlock.classList.add('hidden');
-    }
-
-    const mistakesBlock = document.getElementById('methodModalMistakes');
-    const mistakesText = document.getElementById('methodModalMistakesText');
-    if (data.common_mistakes && mistakesBlock && mistakesText) {
-        mistakesText.innerText = data.common_mistakes;
-        mistakesBlock.classList.remove('hidden');
-    } else if (mistakesBlock) {
-        mistakesBlock.classList.add('hidden');
-    }
-
-    const advancedBlock = document.getElementById('methodModalAdvanced');
-    const advancedText = document.getElementById('methodModalAdvancedText');
-    if (data.advanced_notes && advancedBlock && advancedText) {
-        advancedText.innerText = data.advanced_notes;
-        advancedBlock.classList.remove('hidden');
-    } else if (advancedBlock) {
-        advancedBlock.classList.add('hidden');
-    }
 }
 
 function closeMethodModal() {
@@ -1305,24 +1031,6 @@ async function showPreparationDetails(button) {
 function displayPreparationData(data) {
     document.getElementById('preparationModalName').innerText = data.name;
     document.getElementById('preparationModalDesc').innerHTML = data.description || '';
-
-    const tipsBlock = document.getElementById('preparationModalTips');
-    const tipsText = document.getElementById('preparationModalTipsText');
-    if (data.tips && tipsBlock && tipsText) {
-        tipsText.innerText = data.tips;
-        tipsBlock.classList.remove('hidden');
-    } else if (tipsBlock) {
-        tipsBlock.classList.add('hidden');
-    }
-
-    const timeBlock = document.getElementById('preparationModalTime');
-    const timeText = document.getElementById('preparationModalTimeText');
-    if (data.time_factor && timeBlock && timeText) {
-        timeText.innerText = `Увеличивает время приготовления в ${data.time_factor} раз`;
-        timeBlock.classList.remove('hidden');
-    } else if (timeBlock) {
-        timeBlock.classList.add('hidden');
-    }
 }
 
 function closePreparationModal() {
@@ -1376,53 +1084,6 @@ async function showUtensilDetails(button) {
 function displayUtensilData(data) {
     document.getElementById('utensilModalName').innerText = data.name;
     document.getElementById('utensilModalDesc').innerHTML = data.description || '';
-
-    if (data.substitutions && data.substitutions.length > 0) {
-        const substitutionsHtml = data.substitutions.map(sub =>
-            `<div class="mt-2 p-2 bg-blue-50 rounded-lg">
-                <div class="flex items-center gap-2">
-                    <i class="fas fa-exchange-alt text-blue-500"></i>
-                    <span class="font-medium text-sm">Можно заменить на:</span>
-                    <span class="text-sm font-semibold text-blue-700">${sub.name || sub.substitute_utensil?.name || ''}</span>
-                </div>
-                ${sub.reason ? `<p class="text-xs text-gray-600 mt-1 ml-6">${sub.reason}</p>` : ''}
-            </div>`
-        ).join('');
-
-        const modalContent = document.getElementById('utensilModalDesc');
-        modalContent.innerHTML += `<div class="mt-3">
-            <h4 class="font-semibold text-sm text-gray-700 mb-1">🔄 Возможные замены:</h4>
-            ${substitutionsHtml}
-        </div>`;
-    }
-
-    const altBlock = document.getElementById('utensilModalAlternative');
-    const altText = document.getElementById('utensilModalAlternativeText');
-    if (data.alternative && altBlock && altText) {
-        altText.innerText = data.alternative;
-        altBlock.classList.remove('hidden');
-    } else if (altBlock) {
-        altBlock.classList.add('hidden');
-    }
-
-    const careBlock = document.getElementById('utensilModalCare');
-    const careText = document.getElementById('utensilModalCareText');
-    if (data.care_instructions && careBlock && careText) {
-        careText.innerText = data.care_instructions;
-        careBlock.classList.remove('hidden');
-    } else if (careBlock) {
-        careBlock.classList.add('hidden');
-    }
-}
-
-function closeMethodModal() {
-    const modal = document.getElementById('methodModal');
-    if (modal) modal.classList.add('hidden');
-}
-
-function closePreparationModal() {
-    const modal = document.getElementById('preparationModal');
-    if (modal) modal.classList.add('hidden');
 }
 
 function closeUtensilModal() {
@@ -1430,21 +1091,95 @@ function closeUtensilModal() {
     if (modal) modal.classList.add('hidden');
 }
 
+// ======================= ЗАМЕНА ИНГРЕДИЕНТА =======================
+
+async function openReplaceModal(recipeIngredientId, ingredientName, unit) {
+    console.log('openReplaceModal вызван:', { recipeIngredientId, ingredientName, unit });
+
+    const modal = document.getElementById('replaceModal');
+    if (!modal) {
+        console.error('Модальное окно replaceModal не найдено!');
+        return;
+    }
+
+    const replaceOriginalNameEl = document.getElementById('replaceOriginalName');
+    const replaceOriginalUnitEl = document.getElementById('replaceOriginalUnit');
+    const replaceNewUnitEl = document.getElementById('replaceNewUnit');
+    const replaceRatioInput = document.getElementById('replaceRatio');
+    const replaceWithSelectEl = document.getElementById('replaceWithSelect');
+
+    if (replaceOriginalNameEl) replaceOriginalNameEl.innerText = ingredientName;
+    if (replaceOriginalUnitEl) replaceOriginalUnitEl.innerText = unit;
+    if (replaceNewUnitEl) replaceNewUnitEl.innerText = unit;
+    if (replaceRatioInput) replaceRatioInput.value = 1;
+
+    modal.classList.remove('hidden');
+
+    if (replaceWithSelectEl) {
+        replaceWithSelectEl.innerHTML = '<option value="">Загрузка вариантов замен...</option>';
+
+        try {
+            const response = await fetch(`/kitchen/api/substitutions/${recipeIngredientId}/`);
+            if (response.ok) {
+                const data = await response.json();
+
+                replaceWithSelectEl.innerHTML = '<option value="custom">✏️ Другой ингредиент (ввести вручную)</option>';
+
+                if (data.substitutions && data.substitutions.length > 0) {
+                    data.substitutions.forEach(sub => {
+                        const option = document.createElement('option');
+                        option.value = sub.name;
+                        option.textContent = `${sub.name} (${sub.ratio} ${sub.unit} вместо 1 ${unit})`;
+                        option.dataset.ratio = sub.ratio;
+                        option.dataset.unit = sub.unit;
+                        option.dataset.notes = sub.notes || '';
+                        replaceWithSelectEl.appendChild(option);
+                    });
+
+                    replaceWithSelectEl.onchange = function() {
+                        const selected = this.options[this.selectedIndex];
+                        if (selected.value !== 'custom' && selected.dataset.ratio) {
+                            if (replaceRatioInput) replaceRatioInput.value = selected.dataset.ratio;
+                            if (replaceNewUnitEl) replaceNewUnitEl.innerText = selected.dataset.unit;
+                        } else {
+                            if (replaceRatioInput) replaceRatioInput.value = 1;
+                            if (replaceNewUnitEl) replaceNewUnitEl.innerText = unit;
+                        }
+                    };
+                }
+            } else {
+                throw new Error('Ошибка загрузки замен');
+            }
+        } catch (error) {
+            console.error('Ошибка загрузки замен:', error);
+            replaceWithSelectEl.innerHTML = '<option value="custom">✏️ Другой ингредиент (ошибка загрузки)</option>';
+        }
+    }
+}
+
+function closeReplaceModal() {
+    const modal = document.getElementById('replaceModal');
+    if (modal) modal.classList.add('hidden');
+}
+
 // ======================= ИНФОРМАЦИЯ ОБ ИНГРЕДИЕНТЕ =======================
 
 function openInfoModal(ingredientId, ingredientName) {
-    currentIngredientId = ingredientId;
-    document.getElementById('infoModalName').innerText = ingredientName;
+    console.log('openInfoModal вызван:', { ingredientId, ingredientName });
+
+    const modal = document.getElementById('infoModal');
+    if (!modal) return;
+
+    const nameElement = document.getElementById('infoModalName');
+    if (nameElement) nameElement.innerText = ingredientName;
 
     const link = document.getElementById('fullIngredientInfoLink');
     if (link) {
-        // ПЫТАЕМСЯ ВОССТАНОВИТЬ КОНТЕКСТ ИЗ sessionStorage
         const context = getRecipeContext();
 
         let returnTo, returnTitle, returnImage, returnMode, returnPortions, ratio, returnStep, returnContext;
 
         if (context) {
-            // Используем контекст из sessionStorage
             returnTo = context.path || window.location.pathname;
             returnTitle = context.title || document.querySelector('h1')?.innerText || 'Рецепт';
             returnImage = context.image || '';
@@ -1453,10 +1188,7 @@ function openInfoModal(ingredientId, ingredientName) {
             ratio = context.ratio || null;
             returnStep = null;
             returnContext = null;
-
-            console.log('📦 Используем контекст из sessionStorage:', context);
         } else {
-            // Fallback: берём из текущей страницы
             const urlParams = new URLSearchParams(window.location.search);
             returnTo = window.location.pathname;
             returnTitle = document.querySelector('h1')?.innerText || document.title || 'Рецепт';
@@ -1485,12 +1217,10 @@ function openInfoModal(ingredientId, ingredientName) {
             url += '?' + queryString;
         }
 
-        console.log('Redirecting to:', url);
         link.href = url;
     }
 
-    const modal = document.getElementById('infoModal');
-    if (modal) modal.classList.remove('hidden');
+    modal.classList.remove('hidden');
 }
 
 function closeInfoModal() {
@@ -1527,25 +1257,18 @@ function showToast(message, title = 'Готово!', type = 'success') {
     if (container) container.className = `${config.bg} backdrop-blur-sm text-white rounded-xl shadow-2xl px-5 py-3.5 flex items-center gap-3 min-w-[260px]`;
 
     toast.classList.remove('hidden');
-    toast.classList.add('toast-show');
-    toast.classList.remove('toast-hide');
 
     toastTimeout = setTimeout(() => {
-        closeToast();
+        toast.classList.add('hidden');
     }, 3000);
 }
 
 function closeToast() {
     const toast = document.getElementById('toastNotification');
-    if (!toast) return;
-
-    toast.classList.remove('toast-show');
-    toast.classList.add('toast-hide');
-
-    setTimeout(() => {
+    if (toast) {
         toast.classList.add('hidden');
-        toast.classList.remove('toast-hide');
-    }, 300);
+        if (toastTimeout) clearTimeout(toastTimeout);
+    }
 }
 
 // ======================= ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ =======================
@@ -1565,7 +1288,7 @@ function getCookie(name) {
     return cookieValue;
 }
 
-// ======================= ПЕРЕСЧЕТ КБЖУ ДЛЯ ЛЮБИТЕЛЬСКИХ РЕЦЕПТОВ =======================
+// ======================= ПЕРЕСЧЕТ КБЖУ =======================
 
 const nutritionCache = {};
 
@@ -1592,16 +1315,18 @@ async function fetchIngredientNutrition(ingredientId) {
 
 async function recalculateNutrition() {
     const rows = document.querySelectorAll('#ingredientsList .ingredient-row');
-    let totalCalories = 0;
-    let totalProtein = 0;
-    let totalFat = 0;
-    let totalCarbs = 0;
 
     if (rows.length === 0) {
         console.log('Нет ингредиентов для расчета КБЖУ');
         return;
     }
 
+    let totalCalories = 0;
+    let totalProtein = 0;
+    let totalFat = 0;
+    let totalCarbs = 0;
+
+    // Собираем все промисы для параллельной загрузки
     const nutritionPromises = Array.from(rows).map(async (row) => {
         const infoBtn = row.querySelector('.info-btn');
         const ingredientId = infoBtn?.dataset.id;
@@ -1615,28 +1340,70 @@ async function recalculateNutrition() {
         const amount = parseFloat(amountMatch[1]);
         const unit = row.dataset.unit || 'г';
 
-        const nutrition = await fetchIngredientNutrition(ingredientId);
-
-        let multiplier = 1;
-        if (unit === 'г' || unit === 'мл') {
-            multiplier = amount / 100;
-        } else if (unit === 'кг' || unit === 'л') {
-            multiplier = (amount * 1000) / 100;
-        } else if (unit === 'шт' || unit === 'ст.л.' || unit === 'ч.л.' || unit === 'зубч.') {
-            let estimatedWeight = 0;
-            if (unit === 'шт') estimatedWeight = 100;
-            else if (unit === 'ст.л.') estimatedWeight = 15;
-            else if (unit === 'ч.л.') estimatedWeight = 5;
-            else if (unit === 'зубч.') estimatedWeight = 10;
-            multiplier = (amount * estimatedWeight) / 100;
+        // Проверяем кэш перед запросом
+        if (nutritionCache[ingredientId]) {
+            const nutrition = nutritionCache[ingredientId];
+            let multiplier = 1;
+            if (unit === 'г' || unit === 'мл') {
+                multiplier = amount / 100;
+            } else if (unit === 'кг' || unit === 'л') {
+                multiplier = (amount * 1000) / 100;
+            } else if (unit === 'шт' || unit === 'ст.л.' || unit === 'ч.л.' || unit === 'зубч.') {
+                let estimatedWeight = 0;
+                if (unit === 'шт') estimatedWeight = 100;
+                else if (unit === 'ст.л.') estimatedWeight = 15;
+                else if (unit === 'ч.л.') estimatedWeight = 5;
+                else if (unit === 'зубч.') estimatedWeight = 10;
+                multiplier = (amount * estimatedWeight) / 100;
+            }
+            return {
+                calories: nutrition.calories * multiplier,
+                protein: nutrition.protein * multiplier,
+                fat: nutrition.fat * multiplier,
+                carbs: nutrition.carbohydrates * multiplier
+            };
         }
 
-        return {
-            calories: nutrition.calories * multiplier,
-            protein: nutrition.protein * multiplier,
-            fat: nutrition.fat * multiplier,
-            carbs: nutrition.carbohydrates * multiplier
-        };
+        try {
+            const response = await fetch(`/kitchen/api/ingredient/${ingredientId}/`);
+            if (response.ok) {
+                const data = await response.json();
+                const nutrition = {
+                    calories: data.calories || 0,
+                    protein: data.protein || 0,
+                    fat: data.fat || 0,
+                    carbohydrates: data.carbohydrates || 0
+                };
+
+                // Сохраняем в кэш
+                nutritionCache[ingredientId] = nutrition;
+
+                // Применяем множитель
+                let multiplier = 1;
+                if (unit === 'г' || unit === 'мл') {
+                    multiplier = amount / 100;
+                } else if (unit === 'кг' || unit === 'л') {
+                    multiplier = (amount * 1000) / 100;
+                } else if (unit === 'шт' || unit === 'ст.л.' || unit === 'ч.л.' || unit === 'зубч.') {
+                    let estimatedWeight = 0;
+                    if (unit === 'шт') estimatedWeight = 100;
+                    else if (unit === 'ст.л.') estimatedWeight = 15;
+                    else if (unit === 'ч.л.') estimatedWeight = 5;
+                    else if (unit === 'зубч.') estimatedWeight = 10;
+                    multiplier = (amount * estimatedWeight) / 100;
+                }
+
+                return {
+                    calories: nutrition.calories * multiplier,
+                    protein: nutrition.protein * multiplier,
+                    fat: nutrition.fat * multiplier,
+                    carbs: nutrition.carbohydrates * multiplier
+                };
+            }
+        } catch (error) {
+            console.error(`Ошибка загрузки данных для ингредиента ${ingredientId}:`, error);
+        }
+        return null;
     });
 
     const results = await Promise.all(nutritionPromises);
@@ -1651,26 +1418,17 @@ async function recalculateNutrition() {
     }
 
     let servings = parseInt(document.getElementById('portionsSlider')?.value) || 4;
-    const portionsSlider = document.getElementById('portionsSlider');
-    const baseServings = parseInt(portionsSlider?.getAttribute('data-base')) || servings;
-
-    if (typeof currentMode !== 'undefined' && currentMode === 'products' && currentBaseIngredient) {
-        const ratio = currentBaseIngredient.currentValue / currentBaseIngredient.originalValue;
-        const currentPortions = Math.round(baseServings * ratio);
-        if (currentPortions > 0 && currentPortions <= 50) {
-            servings = currentPortions;
-        }
-    }
 
     const perServingCalories = totalCalories / servings;
     const perServingProtein = totalProtein / servings;
     const perServingFat = totalFat / servings;
     const perServingCarbs = totalCarbs / servings;
 
-    const kcalSpan = document.querySelector('.kcal-value, .nutrition-item:first-child .nutrition-value');
-    const proteinSpan = document.querySelector('.protein-value, .nutrition-item:nth-child(2) .nutrition-value');
-    const fatSpan = document.querySelector('.fat-value, .nutrition-item:nth-child(3) .nutrition-value');
-    const carbsSpan = document.querySelector('.carbs-value, .nutrition-item:nth-child(4) .nutrition-value');
+    // Обновляем отображение
+    const kcalSpan = document.querySelector('.kcal-value');
+    const proteinSpan = document.querySelector('.protein-value');
+    const fatSpan = document.querySelector('.fat-value');
+    const carbsSpan = document.querySelector('.carbs-value');
 
     if (kcalSpan) kcalSpan.innerText = Math.round(perServingCalories);
     if (proteinSpan) proteinSpan.innerText = Math.round(perServingProtein);
@@ -1684,24 +1442,77 @@ async function updateNutritionOnChange() {
     await recalculateNutrition();
 }
 
+let nutritionInitDone = false;
+
 async function initNutrition() {
+    if (nutritionInitDone) return;
+    nutritionInitDone = true;
+
     console.log('Инициализация КБЖУ...');
     setTimeout(async () => {
         await recalculateNutrition();
     }, 500);
-
-    const observer = new MutationObserver(async function() {
-        await recalculateNutrition();
-    });
-
-    const ingredientsList = document.getElementById('ingredientsList');
-    if (ingredientsList) {
-        observer.observe(ingredientsList, { childList: true, subtree: true, characterData: true });
-    }
 }
 
-// Вызываем инициализацию КБЖУ
-setTimeout(initNutrition, 500);
+// ======================= КНОПКА СОХРАНЕНИЯ РЕЦЕПТА =======================
+
+document.addEventListener('DOMContentLoaded', function() {
+    const saveRecipeBtn = document.getElementById('saveRecipeBtn');
+    if (saveRecipeBtn) {
+        saveRecipeBtn.addEventListener('click', function() {
+            const recipeId = window.location.pathname.match(/\/recipe\/(\d+)\//)?.[1] || null;
+            if (!recipeId) {
+                showToast('Ошибка: ID рецепта не найден', 'Ошибка', 'error');
+                return;
+            }
+
+            const name = prompt('Введите название для сохраненного рецепта:',
+                document.querySelector('h1')?.innerText + ' (моя версия)' || 'Сохраненный рецепт');
+
+            if (name === null) return;
+
+            const notes = prompt('Добавьте заметки (опционально):', '');
+
+            fetch('/kitchen/api/save-recipe/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': getCookie('csrftoken')
+                },
+                body: JSON.stringify({
+                    recipe_id: parseInt(recipeId),
+                    name: name,
+                    notes: notes || '',
+                    is_favorite: false
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'ok') {
+                    showToast('✅ ' + data.message, 'Успешно сохранено!', 'success');
+                    if (data.nutrition) {
+                        const kcalSpan = document.querySelector('.kcal-value');
+                        const proteinSpan = document.querySelector('.protein-value');
+                        const fatSpan = document.querySelector('.fat-value');
+                        const carbsSpan = document.querySelector('.carbs-value');
+                        if (kcalSpan) kcalSpan.innerText = data.nutrition.calories || 0;
+                        if (proteinSpan) proteinSpan.innerText = data.nutrition.protein || 0;
+                        if (fatSpan) fatSpan.innerText = data.nutrition.fat || 0;
+                        if (carbsSpan) carbsSpan.innerText = data.nutrition.carbs || 0;
+                    }
+                } else {
+                    showToast('❌ Ошибка: ' + data.error, 'Ошибка', 'error');
+                }
+            })
+            .catch(error => {
+                showToast('❌ Ошибка при сохранении', 'Ошибка', 'error');
+                console.error('Error:', error);
+            });
+        });
+    }
+});
+
+// ======================= ГЛОБАЛЬНЫЕ ФУНКЦИИ =======================
 
 // Делаем функции глобальными для доступа из HTML
 window.showMethodDetails = showMethodDetails;
@@ -1710,8 +1521,18 @@ window.showPreparationDetails = showPreparationDetails;
 window.closePreparationModal = closePreparationModal;
 window.showUtensilDetails = showUtensilDetails;
 window.closeUtensilModal = closeUtensilModal;
+window.openInfoModal = openInfoModal;
 window.closeInfoModal = closeInfoModal;
+window.openReplaceModal = openReplaceModal;
+window.closeReplaceModal = closeReplaceModal;
+window.updateNutritionOnChange = updateNutritionOnChange;
+window.initNutrition = initNutrition;
 window.showToast = showToast;
 window.closeToast = closeToast;
-window.openInfoModal = openInfoModal;
-window.updateNutritionOnChange = updateNutritionOnChange;
+window.saveRecipeContext = saveRecipeContext;
+window.getRecipeContext = getRecipeContext;
+window.clearRecipeContext = clearRecipeContext;
+window.updateRecipeContext = updateRecipeContext;
+
+// Инициализируем КБЖУ после загрузки страницы
+setTimeout(initNutrition, 1000);

@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container py-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'kitchen:ttk_list' %}">ТТК</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ ttk.title }}</li>
+        </ol>
+    </nav>
+
+    <div class="row">
+        <div class="col-md-8">
+            <h1>{{ ttk.title }}</h1>
+
+            {% if ttk.ttk_code %}
+            <div class="badge bg-info mb-3">Код: {{ ttk.ttk_code }}</div>
+            {% endif %}
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Описание</h5>
+                    <p class="card-text">{{ ttk.description|linebreaks }}</p>
+                </div>
+            </div>
+
+            {% if ttk.technological_process %}
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Технологический процесс</h5>
+                    <p class="card-text">{{ ttk.technological_process|linebreaks }}</p>
+                </div>
+            </div>
+            {% endif %}
+
+            {% if ttk.quality_requirements %}
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Требования к качеству</h5>
+                    <p class="card-text">{{ ttk.quality_requirements|linebreaks }}</p>
+                </div>
+            </div>
+            {% endif %}
+
+            <!-- Ингредиенты -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Ингредиенты</h5>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Ингредиент</th>
+                                    <th>Брутто</th>
+                                    <th>Нетто</th>
+                                    <th>Потери</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for item in ttk.home_ingredients.all %}
+                                <tr>
+                                    <td>{{ item.ingredient.name }}</td>
+                                    <td>{% widthratio item.quantity 1 1.1 %}</td>
+                                    <td>{{ item.quantity }}</td>
+                                    <td>{% widthratio item.quantity 100 10 %}</td>
+                                </tr>
+                                {% empty %}
+                                <tr>
+                                    <td colspan="4" class="text-muted">Ингредиенты не добавлены</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Шаги -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Технология приготовления</h5>
+                    {% for step in ttk.steps.all|dictsort:"order" %}
+                    <div class="step-item mb-3">
+                        <h6>Шаг {{ step.order }}. {{ step.title }}</h6>
+                        <p>{{ step.instruction|linebreaks }}</p>
+                        {% if step.duration %}
+                        <small class="text-muted">⏱ {{ step.duration }} мин</small>
+                        {% endif %}
+                        {% if step.temperature %}
+                        <small class="text-muted">🌡 {{ step.temperature }}°C</small>
+                        {% endif %}
+                    </div>
+                    {% empty %}
+                    <p class="text-muted">Шаги не добавлены</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <!-- Информация -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Информация</h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Тип:</strong> {{ ttk.get_recipe_type_display }}</li>
+                        <li><strong>Выход:</strong> {{ ttk.yield_weight|default:"-" }} г</li>
+                        <li><strong>Размер порции:</strong> {{ ttk.portion_size|default:"-" }} г</li>
+                        <li><strong>Сложность:</strong> {{ ttk.get_difficulty_display }}</li>
+                        <li><strong>Кухня:</strong> {{ ttk.cuisine|default:"-" }}</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Используется в рецептах -->
+            {% if used_in_recipes %}
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Используется в рецептах</h5>
+                    <ul class="list-unstyled">
+                        {% for recipe in used_in_recipes %}
+                        <li>
+                            <a href="{% url 'kitchen:recipe_detail' recipe.id %}">
+                                {{ recipe.title }}
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
