@@ -1,0 +1,75 @@
+{
+  "name": "Гранат",
+  "name_normalized": "granat",
+  "synonyms": "гранат, зерна граната, гранатовые зерна, гранатовый сок, гранат рубиновый, гранат обыкновенный, Punica granatum",
+  "short_description": "Крупный тропический плод с твёрдой коркой и множеством сочных рубиновых зёрен с косточками внутри. Имеет кисло-сладкий, терпкий вкус и богат антиоксидантами, витаминами C и K. Используется в свежем виде, для соков, соусов, салатов и десертов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Гранат — это экзотический плод, покрытый плотной кожурой от красного до жёлто-красного цвета. Внутри содержит множество сочных рубиновых зёрен, каждое из которых окружено прозрачной кисло-сладкой мякотью и содержит твёрдую косточку. Вкус граната — яркий, терпкий, с характерной кислинкой и сладкими нотами. Плод ценится за высокое содержание антиоксидантов, витаминов C и K, калия и железа. Гранат — один из древнейших известных фруктов, символизирующий плодородие и богатство во многих культурах.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисло-сладкий, терпкий, освежающий</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочные хрустящие зёрна, твёрдая косточка внутри</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — рубиновый, тёмно-красный (зёрна), кожица красная, жёлто-красная</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — осень-зима</li><li class=\"ingredient-list-item\"><strong>Антиоксиданты</strong> — высокое содержание</li><li class=\"ingredient-list-item\"><strong>Витамины</strong> — C, K, группы B, калий</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Очистка</strong> — срезать верхушку, надрезать кожуру по линиям, разломать, извлечь зёрна</li><li class=\"ingredient-list-item\"><strong>Удаление плёнок</strong> — отделить зёрна от белых плёнок</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — промыть зёрна под холодной водой</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежий</strong> — как самостоятельный фрукт</li><li class=\"ingredient-list-item\"><strong>Сок</strong> — гранатовый сок, морс</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, сырами, орехами</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — как украшение и добавка</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — гранатовый соус к мясу</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — баранина, курица, утка</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — фета, моцарелла, мягкие сыры</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — мята, кинза, петрушка</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль, кешью</li><li class=\"ingredient-list-item\"><strong>Цитрусовые</strong> — лимон, лайм</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гранатовый сок</strong> — для кисло-сладкого вкуса</li><li class=\"ingredient-list-item\"><strong>Клюква</strong> — в салатах</li><li class=\"ingredient-list-item\"><strong>Вишня</strong> — для десертов</li></ul>",
+  "category": "Тропические фрукты",
+  "semantic_data": {
+    "properties": [
+      "фрукт",
+      "сочный",
+      "терпкий",
+      "кисло-сладкий",
+      "антиоксидантный",
+      "витаминный"
+    ],
+    "preparations": [
+      "очистка_и_извлечение_зёрен",
+      "отделение_от_плёнок",
+      "промывка"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "сок",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_салаты",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_соусов",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "салаты",
+      "соусы",
+      "десерты",
+      "напитки"
+    ],
+    "pairings": {
+      "protein": ["баранина", "курица", "утка", "фета", "моцарелла"],
+      "herbs": ["мята", "кинза", "петрушка"],
+      "nuts": ["грецкие_орехи", "миндаль", "кешью"],
+      "fruits": ["лимон", "лайм"]
+    },
+    "substitutes": [
+      {
+        "name": "Гранатовый сок",
+        "similarity": "high"
+      },
+      {
+        "name": "Клюква",
+        "similarity": "medium"
+      },
+      {
+        "name": "Вишня",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "фрукт",
+    "гранат",
+    "тропический",
+    "антиоксидант",
+    "салат",
+    "соус"
+  ]
+}

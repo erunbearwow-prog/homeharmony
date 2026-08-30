@@ -1,0 +1,75 @@
+{
+  "name": "Рагу свиное",
+  "name_normalized": "ragu-svinoe",
+  "synonyms": "",
+  "short_description": "Мясной полуфабрикат из свинины, нарезанный на крупные куски произвольной формы для длительного тушения. Сочное, жирное мясо с костью или без, идеально подходит для рагу, жаркого и других тушёных блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Свиное рагу — это мясной полуфабрикат, представляющий собой свинину, нарезанную крупными кусками произвольной формы (3–5 см) с костью или без неё. В отличие от гуляша (кубики 3-4 см) или азу (брусочки), рагу нарезается более крупными, неравномерными кусками, которые хорошо подходят для длительного тушения. Мясо для рагу обычно берут с достаточным содержанием жира (лопатка, грудинка, шея), чтобы при тушении оно оставалось сочным и мягким. Используется для приготовления рагу, жаркого, тушёного мяса с овощами и другими гарнирами.</p><h2 class=\"ingredient-title\">Характеристики нарезки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Форма</strong> — произвольная (куски)</li><li class=\"ingredient-list-item\"><strong>Размер</strong> — 3–5 см</li><li class=\"ingredient-list-item\"><strong>Вес куска</strong> — 50–100 г</li><li class=\"ingredient-list-item\"><strong>Отруб</strong> — лопатка, грудинка, шея, корейка</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — может быть с костью или бескостным</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Рагу</strong> — классическое рагу с овощами, травами</li><li class=\"ingredient-list-item\"><strong>Жаркое</strong> — в горшочках, казане</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с соусом (томатным, сметанным)</li><li class=\"ingredient-list-item\"><strong>Запеканки</strong> — с картофелем, овощами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, картофель, томаты, перец</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, грибной</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — паприка, тмин, чёрный перец, чеснок</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофель, рис, гречка, паста</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжье рагу</strong> — более плотное мясо</li><li class=\"ingredient-list-item\"><strong>Баранина для рагу</strong> — другой вкус</li><li class=\"ingredient-list-item\"><strong>Гуляш свиной</strong> — кубики 3-4 см</li><li class=\"ingredient-list-item\"><strong>Азу из свинины</strong> — брусочки</li></ul>",
+  "category": "Мясные полуфабрикаты",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "свинина",
+      "крупные_куски",
+      "тушение",
+      "сочный",
+      "универсальный"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "обжарка_до_корочки",
+      "тушение_1.5-2_часа"
+    ],
+    "cooking_methods": [
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "жарка_с_последующим_тушением",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "рагу",
+      "жаркое",
+      "тушеное_мясо",
+      "запеканки"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["лук", "морковь", "картофель", "томаты", "перец"],
+      "sauces": ["томатный", "сметанный", "грибной"],
+      "spices": ["паприка", "тмин", "черный_перец", "чеснок"],
+      "grains": ["картофель", "рис", "гречка", "паста"]
+    },
+    "substitutes": [
+      {
+        "name": "Говяжье рагу",
+        "similarity": "high"
+      },
+      {
+        "name": "Баранина для рагу",
+        "similarity": "high"
+      },
+      {
+        "name": "Гуляш свиной",
+        "similarity": "medium"
+      },
+      {
+        "name": "Азу из свинины",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "свинина",
+    "рагу",
+    "тушение",
+    "жаркое"
+  ]
+}

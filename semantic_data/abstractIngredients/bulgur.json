@@ -1,0 +1,57 @@
+{
+  "name": "Булгур",
+  "name_normalized": "bulgur",
+  "synonyms": "булгур, пшеница булгур, дроблёная пшеница, ближневосточная крупа, анатолийская пшеница, bulgur wheat, pilavlik (турецкий)",
+  "short_description": "Крупа из обработанной паром, высушенной и дроблёной пшеницы твёрдых сортов. Имеет приятный ореховый вкус, рассыпчатую текстуру и быстрое время приготовления. Популярна в ближневосточной, турецкой и средиземноморской кухне.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Булгур — это крупа, изготавливаемая из пшеницы твёрдых сортов, которую предварительно пропаривают, сушат и дробят. Благодаря такой обработке булгур имеет характерный ореховый вкус и аромат, а также быстрое время приготовления. Крупа бывает разного помола: от мелкого (для салатов) до крупного (для плова и гарниров). Булгур широко используется в ближневосточной, турецкой, арабской и средиземноморской кухне. Богат клетчаткой, витаминами группы B, железом, магнием и растительным белком.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — рассыпчатая, с лёгкой зернистостью</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — ореховый, слегка сладковатый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — золотистый или светло-коричневый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — пшеница твёрдых сортов</li><li class=\"ingredient-list-item\"><strong>Глютен</strong> — содержит глютен</li><li class=\"ingredient-list-item\"><strong>Время приготовления</strong> — 10-15 минут</li></ul><h2 class=\"ingredient-title\">Виды булгура</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мелкий булгур</strong> — для салатов (табуле, кысыр)</li><li class=\"ingredient-list-item\"><strong>Средний булгур</strong> — для супов и гарниров</li><li class=\"ingredient-list-item\"><strong>Крупный булгур</strong> — для плова и тушёных блюд</li><li class=\"ingredient-list-item\"><strong>Цельный булгур</strong> — в крупных зёрнах, требует больше времени</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Промывка</strong> — промыть под холодной водой</li><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — для салатов (залить кипятком, настоять 15-20 минут)</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — в кипящей воде (соотношение 1:1,5), 10-15 минут</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — табуле, кысыр</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — к мясу, рыбе, овощам</li><li class=\"ingredient-list-item\"><strong>Плов</strong> — с мясом, овощами, специями</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — в овощные супы</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для голубцов, фаршированных овощей</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, лук, перец, мята, петрушка</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — баранина, курица, говядина</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, йогуртовый, лимонный</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — зира, кориандр, куркума, мята</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — миндаль, кедровые орехи</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Рис</strong> — в плове</li><li class=\"ingredient-list-item\"><strong>Киноа</strong> — безглютеновая альтернатива</li><li class=\"ingredient-list-item\"><strong>Кус-кус</strong> — мелкая крупа</li><li class=\"ingredient-list-item\"><strong>Перловка</strong> — для супов</li></ul>",
+  "category": "Крупы",
+  "semantic_data": {
+    "properties": [
+      "крупа",
+      "пшеница",
+      "ореховый_вкус",
+      "рассыпчатый",
+      "быстрое_приготовление",
+      "содержит_глютен"
+    ],
+    "preparations": [
+      "промывка_холодной_водой",
+      "замачивание_в_кипятке",
+      "варка_10-15_минут"
+    ],
+    "cooking_methods": [
+      {"method": "варка", "priority": "high"},
+      {"method": "запаривание_кипятком", "priority": "high"},
+      {"method": "тушение", "priority": "medium"},
+      {"method": "добавление_в_салаты", "priority": "high"}
+    ],
+    "applications": [
+      "салаты",
+      "гарниры",
+      "плов",
+      "супы",
+      "начинки"
+    ],
+    "pairings": {
+      "protein": ["баранина", "курица", "говядина"],
+      "vegetables": ["помидоры", "лук", "перец", "мята", "петрушка"],
+      "sauces": ["томатный", "йогуртовый", "лимонный"],
+      "spices": ["зира", "кориандр", "куркума", "мята"],
+      "nuts": ["миндаль", "кедровые_орехи"]
+    },
+    "substitutes": [
+      {"name": "Рис", "similarity": "medium"},
+      {"name": "Киноа", "similarity": "medium"},
+      {"name": "Кус-кус", "similarity": "high"},
+      {"name": "Перловка", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "крупа",
+    "булгур",
+    "пшеница",
+    "ближневосточная_кухня",
+    "салат",
+    "гарнир"
+  ]
+}

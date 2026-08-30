@@ -1,0 +1,69 @@
+{
+  "name": "Инжир сушеный",
+  "name_normalized": "inzhir_sushenyy",
+  "synonyms": "инжир сушеный, сушеный инжир, фига сушеная, сушеная фига, смоква сушеная, сухофрукты инжир, инжир для выпечки, инжир для десертов, инжир для компота, вяленый инжир, dried fig, dried figs",
+  "short_description": "Сушеный плод инжира с плотной, сладкой мякотью, медово-ореховым вкусом и характерными хрустящими семенами. Богат клетчаткой, калием и природными сахарами. Широко используется в выпечке, десертах, мюслях, а также в сочетании с сырами, орехами и мясом.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Сушеный инжир — это плод инжира, из которого удалена большая часть влаги естественным (на солнце) или искусственным (в сушильных камерах) способом. В процессе сушки инжир становится более плотным и сладким, приобретает характерную жевательную текстуру и насыщенный медово-карамельный вкус. Сушеный инжир содержит больше сахаров и клетчатки, чем свежий, и является отличным источником энергии. Это популярный сухофрукт, который используют в выпечке, десертах, мюслях, а также в сочетании с сырами, орехами и мясными блюдами.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, жевательная, с мелкими хрустящими семенами</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, с медовыми и карамельными нотами</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от светло-бежевого до темно-коричневого (зависит от сорта и способа сушки)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 6-12 месяцев в сухом прохладном месте (в герметичной таре)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — при неправильном хранении может засахариваться или покрываться плесенью</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Промывка</strong> — при необходимости промыть в теплой воде</li><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — для размягчения залить горячей водой на 10-15 минут (или на ночь для очень сухого инжира)</li><li class=\"ingredient-list-item\"><strong>Просушка</strong> — обсушить бумажным полотенцем</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — нарезать кусочками или ломтиками (для выпечки и салатов)</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в герметичной таре в сухом, темном, прохладном месте</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Самостоятельный перекус</strong> — как полезный сухофрукт</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — кексы, пироги, печенье, фруктовые хлебцы</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — фруктовые салаты, компоты, пудинги</li><li class=\"ingredient-list-item\"><strong>Мюсли и гранола</strong> — добавка в каши, смеси сухофруктов</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, сыром, орехами</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — с сырами, орехами, медом</li><li class=\"ingredient-list-item\"><strong>Мясные блюда</strong> — с уткой, курицей, свининой, бараниной</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — голубые (горгонзола, рокфор), козий, пармезан, фета</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — утка, курица, свинина, баранина</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль, фисташки, кедровые</li><li class=\"ingredient-list-item\"><strong>Сухофрукты</strong> — курага, чернослив, финики, изюм</li><li class=\"ingredient-list-item\"><strong>Мед</strong> — отлично дополняет</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, кардамон, мускатный орех, розмарин</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Инжир свежий</strong> — для других блюд</li><li class=\"ingredient-list-item\"><strong>Курага</strong> — другая текстура, но схожее применение</li><li class=\"ingredient-list-item\"><strong>Чернослив</strong> — более плотная текстура</li><li class=\"ingredient-list-item\"><strong>Финики</strong> — более сладкие, другая текстура</li></ul>",
+  "category": "Фрукты",
+  "semantic_data": {
+    "properties": [
+      "сухофрукт",
+      "сладкий",
+      "медовый",
+      "плотный",
+      "жевательный",
+      "для выпечки",
+      "для десертов",
+      "для мюслей",
+      "полезный перекус"
+    ],
+    "preparations": [
+      "промывка в теплой воде (при необходимости)",
+      "замачивание в горячей воде для размягчения",
+      "просушка бумажным полотенцем",
+      "нарезка кусочками или ломтиками",
+      "хранение в герметичной таре"
+    ],
+    "cooking_methods": [
+      {"method": "использование в сыром виде (перекус)", "priority": "high"},
+      {"method": "замачивание для размягчения", "priority": "high"},
+      {"method": "использование в выпечке", "priority": "high"},
+      {"method": "использование в салатах", "priority": "high"},
+      {"method": "использование в мясных блюдах", "priority": "medium"},
+      {"method": "приготовление компотов", "priority": "medium"}
+    ],
+    "applications": [
+      "выпечка",
+      "десерты",
+      "мюсли и каши",
+      "салаты",
+      "закуски",
+      "мясные блюда",
+      "перекусы"
+    ],
+    "pairings": {
+      "protein": ["горгонзола", "рокфор", "козий сыр", "пармезан", "фета", "утка", "курица", "свинина", "баранина"],
+      "vegetables": [],
+      "fruits": ["курага", "чернослив", "финики", "изюм"],
+      "sauces": ["мед"],
+      "herbs": [],
+      "spices": ["корица", "кардамон", "мускатный орех", "розмарин"]
+    },
+    "substitutes": [
+      {"name": "Инжир свежий", "similarity": "medium"},
+      {"name": "Курага", "similarity": "medium"},
+      {"name": "Чернослив", "similarity": "medium"},
+      {"name": "Финики", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "сухофрукт",
+    "инжир",
+    "сушеный инжир",
+    "фига сушеная",
+    "выпечка",
+    "десерты",
+    "мюсли",
+    "полезный перекус"
+  ]
+}

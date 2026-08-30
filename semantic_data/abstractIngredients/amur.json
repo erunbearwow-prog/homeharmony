@@ -1,0 +1,70 @@
+{
+  "name": "Амур",
+  "name_normalized": "amur",
+  "synonyms": "белый амур, травяной карп, Ctenopharyngodon idella, амур белый",
+  "short_description": "Крупная пресноводная рыба семейства карповых с удлинённым телом, крупной чешуёй и плотным белым мясом. Ценится за нежирное, костистое, но вкусное мясо, подходящее для различных способов приготовления.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Амур (Ctenopharyngodon idella) — крупная пресноводная рыба семейства Карповые, также известная как белый амур или травяной карп. Имеет удлинённое, торпедообразное тело, покрытое крупной циклоидной чешуёй, и характерную тёмно-серую или зеленоватую окраску с более светлым брюхом. Мясо плотное, белое, нежирное, с небольшим количеством межмышечных костей. В кулинарии ценится за универсальность и чистый рыбный вкус без выраженного запаха тины. Широко распространён в Китае, Юго-Восточной Азии и акклиматизирован во многих регионах мира.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — белое, плотное, нежирное (3-5% жира)</li><li class=\"ingredient-list-item\"><strong>Костистость</strong> — имеет межмышечные кости (характерно для карповых)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — чистый, нейтральный, без запаха тины</li><li class=\"ingredient-list-item\"><strong>Размер</strong> — достигает 1-1,5 м, 30-40 кг (промысловый)</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — лучшее время для ловли: осень, зима</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Чистка</strong> — удалить чешую, выпотрошить, удалить жабры</li><li class=\"ingredient-list-item\"><strong>Удаление костей</strong> — для филе требуется аккуратно выбирать межмышечные кости</li><li class=\"ingredient-list-item\"><strong>Разделка</strong> — на филе, стейки, куски для ухи</li><li class=\"ingredient-list-item\"><strong>Вымачивание</strong> — при необходимости, для удаления запаха тины (в молоке или слабом солевом растворе)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Запекание</strong> — целиком или кусками в духовке</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде с хрустящей корочкой</li><li class=\"ingredient-list-item\"><strong>Уха</strong> — наваристый, ароматный бульон</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в сметанном или томатном соусе</li><li class=\"ingredient-list-item\"><strong>Котлеты</strong> — из фарша с луком и белым хлебом</li><li class=\"ingredient-list-item\"><strong>Заливное</strong> — для праздничного стола</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — горячее или холодное</li><li class=\"ingredient-list-item\"><strong>Сушка и вяление</strong> — как снеки к пиву</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук, томаты, перец</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, гречка (в качестве гарнира)</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, томатный, сливочный, чесночный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, кинза, зелёный лук</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, лавровый лист, тимьян, лимон</li><li class=\"ingredient-list-item\"><strong>Цитрусовые</strong> — лимон, лайм</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Карп</strong> — похожая текстура, но более жирный</li><li class=\"ingredient-list-item\"><strong>Толстолобик</strong> — плотное мясо, примерно той же жирности</li><li class=\"ingredient-list-item\"><strong>Сазан</strong> — более жирный, с ярким вкусом</li><li class=\"ingredient-list-item\"><strong>Сом</strong> — более жирный, без межмышечных костей</li><li class=\"ingredient-list-item\"><strong>Судак</strong> — более нежный, менее костистый</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/amur-zapechennyy/'>Амур, запечённый в духовке с овощами</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/uha-iz-amura/'>Уха из амура — рецепт с пошаговыми фото</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/kak-chistit-amura/'>Как правильно чистить и разделывать амура</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/nutrition/polza-amura/'>Польза мяса амура: белок, минералы, витамины</a></li></ul>",
+  "category": "Рыба речная",
+  "semantic_data": {
+    "properties": [
+      "пресноводный",
+      "крупный",
+      "белое_мясо",
+      "нежирный",
+      "плотный",
+      "костистый",
+      "нейтральный_вкус",
+      "карповые",
+      "универсальный"
+    ],
+    "preparations": [
+      "чистка_и_потрошение",
+      "удаление_чешуи",
+      "разделка_на_филе",
+      "удаление_межмышечных_костей",
+      "вымачивание_при_необходимости"
+    ],
+    "cooking_methods": [
+      {"method": "запекание", "priority": "high"},
+      {"method": "жарка", "priority": "high"},
+      {"method": "варка_ухи", "priority": "high"},
+      {"method": "тушение", "priority": "medium"},
+      {"method": "приготовление_котлет", "priority": "medium"},
+      {"method": "копчение", "priority": "medium"},
+      {"method": "заливное", "priority": "low"},
+      {"method": "сушка_вяление", "priority": "low"}
+    ],
+    "applications": [
+      "вторые_блюда",
+      "супы",
+      "закуски",
+      "праздничные_блюда",
+      "консервирование"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "морковь", "лук", "томаты", "перец"],
+      "grains": ["рис", "гречка"],
+      "sauces": ["сметанный", "томатный", "сливочный", "чесночный"],
+      "herbs": ["укроп", "петрушка", "кинза", "зеленый_лук"],
+      "spices": ["черный_перец", "лавровый_лист", "тимьян", "лимон"]
+    },
+    "substitutes": [
+      {"name": "Карп", "similarity": "high"},
+      {"name": "Толстолобик", "similarity": "high"},
+      {"name": "Сазан", "similarity": "medium"},
+      {"name": "Сом", "similarity": "medium"},
+      {"name": "Судак", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "рыба",
+    "пресноводная_рыба",
+    "амур",
+    "карповые",
+    "запекание",
+    "жарка",
+    "уха",
+    "котлеты"
+  ]
+}

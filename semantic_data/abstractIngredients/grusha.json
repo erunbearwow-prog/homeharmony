@@ -1,0 +1,81 @@
+{
+  "name": "Груша",
+  "name_normalized": "grusha",
+  "synonyms": "груша, груша обыкновенная, груша садовая, груша дикая, груша летняя, груша осенняя, груша зимняя, pear",
+  "short_description": "Сочный сладкий плод семейства Розовые с характерной грушевидной формой, тонкой кожицей и ароматной мякотью. Богата витаминами, клетчаткой и калием. Употребляется свежей, в десертах, выпечке и сушёном виде.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Груша — это сочный плод, который относится к семейству Розовые. Он имеет характерную грушевидную форму, тонкую кожицу (от жёлтой до зелёной, красной или бронзовой) и сладкую, ароматную, маслянистую или хрустящую мякоть. Вкус груши варьируется от кисло-сладкого до очень сладкого, в зависимости от сорта. Груша богата витаминами C и K, калием, медью, клетчаткой и антиоксидантами. Широко используется в свежем виде, в десертах, выпечке, компотах, варенье, а также в сушёном виде.</p><h2 class=\"ingredient-title\">Сорта и виды</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Летние сорта</strong> — ранние, сочные, для свежего употребления</li><li class=\"ingredient-list-item\"><strong>Осенние сорта</strong> — для консервации и употребления</li><li class=\"ingredient-list-item\"><strong>Зимние сорта</strong> — для длительного хранения</li><li class=\"ingredient-list-item\"><strong>Конференция</strong> — вытянутая, с тонкой кожицей</li><li class=\"ingredient-list-item\"><strong>Дюшес</strong> — крупная, с маслянистой мякотью</li><li class=\"ingredient-list-item\"><strong>Лукас</strong> — твёрдая, для запекания</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочная, может быть хрустящей или маслянистой</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, с лёгкой кислинкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — жёлтый, зелёный, красный, бронзовый</li><li class=\"ingredient-list-item\"><strong>Витамины</strong> — C, K, калий, медь</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 1-2 недели при комнатной температуре</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойка</strong> — тщательно вымыть</li><li class=\"ingredient-list-item\"><strong>Очистка</strong> — удалить кожицу при необходимости</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — ломтиками, дольками</li><li class=\"ingredient-list-item\"><strong>Удаление семян</strong> — вырезать сердцевину</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежая</strong> — как самостоятельный фрукт</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — пироги, тарты, крамблы, штрудели</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — с медом, орехами, в карамели</li><li class=\"ingredient-list-item\"><strong>Сушка</strong> — для компотов, вяленая груша</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к мясу (особенно к утке, свинине)</li><li class=\"ingredient-list-item\"><strong>Джемы и варенье</strong> — для зимних заготовок</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — голубые, мягкие (рикотта, маскарпоне)</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, гвоздика, ваниль</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — утка, свинина</li><li class=\"ingredient-list-item\"><strong>Цитрусовые</strong> — лимон, апельсин</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Яблоки</strong> — в выпечке</li><li class=\"ingredient-list-item\"><strong>Айва</strong> — для запекания</li><li class=\"ingredient-list-item\"><strong>Персики</strong> — в десертах</li></ul>",
+  "category": "Семечковые",
+  "semantic_data": {
+    "properties": [
+      "фрукт",
+      "сочный",
+      "сладкий",
+      "ароматный",
+      "витаминный",
+      "универсальный"
+    ],
+    "preparations": [
+      "мойка",
+      "очистка_от_кожицы",
+      "нарезка",
+      "удаление_сердцевины"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "выпечка",
+        "priority": "high"
+      },
+      {
+        "method": "сушка",
+        "priority": "medium"
+      },
+      {
+        "method": "варка_варенья",
+        "priority": "medium"
+      },
+      {
+        "method": "карамелизация",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "десерты",
+      "выпечка",
+      "соусы",
+      "джемы"
+    ],
+    "pairings": {
+      "protein": ["голубые_сыры", "рикотта", "маскарпоне"],
+      "nuts": ["грецкие_орехи", "миндаль"],
+      "spices": ["корица", "гвоздика", "ваниль"],
+      "meat": ["утка", "свинина"],
+      "fruits": ["лимон", "апельсин"]
+    },
+    "substitutes": [
+      {
+        "name": "Яблоки",
+        "similarity": "high"
+      },
+      {
+        "name": "Айва",
+        "similarity": "medium"
+      },
+      {
+        "name": "Персики",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "фрукт",
+    "груша",
+    "десерт",
+    "выпечка",
+    "сушка",
+    "сочный"
+  ]
+}

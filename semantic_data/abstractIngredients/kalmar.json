@@ -1,0 +1,69 @@
+{
+  "name": "Кальмар",
+  "name_normalized": "kalmar",
+  "synonyms": "кальмар, кальмары, морепродукты, кальмар тихоокеанский, кальмар командорский, кальмар для салата, кальмар для жарки, кальмар для гриля, кальмар для запекания, кальмар консервированный, Loligo, Todarodes",
+  "short_description": "Морской моллюск с вытянутым телом, большими глазами и характерными щупальцами. Мясо кальмара — плотное, упругое, с нежным сладковатым вкусом и низким содержанием жира. Универсален в кулинарии: подходит для салатов, жарки, гриля, запекания и тушения.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Кальмар — это морской моллюск, который широко используется в кулинарии многих стран. Мясо кальмара имеет плотную, упругую структуру, нежный сладковатый вкус и нейтральный морской аромат. Это диетический продукт с низким содержанием жира и высоким содержанием белка. Кальмары универсальны в приготовлении: их жарят во фритюре, на гриле, тушат, запекают, добавляют в салаты, используют в суши и роллах. В продаже встречаются свежие, замороженные и консервированные кальмары.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, нежная (при правильной готовке)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, нежный, слегка ореховый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый, слегка перламутровый</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — при переваривании становится резиновым</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — замороженный до 3 месяцев</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Очистка</strong> — удалить голову с внутренностями, костную пластину (хитин) и тонкую пленку</li><li class=\"ingredient-list-item\"><strong>Удаление щупалец</strong> — отделить щупальца от тушки</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — тщательно промыть тушку и щупальца</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — кольцами, соломкой или кубиками</li><li class=\"ingredient-list-item\"><strong>Подготовка к варке</strong> — надрезать по бокам для равномерного приготовления (при необходимости)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — классические кальмаровые салаты с яйцом, майонезом, рисом</li><li class=\"ingredient-list-item\"><strong>Жарка во фритюре</strong> — в кляре, с хрустящей корочкой</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — целиком или кольцами, в маринаде</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в сметанном, томатном или сливочном соусе</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с сыром, овощами, травами</li><li class=\"ingredient-list-item\"><strong>Суши и роллы</strong> — как начинка</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — для салатов и бульона</li><li class=\"ingredient-list-item\"><strong>Фарширование</strong> — тушки кальмара, фаршированные рисом, мясом, грибами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, лук, чеснок, перец, кабачки, баклажаны</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, гречка (для фарширования)</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, томатный, сливочный, лимонный, чесночный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, кинза, базилик</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, паприка, орегано, тимьян</li><li class=\"ingredient-list-item\"><strong>Майонез</strong> — для салатов</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Креветки</strong> — схожая текстура, другой вкус</li><li class=\"ingredient-list-item\"><strong>Мидии</strong> — для морепродуктовых блюд</li><li class=\"ingredient-list-item\"><strong>Осьминог</strong> — более плотное мясо</li><li class=\"ingredient-list-item\"><strong>Гребешок</strong> — сладковатый, нежный</li></ul>",
+  "category": "Рыба и морепродукты",
+  "semantic_data": {
+    "properties": [
+      "морепродукт",
+      "моллюск",
+      "белое мясо",
+      "плотное",
+      "упругое",
+      "сладковатый вкус",
+      "диетический",
+      "универсальный",
+      "для салатов",
+      "для жарки"
+    ],
+    "preparations": [
+      "очистка от внутренностей и хитиновой пластины",
+      "удаление пленки",
+      "промывка",
+      "нарезка кольцами или соломкой"
+    ],
+    "cooking_methods": [
+      {"method": "варка (для салатов)", "priority": "high"},
+      {"method": "жарка во фритюре", "priority": "high"},
+      {"method": "гриль", "priority": "high"},
+      {"method": "тушение", "priority": "high"},
+      {"method": "запекание", "priority": "medium"},
+      {"method": "фарширование", "priority": "medium"},
+      {"method": "использование в суши", "priority": "low"}
+    ],
+    "applications": [
+      "салаты",
+      "вторые блюда",
+      "закуски",
+      "суши и роллы",
+      "фаршированные блюда"
+    ],
+    "pairings": {
+      "protein": ["креветки", "мидии", "осьминог", "гребешок"],
+      "vegetables": ["помидоры", "лук", "чеснок", "перец", "кабачки", "баклажаны"],
+      "grains": ["рис", "гречка"],
+      "sauces": ["сметанный", "томатный", "сливочный", "лимонный", "чесночный"],
+      "herbs": ["укроп", "петрушка", "кинза", "базилик"],
+      "spices": ["черный перец", "паприка", "орегано", "тимьян"]
+    },
+    "substitutes": [
+      {"name": "Креветки", "similarity": "high"},
+      {"name": "Мидии", "similarity": "medium"},
+      {"name": "Осьминог", "similarity": "medium"},
+      {"name": "Гребешок", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "морепродукты",
+    "кальмар",
+    "моллюск",
+    "салаты",
+    "жарка",
+    "запекание",
+    "фарширование",
+    "диетический",
+    "белое мясо"
+  ]
+}

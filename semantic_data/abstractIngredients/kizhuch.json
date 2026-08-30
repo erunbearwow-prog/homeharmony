@@ -1,0 +1,72 @@
+{
+  "name": "Кижуч",
+  "name_normalized": "kizhuch",
+  "synonyms": "кижуч, серебряный лосось, лосось кижуч, рыба кижуч, Oncorhynchus kisutch, кета (ошибочно), тихоокеанский лосось, красная рыба, кижуч для засолки, кижуч для копчения, кижуч для жарки, кижуч для запекания, кохо, coho salmon",
+  "short_description": "Ценный тихоокеанский лосось с плотным, жирным мясом ярко-красного или оранжевого цвета, выраженным лососевым вкусом и пикантной горчинкой. Отличается от других лососей характерным серебристым отливом чешуи во время морского периода жизни. Универсален в кулинарии.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Кижуч — это ценный тихоокеанский лосось, который по питательности и вкусовым качествам уступает только нерке и чавыче. В морской период жизни кижуч имеет ярко-серебристую окраску, за что его часто называют «серебряным лососем» . Мясо кижуча отличается интенсивным красным или оранжевым цветом, плотной текстурой и высокой жирностью (до 6-8%) . Вкус у кижуча ярко выраженный, с характерной для лососей маслянистостью и легкой пикантной горчинкой . Икра кижуча мелкая, ярко-красная, с характерной горчинкой .</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — плотное, жирное (до 6-8%), интенсивного красного или оранжевого цвета </li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный лососевый, маслянистый, с легкой пикантной горчинкой </li><li class=\"ingredient-list-item\"><strong>Размер</strong> — до 80-100 см, масса до 10-15 кг, обычно 2-6 кг </li><li class=\"ingredient-list-item\"><strong>Калорийность</strong> — 140-160 ккал на 100 г (зависит от жирности) </li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — мясо содержит много полезных жиров Омега-3, является деликатесным продуктом</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Чистка</strong> — удалить чешую, выпотрошить, удалить жабры</li><li class=\"ingredient-list-item\"><strong>Филетирование</strong> — отделить филе от хребта и костей</li><li class=\"ingredient-list-item\"><strong>Разделка</strong> — на стейки, порционные куски, филе</li><li class=\"ingredient-list-item\"><strong>Засолка</strong> — для слабосоленого кижуча (классическое применение)</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — для жарки, запекания, гриля</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Засолка</strong> — слабосоленый кижуч, деликатесная закуска</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — горячее и холодное копчение</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — стейки на сковороде</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с овощами, травами</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — стейки на гриле</li><li class=\"ingredient-list-item\"><strong>Уха</strong> — из голов и хвостов</li><li class=\"ingredient-list-item\"><strong>Икра</strong> — зернистая красная икра кижуча (мелкая, с горчинкой)</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, помидоры, лук, перец, спаржа, брокколи</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочный, лимонный, горчичный, укропный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, зеленый лук, кинза</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, лимон, лавровый лист</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Нерка</strong> — более насыщенный вкус, жирнее</li><li class=\"ingredient-list-item\"><strong>Сёмга</strong> — более жирная, нежная</li><li class=\"ingredient-list-item\"><strong>Кета</strong> — менее жирная, более плотное мясо</li><li class=\"ingredient-list-item\"><strong>Горбуша</strong> — более мелкая, менее жирная</li><li class=\"ingredient-list-item\"><strong>Форель</strong> — более нежная, жирная</li></ul>",
+  "category": "Рыба и морепродукты",
+  "semantic_data": {
+    "properties": [
+      "рыба",
+      "лососевая",
+      "тихоокеанская",
+      "красная рыба",
+      "жирная",
+      "плотное мясо",
+      "насыщенный вкус",
+      "деликатесная",
+      "для засолки",
+      "для копчения",
+      "для жарки",
+      "для запекания"
+    ],
+    "preparations": [
+      "чистка и потрошение",
+      "удаление чешуи",
+      "филетирование",
+      "разделка на стейки",
+      "засолка",
+      "маринование"
+    ],
+    "cooking_methods": [
+      {"method": "засолка", "priority": "high"},
+      {"method": "копчение", "priority": "high"},
+      {"method": "жарка", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "гриль", "priority": "high"},
+      {"method": "варка ухи", "priority": "medium"}
+    ],
+    "applications": [
+      "закуски",
+      "вторые блюда",
+      "супы",
+      "консервация"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "помидоры", "лук", "перец", "спаржа", "брокколи"],
+      "sauces": ["сливочный", "лимонный", "горчичный", "укропный"],
+      "herbs": ["укроп", "петрушка", "зеленый лук", "кинза"],
+      "spices": ["черный перец", "лимон", "лавровый лист"]
+    },
+    "substitutes": [
+      {"name": "Нерка", "similarity": "high"},
+      {"name": "Сёмга", "similarity": "high"},
+      {"name": "Кета", "similarity": "medium"},
+      {"name": "Горбуша", "similarity": "medium"},
+      {"name": "Форель", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "рыба",
+    "лососевая",
+    "кижуч",
+    "серебряный лосось",
+    "красная рыба",
+    "тихоокеанский лосось",
+    "засолка",
+    "копчение",
+    "жарка",
+    "запекание"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "name": "Спагетти яичные",
+  "name_normalized": "spagetti_yaichnye",
+  "synonyms": "яичные спагетти, спагетти с яйцом, паста яичная, спагетти из яичного теста, тайваньские спагетти, яичная лапша, спагетти алль уово, спагетти алле уова, spagetti all'uovo",
+  "short_description": "Спагетти из пшеничной муки с добавлением яиц, благодаря чему они приобретают золотистый цвет, нежную текстуру и более насыщенный, яичный вкус. Традиционный вид пасты в северной и центральной Италии.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Яичные спагетти — это разновидность пасты, в тесто которой добавляют куриные яйца. В отличие от обычных спагетти, которые делают только из муки и воды, яичные спагетти имеют более насыщенный золотистый цвет, нежную, слегка бархатистую текстуру и выраженный яичный вкус. Яйца в составе теста делают пасту более питательной и калорийной, а также улучшают сцепление с соусами. Эта разновидность спагетти традиционна для северной и центральной Италии (Эмилия-Романья, Пьемонт, Тоскана).</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Форма</strong> — длинные нити круглого сечения</li><li class=\"ingredient-list-item\"><strong>Длина</strong> — 25-30 см (стандартная)</li><li class=\"ingredient-list-item\"><strong>Диаметр</strong> — 1,5-2 мм</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — золотистый, желтый (благодаря яйцам)</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, бархатистая, чуть более мягкая, чем у обычных спагетти</li><li class=\"ingredient-list-item\"><strong>Время варки</strong> — 7-10 минут (al dente)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — насыщенный яичный вкус, лучше удерживает соусы</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Варка</strong> — в большом количестве подсоленной воды</li><li class=\"ingredient-list-item\"><strong>Время</strong> — 7-10 минут (до состояния al dente)</li><li class=\"ingredient-list-item\"><strong>Слив</strong> — откинуть на дуршлаг, не промывать</li><li class=\"ingredient-list-item\"><strong>Сохранение воды</strong> — оставить немного воды от варки для соуса</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Спагетти Карбонара</strong> — классика с яйцом, панчеттой и пекорино</li><li class=\"ingredient-list-item\"><strong>Спагетти Альфредо</strong> — со сливочным маслом и пармезаном</li><li class=\"ingredient-list-item\"><strong>Спагетти с грибами</strong> — с лесными грибами или шампиньонами</li><li class=\"ingredient-list-item\"><strong>Спагетти с морепродуктами</strong> — с креветками, мидиями, кальмарами</li><li class=\"ingredient-list-item\"><strong>Спагетти с курицей</strong> — в сливочном или томатном соусе</li><li class=\"ingredient-list-item\"><strong>Спагетти с овощами</strong> — с цукини, баклажанами, перцем</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочные, масляные, яичные (карбонара), сырные</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — панчетта, бекон, курица, фарш</li><li class=\"ingredient-list-item\"><strong>Морепродукты</strong> — креветки, мидии, кальмары</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — цукини, баклажаны, помидоры, шпинат, грибы</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — пармезан, пекорино, моцарелла</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — базилик, петрушка, тимьян</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Обычные спагетти</strong> — без яиц, более нейтральный вкус</li><li class=\"ingredient-list-item\"><strong>Тальятелле яичные</strong> — более широкая плоская лапша</li><li class=\"ingredient-list-item\"><strong>Феттучини яичные</strong> — более широкая лапша</li><li class=\"ingredient-list-item\"><strong>Яичная лапша</strong> — азиатский вариант</li></ul>",
+  "category": "Макаронные изделия",
+  "semantic_data": {
+    "properties": [
+      "макароны",
+      "яичные",
+      "золотистые",
+      "нежные",
+      "бархатистые",
+      "насыщенный вкус",
+      "северная Италия",
+      "классические",
+      "al dente"
+    ],
+    "preparations": [
+      "варка в большом количестве подсоленной воды",
+      "варка до состояния al dente",
+      "слив на дуршлаг (без промывки)",
+      "сохранение воды от варки для соуса"
+    ],
+    "cooking_methods": [
+      {"method": "варка", "priority": "high"},
+      {"method": "запекание", "priority": "medium"},
+      {"method": "жарка (обжарка готовых спагетти)", "priority": "low"}
+    ],
+    "applications": [
+      "паста с соусом",
+      "запеканки",
+      "салаты",
+      "гарниры"
+    ],
+    "pairings": {
+      "protein": ["панчетта", "бекон", "курица", "фарш", "креветки", "мидии"],
+      "vegetables": ["помидоры", "чеснок", "базилик", "цукини", "баклажаны", "шпинат"],
+      "sauces": ["сливочный", "масляный", "яичный", "сырный", "томатный"],
+      "herbs": ["базилик", "петрушка", "тимьян"],
+      "spices": ["черный перец", "паприка", "чеснок", "мускатный орех"]
+    },
+    "substitutes": [
+      {"name": "Обычные спагетти", "similarity": "medium"},
+      {"name": "Тальятелле яичные", "similarity": "high"},
+      {"name": "Феттучини яичные", "similarity": "high"},
+      {"name": "Яичная лапша", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "паста",
+    "спагетти яичные",
+    "яичные макароны",
+    "итальянская кухня",
+    "паста с яйцом",
+    "северная италия",
+    "карбонара",
+    "классика"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "name": "Ерш",
+  "name_normalized": "ersh",
+  "synonyms": "ёрш, обыкновенный ёрш, рыба ёрш, колючая рыба, речной ёрш, окуневые, ерши, пресноводный ёрш, Gymnocephalus cernuus, Acerina cernua, кострик, бобырь, ногтик, калман, бубырь",
+  "short_description": "Мелкая пресноводная рыба семейства окуневых с колючими плавниками и густой слизью на теле. Дает наваристый бульон и ценится как основа для ухи, а также для жарки в панировке и тушения. Характеризуется большим количеством мелких костей.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Ёрш — это мелкая пресноводная рыба семейства окуневых, широко распространенная в реках и озерах Европы и Сибири. Отличается колючими плавниками и густой слизью, покрывающей тело. Достигает длины до 20 см и массы до 200 г, обычно 10-15 см и 50-100 г. Имеет серо-зеленую окраску с бурыми пятнами. Несмотря на обилие мелких костей, ценится за наваристый бульон, который используют как основу для ухи и супов. При жарке в панировке и тушении проявляет хорошие вкусовые качества, хотя его мясо считается костистым.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — с большим количеством мелких костей</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, рыбный, дает наваристый бульон</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — при жарке хрустящая снаружи, нежная внутри</li><li class=\"ingredient-list-item\"><strong>Размер</strong> — до 20 см, массой до 200 г</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — колючие плавники, обильная слизь</li><li class=\"ingredient-list-item\"><strong>Среды обитания</strong> — пресноводные водоемы Европы и Сибири</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойка</strong> — тщательно промыть, удалить слизь</li><li class=\"ingredient-list-item\"><strong>Потрошение</strong> — удалить внутренности, для ухи чешую можно не удалять</li><li class=\"ingredient-list-item\"><strong>Для жарки</strong> — обвалять в муке, жарить целиком или разрезать на части</li><li class=\"ingredient-list-item\"><strong>Для бульона</strong> — залить водой, варить до разваривания</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Уха</strong> — классическое применение, наваристый бульон</li><li class=\"ingredient-list-item\"><strong>Основа для бульона</strong> — для стерляжьей и осетровой ухи</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — целиком в муке или панировке</li><li class=\"ingredient-list-item\"><strong>Рагу</strong> — с картофелем, капустой, морковью</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в сметане</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, лук, морковь, капуста</li><li class=\"ingredient-list-item\"><strong>Коренья</strong> — корень петрушки, корень сельдерея</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — лавровый лист, черный перец, соль</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Окунь</strong> — схожая семейная принадлежность, но менее костистый</li><li class=\"ingredient-list-item\"><strong>Снеток</strong> — мелкая рыба для ухи</li><li class=\"ingredient-list-item\"><strong>Мелкая плотва</strong> — для жарки</li></ul>",
+  "category": "Рыба и морепродукты",
+  "semantic_data": {
+    "properties": [
+      "пресноводная",
+      "мелкая",
+      "колючая",
+      "костистая",
+      "наваристая",
+      "окуневая",
+      "речная",
+      "уха",
+      "жареная"
+    ],
+    "preparations": [
+      "мойка и удаление слизи",
+      "потрошение",
+      "удаление плавников и хвоста (для рагу)",
+      "обваливание в муке",
+      "обжарка целиком или частями"
+    ],
+    "cooking_methods": [
+      {"method": "варка (уха, бульон)", "priority": "high"},
+      {"method": "жарка в панировке", "priority": "high"},
+      {"method": "тушение в сметане", "priority": "medium"},
+      {"method": "приготовление рагу", "priority": "medium"}
+    ],
+    "applications": [
+      "супы и бульоны",
+      "вторые блюда",
+      "закуски"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "лук", "морковь", "капуста"],
+      "sauces": ["сметанный"],
+      "herbs": ["петрушка", "укроп"],
+      "spices": ["лавровый лист", "черный перец", "соль"]
+    },
+    "substitutes": [
+      {"name": "Окунь", "similarity": "medium"},
+      {"name": "Снеток", "similarity": "medium"},
+      {"name": "Плотва", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "рыба",
+    "пресноводная",
+    "ерш",
+    "речная рыба",
+    "уха",
+    "бульон",
+    "жарка",
+    "костистая",
+    "колючая"
+  ]
+}

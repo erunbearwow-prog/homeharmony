@@ -1,0 +1,89 @@
+{
+  "name": "Сыр Рокфор",
+  "name_normalized": "syr_rokfor",
+  "synonyms": "рокфор, roquefort, французский сыр, голубой сыр, сыр с голубой плесенью, сыр с синей плесенью, сыр с плесенью, королевский сыр, сыр из овечьего молока, рокфор для салатов, рокфор для соусов, сырная тарелка, Penicillium roqueforti",
+  "short_description": "Легендарный французский голубой сыр из овечьего молока с защищенным наименованием происхождения (AOC). Имеет маслянистую, рассыпчатую текстуру с характерными голубыми прожилками плесени Penicillium roqueforti. Отличается острым, пикантным, солоноватым вкусом с яркими ореховыми и грибными нотками.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Рокфор — это легендарный французский сыр с голубой плесенью, который считается одним из самых знаменитых сыров в мире. Он изготавливается из непастеризованного овечьего молока и созревает в естественных известняковых пещерах в окрестностях города Рокфор-сюр-Сульзон (Roquefort-sur-Soulzon) на юге Франции. Для развития характерной голубой плесени в сырную массу вводят споры Penicillium roqueforti, а во время созревания сыр протыкают специальными иглами для доступа кислорода. Рокфор имеет маслянистую, рассыпчатую текстуру с мраморным рисунком из голубых прожилок и яркий, острый, слегка жгучий вкус с ореховыми и грибными нотками. Этот сыр имеет статус AOC (Appellation d'Origine Contrôlée) — защищенное наименование места происхождения.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тип</strong> — голубой сыр с плесенью</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — маслянистая, рассыпчатая, кремовая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — острый, пикантный, солоноватый, с ореховыми и грибными нотками</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — яркий, выраженный, с нотами плесени и овечьего молока</li><li class=\"ingredient-list-item\"><strong>Цвет мякоти</strong> — белый, с голубыми и сине-зелеными прожилками плесени</li><li class=\"ingredient-list-item\"><strong>Молоко</strong> — овечье (непастеризованное)</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — 45-50%</li><li class=\"ingredient-list-item\"><strong>Созревание</strong> — 3-5 месяцев</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 1 месяца в холодильнике</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — статус AOC, созревание в пещерах</li></ul><h2 class=\"ingredient-title\">Подготовка и хранение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике в герметичной упаковке (чтобы не передал запах другим продуктам)</li><li class=\"ingredient-list-item\"><strong>Температура подачи</strong> — достать за 30-40 минут до подачи</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — кубиками, ломтиками или крошкой для салатов</li><li class=\"ingredient-list-item\"><strong>Крошение</strong> — легко крошится для салатов и соусов</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сырная тарелка</strong> — самостоятельная закуска с фруктами и орехами</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с грушей, рукколой, виноградом, орехами</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочные соусы для мяса и пасты</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — на хлебе с медом, на тостах</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — к стейку, к запеченному мясу</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — груша, инжир, виноград, финики</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль, пекан</li><li class=\"ingredient-list-item\"><strong>Мед</strong> — отлично смягчает остроту</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — багет, чиабатта, зерновой, ржаной</li><li class=\"ingredient-list-item\"><strong>Вино</strong> — сладкое белое (Сотерн), красное (Каберне, Пино Нуар), портвейн</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Горгонзола</strong> — итальянский, более маслянистый и мягкий</li><li class=\"ingredient-list-item\"><strong>Дорблю</strong> — немецкий, более сухой и менее соленый</li><li class=\"ingredient-list-item\"><strong>Стилтон</strong> — английский, более плотный и острый</li><li class=\"ingredient-list-item\"><strong>Любой сыр с голубой плесенью</strong></li></ul>",
+  "category": "Молочные продукты",
+  "semantic_data": {
+    "properties": [
+      "голубой сыр",
+      "французский",
+      "овечье молоко",
+      "AOC",
+      "с плесенью",
+      "благородная плесень",
+      "Penicillium roqueforti",
+      "пикантный",
+      "острый",
+      "солоноватый",
+      "маслянистый",
+      "рассыпчатый",
+      "сырная тарелка"
+    ],
+    "preparations": [
+      "хранение в холодильнике в герметичной упаковке",
+      "достать за 30-40 минут до подачи",
+      "крошение или нарезка кубиками",
+      "использование в соусах и салатах"
+    ],
+    "cooking_methods": [
+      {
+        "method": "подача в сырной тарелке (с фруктами, орехами, медом)",
+        "priority": "high"
+      },
+      {
+        "method": "использование в салатах (крошкой или кубиками)",
+        "priority": "high"
+      },
+      {
+        "method": "добавление в соусы (для мяса и пасты)",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "сырная тарелка",
+      "салаты",
+      "соусы для мяса и пасты",
+      "закуски (с хлебом, медом)",
+      "к мясным блюдам"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["руккола", "шпинат"],
+      "sauces": ["мед"],
+      "herbs": ["тимьян"],
+      "spices": ["черный перец"]
+    },
+    "substitutes": [
+      {
+        "name": "Горгонзола",
+        "similarity": "high"
+      },
+      {
+        "name": "Дорблю",
+        "similarity": "high"
+      },
+      {
+        "name": "Стилтон",
+        "similarity": "medium"
+      },
+      {
+        "name": "Любой сыр с голубой плесенью",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "сыр",
+    "рокфор",
+    "голубой сыр",
+    "французский сыр",
+    "овечий сыр",
+    "сыр с плесенью",
+    "AOC",
+    "благородная плесень",
+    "сырная тарелка",
+    "деликатес"
+  ]
+}

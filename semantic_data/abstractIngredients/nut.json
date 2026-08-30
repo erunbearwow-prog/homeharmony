@@ -1,0 +1,73 @@
+{
+  "name": "Нут",
+  "name_normalized": "nut",
+  "synonyms": "турецкий горох, бараний горох, нухат, нут турецкий, chickpea, garbanzo bean, хомусс, нохут",
+  "short_description": "Однолетнее бобовое растение, дающее съедобные семена — бобы нута. Имеет плотную маслянистую текстуру и ореховый вкус с лёгкой сладостью. Богат белком, клетчаткой, железом и витаминами группы B. Широко используется в средиземноморской, ближневосточной и индийской кухне.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Нут (турецкий или бараний горох) — это бобовая культура, известная своими плотными, маслянистыми семенами с характерным ореховым вкусом. В отличие от обычного гороха, нут имеет более крупные бобы (до 1 см в диаметре), плотную текстуру и высокое содержание растительного белка и клетчатки. Широко распространён в кухнях Ближнего Востока, Средиземноморья, Индии и Северной Африки. Из нута готовят хумус, фалафель, супы, салаты и другие блюда.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, маслянистая, рассыпчатая (после варки)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — ореховый, слегка сладковатый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — бежевый, светло-коричневый</li><li class=\"ingredient-list-item\"><strong>Белки</strong> — до 20%</li><li class=\"ingredient-list-item\"><strong>Клетчатка</strong> — до 12%</li><li class=\"ingredient-list-item\"><strong>Время варки</strong> — 1,5-2 часа (после замачивания)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — в холодной воде (8-12 часов) для размягчения</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — под проточной водой</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — в подсоленной воде 1,5-2 часа</li><li class=\"ingredient-list-item\"><strong>Слив воды</strong> — после варки</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хумус</strong> — классическая паста из нута</li><li class=\"ingredient-list-item\"><strong>Фалафель</strong> — жареные шарики из нута</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, овощами, оливками</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — наваристые, с пряностями</li><li class=\"ingredient-list-item\"><strong>Рагу</strong> — с мясом или овощами</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — обжаренный с пряностями</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — томаты, лук, чеснок, перец</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, кинза, мята</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — кумин, паприка, куркума</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — тахини, лимонный, оливковое масло</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — баранина, курица</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Консервированный нут</strong> — готовый продукт</li><li class=\"ingredient-list-item\"><strong>Фасоль (белая)</strong> — для салатов</li><li class=\"ingredient-list-item\"><strong>Чечевица</strong> — для супов</li></ul>",
+  "category": "Бобовые, крупы, мука, макароны",
+  "semantic_data": {
+    "properties": [
+      "бобовый",
+      "нут",
+      "белковый",
+      "ореховый_вкус",
+      "вегетарианский",
+      "средиземноморская_кухня"
+    ],
+    "preparations": [
+      "замачивание_8-12_часов",
+      "промывка",
+      "варка_1.5-2_часа"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_хумуса",
+        "priority": "high"
+      },
+      {
+        "method": "обжарка_с_пряностями",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "хумус",
+      "фалафель",
+      "салаты",
+      "супы",
+      "рагу"
+    ],
+    "pairings": {
+      "protein": ["баранина", "курица"],
+      "vegetables": ["томаты", "лук", "чеснок", "перец"],
+      "herbs": ["петрушка", "кинза", "мята"],
+      "spices": ["кумин", "паприка", "куркума"],
+      "sauces": ["тахини", "лимонный_сок", "оливковое_масло"]
+    },
+    "substitutes": [
+      {
+        "name": "Консервированный нут",
+        "similarity": "high"
+      },
+      {
+        "name": "Белая фасоль",
+        "similarity": "medium"
+      },
+      {
+        "name": "Чечевица",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "бобовые",
+    "нут",
+    "турецкий_горох",
+    "хумус",
+    "фалафель",
+    "вегетарианский"
+  ]
+}

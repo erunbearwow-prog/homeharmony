@@ -1,0 +1,71 @@
+{
+  "name": "Калина",
+  "name_normalized": "kalina",
+  "synonyms": "калина, калина красная, калина обыкновенная, ягода калина, калина для варенья, калина для морса, калина для киселя, калина для пирогов, калина для чая, Viburnum opulus",
+  "short_description": "Ярко-красные ягоды калины с терпким кисло-горьким вкусом и характерным ароматом. Созревают осенью, богаты витамином C, каротиноидами и дубильными веществами. Используются для варенья, морсов, компотов, киселей, начинок для пирогов и в народной медицине.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Калина — это ягодный кустарник, плоды которого известны своим ярким красным цветом, терпким кисло-горьким вкусом и характерным ароматом. Ягоды созревают в конце августа — сентябре, но наиболее вкусными становятся после первых заморозков, когда уходит горечь. Внутри ягоды находится плоская косточка. Калина богата витамином C, каротиноидами, дубильными веществами и органическими кислотами. В кулинарии калину используют для приготовления варенья, джема, морсов, компотов, киселей, соусов, начинок для пирогов, а также сушат и замораживают для зимнего использования.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочная, с плотной кожурой, внутри косточка</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — терпкий, кислый, с заметной горчинкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — ярко-красный, алый</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — сентябрь-октябрь (после заморозков)</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике до 5-7 дней, замороженная до 6 месяцев</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — горечь уходит после первых заморозков или при термической обработке</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сбор</strong> — собирать после заморозков или замораживать свежие для удаления горечи</li><li class=\"ingredient-list-item\"><strong>Мойка</strong> — промыть под проточной водой</li><li class=\"ingredient-list-item\"><strong>Отделение ягод</strong> — отделить ягоды от веточек</li><li class=\"ingredient-list-item\"><strong>Измельчение</strong> — для соусов и напитков</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Варенье и джем</strong> — классическое применение</li><li class=\"ingredient-list-item\"><strong>Морс</strong> — освежающий напиток</li><li class=\"ingredient-list-item\"><strong>Компот</strong> — в сочетании с яблоками</li><li class=\"ingredient-list-item\"><strong>Кисель</strong> — для десертов</li><li class=\"ingredient-list-item\"><strong>Начинка для пирогов</strong> — с сахаром или яблоками</li><li class=\"ingredient-list-item\"><strong>Соус</strong> — к мясу</li><li class=\"ingredient-list-item\"><strong>Пастила</strong> — традиционный русский десерт</li><li class=\"ingredient-list-item\"><strong>Заморозка</strong> — для использования зимой</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Яблоки</strong> — классика для компотов и начинок</li><li class=\"ingredient-list-item\"><strong>Мед</strong> — отлично смягчает горечь</li><li class=\"ingredient-list-item\"><strong>Сахар</strong> — для варенья и джема</li><li class=\"ingredient-list-item\"><strong>Цитрусовые</strong> — добавляют свежесть</li><li class=\"ingredient-list-item\"><strong>Чеснок</strong> — в соусах к мясу</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — в мясных блюдах</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Клюква</strong> — похожая кислинка, без горечи</li><li class=\"ingredient-list-item\"><strong>Брусника</strong> — терпкая, кисло-сладкая</li><li class=\"ingredient-list-item\"><strong>Черная смородина</strong> — в компотах и варенье</li><li class=\"ingredient-list-item\"><strong>Рябина</strong> — с похожей горечью</li></ul>",
+  "category": "Фрукты",
+  "semantic_data": {
+    "properties": [
+      "ягода",
+      "красная",
+      "терпкая",
+      "кислая",
+      "горькая",
+      "осенняя",
+      "витаминная",
+      "традиционная",
+      "полевая",
+      "лесная"
+    ],
+    "preparations": [
+      "сбор после заморозков",
+      "мойка под проточной водой",
+      "отделение ягод от веточек",
+      "замораживание (для удаления горечи)",
+      "измельчение для соусов"
+    ],
+    "cooking_methods": [
+      {"method": "приготовление варенья и джема", "priority": "high"},
+      {"method": "приготовление морса", "priority": "high"},
+      {"method": "приготовление компота", "priority": "high"},
+      {"method": "замораживание", "priority": "high"},
+      {"method": "приготовление соусов к мясу", "priority": "medium"},
+      {"method": "использование в начинках", "priority": "medium"},
+      {"method": "сушка", "priority": "low"}
+    ],
+    "applications": [
+      "варенье и джемы",
+      "напитки",
+      "соусы",
+      "начинки для пирогов",
+      "пастила",
+      "заморозка"
+    ],
+    "pairings": {
+      "protein": ["мясо (к мясу)", "чеснок"],
+      "vegetables": [],
+      "fruits": ["яблоки", "цитрусовые"],
+      "sauces": ["мед"],
+      "herbs": ["зелень"],
+      "spices": []
+    },
+    "substitutes": [
+      {"name": "Клюква", "similarity": "high"},
+      {"name": "Брусника", "similarity": "high"},
+      {"name": "Черная смородина", "similarity": "medium"},
+      {"name": "Рябина", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "ягода",
+    "калина",
+    "красная ягода",
+    "осенняя ягода",
+    "варенье",
+    "морс",
+    "компот",
+    "начинка для пирогов",
+    "витаминная"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "name": "Боярышник",
+  "name_normalized": "boyaryshnik",
+  "synonyms": "боярка (разг.), глод, шиповник (иногда путают), ягоды боярышника, hawthorn (англ.)",
+  "short_description": "Плоды кустарника или небольшого дерева семейства Розовые, красные или тёмно-красные ягоды с терпким кисловато-сладким вкусом. Ценятся за лекарственные свойства, используются в чаях, настойках, варенье и десертах.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Боярышник — это плоды (ягоды) колючего кустарника или небольшого дерева из семейства Розовые, близкого родственника шиповника и рябины. Ягоды имеют шаровидную или яйцевидную форму, диаметром до 1 см, тёмно-красного, бордового или почти чёрного цвета. Мякоть мясистая, мучнистая, с характерным терпким кисловато-сладким вкусом. Боярышник издавна ценится в народной медицине за укрепляющее действие на сердечно-сосудистую систему, богат флавоноидами, витаминами C и группы B, калием, магнием. В кулинарии используется для приготовления чаёв, настоек, варенья, джемов, компотов и в качестве начинки для выпечки.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — терпкий, кисловато-сладкий</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мясистая, мучнистая</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — тёмно-красный, бордовый, почти чёрный</li><li class=\"ingredient-list-item\"><strong>Сбор</strong> — сентябрь-октябрь</li><li class=\"ingredient-list-item\"><strong>Лекарственные свойства</strong> — сердечно-сосудистая система</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Переборка</strong> — удалить листья, веточки, незрелые ягоды</li><li class=\"ingredient-list-item\"><strong>Мойка</strong> — промыть в холодной воде</li><li class=\"ingredient-list-item\"><strong>Сушка</strong> — для длительного хранения (в сушилке или на воздухе)</li><li class=\"ingredient-list-item\"><strong>Замораживание</strong> — для зимнего использования</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Чай</strong> — сушёный боярышник, с мёдом</li><li class=\"ingredient-list-item\"><strong>Настойка</strong> — на водке или спирту</li><li class=\"ingredient-list-item\"><strong>Варенье и джем</strong> — с сахаром</li><li class=\"ingredient-list-item\"><strong>Компот</strong> — в смеси с другими ягодами</li><li class=\"ingredient-list-item\"><strong>Начинка</strong> — для пирогов, пирожков, булочек</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мёд</strong> — в чае и десертах</li><li class=\"ingredient-list-item\"><strong>Лимон</strong> — для кислоты</li><li class=\"ingredient-list-item\"><strong>Сахар</strong> — для варенья</li><li class=\"ingredient-list-item\"><strong>Рябина</strong> — в компотах</li><li class=\"ingredient-list-item\"><strong>Яблоки</strong> — в выпечке</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Шиповник</strong> — похожее применение</li><li class=\"ingredient-list-item\"><strong>Рябина</strong> — похожая терпкость</li><li class=\"ingredient-list-item\"><strong>Клюква</strong> — для кислинки</li></ul>",
+  "category": "ФРУКТЫ И ЯГОДЫ",
+  "semantic_data": {
+    "properties": [
+      "ягода",
+      "терпкий",
+      "кисловато-сладкий",
+      "лекарственный",
+      "витаминный"
+    ],
+    "preparations": [
+      "переборка_и_мойка",
+      "сушка",
+      "замораживание"
+    ],
+    "cooking_methods": [
+      {"method": "сушка", "priority": "high"},
+      {"method": "варка_варенья", "priority": "high"},
+      {"method": "настаивание", "priority": "high"},
+      {"method": "заваривание_чая", "priority": "high"}
+    ],
+    "applications": [
+      "напитки",
+      "варенье",
+      "настойки",
+      "начинки"
+    ],
+    "pairings": {
+      "protein": [],
+      "fruits": ["яблоки", "рябина"],
+      "sweeteners": ["мёд", "сахар"],
+      "spices": ["лимон"],
+      "herbs": ["мята"]
+    },
+    "substitutes": [
+      {"name": "Шиповник", "similarity": "high"},
+      {"name": "Рябина", "similarity": "medium"},
+      {"name": "Клюква", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "ягоды",
+    "боярышник",
+    "лекарственное_растение",
+    "чай",
+    "варенье",
+    "настойка"
+  ]
+}

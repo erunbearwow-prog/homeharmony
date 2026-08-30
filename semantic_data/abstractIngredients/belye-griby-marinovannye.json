@@ -1,0 +1,100 @@
+{
+  "name": "Белые грибы маринованные",
+  "name_normalized": "belye-griby-marinovannye",
+  "synonyms": "",
+  "short_description": "Маринованные белые грибы — деликатесная закуска из отварных грибов с добавлением уксуса, сахара, соли и пряностей. Имеют упругую текстуру, кисло-сладкий пряный вкус и насыщенный лесной аромат.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Маринованные белые грибы — это закуска из отварных грибов, залитых ароматным маринадом на основе уксуса, сахара, соли и пряностей (лавровый лист, душистый и чёрный перец, гвоздика, чеснок). Белые грибы считаются одними из самых ценных лесных грибов, и в маринованном виде они сохраняют свою плотную упругую текстуру и благородный лесной аромат. Закуска имеет приятный кисло-сладкий вкус с пряными нотками. Широко используется как самостоятельная холодная закуска, ингредиент для салатов и дополнение к мясным блюдам.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, хрустящая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисло-сладкий, пряный, насыщенный грибной</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — светло-коричневый</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 1 года в стеклянной банке</li><li class=\"ingredient-list-item\"><strong>Способ приготовления</strong> — варка, маринование</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Открывание банки</strong> — перед подачей открыть, слить маринад (по желанию)</li><li class=\"ingredient-list-item\"><strong>Добавление масла и лука</strong> — для улучшения вкуса</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике после вскрытия</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Холодная закуска</strong> — с луком, маслом, зеленью</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с картофелем, огурцами, мясом</li><li class=\"ingredient-list-item\"><strong>Гарнир</strong> — к мясу, птице, картофелю</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для пирогов и тарталеток</li><li class=\"ingredient-list-item\"><strong>Винегрет</strong> — для добавления</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Лук</strong> — репчатый, красный, зелёный</li><li class=\"ingredient-list-item\"><strong>Масло</strong> — подсолнечное, оливковое</li><li class=\"ingredient-list-item\"><strong>Сметана</strong> — для заправки</li><li class=\"ingredient-list-item\"><strong>Картофель</strong> — варёный, жареный, пюре</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, зелёный лук</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, свинина, говядина</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Маринованные подберёзовики</strong> — похожий продукт</li><li class=\"ingredient-list-item\"><strong>Маринованные маслята</strong> — схожий вкус</li><li class=\"ingredient-list-item\"><strong>Маринованные опята</strong> — более мягкие</li><li class=\"ingredient-list-item\"><strong>Солёные белые грибы</strong> — другой вид</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/marinovanie-gribov/'>Как мариновать белые грибы</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/salat-s-gribami/'>Салат с маринованными белыми грибами</a></li></ul>",
+  "category": "Консервы, заготовки",
+  "semantic_data": {
+    "properties": [
+      "маринованный",
+      "белые_грибы",
+      "лесные_грибы",
+      "плотный",
+      "хрустящий",
+      "кисло-сладкий",
+      "закуска",
+      "деликатес"
+    ],
+    "preparations": [
+      "открывание_банки",
+      "слив_маринада_по_желанию",
+      "добавление_масла_и_лука"
+    ],
+    "cooking_methods": [
+      {
+        "method": "маринование",
+        "priority": "high"
+      },
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "салатное_применение",
+        "priority": "high"
+      },
+      {
+        "method": "холодная_подача",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "холодная_закуска",
+      "салаты",
+      "гарнир",
+      "начинки",
+      "винегрет"
+    ],
+    "pairings": {
+      "protein": [
+        "курица",
+        "свинина",
+        "говядина"
+      ],
+      "vegetables": [
+        "лук",
+        "картофель",
+        "огурцы"
+      ],
+      "herbs": [
+        "укроп",
+        "петрушка",
+        "зеленый_лук"
+      ],
+      "dairy": [
+        "сметана"
+      ],
+      "oils": [
+        "подсолнечное_масло",
+        "оливковое_масло"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Маринованные подберёзовики",
+        "similarity": "high"
+      },
+      {
+        "name": "Маринованные маслята",
+        "similarity": "high"
+      },
+      {
+        "name": "Маринованные опята",
+        "similarity": "medium"
+      },
+      {
+        "name": "Солёные белые грибы",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "грибы",
+    "белые_грибы",
+    "маринованные",
+    "заготовки",
+    "закуска",
+    "салат"
+  ]
+}

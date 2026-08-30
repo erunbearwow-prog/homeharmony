@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'imagekit',
     'django_localekit',
+    'django_ckeditor_5',
     'accounts.apps.AccountsConfig',   # ← ВРЕМЕННО
     'kitchen.apps.KitchenConfig',        # ← ОСТАВЛЯЕМ
     'cleaning.apps.CleaningConfig',   # ← ВРЕМЕННО
@@ -80,6 +81,20 @@ TEMPLATES = [
         },
     },
 ]
+
+CKEDITOR_5_CONFIGS = {
+    'default': {
+        'toolbar': ['heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote', 'imageUpload'],
+        'language': 'ru',
+        'image': {
+            'upload': {
+                'types': ['jpg', 'jpeg', 'png', 'gif', 'webp'],
+            }
+        }
+    }
+}
+
+CKEDITOR_5_FILE_STORAGE = "django.core.files.storage.DefaultStorage"
 
 WSGI_APPLICATION = 'homeharmony.wsgi.application'
 

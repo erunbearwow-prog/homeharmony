@@ -157,6 +157,8 @@ class IngredientCategory(models.Model):
 
 
 # ======================== АБСТРАКТНЫЙ ИНГРЕДИЕНТ ========================
+# kitchen/models.py
+
 class AbstractIngredient(models.Model):
     """Абстрактный ингредиент — базовый сферический конь с КБЖУ"""
 
@@ -164,8 +166,28 @@ class AbstractIngredient(models.Model):
     name = models.CharField(max_length=300, db_index=True, verbose_name="Название")
     name_normalized = models.CharField(max_length=300, blank=True, db_index=True,
                                        verbose_name="Нормализованное название")
-    description = models.TextField(blank=True, verbose_name="Описание")
-    description_ru = models.TextField(blank=True, verbose_name="Описание RU")
+
+    synonyms = models.CharField(
+        max_length=500,
+        blank=True,
+        verbose_name="Синонимы",
+        help_text="Альтернативные названия через запятую (например: томат, помидор; курага, урюк)"
+    )
+
+    # Краткое описание для карточек и списков
+    short_description = models.CharField(
+        max_length=500,
+        blank=True,
+        verbose_name="Краткое описание",
+        help_text="Краткая характеристика для карточек и списков (до 500 символов)"
+    )
+
+    # Полное описание
+    description = models.TextField(
+        blank=True,
+        verbose_name="Полное описание (HTML)",
+        help_text="Поддерживает HTML-разметку: <b>жирный</b>, <i>курсив</i>, <a href='...'>ссылки</a>, <ul><li>списки</li></ul>"
+    )
 
     # ===== КАТЕГОРИЯ =====
     category = models.ForeignKey(
@@ -182,6 +204,14 @@ class AbstractIngredient(models.Model):
         blank=True,
         related_name='abstract_ingredients',
         verbose_name="Семантические теги"
+    )
+
+    # ===== СЕМАНТИЧЕСКИЕ ДАННЫЕ (СТРУКТУРИРОВАННЫЕ) =====
+    semantic_data = models.JSONField(
+        default=dict,
+        blank=True,
+        verbose_name="Семантические данные",
+        help_text="Структурированная информация: свойства, методы, сочетаемость, замены"
     )
 
     # ===== КБЖУ =====
@@ -283,8 +313,6 @@ class AbstractIngredient(models.Model):
         return self.name
 
     def save(self, *args, **kwargs):
-        if not self.slug:
-            self.slug = slugify(self.name)
         if not self.name_normalized:
             self.name_normalized = self.name.replace(' ', '').lower()
         super().save(*args, **kwargs)
@@ -799,6 +827,13 @@ class Recipe(models.Model):
         verbose_name='Дата сохранения'
     )
 
+    # ===== УСЛОВИЯ И СРОКИ ХРАНЕНИЯ =====
+    storage_conditions = models.TextField(
+        blank=True,
+        verbose_name="Условия и сроки хранения",
+        help_text="Температура, влажность, срок годности готового блюда"
+    )
+
     is_favorite = models.BooleanField(default=False, verbose_name='В избранном')
     saved_notes = models.TextField(blank=True, verbose_name='Заметки')
 
@@ -1040,11 +1075,6 @@ class SemanticTag(models.Model):
         verbose_name="Создал"
     )
 
-    # ===== СВЯЗИ =====
-    # Связь с абстрактными ингредиентами через AbstractIngredient.semantic_tags
-    # Используем related_name='abstract_ingredients'
-
-    # ===== МЕТА =====
     class Meta:
         verbose_name = "Семантический тег"
         verbose_name_plural = "Семантические теги"
@@ -1067,7 +1097,9 @@ class SemanticTag(models.Model):
         return self.name
 
     def save(self, *args, **kwargs):
+        # Генерируем slug если его нет
         if not self.slug:
+            from slugify import slugify
             self.slug = slugify(self.name)
         super().save(*args, **kwargs)
 
@@ -1455,3 +1487,138 @@ class SemanticRelation(models.Model):
 def update_recipe_nutrition(sender, instance, **kwargs):
     if instance.pk:
         pass
+
+#=============== 18. ЗАМЕНА ИНГРЕДИЕНТА =================================
+class IngredientSubstitutionRule(models.Model):
+    """Универсальное правило замены ингредиента"""
+
+    # ===== ИСХОДНЫЙ ИНГРЕДИЕНТ (что заменяем) =====
+    original_ingredient = models.ForeignKey(
+        'AbstractIngredient',
+        on_delete=models.CASCADE,
+        related_name='substitution_rules',
+        verbose_name='Исходный ингредиент'
+    )
+
+    # ===== ВАРИАНТЫ ЗАМЕНЫ (ручной выбор) =====
+    # Можно выбрать ЛИБО абстрактный ингредиент, ЛИБО брендированный продукт
+    substitute_ingredient = models.ForeignKey(
+        'AbstractIngredient',
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name='+',
+        verbose_name='Заменяющий ингредиент (абстрактный)'
+    )
+
+    substitute_branded = models.ForeignKey(
+        'BrandedIngredient',
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name='+',
+        verbose_name='Заменяющий продукт (брендированный)'
+    )
+
+    # ===== АВТОМАТИЧЕСКИЙ ПОДБОР ПО ТЕГАМ =====
+    # Если не выбран конкретный ингредиент, ищем по тегам
+    required_tags = models.ManyToManyField(
+        'SemanticTag',
+        blank=True,
+        related_name='substitution_requirements',
+        verbose_name='Обязательные теги'
+    )
+
+    optional_tags = models.ManyToManyField(
+        'SemanticTag',
+        blank=True,
+        related_name='substitution_optional',
+        verbose_name='Желательные теги'
+    )
+
+    forbidden_tags = models.ManyToManyField(
+        'SemanticTag',
+        blank=True,
+        related_name='substitution_forbidden',
+        verbose_name='Запрещённые теги'
+    )
+
+    # ===== ПАРАМЕТРЫ ЗАМЕНЫ =====
+    ratio = models.FloatField(
+        default=1.0,
+        verbose_name='Коэффициент',
+        help_text='1 ст.л. пасты = 2 ст.л. томатов → ratio=2'
+    )
+
+    unit = models.CharField(
+        max_length=20,
+        choices=UNIT_CHOICES,
+        default='г',
+        verbose_name='Единица измерения замены'
+    )
+
+    # ===== ТИП ЗАМЕНЫ =====
+    SUBSTITUTION_TYPES = [
+        ('exact', 'Точная замена (конкретный ингредиент)'),
+        ('branded', 'Брендированный продукт'),
+        ('tag_based', 'По тегам (автоматический подбор)'),
+        ('hybrid', 'Гибридный (ручной + теги)'),
+    ]
+
+    substitution_type = models.CharField(
+        max_length=20,
+        choices=SUBSTITUTION_TYPES,
+        default='exact',
+        verbose_name='Тип замены'
+    )
+
+    # ===== ПРИОРИТЕТ =====
+    priority = models.IntegerField(
+        default=0,
+        verbose_name='Приоритет',
+        help_text='Чем выше число, тем предпочтительнее замена'
+    )
+
+    # ===== ДОПОЛНИТЕЛЬНО =====
+    notes = models.TextField(
+        blank=True,
+        verbose_name='Примечания',
+        help_text='Почему эта замена подходит, особенности использования'
+    )
+
+    is_active = models.BooleanField(default=True, verbose_name='Активна')
+
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    created_by = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        verbose_name='Создал'
+    )
+
+    class Meta:
+        verbose_name = 'Правило замены'
+        verbose_name_plural = 'Правила замен'
+        ordering = ['-priority', 'original_ingredient__name']
+
+    def __str__(self):
+        target = self.substitute_ingredient or self.substitute_branded
+        if target:
+            return f"{self.original_ingredient.name} → {target}"
+        else:
+            tags = self.required_tags.all()
+            if tags:
+                tag_names = ', '.join([t.name for t in tags[:3]])
+                return f"{self.original_ingredient.name} → (по тегам: {tag_names}...)"
+            return f"{self.original_ingredient.name} → (автоподбор)"
+
+    def get_target_display(self):
+        """Возвращает отображаемое имя замены"""
+        if self.substitute_ingredient:
+            return self.substitute_ingredient.name
+        elif self.substitute_branded:
+            return f"{self.substitute_branded.brand} {self.substitute_branded.product_name}"
+        else:
+            return "Автоподбор по тегам"

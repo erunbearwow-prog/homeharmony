@@ -1,0 +1,118 @@
+{
+  "name": "Анчоусы атлантические",
+  "name_normalized": "anchousy-atlanticheskie",
+  "synonyms": "",
+  "short_description": "Мелкая жирная рыба семейства анчоусовых, обитающая в Атлантическом океане. Имеет вытянутое тело, серебристый цвет и характерный насыщенный солёно-пряный вкус после обработки.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Анчоусы атлантические (Engraulis encrasicolus) — мелкая стайная рыба семейства анчоусовых, обитающая в Атлантическом океане, Средиземном и Чёрном морях. Имеет вытянутое тело длиной 10–20 см, серебристый цвет с синевато-зелёной спинкой. Отличается высоким содержанием жира (до 15%), богата омега-3 жирными кислотами, витаминами и минералами. В кулинарии чаще всего используется в солёном и маринованном виде, реже — в свежем или копчёном. Ценится за насыщенный, пряный вкус, который придаёт блюдам глубину и пикантность.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — плотное, жирное (до 15% жира)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, солёно-пряный, с характерным рыбным ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — серебристый, с синевато-зелёной спинкой</li><li class=\"ingredient-list-item\"><strong>Размер</strong> — 10–20 см</li><li class=\"ingredient-list-item\"><strong>Омега-3</strong> — богатый источник полиненасыщенных жирных кислот</li><li class=\"ingredient-list-item\"><strong>Соль</strong> — традиционно засаливается в рассоле с пряностями</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Солёные анчоусы</strong> — промыть от соли, вымочить в воде или молоке</li><li class=\"ingredient-list-item\"><strong>Маринованные</strong> — промыть, обсушить, использовать в салатах</li><li class=\"ingredient-list-item\"><strong>Свежие</strong> — выпотрошить, удалить голову и кости</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — цезарь, нисуаз, греческий (добавляют пикантность)</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — соус тартар, в качестве основы для рыбных соусов</li><li class=\"ingredient-list-item\"><strong>Пицца</strong> — классическая пицца с анчоусами (napoli, siciliana)</li><li class=\"ingredient-list-item\"><strong>Паста</strong> — спагетти с анчоусами, чесноком и оливковым маслом</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — с хлебом, маслом, оливками</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для тарталеток, канапе, брускетт</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — свежие анчоусы во фритюре или на сковороде</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, лук, каперсы, оливки</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, базилик, укроп, мята</li><li class=\"ingredient-list-item\"><strong>Сыр</strong> — пармезан, моцарелла, пекорино</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — багет, чиабатта, фокачча</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, орегано, базилик, тимьян, чёрный перец</li><li class=\"ingredient-list-item\"><strong>Масло</strong> — оливковое масло</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сардины</strong> — менее солёные, более жирные</li><li class=\"ingredient-list-item\"><strong>Хамса</strong> — черноморский аналог, более мелкая</li><li class=\"ingredient-list-item\"><strong>Килька</strong> — в салатах, менее пряный вкус</li><li class=\"ingredient-list-item\"><strong>Рыбный соус</strong> — для имитации вкуса умами в соусах</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/anchousy-v-kulinarii/'>Анчоусы в кулинарии: рецепты и советы</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/nutrition/polza-anchousov/'>Польза анчоусов: омега-3, витамины, минералы</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/sous-s-anchousami/'>Соусы с анчоусами — рецепты</a></li></ul>",
+  "category": "Рыба",
+  "semantic_data": {
+    "properties": [
+      "мелкая_рыба",
+      "жирная",
+      "серебристый",
+      "солёно-пряный",
+      "насыщенный",
+      "богат_омега-3",
+      "атлантическая",
+      "средиземноморская",
+      "пикантный"
+    ],
+    "preparations": [
+      "промыть_от_соли",
+      "вымочить_в_воде_или_молоке",
+      "удалить_кости_при_необходимости"
+    ],
+    "cooking_methods": [
+      {
+        "method": "маринование",
+        "priority": "high"
+      },
+      {
+        "method": "соление",
+        "priority": "high"
+      },
+      {
+        "method": "жарка",
+        "priority": "medium"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "салаты",
+      "соусы",
+      "пицца",
+      "паста",
+      "закуски",
+      "начинки"
+    ],
+    "pairings": {
+      "protein": [
+        "пармезан",
+        "моцарелла",
+        "пекорино"
+      ],
+      "vegetables": [
+        "помидоры",
+        "лук",
+        "каперсы",
+        "оливки"
+      ],
+      "herbs": [
+        "петрушка",
+        "базилик",
+        "укроп",
+        "мята"
+      ],
+      "breads": [
+        "багет",
+        "чиабатта",
+        "фокачча"
+      ],
+      "spices": [
+        "чеснок",
+        "орегано",
+        "базилик",
+        "тимьян",
+        "черный_перец"
+      ],
+      "oils": [
+        "оливковое_масло"
+      ],
+      "sauces": [
+        "соус_тартар"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Сардины",
+        "similarity": "high"
+      },
+      {
+        "name": "Хамса",
+        "similarity": "high"
+      },
+      {
+        "name": "Килька",
+        "similarity": "low"
+      },
+      {
+        "name": "Рыбный соус",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "рыба",
+    "анчоусы",
+    "атлантические_анчоусы",
+    "солёная_рыба",
+    "средиземноморская_кухня",
+    "салат_цезарь",
+    "пицца",
+    "паста",
+    "омега-3"
+  ]
+}

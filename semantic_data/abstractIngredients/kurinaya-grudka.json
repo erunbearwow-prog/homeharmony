@@ -1,0 +1,111 @@
+{
+  "name": "Куриная грудка",
+  "name_normalized": "kurinaya-grudka",
+  "synonyms": "Грудка куриная",
+  "short_description": "Диетическое филе белого мяса курицы с минимальным содержанием жира. Отличный источник белка, используется для варки, жарки, запекания и приготовления салатов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Куриная грудка — это филе белого мяса курицы, расположенное по бокам грудины. Относится к категории диетических продуктов, так как содержит минимальное количество жира (1-2%) и высокое содержание белка (до 23%). Имеет светлый цвет, плотную текстуру и нейтральный вкус, что делает её универсальным ингредиентом для разнообразных блюд. Популярна как основа для салатов, вторых блюд, супов и бутербродов.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, нежная (при правильной обработке)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — низкая (1-2%)</li><li class=\"ingredient-list-item\"><strong>Белки</strong> — до 23%</li><li class=\"ingredient-list-item\"><strong>Калорийность</strong> — 110-120 ккал/100 г</li><li class=\"ingredient-list-item\"><strong>Время приготовления</strong> — быстрое (10-20 минут)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Промывка</strong> — холодной водой, обсушить</li><li class=\"ingredient-list-item\"><strong>Удаление жира</strong> — срезать видимый жир</li><li class=\"ingredient-list-item\"><strong>Отбивание</strong> — для тонких котлет</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — для сочности (в масле, специях)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Варка</strong> — для супов, салатов, бульонов</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде, в панировке, во фритюре</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с овощами и специями</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — на решётке, на открытом огне</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, овощами, соусами</li><li class=\"ingredient-list-item\"><strong>Бутерброды и сэндвичи</strong> — с овощами и соусом</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, огурцы, салат, перец, брокколи</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочный, томатный, соевый, горчичный</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, паприка, чеснок, тимьян, орегано</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, базилик, зелёный лук</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — рис, картофель, паста, гречка</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Куриное филе (бедро)</strong> — более жирное, сочное</li><li class=\"ingredient-list-item\"><strong>Индейка (грудка)</strong> — похожее по вкусу, более сухая</li><li class=\"ingredient-list-item\"><strong>Телятина</strong> — для салатов</li><li class=\"ingredient-list-item\"><strong>Тофу</strong> — вегетарианская альтернатива</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/kurinaya-grudka-sousy/'>Соусы для куриной грудки</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/kurinaya-grudka-var/'>Как правильно варить куриную грудку</a></li></ul>",
+  "category": "Курица",
+  "semantic_data": {
+    "properties": [
+      "диетический",
+      "белое_мясо",
+      "низкожирный",
+      "богат_белком",
+      "нейтральный_вкус",
+      "универсальный"
+    ],
+    "preparations": [
+      "промыть_и_обсушить",
+      "удалить_жир",
+      "отбить_для_котлет",
+      "замариновать_для_сочности"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "гриль",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "салаты",
+      "вторые_блюда",
+      "супы",
+      "бутерброды"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "помидоры",
+        "огурцы",
+        "салат",
+        "перец",
+        "брокколи"
+      ],
+      "sauces": [
+        "сливочный",
+        "томатный",
+        "соевый",
+        "горчичный"
+      ],
+      "spices": [
+        "черный_перец",
+        "паприка",
+        "чеснок",
+        "тимьян",
+        "орегано"
+      ],
+      "herbs": [
+        "петрушка",
+        "укроп",
+        "базилик",
+        "зеленый_лук"
+      ],
+      "grains": [
+        "рис",
+        "картофель",
+        "паста",
+        "гречка"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Куриное филе (бедро)",
+        "similarity": "high"
+      },
+      {
+        "name": "Индейка (грудка)",
+        "similarity": "high"
+      },
+      {
+        "name": "Телятина",
+        "similarity": "low"
+      },
+      {
+        "name": "Тофу",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "курица",
+    "грудка",
+    "филе",
+    "диетическое_мясо",
+    "белое_мясо",
+    "салаты",
+    "жарка",
+    "запекание"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "name": "Говяжье котлетное мясо",
+  "name_normalized": "govyazhe-kotletnoe-myaso",
+  "synonyms": "котлетное мясо, говядина для котлет, мясо для фарша, рубленое мясо, говяжий фарш, говяжье мясо для котлет",
+  "short_description": "Мясной полуфабрикат из говядины, предназначенный для приготовления котлет, тефтелей, фрикаделек и других изделий из рубленого мяса. Отличается насыщенным вкусом и хорошей сочностью.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Говяжье котлетное мясо — это полуфабрикат из говядины, состоящий из мяса, прошедшего грубый помол или мелкую нарезку, с добавлением небольшого количества жира для сочности. Чаще всего используется для приготовления рубленых изделий: котлет, тефтелей, фрикаделек, зраз, голубцов. В отличие от готового фарша, котлетное мясо даёт возможность регулировать степень измельчения и состав.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — волокнистая, плотная, с жировыми прослойками</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный мясной</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — умеренная</li><li class=\"ingredient-list-item\"><strong>Время приготовления</strong> — 10-20 минут</li><li class=\"ingredient-list-item\"><strong>Форма выпуска</strong> — крупные куски или фарш</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Котлеты</strong> — классические, на пару, в духовке</li><li class=\"ingredient-list-item\"><strong>Тефтели</strong> — в соусе</li><li class=\"ingredient-list-item\"><strong>Фрикадельки</strong> — для супов</li><li class=\"ingredient-list-item\"><strong>Зразы</strong> — с начинкой</li><li class=\"ingredient-list-item\"><strong>Голубцы</strong> — для начинки</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, чеснок, морковь, перец, кабачки</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, грибной, сливочный</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, паприка, тимьян</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, кинза</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжий фарш</strong> — готовый продукт</li><li class=\"ingredient-list-item\"><strong>Свиное котлетное мясо</strong> — жирнее</li><li class=\"ingredient-list-item\"><strong>Куриное филе</strong> — диетический вариант</li></ul>",
+  "category": "Говядина",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "говядина",
+      "котлетное_мясо",
+      "волокнистый",
+      "сочный",
+      "универсальный"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "измельчение_в_фарш",
+      "добавление_лука_яйца_хлеба"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "котлеты",
+      "тефтели",
+      "фрикадельки",
+      "зразы",
+      "голубцы"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["лук", "чеснок", "морковь", "перец", "кабачки"],
+      "sauces": ["томатный", "сметанный", "грибной", "сливочный"],
+      "spices": ["черный_перец", "паприка", "тимьян"],
+      "herbs": ["петрушка", "укроп", "кинза"]
+    },
+    "substitutes": [
+      {
+        "name": "Говяжий фарш",
+        "similarity": "high"
+      },
+      {
+        "name": "Свиное котлетное мясо",
+        "similarity": "medium"
+      },
+      {
+        "name": "Куриное филе",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "говядина",
+    "котлеты",
+    "фрикадельки",
+    "рубленое_мясо"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "name": "Капуста цветная",
+  "name_normalized": "kapusta_tsvetnaya",
+  "synonyms": "цветная капуста, капуста цветная, цветная капуста для запекания, цветная капуста для супа, цветная капуста для гарнира, цветная капуста для салата, соцветия цветной капусты, Brassica oleracea var. botrytis, cauliflower",
+  "short_description": "Овощ с плотным головкой из соцветий кремово-белого цвета, который отличается нежной текстурой и нейтральным, слегка сладковатым вкусом. Богата витаминами C, K, фолиевой кислотой и клетчаткой. Универсальна в кулинарии: используется в супах, салатах, гарнирах, запеканках, а также в сыром и вареном виде.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Цветная капуста — это популярный овощ, который представляет собой плотную головку, состоящую из множества соцветий кремово-белого цвета. В отличие от белокочанной капусты, цветная имеет более нежную текстуру и нейтральный, слегка сладковатый вкус с легкой ореховой ноткой. Она богата витамином C, витамином K, фолиевой кислотой, калием и клетчаткой. Цветная капуста универсальна в кулинарии: ее варят, тушат, жарят, запекают, используют в супах, салатах и как гарнир к мясу и рыбе.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, мягкая после варки, слегка хрустящая в сыром виде</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, слегка сладковатый, с ореховым оттенком</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — кремово-белый, иногда с зеленоватым или фиолетовым оттенком</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — плотная головка из соцветий</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — круглый год (пик лето-осень)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — в холодильнике до 5-7 дней</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — при варке не переваривать, чтобы сохранить текстуру и цвет</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойка</strong> — тщательно промыть под проточной водой</li><li class=\"ingredient-list-item\"><strong>Разборка</strong> — разделить на соцветия</li><li class=\"ingredient-list-item\"><strong>Удаление стеблей</strong> — срезать жесткие стебли</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — в подсоленной воде 5-10 минут (не переваривать!)</li><li class=\"ingredient-list-item\"><strong>Сохранение цвета</strong> — добавить лимонный сок при варке</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Варка</strong> — гарнир для мяса и рыбы</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с сыром, маслом, травами</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — крем-супы, овощные супы</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с маслом, лимоном, зеленью</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с помидорами, луком, чесноком</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — в кляре</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — с маслом и специями</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, говядина, свинина</li><li class=\"ingredient-list-item\"><strong>Рыба</strong> — лосось, треска</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — морковь, лук, помидоры, брокколи</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — пармезан, моцарелла, чеддер</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочный, томатный, сметанный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, базилик</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, мускатный орех, паприка</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Брокколи</strong> — схожая текстура и применение</li><li class=\"ingredient-list-item\"><strong>Романеско</strong> — похожая текстура и цвет</li><li class=\"ingredient-list-item\"><strong>Капуста савойская</strong> — для гарниров и запекания</li><li class=\"ingredient-list-item\"><strong>Зеленая фасоль</strong> — для гарниров</li></ul>",
+  "category": "Овощи",
+  "semantic_data": {
+    "properties": [
+      "овощ",
+      "соцветия",
+      "нежная",
+      "нейтральный вкус",
+      "универсальная",
+      "для супов",
+      "для гарниров",
+      "для запекания",
+      "для салатов",
+      "низкокалорийная"
+    ],
+    "preparations": [
+      "мойка под проточной водой",
+      "разборка на соцветия",
+      "срезание жестких стеблей",
+      "варка в подсоленной воде 5-10 минут",
+      "добавление лимонного сока для сохранения цвета"
+    ],
+    "cooking_methods": [
+      {"method": "варка (гарнир)", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "тушение", "priority": "high"},
+      {"method": "использование в супах", "priority": "high"},
+      {"method": "использование в салатах", "priority": "high"},
+      {"method": "жарка в кляре", "priority": "medium"},
+      {"method": "гриль", "priority": "medium"}
+    ],
+    "applications": [
+      "гарниры",
+      "супы",
+      "салаты",
+      "запеканки",
+      "вторые блюда"
+    ],
+    "pairings": {
+      "protein": ["курица", "говядина", "свинина", "лосось", "треска", "пармезан", "моцарелла", "чеддер"],
+      "vegetables": ["морковь", "лук", "помидоры", "брокколи"],
+      "sauces": ["сливочный", "томатный", "сметанный"],
+      "herbs": ["петрушка", "укроп", "базилик"],
+      "spices": ["черный перец", "мускатный орех", "паприка"]
+    },
+    "substitutes": [
+      {"name": "Брокколи", "similarity": "high"},
+      {"name": "Романеско", "similarity": "high"},
+      {"name": "Капуста савойская", "similarity": "low"},
+      {"name": "Зеленая фасоль", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "овощ",
+    "цветная капуста",
+    "нежная",
+    "универсальная",
+    "гарнир",
+    "супы",
+    "запекание",
+    "салаты",
+    "низкокалорийная"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "name": "Баранья корейка",
+  "name_normalized": "baranya-koreyka",
+  "synonyms": "",
+  "short_description": "Мясной полуфабрикат из баранины, нарезанный на порционные куски из спинной части (корейки). Сочное мясо с прослойками жира, отличное для жарки и запекания.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Баранья корейка — это мясной полуфабрикат из баранины, представляющий собой куски мяса из спинной части туши (корейка). Имеет характерные жировые прослойки, которые при запекании делают мясо невероятно сочным, а корочку — ароматной. Корейка считается одной из лучших частей баранины для быстрого приготовления — она не требует длительного тушения, а запекание или жарка занимают минимум времени при сохранении превосходного вкуса.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, с жировыми прослойками</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, с характерным бараний ароматом</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — умеренная, жир при запекании тает, делая мясо сочным</li><li class=\"ingredient-list-item\"><strong>Время приготовления</strong> — 30-60 минут</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке, в фольге, с картофелем и овощами</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — на открытом огне, на решётке</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде целиком или кусками</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с соусом и овощами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук, перец, томаты, баклажаны</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — кинза, петрушка, укроп, мята, розмарин</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — зира, кориандр, тимьян, розмарин, чёрный перец, чеснок</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, чесночный, йогуртовый</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — холодной водой, обсушить</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — с маслом, специями и травами (для гриля)</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Баранья лопатка</strong> — для тушения</li><li class=\"ingredient-list-item\"><strong>Свиная корейка</strong> — более жирная, схожее применение</li><li class=\"ingredient-list-item\"><strong>Говяжий антрекот</strong> — для жарки</li><li class=\"ingredient-list-item\"><strong>Куриные голени</strong> — для запекания</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/koreyka-baranina/'>Баранья корейка запечённая</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/baranina-gril/'>Баранина на гриле</a></li></ul>",
+  "category": "Баранина",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "баранина",
+      "корейка",
+      "нежный",
+      "сочный",
+      "с_костью",
+      "порционный"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "промыть_обсушить",
+      "маринование_для_гриля"
+    ],
+    "cooking_methods": [
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "гриль",
+        "priority": "high"
+      },
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "запекание",
+      "гриль",
+      "жарка",
+      "тушение"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "картофель",
+        "морковь",
+        "лук",
+        "перец",
+        "томаты",
+        "баклажаны"
+      ],
+      "herbs": [
+        "кинза",
+        "петрушка",
+        "укроп",
+        "мята",
+        "розмарин"
+      ],
+      "spices": [
+        "зира",
+        "кориандр",
+        "тимьян",
+        "розмарин",
+        "черный_перец",
+        "чеснок"
+      ],
+      "sauces": [
+        "томатный",
+        "чесночный",
+        "йогуртовый"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Баранья лопатка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Свиная корейка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Говяжий антрекот",
+        "similarity": "low"
+      },
+      {
+        "name": "Куриные голени",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "баранина",
+    "корейка",
+    "запекание",
+    "гриль",
+    "жарка",
+    "сочно"
+  ]
+}

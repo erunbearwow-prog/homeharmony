@@ -1,0 +1,58 @@
+{
+  "name": "Брокколи",
+  "name_normalized": "brokkoli",
+  "synonyms": "брокколи, спаржевая капуста, капуста брокколи, итальянская спаржа, broccoli (англ.)",
+  "short_description": "Зелёный овощ семейства Капустные с плотными соцветиями-головками и нежными стеблями. Богат витаминами C, K, фолатами, клетчаткой и антиоксидантами. Популярен в салатах, супах, запеканках и как гарнир.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Брокколи — это однолетнее овощное растение семейства Капустные, близкий родственник цветной капусты. В пищу употребляются плотные зелёные соцветия-головки и нежные стебли. Брокколи имеет яркий зелёный цвет, плотную структуру и мягкий, слегка сладковатый вкус с лёгкой горчинкой. Относится к числу самых полезных овощей благодаря высокому содержанию витаминов C, K, фолатов, калия, железа, клетчатки и антиоксидантов (сульфорафан). Широко используется в салатах, супах, гарнирах, запеканках и как самостоятельное блюдо на пару или гриле.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, сочная (в сыром виде), мягкая (после варки)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — мягкий, слегка сладковатый, с лёгкой горчинкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — ярко-зелёный, фиолетовый (некоторые сорта)</li><li class=\"ingredient-list-item\"><strong>Витамины</strong> — C, K, A, фолаты</li><li class=\"ingredient-list-item\"><strong>Сульфорафан</strong> — мощный антиоксидант</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — лето-осень</li></ul><h2 class=\"ingredient-title\">Сорта и виды</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Калабрийская брокколи</strong> — классическая, с крупными зелёными головками</li><li class=\"ingredient-list-item\"><strong>Спайкинг</strong> — с мелкими соцветиями</li><li class=\"ingredient-list-item\"><strong>Фиолетовая</strong> — с фиолетовым оттенком</li><li class=\"ingredient-list-item\"><strong>Брокколини</strong> — гибрид брокколи и капусты гай-лан</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойка</strong> — тщательно промыть под проточной водой</li><li class=\"ingredient-list-item\"><strong>Разделка</strong> — отделить соцветия от стебля, стебель очистить и нарезать</li><li class=\"ingredient-list-item\"><strong>Бланширование</strong> — опустить в кипящую воду на 2-3 минуты</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — 5-7 минут до мягкости</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, орехами, сыром</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — крем-супы, овощные супы</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — на пару, с маслом и специями</li><li class=\"ingredient-list-item\"><strong>Запеканки</strong> — с сыром, сливками</li><li class=\"ingredient-list-item\"><strong>Паста</strong> — с соусом из брокколи</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — с оливковым маслом</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — пармезан, чеддер, моцарелла</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — чеснок, лук, томаты</li><li class=\"ingredient-list-item\"><strong>Масла</strong> — оливковое, сливочное</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — кедровые, грецкие</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, мускатный орех</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Цветная капуста</strong> — похожая текстура</li><li class=\"ingredient-list-item\"><strong>Спаржа</strong> — похожий вкус</li><li class=\"ingredient-list-item\"><strong>Зелёная фасоль</strong> — в гарнирах</li><li class=\"ingredient-list-item\"><strong>Стручковая фасоль</strong> — в салатах</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/nutrition/brokkoli/'>Польза брокколи</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/brokkoli-sup/'>Крем-суп из брокколи</a></li></ul>",
+  "category": "Капуста цветная, брокколи",
+  "semantic_data": {
+    "properties": [
+      "овощ",
+      "зелёный",
+      "плотный",
+      "витаминный",
+      "антиоксидантный",
+      "питательный"
+    ],
+    "preparations": [
+      "мытьё_и_разделка",
+      "бланширование_2-3_минуты",
+      "варка_5-7_минут"
+    ],
+    "cooking_methods": [
+      {"method": "варка", "priority": "high"},
+      {"method": "бланширование", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "тушение", "priority": "medium"},
+      {"method": "гриль", "priority": "medium"}
+    ],
+    "applications": [
+      "салаты",
+      "супы",
+      "гарниры",
+      "запеканки",
+      "паста"
+    ],
+    "pairings": {
+      "protein": ["пармезан", "чеддер", "моцарелла"],
+      "vegetables": ["чеснок", "лук", "томаты"],
+      "oils": ["оливковое_масло", "сливочное_масло"],
+      "nuts": ["кедровые_орехи", "грецкие_орехи"],
+      "spices": ["черный_перец", "мускатный_орех"]
+    },
+    "substitutes": [
+      {"name": "Цветная капуста", "similarity": "high"},
+      {"name": "Спаржа", "similarity": "medium"},
+      {"name": "Зелёная фасоль", "similarity": "low"},
+      {"name": "Стручковая фасоль", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "овощ",
+    "брокколи",
+    "капуста",
+    "витамины",
+    "диетический",
+    "гарнир"
+  ]
+}

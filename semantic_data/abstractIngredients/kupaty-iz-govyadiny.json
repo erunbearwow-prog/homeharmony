@@ -1,0 +1,71 @@
+{
+  "name": "Купаты из говядины",
+  "name_normalized": "kupaty-iz-govyadiny",
+  "synonyms": "говяжьи купаты, купаты говяжьи, колбаски из говядины, говяжьи колбаски, купаты для гриля, мясные купаты",
+  "short_description": "Сочные колбаски из говяжьего фарша с пряными травами и специями в натуральной оболочке. Идеальны для жарки на сковороде, гриля и запекания.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Купаты из говядины — это колбаски из рубленого говяжьего мяса с добавлением пряных трав, чеснока и специй, помещённые в натуральную оболочку. В отличие от классических колбас, купаты не проходят термической обработки при производстве и представляют собой сырой полуфабрикат. Благодаря специям и натуральной оболочке, они приобретают сочный вкус и характерный аромат при жарке или запекании. Популярны в грузинской и кавказской кухне.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочная, плотная, с хрустящей оболочкой</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — пряный, с чесночным ароматом</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — умеренная (10-15%)</li><li class=\"ingredient-list-item\"><strong>Оболочка</strong> — натуральная (свиная или баранья кишка)</li><li class=\"ingredient-list-item\"><strong>Время приготовления</strong> — 10-15 минут (жарка, гриль)</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гриль</strong> — на решётке, мангале</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде с маслом</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с овощами</li><li class=\"ingredient-list-item\"><strong>Закуска</strong> — с соусами, зеленью</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофель, тушёные овощи, рис</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — ткемали, гранатовый, чесночный, сметанный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — кинза, петрушка, укроп, зелёный лук</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — красное вино, пиво</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свиные купаты</strong> — более жирные</li><li class=\"ingredient-list-item\"><strong>Куриные купаты</strong> — диетический вариант</li><li class=\"ingredient-list-item\"><strong>Охотничьи колбаски</strong> — копчёные</li></ul>",
+  "category": "Колбаски и сосиски сырые",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "говядина",
+      "купаты",
+      "пряные",
+      "сочные",
+      "гриль"
+    ],
+    "preparations": [
+      "жарка_на_сковороде",
+      "гриль_на_решётке",
+      "запекание_в_духовке"
+    ],
+    "cooking_methods": [
+      {
+        "method": "гриль",
+        "priority": "high"
+      },
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "вторые_блюда",
+      "закуски",
+      "барбекю"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "овощи", "лук", "перец"],
+      "sauces": ["ткемали", "гранатовый", "чесночный", "сметанный"],
+      "herbs": ["кинза", "петрушка", "укроп", "зеленый_лук"],
+      "drinks": ["красное_вино", "пиво"]
+    },
+    "substitutes": [
+      {
+        "name": "Свиные купаты",
+        "similarity": "high"
+      },
+      {
+        "name": "Куриные купаты",
+        "similarity": "medium"
+      },
+      {
+        "name": "Охотничьи колбаски",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "говядина",
+    "купаты",
+    "колбаски",
+    "гриль",
+    "кавказская_кухня"
+  ]
+}

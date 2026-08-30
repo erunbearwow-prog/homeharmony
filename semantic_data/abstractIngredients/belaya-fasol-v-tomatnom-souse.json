@@ -1,0 +1,106 @@
+{
+  "name": "Белая фасоль в томатном соусе",
+  "name_normalized": "belaya-fasol-v-tomatnom-souse",
+  "synonyms": "",
+  "short_description": "Консервированная или готовая закуска из белой фасоли, тушеной в насыщенном томатном соусе с овощами и специями. Питательное, сытное блюдо, богатое растительным белком и клетчаткой.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Белая фасоль в томатном соусе — это готовый продукт, представляющий собой крупные бобы белой фасоли, тушеные в густом томатном соусе с добавлением лука, моркови, чеснока и пряных специй. Это классическое домашнее или консервированное блюдо, которое ценится за высокое содержание растительного белка, клетчатки и низкий уровень жира. Блюдо имеет приятный кисло-сладкий вкус, густую текстуру и универсально как для самостоятельного употребления, так и в качестве гарнира или основы для супов.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — фасоль мягкая, но сохраняет форму; соус густой, насыщенный</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисло-сладкий, томатный, с пряными нотками</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — белая фасоль, томаты, лук, морковь, чеснок, специи</li><li class=\"ingredient-list-item\"><strong>Пищевая ценность</strong> — высокое содержание белка (до 8%), клетчатки (6-8%)</li><li class=\"ingredient-list-item\"><strong>Способ производства</strong> — тушение в соусе, стерилизация (для консервов)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Самостоятельное блюдо</strong> — с хлебом, зеленью</li><li class=\"ingredient-list-item\"><strong>Гарнир</strong> — к мясу, птице, рыбе</li><li class=\"ingredient-list-item\"><strong>Основа для супов</strong> — в томатных и овощных супах</li><li class=\"ingredient-list-item\"><strong>Начинка</strong> — для пирогов, лепешек, тако</li><li class=\"ingredient-list-item\"><strong>Закуска</strong> — холодная или горячая</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — свинина, говядина, курица, колбасы</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, гречка, кус-кус</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — черный, белый, чиабатта</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, кинза, укроп, зеленый лук</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — паприка, орегано, базилик, перец</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Красная фасоль в томатном соусе</strong> — похожий продукт, ярче по вкусу</li><li class=\"ingredient-list-item\"><strong>Отварная белая фасоль</strong> — без соуса</li><li class=\"ingredient-list-item\"><strong>Нут в томатном соусе</strong> — другой вкус, но похожая текстура</li><li class=\"ingredient-list-item\"><strong>Консервированная фасоль + томатная паста</strong> — домашняя альтернатива</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/fasol-v-souse/'>Как приготовить белую фасоль в томатном соусе</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/nutrition/fasol/'>Польза белой фасоли</a></li></ul>",
+  "category": "Консервы, заготовки",
+  "semantic_data": {
+    "properties": [
+      "консервированный",
+      "томатный_соус",
+      "растительный_белок",
+      "клетчатка",
+      "сытный",
+      "постный",
+      "вегетарианский"
+    ],
+    "preparations": [
+      "подогрев_в_кастрюле",
+      "использование_как_есть"
+    ],
+    "cooking_methods": [
+      {
+        "method": "подогрев",
+        "priority": "high"
+      },
+      {
+        "method": "использование_как_есть",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_супы",
+        "priority": "medium"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "самостоятельное_блюдо",
+      "гарнир",
+      "основа_для_супов",
+      "начинка",
+      "закуска"
+    ],
+    "pairings": {
+      "protein": [
+        "свинина",
+        "говядина",
+        "курица",
+        "колбасы"
+      ],
+      "grains": [
+        "рис",
+        "гречка",
+        "кус-кус"
+      ],
+      "breads": [
+        "черный_хлеб",
+        "белый_хлеб",
+        "чиабатта"
+      ],
+      "herbs": [
+        "петрушка",
+        "кинза",
+        "укроп",
+        "зеленый_лук"
+      ],
+      "spices": [
+        "паприка",
+        "орегано",
+        "базилик",
+        "перец"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Красная фасоль в томатном соусе",
+        "similarity": "high"
+      },
+      {
+        "name": "Отварная белая фасоль",
+        "similarity": "medium"
+      },
+      {
+        "name": "Нут в томатном соусе",
+        "similarity": "medium"
+      },
+      {
+        "name": "Консервированная фасоль + томатная паста",
+        "similarity": "high"
+      }
+    ]
+  },
+  "tags": [
+    "консервы",
+    "фасоль",
+    "белая_фасоль",
+    "томатный_соус",
+    "вегетарианский",
+    "постный",
+    "закуска",
+    "гарнир"
+  ]
+}

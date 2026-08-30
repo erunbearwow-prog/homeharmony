@@ -1,0 +1,67 @@
+{
+  "name": "Капуста романеско",
+  "name_normalized": "kapusta_romanesko",
+  "synonyms": "романеско, капуста романеско, римская капуста, цветная капуста романеско, романеску, итальянская капуста, фрактальная капуста, брокколи романеско, зеленая романеско, Brassica oleracea var. botrytis (cultivar group Romanesco)",
+  "short_description": "Декоративная разновидность цветной капусты с соцветиями, образующими фрактальную спиральную структуру ярко-зеленого цвета. Имеет нежную текстуру, ореховый вкус и высокое содержание витамина C, каротина и клетчатки. Используется в салатах, супах, как гарнир и в запеканках.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Капуста романеско — это уникальная разновидность цветной капусты, которая отличается фрактальной структурой соцветий: каждая часть соцветия повторяет форму целого, образуя спираль. Ярко-зеленый цвет, нежная текстура и ореховый вкус делают романеско популярным овощем в итальянской и средиземноморской кухне. Вкус романеско напоминает нежное сочетание цветной капусты и брокколи, с легкой сладостью. Она богата витамином C, каротиноидами, клетчаткой и калием. Романеско употребляют в сыром виде (в салатах), варят, тушат, запекают и используют как гарнир.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, слегка хрустящая (сырая), мягкая (после варки)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — ореховый, сладковатый, с легкой горчинкой</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — мягкий, без резких нот</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — ярко-зеленый, иногда с желтоватым оттенком</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — спиральные фрактальные соцветия</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — осень-весна (пик осенью)</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике до 5-7 дней</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — при варке сохраняет цвет, если добавить лимонный сок</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойка</strong> — тщательно промыть под проточной водой</li><li class=\"ingredient-list-item\"><strong>Разборка</strong> — разделить на соцветия</li><li class=\"ingredient-list-item\"><strong>Удаление стеблей</strong> — срезать жесткие стебли</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — в подсоленной воде 5-10 минут (не переваривать!)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — в сыром виде, с оливковым маслом, лимоном, пармезаном</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — гарнир для мяса и рыбы</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с сыром, маслом, травами</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — крем-супы, овощные супы</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с чесноком, оливковым маслом, томатами</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — с маслом и специями</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — брокколи, цветная капуста, морковь, лук, помидоры</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, говядина, рыба</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — пармезан, моцарелла, пекорино</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочный, томатный, чесночный, оливковое масло с лимоном</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, базилик, тимьян</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, паприка, чеснок</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Цветная капуста</strong> — схожая текстура и применение</li><li class=\"ingredient-list-item\"><strong>Брокколи</strong> — близкий вкус и текстура</li><li class=\"ingredient-list-item\"><strong>Романеско (другой сорт)</strong> — аналогичный</li></ul>",
+  "category": "Овощи",
+  "semantic_data": {
+    "properties": [
+      "овощ",
+      "фрактальный",
+      "зеленый",
+      "нежный",
+      "ореховый вкус",
+      "итальянская кухня",
+      "для салатов",
+      "для супов",
+      "для запекания",
+      "для гарниров"
+    ],
+    "preparations": [
+      "мойка под проточной водой",
+      "разборка на соцветия",
+      "срезание жестких стеблей",
+      "варка в подсоленной воде 5-10 минут",
+      "приготовление на пару"
+    ],
+    "cooking_methods": [
+      {"method": "варка (гарнир)", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "использование в сыром виде (салаты)", "priority": "high"},
+      {"method": "тушение", "priority": "medium"},
+      {"method": "гриль", "priority": "medium"},
+      {"method": "приготовление супов", "priority": "medium"}
+    ],
+    "applications": [
+      "салаты",
+      "гарниры",
+      "супы",
+      "запеканки",
+      "вторые блюда"
+    ],
+    "pairings": {
+      "protein": ["курица", "говядина", "рыба", "пармезан", "моцарелла", "пекорино"],
+      "vegetables": ["брокколи", "цветная капуста", "морковь", "лук", "помидоры"],
+      "sauces": ["сливочный", "томатный", "чесночный", "оливковое масло с лимоном"],
+      "herbs": ["петрушка", "базилик", "тимьян"],
+      "spices": ["черный перец", "паприка", "чеснок"]
+    },
+    "substitutes": [
+      {"name": "Цветная капуста", "similarity": "high"},
+      {"name": "Брокколи", "similarity": "high"},
+      {"name": "Романеско (другой сорт)", "similarity": "high"}
+    ]
+  },
+  "tags": [
+    "овощ",
+    "романеско",
+    "итальянская капуста",
+    "фрактальная капуста",
+    "цветная капуста",
+    "брокколи",
+    "салаты",
+    "гарниры",
+    "запекание"
+  ]
+}

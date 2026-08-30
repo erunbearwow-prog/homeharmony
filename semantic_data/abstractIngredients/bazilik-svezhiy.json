@@ -1,0 +1,101 @@
+{
+  "name": "Базилик свежий",
+  "name_normalized": "bazilik-svezhiy",
+  "synonyms": "",
+  "short_description": "Ароматная зелень с ярким пряным вкусом и узнаваемым ароматом, сочетающим нотки мяты, аниса и перца. Широко используется в средиземноморской и азиатской кухне.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Базилик свежий — это ароматное травянистое растение семейства Яснотковые, широко используемое в кулинарии благодаря насыщенному пряному вкусу и яркому аромату. В зависимости от сорта листья могут быть зелёными, пурпурными или с фиолетовым оттенком. Базилик обладает сложным ароматом, сочетающим нотки мяты, аниса, перца и гвоздики. В средиземноморской кухне является одним из основных компонентов соуса песто, в азиатской — используется в тайских и вьетнамских блюдах, супах и салатах.</p><h2 class=\"ingredient-title\">Сорта и виды</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Зелёный базилик (итальянский)</strong> — классический, сладковатый, для песто и итальянских блюд</li><li class=\"ingredient-list-item\"><strong>Пурпурный (фиолетовый)</strong> — более яркий вкус, для салатов, украшения</li><li class=\"ingredient-list-item\"><strong>Тайский базилик</strong> — пряный, с нотками аниса, для азиатских блюд</li><li class=\"ingredient-list-item\"><strong>Лимонный базилик</strong> — с цитрусовым ароматом, для десертов и напитков</li><li class=\"ingredient-list-item\"><strong>Коричный базилик</strong> — с коричным ароматом, для десертов</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — пряный, сладковатый, с перечной ноткой</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — насыщенный, с нотками мяты, аниса и гвоздики</li><li class=\"ingredient-list-item\"><strong>Листья</strong> — нежные, хрупкие, требуют бережного обращения</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике в стакане с водой до 5-7 дней</li><li class=\"ingredient-list-item\"><strong>Термическая обработка</strong> — добавлять в конце приготовления</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойка</strong> — тщательно промыть, обсушить</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — рвать руками или резать ножом (руками лучше для сохранения аромата)</li><li class=\"ingredient-list-item\"><strong>Добавление</strong> — в конце приготовления (термическая обработка разрушает аромат)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соус песто</strong> — классический итальянский соус</li><li class=\"ingredient-list-item\"><strong>Пицца и паста</strong> — добавление в итальянские блюда</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с помидорами, моцареллой, авокадо</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — томатные, овощные (добавлять в конце)</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — лимонады, коктейли, чай (лимонный базилик)</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для мяса и рыбы</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Помидоры</strong> — классическое сочетание (капрезе, салаты)</li><li class=\"ingredient-list-item\"><strong>Моцарелла</strong> — в салатах и закусках</li><li class=\"ingredient-list-item\"><strong>Пармезан</strong> — в песто и пасте</li><li class=\"ingredient-list-item\"><strong>Чеснок</strong> — в соусах и маринадах</li><li class=\"ingredient-list-item\"><strong>Оливковое масло</strong> — в заправках и соусах</li><li class=\"ingredient-list-item\"><strong>Цитрусовые</strong> — лимон, лайм (в напитках и салатах)</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Орегано</strong> — в итальянских блюдах, более горький</li><li class=\"ingredient-list-item\"><strong>Тимьян</strong> — в мясных блюдах</li><li class=\"ingredient-list-item\"><strong>Кинза</strong> — в азиатских блюдах</li><li class=\"ingredient-list-item\"><strong>Петрушка</strong> — для свежести, но менее ароматная</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/pesto-s-bazilikom/'>Соус песто с базиликом — классический рецепт</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/salat-s-bazilikom/'>Салаты с базиликом — идеи и рецепты</a></li></ul>",
+  "category": "Свежая зелень",
+  "semantic_data": {
+    "properties": [
+      "свежий",
+      "пряный",
+      "ароматный",
+      "зелёный",
+      "пурпурный",
+      "нежный",
+      "витаминный",
+      "средиземноморская_кухня",
+      "азиатская_кухня"
+    ],
+    "preparations": [
+      "мытьё_и_сушка",
+      "нарезка_руками_или_ножом",
+      "добавление_в_конце_приготовления"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_добавление",
+        "priority": "high"
+      },
+      {
+        "method": "измельчение_в_песто",
+        "priority": "high"
+      },
+      {
+        "method": "кратковременный_нагрев_в_конце",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "соус_песто",
+      "салаты",
+      "пицца",
+      "паста",
+      "супы",
+      "напитки",
+      "маринады"
+    ],
+    "pairings": {
+      "protein": [
+        "моцарелла",
+        "пармезан",
+        "курица",
+        "лосось"
+      ],
+      "vegetables": [
+        "помидоры",
+        "авокадо",
+        "огурцы"
+      ],
+      "herbs": [
+        "чеснок",
+        "оливковое_масло"
+      ],
+      "fruits": [
+        "лимон",
+        "лайм"
+      ],
+      "spices": [
+        "перец",
+        "паприка"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Орегано",
+        "similarity": "medium"
+      },
+      {
+        "name": "Тимьян",
+        "similarity": "medium"
+      },
+      {
+        "name": "Кинза",
+        "similarity": "medium"
+      },
+      {
+        "name": "Петрушка",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "зелень",
+    "базилик",
+    "свежий_базилик",
+    "пряности",
+    "итальянская_кухня",
+    "песто",
+    "салат_капрезе"
+  ]
+}

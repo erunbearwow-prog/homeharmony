@@ -1,0 +1,59 @@
+{
+  "name": "Брынза овечья",
+  "name_normalized": "brynza-ovechya",
+  "synonyms": "овечья брынза, брынза из овечьего молока, овечий сыр, настоящая брынза, традиционная брынза",
+  "short_description": "Классическая брынза из овечьего молока — плотный рассольный сыр с насыщенным сливочным вкусом, лёгкой остринкой и характерной солоноватостью. Традиционный продукт балканской и кавказской кухни, считается более жирной и ароматной по сравнению с коровьей брынзой.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Овечья брынза — это классический рассольный сыр, изготавливаемый из овечьего молока. Имеет плотную, слегка крошащуюся текстуру, белый или слегка кремовый цвет и насыщенный сливочный вкус с характерной солоноватостью и лёгкой остринкой. Овечья брынза считается более жирной, питательной и ароматной по сравнению с коровьей, поэтому она особенно ценится в балканской, кавказской и средиземноморской кухне. Чаще всего используется в салатах, выпечке, как закуска и в горячих блюдах.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, слегка крошащаяся, упругая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, сливочный, солоноватый, с лёгкой остринкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый, кремовый</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — 40-50%, выше, чем у коровьей брынзы</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — овечье молоко, фермент, соль</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — в рассоле до 2-3 месяцев</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — греческий, с помидорами, огурцами, зеленью</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — с зеленью, маслом, оливками</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — пироги, хачапури, чебуреки, сырные лепёшки</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — запеканки, паста с брынзой, омлеты</li><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — на хлеб с зеленью и маслом</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, огурцы, перец, лук, оливки</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, базилик, мята, кинза</li><li class=\"ingredient-list-item\"><strong>Тесто</strong> — дрожжевое, слоёное</li><li class=\"ingredient-list-item\"><strong>Масло</strong> — оливковое, сливочное</li><li class=\"ingredient-list-item\"><strong>Мёд</strong> — в десертах (необычное сочетание)</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Фета</strong> — более мягкая, менее солёная</li><li class=\"ingredient-list-item\"><strong>Козий сыр</strong> — похожая текстура</li><li class=\"ingredient-list-item\"><strong>Брынза коровья</strong> — менее жирная</li><li class=\"ingredient-list-item\"><strong>Сыр сулугуни</strong> — более плотный, тягучий</li></ul>",
+  "category": "Рассольные сыры",
+  "semantic_data": {
+    "properties": [
+      "сыр",
+      "овечий",
+      "рассольный",
+      "жирный",
+      "солоноватый",
+      "сливочный",
+      "традиционный"
+    ],
+    "preparations": [
+      "хранение_в_рассоле",
+      "промывка_водой_при_необходимости"
+    ],
+    "cooking_methods": [
+      {"method": "свежее_употребление", "priority": "high"},
+      {"method": "добавление_в_салаты", "priority": "high"},
+      {"method": "запекание_в_выпечке", "priority": "high"},
+      {"method": "обжарка", "priority": "medium"}
+    ],
+    "applications": [
+      "салаты",
+      "закуски",
+      "выпечка",
+      "горячие_блюда",
+      "бутерброды"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["помидоры", "огурцы", "перец", "лук", "оливки"],
+      "herbs": ["петрушка", "укроп", "базилик", "мята", "кинза"],
+      "dough": ["дрожжевое_тесто", "слоеное_тесто"],
+      "oils": ["оливковое_масло", "сливочное_масло"],
+      "sweeteners": ["мёд"]
+    },
+    "substitutes": [
+      {"name": "Фета", "similarity": "high"},
+      {"name": "Козий сыр", "similarity": "high"},
+      {"name": "Брынза коровья", "similarity": "medium"},
+      {"name": "Сыр сулугуни", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "сыр",
+    "овечья_брынза",
+    "брынза",
+    "рассольный_сыр",
+    "балканская_кухня",
+    "кавказская_кухня",
+    "салат"
+  ]
+}

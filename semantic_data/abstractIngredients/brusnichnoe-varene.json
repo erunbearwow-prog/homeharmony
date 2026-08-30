@@ -1,0 +1,52 @@
+{
+  "name": "Брусничное варенье",
+  "name_normalized": "brusnichnoe-varene",
+  "synonyms": "варенье из брусники, брусничный джем, брусника с сахаром, конфитюр из брусники, lingonberry jam, брусничное повидло",
+  "short_description": "Ароматное варенье из брусники с терпким кисло-сладким вкусом и характерной ягодной горчинкой. Густое, янтарно-красное, с целыми или частично разваренными ягодами. Идеально подходит к завтраку, мясу, дичи и десертам.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Брусничное варенье — это традиционное лесное лакомство, приготовленное из брусники и сахара. Благодаря высокому содержанию природных кислот и пектина, брусничное варенье имеет характерный кисло-сладкий вкус с лёгкой горчинкой и хорошо желируется. Ягоды брусники могут оставаться цельными или развариваться до состояния джема. Варенье имеет насыщенный красный или янтарно-красный цвет и яркий лесной аромат. Брусничное варенье популярно в скандинавской, русской и прибалтийской кухне, особенно в сочетании с мясом, дичью и блинами.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — густая, с целыми или разваренными ягодами</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисло-сладкий, терпкий, с лёгкой горчинкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — красный, янтарно-красный</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — брусника, сахар (иногда с добавлением яблок для желирования)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в стеклянных банках</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Завтрак</strong> — с блинами, оладьями, тостами, кашей</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к мясу (особенно дичи, свинине, утке)</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — начинка для пирогов, булочек</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — с мороженым, йогуртом, творогом</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — как дополнение к мясным блюдам</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — дичь, свинина, утка, курица</li><li class=\"ingredient-list-item\"><strong>Блины, оладьи</strong> — классическая подача</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — мягкие и твёрдые (бри, камамбер)</li><li class=\"ingredient-list-item\"><strong>Каши</strong> — овсяная, гречневая</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — мороженое, йогурт, творог</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Клюквенное варенье</strong> — более кислое</li><li class=\"ingredient-list-item\"><strong>Черничное варенье</strong> — слаще, без горчинки</li><li class=\"ingredient-list-item\"><strong>Смородиновое варенье</strong> — другой оттенок кислинки</li></ul>",
+  "category": "Варенье, джемы, повидло, конфитюр",
+  "semantic_data": {
+    "properties": [
+      "варенье",
+      "брусничный",
+      "кисло-сладкий",
+      "терпкий",
+      "янтарно-красный",
+      "лесной_аромат"
+    ],
+    "preparations": [
+      "варка_с_сахаром",
+      "хранение_в_стерилизованных_банках"
+    ],
+    "cooking_methods": [
+      {"method": "варка", "priority": "high"},
+      {"method": "консервирование", "priority": "high"}
+    ],
+    "applications": [
+      "завтрак",
+      "соус_к_мясу",
+      "выпечка",
+      "десерты"
+    ],
+    "pairings": {
+      "protein": ["дичь", "свинина", "утка", "курица", "бри", "камамбер"],
+      "vegetables": [],
+      "desserts": ["блины", "оладьи", "мороженое", "йогурт", "творог"],
+      "grains": ["овсянка", "гречка"],
+      "drinks": ["чай"]
+    },
+    "substitutes": [
+      {"name": "Клюквенное варенье", "similarity": "high"},
+      {"name": "Черничное варенье", "similarity": "low"},
+      {"name": "Смородиновое варенье", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "варенье",
+    "брусничное_варенье",
+    "брусника",
+    "зимние_заготовки",
+    "соус_к_мясу",
+    "десерт"
+  ]
+}

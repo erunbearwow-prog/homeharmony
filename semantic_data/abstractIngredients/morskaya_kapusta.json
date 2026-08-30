@@ -1,0 +1,67 @@
+{
+  "name": "Морская капуста",
+  "name_normalized": "morskaya_kapusta",
+  "synonyms": "морская капуста, ламинария, ламинария сахарная, ламинария японская, морская водоросль, водоросль ламинария, морская капуста сушеная, морская капуста консервированная, морская капуста для салата, морская капуста для супа, kelp, kombu",
+  "short_description": "Бурая морская водоросль из рода ламинария, богатая йодом, калием, магнием и витаминами группы B. Имеет характерный морской аромат и вкус, упругую текстур. Используется в салатах, супах, гарнирах, а также в сушёном виде для приготовления бульонов в азиатской кухне.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Морская капуста (ламинария) — это бурая морская водоросль, которая растет на морском дне в холодных водах Тихого и Северного Ледовитого океанов. Ламинария имеет длинное лентовидное слоевище (таллом) и отличается высоким содержанием полезных веществ, особенно йода. Морская капуста богата витаминами A, B1, B2, B12, C, D, E, макро- и микроэлементами, полиненасыщенными жирными кислотами. В кулинарии используется в свежем, сушёном, консервированном и маринованном виде. Она популярна в японской, китайской и корейской кухне (комбу, кимчи из морской капусты), а также в европейской кухне для салатов, супов и гарниров.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — упругая, плотная, слегка хрустящая (сушеная), мягкая после замачивания</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — солоноватый, морской, с характерным йодистым оттенком</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от темно-зеленого до черно-зеленого (сухая), коричневато-зеленый (консервированная)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — сушеная до 1-2 лет, консервированная до 1 года</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — содержит много йода, может иметь специфический запах</li></ul><h2 class=\"ingredient-title\">Виды и формы выпуска</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сушеная (листы, пластины)</strong> — для бульонов (комбу), для замачивания в салаты</li><li class=\"ingredient-list-item\"><strong>Консервированная (банки)</strong> — готовая к употреблению, в рассоле или масле</li><li class=\"ingredient-list-item\"><strong>Замороженная</strong> — для салатов и гарниров</li><li class=\"ingredient-list-item\"><strong>Маринованная</strong> — как закуска</li><li class=\"ingredient-list-item\"><strong>Молотая (порошок)</strong> — для добавления в блюда</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сушеная</strong> — замочить в холодной воде на 2-4 часа (или на ночь), промыть, отварить 15-20 минут</li><li class=\"ingredient-list-item\"><strong>Консервированная</strong> — открыть, при необходимости промыть от рассола</li><li class=\"ingredient-list-item\"><strong>Замороженная</strong> — разморозить в холодильнике</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — соломкой, ломтиками, кубиками</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с маслом, луком, яйцом, морковью, чесноком</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — японский суп мисо, корейские супы, овощные супы</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — к рыбе, мясу</li><li class=\"ingredient-list-item\"><strong>Бульоны</strong> — сушеная ламинария для приготовления даси</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — маринованная морская капуста, кимчи</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — морковь, лук, чеснок, перец, огурец</li><li class=\"ingredient-list-item\"><strong>Морепродукты</strong> — креветки, кальмары, мидии</li><li class=\"ingredient-list-item\"><strong>Масла</strong> — растительное, кунжутное</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — соевый, рисовый уксус, острый соус</li><li class=\"ingredient-list-item\"><strong>Яйца</strong> — вареные</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — кинза, зеленый лук</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Спирулина</strong> — в порошке, для добавления в блюда</li><li class=\"ingredient-list-item\"><strong>Нори</strong> — для суши, другой вкус</li><li class=\"ingredient-list-item\"><strong>Умибудо (морской виноград)</strong> — японская водоросль</li><li class=\"ingredient-list-item\"><strong>Морская капуста (другие виды)</strong> — аналог</li></ul>",
+  "category": "Овощи",
+  "semantic_data": {
+    "properties": [
+      "водоросль",
+      "морская",
+      "ламинария",
+      "йод",
+      "витамины",
+      "азиатская кухня",
+      "салаты",
+      "супы",
+      "гарниры",
+      "сухофрукты"
+    ],
+    "preparations": [
+      "замачивание в холодной воде (для сушёной)",
+      "промывка",
+      "варка 15-20 минут",
+      "нарезка соломкой или ломтиками",
+      "использование без подготовки (консервированная)"
+    ],
+    "cooking_methods": [
+      {"method": "использование в салатах", "priority": "high"},
+      {"method": "варка (супы)", "priority": "high"},
+      {"method": "приготовление бульона (даси)", "priority": "high"},
+      {"method": "маринование", "priority": "medium"},
+      {"method": "добавление в гарниры", "priority": "medium"}
+    ],
+    "applications": [
+      "салаты",
+      "супы",
+      "бульоны",
+      "гарниры",
+      "закуски"
+    ],
+    "pairings": {
+      "protein": ["креветки", "кальмары", "мидии", "яйца"],
+      "vegetables": ["морковь", "лук", "чеснок", "перец", "огурец"],
+      "sauces": ["соевый соус", "рисовый уксус", "острый соус"],
+      "herbs": ["кинза", "зеленый лук"],
+      "spices": ["кунжут", "чеснок", "имбирь"]
+    },
+    "substitutes": [
+      {"name": "Спирулина (порошок)", "similarity": "low"},
+      {"name": "Нори", "similarity": "low"},
+      {"name": "Умибудо (морской виноград)", "similarity": "low"},
+      {"name": "Морская капуста (другие виды)", "similarity": "high"}
+    ]
+  },
+  "tags": [
+    "водоросль",
+    "морская капуста",
+    "ламинария",
+    "йод",
+    "азиатская кухня",
+    "салаты",
+    "супы",
+    "бульон",
+    "полезный продукт"
+  ]
+}

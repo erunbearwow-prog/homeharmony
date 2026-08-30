@@ -1,0 +1,72 @@
+{
+  "name": "Кета",
+  "name_normalized": "keta",
+  "synonyms": "кета, тихоокеанский лосось, лосось кета, рыба кета, кета красная, кета серебристая, Oncorhynchus keta, сибирская кета, лососевые, рыба для засолки, рыба для копчения, рыба для жарки",
+  "short_description": "Крупный тихоокеанский лосось с плотным, умеренно жирным мясом ярко-оранжевого цвета, нежного вкуса и крупной икрой. Ценится за диетические свойства и универсальность в кулинарии: для засолки, копчения, жарки, запекания и приготовления ухи.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Кета — это крупный тихоокеанский лосось из рода Oncorhynchus, один из самых распространённых и важных промысловых видов лососевых. В отличие от более жирных сородичей (горбуши, нерки), кета имеет плотное, упругое мясо средней жирности с нежным вкусом. Мясо кеты ярко-оранжевого цвета, плотное, с характерным лососевым вкусом, но менее выраженным, чем у семги или горбуши. Кета ценится за диетические свойства, универсальность и крупную икру. Она используется для засолки, копчения, жарки, запекания, приготовления ухи и салатов.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — плотное, упругое, средней жирности (3-5%)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нежный, мягкий, сладковатый, без ярко выраженного лососевого вкуса</li><li class=\"ingredient-list-item\"><strong>Цвет мяса</strong> — ярко-оранжевый</li><li class=\"ingredient-list-item\"><strong>Размер</strong> — до 100 см, масса до 15 кг (обычно 2-5 кг)</li><li class=\"ingredient-list-item\"><strong>Калорийность</strong> — 120-140 ккал на 100 г</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — икра кеты — самая крупная из красной икры, ценится выше других видов</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Чистка</strong> — удалить чешую, выпотрошить, удалить жабры</li><li class=\"ingredient-list-item\"><strong>Филетирование</strong> — отделить филе от хребта и костей</li><li class=\"ingredient-list-item\"><strong>Разделка</strong> — на стейки, порционные куски, филе</li><li class=\"ingredient-list-item\"><strong>Засолка</strong> — для слабосоленой кеты</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — для жарки и запекания</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Засолка</strong> — слабосоленая кета, классическая закуска</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — горячее и холодное копчение</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде в панировке или кляре</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с овощами, соусами, травами</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — стейки на гриле</li><li class=\"ingredient-list-item\"><strong>Уха</strong> — наваристый суп из кеты</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с рыбой, овощами, зеленью</li><li class=\"ingredient-list-item\"><strong>Икра</strong> — зернистая красная икра кеты</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, помидоры, лук, перец, брокколи</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочный, лимонный, сметанный, укропный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, зеленый лук, кинза</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, лимон, лавровый лист</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Горбуша</strong> — более мелкая, менее жирная</li><li class=\"ingredient-list-item\"><strong>Нерка</strong> — более жирная, яркий вкус</li><li class=\"ingredient-list-item\"><strong>Сёмга</strong> — более жирная, нежное мясо</li><li class=\"ingredient-list-item\"><strong>Кижуч</strong> — более жирный, пикантный вкус</li><li class=\"ingredient-list-item\"><strong>Форель</strong> — более нежная, жирная</li></ul>",
+  "category": "Рыба и морепродукты",
+  "semantic_data": {
+    "properties": [
+      "рыба",
+      "лососевая",
+      "тихоокеанская",
+      "красная рыба",
+      "плотное мясо",
+      "средняя жирность",
+      "диетическая",
+      "для засолки",
+      "для копчения",
+      "для жарки"
+    ],
+    "preparations": [
+      "чистка и потрошение",
+      "удаление чешуи",
+      "филетирование",
+      "разделка на стейки",
+      "засолка",
+      "маринование"
+    ],
+    "cooking_methods": [
+      {"method": "засолка", "priority": "high"},
+      {"method": "копчение", "priority": "high"},
+      {"method": "жарка", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "гриль", "priority": "high"},
+      {"method": "варка ухи", "priority": "medium"},
+      {"method": "использование в салатах", "priority": "medium"}
+    ],
+    "applications": [
+      "закуски",
+      "вторые блюда",
+      "супы",
+      "салаты",
+      "консервация"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "помидоры", "лук", "перец", "брокколи"],
+      "sauces": ["сливочный", "лимонный", "сметанный", "укропный"],
+      "herbs": ["укроп", "петрушка", "зеленый лук", "кинза"],
+      "spices": ["черный перец", "лимон", "лавровый лист"]
+    },
+    "substitutes": [
+      {"name": "Горбуша", "similarity": "high"},
+      {"name": "Нерка", "similarity": "high"},
+      {"name": "Сёмга", "similarity": "medium"},
+      {"name": "Кижуч", "similarity": "medium"},
+      {"name": "Форель", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "рыба",
+    "лососевая",
+    "кета",
+    "красная рыба",
+    "тихоокеанский лосось",
+    "засолка",
+    "копчение",
+    "жарка",
+    "запекание",
+    "икра"
+  ]
+}

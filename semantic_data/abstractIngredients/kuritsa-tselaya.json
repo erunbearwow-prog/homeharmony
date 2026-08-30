@@ -1,0 +1,101 @@
+{
+  "name": "Курица целая",
+  "name_normalized": "kuritsa-tselaya",
+  "synonyms": "",
+  "short_description": "Целая тушка курицы — универсальный продукт, включающий все части птицы. Подходит для запекания, варки, тушения, приготовления бульонов и праздничных блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Целая курица — это тушка птицы, включающая все части: грудку, крылья, ножки, спинку и внутренности (потроха). Универсальный продукт для домашней кухни, который можно использовать целиком или разделать на порционные куски. Целая курица подходит для запекания, варки, тушения, приготовления бульонов и праздничных блюд. Даёт насыщенный, наваристый бульон благодаря наличию костей, хрящей и жира. В зависимости от типа курицы (бройлер, курица-несушка, цыплёнок) различается по размеру, сочности и времени приготовления.</p><h2 class=\"ingredient-title\">Виды целых кур</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Цыплёнок-бройлер</strong> — молодой цыплёнок, нежное мясо, короткое время приготовления (1-1.5 часа)</li><li class=\"ingredient-list-item\"><strong>Курица-несушка</strong> — взрослая птица, мясо более плотное, требует длительного приготовления (2-3 часа)</li><li class=\"ingredient-list-item\"><strong>Цыплёнок-корнишон</strong> — маленький цыплёнок (до 1 кг), для жарки целиком</li><li class=\"ingredient-list-item\"><strong>Курица-гриль</strong> — специальная порода для гриля, с сочным мясом</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — разнообразная (грудка сухая, ножки сочные)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, куриный</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — зависит от части (кожа, ножки)</li><li class=\"ingredient-list-item\"><strong>Коллаген</strong> — в костях и хрящах</li><li class=\"ingredient-list-item\"><strong>Применение</strong> — запекание, варка, тушение, бульоны</li></ul><h2 class=\"ingredient-title\">Разделка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>На порции</strong> — разрезать на грудки, ножки, крылья, спинку</li><li class=\"ingredient-list-item\"><strong>Для бульона</strong> — разрезать на крупные куски</li><li class=\"ingredient-list-item\"><strong>Для фаршировки</strong> — оставить целой</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Запекание</strong> — целиком (в духовке, в рукаве, в фольге)</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — для бульона, супов</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в соусе, в казане</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — маринованная курица-гриль</li><li class=\"ingredient-list-item\"><strong>Фаршировка</strong> — с начинками (рисом, яблоками, грибами)</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — горячее или холодное</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук, чеснок, перец, сельдерей</li><li class=\"ingredient-list-item\"><strong>Травы</strong> — тимьян, розмарин, петрушка, укроп</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — паприка, чёрный перец, кориандр, куркума</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сливочный, соевый, барбекю</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Цыплёнок</strong> — для быстрого приготовления</li><li class=\"ingredient-list-item\"><strong>Индейка</strong> — крупнее</li><li class=\"ingredient-list-item\"><strong>Утка</strong> — жирнее, другой вкус</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/kuritsa-tselaya-zapechennaya/'>Целая запечённая курица</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/kuritsa-bulon/'>Куриный бульон</a></li></ul>",
+  "category": "Курица",
+  "semantic_data": {
+    "properties": [
+      "курица",
+      "целая_тушка",
+      "универсальный",
+      "праздничный",
+      "натуральный"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "промыть_и_обсушить",
+      "разделка_на_порции",
+      "маринование_для_запекания"
+    ],
+    "cooking_methods": [
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "гриль",
+        "priority": "medium"
+      },
+      {
+        "method": "копчение",
+        "priority": "low"
+      }
+    ],
+    "applications": [
+      "праздничные_блюда",
+      "супы",
+      "вторые_блюда",
+      "бульоны"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "картофель",
+        "морковь",
+        "лук",
+        "чеснок",
+        "перец",
+        "сельдерей"
+      ],
+      "herbs": [
+        "тимьян",
+        "розмарин",
+        "петрушка",
+        "укроп"
+      ],
+      "spices": [
+        "паприка",
+        "черный_перец",
+        "кориандр",
+        "куркума"
+      ],
+      "sauces": [
+        "томатный",
+        "сливочный",
+        "соевый",
+        "барбекю"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Цыплёнок",
+        "similarity": "high"
+      },
+      {
+        "name": "Индейка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Утка",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "курица",
+    "целая_курица",
+    "запекание",
+    "бульон",
+    "праздничное_блюдо"
+  ]
+}

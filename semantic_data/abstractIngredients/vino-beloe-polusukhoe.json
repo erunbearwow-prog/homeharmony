@@ -1,0 +1,73 @@
+{
+  "name": "Вино белое полусухое",
+  "name_normalized": "vino-beloe-polusukhoe",
+  "synonyms": "",
+  "short_description": "Белое вино с содержанием сахара от 5 до 25 г/л, сочетающее фруктовую сладость и освежающую кислотность. Имеет светло-соломенный цвет, лёгкий фруктовый или цветочный аромат и мягкое послевкусие. Идеально для повседневного употребления и кулинарных целей.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Белое полусухое вино — это алкогольный напиток, который занимает промежуточное положение между сухим и полусладким вином. Содержание сахара в нём составляет 5–25 г/л, что создаёт приятный баланс между сладостью и кислотностью. Полусухое белое вино воспринимается как лёгкое, питкое, с мягким вкусом без излишней приторности. Цвет варьируется от светло-соломенного до золотистого, аромат раскрывается фруктовыми, цветочными или цитрусовыми нотами. Широко используется как самостоятельный напиток, а также в кулинарии для приготовления соусов, маринадов к рыбе и птице.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Содержание сахара</strong> — 5–25 г/л</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сбалансированный, с лёгкой сладостью и освежающей кислотностью</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — фруктовый, цветочный, цитрусовый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — светло-соломенный, золотистый</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 2-5 лет в бутылке</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Напиток</strong> — самостоятельное употребление, к рыбе, птице, лёгким закускам</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — основа для белых соусов к рыбе, морепродуктам</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для рыбы, курицы, морепродуктов</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — в некоторых рецептах</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Рыба</strong> — лосось, форель, треска, морской язык</li><li class=\"ingredient-list-item\"><strong>Морепродукты</strong> — креветки, мидии, кальмары</li><li class=\"ingredient-list-item\"><strong>Птица</strong> — курица, индейка</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — мягкие, козьи</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — спаржа, кабачки</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Белое сухое вино</strong> — менее сладкое</li><li class=\"ingredient-list-item\"><strong>Белое полусладкое вино</strong> — более сладкое</li><li class=\"ingredient-list-item\"><strong>Белый вермут</strong> — сладкий, ароматизированный</li><li class=\"ingredient-list-item\"><strong>Яблочный сок</strong> — безалкогольная альтернатива</li></ul>",
+  "category": "Белое вино",
+  "semantic_data": {
+    "properties": [
+      "алкоголь",
+      "белое_вино",
+      "полусухое",
+      "баланс_сладости_и_кислотности",
+      "фруктовый",
+      "цветочный",
+      "цитрусовый",
+      "лёгкое"
+    ],
+    "preparations": [
+      "охлаждение_до_8-12_°C"
+    ],
+    "cooking_methods": [
+      {
+        "method": "приготовление_соусов",
+        "priority": "high"
+      },
+      {
+        "method": "маринование",
+        "priority": "high"
+      },
+      {
+        "method": "напиток",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "напиток",
+      "соусы",
+      "маринады"
+    ],
+    "pairings": {
+      "protein": ["лосось", "форель", "треска", "морской_язык", "креветки", "мидии", "кальмары", "курица", "индейка"],
+      "cheeses": ["сыр_мягкий", "сыр_козий"],
+      "vegetables": ["спаржа", "кабачки"]
+    },
+    "substitutes": [
+      {
+        "name": "Белое сухое вино",
+        "similarity": "high"
+      },
+      {
+        "name": "Белое полусладкое вино",
+        "similarity": "high"
+      },
+      {
+        "name": "Белый вермут",
+        "similarity": "medium"
+      },
+      {
+        "name": "Яблочный сок",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "алкоголь",
+    "вино",
+    "белое_вино",
+    "полусухое_вино",
+    "соус",
+    "маринад"
+  ]
+}

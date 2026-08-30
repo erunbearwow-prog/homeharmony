@@ -1,0 +1,65 @@
+{
+  "name": "Колбаски Нюрнбергские",
+  "name_normalized": "kolbaski-nyurnbergskie",
+  "synonyms": "нюрнбергские колбаски, нюрнбергские сосиски, Nürnberger Rostbratwurst, нюрнбергские жареные колбаски, маленькие колбаски, германские колбаски",
+  "short_description": "Знаменитые маленькие жареные колбаски из Нюрнберга, приправленные майораном и другими травами. Отличаются небольшим размером, характерным майоранным ароматом и хрустящей корочкой. Традиционно подаются с квашеной капустой и хреном.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Нюрнбергские колбаски — это знаменитые немецкие колбаски из свинины (иногда с добавлением телятины), которые отличаются небольшим размером (7-9 см) и характерным вкусом с ярко выраженным ароматом майорана. Благодаря своему размеру они быстро готовятся и покрываются хрустящей корочкой, оставаясь сочными внутри. Нюрнбергские колбаски известны как Nürnberger Rostbratwurst и защищены географическим указанием (PGI). Традиционно подаются с квашеной капустой, хреном или картофельным салатом.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочная, с хрустящей корочкой</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — пряный, с ярким майоранным ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — светло-коричневый (после жарки)</li><li class=\"ingredient-list-item\"><strong>Размер</strong> — 7-9 см, небольшие</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — свинина, соль, майоран, специи</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 5-7 дней в холодильнике</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде с маслом</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — на мангале или решётке</li><li class=\"ingredient-list-item\"><strong>Подача</strong> — с квашеной капустой, хреном</li><li class=\"ingredient-list-item\"><strong>Закуска</strong> — в пивной культуре</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Квашеная капуста</strong> — классическое сочетание</li><li class=\"ingredient-list-item\"><strong>Хрен</strong> — для остроты</li><li class=\"ingredient-list-item\"><strong>Горчица</strong> — сладкая или острая</li><li class=\"ingredient-list-item\"><strong>Картофельный салат</strong> — подача</li><li class=\"ingredient-list-item\"><strong>Пиво</strong> — идеальная закуска</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мюнхенские колбаски</strong> — светлые</li><li class=\"ingredient-list-item\"><strong>Охотничьи колбаски</strong> — другие специи</li><li class=\"ingredient-list-item\"><strong>Купаты</strong> — для гриля</li></ul>",
+  "category": "Колбаски и сосиски сырые",
+  "semantic_data": {
+    "properties": [
+      "колбаски",
+      "нюрнбергские",
+      "маленькие",
+      "пряные",
+      "хрустящие",
+      "немецкая_кухня"
+    ],
+    "preparations": [
+      "жарка_на_сковороде",
+      "гриль"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "гриль",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "закуска",
+      "пивная_закуска",
+      "основное_блюдо"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["квашеная_капуста"],
+      "sauces": ["хрен", "горчица"],
+      "salads": ["картофельный_салат"],
+      "drinks": ["пиво"]
+    },
+    "substitutes": [
+      {
+        "name": "Мюнхенские колбаски",
+        "similarity": "medium"
+      },
+      {
+        "name": "Охотничьи колбаски",
+        "similarity": "medium"
+      },
+      {
+        "name": "Купаты",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "колбаски",
+    "нюрнбергские_колбаски",
+    "немецкая_кухня",
+    "гриль",
+    "пивная_закуска"
+  ]
+}

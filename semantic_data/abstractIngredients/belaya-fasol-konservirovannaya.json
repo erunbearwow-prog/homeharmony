@@ -1,0 +1,106 @@
+{
+  "name": "Белая фасоль консервированная",
+  "name_normalized": "belaya-fasol-konservirovannaya",
+  "synonyms": "",
+  "short_description": "Консервированная белая фасоль в собственном соку или рассоле. Готовый к употреблению продукт с мягкой текстурой, богатый растительным белком и клетчаткой. Удобная основа для салатов, супов, гарниров и быстрых блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Консервированная белая фасоль — это готовый к употреблению продукт, представляющий собой отварные бобы белой фасоли, законсервированные в собственном соку или лёгком рассоле. В отличие от сухой фасоли, консервированная не требует замачивания и длительной варки. Обладает мягкой, но упругой текстурой, нейтральным вкусом и высокой пищевой ценностью. Богата растительным белком (до 8-10%), клетчаткой, калием, магнием и витаминами группы B. Широко используется в кулинарии как самостоятельный продукт, в салатах, супах, гарнирах и начинках.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мягкая, упругая, не разваривающаяся</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, слегка солоноватый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — фасоль белая, вода, соль</li><li class=\"ingredient-list-item\"><strong>Белки</strong> — до 10%</li><li class=\"ingredient-list-item\"><strong>Клетчатка</strong> — до 6-8%</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 2-3 года в закрытой банке</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Слив жидкости</strong> — при необходимости</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — для удаления соли и консервантов</li><li class=\"ingredient-list-item\"><strong>Подогрев</strong> — в сотейнике или микроволновке</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с овощами, зеленью, маслом</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — томатные, овощные, с мясом</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — к мясу, птице, рыбе</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — с чесноком, зеленью</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для пирогов, лепешек</li><li class=\"ingredient-list-item\"><strong>Пюре</strong> — основа для паштетов</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, перец, лук, чеснок</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, кинза, базилик</li><li class=\"ingredient-list-item\"><strong>Масла</strong> — оливковое, подсолнечное</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, паприка, кориандр, тмин</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — колбаса, бекон, курица</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Красная фасоль консервированная</strong> — схожая текстура</li><li class=\"ingredient-list-item\"><strong>Нут консервированный</strong> — другой вкус, плотнее</li><li class=\"ingredient-list-item\"><strong>Фасоль белая сухая</strong> — требует варки</li><li class=\"ingredient-list-item\"><strong>Чечевица консервированная</strong> — мягче</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/fasol-salat/'>Салат с белой фасолью</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/nutrition/fasol/'>Польза белой фасоли</a></li></ul>",
+  "category": "Бобовые, крупы, мука, макароны",
+  "semantic_data": {
+    "properties": [
+      "консервированный",
+      "белая_фасоль",
+      "растительный_белок",
+      "клетчатка",
+      "вегетарианский",
+      "постный",
+      "готовый_к_употреблению"
+    ],
+    "preparations": [
+      "слив_жидкости",
+      "промывка_водой",
+      "подогрев"
+    ],
+    "cooking_methods": [
+      {
+        "method": "использование_как_есть",
+        "priority": "high"
+      },
+      {
+        "method": "подогрев",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_салаты",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_супы",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "салаты",
+      "супы",
+      "гарниры",
+      "закуски",
+      "начинки",
+      "пюре"
+    ],
+    "pairings": {
+      "protein": [
+        "колбаса",
+        "бекон",
+        "курица"
+      ],
+      "vegetables": [
+        "помидоры",
+        "перец",
+        "лук",
+        "чеснок"
+      ],
+      "herbs": [
+        "петрушка",
+        "укроп",
+        "кинза",
+        "базилик"
+      ],
+      "oils": [
+        "оливковое_масло",
+        "подсолнечное_масло"
+      ],
+      "spices": [
+        "черный_перец",
+        "паприка",
+        "кориандр",
+        "тмин"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Красная фасоль консервированная",
+        "similarity": "high"
+      },
+      {
+        "name": "Нут консервированный",
+        "similarity": "medium"
+      },
+      {
+        "name": "Фасоль белая сухая",
+        "similarity": "high"
+      },
+      {
+        "name": "Чечевица консервированная",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "консервы",
+    "фасоль",
+    "белая_фасоль",
+    "бобовые",
+    "салат",
+    "суп",
+    "гарнир"
+  ]
+}

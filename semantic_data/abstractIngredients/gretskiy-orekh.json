@@ -1,0 +1,78 @@
+{
+  "name": "Грецкий орех",
+  "name_normalized": "gretskiy-orekh",
+  "synonyms": "грецкий орех, грецкий орех, волошский орех, грецкий, орех грецкий, грецкий орех в скорлупе, грецкий орех очищенный, грецкий орех ядро, walnut",
+  "short_description": "Крупный орех с твёрдой скорлупой и маслянистым ядром, разделённым на дольки. Имеет характерный горьковато-сладкий вкус и богат полезными жирами, витаминами E и группы B, магнием и фосфором. Используется в кулинарии, кондитерских изделиях, салатах и как самостоятельный продукт.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Грецкий орех — это один из самых популярных и питательных орехов в мире. Внутри твёрдой морщинистой скорлупы находится маслянистое ядро, которое по форме напоминает мозг и состоит из двух или четырёх долек. Ядро покрыто тонкой горьковатой кожицей, которую обычно удаляют перед употреблением. Грецкие орехи богаты ненасыщенными жирными кислотами (омега-3), витаминами E и группы B, магнием, фосфором, железом и цинком. Они обладают характерным горьковато-сладким вкусом и ярким ароматом. Широко используются в кулинарии: в выпечке, салатах, соусах, десертах, а также как самостоятельный продукт.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — маслянистая, хрустящая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — горьковато-сладкий, насыщенный</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — ядро светло-бежевое, скорлупа тёмно-коричневая</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — высокая (до 65%)</li><li class=\"ingredient-list-item\"><strong>Белки</strong> — до 15%</li><li class=\"ingredient-list-item\"><strong>Витамины</strong> — E, группы B, магний, фосфор</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Очистка</strong> — расколоть скорлупу, извлечь ядро</li><li class=\"ingredient-list-item\"><strong>Удаление кожицы</strong> — для уменьшения горечи</li><li class=\"ingredient-list-item\"><strong>Обжарка</strong> — в сухой сковороде для усиления аромата</li><li class=\"ingredient-list-item\"><strong>Измельчение</strong> — в крошку, муку или пасту</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — в пирогах, печенье, кексах</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — с мёдом, шоколадом, мороженым</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, овощами, сыром</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — с песто, чесночные</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для конфет, пирогов, голубцов</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — яблоки, груши, бананы, инжир</li><li class=\"ingredient-list-item\"><strong>Мёд и сахар</strong> — в десертах</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — голубые, мягкие, твёрдые</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, базилик, руккола</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Миндаль</strong> — более сладкий</li><li class=\"ingredient-list-item\"><strong>Фундук</strong> — ореховый вкус</li><li class=\"ingredient-list-item\"><strong>Пекан</strong> — похожий вкус</li></ul>",
+  "category": "ОРЕХИ И СЕМЕНА",
+  "semantic_data": {
+    "properties": [
+      "орех",
+      "маслянистый",
+      "горьковато-сладкий",
+      "богат_омега-3",
+      "витаминный",
+      "универсальный"
+    ],
+    "preparations": [
+      "раскалывание_скорлупы",
+      "удаление_кожицы",
+      "обжарка_в_сухой_сковороде",
+      "измельчение"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "обжарка",
+        "priority": "high"
+      },
+      {
+        "method": "измельчение",
+        "priority": "high"
+      },
+      {
+        "method": "запекание_в_выпечке",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "выпечка",
+      "десерты",
+      "салаты",
+      "соусы",
+      "начинки"
+    ],
+    "pairings": {
+      "protein": ["сыр_голубой", "сыр_мягкий", "сыр_твердый"],
+      "fruits": ["яблоки", "груши", "бананы", "инжир"],
+      "herbs": ["петрушка", "базилик", "руккола"],
+      "sweeteners": ["мёд", "сахар"],
+      "chocolate": ["шоколад"]
+    },
+    "substitutes": [
+      {
+        "name": "Миндаль",
+        "similarity": "medium"
+      },
+      {
+        "name": "Фундук",
+        "similarity": "medium"
+      },
+      {
+        "name": "Пекан",
+        "similarity": "high"
+      }
+    ]
+  },
+  "tags": [
+    "орехи",
+    "грецкий_орех",
+    "выпечка",
+    "десерт",
+    "салат",
+    "омега-3"
+  ]
+}

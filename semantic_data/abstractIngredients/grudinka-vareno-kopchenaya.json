@@ -1,0 +1,65 @@
+{
+  "name": "Грудинка варено-копченая",
+  "name_normalized": "grudinka-vareno-kopchenaya",
+  "synonyms": "грудинка варено-копченая, грудинка копченая вареная, грудинка вареная копченая, грудинка в копченом виде, грудинка для бутербродов, мясной деликатес, копченая грудинка",
+  "short_description": "Свиная грудинка, прошедшая варку и последующее горячее или холодное копчение. Имеет плотную, упругую текстуру с жировыми прослойками, насыщенный копченый аромат и солоновато-пряный вкус. Популярна для бутербродов, закусок и салатов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Грудинка варено-копченая — это традиционный мясной деликатес, который изготавливают из свиной грудинки с прослойками мяса и жира. Сначала грудинку варят в пряном рассоле, а затем коптят горячим или холодным дымом. В результате получается продукт с плотной, упругой текстурой, ярким копченым ароматом и солоновато-пряным вкусом. Широко используется для бутербродов, закусок, салатов и как самостоятельная нарезка.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, с жировыми прослойками</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — солоноватый, с ярким копченым ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — тёмно-розовый, золотистый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — свинина, соль, специи, чеснок</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 15-20 дней в холодильнике</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом, горчицей, овощами</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — нарезка к столу</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, яйцом</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — в тушёном виде</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Горчица</strong> — классическое сочетание</li><li class=\"ingredient-list-item\"><strong>Хрен</strong> — для остроты</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, огурцы, лук</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, белый, бородинский</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Грудинка сырокопченая</strong> — без варки</li><li class=\"ingredient-list-item\"><strong>Бекон</strong> — более солёный</li><li class=\"ingredient-list-item\"><strong>Ветчина</strong> — менее жирная</li></ul>",
+  "category": "Грудинка",
+  "semantic_data": {
+    "properties": [
+      "деликатес",
+      "свинина",
+      "варено-копченый",
+      "плотный",
+      "сочный",
+      "копчёный_вкус"
+    ],
+    "preparations": [
+      "нарезка_ломтиками",
+      "хранение_в_холодильнике"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_салаты",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "бутерброды",
+      "закуски",
+      "салаты"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["помидоры", "огурцы", "лук"],
+      "sauces": ["горчица", "хрен"],
+      "breads": ["ржаной_хлеб", "белый_хлеб", "бородинский_хлеб"]
+    },
+    "substitutes": [
+      {
+        "name": "Грудинка сырокопченая",
+        "similarity": "high"
+      },
+      {
+        "name": "Бекон",
+        "similarity": "medium"
+      },
+      {
+        "name": "Ветчина",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "деликатесы",
+    "грудинка",
+    "варено-копченая",
+    "свинина",
+    "бутерброды",
+    "закуски"
+  ]
+}

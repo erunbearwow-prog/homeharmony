@@ -1,0 +1,59 @@
+{
+  "name": "Абрикосовый джем",
+  "name_normalized": "abrikosovyi-dzhem",
+  "synonyms": "джем абрикосовый, варенье из абрикосов (отличие — джем более желеобразный), конфитюр абрикосовый",
+  "short_description": "Ароматное фруктовое лакомство из абрикосов с сахаром, сваренное до желеобразной консистенции. Золотисто-янтарного цвета с ярким кисло-сладким вкусом и насыщенным абрикосовым ароматом.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Абрикосовый джем — это фруктовое лакомство, приготовленное из абрикосов с добавлением сахара и пектина (или без него), сваренное до желеобразной консистенции. В отличие от варенья, джем имеет однородную структуру с кусочками фруктов или без них. Обладает насыщенным золотисто-янтарным цветом, кисло-сладким вкусом и характерным абрикосовым ароматом.</p><h2 class=\"ingredient-title\">Состав и свойства</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Абрикосы</strong> — основа, до 60% от массы</li><li class=\"ingredient-list-item\"><strong>Сахар</strong> — консервант, до 40%</li><li class=\"ingredient-list-item\"><strong>Пектин</strong> — натуральный загуститель (может отсутствовать)</li><li class=\"ingredient-list-item\"><strong>Лимонная кислота</strong> — регулятор кислотности</li><li class=\"ingredient-list-item\"><strong>Витамины</strong> — A, C, группы B, калий, кальций</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Намазка</strong> — для хлеба, тостов, круассанов</li><li class=\"ingredient-list-item\"><strong>Начинка</strong> — для пирогов, печенья, булочек, блинов</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — добавление в йогурты, творог, каши</li><li class=\"ingredient-list-item\"><strong>Глазурь</strong> — покрытие для тортов и пирожных</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к сырам, мясу (особенно утке и свинине)</li><li class=\"ingredient-list-item\"><strong>Начинка для макарон</strong> — в десертных блюдах</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка:</strong> слоёное тесто, бриошь, круассаны</li><li class=\"ingredient-list-item\"><strong>Сыры:</strong> мягкие (рикотта, маскарпоне), голубые (рокфор), твердые (чеддер)</li><li class=\"ingredient-list-item\"><strong>Мясо:</strong> утка, свинина, курица</li><li class=\"ingredient-list-item\"><strong>Зерновые:</strong> овсянка, мюсли, гранола</li><li class=\"ingredient-list-item\"><strong>Кисломолочное:</strong> йогурт, творог, сметана</li><li class=\"ingredient-list-item\"><strong>Орехи:</strong> миндаль, грецкий, кешью</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Абрикосовое варенье</strong> — содержит целые кусочки, менее желеобразное</li><li class=\"ingredient-list-item\"><strong>Персиковый джем</strong> — более мягкий, менее кислый</li><li class=\"ingredient-list-item\"><strong>Кураговый джем</strong> — более плотный, из сушёных абрикосов</li><li class=\"ingredient-list-item\"><strong>Мармелад</strong> — более желеобразный, из цитрусовых</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/abrikosovoe-varene/'>Варенье или джем — в чем разница?</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/techniques/pektin-v-dzhemah/'>Пектин в джемах: зачем и сколько</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/domashniy-dzhem/'>Как сварить идеальный джем в домашних условиях</a></li></ul>",
+  "category": "Джемы",
+  "semantic_data": {
+    "properties": [
+      "сладкий",
+      "кисло-сладкий",
+      "золотисто-янтарный",
+      "желеобразный",
+      "ароматный",
+      "густой",
+      "фруктовый"
+    ],
+    "preparations": [
+      "хранение_в_холодильнике_после_вскрытия",
+      "срок_годности_до_2_лет"
+    ],
+    "cooking_methods": [
+      {"method": "варка_на_медленном_огне", "priority": "high"},
+      {"method": "стерилизация_банок", "priority": "high"},
+      {"method": "закатывание", "priority": "high"}
+    ],
+    "applications": [
+      "намазка_на_хлеб",
+      "начинка_для_выпечки",
+      "добавка_в_десерты",
+      "глазурь",
+      "соусы_к_мясу"
+    ],
+    "pairings": {
+      "protein": ["утка", "свинина", "курица", "рикотта", "маскарпоне", "рокфор", "чеддер"],
+      "vegetables": [],
+      "breads": ["слоёное_тесто", "бриошь", "круассаны", "блины", "оладьи"],
+      "grains": ["овсянка", "мюсли", "гранола"],
+      "dairy": ["йогурт", "творог", "сметана"],
+      "nuts": ["миндаль", "грецкий_орех", "кешью"]
+    },
+    "substitutes": [
+      {"name": "Абрикосовое варенье", "similarity": "high"},
+      {"name": "Персиковый джем", "similarity": "high"},
+      {"name": "Кураговый джем", "similarity": "medium"},
+      {"name": "Мармелад", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "джем",
+    "абрикос",
+    "заготовки",
+    "сладкое",
+    "десерт",
+    "начинка",
+    "намазка",
+    "зимние_заготовки"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "name": "Сыровяленая колбаса",
+  "name_normalized": "syrovyalenaya-kolbasa",
+  "synonyms": "сыровяленая колбаса, сыровяленка, колбаса сыровяленая, сухая колбаса, салями (итальянский аналог)",
+  "short_description": "Колбаса длительного созревания, изготовленная из сырого мяса с добавлением соли, специй и ферментов, подвергнутая медленной сушке. Имеет плотную твёрдую текстуру, насыщенный пряный вкус и длительный срок хранения.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Сыровяленая колбаса — это колбасный продукт, изготавливаемый из сырого мяса (свинина, говядина, иногда конина) с добавлением соли, специй, чеснока и ферментов, без термической обработки. Процесс приготовления включает длительное созревание при контролируемой температуре (похоже на то, как созревает сыр) и медленную сушку в течение нескольких недель или месяцев. В результате колбаса приобретает плотную, твёрдую текстуру, тёмно-красный цвет и насыщенный, пряный вкус с характерным ароматом ферментации. Сыровяленые колбасы имеют длительный срок хранения (до нескольких месяцев) и считаются продуктом премиум-класса. К классическим представителям относятся салями, чоризо, сервелат, колбаса с плесенью.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, твёрдая, упругая, с характерным рисунком жировых вкраплений</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, пряный, с нотами ферментации, может быть острым или сладковатым</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от тёмно-красного до красно-коричневого</li><li class=\"ingredient-list-item\"><strong>Созревание</strong> — от 2 недель до нескольких месяцев</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 3-6 месяцев при комнатной температуре, в холодильнике до 9 месяцев</li><li class=\"ingredient-list-item\"><strong>Способ изготовления</strong> — без термической обработки, только посол, ферментация и сушка</li></ul><h2 class=\"ingredient-title\">Виды сыровяленых колбас</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салями</strong> — итальянская сыровяленая колбаса с чесноком и пряностями</li><li class=\"ingredient-list-item\"><strong>Чоризо</strong> — испанская сыровяленая колбаса с паприкой, острая</li><li class=\"ingredient-list-item\"><strong>Сервелат</strong> — немецкая сыровяленая колбаса, более мягкая по вкусу</li><li class=\"ingredient-list-item\"><strong>Сырокопченая колбаса</strong> — аналогичный процесс, но с дополнительным холодным копчением</li><li class=\"ingredient-list-item\"><strong>Колбаса с плесенью</strong> — сыровяленая колбаса, покрытая благородной плесенью (особый вид)</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — тонкие ломтики на хлеб с маслом</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — нарезка к вину, пиву, крепким напиткам</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, сыром, оливками</li><li class=\"ingredient-list-item\"><strong>Пицца</strong> — как добавка</li><li class=\"ingredient-list-item\"><strong>Паста</strong> — в соусы</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — твердые, выдержанные, голубые</li><li class=\"ingredient-list-item\"><strong>Оливки</strong> — маслины, каперсы</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — виноград, инжир, дыня (для сочетания сладкого и соленого)</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, перец, лук</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — красное вино, пиво, крепкий алкоголь</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сырокопченая колбаса</strong> — с копченым ароматом</li><li class=\"ingredient-list-item\"><strong>Варено-копченая колбаса</strong> — более мягкая</li><li class=\"ingredient-list-item\"><strong>Салями</strong> — классическая замена</li></ul>",
+  "category": "Колбасы сырокопченые и сыровяленые",
+  "semantic_data": {
+    "properties": [
+      "сыровяленая",
+      "плотный",
+      "твердый",
+      "длительное_созревание",
+      "пряный",
+      "без_термической_обработки",
+      "длительный_срок_хранения"
+    ],
+    "preparations": [
+      "нарезка_тонкими_ломтиками",
+      "хранение_при_комнатной_температуре_в_сухом_месте"
+    ],
+    "cooking_methods": [
+      {"method": "свежее_употребление", "priority": "high"},
+      {"method": "добавление_в_салаты", "priority": "medium"},
+      {"method": "добавление_в_пиццу_и_пасту", "priority": "medium"}
+    ],
+    "applications": [
+      "бутерброды",
+      "закуски",
+      "салаты",
+      "пицца",
+      "паста"
+    ],
+    "pairings": {
+      "protein": ["сыр_твердый", "сыр_выдержанный", "сыр_голубой"],
+      "vegetables": ["помидоры", "перец", "лук", "оливки", "каперсы"],
+      "fruits": ["виноград", "инжир", "дыня"],
+      "drinks": ["красное_вино", "пиво", "крепкий_алкоголь"],
+      "breads": ["хлеб", "багет"]
+    },
+    "substitutes": [
+      {"name": "Сырокопченая колбаса", "similarity": "high"},
+      {"name": "Варено-копченая колбаса", "similarity": "low"},
+      {"name": "Салями", "similarity": "high"}
+    ]
+  },
+  "tags": [
+    "колбаса",
+    "сыровяленая",
+    "сыровяленка",
+    "салями",
+    "закуска",
+    "длительное_хранение"
+  ]
+}

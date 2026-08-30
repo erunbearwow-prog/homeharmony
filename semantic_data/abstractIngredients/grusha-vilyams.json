@@ -1,0 +1,70 @@
+{
+  "name": "Груша Вильямс",
+  "name_normalized": "grusha-vilyams",
+  "synonyms": "вильямс, вильям, груша вильямс, конференс, душес, люкас, вильямс летний, английская груша, груша бартлетт, Bartlett pear, груша дюшес вильямс (реже)",
+  "short_description": "Крупный сорт летней груши с удлинённой формой, тонкой кожицей, сочной тающей мякотью и маслянистым сладким вкусом с выраженным мускатным ароматом. Один из самых популярных десертных сортов груш в мире.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Груша Вильямс (Bartlett) — это один из старейших и самых популярных сортов груш, выведенный в Англии в конце XVIII века. Плоды имеют типичную удлинённую грушевидную форму, тонкую зелено-жёлтую кожицу, которая при созревании становится золотистой. Мякоть очень сочная, маслянистая, тающая, с характерным сладким вкусом и ярким мускатным ароматом. Вильямс — классический десертный сорт для свежего употребления, производства соков, а также для запекания и консервации.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочная, маслянистая, тающая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, с выраженным мускатным ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — зелено-жёлтый, золотистый при созревании</li><li class=\"ingredient-list-item\"><strong>Вес</strong> — 150-200 г</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — июль-сентябрь</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежая</strong> — как десертный фрукт, в салатах</li><li class=\"ingredient-list-item\"><strong>Соки</strong> — для получения сока</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке, в пирогах</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — с шоколадом, орехами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — голубые, мягкие</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — птица, свинина</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, ваниль</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Груша Конференция</strong> — более твердая</li><li class=\"ingredient-list-item\"><strong>Груша Анжу</strong> — похожий сорт</li><li class=\"ingredient-list-item\"><strong>Яблоки</strong> — в выпечке</li></ul>",
+  "category": "Семечковые",
+  "semantic_data": {
+    "properties": [
+      "груша",
+      "летний_сорт",
+      "сочный",
+      "маслянистый",
+      "сладкий",
+      "ароматный"
+    ],
+    "preparations": [
+      "мытьё",
+      "очистка_от_кожицы",
+      "нарезка"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "сок",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "десерты",
+      "соки",
+      "выпечка"
+    ],
+    "pairings": {
+      "protein": ["голубые_сыры", "мягкие_сыры"],
+      "nuts": ["грецкие_орехи", "миндаль"],
+      "meat": ["птица", "свинина"],
+      "spices": ["корица", "ваниль"]
+    },
+    "substitutes": [
+      {
+        "name": "Груша Конференция",
+        "similarity": "high"
+      },
+      {
+        "name": "Груша Анжу",
+        "similarity": "high"
+      },
+      {
+        "name": "Яблоки",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "фрукт",
+    "груша",
+    "вильямс",
+    "десерт",
+    "сочный",
+    "летний_сорт"
+  ]
+}

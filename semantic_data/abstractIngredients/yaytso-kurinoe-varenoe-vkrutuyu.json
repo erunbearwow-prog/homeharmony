@@ -1,0 +1,84 @@
+{
+  "name": "Яйцо куриное вареное вкрутую",
+  "name_normalized": "yaytso-kurinoe-varenoe-vkrutuyu",
+  "synonyms": "",
+  "short_description": "Куриное яйцо, сваренное в течение 8-10 минут до полной готовности белка и желтка. Универсальный продукт для салатов, бутербродов, закусок и как самостоятельное блюдо.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Вареное вкрутую куриное яйцо — это яйцо, приготовленное методом варки в течение 8–10 минут, при котором белок становится полностью плотным и упругим, а желток — твёрдым, но не рассыпчатым (при правильной варке) или слегка крошащимся (при переваривании). Является одним из самых универсальных продуктов, готовым к употреблению горячим или холодным, а также ключевым ингредиентом для множества блюд — от салатов до горячих закусок.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — белок плотный, упругий; желток твёрдый, не крошащийся</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, яичный, с лёгкой сернистой ноткой</li><li class=\"ingredient-list-item\"><strong>Время варки</strong> — 8-10 минут (с момента закипания воды)</li><li class=\"ingredient-list-item\"><strong>Цвет желтка</strong> — от бледно-жёлтого до насыщенно-оранжевого</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 7 дней в холодильнике (в скорлупе)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Варка</strong> — залить холодной водой, довести до кипения, варить 8-10 минут</li><li class=\"ingredient-list-item\"><strong>Охлаждение</strong> — после варки переложить в холодную воду (для лёгкой чистки)</li><li class=\"ingredient-list-item\"><strong>Очистка</strong> — аккуратно удалить скорлупу</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — оливье, шуба, цезарь, греческий</li><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом, икрой, красной рыбой</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — фаршированные яйца, яйца под соусом</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — к мясу, рыбе, овощам</li><li class=\"ingredient-list-item\"><strong>Самостоятельное блюдо</strong> — с солью, перцем, соусом</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соль, перец</strong> — классическая подача</li><li class=\"ingredient-list-item\"><strong>Майонез</strong> — для салатов и закусок</li><li class=\"ingredient-list-item\"><strong>Горчица</strong> — в бутербродах</li><li class=\"ingredient-list-item\"><strong>Икра</strong> — на бутербродах</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, зелёный лук</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Яйцо всмятку</strong> — жидкий желток</li><li class=\"ingredient-list-item\"><strong>Яйцо в мешочек</strong> — полужидкий желток</li><li class=\"ingredient-list-item\"><strong>Перепелиное яйцо вареное</strong> — мини-формат</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/kak-varit-yaytsa/'>Как правильно варить яйца</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/yaytca-farsh/'>Фаршированные яйца</a></li></ul>",
+  "category": "Яйца",
+  "semantic_data": {
+    "properties": [
+      "вареный",
+      "вкрутую",
+      "плотный",
+      "твердый_желток",
+      "универсальный",
+      "готовый_к_употреблению",
+      "длительный_срок_хранения"
+    ],
+    "preparations": [
+      "варка_8-10_минут",
+      "охлаждение_в_холодной_воде",
+      "очистка_от_скорлупы"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "охлаждение",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "салаты",
+      "бутерброды",
+      "закуски",
+      "гарниры",
+      "самостоятельное_блюдо"
+    ],
+    "pairings": {
+      "protein": [
+        "майонез",
+        "икра",
+        "красная_рыба"
+      ],
+      "spices": [
+        "соль",
+        "перец",
+        "горчица"
+      ],
+      "herbs": [
+        "укроп",
+        "петрушка",
+        "зеленый_лук"
+      ],
+      "breads": [
+        "батон",
+        "ржаной_хлеб"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Яйцо всмятку",
+        "similarity": "medium"
+      },
+      {
+        "name": "Яйцо в мешочек",
+        "similarity": "medium"
+      },
+      {
+        "name": "Перепелиное яйцо вареное",
+        "similarity": "high"
+      }
+    ]
+  },
+  "tags": [
+    "яйца",
+    "вареное_яйцо",
+    "вкрутую",
+    "салаты",
+    "бутерброды",
+    "закуски"
+  ]
+}

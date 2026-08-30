@@ -1,0 +1,63 @@
+{
+  "name": "Имбирь маринованный",
+  "name_normalized": "imbir_marinovannyy",
+  "synonyms": "маринованный имбирь, гари, имбирь для суши, имбирь для роллов, имбирь для сашими, имбирь гари, имбирь маринованный розовый, имбирь маринованный белый, японский маринованный имбирь, gari, pickled ginger, sushi ginger, амадзу сёга, амазу сёга, beni shoga",
+  "short_description": "Тонко нарезанный имбирь, маринованный в рисовом уксусе с добавлением сахара и соли. Традиционная японская закуска, подаваемая к суши и роллам для освежения вкуса между разными видами рыбы. Имеет нежный, слегка сладковатый, кисло-пряный вкус и хрустящую текстуру.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Маринованный имбирь (гари) — это традиционная японская закуска, которую подают к суши, роллам и сашими для освежения рецепторов между употреблением разных видов рыбы. Для маринования используют молодой имбирь, который нарезают тонкими ломтиками и выдерживают в рассоле из рисового уксуса, сахара и соли. В процессе маринования имбирь приобретает нежный, слегка сладковатый, кисло-пряный вкус с легкой остринкой и характерный розоватый или бледно-желтый цвет (розовый цвет достигается за счет натурального красителя — свекольного сока или красной сливы умэбоши).</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — хрустящая, нежная, упругая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисло-сладкий, с легкой остринкой имбиря</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — бледно-розовый или кремово-белый</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — в холодильнике 6–12 месяцев (в закрытой банке), 2–3 недели (в открытой)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — не содержит жиров</li></ul><h2 class=\"ingredient-title\">Виды маринованного имбиря</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гари (Gari)</strong> — классический маринованный имбирь к суши, тонко нарезанный, розовый или белый</li><li class=\"ingredient-list-item\"><strong>Бени сёга (Beni shoga)</strong> — имбирь, маринованный с красной периллой, ярко-красного цвета, более острый</li><li class=\"ingredient-list-item\"><strong>Амадзу сёга (Amazu shoga)</strong> — маринованный в сладком рисовом уксусе, классический вариант для суши</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике, в герметичной банке или оригинальной упаковке</li><li class=\"ingredient-list-item\"><strong>Подача</strong> — выложить порцию в отдельную тарелку, подавать к суши и роллам</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Суши и роллы</strong> — традиционное дополнение между разными видами рыбы</li><li class=\"ingredient-list-item\"><strong>Сашими</strong> — освежает вкус после каждого кусочка</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — добавляет пикантность свежим салатам</li><li class=\"ingredient-list-item\"><strong>Азиатские блюда</strong> — как гарнир к лапше, рису</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — подается как самостоятельная закуска</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — мелко нарезанный для заправок</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Суши и роллы</strong> — классическая пара</li><li class=\"ingredient-list-item\"><strong>Рыба и морепродукты</strong> — тунец, лосось, креветки, угорь</li><li class=\"ingredient-list-item\"><strong>Соевый соус</strong> — для окунания</li><li class=\"ingredient-list-item\"><strong>Васаби</strong> — традиционное сочетание</li><li class=\"ingredient-list-item\"><strong>Свежие овощи</strong> — в салатах</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежий имбирь</strong> — для других блюд, но не для суши</li><li class=\"ingredient-list-item\"><strong>Маринованный лук</strong> — для кисло-сладкого вкуса</li><li class=\"ingredient-list-item\"><strong>Дайкон маринованный</strong> — другой вкус, но схожая функция</li></ul>",
+  "category": "Овощи",
+  "semantic_data": {
+    "properties": [
+      "маринованный",
+      "японский",
+      "гари",
+      "суши",
+      "роллы",
+      "хрустящий",
+      "кисло-сладкий",
+      "нежный",
+      "пряный",
+      "освежающий"
+    ],
+    "preparations": [
+      "хранение в холодильнике",
+      "подача охлажденной",
+      "порционная выкладка"
+    ],
+    "cooking_methods": [
+      {"method": "подача к суши и роллам", "priority": "high"},
+      {"method": "использование в салатах", "priority": "medium"},
+      {"method": "использование как гарнир", "priority": "medium"}
+    ],
+    "applications": [
+      "суши и роллы",
+      "сашими",
+      "салаты",
+      "гарниры",
+      "закуски"
+    ],
+    "pairings": {
+      "protein": ["тунец", "лосось", "креветки", "угорь"],
+      "vegetables": ["свежие овощи"],
+      "sauces": ["соевый соус", "васаби"],
+      "herbs": [],
+      "spices": []
+    },
+    "substitutes": [
+      {"name": "Свежий имбирь", "similarity": "low"},
+      {"name": "Маринованный лук", "similarity": "low"},
+      {"name": "Дайкон маринованный", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "имбирь",
+    "маринованный имбирь",
+    "гари",
+    "японская кухня",
+    "суши",
+    "роллы",
+    "закуска",
+    "освежающий",
+    "хрустящий",
+    "кисло-сладкий"
+  ]
+}

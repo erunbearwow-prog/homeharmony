@@ -1,0 +1,59 @@
+{
+  "name": "Горбуша в томатном соусе",
+  "name_normalized": "gorbusha-v-tomatnom-souse",
+  "synonyms": "горбуша томатная, горбуша консервированная в томате, горбуша в томатном соусе консервы, рыба в томатном соусе, консервы горбуша в томате, томатная горбуша",
+  "short_description": "Консервированная горбуша в густом томатном соусе с добавлением специй. Готовый продукт с мягким мясом рыбы и насыщенным кисло-сладким вкусом. Идеальна для бутербродов, салатов, супов и горячих блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Горбуша в томатном соусе — это консервированный продукт из кусочков рыбы горбуши, залитых густым томатным соусом с добавлением соли, сахара и специй (обычно чёрный перец, лавровый лист, чеснок). Мясо горбуши в процессе консервации становится мягким и легко разбирается на волокна, а томатный соус придает блюду характерный кисло-сладкий вкус. Это полностью готовый к употреблению продукт, который можно использовать как самостоятельное блюдо, так и в качестве ингредиента для закусок, салатов, супов и соусов.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мягкая, сочная, легко разбирается на волокна</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисло-сладкий, томатный, с пряными нотами</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от светло-розового до оранжево-красного</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — горбуша, томатная паста, вода, соль, сахар, специи</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в закрытой банке</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — на хлеб, в качестве намазки</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — с зеленью, луком, яйцом</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с яйцом, рисом, огурцами</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — в качестве добавки в томатные супы</li><li class=\"ingredient-list-item\"><strong>Паштет</strong> — в измельчённом виде с маслом</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — основа для рыбных соусов</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, бородинский, белый</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, зелёный лук, помидоры, огурцы</li><li class=\"ingredient-list-item\"><strong>Яйца</strong> — варёные, в салатах</li><li class=\"ingredient-list-item\"><strong>Рис, макароны, картофель</strong> — в качестве гарнира</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, кинза</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сайра в томатном соусе</strong> — жирнее</li><li class=\"ingredient-list-item\"><strong>Сардина в томатном соусе</strong> — более мелкая</li><li class=\"ingredient-list-item\"><strong>Тунец в томатном соусе</strong> — плотнее</li><li class=\"ingredient-list-item\"><strong>Кета в томатном соусе</strong> — схожий вкус</li><li class=\"ingredient-list-item\"><strong>Горбуша в собственном соку</strong> — без томатного соуса</li></ul>",
+  "category": "Рыбные консервы",
+  "semantic_data": {
+    "properties": [
+      "консервы",
+      "рыбный",
+      "томатный_соус",
+      "готовый_продукт",
+      "мягкий",
+      "насыщенный"
+    ],
+    "preparations": [
+      "открыть_банку",
+      "использовать_как_есть",
+      "подогреть_при_необходимости"
+    ],
+    "cooking_methods": [
+      {"method": "использование_как_есть", "priority": "high"},
+      {"method": "подогрев", "priority": "high"},
+      {"method": "измельчение_в_паштет", "priority": "medium"},
+      {"method": "добавление_в_салаты", "priority": "high"}
+    ],
+    "applications": [
+      "бутерброды",
+      "салаты",
+      "супы",
+      "соусы",
+      "паштеты",
+      "закуски"
+    ],
+    "pairings": {
+      "protein": ["яйца", "масло"],
+      "vegetables": ["лук", "зеленый_лук", "помидоры", "огурцы"],
+      "herbs": ["петрушка", "укроп", "кинза"],
+      "grains": ["рис", "макароны", "картофель"],
+      "breads": ["ржаной_хлеб", "бородинский_хлеб", "белый_хлеб"]
+    },
+    "substitutes": [
+      {"name": "Сайра в томатном соусе", "similarity": "high"},
+      {"name": "Сардина в томатном соусе", "similarity": "medium"},
+      {"name": "Тунец в томатном соусе", "similarity": "medium"},
+      {"name": "Кета в томатном соусе", "similarity": "high"},
+      {"name": "Горбуша в собственном соку", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "консервы",
+    "рыбные_консервы",
+    "горбуша",
+    "томатный_соус",
+    "быстрый_обед",
+    "бутерброды"
+  ]
+}

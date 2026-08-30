@@ -1,0 +1,96 @@
+{
+  "name": "Сыр Швейцарский",
+  "name_normalized": "syr_shveytsarskiy",
+  "synonyms": "швейцарский сыр, российский швейцарский сыр, швейцарский твердый сыр, сыр с глазками, сыр для фондю, сыр для бутербродов, сырная тарелка, сыр для горячих блюд",
+  "short_description": "Российский твердый сыр, изготовленный по технологии, близкой к швейцарским сырам. Имеет плотную эластичную текстуру и характерный сладковато-ореховый вкус. Отличительная черта — мелкие круглые и овальные глазки, равномерно расположенные по всей массе. Универсален в кулинарии.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">«Швейцарский» — это классический российский твердый сыр, который изготавливается по технологии, близкой к швейцарским сырам, с использованием высокой температуры второго нагревания (48-58°C) и пропионовокислых бактерий. В советское время его создавали как отечественный аналог знаменитого Эмменталя, но со временем сформировалась самостоятельная рецептура. Сегодня этот сыр выпускают многие российские производители, и он остается одним из самых популярных твердых сыров.</p><p class=\"ingredient-text\">Сыр имеет плотную, эластичную, пластичную консистенцию, бледно-желтый или светло-желтый цвет и характерный сладковатый, слегка пряный вкус с ореховыми нотками. В отличие от Эмменталя с крупными «глазками», у российского «Швейцарского» сыра глазки мелкие, круглой или овальной формы, равномерно расположенные по всей массе. Созревание длится от 4 до 6 месяцев (и более).</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тип</strong> — твердый сыр</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, эластичная, пластичная, однородная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — выраженный сырный, сладковатый, слегка пряный, с ореховыми нотками</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от белого до бледно-желтого, однородный</li><li class=\"ingredient-list-item\"><strong>Рисунок</strong> — мелкие круглые или овальные глазки, равномерно расположенные по всей массе</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — 50% в сухом веществе</li><li class=\"ingredient-list-item\"><strong>Созревание</strong> — 4-6 месяцев (до 180 суток)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 5-6 месяцев в холодильнике</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — отлично плавится, идеален для горячих блюд</li></ul><h2 class=\"ingredient-title\">Технология производства</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\">Изготавливается из пастеризованного коровьего молока</li><li class=\"ingredient-list-item\">Используются бактериальные закваски (мезофильные, термофильные и пропионовокислые бактерии)</li><li class=\"ingredient-list-item\">Второе нагревание при высокой температуре (48-58°C)</li><li class=\"ingredient-list-item\">Созревание при низкой температуре (4±2°C) в течение 3-4 месяцев</li></ul><h2 class=\"ingredient-title\">Подготовка и хранение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике при +2-6°C в герметичной упаковке</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — ломтиками, кубиками, соломкой</li><li class=\"ingredient-list-item\"><strong>Тёрка</strong> — хорошо трется</li><li class=\"ingredient-list-item\"><strong>Подача</strong> — рекомендуется достать за 20-30 минут до подачи</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Фондю</strong> — в смеси с другими сырами</li><li class=\"ingredient-list-item\"><strong>Бутерброды и сэндвичи</strong> — классическое использование</li><li class=\"ingredient-list-item\"><strong>Пицца и запеканки</strong> — хорошо плавится</li><li class=\"ingredient-list-item\"><strong>Паста и ризотто</strong> — в тертом виде</li><li class=\"ingredient-list-item\"><strong>Сырная тарелка</strong> — самостоятельная закуска</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, зерновой, багет</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, перец, лук, брокколи</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, говядина, ветчина</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — виноград, груши, яблоки</li><li class=\"ingredient-list-item\"><strong>Вино</strong> — белое сухое, красное</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Советский сыр</strong> — схожий по текстуре</li><li class=\"ingredient-list-item\"><strong>Костромской сыр</strong> — твердый отечественный</li><li class=\"ingredient-list-item\"><strong>Гауда</strong> — более мягкий вкус</li><li class=\"ingredient-list-item\"><strong>Эмменталь</strong> — для крупных глазков (другой сорт)</li></ul>",
+  "category": "Молочные продукты",
+  "semantic_data": {
+    "properties": [
+      "твердый",
+      "российский",
+      "швейцарская технология",
+      "с мелкими глазками",
+      "сладковатый",
+      "ореховый",
+      "эластичный",
+      "для фондю",
+      "для бутербродов",
+      "хорошо плавится",
+      "сырная тарелка",
+      "универсальный"
+    ],
+    "preparations": [
+      "хранение в холодильнике при +2-6°C",
+      "нарезка ломтиками или кубиками",
+      "натирание на тёрке",
+      "достать за 20-30 минут до подачи"
+    ],
+    "cooking_methods": [
+      {
+        "method": "использование в бутербродах",
+        "priority": "high"
+      },
+      {
+        "method": "плавление в горячих блюдах (пицца, запеканки)",
+        "priority": "high"
+      },
+      {
+        "method": "подача в сырной тарелке",
+        "priority": "high"
+      },
+      {
+        "method": "использование для фондю",
+        "priority": "medium"
+      },
+      {
+        "method": "использование в тёртом виде (паста, ризотто)",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "бутерброды и сэндвичи",
+      "фондю",
+      "пицца и запеканки",
+      "паста и ризотто",
+      "сырная тарелка"
+    ],
+    "pairings": {
+      "protein": ["курица", "говядина", "ветчина"],
+      "vegetables": ["помидоры", "перец", "лук", "брокколи"],
+      "sauces": [],
+      "herbs": [],
+      "spices": []
+    },
+    "substitutes": [
+      {
+        "name": "Советский сыр",
+        "similarity": "high"
+      },
+      {
+        "name": "Костромской сыр",
+        "similarity": "high"
+      },
+      {
+        "name": "Гауда",
+        "similarity": "medium"
+      },
+      {
+        "name": "Эмменталь (с крупными глазками)",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "сыр",
+    "швейцарский сыр",
+    "российский швейцарский",
+    "твердый сыр",
+    "сыр с глазками",
+    "сыр для фондю",
+    "сыр для бутербродов",
+    "сырная тарелка",
+    "универсальный",
+    "молочные продукты"
+  ]
+}

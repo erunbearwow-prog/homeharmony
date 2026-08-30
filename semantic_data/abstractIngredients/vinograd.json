@@ -1,0 +1,82 @@
+{
+  "name": "Виноград",
+  "name_normalized": "vinograd",
+  "synonyms": "",
+  "short_description": "Сочные ягоды, собранные в грозди, разнообразных цветов и вкусов — от сладкого до кисловатого, с тонкой кожицей и сочной мякотью. Используется в свежем виде, для виноделия, соков, изюма и десертов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Виноград — это ягоды, растущие на многолетних лианах рода Vitis. Ягоды собраны в грозди и имеют округлую или овальную форму, покрыты тонкой кожицей, под которой находится сочная мякоть с семенами (у некоторых сортов — без косточек). Цвет ягод варьируется от зелёного и жёлтого до розового, красного, фиолетового и почти чёрного. Вкус винограда зависит от сорта — от сладкого до кисло-сладкого, с лёгкой терпкостью. Виноград богат витаминами C, K, группы B, калием, антиоксидантами (флавоноидами, ресвератролом). Широко используется в свежем виде, для приготовления соков, вина, изюма, а также в салатах и десертах.</p><h2 class=\"ingredient-title\">Сорта и виды</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Зелёный (белый) виноград</strong> — сладкий, с тонкой кожицей</li><li class=\"ingredient-list-item\"><strong>Красный виноград</strong> — сладкий, с терпкостью</li><li class=\"ingredient-list-item\"><strong>Чёрный виноград</strong> — сладкий, с насыщенным вкусом</li><li class=\"ingredient-list-item\"><strong>Кишмиш</strong> — без косточек, мелкий, сладкий</li><li class=\"ingredient-list-item\"><strong>Столовый виноград</strong> — для свежего употребления</li><li class=\"ingredient-list-item\"><strong>Технический виноград</strong> — для виноделия</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочная, хрустящая (у некоторых сортов), с семенами или без</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, кисло-сладкий, с терпкостью</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — зелёный, жёлтый, розовый, красный, фиолетовый, чёрный</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — лето-осень</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойка</strong> — тщательно вымыть под проточной водой</li><li class=\"ingredient-list-item\"><strong>Отделение ягод</strong> — отделить от грозди</li><li class=\"ingredient-list-item\"><strong>Удаление косточек</strong> — при необходимости</li><li class=\"ingredient-list-item\"><strong>Сушка</strong> — для изюма</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежий</strong> — самостоятельный фрукт</li><li class=\"ingredient-list-item\"><strong>Изюм</strong> — сушёный виноград</li><li class=\"ingredient-list-item\"><strong>Соки и вино</strong> — сок, виноградное вино</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, сыром, орехами</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — с мороженым, йогуртом</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к мясу (особенно дичи)</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — голубые, козий сыр, пармезан</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — дичь, утка, свинина</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — мята, базилик</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Изюм</strong> — в выпечке и десертах</li><li class=\"ingredient-list-item\"><strong>Гранатовые зёрна</strong> — в салатах</li><li class=\"ingredient-list-item\"><strong>Черника</strong> — сладкие ягоды</li></ul>",
+  "category": "Виноград",
+  "semantic_data": {
+    "properties": [
+      "ягода",
+      "сочный",
+      "сладкий",
+      "кисло-сладкий",
+      "терпкий",
+      "витаминный",
+      "антиоксидантный"
+    ],
+    "preparations": [
+      "мытьё_под_проточной_водой",
+      "отделение_от_грозди",
+      "удаление_косточек"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "сушка_изюма",
+        "priority": "high"
+      },
+      {
+        "method": "виноделие",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_сока",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_салаты",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "свежий_фрукт",
+      "изюм",
+      "сок_и_вино",
+      "салаты",
+      "десерты",
+      "соусы"
+    ],
+    "pairings": {
+      "protein": ["голубые_сыры", "козий_сыр", "пармезан", "дичь", "утка", "свинина"],
+      "nuts": ["грецкие_орехи", "миндаль"],
+      "herbs": ["мята", "базилик"]
+    },
+    "substitutes": [
+      {
+        "name": "Изюм",
+        "similarity": "high"
+      },
+      {
+        "name": "Гранатовые зёрна",
+        "similarity": "medium"
+      },
+      {
+        "name": "Черника",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "фрукты",
+    "ягоды",
+    "виноград",
+    "изюм",
+    "вино",
+    "десерт",
+    "антиоксидант"
+  ]
+}

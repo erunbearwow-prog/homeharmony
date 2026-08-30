@@ -1,0 +1,71 @@
+{
+  "name": "Зубатка полосатая",
+  "name_normalized": "zubatka_polosataya",
+  "synonyms": "зубатка полосатая, полосатая зубатка, морской волк, зубатка обыкновенная, полосатый морской волк, Anarhichas lupus, атлантическая зубатка, зубатка для запекания, зубатка для жарки, рыба без костей",
+  "short_description": "Крупная северная морская рыба семейства зубатковых с плотным, белым, умеренно жирным мясом и отсутствием межмышечных костей. Характерный признак — 10-12 темных полос на серо-коричневом теле. Достигает длины до 125 см и массы до 25 кг. Ценится за нежное, вкусное мясо и универсальность в кулинарии.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Полосатая зубатка (Anarhichas lupus) — это крупная морская рыба семейства зубатковых, которая обитает в холодных водах северной Атлантики. Отличительный признак — серо-коричневое тело с 10-12 четкими темными полосами, за что рыба и получила свое название. Достигает длины до 125 см и массы до 25 кг. Полосатая зубатка ценится за плотное, белое, нежное мясо без мелких межмышечных костей. По жирности она уступает пятнистой зубатке, но превосходит синюю. Универсальна в кулинарии: подходит для запекания, жарки, ухи, приготовления на пару и гриля.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — белое, плотное, нежное, без мелких межмышечных костей</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — деликатный, слегка сладковатый, без выраженного рыбного запаха</li><li class=\"ingredient-list-item\"><strong>Окрас</strong> — серо-коричневое тело с 10-12 темными полосами</li><li class=\"ingredient-list-item\"><strong>Размер</strong> — до 125 см, масса до 25 кг</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — средняя (ниже, чем у пятнистой зубатки)</li><li class=\"ingredient-list-item\"><strong>Калорийность</strong> — 110-120 ккал на 100 г</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — при неправильной готовке мясо может развариваться</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выбор</strong> — предпочтение крупным кускам с ровными срезами, мясо белое, без серых пятен</li><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — при комнатной температуре, избегать повторной заморозки</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — рекомендуется для уплотнения структуры (с лимоном, специями, маслом)</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — замороженная до 6 месяцев при -18°C, охлаждённая — использовать в течение нескольких часов</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Запекание</strong> — классический способ, в фольге или рукаве, с овощами и травами</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — требует осторожности, лучше в кляре или предварительно отварив в солёной воде</li><li class=\"ingredient-list-item\"><strong>Уха</strong> — дает наваристый бульон с деликатным вкусом</li><li class=\"ingredient-list-item\"><strong>Приготовление на пару</strong> — сохраняет нежную текстуру и полезные свойства</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — даёт красивую корочку, сохраняя сочность</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — горячее и холодное, хорошо держит вкус</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, помидоры, морковь, лук, перец, брокколи, цукини</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочный, томатный, лимонный, сметанный</li><li class=\"ingredient-list-item\"><strong>Цитрусовые</strong> — лимон, лайм</li><li class=\"ingredient-list-item\"><strong>Травы</strong> — тимьян, укроп, петрушка, кинза</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, чеснок, паприка</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Зубатка пятнистая</strong> — более жирная и нежная</li><li class=\"ingredient-list-item\"><strong>Зубатка синяя</strong> — более водянистое мясо</li><li class=\"ingredient-list-item\"><strong>Треска</strong> — схожая текстура, менее жирная</li><li class=\"ingredient-list-item\"><strong>Судак</strong> — плотное мясо</li><li class=\"ingredient-list-item\"><strong>Морской окунь</strong> — близкий родственник</li></ul>",
+  "category": "Рыба и морепродукты",
+  "semantic_data": {
+    "properties": [
+      "морская рыба",
+      "северная рыба",
+      "полосатая",
+      "белое мясо",
+      "без костей",
+      "нежное",
+      "плотное",
+      "универсальная",
+      "для запекания",
+      "для жарки",
+      "для ухи",
+      "для гриля"
+    ],
+    "preparations": [
+      "выбор крупных кусков с ровными срезами",
+      "разморозка при комнатной температуре",
+      "маринование с лимоном и травами",
+      "запекание в фольге или рукаве",
+      "приготовление на пару"
+    ],
+    "cooking_methods": [
+      {"method": "запекание в духовке", "priority": "high"},
+      {"method": "жарка в кляре", "priority": "high"},
+      {"method": "варка ухи", "priority": "high"},
+      {"method": "приготовление на пару", "priority": "high"},
+      {"method": "гриль", "priority": "medium"},
+      {"method": "копчение", "priority": "medium"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "супы",
+      "закуски"
+    ],
+    "pairings": {
+      "protein": ["сливочное масло"],
+      "vegetables": ["картофель", "помидоры", "морковь", "лук", "перец", "брокколи", "цукини"],
+      "sauces": ["сливочный", "томатный", "лимонный", "сметанный"],
+      "herbs": ["тимьян", "укроп", "петрушка", "кинза"],
+      "spices": ["черный перец", "чеснок", "паприка"]
+    },
+    "substitutes": [
+      {"name": "Зубатка пятнистая", "similarity": "high"},
+      {"name": "Зубатка синяя", "similarity": "medium"},
+      {"name": "Треска", "similarity": "high"},
+      {"name": "Судак", "similarity": "medium"},
+      {"name": "Морской окунь", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "рыба",
+    "морская рыба",
+    "зубатка полосатая",
+    "полосатая зубатка",
+    "северная рыба",
+    "белая рыба",
+    "без костей",
+    "запекание",
+    "жарка",
+    "уха",
+    "морской волк"
+  ]
+}

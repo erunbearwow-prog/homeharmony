@@ -1,0 +1,66 @@
+{
+  "name": "Грейпфрут свити",
+  "name_normalized": "greypfrut-sviti",
+  "synonyms": "свити, грейпфрут свити, грейпфрут белый, белый грейпфрут, грейпфрут для сока, грейпфрут кислый",
+  "short_description": "Крупный цитрусовый плод с жёлтой или зелёной кожурой и сочной кисловатой мякотью. Отличается более горьким вкусом и низким содержанием сахара, что делает его идеальным для соков, маринадов и диетического питания.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Грейпфрут свити — это крупный цитрусовый плод, который часто называют просто белым грейпфрутом. Он отличается более горьким, кисловатым вкусом и низким содержанием сахара по сравнению с розовым или красным грейпфрутом. Мякоть сочная, светлая, с характерной терпкостью. Благодаря своей кислотности и низкой калорийности, свити часто используется в диетическом питании, для приготовления соков, маринадов и соусов.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кислый, терпкий, с характерной горечью</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочная, упругая, с тонкими плёнками</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — кожура жёлтая, зелёная, мякоть светло-жёлтая</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 недель</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сок</strong> — свежевыжатый, горьковатый</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью и заправками</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для мяса и рыбы</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — в сочетании с мёдом или сахаром</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — свинина, говядина</li><li class=\"ingredient-list-item\"><strong>Рыба</strong> — белая рыба, лосось</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — мята, базилик</li><li class=\"ingredient-list-item\"><strong>Мёд</strong> — для смягчения кислоты</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Лимон</strong> — для кислинки</li><li class=\"ingredient-list-item\"><strong>Лайм</strong> — аналогичный вкус</li><li class=\"ingredient-list-item\"><strong>Апельсин</strong> — слаще</li></ul>",
+  "category": "Цитрусовые",
+  "semantic_data": {
+    "properties": [
+      "цитрус",
+      "кислый",
+      "горький",
+      "низкокалорийный",
+      "диетический"
+    ],
+    "preparations": [
+      "очистка_от_кожуры",
+      "нарезка_дольками"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "medium"
+      },
+      {
+        "method": "сок",
+        "priority": "high"
+      },
+      {
+        "method": "маринование",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "соки",
+      "маринады",
+      "салаты"
+    ],
+    "pairings": {
+      "protein": ["свинина", "говядина", "лосось"],
+      "herbs": ["мята", "базилик"],
+      "sweeteners": ["мёд"]
+    },
+    "substitutes": [
+      {
+        "name": "Лимон",
+        "similarity": "high"
+      },
+      {
+        "name": "Лайм",
+        "similarity": "high"
+      },
+      {
+        "name": "Апельсин",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "цитрус",
+    "грейпфрут",
+    "свити",
+    "диетический",
+    "сок"
+  ]
+}

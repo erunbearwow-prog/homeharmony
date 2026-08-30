@@ -1,0 +1,72 @@
+{
+  "name": "Карп",
+  "name_normalized": "karp",
+  "synonyms": "карп, сазан (дикий), обыкновенный карп, зеркальный карп, голый карп, прудовой карп, речной карп, карп кои (декоративный), рыба карп, Cyprinus carpio",
+  "short_description": "Крупная пресноводная рыба семейства карповых с высоким, сжатым с боков телом и крупной чешуей. Имеет плотное, жирное, сладковатое мясо, которое ценится в кулинарии для жарки, запекания и фарширования. Обитает в реках, озерах и прудах.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Карп — это крупная пресноводная рыба семейства карповых, которая является одомашненной формой дикого сазана. Имеет мощное, высокое тело, покрытое крупной чешуей (у зеркального карпа чешуя частично отсутствует). Окраска варьируется от серо-зеленой до золотисто-бронзовой. Мясо карпа плотное, жирное, с характерным сладковатым вкусом и небольшим количеством мелких костей. Карп широко используется в кулинарии: его жарят, запекают, фаршируют, тушат, а также используют для приготовления ухи и заливного.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — плотное, жирное (содержание жира до 10-15%), с характерным сладковатым вкусом</li><li class=\"ingredient-list-item\"><strong>Костистость</strong> — имеет мелкие межмышечные кости (как и другие карповые)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, насыщенный, с легким запахом тины (у прудового)</li><li class=\"ingredient-list-item\"><strong>Размер</strong> — до 100 см и массы до 30 кг, промысловый размер 1-3 кг</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — при неправильной разделке может иметь горький привкус (из-за желчи)</li></ul><h2 class=\"ingredient-title\">Виды карпа</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Чешуйчатый карп</strong> — покрыт крупной гладкой чешуей, самый распространенный</li><li class=\"ingredient-list-item\"><strong>Зеркальный карп</strong> — чешуя частично отсутствует, расположена отдельными рядами, более нежное мясо</li><li class=\"ingredient-list-item\"><strong>Голый карп</strong> — чешуя полностью отсутствует (редкость), мясо очень нежное</li><li class=\"ingredient-list-item\"><strong>Сазан</strong> — дикая форма карпа, обитает в реках, мясо менее жирное</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Чистка</strong> — удалить чешую (у чешуйчатого карпа), выпотрошить, удалить жабры</li><li class=\"ingredient-list-item\"><strong>Удаление слизи</strong> — обдать кипятком для легкого удаления слизи</li><li class=\"ingredient-list-item\"><strong>Удаление запаха</strong> — при необходимости вымочить в молоке или воде с лимоном</li><li class=\"ingredient-list-item\"><strong>Разделка</strong> — на филе, стейки, целиком для запекания</li><li class=\"ingredient-list-item\"><strong>Удаление костей</strong> — для фарширования и котлет</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — классический способ, в панировке с хрустящей корочкой</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — целиком с овощами, в сметане, с травами</li><li class=\"ingredient-list-item\"><strong>Фарширование</strong> — с грибами, гречкой, рисом, яйцами</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в сметанном, томатном, пивном соусе</li><li class=\"ingredient-list-item\"><strong>Уха</strong> — из карпа (голова, хвост, плавники)</li><li class=\"ingredient-list-item\"><strong>Заливное</strong> — для праздничного стола</li><li class=\"ingredient-list-item\"><strong>Котлеты</strong> — из филе с луком, хлебом, чесноком</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, лук, морковь, помидоры, перец, баклажаны</li><li class=\"ingredient-list-item\"><strong>Грибы</strong> — шампиньоны, лесные</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — гречка, рис (для фарширования)</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, томатный, чесночный, майонезный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, кинза, зеленый лук</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, лавровый лист, душистый перец</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сазан</strong> — дикая форма, схожее мясо</li><li class=\"ingredient-list-item\"><strong>Карась</strong> — менее жирный, более мелкий</li><li class=\"ingredient-list-item\"><strong>Лещ</strong> — схожее мясо, менее жирный</li><li class=\"ingredient-list-item\"><strong>Линь</strong> — близкий родственник</li></ul>",
+  "category": "Рыба и морепродукты",
+  "semantic_data": {
+    "properties": [
+      "пресноводная",
+      "крупная",
+      "жирная",
+      "плотное мясо",
+      "сладковатый вкус",
+      "карповые",
+      "для жарки",
+      "для запекания",
+      "для фарширования",
+      "для ухи"
+    ],
+    "preparations": [
+      "чистка от чешуи",
+      "потрошение и удаление жабр",
+      "удаление слизи (обдать кипятком)",
+      "вымачивание (при необходимости)",
+      "разделка на филе или стейки",
+      "удаление мелких костей"
+    ],
+    "cooking_methods": [
+      {"method": "жарка", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "фарширование", "priority": "high"},
+      {"method": "тушение", "priority": "high"},
+      {"method": "варка ухи", "priority": "medium"},
+      {"method": "приготовление заливного", "priority": "medium"},
+      {"method": "приготовление котлет", "priority": "medium"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "праздничные блюда",
+      "супы",
+      "закуски",
+      "консервация"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "лук", "морковь", "помидоры", "перец", "баклажаны"],
+      "grains": ["гречка", "рис"],
+      "sauces": ["сметанный", "томатный", "чесночный", "майонезный"],
+      "herbs": ["укроп", "петрушка", "кинза", "зеленый лук"],
+      "spices": ["черный перец", "лавровый лист", "душистый перец"]
+    },
+    "substitutes": [
+      {"name": "Сазан", "similarity": "high"},
+      {"name": "Карась", "similarity": "medium"},
+      {"name": "Лещ", "similarity": "medium"},
+      {"name": "Линь", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "рыба",
+    "пресноводная",
+    "карп",
+    "сазан",
+    "речная рыба",
+    "карповые",
+    "жарка",
+    "запекание",
+    "фарширование",
+    "уха"
+  ]
+}

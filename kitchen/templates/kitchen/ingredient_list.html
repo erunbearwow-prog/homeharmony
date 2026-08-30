@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}{{ title }} | Семейные ценности{% endblock %}
+{% block title %}{{ title }} | Вкус и Порядок{% endblock %}
 
 {% block content %}
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -9,24 +9,43 @@
     <p class="text-gray-600 mb-8">Пищевая ценность, витамины и минералы — всё, что нужно знать о продуктах</p>
 
     <!-- Поиск и фильтры -->
-    <div class="flex flex-wrap gap-4 mb-8">
-        <form method="get" class="flex-1 flex gap-2">
-            <input type="text" name="q" value="{{ query|default:'' }}"
+<!--    <div class="flex flex-wrap items-center gap-4 border border-gray-800">-->
+    <div class="flex flex-wrap items-center gap-4">
+        <form method="get" class="flex flex-1 min-w-[200px] gap-2 m-0">
+            <input type="text"
+                   name="q"
+                   value="{{ query|default:'' }}"
                    placeholder="Поиск ингредиентов..."
-                   class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
-            <button type="submit" class="bg-amber-600 text-white px-6 py-2 rounded-lg hover:bg-amber-700 transition">
+                   class="flex-1 px-4 h-11 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none text-sm m-0">
+            <button type="submit" class="px-5 h-11 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition text-sm whitespace-nowrap">
                 <i class="fas fa-search"></i> Найти
             </button>
         </form>
 
-        <select name="category" onchange="this.form.submit()" class="px-4 py-2 border border-gray-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-amber-500">
-            <option value="">Все категории</option>
-            {% for cat in categories %}
-            <option value="{{ cat.id }}" {% if selected_category|add:"0" == cat.id %}selected{% endif %}>
-                {{ cat.name }}
-            </option>
-            {% endfor %}
-        </select>
+        <form method="get" class="flex items-center gap-2 m-4">
+            <input type="hidden" name="q" value="{{ query|default:'' }}">
+            <select name="category"
+                    onchange="this.form.submit()"
+                    class="custom-select px-4 h-11 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-amber-500 focus:outline-none text-sm min-w-[150px]">
+                <option value="">Все категории</option>
+                {% for cat in categories %}
+                    {% with cat_id_str=cat.id|stringformat:"s" %}
+                    <option value="{{ cat.id }}" {% if selected_category == cat_id_str %}selected{% endif %}>
+                        {{ cat.name }}
+                    </option>
+                    {% endwith %}
+                {% endfor %}
+            </select>
+        </form>
+
+        {% if query or selected_category %}
+        <div class="flex items-center m-4">
+            <a href="{% url 'kitchen:ingredient_list' %}{% if return_to %}?return_to={{ return_to|urlencode }}{% endif %}"
+               class="inline-flex items-center justify-center px-5 h-11 border border-gray-300 rounded-lg hover:bg-gray-50 transition text-sm whitespace-nowrap leading-none">
+                <i class="fas fa-times mr-1 leading-none m-0"></i> Сбросить
+            </a>
+        </div>
+        {% endif %}
     </div>
 
     <!-- Сетка ингредиентов -->
@@ -53,30 +72,30 @@
 
     <!-- Пагинация -->
     {% if page_obj.has_other_pages %}
-      <div class="flex justify-center gap-2 mt-8">
-          {% if page_obj.has_previous %}
-          <a href="?page=1{% if query %}&q={{ query }}{% endif %}{% if selected_category %}&category={{ selected_category }}{% endif %}"
-              class="px-3 py-1 border rounded hover:bg-gray-50">««</a>
-          <a href="?page={{ page_obj.previous_page_number }}{% if query %}&q={{ query }}{% endif %}{% if selected_category %}&category={{ selected_category }}{% endif %}"
-              class="px-3 py-1 border rounded hover:bg-gray-50">«</a>
-          {% endif %}
+    <div class="flex justify-center gap-2 mt-8">
+        {% if page_obj.has_previous %}
+        <a href="?page=1{% if query %}&q={{ query }}{% endif %}{% if selected_category %}&category={{ selected_category }}{% endif %}"
+           class="px-3 py-1 border rounded hover:bg-gray-50">««</a>
+        <a href="?page={{ page_obj.previous_page_number }}{% if query %}&q={{ query }}{% endif %}{% if selected_category %}&category={{ selected_category }}{% endif %}"
+           class="px-3 py-1 border rounded hover:bg-gray-50">«</a>
+        {% endif %}
 
-          {% for num in page_obj.paginator.page_range %}
+        {% for num in page_obj.paginator.page_range %}
             {% if page_obj.number == num %}
-              <span class="px-3 py-1 bg-amber-600 text-white rounded">{{ num }}</span>
+                <span class="px-3 py-1 bg-amber-600 text-white rounded">{{ num }}</span>
             {% elif num > page_obj.number|add:-3 and num < page_obj.number|add:3 %}
-              <a href="?page={{ num }}" class="px-3 py-1 border rounded hover:bg-gray-50">{{num}}</a>
+                <a href="?page={{ num }}{% if query %}&q={{ query }}{% endif %}{% if selected_category %}&category={{ selected_category }}{% endif %}"
+                   class="px-3 py-1 border rounded hover:bg-gray-50">{{ num }}</a>
             {% endif %}
-          {% endfor %}
+        {% endfor %}
 
-
-          {% if page_obj.has_next %}
-          <a href="?page={{ page_obj.next_page_number }}{% if query %}&q={{ query }}{% endif %}{% if selected_category %}&category={{ selected_category }}{% endif %}"
-              class="px-3 py-1 border rounded hover:bg-gray-50">»</a>
-          <a href="?page={{ page_obj.paginator.num_pages }}{% if query %}&q={{ query }}{% endif %}{% if selected_category %}&category={{ selected_category }}{% endif %}"
-              class="px-3 py-1 border rounded hover:bg-gray-50">»»</a>
-          {% endif %}
-      </div>
+        {% if page_obj.has_next %}
+        <a href="?page={{ page_obj.next_page_number }}{% if query %}&q={{ query }}{% endif %}{% if selected_category %}&category={{ selected_category }}{% endif %}"
+           class="px-3 py-1 border rounded hover:bg-gray-50">»</a>
+        <a href="?page={{ page_obj.paginator.num_pages }}{% if query %}&q={{ query }}{% endif %}{% if selected_category %}&category={{ selected_category }}{% endif %}"
+           class="px-3 py-1 border rounded hover:bg-gray-50">»»</a>
+        {% endif %}
+    </div>
     {% endif %}
 </div>
 {% endblock %}

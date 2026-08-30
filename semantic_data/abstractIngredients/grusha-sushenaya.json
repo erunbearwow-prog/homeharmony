@@ -1,0 +1,76 @@
+{
+  "name": "Груша сушеная",
+  "name_normalized": "grusha-sushenaya",
+  "synonyms": "сушеная груша, груша вяленая, груша сухая, сухофрукты груша, груша для компота, вяленая груша, груша курага (ошибочно), dried pear",
+  "short_description": "Сушеные дольки или половинки груши, полученные путём медленной дегидратации свежих плодов. Сохраняют сладость, аромат и часть витаминов. Удобный и питательный перекус, а также основа для компотов, выпечки и десертов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Сушеная груша — это продукт, получаемый из свежих плодов груши путём удаления влаги (до 80-85% от исходной массы). В процессе сушки груша сохраняет свой характерный сладкий вкус, аромат и часть полезных веществ, а также приобретает плотную, но эластичную текстуру. Цвет сушёной груши варьируется от светло-жёлтого до тёмно-коричневого. Это удобный и питательный перекус, а также популярный ингредиент для компотов, выпечки, десертов и мюсли.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, эластичная, упругая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, с насыщенным грушевым ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — светло-жёлтый, золотистый, тёмно-коричневый</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 1 года в сухом месте</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — концентрированные углеводы, клетчатка, калий</li></ul><h2 class=\"ingredient-title\">Способы приготовления</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сушка в духовке</strong> — при низкой температуре (60-80 °C)</li><li class=\"ingredient-list-item\"><strong>Сушка в электросушилке</strong> — 6-10 часов</li><li class=\"ingredient-list-item\"><strong>Вяление на солнце</strong> — традиционный способ</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Перекус</strong> — как самостоятельный продукт</li><li class=\"ingredient-list-item\"><strong>Компоты</strong> — основа для напитков</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — в кексы, печенье, хлеб, пироги</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — с шоколадом, орехами, йогуртом</li><li class=\"ingredient-list-item\"><strong>Мюсли и гранола</strong> — как добавка</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль, фундук</li><li class=\"ingredient-list-item\"><strong>Шоколад</strong> — молочный, тёмный</li><li class=\"ingredient-list-item\"><strong>Сухофрукты</strong> — курага, чернослив, изюм</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, кардамон, имбирь</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сушёные яблоки</strong> — близкий аналог</li><li class=\"ingredient-list-item\"><strong>Курага</strong> — для компотов</li><li class=\"ingredient-list-item\"><strong>Чернослив</strong> — в выпечке</li></ul>",
+  "category": "Сухофрукты",
+  "semantic_data": {
+    "properties": [
+      "сухофрукты",
+      "груша",
+      "сладкий",
+      "плотный",
+      "длительное_хранение",
+      "универсальный"
+    ],
+    "preparations": [
+      "промывка_перед_употреблением",
+      "замачивание_в_горячей_воде_для_восстановления"
+    ],
+    "cooking_methods": [
+      {
+        "method": "перекус",
+        "priority": "high"
+      },
+      {
+        "method": "варка_компота",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_выпечку",
+        "priority": "high"
+      },
+      {
+        "method": "измельчение_в_муку",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "перекус",
+      "компоты",
+      "выпечка",
+      "мюсли",
+      "десерты"
+    ],
+    "pairings": {
+      "protein": [],
+      "nuts": ["грецкие_орехи", "миндаль", "фундук"],
+      "chocolate": ["молочный_шоколад", "тёмный_шоколад"],
+      "dried_fruits": ["курага", "чернослив", "изюм"],
+      "spices": ["корица", "кардамон", "имбирь"]
+    },
+    "substitutes": [
+      {
+        "name": "Сушёные яблоки",
+        "similarity": "high"
+      },
+      {
+        "name": "Курага",
+        "similarity": "medium"
+      },
+      {
+        "name": "Чернослив",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "сухофрукты",
+    "груша",
+    "сушеная_груша",
+    "перекус",
+    "компот",
+    "выпечка"
+  ]
+}

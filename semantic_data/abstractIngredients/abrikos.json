@@ -1,0 +1,88 @@
+{
+  "name": "Абрикос",
+  "name_normalized": "abrikos",
+  "synonyms": "абрикосы, курага (сушеный абрикос), урюк (сушеный абрикос с косточкой)",
+  "short_description": "Сочный летний фрукт с бархатистой кожицей золотисто-оранжевого цвета, сладкой мякотью и характерным ароматом. Богат калием, кальцием, магнием, медью и бета-каротином.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Плоды абрикоса — сочные костянки с бархатистой кожицей от жёлтого до оранжево-красного цвета. Мякоть плотная, сладкая, с лёгкой кислинкой и выраженным ароматом. Отличается высоким содержанием <strong>калия (305 мг)</strong>, <strong>кальция (28 мг)</strong>, <strong>магния (8 мг)</strong>, <strong>фосфора (26 мг)</strong>, <strong>меди (140 мкг)</strong> и <strong>бета-каротина</strong> (провитамин А). Благодаря богатому минеральному составу особенно полезен для сердечно-сосудистой системы и костной ткани.</p><h2 class=\"ingredient-title\">Подготовка</h2><ol class=\"ingredient-list ingredient-list-numbered\"><li class=\"ingredient-list-item\">Тщательно вымыть, обсушить</li><li class=\"ingredient-list-item\">Разрезать, удалить косточку</li><li class=\"ingredient-list-item\">Для очистки от кожицы — опустить в кипяток на 30–60 секунд, затем в холодную воду</li><li class=\"ingredient-list-item\">Для сушки — разрезать пополам и удалить косточку</li></ol><h2 class=\"ingredient-title\">Способы приготовления</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежее употребление</strong> — как самостоятельный фрукт, в салатах</li><li class=\"ingredient-list-item\"><strong>Сушка</strong> — курага, урюк</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — компоты, варенье, джемы</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в пирогах, тартах</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к мясу и птице</li></ul><h2 class=\"ingredient-title\">Применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\">Десерты: пироги, тарты, крамблы</li><li class=\"ingredient-list-item\">Варенье и джемы</li><li class=\"ingredient-list-item\">Соусы к мясу (особенно к утке и свинине)</li><li class=\"ingredient-list-item\">Начинки для выпечки</li><li class=\"ingredient-list-item\">Сухофрукты (курага, урюк)</li><li class=\"ingredient-list-item\">Фруктовые салаты, смузи, соки</li><li class=\"ingredient-list-item\">Ликёры и наливки</li><li class=\"ingredient-list-item\">Восточные сладости</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Орехи:</strong> миндаль, фисташки, грецкий орех, кешью</li><li class=\"ingredient-list-item\"><strong>Фрукты:</strong> апельсин, лимон, персик, нектарин</li><li class=\"ingredient-list-item\"><strong>Травы:</strong> мята, базилик, тимьян, розмарин</li><li class=\"ingredient-list-item\"><strong>Специи:</strong> корица, ваниль, имбирь, кардамон, гвоздика</li><li class=\"ingredient-list-item\"><strong>Мясо:</strong> курица, свинина, утка, индейка</li><li class=\"ingredient-list-item\"><strong>Сыры:</strong> козий сыр, рикотта, сливочный сыр</li><li class=\"ingredient-list-item\"><strong>Соусы:</strong> медовый, карамельный, йогуртовый, бальзамический</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Персик</strong> — более сочный и мягкий</li><li class=\"ingredient-list-item\"><strong>Нектарин</strong> — похожая текстура и сладость</li><li class=\"ingredient-list-item\"><strong>Манго</strong> — экзотический вариант</li><li class=\"ingredient-list-item\"><strong>Слива</strong> — менее сладкая, с кислинкой</li><li class=\"ingredient-list-item\"><strong>Курага</strong> — сушёный вариант</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/reakciya-mayyara/'>Реакция Майяра</a> — химия вкуса и цвета</li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/nutrition/polza-abrikosov/'>Польза абрикосов</a> — витамины и минералы</li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/kak-vybrat-abrikosy/'>Как выбрать абрикосы</a> — советы по выбору</li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/techniques/sushka-fruktov/'>Сушка фруктов</a> — подготовка и хранение</li></ul>",
+  "category": "Фрукты",
+  "semantic_data": {
+    "properties": [
+      "сочный",
+      "сладкий",
+      "кисловатый",
+      "ароматный",
+      "мягкий",
+      "золотистый",
+      "бархатистый",
+      "летний",
+      "витаминный",
+      "богат_кальцием",
+      "богат_калием",
+      "богат_медью"
+    ],
+    "preparations": [
+      "мытьё_и_сушка",
+      "удаление_косточки",
+      "бланширование_для_кожицы",
+      "разрезание_пополам",
+      "очистка_от_кожицы"
+    ],
+    "cooking_methods": [
+      {"method": "свежее_употребление", "priority": "high"},
+      {"method": "сушка", "priority": "high"},
+      {"method": "варка", "priority": "high"},
+      {"method": "запекание", "priority": "medium"},
+      {"method": "вяление", "priority": "medium"},
+      {"method": "заморозка", "priority": "medium"},
+      {"method": "консервирование", "priority": "medium"}
+    ],
+    "applications": [
+      "десерты",
+      "варенье_и_джемы",
+      "компоты",
+      "соусы_к_мясу",
+      "начинки_для_выпечки",
+      "сухофрукты",
+      "фруктовые_салаты",
+      "смузи_и_соки",
+      "ликёры_и_наливки",
+      "восточные_сладости"
+    ],
+    "pairings": {
+      "protein": [
+        "курица",
+        "свинина",
+        "утка",
+        "индейка",
+        "козий_сыр",
+        "йогурт",
+        "сливочный_сыр"
+      ],
+      "vegetables": [],
+      "nuts": ["миндаль", "фисташки", "грецкий_орех", "кешью"],
+      "fruits": ["апельсин", "лимон", "персик", "нектарин", "слива"],
+      "sauces": ["медовый", "карамельный", "йогуртовый", "бальзамический"],
+      "herbs": ["мята", "базилик", "тимьян", "розмарин"],
+      "spices": ["корица", "ваниль", "имбирь", "кардамон", "гвоздика"]
+    },
+    "substitutes": [
+      {"name": "Персик", "similarity": "high"},
+      {"name": "Нектарин", "similarity": "high"},
+      {"name": "Манго", "similarity": "medium"},
+      {"name": "Слива", "similarity": "medium"},
+      {"name": "Курага", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "фрукт",
+    "летний",
+    "сладкий",
+    "витаминный",
+    "десерт",
+    "варенье",
+    "сушка",
+    "соусы_к_мясу",
+    "богат_кальцием",
+    "богат_калием"
+  ]
+}

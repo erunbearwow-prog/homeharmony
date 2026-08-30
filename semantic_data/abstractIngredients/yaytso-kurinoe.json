@@ -1,0 +1,96 @@
+{
+  "name": "Яйцо куриное",
+  "name_normalized": "yaytso-kurinoe",
+  "synonyms": "",
+  "short_description": "Универсальный продукт, состоящий из белка и желтка, заключённых в скорлупу. Богат белком, витаминами и минералами, используется в кулинарии для выпечки, соусов, завтраков и множества блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Куриное яйцо — это один из самых универсальных и питательных продуктов в мире. Оно состоит из трёх основных частей: скорлупы (защитная оболочка), белка (около 67% массы) и желтка (около 33% массы). Яйцо содержит все необходимые для жизни аминокислоты, а также витамины A, D, E, группы B, железо, фосфор, цинк и селен. Идеально для завтрака, выпечки, соусов и как самостоятельное блюдо.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Белки</strong> — около 13% (в белке и желтке)</li><li class=\"ingredient-list-item\"><strong>Жиры</strong> — около 11% (в основном в желтке)</li><li class=\"ingredient-list-item\"><strong>Витамины</strong> — A, D, E, K, группы B</li><li class=\"ingredient-list-item\"><strong>Калорийность</strong> — около 155 ккал/100 г</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 28 дней в холодильнике</li><li class=\"ingredient-list-item\"><strong>Цвет скорлупы</strong> — белый или коричневый (зависит от породы курицы)</li></ul><h2 class=\"ingredient-title\">Способы приготовления</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Варка</strong> — всмятку (3-4 мин), в мешочек (5-6 мин), вкрутую (8-10 мин)</li><li class=\"ingredient-list-item\"><strong>Яичница</strong> — глазунья, болтунья, омлет</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке, в формочках</li><li class=\"ingredient-list-item\"><strong>Взбивание</strong> — для выпечки, кремов, соусов</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Завтрак</strong> — яичница, омлет, варёные яйца</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — тесто, кексы, пирожные</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — майонез, голландский соус</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — осветление бульонов (белок)</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с яйцом</li><li class=\"ingredient-list-item\"><strong>Панировка</strong> — для мяса и рыбы</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, лук, перец, грибы</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — бекон, ветчина, колбаса</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — чеддер, пармезан, фета</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, базилик</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — тосты, круассаны</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Перепелиные яйца</strong> — 3-4 перепелиных = 1 куриному</li><li class=\"ingredient-list-item\"><strong>Аквафаба</strong> — замена белка</li><li class=\"ingredient-list-item\"><strong>Льняная мука</strong> — для выпечки</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/kak-varit-yaytsa/'>Как правильно варить яйца</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/omlet/'>Классический омлет</a></li></ul>",
+  "category": "Яйца",
+  "semantic_data": {
+    "properties": [
+      "универсальный",
+      "питательный",
+      "богат_белком",
+      "богат_витаминами",
+      "быстрое_приготовление"
+    ],
+    "preparations": [
+      "варка",
+      "жарка",
+      "запекание",
+      "взбивание"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "взбивание",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "завтрак",
+      "выпечка",
+      "соусы",
+      "супы",
+      "салаты",
+      "панировка"
+    ],
+    "pairings": {
+      "protein": [
+        "бекон",
+        "ветчина",
+        "колбаса",
+        "сыр"
+      ],
+      "vegetables": [
+        "помидоры",
+        "лук",
+        "перец",
+        "грибы"
+      ],
+      "herbs": [
+        "петрушка",
+        "укроп",
+        "базилик"
+      ],
+      "breads": [
+        "тосты",
+        "круассаны"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Перепелиные яйца",
+        "similarity": "high"
+      },
+      {
+        "name": "Аквафаба",
+        "similarity": "low"
+      },
+      {
+        "name": "Льняная мука",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "яйца",
+    "куриное_яйцо",
+    "завтрак",
+    "выпечка",
+    "соус",
+    "салат",
+    "белок",
+    "желток"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "name": "Кишмиш",
+  "name_normalized": "kishmish",
+  "synonyms": "кишмиш, кишмиш белый, кишмиш черный, кишмиш коричневый, изюм без косточек, сухофрукты, виноград сушеный, кишмиш для выпечки, кишмиш для плова, кишмиш для компота, кишмиш для десертов, кишмиш для салатов, сладкий изюм",
+  "short_description": "Сушеный виноград без косточек, полученный из специальных сортов винограда (Сабза, Кара-кишмиш, Сояки). Отличается мелкими или средними размерами, мягкой текстурой и ярким сладким вкусом. Используется в выпечке, плове, десертах, салатах и как самостоятельный перекус.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Кишмиш — это сушеный виноград без косточек, который получают из специальных бессемянных сортов винограда. В отличие от обычного изюма, кишмиш всегда содержит только мякоть, без косточек, что делает его удобным для использования в кулинарии. В зависимости от сорта и способа сушки, кишмиш может быть белым (светлым), коричневым или черным. Белый кишмиш обычно более нежный и сладкий, черный — более насыщенный по вкусу. Кишмиш активно используется в выпечке, плове, десертах, компотах и как самостоятельный перекус.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мягкая, слегка упругая, без косточек</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, с карамельными и фруктовыми нотами</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый, коричневый, черный (зависит от сорта винограда и способа сушки)</li><li class=\"ingredient-list-item\"><strong>Калорийность</strong> — 260-290 ккал на 100 г</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 6-12 месяцев в сухом прохладном месте</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — не содержит косточек, поэтому удобен для выпечки и детского питания</li></ul><h2 class=\"ingredient-title\">Популярные сорта кишмиша</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сабза (белый кишмиш)</strong> — светло-желтый или золотистый, нежный, сладкий, популярен в выпечке</li><li class=\"ingredient-list-item\"><strong>Кара-кишмиш (черный кишмиш)</strong> — темный, насыщенный вкус, для плова и компотов</li><li class=\"ingredient-list-item\"><strong>Сояки (коричневый)</strong> — средний цвет и вкус, универсальный</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Промывка</strong> — при необходимости промыть в теплой воде (особенно если есть следы масла)</li><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — для размягчения залить горячей водой на 10-15 минут</li><li class=\"ingredient-list-item\"><strong>Просушка</strong> — обсушить на бумажном полотенце</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в герметичной таре в сухом, темном, прохладном месте</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — куличи, пасхи, кексы, маффины, булочки, печенье</li><li class=\"ingredient-list-item\"><strong>Плов</strong> — классический узбекский плов с кишмишем</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — мороженое, пудинги, запеканки</li><li class=\"ingredient-list-item\"><strong>Компоты и узвары</strong> — с добавлением кишмиша</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — в составе фруктовых и овощных салатов</li><li class=\"ingredient-list-item\"><strong>Каши и мюсли</strong> — добавка в овсянку, рисовую кашу, гранолу</li><li class=\"ingredient-list-item\"><strong>Самостоятельный перекус</strong> — полезный и сладкий</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, овсянка, пшено, кускус</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — баранина, говядина, курица (в плове)</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль, фисташки, кедровые</li><li class=\"ingredient-list-item\"><strong>Сухофрукты</strong> — курага, чернослив, финики, инжир</li><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — творог, йогурт, сметана</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, кардамон, гвоздика, мускатный орех</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Изюм с косточками</strong> — менее удобный, но схожий вкус</li><li class=\"ingredient-list-item\"><strong>Курага</strong> — другой вкус, более плотная текстура</li><li class=\"ingredient-list-item\"><strong>Чернослив</strong> — плотная текстура, другой вкус</li><li class=\"ingredient-list-item\"><strong>Финики</strong> — более сладкие</li></ul>",
+  "category": "Фрукты",
+  "semantic_data": {
+    "properties": [
+      "сухофрукт",
+      "без косточек",
+      "сладкий",
+      "мягкий",
+      "для выпечки",
+      "для плова",
+      "для десертов",
+      "для компота",
+      "для салатов",
+      "полезный перекус"
+    ],
+    "preparations": [
+      "промывка в теплой воде (при необходимости)",
+      "замачивание в горячей воде на 10-15 минут",
+      "просушка на бумажном полотенце",
+      "хранение в герметичной таре"
+    ],
+    "cooking_methods": [
+      {"method": "использование в выпечке", "priority": "high"},
+      {"method": "использование в плове", "priority": "high"},
+      {"method": "использование в десертах", "priority": "high"},
+      {"method": "использование в компотах", "priority": "high"},
+      {"method": "использование в салатах", "priority": "medium"},
+      {"method": "использование в кашах", "priority": "medium"},
+      {"method": "самостоятельный перекус", "priority": "high"}
+    ],
+    "applications": [
+      "выпечка",
+      "плов",
+      "десерты",
+      "компоты",
+      "салаты",
+      "каши и мюсли",
+      "перекусы"
+    ],
+    "pairings": {
+      "protein": ["баранина", "говядина", "курица", "творог", "йогурт"],
+      "vegetables": [],
+      "grains": ["рис", "овсянка", "пшено", "кускус"],
+      "nuts": ["грецкие", "миндаль", "фисташки", "кедровые"],
+      "fruits": ["курага", "чернослив", "финики", "инжир"],
+      "sauces": [],
+      "herbs": [],
+      "spices": ["корица", "кардамон", "гвоздика", "мускатный орех"]
+    },
+    "substitutes": [
+      {"name": "Изюм с косточками", "similarity": "high"},
+      {"name": "Курага", "similarity": "medium"},
+      {"name": "Чернослив", "similarity": "medium"},
+      {"name": "Финики", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "сухофрукт",
+    "кишмиш",
+    "изюм без косточек",
+    "сушеный виноград",
+    "выпечка",
+    "плов",
+    "десерты",
+    "компоты",
+    "салаты",
+    "полезный перекус"
+  ]
+}

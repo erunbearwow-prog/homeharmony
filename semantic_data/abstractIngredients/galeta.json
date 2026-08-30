@@ -1,0 +1,71 @@
+{
+  "name": "Галета",
+  "name_normalized": "galeta",
+  "synonyms": "галета, галетное тесто, бретонская галета, королевская галета, галета с начинкой, пирог-галета, открытый пирог, галетное печенье",
+  "short_description": "Тонкий открытый пирог из пресного или песочного теста с начинкой (фруктовой, ягодной, овощной или мясной), края которого заворачиваются внутрь. Также так называют сухое печенье (крекер) или бретонский блин из гречневой муки с начинкой.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Галета — это несколько различных кулинарных изделий, объединённых французским происхождением и характерной округлой плоской формой [citation:11]. В зависимости от контекста, под этим словом могут понимать:</p><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Открытый пирог-галета (тарт)</strong> — тонко раскатанное пресное или песочное тесто с начинкой из фруктов, ягод, овощей или сыра, края которого свободно заворачиваются к центру [citation:6][citation:11].</li><li class=\"ingredient-list-item\"><strong>Бретонская галета (блин)</strong> — сухой, хрустящий блин из гречневой муки, который подают с несладкими начинками (ветчина, сыр, яйцо) [citation:3][citation:4][citation:11].</li><li class=\"ingredient-list-item\"><strong>Галетное печенье (крекер)</strong> — сухое пресное печенье или сухарь, который может храниться очень долго (до 2 лет) [citation:10][citation:15].</li><li class=\"ingredient-list-item\"><strong>Королевская галета (Galette des Rois)</strong> — праздничный пирог из слоёного теста с миндальным кремом, который выпекается на Богоявление, со спрятанной внутри фигуркой-сюрпризом [citation:3][citation:11].</li></ul><p class=\"ingredient-text\">В современной кулинарии под галетой чаще всего понимают именно открытый пирог.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тесто</strong> — пресное, песочное, дрожжевое, из пшеничной или гречневой муки [citation:1][citation:4][citation:9].</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — хрустящая, рассыпчатая (у пирога), ломкая (у печенья) или эластичная (у блина) [citation:4][citation:6].</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — круглая и плоская [citation:11].</li><li class=\"ingredient-list-item\"><strong>Начинка</strong> — может быть как сладкой (фрукты, ягоды, орехи), так и несладкой (овощи, мясо, сыр) [citation:6][citation:11].</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Открытый пирог</strong> — с фруктами (яблоки, груши), ягодами (вишня, смородина), овощами, сыром [citation:1][citation:5][citation:9].</li><li class=\"ingredient-list-item\"><strong>Завтрак или основное блюдо</strong> — бретонские галеты (блины) подают с ветчиной, яйцом, сыром [citation:8].</li><li class=\"ingredient-list-item\"><strong>Закуска</strong> — сухие галеты (печенье) используют как основу для паштетов, икры, колбас [citation:15].</li><li class=\"ingredient-list-item\"><strong>Панировка</strong> — сухие галеты перемалывают в крошку для панировки мяса и рыбы [citation:15].</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Фрукты и ягоды</strong> — яблоки, груши, вишня, смородина, клюква [citation:1][citation:9][citation:13].</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, кабачки, цукини, картофель [citation:5][citation:9].</li><li class=\"ingredient-list-item\"><strong>Сыры и мясо</strong> — моцарелла, фета, грюйер, чеддер, ветчина, бекон [citation:5][citation:8][citation:11].</li><li class=\"ingredient-list-item\"><strong>Пряности</strong> — корица, тимьян, орегано, майоран [citation:1][citation:5][citation:9].</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тарт с начинкой</strong> — если нужен открытый пирог</li><li class=\"ingredient-list-item\"><strong>Блины из гречневой муки</strong> — для бретонской версии</li><li class=\"ingredient-list-item\"><strong>Песочное печенье или крекеры</strong> — для сухих галет</li><li class=\"ingredient-list-item\"><strong>Слоёный пирог</strong> — для королевской галеты</li></ul>",
+  "category": "ХЛЕБ, ВЫПЕЧКА, ХЛЕБОБУЛОЧНЫЕ ИЗДЕЛИЯ",
+  "semantic_data": {
+    "properties": [
+      "выпечка",
+      "французская_кухня",
+      "открытый_пирог",
+      "хрустящий",
+      "универсальный",
+      "печенье",
+      "блин"
+    ],
+    "preparations": [
+      "раскатывание_теста",
+      "заворачивание_краёв",
+      "выпекание_в_духовке"
+    ],
+    "cooking_methods": [
+      {
+        "method": "выпекание",
+        "priority": "high"
+      },
+      {
+        "method": "жарка_на_сковороде",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "десерты",
+      "завтрак",
+      "закуски",
+      "основные_блюда"
+    ],
+    "pairings": {
+      "protein": ["ветчина", "бекон", "курица", "сыр_моцарелла", "сыр_грюйер", "сыр_фета", "сыр_чеддер"],
+      "vegetables": ["помидоры", "кабачки", "цукини", "картофель"],
+      "fruits": ["яблоки", "груши", "вишня", "смородина", "клюква"],
+      "spices": ["корица", "тимьян", "орегано", "майоран"]
+    },
+    "substitutes": [
+      {
+        "name": "Тарт с начинкой",
+        "similarity": "high"
+      },
+      {
+        "name": "Гречневые блины",
+        "similarity": "medium"
+      },
+      {
+        "name": "Песочное печенье",
+        "similarity": "medium"
+      },
+      {
+        "name": "Слоёный пирог",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "выпечка",
+    "французская_кухня",
+    "пирог",
+    "печенье",
+    "блин"
+  ]
+}

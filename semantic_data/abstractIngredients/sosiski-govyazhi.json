@@ -1,0 +1,70 @@
+{
+  "name": "Сосиски говяжьи",
+  "name_normalized": "sosiski-govyazhi",
+  "synonyms": "говяжьи сосиски, сосиски из говядины, мясные сосиски, вареные сосиски, сосиски для завтрака, говяжьи колбаски",
+  "short_description": "Вареные колбасные изделия из говяжьего фарша в натуральной или искусственной оболочке, с нежной текстурой и мягким вкусом. Идеальны для завтрака, быстрого перекуса и горячих блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Говяжьи сосиски — это популярные вареные колбасные изделия, изготавливаемые из говяжьего фарша с добавлением специй, соли и иногда шпика. Имеют нежную, сочную текстуру, мягкий мясной вкус и характерный аромат. Чаще всего продаются в вакуумной упаковке и требуют минимальной термической обработки перед употреблением. Популярны в качестве завтрака, быстрого перекуса и ингредиента для горячих блюд.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, сочная, упругая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — мягкий, мясной, с лёгким пряным оттенком</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — низкая (5-10%)</li><li class=\"ingredient-list-item\"><strong>Оболочка</strong> — натуральная или искусственная</li><li class=\"ingredient-list-item\"><strong>Время приготовления</strong> — 3-5 минут (варка), 5-7 минут (жарка)</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Варка</strong> — в подсоленной воде 3-5 минут</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде с маслом</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — на решётке</li><li class=\"ingredient-list-item\"><strong>Завтрак</strong> — с яичницей, беконом</li><li class=\"ingredient-list-item\"><strong>Хот-доги</strong> — в булочке с соусами</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — в супах, омлетах, тушёных блюдах</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофель, гречка, макароны</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — горчица, кетчуп, майонез</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, огурцы, перец, лук</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — булочка для хот-дога, багет</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свиные сосиски</strong> — более жирные</li><li class=\"ingredient-list-item\"><strong>Куриные сосиски</strong> — диетический вариант</li><li class=\"ingredient-list-item\"><strong>Сардельки</strong> — более плотные</li></ul>",
+  "category": "Сосиски, сардельки, колбаски",
+  "semantic_data": {
+    "properties": [
+      "сосиски",
+      "говядина",
+      "вареная",
+      "нежная",
+      "универсальная",
+      "быстрое_приготовление"
+    ],
+    "preparations": [
+      "варка_3-5_минут",
+      "жарка_на_сковороде",
+      "гриль"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "гриль",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "завтрак",
+      "хот-доги",
+      "горячие_блюда"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["помидоры", "огурцы", "перец", "лук"],
+      "sauces": ["горчица", "кетчуп", "майонез"],
+      "grains": ["картофель", "гречка", "макароны"],
+      "breads": ["булочка_для_хот-дога", "багет"]
+    },
+    "substitutes": [
+      {
+        "name": "Свиные сосиски",
+        "similarity": "high"
+      },
+      {
+        "name": "Куриные сосиски",
+        "similarity": "medium"
+      },
+      {
+        "name": "Сардельки",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "сосиски",
+    "говядина",
+    "колбасные_изделия",
+    "завтрак",
+    "хот-доги"
+  ]
+}

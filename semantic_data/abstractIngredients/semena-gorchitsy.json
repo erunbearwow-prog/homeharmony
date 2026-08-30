@@ -1,0 +1,69 @@
+{
+  "name": "Семена горчицы",
+  "name_normalized": "semena-gorchitsy",
+  "synonyms": "горчица в зернах, зерна горчицы, семя горчицы, mustard seeds, зернистая горчица, черная горчица, белая горчица",
+  "short_description": "Цельные семена горчичного растения, используемые как пряность. Имеют жгучий вкус и характерный аромат, который раскрывается при разжевывании или нагревании. Используются в кулинарии для маринадов, засолок, соусов и как самостоятельная приправа.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Семена горчицы — это мелкие круглые зерна горчичного растения, которые используются как пряность в кулинарии. В зависимости от сорта, семена могут быть светло-жёлтыми (белая горчица), коричневыми (сарептская) или чёрными (чёрная горчица). Они обладают характерным жгучим вкусом и острым ароматом, который раскрывается при разжевывании, нагревании или добавлении жидкости. В отличие от молотого горчичного порошка, целые семена дольше сохраняют аромат и используются для маринадов, засолок, соусов и как самостоятельная приправа.</p><h2 class=\"ingredient-title\">Виды семян горчицы</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Белая горчица</strong> — жёлтые семена, мягкий вкус, используется для столовой горчицы</li><li class=\"ingredient-list-item\"><strong>Сарептская (коричневая) горчица</strong> — коричневые семена, острее, для маринадов</li><li class=\"ingredient-list-item\"><strong>Чёрная горчица</strong> — мелкие чёрные семена, самая острая, популярна в Индии</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — острый, жгучий</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — жёлтый, коричневый, чёрный</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — круглые мелкие зерна</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — цельные семена горчицы</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в сухом месте</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для мяса, рыбы, овощей</li><li class=\"ingredient-list-item\"><strong>Засолка</strong> — для огурцов, помидоров</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — в качестве ароматной добавки</li><li class=\"ingredient-list-item\"><strong>Индийская кухня</strong> — в соусах карри, дале</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с мясом и рыбой</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — свинина, говядина, курица</li><li class=\"ingredient-list-item\"><strong>Рыба</strong> — в маринадах</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — огурцы, помидоры, капуста</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — перец, кумин, кориандр, кардамон</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Горчичный порошок</strong> — для остроты</li><li class=\"ingredient-list-item\"><strong>Хрен</strong> — для жгучести</li><li class=\"ingredient-list-item\"><strong>Васаби</strong> — как острая приправа</li></ul>",
+  "category": "Семена пряные",
+  "semantic_data": {
+    "properties": [
+      "пряность",
+      "цельные_зерна",
+      "острый",
+      "жгучий",
+      "длительное_хранение",
+      "универсальный"
+    ],
+    "preparations": [
+      "обжаривание_в_масле",
+      "измельчение_при_необходимости"
+    ],
+    "cooking_methods": [
+      {
+        "method": "маринование",
+        "priority": "high"
+      },
+      {
+        "method": "засолка",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_соусы",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "маринады",
+      "засолка",
+      "соусы",
+      "индийская_кухня"
+    ],
+    "pairings": {
+      "protein": ["свинина", "говядина", "курица"],
+      "fish": ["рыба"],
+      "vegetables": ["огурцы", "помидоры", "капуста"],
+      "spices": ["перец", "кумин", "кориандр", "кардамон"]
+    },
+    "substitutes": [
+      {
+        "name": "Горчичный порошок",
+        "similarity": "medium"
+      },
+      {
+        "name": "Хрен",
+        "similarity": "low"
+      },
+      {
+        "name": "Васаби",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "пряность",
+    "семена_горчицы",
+    "горчица",
+    "маринады",
+    "индийская_кухня"
+  ]
+}

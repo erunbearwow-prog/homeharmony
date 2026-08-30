@@ -1,0 +1,69 @@
+{
+  "name": "Ежевика замороженная",
+  "name_normalized": "ezhevika_zamorozhennaya",
+  "synonyms": "замороженная ежевика, ежевика в заморозке, ежевика шоковой заморозки, ягоды ежевики замороженные, ежевика для зимних десертов, замороженная ягода, frozen blackberries",
+  "short_description": "Свежая ежевика, подвергнутая быстрой заморозке для сохранения вкуса, цвета и полезных свойств. Идеальный продукт для использования в выпечке, десертах, компотах и смузи в любое время года.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Замороженная ежевика — это свежие ягоды ежевики, которые были подвергнуты быстрой (шоковой) заморозке при температуре от -35°C до -40°C. Такая технология позволяет максимально сохранить структуру ягод, их вкус, цвет и питательные вещества. В отличие от свежей ежевики, замороженная доступна круглый год и не требует немедленного использования. Она идеально подходит для приготовления компотов, киселей, соусов, начинок для пирогов, а также для добавления в смузи и коктейли. После разморозки ягоды становятся мягче и выделяют сок, поэтому их обычно используют без предварительной разморозки в термической обработке.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура после разморозки</strong> — мягкая, сочная, выделяет сок</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисло-сладкий, терпкий (сохраняется как у свежей)</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — темно-фиолетовый, почти черный</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — сохраняется форма ягоды (при правильной заморозке)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 12 месяцев при -18°C</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — не требует мытья, готова к использованию без разморозки в термообработке</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в морозильной камере при -18°C</li><li class=\"ingredient-list-item\"><strong>Использование без разморозки</strong> — для выпечки, компотов, варенья</li><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — при необходимости (в холодильнике, при комнатной температуре или в микроволновке на низкой мощности)</li><li class=\"ingredient-list-item\"><strong>Слив сока</strong> — при необходимости слить лишний сок после разморозки</li><li class=\"ingredient-list-item\"><strong>Не замораживать повторно</strong> — после разморозки использовать сразу</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — пироги, пирожки, кексы, маффины, булочки</li><li class=\"ingredient-list-item\"><strong>Варенье и джемы</strong> — зимние заготовки</li><li class=\"ingredient-list-item\"><strong>Компоты и кисели</strong> — напитки с ягодами</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к мясу, десертам, сырам</li><li class=\"ingredient-list-item\"><strong>Смузи и коктейли</strong> — добавляет цвет и вкус</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — безе, панакоты, муссы</li><li class=\"ingredient-list-item\"><strong>Йогурты и каши</strong> — добавка в готовые блюда</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Фрукты и ягоды</strong> — малина, клубника, черника, яблоки, персики, цитрусовые</li><li class=\"ingredient-list-item\"><strong>Тесто</strong> — песочное, дрожжевое, слоеное</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — утка, дичь, свинина</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — козий сыр, рикотта, маскарпоне</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, имбирь, ваниль, кардамон</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежая ежевика</strong> — в сезон, но срок хранения короче</li><li class=\"ingredient-list-item\"><strong>Замороженная малина</strong> — более кислая, менее терпкая</li><li class=\"ingredient-list-item\"><strong>Замороженная черника</strong> — более сладкая</li><li class=\"ingredient-list-item\"><strong>Замороженная клюква</strong> — более кислая, с горчинкой</li></ul>",
+  "category": "Фрукты",
+  "semantic_data": {
+    "properties": [
+      "замороженная",
+      "ягода",
+      "зимний продукт",
+      "быстрая заморозка",
+      "витаминная",
+      "терпкая",
+      "кисло-сладкая",
+      "удобная",
+      "длительное хранение"
+    ],
+    "preparations": [
+      "хранение при -18°C",
+      "использование без разморозки в термообработке",
+      "разморозка в холодильнике при необходимости",
+      "отсутствие повторной заморозки"
+    ],
+    "cooking_methods": [
+      {"method": "использование в выпечке (без разморозки)", "priority": "high"},
+      {"method": "приготовление варенья и джемов", "priority": "high"},
+      {"method": "приготовление компотов и киселей", "priority": "high"},
+      {"method": "использование в смузи", "priority": "medium"},
+      {"method": "приготовление соусов", "priority": "medium"},
+      {"method": "использование в десертах", "priority": "medium"}
+    ],
+    "applications": [
+      "выпечка",
+      "варенье и джемы",
+      "компоты",
+      "соусы",
+      "смузи",
+      "десерты"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [],
+      "fruits": ["малина", "клубника", "черника", "яблоки", "персики", "цитрусовые"],
+      "sauces": [],
+      "herbs": ["мята"],
+      "spices": ["корица", "имбирь", "ваниль", "кардамон"]
+    },
+    "substitutes": [
+      {"name": "Свежая ежевика", "similarity": "high"},
+      {"name": "Замороженная малина", "similarity": "medium"},
+      {"name": "Замороженная черника", "similarity": "medium"},
+      {"name": "Замороженная клюква", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "ягода",
+    "ежевика",
+    "замороженная",
+    "зимняя ягода",
+    "выпечка",
+    "варенье",
+    "компот",
+    "смузи",
+    "удобный продукт",
+    "длительное хранение"
+  ]
+}

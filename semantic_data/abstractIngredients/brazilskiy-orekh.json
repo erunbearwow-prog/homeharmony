@@ -1,0 +1,55 @@
+{
+  "name": "Бразильский орех",
+  "name_normalized": "brazilskiy-orekh",
+  "synonyms": "бразильский орех, орех бразильский, бразильский каштан, бертолетия, Amazon nut, Brazil nut",
+  "short_description": "Крупный орех из семейства Лецитисовые, родом из Амазонии. Имеет плотную деревянистую скорлупу и маслянистое, кремовое ядро с насыщенным ореховым вкусом. Богат селеном, жирными кислотами и витамином E.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Бразильский орех — это семя плода дерева из семейства Лецитисовые (Lecythidaceae), произрастающего в лесах Амазонии (Бразилия, Боливия, Перу). Плод представляет собой крупную коробочку (до 2 кг), внутри которой находятся 8-24 ореха с очень плотной деревянистой скорлупой. Ядро ореха имеет бледно-кремовый цвет, маслянистую текстуру и насыщенный ореховый вкус с лёгкими шоколадными нотками. Бразильский орех считается одним из самых богатых источников селена в природе, а также содержит мононенасыщенные жиры, витамин E, магний и цинк. Используется в кулинарии как самостоятельный орех, в выпечке, салатах и десертах.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, маслянистая, кремовая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, ореховый, с шоколадными нотками</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — бледно-кремовый</li><li class=\"ingredient-list-item\"><strong>Селен</strong> — один из самых богатых источников (до 2000 мкг на 100 г)</li><li class=\"ingredient-list-item\"><strong>Жиры</strong> — до 66% (преимущественно мононенасыщенные)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 12 месяцев в скорлупе</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Очистка</strong> — скорлупа очень плотная, требуется орехокол</li><li class=\"ingredient-list-item\"><strong>Обжарка</strong> — в сухой сковороде 5-7 минут</li><li class=\"ingredient-list-item\"><strong>Измельчение</strong> — в крошку, муку или пасту</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Снек</strong> — как самостоятельная закуска</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — печенье, кексы, маффины</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — в шоколаде, пралине</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, овощами</li><li class=\"ingredient-list-item\"><strong>Ореховая мука</strong> — для безглютеновой выпечки</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Шоколад</strong> — молочный, тёмный</li><li class=\"ingredient-list-item\"><strong>Кокос</strong> — стружка, молоко</li><li class=\"ingredient-list-item\"><strong>Сухофрукты</strong> — курага, финики</li><li class=\"ingredient-list-item\"><strong>Мёд</strong> — в десертах</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — в салатах</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Миндаль</strong> — близкий по текстуре</li><li class=\"ingredient-list-item\"><strong>Фундук</strong> — похожий вкус</li><li class=\"ingredient-list-item\"><strong>Грецкий орех</strong> — более горьковатый</li><li class=\"ingredient-list-item\"><strong>Кешью</strong> — более мягкий</li></ul>",
+  "category": "ОРЕХИ И СЕМЕНА",
+  "semantic_data": {
+    "properties": [
+      "орех",
+      "маслянистый",
+      "плотный",
+      "богат_селеном",
+      "витаминный",
+      "тропический"
+    ],
+    "preparations": [
+      "очистка_от_скорлупы",
+      "обжарка_в_сухой_сковороде",
+      "измельчение"
+    ],
+    "cooking_methods": [
+      {"method": "свежее_употребление", "priority": "high"},
+      {"method": "обжарка", "priority": "high"},
+      {"method": "измельчение", "priority": "medium"}
+    ],
+    "applications": [
+      "снек",
+      "выпечка",
+      "десерты",
+      "салаты"
+    ],
+    "pairings": {
+      "protein": [],
+      "fruits": ["курага", "финики"],
+      "chocolate": ["тёмный_шоколад", "молочный_шоколад"],
+      "coconut": ["кокосовая_стружка", "кокосовое_молоко"],
+      "sweeteners": ["мёд"],
+      "herbs": ["мята", "базилик"]
+    },
+    "substitutes": [
+      {"name": "Миндаль", "similarity": "medium"},
+      {"name": "Фундук", "similarity": "medium"},
+      {"name": "Грецкий орех", "similarity": "low"},
+      {"name": "Кешью", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "орехи",
+    "бразильский_орех",
+    "селен",
+    "снек",
+    "выпечка"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "name": "Карбонад свиной",
+  "name_normalized": "karbonad-svinoy",
+  "synonyms": "",
+  "short_description": "Мясной полуфабрикат из свинины, нарезанный на крупные порционные куски из спинной или поясничной части туши. Бескостное, сочное, нежное мясо с умеренной жирностью, идеально подходит для жарки, запекания и гриля.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Свиной карбонад — это мясной полуфабрикат, представляющий собой крупные порционные куски свинины из спинной или поясничной части туши. В отличие от корейки (на кости), карбонад — бескостный отруб, нарезанный поперёк волокон на куски толщиной 1,5–3 см. Карбонад отличается нежной текстурой, сочностью и наличием внутримышечных жировых прослоек, которые при жарке делают мясо мягким и сочным. Благодаря своему вкусу и структуре карбонад идеально подходит для быстрого приготовления на сковороде, гриле или в духовке.</p><h2 class=\"ingredient-title\">Характеристики нарезки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Форма</strong> — крупные порционные куски</li><li class=\"ingredient-list-item\"><strong>Толщина</strong> — 1,5–3 см</li><li class=\"ingredient-list-item\"><strong>Вес</strong> — 150–300 г</li><li class=\"ingredient-list-item\"><strong>Направление нарезки</strong> — поперёк волокон</li><li class=\"ingredient-list-item\"><strong>Отруб</strong> — спинная или поясничная часть</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — бескостный, с жировыми прослойками</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде с маслом, до готовности</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — на мангале или решётке</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с овощами</li><li class=\"ingredient-list-item\"><strong>Стейки</strong> — как основа для свиных стейков</li><li class=\"ingredient-list-item\"><strong>Блюда на кости</strong> — в качестве альтернативы стейкам</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соусы</strong> — горчичный, сливочный, грибной, томатный</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофель (пюре, жареный), овощи-гриль, рис</li><li class=\"ingredient-list-item\"><strong>Травы</strong> — розмарин, тимьян, петрушка</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, чеснок, паприка</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свиная корейка</strong> — с костью</li><li class=\"ingredient-list-item\"><strong>Антрекот</strong> — из говядины</li><li class=\"ingredient-list-item\"><strong>Стейк из свинины</strong> — аналогичное блюдо</li><li class=\"ingredient-list-item\"><strong>Лопатка свиная</strong> — для тушения</li></ul>",
+  "category": "Карбонад, буженина, шинка",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "свинина",
+      "бескостный",
+      "нежный",
+      "сочный",
+      "порционный",
+      "быстрое_приготовление"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "обсушить_бумажным_полотенцем",
+      "дать_прогреться_до_комнатной_температуры"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "гриль",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "стейки",
+      "жарка",
+      "гриль",
+      "запекание",
+      "вторые_блюда"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "овощи_гриль"],
+      "grains": ["рис"],
+      "sauces": ["горчичный", "сливочный", "грибной", "томатный"],
+      "herbs": ["розмарин", "тимьян", "петрушка"],
+      "spices": ["черный_перец", "чеснок", "паприка"]
+    },
+    "substitutes": [
+      {
+        "name": "Свиная корейка",
+        "similarity": "high"
+      },
+      {
+        "name": "Антрекот",
+        "similarity": "low"
+      },
+      {
+        "name": "Стейк из свинины",
+        "similarity": "high"
+      },
+      {
+        "name": "Лопатка свиная",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "свинина",
+    "карбонад",
+    "стейк",
+    "жарка",
+    "гриль"
+  ]
+}

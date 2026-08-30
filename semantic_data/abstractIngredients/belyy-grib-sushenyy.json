@@ -1,0 +1,97 @@
+{
+  "name": "Белый гриб сушеный",
+  "name_normalized": "belyy-grib-sushenyy",
+  "synonyms": "",
+  "short_description": "Сушеные белые грибы — это натуральный концентрат грибного вкуса и аромата. Сохраняют все полезные свойства свежих грибов, становятся более насыщенными по вкусу и идеально подходят для супов, соусов и зимних заготовок.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Сушеные белые грибы — это ценный продукт, получаемый путём медленной дегидратации свежих белых грибов. В процессе сушки грибы теряют до 90% влаги, но сохраняют все питательные вещества, аромат и вкус. Сушеные грибы обладают более интенсивным и насыщенным запахом, чем свежие, поэтому их используют в кулинарии в качестве натурального усилителя вкуса (грибного умами). Удобны для хранения и являются классическим ингредиентом для зимних супов, соусов и запеканок. В отличие от замороженных, сушеные грибы требуют восстановления и занимают меньше места.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — ломкая, сухая, хрупкая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — концентрированный, насыщенный грибной, ореховый</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — сильный, лесной</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 1-2 лет в сухом темном месте</li><li class=\"ingredient-list-item\"><strong>Восстановление</strong> — замачивание в горячей воде 15-30 минут</li><li class=\"ingredient-list-item\"><strong>Потеря веса</strong> — до 90% влаги</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — залить тёплой или горячей водой на 20-30 минут</li><li class=\"ingredient-list-item\"><strong>Вода после замачивания</strong> — используется как грибной бульон</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — после замачивания промыть и обсушить</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — как свежие грибы</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Супы</strong> — грибной суп, крем-суп, солянка</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — грибные соусы к мясу и пасте</li><li class=\"ingredient-list-item\"><strong>Вторые блюда</strong> — запеканки, рагу, жаркое</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для пирогов, блинов</li><li class=\"ingredient-list-item\"><strong>Смеси</strong> — в овощные и мясные блюда</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — говядина, свинина, курица, утка</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, гречка, кус-кус</li><li class=\"ingredient-list-item\"><strong>Картофель</strong> — в супах и запеканках</li><li class=\"ingredient-list-item\"><strong>Сливки</strong> — основа для соусов</li><li class=\"ingredient-list-item\"><strong>Лук, чеснок</strong> — усиление вкуса</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежие белые грибы</strong> — более нежные, с менее выраженным ароматом</li><li class=\"ingredient-list-item\"><strong>Сушеные подосиновики</strong> — похожие по вкусу</li><li class=\"ingredient-list-item\"><strong>Грибной бульонный кубик</strong> — более слабый вкус</li><li class=\"ingredient-list-item\"><strong>Шампиньоны сушеные</strong> — менее ароматные</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/sushenye-griby/'>Как правильно замачивать сушеные грибы</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/sup-iz-sushenyh-gribov/'>Грибной суп из сушеных белых грибов</a></li></ul>",
+  "category": "Грибы лесные",
+  "semantic_data": {
+    "properties": [
+      "сушеный",
+      "концентрат",
+      "длительное_хранение",
+      "интенсивный_аромат",
+      "восстанавливаемый",
+      "зимние_заготовки"
+    ],
+    "preparations": [
+      "замачивание_в_теплой_воде",
+      "использование_воды_для_бульона",
+      "промывка_и_нарезка"
+    ],
+    "cooking_methods": [
+      {
+        "method": "замачивание",
+        "priority": "high"
+      },
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "сушка",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "супы",
+      "соусы",
+      "вторые_блюда",
+      "начинки"
+    ],
+    "pairings": {
+      "protein": [
+        "говядина",
+        "свинина",
+        "курица",
+        "утка"
+      ],
+      "grains": [
+        "рис",
+        "гречка",
+        "кус-кус"
+      ],
+      "vegetables": [
+        "картофель",
+        "лук",
+        "чеснок"
+      ],
+      "dairy": [
+        "сливки"
+      ],
+      "pasta": [
+        "паста"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Свежие белые грибы",
+        "similarity": "high"
+      },
+      {
+        "name": "Сушеные подосиновики",
+        "similarity": "high"
+      },
+      {
+        "name": "Грибной бульонный кубик",
+        "similarity": "low"
+      },
+      {
+        "name": "Шампиньоны сушеные",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "грибы",
+    "белый_гриб",
+    "сушеный",
+    "суп",
+    "соус",
+    "зимние_заготовки"
+  ]
+}

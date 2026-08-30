@@ -1,0 +1,52 @@
+{
+  "name": "Айвовое варенье",
+  "name_normalized": "ayvovoe-varene",
+  "synonyms": "варенье из айвы, джем из айвы, айвовый джем, конфитюр из айвы, варенье айвовое",
+  "short_description": "Ароматное янтарное варенье из айвы с кусочками фрукта, сваренное в сахарном сиропе. Имеет нежный кисло-сладкий вкус с лёгкой терпкостью, ярким фруктовым ароматом и красивым янтарным цветом. Традиционное зимнее лакомство.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Айвовое варенье — это традиционное зимнее лакомство, приготовленное из плодов айвы, сахара и воды. В процессе варки твёрдая терпкая мякоть айвы становится мягкой, янтарно-прозрачной, приобретая нежный кисло-сладкий вкус с лёгкой терпкостью и ярким фруктовым ароматом. Ломтики или дольки айвы сохраняют свою форму, а сироп становится густым, ароматным и янтарным. Айвовое варенье считается одним из самых вкусных и ароматных видов варенья, популярно в кавказской, средиземноморской и восточноевропейской кухне.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — ломтики айвы мягкие, но сохраняют форму; сироп густой, янтарный</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисло-сладкий, с лёгкой терпкостью и медовыми нотками</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — янтарный, золотистый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — айва, сахар, вода, лимонная кислота</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в стеклянных банках</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Самостоятельное лакомство</strong> — к чаю, с блинами, оладьями</li><li class=\"ingredient-list-item\"><strong>Начинка</strong> — для пирогов, пирожков, булочек</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — с мороженым, йогуртом, творогом</li><li class=\"ingredient-list-item\"><strong>Глазурь</strong> — для тортов и пирожных</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Чай</strong> — чёрный, зелёный</li><li class=\"ingredient-list-item\"><strong>Блины, оладьи</strong> — классическая подача</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — мягкие (рикотта, маскарпоне)</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль</li><li class=\"ingredient-list-item\"><strong>Мороженое</strong> — ванильное</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Яблочное варенье</strong> — более мягкий вкус</li><li class=\"ingredient-list-item\"><strong>Грушевое варенье</strong> — слаще, без терпкости</li><li class=\"ingredient-list-item\"><strong>Абрикосовый джем</strong> — другой вкус</li></ul>",
+  "category": "Варенье, джемы, повидло, конфитюр",
+  "semantic_data": {
+    "properties": [
+      "варенье",
+      "айвовый",
+      "янтарный",
+      "кисло-сладкий",
+      "ароматный",
+      "терпкий",
+      "зимнее_лакомство"
+    ],
+    "preparations": [
+      "варка_в_сахарном_сиропе",
+      "хранение_в_стерилизованных_банках"
+    ],
+    "cooking_methods": [
+      {"method": "варка", "priority": "high"},
+      {"method": "консервирование", "priority": "high"}
+    ],
+    "applications": [
+      "самостоятельное_лакомство",
+      "начинка_для_выпечки",
+      "десерты",
+      "глазурь"
+    ],
+    "pairings": {
+      "protein": ["рикотта", "маскарпоне"],
+      "fruits": [],
+      "nuts": ["грецкие_орехи", "миндаль"],
+      "drinks": ["чай_черный", "чай_зеленый"],
+      "desserts": ["блины", "оладьи", "мороженое"]
+    },
+    "substitutes": [
+      {"name": "Яблочное варенье", "similarity": "medium"},
+      {"name": "Грушевое варенье", "similarity": "medium"},
+      {"name": "Абрикосовый джем", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "варенье",
+    "айвовое_варенье",
+    "зимние_заготовки",
+    "десерт",
+    "начинка"
+  ]
+}

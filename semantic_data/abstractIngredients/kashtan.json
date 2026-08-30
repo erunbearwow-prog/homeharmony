@@ -1,0 +1,68 @@
+{
+  "name": "Каштан",
+  "name_normalized": "kashtan",
+  "synonyms": "каштан, каштаны, каштан съедобный, каштан посевной, благородный каштан, каштановые орехи, каштан жареный, каштан для десертов, каштан для супа, каштан для гарнира, маррон, Castanea sativa, sweet chestnut",
+  "short_description": "Съедобные плоды каштана посевного (Castanea sativa) с плотной сладковатой мучнистой мякотью и характерным ореховым вкусом. Употребляются в варёном, жареном и запечённом виде. Универсальный ингредиент для супов, десертов, начинок и гарниров.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Съедобный каштан — это плоды дерева семейства Буковые (Castanea sativa), которые в отличие от несъедобных плодов конского каштана можно и нужно употреблять в пищу. Плоды имеют твёрдую блестящую коричневую скорлупу и плотную, мучнистую мякоть с характерным сладковатым, ореховым вкусом. В варёном и жареном виде они напоминают сладковатый рассыпчатый картофель. В России съедобные каштаны растут в южных регионах — на Черноморском побережье Кавказа, в Краснодарском крае, Ставрополье, Крыму и Ростовской области. В средней полосе распространены несъедобные виды (конский каштан), которые пробовать не стоит.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, мучнистая, в приготовленном виде — мягкая, рассыпчатая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, ореховый, напоминает варёный картофель</li><li class=\"ingredient-list-item\"><strong>Цвет мякоти</strong> — белый, кремовый</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — октябрь-ноябрь</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в прохладном темном месте до 3 месяцев</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — единственный вид орехов, содержащий витамин C</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Надрез</strong> — перед приготовлением обязательно сделать крестообразный или продольный надрез на скорлупе, чтобы каштан не взорвался</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — при 180–210°C в течение 20–40 минут, пока скорлупа не раскроется</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — в кипятке 30–40 минут, скорлупа снимается после термической обработки</li><li class=\"ingredient-list-item\"><strong>Очистка</strong> — после варки или запекания снять твердую скорлупу и коричневую внутреннюю кожицу</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жареные каштаны</strong> — классическая уличная закуска, популярная во Франции</li><li class=\"ingredient-list-item\"><strong>Супы-пюре</strong> — с луком, сельдереем, сливками</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — к мясу, птице (особенно к утке, гусю, кролику)</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — каштановое пюре с ромом, мороженое, кондитерские изделия</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — каштановая мука для хлеба, итальянского пирога кастаньяччо, теста для макарон</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для фаршировки птицы, в сладкие и солёные блюда</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — утка, гусь, кролик, свинина, говядина</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — сельдерей, тыква, лук-порей</li><li class=\"ingredient-list-item\"><strong>Грибы</strong> — в супах и гарнирах</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — яблоки</li><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — молоко, сливки, масло</li><li class=\"ingredient-list-item\"><strong>Алкоголь</strong> — ром, мадера</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — мускатный орех, корица, гвоздика</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Батат (сладкий картофель)</strong> — схожая мучнистая текстура</li><li class=\"ingredient-list-item\"><strong>Картофель</strong> — в супах и гарнирах</li><li class=\"ingredient-list-item\"><strong>Топинамбур</strong> — для пюре</li><li class=\"ingredient-list-item\"><strong>Тыква</strong> — в супах-пюре</li></ul>",
+  "category": "Овощи",
+  "semantic_data": {
+    "properties": [
+      "орех",
+      "мучнистый",
+      "сладковатый",
+      "съедобный",
+      "осенний",
+      "для супов",
+      "для гарниров",
+      "для десертов",
+      "для выпечки"
+    ],
+    "preparations": [
+      "надрез скорлупы",
+      "запекание в духовке",
+      "варка до мягкости",
+      "очистка от скорлупы и кожицы"
+    ],
+    "cooking_methods": [
+      {"method": "запекание", "priority": "high"},
+      {"method": "варка", "priority": "high"},
+      {"method": "жарка", "priority": "high"},
+      {"method": "приготовление пюре", "priority": "medium"},
+      {"method": "измельчение в муку", "priority": "low"}
+    ],
+    "applications": [
+      "супы и пюре",
+      "гарниры",
+      "начинки",
+      "десерты",
+      "выпечка",
+      "закуски"
+    ],
+    "pairings": {
+      "protein": ["утка", "гусь", "кролик", "свинина", "говядина", "курица"],
+      "vegetables": ["сельдерей", "тыква", "лук-порей"],
+      "fruits": ["яблоки"],
+      "sauces": ["сливки", "молоко", "сливочное масло"],
+      "herbs": ["шалфей", "петрушка"],
+      "spices": ["мускатный орех", "корица", "гвоздика"]
+    },
+    "substitutes": [
+      {"name": "Батат (сладкий картофель)", "similarity": "medium"},
+      {"name": "Картофель", "similarity": "medium"},
+      {"name": "Топинамбур", "similarity": "low"},
+      {"name": "Тыква", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "орех",
+    "каштан",
+    "съедобный каштан",
+    "осенний продукт",
+    "французская кухня",
+    "итальянская кухня",
+    "супы",
+    "гарниры",
+    "десерты",
+    "выпечка"
+  ]
+}

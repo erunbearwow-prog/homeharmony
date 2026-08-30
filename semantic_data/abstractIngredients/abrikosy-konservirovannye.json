@@ -1,0 +1,64 @@
+{
+  "name": "Абрикосы консервированные",
+  "name_normalized": "abrikosy-konservirovannye",
+  "synonyms": "консервированные абрикосы, абрикосы в сиропе, абрикосы компотные",
+  "short_description": "Спелые абрикосы, консервированные в лёгком сахарном сиропе. Сохраняют форму и цвет, имеют мягкую текстуру и сладкий вкус с тонкой кислинкой.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Консервированные абрикосы — это спелые плоды абрикоса (целые, половинки или дольки), залитые сахарным сиропом и подвергнутые тепловой обработке в герметичной упаковке. В отличие от сушёных абрикосов (кураги, урюка), сохраняют сочность, упругую текстуру и естественный цвет. Широко используются в кулинарии как сезонная альтернатива свежим абрикосам.</p><h2 class=\"ingredient-title\">Виды консервации</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Целые плоды с косточкой</strong> — наиболее естественный вид</li><li class=\"ingredient-list-item\"><strong>Половинки без косточки</strong> — удобны для использования</li><li class=\"ingredient-list-item\"><strong>Дольки</strong> — для быстрого использования в десертах</li><li class=\"ingredient-list-item\"><strong>Компот</strong> — с большим количеством сиропа</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мягкая, но упругая, сохраняет форму</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, с лёгкой кислинкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от золотистого до янтарного</li><li class=\"ingredient-list-item\"><strong>Сироп</strong> — лёгкий, прозрачный, фруктовый</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в закрытой банке</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Десерты</strong> — пироги, тарты, крамблы, штрудели</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для блинов, оладий, вареников</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к мясу (утка, свинина, курица)</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — сироп для коктейлей, компот</li><li class=\"ingredient-list-item\"><strong>Самостоятельно</strong> — с йогуртом, творогом, мороженым</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка:</strong> слоёное тесто, бисквит, песочное тесто</li><li class=\"ingredient-list-item\"><strong>Мясо:</strong> утка, свинина, курица, индейка</li><li class=\"ingredient-list-item\"><strong>Сыры:</strong> рикотта, маскарпоне, козий сыр</li><li class=\"ingredient-list-item\"><strong>Кисломолочное:</strong> йогурт, творог, сметана</li><li class=\"ingredient-list-item\"><strong>Десерты:</strong> мороженое, заварной крем, взбитые сливки</li><li class=\"ingredient-list-item\"><strong>Напитки:</strong> белое и десертное вино, игристое вино</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежие абрикосы</strong> — в сезон (требуют предварительной обработки)</li><li class=\"ingredient-list-item\"><strong>Замороженные абрикосы</strong> — сохраняют текстуру хуже</li><li class=\"ingredient-list-item\"><strong>Консервированные персики</strong> — мягче, слаще</li><li class=\"ingredient-list-item\"><strong>Курага (замоченная)</strong> — более плотная, менее сочная</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/abrikosoviy-pirog/'>Пирог с консервированными абрикосами</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/techniques/konservirovanie-abrikosov/'>Как консервировать абрикосы в домашних условиях</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/utka-s-abrikosami/'>Утка с абрикосами — рецепт</a></li></ul>",
+  "category": "Консервы",
+  "semantic_data": {
+    "properties": [
+      "консервированный",
+      "сладкий",
+      "кисло-сладкий",
+      "золотистый",
+      "мягкий",
+      "упругий",
+      "сочный",
+      "срок_хранения_до_3_лет"
+    ],
+    "preparations": [
+      "открыть_банку",
+      "слить_сироп_при_необходимости",
+      "промыть_от_сиропа_для_несладких_блюд"
+    ],
+    "cooking_methods": [
+      {"method": "использование_как_есть", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "варка_в_сиропе", "priority": "medium"},
+      {"method": "измельчение_в_пюре", "priority": "medium"}
+    ],
+    "applications": [
+      "десерты",
+      "начинки",
+      "соусы_к_мясу",
+      "напитки",
+      "самостоятельное_блюдо",
+      "топпинг_для_мороженого"
+    ],
+    "pairings": {
+      "protein": ["утка", "свинина", "курица", "индейка", "рикотта", "маскарпоне", "козий_сыр"],
+      "vegetables": [],
+      "fruits": ["персики", "нектарины", "сливы"],
+      "pastry": ["слоёное_тесто", "бисквит", "песочное_тесто"],
+      "dairy": ["йогурт", "творог", "сметана", "мороженое"],
+      "desserts": ["заварной_крем", "взбитые_сливки"],
+      "wines": ["белое_вино", "десертное_вино", "игристое_вино"]
+    },
+    "substitutes": [
+      {"name": "Свежие абрикосы", "similarity": "high"},
+      {"name": "Замороженные абрикосы", "similarity": "medium"},
+      {"name": "Консервированные персики", "similarity": "medium"},
+      {"name": "Курага (замоченная)", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "консервы",
+    "абрикос",
+    "заготовки",
+    "десерт",
+    "начинка",
+    "соусы",
+    "зимние_заготовки",
+    "компот"
+  ]
+}

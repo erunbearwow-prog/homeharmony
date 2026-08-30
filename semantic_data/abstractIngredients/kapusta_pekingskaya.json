@@ -1,0 +1,68 @@
+{
+  "name": "Капуста пекинская",
+  "name_normalized": "kapusta_pekingskaya",
+  "synonyms": "пекинская капуста, китайская капуста, пак-чой (ошибочно), китайский салат, пекинка, листовая капуста, японская капуста, Brassica rapa subsp. pekinensis, napa cabbage, celery cabbage",
+  "short_description": "Листовая овощная культура с удлиненными, нежными, светло-зелеными листьями и белыми сочными черешками. Имеет нейтральный, слегка сладковатый и горчичный вкус, хрустящую текстуру и низкую калорийность. Широко используется в азиатской кухне и в салатах.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Пекинская капуста — это листовой овощ, который по внешнему виду напоминает удлиненный кочан с нежными, светло-зелеными, гофрированными листьями и белыми, сочными, хрустящими черешками. В отличие от белокочанной капусты, ее листья более тонкие и нежные, а вкус мягкий, с легкой горчинкой. Пекинская капуста богата витаминами C, A, K, фолиевой кислотой и калием. Она широко используется в азиатской кухне (Корея, Китай, Япония) для приготовления кимчи, салатов, супов, а также в европейской кухне как салатный овощ.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, хрустящая, сочная, листья тонкие</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — мягкий, слегка сладковатый, с легкой горчинкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — листья светло-зеленые, черешки белые</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — удлиненный рыхлый кочан</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — круглый год (основной сбор осенью и весной)</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике до 5-7 дней (в пакете)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — при длительной термообработке становится мягкой, сохраняет форму при быстром приготовлении</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойка</strong> — тщательно промыть под проточной водой</li><li class=\"ingredient-list-item\"><strong>Отделение листьев</strong> — для салатов и быстрого приготовления</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — крупными кусками (для супов, тушения), тонкой соломкой (для салатов)</li><li class=\"ingredient-list-item\"><strong>Удаление кочерыжки</strong> — вырезать кочерыжку (для вока и супов)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с маслом, сметаной, майонезом, с курицей, с орехами</li><li class=\"ingredient-list-item\"><strong>Азиатские блюда</strong> — кимчи, вок, лапша, супы (мисо, рамэн)</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — легкие овощные супы</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с мясом, овощами</li><li class=\"ingredient-list-item\"><strong>Спринг-роллы</strong> — как начинка</li><li class=\"ingredient-list-item\"><strong>Фарширование</strong> — листья для голубцов</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, свинина, говядина</li><li class=\"ingredient-list-item\"><strong>Морепродукты</strong> — креветки, кальмары, крабы</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — морковь, огурец, лук, сладкий перец, дайкон</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — соевый соус, устричный, острый, сметанный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — кинза, зеленый лук, петрушка</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, имбирь, чили, кунжут</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Листья салата</strong> — в салатах</li><li class=\"ingredient-list-item\"><strong>Белокочанная капуста</strong> — в супах и голубцах</li><li class=\"ingredient-list-item\"><strong>Пак-чой</strong> — в азиатских блюдах</li><li class=\"ingredient-list-item\"><strong>Шпинат</strong> — в салатах и супах</li></ul>",
+  "category": "Овощи",
+  "semantic_data": {
+    "properties": [
+      "овощ",
+      "листовая",
+      "нежная",
+      "хрустящая",
+      "сочная",
+      "азиатская кухня",
+      "салаты",
+      "супы",
+      "кимчи",
+      "быстрое приготовление"
+    ],
+    "preparations": [
+      "мойка под проточной водой",
+      "отделение листьев",
+      "нарезка крупными кусками или тонкой соломкой",
+      "удаление кочерыжки"
+    ],
+    "cooking_methods": [
+      {"method": "использование в салатах", "priority": "high"},
+      {"method": "приготовление кимчи", "priority": "high"},
+      {"method": "варка (супы)", "priority": "high"},
+      {"method": "тушение", "priority": "high"},
+      {"method": "быстрая обжарка в воке", "priority": "high"},
+      {"method": "фарширование", "priority": "medium"}
+    ],
+    "applications": [
+      "салаты",
+      "азиатские блюда",
+      "супы",
+      "вторые блюда",
+      "начинки",
+      "голубцы"
+    ],
+    "pairings": {
+      "protein": ["курица", "свинина", "говядина", "креветки", "кальмары", "крабы"],
+      "vegetables": ["морковь", "огурец", "лук", "сладкий перец", "дайкон"],
+      "sauces": ["соевый соус", "устричный", "острый", "сметанный"],
+      "herbs": ["кинза", "зеленый лук", "петрушка"],
+      "spices": ["чеснок", "имбирь", "чили", "кунжут"]
+    },
+    "substitutes": [
+      {"name": "Листья салата", "similarity": "medium"},
+      {"name": "Белокочанная капуста", "similarity": "medium"},
+      {"name": "Пак-чой", "similarity": "medium"},
+      {"name": "Шпинат", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "овощ",
+    "пекинская капуста",
+    "китайская капуста",
+    "азиатская кухня",
+    "салаты",
+    "кимчи",
+    "супы",
+    "нежный вкус",
+    "диетический"
+  ]
+}

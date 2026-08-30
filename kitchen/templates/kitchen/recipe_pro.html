@@ -1,378 +1,15 @@
+<!-- kitchen/templates/kitchen/recipe_pro.html -->
+
 {% extends "base.html" %}
 {% load static %}
 {% load custom_filters %}
 
 {% block title %}
-    ТТК №{{ recipe.id }} {{ recipe.title }} | Семейные ценности
+    ТТК №{{ recipe.id }} {{ recipe.title }} | Вкус и Порядок
 {% endblock %}
 
 {% block extra_css %}
-<style>
-    /* ======================= ПРОФЕССИОНАЛЬНАЯ СТИЛИЗАЦИЯ ======================= */
-    .pro-mode {
-        --pro-primary: #2563eb;
-        --pro-primary-dark: #1d4ed8;
-        --pro-primary-light: #dbeafe;
-        --pro-primary-bg: #eff6ff;
-        --pro-accent: #3b82f6;
-        --pro-border: #bfdbfe;
-        --pro-text: #1e293b;
-        --pro-text-light: #64748b;
-    }
-
-    /* Шапка техкарты */
-    .pro-mode .tech-header {
-        background: linear-gradient(135deg, var(--pro-primary) 0%, var(--pro-primary-dark) 100%);
-        padding: 24px;
-        border-radius: 20px;
-        color: white;
-        margin-bottom: 24px;
-    }
-
-    .pro-mode .tech-header h1 {
-        font-size: 1.5rem;
-        font-weight: 700;
-        margin: 8px 0 4px;
-    }
-
-    /* Нутрициология */
-    .pro-mode .nutrition-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
-        margin-bottom: 24px;
-    }
-
-    .pro-mode .nutrition-card {
-        background: white;
-        border-radius: 16px;
-        padding: 12px 16px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        border: 1px solid var(--pro-border);
-    }
-
-    .pro-mode .nutrition-title {
-        font-size: 0.7rem;
-        color: var(--pro-text-light);
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        margin-bottom: 8px;
-    }
-
-    .pro-mode .nutrition-values {
-        display: flex;
-        gap: 16px;
-        flex-wrap: wrap;
-    }
-
-    .pro-mode .nutrition-item {
-        display: flex;
-        align-items: baseline;
-        gap: 4px;
-    }
-
-    .pro-mode .nutrition-label {
-        font-size: 0.75rem;
-        color: var(--pro-text-light);
-    }
-
-    .pro-mode .nutrition-value {
-        font-size: 1rem;
-        font-weight: 700;
-        color: var(--pro-primary);
-    }
-
-    /* Секции */
-    .pro-mode .tech-section {
-        background: white;
-        border-radius: 20px;
-        border: 1px solid #e5e7eb;
-        overflow: hidden;
-        margin-bottom: 24px;
-    }
-
-    .pro-mode .tech-section-header {
-        background: var(--pro-primary-bg);
-        padding: 14px 20px;
-        border-bottom: 1px solid var(--pro-border);
-    }
-
-    .pro-mode .tech-section-header h2 {
-        font-size: 1rem;
-        font-weight: 600;
-        color: var(--pro-primary-dark);
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .pro-mode .tech-section-body {
-        padding: 20px;
-    }
-
-    /* Описание (Технология приготовления) */
-    .pro-mode .description-text {
-        color: var(--pro-text);
-        line-height: 1.6;
-        font-size: 0.9rem;
-    }
-
-    /* Полуфабрикаты - карточки вложенных рецептов */
-    .pro-mode .subrecipe-card {
-        border-left: 3px solid var(--pro-primary);
-        background-color: var(--pro-primary-bg);
-        padding: 16px;
-        border-radius: 6px;
-        margin-bottom: 12px;
-        transition: all 0.2s;
-    }
-
-    .pro-mode .subrecipe-card:last-child {
-        margin-bottom: 0;
-    }
-
-    .pro-mode .subrecipe-card:hover {
-        background-color: var(--pro-primary-light);
-        transform: translateX(4px);
-    }
-
-    .pro-mode .subrecipe-title {
-        font-weight: 600;
-        color: var(--pro-primary);
-        margin-bottom: 4px;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .pro-mode .subrecipe-title i {
-        font-size: 0.9rem;
-    }
-
-    .pro-mode .subrecipe-title a {
-        color: var(--pro-primary);
-        text-decoration: none;
-    }
-
-    .pro-mode .subrecipe-title a:hover {
-        text-decoration: underline;
-    }
-
-    .pro-mode .subrecipe-instruction {
-        color: var(--pro-text-light);
-        font-size: 0.85rem;
-        line-height: 1.5;
-        margin-top: 8px;
-    }
-
-    /* Кнопка себестоимости */
-    .pro-mode .cost-btn {
-        width: 100%;
-        background: var(--pro-primary-bg);
-        border: 1px solid var(--pro-border);
-        color: var(--pro-primary);
-        padding: 12px;
-        border-radius: 12px;
-        font-weight: 500;
-        transition: all 0.2s;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        margin-top: 16px;
-    }
-
-    .pro-mode .cost-btn:hover {
-        background: var(--pro-primary-light);
-        border-color: var(--pro-primary);
-    }
-
-    /* Таблица ингредиентов */
-    .pro-mode .ingredients-container {
-        overflow-x: auto;
-    }
-
-    .pro-mode .ingredients-table {
-        width: 100%;
-        border-collapse: collapse;
-        min-width: 280px;
-    }
-
-    .pro-mode .ingredients-table thead tr {
-        background-color: var(--pro-primary-light);
-    }
-
-    .pro-mode .ingredients-table th {
-        padding: 0.75rem 0.5rem;
-        font-weight: 600;
-        color: var(--pro-primary-dark);
-        border-bottom: 2px solid var(--pro-border);
-    }
-
-    .pro-mode .ingredients-table td {
-        padding: 0.75rem 0.5rem;
-        border-bottom: 1px solid #e5e7eb;
-        vertical-align: middle;
-    }
-
-    .pro-mode .ingredients-table tbody tr:hover {
-        background-color: var(--pro-primary-bg) !important;
-    }
-
-    .pro-mode .ingredients-table tfoot {
-        background-color: var(--pro-primary-light);
-    }
-
-    .pro-mode .gross-cell,
-    .pro-mode .net-cell {
-        text-align: right;
-        font-family: monospace;
-        white-space: nowrap;
-    }
-
-    .pro-mode .chain-btn-pro {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 28px;
-        height: 28px;
-        border-radius: 6px;
-        transition: all 0.2s ease;
-        cursor: pointer;
-        background: none;
-        border: none;
-    }
-
-    .pro-mode .chain-btn-pro:hover {
-        background-color: var(--pro-primary-light);
-    }
-
-    /* Виджет управления */
-    .pro-mode .mode-switch-pro.active {
-        background-color: var(--pro-primary);
-        color: white;
-    }
-
-    .pro-mode input[type="range"] {
-        accent-color: var(--pro-primary);
-    }
-
-    /* Карточки полуфабрикатов (как в составе блюда) */
-    .pro-mode .semi-finished-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 12px;
-    }
-
-    .pro-mode .semi-finished-card {
-        background: white;
-        border-radius: 12px;
-        border: 1px solid var(--pro-border);
-        overflow: hidden;
-        transition: all 0.2s ease;
-        padding: 12px 16px;
-    }
-
-    .pro-mode .semi-finished-card:hover {
-        border-color: var(--pro-primary);
-        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
-    }
-
-    .pro-mode .semi-finished-title {
-        font-weight: 600;
-        color: var(--pro-primary-dark);
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        font-size: 0.95rem;
-    }
-
-    .pro-mode .semi-finished-title i {
-        color: var(--pro-primary);
-        font-size: 0.9rem;
-    }
-
-    .pro-mode .semi-finished-instruction {
-        color: var(--pro-text-light);
-        font-size: 0.8rem;
-        line-height: 1.5;
-        margin-top: 4px;
-        padding-left: 28px;
-    }
-
-    .pro-mode .semi-finished-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        font-size: 0.75rem;
-        color: var(--pro-primary);
-        text-decoration: none;
-        font-weight: 500;
-        padding: 4px 0;
-        transition: all 0.2s;
-    }
-
-    .pro-mode .semi-finished-link:hover {
-        color: var(--pro-primary-dark);
-        gap: 10px;
-    }
-
-    /* Виджет управления */
-    .pro-mode .mode-switch-pro {
-        transition: all 0.2s ease;
-    }
-
-    .pro-mode .mode-switch-pro.bg-blue-600 {
-        background-color: var(--pro-primary);
-        color: white;
-    }
-
-    .pro-mode .mode-switch-pro.bg-white {
-        background-color: white;
-        color: var(--pro-text-light);
-        border: 1px solid var(--pro-border);
-    }
-
-    .pro-mode .mode-switch-pro.bg-white:hover {
-        background-color: var(--pro-primary-bg);
-        border-color: var(--pro-primary);
-    }
-
-    /* Блок ингредиентов в левой колонке */
-    .pro-mode .ingredients-block {
-        background: white;
-        border-radius: 20px;
-        border: 1px solid #e5e7eb;
-        overflow: hidden;
-        margin-bottom: 24px;
-    }
-
-    .pro-mode .ingredients-block .tech-section-header {
-        background: var(--pro-primary-bg);
-        padding: 14px 20px;
-        border-bottom: 1px solid var(--pro-border);
-    }
-
-    .pro-mode .ingredients-block .tech-section-header h2 {
-        font-size: 1rem;
-        font-weight: 600;
-        color: var(--pro-primary-dark);
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .pro-mode .ingredients-block .tech-section-body {
-        padding: 16px 20px 20px;
-    }
-
-    @media (max-width: 768px) {
-        .pro-mode .nutrition-grid {
-            grid-template-columns: 1fr;
-        }
-    }
-</style>
+    <link rel="stylesheet" href="{% static 'kitchen/css/recipe_pro.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -455,10 +92,10 @@
                 </div>
             </div>
 
-            <!-- ======================= БЛОК ИНГРЕДИЕНТОВ (ПЕРЕНЕСЁН СЮДА) ======================= -->
+            <!-- ======================= БЛОК ИНГРЕДИЕНТОВ ======================= -->
             <div class="ingredients-block">
                 <div class="tech-section-header">
-                    <h2><i class="fas fa-clipboard-list"></i> Спецификация ингредиентов</h2>
+                    <h2><i class="fas fa-clipboard-list"></i>Рецептура</h2>
                 </div>
                 <div class="tech-section-body">
                     <!-- Виджет управления -->
@@ -509,6 +146,8 @@
                                     <th class="text-right">Брутто</th>
                                     <th class="text-right">Нетто</th>
                                     <th class="text-center" style="width: 32px;"></th>
+                                    <th class="text-center" style="width: 32px;"></th>
+                                    <th class="text-center" style="width: 32px;"></th>
                                 </tr>
                             </thead>
                             <tbody id="proIngredientsTable">
@@ -518,7 +157,8 @@
                                     data-gross="{{ item.gross_weight }}"
                                     data-net="{{ item.net_weight }}"
                                     data-loss="{{ item.loss_factor|default:1 }}"
-                                    data-unit="{{ item.unit }}">
+                                    data-unit="{{ item.unit }}"
+                                    data-ingredient-id="{{ item.ingredient.id }}">
                                     <td class="text-gray-700 break-words">{{ item.ingredient.name }}</td>
                                     <td class="gross-cell" data-original="{{ item.gross_weight }}">
                                         {{ item.gross_weight|floatformat:0 }} {{ item.unit }}
@@ -532,10 +172,27 @@
                                             <i class="fas fa-link"></i>
                                         </button>
                                     </td>
+                                    <td class="text-center">
+                                        <button class="pro-replace-btn text-gray-400 hover:text-blue-600 transition p-1"
+                                                data-id="{{ item.ingredient.id }}"
+                                                data-name="{{ item.ingredient.name }}"
+                                                data-unit="{{ item.unit }}"
+                                                title="Заменить ингредиент">
+                                            <i class="fas fa-exchange-alt"></i>
+                                        </button>
+                                    </td>
+                                    <td class="text-center">
+                                        <button class="pro-info-btn text-gray-400 hover:text-amber-600 transition p-1"
+                                                data-id="{{ item.ingredient.id }}"
+                                                data-name="{{ item.ingredient.name }}"
+                                                title="Информация об ингредиенте">
+                                            <i class="fas fa-info-circle"></i>
+                                        </button>
+                                    </td>
                                 </tr>
                                 {% empty %}
                                 <tr>
-                                    <td colspan="4" class="text-center text-gray-400 py-8">
+                                    <td colspan="6" class="text-center text-gray-400 py-8">
                                         Ингредиенты не добавлены
                                     </td>
                                 </tr>
@@ -547,6 +204,8 @@
                                     <td class="font-semibold text-gray-700">ВСЕГО (нетто):</td>
                                     <td class="text-right"></td>
                                     <td class="text-right font-bold text-blue-700" id="totalNetValue">--</td>
+                                    <td></td>
+                                    <td></td>
                                     <td></td>
                                 </tr>
                             </tfoot>
@@ -574,7 +233,7 @@
             </button>
         </div>
 
-        <!-- ПРАВАЯ КОЛОНКА (1/3): ПОЛУФАБРИКАТЫ, ОФОРМЛЕНИЕ, ХРАНЕНИЕ -->
+        <!-- ПРАВАЯ КОЛОНКА (1/3) -->
         <div class="lg:col-span-1">
             <!-- ПОЛУФАБРИКАТЫ -->
             <div class="tech-section">
@@ -620,14 +279,11 @@
                     <h2><i class="fas fa-plate-wheat"></i> Оформление и подача</h2>
                 </div>
                 <div class="tech-section-body">
-                    <!-- Текст -->
                     {% if recipe.plating %}
                     <div class="description-text mb-4">
                         {{ recipe.plating|linebreaks }}
                     </div>
                     {% endif %}
-
-                    <!-- Изображение оформления -->
                     {% if recipe.plating_image %}
                     <div class="plating-image mt-3">
                         <img src="{{ recipe.plating_image.url }}"
@@ -637,8 +293,6 @@
                         <p class="text-xs text-gray-400 mt-1 text-center">Вариант подачи блюда</p>
                     </div>
                     {% endif %}
-
-                    <!-- Если ничего нет -->
                     {% if not recipe.plating and not recipe.plating_image %}
                     <div class="description-text text-gray-400">
                         Рекомендации по оформлению и подаче блюда будут добавлены позже.
@@ -654,7 +308,11 @@
                 </div>
                 <div class="tech-section-body">
                     <div class="description-text">
-                        {{ recipe.storage_conditions|default:"Условия и сроки хранения будут добавлены позже."|linebreaks }}
+                        {% if recipe.storage_conditions %}
+                            {{ recipe.storage_conditions|linebreaks }}
+                        {% else %}
+                            Условия и сроки хранения будут добавлены позже.
+                        {% endif %}
                     </div>
                 </div>
             </div>
@@ -677,6 +335,134 @@
         <button onclick="closeProCostModal()" class="mt-4 w-full bg-gray-200 py-2 rounded-lg hover:bg-gray-300 transition">Закрыть</button>
     </div>
 </div>
+
+<!-- ======================= МОДАЛЬНЫЕ ОКНА С КЛАССОМ pro-mode ======================= -->
+
+<!-- Модальное окно для замены ингредиента (общее) -->
+<div id="replaceModal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden no-print">
+    <div class="bg-white rounded-2xl p-6 max-w-md w-full mx-4 shadow-xl pro-mode">  <!-- добавлен класс pro-mode -->
+        <h3 class="text-xl font-bold serif mb-4 modal-title">🔄 Замена ингредиента</h3>
+        <p class="text-gray-600 mb-2">Заменить <span id="replaceOriginalName" class="font-semibold modal-title"></span></p>
+        <div class="mb-4">
+            <label class="block text-sm font-medium text-gray-700 mb-1 modal-label">Заменить на:</label>
+            <select id="replaceWithSelect" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500 modal-input bg-white">
+                <option value="custom">✏️ Другой ингредиент (ввести вручную)</option>
+            </select>
+        </div>
+        <div class="mb-4">
+            <label class="block text-sm font-medium text-gray-700 mb-1 modal-label">Соотношение:</label>
+            <div class="flex items-center gap-2 flex-wrap">
+                <span class="text-sm">1</span>
+                <span id="replaceOriginalUnit" class="text-sm bg-amber-100 px-2 py-0.5 rounded modal-badge"></span>
+                <span class="text-sm">=</span>
+                <input type="number" id="replaceRatio" value="1" step="0.1" class="w-20 px-2 py-1 border border-gray-300 rounded-lg text-center focus:outline-none focus:ring-2 focus:ring-amber-500 modal-input">
+                <span id="replaceNewUnit" class="text-sm bg-amber-100 px-2 py-0.5 rounded modal-badge"></span>
+                <span id="replaceNewName" class="text-sm font-medium text-gray-700"></span>
+            </div>
+            <p class="text-xs text-gray-500 mt-1">Пример: 1 ст.л. томатной пасты = 2 ст.л. перетёртых помидоров</p>
+        </div>
+        <div class="flex justify-between items-center gap-3 mt-6">
+            <a href="#" id="fullReplaceInfoLink" class="text-sm modal-link">📖 Подробнее о заменах →</a>
+            <div class="flex gap-3">
+                <button id="cancelReplaceBtn" class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition">Отмена</button>
+                <button id="confirmReplaceBtn" class="px-4 py-2 modal-btn-primary rounded-lg transition">Применить замену</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно для информации об ингредиенте (общее) -->
+<div id="infoModal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden no-print">
+    <div class="bg-white rounded-2xl p-6 max-w-2xl w-full mx-4 shadow-xl max-h-[85vh] overflow-y-auto pro-mode">  <!-- добавлен класс pro-mode -->
+        <div class="flex justify-between items-start mb-4">
+            <h3 class="text-2xl font-bold serif flex items-center gap-2 modal-title">
+                <i class="fas fa-info-circle text-amber-600 modal-title"></i>
+                <span id="infoModalName">Ингредиент</span>
+            </h3>
+            <button onclick="closeInfoModal()" class="text-gray-400 hover:text-gray-600 transition">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+
+        <div id="infoModalContent" class="space-y-4">
+            <div class="p-4 rounded-xl info-nutrition">
+                <h4 class="font-semibold mb-2 flex items-center gap-2 modal-title">
+                    <i class="fas fa-chart-line text-amber-600 modal-title"></i> Пищевая ценность (на 100г)
+                </h4>
+                <div class="grid grid-cols-4 gap-2 text-center" id="infoModalNutrition">
+                    <div><span class="font-bold value">0</span><br><span class="text-xs text-gray-500">ккал</span></div>
+                    <div><span class="font-bold value">0</span><br><span class="text-xs text-gray-500">белки</span></div>
+                    <div><span class="font-bold value">0</span><br><span class="text-xs text-gray-500">жиры</span></div>
+                    <div><span class="font-bold value">0</span><br><span class="text-xs text-gray-500">углеводы</span></div>
+                </div>
+            </div>
+
+            <div class="p-4 rounded-xl info-tips">
+                <h4 class="font-semibold text-green-800 mb-2 flex items-center gap-2">
+                    <i class="fas fa-lightbulb"></i> Советы по выбору
+                </h4>
+                <p id="infoModalTips" class="text-green-700 text-sm">Выбирайте свежие продукты без повреждений. Овощи должны быть упругими, без пятен.</p>
+            </div>
+
+            <div class="p-4 rounded-xl info-storage">
+                <h4 class="font-semibold mb-2 flex items-center gap-2 modal-title">
+                    <i class="fas fa-box"></i> Хранение
+                </h4>
+                <p id="infoModalStorage" class="modal-title text-sm">Хранить в прохладном тёмном месте. Срок хранения: 5-7 дней.</p>
+            </div>
+
+            <div class="bg-amber-50 p-4 rounded-xl info-substitutes">
+                <h4 class="font-semibold text-amber-800 mb-2 flex items-center gap-2">
+                    <i class="fas fa-exchange-alt"></i> Чем можно заменить
+                </h4>
+                <p id="infoModalSubstitutes" class="text-amber-700 text-sm">Нет точной замены, можно использовать аналоги по вкусу.</p>
+            </div>
+        </div>
+
+        <div class="flex justify-between items-center mt-6 pt-4 border-t border-gray-200">
+            <a href="#" id="fullIngredientInfoLink" class="text-sm modal-link flex items-center gap-1">
+                <i class="fas fa-external-link-alt"></i> Подробнее об этом ингредиенте →
+            </a>
+            <button onclick="closeInfoModal()" class="px-5 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition">Закрыть</button>
+        </div>
+    </div>
+</div>
+
+<!-- Тост-уведомление -->
+<div id="toastNotification" class="fixed bottom-6 right-6 z-50 hidden">
+    <div class="bg-gray-800/95 backdrop-blur-sm text-white rounded-xl shadow-2xl px-5 py-3.5 flex items-center gap-3 min-w-[260px] transform transition-all duration-300 translate-y-0">
+        <i id="toastIcon" class="fas fa-check-circle text-green-400 text-xl"></i>
+        <div class="flex-1">
+            <p id="toastTitle" class="text-xs font-semibold uppercase tracking-wider opacity-80">Успешно</p>
+            <p id="toastMessage" class="text-sm font-medium"></p>
+        </div>
+        <button onclick="closeToast()" class="text-gray-400 hover:text-white transition-colors">
+            <i class="fas fa-times text-sm"></i>
+        </button>
+    </div>
+</div>
+
+<!-- Модальные окна для методов, подготовки, утвари -->
+{% include 'kitchen/includes/method_modal.html' %}
+{% include 'kitchen/includes/preparation_modal.html' %}
+{% include 'kitchen/includes/utensil_modal.html' %}
+
+<!-- Скрипт для открытия изображения в модалке -->
+<script>
+function openImageModal(imageUrl) {
+    const modal = document.createElement('div');
+    modal.className = 'fixed inset-0 bg-black/90 flex items-center justify-center z-50 cursor-pointer';
+    modal.onclick = function() { this.remove(); };
+
+    const img = document.createElement('img');
+    img.src = imageUrl;
+    img.className = 'max-h-[90vh] max-w-[90vw] object-contain rounded-lg';
+
+    modal.appendChild(img);
+    document.body.appendChild(modal);
+}
+</script>
+
 {% endblock %}
 
 {% block extra_js %}

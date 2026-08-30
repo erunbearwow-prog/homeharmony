@@ -1,0 +1,52 @@
+{
+  "name": "Сырокопченая колбаса",
+  "name_normalized": "syrokopchenaya-kolbasa",
+  "synonyms": "сырокопченая колбаса, колбаса сырокопченая, копченая колбаса сырая, колбаса холодного копчения, сырокопченка",
+  "short_description": "Колбаса, приготовленная из сырого мяса с последующим холодным копчением (20-25°C) и длительной сушкой. Отличается плотной твёрдой текстурой, насыщенным копчено-пряным вкусом, тёмно-красным цветом и длительным сроком хранения.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Сырокопченая колбаса — это колбасный продукт, изготавливаемый из сырого мяса (свинина, говядина, баранина) с добавлением соли, специй, чеснока и нитритной соли. После формовки колбасу подвергают холодному копчению при температуре 20-25°C в течение 2-3 суток, а затем длительной сушке (от 2 до 6 недель). В результате колбаса приобретает плотную, твёрдую текстуру, тёмно-красный или коричневатый цвет и насыщенный копчёно-пряный вкус. Сырокопченые колбасы обладают длительным сроком хранения (до нескольких месяцев) и считаются деликатесным продуктом.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, твёрдая, упругая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, копчёный, пряный</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — тёмно-красный, красно-коричневый</li><li class=\"ingredient-list-item\"><strong>Температура копчения</strong> — 20-25°C</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-4 месяцев</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — мясо (свинина, говядина, баранина), шпик, соль, специи, нитритная соль</li></ul><h2 class=\"ingredient-title\">Виды сырокопченых колбас</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сервелат</strong> — классическая с чесноком и перцем</li><li class=\"ingredient-list-item\"><strong>Салями</strong> — пряная, с ферментацией</li><li class=\"ingredient-list-item\"><strong>Брауншвейгская</strong> — с чесноком и паприкой</li><li class=\"ingredient-list-item\"><strong>Чоризо</strong> — испанская с паприкой</li><li class=\"ingredient-list-item\"><strong>Зернистая</strong> — с большими кусочками шпика</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом, сыром, овощами</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — нарезка к пиву, вину, крепким напиткам</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, яйцом, овощами</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — в тушёном виде, с картофелем</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — твёрдые, полутвёрдые, голубые</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — огурцы, помидоры, перец, лук</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — горчица, хрен, майонез</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, белый, багет</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — пиво, крепкий алкоголь, красное вино</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Варено-копченая колбаса</strong> — более мягкая</li><li class=\"ingredient-list-item\"><strong>Сыровяленая колбаса</strong> — без копчения</li><li class=\"ingredient-list-item\"><strong>Салями</strong> — с ферментацией</li></ul>",
+  "category": "Колбасы сырокопченые и сыровяленые",
+  "semantic_data": {
+    "properties": [
+      "колбаса",
+      "сырокопченая",
+      "холодное_копчение",
+      "плотный",
+      "копчёный_вкус",
+      "длительное_хранение",
+      "деликатес"
+    ],
+    "preparations": [
+      "нарезка_ломтиками",
+      "хранение_в_холодильнике"
+    ],
+    "cooking_methods": [
+      {"method": "свежее_употребление", "priority": "high"},
+      {"method": "добавление_в_салаты", "priority": "high"}
+    ],
+    "applications": [
+      "бутерброды",
+      "закуски",
+      "салаты"
+    ],
+    "pairings": {
+      "protein": ["сыр_твердый", "сыр_полутвердый", "сыр_голубой"],
+      "vegetables": ["огурцы", "помидоры", "перец", "лук"],
+      "sauces": ["горчица", "хрен", "майонез"],
+      "breads": ["ржаной_хлеб", "белый_хлеб", "багет"],
+      "drinks": ["пиво", "крепкий_алкоголь", "красное_вино"]
+    },
+    "substitutes": [
+      {"name": "Варено-копченая колбаса", "similarity": "low"},
+      {"name": "Сыровяленая колбаса", "similarity": "medium"},
+      {"name": "Салями", "similarity": "high"}
+    ]
+  },
+  "tags": [
+    "колбаса",
+    "сырокопченая",
+    "копченая_колбаса",
+    "деликатес",
+    "закуска",
+    "пиво"
+  ]
+}

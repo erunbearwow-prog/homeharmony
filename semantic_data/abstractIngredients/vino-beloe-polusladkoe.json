@@ -1,0 +1,73 @@
+{
+  "name": "Вино белое полусладкое",
+  "name_normalized": "vino-beloe-polusladkoe",
+  "synonyms": "",
+  "short_description": "Белое вино с содержанием сахара от 25 до 45 г/л, отличающееся мягким, сладковатым вкусом с освежающей кислинкой и фруктово-цветочным ароматом. Популярный выбор для тех, кто предпочитает более сладкие вина.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Белое полусладкое вино — это алкогольный напиток, который отличается повышенным содержанием сахара (25–45 г/л) по сравнению с сухими и полусухими винами. Благодаря этому оно имеет мягкий, сладковатый вкус с хорошо сбалансированной кислотностью, что делает его особенно популярным среди любителей более сладких вин. Полусладкое белое вино обладает светло-соломенным или золотистым цветом, ярким фруктово-цветочным ароматом (цитрусы, яблоко, груша, цветы) и мягким, округлым послевкусием. Оно идеально подходит для романтических ужинов, дружеских посиделок и в качестве аперитива или десертного вина.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Содержание сахара</strong> — 25–45 г/л</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, мягкий, с лёгкой кислинкой</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — фруктовый, цветочный (цитрусы, яблоко, груша, цветы)</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — светло-соломенный, золотистый</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 2-5 лет в бутылке</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Напиток</strong> — самостоятельное употребление, к десертам, фруктам</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — для сладких и кисло-сладких соусов</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для рыбы, морепродуктов, птицы</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — в некоторых рецептах</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Десерты</strong> — торты, пирожные, фруктовые салаты</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — яблоки, груши, виноград, цитрусы</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — мягкие, козьи сыры</li><li class=\"ingredient-list-item\"><strong>Рыба</strong> — лосось, белая рыба (в сладких соусах)</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Белое полусухое вино</strong> — менее сладкое</li><li class=\"ingredient-list-item\"><strong>Белое сладкое вино</strong> — более сладкое</li><li class=\"ingredient-list-item\"><strong>Белый вермут</strong> — сладкий, ароматизированный</li><li class=\"ingredient-list-item\"><strong>Яблочный сок</strong> — безалкогольная альтернатива</li></ul>",
+  "category": "Белое вино",
+  "semantic_data": {
+    "properties": [
+      "алкоголь",
+      "белое_вино",
+      "полусладкое",
+      "сладковатый",
+      "фруктовый",
+      "цветочный",
+      "мягкое",
+      "десертное"
+    ],
+    "preparations": [
+      "охлаждение_до_8-12_°C"
+    ],
+    "cooking_methods": [
+      {
+        "method": "напиток",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_соусов",
+        "priority": "medium"
+      },
+      {
+        "method": "маринование",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "напиток",
+      "соусы",
+      "маринады"
+    ],
+    "pairings": {
+      "protein": ["мягкие_сыры", "козьи_сыры", "лосось", "белая_рыба"],
+      "fruits": ["яблоки", "груши", "виноград", "цитрусы"],
+      "desserts": ["торты", "пирожные", "фруктовые_салаты"]
+    },
+    "substitutes": [
+      {
+        "name": "Белое полусухое вино",
+        "similarity": "high"
+      },
+      {
+        "name": "Белое сладкое вино",
+        "similarity": "high"
+      },
+      {
+        "name": "Белый вермут",
+        "similarity": "medium"
+      },
+      {
+        "name": "Яблочный сок",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "алкоголь",
+    "вино",
+    "белое_вино",
+    "полусладкое_вино",
+    "десертное_вино",
+    "соус"
+  ]
+}

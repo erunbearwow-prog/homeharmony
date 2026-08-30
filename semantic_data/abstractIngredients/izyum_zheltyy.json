@@ -1,0 +1,70 @@
+{
+  "name": "Изюм желтый",
+  "name_normalized": "izyum_zheltyy",
+  "synonyms": "изюм желтый, изюм светлый, изюм золотистый, сабза, кишмиш, сухофрукты, светлый изюм, изюм без косточек, изюм для выпечки, изюм для десертов, изюм для компота",
+  "short_description": "Сухофрукт из светлых сортов винограда, получаемый путем сушки на солнце или в сушильных камерах. Имеет золотисто-янтарный цвет, мягкую, сочную текстуру и сладкий, слегка медовый вкус. Используется в выпечке, десертах, кашах, салатах и как самостоятельный перекус.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Желтый изюм (сабза) — это сухофрукт, получаемый из светлых сортов винограда. В отличие от темного изюма, он сохраняет более светлый, янтарный цвет и обладает более нежным, сладким, слегка медовым вкусом. Чаще всего желтый изюм производят из белого винограда (кишмиш), который сушат на солнце или в сушильных камерах. Благодаря тонкой кожице и мягкой текстуре, этот изюм особенно популярен в выпечке, десертах, кашах и мюслях. Желтый изюм богат калием, фосфором, железом и витаминами группы B, что делает его не только вкусным, но и полезным продуктом.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мягкая, сочная, слегка маслянистая, нежная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, с медовыми и фруктовыми нотками</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — золотисто-желтый, янтарный</li><li class=\"ingredient-list-item\"><strong>Калорийность</strong> — 260-290 ккал на 100 г</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 6-12 месяцев в сухом прохладном месте</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — обычно без косточек</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Промывка</strong> — при необходимости промыть в теплой воде (особенно если есть следы масла)</li><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — для размягчения и набухания залить горячей водой на 10-15 минут</li><li class=\"ingredient-list-item\"><strong>Просушка</strong> — обсушить на бумажном полотенце</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в герметичной таре в сухом, темном, прохладном месте</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — куличи, пасхи, кексы, маффины, булочки, печенье</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — мороженое, пудинги, запеканки, компоты, кисели</li><li class=\"ingredient-list-item\"><strong>Каши и мюсли</strong> — добавка в овсянку, рисовую кашу, гранолу</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — в составе фруктовых и овощных салатов</li><li class=\"ingredient-list-item\"><strong>Сладкие блюда</strong> — начинка для пирогов, вареников, блинов</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — компоты, морсы, узвары</li><li class=\"ingredient-list-item\"><strong>Самостоятельный перекус</strong> — для быстрого перекуса</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, овсянка, перловка, гречка</li><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — творог, йогурт, сметана, сливки</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль, кедровые, кешью</li><li class=\"ingredient-list-item\"><strong>Сухофрукты</strong> — курага, чернослив, финики, инжир</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, ваниль, кардамон, гвоздика</li><li class=\"ingredient-list-item\"><strong>Мед и сиропы</strong> — мед, кленовый сироп</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Изюм темный</strong> — более насыщенный, карамельный вкус</li><li class=\"ingredient-list-item\"><strong>Курага</strong> — другой вкус, более плотная текстура</li><li class=\"ingredient-list-item\"><strong>Чернослив</strong> — плотная текстура, сладкий вкус</li><li class=\"ingredient-list-item\"><strong>Виноград сушеный</strong> — аналогичный продукт</li></ul>",
+  "category": "Фрукты",
+  "semantic_data": {
+    "properties": [
+      "сухофрукт",
+      "золотистый",
+      "сладкий",
+      "медовый",
+      "мягкий",
+      "сочный",
+      "без косточек",
+      "для выпечки",
+      "для десертов",
+      "полезный"
+    ],
+    "preparations": [
+      "промывка в теплой воде (при необходимости)",
+      "замачивание в горячей воде на 10-15 минут",
+      "просушка на бумажном полотенце",
+      "хранение в герметичной таре"
+    ],
+    "cooking_methods": [
+      {"method": "использование в выпечке (без замачивания)", "priority": "high"},
+      {"method": "замачивание для размягчения (в каши, компоты)", "priority": "high"},
+      {"method": "использование в сыром виде (салаты, перекусы)", "priority": "high"},
+      {"method": "добавление в горячие блюда", "priority": "medium"}
+    ],
+    "applications": [
+      "выпечка",
+      "десерты",
+      "каши и мюсли",
+      "салаты",
+      "напитки",
+      "перекусы"
+    ],
+    "pairings": {
+      "protein": ["творог", "йогурт", "сметана", "сливки"],
+      "vegetables": [],
+      "grains": ["рис", "овсянка", "перловка", "гречка"],
+      "nuts": ["грецкие", "миндаль", "кедровые", "кешью"],
+      "fruits": ["курага", "чернослив", "финики", "инжир"],
+      "sauces": [],
+      "herbs": [],
+      "spices": ["корица", "ваниль", "кардамон", "гвоздика"]
+    },
+    "substitutes": [
+      {"name": "Изюм темный", "similarity": "high"},
+      {"name": "Курага", "similarity": "medium"},
+      {"name": "Чернослив", "similarity": "medium"},
+      {"name": "Виноград сушеный", "similarity": "high"}
+    ]
+  },
+  "tags": [
+    "сухофрукт",
+    "изюм",
+    "желтый изюм",
+    "золотистый изюм",
+    "сабза",
+    "кишмиш",
+    "выпечка",
+    "десерты",
+    "каши",
+    "полезный перекус"
+  ]
+}

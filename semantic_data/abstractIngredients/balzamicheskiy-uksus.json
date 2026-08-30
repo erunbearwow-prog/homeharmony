@@ -1,0 +1,108 @@
+{
+  "name": "Бальзамический уксус",
+  "name_normalized": "balzamicheskiy-uksus",
+  "synonyms": "",
+  "short_description": "Тёмный, густой, сладковато-кислый уксус итальянского происхождения, выдержанный в деревянных бочках. Имеет сложный вкус с нотками винограда, древесины и карамели.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Бальзамический уксус (итал. aceto balsamico) — это тёмный, густой, ароматный уксус родом из Италии, из региона Эмилия-Романья (Модена и Реджо-Эмилия). Производится из сока белого винограда (обычно сорта Треббьяно), который уваривают до сиропообразного состояния, а затем выдерживают в деревянных бочках из разных пород древесины (дуб, каштан, можжевельник). Вкус сложный — сладковатый, кислый, с насыщенными нотами винограда, древесины, карамели и бальзамических трав. В кулинарии используется как заправка для салатов, добавка к мясу, рыбе, десертам и даже мороженому.</p><h2 class=\"ingredient-title\">Виды бальзамического уксуса</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Традиционный бальзамический (Aceto Balsamico Tradizionale)</strong> — выдерживается минимум 12 лет, густой, очень дорогой, используется по каплям</li><li class=\"ingredient-list-item\"><strong>Бальзамический (Aceto Balsamico di Modena IGP)</strong> — более доступный, выдерживается от 2 до 5 лет</li><li class=\"ingredient-list-item\"><strong>Бальзамический крем (Glaze, Crema)</strong> — уваренный до сиропа, сладкий, используется для украшения блюд</li><li class=\"ingredient-list-item\"><strong>Белый бальзамический</strong> — светлый, более мягкий, для светлых соусов</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковато-кислый, с нотами винограда и древесины</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — густая, сиропообразная (у выдержанных сортов)</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от тёмно-коричневого до чёрного</li><li class=\"ingredient-list-item\"><strong>Выдержка</strong> — от 2 до 12+ лет</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — виноградный сок, уксус (винный), выдержка в бочках</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — классическая заправка (с оливковым маслом)</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — соус к стейкам, жареному мясу</li><li class=\"ingredient-list-item\"><strong>Рыба</strong> — в маринадах и соусах</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — с пармезаном, моцареллой, фетой</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — с мороженым, фруктами, ягодами</li><li class=\"ingredient-list-item\"><strong>Глазурь</strong> — украшение блюд (бальзамический крем)</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Масла</strong> — оливковое масло, тыквенное масло</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — пармезан, моцарелла, фета, горгонзола</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — стейк, курица, утка, свинина</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — клубника, груши, персики, инжир</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, руккола, шпинат, перец</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Винный уксус</strong> — более кислый, менее сладкий</li><li class=\"ingredient-list-item\"><strong>Яблочный уксус</strong> — сладковатый, более лёгкий</li><li class=\"ingredient-list-item\"><strong>Бальзамический крем (готовый)</strong> — для быстрого использования</li><li class=\"ingredient-list-item\"><strong>Смесь винного уксуса с тростниковым сахаром</strong> — имитация сладости</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/balzamicheskaya-zapravka/'>Бальзамическая заправка для салата — рецепт</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/balzamicheskiy-sous/'>Бальзамический соус к мясу — рецепт</a></li></ul>",
+  "category": "Уксусы",
+  "semantic_data": {
+    "properties": [
+      "уксус",
+      "итальянский",
+      "тёмный",
+      "густой",
+      "сладковато-кислый",
+      "выдержанный",
+      "ароматный",
+      "деликатес"
+    ],
+    "preparations": [
+      "хранение_в_тёмном_месте",
+      "использование_в_небольших_количествах"
+    ],
+    "cooking_methods": [
+      {
+        "method": "заправка_для_салатов",
+        "priority": "high"
+      },
+      {
+        "method": "соус_к_мясу_и_рыбе",
+        "priority": "high"
+      },
+      {
+        "method": "глазурь_для_блюд",
+        "priority": "medium"
+      },
+      {
+        "method": "маринование",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "салаты",
+      "соусы",
+      "маринады",
+      "десерты",
+      "глазурь"
+    ],
+    "pairings": {
+      "protein": [
+        "пармезан",
+        "моцарелла",
+        "фета",
+        "горгонзола",
+        "стейк",
+        "курица",
+        "утка",
+        "свинина"
+      ],
+      "vegetables": [
+        "помидоры",
+        "руккола",
+        "шпинат",
+        "перец"
+      ],
+      "fruits": [
+        "клубника",
+        "груши",
+        "персики",
+        "инжир"
+      ],
+      "oils": [
+        "оливковое_масло",
+        "тыквенное_масло"
+      ],
+      "spices": [
+        "перец",
+        "базилик",
+        "тимьян"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Винный уксус",
+        "similarity": "medium"
+      },
+      {
+        "name": "Яблочный уксус",
+        "similarity": "medium"
+      },
+      {
+        "name": "Бальзамический крем",
+        "similarity": "high"
+      },
+      {
+        "name": "Смесь винного уксуса с сахаром",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "уксус",
+    "бальзамический_уксус",
+    "итальянская_кухня",
+    "салатная_заправка",
+    "соус",
+    "глазурь"
+  ]
+}

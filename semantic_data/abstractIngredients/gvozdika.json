@@ -1,0 +1,72 @@
+{
+  "name": "Гвоздика",
+  "name_normalized": "gvozdika",
+  "synonyms": "гвоздика пряная, гвоздика сушеная, бутон гвоздики, гвоздичное дерево, syzygium aromaticum, гвоздика специя",
+  "short_description": "Сушёные нераспустившиеся бутоны тропического гвоздичного дерева, обладающие жгучим пряным вкусом и интенсивным, характерным ароматом. Одна из древнейших и самых ароматных пряностей в мире, широко используемая в кулинарии для придания блюдам тепла и глубины.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Гвоздика — это высушенные нераспустившиеся бутоны тропического гвоздичного дерева (Syzygium aromaticum), обладающие сильным, терпким, сладковато-жгучим вкусом и интенсивным, характерным ароматом. Родина гвоздики — Молуккские острова (Индонезия). В кулинарии используются как целые бутоны, так и молотая гвоздика. Благодаря высокой концентрации эфирных масел (в основном эвгенола), гвоздика обладает мощным ароматом и используется в небольших количествах.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — жгучий, сладковато-терпкий, с лёгкой горчинкой</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — интенсивный, пряный, с древесными нотами</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — целые бутоны или молотый порошок</li><li class=\"ingredient-list-item\"><strong>Эфирные масла</strong> — до 20% (эвгенол)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в герметичной упаковке</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — пряники, рождественские печенья, кексы</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — глинтвейн, пунш, чай, кофе</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для мяса, рыбы</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатные, фруктовые</li><li class=\"ingredient-list-item\"><strong>Консервация</strong> — в маринадах для овощей</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Пряности</strong> — корица, имбирь, кардамон, мускатный орех</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — яблоки, груши, цитрусы</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — свинина, утка, баранина</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — в составе пряников и сладостей</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Душистый перец</strong> — с гвоздичными нотками</li><li class=\"ingredient-list-item\"><strong>Мускатный орех</strong> — другой аромат</li><li class=\"ingredient-list-item\"><strong>Корица</strong> — более сладкая</li><li class=\"ingredient-list-item\"><strong>Гвоздичное масло</strong> — 2-3 капли на блюдо</li></ul>",
+  "category": "Гвоздика, кардамон, мускатный орех",
+  "semantic_data": {
+    "properties": [
+      "пряность",
+      "жгучий",
+      "терпкий",
+      "ароматный",
+      "эфирное_масло",
+      "длительное_хранение"
+    ],
+    "preparations": [
+      "использование_целых_бутонов",
+      "измельчение_в_порошок"
+    ],
+    "cooking_methods": [
+      {
+        "method": "добавление_в_выпечку",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_напитки",
+        "priority": "high"
+      },
+      {
+        "method": "маринование_мяса",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "выпечка",
+      "напитки",
+      "маринады",
+      "соусы"
+    ],
+    "pairings": {
+      "protein": ["свинина", "утка", "баранина"],
+      "fruits": ["яблоки", "груши", "цитрусы"],
+      "spices": ["корица", "имбирь", "кардамон", "мускатный_орех"]
+    },
+    "substitutes": [
+      {
+        "name": "Душистый перец",
+        "similarity": "medium"
+      },
+      {
+        "name": "Мускатный орех",
+        "similarity": "low"
+      },
+      {
+        "name": "Корица",
+        "similarity": "low"
+      },
+      {
+        "name": "Гвоздичное масло",
+        "similarity": "high"
+      }
+    ]
+  },
+  "tags": [
+    "пряность",
+    "гвоздика",
+    "специи",
+    "выпечка",
+    "глинтвейн"
+  ]
+}

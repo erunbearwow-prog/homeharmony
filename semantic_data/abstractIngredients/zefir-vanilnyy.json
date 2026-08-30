@@ -1,0 +1,66 @@
+{
+  "name": "Зефир ванильный",
+  "name_normalized": "zefir-vanilnyy",
+  "synonyms": "ванильный зефир, зефир ванильный, зефир классический, белый зефир, воздушный зефир, зефир с ванилью",
+  "short_description": "Классический зефир с ванильным вкусом — воздушный, нежный десерт из яблочного пюре, сахара и яичного белка. Белоснежного цвета, с мягкой, тающей текстурой и лёгким ванильным ароматом. Идеален к чаю и как самостоятельное угощение.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Ванильный зефир — это классический кондитерский продукт, который готовят из яблочного пюре, сахара, яичного белка и ванилина. Он имеет характерную белую или слегка кремовую окраску, воздушную, нежную, почти тающую текстуру и лёгкий ванильный аромат. В отличие от зефира в шоколаде, ванильный зефир не имеет глазури и является более лёгким десертом. Идеально подходит для употребления в чистом виде, в качестве десерта к чаю или кофе, а также используется для украшения других десертов.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — воздушная, нежная, тающая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, с лёгким ванильным ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый, кремовый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — яблочное пюре, сахар, яичный белок, ванилин</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 месяцев в сухом прохладном месте</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Самостоятельный десерт</strong> — к чаю, кофе</li><li class=\"ingredient-list-item\"><strong>Украшение</strong> — для тортов, пирожных</li><li class=\"ingredient-list-item\"><strong>Подарок</strong> — в качестве сладкого презента</li><li class=\"ingredient-list-item\"><strong>Пирожные</strong> — в составе десертов</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Напитки</strong> — чёрный чай, зелёный чай, кофе</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — яблоки, груши, ягоды</li><li class=\"ingredient-list-item\"><strong>Шоколад</strong> — тёмный, молочный</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Зефир с другими вкусами</strong> — клубничный, лимонный</li><li class=\"ingredient-list-item\"><strong>Пастила</strong> — фруктовая, менее сладкая</li><li class=\"ingredient-list-item\"><strong>Безе</strong> — хрустящее, более сладкое</li></ul>",
+  "category": "Мармелад, пастила, зефир",
+  "semantic_data": {
+    "properties": [
+      "десерт",
+      "зефир",
+      "ванильный",
+      "воздушный",
+      "нежный",
+      "тающий",
+      "без_глазури"
+    ],
+    "preparations": [
+      "хранение_в_сухом_прохладном_месте"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "украшение_десертов",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "чай",
+      "кофе",
+      "десерт",
+      "подарок"
+    ],
+    "pairings": {
+      "protein": [],
+      "fruits": ["яблоки", "груши", "ягоды"],
+      "chocolate": ["тёмный_шоколад", "молочный_шоколад"],
+      "drinks": ["черный_чай", "зеленый_чай", "кофе"]
+    },
+    "substitutes": [
+      {
+        "name": "Зефир с другими вкусами",
+        "similarity": "high"
+      },
+      {
+        "name": "Пастила",
+        "similarity": "medium"
+      },
+      {
+        "name": "Безе",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "десерт",
+    "зефир",
+    "ванильный_зефир",
+    "кондитерка",
+    "сладости",
+    "чай"
+  ]
+}

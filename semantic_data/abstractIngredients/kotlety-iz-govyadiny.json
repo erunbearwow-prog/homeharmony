@@ -1,0 +1,75 @@
+{
+  "name": "Котлеты из говядины",
+  "name_normalized": "kotlety-iz-govyadiny",
+  "synonyms": "говяжьи котлеты, котлеты говяжьи, рубленые котлеты, котлеты из говяжьего фарша, биточки, мясные котлеты",
+  "short_description": "Популярное блюдо из говяжьего фарша с добавлением яиц, хлеба и лука, сформированное в виде овальных лепёшек и обжаренное до золотистой корочки. Сочные, плотные, с насыщенным мясным вкусом.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Котлеты из говядины — это классическое блюдо из рубленого мяса, приготовленное из говяжьего фарша с добавлением яиц, замоченного в молоке или воде хлеба, репчатого лука и специй. Сформированные в виде овальных лепёшек, котлеты обжариваются на сковороде до золотистой корочки, а затем доводятся до готовности на медленном огне. Благодаря добавлению хлеба и молока, котлеты остаются сочными внутри при хрустящей корочке снаружи.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочная, плотная, с хрустящей корочкой</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, мясной, с пряными нотами</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — зависит от фарша (5-15%)</li><li class=\"ingredient-list-item\"><strong>Время приготовления</strong> — 15-25 минут (жарка)</li><li class=\"ingredient-list-item\"><strong>Способ подачи</strong> — с гарниром, соусом</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Второе блюдо</strong> — с гарниром и соусом</li><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — в виде горячей закуски</li><li class=\"ingredient-list-item\"><strong>Детское питание</strong> — на пару или запечённые</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с овощами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофельное пюре, жареный картофель, рис, гречка</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, грибной, сливочный</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — тушёные, свежие салаты</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, кинза</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Котлеты из смешанного фарша</strong> — сочнее</li><li class=\"ingredient-list-item\"><strong>Куриные котлеты</strong> — диетические</li><li class=\"ingredient-list-item\"><strong>Свиные котлеты</strong> — жирнее</li><li class=\"ingredient-list-item\"><strong>Биточки</strong> — круглая форма</li></ul>",
+  "category": "Говядина",
+  "semantic_data": {
+    "properties": [
+      "котлеты",
+      "говядина",
+      "рубленые",
+      "сочные",
+      "хрустящие",
+      "универсальные"
+    ],
+    "preparations": [
+      "разморозка_фарша",
+      "смешивание_с_ингредиентами",
+      "формирование_котлет",
+      "обжаривание_до_корочки"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_на_пару",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "вторые_блюда",
+      "бутерброды",
+      "детское_питание"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "овощи", "салаты"],
+      "sauces": ["томатный", "сметанный", "грибной", "сливочный"],
+      "herbs": ["петрушка", "укроп", "кинза"],
+      "grains": ["рис", "гречка"]
+    },
+    "substitutes": [
+      {
+        "name": "Котлеты из смешанного фарша",
+        "similarity": "high"
+      },
+      {
+        "name": "Куриные котлеты",
+        "similarity": "medium"
+      },
+      {
+        "name": "Свиные котлеты",
+        "similarity": "medium"
+      },
+      {
+        "name": "Биточки",
+        "similarity": "high"
+      }
+    ]
+  },
+  "tags": [
+    "котлеты",
+    "говядина",
+    "второе_блюдо",
+    "жарка",
+    "мясо"
+  ]
+}

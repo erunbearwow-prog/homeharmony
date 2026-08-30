@@ -1,0 +1,69 @@
+{
+  "name": "Каперсы консервированные",
+  "name_normalized": "kapercy_konservirovannye",
+  "synonyms": "каперсы, каперсы консервированные, маринованные каперсы, каперсы в рассоле, каперсы в уксусе, каперсы для соусов, каперсы для салатов, каперсы для пиццы, каперсы для пасты, каперсы для рыбы, соленые каперсы",
+  "short_description": "Небольшие консервированные бутоны колючего кустарника Capparis spinosa с характерным солоновато-кисловатым вкусом и пикантным ароматом. Широко используются в средиземноморской кухне как приправа и закуска.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Каперсы — это нераскрывшиеся бутоны колючего кустарника Capparis spinosa, которые консервируют в уксусе или солят. Консервированные каперсы имеют характерный солоновато-кисловатый вкус с легкой горчинкой и пикантным ароматом. В зависимости от размера каперсы делятся на сорта: от самых мелких до крупных, причем чем меньше размер, тем нежнее вкус. Каперсы широко используются в средиземноморской кухне, особенно в итальянской и испанской, в салатах, соусах, пицце, пасте и блюдах из рыбы и мяса.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Форма</strong> — небольшие бутоны (от 3 до 15 мм в диаметре)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — солоноватый, кисловатый, с пикантной горчинкой</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — пряный, характерный для каперсов</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — оливково-зеленый, серовато-зеленый</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 1-2 лет в закрытом виде, 1-2 месяца в открытом</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — перед использованием промывают или вымачивают для удаления излишней соли</li></ul><h2 class=\"ingredient-title\">Сорта каперсов</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Nonpareil</strong> — самые мелкие (до 7 мм), самые нежные и ароматные</li><li class=\"ingredient-list-item\"><strong>Surfines</strong> — 7-8 мм, классический размер</li><li class=\"ingredient-list-item\"><strong>Capucines</strong> — 8-9 мм</li><li class=\"ingredient-list-item\"><strong>Capotes</strong> — 9-11 мм</li><li class=\"ingredient-list-item\"><strong>Grosses</strong> — крупные (11-13 мм), более жесткие</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Промывка</strong> — тщательно промыть под проточной водой</li><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — при необходимости вымочить в воде 15-30 минут для уменьшения солености</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — мелко нарезать или оставить целыми (в зависимости от рецепта)</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике, в рассоле</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соусы</strong> — соус тартар, соус для рыбы, виноградный соус</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — салат нисуаз, тапенада, овощные салаты</li><li class=\"ingredient-list-item\"><strong>Пицца</strong> — добавка в начинку</li><li class=\"ingredient-list-item\"><strong>Паста</strong> — в томатных и сливочных соусах</li><li class=\"ingredient-list-item\"><strong>Рыба</strong> — к запеченной и жареной рыбе</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — к курице, свинине, баранине</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — с хлебом, маслом, оливками</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Рыба</strong> — тунец, лосось, треска, анчоусы</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, телятина, свинина, баранина</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, лук, чеснок, оливки, спаржа</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — майонез, тартар, горчица</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, базилик</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, орегано</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Оливки</strong> — для пиццы и салатов</li><li class=\"ingredient-list-item\"><strong>Корнишоны</strong> — для соусов и закусок</li><li class=\"ingredient-list-item\"><strong>Маринованная зелень</strong> — для других блюд</li><li class=\"ingredient-list-item\"><strong>Семена горчицы</strong> — в соусах</li></ul>",
+  "category": "Овощи",
+  "semantic_data": {
+    "properties": [
+      "консервированный",
+      "маринованный",
+      "соленый",
+      "пикантный",
+      "средиземноморская кухня",
+      "приправа",
+      "бутоны",
+      "для соусов",
+      "для салатов",
+      "для рыбы"
+    ],
+    "preparations": [
+      "промывка под проточной водой",
+      "замачивание для уменьшения солености",
+      "мелкая нарезка",
+      "хранение в рассоле"
+    ],
+    "cooking_methods": [
+      {"method": "использование в соусах", "priority": "high"},
+      {"method": "использование в салатах", "priority": "high"},
+      {"method": "добавление в пиццу и пасту", "priority": "high"},
+      {"method": "использование к рыбе", "priority": "high"},
+      {"method": "использование к мясу", "priority": "medium"},
+      {"method": "как закуска", "priority": "medium"}
+    ],
+    "applications": [
+      "соусы",
+      "салаты",
+      "пицца",
+      "паста",
+      "рыбные блюда",
+      "мясные блюда",
+      "закуски"
+    ],
+    "pairings": {
+      "protein": ["тунец", "лосось", "треска", "анчоусы", "курица", "телятина", "свинина", "баранина"],
+      "vegetables": ["помидоры", "лук", "чеснок", "оливки", "спаржа"],
+      "sauces": ["майонез", "тартар", "горчица"],
+      "herbs": ["петрушка", "укроп", "базилик"],
+      "spices": ["черный перец", "орегано"]
+    },
+    "substitutes": [
+      {"name": "Оливки", "similarity": "medium"},
+      {"name": "Корнишоны", "similarity": "medium"},
+      {"name": "Маринованная зелень", "similarity": "low"},
+      {"name": "Семена горчицы", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "каперсы",
+    "консервы",
+    "маринованные",
+    "средиземноморская кухня",
+    "приправа",
+    "соусы",
+    "салаты",
+    "пицца",
+    "рыба"
+  ]
+}

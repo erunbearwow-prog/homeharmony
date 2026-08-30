@@ -1,0 +1,101 @@
+{
+  "name": "Куриные желудки",
+  "name_normalized": "kurinye-zheludki",
+  "synonyms": "",
+  "short_description": "Субпродукт из курицы — плотные мышечные желудки с характерной упругой текстурой. Богаты белком, железом и цинком, используются для варки, тушения, жарки и приготовления супов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Куриные желудки (или пупки) — это субпродукт, представляющий собой мышечный отдел желудка курицы. Имеют плотную, упругую текстуру, тёмно-розовый или сероватый цвет и нейтральный вкус с лёгким специфическим оттенком. Богаты белком, железом, цинком и витаминами группы B. Относятся к категории доступных и полезных субпродуктов. При правильной подготовке и приготовлении становятся мягкими и вкусными.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, с хрустящими прожилками</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, с лёгким субпродуктовым оттенком</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — низкая</li><li class=\"ingredient-list-item\"><strong>Белки</strong> — до 18%</li><li class=\"ingredient-list-item\"><strong>Железо</strong> — богатый источник</li><li class=\"ingredient-list-item\"><strong>Цена</strong> — доступный субпродукт</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Промывка</strong> — холодной водой, удалить жир</li><li class=\"ingredient-list-item\"><strong>Вымачивание</strong> — в холодной воде (1-2 часа) для удаления запаха</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — в подсоленной воде (40-60 минут) до мягкости</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — кусочками или соломкой</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с луком, морковью, в сметанном соусе</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — с луком и специями</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — рассольник, солянка, суп с субпродуктами</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, сметаной</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с овощами, в горшочках</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, картофель, грибы, чеснок</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, томатный, сливочный, грибной</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, лавровый лист, тимьян, паприка</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, зелёный лук</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Куриные сердечки</strong> — похожий субпродукт</li><li class=\"ingredient-list-item\"><strong>Куриная печень</strong> — более мягкая</li><li class=\"ingredient-list-item\"><strong>Говяжий желудок</strong> — для салатов</li><li class=\"ingredient-list-item\"><strong>Грибы</strong> — в тушёных блюдах</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/tushenye-zheludki/'>Тушёные куриные желудки</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/zheludki-sous/'>Куриные желудки в сметанном соусе</a></li></ul>",
+  "category": "Субпродукты птицы",
+  "semantic_data": {
+    "properties": [
+      "субпродукт",
+      "курица",
+      "желудки",
+      "плотный",
+      "упругий",
+      "богат_белком",
+      "богат_железом"
+    ],
+    "preparations": [
+      "промыть_и_очистить",
+      "вымачивание_1-2_часа",
+      "варка_40-60_минут"
+    ],
+    "cooking_methods": [
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "варка_для_супов",
+        "priority": "medium"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "супы",
+      "вторые_блюда",
+      "салаты",
+      "закуски"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "лук",
+        "морковь",
+        "картофель",
+        "грибы",
+        "чеснок"
+      ],
+      "sauces": [
+        "сметанный",
+        "томатный",
+        "сливочный",
+        "грибной"
+      ],
+      "spices": [
+        "черный_перец",
+        "лавровый_лист",
+        "тимьян",
+        "паприка"
+      ],
+      "herbs": [
+        "петрушка",
+        "укроп",
+        "зеленый_лук"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Куриные сердечки",
+        "similarity": "high"
+      },
+      {
+        "name": "Куриная печень",
+        "similarity": "medium"
+      },
+      {
+        "name": "Говяжий желудок",
+        "similarity": "medium"
+      },
+      {
+        "name": "Грибы",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "субпродукты",
+    "курица",
+    "желудки",
+    "тушение",
+    "суп",
+    "недорогой_продукт"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "name": "Икра кабачковая",
+  "name_normalized": "ikra_kabachkovaya",
+  "synonyms": "икра кабачковая, кабачковая икра, закуска из кабачков, овощная икра, икра из кабачков, салат из кабачков, кабачки с овощами, закуска к хлебу, овощная закуска, консервированная кабачковая икра",
+  "short_description": "Популярная овощная закуска из тушеных кабачков, моркови, лука и томатной пасты. Имеет нежную, пастообразную текстуру и мягкий сладковато-кисловатый вкус. Широко известна как советский и российский продукт, особенно в консервированном виде.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Кабачковая икра — это овощная закуска, которую готовят из тушеных кабачков с добавлением моркови, репчатого лука, томатной пасты и специй. Блюдо имеет нежную, пастообразную текстуру и характерный кисло-сладковатый вкус с легкой пикантностью. Кабачковая икра — это классический продукт советской и российской кухни, который широко известен как в домашнем приготовлении, так и в консервированном виде. Ее едят как самостоятельную закуску с хлебом, используют как гарнир к мясу или картофелю, а также как начинку для пирогов и омлетов.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, пастообразная, однородная, с мелкими кусочками овощей</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — мягкий, сладковато-кисловатый, с легкой пикантностью</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от светло-оранжевого до насыщенного красновато-оранжевого</li><li class=\"ingredient-list-item\"><strong>Калорийность</strong> — 60-90 ккал на 100 г (зависит от количества масла)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 5-7 дней в холодильнике (домашняя), до 2 лет (консервированная)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — при консервации становится более насыщенной</li></ul><h2 class=\"ingredient-title\">Классический рецепт (справочная информация)</h2><p class=\"ingredient-text\"><strong>Икра кабачковая (домашняя)</strong></p><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Кабачки</strong> — 1 кг</li><li class=\"ingredient-list-item\"><strong>Морковь</strong> — 2-3 шт.</li><li class=\"ingredient-list-item\"><strong>Лук репчатый</strong> — 2-3 шт.</li><li class=\"ingredient-list-item\"><strong>Томатная паста</strong> — 2-3 ст. л.</li><li class=\"ingredient-list-item\"><strong>Чеснок</strong> — 2-3 зубчика</li><li class=\"ingredient-list-item\"><strong>Масло растительное</strong> — для жарки</li><li class=\"ingredient-list-item\"><strong>Соль, перец, сахар</strong> — по вкусу</li></ul><h2 class=\"ingredient-title\">Технология приготовления</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\">Кабачки очистить от кожуры и семян (молодые можно не чистить)</li><li class=\"ingredient-list-item\">Нарезать кубиками, обжарить на масле до мягкости</li><li class=\"ingredient-list-item\">Лук и морковь мелко нарезать, обжарить отдельно</li><li class=\"ingredient-list-item\">Соединить все овощи, добавить томатную пасту, тушить 15-20 минут</li><li class=\"ingredient-list-item\">Измельчить блендером до пастообразной консистенции (или оставить с кусочками)</li><li class=\"ingredient-list-item\">Добавить чеснок, соль, перец, сахар по вкусу, прогреть еще 5 минут</li><li class=\"ingredient-list-item\">Подавать холодной или горячей</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Закуска</strong> — на хлебе, лаваше, гренках</li><li class=\"ingredient-list-item\"><strong>Гарнир</strong> — к мясу, рыбе, птице</li><li class=\"ingredient-list-item\"><strong>Соус</strong> — к пасте, макаронам</li><li class=\"ingredient-list-item\"><strong>Начинка</strong> — для омлетов, пирогов, блинчиков</li><li class=\"ingredient-list-item\"><strong>Самостоятельное блюдо</strong> — как овощная закуска</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — белый, ржаной, бородинский</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, говядина, свинина</li><li class=\"ingredient-list-item\"><strong>Картофель</strong> — вареный, жареный, пюре</li><li class=\"ingredient-list-item\"><strong>Яйца</strong> — вареные, омлет</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, зеленый лук</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Икра баклажановая</strong> — более насыщенный дымный вкус</li><li class=\"ingredient-list-item\"><strong>Лечо</strong> — овощная закуска с перцем и томатами</li><li class=\"ingredient-list-item\"><strong>Рагу из кабачков</strong> — в кусочках, без измельчения</li><li class=\"ingredient-list-item\"><strong>Консервированная кабачковая икра</strong> — готовый продукт</li></ul>",
+  "category": "Овощи",
+  "semantic_data": {
+    "properties": [
+      "закуска",
+      "кабачки",
+      "овощная икра",
+      "пастообразная",
+      "нежная",
+      "сладковатая",
+      "консервированная",
+      "домашняя",
+      "универсальная",
+      "советская кухня"
+    ],
+    "preparations": [
+      "очистка кабачков",
+      "нарезка кубиками",
+      "обжаривание овощей",
+      "тушение с томатной пастой",
+      "измельчение блендером",
+      "добавление специй",
+      "консервация (для хранения)"
+    ],
+    "cooking_methods": [
+      {"method": "тушение", "priority": "high"},
+      {"method": "обжаривание", "priority": "high"},
+      {"method": "измельчение", "priority": "medium"},
+      {"method": "консервация", "priority": "medium"},
+      {"method": "запекание", "priority": "low"}
+    ],
+    "applications": [
+      "закуски",
+      "гарниры",
+      "соусы",
+      "начинки",
+      "консервы"
+    ],
+    "pairings": {
+      "protein": ["курица", "говядина", "свинина", "яйца"],
+      "vegetables": ["картофель"],
+      "sauces": [],
+      "herbs": ["петрушка", "укроп", "зеленый лук"],
+      "spices": ["черный перец", "паприка", "чеснок", "сахар"]
+    },
+    "substitutes": [
+      {"name": "Икра баклажановая", "similarity": "high"},
+      {"name": "Лечо", "similarity": "medium"},
+      {"name": "Рагу из кабачков", "similarity": "medium"},
+      {"name": "Консервированная кабачковая икра", "similarity": "high"}
+    ]
+  },
+  "tags": [
+    "закуска",
+    "кабачковая икра",
+    "овощная икра",
+    "советская кухня",
+    "консервы",
+    "овощи",
+    "гарнир",
+    "домашние заготовки"
+  ]
+}

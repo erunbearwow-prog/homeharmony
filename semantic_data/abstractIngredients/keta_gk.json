@@ -1,0 +1,64 @@
+{
+  "name": "Кета г/к",
+  "name_normalized": "keta_gk",
+  "synonyms": "кета горячего копчения, кета г/к, копченая кета, красная рыба горячего копчения, тихоокеанский лосось горячего копчения, кета копченая, рыба горячего копчения",
+  "short_description": "Филе или кусок тихоокеанского лосося — кеты, прошедший обработку горячим дымом при температуре 80-100°C. Обладает насыщенным копченым ароматом, плотной сочной мякотью ярко-оранжевого цвета и сбалансированным солоноватым вкусом. Готовый к употреблению деликатес.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Кета горячего копчения — это деликатесный продукт из кеты, рыбы семейства лососевых, прошедший термическую обработку горячим дымом при температуре 80-100°C. В процессе копчения рыба приобретает характерный золотистый цвет, плотную структуру и насыщенный копченый аромат. В отличие от холодного копчения, горячее копчение происходит быстрее (30-60 минут) и делает рыбу полностью готовой к употреблению, с более выраженным вкусом и ароматом дыма.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, сочная, нежная, хорошо держит форму</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, солоноватый, с выраженным копченым ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от золотистого до светло-коричневого (кожа), мясо ярко-оранжевое</li><li class=\"ingredient-list-item\"><strong>Способ обработки</strong> — горячее копчение (80-100°C)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — в вакуумной упаковке до 10 суток при 0-4°C, после вскрытия — 48 часов</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — готова к употреблению, не требует дополнительной термической обработки</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике, в вакуумной упаковке</li><li class=\"ingredient-list-item\"><strong>Подача</strong> — можно подавать сразу, без дополнительной подготовки</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — тонкими ломтиками для закусок, кубиками для салатов</li><li class=\"ingredient-list-item\"><strong>Очистка</strong> — при желании удалить кожу и мелкие кости</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Самостоятельная закуска</strong> — в нарезке, с хлебом и зеленью</li><li class=\"ingredient-list-item\"><strong>Бутерброды и канапе</strong> — с мягким сыром, зеленью, овощами</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — тёплые и холодные салаты с копчёной рыбой</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для блинов, тарталеток, рулетов</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — для пасты и ризотто</li><li class=\"ingredient-list-item\"><strong>Рыбная тарелка</strong> — в составе ассорти с другими видами рыбы</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, зерновой, багет</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, помидоры, огурцы, перец, зелень</li><li class=\"ingredient-list-item\"><strong>Масло сливочное</strong> — для бутербродов</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, лимонный, горчичный</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — укроп, петрушка, зеленый лук</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Горбуша горячего копчения</strong> — схожий вкус, более мелкая рыба</li><li class=\"ingredient-list-item\"><strong>Нерка горячего копчения</strong> — более яркий вкус</li><li class=\"ingredient-list-item\"><strong>Сёмга горячего копчения</strong> — более жирная, дороже</li><li class=\"ingredient-list-item\"><strong>Форель горячего копчения</strong> — нежное мясо</li></ul>",
+  "category": "Рыба и морепродукты",
+  "semantic_data": {
+    "properties": [
+      "рыба",
+      "лососевая",
+      "красная рыба",
+      "горячее копчение",
+      "готовая",
+      "плотная",
+      "сочная",
+      "копченая",
+      "деликатес",
+      "закуска"
+    ],
+    "preparations": [
+      "хранение в холодильнике в вакуумной упаковке",
+      "нарезка перед подачей",
+      "использование без дополнительной обработки"
+    ],
+    "cooking_methods": [
+      {"method": "подача в нарезке (закуска)", "priority": "high"},
+      {"method": "использование в салатах", "priority": "high"},
+      {"method": "использование в бутербродах и канапе", "priority": "high"},
+      {"method": "добавление в соусы", "priority": "medium"}
+    ],
+    "applications": [
+      "закуски",
+      "салаты",
+      "бутерброды",
+      "начинки",
+      "соусы"
+    ],
+    "pairings": {
+      "protein": ["сливочное масло", "мягкий сыр"],
+      "vegetables": ["картофель", "помидоры", "огурцы", "перец", "зелень"],
+      "sauces": ["сметанный", "лимонный", "горчичный"],
+      "herbs": ["укроп", "петрушка", "зеленый лук"],
+      "spices": ["черный перец"]
+    },
+    "substitutes": [
+      {"name": "Горбуша горячего копчения", "similarity": "high"},
+      {"name": "Нерка горячего копчения", "similarity": "high"},
+      {"name": "Сёмга горячего копчения", "similarity": "medium"},
+      {"name": "Форель горячего копчения", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "рыба",
+    "лососевая",
+    "кета",
+    "красная рыба",
+    "горячее копчение",
+    "копченая рыба",
+    "деликатес",
+    "закуска",
+    "салаты"
+  ]
+}

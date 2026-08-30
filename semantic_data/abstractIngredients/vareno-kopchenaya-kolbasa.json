@@ -1,0 +1,51 @@
+{
+  "name": "Варено-копченая колбаса",
+  "name_normalized": "vareno-kopchenaya-kolbasa",
+  "synonyms": "варено-копченая колбаса, колбаса варено-копченая, полукопченая колбаса (отличается технологией), копченая вареная колбаса",
+  "short_description": "Колбасный продукт, сочетающий варку и последующее копчение, что даёт плотную текстуру, насыщенный вкус с дымным ароматом и умеренную жирность. Популярен для бутербродов и горячих блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Варено-копченая колбаса — это мясной продукт, который сначала варят, а затем коптят в дыму. Благодаря такой технологии колбаса приобретает плотную, упругую текстуру, характерный копчёный аромат и насыщенный вкус с лёгкой дымной нотой. По сравнению с варёной колбасой, она имеет более выраженный вкус и дольше хранится. Используется для бутербродов, нарезок, салатов и горячих блюд.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, с характерным копчёным ароматом</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, с дымным оттенком</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — розовый, с коричневатым ободком</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — мясо (свинина, говядина), специи, чеснок, нитритная соль</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 15-20 дней в холодильнике</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом, сыром, овощами</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — нарезка к столу</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, овощами</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — в тушёном виде, с картофелем</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — твёрдые, плавленые</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — огурцы, помидоры, лук</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — горчица, хрен, майонез</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, белый, багет</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сырокопченая колбаса</strong> — более плотная</li><li class=\"ingredient-list-item\"><strong>Вареная колбаса</strong> — менее насыщенная</li><li class=\"ingredient-list-item\"><strong>Копченая ветчина</strong> — диетичнее</li></ul>",
+  "category": "Колбасы варено-копченые",
+  "semantic_data": {
+    "properties": [
+      "колбаса",
+      "варено-копченая",
+      "плотная",
+      "упругая",
+      "копчёный_аромат",
+      "насыщенный_вкус"
+    ],
+    "preparations": [
+      "нарезка_ломтиками",
+      "хранение_в_холодильнике"
+    ],
+    "cooking_methods": [
+      {"method": "свежее_употребление", "priority": "high"},
+      {"method": "добавление_в_салаты", "priority": "high"},
+      {"method": "тушение", "priority": "medium"}
+    ],
+    "applications": [
+      "бутерброды",
+      "закуски",
+      "салаты",
+      "горячие_блюда"
+    ],
+    "pairings": {
+      "protein": ["сыр_твердый", "сыр_плавленый"],
+      "vegetables": ["огурцы", "помидоры", "лук"],
+      "sauces": ["горчица", "хрен", "майонез"],
+      "breads": ["ржаной_хлеб", "белый_хлеб", "багет"]
+    },
+    "substitutes": [
+      {"name": "Сырокопченая колбаса", "similarity": "medium"},
+      {"name": "Вареная колбаса", "similarity": "low"},
+      {"name": "Копченая ветчина", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "колбаса",
+    "варено-копченая",
+    "копченая_колбаса",
+    "бутерброды",
+    "закуски"
+  ]
+}

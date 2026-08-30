@@ -1,0 +1,69 @@
+{
+  "name": "Морская капуста сушеная",
+  "name_normalized": "morskaya_kapusta_sushenaya",
+  "synonyms": "морская капуста сушеная, сушеная ламинария, ламинария сушеная, морская водоросль сушеная, сушеная капуста, ламинария в листах, комбу, kombu, kelp, морская капуста для бульона, морская капуста для салата",
+  "short_description": "Высушенная морская водоросль ламинария, которая используется для приготовления бульонов, супов, салатов и как добавка в блюда. Обладает высокой концентрацией полезных веществ, особенно йода, и характерным морским ароматом и вкусом.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Сушеная морская капуста (ламинария) — это бурая морская водоросль, которую подвергают сушке для длительного хранения. В процессе сушки ламинария теряет влагу, но сохраняет все свои полезные свойства: йод, калий, магний, железо, витамины группы B и полиненасыщенные жирные кислоты. Сушеная ламинария имеет плотную текстуру, требует замачивания и термической обработки перед использованием. Она широко используется в азиатской кухне для приготовления бульонов (комбу), супов (мисо), салатов, а также как добавка в суши и роллы. В европейской кухне сушеную морскую капусту добавляют в супы, салаты и овощные блюда.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, сухая, твердая (в сухом виде), после замачивания — упругая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — солоноватый, морской, с выраженным йодистым оттенком</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — морской, характерный для водорослей</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от серо-зеленого до темно-коричневого</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — целые листы, нарезанные пластины или стружка</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2 лет в сухом прохладном месте</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — при замачивании увеличивается в объеме в 3-4 раза</li></ul><h2 class=\"ingredient-title\">Виды сушеной ламинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Комбу (Kombu)</strong> — японская сушеная ламинария для бульонов, целые листы</li><li class=\"ingredient-list-item\"><strong>Даси-комбу</strong> — специально обработанная для быстрого приготовления бульона</li><li class=\"ingredient-list-item\"><strong>Нарезанная (хлопья)</strong> — для салатов и добавок в блюда</li><li class=\"ingredient-list-item\"><strong>Молотая (порошок)</strong> — для использования в качестве приправы</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — залить холодной водой на 2-4 часа (или на ночь)</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — тщательно промыть после замачивания</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — варить 15-30 минут (время зависит от толщины пластин)</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — нарезать соломкой или ломтиками для салатов</li><li class=\"ingredient-list-item\"><strong>Использование в бульонах</strong> — варить 5-10 минут, затем достать</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бульоны</strong> — японский бульон даси, супы мисо, рыбные бульоны</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — овощные супы, супы с морепродуктами</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с маслом, уксусом, луком, чесноком</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — к рису, рыбе, мясу</li><li class=\"ingredient-list-item\"><strong>Добавка в блюда</strong> — порошок или хлопья для обогащения вкуса</li><li class=\"ingredient-list-item\"><strong>Суши и роллы</strong> — в качестве добавки</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Морепродукты</strong> — рыба, креветки, мидии</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — морковь, лук, чеснок, редька, дайкон</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — соевый, рыбный, устричный, рисовый уксус</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — зеленый лук, кинза</li><li class=\"ingredient-list-item\"><strong>Рис</strong> — в японской кухне</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежая морская капуста</strong> — для салатов, но срок хранения короче</li><li class=\"ingredient-list-item\"><strong>Нори (сушеные листы)</strong> — для суши и бульонов</li><li class=\"ingredient-list-item\"><strong>Спирулина (порошок)</strong> — для добавки в блюда, другой вкус</li><li class=\"ingredient-list-item\"><strong>Умибудо (морской виноград)</strong> — для салатов</li></ul>",
+  "category": "Овощи",
+  "semantic_data": {
+    "properties": [
+      "водоросль",
+      "ламинария",
+      "сушеная",
+      "комбу",
+      "йод",
+      "азиатская кухня",
+      "бульон",
+      "салаты",
+      "супы",
+      "длительное хранение"
+    ],
+    "preparations": [
+      "замачивание в холодной воде 2-4 часа",
+      "промывка после замачивания",
+      "варка 15-30 минут",
+      "нарезка соломкой или ломтиками",
+      "использование в бульонах без замачивания (варка 5-10 минут)"
+    ],
+    "cooking_methods": [
+      {"method": "приготовление бульона (даси)", "priority": "high"},
+      {"method": "использование в супах", "priority": "high"},
+      {"method": "замачивание и использование в салатах", "priority": "high"},
+      {"method": "добавление в гарниры", "priority": "medium"},
+      {"method": "измельчение в порошок", "priority": "low"}
+    ],
+    "applications": [
+      "бульоны",
+      "супы",
+      "салаты",
+      "гарниры",
+      "добавка в блюда"
+    ],
+    "pairings": {
+      "protein": ["рыба", "креветки", "мидии"],
+      "vegetables": ["морковь", "лук", "чеснок", "редька", "дайкон"],
+      "sauces": ["соевый соус", "рыбный соус", "устричный соус", "рисовый уксус"],
+      "herbs": ["зеленый лук", "кинза"],
+      "spices": ["кунжут", "имбирь", "чили"]
+    },
+    "substitutes": [
+      {"name": "Свежая морская капуста", "similarity": "high"},
+      {"name": "Нори (сушеные листы)", "similarity": "medium"},
+      {"name": "Спирулина (порошок)", "similarity": "low"},
+      {"name": "Умибудо (морской виноград)", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "водоросль",
+    "морская капуста сушеная",
+    "ламинария",
+    "комбу",
+    "йод",
+    "азиатская кухня",
+    "бульон",
+    "даси",
+    "супы",
+    "салаты",
+    "длительное хранение"
+  ]
+}

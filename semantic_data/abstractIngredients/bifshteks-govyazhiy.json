@@ -1,0 +1,58 @@
+{
+  "name": "Бифштекс говяжий",
+  "name_normalized": "bifshteks-govyazhiy",
+  "synonyms": "говяжий бифштекс, бифштекс из говядины, рубленый бифштекс, beef steak, говяжий стейк (в широком смысле)",
+  "short_description": "Мясной полуфабрикат из говядины — рубленое или цельномышечное мясо, сформированное в виде круглой лепёшки. Сочный, плотный, с насыщенным мясным вкусом, идеален для жарки и запекания.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Говяжий бифштекс — это мясной полуфабрикат в виде круглой или овальной лепёшки из говядины. В зависимости от рецепта, бифштекс может быть приготовлен из рубленого мяса (фарша) или из цельного куска говядины (бескостного филе). Отличительная черта — сочная, плотная текстура и насыщенный мясной вкус. Для сохранения сочности в фарш часто добавляют жир (говяжий или свиной), лук и специи. Классическое блюдо американской и европейской кухни, подаётся горячим с гарниром.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочная, плотная, с нежной мясной структурой</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, мясной, с характерным говяжьим ароматом</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — зависит от используемого мяса (от 10 до 25%)</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — круглая или овальная лепёшка</li><li class=\"ingredient-list-item\"><strong>Толщина</strong> — 1,5–3 см</li><li class=\"ingredient-list-item\"><strong>Классические блюда</strong> — бифштекс по-гамбургски, люля-кебаб (в широком смысле)</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде с маслом, до готовности (medium rare, medium, well done)</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — на решётке, на мангале</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке, с соусом</li><li class=\"ingredient-list-item\"><strong>Бургеры</strong> — основа для бургерной котлеты</li><li class=\"ingredient-list-item\"><strong>Сэндвичи</strong> — с зеленью и соусом</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соусы</strong> — перечный, грибной, сливочный, луковый, горчичный</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофель (пюре, жареный, фри), рис, овощи-гриль</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, базилик, руккола</li><li class=\"ingredient-list-item\"><strong>Лук</strong> — жареный, карамелизированный, свежий</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — булочка (для бургера)</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжья котлета</strong> — похожее блюдо</li><li class=\"ingredient-list-item\"><strong>Люля-кебаб</strong> — на основе фарша</li><li class=\"ingredient-list-item\"><strong>Стейк</strong> — цельномышечное мясо</li><li class=\"ingredient-list-item\"><strong>Свиной бифштекс</strong> — жирнее, мягче</li><li class=\"ingredient-list-item\"><strong>Куриный бифштекс</strong> — менее жирный</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/bifshteks/'>Говяжий бифштекс — рецепт с фото</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/burger/'>Бургер с говяжьим бифштексом</a></li></ul>",
+  "category": "Мясные полуфабрикаты",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "говядина",
+      "рубленый",
+      "круглый",
+      "сочный",
+      "мясной",
+      "классический"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "формирование_лепёшки",
+      "обжарка_на_сковороде"
+    ],
+    "cooking_methods": [
+      {"method": "жарка", "priority": "high"},
+      {"method": "гриль", "priority": "high"},
+      {"method": "запекание", "priority": "medium"}
+    ],
+    "applications": [
+      "основное_блюдо",
+      "бургеры",
+      "сэндвичи",
+      "закуски"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["лук", "картофель", "овощи_гриль"],
+      "sauces": ["перечный", "грибной", "сливочный", "луковый", "горчичный"],
+      "herbs": ["петрушка", "базилик", "руккола"],
+      "breads": ["булочка_для_бургера"],
+      "grains": ["рис"]
+    },
+    "substitutes": [
+      {"name": "Говяжья котлета", "similarity": "high"},
+      {"name": "Люля-кебаб", "similarity": "medium"},
+      {"name": "Стейк", "similarity": "medium"},
+      {"name": "Свиной бифштекс", "similarity": "medium"},
+      {"name": "Куриный бифштекс", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "говядина",
+    "бифштекс",
+    "бургер",
+    "жарка",
+    "мясо"
+  ]
+}

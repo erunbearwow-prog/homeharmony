@@ -1,0 +1,60 @@
+{
+  "name": "Груша Китайская",
+  "name_normalized": "grusha-kitayskaya",
+  "synonyms": "китайская груша, азиатская груша, японская груша, груша Наси, груша песчаная, груша японская, груша корейская, яблоко-груша (в просторечии), Pyrus pyrifolia, Nashi pear, Asian pear, Chinese pear, Korean pear",
+  "short_description": "Азиатская груша с округлой формой, похожей на яблоко, плотной хрустящей мякотью и тонкой жёлто-золотистой кожицей. Отличается сочностью, хрустом, умеренной сладостью и свежим вкусом с лёгкой кислинкой. Идеальна для свежего употребления, салатов и десертов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Китайская груша, также известная как Наси (Nashi) или азиатская груша (Pyrus pyrifolia), — это плод, который по форме и текстуре больше напоминает яблоко, чем традиционную грушу. Кожица тонкая, гладкая, от жёлто-зелёной до бронзово-золотистой, часто с мелкими светлыми крапинками . Мякоть очень сочная, белая, плотная и хрустящая, с характерным свежим, умеренно сладким вкусом и лёгкой кислинкой. Благодаря своей плотности и сочности, китайские груши отлично утоляют жажду.</p><h2 class=\"ingredient-title\">Отличительные особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Форма</strong> — округлая, яблоковидная</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, хрустящая, сочная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, с лёгкой кислинкой, без маслянистости</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — жёлто-зеленый, бронзовый, золотистый</li><li class=\"ingredient-list-item\"><strong>Кожура</strong> — тонкая, съедобная, с крапинками</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 1-2 недель при комнатной температуре</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежее употребление</strong> — как самостоятельный фрукт, в нарезке</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, сыром, орехами</li><li class=\"ingredient-list-item\"><strong>Соки и напитки</strong> — свежевыжатый сок, смузи</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — с медом, в карамели</li><li class=\"ingredient-list-item\"><strong>Гарнир</strong> — к мясу, особенно к утке и свинине</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — мягкие (рикотта, маскарпоне), голубые</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль, кешью</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — мята, руккола, кинза</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — утка, свинина, курица</li><li class=\"ingredient-list-item\"><strong>Цитрусовые</strong> — лимон, лайм, апельсин</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Груша Конференция</strong> — более маслянистая</li><li class=\"ingredient-list-item\"><strong>Яблоко</strong> — похожая текстура</li><li class=\"ingredient-list-item\"><strong>Груша Анжу</strong> — маслянистая</li></ul>",
+  "category": "Тропические фрукты",
+  "semantic_data": {
+    "properties": [
+      "фрукт",
+      "азиатский",
+      "хрустящий",
+      "сочный",
+      "сладкий",
+      "освежающий",
+      "плотный",
+      "яблоковидный"
+    ],
+    "preparations": [
+      "мытьё",
+      "очистка_от_кожицы_по_желанию",
+      "нарезка_дольками",
+      "использование_с_кожурой"
+    ],
+    "cooking_methods": [
+      {"method": "свежее_употребление", "priority": "high"},
+      {"method": "сок", "priority": "high"},
+      {"method": "добавление_в_салаты", "priority": "high"},
+      {"method": "карамелизация", "priority": "medium"}
+    ],
+    "applications": [
+      "свежий_фрукт",
+      "салаты",
+      "соки",
+      "десерты",
+      "гарниры_к_мясу"
+    ],
+    "pairings": {
+      "protein": ["рикотта", "маскарпоне", "голубые_сыры", "утка", "свинина", "курица"],
+      "nuts": ["грецкие_орехи", "миндаль", "кешью"],
+      "herbs": ["мята", "руккола", "кинза"],
+      "fruits": ["лимон", "лайм", "апельсин"]
+    },
+    "substitutes": [
+      {"name": "Груша Конференция", "similarity": "medium"},
+      {"name": "Яблоко", "similarity": "medium"},
+      {"name": "Груша Анжу", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "фрукт",
+    "груша",
+    "китайская_груша",
+    "азиатская_груша",
+    "наси",
+    "хрустящий",
+    "азиатская_кухня",
+    "экзотический_фрукт"
+  ]
+}

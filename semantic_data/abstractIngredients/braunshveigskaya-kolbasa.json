@@ -1,0 +1,50 @@
+{
+  "name": "Брауншвейгская колбаса",
+  "name_normalized": "braunshveigskaya-kolbasa",
+  "synonyms": "брауншвейгская колбаса, брауншвейгская, брауншвейгская сырокопченая колбаса, брауншвейгская колбаса сырокопченая, Braunschweiger (нем.)",
+  "short_description": "Сырокопченая колбаса из свинины и говядины с добавлением специй, характерным островатым вкусом и плотной текстурой. Популярна в немецкой кухне для бутербродов и закусок.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Брауншвейгская колбаса — это сырокопчёная колбаса, названная в честь немецкого города Брауншвейг (Braunschweig). Производится из свинины и говядины с добавлением шпика, соли, специй (чеснок, перец, паприка) и нитритной соли. Отличается характерным островатым вкусом, плотной и сочной текстурой. Имеет красно-коричневый цвет на срезе и слегка копчёный аромат. Популярна в немецкой кухне, используется для бутербродов, закусок и в качестве самостоятельного продукта.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, сочная, упругая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — островатый, пряный, с копчёными нотками</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — красно-коричневый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — свинина, говядина, шпик, специи</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 30 дней в холодильнике</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом, горчицей, овощами</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — с сыром, маслинами, соленьями</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, яйцом, овощами</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — в тушёном виде, с картофелем</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — чеддер, эменталь</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — огурцы, помидоры, лук, перец</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — горчица, хрен, кетчуп</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, пшеничный</li><li class=\"ingredient-list-item\"><strong>Пиво</strong> — классическая закуска</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сервелат</strong> — похожий вкус</li><li class=\"ingredient-list-item\"><strong>Салфетти</strong> — немецкая колбаса</li><li class=\"ingredient-list-item\"><strong>Копченая колбаса</strong> — любая сырокопченая</li></ul>",
+  "category": "Колбасы сырокопченые и сыровяленые",
+  "semantic_data": {
+    "properties": [
+      "колбаса",
+      "сырокопченая",
+      "пряная",
+      "плотная",
+      "сочная",
+      "немецкая_кухня"
+    ],
+    "preparations": [
+      "нарезка_ломтиками",
+      "хранение_в_холодильнике"
+    ],
+    "cooking_methods": [
+      {"method": "свежее_употребление", "priority": "high"},
+      {"method": "добавление_в_салаты", "priority": "medium"}
+    ],
+    "applications": [
+      "бутерброды",
+      "закуски",
+      "салаты"
+    ],
+    "pairings": {
+      "protein": ["чеддер", "эменталь"],
+      "vegetables": ["огурцы", "помидоры", "лук", "перец"],
+      "sauces": ["горчица", "хрен", "кетчуп"],
+      "breads": ["ржаной_хлеб", "пшеничный_хлеб"],
+      "drinks": ["пиво"]
+    },
+    "substitutes": [
+      {"name": "Сервелат", "similarity": "high"},
+      {"name": "Салфетти", "similarity": "high"},
+      {"name": "Копченая колбаса", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "колбаса",
+    "брауншвейгская",
+    "сырокопченая",
+    "немецкая_кухня",
+    "закуска"
+  ]
+}

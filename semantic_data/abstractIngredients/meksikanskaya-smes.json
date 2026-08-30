@@ -1,0 +1,77 @@
+{
+  "name": "Мексиканская смесь",
+  "name_normalized": "meksikanskaya-smes",
+  "synonyms": "мексиканская смесь, овощная смесь мексиканская, замороженная мексиканская смесь, мексиканский микс, смесь для чили, овощи по-мексикански",
+  "short_description": "Пряная замороженная овощная смесь из кукурузы, стручковой фасоли, зеленого горошка, сладкого перца и моркови. В составе разных производителей могут быть кабачок, красная фасоль, сельдерей и лук. Идеальна для чили, супов, рагу, гарниров и начинок.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Мексиканская смесь — это замороженная овощная смесь, основной состав которой включает кукурузу, стручковую фасоль, зеленый горошек, сладкий перец и морковь. В зависимости от производителя, в состав могут добавляться кабачок (цукини), красная фасоль, сельдерей и лук. Благодаря сочетанию разных овощей и бобовых, смесь отличается ярким, пёстрым видом, насыщенным вкусом и высокой питательной ценностью. Удобна для быстрого приготовления супов, рагу, гарниров, начинок и блюд мексиканской кухни.</p><h2 class=\"ingredient-title\">Состав</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Кукуруза</strong> — сладкая, зёрна</li><li class=\"ingredient-list-item\"><strong>Зелёный горошек</strong></li><li class=\"ingredient-list-item\"><strong>Стручковая фасоль</strong> — зелёная, нарезанная</li><li class=\"ingredient-list-item\"><strong>Сладкий перец</strong> — красный и/или зелёный</li><li class=\"ingredient-list-item\"><strong>Морковь</strong> — кубиками</li><li class=\"ingredient-list-item\"><strong>Кабачок (цукини)</strong> — у некоторых производителей</li><li class=\"ingredient-list-item\"><strong>Красная фасоль</strong> — у некоторых производителей</li><li class=\"ingredient-list-item\"><strong>Лук репчатый</strong> — у некоторых производителей</li><li class=\"ingredient-list-item\"><strong>Сельдерей</strong> — у некоторых производителей</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочная, упругая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, с лёгкой пряностью</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — яркий, пёстрый</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 12 месяцев в морозильной камере</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Чили</strong> — классическое мексиканское блюдо с мясом или без</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — овощные, с мясом, с курицей</li><li class=\"ingredient-list-item\"><strong>Рагу</strong> — с мясом, птицей, колбасами</li><li class=\"ingredient-list-item\"><strong>Гарнир</strong> — к мясу, рыбе, птице</li><li class=\"ingredient-list-item\"><strong>Начинка</strong> — для тако, буррито, пирогов</li><li class=\"ingredient-list-item\"><strong>Омлеты и яичница</strong> — с овощами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — говядина, свинина, курица, индейка</li><li class=\"ingredient-list-item\"><strong>Колбасы</strong> — охотничьи, копчёные</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сливочный, сырный</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — паприка, тмин, кориандр, перец чили</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гавайская смесь</strong> — без фасоли, с рисом</li><li class=\"ingredient-list-item\"><strong>Овощное рагу</strong> — самостоятельное приготовление</li><li class=\"ingredient-list-item\"><strong>Чили из фасоли и кукурузы</strong> — домашняя версия</li></ul>",
+  "category": "Овощи быстрозамороженные",
+  "semantic_data": {
+    "properties": [
+      "замороженный",
+      "овощной",
+      "мексиканский",
+      "пряный",
+      "цветной",
+      "сытный",
+      "питательный"
+    ],
+    "preparations": [
+      "жарка_на_сковороде",
+      "варка_в_подсоленной_воде",
+      "тушение",
+      "приготовление_в_микроволновке"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_в_микроволновке",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "супы",
+      "рагу",
+      "гарниры",
+      "начинки",
+      "чили"
+    ],
+    "pairings": {
+      "protein": ["говядина", "свинина", "курица", "индейка", "колбасы"],
+      "sauces": ["томатный", "сливочный", "сырный"],
+      "spices": ["паприка", "тмин", "кориандр", "перец_чили"]
+    },
+    "substitutes": [
+      {
+        "name": "Гавайская смесь",
+        "similarity": "medium"
+      },
+      {
+        "name": "Овощное рагу",
+        "similarity": "medium"
+      },
+      {
+        "name": "Чили из фасоли и кукурузы",
+        "similarity": "high"
+      }
+    ]
+  },
+  "tags": [
+    "заморозка",
+    "овощи",
+    "мексиканская_смесь",
+    "чили",
+    "суп",
+    "рагу"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "name": "Сало соленое",
+  "name_normalized": "salo-solenoe",
+  "synonyms": "солёное сало, шпик солёный, сало с чесноком, сало пряное, шпик",
+  "short_description": "Солёный свиной жир (шпик) с прослойками мяса, выдержанный в соли и специях. Имеет плотную, но нежную текстуру, солоноватый вкус с пряным ароматом. Традиционный продукт восточнославянской кухни, используется как закуска, для бутербродов и в горячих блюдах.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Солёное сало — это традиционный продукт восточнославянской кухни, изготавливаемый из свиного сала (шпика) с прослойками мяса или без них. Сало натирают солью и специями (чеснок, перец, паприка, тмин) и выдерживают в холоде от нескольких дней до нескольких недель. В процессе засолки сало приобретает плотную, но нежную текстуру, характерный солоноватый вкус с пряным ароматом. Различают сало с мясными прожилками (более ценное) и чистое сало. Солёное сало используется как самостоятельная закуска, для бутербродов, а также добавляется в некоторые горячие блюда.</p><h2 class=\"ingredient-title\">Виды солёного сала</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сало с мясными прослойками</strong> — самое ценное, с розовыми прожилками мяса</li><li class=\"ingredient-list-item\"><strong>Сало без прослоек</strong> — чистое сало, более плотное</li><li class=\"ingredient-list-item\"><strong>Копчёное сало</strong> — после засолки коптится</li><li class=\"ingredient-list-item\"><strong>Сало с чесноком</strong> — классический вариант</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, нежная (при правильном засоле)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — солоноватый, пряный, с чесночным ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый, кремовый, с розовыми прослойками</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 месяцев в холодильнике</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Закуска</strong> — нарезанное сало с ржаным хлебом, луком</li><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом, горчицей, хреном</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — добавление в жаркое, картофель</li><li class=\"ingredient-list-item\"><strong>Шкварки</strong> — вытопленное сало для заправки</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Ржаной хлеб</strong> — классическая пара</li><li class=\"ingredient-list-item\"><strong>Чеснок</strong> — усиливает вкус</li><li class=\"ingredient-list-item\"><strong>Горчица, хрен</strong> — для остроты</li><li class=\"ingredient-list-item\"><strong>Лук</strong> — репчатый, зелёный</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сало копчёное</strong> — с дымным ароматом</li><li class=\"ingredient-list-item\"><strong>Грудинка солёная</strong> — более мясистая</li><li class=\"ingredient-list-item\"><strong>Шпик</strong> — свиной жир</li></ul>",
+  "category": "Грудинка",
+  "semantic_data": {
+    "properties": [
+      "сало",
+      "солёный",
+      "жир",
+      "шпик",
+      "плотный",
+      "пряный",
+      "традиционный"
+    ],
+    "preparations": [
+      "нарезка_ломтиками",
+      "хранение_в_холодильнике"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_горячие_блюда",
+        "priority": "medium"
+      },
+      {
+        "method": "вытапливание_шкварок",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "закуски",
+      "бутерброды",
+      "горячие_блюда"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["лук", "чеснок"],
+      "sauces": ["горчица", "хрен"],
+      "breads": ["ржаной_хлеб"]
+    },
+    "substitutes": [
+      {
+        "name": "Сало копчёное",
+        "similarity": "high"
+      },
+      {
+        "name": "Грудинка солёная",
+        "similarity": "high"
+      },
+      {
+        "name": "Шпик",
+        "similarity": "high"
+      }
+    ]
+  },
+  "tags": [
+    "сало",
+    "соленое_сало",
+    "закуска",
+    "восточноевропейская_кухня",
+    "шпик"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "name": "Брусника",
+  "name_normalized": "brusnika",
+  "synonyms": "брусника, брусника обыкновенная, лингонберри, lingonberry, Vaccinium vitis-idaea, брусника лесная",
+  "short_description": "Мелкая красная лесная ягода семейства Вересковые с кисло-сладким терпким вкусом. Богата витаминами C и A, антиоксидантами, органическими кислотами. Используется в морсах, варенье, соусах к мясу и для заготовок.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Брусника — это мелкая красная лесная ягода, произрастающая в северных лесах, тундре и на болотах. Близкая родственница клюквы и черники. Ягоды имеют ярко-красный цвет, плотную кожицу и характерный кисло-сладкий вкус с лёгкой терпкостью. Брусника очень богата витаминами C и A, органическими кислотами, антоцианами и другими антиоксидантами. С древности используется в народной медицине, а в кулинарии — для морсов, варенья, соусов к мясу, а также в качестве заготовок на зиму.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисло-сладкий, терпкий, освежающий</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, сочная</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — ярко-красный</li><li class=\"ingredient-list-item\"><strong>Витамины</strong> — C, A, группы B, калий, кальций</li><li class=\"ingredient-list-item\"><strong>Антиоксиданты</strong> — антоцианы, флавоноиды</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — август-сентябрь</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Переборка</strong> — удалить листья, веточки, незрелые ягоды</li><li class=\"ingredient-list-item\"><strong>Мойка</strong> — промыть в проточной воде</li><li class=\"ingredient-list-item\"><strong>Сушка</strong> — для длительного хранения</li><li class=\"ingredient-list-item\"><strong>Замораживание</strong> — для зимнего использования</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Морсы и компоты</strong> — освежающий напиток</li><li class=\"ingredient-list-item\"><strong>Варенье и джемы</strong> — с сахаром</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к мясу, дичи, птице</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — в пироги, булочки</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью и сыром</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — кексы, маффины</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — свинина, птица, дичь (классическое сочетание)</li><li class=\"ingredient-list-item\"><strong>Сахар, мёд</strong> — для сладости</li><li class=\"ingredient-list-item\"><strong>Яблоки</strong> — в выпечке</li><li class=\"ingredient-list-item\"><strong>Клюква</strong> — в напитках</li><li class=\"ingredient-list-item\"><strong>Сметана</strong> — в соусах</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Клюква</strong> — схожая кислотность</li><li class=\"ingredient-list-item\"><strong>Черника</strong> — более сладкая</li><li class=\"ingredient-list-item\"><strong>Красная смородина</strong> — кислый вкус</li></ul>",
+  "category": "Ягоды",
+  "semantic_data": {
+    "properties": [
+      "ягода",
+      "кисло-сладкий",
+      "терпкий",
+      "лесная",
+      "витаминный",
+      "антиоксидантный"
+    ],
+    "preparations": [
+      "переборка_и_мойка",
+      "сушка",
+      "замораживание"
+    ],
+    "cooking_methods": [
+      {"method": "свежее_употребление", "priority": "high"},
+      {"method": "варка_варенья", "priority": "high"},
+      {"method": "приготовление_морса", "priority": "high"},
+      {"method": "приготовление_соуса", "priority": "high"},
+      {"method": "замораживание", "priority": "high"}
+    ],
+    "applications": [
+      "напитки",
+      "варенье",
+      "соусы_к_мясу",
+      "начинки",
+      "десерты"
+    ],
+    "pairings": {
+      "protein": ["свинина", "птица", "дичь"],
+      "fruits": ["яблоки", "клюква"],
+      "sweeteners": ["сахар", "мёд"],
+      "dairy": ["сметана"]
+    },
+    "substitutes": [
+      {"name": "Клюква", "similarity": "high"},
+      {"name": "Черника", "similarity": "low"},
+      {"name": "Красная смородина", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "ягоды",
+    "брусника",
+    "лесная_ягода",
+    "соус_к_мясу",
+    "варенье",
+    "морс"
+  ]
+}

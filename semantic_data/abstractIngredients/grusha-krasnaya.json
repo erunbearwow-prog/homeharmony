@@ -1,0 +1,54 @@
+{
+  "name": "Груша Красная",
+  "name_normalized": "grusha-krasnaya",
+  "synonyms": "красная груша, груша красная, груша с красной кожурой, красная груша красномясая, красная груша (сортовая), красная айва (ошибочно), red pear, красная груша кассандра, красная груша старые сорта (реже)",
+  "short_description": "Редкая и декоративная разновидность груши с яркой тёмно-красной, бордовой или пурпурной кожицей, которая может сохранять окраску и на срезе. Отличается тонким, ароматным, сладким вкусом с лёгкой кислинкой, маслянистой или хрустящей мякотью. Ценится за красивый внешний вид и пикантный вкус, используется в свежем виде, для десертов и как украшение.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Красная груша — это не отдельный ботанический вид, а группа сортов груш, которые объединяет характерный красный, бордовый или пурпурный цвет кожицы. Чаще всего это результат скрещивания обычных груш с красномясыми сортами, такими как груша красномясая. Встречаются как полностью красные плоды, так и с яркими рубиновыми полосами и пятнами на жёлто-зелёном фоне . Вкус может варьироваться от сладкого до слегка терпкого, но всегда с ярким, насыщенным фруктовым ароматом.</p><h2 class=\"ingredient-title\">Отличительные особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Кожица</strong> — тёмно-красная, бордовая, пурпурная, иногда с полосами</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — обычно грушевидная, но может быть округлой</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — зависит от сорта: от плотной и хрустящей до маслянистой</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, с лёгкой кислинкой и терпкостью</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — более интенсивный, чем у жёлтых груш</li></ul><h2 class=\"ingredient-title\">Популярные сорта</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Красная Конференция</strong> — сорт с красной кожурой, сохраняющий все свойства оригинальной груши</li><li class=\"ingredient-list-item\"><strong>Красная Анжу</strong> — красная разновидность груши Анжу</li><li class=\"ingredient-list-item\"><strong>Красный Вильямс</strong> — сорт с ярко-красной кожицей</li><li class=\"ingredient-list-item\"><strong>Красномясая груша</strong> — особенно ценная, с красной мякотью, обычно используется для переработки</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежая</strong> — в нарезке, для украшения блюд, в фруктовых салатах</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — запечённая, в карамели, с шоколадом</li><li class=\"ingredient-list-item\"><strong>Сыры и вино</strong> — на сырной тарелке, с голубым сыром и красным вином</li><li class=\"ingredient-list-item\"><strong>Консервация</strong> — для необычного варенья</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — голубые, мягкие (камамбер, бри)</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль, пекан</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — утка, свинина, дичь</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — красное вино, портвейн</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Красное яблоко</strong> — в качестве альтернативы с красной кожурой</li><li class=\"ingredient-list-item\"><strong>Обычная жёлтая груша</strong> — если цвет не имеет значения</li><li class=\"ingredient-list-item\"><strong>Персик</strong> — для яркого цвета в десертах</li></ul>",
+  "category": "Семечковые",
+  "semantic_data": {
+    "properties": [
+      "фрукт",
+      "груша",
+      "красная",
+      "декоративный",
+      "сладкий",
+      "ароматный",
+      "необычный_цвет"
+    ],
+    "preparations": [
+      "мытьё",
+      "очистка_от_кожицы_для_салатов",
+      "нарезка_ломтиками"
+    ],
+    "cooking_methods": [
+      {"method": "свежее_употребление", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "карамелизация", "priority": "medium"},
+      {"method": "консервация", "priority": "medium"}
+    ],
+    "applications": [
+      "десерты",
+      "салаты",
+      "сырные_тарелки",
+      "напитки"
+    ],
+    "pairings": {
+      "protein": ["камамбер", "бри", "голубые_сыры", "утка", "свинина", "дичь"],
+      "nuts": ["грецкие_орехи", "миндаль", "пекан"],
+      "drinks": ["красное_вино", "портвейн"]
+    },
+    "substitutes": [
+      {"name": "Красное яблоко", "similarity": "medium"},
+      {"name": "Обычная жёлтая груша", "similarity": "high"},
+      {"name": "Персик", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "фрукт",
+    "груша",
+    "красная_груша",
+    "десерт",
+    "экзотический",
+    "декоративный"
+  ]
+}

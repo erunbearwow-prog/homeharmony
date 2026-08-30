@@ -1,0 +1,102 @@
+{
+  "name": "Арахис соленый жареный",
+  "name_normalized": "arahis-solenyy-zharenyy",
+  "synonyms": "",
+  "short_description": "Жареный арахис с солью — популярная закуска с хрустящей текстурой и насыщенным солёно-ореховым вкусом. Богат белком, полезными жирами и витаминами группы B.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Арахис соленый жареный — это бобы арахиса, прошедшие термическую обработку (обжарку) в масле или сухим способом и посыпанные солью. В процессе обжарки арахис приобретает характерный золотистый цвет, хрустящую текстуру и насыщенный масленичный вкус, а соль усиливает естественный ореховый аромат. Является популярной закуской к пиву, вину и безалкогольным напиткам, а также широко используется в кулинарии и кондитерском деле.</p><h2 class=\"ingredient-title\">Виды жареного арахиса</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жареный в масле</strong> — обжаренный в растительном масле, более жирный и калорийный</li><li class=\"ingredient-list-item\"><strong>Жареный сухим способом</strong> — обжаренный без масла, менее калорийный</li><li class=\"ingredient-list-item\"><strong>С крупной солью</strong> — с крупнокристаллической солью, интенсивный вкус</li><li class=\"ingredient-list-item\"><strong>С мелкой солью</strong> — с мелкой солью, равномерное покрытие</li><li class=\"ingredient-list-item\"><strong>В глазури</strong> — жареный арахис в сладкой или острой глазури</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — хрустящая, плотная, рассыпчатая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный ореховый с выраженной солёностью</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — интенсивный, масленичный, привлекательный</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — золотисто-коричневый</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 6 месяцев в герметичной упаковке</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Закуска</strong> — к пиву, вину, коктейлям</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — добавление для хруста и орехового вкуса</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — в печенье, кексы, маффины</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — измельчение для арахисовых соусов</li><li class=\"ingredient-list-item\"><strong>Кондитерские изделия</strong> — в халве, козинаках, конфетах</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для шоколада и батончиков</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Напитки</strong> — пиво, вино, крепкий алкоголь, лимонады</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — твёрдые и полутвёрдые сыры</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — яблоки, изюм, курага</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, свинина (в азиатских блюдах)</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чили, паприка, чеснок, чёрный перец</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жареный несолёный арахис</strong> — без соли, можно досолить</li><li class=\"ingredient-list-item\"><strong>Миндаль жареный солёный</strong> — более мягкий вкус</li><li class=\"ingredient-list-item\"><strong>Кешью жареный солёный</strong> — слаще и нежнее</li><li class=\"ingredient-list-item\"><strong>Фисташки солёные</strong> — с характерным зелёным оттенком</li><li class=\"ingredient-list-item\"><strong>Грецкий орех солёный</strong> — с горчинкой</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/kak-ozharit-arahis/'>Как правильно обжарить арахис в домашних условиях</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/nutrition/polza-arahisa/'>Польза арахиса: белок, жиры, витамины</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/zakuski-k-pivu/'>Закуски к пиву: идеи и рецепты</a></li></ul>",
+  "category": "ОРЕХИ И СЕМЕНА",
+  "semantic_data": {
+    "properties": [
+      "жареный",
+      "солёный",
+      "хрустящий",
+      "золотистый",
+      "масленичный",
+      "сытный",
+      "закусочный",
+      "длительный_срок_хранения"
+    ],
+    "preparations": [
+      "обжарка_в_масле_или_без",
+      "посыпание_солью",
+      "хранение_в_герметичной_упаковке"
+    ],
+    "cooking_methods": [
+      {
+        "method": "обжарка",
+        "priority": "high"
+      },
+      {
+        "method": "сухая_обжарка",
+        "priority": "high"
+      },
+      {
+        "method": "посолка",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "закуска_к_напиткам",
+      "салаты",
+      "выпечка",
+      "соусы",
+      "кондитерские_изделия"
+    ],
+    "pairings": {
+      "protein": [
+        "сыр",
+        "курица",
+        "свинина"
+      ],
+      "fruits": [
+        "яблоки",
+        "изюм",
+        "курага"
+      ],
+      "drinks": [
+        "пиво",
+        "вино",
+        "крепкий_алкоголь",
+        "лимонады"
+      ],
+      "spices": [
+        "чили",
+        "паприка",
+        "чеснок",
+        "черный_перец"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Жареный несолёный арахис",
+        "similarity": "high"
+      },
+      {
+        "name": "Миндаль жареный солёный",
+        "similarity": "medium"
+      },
+      {
+        "name": "Кешью жареный солёный",
+        "similarity": "medium"
+      },
+      {
+        "name": "Фисташки солёные",
+        "similarity": "medium"
+      },
+      {
+        "name": "Грецкий орех солёный",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "орехи",
+    "арахис",
+    "жареный",
+    "солёный",
+    "закуска",
+    "к_пиву",
+    "хрустящий",
+    "снек"
+  ]
+}

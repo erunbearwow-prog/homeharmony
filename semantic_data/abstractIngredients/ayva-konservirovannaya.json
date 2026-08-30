@@ -1,0 +1,119 @@
+{
+  "name": "Айва консервированная",
+  "name_normalized": "ayva-konservirovannaya",
+  "synonyms": "",
+  "short_description": "Плоды айвы, консервированные в сахарном сиропе. В процессе обработки твёрдая терпкая мякоть становится мягкой, янтарно-прозрачной и приобретает нежный медовый вкус с тонким ароматом.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Айва консервированная — это плоды айвы (целые, половинки или дольки), залитые сахарным сиропом и подвергнутые тепловой обработке в герметичной упаковке. В процессе консервации твёрдая терпкая мякоть айвы становится мягкой, янтарно-прозрачной, а её характерный кисло-терпкий вкус смягчается, приобретая нежные медовые ноты с тонким фруктовым ароматом. Идеальный способ сохранить сезонный фрукт на зиму.</p><h2 class=\"ingredient-title\">Виды консервации</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Целые плоды</strong> — мелкие плоды консервируют целиком, с кожицей</li><li class=\"ingredient-list-item\"><strong>Половинки или дольки</strong> — крупные плоды нарезают, удаляют семена</li><li class=\"ingredient-list-item\"><strong>Компот из айвы</strong> — с большим количеством сиропа, для питья</li><li class=\"ingredient-list-item\"><strong>Пюре из айвы</strong> — протёртая мякоть для соусов и начинок</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мягкая, но сохраняющая форму, янтарно-прозрачная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, с лёгкой кислинкой и медовыми нотами</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — янтарный, от золотистого до розовато-янтарного</li><li class=\"ingredient-list-item\"><strong>Сироп</strong> — прозрачный, с фруктовым ароматом</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в закрытой банке</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Десерты</strong> — самостоятельное блюдо, с творогом, йогуртом, мороженым</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для пирогов, штруделей, тартов, блинов</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к мясу (утка, свинина, дичь)</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — добавление в кексы, маффины, бисквиты</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — сироп для компотов, морсов, коктейлей</li><li class=\"ingredient-list-item\"><strong>Зимние заготовки</strong> — как самостоятельное лакомство</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Кисломолочное</strong> — творог, йогурт, сметана, сливки</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — утка, свинина, курица, дичь</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль, фундук</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, гвоздика, ваниль, имбирь, кардамон</li><li class=\"ingredient-list-item\"><strong>Другие фрукты</strong> — яблоки, груши, цитрусовые</li><li class=\"ingredient-list-item\"><strong>Сиропы</strong> — мёд, карамель, шоколад</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежая айва</strong> — в сезон, но требует длительной варки</li><li class=\"ingredient-list-item\"><strong>Консервированные яблоки</strong> — мягче, без терпкости</li><li class=\"ingredient-list-item\"><strong>Консервированные груши</strong> — слаще, нежнее</li><li class=\"ingredient-list-item\"><strong>Айвовый джем или мармелад</strong> — готовая продукция</li><li class=\"ingredient-list-item\"><strong>Смесь яблок с лимоном</strong> — для имитации кислинки</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/konservirovanie-ayvy/'>Как консервировать айву в домашних условиях</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/ayva-v-saharnom-sirope/'>Айва в сахарном сиропе — пошаговый рецепт</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/pirog-s-ayvoy/'>Пирог с айвой — рецепт с фото</a></li></ul>",
+  "category": "Консервы",
+  "semantic_data": {
+    "properties": [
+      "консервированный",
+      "сладкий",
+      "янтарный",
+      "мягкий",
+      "медовый",
+      "ароматный",
+      "срок_хранения_до_3_лет",
+      "прозрачный_сироп"
+    ],
+    "preparations": [
+      "открыть_банку",
+      "слить_сироп_при_необходимости",
+      "использовать_в_блюдах_как_есть"
+    ],
+    "cooking_methods": [
+      {
+        "method": "использование_как_есть",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "измельчение_в_пюре",
+        "priority": "medium"
+      },
+      {
+        "method": "уваривание_с_соусом",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "десерты",
+      "начинки_для_выпечки",
+      "соусы_к_мясу",
+      "напитки",
+      "зимние_заготовки",
+      "самостоятельное_блюдо"
+    ],
+    "pairings": {
+      "protein": [
+        "утка",
+        "свинина",
+        "курица",
+        "дичь"
+      ],
+      "dairy": [
+        "творог",
+        "йогурт",
+        "сметана",
+        "сливки"
+      ],
+      "nuts": [
+        "грецкие_орехи",
+        "миндаль",
+        "фундук"
+      ],
+      "fruits": [
+        "яблоки",
+        "груши",
+        "цитрусовые"
+      ],
+      "spices": [
+        "корица",
+        "гвоздика",
+        "ваниль",
+        "имбирь",
+        "кардамон"
+      ],
+      "sweeteners": [
+        "мёд",
+        "карамель",
+        "шоколад"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Свежая айва",
+        "similarity": "high"
+      },
+      {
+        "name": "Консервированные яблоки",
+        "similarity": "medium"
+      },
+      {
+        "name": "Консервированные груши",
+        "similarity": "medium"
+      },
+      {
+        "name": "Айвовый джем или мармелад",
+        "similarity": "medium"
+      },
+      {
+        "name": "Яблоки с лимоном",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "консервы",
+    "айва",
+    "заготовки",
+    "десерт",
+    "начинка",
+    "соусы",
+    "зимние_заготовки",
+    "компот"
+  ]
+}

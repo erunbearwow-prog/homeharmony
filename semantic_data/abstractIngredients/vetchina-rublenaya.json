@@ -1,0 +1,75 @@
+{
+  "name": "Ветчина рубленая",
+  "name_normalized": "vetchina-rublenaya",
+  "synonyms": "",
+  "short_description": "Ветчинный продукт, изготовленный из рубленого (мелкоизмельчённого) мяса свинины, говядины или птицы с добавлением специй. Имеет плотную текстуру, насыщенный мясной вкус и используется для бутербродов, закусок и салатов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Ветчина рубленая — это мясной продукт, который изготавливается из мелкоизмельчённого мяса (свинины, говядины, птицы или их смеси) с добавлением соли, специй, иногда — нитритной соли и небольшого количества воды. Масса формуется в батоны или формы, после чего проходит термическую обработку (варку, копчение или их комбинацию). В отличие от цельномышечной ветчины, рубленая имеет более плотную и однородную текстуру, но сохраняет сочность и насыщенный мясной вкус. Широко используется для бутербродов, закусок, салатов и горячих блюд.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, однородная, упругая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный мясной, с пряными нотами</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — розовый, светло-розовый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — рубленое мясо, соль, специи, нитритная соль</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 10-20 дней в холодильнике</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом, сыром, овощами</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — нарезка к столу, с горчицей, хреном</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — мясные, овощные (оливье, столичный)</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — запеканки, омлеты, пицца</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для блинов, пирожков</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — твёрдые (чеддер, пармезан), плавленые</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, огурцы, перец, лук, салат</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — горчица, хрен, майонез, кетчуп</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, белый, багет, лаваш</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Ветчина цельномышечная</strong> — более нежная, с волокнистой структурой</li><li class=\"ingredient-list-item\"><strong>Буженина</strong> — запечённая, более жирная</li><li class=\"ingredient-list-item\"><strong>Карбонад</strong> — похожий продукт</li><li class=\"ingredient-list-item\"><strong>Колбаса варёная</strong> — более мягкая</li></ul>",
+  "category": "Ветчина и рулеты",
+  "semantic_data": {
+    "properties": [
+      "деликатес",
+      "рубленый",
+      "плотный",
+      "однородный",
+      "мясной",
+      "универсальный"
+    ],
+    "preparations": [
+      "нарезка_ломтиками",
+      "хранение_в_холодильнике"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_салаты",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "бутерброды",
+      "закуски",
+      "салаты",
+      "горячие_блюда",
+      "начинки"
+    ],
+    "pairings": {
+      "protein": ["чеддер", "пармезан", "сыр_плавленый"],
+      "vegetables": ["помидоры", "огурцы", "перец", "лук", "салат"],
+      "sauces": ["горчица", "хрен", "майонез", "кетчуп"],
+      "breads": ["ржаной_хлеб", "белый_хлеб", "багет", "лаваш"]
+    },
+    "substitutes": [
+      {
+        "name": "Ветчина цельномышечная",
+        "similarity": "high"
+      },
+      {
+        "name": "Буженина",
+        "similarity": "high"
+      },
+      {
+        "name": "Карбонад",
+        "similarity": "high"
+      },
+      {
+        "name": "Колбаса варёная",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "ветчина",
+    "рубленая_ветчина",
+    "деликатесы",
+    "бутерброды",
+    "салаты",
+    "закуски"
+  ]
+}

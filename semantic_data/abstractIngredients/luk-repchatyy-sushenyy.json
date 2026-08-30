@@ -1,0 +1,68 @@
+{
+  "name": "Лук репчатый сушеный",
+  "name_normalized": "luk-repchatyy-sushenyy",
+  "synonyms": "сушеный лук, лук сушеный, луковые хлопья, гранулированный лук, сублимированный лук, лук в хлопьях",
+  "short_description": "Сушеный репчатый лук — универсальная приправа, сохраняющая аромат и вкус свежего лука. Выпускается в виде хлопьев, колец, кубиков или порошка. Удобен для длительного хранения и быстрого использования в кулинарии без предварительной подготовки.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Сушеный репчатый лук — это продукт, получаемый путем дегидрации свежего лука. В процессе сушки из лука удаляется влага (до 90%), но при этом сохраняются его характерный острый вкус, аромат и полезные свойства. Выпускается в разных формах — хлопья, кольца, кубики, порошок (луковая пудра). Сушеный лук удобен для хранения, не требует подготовки и является отличной альтернативой свежему луку в походах, на даче и в быстрой кулинарии.</p><h2 class=\"ingredient-title\">Виды сушеного лука</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Луковые хлопья</strong> — крупные кусочки, для супов, рагу</li><li class=\"ingredient-list-item\"><strong>Сушеные кольца</strong> — для декоративных целей</li><li class=\"ingredient-list-item\"><strong>Луковые кубики</strong> — для быстрого использования</li><li class=\"ingredient-list-item\"><strong>Луковая пудра (порошок)</strong> — для заправок и соусов</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сухая, ломкая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — острый, пряный, как у свежего лука</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от светло-бежевого до золотистого</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 1-2 лет в сухом месте</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — для восстановления (15-20 минут)</li><li class=\"ingredient-list-item\"><strong>Использование без замачивания</strong> — в блюда с жидкостью</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Супы</strong> — добавление в конце варки</li><li class=\"ingredient-list-item\"><strong>Соусы и подливы</strong> — для аромата</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — в составе маринадов</li><li class=\"ingredient-list-item\"><strong>Заправки</strong> — в сухом виде</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — для аромата</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — все виды</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — в составе смесей</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — перец, паприка, чеснок</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежий лук</strong> — 1 ст.л. сухого = 1 средняя луковица</li><li class=\"ingredient-list-item\"><strong>Луковый порошок</strong> — более концентрированный</li><li class=\"ingredient-list-item\"><strong>Чеснок сушеный</strong> — другой вкус</li></ul>",
+  "category": "Лук, чеснок сушеные",
+  "semantic_data": {
+    "properties": [
+      "приправа",
+      "сушеный",
+      "лук",
+      "длительное_хранение",
+      "универсальный"
+    ],
+    "preparations": [
+      "замачивание_15-20_минут",
+      "добавление_в_жидкие_блюда"
+    ],
+    "cooking_methods": [
+      {
+        "method": "добавление_в_супы",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_соусы",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_маринады",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "супы",
+      "соусы",
+      "маринады",
+      "заправки",
+      "выпечка"
+    ],
+    "pairings": {
+      "protein": ["говядина", "свинина", "курица"],
+      "vegetables": [],
+      "spices": ["перец", "паприка", "чеснок"]
+    },
+    "substitutes": [
+      {
+        "name": "Свежий лук",
+        "similarity": "high"
+      },
+      {
+        "name": "Луковый порошок",
+        "similarity": "high"
+      },
+      {
+        "name": "Чеснок сушеный",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "приправа",
+    "лук",
+    "сушеный_лук",
+    "длительное_хранение",
+    "специи"
+  ]
+}

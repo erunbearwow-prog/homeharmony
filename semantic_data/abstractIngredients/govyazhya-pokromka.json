@@ -1,0 +1,70 @@
+{
+  "name": "Говяжья покромка",
+  "name_normalized": "govyazhya-pokromka",
+  "synonyms": "покромка говяжья, пашина, фланк, говяжий фланк, брюшина, говяжья брюшная часть, покромка для тушения",
+  "short_description": "Часть говяжьей туши из брюшной области, представляющая собой тонкий пласт мяса с прослойками жира. Идеальна для тушения, варки и приготовления рулетов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Говяжья покромка (фланк) — это часть туши, расположенная в брюшной области. Представляет собой тонкий, вытянутый пласт мяса с прослойками жира и соединительной ткани. Благодаря своей структуре, покромка идеально подходит для тушения, варки, а также для приготовления рулетов. При длительной тепловой обработке мясо становится мягким и сочным, с насыщенным вкусом.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — тонкая, с жировыми прослойками</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, с ароматом жира</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — средняя (10-20%)</li><li class=\"ingredient-list-item\"><strong>Коллаген</strong> — умеренное содержание</li><li class=\"ingredient-list-item\"><strong>Время приготовления</strong> — 1,5-2,5 часа</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с овощами и соусом</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — для бульонов, супов</li><li class=\"ingredient-list-item\"><strong>Рулеты</strong> — с начинкой из грибов, овощей</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с картофелем, специями</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, картофель, перец, томаты</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, паприка, тимьян, чеснок</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, грибной</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжья грудинка</strong> — более жирная</li><li class=\"ingredient-list-item\"><strong>Говяжья лопатка</strong> — для тушения</li><li class=\"ingredient-list-item\"><strong>Свиная покромка</strong> — аналогичный продукт</li></ul>",
+  "category": "Говядина",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "говядина",
+      "покромка",
+      "брюшина",
+      "тушение",
+      "рулет"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "тушение_1.5-2.5_часа",
+      "варка_1.5-2_часа"
+    ],
+    "cooking_methods": [
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "тушеное_мясо",
+      "рулеты",
+      "супы",
+      "запеканки"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["лук", "морковь", "картофель", "перец", "томаты"],
+      "spices": ["черный_перец", "паприка", "тимьян", "чеснок"],
+      "sauces": ["томатный", "сметанный", "грибной"]
+    },
+    "substitutes": [
+      {
+        "name": "Говяжья грудинка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Говяжья лопатка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Свиная покромка",
+        "similarity": "high"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "говядина",
+    "покромка",
+    "тушение",
+    "рулет"
+  ]
+}

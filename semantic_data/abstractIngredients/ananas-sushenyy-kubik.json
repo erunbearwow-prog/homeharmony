@@ -1,0 +1,65 @@
+{
+  "name": "Ананас Сушеный Кубик",
+  "name_normalized": "ananas-sushenyy-kubik",
+  "synonyms": "сушеный ананас, ананас цукаты, кубики ананаса, дегидрированный ананас",
+  "short_description": "Кубики сушёного ананаса из спелых плодов, сохраняющие яркий тропический вкус, аромат и естественную сладость. Компактный и удобный продукт для перекуса, выпечки и кулинарных экспериментов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Сушёный ананас кубик — это продукт, полученный из спелых плодов ананаса путём дегидрации (удаления влаги) и нарезки на кубики. В процессе сушки ананас сохраняет яркий тропический вкус, характерный аромат и естественную сладость, но теряет влагу, становясь компактным и плотным. Кубики удобны для использования в кулинарии: их легко дозировать, добавлять в выпечку, каши, десерты и использовать как натуральный перекус.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая (у мягких сортов), может быть жёсткой (зависит от технологии сушки)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, с кислинкой, насыщенный ананасовый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — золотисто-жёлтый до янтарного</li><li class=\"ingredient-list-item\"><strong>Размер</strong> — кубики 0,5-1,5 см (у разных производителей)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 12 месяцев в герметичной упаковке</li><li class=\"ingredient-list-item\"><strong>Пищевая ценность</strong> — высокая (концентрация сахаров), сохраняются минералы</li></ul><h2 class=\"ingredient-title\">Как выбрать</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Цвет</strong> — золотистый, не слишком тёмный и не бледный</li><li class=\"ingredient-list-item\"><strong>Консистенция</strong> — кубики не должны быть слишком твёрдыми или липкими</li><li class=\"ingredient-list-item\"><strong>Запах</strong> — натуральный ананасовый, без посторонних ароматов</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — должен быть: ананас, без добавления сахара (желательно)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Перекус</strong> — самостоятельный натуральный снек</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — кексы, маффины, печенье, бисквиты</li><li class=\"ingredient-list-item\"><strong>Каши и мюсли</strong> — добавление в овсянку, гранолу, мюсли</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — домашние батончики, энергетические шарики, конфеты</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — добавление в компоты, чай, смузи</li><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — перед добавлением в выпечку для восстановления влажности</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль, кешью, фисташки</li><li class=\"ingredient-list-item\"><strong>Сухофрукты</strong> — курага, изюм, финики, клюква</li><li class=\"ingredient-list-item\"><strong>Злаки</strong> — овсянка, мюсли, хлопья</li><li class=\"ingredient-list-item\"><strong>Шоколад</strong> — тёмный, молочный (в десертах)</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, ваниль, имбирь</li><li class=\"ingredient-list-item\"><strong>Мёд и сиропы</strong> — для сладости</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сушёное манго</strong> — похожая текстура и сладость</li><li class=\"ingredient-list-item\"><strong>Курага кубиками</strong> — менее выраженный вкус</li><li class=\"ingredient-list-item\"><strong>Сушёная папайя</strong> — схожая тропическая сладость</li><li class=\"ingredient-list-item\"><strong>Консервированный ананас (кубики)</strong> — мокрый, требует слива сиропа</li><li class=\"ingredient-list-item\"><strong>Цукаты из ананаса</strong> — более сладкие, в сахарном сиропе</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/vybor-sushenykh-fruktov/'>Как выбрать сушёные фрукты</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/keks-s-ananasom/'>Кекс с сушёным ананасом</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/energy-balls/'>Энергетические шарики с сухофруктами</a></li></ul>",
+  "category": "Сухофрукты",
+  "semantic_data": {
+    "properties": [
+      "сушёный",
+      "кубики",
+      "сладкий",
+      "тропический",
+      "плотный",
+      "золотистый",
+      "длительный_срок_хранения",
+      "удобный_формат",
+      "натуральный"
+    ],
+    "preparations": [
+      "использовать_в_сухом_виде",
+      "замачивание_в_тёплой_воде_или_соке_перед_выпечкой"
+    ],
+    "cooking_methods": [
+      {"method": "сухое_употребление", "priority": "high"},
+      {"method": "замачивание", "priority": "medium"},
+      {"method": "добавление_в_выпечку", "priority": "high"},
+      {"method": "измельчение_в_пудру", "priority": "low"}
+    ],
+    "applications": [
+      "перекус",
+      "выпечка",
+      "каши_и_мюсли",
+      "десерты",
+      "напитки",
+      "домашние_батончики"
+    ],
+    "pairings": {
+      "protein": [],
+      "nuts": ["грецкие", "миндаль", "кешью", "фисташки"],
+      "dried_fruits": ["курага", "изюм", "финики", "клюква"],
+      "grains": ["овсянка", "мюсли", "хлопья"],
+      "chocolate": ["тёмный_шоколад", "молочный_шоколад"],
+      "spices": ["корица", "ваниль", "имбирь"],
+      "sweeteners": ["мёд", "кленовый_сироп"]
+    },
+    "substitutes": [
+      {"name": "Сушёное манго", "similarity": "high"},
+      {"name": "Курага кубиками", "similarity": "medium"},
+      {"name": "Сушёная папайя", "similarity": "medium"},
+      {"name": "Консервированный ананас (кубики)", "similarity": "medium"},
+      {"name": "Цукаты из ананаса", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "сухофрукты",
+    "ананас",
+    "сушёный",
+    "кубики",
+    "перекус",
+    "выпечка",
+    "тропический",
+    "снек"
+  ]
+}

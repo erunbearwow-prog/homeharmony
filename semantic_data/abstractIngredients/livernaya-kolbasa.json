@@ -1,0 +1,54 @@
+{
+  "name": "Ливерная колбаса",
+  "name_normalized": "livernaya-kolbasa",
+  "synonyms": "ливерка, ливерная колбаса, колбаса ливерная, паштетная колбаса, печёночная колбаса (разновидность)",
+  "short_description": "Вареная колбаса из субпродуктов (печени, лёгких, почек, сердца) со специями, имеющая нежную паштетную текстуру и насыщенный вкус. Относится к категории бюджетных, но питательных колбасных продуктов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Ливерная колбаса — это вареный колбасный продукт, изготавливаемый из субпродуктов (печени, лёгких, почек, сердца, селезёнки), которые проходят тщательную обработку, измельчение и варку. В отличие от других колбас, ливерная имеет нежную, паштетную текстуру, что обусловлено высоким содержанием соединительной ткани и способом приготовления. Имеет темно-серый или коричневый цвет, насыщенный, слегка сладковатый вкус и характерный запах ливера. Часто готовится с добавлением лука, перца, мускатного ореха. Относится к категории бюджетных колбасных продуктов, но при этом остается питательным и сытным.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, паштетная, однородная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, слегка сладковатый, с оттенком ливера</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от серого до темно-серого</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — субпродукты (печень, легкие, почки, сердце), соль, специи</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 5-7 дней в холодильнике</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — на хлеб с маслом, горчицей</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — с зеленью, соленьями</li><li class=\"ingredient-list-item\"><strong>Паштет</strong> — как основа для паштетных намазок</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — в салатах с яйцом, овощами</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — в тушёном виде, в супах</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, черный, белый</li><li class=\"ingredient-list-item\"><strong>Горчица</strong> — усиливает вкус</li><li class=\"ingredient-list-item\"><strong>Лук</strong> — репчатый, зеленый</li><li class=\"ingredient-list-item\"><strong>Соленья</strong> — огурцы, помидоры, квашеная капуста</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Паштет</strong> — более жирный</li><li class=\"ingredient-list-item\"><strong>Кровяная колбаса</strong> — похожая консистенция</li><li class=\"ingredient-list-item\"><strong>Вареная колбаса</strong> — менее насыщенный вкус</li><li class=\"ingredient-list-item\"><strong>Субпродуктовая колбаса</strong> — аналогичная</li></ul>",
+  "category": "Колбасы вареные",
+  "semantic_data": {
+    "properties": [
+      "колбаса",
+      "ливерная",
+      "паштетная",
+      "нежная",
+      "субпродукты",
+      "насыщенный_вкус",
+      "бюджетный"
+    ],
+    "preparations": [
+      "нарезка_ломтиками",
+      "хранение_в_холодильнике"
+    ],
+    "cooking_methods": [
+      {"method": "свежее_употребление", "priority": "high"},
+      {"method": "добавление_в_салаты", "priority": "medium"},
+      {"method": "приготовление_паштета", "priority": "low"}
+    ],
+    "applications": [
+      "бутерброды",
+      "закуски",
+      "паштеты",
+      "салаты"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["лук", "соленья", "квашеная_капуста"],
+      "herbs": ["укроп", "петрушка"],
+      "sauces": ["горчица", "хрен"],
+      "breads": ["ржаной_хлеб", "черный_хлеб", "белый_хлеб"]
+    },
+    "substitutes": [
+      {"name": "Паштет", "similarity": "high"},
+      {"name": "Кровяная колбаса", "similarity": "medium"},
+      {"name": "Вареная колбаса", "similarity": "low"},
+      {"name": "Субпродуктовая колбаса", "similarity": "high"}
+    ]
+  },
+  "tags": [
+    "колбаса",
+    "ливерная",
+    "паштет",
+    "субпродукты",
+    "бюджетный_продукт"
+  ]
+}

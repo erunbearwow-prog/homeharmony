@@ -1,0 +1,71 @@
+{
+  "name": "Язык бараний",
+  "name_normalized": "yazyk-baraniy",
+  "synonyms": "",
+  "short_description": "Деликатесный субпродукт из баранины — небольшой, мягкий язык с насыщенным вкусом и характерным ароматом. Ценится за нежность и быстрое приготовление, используется в горячих блюдах, закусках и салатах.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Бараний язык — это субпродукт, который по размеру меньше говяжьего, но обладает насыщенным, характерным для баранины вкусом и ароматом. Его текстура более нежная и мягкая, чем у говяжьего языка, а время приготовления значительно короче. Цвет варёного языка — светло-розовый или бежевый. Бараний язык ценится гурманами за свой специфический, яркий вкус и часто используется в кавказской, ближневосточной и средиземноморской кухне.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, мягкая, сочная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, характерный для баранины, с лёгким специфическим оттенком</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — светло-розовый, бежевый (в варёном виде)</li><li class=\"ingredient-list-item\"><strong>Размер</strong> — небольшой (300-500 г)</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — белки, жиры, коллаген, витамины группы B</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 дней в холодильнике (варёный)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — замочить в холодной воде на 2-3 часа для удаления крови и запаха</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — варить в подсоленной воде с луком, морковью и специями 1,5-2 часа</li><li class=\"ingredient-list-item\"><strong>Очистка</strong> — после варки опустить в холодную воду и снять кожицу</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — нарезать ломтиками, кубиками или соломкой</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Холодные закуски</strong> — нарезка с зеленью, соусом</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, овощами, орехами</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — в тушёном виде, с соусом</li><li class=\"ingredient-list-item\"><strong>Заливное</strong> — для праздничного стола</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соусы</strong> — мятный, чесночный, ткемали, сметанный</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, зелень (кинза, петрушка)</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — зира, кориандр, чёрный перец</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — лаваш, лепёшки, ржаной</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжий язык</strong> — более плотный, крупный</li><li class=\"ingredient-list-item\"><strong>Телячий язык</strong> — нежнее, без характерного привкуса</li><li class=\"ingredient-list-item\"><strong>Свиной язык</strong> — более жирный</li></ul>",
+  "category": "Субпродукты",
+  "semantic_data": {
+    "properties": [
+      "субпродукт",
+      "баранина",
+      "нежный",
+      "насыщенный_вкус",
+      "характерный_аромат",
+      "деликатес"
+    ],
+    "preparations": [
+      "замачивание_2-3_часа",
+      "варка_1,5-2_часа",
+      "очистка_от_кожицы"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "medium"
+      },
+      {
+        "method": "заливное",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "холодные_закуски",
+      "салаты",
+      "горячие_блюда",
+      "заливное"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["лук", "морковь", "кинза", "петрушка"],
+      "sauces": ["мятный", "чесночный", "ткемали", "сметанный"],
+      "spices": ["зира", "кориандр", "черный_перец"],
+      "breads": ["лаваш", "лепёшки", "ржаной_хлеб"]
+    },
+    "substitutes": [
+      {
+        "name": "Говяжий язык",
+        "similarity": "high"
+      },
+      {
+        "name": "Телячий язык",
+        "similarity": "medium"
+      },
+      {
+        "name": "Свиной язык",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "субпродукты",
+    "бараний_язык",
+    "деликатес",
+    "кавказская_кухня",
+    "закуска"
+  ]
+}

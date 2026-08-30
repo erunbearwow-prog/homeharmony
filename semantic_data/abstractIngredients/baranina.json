@@ -1,0 +1,102 @@
+{
+  "name": "Баранина",
+  "name_normalized": "baranina",
+  "synonyms": "",
+  "short_description": "Мясо овцы или барана, один из древнейших видов мяса в кулинарии. Имеет насыщенный, характерный аромат и сочную текстуру. Ценится за вкус, богатство коллагеном и использование в кавказской, ближневосточной и средиземноморской кухнях.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Баранина — это мясо овцы или барана, которое отличается насыщенным, характерным ароматом, плотной текстурой и высоким содержанием жира. Цвет мяса варьируется от светло-красного до тёмно-красного, в зависимости от возраста животного. Мясо молодого ягнёнка (до 1 года) более нежное, светлое и имеет мягкий вкус. Баранина взрослых животных обладает более плотной текстурой, выраженным ароматом и требует длительного приготовления. Благодаря высокому содержанию коллагена, баранина идеально подходит для медленного тушения, варки и запекания.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, сочная, с жировыми прослойками</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, характерный</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от розового до тёмно-красного</li><li class=\"ingredient-list-item\"><strong>Белки</strong> — до 18%</li><li class=\"ingredient-list-item\"><strong>Коллаген</strong> — высокое содержание</li><li class=\"ingredient-list-item\"><strong>Классические блюда</strong> — шашлык, шурпа, плов, люля-кебаб, рагу</li></ul><h2 class=\"ingredient-title\">Способы приготовления</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с овощами, в казане</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — для супов и бульонов</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с овощами</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — шашлык, стейки на кости</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде (молодое мясо)</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Специи</strong> — зира, кориандр, розмарин, мята, тимьян, чеснок</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, картофель, томаты, баклажаны</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — мятный, ткемали, гранатовый, чесночный</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, булгур, кус-кус</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говядина</strong> — другой вкус, менее жирная</li><li class=\"ingredient-list-item\"><strong>Свинина</strong> — жирнее, мягче</li><li class=\"ingredient-list-item\"><strong>Козлятина</strong> — более плотная</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/shashlyk-iz-baraniny/'>Шашлык из баранины</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/shurpa/'>Шурпа из баранины</a></li></ul>",
+  "category": "Баранина",
+  "semantic_data": {
+    "properties": [
+      "мясо",
+      "сочный",
+      "плотный",
+      "жирный",
+      "коллаген",
+      "характерный_вкус"
+    ],
+    "preparations": [
+      "разделка",
+      "удаление_жира",
+      "маринование"
+    ],
+    "cooking_methods": [
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "гриль",
+        "priority": "high"
+      },
+      {
+        "method": "жарка",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "шашлык",
+      "плов",
+      "супы",
+      "рагу",
+      "запеканки"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "лук",
+        "морковь",
+        "картофель",
+        "томаты",
+        "баклажаны"
+      ],
+      "spices": [
+        "зира",
+        "кориандр",
+        "розмарин",
+        "мята",
+        "тимьян",
+        "чеснок"
+      ],
+      "sauces": [
+        "мятный",
+        "ткемали",
+        "гранатовый",
+        "чесночный"
+      ],
+      "grains": [
+        "рис",
+        "булгур",
+        "кус-кус"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Говядина",
+        "similarity": "medium"
+      },
+      {
+        "name": "Свинина",
+        "similarity": "medium"
+      },
+      {
+        "name": "Козлятина",
+        "similarity": "high"
+      }
+    ]
+  },
+  "tags": [
+    "мясо",
+    "баранина",
+    "шашлык",
+    "плов",
+    "тушение"
+  ]
+}

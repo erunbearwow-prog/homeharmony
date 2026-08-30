@@ -1,0 +1,119 @@
+{
+  "name": "Куриная голень",
+  "name_normalized": "kurinaya-golen",
+  "synonyms": "Голень куриная",
+  "short_description": "Сочная нижняя часть куриной ножки с нежным тёмным мясом, костью и хрящами. Отличный вариант для запекания, жарки, тушения и приготовления на гриле. В англоязычной кулинарии известна как drumstick (барабанная палочка).",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Куриная голень — это нижняя часть куриной ножки, состоящая из бедренной кости, мяса тёмного цвета, кожи и хрящей. В англоязычных источниках этот отруб часто называют <strong>drumstick</strong> (барабанная палочка) из-за характерной формы, напоминающей барабанную палочку. Мясо голени более жирное и сочное по сравнению с грудкой, что делает его особенно вкусным при запекании и жарке. Благодаря наличию кости и хрящей, голень идеально подходит для медленного тушения, варки бульонов и приготовления наваристых супов. Ценится за доступную цену и насыщенный куриный вкус.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочная, мягкая (при правильной обработке), с хрящами</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, куриный</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — умеренная (8-10%)</li><li class=\"ingredient-list-item\"><strong>Коллаген</strong> — хрящи при варке дают наваристый бульон</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — характерная, напоминает барабанную палочку (drumstick)</li><li class=\"ingredient-list-item\"><strong>Применение</strong> — запекание, жарка, гриль, супы</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Промывка</strong> — холодной водой, обсушить</li><li class=\"ingredient-list-item\"><strong>Удаление кожи</strong> — по желанию (для диетического варианта)</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — для сочности и аромата</li><li class=\"ingredient-list-item\"><strong>Надрезание</strong> — для ускорения приготовления</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с картофелем, овощами</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде в панировке или без</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — на решётке, на мангале</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с соусом, в казане</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — для бульонов и супов</li><li class=\"ingredient-list-item\"><strong>Куриные крылышки в стиле барбекю</strong> — классический американский вариант</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук, перец, баклажаны</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сливочный, соевый, барбекю, острый</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — паприка, чеснок, тимьян, розмарин, чёрный перец</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, базилик</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — рис, картофель, паста, гречка</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Куриное бедро</strong> — похожая часть, без нижней кости</li><li class=\"ingredient-list-item\"><strong>Куриная ножка (целая)</strong> — голень+бедро</li><li class=\"ingredient-list-item\"><strong>Индейка (голень)</strong> — крупнее</li><li class=\"ingredient-list-item\"><strong>Свинина</strong> — для тушения</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/golen-kurinaya/'>Запечённая куриная голень</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/golen-gril/'>Куриные голени на гриле</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/drumsticks-bbq/'>Куриные голени в стиле барбекю (BBQ drumsticks)</a></li></ul>",
+  "category": "Курица",
+  "semantic_data": {
+    "properties": [
+      "курица",
+      "голень",
+      "тёмное_мясо",
+      "сочный",
+      "на_кости",
+      "с_хрящами",
+      "недорогой",
+      "drumstick",
+      "барабанная_палочка"
+    ],
+    "preparations": [
+      "промыть_и_обсушить",
+      "удалить_кожу_по_желанию",
+      "замариновать_для_гриля"
+    ],
+    "cooking_methods": [
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "гриль",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "medium"
+      },
+      {
+        "method": "варка",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "вторые_блюда",
+      "супы",
+      "гриль",
+      "закуски",
+      "bbq"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "картофель",
+        "морковь",
+        "лук",
+        "перец",
+        "баклажаны"
+      ],
+      "sauces": [
+        "томатный",
+        "сливочный",
+        "соевый",
+        "барбекю",
+        "острый"
+      ],
+      "spices": [
+        "паприка",
+        "чеснок",
+        "тимьян",
+        "розмарин",
+        "черный_перец"
+      ],
+      "herbs": [
+        "петрушка",
+        "укроп",
+        "базилик"
+      ],
+      "grains": [
+        "рис",
+        "картофель",
+        "паста",
+        "гречка"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Куриное бедро",
+        "similarity": "high"
+      },
+      {
+        "name": "Куриная ножка (целая)",
+        "similarity": "high"
+      },
+      {
+        "name": "Индейка (голень)",
+        "similarity": "medium"
+      },
+      {
+        "name": "Свинина",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "курица",
+    "голень",
+    "ножка",
+    "запекание",
+    "гриль",
+    "жарка",
+    "недорогое_мясо",
+    "drumstick",
+    "bbq"
+  ]
+}

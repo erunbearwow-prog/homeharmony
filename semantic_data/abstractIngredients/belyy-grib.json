@@ -1,0 +1,98 @@
+{
+  "name": "Белый гриб",
+  "name_normalized": "belyy-grib",
+  "synonyms": "",
+  "short_description": "Ценный лесной гриб, считающийся одним из самых вкусных и ароматных. Имеет плотную мясистую шляпку и крепкую ножку, используется в супах, жарке, запекании и заготовках.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Белый гриб (Boletus edulis) — один из самых ценных и благородных лесных грибов. Относится к трубчатым грибам, имеет плотную мясистую шляпку коричневого или буроватого цвета и толстую белую ножку. Мякоть белая, на срезе не темнеет, обладает насыщенным грибным ароматом и сладковатым ореховым привкусом. Ценится за универсальность в приготовлении, питательность и способность сохранять вкус и аромат даже после термической обработки. Растёт с июня до октября в хвойных, лиственных и смешанных лесах.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, сладковатый, с ореховыми нотками</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — яркий, лесной</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мясистая, плотная, упругая</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — шляпка коричневая, мякоть белая (не темнеет)</li><li class=\"ingredient-list-item\"><strong>Пищевая ценность</strong> — белки, клетчатка, витамины группы B</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — июнь-октябрь</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Чистка</strong> — удалить лесной мусор, срезать нижнюю часть ножки</li><li class=\"ingredient-list-item\"><strong>Мойка</strong> — быстро промыть под проточной водой (не замачивать)</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — ломтиками, кубиками</li><li class=\"ingredient-list-item\"><strong>Сушка</strong> — для длительного хранения</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Супы</strong> — крем-супы, бульоны, с лапшой</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — с луком, картофелем, в сливочном масле</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в соусе, с сыром, в горшочках</li><li class=\"ingredient-list-item\"><strong>Сушка</strong> — для зимних запасов</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — в пряном маринаде</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — грибной соус к мясу и пасте</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сливки, масло</strong> — классическое сочетание</li><li class=\"ingredient-list-item\"><strong>Лук, чеснок</strong> — усиливают аромат</li><li class=\"ingredient-list-item\"><strong>Картофель</strong> — жареный, отварной</li><li class=\"ingredient-list-item\"><strong>Паста</strong> — грибной соус</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, петрушка, тимьян</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Подберёзовик</strong> — похожий, но менее ароматный</li><li class=\"ingredient-list-item\"><strong>Подосиновик</strong> — более яркий вкус</li><li class=\"ingredient-list-item\"><strong>Шампиньоны</strong> — доступный аналог</li><li class=\"ingredient-list-item\"><strong>Вешенки</strong> — в супах и жарке</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/belyy-grib-sup/'>Грибной суп из белых грибов</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/belyy-grib-zharkiy/'>Жареные белые грибы</a></li></ul>",
+  "category": "Грибы лесные",
+  "semantic_data": {
+    "properties": [
+      "лесной_гриб",
+      "трубчатый",
+      "мясистый",
+      "ароматный",
+      "благородный",
+      "сладковатый_вкус"
+    ],
+    "preparations": [
+      "чистка_от_мусора",
+      "быстрая_промывка",
+      "нарезка",
+      "сушка"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "сушка",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      },
+      {
+        "method": "маринование",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "супы",
+      "вторые_блюда",
+      "соусы",
+      "заготовки"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "лук",
+        "чеснок",
+        "картофель"
+      ],
+      "dairy": [
+        "сливки",
+        "масло"
+      ],
+      "pasta": [
+        "паста"
+      ],
+      "spices": [
+        "черный_перец",
+        "петрушка",
+        "тимьян"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Подберёзовик",
+        "similarity": "high"
+      },
+      {
+        "name": "Подосиновик",
+        "similarity": "high"
+      },
+      {
+        "name": "Шампиньоны",
+        "similarity": "medium"
+      },
+      {
+        "name": "Вешенки",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "грибы",
+    "белый_гриб",
+    "лесные_грибы",
+    "суп",
+    "жарка",
+    "сушка"
+  ]
+}

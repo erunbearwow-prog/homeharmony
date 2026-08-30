@@ -1,0 +1,66 @@
+{
+  "name": "Ананасы в сиропе",
+  "name_normalized": "ananas-v-sirope",
+  "synonyms": "ананас консервированный, ананас в сахарном сиропе, консервированные ананасы, ананас в банке",
+  "short_description": "Кусочки или кольца ананаса, консервированные в лёгком сахарном сиропе. Сохраняют форму, цвет и аромат, имеют сладкий вкус с характерной ананасовой кислинкой.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Ананасы в сиропе — это консервированный продукт, представляющий собой кусочки или кольца спелого ананаса, залитые сахарным сиропом и подвергнутые тепловой обработке в герметичной упаковке. В отличие от свежего ананаса, консервированный становится более мягким, но сохраняет форму и характерный тропический вкус с лёгкой кислинкой. Удобный и готовый к употреблению продукт, который можно использовать в кулинарии круглый год.</p><h2 class=\"ingredient-title\">Виды консервации</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Кольца</strong> — классическая форма, удобна для десертов и украшения</li><li class=\"ingredient-list-item\"><strong>Кубики</strong> — для салатов, выпечки, начинок</li><li class=\"ingredient-list-item\"><strong>Ломтики</strong> — для быстрого использования</li><li class=\"ingredient-list-item\"><strong>В собственном соку</strong> — без добавления сахара, диетический вариант</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мягкая, но сохраняющая форму, не разваривается</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, с характерной ананасовой кислинкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — золотисто-жёлтый, естественный</li><li class=\"ingredient-list-item\"><strong>Сироп</strong> — прозрачный, сладкий, с ароматом ананаса</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в закрытой банке</li><li class=\"ingredient-list-item\"><strong>Бромелаин</strong> — фермент частично разрушается при термической обработке</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Десерты</strong> — как самостоятельное блюдо с мороженым, сливками</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — пироги, тарты, маффины, бисквиты</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — фруктовые, куриные с ананасами</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — сироп для коктейлей, компотов, пунша</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — для мяса и птицы</li><li class=\"ingredient-list-item\"><strong>Пицца</strong> — классическая гавайская пицца</li><li class=\"ingredient-list-item\"><strong>Топпинг</strong> — для мороженого, йогурта, творога</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, свинина, ветчина, бекон</li><li class=\"ingredient-list-item\"><strong>Морепродукты</strong> — креветки, краб</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — кокос, манго, банан, цитрусовые</li><li class=\"ingredient-list-item\"><strong>Мороженое и сливки</strong> — для десертов</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, ваниль, имбирь, мята</li><li class=\"ingredient-list-item\"><strong>Шоколад</strong> — в десертах</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежий ананас</strong> — более твёрдый, кислый, требует подготовки</li><li class=\"ingredient-list-item\"><strong>Сушёный ананас</strong> — требует замачивания</li><li class=\"ingredient-list-item\"><strong>Консервированные персики</strong> — похожая текстура, другой вкус</li><li class=\"ingredient-list-item\"><strong>Консервированное манго</strong> — более сладкое</li><li class=\"ingredient-list-item\"><strong>Яблочные дольки в сиропе</strong> — менее тропический вкус</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/konservirovanie-ananasa/'>Как консервировать ананасы в домашних условиях</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/pirog-s-ananasom/'>Пирог с ананасами в сиропе</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/salat-s-kuricey-i-ananasom/'>Салат с курицей и ананасами</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/gavayskaya-pitstsa/'>Гавайская пицца с ананасами</a></li></ul>",
+  "category": "Консервы",
+  "semantic_data": {
+    "properties": [
+      "консервированный",
+      "сладкий",
+      "кисло-сладкий",
+      "золотистый",
+      "мягкий",
+      "сочный",
+      "готовый_к_употреблению",
+      "срок_хранения_до_3_лет"
+    ],
+    "preparations": [
+      "открыть_банку",
+      "слить_сироп_при_необходимости",
+      "использовать_в_блюдах_как_есть"
+    ],
+    "cooking_methods": [
+      {"method": "использование_как_есть", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "добавление_в_салаты", "priority": "high"},
+      {"method": "карамелизация", "priority": "medium"},
+      {"method": "измельчение_в_пюре", "priority": "medium"}
+    ],
+    "applications": [
+      "десерты",
+      "выпечка",
+      "салаты",
+      "напитки",
+      "соусы",
+      "топпинг",
+      "пицца"
+    ],
+    "pairings": {
+      "protein": ["курица", "свинина", "ветчина", "бекон", "креветки", "краб"],
+      "fruits": ["кокос", "манго", "банан", "апельсин", "лимон"],
+      "dairy": ["мороженое", "сливки", "йогурт"],
+      "spices": ["корица", "ваниль", "имбирь", "мята"],
+      "chocolate": ["шоколад"],
+      "sauces": ["карамель", "шоколадный_соус"]
+    },
+    "substitutes": [
+      {"name": "Свежий ананас", "similarity": "high"},
+      {"name": "Сушёный ананас", "similarity": "medium"},
+      {"name": "Консервированные персики", "similarity": "medium"},
+      {"name": "Консервированное манго", "similarity": "medium"},
+      {"name": "Яблочные дольки в сиропе", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "консервы",
+    "ананас",
+    "в_сиропе",
+    "десерт",
+    "выпечка",
+    "салаты",
+    "пицца",
+    "топпинг"
+  ]
+}

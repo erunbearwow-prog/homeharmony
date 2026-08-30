@@ -1,0 +1,69 @@
+{
+  "name": "Горбуша",
+  "name_normalized": "gorbusha",
+  "synonyms": "розовый лосось, тихоокеанский лосось, горбуша тихоокеанская, pink salmon, humpback salmon, русская семга, горбатый лосось",
+  "short_description": "Тихоокеанская рыба семейства лососевых с нежно-розовым мясом средней жирности, плотной текстурой и характерным, но не резким вкусом. Один из самых доступных и популярных представителей красной рыбы.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Горбуша — это рыба из семейства лососевых, обитающая в Тихом океане. Свое название она получила из-за характерного горба, который появляется у самцов перед нерестом. Второе название — розовый лосось. Мясо горбуши имеет нежно-розовый цвет, умеренную жирность и плотную, упругую текстуру. В отличие от более жирных лососей (семги или кижуча), горбуша считается диетическим продуктом с калорийностью около 130-140 ккал на 100 г, что делает её отличным выбором для здорового питания. Богата полноценным белком, омега-3 жирными кислотами, витаминами группы B, а также йодом, фосфором, калием и селеном.</p><h2 class=\"ingredient-title\">Виды и формы</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежемороженая (с/м)</strong> — целая тушка или филе, требует приготовления</li><li class=\"ingredient-list-item\"><strong>Солёная</strong> — сухого или мокрого посола, для закусок</li><li class=\"ingredient-list-item\"><strong>Копчёная</strong> — горячего или холодного копчения, готовая к употреблению</li><li class=\"ingredient-list-item\"><strong>Консервированная</strong> — в собственном соку или масле</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, при пересушивании становится жёсткой</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нежный, характерный для лососевых, без резкого рыбного запаха</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — умеренная (5-9%)</li><li class=\"ingredient-list-item\"><strong>Белки</strong> — 20-22%</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — при жарке и запекании быстро сохнет, требует маринования или запекания с кожей</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике (10-12 часов) для сохранения структуры</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — под холодной водой, обсушить</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — для запекания и жарки (лимон, масло, специи) для сочности</li><li class=\"ingredient-list-item\"><strong>Снятие кожи</strong> — при запекании кожу лучше оставлять, она сохраняет сок</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Запекание</strong> — целиком, стейками, в фольге, с овощами (кожу не снимать!)</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде, в кляре или панировке (2-3 минуты с каждой стороны)</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — для ухи, супов, заливного</li><li class=\"ingredient-list-item\"><strong>Соление</strong> — сухой способ с солью и сахаром (классическая закуска)</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — горячее или холодное, для закусок</li><li class=\"ingredient-list-item\"><strong>Котлеты</strong> — из филе с добавлением яйца и хлеба</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с яйцом, картофелем, зеленью</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, шпинат, брокколи, кабачки, стручковая фасоль, фенхель</li><li class=\"ingredient-list-item\"><strong>Цитрусовые</strong> — лимон, лайм, апельсин (оттеняют и смягчают)</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, кинза, эстрагон, тимьян</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочные, сметанные, на основе лимона и оливкового масла</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — соевый соус, мёд, горчица, винный уксус</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — рис, киноа, кускус, булгур, перловка</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Кета</strong> — похожая текстура, но чуть менее жирная</li><li class=\"ingredient-list-item\"><strong>Кижуч</strong> — жирнее, более нежный</li><li class=\"ingredient-list-item\"><strong>Нерка</strong> — плотнее и жирнее</li><li class=\"ingredient-list-item\"><strong>Радужная форель</strong> — схожая текстура</li><li class=\"ingredient-list-item\"><strong>Морской окунь</strong> — в запеканках и супах</li></ul>",
+  "category": "Рыба морская",
+  "semantic_data": {
+    "properties": [
+      "лососевая",
+      "тихоокеанская",
+      "нежная",
+      "плотная",
+      "диетическая",
+      "богат_белком",
+      "омега-3"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "промывка_и_сушка",
+      "маринование",
+      "удаление_костей"
+    ],
+    "cooking_methods": [
+      {"method": "запекание", "priority": "high"},
+      {"method": "жарка", "priority": "high"},
+      {"method": "варка", "priority": "high"},
+      {"method": "соление", "priority": "high"},
+      {"method": "копчение", "priority": "medium"},
+      {"method": "приготовление_котлет", "priority": "medium"},
+      {"method": "варка_на_пару", "priority": "medium"}
+    ],
+    "applications": [
+      "запекание_с_овощами",
+      "жарка_в_панировке",
+      "уха",
+      "соленая_закуска",
+      "котлеты",
+      "салаты",
+      "копчености"
+    ],
+    "pairings": {
+      "protein": ["яйца", "творожный_сыр", "сметана", "сливки"],
+      "vegetables": ["картофель", "шпинат", "брокколи", "кабачки", "стручковая_фасоль", "фенхель"],
+      "fruits": ["лимон", "лайм", "апельсин"],
+      "herbs": ["укроп", "петрушка", "кинза", "эстрагон", "тимьян"],
+      "spices": ["белый_перец", "паприка", "чеснок", "имбирь"],
+      "grains": ["рис", "киноа", "кускус", "булгур", "перловка"],
+      "sauces": ["соевый_соус", "горчица", "медовый", "винный_уксус"]
+    },
+    "substitutes": [
+      {"name": "Кета", "similarity": "high"},
+      {"name": "Кижуч", "similarity": "medium"},
+      {"name": "Нерка", "similarity": "medium"},
+      {"name": "Радужная форель", "similarity": "medium"},
+      {"name": "Морской окунь", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "рыба",
+    "лососевые",
+    "горбуша",
+    "розовый_лосось",
+    "диетический",
+    "запекание",
+    "соление",
+    "омега-3"
+  ]
+}

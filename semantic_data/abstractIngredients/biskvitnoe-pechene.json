@@ -1,0 +1,56 @@
+{
+  "name": "Бисквитное печенье",
+  "name_normalized": "biskvitnoe-pechene",
+  "synonyms": "бисквиты, печенье бисквитное, сахарное печенье, сухое печенье, petit-beurre",
+  "short_description": "Сухое печенье из пшеничной муки, сахара и яиц, характеризующееся лёгкой, пористой структурой и нейтральным сладковатым вкусом. Идеально подходит для десертов, тортов и как основа для пирожных.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Бисквитное печенье — это кондитерское изделие из пшеничной муки, сахара, яиц и небольшого количества разрыхлителя. Отличается лёгкой, пористой и нежной текстурой, напоминающей бисквитное тесто. В отличие от песочного печенья, бисквитное содержит меньше масла или сливочного масла, что делает его более сухим и воздушным. Цвет — от светло-золотистого до кремового. Широко используется как самостоятельное лакомство, для приготовления десертов, тортов, пирожных и как основа для различных кондитерских изделий.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — лёгкая, пористая, нежная, рассыпчатая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, сладковатый, слегка яичный</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — светло-золотистый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — мука, сахар, яйца, разрыхлитель</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 месяцев в герметичной упаковке</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Самостоятельное лакомство</strong> — к чаю, молоку, какао</li><li class=\"ingredient-list-item\"><strong>Основа для десертов</strong> — тирамису, чизкейки, торты</li><li class=\"ingredient-list-item\"><strong>Дробление</strong> — в крошку для посыпки</li><li class=\"ingredient-list-item\"><strong>Пастила и зефир</strong> — как прослойка</li><li class=\"ingredient-list-item\"><strong>Пирожные</strong> — основа для муссовых десертов</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — молоко, йогурт, кефир</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — чай, кофе, какао, горячий шоколад</li><li class=\"ingredient-list-item\"><strong>Кремы</strong> — заварной, масляный, крем-чиз</li><li class=\"ingredient-list-item\"><strong>Фрукты и ягоды</strong> — клубника, банан, малина</li><li class=\"ingredient-list-item\"><strong>Шоколад</strong> — тёмный, молочный, глазурь</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Песочное печенье</strong> — более рассыпчатое, с высоким содержанием масла</li><li class=\"ingredient-list-item\"><strong>Сухари панировочные</strong> — для создания хрустящей основы</li><li class=\"ingredient-list-item\"><strong>Вафельные листы</strong> — для десертов</li><li class=\"ingredient-list-item\"><strong>Печенье савоярди</strong> — бисквитные палочки, основа для тирамису</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/biskvitnoe-pechene/'>Домашнее бисквитное печенье</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/tramisu/'>Тирамису с бисквитным печеньем</a></li></ul>",
+  "category": "Печенье бисквитное",
+  "semantic_data": {
+    "properties": [
+      "бисквит",
+      "пористый",
+      "нежный",
+      "рассыпчатый",
+      "воздушный",
+      "сухой",
+      "нейтральный_вкус"
+    ],
+    "preparations": [
+      "хранение_в_герметичной_упаковке",
+      "дробление_в_крошку_для_десертов"
+    ],
+    "cooking_methods": [
+      {"method": "выпечка", "priority": "high"},
+      {"method": "дробление", "priority": "high"},
+      {"method": "использование_в_десертах", "priority": "high"}
+    ],
+    "applications": [
+      "самостоятельное_лакомство",
+      "основа_для_десертов",
+      "посыпка",
+      "прослойка"
+    ],
+    "pairings": {
+      "protein": [],
+      "dairy": ["молоко", "йогурт", "кефир"],
+      "drinks": ["чай", "кофе", "какао", "горячий_шоколад"],
+      "creams": ["заварной_крем", "масляный_крем", "крем-чиз"],
+      "fruits": ["клубника", "банан", "малина"],
+      "chocolate": ["тёмный_шоколад", "молочный_шоколад", "глазурь"]
+    },
+    "substitutes": [
+      {"name": "Песочное печенье", "similarity": "medium"},
+      {"name": "Сухари панировочные", "similarity": "low"},
+      {"name": "Вафельные листы", "similarity": "low"},
+      {"name": "Савоярди", "similarity": "high"}
+    ]
+  },
+  "tags": [
+    "печенье",
+    "бисквитное_печенье",
+    "бисквит",
+    "десерт",
+    "основа_для_торта",
+    "тирамису"
+  ]
+}

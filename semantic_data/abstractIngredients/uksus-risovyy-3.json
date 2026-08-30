@@ -1,0 +1,82 @@
+{
+  "name": "Уксус рисовый 3%",
+  "name_normalized": "uksus-risovyy-3",
+  "synonyms": "рисовый уксус, рисовый уксус 3%, японский уксус, уксус для суши, суши-уксус, рисовый уксус для суши",
+  "short_description": "Мягкий сладковатый уксус, получаемый путём брожения рисового вина. Имеет низкую кислотность (3%), светло-золотистый или прозрачный цвет и деликатный вкус с лёгкими фруктовыми нотами. Основной ингредиент для приготовления риса для суши и роллов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Рисовый уксус 3% — это мягкий сладковатый уксус, получаемый путём брожения рисового вина или рисового спирта. В отличие от столового уксуса, он имеет низкую кислотность (3%), что делает его идеальным для азиатской кухни. Цвет варьируется от прозрачного до светло-золотистого, вкус — деликатный, с лёгкими фруктовыми и сладковатыми нотами. Рисовый уксус является ключевым ингредиентом для приготовления риса для суши и роллов, а также используется в заправках, маринадах и соусах в японской, корейской и китайской кухне.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Концентрация</strong> — 3% (низкая кислотность)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — мягкий, сладковатый, с фруктовыми нотками</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — деликатный, рисовый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — прозрачный, светло-золотистый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — рисовый уксус, сахар (в некоторых видах)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в стеклянной таре</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Суши и роллы</strong> — заправка для риса (основное применение)</li><li class=\"ingredient-list-item\"><strong>Салатные заправки</strong> — для азиатских салатов</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для рыбы, морепродуктов, овощей</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — для придания мягкой кислинки</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — для маринования огурцов, дайкона</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Рис</strong> — основа для суши</li><li class=\"ingredient-list-item\"><strong>Рыба</strong> — лосось, тунец, угорь</li><li class=\"ingredient-list-item\"><strong>Морепродукты</strong> — креветки, краб</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — огурец, дайкон, морковь, авокадо</li><li class=\"ingredient-list-item\"><strong>Соевый соус</strong> — в азиатских блюдах</li><li class=\"ingredient-list-item\"><strong>Васаби</strong> — для суши</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Белый винный уксус + сахар</strong> — имитация рисового уксуса</li><li class=\"ingredient-list-item\"><strong>Яблочный уксус + сахар</strong> — мягкий вариант</li><li class=\"ingredient-list-item\"><strong>Столовый уксус 6% + сахар</strong> — разбавленный вариант</li><li class=\"ingredient-list-item\"><strong>Лимонный сок</strong> — для заправки</li></ul>",
+  "category": "Уксусы",
+  "semantic_data": {
+    "properties": [
+      "уксус",
+      "рисовый",
+      "3%",
+      "сладковатый",
+      "мягкий",
+      "фруктовый",
+      "японская_кухня",
+      "суши"
+    ],
+    "preparations": [
+      "хранение_в_закрытой_стеклянной_бутылке",
+      "смешивание_с_сахаром_для_заправки_риса"
+    ],
+    "cooking_methods": [
+      {
+        "method": "заправка_для_риса",
+        "priority": "high"
+      },
+      {
+        "method": "салатные_заправки",
+        "priority": "high"
+      },
+      {
+        "method": "маринование",
+        "priority": "medium"
+      },
+      {
+        "method": "приготовление_соусов",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "суши_и_роллы",
+      "салаты",
+      "маринады",
+      "соусы"
+    ],
+    "pairings": {
+      "protein": ["лосось", "тунец", "угорь", "креветки", "краб"],
+      "vegetables": ["огурец", "дайкон", "морковь", "авокадо"],
+      "grains": ["рис"],
+      "sauces": ["соевый_соус"],
+      "spices": ["васаби"]
+    },
+    "substitutes": [
+      {
+        "name": "Белый винный уксус + сахар",
+        "similarity": "medium"
+      },
+      {
+        "name": "Яблочный уксус + сахар",
+        "similarity": "medium"
+      },
+      {
+        "name": "Столовый уксус 6% + сахар",
+        "similarity": "low"
+      },
+      {
+        "name": "Лимонный сок",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "уксус",
+    "рисовый_уксус",
+    "уксус_для_суши",
+    "японская_кухня",
+    "суши",
+    "заправка",
+    "азиатская_кухня"
+  ]
+}

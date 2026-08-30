@@ -1,0 +1,62 @@
+{
+  "name": "Камбала в томатном соусе",
+  "name_normalized": "kambala_v_tomatnom_souse",
+  "synonyms": "камбала в томатном соусе, камбала тушеная в томатном соусе, камбала с томатным соусом, консервированная камбала в томатном соусе, камбала в томате, рыба в томатном соусе, тушеная рыба с томатами, камбала с овощами в томате",
+  "short_description": "Готовое блюдо из камбалы, тушеной или консервированной в томатном соусе с добавлением лука, моркови и специй. Имеет нежную текстуру рыбы, насыщенный кисло-сладкий вкус и выраженный томатный аромат. Популярно как самостоятельное блюдо, закуска или гарнир.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Камбала в томатном соусе — это готовое блюдо из камбалы, которое готовят путем тушения рыбы в томатном соусе с добавлением лука, моркови, чеснока и специй. В зависимости от способа приготовления, это может быть горячее блюдо или консервация на зиму. Блюдо имеет насыщенный кисло-сладкий вкус, нежную текстуру рыбы и яркий томатный аромат. Камбала в томатном соусе подается как самостоятельное блюдо с картофелем, рисом или макаронами, а также используется как закуска или ингредиент для салатов.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — рыба мягкая, нежная, сочная, пропитанная соусом</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисло-сладкий, с выраженной томатной нотой, пикантный</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от оранжево-красного до темно-бордового (зависит от томата)</li><li class=\"ingredient-list-item\"><strong>Консистенция соуса</strong> — густая, однородная, с кусочками овощей</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 3-5 дней в холодильнике (горячее), до 2 лет (консервы)</li></ul><h2 class=\"ingredient-title\">Состав (типичный)</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Камбала</strong> — филе или целая рыба, нарезанная порционно</li><li class=\"ingredient-list-item\"><strong>Томаты</strong> — свежие, консервированные или томатная паста</li><li class=\"ingredient-list-item\"><strong>Лук</strong> — репчатый</li><li class=\"ingredient-list-item\"><strong>Морковь</strong> — добавляет сладость</li><li class=\"ingredient-list-item\"><strong>Чеснок</strong> — для пикантности</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — соль, перец, лавровый лист, душистый перец</li><li class=\"ingredient-list-item\"><strong>Растительное масло</strong> — для обжарки</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — при необходимости, в холодильнике</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — на порционные куски</li><li class=\"ingredient-list-item\"><strong>Обжаривание</strong> — слегка обжарить рыбу с двух сторон</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с томатами, луком и морковью</li><li class=\"ingredient-list-item\"><strong>Доведение до готовности</strong> — тушить до мягкости рыбы (15-20 минут)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Самостоятельное блюдо</strong> — с гарниром (рис, картофель, макароны)</li><li class=\"ingredient-list-item\"><strong>Закуска</strong> — в охлажденном виде</li><li class=\"ingredient-list-item\"><strong>Консервация</strong> — стерилизованные банки для хранения</li><li class=\"ingredient-list-item\"><strong>Ингредиент</strong> — для салатов с рыбой</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофель (варёный, пюре), рис, гречка, макароны</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — свежие или тушеные</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, белый</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, зеленый лук</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Камбала</strong> — любая другая белая рыба (треска, судак, палтус)</li><li class=\"ingredient-list-item\"><strong>Томатный соус</strong> — сметанный, сливочный соус</li></ul>",
+  "category": "Рыба и морепродукты",
+  "semantic_data": {
+    "properties": [
+      "рыба",
+      "консервы",
+      "томатный соус",
+      "тушеная",
+      "нежная",
+      "кисло-сладкий",
+      "пикантный",
+      "готовое блюдо",
+      "закуска",
+      "консервация"
+    ],
+    "preparations": [
+      "разморозка (при необходимости)",
+      "нарезка на порционные куски",
+      "обжаривание рыбы с двух сторон",
+      "пассеровка лука и моркови",
+      "добавление томатов и специй",
+      "тушение до готовности"
+    ],
+    "cooking_methods": [
+      {"method": "тушение", "priority": "high"},
+      {"method": "консервирование", "priority": "high"},
+      {"method": "обжаривание", "priority": "medium"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "закуски",
+      "консервы"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "рис", "гречка", "макароны"],
+      "sauces": [],
+      "herbs": ["укроп", "петрушка", "зеленый лук"],
+      "spices": ["черный перец", "лавровый лист", "душистый перец"]
+    },
+    "substitutes": [
+      {"name": "Треска в томатном соусе", "similarity": "high"},
+      {"name": "Судак в томатном соусе", "similarity": "high"},
+      {"name": "Палтус в томатном соусе", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "рыба",
+    "камбала",
+    "томатный соус",
+    "тушеная рыба",
+    "консервы",
+    "второе блюдо",
+    "закуска",
+    "рыбные консервы"
+  ]
+}

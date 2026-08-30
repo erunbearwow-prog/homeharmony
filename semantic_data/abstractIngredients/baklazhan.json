@@ -1,0 +1,104 @@
+{
+  "name": "Баклажан",
+  "name_normalized": "baklazhan",
+  "synonyms": "",
+  "short_description": "Овощ с глянцевой тёмно-фиолетовой кожицей и нежной, слегка горьковатой мякотью. Идеален для жарки, запекания, тушения и приготовления икры.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Баклажан — это овощ семейства Паслёновые, близкий родственник томатов и перца. Плод имеет вытянутую или округлую форму, гладкую глянцевую кожицу от тёмно-фиолетового до почти чёрного цвета (существуют также белые, жёлтые и полосатые сорта). Мякоть нежная, слегка горьковатая, с характерным грибным оттенком. Широко используется в кавказской, средиземноморской, азиатской и европейской кухне. Богат клетчаткой, калием, витаминами группы B и антиоксидантами.</p><h2 class=\"ingredient-title\">Сорта и виды</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Классический фиолетовый</strong> — вытянутый, тёмно-фиолетовый, самый распространённый</li><li class=\"ingredient-list-item\"><strong>Белый баклажан</strong> — без горечи, с грибным вкусом</li><li class=\"ingredient-list-item\"><strong>Полосатый (зибра)</strong> — полосатый, с более нежной мякотью</li><li class=\"ingredient-list-item\"><strong>Маленький (пальчиковый)</strong> — миниатюрные, для жарки целиком</li><li class=\"ingredient-list-item\"><strong>Тайский баклажан</strong> — круглый, зелёный, для азиатских блюд</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, с лёгкой горчинкой (у некоторых сортов)</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, губчатая, впитывает масло</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — фиолетовый, чёрный, белый, полосатый</li><li class=\"ingredient-list-item\"><strong>Клетчатка</strong> — хороший источник</li><li class=\"ingredient-list-item\"><strong>Антиоксиданты</strong> — антоцианы (в фиолетовых сортах)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойка</strong> — тщательно вымыть, обсушить</li><li class=\"ingredient-list-item\"><strong>Удаление горечи</strong> — посыпать солью, оставить на 20-30 минут, промыть</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — кубиками, кружочками, соломкой, вдоль</li><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — для уменьшения впитывания масла (в подсоленной воде)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — кружочки в панировке, соломка</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — целиком, с начинкой, с овощами</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — рагу, чанахи, овощное соте</li><li class=\"ingredient-list-item\"><strong>Икра</strong> — запечённая икра из баклажанов</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — целиком или кружочками</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — баба-гануш (закуска из запечённых баклажанов)</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — томаты, перец, лук, чеснок, кабачки</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — моцарелла, фета, пармезан</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — говядина, баранина, курица</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, чесночный, йогуртовый</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — кинза, петрушка, базилик</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Цукини</strong> — нейтральный вкус</li><li class=\"ingredient-list-item\"><strong>Кабачок</strong> — более нежный</li><li class=\"ingredient-list-item\"><strong>Грибы</strong> — в соусах и рагу</li><li class=\"ingredient-list-item\"><strong>Тыква</strong> — для запекания</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/ikra-iz-baklazhanov/'>Икра из баклажанов — рецепт с фото</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/baba-ganush/'>Баба-гануш — закуска из запечённых баклажанов</a></li></ul>",
+  "category": "Баклажаны",
+  "semantic_data": {
+    "properties": [
+      "овощ",
+      "фиолетовый",
+      "глянцевый",
+      "нежный",
+      "губчатый",
+      "впитывает_масло",
+      "богат_клетчаткой",
+      "антиоксидантный"
+    ],
+    "preparations": [
+      "мытьё_и_сушка",
+      "удаление_горечи_солью",
+      "замачивание_для_уменьшения_масла"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "гриль",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "икра",
+      "рагу",
+      "закуски",
+      "гарниры",
+      "соусы"
+    ],
+    "pairings": {
+      "protein": [
+        "моцарелла",
+        "фета",
+        "пармезан",
+        "говядина",
+        "баранина",
+        "курица"
+      ],
+      "vegetables": [
+        "томаты",
+        "перец",
+        "лук",
+        "чеснок",
+        "кабачки"
+      ],
+      "sauces": [
+        "томатный",
+        "чесночный",
+        "йогуртовый"
+      ],
+      "herbs": [
+        "кинза",
+        "петрушка",
+        "базилик"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Цукини",
+        "similarity": "high"
+      },
+      {
+        "name": "Кабачок",
+        "similarity": "high"
+      },
+      {
+        "name": "Грибы",
+        "similarity": "medium"
+      },
+      {
+        "name": "Тыква",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "овощ",
+    "баклажан",
+    "икра",
+    "жарка",
+    "запекание",
+    "средиземноморская_кухня",
+    "кавказская_кухня"
+  ]
+}

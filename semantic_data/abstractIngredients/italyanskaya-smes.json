@@ -1,0 +1,81 @@
+{
+  "name": "Итальянская смесь",
+  "name_normalized": "italyanskaya-smes",
+  "synonyms": "итальянская смесь, овощная смесь итальянская, замороженная итальянская смесь, итальянский микс, смесь для пасты, овощи по-итальянски",
+  "short_description": "Замороженная овощная смесь с итальянским колоритом. Основой может быть брокколи, сладкий перец, мини-кукуруза и томаты черри. В некоторых вариантах в состав входят макароны, красная фасоль и лук. Идеальна для пасты, ризотто, супов и гарниров.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Итальянская смесь — это замороженная овощная смесь, вдохновленная средиземноморской кухней. Ее главные отличия — использование брокколи, сладкого перца, мини-кукурузы и томатов черри. Однако, в отличие от других смесей, у нее нет единого стандарта: например, «Мираторг» и «Global Village» делают акцент на этих овощах , а «4 Сезона» добавляют в состав приготовленные макароны, красную фасоль и лук , что делает смесь более сытной. Благодаря своему составу, она идеально подходит для быстрого приготовления пасты, ризотто, супов и овощных рагу.</p><h2 class=\"ingredient-title\">Состав</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Брокколи</strong> — основа, богатая витаминами</li><li class=\"ingredient-list-item\"><strong>Сладкий перец</strong> — для цвета и сладковатого вкуса</li><li class=\"ingredient-list-item\"><strong>Мини-кукуруза</strong> — хрустящий элемент</li><li class=\"ingredient-list-item\"><strong>Томаты черри</strong> — для кислинки и сочности</li><li class=\"ingredient-list-item\"><strong>Приготовленные макароны</strong> — у некоторых производителей </li><li class=\"ingredient-list-item\"><strong>Красная фасоль</strong> — у некоторых производителей </li><li class=\"ingredient-list-item\"><strong>Лук репчатый</strong> — у некоторых производителей </li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочная, с хрустящими элементами</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковато-пряный, с томатной кислинкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — яркий, разноцветный (зеленый, красный, желтый)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 12 месяцев в морозильной камере</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Паста</strong> — классическое сочетание</li><li class=\"ingredient-list-item\"><strong>Ризотто</strong> — овощное или с курицей</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — овощные, томатные</li><li class=\"ingredient-list-item\"><strong>Гарнир</strong> — к мясу, птице, рыбе</li><li class=\"ingredient-list-item\"><strong>Омлеты и фриттаты</strong> — для разнообразия</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Паста</strong> — спагетти, пенне, феттучини</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, индейка</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сливочный, песто</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — орегано, базилик, чеснок, тимьян</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мексиканская смесь</strong> — с фасолью и кукурузой, без брокколи</li><li class=\"ingredient-list-item\"><strong>Гавайская смесь</strong> — с рисом и кукурузой</li><li class=\"ingredient-list-item\"><strong>Брокколи</strong> — замороженная моно-версия</li><li class=\"ingredient-list-item\"><strong>Овощное рагу</strong> — самостоятельное приготовление</li></ul>",
+  "category": "Овощи быстрозамороженные",
+  "semantic_data": {
+    "properties": [
+      "замороженный",
+      "овощной",
+      "итальянский",
+      "пряный",
+      "цветной",
+      "витаминный",
+      "средиземноморский"
+    ],
+    "preparations": [
+      "жарка_на_сковороде",
+      "варка_в_подсоленной_воде",
+      "тушение",
+      "приготовление_в_микроволновке"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_в_микроволновке",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "паста",
+      "ризотто",
+      "супы",
+      "гарниры"
+    ],
+    "pairings": {
+      "protein": ["курица", "индейка"],
+      "pasta": ["спагетти", "пенне", "феттучини"],
+      "sauces": ["томатный", "сливочный", "песто"],
+      "spices": ["орегано", "базилик", "чеснок", "тимьян"]
+    },
+    "substitutes": [
+      {
+        "name": "Мексиканская смесь",
+        "similarity": "medium"
+      },
+      {
+        "name": "Гавайская смесь",
+        "similarity": "medium"
+      },
+      {
+        "name": "Брокколи (замороженная)",
+        "similarity": "low"
+      },
+      {
+        "name": "Овощное рагу",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "заморозка",
+    "овощи",
+    "итальянская_смесь",
+    "паста",
+    "гарнир",
+    "средиземноморская_кухня"
+  ]
+}

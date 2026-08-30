@@ -1,0 +1,66 @@
+{
+  "name": "Зефир яблочный",
+  "name_normalized": "zefir-yablochnyy",
+  "synonyms": "яблочный зефир, зефир из яблок, зефир с яблочным вкусом, яблочный зефир классический, белый зефир, зефир яблочный без сахара (реже)",
+  "short_description": "Классический зефир на основе яблочного пюре — воздушный, нежный десерт белого или слегка кремового цвета с лёгкой кислинкой и характерным яблочным ароматом. Идеален к чаю, кофе и в качестве самостоятельного угощения.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Яблочный зефир — это классический кондитерский продукт, основой которого является яблочное пюре, сахар и яичный белок, взбитые до воздушной, нежной текстуры. В отличие от ванильного зефира, яблочный имеет более выраженный фруктовый вкус с лёгкой кислинкой и характерный яблочный аромат. Благодаря использованию яблочного пюре, он считается более натуральным и обладает мягким, сбалансированным вкусом. Идеально подходит для употребления в чистом виде, в качестве десерта к чаю или кофе, а также используется для украшения других десертов.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — воздушная, нежная, тающая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, с лёгкой кислинкой и яблочным ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый, кремовый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — яблочное пюре, сахар, яичный белок</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 месяцев в сухом прохладном месте</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Самостоятельный десерт</strong> — к чаю, кофе</li><li class=\"ingredient-list-item\"><strong>Украшение</strong> — для тортов, пирожных</li><li class=\"ingredient-list-item\"><strong>Подарок</strong> — в качестве сладкого презента</li><li class=\"ingredient-list-item\"><strong>Пирожные</strong> — в составе десертов</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Напитки</strong> — чёрный чай, зелёный чай, кофе</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — яблоки, груши, ягоды</li><li class=\"ingredient-list-item\"><strong>Шоколад</strong> — тёмный, молочный</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Ванильный зефир</strong> — без кислинки</li><li class=\"ingredient-list-item\"><strong>Яблочная пастила</strong> — фруктовая, менее сладкая</li><li class=\"ingredient-list-item\"><strong>Зефир в шоколаде</strong> — с глазурью</li></ul>",
+  "category": "Мармелад, пастила, зефир",
+  "semantic_data": {
+    "properties": [
+      "десерт",
+      "зефир",
+      "яблочный",
+      "воздушный",
+      "нежный",
+      "тающий",
+      "фруктовый"
+    ],
+    "preparations": [
+      "хранение_в_сухом_прохладном_месте"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "украшение_десертов",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "чай",
+      "кофе",
+      "десерт",
+      "подарок"
+    ],
+    "pairings": {
+      "protein": [],
+      "fruits": ["яблоки", "груши", "ягоды"],
+      "chocolate": ["тёмный_шоколад", "молочный_шоколад"],
+      "drinks": ["черный_чай", "зеленый_чай", "кофе"]
+    },
+    "substitutes": [
+      {
+        "name": "Ванильный зефир",
+        "similarity": "high"
+      },
+      {
+        "name": "Яблочная пастила",
+        "similarity": "medium"
+      },
+      {
+        "name": "Зефир в шоколаде",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "десерт",
+    "зефир",
+    "яблочный_зефир",
+    "кондитерка",
+    "сладости",
+    "чай"
+  ]
+}

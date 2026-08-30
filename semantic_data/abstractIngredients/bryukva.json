@@ -1,0 +1,55 @@
+{
+  "name": "Брюква",
+  "name_normalized": "bryukva",
+  "synonyms": "брюква, шведская репа, шведская турнепс, калига (в некоторых регионах), кормовая репа, rutabaga (англ.)",
+  "short_description": "Корнеплод семейства Капустные, гибрид репы и капусты, с плотной жёлто-оранжевой или белой мякотью и слегка сладковатым вкусом. Богат витамином C, клетчаткой и минералами. Используется в супах, пюре, запеканках и как гарнир.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Брюква — это корнеплод семейства Капустные, гибрид репы и капусты, который выращивается в Северной Европе, Скандинавии и России. Плод имеет округлую или слегка вытянутую форму, жёлто-зелёную или фиолетовую кожицу и мякоть жёлто-оранжевого или белого цвета. Вкус брюквы сладковатый, с лёгкой горчинкой, напоминает репу или турнепс. Брюква богата витамином C, клетчаткой, калием и кальцием. Используется в супах, пюре, запеканках, салатах и как гарнир к мясным блюдам.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, хрустящая (в сыром виде), мягкая (после варки)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, с лёгкой горчинкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — жёлто-зелёная кожица, жёлто-оранжевая мякоть</li><li class=\"ingredient-list-item\"><strong>Витамины</strong> — C, группы B, калий, кальций, фосфор</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — осень-зима</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойка</strong> — тщательно вымыть, удалить землю</li><li class=\"ingredient-list-item\"><strong>Очистка</strong> — срезать кожицу</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — кубиками, соломкой, дольками</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — 15-20 минут до мягкости</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Супы</strong> — овощные, с мясом</li><li class=\"ingredient-list-item\"><strong>Пюре</strong> — с маслом, сливками</li><li class=\"ingredient-list-item\"><strong>Запеканки</strong> — с картофелем, сыром</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — в сыром виде с зеленью и маслом</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — к мясу</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — свинина, говядина, птица</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук</li><li class=\"ingredient-list-item\"><strong>Сливки, масло</strong> — для пюре</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, мускатный орех, тимьян</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Репа</strong> — похожий вкус</li><li class=\"ingredient-list-item\"><strong>Турнепс</strong> — близкий родственник</li><li class=\"ingredient-list-item\"><strong>Картофель</strong> — в супах и пюре</li><li class=\"ingredient-list-item\"><strong>Сельдерей корневой</strong> — в супах</li></ul>",
+  "category": "ОВОЩИ",
+  "semantic_data": {
+    "properties": [
+      "овощ",
+      "корнеплод",
+      "плотный",
+      "витаминный",
+      "сладковатый"
+    ],
+    "preparations": [
+      "мытьё_и_чистка",
+      "нарезка",
+      "варка_15-20_минут"
+    ],
+    "cooking_methods": [
+      {"method": "варка", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "тушение", "priority": "high"},
+      {"method": "свежее_употребление_в_салатах", "priority": "medium"}
+    ],
+    "applications": [
+      "супы",
+      "пюре",
+      "запеканки",
+      "салаты",
+      "гарниры"
+    ],
+    "pairings": {
+      "protein": ["свинина", "говядина", "птица"],
+      "vegetables": ["картофель", "морковь", "лук"],
+      "dairy": ["сливки", "масло"],
+      "spices": ["черный_перец", "мускатный_орех", "тимьян"]
+    },
+    "substitutes": [
+      {"name": "Репа", "similarity": "high"},
+      {"name": "Турнепс", "similarity": "high"},
+      {"name": "Картофель", "similarity": "medium"},
+      {"name": "Сельдерей корневой", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "овощ",
+    "брюква",
+    "корнеплод",
+    "суп",
+    "пюре",
+    "гарнир"
+  ]
+}

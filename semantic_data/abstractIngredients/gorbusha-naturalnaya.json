@@ -1,0 +1,57 @@
+{
+  "name": "Горбуша натуральная",
+  "name_normalized": "gorbusha-naturalnaya",
+  "synonyms": "горбуша в собственном соку, натуральная горбуша, консервы горбуша натуральная, горбуша натуральная консервированная, pink salmon in its own juice, горбуша без добавок",
+  "short_description": "Консервированная горбуша в собственном соку (в воде или с добавлением соли) без томата и масла. Сохраняет натуральный вкус рыбы, мягкую текстуру и все питательные свойства. Идеальна для салатов, супов, пирогов и быстрых закусок.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Горбуша натуральная — это консервированный продукт, состоящий из кусочков рыбы горбуши, залитых собственным соком (бульоном), образовавшимся в процессе стерилизации. В отличие от горбуши в томатном соусе или масле, натуральная горбуша не содержит дополнительных ингредиентов (кроме соли), что позволяет сохранить её естественный вкус и аромат. Это делает её универсальным продуктом для самых разных блюд — от салатов до горячих закусок.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мягкая, сочная, легко разбирается на волокна</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — натуральный, деликатный, с лёгким солоноватым оттенком</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — светло-розовый, оранжевый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — горбуша, соль, вода (в некоторых видах)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в закрытой банке</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с яйцом, рисом, огурцами, зеленью</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — для рыбных супов, ухи</li><li class=\"ingredient-list-item\"><strong>Пироги</strong> — начинка для рыбных пирогов</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — с хлебом, маслом, зеленью</li><li class=\"ingredient-list-item\"><strong>Паштеты</strong> — измельчённая рыба с маслом и специями</li><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — классическая намазка</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, белый, бородинский</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, зелёный лук, помидоры, огурцы</li><li class=\"ingredient-list-item\"><strong>Яйца</strong> — варёные</li><li class=\"ingredient-list-item\"><strong>Рис, картофель</strong> — в салатах</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, кинза</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, лавровый лист</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Кета натуральная</strong> — схожий вкус</li><li class=\"ingredient-list-item\"><strong>Сайра натуральная</strong> — жирнее</li><li class=\"ingredient-list-item\"><strong>Тунец натуральный</strong> — плотнее</li><li class=\"ingredient-list-item\"><strong>Сардина натуральная</strong> — другая текстура</li></ul>",
+  "category": "Рыбные консервы",
+  "semantic_data": {
+    "properties": [
+      "консервы",
+      "рыбный",
+      "натуральный",
+      "в_собственном_соку",
+      "готовый_продукт",
+      "мягкий"
+    ],
+    "preparations": [
+      "открыть_банку",
+      "использовать_как_есть",
+      "измельчить_для_паштета"
+    ],
+    "cooking_methods": [
+      {"method": "использование_как_есть", "priority": "high"},
+      {"method": "добавление_в_салаты", "priority": "high"},
+      {"method": "измельчение_в_паштет", "priority": "medium"},
+      {"method": "добавление_в_супы", "priority": "medium"}
+    ],
+    "applications": [
+      "салаты",
+      "супы",
+      "паштеты",
+      "начинки",
+      "бутерброды"
+    ],
+    "pairings": {
+      "protein": ["яйца", "масло"],
+      "vegetables": ["лук", "зеленый_лук", "помидоры", "огурцы"],
+      "herbs": ["укроп", "петрушка", "кинза"],
+      "grains": ["рис", "картофель"],
+      "breads": ["ржаной_хлеб", "белый_хлеб", "бородинский_хлеб"]
+    },
+    "substitutes": [
+      {"name": "Кета натуральная", "similarity": "high"},
+      {"name": "Сайра натуральная", "similarity": "medium"},
+      {"name": "Тунец натуральный", "similarity": "medium"},
+      {"name": "Сардина натуральная", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "консервы",
+    "рыбные_консервы",
+    "горбуша",
+    "натуральная",
+    "в_собственном_соку",
+    "салаты"
+  ]
+}

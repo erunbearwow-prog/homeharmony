@@ -1,0 +1,50 @@
+{
+  "name": "Вареная колбаса",
+  "name_normalized": "varemaya-kolbasa",
+  "synonyms": "вареная колбаса, колбаса вареная, вареная колбаса из свинины, вареная колбаса из говядины",
+  "short_description": "Мясной продукт из вареного фарша (свинина, говядина, курица) с добавлением специй, имеющий нежную эластичную текстуру и нейтральный вкус. Популярный продукт для бутербродов, салатов и закусок.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Вареная колбаса — это мясной продукт, изготавливаемый из вареного фарша (свинина, говядина, курица или их смесь) с добавлением соли, специй (перец, чеснок, мускатный орех) и воды. После варки колбаса приобретает нежную, эластичную текстуру и характерный вкус. Различается по сортам: высший, первый, второй — в зависимости от содержания мяса. Популярный и доступный продукт для ежедневного употребления в бутербродах, салатах и закусках.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, эластичная, мягкая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, слегка солоноватый, с оттенком специй</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — розовый или светло-розовый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — мясо (свинина, говядина, курица), вода, соль, специи</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 5-7 дней в холодильнике (в вакууме до 20 дней)</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом, сыром, овощами</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — оливье, столичный, мясной</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — нарезка к столу</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — в омлете, яичнице</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — твердые, плавленые</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, огурцы, лук, перец</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — горчица, майонез, кетчуп</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, белый, тостовый</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Копченая колбаса</strong> — более насыщенный вкус</li><li class=\"ingredient-list-item\"><strong>Ветчина</strong> — постнее</li><li class=\"ingredient-list-item\"><strong>Куриная грудка</strong> — диетический вариант</li><li class=\"ingredient-list-item\"><strong>Тофу</strong> — вегетарианский вариант</li></ul>",
+  "category": "Колбасы вареные",
+  "semantic_data": {
+    "properties": [
+      "колбаса",
+      "вареная",
+      "нежная",
+      "эластичная",
+      "нейтральный_вкус",
+      "универсальный"
+    ],
+    "preparations": [
+      "нарезка_ломтиками",
+      "хранение_в_холодильнике"
+    ],
+    "cooking_methods": [
+      {"method": "свежее_употребление", "priority": "high"},
+      {"method": "добавление_в_салаты", "priority": "high"}
+    ],
+    "applications": [
+      "бутерброды",
+      "салаты",
+      "закуски"
+    ],
+    "pairings": {
+      "protein": ["сыр_твердый", "сыр_плавленый"],
+      "vegetables": ["помидоры", "огурцы", "лук", "перец"],
+      "sauces": ["горчица", "майонез", "кетчуп"],
+      "breads": ["ржаной_хлеб", "белый_хлеб", "тостовый_хлеб"]
+    },
+    "substitutes": [
+      {"name": "Копченая колбаса", "similarity": "medium"},
+      {"name": "Ветчина", "similarity": "medium"},
+      {"name": "Куриная грудка", "similarity": "low"},
+      {"name": "Тофу", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "колбаса",
+    "вареная",
+    "бутерброды",
+    "салаты",
+    "закуски"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "name": "Икра мойвы",
+  "name_normalized": "ikra_moyvy",
+  "synonyms": "икра мойвы, мойвенная икра, икра из мойвы, икра рыбная маложирная, маложирная икра, закуска из мойвы, икра для бутербродов, икра для салатов, копченая икра мойвы, masago",
+  "short_description": "Маложирный вид рыбной икры, получаемый от мойвы — мелкой северной рыбы. Отличается мелкими, но плотными икринками с хрустящей текстурой, ярко-желтым или оранжевым цветом и мягким сливочно-рыбным вкусом. Широко используется в японской кухне (суши, роллы) и как бюджетная альтернатива лососевой икре.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Икра мойвы — это маложирный вид рыбной икры, которую получают от мойвы (Mallotus villosus) — мелкой северной рыбы семейства корюшковых. Икринки мойвы очень мелкие (0,8–1,2 мм), но плотные и упругие, с характерной хрустящей текстурой. Цвет варьируется от светло-желтого до оранжевого, в зависимости от обработки (часто подкрашивается). Вкус мягкий, сливочно-рыбный, с легкой солоноватостью. В японской кухне икра мойвы известна как \"масаго\" (masago) и широко используется в суши, роллах и как гарнир. Это более бюджетная альтернатива лососевой икре.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Размер икринок</strong> — очень мелкие, 0,8–1,2 мм (одни из самых мелких среди промысловых видов икры)</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от светло-желтого до ярко-оранжевого (естественный — желтоватый, часто подкрашивается)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — мягкий, сливочно-рыбный, с легкой солоноватостью</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, хрустящая, икринки хорошо держат форму</li><li class=\"ingredient-list-item\"><strong>Калорийность</strong> — 120–140 ккал на 100 г (маложирная)</li><li class=\"ingredient-list-item\"><strong>Белки</strong> — 16–18 г на 100 г</li><li class=\"ingredient-list-item\"><strong>Жиры</strong> — 6–8 г на 100 г</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 24 месяцев (в закрытой упаковке), 3–5 дней (в открытой)</li></ul><h2 class=\"ingredient-title\">Формы выпуска</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мороженая</strong> — используется в японской кухне для суши и роллов</li><li class=\"ingredient-list-item\"><strong>Соленая (пастеризованная)</strong> — готовая закуска в банках</li><li class=\"ingredient-list-item\"><strong>Копченая</strong> — с дымным ароматом, в пастообразной форме</li><li class=\"ingredient-list-item\"><strong>Сухая (для посыпки)</strong> — в японской кухне</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мороженая икра</strong> — разморозить в холодильнике</li><li class=\"ingredient-list-item\"><strong>Соленая</strong> — готова к употреблению</li><li class=\"ingredient-list-item\"><strong>Копченая</strong> — подается как паштет или намазка</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Суши и роллы</strong> — добавка в роллы, обваливание суши (масаго)</li><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом на хлебе</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с яйцами, рисом, морепродуктами</li><li class=\"ingredient-list-item\"><strong>Гарнир</strong> — к рису, лапше</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — в тарталетках, на гренках</li><li class=\"ingredient-list-item\"><strong>Копченая паста</strong> — как намазка на хлеб</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Рис</strong> — база для суши и роллов</li><li class=\"ingredient-list-item\"><strong>Морепродукты</strong> — креветки, крабы, кальмары</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — белый, тостовый</li><li class=\"ingredient-list-item\"><strong>Масло сливочное</strong> — для бутербродов</li><li class=\"ingredient-list-item\"><strong>Яйца</strong> — вареные</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, зеленый лук</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Икра летучей рыбы (тобико)</strong> — хрустящая, но более крупная</li><li class=\"ingredient-list-item\"><strong>Икра минтая</strong> — более крупная, менее хрустящая</li><li class=\"ingredient-list-item\"><strong>Икра трески</strong> — более светлая, мягкая</li><li class=\"ingredient-list-item\"><strong>Икра лососевая</strong> — более крупная и жирная</li></ul>",
+  "category": "Рыба и морепродукты",
+  "semantic_data": {
+    "properties": [
+      "икра",
+      "мойва",
+      "масаго",
+      "мелкая",
+      "хрустящая",
+      "маложирная",
+      "японская кухня",
+      "суши",
+      "роллы",
+      "доступная",
+      "универсальная"
+    ],
+    "preparations": [
+      "хранение в холодильнике",
+      "разморозка в холодильнике (для мороженой)",
+      "подача охлажденной",
+      "использование без дополнительной обработки"
+    ],
+    "cooking_methods": [
+      {"method": "использование в суши и роллах", "priority": "high"},
+      {"method": "подача в бутербродах", "priority": "high"},
+      {"method": "использование в салатах", "priority": "high"},
+      {"method": "использование как гарнир", "priority": "medium"},
+      {"method": "использование как намазка (копченая)", "priority": "medium"}
+    ],
+    "applications": [
+      "суши и роллы",
+      "закуски",
+      "салаты",
+      "бутерброды",
+      "гарниры"
+    ],
+    "pairings": {
+      "protein": ["сливочное масло", "креветки", "крабы", "кальмары", "яйца"],
+      "vegetables": [],
+      "grains": ["рис"],
+      "sauces": [],
+      "herbs": ["укроп", "петрушка", "зеленый лук"],
+      "spices": []
+    },
+    "substitutes": [
+      {"name": "Икра летучей рыбы (тобико)", "similarity": "high"},
+      {"name": "Икра минтая", "similarity": "medium"},
+      {"name": "Икра трески", "similarity": "medium"},
+      {"name": "Икра лососевая", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "икра",
+    "мойва",
+    "масаго",
+    "японская кухня",
+    "суши",
+    "роллы",
+    "закуска",
+    "доступная икра",
+    "хрустящая икра"
+  ]
+}

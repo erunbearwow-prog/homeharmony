@@ -1,0 +1,52 @@
+{
+  "name": "Клубничное варенье",
+  "name_normalized": "klubnichnoe-varene",
+  "synonyms": "варенье из клубники, клубничный джем, клубничный конфитюр, strawberry jam, земляничное варенье (в широком смысле), варенье из садовой земляники",
+  "short_description": "Яркое летнее варенье из клубники с целыми или слегка разваренными ягодами в густом сиропе. Имеет насыщенный сладкий вкус с лёгкой кислинкой, ярко-красный цвет и аромат свежей клубники. Популярное лакомство для завтрака, выпечки и десертов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Клубничное варенье — это одно из самых популярных и любимых летних лакомств. Приготовленное из свежей клубники и сахара, оно сохраняет яркий вкус и аромат свежих ягод. В зависимости от рецепта, варенье может быть с цельными ягодами (пятиминутка) или с разваренными (джем). Цвет варенья варьируется от ярко-красного до тёмно-рубинового. Клубничное варенье идеально подходит для завтрака, выпечки, десертов и как самостоятельное лакомство.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — густая, с цельными или слегка разваренными ягодами</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, с лёгкой кислинкой и ярким ягодным ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — ярко-красный, рубиновый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — клубника, сахар, лимонная кислота</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в стеклянных банках</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Завтрак</strong> — на тосты, блины, оладьи</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — начинка для пирогов, булочек, печенья</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — с мороженым, йогуртом, творогом</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к мясу и сырам</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Блины, оладьи</strong> — классическая подача</li><li class=\"ingredient-list-item\"><strong>Мороженое</strong> — ванильное, сливочное</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — бри, камамбер, пармезан</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — утка, свинина</li><li class=\"ingredient-list-item\"><strong>Чай</strong> — чёрный, зелёный</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Земляничное варенье</strong> — более ароматное</li><li class=\"ingredient-list-item\"><strong>Малиновое варенье</strong> — с другой кислинкой</li><li class=\"ingredient-list-item\"><strong>Черничное варенье</strong> — слаще</li></ul>",
+  "category": "Варенье, джемы, повидло, конфитюр",
+  "semantic_data": {
+    "properties": [
+      "варенье",
+      "клубничный",
+      "сладкий",
+      "летний",
+      "ароматный",
+      "ярко-красный"
+    ],
+    "preparations": [
+      "варка_с_сахаром",
+      "хранение_в_стерилизованных_банках"
+    ],
+    "cooking_methods": [
+      {"method": "варка", "priority": "high"},
+      {"method": "консервирование", "priority": "high"}
+    ],
+    "applications": [
+      "завтрак",
+      "выпечка",
+      "десерты",
+      "соусы"
+    ],
+    "pairings": {
+      "protein": ["бри", "камамбер", "пармезан"],
+      "vegetables": [],
+      "desserts": ["блины", "оладьи", "мороженое", "йогурт", "творог"],
+      "drinks": ["чай_черный", "чай_зеленый"],
+      "meat": ["утка", "свинина"]
+    },
+    "substitutes": [
+      {"name": "Земляничное варенье", "similarity": "high"},
+      {"name": "Малиновое варенье", "similarity": "medium"},
+      {"name": "Черничное варенье", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "варенье",
+    "клубничное_варенье",
+    "клубника",
+    "летнее_лакомство",
+    "завтрак",
+    "десерт"
+  ]
+}

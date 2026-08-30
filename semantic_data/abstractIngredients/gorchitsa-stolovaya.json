@@ -1,0 +1,69 @@
+{
+  "name": "Горчица столовая",
+  "name_normalized": "gorchitsa-stolovaya",
+  "synonyms": "горчица, столовая горчица, горчица русская, горчица острая, горчица в баночке, горчица для мяса, mustard",
+  "short_description": "Популярная острая приправа из семян горчицы с добавлением воды, уксуса, соли и сахара. Имеет жгучий вкус и характерный аромат. Широко используется для бутербродов, мясных блюд, соусов и маринадов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Столовая горчица — это классическая острая приправа, приготовленная из перемолотых семян горчицы (обычно горчицы сарептской или белой) с добавлением воды, уксуса, соли, сахара и различных специй. В зависимости от рецепта, горчица может быть острой, средней остроты или сладкой. Самая популярная в России — острая горчица с характерным жгучим вкусом и ярким ароматом. Широко используется для бутербродов, в качестве приправы к мясным блюдам, колбасам, сарделькам, а также в составе маринадов и соусов.</p><h2 class=\"ingredient-title\">Виды горчицы</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Острая (русская)</strong> — классическая, жгучая</li><li class=\"ingredient-list-item\"><strong>Сладкая (баварская)</strong> — с добавлением сахара, мягче</li><li class=\"ingredient-list-item\"><strong>Дижонская</strong> — с белым вином, более мягкая, из чёрных семян</li><li class=\"ingredient-list-item\"><strong>Зернистая</strong> — с целыми семенами горчицы</li><li class=\"ingredient-list-item\"><strong>Английская</strong> — очень острая, сухая</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — однородная, пастообразная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — острый, жгучий (у острой) или сладковатый (у мягких видов)</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от жёлтого до горчичного</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — мука из семян горчицы, вода, уксус, соль, сахар, специи</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 1-2 лет в холодильнике</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом, мясом, колбасой</li><li class=\"ingredient-list-item\"><strong>Мясные блюда</strong> — к жареному мясу, колбасам, сарделькам</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — основа для соусов (горчичный соус)</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для мяса</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — в заправках</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — свинина, говядина, колбасы</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, белый</li><li class=\"ingredient-list-item\"><strong>Мёд</strong> — в маринадах</li><li class=\"ingredient-list-item\"><strong>Уксус, масло</strong> — в соусах</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Горчичный порошок</strong> — в сухом виде</li><li class=\"ingredient-list-item\"><strong>Хрен</strong> — для остроты</li><li class=\"ingredient-list-item\"><strong>Васаби</strong> — для пикантности</li></ul>",
+  "category": "Соусы европейские",
+  "semantic_data": {
+    "properties": [
+      "приправа",
+      "острая",
+      "жгучая",
+      "пастообразная",
+      "универсальная"
+    ],
+    "preparations": [
+      "хранение_в_холодильнике",
+      "размешивание_перед_использованием"
+    ],
+    "cooking_methods": [
+      {
+        "method": "добавление_в_бутерброды",
+        "priority": "high"
+      },
+      {
+        "method": "использование_в_соусах",
+        "priority": "high"
+      },
+      {
+        "method": "маринование_мяса",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "бутерброды",
+      "мясные_блюда",
+      "соусы",
+      "маринады"
+    ],
+    "pairings": {
+      "protein": ["свинина", "говядина", "колбасы"],
+      "breads": ["ржаной_хлеб", "белый_хлеб"],
+      "sweeteners": ["мёд"],
+      "acids": ["уксус"]
+    },
+    "substitutes": [
+      {
+        "name": "Горчичный порошок",
+        "similarity": "high"
+      },
+      {
+        "name": "Хрен",
+        "similarity": "medium"
+      },
+      {
+        "name": "Васаби",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "горчица",
+    "приправа",
+    "соус",
+    "острая_приправа",
+    "бутерброды",
+    "мясо"
+  ]
+}

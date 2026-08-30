@@ -1,0 +1,87 @@
+{
+  "name": "Сыр Топленое Молоко",
+  "name_normalized": "syr_toplennoe_moloko",
+  "synonyms": "топленое молоко, сыр Топленое молоко, Топленое молочко, полутвердый сыр, российский сыр, сыр с карамельным вкусом, сыр для бутербродов, сыр для закусок, Радость Вкуса, Эдельвейс, Золотой Ларец, Село Зеленое, Кiпрiно",
+  "short_description": "Российский полутвердый сыр с нежной эластичной текстурой и характерным ажурным рисунком из мелких глазков. Отличается теплым, сливочно-карамельным вкусом топленого молока. Выпускается под разными торговыми марками с жирностью 40-50%.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Сыр «Топленое молоко» — это российский полутвердый сыр, который готовят с добавлением натурального топленого молока. Благодаря этому он приобретает характерный теплый, сливочный вкус с легкими карамельными нотками и аппетитный кремовый оттенок. Сыр имеет нежную, эластичную текстуру и красивое «кружево» из множества мелких глазков на срезе. Выпускается разными производителями (Киприно, Радость Вкуса, Золотой Ларец, Село Зеленое, Эдельвейс) с жирностью от 40% до 50%.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тип</strong> — полутвердый сыр</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, эластичная, с ажурным рисунком из мелких глазков</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — теплый, сливочный, с карамельными нотками топленого молока</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — кремовый, карамельный</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — 40-50% (в зависимости от производителя)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — от 120 до 270 суток при температуре 0-6°C</li></ul><h2 class=\"ingredient-title\">Состав (типичный)</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\">Молоко пастеризованное (нормализованное)</li><li class=\"ingredient-list-item\">Молоко топленое</li><li class=\"ingredient-list-item\">Бактериальная закваска (мезофильных и термофильных молочнокислых микроорганизмов)</li><li class=\"ingredient-list-item\">Молокосвертывающий ферментный препарат</li><li class=\"ingredient-list-item\">Соль пищевая</li><li class=\"ingredient-list-item\">Консервант — нитрат калия или нитрат натрия (Е251)</li><li class=\"ingredient-list-item\">Краситель — аннато (Е160b)</li><li class=\"ingredient-list-item\">Ароматизатор</li></ul><h2 class=\"ingredient-title\">Подготовка и хранение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике при температуре от 0 до +6°C</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — от 120 до 270 суток (зависит от производителя и упаковки)</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — ломтиками, кубиками, в нарезке</li><li class=\"ingredient-list-item\"><strong>Тёрка</strong> — хорошо натирается</li><li class=\"ingredient-list-item\"><strong>Подача</strong> — рекомендуется достать за 15-20 минут до подачи</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды и сэндвичи</strong> — нарезка, тосты</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — пицца, запеканки, паста</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — добавляет сливочный оттенок</li><li class=\"ingredient-list-item\"><strong>Сырная тарелка</strong> — сочетается с фруктами, ягодами, орехами и медом</li><li class=\"ingredient-list-item\"><strong>Сбалансированное питание</strong> — на каждый день</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Фрукты и ягоды</strong> — виноград, яблоки, груши, ягоды</li><li class=\"ingredient-list-item\"><strong>Орехи и мед</strong> — отлично дополняют карамельный вкус</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — белый, зерновой, багет</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, огурцы</li></ul>",
+  "category": "Молочные продукты",
+  "semantic_data": {
+    "properties": [
+      "полутвердый",
+      "топленое молоко",
+      "карамельный вкус",
+      "сливочный",
+      "эластичный",
+      "с глазками",
+      "ажурный рисунок",
+      "кремовый цвет",
+      "российский",
+      "универсальный",
+      "для бутербродов",
+      "для закусок"
+    ],
+    "preparations": [
+      "хранение в холодильнике при 0-6°C",
+      "нарезка ломтиками или кубиками",
+      "натирание на тёрке",
+      "достать за 15-20 минут до подачи"
+    ],
+    "cooking_methods": [
+      {
+        "method": "использование в бутербродах (в нарезке)",
+        "priority": "high"
+      },
+      {
+        "method": "подача в сырной тарелке (с фруктами, медом)",
+        "priority": "high"
+      },
+      {
+        "method": "плавление в горячих блюдах",
+        "priority": "medium"
+      },
+      {
+        "method": "добавление в салаты",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "бутерброды и сэндвичи",
+      "сырная тарелка",
+      "пицца и запеканки",
+      "салаты",
+      "горячие блюда"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["помидоры", "огурцы"],
+      "sauces": ["мед"],
+      "herbs": [],
+      "spices": []
+    },
+    "substitutes": [
+      {
+        "name": "Сыр гауда (молодая)",
+        "similarity": "high"
+      },
+      {
+        "name": "Сыр российский",
+        "similarity": "medium"
+      },
+      {
+        "name": "Сыр сметанковый",
+        "similarity": "high"
+      }
+    ]
+  },
+  "tags": [
+    "сыр",
+    "топленое молоко",
+    "полутвердый сыр",
+    "российский сыр",
+    "карамельный вкус",
+    "сыр для бутербродов",
+    "сырная тарелка",
+    "радость вкуса",
+    "молочные продукты"
+  ]
+}

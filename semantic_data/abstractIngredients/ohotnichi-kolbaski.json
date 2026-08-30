@@ -1,0 +1,70 @@
+{
+  "name": "Охотничьи колбаски",
+  "name_normalized": "ohotnichi-kolbaski",
+  "synonyms": "охотничьи колбаски, колбаски охотничьи, охотничьи сосиски, колбаски для гриля, копченые колбаски, охотничьи копченые колбаски",
+  "short_description": "Популярные копченые колбаски из свинины, говядины или их смеси с добавлением специй и чеснока. Имеют плотную упругую текстуру, насыщенный копченый аромат и пряный вкус. Идеальны для гриля, жарки, пикников и быстрых закусок.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Охотничьи колбаски — это популярные копченые колбаски, изготавливаемые из свинины, говядины или их смеси с добавлением шпика, чеснока, перца и других специй. В отличие от вареных колбас, охотничьи колбаски имеют плотную упругую текстуру, характерный копченый аромат и пряный, слегка островатый вкус. Идеально подходят для приготовления на гриле, мангале, сковороде, а также как закуска к пиву и на пикниках. Популярны в немецкой и восточноевропейской кухне.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, сочная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — пряный, с чесночным и копченым ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — розовый, темно-розовый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — свинина, говядина, шпик, чеснок, специи</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 15-20 дней в холодильнике</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гриль и мангал</strong> — классический способ приготовления</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде с маслом</li><li class=\"ingredient-list-item\"><strong>Закуска</strong> — с горчицей, хреном, соусами</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью и овощами</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — в тушеном виде</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Горчица</strong> — классическое дополнение</li><li class=\"ingredient-list-item\"><strong>Хрен</strong> — для остроты</li><li class=\"ingredient-list-item\"><strong>Кетчуп</strong> — для пикантности</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, огурцы, перец</li><li class=\"ingredient-list-item\"><strong>Пиво</strong> — идеальная закуска</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Купаты</strong> — похожие колбаски</li><li class=\"ingredient-list-item\"><strong>Колбаски для гриля</strong> — аналогичные</li><li class=\"ingredient-list-item\"><strong>Сосиски</strong> — более мягкие</li></ul>",
+  "category": "Сосиски, сардельки, колбаски",
+  "semantic_data": {
+    "properties": [
+      "колбаски",
+      "копченые",
+      "пряные",
+      "плотные",
+      "гриль",
+      "закуска"
+    ],
+    "preparations": [
+      "приготовление_на_гриле",
+      "жарка_на_сковороде"
+    ],
+    "cooking_methods": [
+      {
+        "method": "гриль",
+        "priority": "high"
+      },
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "закуска",
+      "гриль",
+      "пикник",
+      "салаты"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["помидоры", "огурцы", "перец"],
+      "sauces": ["горчица", "хрен", "кетчуп"],
+      "drinks": ["пиво"],
+      "breads": ["хлеб"]
+    },
+    "substitutes": [
+      {
+        "name": "Купаты",
+        "similarity": "high"
+      },
+      {
+        "name": "Колбаски для гриля",
+        "similarity": "high"
+      },
+      {
+        "name": "Сосиски",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "колбаски",
+    "охотничьи_колбаски",
+    "гриль",
+    "закуска",
+    "копчености"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "name": "Медальоны из свиной вырезки",
+  "name_normalized": "medalony-iz-svinoy-vyrezki",
+  "synonyms": "",
+  "short_description": "Мясной полуфабрикат из свиной вырезки, нарезанный поперёк волокон на порционные круглые куски толщиной 2-3 см. Нежное, сочное, постное мясо с тонким вкусом, идеально подходит для быстрой жарки и запекания.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Медальоны из свиной вырезки — это мясной полуфабрикат, представляющий собой порционные куски свиной вырезки, нарезанные поперёк волокон на круглые или овальные куски толщиной 2-3 см. Свиная вырезка — это одна из самых нежных и постных частей туши, расположенная вдоль позвоночника. Мясо имеет мелкую волокнистую структуру, практически не содержит жира и отличается тонким, деликатным вкусом. Медальоны идеально подходят для быстрой жарки на сковороде, гриле или запекания в духовке.</p><h2 class=\"ingredient-title\">Характеристики нарезки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Форма</strong> — круглая или овальная</li><li class=\"ingredient-list-item\"><strong>Толщина</strong> — 2-3 см</li><li class=\"ingredient-list-item\"><strong>Вес</strong> — 80-150 г (порция)</li><li class=\"ingredient-list-item\"><strong>Направление нарезки</strong> — поперёк волокон</li><li class=\"ingredient-list-item\"><strong>Отруб</strong> — свиная вырезка</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — постное мясо, без жира</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде с маслом, до готовности</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — на мангале или решётке</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с травами</li><li class=\"ingredient-list-item\"><strong>Стейки</strong> — основа для свиных стейков</li><li class=\"ingredient-list-item\"><strong>Праздничные блюда</strong> — для торжественной подачи</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочный, грибной, горчичный, ягодный</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофель (пюре, жареный), овощи-гриль, рис</li><li class=\"ingredient-list-item\"><strong>Травы</strong> — розмарин, тимьян, шалфей</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, чеснок, паприка</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Телячьи медальоны</strong> — более нежные</li><li class=\"ingredient-list-item\"><strong>Куриное филе (медальоны)</strong> — диетический вариант</li><li class=\"ingredient-list-item\"><strong>Свиной карбонад</strong> — более жирный</li><li class=\"ingredient-list-item\"><strong>Стейк из свинины</strong> — другой отруб</li></ul>",
+  "category": "Мясные полуфабрикаты",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "свинина",
+      "вырезка",
+      "круглый",
+      "постный",
+      "нежный",
+      "порционный",
+      "быстрое_приготовление"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "обсушить_бумажным_полотенцем",
+      "дать_прогреться_до_комнатной_температуры"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "гриль",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "стейки",
+      "жарка",
+      "гриль",
+      "праздничные_блюда"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "овощи_гриль"],
+      "grains": ["рис"],
+      "sauces": ["сливочный", "грибной", "горчичный", "ягодный"],
+      "herbs": ["розмарин", "тимьян", "шалфей"],
+      "spices": ["черный_перец", "чеснок", "паприка"]
+    },
+    "substitutes": [
+      {
+        "name": "Телячьи медальоны",
+        "similarity": "high"
+      },
+      {
+        "name": "Куриное филе (медальоны)",
+        "similarity": "medium"
+      },
+      {
+        "name": "Свиной карбонад",
+        "similarity": "medium"
+      },
+      {
+        "name": "Стейк из свинины",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "свинина",
+    "вырезка",
+    "медальоны",
+    "стейк",
+    "жарка",
+    "гриль"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "name": "Персиковый джем",
+  "name_normalized": "persikovyy-dzhem",
+  "synonyms": "джем из персиков, персиковый конфитюр, персиковое повидло, peach jam, персиковый мармелад, джем персиковый",
+  "short_description": "Нежный солнечный джем из персиков с мягкой текстурой и сладким фруктовым вкусом с лёгкой кислинкой. Имеет густую желеобразную консистенцию с кусочками или ломтиками персиков и янтарно-золотистый цвет. Популярное лакомство для завтрака, выпечки, десертов и соусов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Персиковый джем — это густое фруктовое лакомство, приготовленное из персиков с сахаром. Благодаря мягкой, сочной текстуре персиков, джем получается нежным, гладким и ароматным, часто с небольшими кусочками фруктов. Имеет яркий золотисто-янтарный цвет, сладкий вкус с лёгкой освежающей кислинкой и характерным персиковым ароматом. Персиковый джем хорошо желируется благодаря естественному содержанию пектина в персиках (в некоторых рецептах добавляют дополнительный пектин). Широко используется в кулинарии для завтраков, выпечки, десертов и как дополнение к мясу и сырам.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — густая, желеобразная, с кусочками персиков</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, фруктовый, с лёгкой кислинкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — золотистый, янтарный</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — персики, сахар, лимонная кислота</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в стеклянных банках</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Завтрак</strong> — на тосты, круассаны, блинчики, оладьи</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — начинка для тартов, пирогов, булочек, печенья</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — с йогуртом, творогом, мороженым, панна-коттой</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к мясу (свинине, курице, утке), сырам</li><li class=\"ingredient-list-item\"><strong>Прослойка</strong> — для тортов и пирожных</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — маскарпоне, рикотта, козий сыр, бри</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — свинина, курица, утка</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — миндаль, фундук, грецкие</li><li class=\"ingredient-list-item\"><strong>Пряности</strong> — ваниль, корица, кардамон</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — ванильное мороженое, заварной крем</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Абрикосовый джем</strong> — более терпкий</li><li class=\"ingredient-list-item\"><strong>Нектариновый джем</strong> — похожий вкус</li><li class=\"ingredient-list-item\"><strong>Манговый джем</strong> — экзотический</li><li class=\"ingredient-list-item\"><strong>Персиковое варенье</strong> — с цельными кусочками</li></ul>",
+  "category": "Варенье, джемы, повидло, конфитюр",
+  "semantic_data": {
+    "properties": [
+      "джем",
+      "персиковый",
+      "сладкий",
+      "фруктовый",
+      "янтарный",
+      "нежный"
+    ],
+    "preparations": [
+      "варка_с_сахаром",
+      "хранение_в_стерилизованных_банках"
+    ],
+    "cooking_methods": [
+      {"method": "варка", "priority": "high"},
+      {"method": "консервирование", "priority": "high"}
+    ],
+    "applications": [
+      "завтрак",
+      "выпечка",
+      "десерты",
+      "соусы_к_мясу",
+      "прослойка_для_тортов"
+    ],
+    "pairings": {
+      "protein": ["маскарпоне", "рикотта", "козий_сыр", "бри", "свинина", "курица", "утка"],
+      "nuts": ["миндаль", "фундук", "грецкие_орехи"],
+      "spices": ["ваниль", "корица", "кардамон"],
+      "desserts": ["ванильное_мороженое", "заварной_крем"],
+      "breads": ["тосты", "круассаны", "блинчики", "оладьи"]
+    },
+    "substitutes": [
+      {"name": "Абрикосовый джем", "similarity": "high"},
+      {"name": "Нектариновый джем", "similarity": "high"},
+      {"name": "Манговый джем", "similarity": "medium"},
+      {"name": "Персиковое варенье", "similarity": "high"}
+    ]
+  },
+  "tags": [
+    "джем",
+    "персиковый_джем",
+    "персик",
+    "завтрак",
+    "выпечка",
+    "десерт",
+    "зимние_заготовки"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "name": "Капуста краснокочанная",
+  "name_normalized": "kapusta_krasnokochannaya",
+  "synonyms": "краснокочанная капуста, красная капуста, фиолетовая капуста, краснокочанная капуста для салата, капуста краснокочанная квашеная, брюссельская капуста (ошибочно), Brassica oleracea var. capitata f. rubra",
+  "short_description": "Овощ с плотным кочаном красно-фиолетового цвета, отличающийся от белокочанной капусты более плотной текстурой, пикантным, слегка горьковатым вкусом и ярким цветом. Богата антоцианами, витамином C и клетчаткой. Используется для салатов, маринования, тушения и квашения.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Краснокочанная капуста — это разновидность капусты, которая отличается от белокочанной своей красно-фиолетовой окраской, более плотной структурой листьев и слегка горьковатым, пикантным вкусом. Её яркий цвет обусловлен высоким содержанием антоцианов — растительных пигментов, которые также являются мощными антиоксидантами. По питательной ценности и кулинарному применению краснокочанная капуста близка к белокочанной, но благодаря своему цвету и более плотной текстуре она особенно популярна для свежих салатов, маринования и как гарнир.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, хрустящая, листья более жесткие, чем у белокочанной</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — пикантный, слегка горьковатый, с ореховыми нотками</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — красно-фиолетовый, с сизым отливом</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — плотный округлый или овальный кочан, более плотный, чем у белокочанной</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — круглый год (хорошо хранится)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 4-6 месяцев в прохладном месте</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — при варке цвет может меняться (синеет), для сохранения цвета добавляют уксус</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойка</strong> — тщательно промыть под проточной водой</li><li class=\"ingredient-list-item\"><strong>Удаление верхних листьев</strong> — снять 1-2 верхних листа, если они повреждены</li><li class=\"ingredient-list-item\"><strong>Удаление кочерыжки</strong> — вырезать кочерыжку</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — шинковка для салатов, кубики для тушения</li><li class=\"ingredient-list-item\"><strong>Для салатов</strong> — нарезать тонко, можно добавить уксус или лимонный сок для сохранения цвета</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с маслом, уксусом, яблоками, орехами, клюквой, сметаной, майонезом</li><li class=\"ingredient-list-item\"><strong>Квашение</strong> — краснокочанная капуста для квашения (менее распространена, чем белокочанная)</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с яблоками, луком, мясом, как гарнир</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — маринованная краснокочанная капуста</li><li class=\"ingredient-list-item\"><strong>Гарнир</strong> — к мясу, птице, колбасам</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в запеканках, с сыром</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — свинина, говядина, птица, колбасы, бекон</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — яблоки, груши, апельсины, изюм, клюква</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, кедровые, миндаль</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — морковь, лук, картофель, свекла</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, майонезный, винегрет</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, кинза</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — тмин, кориандр, лавровый лист</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Белокочанная капуста</strong> — в салатах и тушении</li><li class=\"ingredient-list-item\"><strong>Капуста савойская</strong> — в салатах, более нежная</li><li class=\"ingredient-list-item\"><strong>Пекинская капуста</strong> — для салатов</li><li class=\"ingredient-list-item\"><strong>Цветная капуста</strong> — для гарниров</li></ul>",
+  "category": "Овощи",
+  "semantic_data": {
+    "properties": [
+      "овощ",
+      "кочанный",
+      "красный",
+      "фиолетовый",
+      "плотный",
+      "хрустящий",
+      "пикантный",
+      "для салатов",
+      "для тушения",
+      "для маринования"
+    ],
+    "preparations": [
+      "мойка под проточной водой",
+      "удаление верхних листьев",
+      "удаление кочерыжки",
+      "шинковка или нарезка кубиками",
+      "добавление уксуса для сохранения цвета"
+    ],
+    "cooking_methods": [
+      {"method": "использование в салатах", "priority": "high"},
+      {"method": "тушение", "priority": "high"},
+      {"method": "маринование", "priority": "high"},
+      {"method": "квашение", "priority": "medium"},
+      {"method": "запекание", "priority": "medium"},
+      {"method": "варка (супы)", "priority": "low"}
+    ],
+    "applications": [
+      "салаты",
+      "вторые блюда",
+      "гарниры",
+      "закуски",
+      "консервация"
+    ],
+    "pairings": {
+      "protein": ["свинина", "говядина", "птица", "колбасы", "бекон"],
+      "vegetables": ["морковь", "лук", "картофель", "свекла"],
+      "fruits": ["яблоки", "груши", "апельсины", "изюм", "клюква"],
+      "sauces": ["сметанный", "майонезный", "винегрет"],
+      "herbs": ["петрушка", "укроп", "кинза"],
+      "spices": ["тмин", "кориандр", "лавровый лист"]
+    },
+    "substitutes": [
+      {"name": "Белокочанная капуста", "similarity": "high"},
+      {"name": "Капуста савойская", "similarity": "medium"},
+      {"name": "Пекинская капуста", "similarity": "low"},
+      {"name": "Цветная капуста", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "овощ",
+    "краснокочанная капуста",
+    "красная капуста",
+    "фиолетовая капуста",
+    "салаты",
+    "тушение",
+    "маринование",
+    "квашение",
+    "зимний овощ"
+  ]
+}

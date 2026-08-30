@@ -1,0 +1,55 @@
+{
+  "name": "Апельсиновое варенье",
+  "name_normalized": "apelsinovoe-varene",
+  "synonyms": "варенье из апельсинов, апельсиновый джем, мармелад из апельсинов, цитрусовое варенье, orange marmalade, апельсиновый конфитюр",
+  "short_description": "Яркое цитрусовое варенье из апельсинов с цедрой, имеющее насыщенный кисло-сладкий вкус, характерную горечь и густую консистенцию. Популярное лакомство для завтрака, выпечки и десертов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Апельсиновое варенье — это традиционное цитрусовое лакомство, приготовленное из апельсинов (мякоти и цедры) с сахаром. В отличие от многих других варений, апельсиновое варенье имеет характерную горчинку, которая придаёт ему пикантность и глубину вкуса. Цедра апельсинов добавляется в виде тонких ломтиков или полосок, что делает варенье текстурированным и красивым. Цвет варенья варьируется от золотистого до янтарного, консистенция — от желеобразной до густой с кусочками фруктов. Апельсиновое варенье популярно в англо-саксонской кухне (как мармелад), а также в средиземноморской и восточноевропейской кухне.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — густая, с кусочками цедры и мякоти</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисло-сладкий, с характерной горчинкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — золотистый, янтарный</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — апельсины (мякоть и цедра), сахар</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в стеклянных банках</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Завтрак</strong> — с тостами, блинами, оладьями</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — начинка для пирогов, печенья</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — с йогуртом, творогом, мороженым</li><li class=\"ingredient-list-item\"><strong>Глазурь</strong> — для тортов и пирожных</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к мясу (особенно утке и свинине)</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Чай, кофе</strong> — для завтрака</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — мягкие (рикотта, маскарпоне, козий сыр)</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — утка, свинина, курица</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль</li><li class=\"ingredient-list-item\"><strong>Шоколад</strong> — тёмный, молочный</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Апельсиновый мармелад</strong> — более желеобразный</li><li class=\"ingredient-list-item\"><strong>Лимонный мармелад</strong> — кислее</li><li class=\"ingredient-list-item\"><strong>Абрикосовый джем</strong> — слаще, без горечи</li><li class=\"ingredient-list-item\"><strong>Грейпфрутовое варенье</strong> — более горькое</li></ul>",
+  "category": "Варенье, джемы, повидло, конфитюр",
+  "semantic_data": {
+    "properties": [
+      "варенье",
+      "апельсиновый",
+      "цитрусовый",
+      "кисло-сладкий",
+      "горьковатый",
+      "янтарный",
+      "ароматный"
+    ],
+    "preparations": [
+      "варка_с_цедрой",
+      "хранение_в_стерилизованных_банках"
+    ],
+    "cooking_methods": [
+      {"method": "варка", "priority": "high"},
+      {"method": "консервирование", "priority": "high"}
+    ],
+    "applications": [
+      "завтрак",
+      "выпечка",
+      "десерты",
+      "глазурь",
+      "соусы_к_мясу"
+    ],
+    "pairings": {
+      "protein": ["рикотта", "маскарпоне", "козий_сыр", "утка", "свинина", "курица"],
+      "nuts": ["грецкие_орехи", "миндаль"],
+      "chocolate": ["тёмный_шоколад", "молочный_шоколад"],
+      "drinks": ["чай_черный", "кофе"],
+      "desserts": ["блины", "оладьи", "тосты", "мороженое"]
+    },
+    "substitutes": [
+      {"name": "Апельсиновый мармелад", "similarity": "high"},
+      {"name": "Лимонный мармелад", "similarity": "medium"},
+      {"name": "Абрикосовый джем", "similarity": "low"},
+      {"name": "Грейпфрутовое варенье", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "варенье",
+    "апельсиновое_варенье",
+    "мармелад",
+    "цитрусовые",
+    "завтрак",
+    "выпечка"
+  ]
+}

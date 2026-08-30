@@ -1,0 +1,62 @@
+{
+  "name": "Абрикосовое масло",
+  "name_normalized": "abrikosovoe-maslo",
+  "synonyms": "масло абрикосовых косточек, масло из косточек абрикоса, apricot kernel oil",
+  "short_description": "Нежное растительное масло холодного отжима из ядер абрикосовых косточек. Обладает тонким орехово-фруктовым ароматом и богатым составом жирных кислот и витаминов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Абрикосовое масло — это растительное масло, получаемое методом холодного отжима из ядер абрикосовых косточек. Имеет светло-жёлтый цвет, жидкую консистенцию и тонкий орехово-фруктовый аромат с лёгкой горчинкой. Богато ненасыщенными жирными кислотами (олеиновая, линолевая), витаминами A, E и F. Широко используется как в кулинарии, так и в косметологии благодаря своим питательным и увлажняющим свойствам.</p><h2 class=\"ingredient-title\">Состав и свойства</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Олеиновая кислота (омега-9)</strong> — до 70%, увлажняет и питает</li><li class=\"ingredient-list-item\"><strong>Линолевая кислота (омега-6)</strong> — до 25%, восстанавливает кожу</li><li class=\"ingredient-list-item\"><strong>Витамин E</strong> — мощный антиоксидант</li><li class=\"ingredient-list-item\"><strong>Витамин A</strong> — регенерирует клетки</li><li class=\"ingredient-list-item\"><strong>Витамин F</strong> — улучшает эластичность кожи</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салатные заправки</strong> — придаёт лёгкий ореховый оттенок</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — добавление в выпечку, кремы, муссы</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — основа для соусов к рыбе и птице</li><li class=\"ingredient-list-item\"><strong>Обжарка</strong> — имеет высокую температуру дымления (до 200 °C), подходит для жарки</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — придаёт мясу и рыбе нежность</li></ul><h2 class=\"ingredient-title\">Косметическое применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Уход за кожей</strong> — увлажняет, питает, смягчает</li><li class=\"ingredient-list-item\"><strong>Массажное масло</strong> — хорошо скользит, не оставляет жирного блеска</li><li class=\"ingredient-list-item\"><strong>Уход за волосами</strong> — питает сухие и повреждённые волосы</li><li class=\"ingredient-list-item\"><strong>Крем для рук</strong> — смягчает и заживляет трещины</li><li class=\"ingredient-list-item\"><strong>Базовое масло</strong> — для ароматерапии и разбавления эфирных масел</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>В кулинарии:</strong> лимонный сок, бальзамический уксус, чеснок, пряные травы</li><li class=\"ingredient-list-item\"><strong>С продуктами:</strong> рыба, птица, овощи, зелень</li><li class=\"ingredient-list-item\"><strong>В косметологии:</strong> эфирные масла (лаванда, роза, сандал)</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Оливковое масло</strong> — более плотное, с другим вкусом</li><li class=\"ingredient-list-item\"><strong>Масло виноградных косточек</strong> — нейтральный вкус, подходит для жарки</li><li class=\"ingredient-list-item\"><strong>Персиковое масло</strong> — близкий аналог по составу</li><li class=\"ingredient-list-item\"><strong>Миндальное масло</strong> — ореховый вкус, более плотное</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/nutrition/polza-rastitelnyh-masel/'>Польза растительных масел</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/salad-dressings/'>Салатные заправки с маслами</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/beauty/care-oils/'>Масла в уходе за кожей</a></li></ul>",
+  "category": "Масла",
+  "semantic_data": {
+    "properties": [
+      "жидкий",
+      "светло-жёлтый",
+      "орехово-фруктовый",
+      "нежный",
+      "питательный",
+      "увлажняющий",
+      "антиоксидантный"
+    ],
+    "preparations": [
+      "хранение_в_тёмном_месте",
+      "не_нагревать_выше_200_градусов"
+    ],
+    "cooking_methods": [
+      {"method": "холодное_применение", "priority": "high"},
+      {"method": "обжарка", "priority": "medium"},
+      {"method": "запекание", "priority": "medium"},
+      {"method": "маринование", "priority": "medium"}
+    ],
+    "applications": [
+      "салатные_заправки",
+      "десерты",
+      "соусы",
+      "обжарка",
+      "маринады",
+      "уход_за_кожей",
+      "массаж",
+      "уход_за_волосами"
+    ],
+    "pairings": {
+      "protein": ["рыба", "курица", "индейка"],
+      "vegetables": ["томаты", "огурцы", "листовая_зелень", "баклажаны"],
+      "acids": ["лимонный_сок", "бальзамический_уксус", "яблочный_уксус"],
+      "herbs": ["базилик", "тимьян", "розмарин", "орегано"],
+      "spices": ["чеснок", "перец", "паприка"],
+      "cosmetic": ["эфирные_масла_лаванда", "эфирные_масла_роза", "эфирные_масла_сандал"]
+    },
+    "substitutes": [
+      {"name": "Оливковое масло", "similarity": "medium"},
+      {"name": "Масло виноградных косточек", "similarity": "high"},
+      {"name": "Персиковое масло", "similarity": "high"},
+      {"name": "Миндальное масло", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "масло",
+    "растительное_масло",
+    "абрикос",
+    "кулинария",
+    "косметология",
+    "витаминный",
+    "уход_за_кожей"
+  ]
+}

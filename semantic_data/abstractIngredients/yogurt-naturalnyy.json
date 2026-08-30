@@ -1,0 +1,80 @@
+{
+  "name": "Йогурт натуральный",
+  "name_normalized": "yogurt-naturalnyy",
+  "synonyms": "натуральный йогурт, йогурт без добавок, йогурт классический, кисломолочный йогурт, обычный йогурт, plain yogurt",
+  "short_description": "Классический кисломолочный продукт из цельного или обезжиренного молока, сквашенный с помощью болгарской палочки и термофильных стрептококков. Имеет нежный кисломолочный вкус, однородную или слегка вязкую консистенцию. Используется как самостоятельный продукт, в соусах, заправках, выпечке и десертах.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Натуральный йогурт — это классический кисломолочный продукт, приготовленный из пастеризованного молока с использованием закваски из болгарской палочки (Lactobacillus bulgaricus) и термофильных стрептококков (Streptococcus thermophilus). Благодаря этой закваске йогурт приобретает характерный нежный кисломолочный вкус и полезные пробиотические свойства. В отличие от фруктовых или ароматизированных йогуртов, натуральный йогурт не содержит сахара, ароматизаторов и других добавок, что делает его универсальным ингредиентом для кулинарии.</p><h2 class=\"ingredient-title\">Виды натурального йогурта</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Цельномолочный</strong> — из цельного молока, жирность 3,2-6%</li><li class=\"ingredient-list-item\"><strong>Обезжиренный</strong> — из обезжиренного молока, жирность 0-0,5%</li><li class=\"ingredient-list-item\"><strong>Классический</strong> — жирность 2,5-3,2%</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, однородная, слегка вязкая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисломолочный, свежий, без добавок</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый, кремовый</li><li class=\"ingredient-list-item\"><strong>Пробиотики</strong> — полезные бактерии</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 5-7 дней в холодильнике</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Самостоятельный продукт</strong> — с мёдом, фруктами, ягодами</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — на основе йогурта</li><li class=\"ingredient-list-item\"><strong>Заправки</strong> — для салатов</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — в тесто, кексы, маффины</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — в муссы, чизкейки</li><li class=\"ingredient-list-item\"><strong>Смузи</strong> — для густоты и белка</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мёд</strong> — классическое сочетание</li><li class=\"ingredient-list-item\"><strong>Фрукты и ягоды</strong> — клубника, черника, банан, манго</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, ваниль</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — огурец, чеснок (в соусах)</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Греческий йогурт</strong> — более густой</li><li class=\"ingredient-list-item\"><strong>Сметана</strong> — более жирная</li><li class=\"ingredient-list-item\"><strong>Кефир</strong> — более жидкий</li><li class=\"ingredient-list-item\"><strong>Ряженка</strong> — сладковатая</li></ul>",
+  "category": "Молоко",
+  "semantic_data": {
+    "properties": [
+      "кисломолочный",
+      "нежный",
+      "пробиотический",
+      "универсальный",
+      "без_добавок"
+    ],
+    "preparations": [
+      "хранение_в_холодильнике",
+      "использовать_для_соусов_и_заправок"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_соусов",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_заправок",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_выпечку",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "завтраки",
+      "соусы",
+      "десерты",
+      "выпечка",
+      "смузи"
+    ],
+    "pairings": {
+      "protein": [],
+      "fruits": ["клубника", "черника", "банан", "манго"],
+      "nuts": ["грецкие_орехи", "миндаль"],
+      "sweeteners": ["мёд"],
+      "spices": ["корица", "ваниль"],
+      "vegetables": ["огурец", "чеснок"]
+    },
+    "substitutes": [
+      {
+        "name": "Греческий йогурт",
+        "similarity": "high"
+      },
+      {
+        "name": "Сметана",
+        "similarity": "medium"
+      },
+      {
+        "name": "Кефир",
+        "similarity": "medium"
+      },
+      {
+        "name": "Ряженка",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "кисломолочные_продукты",
+    "йогурт",
+    "натуральный_йогурт",
+    "соусы",
+    "заправки",
+    "завтрак"
+  ]
+}

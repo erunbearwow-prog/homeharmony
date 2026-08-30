@@ -1,0 +1,103 @@
+{
+  "name": "Багет пшенично-ржаной",
+  "name_normalized": "baget-pshenichno-rzhanoy",
+  "synonyms": "",
+  "short_description": "Хрустящий багет с добавлением ржаной муки, сочетающий пшеничную нежность и ржаную плотность с характерным кисловатым привкусом и ароматом. Более плотный и ароматный, чем классический пшеничный багет.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Багет пшенично-ржаной — это разновидность французского багета, в котором часть пшеничной муки заменена ржаной (обычно от 10% до 30%). Сочетает хрустящую корочку классического багета с более плотным, влажным мякишем ржаного хлеба. Обладает характерным кисловатым привкусом и насыщенным ароматом, который ржаная мука придаёт выпечке. Идеально подходит для бутербродов, сэндвичей и подачи к супам.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — хрустящая корочка, плотный, но мягкий мякиш</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисловатый, с ярким ржаным ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — тёмно-золотистый, коричневатый (темнее пшеничного)</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — пшеничная и ржаная мука, вода, соль, закваска/дрожжи</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 1-2 дня (свежий), дольше, чем пшеничный</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом, сыром, мясом, рыбой</li><li class=\"ingredient-list-item\"><strong>Сэндвичи</strong> — с начинками из овощей, зелени, мяса</li><li class=\"ingredient-list-item\"><strong>Гренки</strong> — сухарики для супов и салатов</li><li class=\"ingredient-list-item\"><strong>К столу</strong> — к супам, салатам, закускам</li><li class=\"ingredient-list-item\"><strong>Брускетта</strong> — основа для закусок</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — твёрдые, мягкие, голубые (рокфор, горгонзола)</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — ветчина, бекон, паштет, колбасы</li><li class=\"ingredient-list-item\"><strong>Рыба</strong> — лосось, скумбрия, тунец, шпроты</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, огурцы, перец, лук, салат</li><li class=\"ingredient-list-item\"><strong>Масла</strong> — сливочное, оливковое, чесночное</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — грибные, овощные, томатные</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Классический багет</strong> — без ржаной муки, менее плотный</li><li class=\"ingredient-list-item\"><strong>Ржаной хлеб</strong> — более плотный, без хрустящей корочки</li><li class=\"ingredient-list-item\"><strong>Бородинский хлеб</strong> — сладковатый, с кориандром</li><li class=\"ingredient-list-item\"><strong>Чиабатта</strong> — итальянский хлеб, с хрустящей корочкой</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/baget-pshenichno-rzhanoy/'>Домашний багет пшенично-ржаной — рецепт</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/sendvichi-s-bagetom/'>Идеи для сэндвичей с багетом</a></li></ul>",
+  "category": "ХЛЕБ, ВЫПЕЧКА, ХЛЕБОБУЛОЧНЫЕ ИЗДЕЛИЯ",
+  "semantic_data": {
+    "properties": [
+      "багет",
+      "пшенично-ржаной",
+      "хрустящая_корочка",
+      "плотный_мякиш",
+      "кисловатый_вкус",
+      "ржаной_аромат",
+      "длительный_срок_хранения"
+    ],
+    "preparations": [
+      "хранение_в_бумажном_пакете",
+      "нарезка_ломтиками",
+      "подогрев_в_духовке_для_восстановления_хруста"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "подогрев",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_гренок",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "бутерброды",
+      "сэндвичи",
+      "гренки",
+      "брускетта",
+      "к_супам_и_салатам"
+    ],
+    "pairings": {
+      "protein": [
+        "твердые_сыры",
+        "мягкие_сыры",
+        "рокфор",
+        "горгонзола",
+        "ветчина",
+        "бекон",
+        "паштет",
+        "лосось",
+        "скумбрия",
+        "тунец"
+      ],
+      "vegetables": [
+        "помидоры",
+        "огурцы",
+        "перец",
+        "лук",
+        "салат"
+      ],
+      "oils": [
+        "сливочное_масло",
+        "оливковое_масло",
+        "чесночное_масло"
+      ],
+      "soups": [
+        "грибные",
+        "овощные",
+        "томатные"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Классический багет",
+        "similarity": "high"
+      },
+      {
+        "name": "Ржаной хлеб",
+        "similarity": "medium"
+      },
+      {
+        "name": "Бородинский хлеб",
+        "similarity": "medium"
+      },
+      {
+        "name": "Чиабатта",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "хлеб",
+    "багет",
+    "пшенично-ржаной",
+    "ржаной_хлеб",
+    "выпечка",
+    "бутерброды",
+    "французская_кухня"
+  ]
+}

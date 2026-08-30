@@ -1,0 +1,61 @@
+{
+  "name": "Горький шоколад",
+  "name_normalized": "gorkiy-shokolad",
+  "synonyms": "темный шоколад, чёрный шоколад, dark chocolate, шоколад с высоким содержанием какао",
+  "short_description": "Шоколад с высоким содержанием какао-продуктов (от 55% до 99%), минимальным количеством сахара и без добавления молока. Имеет насыщенный горьковатый вкус, плотную текстуру и богатый антиоксидантный состав.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Горький шоколад — это шоколад с высоким содержанием какао-массы и масла какао (от 55% до 99%) и минимальным количеством сахара. В отличие от молочного шоколада, он не содержит сухого молока или содержит его в очень малых количествах. Чем выше процент какао, тем более насыщенным, горьким и менее сладким становится вкус. Горький шоколад с содержанием какао от 70% и выше считается премиальным продуктом, ценится за интенсивный вкус, плотную текстуру и богатый антиоксидантный состав. Широко используется в выпечке, десертах и как самостоятельный продукт.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Цвет</strong> — тёмно-коричневый, почти чёрный</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, тающая, с характерным хрустом</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — горьковато-сладкий, интенсивный, насыщенный</li><li class=\"ingredient-list-item\"><strong>Содержание какао</strong> — от 55% до 99%</li><li class=\"ingredient-list-item\"><strong>Антиоксиданты</strong> — флавоноиды, полифенолы</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 24 месяцев в сухом прохладном месте</li></ul><h2 class=\"ingredient-title\">Виды горького шоколада</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Горький (55-70%)</strong> — классический, с балансом горечи и сладости</li><li class=\"ingredient-list-item\"><strong>Экстрагорький (70-85%)</strong> — интенсивный, для ценителей</li><li class=\"ingredient-list-item\"><strong>Ультрагорький (85-99%)</strong> — минимальное содержание сахара, выраженная горечь</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — брауни, печенье, бисквиты, кексы</li><li class=\"ingredient-list-item\"><strong>Глазурь</strong> — для тортов, пирожных, конфет</li><li class=\"ingredient-list-item\"><strong>Ганаш</strong> — основа для кремов и трюфелей</li><li class=\"ingredient-list-item\"><strong>Муссы</strong> — воздушные шоколадные десерты</li><li class=\"ingredient-list-item\"><strong>Горячие напитки</strong> — горячий шоколад, мокко</li><li class=\"ingredient-list-item\"><strong>Украшение</strong> — стружка, фигурки, капли</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Ягоды</strong> — малина, клубника, вишня, смородина</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — апельсин, банан, груша, инжир</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — миндаль, фундук, грецкий орех, пекан</li><li class=\"ingredient-list-item\"><strong>Кофе</strong> — в десертах и напитках</li><li class=\"ingredient-list-item\"><strong>Соль</strong> — морская соль, солёная карамель</li><li class=\"ingredient-list-item\"><strong>Пряности</strong> — корица, чили, ваниль, мята</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Молочный шоколад</strong> — слаще, менее интенсивный</li><li class=\"ingredient-list-item\"><strong>Какао-порошок + масло</strong> — для выпечки</li><li class=\"ingredient-list-item\"><strong>Шоколадные капли</strong> — для выпечки</li><li class=\"ingredient-list-item\"><strong>Кэроб</strong> — веганская альтернатива (менее горький, сладковатый)</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/nutrition/gorkiy-shokolad/'>Польза горького шоколада</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/brownie/'>Брауни из горького шоколада</a></li></ul>",
+  "category": "Шоколад",
+  "semantic_data": {
+    "properties": [
+      "горьковато-сладкий",
+      "интенсивный",
+      "плотный",
+      "тающий",
+      "антиоксидантный",
+      "высокое_содержание_какао",
+      "премиальный"
+    ],
+    "preparations": [
+      "темперирование_для_глазури",
+      "растапливание_на_водяной_бане",
+      "хранение_в_сухом_прохладном_месте"
+    ],
+    "cooking_methods": [
+      {"method": "темперирование", "priority": "high"},
+      {"method": "растапливание", "priority": "high"},
+      {"method": "запекание_в_выпечке", "priority": "high"},
+      {"method": "приготовление_ганаша", "priority": "high"}
+    ],
+    "applications": [
+      "выпечка",
+      "глазурь",
+      "ганаш",
+      "муссы",
+      "напитки",
+      "украшение"
+    ],
+    "pairings": {
+      "protein": [],
+      "fruits": ["малина", "клубника", "вишня", "смородина", "апельсин", "банан", "груша", "инжир"],
+      "nuts": ["миндаль", "фундук", "грецкий_орех", "пекан"],
+      "spices": ["корица", "чили", "ваниль", "мята"],
+      "drinks": ["кофе"],
+      "other": ["морская_соль", "соленая_карамель"]
+    },
+    "substitutes": [
+      {"name": "Молочный шоколад", "similarity": "medium"},
+      {"name": "Какао-порошок + масло", "similarity": "medium"},
+      {"name": "Шоколадные капли", "similarity": "high"},
+      {"name": "Кэроб", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "шоколад",
+    "горький_шоколад",
+    "темный_шоколад",
+    "десерт",
+    "выпечка",
+    "глазурь",
+    "антиоксидант"
+  ]
+}

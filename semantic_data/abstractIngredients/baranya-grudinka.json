@@ -1,0 +1,107 @@
+{
+  "name": "Баранья грудинка",
+  "name_normalized": "baranya-grudinka",
+  "synonyms": "",
+  "short_description": "Мясной полуфабрикат из баранины, нарезанный на порционные куски из грудинной части с прослойками жира. Отличное мясо для супов, плова, варки и запекания.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Баранья грудинка — это мясной полуфабрикат из баранины, представляющий собой куски мяса из грудинной части туши (нижняя часть грудной клетки). Отличается наличием жировых прослоек, которые при варке делают мясо сочным и ароматным, а бульон — наваристым. Кости в грудинке крупные, с большим количеством мяса, богатого коллагеном. Идеально подходит для варки супов и бульонов, приготовления плова, тушения и запекания.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, с жировыми прослойками</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, характерный для баранины, с жирным оттенком</li><li class=\"ingredient-list-item\"><strong>Коллаген</strong> — высокое содержание, при варке бульон становится желеобразным</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — средняя, от 10 до 20%</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Супы и бульоны</strong> — наваристый бульон для шурпы, бешбармака, похлёбки</li><li class=\"ingredient-list-item\"><strong>Плов</strong> — классический плов с бараньей грудинкой</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с овощами, травами и специями</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с картофелем, овощами</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — для холодца (из-за высокого содержания коллагена)</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук, томаты, перец, баклажаны</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, булгур, кус-кус</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — зира, кориандр, куркума, чёрный перец, лавровый лист</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — кинза, петрушка, укроп, зелёный лук</li><li class=\"ingredient-list-item\"><strong>Чеснок</strong> — для аромата</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — холодной водой, обсушить</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — залить холодной водой, довести до кипения, снять пену</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — предварительно обжарить до золотистого цвета</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжья грудинка</strong> — менее жирная, другой вкус</li><li class=\"ingredient-list-item\"><strong>Свиная грудинка</strong> — более жирная, мягче</li><li class=\"ingredient-list-item\"><strong>Баранья лопатка</strong> — постнее, для тушения</li><li class=\"ingredient-list-item\"><strong>Баранина на кости (рёбрышки)</strong> — аналогичное применение</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/shurpa-iz-baraniny/'>Шурпа из баранины с грудинкой</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/plov-s-baraninoy/'>Плов с бараньей грудинкой</a></li></ul>",
+  "category": "Баранина",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "баранина",
+      "грудинка",
+      "плотный",
+      "жирный",
+      "богат_коллагеном",
+      "наваристый",
+      "суповой"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "промыть_холодной_водой",
+      "залить_холодной_водой_для_варки"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "варка_для_холодца",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "супы_и_бульоны",
+      "плов",
+      "тушение_с_овощами",
+      "запекание",
+      "холодец"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "картофель",
+        "морковь",
+        "лук",
+        "томаты",
+        "перец",
+        "баклажаны"
+      ],
+      "grains": [
+        "рис",
+        "булгур",
+        "кус-кус"
+      ],
+      "herbs": [
+        "кинза",
+        "петрушка",
+        "укроп",
+        "зеленый_лук"
+      ],
+      "spices": [
+        "зира",
+        "кориандр",
+        "куркума",
+        "черный_перец",
+        "лавровый_лист",
+        "чеснок"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Говяжья грудинка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Свиная грудинка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Баранья лопатка",
+        "similarity": "low"
+      },
+      {
+        "name": "Баранина на кости (рёбрышки)",
+        "similarity": "high"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "баранина",
+    "грудинка",
+    "суп",
+    "плов",
+    "тушение",
+    "холодец"
+  ]
+}

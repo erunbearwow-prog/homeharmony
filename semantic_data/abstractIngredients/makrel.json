@@ -1,0 +1,62 @@
+{
+  "name": "Макрель",
+  "name_normalized": "makrel",
+  "synonyms": "макрель, королевская макрель, скумбрия (ошибочно), Scomberomorus, рыба для гриля, рыба для запекания, испанская макрель, пятнистая макрель",
+  "short_description": "Крупная хищная рыба семейства скумбриевых, близкая родственница скумбрии, но с более плотным, сухим мясом и характерным рисунком из пятен и прерывистых полос. В отличие от скумбрии, не подходит для засолки и копчения, но идеальна для гриля и запекания.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Макрель — это крупная морская рыба из рода Scomberomorus семейства скумбриевых, которую часто путают со скумбрией. В отличие от скумбрии, макрель имеет более вытянутое тело, заостренную голову и крупные ножевидные зубы. Её мясо более плотное и сухое, что требует особого подхода в приготовлении. В отличие от скумбрии, которая ценится за нежное жирное мясо и используется для засолки и копчения, макрель рекомендуется готовить на гриле, запекать или добавлять в салаты. В российских магазинах под видом скумбрии часто продают именно макрель.</p><h2 class=\"ingredient-title\">Отличия макрели от скумбрии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Размер:</strong> макрель крупнее, может достигать 1 метра и более, тогда как скумбрия обычно не превышает 60 см.</li><li class=\"ingredient-list-item\"><strong>Окрас:</strong> у макрели рисунок из темных пятен и прерывистых линий, у скумбрии — четкие поперечные полосы, которые не заходят на брюшко.</li><li class=\"ingredient-list-item\"><strong>Форма головы:</strong> у макрели голова более острая, а форма тела более вытянутая.</li><li class=\"ingredient-list-item\"><strong>Мясо:</strong> у макрели мясо серого цвета, более жесткое и сухое; у скумбрии — розоватое, нежное и жирное.</li><li class=\"ingredient-list-item\"><strong>Где обитает:</strong> макрель встречается в теплых прибрежных водах, у коралловых рифов и каменистых побережий, в то время как скумбрия обитает в открытом океане.</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — плотное, суховатое, без мелких костей</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, рыбный, но менее жирный, чем у скумбрии</li><li class=\"ingredient-list-item\"><strong>Цвет мяса</strong> — серый (у скумбрии — розоватый)</li><li class=\"ingredient-list-item\"><strong>Костистость</strong> — мало мелких костей</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — средняя (ниже, чем у скумбрии)</li><li class=\"ingredient-list-item\"><strong>Кулинарное применение</strong> — не подходит для засолки и копчения</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разделка</strong> — филе легко отделяется от хребта</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — рекомендуется для сочности (с лимоном, оливковым маслом, травами)</li><li class=\"ingredient-list-item\"><strong>Термическая обработка</strong> — требует быстрого приготовления, чтобы не пересушить</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гриль</strong> — идеальный способ приготовления</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с овощами, под лимонным соусом</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — макрель хороша в рыбных салатах</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде, но требует контроля, чтобы не пересушить</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Цитрусовые</strong> — лимон, лайм (для маринада)</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, помидоры, лук, перец, цукини</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — лимонный, томатный, сливочный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, кинза</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, розмарин, тимьян</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Скумбрия</strong> — более жирная и нежная, подходит для засолки</li><li class=\"ingredient-list-item\"><strong>Ставрида</strong> — менее жирная, но схожая текстура</li><li class=\"ingredient-list-item\"><strong>Тунец</strong> — более плотное, постное мясо</li><li class=\"ingredient-list-item\"><strong>Палтус</strong> — более нежная текстура</li></ul>",
+  "category": "Рыба и морепродукты",
+  "semantic_data": {
+    "properties": [
+      "морская рыба",
+      "хищная",
+      "плотное мясо",
+      "суховатое",
+      "без мелких костей",
+      "Scomberomorus",
+      "королевская макрель",
+      "крупная",
+      "для гриля"
+    ],
+    "preparations": [
+      "разделка на филе",
+      "маринование в лимонном соке и оливковом масле",
+      "быстрая термическая обработка"
+    ],
+    "cooking_methods": [
+      {"method": "приготовление на гриле", "priority": "high"},
+      {"method": "запекание в духовке", "priority": "high"},
+      {"method": "жарка на сковороде", "priority": "medium"},
+      {"method": "добавление в салаты", "priority": "medium"}
+    ],
+    "applications": [
+      "гриль",
+      "запекание",
+      "салаты",
+      "основные блюда"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "помидоры", "лук", "перец", "цукини"],
+      "sauces": ["лимонный", "томатный", "сливочный"],
+      "herbs": ["укроп", "петрушка", "кинза"],
+      "spices": ["черный перец", "розмарин", "тимьян"]
+    },
+    "substitutes": [
+      {"name": "Скумбрия (для жарки и запекания)", "similarity": "high"},
+      {"name": "Ставрида", "similarity": "medium"},
+      {"name": "Тунец", "similarity": "medium"},
+      {"name": "Палтус", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "рыба",
+    "морская рыба",
+    "макрель",
+    "королевская макрель",
+    "скумбриевые",
+    "для гриля",
+    "запекание",
+    "хищная рыба",
+    "Scomberomorus"
+  ]
+}

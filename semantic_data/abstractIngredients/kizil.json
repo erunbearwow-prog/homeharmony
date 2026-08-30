@@ -1,0 +1,72 @@
+{
+  "name": "Кизил",
+  "name_normalized": "kizil",
+  "synonyms": "кизил, кизил обыкновенный, кизил настоящий, кизил мужской, кизил женский, ягода кизила, кизил для варенья, кизил для компота, кизил для соуса, кизил для начинки, Cornus mas, dogwood berry",
+  "short_description": "Плод кустарника семейства кизиловых, представляющий собой продолговатую или округлую ягоду тёмно-красного цвета с плотной кожицей и косточкой внутри. Имеет терпкий кисло-сладкий вкус и характерный аромат. Используется для варенья, джемов, компотов, соусов, начинок, а также в сушёном виде.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Кизил — это плод кустарника или небольшого дерева, который созревает в конце лета — начале осени. Ягоды кизила имеют продолговатую или овальную форму (напоминают небольшие огурчики или сливы), ярко-красный, бордовый или тёмно-фиолетовый цвет. Мякоть плотная, сочная, с одной удлинённой косточкой внутри. Вкус кизила — терпкий, кисло-сладкий, с характерной вяжущей ноткой. Кизил богат витамином C, калием, железом и органическими кислотами. Его используют для приготовления варенья, джемов, компотов, соусов к мясу, а также сушат для использования в компотах и начинках.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, сочная, с одной косточкой</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — терпкий, кисло-сладкий, с вяжущей ноткой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — ярко-красный, бордовый, тёмно-фиолетовый</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — продолговатая, овальная, похожа на маленький огурец или сливу</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — конец лета — начало осени (август-сентябрь)</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике до 5-7 дней, сушёный до 6 месяцев</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — при сушке сохраняет все полезные свойства</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойка</strong> — тщательно промыть под проточной водой</li><li class=\"ingredient-list-item\"><strong>Удаление косточек</strong> — для варенья и джемов косточки удаляют</li><li class=\"ingredient-list-item\"><strong>Измельчение</strong> — для соусов и пюре</li><li class=\"ingredient-list-item\"><strong>Сушка</strong> — на солнце или в сушилке для хранения</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Варенье и джем</strong> — классическое применение кизила</li><li class=\"ingredient-list-item\"><strong>Компот</strong> — напиток из свежих или сушёных ягод</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к мясу (кизиловый соус — классика к баранине)</li><li class=\"ingredient-list-item\"><strong>Начинка</strong> — для пирогов, пирожков, вареников</li><li class=\"ingredient-list-item\"><strong>Пастила</strong> — из кизилового пюре</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — морсы, кисели</li><li class=\"ingredient-list-item\"><strong>Сушёный</strong> — для компотов и как перекус</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — баранина, говядина, птица (в соусах)</li><li class=\"ingredient-list-item\"><strong>Фрукты и ягоды</strong> — яблоки, груши, айва, слива</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, гвоздика, имбирь</li><li class=\"ingredient-list-item\"><strong>Сахар</strong> — для варенья и джемов</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Клюква</strong> — похожая кислинка, но более терпкая</li><li class=\"ingredient-list-item\"><strong>Брусника</strong> — терпкий вкус</li><li class=\"ingredient-list-item\"><strong>Черная смородина</strong> — в варенье и джемах</li><li class=\"ingredient-list-item\"><strong>Алыча</strong> — в соусах к мясу</li></ul>",
+  "category": "Фрукты",
+  "semantic_data": {
+    "properties": [
+      "ягода",
+      "красная",
+      "терпкая",
+      "кисло-сладкая",
+      "с косточкой",
+      "для варенья",
+      "для компота",
+      "для соусов",
+      "для начинок",
+      "осенняя"
+    ],
+    "preparations": [
+      "мойка под проточной водой",
+      "удаление косточек",
+      "измельчение для соусов",
+      "сушка на солнце или в сушилке"
+    ],
+    "cooking_methods": [
+      {"method": "приготовление варенья и джема", "priority": "high"},
+      {"method": "приготовление компота", "priority": "high"},
+      {"method": "приготовление соусов к мясу", "priority": "high"},
+      {"method": "сушка", "priority": "high"},
+      {"method": "использование в начинках", "priority": "medium"},
+      {"method": "приготовление пастилы", "priority": "medium"},
+      {"method": "приготовление напитков", "priority": "medium"}
+    ],
+    "applications": [
+      "варенье и джемы",
+      "компоты",
+      "соусы",
+      "начинки",
+      "напитки",
+      "сушка"
+    ],
+    "pairings": {
+      "protein": ["баранина", "говядина", "птица"],
+      "vegetables": [],
+      "fruits": ["яблоки", "груши", "айва", "слива"],
+      "sauces": [],
+      "herbs": [],
+      "spices": ["корица", "гвоздика", "имбирь"]
+    },
+    "substitutes": [
+      {"name": "Клюква", "similarity": "high"},
+      {"name": "Брусника", "similarity": "high"},
+      {"name": "Черная смородина", "similarity": "medium"},
+      {"name": "Алыча", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "ягода",
+    "кизил",
+    "красная ягода",
+    "кисло-сладкая",
+    "терпкая",
+    "варенье",
+    "джем",
+    "компот",
+    "соусы",
+    "начинки",
+    "осенняя ягода"
+  ]
+}

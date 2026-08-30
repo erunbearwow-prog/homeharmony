@@ -1,0 +1,70 @@
+{
+  "name": "Гречневая мука",
+  "name_normalized": "grechnevaya-muka",
+  "synonyms": "гречневая мука, мука гречневая, гречневая мука цельнозерновая, гречневая мука из гречки, buckwheat flour",
+  "short_description": "Мука из перемолотых зёрен гречихи. Имеет характерный серовато-коричневый цвет, лёгкий ореховый вкус и не содержит глютена. Широко используется для безглютеновой выпечки, блинов, оладий, хлеба и как загуститель.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Гречневая мука — это продукт переработки зёрен гречихи (Fagopyrum esculentum), который получают путём измельчения цельных или очищенных зёрен в муку. В отличие от пшеничной муки, гречневая не содержит глютена и имеет более насыщенный ореховый вкус и характерный серовато-коричневый цвет. Богата клетчаткой, железом, магнием, цинком и витаминами группы B. Широко используется для безглютеновой выпечки, блинов, оладий, хлеба, макаронных изделий и в качестве загустителя для соусов и супов.</p><h2 class=\"ingredient-title\">Виды гречневой муки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Цельнозерновая гречневая мука</strong> — из целых зёрен, с более грубой текстурой и насыщенным вкусом</li><li class=\"ingredient-list-item\"><strong>Тонкого помола гречневая мука</strong> — более мелкая, для выпечки</li><li class=\"ingredient-list-item\"><strong>Светлая гречневая мука</strong> — из очищенных зёрен, с более мягким вкусом</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — рассыпчатая, может быть грубой или мелкой</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — ореховый, насыщенный, слегка горьковатый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — серовато-коричневый</li><li class=\"ingredient-list-item\"><strong>Глютен</strong> — не содержит</li><li class=\"ingredient-list-item\"><strong>Клетчатка</strong> — высокое содержание</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 3-6 месяцев в сухом месте</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Блины и оладьи</strong> — классическое использование</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — безглютеновый хлеб</li><li class=\"ingredient-list-item\"><strong>Печенье</strong> — гречневое печенье</li><li class=\"ingredient-list-item\"><strong>Макароны</strong> — гречневая лапша (соба)</li><li class=\"ingredient-list-item\"><strong>Загуститель</strong> — для соусов и супов</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Яйца</strong> — для структуры в выпечке</li><li class=\"ingredient-list-item\"><strong>Молоко</strong> — в блинах и оладьях</li><li class=\"ingredient-list-item\"><strong>Мёд</strong> — в выпечке</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, ваниль</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Пшеничная мука</strong> — содержит глютен</li><li class=\"ingredient-list-item\"><strong>Рисовая мука</strong> — безглютеновая</li><li class=\"ingredient-list-item\"><strong>Миндальная мука</strong> — ореховый вкус</li></ul>",
+  "category": "Бобовые, крупы, мука, макароны",
+  "semantic_data": {
+    "properties": [
+      "мука",
+      "безглютеновый",
+      "ореховый_вкус",
+      "богат_клетчаткой",
+      "цельнозерновой"
+    ],
+    "preparations": [
+      "хранение_в_сухом_месте",
+      "просеивание_перед_использованием"
+    ],
+    "cooking_methods": [
+      {
+        "method": "выпечка",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_блинов",
+        "priority": "high"
+      },
+      {
+        "method": "загущение_соусов",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "выпечка",
+      "блины",
+      "хлеб",
+      "макароны",
+      "загуститель"
+    ],
+    "pairings": {
+      "protein": ["яйца"],
+      "dairy": ["молоко"],
+      "sweeteners": ["мёд"],
+      "spices": ["корица", "ваниль"]
+    },
+    "substitutes": [
+      {
+        "name": "Пшеничная мука",
+        "similarity": "low"
+      },
+      {
+        "name": "Рисовая мука",
+        "similarity": "medium"
+      },
+      {
+        "name": "Миндальная мука",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "мука",
+    "гречневая_мука",
+    "безглютеновый",
+    "выпечка",
+    "блины",
+    "диетический"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "name": "Горчичный порошок",
+  "name_normalized": "gorchichnyy-poroshok",
+  "synonyms": "горчица сухая, горчичный порошок, сухая горчица, порошок горчицы, mustard powder, ground mustard",
+  "short_description": "Молотые семена горчицы (обычно сарептской или белой) в виде тонкого порошка. Используется как самостоятельная приправа, основа для приготовления столовой горчицы, а также в маринадах, соусах, выпечке и консервации.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Горчичный порошок — это измельчённые до состояния муки семена горчицы (чаще всего сарептской или белой). Он представляет собой жёлтый или светло-жёлтый мелкий порошок с характерным острым, жгучим вкусом и пряным ароматом, который особенно раскрывается при добавлении воды. В отличие от готовой столовой горчицы, порошок не содержит уксуса, соли и других добавок, что делает его универсальным ингредиентом для домашней кулинарии. Используется для приготовления горчицы, как приправа к мясным и рыбным блюдам, а также в выпечке и консервации.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — острый, жгучий</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — жёлтый, светло-жёлтый</li><li class=\"ingredient-list-item\"><strong>Консистенция</strong> — тонкий порошок</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — молотые семена горчицы</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в герметичной упаковке</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Приготовление горчицы</strong> — с добавлением воды, уксуса и соли</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для мяса, рыбы, птицы</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — в качестве ароматной добавки</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — в тесто для пряников, кексов</li><li class=\"ingredient-list-item\"><strong>Консервация</strong> — в маринады для овощей</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вода, уксус, соль, сахар</strong> — для приготовления горчицы</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — свинина, говядина, курица</li><li class=\"ingredient-list-item\"><strong>Рыба</strong> — в маринадах</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — перец, куркума, паприка</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Готовая столовая горчица</strong> — в соусах</li><li class=\"ingredient-list-item\"><strong>Хрен (тёртый)</strong> — для остроты</li><li class=\"ingredient-list-item\"><strong>Васаби</strong> — как замена в некоторых рецептах</li></ul>",
+  "category": "ПРЯНОСТИ",
+  "semantic_data": {
+    "properties": [
+      "приправа",
+      "сухой",
+      "острый",
+      "жгучий",
+      "универсальный",
+      "длительное_хранение"
+    ],
+    "preparations": [
+      "заваривание_горячей_водой",
+      "смешивание_с_жидкостью"
+    ],
+    "cooking_methods": [
+      {
+        "method": "приготовление_горчицы",
+        "priority": "high"
+      },
+      {
+        "method": "маринование",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_соусы",
+        "priority": "high"
+      },
+      {
+        "method": "выпечка",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "приготовление_горчицы",
+      "маринады",
+      "соусы",
+      "выпечка",
+      "консервация"
+    ],
+    "pairings": {
+      "protein": ["свинина", "говядина", "курица"],
+      "fish": ["рыба"],
+      "spices": ["перец", "куркума", "паприка"],
+      "acids": ["уксус"]
+    },
+    "substitutes": [
+      {
+        "name": "Готовая столовая горчица",
+        "similarity": "medium"
+      },
+      {
+        "name": "Хрен (тёртый)",
+        "similarity": "low"
+      },
+      {
+        "name": "Васаби",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "приправа",
+    "горчица",
+    "горчичный_порошок",
+    "сухая_горчица",
+    "пряности"
+  ]
+}

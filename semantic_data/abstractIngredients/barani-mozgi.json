@@ -1,0 +1,93 @@
+{
+  "name": "Бараньи мозги",
+  "name_normalized": "barani-mozgi",
+  "synonyms": "",
+  "short_description": "Деликатесный субпродукт из баранины, представляющий собой головной мозг барана. Имеет нежную кремовую текстуру, нейтральный вкус и высокое содержание белка, фосфора и витаминов группы B.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Бараньи мозги — это деликатесный субпродукт (внутренний орган), который представляет собой головной мозг барана. Имеет нежную кремовую текстуру, светло-розовый или сероватый цвет и нейтральный, слегка сладковатый вкус. Богаты белком, фосфором, железом и витаминами группы B. Относятся к категории деликатесных субпродуктов и широко используются в европейской, восточной и средиземноморской кухне. Требуют тщательной подготовки и правильного приготовления.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, кремовая, мягкая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, слегка сладковатый, деликатный</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — низкая</li><li class=\"ingredient-list-item\"><strong>Белки</strong> — высокое содержание</li><li class=\"ingredient-list-item\"><strong>Фосфор</strong> — богатый источник</li><li class=\"ingredient-list-item\"><strong>Категория</strong> — деликатесный субпродукт</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вымачивание</strong> — в холодной воде с солью или уксусом (1-2 часа) для удаления крови и специфического запаха</li><li class=\"ingredient-list-item\"><strong>Очистка</strong> — удаление плёнок и кровяных сгустков</li><li class=\"ingredient-list-item\"><strong>Бланширование</strong> — опустить в кипящую воду на 2-3 минуты</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — в подсоленной воде с пряностями (15-20 минут)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — в панировке (мука, яйцо, сухари) до золотистой корочки</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с маслом, травами, в горшочках</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — из варёных мозгов с зеленью</li><li class=\"ingredient-list-item\"><strong>Паштет</strong> — измельчённые мозги с маслом и специями</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — в прозрачных бульонах</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Каперсы</strong> — классическое сочетание</li><li class=\"ingredient-list-item\"><strong>Лимон</strong> — для кислинки</li><li class=\"ingredient-list-item\"><strong>Сливочное масло</strong> — в паштетах</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, зелёный лук</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — лимонный, сливочный, каперсовый</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Телячьи мозги</strong> — нежнее</li><li class=\"ingredient-list-item\"><strong>Свиные мозги</strong> — похожие</li><li class=\"ingredient-list-item\"><strong>Говяжьи мозги</strong> — более крупные</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/zharenie-mozgov/'>Жареные бараньи мозги</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/subprodukty/'>Субпродукты: приготовление и польза</a></li></ul>",
+  "category": "Субпродукты баранины",
+  "semantic_data": {
+    "properties": [
+      "субпродукт",
+      "баранина",
+      "мозги",
+      "деликатес",
+      "нежный",
+      "кремовый",
+      "богат_белком",
+      "богат_фосфором"
+    ],
+    "preparations": [
+      "вымачивание_в_холодной_воде_1-2_часа",
+      "очистка_от_плёнок",
+      "бланширование_2-3_минуты",
+      "варка_15-20_минут"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка_в_панировке",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "варка",
+        "priority": "medium"
+      },
+      {
+        "method": "приготовление_паштета",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "жарка",
+      "запекание",
+      "салаты",
+      "паштеты",
+      "супы"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "каперсы",
+        "лимон"
+      ],
+      "herbs": [
+        "петрушка",
+        "укроп",
+        "зеленый_лук"
+      ],
+      "sauces": [
+        "лимонный",
+        "сливочный",
+        "каперсовый"
+      ],
+      "fats": [
+        "сливочное_масло"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Телячьи мозги",
+        "similarity": "high"
+      },
+      {
+        "name": "Свиные мозги",
+        "similarity": "high"
+      },
+      {
+        "name": "Говяжьи мозги",
+        "similarity": "high"
+      }
+    ]
+  },
+  "tags": [
+    "субпродукты",
+    "баранина",
+    "мозги",
+    "деликатес",
+    "жарка",
+    "паштет"
+  ]
+}

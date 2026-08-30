@@ -1,0 +1,96 @@
+{
+  "name": "Дикий рис",
+  "name_normalized": "dikiy_ris",
+  "synonyms": "водяной рис, индейский рис, канадский рис, черный рис, дикий рис (Zizania), дикий водяной рис, индейский овес",
+  "short_description": "Съедобное зерно водного злака, родственного рису, с характерным ореховым вкусом и жёсткой текстурой. На самом деле не является рисом, а семенами травы Zizania, богатое белком, клетчаткой и антиоксидантами.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Дикий рис — это не настоящий рис, а семена водной травы Zizania, которая произрастает в Северной Америке и Азии. Он имеет характерный тёмно-коричневый или черный цвет с глянцевым блеском, длинную и тонкую форму и уникальный орехово-землистый вкус. Дикий рис требует более длительного приготовления, чем обычный рис, но считается деликатесным продуктом с высоким содержанием белка, клетчатки, витаминов группы B и антиоксидантов. В кулинарии его часто используют в смесях с другими видами риса для придания блюдам текстуры и аромата.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — жёсткая, плотная, упругая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — ореховый, землистый, слегка сладковатый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — тёмно-коричневый, черный с блеском</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — длинная, тонкая, заострённая</li><li class=\"ingredient-list-item\"><strong>Калорийность</strong> — средняя (≈350 ккал/100г)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — богат белком, содержит все незаменимые аминокислоты</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Промывка</strong> — тщательно промыть в холодной воде</li><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — на 6-8 часов (или на ночь) для сокращения времени варки</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — 45-60 минут</li><li class=\"ingredient-list-item\"><strong>Настаивание</strong> — после варки оставить на 10-15 минут под крышкой</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гарнир</strong> — к мясу, птице, рыбе</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — тёплые и холодные салаты</li><li class=\"ingredient-list-item\"><strong>Смеси</strong> — в сочетании с белым, бурым или красным рисом</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — в качестве добавки</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для фаршированных овощей и птицы</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, утка, индейка, дичь</li><li class=\"ingredient-list-item\"><strong>Рыба и морепродукты</strong> — лосось, креветки</li><li class=\"ingredient-list-item\"><strong>Грибы</strong> — лесные грибы, шампиньоны</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, сельдерей, морковь</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — тимьян, розмарин, орегано</li><li class=\"ingredient-list-item\"><strong>Орехи и сухофрукты</strong> — кедровые орехи, клюква, апельсиновая цедра</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бурый рис</strong> — схожая текстура, менее ореховый вкус</li><li class=\"ingredient-list-item\"><strong>Красный рис</strong> — похожая плотность</li><li class=\"ingredient-list-item\"><strong>Перловая крупа</strong> — для супов и гарниров</li><li class=\"ingredient-list-item\"><strong>Смесь бурого и дикого риса</strong> — промышленные смеси</li></ul>",
+  "category": "Крупы и злаки",
+  "semantic_data": {
+    "properties": [
+      "злак",
+      "ореховый вкус",
+      "плотный",
+      "жёсткий",
+      "высокое содержание белка",
+      "богат клетчаткой",
+      "антиоксиданты",
+      "глютен-free",
+      "низкий гликемический индекс"
+    ],
+    "preparations": [
+      "промывка в холодной воде",
+      "замачивание на 6-8 часов (опционально, но рекомендуется)",
+      "варка в подсоленной воде (соотношение 1:4)",
+      "варка до растрескивания зёрен (45-60 минут)",
+      "настаивание под крышкой 10-15 минут после варки"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка в кастрюле",
+        "priority": "high"
+      },
+      {
+        "method": "варка в рисоварке/мультиварке",
+        "priority": "high"
+      },
+      {
+        "method": "запекание в горшочках",
+        "priority": "medium"
+      },
+      {
+        "method": "варка на пару",
+        "priority": "low"
+      }
+    ],
+    "applications": [
+      "гарнир к мясу и птице",
+      "салаты (тёплые и холодные)",
+      "смеси рисов",
+      "добавка в супы",
+      "начинка для фаршировки",
+      "диетические блюда",
+      "вегетарианские и веганские блюда"
+    ],
+    "pairings": {
+      "protein": ["курица", "индейка", "утка", "дичь", "лосось", "креветки", "тофу", "грибы"],
+      "vegetables": ["лук репчатый", "лук зеленый", "сельдерей", "морковь", "чеснок", "помидоры"],
+      "sauces": ["соевый соус", "терияки", "сливочный соус", "грибной соус"],
+      "herbs": ["петрушка", "укроп", "тимьян", "розмарин", "шалфей"],
+      "spices": ["чёрный перец", "паприка", "орегано", "базилик", "мускатный орех"]
+    },
+    "substitutes": [
+      {
+        "name": "Бурый (коричневый) рис",
+        "similarity": "medium"
+      },
+      {
+        "name": "Красный рис",
+        "similarity": "medium"
+      },
+      {
+        "name": "Перловая крупа",
+        "similarity": "low"
+      },
+      {
+        "name": "Смесь бурого и дикого риса (готовая)",
+        "similarity": "high"
+      }
+    ]
+  },
+  "tags": [
+    "злак",
+    "рис",
+    "дикий рис",
+    "крупа",
+    "высокое содержание белка",
+    "глютен-free",
+    "диетический",
+    "ореховый вкус",
+    "полезный",
+    "гарнир",
+    "салат",
+    "американская кухня",
+    "здоровое питание",
+    "низкий гликемический индекс"
+  ]
+}

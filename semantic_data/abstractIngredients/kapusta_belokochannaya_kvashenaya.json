@@ -1,0 +1,68 @@
+{
+  "name": "Капуста белокачанная квашеная",
+  "name_normalized": "kapusta_belokochannaya_kvashenaya",
+  "synonyms": "квашеная капуста, кислая капуста, квашенная капуста, капуста квашеная, домашняя квашеная капуста, капуста для салата, капуста для щей, капуста для винегрета, закуска из капусты, ферментированная капуста, кислая капуста по-русски",
+  "short_description": "Ферментированный продукт из белокочанной капусты, приготовленный путем молочнокислого брожения с добавлением соли и специй. Имеет характерный кисло-соленый вкус, хрустящую текстуру и богатый пробиотиками состав. Традиционный продукт русской, украинской, белорусской, польской и немецкой кухни.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Квашеная капуста — это традиционный ферментированный продукт, который получают путем молочнокислого брожения белокочанной капусты с добавлением соли и, иногда, моркови, яблок, клюквы или специй (тмин, лавровый лист, перец). В процессе квашения в капусте развиваются молочнокислые бактерии, которые консервируют продукт и обогащают его витаминами (особенно витамином C) и пробиотиками. Квашеная капуста имеет характерный кисло-соленый вкус, хрустящую текстуру и яркий аромат. Этот продукт широко используется в русской, украинской, белорусской, польской и немецкой кухнях как самостоятельная закуска, ингредиент для салатов (винегрет), супов (щи), гарниров и начинок.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — хрустящая, упругая, сочная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кислый, соленый, с характерной кислинкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от бледно-желтого до золотистого</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до нескольких месяцев в холодильнике (в рассоле)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — содержит пробиотики, богата витамином C</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в рассоле в холодильнике или в прохладном месте</li><li class=\"ingredient-list-item\"><strong>Отжим</strong> — при необходимости отжать лишний рассол</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — при необходимости промыть водой для уменьшения кислоты</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — как есть или дополнительно нарезать для салатов</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с растительным маслом, клюквой, яблоками, луком</li><li class=\"ingredient-list-item\"><strong>Винегрет</strong> — классический салат</li><li class=\"ingredient-list-item\"><strong>Щи</strong> — кислые щи на мясном бульоне</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с мясом, картофелем, грибами</li><li class=\"ingredient-list-item\"><strong>Начинка</strong> — для пирогов, пирожков, вареников</li><li class=\"ingredient-list-item\"><strong>Гарнир</strong> — к мясу, рыбе, картофелю</li><li class=\"ingredient-list-item\"><strong>Самостоятельная закуска</strong> — с маслом и зеленью</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — свинина, говядина, птица, сало</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук, свекла</li><li class=\"ingredient-list-item\"><strong>Грибы</strong> — лесные, шампиньоны</li><li class=\"ingredient-list-item\"><strong>Фрукты и ягоды</strong> — клюква, брусника, яблоки</li><li class=\"ingredient-list-item\"><strong>Масло</strong> — растительное, подсолнечное, оливковое</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, зеленый лук</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежая капуста</strong> — для салатов, но другой вкус</li><li class=\"ingredient-list-item\"><strong>Соленая капуста</strong> — менее кислая</li><li class=\"ingredient-list-item\"><strong>Кимчи</strong> — корейская ферментированная капуста</li><li class=\"ingredient-list-item\"><strong>Капуста тушеная</strong> — для горячих блюд</li></ul>",
+  "category": "Овощи",
+  "semantic_data": {
+    "properties": [
+      "квашеная",
+      "ферментированная",
+      "кислая",
+      "хрустящая",
+      "пробиотики",
+      "зимний продукт",
+      "традиционная",
+      "русская кухня",
+      "универсальная"
+    ],
+    "preparations": [
+      "хранение в рассоле",
+      "отжим лишнего рассола",
+      "промывка для уменьшения кислоты (при необходимости)",
+      "дополнительная нарезка"
+    ],
+    "cooking_methods": [
+      {"method": "использование в салатах", "priority": "high"},
+      {"method": "варка (щи)", "priority": "high"},
+      {"method": "тушение", "priority": "high"},
+      {"method": "использование в качестве начинки", "priority": "high"},
+      {"method": "подача как самостоятельная закуска", "priority": "high"}
+    ],
+    "applications": [
+      "салаты",
+      "супы",
+      "вторые блюда",
+      "начинки",
+      "закуски",
+      "гарниры"
+    ],
+    "pairings": {
+      "protein": ["свинина", "говядина", "птица", "сало"],
+      "vegetables": ["картофель", "морковь", "лук", "свекла"],
+      "fruits": ["клюква", "брусника", "яблоки"],
+      "sauces": ["растительное масло"],
+      "herbs": ["укроп", "петрушка", "зеленый лук"],
+      "spices": ["тмин", "лавровый лист", "перец"]
+    },
+    "substitutes": [
+      {"name": "Свежая капуста", "similarity": "low"},
+      {"name": "Соленая капуста", "similarity": "medium"},
+      {"name": "Кимчи", "similarity": "low"},
+      {"name": "Тушеная капуста", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "овощ",
+    "квашеная капуста",
+    "ферментированный продукт",
+    "русская кухня",
+    "закуска",
+    "салаты",
+    "щи",
+    "начинка",
+    "пробиотики",
+    "зимний продукт"
+  ]
+}

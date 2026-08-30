@@ -1,0 +1,105 @@
+{
+  "name": "Ноги бараньи",
+  "name_normalized": "nogi-barani",
+  "synonyms": "",
+  "short_description": "Мясной полуфабрикат из баранины — ноги (голяшки) с большим количеством мяса, сухожилий и коллагена. Идеальны для наваристых бульонов, холодцов, томлёного мяса и традиционных блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Бараньи ноги (голяшки) — это мясной полуфабрикат из баранины, представляющий собой нижнюю часть задних и передних конечностей туши. Ноги содержат большое количество мяса, сухожилий, жира и коллагена, что делает их идеальным выбором для длительной тепловой обработки. При варке бульон становится наваристым, желеобразным и ароматным, а мясо — мягким и нежным. Бараньи ноги широко используются в кавказской, среднеазиатской и европейской кухне для приготовления супов, бульонов, холодцов и томлёных блюд.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, с жилами и сухожилиями</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, с характерным бараний ароматом</li><li class=\"ingredient-list-item\"><strong>Коллаген</strong> — очень высокое содержание, бульон становится желеобразным</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — умеренная, мясо сочное и мягкое после длительного приготовления</li><li class=\"ingredient-list-item\"><strong>Применение</strong> — супы, бульоны, холодцы, томление</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Наваристые бульоны</strong> — основа для супов (шурпа, бешбармак, харчо)</li><li class=\"ingredient-list-item\"><strong>Холодец (заливное)</strong> — благодаря высокому содержанию желатина</li><li class=\"ingredient-list-item\"><strong>Томлёное мясо</strong> — медленное приготовление с овощами, в казане</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с соусом и овощами</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с луком, морковью, пряностями</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук, чеснок, томаты</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — кинза, петрушка, укроп, зелёный лук</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — зира, кориандр, перец горошком, лавровый лист</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — лепёшки, лаваш</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — холодной водой, обсушить</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — залить холодной водой, довести до кипения, снять пену, варить 3-4 часа</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — предварительно обжарить до корочки</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжьи ноги</strong> — для бульонов</li><li class=\"ingredient-list-item\"><strong>Свиные ноги</strong> — для холодца</li><li class=\"ingredient-list-item\"><strong>Баранья лопатка</strong> — для тушения</li><li class=\"ingredient-list-item\"><strong>Баранья грудинка</strong> — для супов</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/kholodets-iz-baraniny/'>Холодец из бараньих ног</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/shurpa-iz-baraniny/'>Шурпа из бараньих ног</a></li></ul>",
+  "category": "Баранина",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "баранина",
+      "ноги",
+      "голяшки",
+      "жилистый",
+      "богат_коллагеном",
+      "наваристый",
+      "суповой"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "промыть_холодной_водой",
+      "залить_холодной_водой_для_варки",
+      "снять_пену_при_варке"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "томление",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      },
+      {
+        "method": "варка_для_холодца",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "супы_и_бульоны",
+      "холодец",
+      "томлёное_мясо",
+      "запекание",
+      "тушение"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "картофель",
+        "морковь",
+        "лук",
+        "чеснок",
+        "томаты"
+      ],
+      "herbs": [
+        "кинза",
+        "петрушка",
+        "укроп",
+        "зеленый_лук"
+      ],
+      "spices": [
+        "зира",
+        "кориандр",
+        "перец_горошком",
+        "лавровый_лист"
+      ],
+      "breads": [
+        "лепёшки",
+        "лаваш"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Говяжьи ноги",
+        "similarity": "high"
+      },
+      {
+        "name": "Свиные ноги",
+        "similarity": "high"
+      },
+      {
+        "name": "Баранья лопатка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Баранья грудинка",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "баранина",
+    "ноги",
+    "голяшки",
+    "холодец",
+    "суп",
+    "бульон",
+    "коллаген"
+  ]
+}

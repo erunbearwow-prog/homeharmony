@@ -1,0 +1,79 @@
+{
+  "name": "Язык говяжий",
+  "name_normalized": "yazyk-govyazhiy",
+  "synonyms": "",
+  "short_description": "Классический субпродукт из говядины — крупный, плотный язык с насыщенным мясным вкусом и упругой текстурой. Считается деликатесом, широко используется в горячих блюдах, салатах, закусках и для приготовления заливного.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Говяжий язык — это один из самых ценных и популярных субпродуктов. Благодаря крупному размеру, плотной текстуре и насыщенному мясному вкусу он является настоящим деликатесом. После правильной варки язык становится мягким, нежным и сочным, при этом сохраняет упругую структуру. Цвет варёного языка — от светло-розового до серовато-розового. Говяжий язык универсален в кулинарии: его подают как холодную закуску, используют в салатах, горячих блюдах и знаменитом заливном.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, сочная после варки</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, мясной, с лёгким послевкусием</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — светло-розовый, серовато-розовый (в варёном виде)</li><li class=\"ingredient-list-item\"><strong>Размер</strong> — крупный (до 1,5-2 кг)</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — белки, коллаген, витамины группы B, цинк, железо</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 3-4 дней в холодильнике (варёный)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — замочить в холодной воде на 3-4 часа для удаления крови и запаха</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — варить в подсоленной воде с луком, морковью, кореньями и специями 3-4 часа (до мягкости)</li><li class=\"ingredient-list-item\"><strong>Очистка</strong> — после варки опустить в холодную воду на 2-3 минуты, затем снять кожицу</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — нарезать ломтиками, кубиками или соломкой</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Холодные закуски</strong> — нарезка, язык под соусом (хрен, горчица, майонез)</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, овощами, грибами, орехами</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — в тушёном виде, с соусом, запечённый</li><li class=\"ingredient-list-item\"><strong>Заливное (студень)</strong> — классическое праздничное блюдо</li><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом, горчицей, зеленью</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный с хреном, грибной, горчичный, томатный, майонез</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — морковь, лук, корень петрушки, зелень, огурцы</li><li class=\"ingredient-list-item\"><strong>Грибы</strong> — шампиньоны, лесные грибы</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, лавровый лист, гвоздика, душистый перец</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, белый, бородинский</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Телячий язык</strong> — нежнее, быстрее готовится</li><li class=\"ingredient-list-item\"><strong>Свиной язык</strong> — более жирный</li><li class=\"ingredient-list-item\"><strong>Ветчина</strong> — в салатах и закусках</li></ul>",
+  "category": "Субпродукты",
+  "semantic_data": {
+    "properties": [
+      "субпродукт",
+      "говядина",
+      "плотный",
+      "упругий",
+      "деликатес",
+      "насыщенный_вкус",
+      "крупный"
+    ],
+    "preparations": [
+      "замачивание_3-4_часа",
+      "варка_3-4_часа",
+      "очистка_от_кожицы"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "medium"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      },
+      {
+        "method": "заливное",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "холодные_закуски",
+      "салаты",
+      "горячие_блюда",
+      "заливное",
+      "бутерброды"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["морковь", "лук", "корень_петрушки", "зелень", "огурцы"],
+      "mushrooms": ["шампиньоны", "лесные_грибы"],
+      "sauces": ["сметанный_с_хреном", "грибной", "горчичный", "томатный", "майонез"],
+      "spices": ["черный_перец", "лавровый_лист", "гвоздика", "душистый_перец"],
+      "breads": ["ржаной_хлеб", "белый_хлеб", "бородинский_хлеб"]
+    },
+    "substitutes": [
+      {
+        "name": "Телячий язык",
+        "similarity": "high"
+      },
+      {
+        "name": "Свиной язык",
+        "similarity": "medium"
+      },
+      {
+        "name": "Ветчина",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "субпродукты",
+    "говяжий_язык",
+    "деликатес",
+    "закуска",
+    "заливное",
+    "салат"
+  ]
+}

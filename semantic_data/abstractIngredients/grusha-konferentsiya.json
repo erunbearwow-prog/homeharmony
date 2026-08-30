@@ -1,0 +1,71 @@
+{
+  "name": "Груша Конференция",
+  "name_normalized": "grusha-konferentsiya",
+  "synonyms": "конференция, груша конференция, конференс, груша конференс, Conference pear, английская груша, зимняя груша, груша для хранения",
+  "short_description": "Популярный осенне-зимний сорт груши с вытянутой формой, плотной, сочной мякотью и умеренной сладостью. Отличается длительным сроком хранения, универсальностью и высокой урожайностью. Один из самых коммерчески успешных сортов в мире.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Груша Конференция (Conference) — это один из самых известных и распространённых сортов груш в мире, выведенный в Англии в конце XIX века. Плоды имеют удлинённую, вытянутую грушевидную форму, длинную плодоножку и тонкую зелено-жёлтую кожицу с характерной «ржавчиной» (коричневыми вкраплениями). Мякоть плотная, сочная, маслянистая, сладкая с лёгкой кислинкой. Благодаря высокой лёжкости, Конференция может храниться до 5-6 месяцев, что делает её идеальной для зимнего потребления.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, сочная, маслянистая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий с лёгкой кислинкой, ароматный</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — зелено-жёлтый, с «ржавчиной»</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — вытянутая, удлинённая</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 5-6 месяцев в холодильнике</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежая</strong> — как десертный фрукт</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — пироги, тарты, крамблы</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — с шоколадом, орехами</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — к мясу, птице</li><li class=\"ingredient-list-item\"><strong>Консервация</strong> — компоты, джемы</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — голубые, пармезан, козий</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, гвоздика</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — утка, свинина</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Груша Анжу</strong> — похожий сорт</li><li class=\"ingredient-list-item\"><strong>Груша Вильямс</strong> — более маслянистая</li><li class=\"ingredient-list-item\"><strong>Яблоки</strong> — в выпечке</li></ul>",
+  "category": "Семечковые",
+  "semantic_data": {
+    "properties": [
+      "груша",
+      "зимний_сорт",
+      "плотный",
+      "сочный",
+      "сладкий",
+      "длительное_хранение",
+      "универсальный"
+    ],
+    "preparations": [
+      "хранение_в_прохладном_месте",
+      "мытьё_перед_употреблением"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "выпечка",
+        "priority": "high"
+      },
+      {
+        "method": "консервация",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "десерты",
+      "выпечка",
+      "компоты",
+      "гарниры"
+    ],
+    "pairings": {
+      "protein": ["голубые_сыры", "пармезан", "козий_сыр"],
+      "nuts": ["грецкие_орехи", "миндаль"],
+      "spices": ["корица", "гвоздика"],
+      "meat": ["утка", "свинина"]
+    },
+    "substitutes": [
+      {
+        "name": "Груша Анжу",
+        "similarity": "high"
+      },
+      {
+        "name": "Груша Вильямс",
+        "similarity": "medium"
+      },
+      {
+        "name": "Яблоки",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "фрукт",
+    "груша",
+    "конференция",
+    "зимний_сорт",
+    "длительное_хранение",
+    "универсальный"
+  ]
+}

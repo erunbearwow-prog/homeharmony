@@ -1,0 +1,53 @@
+{
+  "name": "Грушевый джем",
+  "name_normalized": "grushevyy-dzhem",
+  "synonyms": "джем из груш, грушевый конфитюр, грушевое повидло, pear jam, грушевый мармелад, конфитюр из груш",
+  "short_description": "Нежный янтарный джем из груш с мягкой текстурой и сладким фруктовым вкусом с лёгкой кислинкой. Благодаря высокому содержанию пектина и натуральной сладости, джем имеет густую желеобразную консистенцию и яркий аромат свежих груш. Идеален для завтрака, выпечки и десертов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Грушевый джем — это густое янтарное лакомство, приготовленное из груш с добавлением сахара, иногда с пряностями. В отличие от варенья, грушевый джем имеет более однородную, желеобразную текстуру, в которой кусочки груш мягко распределены по всей массе. Груши обладают природной сладостью и пектином, поэтому джем получается густым, ароматным и не требует дополнительных загустителей. Цвет варьируется от светло-золотистого до насыщенно-янтарного. Грушевый джем особенно популярен в европейской кухне, часто подаётся к сырам, мясу и в выпечке.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — густая, желеобразная, с мягкими кусочками груш</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, фруктовый, с лёгкой кислинкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — золотистый, янтарный</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — груши, сахар, лимонная кислота</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в стеклянных банках</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Завтрак</strong> — на тосты, круассаны, блинчики</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — начинка для тартов, пирогов, булочек</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — с йогуртом, творогом, мороженым</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к сырам, мясу (особенно свинине и утке)</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — голубые (горгонзола, рокфор), бри, камамбер</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — свинина, утка, курица</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль, фундук</li><li class=\"ingredient-list-item\"><strong>Пряности</strong> — корица, кардамон, ваниль</li><li class=\"ingredient-list-item\"><strong>Йогурт, творог</strong> — для десертов</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Яблочный джем</strong> — более кислый</li><li class=\"ingredient-list-item\"><strong>Абрикосовый джем</strong> — более яркий вкус</li><li class=\"ingredient-list-item\"><strong>Грушевое варенье</strong> — с цельными кусочками</li><li class=\"ingredient-list-item\"><strong>Инжирный джем</strong> — другая текстура</li></ul>",
+  "category": "Варенье, джемы, повидло, конфитюр",
+  "semantic_data": {
+    "properties": [
+      "джем",
+      "грушевый",
+      "янтарный",
+      "сладкий",
+      "фруктовый",
+      "нежный"
+    ],
+    "preparations": [
+      "варка_с_сахаром",
+      "хранение_в_стерилизованных_банках"
+    ],
+    "cooking_methods": [
+      {"method": "варка", "priority": "high"},
+      {"method": "консервирование", "priority": "high"}
+    ],
+    "applications": [
+      "завтрак",
+      "выпечка",
+      "десерты",
+      "соусы_к_мясу"
+    ],
+    "pairings": {
+      "protein": ["горгонзола", "рокфор", "бри", "камамбер", "свинина", "утка", "курица"],
+      "nuts": ["грецкие_орехи", "миндаль", "фундук"],
+      "spices": ["корица", "кардамон", "ваниль"],
+      "desserts": ["йогурт", "творог", "мороженое"],
+      "breads": ["тосты", "круассаны", "блинчики"]
+    },
+    "substitutes": [
+      {"name": "Яблочный джем", "similarity": "high"},
+      {"name": "Абрикосовый джем", "similarity": "medium"},
+      {"name": "Грушевое варенье", "similarity": "high"},
+      {"name": "Инжирный джем", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "джем",
+    "грушевый_джем",
+    "груша",
+    "завтрак",
+    "выпечка",
+    "десерт"
+  ]
+}

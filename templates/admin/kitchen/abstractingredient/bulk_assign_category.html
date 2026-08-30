@@ -1,35 +1,396 @@
 {% extends "admin/base_site.html" %}
+{% load i18n admin_urls static %}
+
+{% block extrahead %}
+{{ block.super }}
+<style>
+    /* Основные стили */
+    .category-container {
+        max-height: 450px;
+        overflow-y: auto;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 10px;
+        margin-top: 10px;
+        background: #fafafa;
+    }
+
+    .category-search-wrapper {
+        position: sticky;
+        top: 0;
+        background: white;
+        padding: 8px 0;
+        z-index: 10;
+        border-bottom: 1px solid #e2e8f0;
+        margin-bottom: 8px;
+    }
+
+    .category-search-wrapper input {
+        width: 100%;
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+        box-sizing: border-box;
+        background: white;
+    }
+
+    .category-search-wrapper input:focus {
+        border-color: #79aec8;
+        outline: none;
+        box-shadow: 0 0 4px rgba(121, 174, 200, 0.3);
+    }
+
+    .category-item {
+        display: block;
+        padding: 6px 10px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background 0.15s;
+        font-size: 13px;
+        border-bottom: 1px solid #f5f5f5;
+    }
+
+    .category-item:hover {
+        background-color: #ebf8ff;
+    }
+
+    .category-item.level-0 {
+        padding-left: 8px;
+        font-weight: 600;
+        color: #1a202c;
+        background: #f0f4f8;
+    }
+
+    .category-item.level-1 {
+        padding-left: 28px;
+        font-weight: 500;
+        color: #2d3748;
+    }
+
+    .category-item.level-2 {
+        padding-left: 48px;
+        color: #4a5568;
+    }
+
+    .category-item.level-3 {
+        padding-left: 68px;
+        color: #718096;
+    }
+
+    .category-item.level-4 {
+        padding-left: 88px;
+        color: #a0aec0;
+    }
+
+    .category-item input[type="radio"] {
+        margin-right: 8px;
+        cursor: pointer;
+        accent-color: #79aec8;
+    }
+
+    .category-item .hierarchy-indicator {
+        display: inline-block;
+        width: 16px;
+        color: #a0aec0;
+        font-size: 12px;
+        margin-right: 4px;
+    }
+
+    .category-item .category-name {
+        display: inline-block;
+    }
+
+    .no-results {
+        padding: 20px;
+        text-align: center;
+        color: #718096;
+    }
+
+    .selected-info {
+        background: #f0f9ff;
+        border: 1px solid #bae6fd;
+        border-radius: 6px;
+        padding: 12px 16px;
+        margin-bottom: 16px;
+    }
+
+    .selected-info strong {
+        color: #0369a1;
+    }
+
+    .no-category {
+        color: #dc2626;
+        font-weight: 500;
+    }
+
+    .has-category {
+        color: #16a34a;
+        font-weight: 500;
+    }
+
+    .clear-option {
+        display: block;
+        padding: 10px 12px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background 0.15s;
+        background: #fef2f2;
+        border-bottom: 2px solid #fecaca;
+        font-weight: 500;
+        color: #dc2626;
+        margin-bottom: 4px;
+    }
+
+    .clear-option:hover {
+        background: #fee2e2;
+    }
+
+    .clear-option input[type="radio"] {
+        margin-right: 8px;
+        cursor: pointer;
+        accent-color: #dc2626;
+    }
+
+    .category-count {
+        color: #718096;
+        font-size: 0.85em;
+        margin-left: 8px;
+        float: right;
+    }
+
+    .match-highlight {
+        background: #fef08a;
+        padding: 0 2px;
+        border-radius: 2px;
+    }
+
+    .sticky-header {
+        position: sticky;
+        top: 0;
+        background: white;
+        z-index: 5;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #e2e8f0;
+    }
+</style>
+{% endblock %}
 
 {% block content %}
 <div id="content-main">
-    <form method="post">
-        {% csrf_token %}
-        <input type="hidden" name="action" value="bulk_assign_category">
-        <input type="hidden" name="select_across" value="0">
-        <input type="hidden" name="index" value="0">
+    <div class="module">
+        <h1>Назначить категорию ингредиентам</h1>
 
-        {% for obj in queryset %}
-        <input type="hidden" name="_selected_action" value="{{ obj.pk }}">
-        {% endfor %}
-
-        <fieldset class="module aligned">
-            <div class="form-row">
-                <label style="font-weight: bold; display: block; margin-bottom: 10px;">
-                    Выберите категорию для {{ queryset.count }} ингредиентов:
-                </label>
-                <select name="category_id" style="width: 100%; padding: 8px; font-size: 14px;">
-                    <option value="">-- Выберите категорию --</option>
-                    {% for cat in categories %}
-                    <option value="{{ cat.id }}">{{ cat.name }}</option>
-                    {% endfor %}
-                </select>
-            </div>
-        </fieldset>
-
-        <div class="submit-row">
-            <input type="submit" value="Применить" class="default">
-            <a href="{% url 'admin:kitchen_abstractingredient_changelist' %}" class="button">Отмена</a>
+        <div class="selected-info">
+            <p>
+                <strong>{{ total_count }}</strong> ингредиентов выбрано для назначения категории.
+            </p>
+            <p style="margin-top: 6px; font-size: 13px; color: #475569;">
+                <span class="has-category">✅ С категорией: {{ with_category }}</span>
+                <span style="margin: 0 8px;">|</span>
+                <span class="no-category">❌ Без категории: {{ without_category }}</span>
+            </p>
         </div>
-    </form>
+
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="action" value="assign_category">
+            <input type="hidden" name="apply" value="1">
+
+            {% for obj in queryset %}
+            <input type="hidden" name="_selected_action" value="{{ obj.pk }}">
+            {% endfor %}
+
+            <fieldset class="module aligned">
+                <div class="form-row">
+                    <label style="font-weight: 600; display: block; margin-bottom: 10px; font-size: 14px;">
+                        Выберите категорию:
+                    </label>
+
+                    <div class="category-container" id="categoryContainer">
+                        <div class="category-search-wrapper">
+                            <input type="text"
+                                   id="categorySearch"
+                                   placeholder="🔍 Поиск категории..."
+                                   autocomplete="off">
+                        </div>
+
+                        <div id="categoryList">
+                            <div class="clear-option">
+                                <input type="radio" name="category" value="" id="clearCategory" checked>
+                                <label for="clearCategory">— Очистить категорию (снять все)</label>
+                            </div>
+
+                            {% for cat in categories %}
+                            <label class="category-item level-{{ cat.level }}" data-name="{{ cat.full_hierarchy|lower }}" data-id="{{ cat.id }}">
+                                <input type="radio" name="category" value="{{ cat.id }}" id="cat_{{ cat.id }}">
+                                <span class="hierarchy-indicator">
+                                    {% if cat.level > 0 %}
+                                        {% for i in "x"|ljust:cat.level %}—{% endfor %}
+                                    {% endif %}
+                                </span>
+                                <span class="category-name">{{ cat.name }}</span>
+                                <span class="category-count">({{ cat.full_hierarchy }})</span>
+                            </label>
+                            {% empty %}
+                            <div style="padding: 20px; text-align: center; color: #6b7280;">
+                                Нет доступных категорий. Создайте категории в разделе "Категории ингредиентов".
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <p style="margin-top: 10px; font-size: 12px; color: #6b7280;">
+                        💡 Используйте поиск для быстрого нахождения категории.
+                        Префиксы <strong>—</strong> показывают уровень вложенности.
+                        Чтобы удалить категорию у всех выбранных ингредиентов, выберите "Очистить категорию".
+                    </p>
+                </div>
+            </fieldset>
+
+            <div class="submit-row" style="margin-top: 20px; display: flex; gap: 10px; align-items: center;">
+                <input type="submit" value="Назначить категорию" class="default" style="background: #79aec8; border: none; padding: 10px 20px; color: white; cursor: pointer; border-radius: 4px; font-size: 14px;">
+                <a href="{% url 'admin:kitchen_abstractingredient_changelist' %}" class="button" style="padding: 10px 20px; background: #f8f9fa; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">
+                    Отмена
+                </a>
+            </div>
+        </form>
+
+        <!-- Список выбранных ингредиентов -->
+        <details style="margin-top: 30px;">
+            <summary style="cursor: pointer; font-weight: 600; color: #1e293b; padding: 8px 0;">
+                📋 Показать выбранные ингредиенты ({{ total_count }})
+            </summary>
+            <div style="max-height: 300px; overflow-y: auto; margin-top: 10px; padding: 12px 16px; background: #f8fafc; border-radius: 6px; border: 1px solid #e2e8f0;">
+                <table style="width: 100%; border-collapse: collapse; font-size: 13px;">
+                    <thead style="background: #e2e8f0; position: sticky; top: 0;">
+                        <tr>
+                            <th style="padding: 8px 12px; text-align: left;">Название</th>
+                            <th style="padding: 8px 12px; text-align: left;">Текущая категория</th>
+                            <th style="padding: 8px 12px; text-align: left;">Источник</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in queryset %}
+                        <tr style="border-bottom: 1px solid #e2e8f0;">
+                            <td style="padding: 6px 12px;">{{ item.name }}</td>
+                            <td style="padding: 6px 12px;">
+                                {% if item.category %}
+                                <span style="color: #16a34a;">✅ {{ item.category.full_hierarchy }}</span>
+                                {% else %}
+                                <span style="color: #dc2626;">❌ нет</span>
+                                {% endif %}
+                            </td>
+                            <td style="padding: 6px 12px; font-size: 12px; color: #6b7280;">
+                                {{ item.data_source|default:"manual" }}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </details>
+    </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('categorySearch');
+    const categoryItems = document.querySelectorAll('.category-item');
+    const clearOption = document.querySelector('.clear-option');
+    const categoryList = document.getElementById('categoryList');
+
+    // Функция для подсветки совпадений
+    function highlightText(text, query) {
+        if (!query) return text;
+        const regex = new RegExp(`(${query})`, 'gi');
+        return text.replace(regex, '<span class="match-highlight">$1</span>');
+    }
+
+    // Поиск при вводе
+    searchInput.addEventListener('input', function() {
+        const query = this.value.toLowerCase().trim();
+
+        // Обрабатываем каждый элемент категории
+        categoryItems.forEach(item => {
+            const name = item.dataset.name || '';
+            const fullName = item.querySelector('.category-name')?.textContent || '';
+
+            if (!query || name.includes(query) || fullName.toLowerCase().includes(query)) {
+                item.style.display = 'block';
+
+                // Подсветка совпадений в имени
+                const nameSpan = item.querySelector('.category-name');
+                if (nameSpan && query) {
+                    const originalText = nameSpan.textContent;
+                    if (originalText.toLowerCase().includes(query)) {
+                        nameSpan.innerHTML = highlightText(originalText, query);
+                    }
+                }
+            } else {
+                item.style.display = 'none';
+            }
+        });
+
+        // Всегда показываем опцию "Очистить категорию"
+        clearOption.style.display = 'block';
+
+        // Проверяем, есть ли видимые элементы
+        let hasVisible = false;
+        categoryItems.forEach(item => {
+            if (item.style.display !== 'none') {
+                hasVisible = true;
+            }
+        });
+
+        // Если нет результатов, показываем сообщение
+        let noResults = document.getElementById('noResultsMessage');
+        if (!hasVisible && query) {
+            if (!noResults) {
+                noResults = document.createElement('div');
+                noResults.id = 'noResultsMessage';
+                noResults.className = 'no-results';
+                noResults.textContent = '❌ Категории не найдены. Попробуйте изменить запрос.';
+                categoryList.appendChild(noResults);
+            }
+        } else if (noResults) {
+            noResults.remove();
+        }
+    });
+
+    // Сброс поиска и подсветки при выборе категории
+    document.querySelectorAll('input[name="category"]').forEach(radio => {
+        radio.addEventListener('change', function() {
+            // Сбрасываем подсветку
+            categoryItems.forEach(item => {
+                const nameSpan = item.querySelector('.category-name');
+                if (nameSpan) {
+                    nameSpan.innerHTML = nameSpan.textContent;
+                }
+            });
+        });
+    });
+
+    // Клик по категории для выбора
+    categoryItems.forEach(item => {
+        item.addEventListener('click', function(e) {
+            const radio = this.querySelector('input[type="radio"]');
+            if (radio) {
+                radio.checked = true;
+                // Триггерим событие change
+                radio.dispatchEvent(new Event('change'));
+            }
+        });
+    });
+
+    // Клик по опции очистки
+    clearOption.addEventListener('click', function(e) {
+        const radio = this.querySelector('input[type="radio"]');
+        if (radio) {
+            radio.checked = true;
+            radio.dispatchEvent(new Event('change'));
+        }
+    });
+});
+</script>
 {% endblock %}

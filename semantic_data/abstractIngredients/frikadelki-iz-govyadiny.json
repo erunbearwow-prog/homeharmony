@@ -1,0 +1,79 @@
+{
+  "name": "Фрикадельки из говядины",
+  "name_normalized": "frikadelki-iz-govyadiny",
+  "synonyms": "говяжьи фрикадельки, фрикадельки говяжьи, мясные шарики, тефтели из говядины, биточки, мясные шарики для супа",
+  "short_description": "Небольшие шарики из говяжьего фарша, приготовленные в бульоне или соусе. Отличаются нежной текстурой и насыщенным мясным вкусом. Идеальны для супов, вторых блюд и детского питания.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Фрикадельки из говядины — это небольшие шарики из говяжьего фарша с добавлением яиц, лука и специй. В отличие от котлет, они имеют круглую форму и меньший размер, что позволяет им быстрее готовиться. Фрикадельки варят в бульоне, соусе или тушат, благодаря чему они получаются сочными и нежными. Популярны в супах, в качестве второго блюда и в детском питании.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, сочная, мягкая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, мясной, с пряными нотками</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — круглая, небольшие шарики</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — зависит от фарша (5-15%)</li><li class=\"ingredient-list-item\"><strong>Время приготовления</strong> — 10-15 минут (варка), 15-20 минут (тушение)</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Супы</strong> — в прозрачных бульонах</li><li class=\"ingredient-list-item\"><strong>Вторые блюда</strong> — с соусом и гарниром</li><li class=\"ingredient-list-item\"><strong>Детское питание</strong> — на пару или в бульоне</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с соусом</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофельное пюре, рис, гречка, макароны</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, грибной, сливочный</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — тушёные, запечённые</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, кинза</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тефтели</strong> — более крупные</li><li class=\"ingredient-list-item\"><strong>Котлеты</strong> — плоской формы</li><li class=\"ingredient-list-item\"><strong>Куриные фрикадельки</strong> — диетические</li><li class=\"ingredient-list-item\"><strong>Свиные фрикадельки</strong> — жирнее</li></ul>",
+  "category": "Говядина",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "говядина",
+      "фрикадельки",
+      "нежные",
+      "сочные",
+      "универсальные"
+    ],
+    "preparations": [
+      "разморозка_фарша",
+      "формирование_шариков",
+      "варка_в_бульоне",
+      "тушение_в_соусе"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      },
+      {
+        "method": "приготовление_на_пару",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "супы",
+      "вторые_блюда",
+      "детское_питание"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "овощи"],
+      "sauces": ["томатный", "сметанный", "грибной", "сливочный"],
+      "herbs": ["петрушка", "укроп", "кинза"],
+      "grains": ["рис", "гречка", "макароны"]
+    },
+    "substitutes": [
+      {
+        "name": "Тефтели",
+        "similarity": "high"
+      },
+      {
+        "name": "Котлеты",
+        "similarity": "medium"
+      },
+      {
+        "name": "Куриные фрикадельки",
+        "similarity": "medium"
+      },
+      {
+        "name": "Свиные фрикадельки",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "фрикадельки",
+    "говядина",
+    "суп",
+    "второе_блюдо",
+    "детское_питание"
+  ]
+}

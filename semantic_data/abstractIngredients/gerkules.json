@@ -1,0 +1,75 @@
+{
+  "name": "Геркулес",
+  "name_normalized": "gerkules",
+  "synonyms": "овсяные хлопья Геркулес, овсяные хлопья, овсянка, хлопья овсяные, овёс, овсяная крупа, rolled oats, овсяные хлопья для каши",
+  "short_description": "Популярные овсяные хлопья, полученные из расплющенных и пропаренных зёрен овса. Отличаются быстрым временем варки, нежной текстурой и богатым составом. Основной ингредиент для овсяной каши, выпечки, мюсли и диетического питания.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Геркулес — это овсяные хлопья, полученные из пропаренных и расплющенных зёрен овса. Название происходит от имени древнегреческого героя, подразумевая силу и энергию, которые даёт эта каша. Благодаря специальной обработке (пропариванию и плющению), хлопья Геркулес требуют минимальной варки (5-10 минут) и имеют нежную, слегка рассыпчатую текстуру. Богаты медленными углеводами, растительным белком, клетчаткой, витаминами группы B, железом, магнием и цинком. Являются основой для здорового завтрака.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, мягкая (после варки), хрустящая (в мюсли)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, с лёгким ореховым оттенком</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — светло-бежевый, золотистый</li><li class=\"ingredient-list-item\"><strong>Время варки</strong> — 5-10 минут</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — овёс, витамины, минералы</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 12 месяцев</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Каша</strong> — на молоке, воде, с добавками</li><li class=\"ingredient-list-item\"><strong>Мюсли и гранола</strong> — в составе смесей</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — печенье, маффины, овсяное печенье</li><li class=\"ingredient-list-item\"><strong>Завтраки</strong> — с фруктами, ягодами, орехами</li><li class=\"ingredient-list-item\"><strong>Смузи</strong> — для густоты и сытости</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Молоко</strong> — для каши</li><li class=\"ingredient-list-item\"><strong>Фрукты и ягоды</strong> — банан, яблоки, клубника, черника</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль, кешью</li><li class=\"ingredient-list-item\"><strong>Мёд и сиропы</strong> — для сладости</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, ваниль</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овсяные хлопья (обычные)</strong> — более грубые</li><li class=\"ingredient-list-item\"><strong>Овсяная мука</strong> — для выпечки</li><li class=\"ingredient-list-item\"><strong>Перловая крупа</strong> — другая текстура</li><li class=\"ingredient-list-item\"><strong>Гречневая крупа</strong> — без глютена</li></ul>",
+  "category": "Крупы",
+  "semantic_data": {
+    "properties": [
+      "крупа",
+      "овсяные_хлопья",
+      "быстрая_варка",
+      "сытный",
+      "полезный",
+      "диетический"
+    ],
+    "preparations": [
+      "варка_в_воде_или_молоке",
+      "замачивание_для_мюсли",
+      "измельчение_в_муку"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "замачивание",
+        "priority": "medium"
+      },
+      {
+        "method": "выпекание_в_печенье",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "завтраки",
+      "выпечка",
+      "мюсли",
+      "десерты"
+    ],
+    "pairings": {
+      "protein": ["молоко", "йогурт"],
+      "fruits": ["банан", "яблоки", "клубника", "черника"],
+      "nuts": ["грецкие_орехи", "миндаль", "кешью"],
+      "sweeteners": ["мёд", "кленовый_сироп"],
+      "spices": ["корица", "ваниль"]
+    },
+    "substitutes": [
+      {
+        "name": "Овсяные хлопья (обычные)",
+        "similarity": "high"
+      },
+      {
+        "name": "Овсяная мука",
+        "similarity": "medium"
+      },
+      {
+        "name": "Перловая крупа",
+        "similarity": "low"
+      },
+      {
+        "name": "Гречневая крупа",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "крупа",
+    "геркулес",
+    "овсянка",
+    "завтрак",
+    "диетическое_питание"
+  ]
+}

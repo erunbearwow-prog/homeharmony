@@ -1,0 +1,71 @@
+{
+  "name": "Язык телячий",
+  "name_normalized": "yazyk-telyachiy",
+  "synonyms": "",
+  "short_description": "Деликатесный субпродукт из телятины — нежный, мягкий язык с тонким вкусом и плотной, но сочной текстурой. Считается одним из самых ценных субпродуктов, широко используется в горячих блюдах, закусках и салатах.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Телячий язык — это деликатесный субпродукт, который ценится за нежную, мягкую текстуру и тонкий, изысканный вкус. В отличие от говяжьего языка, телячий более нежный, быстрее готовится и имеет менее выраженный специфический привкус. Цвет варёного языка — светло-розовый или кремовый. Благодаря высокому содержанию коллагена и эластина, язык становится очень мягким после правильной тепловой обработки. Широко используется в европейской и русской кухне для приготовления закусок, салатов, горячих блюд и заливного.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, мягкая, сочная, без грубых волокон</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — тонкий, деликатный, с лёгким мясным оттенком</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — светло-розовый, кремовый (в варёном виде)</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — белки, жиры, коллаген, витамины группы B</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 дней в холодильнике (варёный)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — замочить в холодной воде на 2-3 часа для удаления крови и запаха</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — варить в подсоленной воде с луком, морковью и специями 2-3 часа</li><li class=\"ingredient-list-item\"><strong>Очистка</strong> — после варки опустить в холодную воду и сразу снять кожицу</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — нарезать ломтиками, кубиками или соломкой</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Холодные закуски</strong> — нарезка, язык под соусом</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, овощами, грибами</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — в тушёном виде, с соусом</li><li class=\"ingredient-list-item\"><strong>Заливное</strong> — классическое праздничное блюдо</li><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом, зеленью</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, грибной, хрен, горчица</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — морковь, лук, зелень, огурцы</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, лавровый лист, гвоздика</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, белый</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжий язык</strong> — более крупный, плотный</li><li class=\"ingredient-list-item\"><strong>Свиной язык</strong> — более жирный</li><li class=\"ingredient-list-item\"><strong>Ветчина</strong> — в салатах</li></ul>",
+  "category": "Субпродукты",
+  "semantic_data": {
+    "properties": [
+      "субпродукт",
+      "телятина",
+      "нежный",
+      "деликатес",
+      "мягкий",
+      "диетический"
+    ],
+    "preparations": [
+      "замачивание_2-3_часа",
+      "варка_2-3_часа",
+      "очистка_от_кожицы"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "medium"
+      },
+      {
+        "method": "заливное",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "холодные_закуски",
+      "салаты",
+      "горячие_блюда",
+      "заливное"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["морковь", "лук", "зелень", "огурцы"],
+      "sauces": ["сметанный", "грибной", "хрен", "горчица"],
+      "spices": ["черный_перец", "лавровый_лист", "гвоздика"],
+      "breads": ["ржаной_хлеб", "белый_хлеб"]
+    },
+    "substitutes": [
+      {
+        "name": "Говяжий язык",
+        "similarity": "high"
+      },
+      {
+        "name": "Свиной язык",
+        "similarity": "medium"
+      },
+      {
+        "name": "Ветчина",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "субпродукты",
+    "телячий_язык",
+    "деликатес",
+    "закуска",
+    "заливное"
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "name": "Молочный шоколад",
+  "name_normalized": "molochnyy-shokolad",
+  "synonyms": "сливочный шоколад",
+  "short_description": "Самый популярный вид шоколада, содержащий какао-продукты, сахар и сухое молоко. Отличается кремовым вкусом, нежной текстурой и выраженной сладостью.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Молочный шоколад — это кондитерский продукт, содержащий какао-массу (обычно 25-40%), масло какао, сахар и сухое молоко. Именно сухое молоко придаёт ему характерный кремовый вкус, нежную, тающую текстуру и отличает от тёмного и белого шоколада. Благодаря сбалансированному сочетанию сладости, молочного вкуса и лёгкой шоколадной ноты, это самый популярный вид шоколада в мире. Широко используется для производства батончиков, конфет, глазури и в домашней выпечке.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от светло-коричневого до тёмно-коричневого</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, тающая, маслянистая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, кремовый, шоколадный</li><li class=\"ingredient-list-item\"><strong>Содержание какао</strong> — 25-40% (какао-масса)</li><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — не менее 12% сухого молока</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 12-18 месяцев</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Конфеты и батончики</strong> — самостоятельный продукт</li><li class=\"ingredient-list-item\"><strong>Глазурь</strong> — для тортов, пирожных, печенья</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — каплями или в тесте</li><li class=\"ingredient-list-item\"><strong>Горячий шоколад</strong> — основа для напитка</li><li class=\"ingredient-list-item\"><strong>Муссы и кремы</strong> — для десертов</li><li class=\"ingredient-list-item\"><strong>Украшение</strong> — стружка, фигурки, капли</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Орехи</strong> — фундук, миндаль, грецкий орех, пекан</li><li class=\"ingredient-list-item\"><strong>Карамель</strong> — солёная карамель</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — банан, клубника, малина, апельсин</li><li class=\"ingredient-list-item\"><strong>Ягоды</strong> — голубика, вишня, малина</li><li class=\"ingredient-list-item\"><strong>Кофе</strong> — в десертах и напитках</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тёмный шоколад</strong> — менее сладкий, без молока</li><li class=\"ingredient-list-item\"><strong>Белый шоколад</strong> — без какао-массы</li><li class=\"ingredient-list-item\"><strong>Молочный шоколад (заменитель)</strong> — на растительных жирах</li><li class=\"ingredient-list-item\"><strong>Какао-порошок + масло + молоко</strong> — для выпечки</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/molochnyy-shokolad/'>Молочный шоколад в кулинарии</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/ganash/'>Ганаш из молочного шоколада</a></li></ul>",
+  "category": "Шоколад",
+  "semantic_data": {
+    "properties": [
+      "сладкий",
+      "кремовый",
+      "нежный",
+      "тающий",
+      "молочный",
+      "популярный"
+    ],
+    "preparations": [
+      "темперирование_для_глазури",
+      "растапливание_на_водяной_бане",
+      "хранение_в_сухом_прохладном_месте"
+    ],
+    "cooking_methods": [
+      {
+        "method": "темперирование",
+        "priority": "high"
+      },
+      {
+        "method": "растапливание",
+        "priority": "high"
+      },
+      {
+        "method": "запекание_в_выпечке",
+        "priority": "medium"
+      },
+      {
+        "method": "приготовление_ганаша",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "конфеты",
+      "глазурь",
+      "выпечка",
+      "напитки",
+      "муссы",
+      "украшение"
+    ],
+    "pairings": {
+      "protein": [
+        "сухое_молоко"
+      ],
+      "nuts": [
+        "фундук",
+        "миндаль",
+        "грецкий_орех",
+        "пекан"
+      ],
+      "fruits": [
+        "банан",
+        "клубника",
+        "малина",
+        "апельсин"
+      ],
+      "berries": [
+        "голубика",
+        "вишня",
+        "малина"
+      ],
+      "caramel": [
+        "соленая_карамель"
+      ],
+      "drinks": [
+        "кофе"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Тёмный шоколад",
+        "similarity": "medium"
+      },
+      {
+        "name": "Белый шоколад",
+        "similarity": "low"
+      },
+      {
+        "name": "Молочный шоколад (заменитель)",
+        "similarity": "high"
+      },
+      {
+        "name": "Какао-порошок + масло + молоко",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "шоколад",
+    "молочный_шоколад",
+    "десерт",
+    "выпечка",
+    "глазурь"
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "name": "Батат",
+  "name_normalized": "batat",
+  "synonyms": "",
+  "short_description": "Сладкий корнеплод с оранжевой, жёлтой или фиолетовой мякотью, по вкусу напоминающий тыкву и карамель. Богат клетчаткой, калием, витаминами A и C.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Батат, или сладкий картофель, — это корнеплод семейства Вьюнковые, который, вопреки названию, не является родственником картофеля. Клубни батата имеют вытянутую форму, кожуру от бежевой до красно-коричневой и мякоть разных оттенков — оранжевую, жёлтую, фиолетовую или белую. Оранжевый батат наиболее популярен и обладает сладким, карамельным вкусом с нотками тыквы. Богат клетчаткой, калием, витаминами A (в виде бета-каротина) и C. Широко используется в азиатской, африканской и американской кухне.</p><h2 class=\"ingredient-title\">Сорта и виды</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Оранжевый батат</strong> — самый сладкий, с влажной мякотью, для запекания и пюре</li><li class=\"ingredient-list-item\"><strong>Жёлтый батат</strong> — менее сладкий, плотный, для жарки</li><li class=\"ingredient-list-item\"><strong>Фиолетовый батат</strong> — с антоцианами, плотная мякоть</li><li class=\"ingredient-list-item\"><strong>Белый батат</strong> — нейтральный вкус, крахмалистый</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, карамельный (у оранжевых сортов)</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — от влажной и мягкой до плотной и крахмалистой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — оранжевый, жёлтый, фиолетовый, белый</li><li class=\"ingredient-list-item\"><strong>Витамины</strong> — A (бета-каротин), C, B6</li><li class=\"ingredient-list-item\"><strong>Клетчатка</strong> — высокое содержание</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойка</strong> — тщательно вымыть, удалить землю</li><li class=\"ingredient-list-item\"><strong>Очистка</strong> — кожуру можно счищать или запекать с ней</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — кубиками, брусочками, кружочками</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в тёмном сухом месте, не в холодильнике</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Запекание</strong> — целиком, с кожурой, с маслом и специями</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде, во фритюре (батат фри)</li><li class=\"ingredient-list-item\"><strong>Пюре</strong> — с молоком, маслом, специями</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — в супах, для салатов</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — батат в карамели, запеканки</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, имбирь, мускатный орех, паприка, чеснок</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, свинина, говядина</li><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — сливки, масло, сыр</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, чеснок, перец</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — розмарин, тимьян, петрушка</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Картофель</strong> — менее сладкий</li><li class=\"ingredient-list-item\"><strong>Тыква</strong> — похожий вкус</li><li class=\"ingredient-list-item\"><strong>Морковь</strong> — сладкая, для запекания</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/batat-fri/'>Батат фри — рецепт</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/pecheniy-batat/'>Запечённый батат с маслом и травами</a></li></ul>",
+  "category": "Картофель, батат, топинамбур",
+  "semantic_data": {
+    "properties": [
+      "сладкий",
+      "карамельный",
+      "корнеплод",
+      "богат_витамином_A",
+      "богат_клетчаткой",
+      "универсальный"
+    ],
+    "preparations": [
+      "мытьё_и_чистка",
+      "нарезка",
+      "запекание_с_кожурой"
+    ],
+    "cooking_methods": [
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "варка",
+        "priority": "medium"
+      },
+      {
+        "method": "пюре",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "гарниры",
+      "супы",
+      "салаты",
+      "десерты"
+    ],
+    "pairings": {
+      "protein": [
+        "курица",
+        "свинина",
+        "говядина"
+      ],
+      "vegetables": [
+        "лук",
+        "чеснок",
+        "перец"
+      ],
+      "spices": [
+        "корица",
+        "имбирь",
+        "мускатный_орех",
+        "паприка",
+        "чеснок"
+      ],
+      "dairy": [
+        "сливки",
+        "масло",
+        "сыр"
+      ],
+      "herbs": [
+        "розмарин",
+        "тимьян",
+        "петрушка"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Картофель",
+        "similarity": "medium"
+      },
+      {
+        "name": "Тыква",
+        "similarity": "high"
+      },
+      {
+        "name": "Морковь",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "овощ",
+    "батат",
+    "сладкий_картофель",
+    "запекание",
+    "жарка",
+    "витамин_A"
+  ]
+}

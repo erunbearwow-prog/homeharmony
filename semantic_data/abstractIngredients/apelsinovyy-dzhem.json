@@ -1,0 +1,53 @@
+{
+  "name": "Апельсиновый джем",
+  "name_normalized": "apelsinovyy-dzhem",
+  "synonyms": "джем из апельсинов, апельсиновый мармелад, цитрусовый джем, orange jam, апельсиновый конфитюр",
+  "short_description": "Густой желеобразный джем из апельсинов, приготовленный из мякоти и цедры. Имеет яркий кисло-сладкий вкус с характерной цитрусовой горчинкой, янтарный цвет и плотную текстуру. Популярный продукт для завтрака, выпечки и десертов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Апельсиновый джем — это густой желеобразный продукт, приготовленный из апельсинов (мякоти и цедры) с добавлением сахара. В отличие от варенья, джем имеет более однородную, желеобразную текстуру и менее выраженные кусочки фруктов. Благодаря высокому содержанию пектина в апельсиновой цедре, джем хорошо желируется без добавления загустителей. Характерная горчинка придаёт апельсиновому джему пикантность и делает его узнаваемым среди других цитрусовых джемов. Широко используется на завтрак, в выпечке, десертах и соусах.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — желеобразная, густая, однородная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисло-сладкий, с характерной горчинкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — янтарный, золотистый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — апельсины (мякоть и цедра), сахар</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в стеклянных банках</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Завтрак</strong> — на тосты, бутерброды, блинчики</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — начинка для тартов, печенья, рулетов</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — с йогуртом, творогом, мороженым</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к мясу (утке, свинине) и сырам</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тосты, круассаны</strong> — классический завтрак</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — бри, камамбер, голубые сыры</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — утка, свинина</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — миндаль, грецкие</li><li class=\"ingredient-list-item\"><strong>Шоколад</strong> — тёмный</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Лимонный джем</strong> — более кислый</li><li class=\"ingredient-list-item\"><strong>Грейпфрутовый джем</strong> — более горький</li><li class=\"ingredient-list-item\"><strong>Абрикосовый джем</strong> — слаще, без горечи</li><li class=\"ingredient-list-item\"><strong>Апельсиновый мармелад</strong> — синоним</li></ul>",
+  "category": "Варенье, джемы, повидло, конфитюр",
+  "semantic_data": {
+    "properties": [
+      "джем",
+      "апельсиновый",
+      "желеобразный",
+      "кисло-сладкий",
+      "горьковатый",
+      "янтарный"
+    ],
+    "preparations": [
+      "варка_с_сахаром",
+      "хранение_в_стерилизованных_банках"
+    ],
+    "cooking_methods": [
+      {"method": "варка", "priority": "high"},
+      {"method": "консервирование", "priority": "high"}
+    ],
+    "applications": [
+      "завтрак",
+      "выпечка",
+      "десерты",
+      "соусы_к_мясу"
+    ],
+    "pairings": {
+      "protein": ["бри", "камамбер", "голубые_сыры", "утка", "свинина"],
+      "nuts": ["миндаль", "грецкие_орехи"],
+      "chocolate": ["тёмный_шоколад"],
+      "breads": ["тосты", "круассаны"],
+      "desserts": ["йогурт", "творог", "мороженое"]
+    },
+    "substitutes": [
+      {"name": "Лимонный джем", "similarity": "medium"},
+      {"name": "Грейпфрутовый джем", "similarity": "medium"},
+      {"name": "Абрикосовый джем", "similarity": "low"},
+      {"name": "Апельсиновый мармелад", "similarity": "high"}
+    ]
+  },
+  "tags": [
+    "джем",
+    "апельсиновый_джем",
+    "мармелад",
+    "цитрусовые",
+    "завтрак",
+    "выпечка"
+  ]
+}

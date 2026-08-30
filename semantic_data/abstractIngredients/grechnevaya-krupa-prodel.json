@@ -1,0 +1,72 @@
+{
+  "name": "Гречневая крупа продел",
+  "name_normalized": "grechnevaya-krupa-prodel",
+  "synonyms": "продел, гречка продел, колотая гречка, дробленая гречка, гречневая крупа сечка, гречка для каш, гречневая каша",
+  "short_description": "Дробленые зёрна гречневой крупы, которые варятся быстрее цельной ядрицы и имеют более мягкую текстуру. Подходит для детского и диетического питания, запеканок и быстрых гарниров.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Гречневая крупа продел — это колотые и дробленые зёрна гречихи, которые получаются в процессе обработки ядрицы. В отличие от цельной гречки (ядрицы), продел имеет более мелкую фракцию и быстрее разваривается, что делает его идеальным для детского и диетического питания, а также для быстрых гарниров. Продел сохраняет все полезные свойства гречки: богат железом, магнием, витаминами группы B и растительным белком, при этом не содержит глютена.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мягкая, разваристая, однородная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — ореховый, насыщенный</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — коричневый (обжаренная), светло-зелёный (зелёная)</li><li class=\"ingredient-list-item\"><strong>Глютен</strong> — не содержит</li><li class=\"ingredient-list-item\"><strong>Белки</strong> — до 12%</li><li class=\"ingredient-list-item\"><strong>Время варки</strong> — 10-15 минут (быстрее ядрицы)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Переборка</strong> — удалить мусор</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — тщательно промыть в холодной воде</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — в кипящей воде 10-15 минут</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Каши</strong> — для детей, для завтрака</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — к мясу, рыбе, птице</li><li class=\"ingredient-list-item\"><strong>Запеканки</strong> — с творогом, мясом</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — в качестве добавки</li><li class=\"ingredient-list-item\"><strong>Диетическое питание</strong> — легко усваивается</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — свинина, говядина, курица</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, чеснок</li><li class=\"ingredient-list-item\"><strong>Грибы</strong> — классическое сочетание</li><li class=\"ingredient-list-item\"><strong>Масло</strong> — сливочное, растительное</li><li class=\"ingredient-list-item\"><strong>Творог</strong> — в запеканках</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гречка ядрица</strong> — более плотная</li><li class=\"ingredient-list-item\"><strong>Рис</strong> — другой вкус</li><li class=\"ingredient-list-item\"><strong>Пшено</strong> — для каш</li></ul>",
+  "category": "Крупы",
+  "semantic_data": {
+    "properties": [
+      "крупа",
+      "дробленый",
+      "быстрая_варка",
+      "безглютеновый",
+      "мягкая_текстура",
+      "диетический"
+    ],
+    "preparations": [
+      "переборка_и_промывка",
+      "варка_10-15_минут"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "детское_питание",
+      "диетическое_питание",
+      "каши",
+      "гарниры",
+      "запеканки",
+      "супы"
+    ],
+    "pairings": {
+      "protein": ["свинина", "говядина", "курица"],
+      "vegetables": ["лук", "морковь", "чеснок", "грибы"],
+      "dairy": ["творог"],
+      "oils": ["сливочное_масло", "растительное_масло"]
+    },
+    "substitutes": [
+      {
+        "name": "Гречка ядрица",
+        "similarity": "high"
+      },
+      {
+        "name": "Рис",
+        "similarity": "medium"
+      },
+      {
+        "name": "Пшено",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "крупа",
+    "гречневая_крупа",
+    "продел",
+    "детское_питание",
+    "диетический",
+    "каша"
+  ]
+}

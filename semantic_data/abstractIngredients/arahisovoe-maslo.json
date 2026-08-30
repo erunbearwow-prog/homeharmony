@@ -1,0 +1,106 @@
+{
+  "name": "Арахисовое масло",
+  "name_normalized": "arahisovoe-maslo",
+  "synonyms": "",
+  "short_description": "Растительное масло, полученное из бобов арахиса методом холодного или горячего прессования. Имеет светлый цвет, нейтральный ореховый вкус и высокую температуру дымления.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Арахисовое масло — это растительное масло, получаемое из бобов арахиса (земляного ореха) методом холодного или горячего прессования. В зависимости от технологии производства, масло может быть рафинированным (светлым, с нейтральным вкусом) или нерафинированным (тёмным, с ярким ореховым ароматом). Отличается высокой температурой дымления (до 230 °C для рафинированного), что делает его идеальным для жарки и фритюра. Богато мононенасыщенными и полиненасыщенными жирными кислотами, витамином E и фитостеролами.</p><h2 class=\"ingredient-title\">Виды арахисового масла</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Рафинированное</strong> — очищенное, светлое, нейтрального вкуса, высокая температура дымления (до 230 °C)</li><li class=\"ingredient-list-item\"><strong>Нерафинированное</strong> — неочищенное, тёмное, с ярким ореховым ароматом, более полезное</li><li class=\"ingredient-list-item\"><strong>Холодного отжима</strong> — сохраняет максимум полезных веществ, имеет выраженный ореховый вкус</li><li class=\"ingredient-list-item\"><strong>Горячего отжима</strong> — более дешёвое, менее ароматное</li><li class=\"ingredient-list-item\"><strong>Смешанное</strong> — смесь арахисового и других масел</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный (рафинированное) или ореховый (нерафинированное)</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от светло-жёлтого до янтарного</li><li class=\"ingredient-list-item\"><strong>Температура дымления</strong> — 160–230 °C (зависит от типа)</li><li class=\"ingredient-list-item\"><strong>Жирные кислоты</strong> — олеиновая (омега-9), линолевая (омега-6)</li><li class=\"ingredient-list-item\"><strong>Витамин E</strong> — мощный антиоксидант</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 1 года в тёмном месте</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка и фритюр</strong> — благодаря высокой температуре дымления</li><li class=\"ingredient-list-item\"><strong>Азиатская кухня</strong> — вока, жарка во фритюре</li><li class=\"ingredient-list-item\"><strong>Салатные заправки</strong> — нерафинированное масло с ореховым вкусом</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — арахисовые соусы для сатай, нудлс</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — для замены сливочного масла в некоторых рецептах</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для мяса и рыбы</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Азиатские блюда</strong> — лапша, рис, вок, сатай</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, свинина, говядина</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — стручковая фасоль, брокколи, перец</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, имбирь, чили, соевый соус</li><li class=\"ingredient-list-item\"><strong>Уксусы</strong> — рисовый уксус, бальзамический</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Кунжутное масло</strong> — в азиатских блюдах, более насыщенный вкус</li><li class=\"ingredient-list-item\"><strong>Рафинированное подсолнечное масло</strong> — нейтральный вкус, высокая температура дымления</li><li class=\"ingredient-list-item\"><strong>Масло виноградных косточек</strong> — нейтральный вкус, подходит для жарки</li><li class=\"ingredient-list-item\"><strong>Оливковое масло</strong> — для салатов (нерафинированное)</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/vybor-masla-dlya-zharki/'>Какое масло выбрать для жарки</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/arahisovyy-sous/'>Арахисовый соус — рецепты с арахисовым маслом</a></li></ul>",
+  "category": "Масла растительные",
+  "semantic_data": {
+    "properties": [
+      "растительное_масло",
+      "нейтральный_вкус",
+      "ореховый_вкус",
+      "высокая_температура_дымления",
+      "богат_витамином_E",
+      "светлый",
+      "янтарный",
+      "длительный_срок_хранения"
+    ],
+    "preparations": [
+      "хранение_в_темном_месте",
+      "не_перегревать_выше_температуры_дымления"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "фритюр",
+        "priority": "high"
+      },
+      {
+        "method": "салатные_заправки",
+        "priority": "medium"
+      },
+      {
+        "method": "приготовление_соусов",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "жарка_и_фритюр",
+      "азиатская_кухня",
+      "салатные_заправки",
+      "соусы",
+      "выпечка",
+      "маринады"
+    ],
+    "pairings": {
+      "protein": [
+        "курица",
+        "свинина",
+        "говядина"
+      ],
+      "vegetables": [
+        "стручковая_фасоль",
+        "брокколи",
+        "перец",
+        "морковь"
+      ],
+      "asian": [
+        "лапша",
+        "рис",
+        "вок",
+        "сатай"
+      ],
+      "spices": [
+        "чеснок",
+        "имбирь",
+        "чили",
+        "соевый_соус"
+      ],
+      "vinegars": [
+        "рисовый_уксус",
+        "бальзамический_уксус"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Кунжутное масло",
+        "similarity": "medium"
+      },
+      {
+        "name": "Рафинированное подсолнечное масло",
+        "similarity": "high"
+      },
+      {
+        "name": "Масло виноградных косточек",
+        "similarity": "high"
+      },
+      {
+        "name": "Оливковое масло",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "масло",
+    "арахисовое_масло",
+    "растительное_масло",
+    "жарка",
+    "фритюр",
+    "азиатская_кухня",
+    "температура_дымления"
+  ]
+}

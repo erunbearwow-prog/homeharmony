@@ -1,0 +1,65 @@
+{
+  "name": "Икра щучья",
+  "name_normalized": "ikra_schuchya",
+  "synonyms": "икра щучья, икра щуки, щучья икра, икра рыбная пресноводная, закуска из щуки, икра для бутербродов, икра для салатов, икра пастеризованная, домашняя икра, pike caviar",
+  "short_description": "Мелкая икра щуки кремово-янтарного цвета с плотной, упругой текстурой и мягким, нежным вкусом без выраженного рыбного запаха. Бюджетная альтернатива красной и черной икре, ценится в домашней кулинарии для бутербродов, салатов и как самостоятельная закуска.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Щучья икра — это пресноводная рыбная икра, которую получают от щуки (Esox lucius). Икринки мелкие (1–2 мм), имеют кремово-янтарный или желтовато-оранжевый цвет и плотную, упругую текстуру. Вкус мягкий, нежный, без выраженного рыбного запаха, с легкой солоноватостью и сливочными нотками. Щучья икра — это доступный продукт, который часто готовят в домашних условиях. Она подходит для бутербродов, салатов, фаршированных яиц и как самостоятельная закуска. В продаже встречается в пастеризованном или свежем виде.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Размер икринок</strong> — мелкие, 1–2 мм в диаметре</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — кремово-янтарный, желтоватый, светло-оранжевый</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — мягкий, нежный, сливочный, с легкой солоноватостью</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, икринки не слипаются</li><li class=\"ingredient-list-item\"><strong>Калорийность</strong> — 120–140 ккал на 100 г</li><li class=\"ingredient-list-item\"><strong>Белки</strong> — 17–19 г на 100 г</li><li class=\"ingredient-list-item\"><strong>Жиры</strong> — 6–8 г на 100 г</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 12 месяцев (в закрытой банке), 3–5 дней (в открытой)</li></ul><h2 class=\"ingredient-title\">Формы выпуска</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Пастеризованная (в банках)</strong> — готовая к употреблению, с добавлением соли</li><li class=\"ingredient-list-item\"><strong>Свежая (замороженная)</strong> — требует предварительной подготовки и засола</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Пастеризованная икра</strong> — готова к употреблению, подается охлажденной</li><li class=\"ingredient-list-item\"><strong>Свежая икра</strong> — отделить от ястыков (пленок), засолить (2–3% соли), выдержать в холодильнике 8–12 часов</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом на белом или ржаном хлебе</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с яйцами, картофелем, луком</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — в тарталетках, на гренках</li><li class=\"ingredient-list-item\"><strong>Фаршированные яйца</strong> — с майонезом и зеленью</li><li class=\"ingredient-list-item\"><strong>Самостоятельная закуска</strong> — в чистом виде</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — белый, ржаной, тостовый, бородинский</li><li class=\"ingredient-list-item\"><strong>Масло сливочное</strong> — классика</li><li class=\"ingredient-list-item\"><strong>Яйца</strong> — вареные, в салатах</li><li class=\"ingredient-list-item\"><strong>Картофель</strong> — вареный, в салатах</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, зеленый лук</li><li class=\"ingredient-list-item\"><strong>Майонез</strong> — в салатах</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Икра минтая</strong> — схожая текстура, более светлая</li><li class=\"ingredient-list-item\"><strong>Икра трески</strong> — похожий вкус</li><li class=\"ingredient-list-item\"><strong>Икра мойвы</strong> — хрустящая, мелкая</li><li class=\"ingredient-list-item\"><strong>Икра лососевая</strong> — более жирная и дорогая</li></ul>",
+  "category": "Рыба и морепродукты",
+  "semantic_data": {
+    "properties": [
+      "икра",
+      "пресноводная",
+      "щучья",
+      "доступная",
+      "мелкая",
+      "плотная",
+      "упругая",
+      "нежный вкус",
+      "домашняя",
+      "пастеризованная"
+    ],
+    "preparations": [
+      "хранение в холодильнике при 0–4°C",
+      "подача охлажденной",
+      "отделение от ястыков (для свежей)",
+      "засол соли (2–3%)"
+    ],
+    "cooking_methods": [
+      {"method": "использование в бутербродах", "priority": "high"},
+      {"method": "использование в салатах", "priority": "high"},
+      {"method": "использование в качестве закуски", "priority": "high"},
+      {"method": "использование в фаршированных яйцах", "priority": "medium"},
+      {"method": "засол свежей икры", "priority": "medium"}
+    ],
+    "applications": [
+      "закуски",
+      "салаты",
+      "бутерброды",
+      "фаршированные яйца"
+    ],
+    "pairings": {
+      "protein": ["сливочное масло", "майонез", "яйца"],
+      "vegetables": ["картофель", "лук"],
+      "sauces": [],
+      "herbs": ["укроп", "петрушка", "зеленый лук"],
+      "spices": ["черный перец", "соль"]
+    },
+    "substitutes": [
+      {"name": "Икра минтая", "similarity": "high"},
+      {"name": "Икра трески", "similarity": "high"},
+      {"name": "Икра мойвы", "similarity": "medium"},
+      {"name": "Икра лососевая", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "икра",
+    "щучья икра",
+    "пресноводная икра",
+    "домашняя икра",
+    "закуска",
+    "бутерброды",
+    "салаты",
+    "доступный продукт",
+    "рыбные продукты"
+  ]
+}

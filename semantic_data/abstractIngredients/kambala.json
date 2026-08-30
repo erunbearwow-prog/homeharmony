@@ -1,0 +1,66 @@
+{
+  "name": "Камбала",
+  "name_normalized": "kambala",
+  "synonyms": "камбала, морская камбала, речная камбала, камбала черная, камбала белобрюхая, камбала желтобрюхая, камбала для жарки, камбала для запекания, камбала для гриля, рыба камбала, плоская рыба, Platichthys flesus, Limanda limanda",
+  "short_description": "Плоская морская и пресноводная рыба отряда камбалообразных с характерным асимметричным телом и двумя глазами на одной стороне. Мясо белое, плотное, нежное, с мягким сладковатым вкусом. Ценится за диетические свойства и универсальность в кулинарии.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Камбала — это плоская рыба, которая проводит большую часть жизни на дне, лежа на боку. У камбалы асимметричное тело: оба глаза расположены на одной стороне (верхней). Нижняя сторона светлая, верхняя — темная, с маскировочной окраской под цвет дна. Мясо камбалы белое, плотное, нежное, с мягким сладковатым вкусом и нейтральным запахом. Камбала — это диетический продукт с низким содержанием жира и высокой питательной ценностью. Она обитает в морях умеренного и холодного пояса, а также заходит в реки.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — белое, плотное, нежное, без мелких костей</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — мягкий, сладковатый, нейтральный</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — упругая, сочная</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — низкая (диетический продукт)</li><li class=\"ingredient-list-item\"><strong>Размер</strong> — от 20 до 60 см (в зависимости от вида)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — содержит много мелких костей в плавниках</li></ul><h2 class=\"ingredient-title\">Виды камбалы</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Речная камбала</strong> — обитает в прибрежных водах и реках, мелкая, до 30 см</li><li class=\"ingredient-list-item\"><strong>Черная камбала</strong> — темная окраска, более плотное мясо</li><li class=\"ingredient-list-item\"><strong>Белобрюхая камбала</strong> — светлая сторона, нежное мясо</li><li class=\"ingredient-list-item\"><strong>Желтобрюхая камбала</strong> — с желтоватым оттенком нижней стороны</li><li class=\"ingredient-list-item\"><strong>Камбала-ерш</strong> — с характерной колючей чешуей</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Очистка</strong> — удалить чешую (с верхней стороны)</li><li class=\"ingredient-list-item\"><strong>Потрошение</strong> — удалить внутренности, промыть</li><li class=\"ingredient-list-item\"><strong>Удаление кожи</strong> — для некоторых рецептов</li><li class=\"ingredient-list-item\"><strong>Филетирование</strong> — отделить филе от хребта</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — с лимоном и травами для запекания и жарки</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — классический способ, с хрустящей корочкой</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с овощами, сыром, травами</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — целиком или филе</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в соусе</li><li class=\"ingredient-list-item\"><strong>Пар</strong> — диетический вариант</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — горячее и холодное</li><li class=\"ingredient-list-item\"><strong>Бульон</strong> — из головы и костей</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, помидоры, лук, перец, цукини, баклажаны</li><li class=\"ingredient-list-item\"><strong>Цитрусовые</strong> — лимон, лайм</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочный, сметанный, лимонный, белое вино</li><li class=\"ingredient-list-item\"><strong>Травы</strong> — укроп, петрушка, кинза, базилик, тимьян</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, паприка, чеснок</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Палтус</strong> — похожая текстура, более крупная рыба</li><li class=\"ingredient-list-item\"><strong>Треска</strong> — белое мясо, но более плотное</li><li class=\"ingredient-list-item\"><strong>Судак</strong> — плотное мясо, но менее плоский</li><li class=\"ingredient-list-item\"><strong>Окунь морской</strong> — белое мясо</li></ul>",
+  "category": "Рыба и морепродукты",
+  "semantic_data": {
+    "properties": [
+      "плоская рыба",
+      "морская",
+      "речная",
+      "белое мясо",
+      "плотное",
+      "нежное",
+      "диетическая",
+      "для жарки",
+      "для запекания",
+      "для гриля"
+    ],
+    "preparations": [
+      "очистка от чешуи",
+      "потрошение",
+      "удаление кожи (по желанию)",
+      "филетирование",
+      "маринование с лимоном и травами"
+    ],
+    "cooking_methods": [
+      {"method": "жарка на сковороде", "priority": "high"},
+      {"method": "запекание в духовке", "priority": "high"},
+      {"method": "гриль", "priority": "high"},
+      {"method": "тушение", "priority": "medium"},
+      {"method": "приготовление на пару", "priority": "medium"},
+      {"method": "копчение", "priority": "low"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "диетическое питание",
+      "закуски",
+      "бульоны"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "помидоры", "лук", "перец", "цукини", "баклажаны"],
+      "sauces": ["сливочный", "сметанный", "лимонный", "белое вино"],
+      "herbs": ["укроп", "петрушка", "кинза", "базилик", "тимьян"],
+      "spices": ["черный перец", "паприка", "чеснок"]
+    },
+    "substitutes": [
+      {"name": "Палтус", "similarity": "high"},
+      {"name": "Треска", "similarity": "high"},
+      {"name": "Судак", "similarity": "medium"},
+      {"name": "Окунь морской", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "рыба",
+    "камбала",
+    "плоская рыба",
+    "морская рыба",
+    "диетическая рыба",
+    "белое мясо",
+    "жарка",
+    "запекание"
+  ]
+}

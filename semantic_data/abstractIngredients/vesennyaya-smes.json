@@ -1,0 +1,79 @@
+{
+  "name": "Весенняя смесь",
+  "name_normalized": "vesennyaya-smes",
+  "synonyms": "весенняя смесь, овощная смесь весенняя, замороженная весенняя смесь, весенний микс, овощи весенние, легкая овощная смесь",
+  "short_description": "Легкая замороженная овощная смесь на основе цветной капусты, брокколи, моркови и брюссельской капусты. В составе некоторых производителей может присутствовать стручковая фасоль и зеленый горошек. Идеальна для диетического питания, гарниров, супов и рагу.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Весенняя смесь — это замороженная овощная смесь, основу которой составляют цветная капуста, брокколи и морковь. В отличие от других смесей, она содержит меньше бобовых, а в классическом варианте «Весенние овощи №5» от Global Village присутствуют также стручковая фасоль и зеленый горошек. Некоторые производители (например, Мираторг) предлагают упрощенный вариант из цветной капусты, брокколи и моркови. Благодаря легкому составу, смесь низкокалорийна (около 30-45 ккал на 100 г) и богата витаминами.</p><h2 class=\"ingredient-title\">Состав</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Цветная капуста</strong> — основа (есть у всех производителей)</li><li class=\"ingredient-list-item\"><strong>Морковь</strong> — вторая по частоте составляющая</li><li class=\"ingredient-list-item\"><strong>Брокколи</strong> — у многих производителей </li><li class=\"ingredient-list-item\"><strong>Брюссельская капуста</strong> — у некоторых производителей </li><li class=\"ingredient-list-item\"><strong>Стручковая фасоль</strong> — у некоторых производителей </li><li class=\"ingredient-list-item\"><strong>Зеленый горошек</strong> — у некоторых производителей </li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочная, с разной степенью упругости</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, овощной</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — светлый, зеленый с белыми и оранжевыми вкраплениями</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 12 месяцев в морозильной камере</li><li class=\"ingredient-list-item\"><strong>Калорийность</strong> — 30-45 ккал на 100 г</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гарнир</strong> — к мясу, рыбе, птице</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — овощные, сливочные, крем-супы</li><li class=\"ingredient-list-item\"><strong>Рагу</strong> — с мясом или отдельно</li><li class=\"ingredient-list-item\"><strong>Диетическое питание</strong> — как самостоятельное блюдо</li><li class=\"ingredient-list-item\"><strong>Запеканки</strong> — с сыром, яйцом</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, индейка, телятина</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочный, сырный, сметанный</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, чеснок, мускатный орех</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Итальянская смесь</strong> — с брокколи и томатами</li><li class=\"ingredient-list-item\"><strong>Мексиканская смесь</strong> — с бобовыми и кукурузой</li><li class=\"ingredient-list-item\"><strong>Цветная капуста (замороженная)</strong> — моно-вариант</li><li class=\"ingredient-list-item\"><strong>Брокколи (замороженная)</strong> — моно-вариант</li></ul>",
+  "category": "Овощи быстрозамороженные",
+  "semantic_data": {
+    "properties": [
+      "замороженный",
+      "овощной",
+      "легкий",
+      "диетический",
+      "витаминный",
+      "нейтральный_вкус"
+    ],
+    "preparations": [
+      "варка_в_подсоленной_воде",
+      "жарка_на_сковороде",
+      "тушение",
+      "приготовление_в_микроволновке"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_в_микроволновке",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "гарниры",
+      "супы",
+      "рагу",
+      "запеканки",
+      "диетическое_питание"
+    ],
+    "pairings": {
+      "protein": ["курица", "индейка", "телятина"],
+      "sauces": ["сливочный", "сырный", "сметанный"],
+      "spices": ["черный_перец", "чеснок", "мускатный_орех"]
+    },
+    "substitutes": [
+      {
+        "name": "Итальянская смесь",
+        "similarity": "medium"
+      },
+      {
+        "name": "Мексиканская смесь",
+        "similarity": "low"
+      },
+      {
+        "name": "Цветная капуста (замороженная)",
+        "similarity": "medium"
+      },
+      {
+        "name": "Брокколи (замороженная)",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "заморозка",
+    "овощи",
+    "весенняя_смесь",
+    "гарнир",
+    "диетическое_питание"
+  ]
+}

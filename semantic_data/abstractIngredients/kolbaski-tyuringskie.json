@@ -1,0 +1,74 @@
+{
+  "name": "Колбаски Тюрингские",
+  "name_normalized": "kolbaski-tyuringskie",
+  "synonyms": "тюрингские колбаски, тюрингские сосиски, Thüringer Rostbratwurst, братвурст, тюрингенские колбаски, колбаски для гриля, немецкие колбаски",
+  "short_description": "Знаменитые немецкие колбаски для гриля из Тюрингии с историей более 600 лет. Готовятся из нежирной свинины с добавлением майорана, тмина и лимонной цедры. Отличаются низким содержанием жира и характерным пряным ароматом.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Тюрингские колбаски (Thüringer Rostbratwurst) — это одни из самых известных немецких колбасных изделий, история которых насчитывает более 600 лет. Первое упоминание о них датируется 1404 годом, а старейший сохранившийся рецепт — 1613 годом. В 2004 году название «Thüringer Rostbratwurst» получило статус географически защищённого продукта. Основу колбасок составляет нежирная свинина (иногда с добавлением говядины или телятины), а их отличительная черта — характерный набор специй, в котором обязательно присутствуют майоран и тмин, а также лимонная цедра. Содержание жира в тюрингских колбасках составляет всего 25%, что значительно ниже, чем у многих других видов немецких колбас.</p><h2 class=\"ingredient-title\">Состав</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свинина</strong> — основа, нежирное мясо</li><li class=\"ingredient-list-item\"><strong>Говядина или телятина</strong> — в некоторых рецептах</li><li class=\"ingredient-list-item\"><strong>Майоран</strong> — ключевая специя, отличающая тюрингские колбаски</li><li class=\"ingredient-list-item\"><strong>Тмин</strong> — характерная пряность</li><li class=\"ingredient-list-item\"><strong>Лимонная цедра</strong> — придаёт свежий аромат</li><li class=\"ingredient-list-item\"><strong>Соль, перец, мускатный орех, кориандр</strong> — в различных сочетаниях</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, сочная, с хрустящей корочкой после жарки</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — пряный, с выраженным ароматом майорана и тмина, с лимонными нотками</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — около 25% (ниже, чем у других немецких колбас)</li><li class=\"ingredient-list-item\"><strong>Длина</strong> — 15-20 см, вес — около 150 г</li><li class=\"ingredient-list-item\"><strong>Оболочка</strong> — натуральная (свиная или баранья)</li></ul><h2 class=\"ingredient-title\">Способы приготовления</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гриль</strong> — классический способ, на углях или на решётке, смазанной беконом</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде, до хрустящей корочки</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — при температуре 75-85°C в течение 20-35 минут (бланширование)</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Горчица</strong> — местная (бауцнерская или эрфуртская)</li><li class=\"ingredient-list-item\"><strong>Булочка</strong> — с кунжутом, разрезанная не до конца</li><li class=\"ingredient-list-item\"><strong>Картофельный салат</strong> — традиционный гарнир</li><li class=\"ingredient-list-item\"><strong>Красная капуста</strong> — классический аккомпанемент</li><li class=\"ingredient-list-item\"><strong>Пиво</strong> — традиционный напиток для подачи</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Нюрнбергские колбаски</strong> — похожие по способу приготовления</li><li class=\"ingredient-list-item\"><strong>Мюнхенские колбаски</strong> — светлые, варёные</li><li class=\"ingredient-list-item\"><strong>Охотничьи колбаски</strong> — плотные, копчёные</li></ul>",
+  "category": "Колбаски и сосиски сырые",
+  "semantic_data": {
+    "properties": [
+      "колбаски",
+      "тюрингские",
+      "немецкая_кухня",
+      "братвурст",
+      "пряные",
+      "нежирные",
+      "гриль",
+      "защищённое_название"
+    ],
+    "preparations": [
+      "жарка_на_гриле",
+      "обжаривание_на_сковороде",
+      "бланширование_в_воде_75-85_C"
+    ],
+    "cooking_methods": [
+      {
+        "method": "гриль",
+        "priority": "high"
+      },
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "варка_бланширование",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "закуска_к_пиву",
+      "гриль",
+      "пикник",
+      "основное_блюдо"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["красная_капуста", "картофель"],
+      "sauces": ["горчица_бауцнерская", "горчица_эрфуртская"],
+      "breads": ["булочка_с_кунжутом"],
+      "drinks": ["пиво"]
+    },
+    "substitutes": [
+      {
+        "name": "Нюрнбергские колбаски",
+        "similarity": "high"
+      },
+      {
+        "name": "Мюнхенские колбаски",
+        "similarity": "medium"
+      },
+      {
+        "name": "Охотничьи колбаски",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "колбаски",
+    "тюрингские_колбаски",
+    "немецкая_кухня",
+    "братвурст",
+    "гриль",
+    "пивная_закуска"
+  ]
+}

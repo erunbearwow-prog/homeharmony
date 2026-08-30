@@ -1,0 +1,56 @@
+{
+  "name": "Пеперони",
+  "name_normalized": "peperoni",
+  "synonyms": "пепперони, pepperoni, острая салями, пикантная колбаса, итальянская острая колбаса",
+  "short_description": "Острая сыровяленая колбаса итальянско-американского происхождения, изготавливаемая из свинины и говядины с добавлением паприки, острого перца и других специй. Отличается ярко-красным цветом, насыщенным пряным вкусом и характерной остротой. Популярна как добавка к пицце, в сэндвичи и закуски.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Пеперони — это острая сыровяленая колбаса итальянско-американского происхождения, которая стала неотъемлемым символом американской пиццы. Производится из свинины и говядины (иногда из одного вида мяса) с добавлением нитритной соли, паприки, острого красного перца, чеснока и других специй. В процессе созревания колбаса приобретает ярко-красный цвет, плотную упругую текстуру, насыщенный пряный вкус с выраженной остротой и характерным ароматом копчения (в некоторых вариантах). Пеперони традиционно нарезают тонкими кружочками и используют в качестве топпинга для пиццы, но также добавляют в сэндвичи, салаты и закуски.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, хорошо нарезается</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — пряный, острый, с копчёными нотками</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — ярко-красный, с белыми жировыми вкраплениями</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — свинина, говядина, паприка, острый перец, чеснок, соль</li><li class=\"ingredient-list-item\"><strong>Острота</strong> — умеренная или высокая (зависит от сорта)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 6-9 месяцев в холодильнике</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Пицца</strong> — классический топпинг, пеперони-пицца</li><li class=\"ingredient-list-item\"><strong>Бутерброды и сэндвичи</strong> — с сыром, овощами, соусами</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — нарезка к пиву, вину</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — в салатах с зеленью и овощами</li><li class=\"ingredient-list-item\"><strong>Паста</strong> — в соусы для пасты</li><li class=\"ingredient-list-item\"><strong>Брускетта</strong> — на гренках</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — моцарелла, пармезан, рикотта</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — томаты, перец, лук, оливки</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, чесночный, острый</li><li class=\"ingredient-list-item\"><strong>Травы</strong> — орегано, базилик, тимьян</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — пиво, красное сухое вино</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салями</strong> — менее острая</li><li class=\"ingredient-list-item\"><strong>Чоризо</strong> — испанская острая колбаса</li><li class=\"ingredient-list-item\"><strong>Сырокопченая колбаса</strong> — без остроты</li><li class=\"ingredient-list-item\"><strong>Острая брауншвейгская</strong> — похожий профиль</li></ul>",
+  "category": "Колбасы сырокопченые и сыровяленые",
+  "semantic_data": {
+    "properties": [
+      "сыровяленая",
+      "острая",
+      "пикантная",
+      "пряная",
+      "итальянская_кухня",
+      "популярная_в_пицце"
+    ],
+    "preparations": [
+      "нарезка_кружочками",
+      "хранение_в_холодильнике"
+    ],
+    "cooking_methods": [
+      {"method": "свежее_употребление", "priority": "high"},
+      {"method": "добавление_в_пиццу", "priority": "high"},
+      {"method": "добавление_в_сэндвичи", "priority": "medium"}
+    ],
+    "applications": [
+      "пицца",
+      "сэндвичи",
+      "закуски",
+      "салаты",
+      "паста"
+    ],
+    "pairings": {
+      "protein": ["моцарелла", "пармезан", "рикотта"],
+      "vegetables": ["томаты", "перец", "лук", "оливки"],
+      "sauces": ["томатный", "чесночный", "острый"],
+      "herbs": ["орегано", "базилик", "тимьян"],
+      "drinks": ["пиво", "красное_сухое_вино"],
+      "breads": ["пицца_основа", "багет", "чиабатта"]
+    },
+    "substitutes": [
+      {"name": "Салями", "similarity": "high"},
+      {"name": "Чоризо", "similarity": "high"},
+      {"name": "Сырокопченая колбаса", "similarity": "medium"},
+      {"name": "Острая брауншвейгская", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "колбаса",
+    "пеперони",
+    "салями",
+    "острая_колбаса",
+    "пицца",
+    "итальянская_кухня"
+  ]
+}

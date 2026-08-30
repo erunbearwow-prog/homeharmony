@@ -1,0 +1,75 @@
+{
+  "name": "Хлеб Даниловский",
+  "name_normalized": "khleb-danilovskiy",
+  "synonyms": "даниловский хлеб, хлеб Даниловский, даниловский ржаной хлеб, даниловский заварной хлеб, ржаной хлеб с патокой, хлеб с кориандром и тмином",
+  "short_description": "Заварной ржаной хлеб с добавлением патоки, кориандра и тмина. Имеет темно-коричневый цвет, плотную влажную текстуру и сбалансированный кисло-сладкий вкус с пряным ароматом. Один из популярных сортов заварного ржаного хлеба.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Хлеб Даниловский — это заварной ржаной хлеб, который выпекается из смеси ржаной обойной и пшеничной муки с добавлением ржаного солода, патоки, кориандра и тмина. Заварной способ приготовления придает хлебу характерный сладковатый вкус, темный цвет и плотную, влажную текстуру. По своим свойствам Даниловский хлеб занимает промежуточное положение между классическим бородинским и рижским хлебом, сочетая сладость патоки с ароматом тмина и кориандра.</p><h2 class=\"ingredient-title\">Состав и технология</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мука</strong> — ржаная обойная (основа) и пшеничная 1-го сорта</li><li class=\"ingredient-list-item\"><strong>Заварка</strong> — ржаная мука и ржаной солод завариваются кипятком</li><li class=\"ingredient-list-item\"><strong>Патока</strong> — придает сладость и темный цвет</li><li class=\"ingredient-list-item\"><strong>Пряности</strong> — кориандр и тмин (в тесто и для обсыпки)</li><li class=\"ingredient-list-item\"><strong>Закваска</strong> — ржаная закваска для кисловатого вкуса</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, влажная, упругая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисло-сладкий, сбалансированный, с пряными нотками</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — темно-коричневый</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — ржаной, с оттенками патоки, кориандра и тмина</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 3-5 дней</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>К супам</strong> — борщ, щи, солянка, гороховый суп</li><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом, соленой рыбой, сыром, паштетом</li><li class=\"ingredient-list-item\"><strong>Гренки</strong> — к пиву, к супам</li><li class=\"ingredient-list-item\"><strong>Основа для закусок</strong> — с икрой, крем-сыром</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сливочное масло</strong> — классическая пара</li><li class=\"ingredient-list-item\"><strong>Сельдь и шпроты</strong> — традиционная закуска</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — мягкие сливочные, плавленые</li><li class=\"ingredient-list-item\"><strong>Квашеная капуста</strong> — классическое сочетание</li><li class=\"ingredient-list-item\"><strong>Паштет</strong> — печеночный, мясной</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бородинский хлеб</strong> — без тмина, с кориандром</li><li class=\"ingredient-list-item\"><strong>Рижский хлеб</strong> — без патоки, с тмином</li><li class=\"ingredient-list-item\"><strong>Заварной ржаной хлеб</strong> — без пряностей</li></ul>",
+  "category": "ХЛЕБ, ВЫПЕЧКА, ХЛЕБОБУЛОЧНЫЕ ИЗДЕЛИЯ",
+  "semantic_data": {
+    "properties": [
+      "хлеб",
+      "ржаной",
+      "заварной",
+      "сладковатый",
+      "пряный",
+      "плотный",
+      "кориандр",
+      "тмин",
+      "патока"
+    ],
+    "preparations": [
+      "хранение_в_хлебнице",
+      "нарезка_ломтиками",
+      "подача_к_столу"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "подогрев_в_тостере",
+        "priority": "medium"
+      },
+      {
+        "method": "приготовление_гренок",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "к_супам",
+      "бутерброды",
+      "гренки",
+      "закуски"
+    ],
+    "pairings": {
+      "protein": ["сельдь", "шпроты", "сыр_сливочный", "сыр_плавленый", "паштет"],
+      "vegetables": ["квашеная_капуста"],
+      "dairy": ["сливочное_масло"],
+      "soups": ["борщ", "щи", "солянка", "гороховый_суп"]
+    },
+    "substitutes": [
+      {
+        "name": "Бородинский хлеб",
+        "similarity": "high"
+      },
+      {
+        "name": "Рижский хлеб",
+        "similarity": "high"
+      },
+      {
+        "name": "Заварной ржаной хлеб",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "хлеб",
+    "даниловский_хлеб",
+    "ржаной_хлеб",
+    "заварной_хлеб",
+    "кориандр",
+    "тмин",
+    "русская_кухня"
+  ]
+}

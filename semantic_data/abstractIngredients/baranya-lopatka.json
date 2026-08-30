@@ -1,0 +1,108 @@
+{
+  "name": "Баранья лопатка",
+  "name_normalized": "baranya-lopatka",
+  "synonyms": "",
+  "short_description": "Мясной полуфабрикат из баранины, нарезанный на порционные куски из лопаточной части с костью и прожилками жира. Отличное мясо для тушения, супов, плова и запекания.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Баранья лопатка — это мясной полуфабрикат из баранины, представляющий собой куски мяса из лопаточной части туши. Отличается наличием кости, прослоек жира и жил, которые при длительном тушении делают мясо невероятно сочным и ароматным. В лопатке много соединительной ткани, которая при варке превращается в коллаген, придающий мясу нежность, а бульону — желеобразную консистенцию. Идеально подходит для супов, плова, тушения, запекания и приготовления холодца.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, с жировыми прослойками и жилами</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, с характерным бараний ароматом</li><li class=\"ingredient-list-item\"><strong>Коллаген</strong> — высокое содержание, при варке бульон становится желеобразным</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — умеренная, при тушении мясо становится сочным</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Супы и бульоны</strong> — наваристый бульон для шурпы, бешбармака</li><li class=\"ingredient-list-item\"><strong>Плов</strong> — классический плов с бараньей лопаткой</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с овощами, травами и специями</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с картофелем и овощами</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — для холодца (из-за высокого содержания коллагена)</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук, томаты, перец, баклажаны</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, булгур, кус-кус</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — зира, кориандр, куркума, чёрный перец, лавровый лист</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — кинза, петрушка, укроп, зелёный лук</li><li class=\"ingredient-list-item\"><strong>Чеснок</strong> — для аромата</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — холодной водой, обсушить</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — залить холодной водой, довести до кипения, снять пену</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — предварительно обжарить до золотистого цвета</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Баранья грудинка</strong> — более жирная, для бульона</li><li class=\"ingredient-list-item\"><strong>Баранья шея</strong> — похожее строение, сочное мясо</li><li class=\"ingredient-list-item\"><strong>Говяжья лопатка</strong> — для тушения</li><li class=\"ingredient-list-item\"><strong>Свиная лопатка</strong> — для запекания</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/shurpa-iz-baraniny/'>Шурпа из баранины с лопаткой</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/plov-s-baraninoy/'>Плов с бараньей лопаткой</a></li></ul>",
+  "category": "Баранина",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "баранина",
+      "лопатка",
+      "плотный",
+      "жилистый",
+      "богат_коллагеном",
+      "наваристый",
+      "суповой"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "промыть_холодной_водой",
+      "залить_холодной_водой_для_варки",
+      "обжарить_для_тушения"
+    ],
+    "cooking_methods": [
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "варка_для_холодца",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "супы_и_бульоны",
+      "плов",
+      "тушение_с_овощами",
+      "запекание",
+      "холодец"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "картофель",
+        "морковь",
+        "лук",
+        "томаты",
+        "перец",
+        "баклажаны"
+      ],
+      "grains": [
+        "рис",
+        "булгур",
+        "кус-кус"
+      ],
+      "herbs": [
+        "кинза",
+        "петрушка",
+        "укроп",
+        "зеленый_лук"
+      ],
+      "spices": [
+        "зира",
+        "кориандр",
+        "куркума",
+        "черный_перец",
+        "лавровый_лист",
+        "чеснок"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Баранья грудинка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Баранья шея",
+        "similarity": "high"
+      },
+      {
+        "name": "Говяжья лопатка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Свиная лопатка",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "баранина",
+    "лопатка",
+    "тушение",
+    "плов",
+    "суп",
+    "холодец"
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "name": "Багет с луком",
+  "name_normalized": "baget-s-lukom",
+  "synonyms": "",
+  "short_description": "Ароматный багет с добавлением жареного или сушёного лука, который придаёт хлебу характерный сладковатый привкус и насыщенный аромат. Идеален для закусок, бутербродов и подачи к супам.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Багет с луком — это разновидность французского багета, в тесто которого добавляют жареный или сушёный лук, придающий хлебу характерный сладковатый привкус и насыщенный луковый аромат. В зависимости от рецепта, лук может быть карамелизированным, обжаренным до золотистого цвета или использоваться в сушёном виде (луковые хлопья). Хлеб получается с хрустящей корочкой и мягким, ароматным мякишем. Отличный выбор для закусок, бутербродов и подачи к супам.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — хрустящая корочка, мягкий мякиш</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, с луковым ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — золотистый с тёмными вкраплениями (жареный лук)</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — пшеничная мука, вода, соль, дрожжи, лук (жареный или сушёный)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 1-2 дня</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>К столу</strong> — к супам, салатам, закускам</li><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом, сыром, мясом, рыбой</li><li class=\"ingredient-list-item\"><strong>Гренки</strong> — для супов и салатов (чесночные, сырные)</li><li class=\"ingredient-list-item\"><strong>Сэндвичи</strong> — с начинками из мяса, овощей, зелени</li><li class=\"ingredient-list-item\"><strong>Брускетта</strong> — основа для закусок с томатами, сыром</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Супы</strong> — грибные, томатные, луковый суп</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — мягкие (фета, бри, моцарелла), твёрдые (пармезан)</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — паштет, ветчина, бекон, колбасы</li><li class=\"ingredient-list-item\"><strong>Рыба</strong> — лосось, шпроты, копчёная рыба</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, огурцы, перец, лук (свежий)</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, зелёный лук</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Классический багет</strong> — без лука, нейтральный вкус</li><li class=\"ingredient-list-item\"><strong>Багет с чесноком</strong> — чесночный аромат вместо лукового</li><li class=\"ingredient-list-item\"><strong>Багет с зеленью</strong> — с укропом, петрушкой</li><li class=\"ingredient-list-item\"><strong>Чиабатта</strong> — итальянский хлеб с хрустящей корочкой</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/baget-s-lukom/'>Багет с луком — рецепт с пошаговыми фото</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/zakuski-s-bagetom/'>Закуски с багетом: идеи и рецепты</a></li></ul>",
+  "category": "ХЛЕБ, ВЫПЕЧКА, ХЛЕБОБУЛОЧНЫЕ ИЗДЕЛИЯ",
+  "semantic_data": {
+    "properties": [
+      "багет",
+      "луковый",
+      "хрустящая_корочка",
+      "ароматный",
+      "сладковатый_вкус",
+      "универсальный"
+    ],
+    "preparations": [
+      "хранение_в_бумажном_пакете",
+      "нарезка_ломтиками",
+      "подогрев_в_духовке"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "подогрев",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_гренок",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "к_супам_и_салатам",
+      "бутерброды",
+      "гренки",
+      "сэндвичи",
+      "брускетта"
+    ],
+    "pairings": {
+      "protein": [
+        "фета",
+        "бри",
+        "моцарелла",
+        "пармезан",
+        "паштет",
+        "ветчина",
+        "бекон",
+        "лосось"
+      ],
+      "vegetables": [
+        "помидоры",
+        "огурцы",
+        "перец",
+        "лук"
+      ],
+      "herbs": [
+        "петрушка",
+        "укроп",
+        "зеленый_лук"
+      ],
+      "soups": [
+        "грибные",
+        "томатные",
+        "луковый_суп"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Классический багет",
+        "similarity": "high"
+      },
+      {
+        "name": "Багет с чесноком",
+        "similarity": "medium"
+      },
+      {
+        "name": "Багет с зеленью",
+        "similarity": "medium"
+      },
+      {
+        "name": "Чиабатта",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "хлеб",
+    "багет",
+    "луковый_багет",
+    "ароматный_хлеб",
+    "выпечка",
+    "закуски",
+    "супы"
+  ]
+}

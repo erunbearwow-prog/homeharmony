@@ -1,0 +1,107 @@
+{
+  "name": "Баранье котлетное мясо",
+  "name_normalized": "barane-kotletnoe-myaso",
+  "synonyms": "",
+  "short_description": "Фарш или мелконарезанное мясо из баранины, предназначенное для приготовления котлет, фрикаделек и других изделий из рубленого мяса. Сочный, с пряным вкусом.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Баранье котлетное мясо — это полуфабрикат из баранины, представленный в виде фарша или мелконарезанного мяса, предназначенный для приготовления котлет, фрикаделек, тефтелей, зраз, голубцов и других блюд из рубленого мяса. Чаще всего используется жилованое мясо с добавлением небольшого количества жира для сочности. Имеет насыщенный бараний вкус и характерный аромат. Удобная заготовка для быстрого приготовления домашних котлет и других мясных изделий.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, сочная (с добавлением жира)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, с характерным бараний ароматом</li><li class=\"ingredient-list-item\"><strong>Содержание жира</strong> — 10-20% для сочности</li><li class=\"ingredient-list-item\"><strong>Применение</strong> — рубленые изделия (котлеты, фрикадельки, тефтели)</li><li class=\"ingredient-list-item\"><strong>Форма выпуска</strong> — охлаждённый или замороженный фарш (или мелкая нарезка)</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Котлеты</strong> — классические рубленые котлеты из баранины</li><li class=\"ingredient-list-item\"><strong>Фрикадельки</strong> — для супов, с соусом</li><li class=\"ingredient-list-item\"><strong>Тефтели</strong> — в томатном или сметанном соусе</li><li class=\"ingredient-list-item\"><strong>Зразы</strong> — с начинкой</li><li class=\"ingredient-list-item\"><strong>Голубцы</strong> — в рубленом виде</li><li class=\"ingredient-list-item\"><strong>Кебабы</strong> — люля-кебаб из баранины</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, чеснок, картофель, морковь</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, сливочный, гранатовый</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — зира, кориандр, чёрный перец, паприка</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — кинза, петрушка, укроп</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофельное пюре, рис, гречка</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике</li><li class=\"ingredient-list-item\"><strong>Добавление ингредиентов</strong> — лук, яйцо, хлеб, молоко</li><li class=\"ingredient-list-item\"><strong>Формовка</strong> — котлеты, фрикадельки</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжий фарш</strong> — менее жирный</li><li class=\"ingredient-list-item\"><strong>Свиной фарш</strong> — жирнее, сочнее</li><li class=\"ingredient-list-item\"><strong>Куриный фарш</strong> — более нежный</li><li class=\"ingredient-list-item\"><strong>Смешанный фарш</strong> — говяжий + свиной</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/kotleti-iz-baraniny/'>Котлеты из баранины — классический рецепт</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/lyulya-kebab/'>Люля-кебаб из бараньего фарша</a></li></ul>",
+  "category": "Баранина",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "баранина",
+      "фарш",
+      "рубленый",
+      "сочный",
+      "пряный",
+      "универсальный"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "добавление_лука_и_яйца",
+      "формовка_изделий"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "варка_фрикаделек",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "котлеты",
+      "фрикадельки",
+      "тефтели",
+      "зразы",
+      "голубцы",
+      "люля-кебаб"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "лук",
+        "чеснок",
+        "картофель",
+        "морковь"
+      ],
+      "sauces": [
+        "томатный",
+        "сметанный",
+        "сливочный",
+        "гранатовый"
+      ],
+      "spices": [
+        "зира",
+        "кориандр",
+        "черный_перец",
+        "паприка"
+      ],
+      "herbs": [
+        "кинза",
+        "петрушка",
+        "укроп"
+      ],
+      "grains": [
+        "рис",
+        "гречка"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Говяжий фарш",
+        "similarity": "medium"
+      },
+      {
+        "name": "Свиной фарш",
+        "similarity": "medium"
+      },
+      {
+        "name": "Куриный фарш",
+        "similarity": "low"
+      },
+      {
+        "name": "Смешанный фарш",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "баранина",
+    "фарш",
+    "котлеты",
+    "фрикадельки",
+    "люля-кебаб",
+    "рубленое_мясо"
+  ]
+}

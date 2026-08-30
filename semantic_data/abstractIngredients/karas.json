@@ -1,0 +1,65 @@
+{
+  "name": "Карась",
+  "name_normalized": "karas",
+  "synonyms": "карась, золотой карась, серебряный карась, обыкновенный карась, пресноводная рыба, карповые, речной карась, прудовой карась, Carassius, Carassius carassius",
+  "short_description": "Небольшая пресноводная рыба семейства карповых, обитающая в стоячих водоёмах с илистым дном. Имеет высокое, сжатое с боков тело, крупную чешую и красноватые плавники. Отличается живучестью и способностью выживать в бедных кислородом водах. Ценится за нежное, сладковатое мясо, которое лучше всего раскрывается в жареном, тушёном и запечённом виде.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Карась — это широко распространённая пресноводная рыба из семейства Карповых. Тело у него высокое, с толстой спиной, умеренно сжатое с боков и покрытое крупной гладкой чешуёй [citation:6]. Окраска может сильно варьироваться в зависимости от места обитания: от тёмно-золотистой и медно-красной (золотой карась) до серебристо-серой (серебряный карась) [citation:6][citation:12]. Спинной плавник у карася длинный, а характерные усики в углах рта отсутствуют [citation:10][citation:12]. В кулинарии карась ценится за нежное, слегка сладковатое мясо, однако оно содержит много мелких костей [citation:9].</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Среда обитания</strong> — предпочитает стоячие или медленно текущие водоёмы с илистым дном: озёра, пруды, заболоченные водоёмы [citation:1][citation:6].</li><li class=\"ingredient-list-item\"><strong>Выносливость</strong> — чрезвычайно живучая рыба, способна выживать при низком содержании кислорода (до 2-3 мг/л), а также при полном промерзании водоёма, закапываясь в ил на глубину до 70 см [citation:1][citation:6].</li><li class=\"ingredient-list-item\"><strong>Размер</strong> — обычно достигает длины 45 см и массы до 3 кг, хотя чаще попадаются особи весом 500-600 г [citation:2][citation:12].</li><li class=\"ingredient-list-item\"><strong>Особенности</strong> — мясо может иметь лёгкий запах тины, поэтому перед приготовлением его рекомендуется вымачивать [citation:9]. Рыба костистая.</li></ul><h2 class=\"ingredient-title\">Виды карасей</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Золотой (обыкновенный) карась (Carassius carassius)</strong> — имеет медно-красный или золотистый оттенок чешуи, тело более округлое, голова небольшая [citation:1][citation:6].</li><li class=\"ingredient-list-item\"><strong>Серебряный карась (Carassius gibelio)</strong> — чешуя серебристо-серая, тело более вытянутое, голова часто заострённая [citation:6]. Именно этот вид является предком аквариумной золотой рыбки [citation:6].</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Очистка</strong> — удалить чешую, выпотрошить, удалить жабры. Для облегчения чистки рыбу можно обдать крутым кипятком, чтобы смыть слизь [citation:3].</li><li class=\"ingredient-list-item\"><strong>Удаление запаха</strong> — для устранения запаха тины рыбу рекомендуется вымочить в молоке или воде с лимонным соком [citation:9].</li><li class=\"ingredient-list-item\"><strong>Надрезы</strong> — сделать поперечные надрезы по бокам, чтобы размягчить мелкие кости при жарке [citation:3].</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — самый популярный способ: в панировке из муки или манной крупы до хрустящей корочки [citation:3][citation:9].</li><li class=\"ingredient-list-item\"><strong>Тушение в сметане</strong> — классическое блюдо русской кухни, при котором кости размягчаются [citation:9].</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с овощами, картофелем, в томатном соусе [citation:7][citation:9].</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, лук, морковь, помидоры [citation:7].</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, томатный [citation:9].</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, лавровый лист, чеснок, лимон.</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка.</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Карп</strong> — похожее мясо, но менее костистый</li><li class=\"ingredient-list-item\"><strong>Линь</strong> — близкий родственник, обитает в тех же условиях</li><li class=\"ingredient-list-item\"><strong>Лещ</strong> — другая рыба семейства карповых</li><li class=\"ingredient-list-item\"><strong>Сазан</strong> — более крупная рыба, схожая технология приготовления</li></ul>",
+  "category": "Рыба и морепродукты",
+  "semantic_data": {
+    "properties": [
+      "пресноводная",
+      "речная",
+      "прудовая",
+      "карповые",
+      "высокое тело",
+      "крупная чешуя",
+      "нежное мясо",
+      "костистая",
+      "запах тины",
+      "живучая"
+    ],
+    "preparations": [
+      "очистка от чешуи",
+      "потрошение",
+      "удаление жабр",
+      "вымачивание в молоке или воде с лимоном",
+      "нанесение надрезов",
+      "обваливание в муке"
+    ],
+    "cooking_methods": [
+      {"method": "жарка", "priority": "high"},
+      {"method": "тушение в сметане", "priority": "high"},
+      {"method": "запекание с овощами", "priority": "high"},
+      {"method": "варка ухи", "priority": "medium"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "закуски",
+      "супы"
+    ],
+    "pairings": {
+      "protein": ["сметана"],
+      "vegetables": ["картофель", "лук", "морковь", "помидоры"],
+      "sauces": ["сметанный", "томатный"],
+      "herbs": ["укроп", "петрушка"],
+      "spices": ["черный перец", "лавровый лист", "чеснок", "лимон"]
+    },
+    "substitutes": [
+      {"name": "Карп", "similarity": "high"},
+      {"name": "Линь", "similarity": "high"},
+      {"name": "Лещ", "similarity": "medium"},
+      {"name": "Сазан", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "рыба",
+    "пресноводная",
+    "карась",
+    "речная рыба",
+    "карповые",
+    "жарка",
+    "запекание",
+    "тушение в сметане",
+    "костистая"
+  ]
+}

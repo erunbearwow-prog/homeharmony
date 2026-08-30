@@ -1,0 +1,103 @@
+{
+  "name": "Баранье легкое",
+  "name_normalized": "barane-legkoe",
+  "synonyms": "",
+  "short_description": "Субпродукт из баранины — легкое (трахея и бронхи), губчатой структуры, с низким содержанием жира и высоким содержанием белка. Используется для варки, тушения, жарки и приготовления субпродуктовых блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Баранье легкое — это съедобный субпродукт (внутренний орган), представляющий собой трахею и бронхи барана. Имеет губчатую, пористую структуру, светлый розовато-серый цвет и низкое содержание жира. Богато белком, железом и витаминами группы B. Относится к категории недорогих субпродуктов, которые при правильном приготовлении становятся вкусным и питательным блюдом. Используется в кухнях разных народов — в супах, вторых блюдах, для жарки и тушения.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — губчатая, пористая, мягкая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, слегка специфический (субпродуктовый)</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — низкая (до 5%)</li><li class=\"ingredient-list-item\"><strong>Белки</strong> — высокое содержание (до 18%)</li><li class=\"ingredient-list-item\"><strong>Железо</strong> — богатый источник</li><li class=\"ingredient-list-item\"><strong>Цена</strong> — доступный субпродукт</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вымачивание</strong> — в холодной воде (2-3 часа) для удаления крови и специфического запаха</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — под проточной водой</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — в подсоленной воде с пряностями (30-40 минут)</li><li class=\"ingredient-list-item\"><strong>Обработка</strong> — нарезка после варки (кубиками, полосками)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Варка</strong> — в супах и бульонах</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с овощами, томатом, сметаной</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — с луком и специями</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — из варёного легкого</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для пирогов, блинчиков</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, картофель, томаты, чеснок</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, лавровый лист, зира, паприка</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, зелёный лук</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, томатный, чесночный</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжье легкое</strong> — аналогичный субпродукт</li><li class=\"ingredient-list-item\"><strong>Свиное легкое</strong> — похожая текстура</li><li class=\"ingredient-list-item\"><strong>Куриные желудки</strong> — для тушения</li><li class=\"ingredient-list-item\"><strong>Печень</strong> — для жарки</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/tushenoe-legkoe/'>Тушёное баранье легкое</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/subprodukty/'>Субпродукты: приготовление и польза</a></li></ul>",
+  "category": "Субпродукты баранины",
+  "semantic_data": {
+    "properties": [
+      "субпродукт",
+      "баранина",
+      "легкое",
+      "губчатый",
+      "пористый",
+      "низкожирный",
+      "богат_белком",
+      "богат_железом",
+      "доступный"
+    ],
+    "preparations": [
+      "вымачивание_в_холодной_воде_2-3_часа",
+      "промывка_под_проточной_водой",
+      "варка_30-40_минут"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_салатов",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "супы_и_бульоны",
+      "тушение_с_овощами",
+      "жарка_с_луком",
+      "салаты",
+      "начинки_для_пирогов"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "лук",
+        "морковь",
+        "картофель",
+        "томаты",
+        "чеснок"
+      ],
+      "herbs": [
+        "петрушка",
+        "укроп",
+        "зеленый_лук"
+      ],
+      "spices": [
+        "черный_перец",
+        "лавровый_лист",
+        "зира",
+        "паприка"
+      ],
+      "sauces": [
+        "сметанный",
+        "томатный",
+        "чесночный"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Говяжье легкое",
+        "similarity": "high"
+      },
+      {
+        "name": "Свиное легкое",
+        "similarity": "high"
+      },
+      {
+        "name": "Куриные желудки",
+        "similarity": "medium"
+      },
+      {
+        "name": "Печень",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "субпродукты",
+    "баранина",
+    "легкое",
+    "тушение",
+    "жарка",
+    "доступный_продукт"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "name": "Сыр Пармезан",
+  "name_normalized": "syr_parmezan",
+  "synonyms": "пармезан, российский пармезан, сыр пармезан, пармезан российский, пармезан твердый, сыр для пасты, сыр для ризотто, сырная тарелка, gran re, laime, кубанская звездочка, юговской",
+  "short_description": "Российский твердый сыр, выпускаемый под названием «пармезан» по отечественным технологиям. Изготавливается из пастеризованного коровьего молока, имеет плотную текстуру, хорошо трется на терке и используется для пасты, ризотто, салатов и горячих блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">В российских магазинах под названием «пармезан» продаются твердые сыры отечественного производства. Российские производители используют пастеризованное коровье молоко и выдерживают сыр от 6 до 18 месяцев. Это качественный твердый сыр, который отлично подходит для терки и использования в горячих блюдах. Многие образцы обладают насыщенным сливочным вкусом с пикантными нотками и плотной текстурой, прекрасно подходящей для натирания.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тип</strong> — твердый сыр</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, хорошо трется на терке</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, сливочный, с пикантными нотками</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от бледно-желтого до желтого (иногда с добавлением натурального красителя аннато)</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — 40-45% (в зависимости от производителя)</li><li class=\"ingredient-list-item\"><strong>Созревание</strong> — от 6 до 18 месяцев</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 6 месяцев в холодильнике</li></ul><h2 class=\"ingredient-title\">Популярные российские производители</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>GRAN RE</strong> — выдержка 18 месяцев, 40% жирности</li><li class=\"ingredient-list-item\"><strong>Laime</strong> — выдержка 6 месяцев, 40% жирности</li><li class=\"ingredient-list-item\"><strong>«Кубанская Звездочка»</strong> — твердый сыр 40%</li><li class=\"ingredient-list-item\"><strong>«Юговской КМП»</strong> — 45% жирности</li><li class=\"ingredient-list-item\"><strong>«Светаево»</strong> — полутвердый сыр, который часто называют «русским пармезаном»</li><li class=\"ingredient-list-item\"><strong>«Сыровар» (Дмитров)</strong> — производитель твердых сыров сортов Palermo и Parmente</li></ul><h2 class=\"ingredient-title\">Состав (типичный)</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\">Молоко коровье пастеризованное (нормализованное)</li><li class=\"ingredient-list-item\">Бактериальная закваска (мезофильных и термофильных молочнокислых микроорганизмов)</li><li class=\"ingredient-list-item\">Молокосвертывающий ферментный препарат</li><li class=\"ingredient-list-item\">Соль пищевая</li><li class=\"ingredient-list-item\">Может содержать: уплотнитель хлорид кальция, краситель аннато (E160b), лизоцим (натуральный консервант)</li></ul><h2 class=\"ingredient-title\">Подготовка и хранение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике при температуре от +2 до +6°C</li><li class=\"ingredient-list-item\"><strong>Натирание</strong> — отлично трется на терке</li><li class=\"ingredient-list-item\"><strong>Подача</strong> — рекомендуется достать за 15-20 минут до подачи</li><li class=\"ingredient-list-item\"><strong>Срок после вскрытия</strong> — хранить в закрытом виде не более 12 суток</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Паста</strong> — в тертом виде для посыпки</li><li class=\"ingredient-list-item\"><strong>Ризотто</strong> — добавляется в конце приготовления</li><li class=\"ingredient-list-item\"><strong>Супы и запеканки</strong> — придает насыщенный вкус</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — стружкой или тертым</li><li class=\"ingredient-list-item\"><strong>Сырная тарелка</strong> — в нарезке</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Паста</strong> — все виды</li><li class=\"ingredient-list-item\"><strong>Рис</strong> — ризотто</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, брокколи</li><li class=\"ingredient-list-item\"><strong>Вино</strong> — красное (Кьянти, Мерло)</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Итальянский Parmigiano Reggiano</strong> — классический эталон с более длительной выдержкой</li><li class=\"ingredient-list-item\"><strong>Грана Падано</strong> — итальянский твердый сыр</li><li class=\"ingredient-list-item\"><strong>Пекорино Романо</strong> — овечий сыр с пикантным вкусом</li></ul>",
+  "category": "Молочные продукты",
+  "semantic_data": {
+    "properties": [
+      "твердый",
+      "российский",
+      "плотный",
+      "хорошо трется",
+      "сливочный вкус",
+      "пикантный",
+      "для пасты",
+      "для терки",
+      "пастеризованное молоко",
+      "отечественное производство"
+    ],
+    "preparations": [
+      "хранение в холодильнике при +2-6°C",
+      "натирание на тёрке",
+      "нарезка для сырной тарелки",
+      "достать за 15-20 минут до подачи"
+    ],
+    "cooking_methods": [
+      {
+        "method": "использование в тёртом виде (паста, ризотто, супы)",
+        "priority": "high"
+      },
+      {
+        "method": "подача в нарезке (сырная тарелка)",
+        "priority": "medium"
+      },
+      {
+        "method": "добавление в горячие блюда и запеканки",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "паста",
+      "ризотто",
+      "супы",
+      "салаты",
+      "запеканки",
+      "сырная тарелка"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["помидоры", "брокколи"],
+      "sauces": [],
+      "herbs": ["базилик", "орегано"],
+      "spices": ["черный перец"]
+    },
+    "substitutes": [
+      {
+        "name": "Parmigiano Reggiano (итальянский)",
+        "similarity": "medium"
+      },
+      {
+        "name": "Грана Падано",
+        "similarity": "medium"
+      },
+      {
+        "name": "Пекорино Романо",
+        "similarity": "low"
+      },
+      {
+        "name": "Российский твердый сыр выдержанный",
+        "similarity": "high"
+      }
+    ]
+  },
+  "tags": [
+    "сыр",
+    "пармезан",
+    "российский сыр",
+    "твердый сыр",
+    "сыр для пасты",
+    "сыр для ризотто",
+    "сырная тарелка"
+  ]
+}

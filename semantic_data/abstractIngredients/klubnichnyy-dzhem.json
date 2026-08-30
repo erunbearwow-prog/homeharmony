@@ -1,0 +1,55 @@
+{
+  "name": "Клубничный джем",
+  "name_normalized": "klubnichnyy-dzhem",
+  "synonyms": "джем из клубники, клубничный конфитюр, клубничное повидло, strawberry jam, клубничный мармелад, ягодный джем",
+  "short_description": "Густой ароматный джем из клубники с однородной или слегка кусочковой текстурой. Имеет яркий сладкий вкус с лёгкой кислинкой, насыщенный красный цвет и интенсивный ягодный аромат. Идеален для завтрака, выпечки, десертов и как дополнение к сырам.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Клубничный джем — это густое ягодное лакомство, приготовленное из клубники с сахаром. В отличие от варенья, джем имеет более однородную, желеобразную текстуру, хотя в некоторых рецептах могут встречаться небольшие кусочки ягод. Клубничный джем отличается ярким насыщенным вкусом, характерным ароматом свежей клубники и красивым рубиново-красным цветом. Благодаря высокому содержанию пектина (при добавлении) или длительной варке, джем хорошо желируется. Он является одним из самых популярных фруктовых джемов в мире, широко используется на завтрак, в выпечке, десертах и в качестве дополнения к мясным блюдам.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — густая, желеобразная, однородная или с мелкими кусочками ягод</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, с лёгкой кислинкой и ярким клубничным ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — ярко-красный, рубиновый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — клубника, сахар, лимонная кислота (иногда пектин)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в стеклянных банках</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Завтрак</strong> — на тосты, круассаны, блинчики, оладьи</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — начинка для тартов, пирогов, печенья, рулетов</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — с йогуртом, творогом, мороженым, панна-коттой</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к мясу (утке, свинине), сырам</li><li class=\"ingredient-list-item\"><strong>Прослойка</strong> — для тортов и пирожных</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — бри, камамбер, козий сыр, маскарпоне</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — утка, свинина, курица</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — миндаль, фундук, грецкие</li><li class=\"ingredient-list-item\"><strong>Шоколад</strong> — молочный, тёмный</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — ванильное мороженое, заварной крем</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Малиновый джем</strong> — более кислый, с косточками</li><li class=\"ingredient-list-item\"><strong>Черничный джем</strong> — более сладкий, тёмный</li><li class=\"ingredient-list-item\"><strong>Земляничный джем</strong> — более ароматный</li><li class=\"ingredient-list-item\"><strong>Клубничное варенье</strong> — с цельными ягодами</li></ul>",
+  "category": "Варенье, джемы, повидло, конфитюр",
+  "semantic_data": {
+    "properties": [
+      "джем",
+      "клубничный",
+      "сладкий",
+      "ягодный",
+      "красный",
+      "ароматный"
+    ],
+    "preparations": [
+      "варка_с_сахаром",
+      "хранение_в_стерилизованных_банках"
+    ],
+    "cooking_methods": [
+      {"method": "варка", "priority": "high"},
+      {"method": "консервирование", "priority": "high"}
+    ],
+    "applications": [
+      "завтрак",
+      "выпечка",
+      "десерты",
+      "соусы_к_мясу",
+      "прослойка_для_тортов"
+    ],
+    "pairings": {
+      "protein": ["бри", "камамбер", "козий_сыр", "маскарпоне", "утка", "свинина", "курица"],
+      "nuts": ["миндаль", "фундук", "грецкие_орехи"],
+      "chocolate": ["молочный_шоколад", "тёмный_шоколад"],
+      "desserts": ["ванильное_мороженое", "заварной_крем"],
+      "breads": ["тосты", "круассаны", "блинчики", "оладьи"]
+    },
+    "substitutes": [
+      {"name": "Малиновый джем", "similarity": "medium"},
+      {"name": "Черничный джем", "similarity": "low"},
+      {"name": "Земляничный джем", "similarity": "high"},
+      {"name": "Клубничное варенье", "similarity": "high"}
+    ]
+  },
+  "tags": [
+    "джем",
+    "клубничный_джем",
+    "клубника",
+    "завтрак",
+    "выпечка",
+    "десерт",
+    "зимние_заготовки"
+  ]
+}

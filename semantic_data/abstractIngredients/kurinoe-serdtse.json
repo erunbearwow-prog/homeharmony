@@ -1,0 +1,102 @@
+{
+  "name": "Куриное сердце",
+  "name_normalized": "kurinoe-serdtse",
+  "synonyms": "",
+  "short_description": "Субпродукт из курицы — плотное, упругое сердце с характерной текстурой и насыщенным вкусом. Богато железом, цинком и витаминами группы B, используется для тушения, жарки и супов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Куриное сердце — это субпродукт, представляющий собой мышечный орган птицы небольшого размера. Имеет плотную, упругую текстуру, тёмно-красный цвет и насыщенный, слегка сладковатый вкус, характерный для субпродуктов. Богато железом, цинком, фосфором и витаминами группы B (особенно B12 и B6), а также коэнзимом Q10, который благотворно влияет на сердечно-сосудистую систему.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, с мышечными волокнами</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, слегка сладковатый</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — низкая (5-8%)</li><li class=\"ingredient-list-item\"><strong>Белки</strong> — до 16%</li><li class=\"ingredient-list-item\"><strong>Железо</strong> — богатый источник</li><li class=\"ingredient-list-item\"><strong>Витамины</strong> — группы B (B12, B6)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Промывка</strong> — холодной водой, обсушить</li><li class=\"ingredient-list-item\"><strong>Удаление жира</strong> — срезать видимый жир</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — пополам или кольцами</li><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — в холодной воде (для удаления крови)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с луком, в соусе</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде с овощами</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — солянка, рассольник</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью и сметаной</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с сыром, в горшочках</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, чеснок, грибы, картофель</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, томатный, сливочный, соевый</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, паприка, тимьян, лавровый лист</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, зелёный лук</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Куриные желудки</strong> — похожая текстура</li><li class=\"ingredient-list-item\"><strong>Куриная печень</strong> — более мягкая</li><li class=\"ingredient-list-item\"><strong>Говяжье сердце</strong> — крупнее, плотнее</li><li class=\"ingredient-list-item\"><strong>Грибы</strong> — в тушёных блюдах</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/serdtse-kurinoe/'>Тушёные куриные сердца</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/serdtse-sous/'>Куриные сердца в сметанном соусе</a></li></ul>",
+  "category": "Субпродукты птицы",
+  "semantic_data": {
+    "properties": [
+      "субпродукт",
+      "курица",
+      "сердце",
+      "плотный",
+      "упругий",
+      "богат_железом",
+      "витаминный"
+    ],
+    "preparations": [
+      "промыть_и_обсушить",
+      "удалить_жир",
+      "замочить_в_холодной_воде",
+      "нарезать_кольцами"
+    ],
+    "cooking_methods": [
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "варка_для_супов",
+        "priority": "medium"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "вторые_блюда",
+      "супы",
+      "салаты",
+      "закуски"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "лук",
+        "морковь",
+        "чеснок",
+        "грибы",
+        "картофель"
+      ],
+      "sauces": [
+        "сметанный",
+        "томатный",
+        "сливочный",
+        "соевый"
+      ],
+      "spices": [
+        "черный_перец",
+        "паприка",
+        "тимьян",
+        "лавровый_лист"
+      ],
+      "herbs": [
+        "петрушка",
+        "укроп",
+        "зеленый_лук"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Куриные желудки",
+        "similarity": "high"
+      },
+      {
+        "name": "Куриная печень",
+        "similarity": "medium"
+      },
+      {
+        "name": "Говяжье сердце",
+        "similarity": "low"
+      },
+      {
+        "name": "Грибы",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "субпродукты",
+    "курица",
+    "сердце",
+    "тушение",
+    "жарка",
+    "суп"
+  ]
+}

@@ -7,6 +7,7 @@ from kitchen.views import get_child_categories, api_category_children
 urlpatterns = [
     path('admin/api/category-children/', api_category_children, name='api_category_children'),
     path('admin/', admin.site.urls),
+    path('ckeditor5/', include('django_ckeditor_5.urls')),
     path('', include('pages.urls')),           # ← ВРЕМЕННО
     path('kitchen/', include('kitchen.urls')),   # ← ОСТАВЛЯЕМ
     path('accounts/', include('accounts.urls')), # ← ВРЕМЕННО
@@ -21,3 +22,4 @@ urlpatterns = [
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

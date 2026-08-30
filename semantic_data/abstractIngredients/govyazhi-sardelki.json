@@ -1,0 +1,71 @@
+{
+  "name": "Говяжьи сардельки",
+  "name_normalized": "govyazhi-sardelki",
+  "synonyms": "сардельки говяжьи, сардельки из говядины, говяжьи сосиски, мясные сардельки, вареные сардельки",
+  "short_description": "Вареные колбасные изделия из говяжьего фарша, отличающиеся плотной текстурой и насыщенным мясным вкусом. Популярны для завтраков, бутербродов и горячих блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Говяжьи сардельки — это вареные колбасные изделия, изготовленные из говяжьего фарша с добавлением шпика, соли, специй и чеснока. Отличаются плотной, упругой текстурой, насыщенным мясным вкусом и характерным ароматом. Популярны в качестве завтрака, для бутербродов, а также используются в горячих блюдах, супах и на гриле.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, сочная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный мясной, с чесночным оттенком</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — розовый, серовато-розовый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — говядина, шпик, соль, чеснок, специи</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 5-7 дней в холодильнике</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Варка</strong> — в подсоленной воде 5-7 минут</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде с маслом</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — для хрустящей корочки</li><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — в нарезке</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — в составе омлетов, супов, тушеных блюд</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофель, гречка, макароны</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — горчица, кетчуп, майонез</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, огурцы, перец, лук</li><li class=\"ingredient-list-item\"><strong>Яйца</strong> — в яичнице, омлете</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свиные сардельки</strong> — более жирные</li><li class=\"ingredient-list-item\"><strong>Куриные сардельки</strong> — диетический вариант</li><li class=\"ingredient-list-item\"><strong>Сосиски</strong> — менее плотные</li></ul>",
+  "category": "Сосиски, сардельки, колбаски",
+  "semantic_data": {
+    "properties": [
+      "сардельки",
+      "говядина",
+      "вареная",
+      "плотная",
+      "сочная",
+      "универсальная"
+    ],
+    "preparations": [
+      "варка_5-7_минут",
+      "жарка_на_сковороде",
+      "гриль"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "гриль",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "завтрак",
+      "бутерброды",
+      "горячие_блюда",
+      "гарниры"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["помидоры", "огурцы", "перец", "лук"],
+      "sauces": ["горчица", "кетчуп", "майонез"],
+      "grains": ["картофель", "гречка", "макароны"],
+      "eggs": ["яйца"]
+    },
+    "substitutes": [
+      {
+        "name": "Свиные сардельки",
+        "similarity": "high"
+      },
+      {
+        "name": "Куриные сардельки",
+        "similarity": "medium"
+      },
+      {
+        "name": "Сосиски",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "сардельки",
+    "говядина",
+    "колбасные_изделия",
+    "завтрак",
+    "бутерброды"
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "name": "Vanilla Coca-Cola",
+  "name_normalized": "vanilla-coca-cola",
+  "synonyms": "",
+  "short_description": "Классическая Coca-Cola с добавлением натурального экстракта ванили. Сладкий, насыщенный вкус с мягкими ванильными нотками и характерной коловой кислинкой.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Vanilla Coca-Cola — это вариант классического колового напитка с добавлением натурального экстракта ванили. Обладает характерным тёмно-карамельным цветом, интенсивной сладостью и мягким ванильным послевкусием, которое смягчает традиционную кислоту колы. Напиток был впервые представлен в 2002 году как постоянный продукт и с тех пор стал культовым среди любителей сладких газировок.</p><h2 class=\"ingredient-title\">Состав</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Газированная вода</strong></li><li class=\"ingredient-list-item\"><strong>Сахар</strong> (или кукурузный сироп с высоким содержанием фруктозы в США)</li><li class=\"ingredient-list-item\"><strong>Карамельный краситель</strong> (E150d)</li><li class=\"ingredient-list-item\"><strong>Фосфорная кислота</strong> (E338) — придаёт характерную кислинку</li><li class=\"ingredient-list-item\"><strong>Натуральные ароматизаторы</strong> — включая экстракт ванили</li><li class=\"ingredient-list-item\"><strong>Кофеин</strong></li></ul><h2 class=\"ingredient-title\">Вкусовой профиль</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сладость</strong> — высокая, характерная для Coca-Cola</li><li class=\"ingredient-list-item\"><strong>Ваниль</strong> — мягкая, кремовая, смягчает кислоту колы</li><li class=\"ingredient-list-item\"><strong>Кислинка</strong> — умеренная, от фосфорной кислоты</li><li class=\"ingredient-list-item\"><strong>Карбонизация</strong> — интенсивная, освежающая</li><li class=\"ingredient-list-item\"><strong>Послевкусие</strong> — долгое, ванильно-карамельное</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Коктейли</strong> — основа для рома с колой, виски-колы</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — пропитка для бисквитов, глазури, соусы</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для мяса (особенно свинины) с карамельным оттенком</li><li class=\"ingredient-list-item\"><strong>Мороженое</strong> — кола-флоат (пломбир с колой)</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — уваривание до сиропа для десертов</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Алкоголь:</strong> ром, виски, бурбон, темный ром</li><li class=\"ingredient-list-item\"><strong>Фрукты:</strong> лайм, лимон, апельсин, вишня</li><li class=\"ingredient-list-item\"><strong>Специи:</strong> корица, гвоздика, мускатный орех (в глинтвейне)</li><li class=\"ingredient-list-item\"><strong>Шоколад:</strong> тёмный шоколад, шоколадный сироп</li><li class=\"ingredient-list-item\"><strong>Мороженое:</strong> ванильное, шоколадное</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Coca-Cola Classic</strong> — без ванили, более кислая</li><li class=\"ingredient-list-item\"><strong>Cherry Coca-Cola</strong> — с вишнёвым вкусом</li><li class=\"ingredient-list-item\"><strong>Пепси</strong> — слаще и менее кислая</li><li class=\"ingredient-list-item\"><strong>Ванильный сироп + кола</strong> — домашняя версия</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cocktails/rum-and-coke/'>Ром с колой — классический коктейль</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/coca-cola-marinade/'>Маринад на основе колы для мяса</a></li></ul>",
+  "category": "Напитки",
+  "semantic_data": {
+    "properties": [
+      "газированный",
+      "сладкий",
+      "ванильный",
+      "карамельный",
+      "кофеиновый",
+      "освежающий",
+      "тёмный",
+      "культовый"
+    ],
+    "preparations": [
+      "охлаждение_до_4-6_градусов",
+      "подача_со_льдом",
+      "использование_в_коктейлях"
+    ],
+    "cooking_methods": [
+      {
+        "method": "охлаждение",
+        "priority": "high"
+      },
+      {
+        "method": "смешивание_с_алкоголем",
+        "priority": "high"
+      },
+      {
+        "method": "уваривание_до_сиропа",
+        "priority": "medium"
+      },
+      {
+        "method": "маринование",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "коктейли",
+      "десерты",
+      "маринады",
+      "соусы",
+      "напитки"
+    ],
+    "pairings": {
+      "protein": [],
+      "alcohol": [
+        "ром",
+        "виски",
+        "бурбон",
+        "темный_ром"
+      ],
+      "fruits": [
+        "лайм",
+        "лимон",
+        "апельсин",
+        "вишня"
+      ],
+      "spices": [
+        "корица",
+        "гвоздика",
+        "мускатный_орех"
+      ],
+      "other": [
+        "шоколад",
+        "мороженое",
+        "карамель"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Coca-Cola Classic",
+        "similarity": "high"
+      },
+      {
+        "name": "Cherry Coca-Cola",
+        "similarity": "medium"
+      },
+      {
+        "name": "Пепси",
+        "similarity": "medium"
+      },
+      {
+        "name": "Ванильный сироп + кола",
+        "similarity": "high"
+      }
+    ]
+  },
+  "tags": [
+    "напиток",
+    "газировка",
+    "кола",
+    "ваниль",
+    "коктейли",
+    "сладкий",
+    "кофеин"
+  ]
+}

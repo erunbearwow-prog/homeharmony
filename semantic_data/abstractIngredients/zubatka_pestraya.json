@@ -1,0 +1,70 @@
+{
+  "name": "Зубатка пестрая",
+  "name_normalized": "zubatka_pestraya",
+  "synonyms": "зубатка пестрая, пестрая зубатка, пятнистая зубатка, зубатка пятнистая, северная рыба, морская рыба, пятнистая рыба, Anarhichas minor, зубатка для запекания, зубатка для ухи, рыба без костей",
+  "short_description": "Крупная промысловая рыба семейства зубатковых с плотным, белым, нежным мясом и отсутствием межмышечных костей. Отличается от других видов более жирным и вкусным мясом, достигает длины до 150 см и массы до 35 кг. Идеальна для запекания, ухи и приготовления на пару.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Пестрая зубатка (пятнистая зубатка, Anarhichas minor) — это крупная морская рыба из семейства зубатковых, обитающая в холодных водах северной Атлантики. От других видов зубатки (полосатой и синей) отличается более крупными размерами (до 150 см и 35 кг) и характерным окрасом — на серо-коричневом теле разбросаны контрастные черные пятна. Пестрая зубатка ценится выше остальных видов благодаря более жирному и нежному мясу, которое считается деликатесным.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — белое, плотное, нежное, без мелких межмышечных костей</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — деликатный, слегка сладковатый, без выраженного рыбного запаха</li><li class=\"ingredient-list-item\"><strong>Окрас</strong> — серо-коричневое тело с крупными чёрными пятнами</li><li class=\"ingredient-list-item\"><strong>Размер</strong> — до 150 см, масса до 35 кг</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — выше, чем у полосатой и синей зубатки</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — при неправильной готовке мясо может развариваться</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выбор</strong> — предпочтение крупным кускам с ровными срезами</li><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — при комнатной температуре</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — рекомендуется для сохранения структуры</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — замороженная до 6 месяцев, охлаждённая — использовать в течение нескольких часов</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в фольге или рукаве с овощами</li><li class=\"ingredient-list-item\"><strong>Уха</strong> — дает наваристый бульон</li><li class=\"ingredient-list-item\"><strong>Приготовление на пару</strong> — сохраняет текстуру</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — дает красивую корочку</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — в кляре, чтобы сохранить структуру</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — горячее и холодное</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, помидоры, лук, перец, брокколи</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочный, томатный, лимонный</li><li class=\"ingredient-list-item\"><strong>Травы</strong> — тимьян, укроп, петрушка</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, чеснок</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Зубатка полосатая</strong> — схожее мясо, менее жирное</li><li class=\"ingredient-list-item\"><strong>Зубатка синяя</strong> — более водянистое мясо</li><li class=\"ingredient-list-item\"><strong>Треска</strong> — менее жирная</li><li class=\"ingredient-list-item\"><strong>Судак</strong> — плотное мясо</li></ul>",
+  "category": "Рыба и морепродукты",
+  "semantic_data": {
+    "properties": [
+      "морская рыба",
+      "северная рыба",
+      "пятнистая",
+      "белое мясо",
+      "без костей",
+      "нежное",
+      "жирное",
+      "деликатесная",
+      "крупная",
+      "для запекания",
+      "для ухи",
+      "для гриля"
+    ],
+    "preparations": [
+      "выбор крупных кусков",
+      "разморозка при комнатной температуре",
+      "маринование с лимоном и травами",
+      "запекание в фольге",
+      "приготовление на пару"
+    ],
+    "cooking_methods": [
+      {"method": "запекание в духовке", "priority": "high"},
+      {"method": "варка ухи", "priority": "high"},
+      {"method": "приготовление на пару", "priority": "high"},
+      {"method": "гриль", "priority": "high"},
+      {"method": "жарка в кляре", "priority": "medium"},
+      {"method": "копчение", "priority": "medium"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "супы",
+      "закуски",
+      "консервирование"
+    ],
+    "pairings": {
+      "protein": ["сливочное масло"],
+      "vegetables": ["картофель", "помидоры", "лук", "перец", "брокколи"],
+      "sauces": ["сливочный", "томатный", "лимонный"],
+      "herbs": ["тимьян", "укроп", "петрушка"],
+      "spices": ["черный перец", "чеснок"]
+    },
+    "substitutes": [
+      {"name": "Зубатка полосатая", "similarity": "high"},
+      {"name": "Зубатка синяя", "similarity": "medium"},
+      {"name": "Треска", "similarity": "medium"},
+      {"name": "Судак", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "рыба",
+    "морская рыба",
+    "зубатка пестрая",
+    "пятнистая зубатка",
+    "северная рыба",
+    "белая рыба",
+    "без костей",
+    "деликатесная",
+    "запекание",
+    "уха"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "name": "Зефир в шоколаде",
+  "name_normalized": "zefir-v-shokolade",
+  "synonyms": "зефир шоколадный, шоколадный зефир, зефир в шоколадной глазури, зефир глазированный, зефир в темном шоколаде, зефир в молочном шоколаде, зефир в белом шоколаде",
+  "short_description": "Классический зефир, покрытый слоем шоколадной глазури (тёмной, молочной или белой). Сочетает воздушную, нежную текстуру зефира с хрустящей шоколадной корочкой и насыщенным сладким вкусом. Популярный десерт к чаю и кофе.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Зефир в шоколаде — это классический кондитерский продукт, представляющий собой воздушный зефир, покрытый слоем шоколадной глазури. В зависимости от вида шоколада, глазурь может быть тёмной, молочной или белой, что придаёт десерту разные вкусовые оттенки. Зефир в шоколаде сочетает в себе лёгкую, нежную, почти тающую текстуру зефира с хрустящей шоколадной корочкой и насыщенным сладким вкусом. Идеальный десерт к чаю, кофе или как самостоятельное угощение.</p><h2 class=\"ingredient-title\">Виды зефира в шоколаде</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>В тёмном шоколаде</strong> — классический вариант, с горьковатыми нотками</li><li class=\"ingredient-list-item\"><strong>В молочном шоколаде</strong> — более нежный и сладкий</li><li class=\"ingredient-list-item\"><strong>В белом шоколаде</strong> — самый сладкий, с ванильным оттенком</li><li class=\"ingredient-list-item\"><strong>С начинкой</strong> — с добавлением джема, варёной сгущёнки или орехов</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — воздушная, нежная, с хрустящей шоколадной корочкой</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, с оттенком шоколада</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — зависит от глазури (тёмный, молочный, белый)</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — зефир, шоколадная глазурь, сахар</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 4-6 месяцев в сухом прохладном месте</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Самостоятельный десерт</strong> — к чаю, кофе</li><li class=\"ingredient-list-item\"><strong>Украшение</strong> — для тортов, пирожных</li><li class=\"ingredient-list-item\"><strong>Подарок</strong> — в качестве сладкого презента</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — в составе десертных блюд</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Напитки</strong> — чёрный чай, кофе, какао</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль, фундук</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — клубника, банан, цитрусовые</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Зефир без глазури</strong> — без шоколадной корочки</li><li class=\"ingredient-list-item\"><strong>Мармелад в шоколаде</strong> — желейный</li><li class=\"ingredient-list-item\"><strong>Пастила</strong> — фруктовая</li></ul>",
+  "category": "Мармелад, пастила, зефир",
+  "semantic_data": {
+    "properties": [
+      "десерт",
+      "зефир",
+      "шоколадная_глазурь",
+      "воздушный",
+      "сладкий",
+      "кондитерский"
+    ],
+    "preparations": [
+      "хранение_в_сухом_прохладном_месте"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "украшение_десертов",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "чай",
+      "кофе",
+      "десерт",
+      "подарок"
+    ],
+    "pairings": {
+      "protein": [],
+      "fruits": ["клубника", "банан", "цитрусы"],
+      "nuts": ["грецкие_орехи", "миндаль", "фундук"],
+      "drinks": ["черный_чай", "кофе", "какао"]
+    },
+    "substitutes": [
+      {
+        "name": "Зефир без глазури",
+        "similarity": "high"
+      },
+      {
+        "name": "Мармелад в шоколаде",
+        "similarity": "medium"
+      },
+      {
+        "name": "Пастила",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "десерт",
+    "зефир",
+    "шоколад",
+    "кондитерка",
+    "сладости",
+    "чай"
+  ]
+}

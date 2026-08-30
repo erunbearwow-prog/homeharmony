@@ -1,0 +1,55 @@
+{
+  "name": "Буженина",
+  "name_normalized": "buzhenina",
+  "synonyms": "буженина, запеченная свинина, свинина запеченая, ветчина домашняя, свиной окорок запеченный",
+  "short_description": "Традиционное русское мясное блюдо из свиного окорока, запеченного в духовке с чесноком и специями. Имеет сочную текстуру, насыщенный мясной вкус с пряным ароматом и золотистую корочку. Идеальна для бутербродов, закусок и праздничного стола.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Буженина — это традиционное русское мясное блюдо из свиного окорока (тазобедренной части), запеченного в духовке с чесноком, солью и специями. Отличается сочной, нежной текстурой, ярким мясным вкусом с пряным чесночным ароматом и аппетитной золотистой корочкой. Буженина готовится как из целого куска мяса с костью или без, так и из рулета. Она является популярным праздничным блюдом и идеально подходит для бутербродов, закусок и мясных нарезок.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочная, нежная, с золотистой корочкой</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный мясной, с чесночным и пряным ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — золотисто-коричневая корочка, розовое мясо</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — свинина (окорок), чеснок, соль, специи</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 5-7 дней в холодильнике</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом, горчицей, овощами</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — нарезка к праздничному столу</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, яйцом, овощами</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — в тушёном виде, с гарниром</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Горчица</strong> — классическая подача</li><li class=\"ingredient-list-item\"><strong>Хрен</strong> — для остроты</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — огурцы, помидоры, перец, лук</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, белый, багет</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, зелёный лук</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Ветчина</strong> — более нежная</li><li class=\"ingredient-list-item\"><strong>Карбонад</strong> — похожий продукт</li><li class=\"ingredient-list-item\"><strong>Запеченная свинина</strong> — домашний вариант</li><li class=\"ingredient-list-item\"><strong>Копченая свинина</strong> — с копченым ароматом</li></ul>",
+  "category": "Карбонад, буженина, шинка",
+  "semantic_data": {
+    "properties": [
+      "мясо",
+      "свинина",
+      "запеченная",
+      "сочная",
+      "праздничный",
+      "традиционный"
+    ],
+    "preparations": [
+      "запекание_в_духовке",
+      "нарезка_ломтиками",
+      "хранение_в_холодильнике"
+    ],
+    "cooking_methods": [
+      {"method": "запекание", "priority": "high"},
+      {"method": "свежее_употребление", "priority": "high"},
+      {"method": "добавление_в_салаты", "priority": "medium"}
+    ],
+    "applications": [
+      "бутерброды",
+      "закуски",
+      "салаты",
+      "праздничный_стол"
+    ],
+    "pairings": {
+      "protein": [],
+      "sauces": ["горчица", "хрен"],
+      "vegetables": ["огурцы", "помидоры", "перец", "лук"],
+      "breads": ["ржаной_хлеб", "белый_хлеб", "багет"],
+      "herbs": ["петрушка", "укроп", "зеленый_лук"]
+    },
+    "substitutes": [
+      {"name": "Ветчина", "similarity": "high"},
+      {"name": "Карбонад", "similarity": "high"},
+      {"name": "Запеченная свинина", "similarity": "high"},
+      {"name": "Копченая свинина", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "мясо",
+    "свинина",
+    "буженина",
+    "праздничное_блюдо",
+    "закуска",
+    "русская_кухня"
+  ]
+}

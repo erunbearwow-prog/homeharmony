@@ -1,0 +1,86 @@
+{
+  "name": "Сыр Амбер",
+  "name_normalized": "syr_amber",
+  "synonyms": "амбер, amber, сыр Амбер, амбер сыр, Амбер 45%, сыр Амбер ТМ Рогачев, сыр твердый Амбер, сыр плавленый Амбер, шведский сыр Амбер, голубой сыр Амбер, фурм-д'амбер, fourme d'ambert",
+  "short_description": "Твердый сыр белорусского производства ТМ «Рогачев» с желтоватым сырным тестом, равномерными круглыми глазками и жирностью 45% в сухом веществе. Имеет мягкий сливочный вкус и универсальное кулинарное применение.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Твердый сыр «Амбер» 45% — это популярный продукт белорусского производства от торговой марки «Рогачев», который представляет собой сыр с желтоватым цветом сырного теста и характерным рисунком из равномерно расположенных круглых глазков. Относится к категории твердых сыров, имеет приятный сливочный, слегка сладковатый вкус и универсальное применение — от бутербродов до сырных тарелок. При этом стоит отметить, что название «Амбер» также используется для других продуктов, поэтому при покупке важно обращать внимание на упаковку и производителя.</p><h2 class=\"ingredient-title\">Другие сыры с названием «Амбер»</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Плавленый ломтевой сыр «Амбер» (45% жирности)</strong> — популярный плавленый сыр с ярким карамельным цветом и сливочным вкусом с нотками карамели, который многие сравнивают со вкусом сыра «Чеддер».</li><li class=\"ingredient-list-item\"><strong>Шведский сыр «Амбер»</strong> — полутвердый сорт, встречающийся в европейской классификации.</li><li class=\"ingredient-list-item\"><strong>Французский голубой сыр «Фурм-д'Амбер» (Fourme d'Ambert)</strong> — сыр с голубой плесенью, один из древнейших сыров Франции.</li></ul><h2 class=\"ingredient-title\">Свойства и особенности (твердый сыр «Амбер» 45%)</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, эластичная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — мягкий сливочный, сладковатый, без резкости</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — желтоватый, от бледно-желтого до насыщенного</li><li class=\"ingredient-list-item\"><strong>Рисунок</strong> — равномерные круглые глазки по всей массе</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — 45% в сухом веществе</li><li class=\"ingredient-list-item\"><strong>Калорийность</strong> — около 330-340 ккал на 100 г</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 6 месяцев в холодильнике при правильных условиях</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике при температуре от +2 до +6°C в герметичной упаковке</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — ломтиками, кубиками, соломкой</li><li class=\"ingredient-list-item\"><strong>Тёрка</strong> — на крупной или мелкой тёрке</li><li class=\"ingredient-list-item\"><strong>Подача</strong> — рекомендуется достать за 20-30 минут до подачи для раскрытия вкуса</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сырная тарелка</strong> — самостоятельная закуска с фруктами, орехами и вином</li><li class=\"ingredient-list-item\"><strong>Бутерброды и сэндвичи</strong> — классическое использование</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — пицца, запеканки, лазанья (хорошо плавится)</li><li class=\"ingredient-list-item\"><strong>Паста и ризотто</strong> — в тёртом виде</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — кубиками</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — виноград, яблоки, груши, вишня, ананас</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — багет, зерновой, ржаной</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль</li><li class=\"ingredient-list-item\"><strong>Вино</strong> — красное</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыр Гауда</strong> — схожая текстура и вкус</li><li class=\"ingredient-list-item\"><strong>Сыр Эдам</strong> — аналогичная категория</li><li class=\"ingredient-list-item\"><strong>Сыр Маасдам</strong> — с характерными глазками</li></ul>",
+  "category": "Молочные продукты",
+  "semantic_data": {
+    "properties": [
+      "твердый",
+      "плотный",
+      "упругий",
+      "сливочный",
+      "сладковатый",
+      "с глазками",
+      "жирность 45%",
+      "белорусский",
+      "универсальный",
+      "сырная тарелка",
+      "хорошо плавится"
+    ],
+    "preparations": [
+      "хранение в холодильнике при +2-6°C",
+      "нарезка ломтиками или кубиками",
+      "натирание на тёрке",
+      "достать за 20-30 минут до подачи"
+    ],
+    "cooking_methods": [
+      {
+        "method": "подача в сырной тарелке",
+        "priority": "high"
+      },
+      {
+        "method": "использование в бутербродах",
+        "priority": "high"
+      },
+      {
+        "method": "плавление в горячих блюдах",
+        "priority": "medium"
+      },
+      {
+        "method": "использование в тёртом виде",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "сырная тарелка",
+      "бутерброды и сэндвичи",
+      "пицца и запеканки",
+      "паста и ризотто",
+      "салаты"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [],
+      "sauces": [],
+      "herbs": [],
+      "spices": []
+    },
+    "substitutes": [
+      {
+        "name": "Сыр Гауда",
+        "similarity": "high"
+      },
+      {
+        "name": "Сыр Эдам",
+        "similarity": "high"
+      },
+      {
+        "name": "Сыр Маасдам",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "сыр",
+    "амбер",
+    "твердый сыр",
+    "белорусский сыр",
+    "рогачев",
+    "сыр для бутербродов",
+    "сырная тарелка",
+    "сыр с глазками",
+    "молочные продукты"
+  ]
+}

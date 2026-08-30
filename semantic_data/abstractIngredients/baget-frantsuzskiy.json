@@ -1,0 +1,101 @@
+{
+  "name": "Багет французский",
+  "name_normalized": "baget-frantsuzskiy",
+  "synonyms": "",
+  "short_description": "Классический французский хлеб с хрустящей золотистой корочкой и мягким, пористым мякишем. Удлинённый батон с характерными надрезами и тонкой, звонкой корочкой.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Французский багет — это классический вид хлеба, символ французской кулинарной традиции. Представляет собой длинный тонкий батон с хрустящей золотистой корочкой и мягким, пористым мякишем с характерным вкусом и ароматом. Отличительные черты — тонкая, звонкая корочка, крупные поры внутри и характерные надрезы на поверхности. Выпекается из пшеничной муки, воды, соли и дрожжей или закваски. Традиционно подаётся свежим, через несколько часов после выпечки начинает черстветь.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — хрустящая корочка, мягкий пористый мякиш</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, слегка солоноватый, с нотками пшеницы</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — золотисто-коричневая корочка, кремовый мякиш</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — мука пшеничная, вода, соль, дрожжи</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — несколько часов (в свежем виде)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>К столу</strong> — к супам, салатам, закускам</li><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом, сыром, паштетом, рыбой</li><li class=\"ingredient-list-item\"><strong>Гренки</strong> — чесночные, сырные, для супов и салатов</li><li class=\"ingredient-list-item\"><strong>Брускетта</strong> — основа для закусок с томатами, зеленью</li><li class=\"ingredient-list-item\"><strong>Крутоны</strong> — для супов (французский луковый)</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — все виды (твердые, мягкие, голубые)</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — паштет, ветчина, колбасы, бекон</li><li class=\"ingredient-list-item\"><strong>Рыба</strong> — лосось, шпроты, копчёная рыба</li><li class=\"ingredient-list-item\"><strong>Масло</strong> — сливочное, оливковое</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — грибные, овощные, луковый суп</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ginger\"><strong>Багет с луком</strong> — с луковым ароматом</li><li class=\"ingredient-list-item\"><strong>Чиабатта</strong> — итальянский хлеб, похожая текстура</li><li class=\"ingredient-list-item\"><strong>Багет пшенично-ржаной</strong> — с добавлением ржаной муки</li><li class=\"ingredient-list-item\"><strong>Пита</strong> — для сэндвичей</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/baget-frantsuzskiy/'>Французский багет — рецепт и секреты выпечки</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/grenki-s-bagetom/'>Гренки из багета — рецепты с фото</a></li></ul>",
+  "category": "ХЛЕБ, ВЫПЕЧКА, ХЛЕБОБУЛОЧНЫЕ ИЗДЕЛИЯ",
+  "semantic_data": {
+    "properties": [
+      "багет",
+      "классический",
+      "хрустящая_корочка",
+      "пористый_мякиш",
+      "пшеничный",
+      "дрожжевой",
+      "французская_кухня"
+    ],
+    "preparations": [
+      "употреблять_свежим",
+      "подогрев_в_духовке_для_восстановления_хруста"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "подогрев",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_гренок",
+        "priority": "medium"
+      },
+      {
+        "method": "приготовление_крутонов",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "к_столу",
+      "бутерброды",
+      "гренки",
+      "брускетта",
+      "крутоны_для_супов"
+    ],
+    "pairings": {
+      "protein": [
+        "твердые_сыры",
+        "мягкие_сыры",
+        "голубые_сыры",
+        "паштет",
+        "ветчина",
+        "колбасы",
+        "бекон",
+        "лосось"
+      ],
+      "butters": [
+        "сливочное_масло",
+        "оливковое_масло"
+      ],
+      "soups": [
+        "грибные",
+        "овощные",
+        "луковый_суп"
+      ],
+      "spreads": [
+        "паштет",
+        "хумус",
+        "песто"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Багет с луком",
+        "similarity": "high"
+      },
+      {
+        "name": "Чиабатта",
+        "similarity": "high"
+      },
+      {
+        "name": "Багет пшенично-ржаной",
+        "similarity": "medium"
+      },
+      {
+        "name": "Пита",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "хлеб",
+    "багет",
+    "французский_багет",
+    "французская_кухня",
+    "выпечка",
+    "бутерброды",
+    "гренки"
+  ]
+}

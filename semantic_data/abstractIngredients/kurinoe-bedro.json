@@ -1,0 +1,115 @@
+{
+  "name": "Куриное бедро",
+  "name_normalized": "kurinoe-bedro",
+  "synonyms": "",
+  "short_description": "Верхняя часть куриной ножки с тёмным, сочным мясом. Более жирное и насыщенное по вкусу, чем грудка, отлично подходит для запекания, жарки, тушения и гриля.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Куриное бедро — это верхняя часть куриной ножки, состоящая из бедренной кости с мясистым сочным мясом тёмного цвета и кожицей. В отличие от грудки, бедро содержит больше жира (8-12%) и обладает более насыщенным, ярким куриным вкусом. Благодаря высокому содержанию жира и соединительной ткани, бедро остаётся сочным даже при длительной тепловой обработке. Идеально подходит для запекания, жарки, тушения, гриля и приготовления наваристых бульонов.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочная, мягкая, рыхлая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, куриный, ароматный</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — 8-12%</li><li class=\"ingredient-list-item\"><strong>Кожа</strong> — содержит жир, придаёт сочность при запекании</li><li class=\"ingredient-list-item\"><strong>Применение</strong> — запекание, жарка, гриль, тушение, бульоны</li><li class=\"ingredient-list-item\"><strong>В англоязычных источниках</strong> — chicken thigh</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Промывка</strong> — холодной водой, обсушить</li><li class=\"ingredient-list-item\"><strong>Удаление кожи</strong> — по желанию (для диетического варианта)</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — для сочности и аромата</li><li class=\"ingredient-list-item\"><strong>Надрезание</strong> — для ускорения приготовления и маринования</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с картофелем, овощами</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде, в панировке</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — на решётке, на мангале</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в соусе, в казане</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — для бульонов</li><li class=\"ingredient-list-item\"><strong>Котлеты</strong> — с картофелем и луком</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук, перец, баклажаны</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сливочный, соевый, барбекю, кисло-сладкий</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — паприка, чеснок, тимьян, розмарин, чёрный перец</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, базилик, кинза</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — рис, картофель, паста, гречка</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Куриная голень</strong> — нижняя часть ножки</li><li class=\"ingredient-list-item\"><strong>Куриная ножка (целая)</strong> — голень+бедро</li><li class=\"ingredient-list-item\"><strong>Куриная грудка</strong> — более диетическая</li><li class=\"ingredient-list-item\"><strong>Индейка (бедро)</strong> — крупнее, похоже по текстуре</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/bedro-kurinoye/'>Запечённое куриное бедро</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/bedro-gril/'>Куриное бедро на гриле</a></li></ul>",
+  "category": "Курица",
+  "semantic_data": {
+    "properties": [
+      "курица",
+      "бедро",
+      "тёмное_мясо",
+      "сочный",
+      "на_кости",
+      "с_кожей",
+      "chicken_thigh"
+    ],
+    "preparations": [
+      "промыть_и_обсушить",
+      "удалить_кожу_по_желанию",
+      "замариновать_для_гриля"
+    ],
+    "cooking_methods": [
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "гриль",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "варка",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "вторые_блюда",
+      "супы",
+      "гриль",
+      "закуски"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "картофель",
+        "морковь",
+        "лук",
+        "перец",
+        "баклажаны"
+      ],
+      "sauces": [
+        "томатный",
+        "сливочный",
+        "соевый",
+        "барбекю",
+        "кисло-сладкий"
+      ],
+      "spices": [
+        "паприка",
+        "чеснок",
+        "тимьян",
+        "розмарин",
+        "черный_перец"
+      ],
+      "herbs": [
+        "петрушка",
+        "укроп",
+        "базилик",
+        "кинза"
+      ],
+      "grains": [
+        "рис",
+        "картофель",
+        "паста",
+        "гречка"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Куриная голень",
+        "similarity": "high"
+      },
+      {
+        "name": "Куриная ножка (целая)",
+        "similarity": "high"
+      },
+      {
+        "name": "Куриная грудка",
+        "similarity": "low"
+      },
+      {
+        "name": "Индейка (бедро)",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "курица",
+    "бедро",
+    "ножка",
+    "запекание",
+    "гриль",
+    "тушение",
+    "chicken_thigh"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "name": "Гусь",
+  "name_normalized": "gus",
+  "synonyms": "гусь, гусятина, домашний гусь, мясо гуся, тушка гуся, гусь запеченный, гусь для праздника, гусиное мясо",
+  "short_description": "Крупная водоплавающая птица, мясо которой отличается тёмным цветом, высокой жирностью, сочностью и насыщенным вкусом. Ценится как праздничное блюдо, особенно на Рождество и Новый год.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Гусь — это крупная домашняя птица, мясо которой считается деликатесом и традиционным праздничным блюдом во многих европейских кухнях (особенно на Рождество и Новый год). Мясо гуся имеет тёмный цвет, высокую жирность и насыщенный, ярко выраженный вкус. Благодаря толстому слою подкожного жира, мясо гуся при запекании остается сочным и ароматным, а жир можно использовать для дальнейшей готовки. Гусь — отличный выбор для праздничного стола, особенно в сочетании с яблоками, клюквой или апельсинами.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, сочная, жирная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, с ярким птичьим ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — тёмный, красновато-коричневый</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — высокая (до 30%)</li><li class=\"ingredient-list-item\"><strong>Время приготовления</strong> — 2-3 часа (запекание)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике (2-3 дня)</li><li class=\"ingredient-list-item\"><strong>Ощип и потрошение</strong> — удалить остатки перьев</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — для сочности</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с начинкой</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Запекание</strong> — целиком, с яблоками, апельсинами</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в соусе</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде (грудка)</li><li class=\"ingredient-list-item\"><strong>Конфи</strong> — медленное запекание в жире</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — яблоки, апельсины, клюква</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, лук, морковь</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — розмарин, тимьян, чеснок</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — клюквенный, апельсиновый, яблочный</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Утка</strong> — похожая жирность</li><li class=\"ingredient-list-item\"><strong>Индейка</strong> — менее жирная</li><li class=\"ingredient-list-item\"><strong>Курица</strong> — менее насыщенная</li></ul>",
+  "category": "Птица",
+  "semantic_data": {
+    "properties": [
+      "птица",
+      "гусь",
+      "жирный",
+      "праздничный",
+      "насыщенный_вкус"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "маринование",
+      "запекание_в_духовке"
+    ],
+    "cooking_methods": [
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "medium"
+      },
+      {
+        "method": "конфи",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "праздничный_стол",
+      "запекание",
+      "конфи"
+    ],
+    "pairings": {
+      "protein": [],
+      "fruits": ["яблоки", "апельсины", "клюква"],
+      "vegetables": ["картофель", "лук", "морковь"],
+      "spices": ["розмарин", "тимьян", "чеснок"],
+      "sauces": ["клюквенный", "апельсиновый", "яблочный"]
+    },
+    "substitutes": [
+      {
+        "name": "Утка",
+        "similarity": "high"
+      },
+      {
+        "name": "Индейка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Курица",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "птица",
+    "гусь",
+    "праздничное_блюдо",
+    "запекание",
+    "рождество"
+  ]
+}

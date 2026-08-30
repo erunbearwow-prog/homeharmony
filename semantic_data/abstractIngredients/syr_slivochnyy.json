@@ -1,0 +1,92 @@
+{
+  "name": "Сыр Сливочный",
+  "name_normalized": "syr_slivochnyy",
+  "synonyms": "сливочный сыр, cream cheese, крем-сыр, сыр для намазывания, сыр для чизкейков, сыр для канапе, сыр для блинов, сыр для десертов, филадельфия, альметте, буко, маскарпоне, мягкий сливочный сыр, сырная намазка",
+  "short_description": "Мягкий, нежный сыр с маслянистой, кремовой текстурой и сладковатым сливочным вкусом. Изготавливается из смеси молока и сливок. Идеален для намазывания на хлеб, приготовления чизкейков, десертов, соусов и закусок.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Сливочный сыр (cream cheese) — это мягкий, нежный сыр с маслянистой, кремообразной текстурой и сладковатым сливочным вкусом. Его изготавливают из смеси молока и сливок, благодаря чему он имеет более высокую жирность и бархатистую консистенцию. Сливочный сыр не требует созревания и употребляется свежим. Он широко используется в кулинарии: для намазывания на хлеб, бутербродов, канапе, в качестве основы для чизкейков и десертов, в соусах, заправках, а также как самостоятельная закуска. Наиболее известные бренды — Филадельфия, Альметте, Буко.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тип</strong> — мягкий сыр</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — маслянистая, кремообразная, гладкая, пластичная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нежный, сладковатый, сливочный, с легкой кислинкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый, кремовый</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — 50-80% в сухом веществе (зависит от производителя)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — от 1 до 3 месяцев в холодильнике</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — не плавится при нагревании, размягчается при комнатной температуре</li></ul><h2 class=\"ingredient-title\">Состав (типичный)</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\">Сливки и молоко (пастеризованные)</li><li class=\"ingredient-list-item\">Закваска молочнокислых бактерий</li><li class=\"ingredient-list-item\">Соль</li><li class=\"ingredient-list-item\">Стабилизаторы (камедь рожкового дерева, каррагинан и др.)</li><li class=\"ingredient-list-item\">Консерванты (сорбиновая кислота)</li></ul><h2 class=\"ingredient-title\">Подготовка и хранение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике при +2-6°C, в герметичной упаковке</li><li class=\"ingredient-list-item\"><strong>Перед подачей</strong> — достать за 15-20 минут для размягчения (легче намазывается)</li><li class=\"ingredient-list-item\"><strong>Порционирование</strong> — выкладывается ножом или ложкой, не режется</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды и канапе</strong> — намазывание на хлеб, тосты, крекеры</li><li class=\"ingredient-list-item\"><strong>Чизкейки</strong> — основа для классических и десертных чизкейков</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — в составе кремов, муссов, мороженого</li><li class=\"ingredient-list-item\"><strong>Соусы и заправки</strong> — для салатов, пасты, мяса</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — фаршированные овощи, рулеты</li><li class=\"ingredient-list-item\"><strong>Блины и оладьи</strong> — как дополнение</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — белый, ржаной, зерновой, багет</li><li class=\"ingredient-list-item\"><strong>Рыба</strong> — лосось, семга (классическое сочетание)</li><li class=\"ingredient-list-item\"><strong>Ягоды и фрукты</strong> — клубника, малина, черника, инжир, персик</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — свежие огурцы, зелень</li><li class=\"ingredient-list-item\"><strong>Мед и варенье</strong> — для сладких закусок</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Маскарпоне</strong> — для десертов, более жирный и плотный</li><li class=\"ingredient-list-item\"><strong>Рикотта</strong> — более зернистый и легкий, для чизкейков</li><li class=\"ingredient-list-item\"><strong>Сметана</strong> — для соусов и заправок</li><li class=\"ingredient-list-item\"><strong>Творог (протертый)</strong> — для начинок и запеканок</li></ul>",
+  "category": "Молочные продукты",
+  "semantic_data": {
+    "properties": [
+      "мягкий",
+      "сливочный",
+      "кремовый",
+      "намазка",
+      "нежный",
+      "сладковатый",
+      "для чизкейков",
+      "для бутербродов",
+      "для десертов",
+      "не плавится",
+      "холодное употребление"
+    ],
+    "preparations": [
+      "хранение в холодильнике при +2-6°C",
+      "размягчение при комнатной температуре перед использованием",
+      "намазывание на хлеб ножом",
+      "использование в десертах и соусах"
+    ],
+    "cooking_methods": [
+      {
+        "method": "намазывание на хлеб (бутерброды, тосты)",
+        "priority": "high"
+      },
+      {
+        "method": "использование в чизкейках и десертах",
+        "priority": "high"
+      },
+      {
+        "method": "добавление в соусы и заправки",
+        "priority": "medium"
+      },
+      {
+        "method": "использование в закусках и канапе",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "бутерброды и канапе",
+      "чизкейки",
+      "десерты",
+      "соусы и заправки",
+      "закуски",
+      "блины и оладьи"
+    ],
+    "pairings": {
+      "protein": ["лосось", "семга", "креветки"],
+      "vegetables": ["огурцы", "зелень", "редис"],
+      "sauces": ["мед", "варенье"],
+      "herbs": ["укроп", "петрушка", "зеленый лук"],
+      "spices": ["черный перец", "соль"]
+    },
+    "substitutes": [
+      {
+        "name": "Маскарпоне",
+        "similarity": "high"
+      },
+      {
+        "name": "Рикотта",
+        "similarity": "medium"
+      },
+      {
+        "name": "Сметана",
+        "similarity": "low"
+      },
+      {
+        "name": "Творог (протертый)",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "сыр",
+    "сливочный сыр",
+    "cream cheese",
+    "филадельфия",
+    "намазка",
+    "чизкейк",
+    "десерты",
+    "бутерброды",
+    "канапе",
+    "молочные продукты"
+  ]
+}

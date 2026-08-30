@@ -1,0 +1,71 @@
+{
+  "name": "Говяжьи почки",
+  "name_normalized": "govyazhi-pochki",
+  "synonyms": "почки говяжьи, говяжьи почки субпродукт, почки для тушения, почки для жарки",
+  "short_description": "Субпродукт из говядины — парный орган мочевыделительной системы. Имеют плотную упругую текстуру, характерный специфический запах и насыщенный вкус. Требуют тщательной подготовки, используются для жарки, тушения и в супах.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Говяжьи почки — это субпродукт (внутренний орган) крупного рогатого скота. Имеют бобовидную форму, плотную упругую текстуру и характерный специфический запах, который требует тщательной подготовки. Почки богаты белком, железом, цинком и витаминами группы B. При правильной обработке и приготовлении становятся мягкими и приобретают насыщенный вкус. Используются в различных кухнях мира для жарки, тушения, супов и рагу.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, с характерным оттенком</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — тёмно-красный, коричневатый</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — низкая (3-5%)</li><li class=\"ingredient-list-item\"><strong>Белки</strong> — до 15%</li><li class=\"ingredient-list-item\"><strong>Время приготовления</strong> — 30-40 минут (после подготовки)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вымачивание</strong> — в холодной воде (2-3 часа) или в молоке для удаления запаха</li><li class=\"ingredient-list-item\"><strong>Очистка</strong> — удалить жир, плёнки, протоки и сгустки крови</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — на кусочки или ломтики</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — 30-40 минут</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — с луком, чесноком, в панировке</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с овощами, в соусе</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — в субпродуктовых супах</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, овощами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, чеснок, картофель, морковь</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, томатный, сливочный</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, лавровый лист, тимьян</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, зелёный лук</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свиные почки</strong> — более нежные</li><li class=\"ingredient-list-item\"><strong>Телячьи почки</strong> — деликатесные</li><li class=\"ingredient-list-item\"><strong>Куриные желудки</strong> — для тушения</li></ul>",
+  "category": "Субпродукты",
+  "semantic_data": {
+    "properties": [
+      "субпродукт",
+      "говядина",
+      "почки",
+      "плотный",
+      "упругий",
+      "насыщенный_вкус"
+    ],
+    "preparations": [
+      "вымачивание_в_холодной_воде_2-3_часа",
+      "очистка_от_жира_и_плёнок",
+      "варка_30-40_минут"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "варка",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "жарка",
+      "тушение_с_овощами",
+      "супы",
+      "салаты"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["лук", "чеснок", "картофель", "морковь"],
+      "sauces": ["сметанный", "томатный", "сливочный"],
+      "spices": ["черный_перец", "лавровый_лист", "тимьян"],
+      "herbs": ["петрушка", "укроп", "зеленый_лук"]
+    },
+    "substitutes": [
+      {
+        "name": "Свиные почки",
+        "similarity": "high"
+      },
+      {
+        "name": "Телячьи почки",
+        "similarity": "high"
+      },
+      {
+        "name": "Куриные желудки",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "субпродукты",
+    "говядина",
+    "почки",
+    "тушение",
+    "жарка"
+  ]
+}

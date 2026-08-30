@@ -1,0 +1,66 @@
+{
+  "name": "Сыр колбасный",
+  "name_normalized": "syr-kolbasnyy",
+  "synonyms": "колбасный сыр, сыр колбасный копченый, сыр копченый колбасный, сырная колбаса, копченый сыр, плавленый колбасный сыр",
+  "short_description": "Плавленый сыр особого копчения, производимый из сычужных сыров, сливочного масла и творога. Имеет плотную упругую текстуру, яркий копченый аромат и слегка солоноватый острый вкус. Широко используется для бутербродов, закусок и как самостоятельный продукт.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Колбасный сыр — это разновидность плавленого сыра, который изготавливается из сычужных сыров (обычно нежирных сортов), сливочного масла, творога и специальных солей-плавителей. После плавления сырную массу формуют в виде батонов и подвергают холодному или горячему копчению, что придаёт продукту характерный аромат, золотистый цвет и плотную, упругую текстуру. Колбасный сыр отличается пикантным, слегка солоноватым вкусом с выраженными копчеными нотками. Популярен как закуска, ингредиент для бутербродов и салатов.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, легко режется</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — солоноватый, острый, с выраженным копченым ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — золотистый, желтоватый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — сычужные сыры, сливочное масло, творог, соли-плавители</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 60-90 дней в холодильнике</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом, зеленью, овощами</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — нарезка к пиву, вину</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, яйцом, овощами</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — в качестве начинки</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, белый, бородинский</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, огурцы, лук</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — пиво, крепкий алкоголь</li><li class=\"ingredient-list-item\"><strong>Горчица, хрен</strong> — усиливают вкус</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Копченый сыр (твердый)</strong> — альтернатива</li><li class=\"ingredient-list-item\"><strong>Копченая колбаса</strong> — похожий вкус</li><li class=\"ingredient-list-item\"><strong>Сыр косичка (чечил)</strong> — другой вид</li></ul>",
+  "category": "Плавленые сыры",
+  "semantic_data": {
+    "properties": [
+      "сыр",
+      "плавленый",
+      "копченый",
+      "упругий",
+      "солоноватый",
+      "закуска"
+    ],
+    "preparations": [
+      "нарезка_ломтиками",
+      "хранение_в_холодильнике"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_салаты",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "бутерброды",
+      "закуски",
+      "салаты"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["помидоры", "огурцы", "лук"],
+      "breads": ["ржаной_хлеб", "белый_хлеб", "бородинский_хлеб"],
+      "sauces": ["горчица", "хрен"],
+      "drinks": ["пиво", "крепкий_алкоголь"]
+    },
+    "substitutes": [
+      {
+        "name": "Копченый сыр (твердый)",
+        "similarity": "high"
+      },
+      {
+        "name": "Копченая колбаса",
+        "similarity": "medium"
+      },
+      {
+        "name": "Сыр косичка (чечил)",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "сыр",
+    "колбасный_сыр",
+    "плавленый_сыр",
+    "копченый_сыр",
+    "закуска",
+    "бутерброды"
+  ]
+}

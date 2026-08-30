@@ -1,0 +1,92 @@
+{
+  "name": "Яичный желток",
+  "name_normalized": "yaichnyy-zheltok",
+  "synonyms": "",
+  "short_description": "Жёлтая центральная часть куриного яйца, богатая жирами, витаминами и лецитином. Используется для приготовления соусов (голландский, майонез), выпечки, заварных кремов и пасты.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Яичный желток — это питательная жёлтая часть куриного яйца, окружённая белком. Составляет около 33% массы яйца и содержит практически все жиры и половину белков яйца. Желток богат лецитином (эмульгатор), холестерином, витаминами A, D, E, K и группы B, а также железом, фосфором и селеном. Благодаря эмульгирующим свойствам лецитина, желток широко используется в кулинарии для создания стойких эмульсий (майонез, голландский соус) и придания нежности выпечке и кремам.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — густая, маслянистая, вязкая (сырой), рассыпчатая (вареный)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, яичный, маслянистый</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — до 30% (в сухом веществе)</li><li class=\"ingredient-list-item\"><strong>Лецитин</strong> — мощный эмульгатор</li><li class=\"ingredient-list-item\"><strong>Витамины</strong> — A, D, E, K, группы B</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от бледно-жёлтого до насыщенно-оранжевого</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Отделение от белка</strong> — аккуратно перелить белок из половинок скорлупы, оставляя желток в целости</li><li class=\"ingredient-list-item\"><strong>Взбивание</strong> — для соусов, кремов, теста</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — вкрутую или всмятку</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соусы</strong> — майонез, голландский соус, соус Бернез</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — придает тесту мягкость и золотистый цвет</li><li class=\"ingredient-list-item\"><strong>Заварные кремы</strong> — для тортов, пирожных, эклеров</li><li class=\"ingredient-list-item\"><strong>Паста</strong> — основа для домашней пасты</li><li class=\"ingredient-list-item\"><strong>Загуститель</strong> — в супах, соусах</li><li class=\"ingredient-list-item\"><strong>Глазурь</strong> — смазывание выпечки перед запеканием</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Масла</strong> — оливковое, подсолнечное (для майонеза)</li><li class=\"ingredient-list-item\"><strong>Сахар</strong> — в кремах и десертах</li><li class=\"ingredient-list-item\"><strong>Горчица</strong> — эмульгатор в соусах</li><li class=\"ingredient-list-item\"><strong>Мука</strong> — в выпечке и соусах</li><li class=\"ingredient-list-item\"><strong>Сливки</strong> — в кремах и соусах</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соевый лецитин</strong> — эмульгатор</li><li class=\"ingredient-list-item\"><strong>Льняная мука</strong> — для загустения</li><li class=\"ingredient-list-item\"><strong>Горчица</strong> — эмульгатор для соусов</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/mayonez/'>Домашний майонез</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/zavarnoy-krem/'>Заварной крем</a></li></ul>",
+  "category": "Яйца",
+  "semantic_data": {
+    "properties": [
+      "густой",
+      "маслянистый",
+      "богат_жирами",
+      "богат_лецитином",
+      "насыщенный_вкус",
+      "эмульгатор"
+    ],
+    "preparations": [
+      "отделение_от_белка",
+      "взбивание",
+      "варка"
+    ],
+    "cooking_methods": [
+      {
+        "method": "взбивание",
+        "priority": "high"
+      },
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      },
+      {
+        "method": "эмульгирование",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "соусы",
+      "выпечка",
+      "кремы",
+      "паста",
+      "глазурь"
+    ],
+    "pairings": {
+      "protein": [],
+      "oils": [
+        "оливковое_масло",
+        "подсолнечное_масло"
+      ],
+      "sweeteners": [
+        "сахар"
+      ],
+      "spices": [
+        "горчица",
+        "соль",
+        "перец"
+      ],
+      "flours": [
+        "мука"
+      ],
+      "dairy": [
+        "сливки"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Соевый лецитин",
+        "similarity": "medium"
+      },
+      {
+        "name": "Льняная мука",
+        "similarity": "low"
+      },
+      {
+        "name": "Горчица",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "яйца",
+    "желток",
+    "соус",
+    "майонез",
+    "выпечка",
+    "крем",
+    "эмульгатор"
+  ]
+}

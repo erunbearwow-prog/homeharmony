@@ -1,0 +1,121 @@
+{
+  "name": "Куриный окорочок",
+  "name_normalized": "kurinyy-okorochok",
+  "synonyms": "",
+  "short_description": "Целая куриная ножка, состоящая из бедра и голени. Крупный, сочный кусок тёмного мяса с костью, отлично подходит для запекания, жарки, гриля и тушения.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Куриный окорочок — это целая куриная ножка, состоящая из двух частей: бедра (верхняя часть) и голени (нижняя часть). Благодаря большому количеству мяса, сочности и жирности тёмного куриного мяса, окорочка являются одним из самых популярных частей курицы. Идеальны для запекания, жарки, гриля и тушения. Благодаря наличию кости и хрящей, окорочок даёт наваристый бульон и остаётся сочным при длительной тепловой обработке.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочная, мясистая, мягкая (при правильной обработке)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, куриный, ароматный</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — средняя (8-12%), тёмное мясо</li><li class=\"ingredient-list-item\"><strong>Коллаген</strong> — в коже и хрящах, даёт наваристый бульон</li><li class=\"ingredient-list-item\"><strong>Применение</strong> — запекание, жарка, гриль, тушение, супы</li><li class=\"ingredient-list-item\"><strong>В англоязычных источниках</strong> — chicken leg quarter</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Промывка</strong> — холодной водой, обсушить</li><li class=\"ingredient-list-item\"><strong>Удаление кожи</strong> — по желанию (для диетического варианта)</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — для сочности и аромата</li><li class=\"ingredient-list-item\"><strong>Надрезание</strong> — для ускорения приготовления</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с картофелем, овощами, в фольге</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде, в панировке, во фритюре</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — на решётке, на мангале</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в соусе, в казане</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — для бульонов и супов</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — горячее или холодное</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук, перец, баклажаны, кабачки</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сливочный, соевый, барбекю, кисло-сладкий</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — паприка, чеснок, тимьян, розмарин, чёрный перец</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, базилик, кинза</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — рис, картофель, паста, гречка</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Куриное бедро</strong> — без голени</li><li class=\"ingredient-list-item\"><strong>Куриная голень</strong> — только нижняя часть</li><li class=\"ingredient-list-item\"><strong>Индейка (окорочок)</strong> — крупнее</li><li class=\"ingredient-list-item\"><strong>Утиная ножка</strong> — для запекания</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/okorochok-zapechennyy/'>Запечённый куриный окорочок</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/okorochok-gril/'>Куриный окорочок на гриле</a></li></ul>",
+  "category": "Курица",
+  "semantic_data": {
+    "properties": [
+      "курица",
+      "окорочок",
+      "ножка",
+      "тёмное_мясо",
+      "сочный",
+      "на_кости",
+      "крупный",
+      "chicken_leg_quarter"
+    ],
+    "preparations": [
+      "промыть_и_обсушить",
+      "удалить_кожу_по_желанию",
+      "замариновать_для_гриля"
+    ],
+    "cooking_methods": [
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "гриль",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "варка",
+        "priority": "medium"
+      },
+      {
+        "method": "копчение",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "вторые_блюда",
+      "супы",
+      "гриль",
+      "закуски"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "картофель",
+        "морковь",
+        "лук",
+        "перец",
+        "баклажаны",
+        "кабачки"
+      ],
+      "sauces": [
+        "томатный",
+        "сливочный",
+        "соевый",
+        "барбекю",
+        "кисло-сладкий"
+      ],
+      "spices": [
+        "паприка",
+        "чеснок",
+        "тимьян",
+        "розмарин",
+        "черный_перец"
+      ],
+      "herbs": [
+        "петрушка",
+        "укроп",
+        "базилик",
+        "кинза"
+      ],
+      "grains": [
+        "рис",
+        "картофель",
+        "паста",
+        "гречка"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Куриное бедро",
+        "similarity": "high"
+      },
+      {
+        "name": "Куриная голень",
+        "similarity": "high"
+      },
+      {
+        "name": "Индейка (окорочок)",
+        "similarity": "medium"
+      },
+      {
+        "name": "Утиная ножка",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "курица",
+    "окорочок",
+    "ножка",
+    "запекание",
+    "гриль",
+    "тушение",
+    "chicken_leg_quarter"
+  ]
+}

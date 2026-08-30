@@ -1,0 +1,69 @@
+{
+  "name": "Кардамон",
+  "name_normalized": "kardamon",
+  "synonyms": "кардамон, кардамон настоящий, кардамон зеленый, кардамон черный, кардамон молотый, кардамон в стручках, семена кардамона, эликсир жизни, царица специй, Elettaria cardamomum, Amomum cardamomum",
+  "short_description": "Одна из самых ароматных и дорогих пряностей, представляющая собой семена многолетнего травянистого растения. Обладает теплым, сладковато-пряным, лимонно-камфорным ароматом и жгучим, слегка мятным вкусом. Используется в выпечке, десертах, чае, кофе, а также в мясных и овощных блюдах восточной кухни.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Кардамон — это одна из самых ароматных и дорогих пряностей, которую называют \"царицей специй\". В кулинарии используют семена из коробочек (стручков) многолетнего травянистого растения Elettaria cardamomum (зеленый кардамон) и Amomum cardamomum (черный кардамон). Зеленый кардамон — самый распространенный, с тонким, сладковато-пряным ароматом с лимонными и камфорными нотками. Черный кардамон более крупный, с дымным ароматом и используется для мясных блюд. Кардамон широко используется в азиатской, арабской и скандинавской кухне, особенно в выпечке, чае, кофе, десертах, мясных и овощных блюдах.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Аромат</strong> — теплый, пряный, сладковатый, с цитрусовыми и камфорными нотками</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — жгучий, пряный, слегка мятный, с лимонным оттенком</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — стручки (коробочки) с семенами внутри</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — зеленый, черный (крупный), белый (отбеленный)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в стручках, до 6 месяцев в молотом виде</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — аромат раскрывается при раздавливании семян</li></ul><h2 class=\"ingredient-title\">Виды кардамона</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Зеленый кардамон (Elettaria cardamomum)</strong> — самый распространенный, используется в выпечке, чае, кофе, десертах</li><li class=\"ingredient-list-item\"><strong>Черный кардамон (Amomum cardamomum)</strong> — более крупный, с дымным ароматом, для мясных блюд и плова</li><li class=\"ingredient-list-item\"><strong>Белый кардамон</strong> — зеленый кардамон, отбеленный диоксидом серы, используется в скандинавской выпечке</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Целые стручки</strong> — добавляют в чай, кофе, компоты, для аромата</li><li class=\"ingredient-list-item\"><strong>Семена</strong> — извлекают из стручка, слегка раздавливают для раскрытия аромата</li><li class=\"ingredient-list-item\"><strong>Молотый кардамон</strong> — используют в выпечке, десертах, смесях специй</li><li class=\"ingredient-list-item\"><strong>Раскрытие аромата</strong> — перед добавлением семена можно слегка поджарить на сухой сковороде</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — печенье, кексы, пряники, булочки, пироги</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — чай (индийский масала-чай), кофе, компоты</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — пудинги, кремы, мороженое, рисовые пудинги</li><li class=\"ingredient-list-item\"><strong>Мясные блюда</strong> — карри, плов, тушеное мясо (особенно с черным кардамоном)</li><li class=\"ingredient-list-item\"><strong>Овощные блюда</strong> — овощные карри, рагу</li><li class=\"ingredient-list-item\"><strong>Смеси специй</strong> — гарам масала, карри</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, гвоздика, имбирь, мускатный орех, кориандр, кумин</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — баранина, говядина, курица, свинина</li><li class=\"ingredient-list-item\"><strong>Рис и зерновые</strong> — рис, плов, каши</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — яблоки, груши, цитрусовые</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — миндаль, фисташки</li><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — молоко, сливки, йогурт</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Корица + мускатный орех</strong> — для выпечки</li><li class=\"ingredient-list-item\"><strong>Гвоздика</strong> — в небольших количествах</li><li class=\"ingredient-list-item\"><strong>Имбирь + корица</strong> — для чая и десертов</li></ul>",
+  "category": "Специи и травы",
+  "semantic_data": {
+    "properties": [
+      "пряность",
+      "ароматная",
+      "жгучая",
+      "зеленый",
+      "черный",
+      "выпечка",
+      "чай",
+      "карри",
+      "восточная кухня",
+      "дорогая"
+    ],
+    "preparations": [
+      "извлечение семян из стручков",
+      "раздавливание для раскрытия аромата",
+      "измельчение в порошок",
+      "обжаривание на сухой сковороде"
+    ],
+    "cooking_methods": [
+      {"method": "использование в выпечке", "priority": "high"},
+      {"method": "добавление в чай и кофе", "priority": "high"},
+      {"method": "использование в мясных блюдах", "priority": "high"},
+      {"method": "использование в десертах", "priority": "high"},
+      {"method": "использование в смесях специй", "priority": "high"},
+      {"method": "использование в овощных блюдах", "priority": "medium"}
+    ],
+    "applications": [
+      "выпечка",
+      "напитки",
+      "десерты",
+      "мясные блюда",
+      "овощные блюда",
+      "смеси специй"
+    ],
+    "pairings": {
+      "protein": ["баранина", "говядина", "курица", "свинина"],
+      "vegetables": ["рис", "картофель"],
+      "fruits": ["яблоки", "груши", "цитрусовые"],
+      "sauces": [],
+      "herbs": [],
+      "spices": ["корица", "гвоздика", "имбирь", "мускатный орех", "кориандр", "кумин"]
+    },
+    "substitutes": [
+      {"name": "Корица + мускатный орех", "similarity": "medium"},
+      {"name": "Гвоздика", "similarity": "low"},
+      {"name": "Имбирь + корица", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "специи",
+    "кардамон",
+    "царица специй",
+    "пряность",
+    "выпечка",
+    "чай",
+    "кофе",
+    "индийская кухня",
+    "арабская кухня",
+    "восточная кухня"
+  ]
+}

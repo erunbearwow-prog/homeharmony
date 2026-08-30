@@ -1,0 +1,77 @@
+{
+  "name": "Говядина для тушения",
+  "name_normalized": "govyadina-dlya-tusheniya",
+  "synonyms": "говядина тушеная, мясо для рагу, говядина на кости, говяжий гуляш, мясо для супа, говядина для холодца",
+  "short_description": "Мясной полуфабрикат из говядины, нарезанный на крупные порционные куски с костью или без для длительной варки, тушения или запекания. Идеально подходит для супов, борщей, рагу и холодцов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Говядина для тушения — это универсальный мясной полуфабрикат из говядины, нарезанный на крупные куски с костью или без неё. Чаще всего для этого используют части туши с высоким содержанием соединительной ткани — грудинку, лопатку, шейную часть, которые при длительной тепловой обработке (варке, тушении, запекании) становятся мягкими, сочными и ароматными. Это мясо придаёт бульону насыщенность, а при тушении — глубину вкуса. Благодаря коллагену и жировым прослойкам, мясо остаётся сочным даже после длительной варки.</p><h2 class=\"ingredient-title\">Характеристики нарезки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Форма</strong> — крупные куски произвольной формы, иногда с костью</li><li class=\"ingredient-list-item\"><strong>Размер</strong> — 3-6 см</li><li class=\"ingredient-list-item\"><strong>Вес куска</strong> — 50-150 г</li><li class=\"ingredient-list-item\"><strong>Отруб</strong> — грудинка, лопатка, шея, кострец</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — средняя (10-20%)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — наличие соединительной ткани и коллагена</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Супы и бульоны</strong> — наваристые мясные бульоны</li><li class=\"ingredient-list-item\"><strong>Борщ</strong> — с мясом на кости</li><li class=\"ingredient-list-item\"><strong>Рагу</strong> — с овощами, томатным соусом</li><li class=\"ingredient-list-item\"><strong>Жаркое</strong> — в горшочках, с картофелем</li><li class=\"ingredient-list-item\"><strong>Холодец</strong> — благодаря коллагену</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, картофель, свёкла</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, лавровый лист, чеснок</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, грибной, сметанный</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свинина для тушения</strong> — жирнее</li><li class=\"ingredient-list-item\"><strong>Баранина для тушения</strong> — другой вкус</li><li class=\"ingredient-list-item\"><strong>Гуляш говяжий</strong> — кубики 3-4 см</li><li class=\"ingredient-list-item\"><strong>Рагу говяжье</strong> — аналогичный продукт</li></ul>",
+  "category": "Говядина",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "говядина",
+      "крупные_куски",
+      "на_кости",
+      "тушение",
+      "суп",
+      "холодец"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "варка_в_подсоленной_воде",
+      "тушение_1-2_часа"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "супы",
+      "рагу",
+      "жаркое",
+      "холодец"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["лук", "морковь", "картофель", "свёкла"],
+      "spices": ["черный_перец", "лавровый_лист", "чеснок"],
+      "herbs": ["петрушка", "укроп"],
+      "sauces": ["томатный", "грибной", "сметанный"]
+    },
+    "substitutes": [
+      {
+        "name": "Свинина для тушения",
+        "similarity": "medium"
+      },
+      {
+        "name": "Баранина для тушения",
+        "similarity": "medium"
+      },
+      {
+        "name": "Гуляш говяжий",
+        "similarity": "high"
+      },
+      {
+        "name": "Рагу говяжье",
+        "similarity": "high"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "говядина",
+    "тушение",
+    "суп",
+    "рагу",
+    "холодец"
+  ]
+}

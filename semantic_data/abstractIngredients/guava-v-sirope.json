@@ -1,0 +1,69 @@
+{
+  "name": "Гуава в сиропе",
+  "name_normalized": "guava-v-sirope",
+  "synonyms": "гуава в сиропе, консервированная гуава, гуава в сахарном сиропе, гуава в банке, консервы гуава, гуава для десертов, гуава консервированная",
+  "short_description": "Консервированные дольки или половинки гуавы в прозрачном сахарном сиропе. Сохраняют форму, цвет и экзотический сладкий вкус с лёгкой кислинкой. Готовый десерт и удобный ингредиент для выпечки, десертов и коктейлей.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Гуава в сиропе — это консервированный экзотический плод, который сохраняет свою форму, цвет и характерный сладкий вкус с лёгкой кислинкой. Мякоть гуавы мягкая, сочная, с мелкими съедобными семенами и тонким тропическим ароматом. Сироп, в который залиты плоды, прозрачный, сладкий, с фруктовыми нотами. Гуава в сиропе — готовый десерт и ингредиент для выпечки, коктейлей и закусок.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мягкая, сочная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, с лёгкой кислинкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — желтовато-зелёный, розовый</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в закрытой банке</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Десерты</strong> — с мороженым, йогуртом</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — в пироги, тарты</li><li class=\"ingredient-list-item\"><strong>Коктейли</strong> — как украшение</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, орехами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мороженое</strong> — ванильное, кокосовое</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — мягкие, козьи</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежая гуава</strong> — в сезон</li><li class=\"ingredient-list-item\"><strong>Манго в сиропе</strong> — похожий вкус</li><li class=\"ingredient-list-item\"><strong>Ананас в сиропе</strong> — другая кислинка</li></ul>",
+  "category": "Консервы фруктовые",
+  "semantic_data": {
+    "properties": [
+      "консервы",
+      "гуава",
+      "сладкий",
+      "тропический",
+      "готовый_продукт",
+      "десерт"
+    ],
+    "preparations": [
+      "открыть_банку",
+      "слить_сироп_при_необходимости"
+    ],
+    "cooking_methods": [
+      {
+        "method": "использование_как_есть",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_десерты",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_коктейли",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "десерты",
+      "выпечка",
+      "коктейли",
+      "салаты"
+    ],
+    "pairings": {
+      "protein": ["мягкие_сыры", "козьи_сыры"],
+      "nuts": ["грецкие_орехи", "миндаль"],
+      "desserts": ["мороженое"],
+      "other": ["йогурт"]
+    },
+    "substitutes": [
+      {
+        "name": "Свежая гуава",
+        "similarity": "high"
+      },
+      {
+        "name": "Манго в сиропе",
+        "similarity": "medium"
+      },
+      {
+        "name": "Ананас в сиропе",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "консервы",
+    "гуава",
+    "в_сиропе",
+    "тропический_фрукт",
+    "десерт"
+  ]
+}

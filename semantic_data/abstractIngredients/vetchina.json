@@ -1,0 +1,81 @@
+{
+  "name": "Ветчина",
+  "name_normalized": "vetchina",
+  "synonyms": "",
+  "short_description": "Мясной деликатес из свиного окорока, прошедший засолку, варку или копчение. Имеет нежную сочную текстуру, золотисто-розовый цвет и характерный солоноватый вкус. Широко используется для бутербродов, закусок, салатов и горячих блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Ветчина — это мясной продукт, изготавливаемый из свиного окорока (реже — из говядины, индейки или курицы), который подвергается засолке, выдержке и термической обработке (варке, копчению или их комбинации). В результате мясо приобретает нежную, сочную текстуру, характерный солоноватый вкус с пряным ароматом и аппетитный золотисто-розовый цвет. Ветчина является универсальным продуктом: её подают как самостоятельную закуску, используют для бутербродов, салатов, сэндвичей, а также добавляют в горячие блюда.</p><h2 class=\"ingredient-title\">Виды ветчины</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Варёная ветчина</strong> — наиболее распространённая, нежная, сочная, с мягким вкусом</li><li class=\"ingredient-list-item\"><strong>Варёно-копчёная ветчина</strong> — с ароматом дыма, более плотная</li><li class=\"ingredient-list-item\"><strong>Сырокопчёная (сыровяленая) ветчина</strong> — плотная, с интенсивным вкусом</li><li class=\"ingredient-list-item\"><strong>Ветчина из птицы</strong> — диетическая, из грудки индейки или курицы</li><li class=\"ingredient-list-item\"><strong>Ветчина в форме (прессованная)</strong> — из кусочков мяса, спрессованных в форму</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, сочная, упругая (зависит от вида)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — солоноватый, мясной, с пряными нотками</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — розовый, золотисто-розовый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — свинина (окорок), соль, специи, нитритная соль</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — от 3 до 20 дней в холодильнике (в зависимости от вида)</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды и сэндвичи</strong> — с маслом, сыром, овощами</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — нарезка к столу, с соленьями, горчицей</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — мясные, овощные (оливье, столичный)</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — запеканки, омлеты, паста, пицца</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для блинов, пирожков, рулетов</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — твёрдые (чеддер, пармезан), мягкие (моцарелла, брынза)</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, огурцы, перец, салат, лук</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — горчица, хрен, майонез, кетчуп</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, белый, багет, лаваш</li><li class=\"ingredient-list-item\"><strong>Яйца</strong> — в омлетах, яичнице</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Буженина</strong> — более жирная, запечённая</li><li class=\"ingredient-list-item\"><strong>Карбонад</strong> — похожий продукт из свинины</li><li class=\"ingredient-list-item\"><strong>Копчёная колбаса</strong> — более плотная</li><li class=\"ingredient-list-item\"><strong>Индейка (копчёная или запечённая)</strong> — диетическая альтернатива</li></ul>",
+  "category": "Ветчина и рулеты",
+  "semantic_data": {
+    "properties": [
+      "деликатес",
+      "свинина",
+      "нежный",
+      "сочный",
+      "солоноватый",
+      "универсальный",
+      "бутербродный"
+    ],
+    "preparations": [
+      "нарезка_ломтиками",
+      "хранение_в_холодильнике"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_салаты",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      },
+      {
+        "method": "обжаривание",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "бутерброды",
+      "закуски",
+      "салаты",
+      "горячие_блюда",
+      "начинки"
+    ],
+    "pairings": {
+      "protein": ["чеддер", "пармезан", "моцарелла", "брынза"],
+      "vegetables": ["помидоры", "огурцы", "перец", "салат", "лук"],
+      "sauces": ["горчица", "хрен", "майонез", "кетчуп"],
+      "breads": ["ржаной_хлеб", "белый_хлеб", "багет", "лаваш"],
+      "eggs": ["яйца"]
+    },
+    "substitutes": [
+      {
+        "name": "Буженина",
+        "similarity": "high"
+      },
+      {
+        "name": "Карбонад",
+        "similarity": "high"
+      },
+      {
+        "name": "Копчёная колбаса",
+        "similarity": "medium"
+      },
+      {
+        "name": "Копчёная индейка",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "ветчина",
+    "деликатесы",
+    "свинина",
+    "бутерброды",
+    "салаты",
+    "закуски"
+  ]
+}

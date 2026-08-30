@@ -1,0 +1,105 @@
+{
+  "name": "Куриный фарш",
+  "name_normalized": "kurinyy-farsh",
+  "synonyms": "",
+  "short_description": "Измельчённое куриное мясо (грудка, бедро или смесь) с добавлением жира, соли и специй. Универсальный полуфабрикат для котлет, фрикаделек, начинок и быстрых блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Куриный фарш — это измельчённое куриное мясо, приготовленное из грудки, бедра или их смеси с добавлением небольшого количества жира, соли и специй. Благодаря нейтральному вкусу и доступности, фарш является одним из самых популярных полуфабрикатов для домашней кухни. В зависимости от части туши фарш может быть диетическим (из грудки) или более сочным (из бедра или смеси). Быстро готовится, подходит для множества блюд: котлет, фрикаделек, тефтелей, начинок для пирогов, запеканок и быстрых ужинов.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, однородная (зависит от степени измельчения)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, куриный</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — зависит от части туши (грудка до 5%, смесь до 10-15%)</li><li class=\"ingredient-list-item\"><strong>Белки</strong> — до 20%</li><li class=\"ingredient-list-item\"><strong>Время приготовления</strong> — 10-20 минут</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Котлеты</strong> — классические, на пару, в духовке</li><li class=\"ingredient-list-item\"><strong>Фрикадельки</strong> — для супов</li><li class=\"ingredient-list-item\"><strong>Тефтели</strong> — в соусе</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для пирогов, блинов, пельменей</li><li class=\"ingredient-list-item\"><strong>Быстрые блюда</strong> — макароны по-флотски, чили</li><li class=\"ingredient-list-item\"><strong>Запеканки</strong> — с картофелем, овощами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, чеснок, морковь, перец, кабачки</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сливочный, соевый</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, паприка, чеснок, тимьян</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, кинза</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, гречка</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике</li><li class=\"ingredient-list-item\"><strong>Добавление ингредиентов</strong> — лук, яйцо, хлеб, молоко</li><li class=\"ingredient-list-item\"><strong>Формовка</strong> — котлеты, фрикадельки, тефтели</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свиной фарш</strong> — более жирный и сочный</li><li class=\"ingredient-list-item\"><strong>Говяжий фарш</strong> — более плотный, другой вкус</li><li class=\"ingredient-list-item\"><strong>Фарш из индейки</strong> — диетический, похож на куриный</li><li class=\"ingredient-list-item\"><strong>Фарш из курицы и говядины</strong> — универсальный</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/kurinaya-kotleta/'>Куриные котлеты</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/frikadelki/'>Куриные фрикадельки</a></li></ul>",
+  "category": "Фарши",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "курица",
+      "фарш",
+      "нежный",
+      "быстрое_приготовление",
+      "универсальный"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "добавление_лука_яйца_хлеба",
+      "формовка_изделий"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "варка_фрикаделек",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "котлеты",
+      "фрикадельки",
+      "тефтели",
+      "начинки",
+      "быстрые_блюда"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "лук",
+        "чеснок",
+        "морковь",
+        "перец",
+        "кабачки"
+      ],
+      "sauces": [
+        "томатный",
+        "сливочный",
+        "соевый"
+      ],
+      "spices": [
+        "черный_перец",
+        "паприка",
+        "чеснок",
+        "тимьян"
+      ],
+      "herbs": [
+        "петрушка",
+        "укроп",
+        "кинза"
+      ],
+      "grains": [
+        "рис",
+        "гречка"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Свиной фарш",
+        "similarity": "medium"
+      },
+      {
+        "name": "Говяжий фарш",
+        "similarity": "medium"
+      },
+      {
+        "name": "Фарш из индейки",
+        "similarity": "high"
+      },
+      {
+        "name": "Фарш из курицы и говядины",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "курица",
+    "фарш",
+    "котлеты",
+    "фрикадельки",
+    "тефтели",
+    "быстрое_блюдо"
+  ]
+}

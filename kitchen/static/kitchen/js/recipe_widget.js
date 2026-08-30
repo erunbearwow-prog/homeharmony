@@ -220,38 +220,43 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // ======================= ОБНОВЛЕНИЕ ССЫЛОК НА ВЛОЖЕННЫЕ РЕЦЕПТЫ =======================
     function updateSubrecipeLinks() {
-        let currentRatioValue;
+    let currentRatioValue;
 
-        if (currentMode === 'products' && currentBaseIngredient) {
-            currentRatioValue = currentBaseIngredient.currentValue / currentBaseIngredient.originalValue;
-        } else if (currentMode === 'portions' && portionsSlider) {
-            currentRatioValue = parseInt(portionsSlider.value) / baseServings;
-        } else {
-            currentRatioValue = currentRatio;
-        }
-
-        document.querySelectorAll('.subrecipe-link').forEach(link => {
-            try {
-                const url = new URL(link.href);
-                url.searchParams.set('ratio', currentRatioValue.toFixed(3));
-                url.searchParams.set('mode', currentMode);
-
-                if (currentMode === 'products' && currentBaseIngredient) {
-                    url.searchParams.set('base_ingredient', currentBaseIngredient.id);
-                    url.searchParams.set('base_value', currentBaseIngredient.currentValue);
-                    url.searchParams.delete('portions');
-                } else if (currentMode === 'portions' && portionsSlider) {
-                    url.searchParams.set('portions', portionsSlider.value);
-                    url.searchParams.delete('base_ingredient');
-                    url.searchParams.delete('base_value');
-                }
-
-                link.href = url.toString();
-            } catch(e) {
-                console.error('Ошибка обновления ссылки:', e);
-            }
-        });
+    if (currentMode === 'products' && currentBaseIngredient) {
+        currentRatioValue = currentBaseIngredient.currentValue / currentBaseIngredient.originalValue;
+    } else if (currentMode === 'portions' && portionsSlider) {
+        currentRatioValue = parseInt(portionsSlider.value) / baseServings;
+    } else {
+        currentRatioValue = currentRatio;
     }
+
+    document.querySelectorAll('.subrecipe-link').forEach(link => {
+        try {
+            const url = new URL(link.href);
+
+            // Сохраняем существующие параметры return_*
+            // Не удаляем их!
+            url.searchParams.set('ratio', currentRatioValue.toFixed(3));
+            url.searchParams.set('mode', currentMode);
+
+            if (currentMode === 'products' && currentBaseIngredient) {
+                url.searchParams.set('base_ingredient', currentBaseIngredient.id);
+                url.searchParams.set('base_value', currentBaseIngredient.currentValue);
+                url.searchParams.delete('portions');
+            } else if (currentMode === 'portions' && portionsSlider) {
+                url.searchParams.set('portions', portionsSlider.value);
+                url.searchParams.delete('base_ingredient');
+                url.searchParams.delete('base_value');
+            }
+
+            // НЕ УДАЛЯЕМ return_* параметры!
+
+            link.href = url.toString();
+        } catch(e) {
+            console.error('Ошибка обновления ссылки:', e);
+        }
+    });
+}
 
     // ======================= ОБРАБОТЧИК КЛИКОВ ПО ССЫЛКАМ НА ВЛОЖЕННЫЕ РЕЦЕПТЫ =======================
     function setupSubrecipeLinks() {
@@ -306,13 +311,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     url.searchParams.delete('base_value');
                 }
 
-                url.searchParams.delete('return_to');
-                url.searchParams.delete('return_title');
-                url.searchParams.delete('return_image');
-                url.searchParams.delete('return_step');
-                url.searchParams.delete('return_context');
-                url.searchParams.delete('return_mode');
-                url.searchParams.delete('return_portions');
+//                url.searchParams.delete('return_to');
+//                url.searchParams.delete('return_title');
+//                url.searchParams.delete('return_image');
+//                url.searchParams.delete('return_step');
+//                url.searchParams.delete('return_context');
+//                url.searchParams.delete('return_mode');
+//                url.searchParams.delete('return_portions');
 
                 window.location.href = url.toString();
             };

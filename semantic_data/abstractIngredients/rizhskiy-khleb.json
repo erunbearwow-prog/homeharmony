@@ -1,0 +1,75 @@
+{
+  "name": "Рижский хлеб",
+  "name_normalized": "rizhskiy-khleb",
+  "synonyms": "рижский хлеб, рижский ржаной хлеб, рижский хлеб с тмином, латвийский хлеб, ржаной хлеб с тмином, рижский подовый хлеб, рижский темный хлеб",
+  "short_description": "Традиционный латвийский ржаной хлеб с характерным ароматом тмина, выпекаемый подовым способом. Отличается плотной текстурой, кисловатым вкусом, темно-коричневой корочкой и ярким пряным ароматом.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Рижский хлеб — это традиционный латвийский ржаной хлеб, который выпекается из ржаной муки с добавлением тмина. Он имеет характерную темно-коричневую корочку, плотный, влажный мякиш и яркий, пряный аромат тмина. В отличие от бородинского хлеба, рижский не содержит солода, поэтому его вкус более кислый и менее сладкий, с выраженными нотами ржаной закваски и тмина. Традиционно выпекается подовым способом (в виде круглых или овальных буханок).</p><h2 class=\"ingredient-title\">Хлеба с тмином, зирой и розмарином</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Рижский хлеб</strong> — классический ржаной хлеб с тмином, родом из Латвии. Тмин добавляют как в тесто, так и посыпают им поверхность буханки перед выпечкой.</li><li class=\"ingredient-list-item\"><strong>Хлеб с тмином (немецкий)</strong> — распространён в Германии, Австрии и Швейцарии. Может быть как чисто ржаным, так и ржано-пшеничным. Тмин используется как в цельном, так и в молотом виде.</li><li class=\"ingredient-list-item\"><strong>Хлеб с зирой (кумином)</strong> — популярен в ближневосточной и индийской кухне. Чаще всего это лепёшки или плоский хлеб (пита, наан), но встречается и в формовой выпечке. Зира придаёт хлебу теплый, землистый аромат.</li><li class=\"ingredient-list-item\"><strong>Хлеб с розмарином</strong> — характерен для средиземноморской кухни (Италия, Греция, Франция). Чаще всего это пшеничные сорта, такие как фокачча или чиабатта. Розмарин используют свежим или сушёным, добавляя его в тесто или посыпая поверхность.</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, влажная, упругая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисловатый, с ярким пряным ароматом тмина</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — темно-коричневый, почти черный</li><li class=\"ingredient-list-item\"><strong>Способ выпечки</strong> — подовый (на камне или противне)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 3-5 дней</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>К супам</strong> — гороховый, фасолевый, грибной, рыбный суп</li><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с соленой рыбой, шпротами, сливочным маслом, сыром</li><li class=\"ingredient-list-item\"><strong>Гренки</strong> — к пиву, к супам</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — с паштетом, крем-сыром, красной рыбой</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сливочное масло</strong> — классическая пара</li><li class=\"ingredient-list-item\"><strong>Соленая рыба</strong> — сельдь, скумбрия, шпроты</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — мягкие сливочные, плавленые, козий сыр</li><li class=\"ingredient-list-item\"><strong>Квашеная капуста</strong> — традиционное сочетание</li><li class=\"ingredient-list-item\"><strong>Пиво</strong> — особенно тёмное и плотное</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бородинский хлеб</strong> — более сладкий, с кориандром</li><li class=\"ingredient-list-item\"><strong>Дарницкий хлеб</strong> — без тмина, но схожая текстура</li><li class=\"ingredient-list-item\"><strong>Черный хлеб (ржаной)</strong> — без пряностей</li></ul>",
+  "category": "ХЛЕБ, ВЫПЕЧКА, ХЛЕБОБУЛОЧНЫЕ ИЗДЕЛИЯ",
+  "semantic_data": {
+    "properties": [
+      "хлеб",
+      "ржаной",
+      "тмин",
+      "пряный",
+      "подовый",
+      "плотный",
+      "традиционный",
+      "прибалтийская_кухня"
+    ],
+    "preparations": [
+      "хранение_в_хлебнице",
+      "нарезка_ломтиками",
+      "подача_к_столу"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "подогрев_в_тостере",
+        "priority": "medium"
+      },
+      {
+        "method": "приготовление_гренок",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "к_супам",
+      "бутерброды",
+      "гренки",
+      "закуски"
+    ],
+    "pairings": {
+      "protein": ["сельдь", "скумбрия", "шпроты", "сыр_сливочный", "сыр_козий", "сыр_плавленый"],
+      "vegetables": ["квашеная_капуста"],
+      "dairy": ["сливочное_масло"],
+      "drinks": ["тёмное_пиво"],
+      "soups": ["гороховый_суп", "фасолевый_суп", "грибной_суп", "рыбный_суп"]
+    },
+    "substitutes": [
+      {
+        "name": "Бородинский хлеб",
+        "similarity": "medium"
+      },
+      {
+        "name": "Дарницкий хлеб",
+        "similarity": "medium"
+      },
+      {
+        "name": "Черный хлеб (ржаной)",
+        "similarity": "high"
+      }
+    ]
+  },
+  "tags": [
+    "хлеб",
+    "рижский_хлеб",
+    "ржаной_хлеб",
+    "тмин",
+    "прибалтийская_кухня",
+    "подовый_хлеб",
+    "пряный_хлеб"
+  ]
+}

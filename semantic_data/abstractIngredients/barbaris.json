@@ -1,0 +1,101 @@
+{
+  "name": "Барбарис",
+  "name_normalized": "barbaris",
+  "synonyms": "",
+  "short_description": "Кислая ягода тёмно-красного цвета с характерной терпкостью и освежающим вкусом. Используется как приправа, в соусах, для приготовления напитков и как натуральный краситель.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Барбарис — это ягоды кустарника семейства Барбарисовые, имеющие продолговатую форму и тёмно-красный или насыщенно-красный цвет. В свежем виде ягоды обладают ярко выраженным кислым вкусом с терпкостью, поэтому чаще всего используются в сушёном виде. Сушёный барбарис сохраняет свои свойства, становится более мягким по вкусу, приобретая кисло-сладкий оттенок с приятной пикантностью. Широко используется в кавказской, среднеазиатской и иранской кухне как приправа, в соусах и напитках.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кислый, терпкий, освежающий</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — тёмно-красный, бордовый</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — продолговатая, мелкая (до 1 см)</li><li class=\"ingredient-list-item\"><strong>Сушка</strong> — основной способ сохранения</li><li class=\"ingredient-list-item\"><strong>Витамины</strong> — С, каротин, органические кислоты</li><li class=\"ingredient-list-item\"><strong>Краситель</strong> — натуральный пищевой краситель</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сушка</strong> — на солнце или в сушилке</li><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — для восстановления сушёных ягод</li><li class=\"ingredient-list-item\"><strong>Измельчение</strong> — в порошок (как приправа)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Приправа</strong> — в сухом виде, для плова, мяса, овощей</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — кисло-сладкие соусы к мясу</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — компоты, морсы, настойки</li><li class=\"ingredient-list-item\"><strong>Варенье</strong> — из свежих ягод</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для пирогов и сладостей</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — баранина, говядина, курица, свинина</li><li class=\"ingredient-list-item\"><strong>Рис</strong> — плов (классическое сочетание)</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — зира, кориандр, куркума, корица</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, томаты</li><li class=\"ingredient-list-item\"><strong>Сахар</strong> — в десертах</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Кислый гранат</strong> — для кислинки</li><li class=\"ingredient-list-item\"><strong>Клюква</strong> — кислый вкус</li><li class=\"ingredient-list-item\"><strong>Лимонная кислота</strong> — для кислинки (без вкуса)</li><li class=\"ingredient-list-item\"><strong>Сушеная клюква</strong> — кисло-сладкая</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/plov-s-barbarisom/'>Плов с барбарисом</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/nutrition/polza-barbarisa/'>Польза барбариса: витамины, кислоты, антиоксиданты</a></li></ul>",
+  "category": "Специи",
+  "semantic_data": {
+    "properties": [
+      "кислый",
+      "терпкий",
+      "красный",
+      "сушёный",
+      "пряный",
+      "витаминный",
+      "приправа"
+    ],
+    "preparations": [
+      "сушка",
+      "замачивание",
+      "измельчение"
+    ],
+    "cooking_methods": [
+      {
+        "method": "добавление_в_плов",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_соусов",
+        "priority": "high"
+      },
+      {
+        "method": "напитки_и_компоты",
+        "priority": "medium"
+      },
+      {
+        "method": "как_приправа",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "плов",
+      "соусы_к_мясу",
+      "напитки",
+      "варенье",
+      "начинки"
+    ],
+    "pairings": {
+      "protein": [
+        "баранина",
+        "говядина",
+        "курица",
+        "свинина"
+      ],
+      "grains": [
+        "рис"
+      ],
+      "spices": [
+        "зира",
+        "кориандр",
+        "куркума",
+        "корица"
+      ],
+      "vegetables": [
+        "лук",
+        "морковь",
+        "томаты"
+      ],
+      "sweeteners": [
+        "сахар"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Кислый гранат",
+        "similarity": "medium"
+      },
+      {
+        "name": "Клюква",
+        "similarity": "medium"
+      },
+      {
+        "name": "Лимонная кислота",
+        "similarity": "low"
+      },
+      {
+        "name": "Сушеная клюква",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "специи",
+    "барбарис",
+    "приправа",
+    "плов",
+    "кавказская_кухня",
+    "среднеазиатская_кухня",
+    "кислый_вкус"
+  ]
+}

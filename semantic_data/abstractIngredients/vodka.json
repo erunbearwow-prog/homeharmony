@@ -1,0 +1,74 @@
+{
+  "name": "Водка",
+  "name_normalized": "vodka",
+  "synonyms": "водка, водка крепкая, русская водка, очищенный спирт, зерновая водка, картофельная водка",
+  "short_description": "Крепкий алкогольный напиток (40% алкоголя) из этилового спирта и воды, прошедший специальную фильтрацию и очистку. Прозрачная бесцветная жидкость с нейтральным запахом и вкусом. Используется как самостоятельный напиток, в коктейлях, а также для приготовления настоек, соусов и маринадов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Водка — это крепкий алкогольный напиток, представляющий собой смесь этилового спирта (обычно 40% об.) и воды, прошедшую специальную очистку (фильтрацию) для устранения примесей и придания мягкости вкусу. В зависимости от сырья (зерно, картофель, сахарная свекла, патока) различают разные виды водки. Водка имеет прозрачный бесцветный вид, нейтральный запах и характерный спиртовой привкус с лёгкой жгучестью. Широко используется как аперитив, основа для коктейлей, а также в кулинарии для приготовления соусов, маринадов и спиртовых настоек.</p><h2 class=\"ingredient-title\">Виды водки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Классическая водка</strong> — из зерна, 40%</li><li class=\"ingredient-list-item\"><strong>Премиальная водка</strong> — многократная фильтрация, мягкий вкус</li><li class=\"ingredient-list-item\"><strong>Водка на травах</strong> — с добавлением трав и пряностей</li><li class=\"ingredient-list-item\"><strong>Водка с перцем</strong> — с добавлением перца</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Крепость</strong> — 40% об. (стандарт)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, с характерным спиртовым привкусом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — прозрачный, бесцветный</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — этиловый спирт, вода</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 5-10 лет в бутылке</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Напиток</strong> — в чистом виде, в коктейлях</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — основа для соусов (водка-соус для пасты)</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для мяса, рыбы</li><li class=\"ingredient-list-item\"><strong>Настойки</strong> — на травах, фруктах</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — для пропитки бисквитов</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Закуски</strong> — соленья, икра, селёдка, сало</li><li class=\"ingredient-list-item\"><strong>Коктейли</strong> — сок, тоник, вермут</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сливочный</li><li class=\"ingredient-list-item\"><strong>Пряности</strong> — перец, чеснок, лавровый лист</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Джин</strong> — для коктейлей</li><li class=\"ingredient-list-item\"><strong>Крепкий алкоголь</strong> — самогон</li><li class=\"ingredient-list-item\"><strong>Безалкогольная альтернатива</strong> — вода с пряностями</li></ul>",
+  "category": "Крепкий алкоголь",
+  "semantic_data": {
+    "properties": [
+      "алкоголь",
+      "крепкий",
+      "40%",
+      "прозрачный",
+      "нейтральный",
+      "спирт"
+    ],
+    "preparations": [
+      "охлаждение_до_8-10_°C"
+    ],
+    "cooking_methods": [
+      {
+        "method": "напиток",
+        "priority": "high"
+      },
+      {
+        "method": "коктейли",
+        "priority": "high"
+      },
+      {
+        "method": "маринады",
+        "priority": "medium"
+      },
+      {
+        "method": "соусы",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "напиток",
+      "коктейли",
+      "соусы",
+      "маринады",
+      "настойки"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["соленья"],
+      "fish": ["селёдка"],
+      "meat": ["сало", "мясо"],
+      "drinks": ["сок", "тоник", "вермут"]
+    },
+    "substitutes": [
+      {
+        "name": "Джин",
+        "similarity": "medium"
+      },
+      {
+        "name": "Самогон",
+        "similarity": "high"
+      },
+      {
+        "name": "Безалкогольная альтернатива",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "алкоголь",
+    "водка",
+    "крепкий_алкоголь",
+    "коктейли",
+    "соус"
+  ]
+}

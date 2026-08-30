@@ -1,0 +1,73 @@
+{
+  "name": "Говядина духовая",
+  "name_normalized": "govyadina-dukhovaya",
+  "synonyms": "духовая говядина, глазной мускул, глазное яблоко (в мясной торговле), говяжий глазной мускул, говядина для запекания",
+  "short_description": "Мясной полуфабрикат из внешней части задней ноги, представляющий собой округлую мышцу, известную как 'глазной мускул'. Почти не содержит жира, требует длительной тепловой обработки (запекания или тушения) для достижения мягкости.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Говядина духовая — это мясной полуфабрикат, который вырезают из внешней части задней ноги говяжьей туши. В мясной торговле и кулинарии этот отруб широко известен как <strong>«глазной мускул»</strong> или <strong>«глазное яблоко»</strong> из-за характерной округлой, цилиндрической формы единственной мышцы, из которой он состоит. Мясо этого отруба почти не содержит жира и имеет плотную структуру мышечных волокон, поэтому для получения мягкого и сочного блюда требует длительной термической обработки, лучше всего — запекания в духовке.</p><h2 class=\"ingredient-title\">Характеристики нарезки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Анатомическое название</strong> — глазной мускул (глазное яблоко)</li><li class=\"ingredient-list-item\"><strong>Отруб</strong> — внешняя часть задней ноги (тазобедренная часть)</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — округлая, цилиндрическая, состоит из одной мышцы</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — очень низкая, диетический продукт</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, с постным мясом</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — требует длительной тепловой обработки, предварительного маринования</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Запекание</strong> — классический способ приготовления в духовке</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — на медленном огне с добавлением жидкости</li><li class=\"ingredient-list-item\"><strong>Обжарка с последующим запеканием</strong> — для сохранения сочности</li><li class=\"ingredient-list-item\"><strong>Ростбиф</strong> — англичане запекают этот отруб как ростбиф</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук (можно запекать вместе)</li><li class=\"ingredient-list-item\"><strong>Травы</strong> — розмарин, тимьян, петрушка, орегано, базилик</li><li class=\"ingredient-list-item\"><strong>Соусы и маринады</strong> — соевый соус, горчица, кефир, вино</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, зира, кумин, чеснок</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжья лопатка</strong> — схожее применение, но более доступная</li><li class=\"ingredient-list-item\"><strong>Говяжий толстый край</strong> — жирнее, для запекания</li><li class=\"ingredient-list-item\"><strong>Говяжий кострец</strong> — более нежное мясо</li></ul>",
+  "category": "Говядина",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "говядина",
+      "глазной_мускул",
+      "постный",
+      "диетический",
+      "запекание",
+      "тушение"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "маринование",
+      "обжаривание_до_корочки",
+      "запекание_в_духовке"
+    ],
+    "cooking_methods": [
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "медленное_запекание",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "ростбиф",
+      "праздничные_блюда",
+      "запекание"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "морковь", "лук"],
+      "herbs": ["розмарин", "тимьян", "петрушка", "орегано", "базилик"],
+      "spices": ["черный_перец", "зира", "кумин", "чеснок"],
+      "wines": ["красное_вино"]
+    },
+    "substitutes": [
+      {
+        "name": "Говяжья лопатка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Говяжий толстый край",
+        "similarity": "medium"
+      },
+      {
+        "name": "Говяжий кострец",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "говядина",
+    "глазной_мускул",
+    "духовая_говядина",
+    "запекание",
+    "диетическое_мясо"
+  ]
+}

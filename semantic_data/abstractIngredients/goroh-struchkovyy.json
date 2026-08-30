@@ -1,0 +1,75 @@
+{
+  "name": "Горох стручковый",
+  "name_normalized": "goroh-struchkovyy",
+  "synonyms": "стручковый горох, горох в стручках, сахарный горох, молодой горох, горошек в стручках, спаржевый горох",
+  "short_description": "Молодые незрелые бобы гороха в стручках, которые можно употреблять в пищу вместе со створками. Отличаются нежной текстурой, сладковатым вкусом и хрустящей сочностью. Используется в салатах, гарнирах и как самостоятельное блюдо.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Стручковый горох — это недозрелые бобы гороха, которые собирают до полного созревания, когда створки стручков остаются сочными и нежными. В отличие от лущильного гороха, стручковый горох употребляют в пищу целиком, не очищая от створок. Молодые стручки имеют светло-зелёный цвет, сочную, хрустящую текстуру и сладковатый вкус. Содержит много витаминов группы B, витамина C, каротина, клетчатки и растительного белка. Широко используется в вегетарианской и здоровой кухне для салатов, гарниров и овощных блюд.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочная, хрустящая, нежная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, свежий, с лёгким травянистым оттенком</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — светло-зелёный</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — витамины C, группы B, каротин, клетчатка</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — весна-лето</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Переборка</strong> — удалить повреждённые стручки</li><li class=\"ingredient-list-item\"><strong>Мойка</strong> — промыть в проточной воде</li><li class=\"ingredient-list-item\"><strong>Удаление прожилок</strong> — у крупных стручков удалить боковые волокна</li><li class=\"ingredient-list-item\"><strong>Бланширование</strong> — 2-3 минуты</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — в сыром виде с зеленью и маслом</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — на пару, с маслом и специями</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — в овощные супы</li><li class=\"ingredient-list-item\"><strong>Запеканки</strong> — с овощами и сыром</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде с маслом</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — морковь, перец, лук, томаты</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — мята, петрушка, укроп</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, свинина</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, чеснок, тимьян</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Стручковая фасоль</strong> — похожая текстура</li><li class=\"ingredient-list-item\"><strong>Зелёный горошек (лущёный)</strong> — другой формат</li><li class=\"ingredient-list-item\"><strong>Спаржа</strong> — для салатов</li></ul>",
+  "category": "Стручковая фасоль, горох",
+  "semantic_data": {
+    "properties": [
+      "овощ",
+      "бобовый",
+      "сочный",
+      "хрустящий",
+      "сладковатый",
+      "витаминный"
+    ],
+    "preparations": [
+      "мойка_и_переборка",
+      "удаление_прожилок",
+      "бланширование_2-3_минуты"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "салаты",
+      "гарниры",
+      "супы",
+      "запеканки"
+    ],
+    "pairings": {
+      "protein": ["курица", "свинина"],
+      "vegetables": ["морковь", "перец", "лук", "томаты"],
+      "herbs": ["мята", "петрушка", "укроп"],
+      "spices": ["черный_перец", "чеснок", "тимьян"]
+    },
+    "substitutes": [
+      {
+        "name": "Стручковая фасоль",
+        "similarity": "high"
+      },
+      {
+        "name": "Зелёный горошек",
+        "similarity": "medium"
+      },
+      {
+        "name": "Спаржа",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "овощ",
+    "горох",
+    "стручковый_горох",
+    "бобовые",
+    "гарнир",
+    "салат"
+  ]
+}

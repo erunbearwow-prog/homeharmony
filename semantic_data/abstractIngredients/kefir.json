@@ -1,0 +1,69 @@
+{
+  "name": "Кефир",
+  "name_normalized": "kefir",
+  "synonyms": "кефир, кисломолочный напиток, кефир 3,2%, кефир жирный, кефир традиционный, кефир для выпечки, кефир для окрошки, кефир для блинов, кефир для питья, кефир для маринадов, кефир для заправок",
+  "short_description": "Популярный кисломолочный напиток, получаемый путем ферментации молока с использованием кефирных грибков. Имеет жидкую, однородную консистенцию, освежающий кисловатый вкус и характерный молочный аромат. Универсален в кулинарии: употребляется как самостоятельный напиток, используется для выпечки, маринадов, заправок и окрошки.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Кефир — это традиционный кисломолочный напиток, который получают путем сквашивания коровьего молока с помощью симбиотической закваски — кефирных грибков («кефирных зерен»). В отличие от йогурта, кефир содержит не только молочнокислые бактерии, но и дрожжи, что придает ему характерный слегка шипучий вкус и легкую газированность. Жирность 3,2% — это классический, умеренно жирный вариант кефира, который обладает сбалансированным вкусом и наиболее универсален в кулинарии. Кефир богат белками, кальцием, витаминами группы B и пробиотиками, полезными для пищеварения.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Консистенция</strong> — жидкая, однородная, слегка вязкая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисловатый, освежающий, с легкой остринкой и едва уловимой газированностью</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый, кремовый</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — 3,2% (классическая)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 7-10 дней в холодильнике</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — содержит пробиотики, способствует пищеварению</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике, при температуре +2-6°C</li><li class=\"ingredient-list-item\"><strong>Перед употреблением</strong> — при необходимости взболтать (если отделилась сыворотка)</li><li class=\"ingredient-list-item\"><strong>Использование в выпечке</strong> — достать за 30 минут до приготовления для нагревания до комнатной температуры</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Питье</strong> — как самостоятельный напиток</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — блины, оладьи, пироги, кексы, маффины</li><li class=\"ingredient-list-item\"><strong>Окрошка</strong> — классическая основа для холодного супа</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для мяса, птицы (размягчает и придает сочность)</li><li class=\"ingredient-list-item\"><strong>Заправки</strong> — для салатов и соусов</li><li class=\"ingredient-list-item\"><strong>Каши</strong> — как добавка в овсяную и другие каши</li><li class=\"ingredient-list-item\"><strong>Смузи</strong> — основа для фруктовых и овощных коктейлей</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Фрукты и ягоды</strong> — яблоки, груши, бананы, ягоды</li><li class=\"ingredient-list-item\"><strong>Мед и варенье</strong> — для подслащивания</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, свинина, говядина (в маринадах)</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — огурцы, редис, укроп (для окрошки)</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, зеленый лук</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Кефир 1% или 2,5%</strong> — менее жирный</li><li class=\"ingredient-list-item\"><strong>Простокваша</strong> — похожий вкус</li><li class=\"ingredient-list-item\"><strong>Ряженка</strong> — более сладкая, карамельная</li><li class=\"ingredient-list-item\"><strong>Айран</strong> — для окрошки</li><li class=\"ingredient-list-item\"><strong>Йогурт (натуральный)</strong> — в выпечке и соусах</li></ul>",
+  "category": "Молочные продукты",
+  "semantic_data": {
+    "properties": [
+      "кисломолочный",
+      "напиток",
+      "жидкий",
+      "кисловатый",
+      "пробиотики",
+      "для питья",
+      "для выпечки",
+      "для окрошки",
+      "для маринадов",
+      "универсальный"
+    ],
+    "preparations": [
+      "хранение в холодильнике при +2-6°C",
+      "взбалтывание перед использованием",
+      "нагревание до комнатной температуры для выпечки"
+    ],
+    "cooking_methods": [
+      {"method": "использование как напиток", "priority": "high"},
+      {"method": "использование в выпечке", "priority": "high"},
+      {"method": "использование в окрошке", "priority": "high"},
+      {"method": "использование в маринадах", "priority": "high"},
+      {"method": "использование в заправках", "priority": "medium"},
+      {"method": "использование в смузи", "priority": "medium"}
+    ],
+    "applications": [
+      "напитки",
+      "выпечка",
+      "супы (окрошка)",
+      "маринады",
+      "заправки",
+      "каши",
+      "смузи"
+    ],
+    "pairings": {
+      "protein": ["курица", "свинина", "говядина"],
+      "vegetables": ["огурцы", "редис", "укроп", "петрушка", "зеленый лук"],
+      "fruits": ["яблоки", "груши", "бананы", "ягоды"],
+      "sauces": ["мед", "варенье"],
+      "herbs": [],
+      "spices": []
+    },
+    "substitutes": [
+      {"name": "Кефир 1% или 2,5%", "similarity": "high"},
+      {"name": "Простокваша", "similarity": "high"},
+      {"name": "Ряженка", "similarity": "medium"},
+      {"name": "Айран", "similarity": "medium"},
+      {"name": "Йогурт (натуральный)", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "молочные продукты",
+    "кефир",
+    "кисломолочный напиток",
+    "выпечка",
+    "окрошка",
+    "маринады",
+    "пробиотики",
+    "универсальный"
+  ]
+}

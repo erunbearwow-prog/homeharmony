@@ -1,0 +1,60 @@
+{
+  "name": "Жерех х/к",
+  "name_normalized": "zherekh_kh_k",
+  "synonyms": "жерех холодного копчения, жерех х/к, холоднокопченый жерех, копченый жерех, вяленый жерех, рыба холодного копчения, жерех копченый, снеки из рыбы, закуска к пиву, рыба для закусок",
+  "short_description": "Копченая рыба из жереха, прошедшая обработку холодным дымом (18-25°C) в течение длительного времени. Имеет плотную, упругую текстуру, золотисто-коричневый цвет и характерный копченый аромат. Идеальна как самостоятельная закуска к пиву, для салатов и бутербродов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Жерех холодного копчения — это продукт из пресноводной рыбы жерех, который был подвергнут длительной обработке холодным дымом (при температуре 18-25°C). В отличие от горячего копчения, холодное копчение занимает несколько суток, что позволяет рыбе приобрести плотную, упругую текстуру, золотисто-коричневый цвет и насыщенный копченый аромат. Жерех х/к — это популярная закуска, которая часто подается к пиву, используется в салатах, бутербродах и как самостоятельное блюдо.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, немного суховатая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, копченый, солоноватый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — золотисто-коричневый или бронзовый</li><li class=\"ingredient-list-item\"><strong>Способ обработки</strong> — холодное копчение (18-25°C)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 недель в холодильнике (в вакууме до 2-3 месяцев)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — не требует дополнительной термической обработки, готова к употреблению</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике, в вакуумной упаковке или завернутой в пергаментную бумагу</li><li class=\"ingredient-list-item\"><strong>Подача</strong> — можно подавать сразу, без дополнительной подготовки</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — порционными кусками или тонкими ломтиками</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Самостоятельная закуска</strong> — к пиву, вину, крепким напиткам</li><li class=\"ingredient-list-item\"><strong>Бутерброды и канапе</strong> — с маслом, хлебом, зеленью</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с картофелем, яйцами, луком, зеленью</li><li class=\"ingredient-list-item\"><strong>Холодные закуски</strong> — на праздничный стол</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, бородинский, черный хлеб</li><li class=\"ingredient-list-item\"><strong>Масло сливочное</strong> — на бутерброды</li><li class=\"ingredient-list-item\"><strong>Лук репчатый</strong> — свежий или маринованный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, зеленый лук</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — свежие огурцы, помидоры, отварной картофель</li><li class=\"ingredient-list-item\"><strong>Яйца</strong> — в салатах</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — горчица, хрен</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — пиво, водка, белое вино</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жерех горячего копчения</strong> — более мягкая текстура</li><li class=\"ingredient-list-item\"><strong>Щука холодного копчения</strong> — схожий вкус</li><li class=\"ingredient-list-item\"><strong>Судак холодного копчения</strong> — схожая текстура</li><li class=\"ingredient-list-item\"><strong>Окунь холодного копчения</strong> — схожая закуска</li></ul>",
+  "category": "Рыба и морепродукты",
+  "semantic_data": {
+    "properties": [
+      "рыба",
+      "пресноводная",
+      "холодное копчение",
+      "готовая",
+      "плотная",
+      "упругая",
+      "копченая",
+      "закуска",
+      "к пиву",
+      "длительное хранение"
+    ],
+    "preparations": [
+      "хранение в холодильнике в вакуумной упаковке",
+      "нарезка перед подачей",
+      "использование без дополнительной обработки"
+    ],
+    "cooking_methods": [
+      {"method": "готовая (холодная закуска)", "priority": "high"},
+      {"method": "использование в салатах", "priority": "medium"},
+      {"method": "использование в бутербродах", "priority": "medium"}
+    ],
+    "applications": [
+      "закуски",
+      "салаты",
+      "бутерброды"
+    ],
+    "pairings": {
+      "protein": ["сливочное масло"],
+      "vegetables": ["лук репчатый", "огурцы", "помидоры", "отварной картофель"],
+      "sauces": ["горчица", "хрен"],
+      "herbs": ["укроп", "петрушка", "зеленый лук"],
+      "spices": ["черный перец"]
+    },
+    "substitutes": [
+      {"name": "Жерех горячего копчения", "similarity": "medium"},
+      {"name": "Щука холодного копчения", "similarity": "high"},
+      {"name": "Судак холодного копчения", "similarity": "high"},
+      {"name": "Окунь холодного копчения", "similarity": "high"}
+    ]
+  },
+  "tags": [
+    "рыба",
+    "пресноводная",
+    "жерех холодного копчения",
+    "жерех хк",
+    "копченая рыба",
+    "холодное копчение",
+    "закуска к пиву",
+    "снеки"
+  ]
+}

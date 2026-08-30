@@ -1,0 +1,109 @@
+{
+  "name": "Дайкон",
+  "name_normalized": "daikon",
+  "synonyms": "японская редька, китайская редька, белая редька, сладкая редька, белый редис, большой корень, лоба",
+  "short_description": "Сочный, хрустящий белый корнеплод с мягким, слегка сладковатым и пряным вкусом. Близкий родственник редиса и редьки, но лишенный острой горечи, что делает его универсальным ингредиентом для салатов, гарниров и азиатских блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Дайкон — это корнеплод семейства Капустные, который издавна культивируется в странах Восточной Азии (Японии, Китае, Корее) и является неотъемлемой частью их кулинарной традиции. Формой он чаще всего напоминает крупную морковь и может вырастать до 30-40 см в длину, однако встречаются и сорта с круглыми или коническими корнеплодами. Кожица дайкона обычно гладкая и белая, а мякоть — сочная и хрустящая, со сладковатым и слегка пряным вкусом, который значительно мягче, чем у привычной нам редьки. Благодаря этой деликатности дайкон можно есть в сыром виде, не опасаясь излишней остроты.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочная, хрустящая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковато-пряный, мягкий</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый</li><li class=\"ingredient-list-item\"><strong>Калорийность</strong> — низкая (≈21 ккал/100г)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — не накапливает тяжелые металлы</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойка и очистка</strong> — удалить кожицу</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — соломкой, кружочками или кубиками</li><li class=\"ingredient-list-item\"><strong>Натирание</strong> — на терке для салатов</li><li class=\"ingredient-list-item\"><strong>Бланширование</strong> — для смягчения</li><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — в воде для уменьшения остроты</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сырой</strong> — в салатах и как гарнир</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — закуски (кимчи, цукэмоно)</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — в азиатских супах</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с овощами и мясом</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — в воке с соусом</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, свинина, говядина</li><li class=\"ingredient-list-item\"><strong>Рыба и морепродукты</strong> — лосось, тунец, креветки</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — морковь, огурец, болгарский перец</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — соевый, рисовый уксус, кунжутное масло</li><li class=\"ingredient-list-item\"><strong>Пряности</strong> — имбирь, чеснок, кунжут</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Редис</strong> — схожий хруст</li><li class=\"ingredient-list-item\"><strong>Зеленая редька</strong> — похожая текстура</li><li class=\"ingredient-list-item\"><strong>Кольраби</strong> — для салатов</li></ul>",
+  "category": "Овощи",
+  "semantic_data": {
+    "properties": [
+      "сочный",
+      "хрустящий",
+      "белый",
+      "сладковато-пряный",
+      "низкокалорийный",
+      "богат клетчаткой",
+      "источник витамина C",
+      "не накапливает тяжелые металлы"
+    ],
+    "preparations": [
+      "мытьё и очистка от кожицы",
+      "нарезка соломкой, кружочками или кубиками",
+      "натирание на терке",
+      "бланширование",
+      "замачивание в воде для уменьшения остроты (при необходимости)"
+    ],
+    "cooking_methods": [
+      {
+        "method": "сырой (в салатах и как гарнир)",
+        "priority": "high"
+      },
+      {
+        "method": "маринование",
+        "priority": "high"
+      },
+      {
+        "method": "варка (в супах)",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "medium"
+      },
+      {
+        "method": "жарка/обжаривание",
+        "priority": "medium"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      },
+      {
+        "method": "квашение/ферментация",
+        "priority": "low"
+      }
+    ],
+    "applications": [
+      "салаты (с овощами, мясом, морепродуктами)",
+      "супы (азиатские бульоны, суп мисо)",
+      "гарнир к рыбе, мясу и суши",
+      "маринованные закуски (кимчи, цукэмоно)",
+      "соки и смузи",
+      "ингредиент для блюд из лапши",
+      "начинка для пирогов и блинчиков"
+    ],
+    "pairings": {
+      "protein": ["курица", "свинина", "говядина", "лосось", "тунец", "креветки", "тофу", "яйца"],
+      "vegetables": ["морковь", "огурец", "лук зеленый", "лук репчатый", "болгарский перец", "пекинская капуста", "редис", "свекла"],
+      "sauces": ["соевый соус", "рисовый уксус", "кунжутное масло", "майонез", "йогурт", "заправка на основе лимонного сока", "заправка на основе лайма"],
+      "herbs": ["кинза", "петрушка", "зеленый лук", "укроп", "базилик"],
+      "spices": ["черный перец", "паприка", "кунжут", "чеснок", "имбирь", "перец чили"]
+    },
+    "substitutes": [
+      {
+        "name": "Редис",
+        "similarity": "medium"
+      },
+      {
+        "name": "Зеленая редька",
+        "similarity": "medium"
+      },
+      {
+        "name": "Черная редька (после вымачивания)",
+        "similarity": "low"
+      },
+      {
+        "name": "Кольраби (для салатов)",
+        "similarity": "low"
+      },
+      {
+        "name": "Молодая белокочанная капуста (для хруста)",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "овощ",
+    "корнеплод",
+    "азиатская кухня",
+    "японская кухня",
+    "низкокалорийный",
+    "витамин C",
+    "хрустящий",
+    "салатный",
+    "зимний овощ",
+    "полезный",
+    "для супов",
+    "маринованный"
+  ]
+}

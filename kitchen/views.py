@@ -328,6 +328,15 @@ def index(request):
 def recipe_detail(request, recipe_id):
     recipe = get_object_or_404(Recipe, id=recipe_id)
 
+    # ========== ОТЛАДКА ==========
+    print(f"=== ОТЛАДКА recipe_detail ===")
+    print(f"recipe.id: {recipe.id}")
+    print(f"recipe.title: {recipe.title}")
+    print(f"recipe.recipe_type: {recipe.recipe_type}")
+    print(f"recipe.is_professional: {recipe.is_professional}")
+    print(f"recipe_type in ['ttk', 'semi_finished']: {recipe.recipe_type in ['ttk', 'semi_finished']}")
+    print("=" * 50)
+
     print(f'recipe.recipe_type = {recipe.recipe_type}')
     print(f'recipe.is_professional = {recipe.is_professional}')
 
@@ -405,6 +414,17 @@ def recipe_detail(request, recipe_id):
                 ratio = None
         else:
             ratio = None
+
+        # ========== ОТЛАДКА ==========
+        print("=== ОТЛАДКА ПАРАМЕТРОВ ВОЗВРАТА (проф. режим) ===")
+        print(f"request.GET: {request.GET}")
+        print(f"return_to: {return_to}")
+        print(f"return_title: {return_title}")
+        print(f"return_step: {return_step}")
+        print(f"return_context: {return_context}")
+        print(f"return_mode: {return_mode}")
+        print(f"return_portions: {return_portions}")
+        print("=" * 50)
 
         # ======================= ФОРМИРОВАНИЕ ПАРАМЕТРОВ ДЛЯ ВОЗВРАТА =======================
         return_to_params = ''
@@ -687,23 +707,213 @@ def get_substitutions(request, recipe_ingredient_id):
         return JsonResponse({'error': 'Ингредиент не найден'}, status=404)
 
 
+def get_ingredient_substitutions(request, ingredient_id):
+    """
+    API: получить все возможные замены для ингредиента
+    """
+    try:
+        ingredient = get_object_or_404(AbstractIngredient, pk=ingredient_id)
+
+        substitutions = []
+        added_names = set()  # Для предотвращения дублирования
+
+        # ===== 1. ПРИОРИТЕТ 1: РУЧНЫЕ ЗАМЕНЫ (exact) =====
+        exact_rules = IngredientSubstitutionRule.objects.filter(
+            original_ingredient=ingredient,
+            substitution_type='exact',
+            is_active=True
+        ).select_related('substitute_ingredient', 'substitute_branded')
+
+        for rule in exact_rules:
+            if rule.substitute_ingredient:
+                name = rule.substitute_ingredient.name
+                if name not in added_names:
+                    substitutions.append({
+                        'id': rule.id,
+                        'name': name,
+                        'type': 'exact',
+                        'ratio': float(rule.ratio),
+                        'unit': rule.unit,
+                        'priority': rule.priority + 100,  # Максимальный приоритет
+                        'notes': rule.notes,
+                        'is_branded': False,
+                        'is_tag_based': False,
+                    })
+                    added_names.add(name)
+
+            elif rule.substitute_branded:
+                name = f"{rule.substitute_branded.brand} {rule.substitute_branded.product_name}"
+                if name not in added_names:
+                    substitutions.append({
+                        'id': rule.id,
+                        'name': name,
+                        'type': 'branded',
+                        'ratio': float(rule.ratio),
+                        'unit': rule.unit,
+                        'priority': rule.priority + 90,
+                        'notes': rule.notes,
+                        'is_branded': True,
+                        'is_tag_based': False,
+                        'branded_id': rule.substitute_branded.id,
+                        'brand': rule.substitute_branded.brand,
+                        'product_name': rule.substitute_branded.product_name,
+                        'price': float(rule.substitute_branded.price) if rule.substitute_branded.price else None,
+                    })
+                    added_names.add(name)
+
+        # ===== 2. ПРИОРИТЕТ 2: ГИБРИДНЫЕ ЗАМЕНЫ (hybrid) =====
+        hybrid_rules = IngredientSubstitutionRule.objects.filter(
+            original_ingredient=ingredient,
+            substitution_type='hybrid',
+            is_active=True
+        )
+
+        for rule in hybrid_rules:
+            # Если есть конкретная замена — используем её
+            if rule.substitute_ingredient and rule.substitute_ingredient.name not in added_names:
+                substitutions.append({
+                    'id': rule.id,
+                    'name': rule.substitute_ingredient.name,
+                    'type': 'hybrid',
+                    'ratio': float(rule.ratio),
+                    'unit': rule.unit,
+                    'priority': rule.priority + 80,
+                    'notes': f"{rule.notes} (рекомендовано по тегам)" if rule.notes else "Рекомендовано по тегам",
+                    'is_branded': False,
+                    'is_tag_based': True,
+                    'tags': list(rule.required_tags.values_list('name', flat=True)),
+                })
+                added_names.add(rule.substitute_ingredient.name)
+
+            elif rule.substitute_branded:
+                name = f"{rule.substitute_branded.brand} {rule.substitute_branded.product_name}"
+                if name not in added_names:
+                    substitutions.append({
+                        'id': rule.id,
+                        'name': name,
+                        'type': 'hybrid',
+                        'ratio': float(rule.ratio),
+                        'unit': rule.unit,
+                        'priority': rule.priority + 80,
+                        'notes': rule.notes,
+                        'is_branded': True,
+                        'is_tag_based': True,
+                        'branded_id': rule.substitute_branded.id,
+                        'brand': rule.substitute_branded.brand,
+                        'product_name': rule.substitute_branded.product_name,
+                    })
+                    added_names.add(name)
+
+        # ===== 3. ПРИОРИТЕТ 3: АВТОМАТИЧЕСКИЙ ПОДБОР ПО ТЕГАМ (tag_based) =====
+        tag_rules = IngredientSubstitutionRule.objects.filter(
+            original_ingredient=ingredient,
+            substitution_type='tag_based',
+            is_active=True
+        )
+
+        for rule in tag_rules:
+            # Находим ингредиенты по тегам
+            candidates = AbstractIngredient.objects.filter(is_active=True).exclude(id=ingredient.id)
+
+            # Обязательные теги
+            required = rule.required_tags.all()
+            if required:
+                for tag in required:
+                    candidates = candidates.filter(semantic_tags=tag)
+
+            # Запрещённые теги
+            forbidden = rule.forbidden_tags.all()
+            if forbidden:
+                for tag in forbidden:
+                    candidates = candidates.exclude(semantic_tags=tag)
+
+            # Сортируем по количеству совпадений с optional тегами
+            optional = rule.optional_tags.all()
+            if optional:
+                candidates = candidates.annotate(
+                    match_count=Count(
+                        'semantic_tags',
+                        filter=Q(semantic_tags__in=optional)
+                    )
+                ).order_by('-match_count')
+
+            # Добавляем топ-3 кандидатов
+            for candidate in candidates[:3]:
+                name = candidate.name
+                if name not in added_names:
+                    substitutions.append({
+                        'id': rule.id,
+                        'name': name,
+                        'type': 'tag_based',
+                        'ratio': float(rule.ratio),
+                        'unit': rule.unit,
+                        'priority': rule.priority + 50,
+                        'notes': f"Подобрано по тегам: {', '.join([t.name for t in rule.required_tags.all()[:3]])}",
+                        'is_branded': False,
+                        'is_tag_based': True,
+                        'match_score': candidate.match_count if optional else 0,
+                    })
+                    added_names.add(name)
+
+        # ===== 4. ПРИОРИТЕТ 4: ПОХОЖИЕ ИЗ КАТЕГОРИИ (fallback) =====
+        if not substitutions and ingredient.category:
+            similar = AbstractIngredient.objects.filter(
+                category=ingredient.category,
+                is_active=True
+            ).exclude(id=ingredient.id)[:10]
+
+            for sim in similar:
+                if sim.name not in added_names:
+                    substitutions.append({
+                        'id': None,
+                        'name': sim.name,
+                        'type': 'similar',
+                        'ratio': 1.0,
+                        'unit': 'г',
+                        'priority': -1,
+                        'notes': f'Из категории {ingredient.category.name}',
+                        'is_branded': False,
+                        'is_tag_based': False,
+                    })
+                    added_names.add(sim.name)
+
+        # Сортируем по приоритету (убывание)
+        substitutions.sort(key=lambda x: x['priority'], reverse=True)
+
+        return JsonResponse({
+            'original': {
+                'id': ingredient.id,
+                'name': ingredient.name,
+                'tags': list(ingredient.semantic_tags.values_list('name', flat=True)),
+                'category': ingredient.category.name if ingredient.category else None,
+            },
+            'substitutions': substitutions[:20],
+            'total': len(substitutions)
+        })
+
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        return JsonResponse({'error': str(e)}, status=500)
+
+
 # ======================= ИНГРЕДИЕНТЫ =======================
 def ingredient_list(request):
     """Список всех ингредиентов с пагинацией и поиском"""
     # Используем select_related для подгрузки category через abstract
-    ingredients = AbstractIngredient.objects.select_related('category').all()
+    ingredients = AbstractIngredient.objects.select_related('category').filter(is_active=True)
 
-    # Поиск
-    query = request.GET.get('q')
+    # Поиск - ТОЛЬКО ПО НАЗВАНИЮ И СИНОНИМАМ
+    query = request.GET.get('q', '').strip()
     if query:
         ingredients = ingredients.filter(
             Q(name__icontains=query) |
-            Q(description__icontains=query) |
-            Q(category__name__icontains=query)
+            Q(name_normalized__icontains=query) |
+            Q(synonyms__icontains=query)  # если добавили поле
         )
 
     # Фильтр по категории (через abstract)
-    category_id = request.GET.get('category')
+    category_id = request.GET.get('category','')
     if category_id:
         ingredients = ingredients.filter(category_id=category_id)
 
@@ -713,7 +923,7 @@ def ingredient_list(request):
     page_obj = paginator.get_page(page_number)
 
     # Категории для фильтра
-    categories = IngredientCategory.objects.all()
+    categories = IngredientCategory.objects.all().order_by('name')
 
     # ========== ФОРМИРУЕМ return_to ДЛЯ ТЕКУЩЕЙ СТРАНИЦЫ ==========
     # Это URL, на который вернется пользователь из карточки ингредиента
@@ -738,11 +948,20 @@ def ingredient_list(request):
     return_portions = request.GET.get('return_portions')
     ratio = request.GET.get('ratio')
 
+    # ОТЛАДКА
+    print(f"🔍 [DEBUG] category_id: {category_id}")
+    print(f"🔍 [DEBUG] category_id type: {type(category_id)}")
+    print(f"🔍 [DEBUG] category_id repr: {repr(category_id)}")
+
     context = {
         'page_obj': page_obj,
         'categories': categories,
         'query': query,
         'selected_category': category_id,
+
+        'selected_category_type': str(type(category_id)),  # Для отладки
+        'selected_category_repr': repr(category_id),  # Для отладки
+
         'return_to': current_return_to,  # <-- используем для навигации назад
         'return_title': return_title,
         'return_step': return_step,
@@ -771,6 +990,59 @@ def ingredient_detail(request, pk):
 #         slug=slug
 #     )
 #     return _render_ingredient_detail(request, ingredient)
+
+
+# kitchen/views.py
+
+def api_recipe_nutrition(request, pk):
+    """API: расчёт КБЖУ для рецепта (для профессионального режима)"""
+    try:
+        recipe = get_object_or_404(Recipe, pk=pk)
+
+        total_calories = 0
+        total_protein = 0
+        total_fat = 0
+        total_carbs = 0
+
+        # Считаем для профессиональных ингредиентов (брутто/нетто)
+        for pro_ing in recipe.pro_ingredients.all():
+            ingredient = pro_ing.ingredient
+            if ingredient:
+                weight = float(pro_ing.net_weight) if pro_ing.net_weight else float(pro_ing.gross_weight)
+                factor = weight / 100
+                total_calories += (ingredient.calories or 0) * factor
+                total_protein += (ingredient.protein or 0) * factor
+                total_fat += (ingredient.fat or 0) * factor
+                total_carbs += (ingredient.carbohydrates or 0) * factor
+
+        # Считаем для food_items (домашние ингредиенты)
+        for item in recipe.food_items.all():
+            if item.ingredient:
+                factor = item.quantity / 100
+                total_calories += (item.ingredient.calories or 0) * factor
+                total_protein += (item.ingredient.protein or 0) * factor
+                total_fat += (item.ingredient.fat or 0) * factor
+                total_carbs += (item.ingredient.carbohydrates or 0) * factor
+
+        servings = recipe.servings or 1
+
+        result = {
+            'calories': round(total_calories / servings),
+            'protein': round(total_protein / servings, 1),
+            'fat': round(total_fat / servings, 1),
+            'carbohydrates': round(total_carbs / servings, 1),
+        }
+
+        print(f"📊 КБЖУ для рецепта {recipe.id} '{recipe.title}':", result)  # отладка
+
+        return JsonResponse(result)
+
+    except Recipe.DoesNotExist:
+        return JsonResponse({'error': 'Рецепт не найден'}, status=404)
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        return JsonResponse({'error': str(e)}, status=500)
 
 
 def _render_ingredient_detail(request, ingredient):

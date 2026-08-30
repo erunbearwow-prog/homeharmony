@@ -1,0 +1,70 @@
+{
+  "name": "Кешью",
+  "name_normalized": "keshyu",
+  "synonyms": "кешью, орех кешью, кешью сырой, кешью жареный, кешью соленый, кешью сладкий, индийский орех, кешью для салата, кешью для десерта, кешью для выпечки, кешью для соусов, Anacardium occidentale, cashew",
+  "short_description": "Съедобный орех тропического дерева с характерной бобовидной формой, маслянистой текстурой и мягким, сладковатым вкусом с ореховыми и маслянистыми нотками. Широко используется в кулинарии в сыром и жареном виде, в салатах, десертах, выпечке, соусах и азиатских блюдах.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Кешью — это съедобный орех, который является семенем плода тропического дерева Anacardium occidentale. В отличие от большинства орехов, кешью не растет внутри скорлупы, а прикрепляется к нижней части плода (яблока кешью). Сам орех имеет характерную бобовидную форму и покрыт двойной скорлупой, которая содержит токсичное вещество (урушиол), поэтому орехи проходят специальную термическую обработку для удаления ядовитой оболочки. Кешью имеет мягкий, маслянистый, слегка сладковатый вкус с ореховыми нотками. Используется в кулинарии в сыром, жареном, соленом и сладком виде.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Форма</strong> — бобовидная, изогнутая</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — маслянистая, кремовая, нежная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — мягкий, сладковатый, ореховый, с маслянистыми нотками</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от бежевого до светло-кремового (сырые), золотисто-коричневый (жареные)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 6 месяцев в герметичной упаковке в сухом прохладном месте</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — сырые орехи не токсичны после обработки, жареные имеют более насыщенный вкус</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сырые кешью</strong> — замочить в воде на 2-4 часа для размягчения (для соусов, намазок)</li><li class=\"ingredient-list-item\"><strong>Обжаривание</strong> — на сухой сковороде до золотистого цвета (3-5 минут) для усиления аромата</li><li class=\"ingredient-list-item\"><strong>Измельчение</strong> — в блендере до пасты или муки</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в герметичной упаковке в прохладном темном месте</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, овощами, курицей, тунцом</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — печенье, торты, конфеты, мороженое</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — кексы, маффины, булочки, печенье</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — крем-соусы, песто, намазки</li><li class=\"ingredient-list-item\"><strong>Азиатские блюда</strong> — в воке, с лапшой, карри</li><li class=\"ingredient-list-item\"><strong>Мюсли и гранола</strong> — добавка к завтракам</li><li class=\"ingredient-list-item\"><strong>Снэки</strong> — соленые или жареные кешью, в смесях орехов</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, говядина, свинина</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — морковь, перец, брокколи, кабачки</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — яблоки, бананы, инжир, манго</li><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — йогурт, сливки, сыр</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — соевый, сладкий чили, медовый</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — кинза, мята, базилик</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Миндаль</strong> — схожая текстура, более плотный</li><li class=\"ingredient-list-item\"><strong>Грецкие орехи</strong> — в салатах и выпечке</li><li class=\"ingredient-list-item\"><strong>Пекан</strong> — сладковатый вкус</li><li class=\"ingredient-list-item\"><strong>Арахис</strong> — для соусов и снэков</li></ul>",
+  "category": "Орехи и семена",
+  "semantic_data": {
+    "properties": [
+      "орех",
+      "маслянистый",
+      "кремовый",
+      "сладковатый",
+      "бобовидный",
+      "для салатов",
+      "для десертов",
+      "для соусов",
+      "для выпечки",
+      "азиатская кухня"
+    ],
+    "preparations": [
+      "замачивание для размягчения (для соусов)",
+      "обжаривание на сухой сковороде",
+      "измельчение в пасту или муку",
+      "хранение в герметичной упаковке"
+    ],
+    "cooking_methods": [
+      {"method": "использование в сыром виде", "priority": "high"},
+      {"method": "обжаривание", "priority": "high"},
+      {"method": "использование в салатах", "priority": "high"},
+      {"method": "использование в десертах", "priority": "high"},
+      {"method": "измельчение в соусы", "priority": "medium"},
+      {"method": "добавление в азиатские блюда", "priority": "medium"}
+    ],
+    "applications": [
+      "салаты",
+      "десерты",
+      "выпечка",
+      "соусы",
+      "азиатские блюда",
+      "мюсли",
+      "снэки"
+    ],
+    "pairings": {
+      "protein": ["курица", "говядина", "свинина", "йогурт"],
+      "vegetables": ["морковь", "перец", "брокколи", "кабачки"],
+      "fruits": ["яблоки", "бананы", "инжир", "манго"],
+      "sauces": ["соевый", "сладкий чили", "медовый"],
+      "herbs": ["кинза", "мята", "базилик"],
+      "spices": ["корица", "имбирь", "ваниль"]
+    },
+    "substitutes": [
+      {"name": "Миндаль", "similarity": "high"},
+      {"name": "Грецкие орехи", "similarity": "medium"},
+      {"name": "Пекан", "similarity": "medium"},
+      {"name": "Арахис", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "орех",
+    "кешью",
+    "маслянистый",
+    "сладковатый",
+    "салаты",
+    "десерты",
+    "соусы",
+    "выпечка",
+    "азиатская кухня"
+  ]
+}

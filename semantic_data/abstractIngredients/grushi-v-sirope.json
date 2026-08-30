@@ -1,0 +1,70 @@
+{
+  "name": "Груши в сиропе",
+  "name_normalized": "grushi-v-sirope",
+  "synonyms": "груши в сиропе, консервированные груши, груши в сахарном сиропе, груши в банке, груши консервированные, груши для десертов, груши в компоте",
+  "short_description": "Консервированные половинки или дольки груш, залитые прозрачным сахарным сиропом. Сохраняют форму, цвет и аромат, становятся мягкими и нежными. Готовый десерт и удобный ингредиент для выпечки, коктейлей и салатов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Груши в сиропе — это консервированный продукт, состоящий из целых или нарезанных груш, залитых прозрачным сахарным сиропом. В процессе консервации груши становятся мягкими, но сохраняют свою форму, цвет и нежный фруктовый вкус. Сироп пропитывает мякоть, придавая ей дополнительную сладость и блеск. Популярный десерт, а также удобный ингредиент для выпечки, коктейлей, салатов и как украшение для тортов.</p><h2 class=\"ingredient-title\">Виды консервации</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Половинки</strong> — наиболее распространённый вид, удобны для подачи</li><li class=\"ingredient-list-item\"><strong>Дольки</strong> — для салатов и выпечки</li><li class=\"ingredient-list-item\"><strong>Целые груши</strong> — для десертов и украшения</li><li class=\"ingredient-list-item\"><strong>В лёгком сиропе</strong> — с меньшим содержанием сахара</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мягкая, нежная, но сохраняет форму</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, с фруктовым ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — золотистый, янтарный</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в закрытой банке</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Десерты</strong> — как самостоятельное блюдо</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — в пироги, тарты, штрудели</li><li class=\"ingredient-list-item\"><strong>Коктейли</strong> — в качестве украшения</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с сыром, орехами</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — для мяса (утка, свинина)</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — голубые, маскарпоне, рикотта</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль, фундук</li><li class=\"ingredient-list-item\"><strong>Шоколад</strong> — тёмный, молочный</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, ваниль, гвоздика</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежие груши</strong> — требуется подготовка</li><li class=\"ingredient-list-item\"><strong>Грушевый компот</strong> — более жидкий</li><li class=\"ingredient-list-item\"><strong>Персики в сиропе</strong> — другой вкус</li></ul>",
+  "category": "Консервы фруктовые",
+  "semantic_data": {
+    "properties": [
+      "консервы",
+      "груша",
+      "сладкий",
+      "мягкий",
+      "готовый_продукт",
+      "десерт"
+    ],
+    "preparations": [
+      "открыть_банку",
+      "слить_сироп_при_необходимости"
+    ],
+    "cooking_methods": [
+      {
+        "method": "использование_как_есть",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_коктейли",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "десерты",
+      "выпечка",
+      "салаты",
+      "коктейли"
+    ],
+    "pairings": {
+      "protein": ["маскарпоне", "рикотта", "голубые_сыры"],
+      "nuts": ["грецкие_орехи", "миндаль", "фундук"],
+      "chocolate": ["тёмный_шоколад", "молочный_шоколад"],
+      "spices": ["корица", "ваниль", "гвоздика"]
+    },
+    "substitutes": [
+      {
+        "name": "Свежие груши",
+        "similarity": "high"
+      },
+      {
+        "name": "Грушевый компот",
+        "similarity": "medium"
+      },
+      {
+        "name": "Персики в сиропе",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "консервы",
+    "груши",
+    "в_сиропе",
+    "десерт",
+    "выпечка",
+    "зимние_заготовки"
+  ]
+}

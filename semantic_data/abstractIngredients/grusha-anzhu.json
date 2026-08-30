@@ -1,0 +1,61 @@
+{
+  "name": "Груша Анжу",
+  "name_normalized": "grusha-anzhu",
+  "synonyms": "анжу, анжуйская, д'анжу, бер д'анжу, белая анжу, зеленая анжу, красная анжу, зеленая анжуйская, красная анжуйская, груша анжуйская, груша д'анжу, Anjou, D'Anjou, Green Anjou, Red Anjou",
+  "short_description": "Крупный поздний сорт груши с короткой шейкой, округлой формой и тонкой кожицей. Мякоть сочная, маслянистая, сладкая с легкой кислинкой. Различают зеленую и красную разновидности. Универсального назначения: хороша в свежем виде, для запекания, десертов и заготовок.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Груша Анжу (Anjou, D'Anjou) — популярный поздний сорт груши с короткой шейкой, широким шаровидным основанием и яйцевидной формой. Плоды крупные, весом 200–300 г, диаметром около 8 см и высотой 8,5 см. Кожица очень тонкая, гладкая. Существует две основные разновидности: Зеленая Анжу (кожица бледно-зеленая, не меняющая цвет при созревании) и Красная Анжу (кожица красно-оранжевая). Мякоть сочная, маслянистая, сладкая с легкой кислинкой и приятным ароматом с цитрусовыми нотками.</p><h2 class=\"ingredient-title\">Как определить спелость</h2><p class=\"ingredient-text\">Особенность сорта: зеленая разновидность не меняет цвет при созревании, в отличие от большинства других груш. Спелость проверяют легким нажатием большого пальца у основания плодоножки — в этом месте груша должна быть умеренно мягкой. Собранные плоды дозревают при комнатной температуре в течение 3–5 дней.</p><h2 class=\"ingredient-title\">Сорта и виды</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Зеленая Анжуйская (Green Anjou)</strong> — бледно-зеленая кожица с характерной \"пятнистостью\", не меняет цвет при созревании</li><li class=\"ingredient-list-item\"><strong>Красная Анжуйская (Red Anjou)</strong> — желто-красная кожица, выведена случайно на основе зеленой, отличается в основном цветом</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Размер</strong> — крупный, вес 200–300 г, диаметр до 8,5 см</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — яйцевидная, с короткой шейкой</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий с легкой кислинкой, маслянистая текстура</li><li class=\"ingredient-list-item\"><strong>Кожица</strong> — тонкая, гладкая</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 5–7 месяцев в прохладном месте</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежая</strong> — в фруктовых нарезках, салатах</li><li class=\"ingredient-list-item\"><strong>Запекание и десерты</strong> — хорошо держит форму</li><li class=\"ingredient-list-item\"><strong>Сырная тарелка</strong> — с мягкими сырами, голубыми сырами, медом</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — с птицей, в соусах</li><li class=\"ingredient-list-item\"><strong>Компоты и джемы</strong> — для заготовок</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — мягкие (рикотта, маскарпоне), голубые</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — птица, свинина</li><li class=\"ingredient-list-item\"><strong>Мед</strong> — для десертов</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, ваниль</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Груша Конференция</strong> — другой сорт</li><li class=\"ingredient-list-item\"><strong>Груша Дюшес</strong> — маслянистая</li><li class=\"ingredient-list-item\"><strong>Яблоки</strong> — в выпечке</li></ul>",
+  "category": "Семечковые",
+  "semantic_data": {
+    "properties": [
+      "груша",
+      "поздний_сорт",
+      "крупный",
+      "маслянистый",
+      "сладкий",
+      "ароматный",
+      "длительное_хранение",
+      "универсальный",
+      "французский_сорт"
+    ],
+    "preparations": [
+      "мытьё",
+      "проверка_спелости_у_плодоножки",
+      "дозревание_при_комнатной_температуре",
+      "очистка_от_кожицы_при_запекании"
+    ],
+    "cooking_methods": [
+      {"method": "свежее_употребление", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "приготовление_джема", "priority": "medium"},
+      {"method": "компоты", "priority": "medium"},
+      {"method": "десерты", "priority": "high"}
+    ],
+    "applications": [
+      "фруктовые_салаты",
+      "сырные_тарелки",
+      "запекание_с_птицей",
+      "джемы_и_компоты",
+      "десерты"
+    ],
+    "pairings": {
+      "protein": ["мягкие_сыры", "голубые_сыры", "птица", "свинина"],
+      "nuts": ["грецкие_орехи", "миндаль"],
+      "spices": ["корица", "ваниль"],
+      "sweeteners": ["мёд"]
+    },
+    "substitutes": [
+      {"name": "Груша Конференция", "similarity": "high"},
+      {"name": "Груша Дюшес", "similarity": "high"},
+      {"name": "Яблоки", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "фрукт",
+    "груша",
+    "анжу",
+    "зимний_сорт",
+    "длительное_хранение",
+    "десерт",
+    "французская_кухня"
+  ]
+}

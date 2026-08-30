@@ -1,0 +1,65 @@
+{
+  "name": "Зубатка синяя",
+  "name_normalized": "zubatka_sinyaya",
+  "synonyms": "зубатка синяя, синяя зубатка, голубая зубатка, Anarhichas denticulatus, атлантическая зубатка, крупная зубатка, рыба без костей, зубатка для ухи",
+  "short_description": "Крупная северная морская рыба семейства зубатковых с характерной сине-черной окраской и вытянутым телом. Обладает самым водянистым и постным мясом среди зубаток, но при этом нежным, белым и без мелких костей. Чаще всего используется для варки (уха) и приготовления на пару, реже — для жарки и запекания.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Синяя зубатка (Anarhichas denticulatus) — это крупная морская рыба семейства зубатковых, которая обитает в холодных водах северной Атлантики и прилегающих морях. От других видов зубатки отличается характерным сине-черным окрасом без полос и пятен, а также более вытянутым телом и мелкими зубами. Достигает длины до 180 см и массы до 20 кг. Мясо синей зубатки белое, нежное, но более водянистое и постное по сравнению с полосатой и пятнистой зубаткой. Несмотря на это, оно ценится за отсутствие мелких межмышечных костей и приятный вкус. Синяя зубатка чаще всего используется для варки ухи и приготовления на пару.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — белое, нежное, водянистое, без мелких костей</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — деликатный, нейтральный, без выраженного запаха</li><li class=\"ingredient-list-item\"><strong>Окрас</strong> — сине-черный (или сине-серый), без полос и пятен</li><li class=\"ingredient-list-item\"><strong>Размер</strong> — до 180 см, масса до 20 кг</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — низкая (самая постная из зубаток)</li><li class=\"ingredient-list-item\"><strong>Калорийность</strong> — 100-110 ккал на 100 г</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — мясо более рыхлое, чем у других зубаток</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выбор</strong> — предпочтение свежим кускам с упругой текстурой</li><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — при комнатной температуре, избегать повторной заморозки</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — не требуется для ухи, для жарки — рекомендуется</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — замороженная до 6 месяцев, охлаждённая — использовать в течение нескольких часов</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Уха</strong> — оптимальный способ использования, дает нежный бульон</li><li class=\"ingredient-list-item\"><strong>Приготовление на пару</strong> — сохраняет нежную текстуру</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — требует маринования и быстрого запекания</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — не рекомендуется (рыхлая структура, может развалиться)</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — редко используется, требует предварительной подготовки</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, лук, морковь (для ухи)</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочный, лимонный, чесночный</li><li class=\"ingredient-list-item\"><strong>Травы</strong> — укроп, петрушка, лавровый лист</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, душистый перец, соль</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Зубатка полосатая</strong> — более плотное мясо, лучше для жарки</li><li class=\"ingredient-list-item\"><strong>Зубатка пятнистая</strong> — более жирная</li><li class=\"ingredient-list-item\"><strong>Треска</strong> — схожая текстура, более постная</li><li class=\"ingredient-list-item\"><strong>Минтай</strong> — постное мясо</li></ul>",
+  "category": "Рыба и морепродукты",
+  "semantic_data": {
+    "properties": [
+      "морская рыба",
+      "северная рыба",
+      "синяя",
+      "белое мясо",
+      "без костей",
+      "нежное",
+      "водянистое",
+      "постное",
+      "для ухи",
+      "для паровой готовки"
+    ],
+    "preparations": [
+      "выбор свежих кусков",
+      "разморозка при комнатной температуре",
+      "маринование для запекания (по желанию)",
+      "варка для ухи"
+    ],
+    "cooking_methods": [
+      {"method": "варка ухи", "priority": "high"},
+      {"method": "приготовление на пару", "priority": "high"},
+      {"method": "запекание", "priority": "medium"},
+      {"method": "жарка", "priority": "low"},
+      {"method": "копчение", "priority": "low"}
+    ],
+    "applications": [
+      "супы",
+      "вторые блюда",
+      "диетическое питание"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "лук", "морковь"],
+      "sauces": ["сливочный", "лимонный", "чесночный"],
+      "herbs": ["укроп", "петрушка", "лавровый лист"],
+      "spices": ["черный перец", "душистый перец", "соль"]
+    },
+    "substitutes": [
+      {"name": "Зубатка полосатая", "similarity": "medium"},
+      {"name": "Зубатка пятнистая", "similarity": "medium"},
+      {"name": "Треска", "similarity": "high"},
+      {"name": "Минтай", "similarity": "high"}
+    ]
+  },
+  "tags": [
+    "рыба",
+    "морская рыба",
+    "зубатка синяя",
+    "синяя зубатка",
+    "северная рыба",
+    "белая рыба",
+    "без костей",
+    "уха",
+    "паровая готовка",
+    "постная"
+  ]
+}

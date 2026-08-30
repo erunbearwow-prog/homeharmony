@@ -1,0 +1,87 @@
+{
+  "name": "Уксус яблочный 6%",
+  "name_normalized": "uksus-yablochnyy-6",
+  "synonyms": "яблочный уксус, яблочный уксус 6%, натуральный яблочный уксус, apple cider vinegar, ACV",
+  "short_description": "Натуральный уксус, получаемый путём брожения яблочного сидра (яблочного сока). Имеет янтарно-золотистый цвет, мягкий фруктовый вкус с лёгкой кислинкой и характерным яблочным ароматом. Широко используется в кулинарии для заправок, маринадов, соусов и консервации.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Яблочный уксус 6% — это натуральный уксус, получаемый путём двойного брожения яблочного сидра (яблочного сока). В отличие от столового уксуса, он имеет мягкий, более сбалансированный вкус с выраженными яблочными и фруктовыми нотами и лёгкой сладостью. Цвет варьируется от янтарно-золотистого до светло-коричневого. В нефильтрованном виде содержит осадок — так называемую «маточную плёнку» — полезные ферменты и бактерии. Широко используется в кулинарии, народной медицине и косметологии.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Концентрация</strong> — 6%</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — мягкий, фруктовый, с лёгкой кислинкой</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — яблочный, фруктовый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — янтарно-золотистый, светло-коричневый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — яблочный сок, уксусная кислота</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в стеклянной таре</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салатные заправки</strong> — в составе винегретов, соусов, с оливковым маслом</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для мяса, рыбы, птицы, шашлыка</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — в домашних соусах и кетчупах</li><li class=\"ingredient-list-item\"><strong>Консервация</strong> — для маринования овощей</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — разбавленный с водой (напиток здоровья)</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Масла</strong> — оливковое масло, растительное масло</li><li class=\"ingredient-list-item\"><strong>Мёд</strong> — в заправках и соусах</li><li class=\"ingredient-list-item\"><strong>Горчица</strong> — в соусах</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — салаты, капуста, огурцы, помидоры</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — в маринадах</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — яблоки, груши</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Белый винный уксус</strong> — более виноградный</li><li class=\"ingredient-list-item\"><strong>Рисовый уксус</strong> — более сладкий</li><li class=\"ingredient-list-item\"><strong>Лимонный сок</strong> — для свежей кислоты</li><li class=\"ingredient-list-item\"><strong>Столовый уксус 6% + яблочный сок</strong> — для имитации вкуса</li></ul>",
+  "category": "Уксусы",
+  "semantic_data": {
+    "properties": [
+      "уксус",
+      "яблочный",
+      "6%",
+      "фруктовый",
+      "мягкий",
+      "натуральный",
+      "здоровый"
+    ],
+    "preparations": [
+      "хранение_в_закрытой_стеклянной_бутылке",
+      "не_фильтровать_при_наличии_осадка"
+    ],
+    "cooking_methods": [
+      {
+        "method": "салатные_заправки",
+        "priority": "high"
+      },
+      {
+        "method": "маринование",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_соусов",
+        "priority": "high"
+      },
+      {
+        "method": "консервация",
+        "priority": "medium"
+      },
+      {
+        "method": "напитки",
+        "priority": "low"
+      }
+    ],
+    "applications": [
+      "заправки",
+      "маринады",
+      "соусы",
+      "консервация",
+      "напитки"
+    ],
+    "pairings": {
+      "protein": ["курица", "свинина", "говядина"],
+      "vegetables": ["капуста", "огурцы", "помидоры", "салат"],
+      "fruits": ["яблоки", "груши"],
+      "oils": ["оливковое_масло", "растительное_масло"],
+      "sauces": ["горчица"],
+      "sweeteners": ["мёд"]
+    },
+    "substitutes": [
+      {
+        "name": "Белый винный уксус",
+        "similarity": "medium"
+      },
+      {
+        "name": "Рисовый уксус",
+        "similarity": "medium"
+      },
+      {
+        "name": "Лимонный сок",
+        "similarity": "medium"
+      },
+      {
+        "name": "Смесь столового уксуса и яблочного сока",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "уксус",
+    "яблочный_уксус",
+    "apple_cider_vinegar",
+    "заправка",
+    "маринад",
+    "соус",
+    "здоровое_питание"
+  ]
+}

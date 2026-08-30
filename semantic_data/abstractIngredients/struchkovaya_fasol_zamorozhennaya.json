@@ -1,0 +1,70 @@
+{
+  "name": "Стручковая фасоль замороженная",
+  "name_normalized": "struchkovaya_fasol_zamorozhennaya",
+  "synonyms": "замороженная стручковая фасоль, фасоль спаржевая замороженная, фасоль зеленая замороженная, стручки фасоли замороженные, французская фасоль замороженная, овощная смесь с фасолью, фасоль стручковая шоковой заморозки, frozen green beans, frozen string beans",
+  "short_description": "Стручки зелёной фасоли, подвергнутые быстрой заморозке для сохранения цвета, текстуры и полезных свойств. Удобный полуфабрикат, который не требует длительной подготовки и используется для гарниров, супов, рагу и салатов круглый год.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Замороженная стручковая фасоль — это зелёные стручки фасоли, которые были собраны в стадии молочной спелости и подвергнуты быстрой шоковой заморозке. Такая технология позволяет максимально сохранить яркий зелёный цвет, упругую текстуру, витамины и полезные свойства свежего овоща. Замороженная стручковая фасоль доступна круглый год и значительно экономит время на подготовку — она уже вымыта, очищена от кончиков и нарезана (или целая). Не требует предварительного замачивания и разморозки перед приготовлением, что делает её идеальным ингредиентом для быстрых и здоровых блюд.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура после варки</strong> — упругая, нежная, сохраняет форму</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — свежий, зелёный, нейтральный, сладковатый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — ярко-зелёный</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — целые стручки или нарезанные кусочками (2-4 см)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 12-18 месяцев при -18°C</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — не требует разморозки перед приготовлением, варится быстрее свежей</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в морозильной камере при -18°C</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — закладывать в кипящую подсоленную воду без разморозки</li><li class=\"ingredient-list-item\"><strong>Время варки</strong> — 5-7 минут до готовности</li><li class=\"ingredient-list-item\"><strong>Для сохранения цвета</strong> — после варки быстро остудить в ледяной воде (если используется в салатах)</li><li class=\"ingredient-list-item\"><strong>Для рагу и супов</strong> — закладывать без разморозки за 5-7 минут до готовности</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гарнир</strong> — к мясу, рыбе, птице</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — овощные, куриные, грибные</li><li class=\"ingredient-list-item\"><strong>Рагу</strong> — с картофелем, морковью, томатами, мясом</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — овощные, зелёные, с яйцом и майонезом</li><li class=\"ingredient-list-item\"><strong>Запеканки</strong> — с сыром, яйцом, сливками</li><li class=\"ingredient-list-item\"><strong>Обжаривание</strong> — на сковороде с чесноком и оливковым маслом</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в томатном или сливочном соусе</li><li class=\"ingredient-list-item\"><strong>Овощные смеси</strong> — добавка в замороженные овощные миксы</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, говядина, свинина, баранина</li><li class=\"ingredient-list-item\"><strong>Рыба</strong> — лосось, треска, скумбрия</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук, помидоры, перец, кабачки</li><li class=\"ingredient-list-item\"><strong>Грибы</strong> — шампиньоны, лесные грибы</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочный, томатный, сметанный, чесночный</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, чёрный перец, орегано, тимьян</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, базилик</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежая стручковая фасоль</strong> — требует подготовки (очистки, мытья, нарезки)</li><li class=\"ingredient-list-item\"><strong>Консервированная стручковая фасоль</strong> — более мягкая, уже готова к употреблению</li><li class=\"ingredient-list-item\"><strong>Спаржа зелёная</strong> — более деликатный вкус, другая текстура</li><li class=\"ingredient-list-item\"><strong>Зелёный горошек замороженный</strong> — сладкий, менее волокнистый</li><li class=\"ingredient-list-item\"><strong>Брокколи замороженная</strong> — плотная, похожая консистенция</li></ul>",
+  "category": "Овощи",
+  "semantic_data": {
+    "properties": [
+      "овощ",
+      "замороженный",
+      "стручковая фасоль",
+      "зелёная",
+      "низкокалорийная",
+      "витаминная",
+      "удобная",
+      "быстрое приготовление",
+      "без разморозки",
+      "длительное хранение"
+    ],
+    "preparations": [
+      "хранение при -18°C",
+      "варка в кипящей воде без разморозки",
+      "быстрое охлаждение в ледяной воде (для салатов)",
+      "обжаривание на сковороде без разморозки"
+    ],
+    "cooking_methods": [
+      {"method": "варка", "priority": "high"},
+      {"method": "обжаривание", "priority": "high"},
+      {"method": "тушение", "priority": "high"},
+      {"method": "использование в супах", "priority": "high"},
+      {"method": "использование в салатах", "priority": "medium"},
+      {"method": "запекание", "priority": "medium"}
+    ],
+    "applications": [
+      "гарниры",
+      "супы",
+      "рагу",
+      "салаты",
+      "запеканки"
+    ],
+    "pairings": {
+      "protein": ["курица", "говядина", "свинина", "лосось", "треска"],
+      "vegetables": ["картофель", "морковь", "лук", "помидоры", "перец", "кабачки"],
+      "sauces": ["сливочный", "томатный", "сметанный", "чесночный"],
+      "herbs": ["петрушка", "укроп", "базилик"],
+      "spices": ["чеснок", "черный перец", "орегано", "тимьян"]
+    },
+    "substitutes": [
+      {"name": "Свежая стручковая фасоль", "similarity": "high"},
+      {"name": "Консервированная стручковая фасоль", "similarity": "medium"},
+      {"name": "Спаржа зеленая", "similarity": "medium"},
+      {"name": "Зеленый горошек замороженный", "similarity": "low"},
+      {"name": "Брокколи замороженная", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "овощ",
+    "замороженная стручковая фасоль",
+    "зелёная фасоль",
+    "гарнир",
+    "суп",
+    "рагу",
+    "салат",
+    "быстрое приготовление",
+    "удобный продукт",
+    "диетический",
+    "зимний овощ"
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "name": "Яичный белок",
+  "name_normalized": "yaichnyy-belok",
+  "synonyms": "",
+  "short_description": "Прозрачная, вязкая жидкость, окружающая желток в курином яйце. При взбивании превращается в пышную пену, а при нагревании затвердевает. Богат альбумином, используется в кулинарии для осветления бульонов, приготовления безе, суфле, меренги и коктейлей.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Яичный белок — это прозрачная, вязкая и почти безвкусная жидкость, которая составляет около 67% массы куриного яйца. Основная функция белка в яйце — защита желтка и обеспечение питательными веществами развивающегося эмбриона. В кулинарии яичный белок ценится за свои уникальные свойства: при взбивании он насыщается воздухом и образует устойчивую пену, а при нагревании (свёртывании) превращается в плотную белую массу. Благодаря высокому содержанию альбумина, белок также используется для осветления мясных и рыбных бульонов.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — вязкая, жидкая (сырой), плотная и эластичная (после варки)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — практически нейтральный, легкий яичный привкус</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — отсутствует (0%)</li><li class=\"ingredient-list-item\"><strong>Белки</strong> — до 11% (альбумин, глобулин)</li><li class=\"ingredient-list-item\"><strong>Вода</strong> — около 88%</li><li class=\"ingredient-list-item\"><strong>Температура свёртывания</strong> — 62-65 °C</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Отделение от желтка</strong> — аккуратно разделить яйцо, переливая белок из одной половинки скорлупы в другую, или с помощью специального сепаратора</li><li class=\"ingredient-list-item\"><strong>Взбивание</strong> — перед взбиванием белок должен быть комнатной температуры; для устойчивости пены рекомендуется добавить соль или лимонный сок</li><li class=\"ingredient-list-item\"><strong>Осветление бульона</strong> — взбить белок с небольшим количеством воды и добавить в горячий бульон для связывания примесей</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Безе и меренга</strong> — взбитый с сахаром белок запекают до хрустящей корочки</li><li class=\"ingredient-list-item\"><strong>Суфле</strong> — взбитые белки придают блюду воздушную текстуру</li><li class=\"ingredient-list-item\"><strong>Пирожные и торты</strong> — используется в бисквитном тесте и кремах</li><li class=\"ingredient-list-item\"><strong>Коктейли</strong> — добавляется для создания пены и смягчения алкоголя</li><li class=\"ingredient-list-item\"><strong>Осветление бульонов</strong> — делает бульон прозрачным</li><li class=\"ingredient-list-item\"><strong>Яичница и омлет</strong> — в чистом виде или в смеси с желтком</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сахар</strong> — для безе и меренги</li><li class=\"ingredient-list-item\"><strong>Лимонный сок</strong> — для стабилизации пены</li><li class=\"ingredient-list-item\"><strong>Соль</strong> — в омлетах и яичнице</li><li class=\"ingredient-list-item\"><strong>Молоко</strong> — в омлетах</li><li class=\"ingredient-list-item\"><strong>Мука</strong> — в выпечке</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Аквафаба</strong> — жидкость из консервированного нута (для веганских безе и меренги)</li><li class=\"ingredient-list-item\"><strong>Соевая мука + вода</strong> — в выпечке</li><li class=\"ingredient-list-item\"><strong>Разрыхлитель</strong> — для подъема теста</li><li class=\"ingredient-list-item\"><strong>Кукурузный крахмал</strong> — для связывания</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/beze-merenga/'>Рецепт безе и меренги</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/souffle/'>Суфле — секреты воздушной текстуры</a></li></ul>",
+  "category": "Яйца",
+  "semantic_data": {
+    "properties": [
+      "жидкий",
+      "безжирный",
+      "альбумин",
+      "пенящийся",
+      "сворачивающийся_при_нагреве",
+      "нейтральный_вкус",
+      "диетический"
+    ],
+    "preparations": [
+      "отделение_от_желтка",
+      "взбивание_до_пены",
+      "комнатная_температура_для_взбивания",
+      "добавление_соли_для_устойчивости"
+    ],
+    "cooking_methods": [
+      {
+        "method": "взбивание",
+        "priority": "high"
+      },
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "осветление_бульона",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "десерты",
+      "выпечка",
+      "бульоны",
+      "коктейли",
+      "завтраки"
+    ],
+    "pairings": {
+      "protein": [],
+      "sweeteners": [
+        "сахар",
+        "мёд"
+      ],
+      "spices": [
+        "соль",
+        "лимонный_сок"
+      ],
+      "dairy": [
+        "молоко",
+        "сливки"
+      ],
+      "flours": [
+        "мука",
+        "крахмал"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Аквафаба",
+        "similarity": "high"
+      },
+      {
+        "name": "Соевая мука + вода",
+        "similarity": "low"
+      },
+      {
+        "name": "Разрыхлитель",
+        "similarity": "low"
+      },
+      {
+        "name": "Кукурузный крахмал",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "яйца",
+    "белок",
+    "безжирный",
+    "выпечка",
+    "десерт",
+    "бульон",
+    "суфле",
+    "безглютеновый",
+    "диабетический"
+  ]
+}

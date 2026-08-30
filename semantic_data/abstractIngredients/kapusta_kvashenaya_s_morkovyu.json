@@ -1,0 +1,68 @@
+{
+  "name": "Капуста квашеная с морковью",
+  "name_normalized": "kapusta_kvashenaya_s_morkovyu",
+  "synonyms": "квашеная капуста с морковью, капуста с морковью квашеная, кислая капуста с морковью, домашняя квашеная капуста с морковью, капуста квашеная с добавлением моркови, ферментированная капуста с морковью, капуста для салата, капуста для винегрета",
+  "short_description": "Традиционная квашеная капуста с добавлением натертой или нарезанной моркови, что придает ей сладковатый оттенок и дополнительную хрустящую текстуру. Популярный ферментированный продукт русской кухни, используемый как самостоятельная закуска, в салатах, супах и начинках.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Квашеная капуста с морковью — это классический вариант традиционной квашеной капусты, в которую при засолке добавляют натертую или тонко нарезанную морковь. Морковь придает капусте приятный сладковатый оттенок, яркий цвет и дополнительную хрустящую текстуру. В процессе ферментации морковь обогащает продукт витаминами и минералами, особенно бета-каротином. Такая капуста остается одной из самых популярных закусок в русской, украинской и белорусской кухнях, используется для салатов, щей, винегрета, а также как гарнир к мясу.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — хрустящая, упругая, сочная, с добавлением моркови</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисло-соленый, с легкой сладостью от моркови</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от бледно-желтого с оранжевыми вкраплениями до золотистого</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до нескольких месяцев в холодильнике (в рассоле)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — богата витаминами A, C и пробиотиками</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в рассоле в холодильнике или в прохладном месте</li><li class=\"ingredient-list-item\"><strong>Отжим</strong> — при необходимости отжать лишний рассол</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — при необходимости промыть водой для уменьшения кислоты</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — как есть или дополнительно нарезать для салатов</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с растительным маслом, луком, яблоками, клюквой</li><li class=\"ingredient-list-item\"><strong>Винегрет</strong> — классический салат со свеклой, картофелем и солеными огурцами</li><li class=\"ingredient-list-item\"><strong>Щи</strong> — кислые щи на мясном бульоне</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с мясом, картофелем, грибами</li><li class=\"ingredient-list-item\"><strong>Начинка</strong> — для пирогов, пирожков, вареников</li><li class=\"ingredient-list-item\"><strong>Гарнир</strong> — к мясу, рыбе, картофелю</li><li class=\"ingredient-list-item\"><strong>Самостоятельная закуска</strong> — с маслом и зеленью</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — свинина, говядина, птица, сало, колбасы</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, свекла, лук, соленые огурцы</li><li class=\"ingredient-list-item\"><strong>Масло</strong> — растительное, подсолнечное, оливковое</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, зеленый лук</li><li class=\"ingredient-list-item\"><strong>Фрукты и ягоды</strong> — клюква, брусника, яблоки</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Квашеная капуста без моркови</strong> — классический вариант</li><li class=\"ingredient-list-item\"><strong>Свежая капуста с морковью</strong> — для салатов, но другой вкус</li><li class=\"ingredient-list-item\"><strong>Соленая капуста</strong> — менее кислая</li></ul>",
+  "category": "Овощи",
+  "semantic_data": {
+    "properties": [
+      "квашеная",
+      "ферментированная",
+      "с морковью",
+      "кисло-соленая",
+      "хрустящая",
+      "пробиотики",
+      "зимний продукт",
+      "традиционная",
+      "русская кухня",
+      "универсальная"
+    ],
+    "preparations": [
+      "хранение в рассоле",
+      "отжим лишнего рассола",
+      "промывка для уменьшения кислоты (при необходимости)",
+      "дополнительная нарезка"
+    ],
+    "cooking_methods": [
+      {"method": "использование в салатах", "priority": "high"},
+      {"method": "варка (щи)", "priority": "high"},
+      {"method": "тушение", "priority": "high"},
+      {"method": "использование в качестве начинки", "priority": "high"},
+      {"method": "подача как самостоятельная закуска", "priority": "high"}
+    ],
+    "applications": [
+      "салаты",
+      "супы",
+      "вторые блюда",
+      "начинки",
+      "закуски",
+      "гарниры"
+    ],
+    "pairings": {
+      "protein": ["свинина", "говядина", "птица", "сало", "колбасы"],
+      "vegetables": ["картофель", "свекла", "лук", "соленые огурцы"],
+      "fruits": ["клюква", "брусника", "яблоки"],
+      "sauces": ["растительное масло"],
+      "herbs": ["укроп", "петрушка", "зеленый лук"],
+      "spices": ["тмин", "лавровый лист", "перец"]
+    },
+    "substitutes": [
+      {"name": "Квашеная капуста без моркови", "similarity": "high"},
+      {"name": "Свежая капуста с морковью", "similarity": "low"},
+      {"name": "Соленая капуста", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "овощ",
+    "квашеная капуста с морковью",
+    "ферментированный продукт",
+    "русская кухня",
+    "закуска",
+    "салаты",
+    "щи",
+    "начинка",
+    "пробиотики",
+    "зимний продукт"
+  ]
+}

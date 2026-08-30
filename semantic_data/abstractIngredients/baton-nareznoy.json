@@ -1,0 +1,99 @@
+{
+  "name": "Батон нарезной",
+  "name_normalized": "baton-nareznoy",
+  "synonyms": "",
+  "short_description": "Классический белый хлеб продолговатой формы с мягкой корочкой и пористым мякишем, нарезанный на порционные ломтики. Удобный и универсальный хлеб для бутербродов, тостов и повседневного употребления.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Батон нарезной — это один из самых популярных видов белого хлеба в России и странах постсоветского пространства. Имеет продолговатую форму, мягкую золотистую корочку и пористый, воздушный мякиш. Отличается тонкой нарезкой на равномерные ломтики, готовые к употреблению. Выпекается из пшеничной муки высшего сорта с добавлением воды, соли, дрожжей и небольшого количества сахара. Идеальный выбор для бутербродов, тостов, сэндвичей и повседневного употребления.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мягкий мякиш, нежная корочка</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, слегка сладковатый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — золотистая корочка, кремовый мякиш</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — продолговатая</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — пшеничная мука, вода, соль, дрожжи, сахар</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 2-3 дня при комнатной температуре</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — классические, с маслом, сыром, колбасой</li><li class=\"ingredient-list-item\"><strong>Тосты</strong> — для завтрака, с джемом, маслом, яйцом</li><li class=\"ingredient-list-item\"><strong>Сэндвичи</strong> — с разнообразными начинками</li><li class=\"ingredient-list-item\"><strong>Гренки</strong> — для супов и салатов</li><li class=\"ingredient-list-item\"><strong>Панировка</strong> — сухари из батона</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — масло, сыр, творог</li><li class=\"ingredient-list-item\"><strong>Мясные продукты</strong> — колбаса, ветчина, паштет</li><li class=\"ingredient-list-item\"><strong>Рыбные продукты</strong> — лосось, шпроты, икра</li><li class=\"ingredient-list-item\"><strong>Сладкое</strong> — джем, варенье, мёд</li><li class=\"ingredient-list-item\"><strong>Первые блюда</strong> — супы, борщи</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Цельнозерновой хлеб</strong> — более полезный</li><li class=\"ingredient-list-item\"><strong>Бородинский хлеб</strong> — ржаной, с кориандром</li><li class=\"ingredient-list-item\"><strong>Тостовый хлеб</strong> — для тостов</li><li class=\"ingredient-list-item\"><strong>Чиабатта</strong> — итальянский хлеб</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/baton/'>Как испечь нарезной батон дома</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/tosty-iz-batona/'>Тосты из батона — рецепты</a></li></ul>",
+  "category": "ХЛЕБ, ВЫПЕЧКА, ХЛЕБОБУЛОЧНЫЕ ИЗДЕЛИЯ",
+  "semantic_data": {
+    "properties": [
+      "хлеб",
+      "белый",
+      "нарезной",
+      "мягкий",
+      "пористый",
+      "пшеничный",
+      "универсальный"
+    ],
+    "preparations": [
+      "хранение_при_комнатной_температуре",
+      "нарезка_ломтиками"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "подогрев_в_тостере",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_гренок",
+        "priority": "medium"
+      },
+      {
+        "method": "панировка",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "бутерброды",
+      "тосты",
+      "сэндвичи",
+      "гренки",
+      "панировка"
+    ],
+    "pairings": {
+      "protein": [
+        "сыр",
+        "колбаса",
+        "ветчина",
+        "паштет",
+        "лосось",
+        "шпроты",
+        "икра"
+      ],
+      "dairy": [
+        "масло",
+        "творог"
+      ],
+      "sweets": [
+        "джем",
+        "варенье",
+        "мёд"
+      ],
+      "soups": [
+        "супы",
+        "борщи"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Цельнозерновой хлеб",
+        "similarity": "medium"
+      },
+      {
+        "name": "Бородинский хлеб",
+        "similarity": "low"
+      },
+      {
+        "name": "Тостовый хлеб",
+        "similarity": "high"
+      },
+      {
+        "name": "Чиабатта",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "хлеб",
+    "батон",
+    "нарезной",
+    "белый_хлеб",
+    "бутерброды",
+    "тосты",
+    "выпечка"
+  ]
+}

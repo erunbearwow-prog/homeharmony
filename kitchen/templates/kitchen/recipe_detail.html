@@ -3,7 +3,7 @@
 {% load custom_filters %}
 
 {% block title %}
-    {{ recipe.title }} | Семейные ценности
+    {{ recipe.title }} | Вкус и Порядок
 {% endblock %}
 
 {% block extra_css %}
@@ -471,6 +471,15 @@ css
                         <p class="text-sm text-gray-500 mt-2 text-center">✨ Вариант подачи блюда</p>
                     </div>
                     {% endif %}
+                </div>
+                {% endif %}
+                <!-- Условия и сроки хранения -->
+                {% if recipe.storage_conditions %}
+                <div class="mt-8">
+                    <h2 class="text-xl font-bold serif mb-3">❄️ Условия и сроки хранения</h2>
+                    <div class="bg-blue-50 p-4 rounded-xl border border-blue-200">
+                        <p class="text-gray-700 leading-relaxed">{{ recipe.storage_conditions|linebreaks }}</p>
+                    </div>
                 </div>
                 {% endif %}
             </div>

@@ -1,0 +1,102 @@
+{
+  "name": "Куриные крылья",
+  "name_normalized": "kurinye-krylya",
+  "synonyms": "",
+  "short_description": "Часть куриной тушки, состоящая из трёх сочленений: плечо, предплечье и кисть. Крылья содержат кожицу, сухожилия и небольшое количество мяса, что делает их идеальными для жарки, запекания и приготовления на гриле.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Куриные крылья — это популярный продукт, состоящий из трёх костных сегментов: плеча, предплечья и кисти. Обладают характерной текстурой: мягкое мясо, жирная кожица и хрустящие сухожилия. Благодаря небольшому количеству мяса и большому содержанию жира и соединительной ткани крылья идеальны для жарки, запекания, гриля и барбекю. Популярны в азиатской, американской и европейской кухне как закуска к пиву или основное блюдо.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мягкое мясо, хрустящая кожица</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, куриный</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — средняя, в кожице содержится жир</li><li class=\"ingredient-list-item\"><strong>Коллаген</strong> — в сухожилиях, при варке бульон становится наваристым</li><li class=\"ingredient-list-item\"><strong>Применение</strong> — жарка, запекание, гриль, барбекю, бульоны</li><li class=\"ingredient-list-item\"><strong>В англоязычных источниках</strong> — chicken wings</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Промывка</strong> — холодной водой, обсушить</li><li class=\"ingredient-list-item\"><strong>Удаление лишней кожи</strong> — по желанию</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — на сегменты (плечо, предплечье, кисть)</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — для сочности и аромата</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде, во фритюре</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке, в панировке</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — на решётке, на мангале</li><li class=\"ingredient-list-item\"><strong>Барбекю</strong> — классический американский вариант</li><li class=\"ingredient-list-item\"><strong>Бульоны</strong> — для супов (даёт наваристый бульон)</li><li class=\"ingredient-list-item\"><strong>Самса</strong> — с куриными крыльями</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соусы</strong> — барбекю, сладкий чили, кисло-сладкий, острый, медовый</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — паприка, чеснок, чёрный перец, тимьян</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, лук, морковь, сельдерей</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, кинза</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Куриные ножки</strong> — другие части</li><li class=\"ingredient-list-item\"><strong>Свиные рёбрышки</strong> — для барбекю</li><li class=\"ingredient-list-item\"><strong>Крылья индейки</strong> — крупнее</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/krylya-barbekyu/'>Куриные крылья в стиле барбекю</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/krylya-v-sous/'>Куриные крылья в кисло-сладком соусе</a></li></ul>",
+  "category": "Курица",
+  "semantic_data": {
+    "properties": [
+      "курица",
+      "крылья",
+      "хрустящая_кожица",
+      "сухожилия",
+      "недорогой",
+      "chicken_wings"
+    ],
+    "preparations": [
+      "промыть_и_обсушить",
+      "удалить_лишнюю_кожу",
+      "нарезать_на_сегменты",
+      "замариновать_для_гриля"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "гриль",
+        "priority": "high"
+      },
+      {
+        "method": "варка_для_бульона",
+        "priority": "medium"
+      },
+      {
+        "method": "барбекю",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "закуска_к_пиву",
+      "основное_блюдо",
+      "супы",
+      "барбекю"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "картофель",
+        "лук",
+        "морковь",
+        "сельдерей"
+      ],
+      "sauces": [
+        "барбекю",
+        "сладкий_чили",
+        "кисло-сладкий",
+        "острый",
+        "медовый"
+      ],
+      "spices": [
+        "паприка",
+        "чеснок",
+        "черный_перец",
+        "тимьян"
+      ],
+      "herbs": [
+        "петрушка",
+        "укроп",
+        "кинза"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Куриные ножки",
+        "similarity": "medium"
+      },
+      {
+        "name": "Свиные рёбрышки",
+        "similarity": "medium"
+      },
+      {
+        "name": "Крылья индейки",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "курица",
+    "крылья",
+    "закуска",
+    "жарка",
+    "барбекю",
+    "гриль",
+    "chicken_wings"
+  ]
+}

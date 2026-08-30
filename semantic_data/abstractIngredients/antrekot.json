@@ -1,0 +1,109 @@
+{
+  "name": "Антрекот",
+  "name_normalized": "antrekot",
+  "synonyms": "",
+  "short_description": "Мясной полуфабрикат из говядины, нарезанный поперёк волокон на крупные порционные куски овальной или округлой формы толщиной 1,5–2,5 см. Бескостная нарезка из толстого края (корейки) для жарки стейков и быстрого приготовления вторых блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Антрекот — это мясной полуфабрикат из говядины, нарезанный поперёк волокон на крупные порционные куски овальной или округлой формы толщиной 1,5–2,5 см. Отруб берётся из <strong>толстого края (корейки)</strong> — спинной части туши. Бескостный вариант, в отличие от стейка на кости (рибай на кости, ковбой, томагавк). Благодаря внутримышечным жировым прослойкам мясо получается нежным, сочным и мраморным. Название происходит от французского <em>entrecôte</em> — \"между рёбрами\", что указывает на его расположение между рёберными костями.</p><h2 class=\"ingredient-title\">Характеристики нарезки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Форма</strong> — овальная или округлая</li><li class=\"ingredient-list-item\"><strong>Толщина</strong> — 1,5–2,5 см</li><li class=\"ingredient-list-item\"><strong>Вес</strong> — 150–350 г (стандартная порция)</li><li class=\"ingredient-list-item\"><strong>Направление нарезки</strong> — строго поперёк волокон</li><li class=\"ingredient-list-item\"><strong>Отруб</strong> — толстый край (корейка), спинная часть</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — бескостный полуфабрикат</li></ul><h2 class=\"ingredient-title\">Отруб</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Толстый край (корейка)</strong> — мраморное мясо из спинной части</li><li class=\"ingredient-list-item\"><strong>Рибай</strong> — тот же отруб, но может продаваться как стейк большей толщины</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка стейков</strong> — классический способ приготовления</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — на открытом огне или решётке</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с овощами</li><li class=\"ingredient-list-item\"><strong>Медальоны</strong> — маленькие круглые куски для быстрой жарки</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соусы</strong> — перечный, горчичный, грибной, сливочный, бургундский</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофель (пюре, жареный), овощи-гриль, рис</li><li class=\"ingredient-list-item\"><strong>Травы</strong> — розмарин, тимьян, петрушка, базилик</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, чеснок, паприка</li><li class=\"ingredient-list-item\"><strong>Вино</strong> — красное сухое (для соуса или подачи)</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Стейк рибай</strong> — тот же отруб, более толстый (до 5 см)</li><li class=\"ingredient-list-item\"><strong>Стейк нью-йорк</strong> — из тонкого края, более плотный вкус</li><li class=\"ingredient-list-item\"><strong>Филе-миньон</strong> — из вырезки, более нежный</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/kak-zharyt-antrekot/'>Как правильно жарить антрекот</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/steak-sousy/'>Соусы для стейков и антрекота</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/otruby-govyadiny/'>Отрубы говядины: гид по частям туши</a></li></ul>",
+  "category": "Мясные полуфабрикаты",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "говядина",
+      "толстый_край",
+      "корейка",
+      "овальный",
+      "поперёк_волокон",
+      "нежный",
+      "сочный",
+      "мраморный",
+      "бескостный",
+      "порционный",
+      "быстрое_приготовление"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "промыть_обсушить_бумажным_полотенцем",
+      "дать_прогреться_до_комнатной_температуры"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "гриль",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "стейки",
+      "жарка",
+      "гриль",
+      "запекание",
+      "медальоны",
+      "вторые_блюда"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "картофель",
+        "овощи_гриль"
+      ],
+      "grains": [
+        "рис"
+      ],
+      "sauces": [
+        "перечный",
+        "горчичный",
+        "грибной",
+        "сливочный",
+        "бургундский"
+      ],
+      "herbs": [
+        "розмарин",
+        "тимьян",
+        "петрушка",
+        "базилик"
+      ],
+      "spices": [
+        "черный_перец",
+        "чеснок",
+        "паприка"
+      ],
+      "wines": [
+        "красное_сухое_вино"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Стейк рибай",
+        "similarity": "high"
+      },
+      {
+        "name": "Стейк нью-йорк",
+        "similarity": "medium"
+      },
+      {
+        "name": "Филе-миньон",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "говядина",
+    "антрекот",
+    "толстый_край",
+    "корейка",
+    "стейк",
+    "рибай",
+    "бескостный",
+    "жарка",
+    "гриль",
+    "мясо"
+  ]
+}

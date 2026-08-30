@@ -1,0 +1,78 @@
+{
+  "name": "Говяжья вырезка",
+  "name_normalized": "govyazhya-vyrezka",
+  "synonyms": "говяжья вырезка, телячья вырезка, филе-миньон, говяжий филей, бифштекс из вырезки, мясо для стейков, tenderloin",
+  "short_description": "Самая нежная и дорогая часть говяжьей туши, расположенная вдоль позвоночника. Практически не содержит жира и соединительной ткани, отличается мелкой волокнистой структурой и мягкостью. Идеальна для стейков, жарки и гриля.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Говяжья вырезка — это самая ценная, нежная и дорогая часть говяжьей туши, расположенная вдоль позвоночника. Представляет собой длинный узкий кусок филейного мяса, практически не содержащий жира и соединительной ткани. Благодаря мелкой волокнистой структуре и минимальному содержанию коллагена, вырезка считается самым мягким и деликатесным мясом. Из неё готовят премиальные стейки (филе-миньон, шатобриан), которые не требуют длительной термической обработки. Считается золотым стандартом среди стейков.</p><h2 class=\"ingredient-title\">Характеристики</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Отруб</strong> — позвоночная часть туши</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — минимальная (очень постная)</li><li class=\"ingredient-list-item\"><strong>Структура</strong> — мелкая, нежная, без соединительной ткани</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мягкая, тающая</li><li class=\"ingredient-list-item\"><strong>Вес</strong> — 1-2 кг (целая вырезка)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — самое нежное мясо говядины</li></ul><h2 class=\"ingredient-title\">Стейки из вырезки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Филе-миньон</strong> — классический стейк из центральной части вырезки, самый нежный</li><li class=\"ingredient-list-item\"><strong>Шатобриан</strong> — крупный стейк из толстой части вырезки</li><li class=\"ingredient-list-item\"><strong>Турнедо</strong> — маленькие круглые стейки для медальонов</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Стейки</strong> — жарка на сковороде или гриле до medium rare</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — целиком (для шатобриана)</li><li class=\"ingredient-list-item\"><strong>Медальоны</strong> — маленькие порционные куски</li><li class=\"ingredient-list-item\"><strong>Тартар</strong> — в сыром виде (очень высокое качество)</li><li class=\"ingredient-list-item\"><strong>Карпаччо</strong> — тонкие ломтики</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочный, трюфельный, перечный, бургундский</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофель (пюре, жареный), спаржа, овощи-гриль</li><li class=\"ingredient-list-item\"><strong>Травы</strong> — розмарин, тимьян</li><li class=\"ingredient-list-item\"><strong>Вино</strong> — красное сухое (бордо, бургундское)</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Телячья вырезка</strong> — ещё нежнее</li><li class=\"ingredient-list-item\"><strong>Говяжий антрекот</strong> — с жировыми прослойками</li><li class=\"ingredient-list-item\"><strong>Рибай</strong> — мраморный</li></ul>",
+  "category": "Говядина",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "говядина",
+      "нежный",
+      "постный",
+      "филей",
+      "деликатес",
+      "премиальный"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "обсушить_бумажным_полотенцем",
+      "дать_прогреться_до_комнатной_температуры"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка_стейков",
+        "priority": "high"
+      },
+      {
+        "method": "гриль",
+        "priority": "high"
+      },
+      {
+        "method": "запекание_целиком",
+        "priority": "medium"
+      },
+      {
+        "method": "тартар",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "стейки",
+      "медальоны",
+      "жарка",
+      "гриль",
+      "тартар"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "спаржа", "овощи_гриль"],
+      "sauces": ["сливочный", "трюфельный", "перечный", "бургундский"],
+      "herbs": ["розмарин", "тимьян"],
+      "wines": ["красное_сухое_вино"]
+    },
+    "substitutes": [
+      {
+        "name": "Телячья вырезка",
+        "similarity": "high"
+      },
+      {
+        "name": "Говяжий антрекот",
+        "similarity": "medium"
+      },
+      {
+        "name": "Рибай",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "говядина",
+    "вырезка",
+    "стейк",
+    "филе-миньон",
+    "деликатес"
+  ]
+}

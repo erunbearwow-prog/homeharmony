@@ -1,0 +1,78 @@
+{
+  "name": "Горчица дижонская",
+  "name_normalized": "gorchitsa-dizhonskaya",
+  "synonyms": "дижонская горчица, горчица дижон, французская горчица, горчица с белым вином, Dijon mustard, moutarde de Dijon",
+  "short_description": "Французская горчица из чёрных и коричневых семян горчицы с добавлением белого вина и специй. Отличается более мягким, пряным и сливочным вкусом по сравнению с острой русской горчицей. Широко используется в европейской кухне для соусов, заправок и маринадов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Дижонская горчица — это знаменитая французская горчица из города Дижон, которая отличается от других видов горчицы более мягким, пряным и сливочным вкусом. Её изготавливают из чёрных и коричневых семян горчицы с добавлением белого вина (вместо уксуса), соли, лимонной кислоты и специй (эстрагон, чеснок, лук). Благодаря этому, дижонская горчица имеет более изысканный аромат и менее жгучий вкус, чем классическая русская горчица. Используется в европейской кухне для соусов, заправок, маринадов и как самостоятельная приправа.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — мягкий, пряный, сливочный, с лёгкой остринкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от жёлтого до бледно-жёлтого</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — однородная, кремовая</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — семена горчицы (чёрная, коричневая), белое вино, соль, специи</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 1-2 лет в холодильнике</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соусы</strong> — дижонский соус к мясу, птице, рыбе</li><li class=\"ingredient-list-item\"><strong>Заправки</strong> — в составе винегретов, салатных заправок</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для мяса (курица, свинина, утка)</li><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с ветчиной, колбасой, сыром</li><li class=\"ingredient-list-item\"><strong>Паста</strong> — в соусах для пасты</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — с картофелем, овощами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — свинина, говядина, курица, утка</li><li class=\"ingredient-list-item\"><strong>Рыба</strong> — лосось, тунец</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — твёрдые сыры (пармезан, чеддер)</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — в салатах и заправках</li><li class=\"ingredient-list-item\"><strong>Вино</strong> — белое сухое (в соусах)</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Острая русская горчица</strong> — более жгучая, добавлять меньше</li><li class=\"ingredient-list-item\"><strong>Сладкая горчица (баварская)</strong> — мягче, слаще</li><li class=\"ingredient-list-item\"><strong>Смесь горчичного порошка с белым вином</strong> — домашний вариант</li><li class=\"ingredient-list-item\"><strong>Зернистая горчица</strong> — с целыми семенами</li></ul>",
+  "category": "Соусы европейские",
+  "semantic_data": {
+    "properties": [
+      "горчица",
+      "французская",
+      "мягкая",
+      "пряная",
+      "кремовая",
+      "с_белым_вином"
+    ],
+    "preparations": [
+      "хранение_в_холодильнике",
+      "размешивание_перед_использованием"
+    ],
+    "cooking_methods": [
+      {
+        "method": "приготовление_соусов",
+        "priority": "high"
+      },
+      {
+        "method": "заправка_салатов",
+        "priority": "high"
+      },
+      {
+        "method": "маринование_мяса",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_бутерброды",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "соусы",
+      "заправки",
+      "маринады",
+      "бутерброды"
+    ],
+    "pairings": {
+      "protein": ["свинина", "говядина", "курица", "утка", "лосось", "тунец"],
+      "cheeses": ["пармезан", "чеддер"],
+      "vegetables": ["салат", "овощи"],
+      "wines": ["белое_сухое_вино"],
+      "pasta": ["паста"]
+    },
+    "substitutes": [
+      {
+        "name": "Острая русская горчица",
+        "similarity": "medium"
+      },
+      {
+        "name": "Сладкая горчица (баварская)",
+        "similarity": "medium"
+      },
+      {
+        "name": "Смесь горчичного порошка с белым вином",
+        "similarity": "medium"
+      },
+      {
+        "name": "Зернистая горчица",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "горчица",
+    "дижонская_горчица",
+    "французская_кухня",
+    "соус",
+    "заправка"
+  ]
+}

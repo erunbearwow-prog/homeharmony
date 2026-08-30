@@ -1,0 +1,56 @@
+{
+  "name": "Краковская колбаса",
+  "name_normalized": "krakovskaya-kolbasa",
+  "synonyms": "краковская колбаса, колбаса краковская, краковская, Krakowska (польск.), польская колбаса, полукопченая краковская",
+  "short_description": "Полукопченая колбаса из свинины с характерным чесночным ароматом, плотной текстурой и умеренной жирностью. Популярный продукт польской и восточноевропейской кухни для бутербродов, закусок и горячих блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Краковская колбаса — это полукопченая колбаса, один из самых популярных колбасных продуктов в Польше и странах Восточной Европы. Производится из свинины (иногда с добавлением говядины) с использованием нитритной соли, чеснока, перца и других специй. Технология изготовления включает обжарку, варку и последующее копчение, что придаёт колбасе характерный аромат дыма, плотную упругую текстуру и насыщенный, слегка пряный вкус с выраженными чесночными нотами. Идеальна для бутербродов, закусок и горячих блюд.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, с жировыми вкраплениями</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, пряный, с выраженным чесночным и копчёным ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — розово-красный с тёмным ободком</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — свинина, соль, чеснок, специи, нитритная соль</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 20-30 дней в холодильнике</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом, сыром, зеленью, овощами</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — нарезка к пиву, вину</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, яйцом, овощами</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — в тушёном виде, с картофелем, в супах</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде с луком</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — твёрдые, полутвёрдые, плавленые</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — огурцы, помидоры, лук, перец, квашеная капуста</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — горчица, хрен, кетчуп, майонез</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, белый, багет</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — пиво, крепкий алкоголь</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сервелат</strong> — похожий вкус, менее чесночный</li><li class=\"ingredient-list-item\"><strong>Московская колбаса</strong> — полукопченая, схожая</li><li class=\"ingredient-list-item\"><strong>Таллинская колбаса</strong> — полукопченая, с тмином</li><li class=\"ingredient-list-item\"><strong>Варено-копченая колбаса</strong> — более мягкая</li><li class=\"ingredient-list-item\"><strong>Копченая ветчина</strong> — постнее</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/krakovskaya-kolbasa/'>Краковская колбаса — история и рецепт</a></li></ul>",
+  "category": "Колбасы полукопченые",
+  "semantic_data": {
+    "properties": [
+      "колбаса",
+      "полукопченая",
+      "чесночный",
+      "пряный",
+      "плотная",
+      "сочная",
+      "польская_кухня"
+    ],
+    "preparations": [
+      "нарезка_ломтиками",
+      "хранение_в_холодильнике"
+    ],
+    "cooking_methods": [
+      {"method": "свежее_употребление", "priority": "high"},
+      {"method": "добавление_в_салаты", "priority": "high"},
+      {"method": "жарка", "priority": "medium"}
+    ],
+    "applications": [
+      "бутерброды",
+      "закуски",
+      "салаты",
+      "горячие_блюда"
+    ],
+    "pairings": {
+      "protein": ["сыр_твердый", "сыр_полутвердый", "сыр_плавленый"],
+      "vegetables": ["огурцы", "помидоры", "лук", "перец", "квашеная_капуста"],
+      "sauces": ["горчица", "хрен", "кетчуп", "майонез"],
+      "breads": ["ржаной_хлеб", "белый_хлеб", "багет"],
+      "drinks": ["пиво", "крепкий_алкоголь"]
+    },
+    "substitutes": [
+      {"name": "Сервелат", "similarity": "high"},
+      {"name": "Московская колбаса", "similarity": "high"},
+      {"name": "Таллинская колбаса", "similarity": "high"},
+      {"name": "Варено-копченая колбаса", "similarity": "medium"},
+      {"name": "Копченая ветчина", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "колбаса",
+    "краковская",
+    "полукопченая",
+    "польская_кухня",
+    "чесночный_вкус",
+    "закуска"
+  ]
+}

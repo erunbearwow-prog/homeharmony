@@ -1,0 +1,73 @@
+{
+  "name": "Вино красное полусладкое",
+  "name_normalized": "vino-krasnoe-polusladkoe",
+  "synonyms": "",
+  "short_description": "Красное вино с содержанием сахара от 25 до 45 г/л, отличающееся мягким, сладковатым вкусом с лёгкой кислинкой и фруктово-ягодным ароматом. Популярный выбор для тех, кто предпочитает более сладкие вина.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Красное полусладкое вино — это алкогольный напиток, который отличается повышенным содержанием сахара (25–45 г/л) по сравнению с сухими и полусухими винами. Благодаря этому оно имеет мягкий, сладковатый вкус с хорошо сбалансированной кислотностью, что делает его особенно популярным среди любителей более сладких вин. Полусладкое красное вино обладает насыщенным рубиновым цветом, ярким фруктово-ягодным ароматом (вишня, малина, чёрная смородина, слива) и мягким, округлым послевкусием. Оно идеально подходит для романтических ужинов, дружеских посиделок и в качестве аперитива или десертного вина.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Содержание сахара</strong> — 25–45 г/л</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, мягкий, с лёгкой кислинкой</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — фруктовый, ягодный (вишня, малина, чёрная смородина, слива)</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — рубиновый, насыщенный</li><li class=\"ingredient-list-item\"><strong>Танины</strong> — мягкие, округлые</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 2-5 лет в бутылке</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Напиток</strong> — самостоятельное употребление, к десертам, фруктам</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — для сладких и кисло-сладких соусов</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для мяса (особенно свинины), птицы</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — в некоторых рецептах</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Десерты</strong> — торты, пирожные, шоколадные десерты</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — виноград, яблоки, груши</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — голубые сыры, мягкие сыры</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — свинина, дичь, утка</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Красное полусухое вино</strong> — менее сладкое</li><li class=\"ingredient-list-item\"><strong>Красное сладкое вино</strong> — более сладкое</li><li class=\"ingredient-list-item\"><strong>Красный вермут</strong> — сладкий, ароматизированный</li><li class=\"ingredient-list-item\"><strong>Гранатовый сок</strong> — безалкогольная альтернатива</li></ul>",
+  "category": "Красное вино",
+  "semantic_data": {
+    "properties": [
+      "алкоголь",
+      "красное_вино",
+      "полусладкое",
+      "сладковатый",
+      "фруктовый",
+      "ягодный",
+      "мягкое",
+      "десертное"
+    ],
+    "preparations": [
+      "охлаждение_до_14-16_°C"
+    ],
+    "cooking_methods": [
+      {
+        "method": "напиток",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_соусов",
+        "priority": "medium"
+      },
+      {
+        "method": "маринование",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "напиток",
+      "соусы",
+      "маринады"
+    ],
+    "pairings": {
+      "protein": ["голубые_сыры", "мягкие_сыры", "свинина", "дичь", "утка"],
+      "fruits": ["виноград", "яблоки", "груши"],
+      "desserts": ["торты", "пирожные", "шоколадные_десерты"]
+    },
+    "substitutes": [
+      {
+        "name": "Красное полусухое вино",
+        "similarity": "high"
+      },
+      {
+        "name": "Красное сладкое вино",
+        "similarity": "high"
+      },
+      {
+        "name": "Красный вермут",
+        "similarity": "medium"
+      },
+      {
+        "name": "Гранатовый сок",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "алкоголь",
+    "вино",
+    "красное_вино",
+    "полусладкое_вино",
+    "десертное_вино",
+    "соус"
+  ]
+}

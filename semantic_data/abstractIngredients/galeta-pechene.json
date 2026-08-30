@@ -1,0 +1,73 @@
+{
+  "name": "Галета",
+  "name_normalized": "galeta-pechene",
+  "synonyms": "галета, галетное печенье, сухой хлеб, морской хлеб, крекер, галета сухая, печенье для походов",
+  "short_description": "Сухое пресное печенье (хлебец) из пшеничной или ржаной муки, часто с добавлением солода, крахмала или жира. Долго хранится, не теряя вкусовых качеств, благодаря чему традиционно использовалось как хлеб в морских походах, путешествиях и военных пайках.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Галета — это сухое пресное печенье или хлебец, представляющее собой плотные тонкие прямоугольные или круглые плитки. Благодаря пониженной влажности и особой технологии выпечки галеты хранятся очень долго (до 2 лет) без потери своих качеств, что сделало их незаменимым продуктом в морских путешествиях, экспедициях и армейских пайках. Галеты обладают нейтральным солоноватым или сладковатым вкусом, сухой рассыпчатой структурой и хрустящей текстурой. Их можно есть как самостоятельный продукт, использовать для бутербродов или перемалывать в панировочные сухари.</p><h2 class=\"ingredient-title\">Виды галет</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Пшеничная галета</strong> — классическая, из пшеничной муки</li><li class=\"ingredient-list-item\"><strong>Ржаная галета</strong> — из ржаной муки, более плотная</li><li class=\"ingredient-list-item\"><strong>Галета с солодом</strong> — с добавлением солода для вкуса</li><li class=\"ingredient-list-item\"><strong>Галета с жиром</strong> — содержит растительный или животный жир</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сухая, плотная, рассыпчатая, хрустящая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, солоноватый или слегка сладковатый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от светло-бежевого до золотистого</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2 лет в сухом месте</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — мука, вода, соль, иногда крахмал, солод, жир</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Походный хлеб</strong> — как основной хлеб в путешествиях</li><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — основа для закусок</li><li class=\"ingredient-list-item\"><strong>Панировка</strong> — в молотом виде</li><li class=\"ingredient-list-item\"><strong>Чай и кофе</strong> — как самостоятельное печенье</li><li class=\"ingredient-list-item\"><strong>Армейский паёк</strong> — в качестве хлебного продукта</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сливочное масло</strong> — классическая пара</li><li class=\"ingredient-list-item\"><strong>Икра</strong> — закуска</li><li class=\"ingredient-list-item\"><strong>Паштет</strong> — намазка</li><li class=\"ingredient-list-item\"><strong>Сыр</strong> — бутерброды</li><li class=\"ingredient-list-item\"><strong>Чай, кофе</strong> — для перекуса</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Крекеры</strong> — схожее печенье</li><li class=\"ingredient-list-item\"><strong>Сухари</strong> — для панировки</li><li class=\"ingredient-list-item\"><strong>Хлебцы</strong> — более современный аналог</li><li class=\"ingredient-list-item\"><strong>Печенье Мария</strong> — сладкий вариант</li></ul>",
+  "category": "ХЛЕБ, ВЫПЕЧКА, ХЛЕБОБУЛОЧНЫЕ ИЗДЕЛИЯ",
+  "semantic_data": {
+    "properties": [
+      "печенье",
+      "сухой_хлеб",
+      "длительное_хранение",
+      "рассыпчатый",
+      "нейтральный_вкус",
+      "походный_продукт"
+    ],
+    "preparations": [
+      "выпечка_в_духовке",
+      "хранение_в_сухом_месте"
+    ],
+    "cooking_methods": [
+      {
+        "method": "выпечка",
+        "priority": "high"
+      },
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "измельчение_в_панировку",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "походное_питание",
+      "бутерброды",
+      "панировка",
+      "чай",
+      "армейский_паёк"
+    ],
+    "pairings": {
+      "protein": ["сливочное_масло", "паштет", "сыр"],
+      "fish": ["икра"],
+      "drinks": ["чай", "кофе"]
+    },
+    "substitutes": [
+      {
+        "name": "Крекеры",
+        "similarity": "high"
+      },
+      {
+        "name": "Сухари",
+        "similarity": "medium"
+      },
+      {
+        "name": "Хлебцы",
+        "similarity": "medium"
+      },
+      {
+        "name": "Печенье Мария",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "печенье",
+    "галета",
+    "сухой_хлеб",
+    "походный_продукт",
+    "длительное_хранение"
+  ]
+}

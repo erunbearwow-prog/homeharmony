@@ -1,0 +1,104 @@
+{
+  "name": "Ассорти из морепродуктов",
+  "name_normalized": "assorti-iz-moreproduktov",
+  "synonyms": "",
+  "short_description": "Готовая замороженная смесь из различных морепродуктов: креветки, мидии, кальмары, осьминоги и другие дары моря. Удобный продукт для быстрого приготовления салатов, пасты, ризотто и горячих блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Ассорти из морепродуктов — это готовая замороженная смесь из различных даров моря, включающая креветки, мидии, кальмары, осьминоги, гребешки и другие морепродукты. Состав может варьироваться в зависимости от производителя и региона. Продукт удобен для быстрого приготовления, так как не требует длительной подготовки и нарезки. Богат белком, йодом, омега-3 жирными кислотами, селеном и витаминами группы B.</p><h2 class=\"ingredient-title\">Типичный состав</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Креветки</strong> — основа, чаще всего тигровые или северные</li><li class=\"ingredient-list-item\"><strong>Мидии</strong> — мясо мидий, очищенное и замороженное</li><li class=\"ingredient-list-item\"><strong>Кальмары</strong> — кольца или нарезанные тушки</li><li class=\"ingredient-list-item\"><strong>Осьминоги</strong> — мелкие или нарезанные щупальца</li><li class=\"ingredient-list-item\"><strong>Гребешки</strong> — морские гребешки (в дорогих смесях)</li><li class=\"ingredient-list-item\"><strong>Крабовое мясо</strong> — сурими или натуральное</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — разнообразная, от нежной до упругой</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — морской, солоноватый, ароматный</li><li class=\"ingredient-list-item\"><strong>Белки</strong> — высокое содержание, 15-20%</li><li class=\"ingredient-list-item\"><strong>Омега-3</strong> — богатый источник</li><li class=\"ingredient-list-item\"><strong>Йод</strong> — важный микроэлемент для щитовидной железы</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике или в холодной воде</li><li class=\"ingredient-list-item\"><strong>Бланширование</strong> — 2-3 минуты в кипящей подсоленной воде</li><li class=\"ingredient-list-item\"><strong>Обжарка</strong> — на сковороде с маслом и чесноком</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — в бульоне для супов</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, овощами, цитрусовыми</li><li class=\"ingredient-list-item\"><strong>Паста</strong> — с морепродуктами (spaghetti ai frutti di mare)</li><li class=\"ingredient-list-item\"><strong>Ризотто</strong> — классическое ризотто с морепродуктами</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — суп из морепродуктов, буйабес</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — с чесноком, маслом, лимоном</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в соусе или с сыром</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочный, томатный, чесночный, лимонный</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — томаты, перец, лук, чеснок, брокколи</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, базилик, укроп, шалфей</li><li class=\"ingredient-list-item\"><strong>Вино</strong> — белое сухое</li><li class=\"ingredient-list-item\"><strong>Паста и крупы</strong> — спагетти, лингвини, рис</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Отдельные морепродукты</strong> — креветки, мидии, кальмары отдельно</li><li class=\"ingredient-list-item\"><strong>Рыбное филе</strong> — белая рыба (треска, морской язык)</li><li class=\"ingredient-list-item\"><strong>Смесь для паэльи</strong> — с мясом курицы</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/pasta-s-moreproduktami/'>Паста с морепродуктами — классический рецепт</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/salat-s-moreproduktami/'>Салат с морепродуктами — рецепты и идеи</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/nutrition/polza-moreproduktov/'>Польза морепродуктов: белок, омега-3, йод</a></li></ul>",
+  "category": "Морепродукты",
+  "semantic_data": {
+    "properties": [
+      "замороженный",
+      "смесь",
+      "морской",
+      "белковый",
+      "богат_йодом",
+      "богат_омега-3",
+      "готовый_продукт",
+      "универсальный"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "бланширование_2-3_минуты",
+      "обжарка_на_сковороде"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "обжарка",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      },
+      {
+        "method": "приготовление_в_салатах",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "салаты",
+      "паста",
+      "ризотто",
+      "супы",
+      "запеканки"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "томаты",
+        "перец",
+        "лук",
+        "чеснок",
+        "брокколи"
+      ],
+      "herbs": [
+        "петрушка",
+        "базилик",
+        "укроп",
+        "шалфей"
+      ],
+      "sauces": [
+        "сливочный",
+        "томатный",
+        "чесночный",
+        "лимонный"
+      ],
+      "wines": [
+        "белое_сухое_вино"
+      ],
+      "grains": [
+        "спагетти",
+        "лингвини",
+        "рис"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Отдельные морепродукты",
+        "similarity": "high"
+      },
+      {
+        "name": "Рыбное филе",
+        "similarity": "low"
+      },
+      {
+        "name": "Смесь для паэльи",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "морепродукты",
+    "ассорти",
+    "заморозка",
+    "салаты",
+    "паста",
+    "ризотто",
+    "белок",
+    "омега-3"
+  ]
+}

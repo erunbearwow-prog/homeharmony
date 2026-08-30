@@ -1,0 +1,56 @@
+{
+  "name": "Брынза",
+  "name_normalized": "brynza",
+  "synonyms": "брынза коровья, брынза из коровьего молока, рассольный сыр, белый рассольный сыр, feta (аналог)",
+  "short_description": "Мягкий рассольный сыр из овечьего, козьего или коровьего молока с плотной, слегка крошащейся текстурой и солоноватым кисломолочным вкусом. Традиционный продукт балканской, средиземноморской и кавказской кухни.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Брынза — это традиционный рассольный сыр, изготавливаемый из овечьего, козьего или коровьего молока. Имеет плотную, слегка крошащуюся текстуру, белый или слегка кремовый цвет и характерный солоноватый, кисломолочный вкус с лёгкой остринкой. Технология приготовления включает створаживание молока, отделение сыворотки и выдержку в рассоле (от нескольких недель до нескольких месяцев). Брынза — неотъемлемый продукт балканской, средиземноморской, кавказской и ближневосточной кухни, используется в салатах, выпечке, как самостоятельная закуска и в горячих блюдах.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, слегка крошащаяся, упругая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — солоноватый, кисломолочный, с лёгкой остринкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый, кремовый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — овечье, козье или коровье молоко, соль, фермент</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — в рассоле до 2-3 месяцев, без рассола 5-7 дней</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — греческий, с помидорами и зеленью</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — с зеленью, маслом, оливками</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — пироги, хачапури, чебуреки</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — запеканки, паста, омлеты</li><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — на хлеб с овощами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, огурцы, перец, лук</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, базилик, мята</li><li class=\"ingredient-list-item\"><strong>Оливки</strong> — маслины, оливки</li><li class=\"ingredient-list-item\"><strong>Масла</strong> — оливковое масло</li><li class=\"ingredient-list-item\"><strong>Тесто</strong> — дрожжевое, слоёное</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Фета</strong> — более мягкая, менее солёная</li><li class=\"ingredient-list-item\"><strong>Козий сыр</strong> — похожая текстура</li><li class=\"ingredient-list-item\"><strong>Сыр сулугуни</strong> — более плотный</li><li class=\"ingredient-list-item\"><strong>Адыгейский сыр</strong> — менее солёный</li></ul>",
+  "category": "Рассольные сыры",
+  "semantic_data": {
+    "properties": [
+      "сыр",
+      "рассольный",
+      "солоноватый",
+      "крошащийся",
+      "белый",
+      "балканская_кухня"
+    ],
+    "preparations": [
+      "хранение_в_рассоле",
+      "промывка_водой_при_необходимости"
+    ],
+    "cooking_methods": [
+      {"method": "свежее_употребление", "priority": "high"},
+      {"method": "добавление_в_салаты", "priority": "high"},
+      {"method": "запекание_в_выпечке", "priority": "high"}
+    ],
+    "applications": [
+      "салаты",
+      "закуски",
+      "выпечка",
+      "горячие_блюда",
+      "бутерброды"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["помидоры", "огурцы", "перец", "лук"],
+      "herbs": ["петрушка", "укроп", "базилик", "мята"],
+      "olives": ["маслины", "оливки"],
+      "oils": ["оливковое_масло"],
+      "dough": ["дрожжевое_тесто", "слоеное_тесто"]
+    },
+    "substitutes": [
+      {"name": "Фета", "similarity": "high"},
+      {"name": "Козий сыр", "similarity": "high"},
+      {"name": "Сыр сулугуни", "similarity": "medium"},
+      {"name": "Адыгейский сыр", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "сыр",
+    "брынза",
+    "рассольный_сыр",
+    "балканская_кухня",
+    "салат",
+    "выпечка"
+  ]
+}

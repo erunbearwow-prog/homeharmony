@@ -1,0 +1,75 @@
+{
+  "name": "Грейпфрут",
+  "name_normalized": "greypfrut",
+  "synonyms": "грейпфрут, помело, розовый грейпфрут, белый грейпфрут, красный грейпфрут, цитрус, grapefruit",
+  "short_description": "Крупный цитрусовый плод с горьковато-кислым вкусом, сочной мякотью и характерным ароматом. Богат витамином C, антиоксидантами и клетчаткой. Широко используется в свежем виде, для соков, салатов и десертов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Грейпфрут — это крупный цитрусовый плод, который является гибридом помело и апельсина. Имеет округлую форму, кожуру от жёлтого до красноватого цвета и сочную мякоть, разделённую на дольки. Вкус грейпфрута варьируется от кисло-сладкого до горьковатого в зависимости от сорта. Богат витамином C, калием, клетчаткой и антиоксидантами. Используется в свежем виде, для приготовления соков, салатов и как основа для напитков и десертов.</p><h2 class=\"ingredient-title\">Сорта и виды</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Белый грейпфрут</strong> — самый кислый и горький</li><li class=\"ingredient-list-item\"><strong>Розовый грейпфрут</strong> — более сладкий, с розовой мякотью</li><li class=\"ingredient-list-item\"><strong>Красный грейпфрут</strong> — самый сладкий, с рубиновой мякотью</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисло-сладкий, с горьковатым послевкусием</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочная, упругая</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — жёлтый, розовый, красный</li><li class=\"ingredient-list-item\"><strong>Витамины</strong> — C, A, группы B, калий</li><li class=\"ingredient-list-item\"><strong>Антиоксиданты</strong> — ликопин, флавоноиды</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Очистка</strong> — срезать кожуру и белый слой</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — дольками, кружочками</li><li class=\"ingredient-list-item\"><strong>Удаление плёнок</strong> — для салатов</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежий</strong> — как самостоятельный фрукт</li><li class=\"ingredient-list-item\"><strong>Сок</strong> — свежевыжатый сок</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, сыром, орехами</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — для мяса и рыбы</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — с мороженым, йогуртом</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Морепродукты</strong> — креветки, лосось</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — мягкие (фета, моцарелла)</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — мята, руккола, базилик</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — миндаль, грецкие</li><li class=\"ingredient-list-item\"><strong>Мёд</strong> — для смягчения горечи</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Апельсин</strong> — слаще</li><li class=\"ingredient-list-item\"><strong>Помело</strong> — менее горький</li><li class=\"ingredient-list-item\"><strong>Лимон</strong> — для кислинки</li></ul>",
+  "category": "Цитрусовые",
+  "semantic_data": {
+    "properties": [
+      "цитрус",
+      "кисло-сладкий",
+      "горьковатый",
+      "сочный",
+      "витаминный",
+      "антиоксидантный"
+    ],
+    "preparations": [
+      "очистка_от_кожуры",
+      "нарезка_дольками",
+      "удаление_плёнок"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "сок",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_салаты",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_соусов",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "салаты",
+      "соусы",
+      "десерты",
+      "напитки"
+    ],
+    "pairings": {
+      "protein": ["креветки", "лосось", "фета", "моцарелла"],
+      "herbs": ["мята", "руккола", "базилик"],
+      "nuts": ["миндаль", "грецкие_орехи"],
+      "sweeteners": ["мёд"]
+    },
+    "substitutes": [
+      {
+        "name": "Апельсин",
+        "similarity": "medium"
+      },
+      {
+        "name": "Помело",
+        "similarity": "medium"
+      },
+      {
+        "name": "Лимон",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "фрукт",
+    "цитрус",
+    "грейпфрут",
+    "витаминный",
+    "антиоксидант",
+    "салат"
+  ]
+}

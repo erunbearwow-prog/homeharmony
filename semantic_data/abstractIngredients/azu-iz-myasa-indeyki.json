@@ -1,0 +1,127 @@
+{
+  "name": "Азу из мяса индейки",
+  "name_normalized": "azu-iz-myasa-indeyki",
+  "synonyms": "",
+  "short_description": "Мясной полуфабрикат из индейки, нарезанный брусочками поперёк волокон, толщиной 1,5–2 см и длиной 4–6 см. Диетическая альтернатива классическому азу из говядины.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Азу из мяса индейки — это мясной полуфабрикат, представляющий собой филе индейки (грудка или бедро), нарезанное брусочками толщиной 1,5–2 см и длиной 4–6 см строго поперёк волокон. Диетическая альтернатива классическому азу из говядины — мясо индейки менее жирное, нежное и быстрее готовится. Сохраняет все преимущества нарезки азу: удобство приготовления, сочность и универсальность использования.</p><h2 class=\"ingredient-title\">Характеристики нарезки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Форма</strong> — брусочки</li><li class=\"ingredient-list-item\"><strong>Толщина</strong> — 1,5–2 см</li><li class=\"ingredient-list-item\"><strong>Длина</strong> — 4–6 см</li><li class=\"ingredient-list-item\"><strong>Направление нарезки</strong> — строго поперёк волокон</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — более нежная текстура, чем у говядины</li></ul><h2 class=\"ingredient-title\">Какое мясо используют</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Филе грудки индейки</strong> — самое диетическое, постное, быстрое приготовление</li><li class=\"ingredient-list-item\"><strong>Филе бедра индейки</strong> — более сочное, с небольшим содержанием жира</li><li class=\"ingredient-list-item\"><strong>Голень индейки</strong> — тёмное мясо, сочное, для тушения</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Классическое азу</strong> — тушение с луком, помидорами и солёными огурцами</li><li class=\"ingredient-list-item\"><strong>Быстрая обжарка</strong> — на сковороде с луком и соусом (время приготовления меньше, чем у говядины)</li><li class=\"ingredient-list-item\"><strong>Гуляш</strong> — тушение в томатном или сметанном соусе</li><li class=\"ingredient-list-item\"><strong>Жаркое</strong> — в казане с картофелем и овощами</li><li class=\"ingredient-list-item\"><strong>Диетическое рагу</strong> — с овощами в лёгком соусе</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, помидоры, солёные огурцы, кабачки, перец</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, сливочный, грибной, горчичный</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофель (пюре, отварной), рис, гречка, паста, булгур</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, паприка, тимьян, розмарин, чеснок, лавровый лист</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Азу из говядины</strong> — классический вариант, более жирный</li><li class=\"ingredient-list-item\"><strong>Азу из курицы</strong> — похожая диетическая альтернатива, ещё нежнее</li><li class=\"ingredient-list-item\"><strong>Азу из свинины</strong> — жирнее, сочнее, быстрее готовится</li><li class=\"ingredient-list-item\"><strong>Филе индейки кубиками</strong> — меняется форма нарезки</li><li class=\"ingredient-list-item\"><strong>Гуляш из индейки</strong> — кубики 3–4 см для длительного тушения</li></ul><h2 class=\"ingredient-title\">Преимущества перед говядиной</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Меньше жира</strong> — диетический продукт</li><li class=\"ingredient-list-item\"><strong>Нежнее текстура</strong> — готовится быстрее (20–30 мин против 40–60 мин)</li><li class=\"ingredient-list-item\"><strong>Нейтральный вкус</strong> — хорошо впитывает соусы и специи</li><li class=\"ingredient-list-item\"><strong>Легче усваивается</strong> — подходит для детского и диетического питания</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/azu-iz-indeyki/'>Азу из индейки — диетический рецепт</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/kak-vybrat-indeyku-dlya-azu/'>Как выбрать индейку для нарезки азу</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/nutrition/polza-myasa-indeyki/'>Польза мяса индейки</a></li></ul>",
+  "category": "Мясные полуфабрикаты",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "индейка",
+      "брусочки",
+      "поперёк_волокон",
+      "диетический",
+      "нежный",
+      "быстрое_приготовление",
+      "постный",
+      "низкокалорийный",
+      "универсальный"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "промыть_обсушить_бумажным_полотенцем",
+      "обжарить_на_среднем_огне_до_золотистой_корочки"
+    ],
+    "cooking_methods": [
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "обжаривание_с_последующим_тушением",
+        "priority": "high"
+      },
+      {
+        "method": "запекание_в_соусе",
+        "priority": "medium"
+      },
+      {
+        "method": "гриль",
+        "priority": "low"
+      }
+    ],
+    "applications": [
+      "азу",
+      "гуляш",
+      "жаркое",
+      "рагу",
+      "диетическое_блюдо",
+      "мясо_в_соусе"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "лук",
+        "морковь",
+        "помидоры",
+        "солёные_огурцы",
+        "кабачки",
+        "болгарский_перец"
+      ],
+      "sauces": [
+        "томатный",
+        "сметанный",
+        "сливочный",
+        "грибной",
+        "горчичный"
+      ],
+      "grains": [
+        "рис",
+        "гречка",
+        "булгур"
+      ],
+      "pasta": [
+        "паста"
+      ],
+      "potatoes": [
+        "картофель"
+      ],
+      "spices": [
+        "черный_перец",
+        "паприка",
+        "тимьян",
+        "розмарин",
+        "чеснок",
+        "лавровый_лист"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Азу из говядины",
+        "similarity": "high"
+      },
+      {
+        "name": "Азу из курицы",
+        "similarity": "high"
+      },
+      {
+        "name": "Азу из свинины",
+        "similarity": "medium"
+      },
+      {
+        "name": "Филе индейки кубиками",
+        "similarity": "low"
+      },
+      {
+        "name": "Гуляш из индейки",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "индейка",
+    "азу",
+    "нарезка",
+    "диетическое_мясо",
+    "тушение",
+    "жарка",
+    "быстрое_приготовление",
+    "здоровое_питание"
+  ]
+}

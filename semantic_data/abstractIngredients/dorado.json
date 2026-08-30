@@ -1,0 +1,107 @@
+{
+  "name": "Дорадо",
+  "name_normalized": "dorado",
+  "synonyms": "дорада, золотистый спар, морской карась, спар, дорада золотистая, рыба дорадо, дораде, королевская рыба",
+  "short_description": "Морская рыба семейства спаровых с нежным белым мясом, умеренной жирностью и приятным сладковатым вкусом. Ценится за малое количество костей и универсальность в приготовлении — от запекания до гриля.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Дорадо (или дорада) — это ценная промысловая рыба семейства спаровых, обитающая в тёплых водах Атлантического океана и Средиземного моря. Отличительной особенностью является золотистое пятно на голове между глаз, за что рыбу называют «золотистым спаром». Мясо дорадо — белое, нежное, с приятным сладковатым привкусом и умеренной жирностью. Содержит мало костей, что делает её удобной в приготовлении и употреблении. Дорадо широко используется в средиземноморской кухне, особенно в испанской, итальянской и греческой традициях.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, сочная, плотная, но мягкая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, мягкий, с едва уловимой морской нотой</li><li class=\"ingredient-list-item\"><strong>Цвет мяса</strong> — белый с лёгким кремовым оттенком</li><li class=\"ingredient-list-item\"><strong>Цвет кожи</strong> — серебристо-серый с золотистым пятном</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — умеренная (4-6%)</li><li class=\"ingredient-list-item\"><strong>Костистость</strong> — мало мелких костей</li><li class=\"ingredient-list-item\"><strong>Калорийность</strong> — низкая (≈96 ккал/100г)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Очистка</strong> — удаление чешуи (чешуя мелкая и плотная)</li><li class=\"ingredient-list-item\"><strong>Потрошение</strong> — удаление внутренностей</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — тщательное промывание внутри и снаружи</li><li class=\"ingredient-list-item\"><strong>Надрезы</strong> — поперечные надрезы на коже для лучшего пропекания</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — в оливковом масле с травами и лимоном</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Запекание в духовке</strong> — целиком с травами, овощами или в соли</li><li class=\"ingredient-list-item\"><strong>Гриль (барбекю)</strong> — на решётке, целиком или порционными кусками</li><li class=\"ingredient-list-item\"><strong>Жарка на сковороде</strong> — с хрустящей кожицей</li><li class=\"ingredient-list-item\"><strong>Припускание</strong> — в белом вине с бульоном</li><li class=\"ingredient-list-item\"><strong>Паровое приготовление</strong> — диетический вариант</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — цукини, баклажаны, помидоры, лук, картофель</li><li class=\"ingredient-list-item\"><strong>Цитрусовые</strong> — лимон, лайм, апельсин</li><li class=\"ingredient-list-item\"><strong>Травы</strong> — розмарин, тимьян, орегано, базилик, петрушка</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — лимонный, тартар, песто, томатный, сливочный</li><li class=\"ingredient-list-item\"><strong>Вино</strong> — белое сухое (для маринада и соуса)</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сибас (морской окунь)</strong> — схожая текстура и вкус</li><li class=\"ingredient-list-item\"><strong>Морской лещ</strong> — похожий вкус</li><li class=\"ingredient-list-item\"><strong>Форель</strong> — но более жирная</li><li class=\"ingredient-list-item\"><strong>Окунь морской</strong> — близкая структура мяса</li><li class=\"ingredient-list-item\"><strong>Палтус</strong> — более плотная текстура</li></ul>",
+  "category": "Рыба и морепродукты",
+  "semantic_data": {
+    "properties": [
+      "белое мясо",
+      "нежная текстура",
+      "умеренная жирность",
+      "мало костей",
+      "золотистое пятно",
+      "сладковатый вкус",
+      "низкокалорийный",
+      "источник омега-3",
+      "богат белком"
+    ],
+    "preparations": [
+      "очистка от чешуи",
+      "потрошение",
+      "промывка",
+      "надрезы на коже",
+      "маринование в оливковом масле с лимоном и травами",
+      "удаление плавников"
+    ],
+    "cooking_methods": [
+      {
+        "method": "запекание целиком в духовке",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление на гриле (барбекю)",
+        "priority": "high"
+      },
+      {
+        "method": "жарка на сковороде",
+        "priority": "high"
+      },
+      {
+        "method": "припускание в вине или бульоне",
+        "priority": "medium"
+      },
+      {
+        "method": "приготовление на пару",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "основное блюдо",
+      "праздничный ужин",
+      "средиземноморская кухня",
+      "испанская кухня",
+      "итальянская кухня",
+      "диетическое питание",
+      "рыбный день",
+      "барбекю"
+    ],
+    "pairings": {
+      "protein": ["морепродукты", "креветки", "мидии"],
+      "vegetables": ["цукини", "баклажаны", "помидоры", "лук репчатый", "картофель", "чеснок", "перец болгарский"],
+      "sauces": ["лимонный соус", "соус тартар", "песто", "томатный соус", "сливочный соус", "винегрет"],
+      "herbs": ["розмарин", "тимьян", "орегано", "базилик", "петрушка", "укроп"],
+      "spices": ["чёрный перец", "паприка", "чеснок сушеный", "лимонная цедра", "морская соль"]
+    },
+    "substitutes": [
+      {
+        "name": "Сибас (морской окунь)",
+        "similarity": "high"
+      },
+      {
+        "name": "Морской лещ",
+        "similarity": "high"
+      },
+      {
+        "name": "Форель",
+        "similarity": "medium"
+      },
+      {
+        "name": "Окунь морской",
+        "similarity": "medium"
+      },
+      {
+        "name": "Палтус",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "рыба",
+    "морская рыба",
+    "дорадо",
+    "белая рыба",
+    "средиземноморская кухня",
+    "испанская кухня",
+    "итальянская кухня",
+    "греческая кухня",
+    "диетическая",
+    "низкокалорийная",
+    "омега-3",
+    "гриль",
+    "запекание",
+    "праздничное блюдо",
+    "золотистая рыба"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "name": "Лук репчатый",
+  "name_normalized": "luk-repchatyy",
+  "synonyms": "лук, репчатый лук, лук желтый, лук белый, лук красный, лук репка, репка, головка лука",
+  "short_description": "Самый распространенный вид лука с плотной округлой головкой и характерным острым вкусом и ароматом. Используется как основа для множества блюд, в сыром и приготовленном виде, для придания пикантности и глубины вкуса.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Репчатый лук — это многолетнее травянистое растение семейства Луковые, один из самых древних и распространенных овощей в мире. Съедобная часть — подземная луковица (головка), состоящая из плотных сочных чешуй, покрытых сухими кожистыми чешуями. В зависимости от сорта, луковицы могут быть желтыми, белыми, красными или фиолетовыми, с различной степенью остроты и сладости. Репчатый лук богат витаминами C и группы B, фитонцидами, калием и сернистыми соединениями, которые придают ему характерный запах и слезоточивость.</p><h2 class=\"ingredient-title\">Сорта и виды</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Желтый лук</strong> — самый острый, универсальный, для жарки и варки</li><li class=\"ingredient-list-item\"><strong>Белый лук</strong> — более нежный, для салатов и соусов</li><li class=\"ingredient-list-item\"><strong>Красный (фиолетовый) лук</strong> — сладкий, для салатов</li><li class=\"ingredient-list-item\"><strong>Сладкий лук (шалот)</strong> — мелкий, нежный</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, сочная, хрустящая (в сыром виде)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — острый, пряный (в зависимости от сорта)</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — желтый, белый, красный</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 6-8 месяцев в сухом прохладном месте</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Очистка</strong> — удалить сухие чешуи</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — кубиками, полукольцами, кольцами, соломкой</li><li class=\"ingredient-list-item\"><strong>Пассеровка</strong> — для усиления аромата</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка и пассеровка</strong> — основа для супов, соусов, рагу</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — в сыром виде</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — в составе маринадов для мяса</li><li class=\"ingredient-list-item\"><strong>Запеканки</strong> — как ингредиент</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — все виды</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — морковь, картофель, перец</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — перец, лавровый лист, тимьян</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Лук-шалот</strong> — нежнее</li><li class=\"ingredient-list-item\"><strong>Лук-порей</strong> — слаще</li><li class=\"ingredient-list-item\"><strong>Зеленый лук</strong> — для свежести</li></ul>",
+  "category": "Лук репчатый, красный, белый",
+  "semantic_data": {
+    "properties": [
+      "овощ",
+      "пряный",
+      "острый",
+      "сочный",
+      "универсальный",
+      "длительное_хранение"
+    ],
+    "preparations": [
+      "очистка_от_чешуи",
+      "нарезка",
+      "пассеровка"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "супы",
+      "соусы",
+      "салаты",
+      "маринады"
+    ],
+    "pairings": {
+      "protein": ["говядина", "свинина", "курица"],
+      "vegetables": ["морковь", "картофель", "перец"],
+      "spices": ["перец", "лавровый_лист", "тимьян"]
+    },
+    "substitutes": [
+      {
+        "name": "Лук-шалот",
+        "similarity": "medium"
+      },
+      {
+        "name": "Лук-порей",
+        "similarity": "medium"
+      },
+      {
+        "name": "Зеленый лук",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "овощ",
+    "лук",
+    "репчатый_лук",
+    "основа_блюд",
+    "длительное_хранение"
+  ]
+}

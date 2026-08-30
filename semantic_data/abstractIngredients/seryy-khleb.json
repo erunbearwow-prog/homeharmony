@@ -1,0 +1,72 @@
+{
+  "name": "Серый хлеб",
+  "name_normalized": "seryy-khleb",
+  "synonyms": "серый хлеб, подовый серый хлеб, формовой серый хлеб, ржано-пшеничный серый хлеб, хлеб из обдирной муки, хлеб из смеси муки, серый хлеб на закваске, серый подовый хлеб",
+  "short_description": "Хлеб, выпекаемый из смеси ржаной обдирной и пшеничной муки, с характерным серовато-коричневым цветом мякиша, умеренно плотной текстурой и сбалансированным кисловатым вкусом. По содержанию муки занимает промежуточное положение между черным и белым хлебом.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Серый хлеб — это традиционный российский хлеб, который выпекается из смеси ржаной обдирной и пшеничной муки (обычно 1-го или 2-го сорта) в различных пропорциях. Цвет мякиша варьируется от светло-серого до серовато-коричневого, что и дало название этому виду хлеба. По своим свойствам серый хлеб занимает промежуточное положение между черным ржаным и белым пшеничным: он менее кислый, чем черный, но более плотный и ароматный, чем белый. Серый хлеб может выпекаться как подовым (круглым или овальным), так и формовым способом.</p><h2 class=\"ingredient-title\">Сорта и разновидности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Подовый серый</strong> — выпекается на поду печи, имеет круглую или овальную форму, толстую хрустящую корочку</li><li class=\"ingredient-list-item\"><strong>Формовой серый</strong> — выпекается в формах, имеет более ровную, прямоугольную форму, более мягкую корочку</li><li class=\"ingredient-list-item\"><strong>Серый с отрубями</strong> — с добавлением пшеничных или ржаных отрубей, более полезный</li><li class=\"ingredient-list-item\"><strong>Серый заварной</strong> — с частичной заваркой муки, более сладкий и темный</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — умеренно плотная, пористая, упругая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сбалансированный, с легкой кислинкой, не резкий</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — серовато-коричневый, светло-коричневый</li><li class=\"ingredient-list-item\"><strong>Клетчатка</strong> — среднее содержание</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 2-3 дня</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>К супам</strong> — универсальный, подходит к любым супам</li><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом, сыром, колбасой, рыбой</li><li class=\"ingredient-list-item\"><strong>Гренки</strong> — для супов, салатов</li><li class=\"ingredient-list-item\"><strong>Панировка</strong> — в молотом виде</li><li class=\"ingredient-list-item\"><strong>Сэндвичи</strong> — основа для закусок</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Супы и борщи</strong> — все виды</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — отварное, жареное, запеченное</li><li class=\"ingredient-list-item\"><strong>Рыба</strong> — соленая, копченая, отварная</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — твердые, мягкие, плавленые</li><li class=\"ingredient-list-item\"><strong>Масло</strong> — сливочное, растительное</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Дарницкий хлеб</strong> — близкий аналог</li><li class=\"ingredient-list-item\"><strong>Черный хлеб</strong> — более кислый, плотный</li><li class=\"ingredient-list-item\"><strong>Белый хлеб</strong> — менее полезный</li></ul>",
+  "category": "ХЛЕБ, ВЫПЕЧКА, ХЛЕБОБУЛОЧНЫЕ ИЗДЕЛИЯ",
+  "semantic_data": {
+    "properties": [
+      "хлеб",
+      "серый",
+      "ржано-пшеничный",
+      "умеренно_плотный",
+      "сбалансированный_вкус",
+      "универсальный"
+    ],
+    "preparations": [
+      "хранение_в_хлебнице",
+      "нарезка_ломтиками",
+      "подача_к_столу"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "подогрев_в_тостере",
+        "priority": "medium"
+      },
+      {
+        "method": "приготовление_гренок",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "к_супам",
+      "бутерброды",
+      "гренки",
+      "панировка",
+      "сэндвичи"
+    ],
+    "pairings": {
+      "protein": ["сыр_твердый", "сыр_мягкий", "сыр_плавленый", "колбаса", "рыба_соленая", "рыба_копченая"],
+      "meat": ["мясо_отварное", "мясо_жареное", "мясо_запеченное"],
+      "dairy": ["сливочное_масло"],
+      "soups": ["супы", "борщи"]
+    },
+    "substitutes": [
+      {
+        "name": "Дарницкий хлеб",
+        "similarity": "high"
+      },
+      {
+        "name": "Черный хлеб",
+        "similarity": "medium"
+      },
+      {
+        "name": "Белый хлеб",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "хлеб",
+    "серый_хлеб",
+    "ржано-пшеничный_хлеб",
+    "подовый_хлеб",
+    "универсальный_хлеб",
+    "русская_кухня"
+  ]
+}

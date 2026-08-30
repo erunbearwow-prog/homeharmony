@@ -1,0 +1,83 @@
+{
+  "name": "Говяжий фарш",
+  "name_normalized": "govyazhiy-farsh",
+  "synonyms": "фарш говяжий, фарш из говядины, говяжий фарш для котлет, мясной фарш говяжий, говяжий рубленый фарш",
+  "short_description": "Измельчённое мясо говядины с добавлением жира, соли и специй. Отличается плотной текстурой и насыщенным мясным вкусом. Универсальный полуфабрикат для котлет, тефтелей, пельменей, голубцов и других блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Говяжий фарш — это измельчённое мясо говядины, приготовленное из различных частей туши (лопатка, кострец, шея) с добавлением небольшого количества жира для сочности. В отличие от свиного фарша, говяжий имеет более плотную текстуру и насыщенный мясной вкус. Цвет фарша — от розового до ярко-красного. Говяжий фарш широко используется в кулинарии благодаря универсальности: он подходит для котлет, тефтелей, пельменей, голубцов, макарон по-флотски и других блюд. Для лучшей сочности часто смешивается со свиным фаршем.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, однородная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, говяжий</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — зависит от используемого мяса (5-15%)</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — говядина, жир, соль, специи</li><li class=\"ingredient-list-item\"><strong>Время приготовления</strong> — 10-20 минут</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Котлеты</strong> — классические, на пару, в духовке</li><li class=\"ingredient-list-item\"><strong>Тефтели</strong> — в соусе</li><li class=\"ingredient-list-item\"><strong>Фрикадельки</strong> — для супов</li><li class=\"ingredient-list-item\"><strong>Пельмени, манты, хинкали</strong> — начинка</li><li class=\"ingredient-list-item\"><strong>Голубцы</strong> — для начинки</li><li class=\"ingredient-list-item\"><strong>Быстрые блюда</strong> — макароны по-флотски, чили кон карне</li><li class=\"ingredient-list-item\"><strong>Запеканки</strong> — с картофелем, овощами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, чеснок, морковь, перец, кабачки</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, грибной, сливочный</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, паприка, тимьян, орегано</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, кинза</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, гречка</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свиной фарш</strong> — более жирный, сочный</li><li class=\"ingredient-list-item\"><strong>Смешанный фарш</strong> — говядина + свинина</li><li class=\"ingredient-list-item\"><strong>Куриный фарш</strong> — более диетический</li><li class=\"ingredient-list-item\"><strong>Фарш из индейки</strong> — диетический</li></ul>",
+  "category": "Фарши",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "говядина",
+      "фарш",
+      "плотный",
+      "насыщенный_вкус",
+      "универсальный"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "добавление_лука_яйца_хлеба_для_котлет",
+      "формовка_изделий"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "варка_фрикаделек",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "котлеты",
+      "тефтели",
+      "фрикадельки",
+      "пельмени",
+      "голубцы",
+      "быстрые_блюда"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["лук", "чеснок", "морковь", "перец", "кабачки"],
+      "sauces": ["томатный", "сметанный", "грибной", "сливочный"],
+      "spices": ["черный_перец", "паприка", "тимьян", "орегано"],
+      "herbs": ["петрушка", "укроп", "кинза"],
+      "grains": ["рис", "гречка"]
+    },
+    "substitutes": [
+      {
+        "name": "Свиной фарш",
+        "similarity": "medium"
+      },
+      {
+        "name": "Смешанный фарш",
+        "similarity": "high"
+      },
+      {
+        "name": "Куриный фарш",
+        "similarity": "medium"
+      },
+      {
+        "name": "Фарш из индейки",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "говядина",
+    "фарш",
+    "котлеты",
+    "тефтели",
+    "пельмени"
+  ]
+}

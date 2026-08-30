@@ -1,0 +1,71 @@
+{
+  "name": "Груздь",
+  "name_normalized": "gruzd",
+  "synonyms": "груздь, груздь настоящий, белый груздь, черный груздь, груздь соленый, гриб груздь, Lactarius resimus",
+  "short_description": "Пластинчатый гриб из семейства Сыроежковых, известный своими плотными, мясистыми плодовыми телами и характерным млечным соком. Имеет острый, пряный вкус в сыром виде и нежный, ароматный после засолки. Традиционно используется для солений и маринования.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Груздь — это пластинчатый гриб, который относится к роду Млечник (Lactarius). Встречается в лиственных и смешанных лесах, часто растёт группами. Отличается плотной, мясистой шляпкой белого или желтоватого цвета с характерными концентрическими зонами. На срезе выделяет едкий млечный сок, который придаёт грибу остроту и горечь. В сыром виде грузди несъедобны из-за горького вкуса, но после вымачивания и засолки становятся настоящим деликатесом с нежным, пряным вкусом и хрустящей текстурой.</p><h2 class=\"ingredient-title\">Виды груздей</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Белый груздь</strong> — самый ценный, с белой шляпкой и жёлтыми пятнами</li><li class=\"ingredient-list-item\"><strong>Чёрный груздь</strong> — тёмный, с оливково-зелёной шляпкой</li><li class=\"ingredient-list-item\"><strong>Жёлтый груздь</strong> — с жёлтой или оранжевой шляпкой</li><li class=\"ingredient-list-item\"><strong>Дубовый груздь</strong> — растёт под дубами</li><li class=\"ingredient-list-item\"><strong>Перечный груздь</strong> — очень острый, используется для засолки</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, мясистая, хрустящая (после засолки)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — острый, горький (в сыром виде), нежный, пряный (после засолки)</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый, жёлтый, черный</li><li class=\"ingredient-list-item\"><strong>Млечный сок</strong> — белый, едкий</li><li class=\"ingredient-list-item\"><strong>Сбор</strong> — июль-сентябрь</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вымачивание</strong> — в холодной воде (3-5 дней, сменяя воду 2-3 раза в день) для удаления горечи</li><li class=\"ingredient-list-item\"><strong>Чистка</strong> — удалить лесной мусор, срезать повреждённые участки</li><li class=\"ingredient-list-item\"><strong>Засолка</strong> — традиционный способ приготовления</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — в пряном маринаде</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Засолка</strong> — с чесноком, укропом, листьями смородины и хрена</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — в уксусе с пряностями</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — после предварительной варки</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с картофелем, зеленью, маслом</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — в качестве добавки</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Картофель</strong> — с жареными груздями</li><li class=\"ingredient-list-item\"><strong>Сметана</strong> — в салатах и соусах</li><li class=\"ingredient-list-item\"><strong>Укроп, чеснок</strong> — при засолке</li><li class=\"ingredient-list-item\"><strong>Ржаной хлеб</strong> — для подачи</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Подгруздок</strong> — похожий гриб</li><li class=\"ingredient-list-item\"><strong>Волнушка</strong> — для засолки</li><li class=\"ingredient-list-item\"><strong>Сыроежка</strong> — в жареном виде</li></ul>",
+  "category": "Грибы лесные",
+  "semantic_data": {
+    "properties": [
+      "гриб",
+      "пластинчатый",
+      "млечник",
+      "соленый",
+      "хрустящий",
+      "лесной"
+    ],
+    "preparations": [
+      "вымачивание_3-5_дней",
+      "чистка",
+      "засолка",
+      "маринование"
+    ],
+    "cooking_methods": [
+      {
+        "method": "засолка",
+        "priority": "high"
+      },
+      {
+        "method": "маринование",
+        "priority": "high"
+      },
+      {
+        "method": "жарка",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "засолка",
+      "салаты",
+      "супы",
+      "закуски"
+    ],
+    "pairings": {
+      "protein": ["сметана"],
+      "vegetables": ["картофель"],
+      "herbs": ["укроп", "чеснок"],
+      "breads": ["ржаной_хлеб"]
+    },
+    "substitutes": [
+      {
+        "name": "Подгруздок",
+        "similarity": "high"
+      },
+      {
+        "name": "Волнушка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Сыроежка",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "грибы",
+    "груздь",
+    "соленые_грибы",
+    "лесные_грибы",
+    "заготовки"
+  ]
+}

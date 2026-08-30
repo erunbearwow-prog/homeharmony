@@ -1,0 +1,100 @@
+{
+  "name": "Банан",
+  "name_normalized": "banan",
+  "synonyms": "",
+  "short_description": "Самый популярный тропический фрукт с мягкой кремовой мякотью и сладким вкусом. Богат калием, магнием, витаминами B6 и C, идеальный перекус и ингредиент для смузи и выпечки.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Банан — это съедобный плод многолетнего травянистого растения рода Musa, один из самых популярных фруктов в мире. Имеет вытянутую слегка изогнутую форму, жёлтую (при созревании) или зелёную (незрелый) кожуру и мягкую кремовую мякоть сладкого вкуса. Содержит большое количество калия, магния, витаминов B6 и C, а также клетчатку. Отличный источник энергии для спортсменов и здоровый перекус. Широко используется в свежем виде, для приготовления смузи, десертов, выпечки и детского питания.</p><h2 class=\"ingredient-title\">Сорта и виды</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Десертные бананы</strong> — сладкие, жёлтые, самые распространённые (сорт Кавендиш)</li><li class=\"ingredient-list-item\"><strong>Плантаны (овощные бананы)</strong> — зелёные, плотные, не сладкие, для жарки</li><li class=\"ingredient-list-item\"><strong>Мини-бананы</strong> — маленькие, сладкие, с тонкой кожурой</li><li class=\"ingredient-list-item\"><strong>Красные бананы</strong> — с красной кожурой, более сладкие</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, с лёгкой кислинкой (у недозрелых)</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мягкая, кремовая</li><li class=\"ingredient-list-item\"><strong>Калий</strong> — высокое содержание (до 400 мг на 100 г)</li><li class=\"ingredient-list-item\"><strong>Углеводы</strong> — натуральные сахара, быстрый источник энергии</li><li class=\"ingredient-list-item\"><strong>Зрелость</strong> — зелёные (крахмалистые), жёлтые (сладкие), с пятнами (очень сладкие)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Очистка</strong> — удалить кожуру, нарезать кружочками или дольками</li><li class=\"ingredient-list-item\"><strong>Пюре</strong> — размять вилкой или блендером</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — при комнатной температуре (дозревание), в холодильнике (почернение кожуры)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежий</strong> — как самостоятельный фрукт</li><li class=\"ingredient-list-item\"><strong>Смузи</strong> — с молоком, йогуртом, другими фруктами</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — банановый хлеб, маффины, кексы, панкейки</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — мороженое, банановый пирог, карамелизированные бананы</li><li class=\"ingredient-list-item\"><strong>Детское питание</strong> — пюре для детей</li><li class=\"ingredient-list-item\"><strong>Плантаны</strong> — жарка, варка, запекание</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — молоко, йогурт, творог, сливки</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — клубника, малина, манго, персик, киви</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль, арахис</li><li class=\"ingredient-list-item\"><strong>Злаки</strong> — овсянка, мюсли, гранола</li><li class=\"ingredient-list-item\"><strong>Шоколад</strong> — в десертах</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Манго</strong> — в смузи</li><li class=\"ingredient-list-item\"><strong>Авокадо</strong> — для кремовой текстуры (менее сладкий)</li><li class=\"ingredient-list-item\"><strong>Яблоки</strong> — в выпечке</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/nutrition/polza-banana/'>Польза бананов: калий, магний, витамины</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/bananovy-hleb/'>Банановый хлеб — рецепт с фото</a></li></ul>",
+  "category": "Тропические фрукты",
+  "semantic_data": {
+    "properties": [
+      "сладкий",
+      "кремовый",
+      "тропический",
+      "богат_калием",
+      "богат_магнием",
+      "энергетический",
+      "универсальный"
+    ],
+    "preparations": [
+      "очистка_от_кожуры",
+      "нарезка_кружочками",
+      "пюрирование"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "пюрирование_для_смузи",
+        "priority": "high"
+      },
+      {
+        "method": "запекание_в_выпечке",
+        "priority": "high"
+      },
+      {
+        "method": "карамелизация",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "свежий_фрукт",
+      "смузи",
+      "выпечка",
+      "десерты",
+      "детское_питание"
+    ],
+    "pairings": {
+      "protein": [
+        "молоко",
+        "йогурт",
+        "творог",
+        "сливки"
+      ],
+      "fruits": [
+        "клубника",
+        "малина",
+        "манго",
+        "персик",
+        "киви"
+      ],
+      "nuts": [
+        "грецкие",
+        "миндаль",
+        "арахис"
+      ],
+      "grains": [
+        "овсянка",
+        "мюсли",
+        "гранола"
+      ],
+      "chocolate": [
+        "шоколад"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Манго",
+        "similarity": "medium"
+      },
+      {
+        "name": "Авокадо",
+        "similarity": "low"
+      },
+      {
+        "name": "Яблоки",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "фрукт",
+    "тропический",
+    "банан",
+    "энергия",
+    "смузи",
+    "выпечка",
+    "калий"
+  ]
+}

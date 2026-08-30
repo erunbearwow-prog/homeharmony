@@ -1,0 +1,72 @@
+{
+  "name": "Белый хлеб",
+  "name_normalized": "khleb-belyy",
+  "synonyms": "белый хлеб, пшеничный хлеб, хлеб из пшеничной муки, белый батон, кирпичик, ситный хлеб, калач, булка белая",
+  "short_description": "Хлеб, выпекаемый из пшеничной муки высшего или первого сорта, с мягким, воздушным мякишем, тонкой золотистой корочкой и нейтральным, слегка сладковатым вкусом. Самый распространённый вид хлеба в мире, основа для бутербродов, тостов и сэндвичей.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Белый хлеб — это хлебобулочное изделие, выпекаемое из пшеничной муки высшего или первого сорта. Он имеет мягкий, воздушный мякиш с мелкими порами, тонкую золотистую корочку и нейтральный, слегка сладковатый вкус. В зависимости от способа выпечки белый хлеб может быть формовым (в виде кирпичика) или подовым (круглым или овальным). Белый хлеб — самый распространённый вид хлеба в мире благодаря своей универсальности, мягкой текстуре и нейтральному вкусу.</p><h2 class=\"ingredient-title\">Виды белого хлеба</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Формовой (кирпичик)</strong> — выпекается в прямоугольных формах, имеет ровную форму</li><li class=\"ingredient-list-item\"><strong>Подовый</strong> — выпекается на поду печи, имеет круглую или овальную форму</li><li class=\"ingredient-list-item\"><strong>Батон</strong> — продолговатый белый хлеб с надрезами</li><li class=\"ingredient-list-item\"><strong>Тостовый</strong> — специально для тостов, с мелкой пористостью</li><li class=\"ingredient-list-item\"><strong>Ситный</strong> — из просеянной муки, очень воздушный</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мягкая, воздушная, пористая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, слегка сладковатый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — корочка золотистая, мякиш белый или кремовый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — пшеничная мука, вода, соль, сахар, дрожжи</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 2-3 дня</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом, сыром, колбасой, рыбой</li><li class=\"ingredient-list-item\"><strong>Тосты</strong> — на завтрак, с яйцом, джемом</li><li class=\"ingredient-list-item\"><strong>Сэндвичи</strong> — с разнообразными начинками</li><li class=\"ingredient-list-item\"><strong>Гренки</strong> — для супов и салатов</li><li class=\"ingredient-list-item\"><strong>Панировка</strong> — сухари из белого хлеба</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Масло, маргарин</strong> — классические намазки</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — все виды</li><li class=\"ingredient-list-item\"><strong>Колбасы, ветчина</strong> — в бутербродах</li><li class=\"ingredient-list-item\"><strong>Варенье, джем, мёд</strong> — для сладких бутербродов</li><li class=\"ingredient-list-item\"><strong>Супы, борщи</strong> — как дополнение</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Цельнозерновой хлеб</strong> — более полезный</li><li class=\"ingredient-list-item\"><strong>Ржаной хлеб</strong> — более плотный, кислый</li><li class=\"ingredient-list-item\"><strong>Серый хлеб</strong> — смесь ржаной и пшеничной муки</li></ul>",
+  "category": "ХЛЕБ, ВЫПЕЧКА, ХЛЕБОБУЛОЧНЫЕ ИЗДЕЛИЯ",
+  "semantic_data": {
+    "properties": [
+      "хлеб",
+      "белый",
+      "пшеничный",
+      "мягкий",
+      "воздушный",
+      "нейтральный_вкус",
+      "универсальный"
+    ],
+    "preparations": [
+      "хранение_в_хлебнице",
+      "нарезка_ломтиками",
+      "подогрев_в_тостере"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "подогрев_в_тостере",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_гренок",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "бутерброды",
+      "тосты",
+      "сэндвичи",
+      "гренки"
+    ],
+    "pairings": {
+      "protein": ["сыр", "колбаса", "ветчина"],
+      "dairy": ["масло", "маргарин"],
+      "sweet": ["варенье", "джем", "мёд"],
+      "soups": ["супы", "борщи"]
+    },
+    "substitutes": [
+      {
+        "name": "Цельнозерновой хлеб",
+        "similarity": "low"
+      },
+      {
+        "name": "Ржаной хлеб",
+        "similarity": "low"
+      },
+      {
+        "name": "Серый хлеб",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "хлеб",
+    "белый_хлеб",
+    "пшеничный_хлеб",
+    "бутерброды",
+    "тосты",
+    "универсальный"
+  ]
+}

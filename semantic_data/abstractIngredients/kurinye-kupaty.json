@@ -1,0 +1,100 @@
+{
+  "name": "Куриные купаты",
+  "name_normalized": "kurinye-kupaty",
+  "synonyms": "",
+  "short_description": "Грузинские колбаски из куриного мяса с пряными травами, чесноком и специями в натуральной оболочке. Жарятся, запекаются или готовятся на гриле до хрустящей корочки.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Куриные купаты — это грузинские колбаски из куриного мяса с добавлением пряных трав, чеснока и специй в натуральной оболочке. Отличаются сочностью, ароматом и пряным вкусом. В отличие от классических колбас, купаты не проходят термической обработки при производстве и представляют собой сырой полуфабрикат. Идеальны для жарки, запекания и приготовления на гриле или мангале. Популярны в кавказской и средиземноморской кухне.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, сочная, с хрустящей оболочкой</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — пряный, с явными нотами чеснока и трав</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — зависит от мяса (обычно средняя, с куриным жиром)</li><li class=\"ingredient-list-item\"><strong>Оболочка</strong> — натуральная (свиная или баранья кишка)</li><li class=\"ingredient-list-item\"><strong>Применение</strong> — жарка, гриль, запекание</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 3-4 дня в холодильнике (сырые)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике</li><li class=\"ingredient-list-item\"><strong>Обжарка</strong> — на сковороде с маслом или без</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — на решётке, на мангале</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с овощами</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде с маслом до хрустящей корочки</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — на открытом огне</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с картофелем, овощами</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — с томатным, гранатовым, сметанным</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофель, рис, гречка, тушёные овощи</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — ткемали, гранатовый, сметанный, чесночный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — кинза, петрушка, укроп, зелёный лук</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — красное вино, пиво</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свиные купаты</strong> — более жирные</li><li class=\"ingredient-list-item\"><strong>Домашние куриные колбаски</strong> — из фарша</li><li class=\"ingredient-list-item\"><strong>Люля-кебаб</strong> — из куриного фарша</li><li class=\"ingredient-list-item\"><strong>Сациви</strong> — курица в соусе</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/kupaty-gril/'>Куриные купаты на гриле</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/kupaty-sous/'>Соусы к купатам</a></li></ul>",
+  "category": "Колбаски и сосиски сырые",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "курица",
+      "колбаски",
+      "пряный",
+      "сочный",
+      "грузинская_кухня",
+      "натуральная_оболочка"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "жарка_на_сковороде",
+      "гриль_на_решётке",
+      "запекание_в_духовке"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "гриль",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "второе_блюдо",
+      "закуска",
+      "барбекю"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "картофель",
+        "лук",
+        "перец",
+        "баклажаны"
+      ],
+      "sauces": [
+        "ткемали",
+        "гранатовый",
+        "сметанный",
+        "чесночный"
+      ],
+      "herbs": [
+        "кинза",
+        "петрушка",
+        "укроп",
+        "зеленый_лук"
+      ],
+      "grains": [
+        "рис",
+        "гречка"
+      ],
+      "drinks": [
+        "красное_вино",
+        "пиво"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Свиные купаты",
+        "similarity": "high"
+      },
+      {
+        "name": "Домашние куриные колбаски",
+        "similarity": "medium"
+      },
+      {
+        "name": "Люля-кебаб",
+        "similarity": "medium"
+      },
+      {
+        "name": "Сациви",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "курица",
+    "купаты",
+    "колбаски",
+    "грузинская_кухня",
+    "гриль",
+    "жарка",
+    "полуфабрикат"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "name": "Кетчуп",
+  "name_normalized": "ketchup",
+  "synonyms": "кетчуп, томатный соус, кетчуп классический, томатный кетчуп, соус для бургеров, соус для картофеля, соус для мяса, соус для пиццы, кетчуп домашний",
+  "short_description": "Густой пряный соус на основе томатного пюре, уксуса, сахара и специй. Обладает насыщенным кисло-сладким вкусом и ярким томатным ароматом. Один из самых популярных и универсальных соусов в мире, используется для бургеров, картофеля, мяса, пиццы и как основа для других соусов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Кетчуп — это густой, пряный соус, основой которого служат томаты. Классический рецепт включает томатное пюре, уксус, сахар, соль и смесь специй (чаще всего душистый перец, гвоздику, корицу, мускатный орех). Благодаря сбалансированному кисло-сладкому вкусу и густой текстуре, кетчуп идеально сочетается с жареными блюдами, картофелем, мясом, бургерами, пиццей. Современный кетчуп — это гораздо больше, чем просто \"томатный соус\", он стал культовым продуктом, особенно популярным в фаст-фуде.</p><h2 class=\"ingredient-title\">Классический состав</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Томатное пюре</strong> — основа соуса</li><li class=\"ingredient-list-item\"><strong>Уксус</strong> — для кислинки и консервации</li><li class=\"ingredient-list-item\"><strong>Сахар</strong> — для баланса вкуса</li><li class=\"ingredient-list-item\"><strong>Соль</strong> — для вкуса</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — душистый перец, гвоздика, корица, мускатный орех</li><li class=\"ingredient-list-item\"><strong>Лук и чеснок</strong> — в некоторых рецептах</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Консистенция</strong> — густая, однородная, тягучая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисло-сладкий, сбалансированный, с пряными нотками</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — насыщенный красный</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — в открытом виде до 3-4 недель в холодильнике</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — со временем может расслаиваться, перед использованием встряхнуть</li></ul><h2 class=\"ingredient-title\">Виды кетчупа</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Классический</strong> — универсальный, сбалансированный вкус</li><li class=\"ingredient-list-item\"><strong>Острый</strong> — с добавлением красного перца или чили</li><li class=\"ingredient-list-item\"><strong>Сладкий</strong> — с повышенным содержанием сахара</li><li class=\"ingredient-list-item\"><strong>Домашний</strong> — из свежих помидоров, без консервантов</li><li class=\"ingredient-list-item\"><strong>Органический</strong> — из натуральных продуктов, без добавок</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Картофель фри</strong> — классическое сочетание</li><li class=\"ingredient-list-item\"><strong>Бургеры и сэндвичи</strong> — в качестве соуса</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — к стейкам, котлетам, курице</li><li class=\"ingredient-list-item\"><strong>Пицца</strong> — как основа или добавка</li><li class=\"ingredient-list-item\"><strong>Макароны</strong> — в составе томатных соусов</li><li class=\"ingredient-list-item\"><strong>Дипы</strong> — с другими соусами (майонез, горчица)</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Картофель</strong> — фри, жареный, запеченный</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — говядина, курица, свинина</li><li class=\"ingredient-list-item\"><strong>Яйца</strong> — омлет, яичница</li><li class=\"ingredient-list-item\"><strong>Бургеры</strong> — с котлетой и овощами</li><li class=\"ingredient-list-item\"><strong>Сосиски и колбасы</strong> — к блюдам на гриле</li><li class=\"ingredient-list-item\"><strong>Блины и оладьи</strong> — несладкие варианты</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Томатная паста + уксус + сахар</strong> — для подобия кетчупа</li><li class=\"ingredient-list-item\"><strong>Соус барбекю</strong> — для мяса и бургеров</li><li class=\"ingredient-list-item\"><strong>Аджика</strong> — для любителей острого</li><li class=\"ingredient-list-item\"><strong>Сальса</strong> — для мексиканских блюд</li></ul>",
+  "category": "Соусы и заправки",
+  "semantic_data": {
+    "properties": [
+      "соус",
+      "томатный",
+      "кисло-сладкий",
+      "густой",
+      "универсальный",
+      "для картофеля",
+      "для бургеров",
+      "для мяса",
+      "фаст-фуд",
+      "классический"
+    ],
+    "preparations": [
+      "использование сразу из бутылки",
+      "встряхивание перед использованием",
+      "хранение в холодильнике после вскрытия"
+    ],
+    "cooking_methods": [
+      {"method": "использование как соус для картофеля", "priority": "high"},
+      {"method": "использование в бургерах", "priority": "high"},
+      {"method": "добавление в мясные блюда", "priority": "high"},
+      {"method": "использование в пицце", "priority": "high"},
+      {"method": "использование в качестве дипа", "priority": "high"}
+    ],
+    "applications": [
+      "бургеры и сэндвичи",
+      "картофель фри",
+      "мясные блюда",
+      "пицца",
+      "дипы и соусы"
+    ],
+    "pairings": {
+      "protein": ["говядина", "курица", "свинина", "яйца"],
+      "vegetables": ["картофель", "помидоры"],
+      "sauces": ["майонез", "горчица"],
+      "herbs": [],
+      "spices": ["душистый перец", "гвоздика", "корица", "мускатный орех"]
+    },
+    "substitutes": [
+      {"name": "Томатная паста + уксус + сахар", "similarity": "medium"},
+      {"name": "Соус барбекю", "similarity": "medium"},
+      {"name": "Аджика", "similarity": "low"},
+      {"name": "Сальса", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "соус",
+    "кетчуп",
+    "томатный соус",
+    "классический соус",
+    "фаст-фуд",
+    "бургеры",
+    "картофель",
+    "универсальный"
+  ]
+}

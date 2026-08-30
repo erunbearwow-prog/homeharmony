@@ -1,0 +1,105 @@
+{
+  "name": "Тазобедренная часть баранины",
+  "name_normalized": "tazobedrennaya-chast-baraniny",
+  "synonyms": "",
+  "short_description": "Мясной полуфабрикат из баранины, нарезанный на порционные куски из тазобедренной (задней) части туши. Крупное сочное мясо с прослойками жира, идеальное для запекания целиком, тушения и жарки крупными кусками.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Тазобедренная часть баранины — это мясной полуфабрикат из задней части туши барана, включающий окорок, бедро и часть поясницы. Это одно из самых ценных и крупных отрубов, отличающихся нежным, сочным мясом с характерным бараным ароматом и умеренной жирностью. Идеально подходит для запекания целиком (бараний окорок), приготовления шашлыка, тушения крупными кусками или нарезки на стейки. Высокое качество мяса делает эту часть баранины любимым выбором для праздничных и торжественных блюд.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, нежная, с жировыми прослойками</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, характерный для баранины, сочный</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — умеренная, мясо сочное и мягкое</li><li class=\"ingredient-list-item\"><strong>Масса</strong> — самый крупный отруб на туше (3-5 кг)</li><li class=\"ingredient-list-item\"><strong>Применение</strong> — запекание, шашлык, стейки, тушение</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Запекание</strong> — целиком в духовке с овощами и травами</li><li class=\"ingredient-list-item\"><strong>Шашлык</strong> — классический, с маринованием</li><li class=\"ingredient-list-item\"><strong>Стейки</strong> — крупные порционные куски</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в соусе с овощами</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде крупными кусками</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук, перец, томаты, баклажаны</li><li class=\"ingredient-list-item\"><strong>Травы</strong> — розмарин, тимьян, мята, кинза, петрушка</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — зира, кориандр, чеснок, чёрный перец</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — мятный, гранатовый, томатный</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике (48-72 часа для целого окорока)</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — с маслом, чесноком, специями (от 4 часов до суток)</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — при 160-180°C, время зависит от веса</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Баранья корейка</strong> — для жарки</li><li class=\"ingredient-list-item\"><strong>Баранья лопатка</strong> — для запекания</li><li class=\"ingredient-list-item\"><strong>Говяжий окорок</strong> — похожее мясо, другой вкус</li><li class=\"ingredient-list-item\"><strong>Свиной окорок</strong> — для запекания</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/baraniy-okorok/'>Бараний окорок запечённый</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/shashlyk-iz-baraniny/'>Шашлык из тазобедренной части баранины</a></li></ul>",
+  "category": "Баранина",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "баранина",
+      "тазобедренная",
+      "окорок",
+      "крупный",
+      "нежный",
+      "сочный",
+      "праздничный"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "маринование_для_запекания",
+      "маринование_для_шашлыка"
+    ],
+    "cooking_methods": [
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "шашлык",
+        "priority": "high"
+      },
+      {
+        "method": "жарка_стейков",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "запекание",
+      "шашлык",
+      "стейки",
+      "тушение"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "картофель",
+        "морковь",
+        "лук",
+        "перец",
+        "томаты",
+        "баклажаны"
+      ],
+      "herbs": [
+        "розмарин",
+        "тимьян",
+        "мята",
+        "кинза",
+        "петрушка"
+      ],
+      "spices": [
+        "зира",
+        "кориандр",
+        "чеснок",
+        "черный_перец"
+      ],
+      "sauces": [
+        "мятный",
+        "гранатовый",
+        "томатный"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Баранья корейка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Баранья лопатка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Говяжий окорок",
+        "similarity": "medium"
+      },
+      {
+        "name": "Свиной окорок",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "баранина",
+    "тазобедренная_часть",
+    "окорок",
+    "запекание",
+    "шашлык",
+    "стейк"
+  ]
+}

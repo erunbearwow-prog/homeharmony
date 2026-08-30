@@ -1,0 +1,53 @@
+{
+  "name": "Бургер говяжий",
+  "name_normalized": "burger-govyazhiy",
+  "synonyms": "говяжий бургер, бургер из говядины, говяжья котлета для бургера, бифштекс для бургера, beef burger, hamburger (в широком смысле)",
+  "short_description": "Мясной полуфабрикат — круглая котлета из говяжьего фарша с солью и специями, предназначенная для приготовления бургеров. Имеет сочную текстуру, насыщенный мясной вкус и характерную плоскую круглую форму.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Говяжий бургер — это мясной полуфабрикат в виде круглой плоской котлеты, приготовленной из говяжьего фарша с добавлением соли, чёрного перца и других специй. Форма котлеты специально адаптирована для бургеров — круглая, плоская, диаметром чуть больше булочки для бургера. Отличается сочной текстурой, насыщенным мясным вкусом и характерным ароматом жареного мяса. Является основой классического бургера, популярного в американской и мировой кухне. Идеален для быстрого приготовления на гриле или сковороде.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочная, плотная, с характерной мясной структурой</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный мясной, с пряными нотами</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — круглая, плоская</li><li class=\"ingredient-list-item\"><strong>Толщина</strong> — 1,5-2 см</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — говяжий фарш, соль, перец, специи</li><li class=\"ingredient-list-item\"><strong>Вес</strong> — 120-200 г (стандартная порция)</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде с маслом, до средней или высокой прожарки</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — на мангале, на решётке</li><li class=\"ingredient-list-item\"><strong>Бургеры</strong> — классический бургер с булочкой, сыром, овощами</li><li class=\"ingredient-list-item\"><strong>Сэндвичи</strong> — в качестве начинки</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке (реже)</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Булочка</strong> — для бургера</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — чеддер, американский, эменталь</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — салат, помидоры, лук, огурцы, перец</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — кетчуп, горчица, майонез, бургер-соус</li><li class=\"ingredient-list-item\"><strong>Бекон</strong> — для усиления вкуса</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Куриный бургер</strong> — менее жирный</li><li class=\"ingredient-list-item\"><strong>Свиной бургер</strong> — более жирный</li><li class=\"ingredient-list-item\"><strong>Индейка бургер</strong> — диетический вариант</li><li class=\"ingredient-list-item\"><strong>Вегетарианский бургер</strong> — на основе бобовых</li></ul>",
+  "category": "Котлеты, биточки, фрикадельки",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "говядина",
+      "круглый",
+      "плоский",
+      "сочный",
+      "быстрое_приготовление"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "обжарка_на_сковороде",
+      "гриль_на_решётке"
+    ],
+    "cooking_methods": [
+      {"method": "жарка", "priority": "high"},
+      {"method": "гриль", "priority": "high"},
+      {"method": "запекание", "priority": "low"}
+    ],
+    "applications": [
+      "бургеры",
+      "сэндвичи",
+      "основное_блюдо"
+    ],
+    "pairings": {
+      "protein": ["чеддер", "американский_сыр", "эменталь", "бекон"],
+      "vegetables": ["салат", "помидоры", "лук", "огурцы", "перец"],
+      "sauces": ["кетчуп", "горчица", "майонез", "бургер-соус"],
+      "breads": ["булочка_для_бургера"]
+    },
+    "substitutes": [
+      {"name": "Куриный бургер", "similarity": "medium"},
+      {"name": "Свиной бургер", "similarity": "medium"},
+      {"name": "Индейка бургер", "similarity": "medium"},
+      {"name": "Вегетарианский бургер", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "говядина",
+    "бургер",
+    "котлета",
+    "жарка",
+    "гриль"
+  ]
+}

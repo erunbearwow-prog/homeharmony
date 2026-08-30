@@ -1,0 +1,84 @@
+{
+  "name": "Уксус винный белый",
+  "name_normalized": "uksus-vinnyy-belyy",
+  "synonyms": "белый винный уксус, винный уксус белый, белое виноградное вино, уксус из белого вина, white wine vinegar",
+  "short_description": "Уксус, полученный путём брожения белого вина. Имеет мягкий, слегка кислый вкус с фруктовыми и цветочными нотками, светлый соломенный цвет. Широко используется в средиземноморской и европейской кухне для заправок, соусов и маринадов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Белый винный уксус — это уксус, произведённый из белого вина путём уксуснокислого брожения. По сравнению со столовым уксусом, он имеет более мягкий, деликатный вкус с лёгкими фруктовыми и цветочными нотками. Цвет варьируется от прозрачного до светло-соломенного. Виноградный уксус считается более изысканным и широко используется в средиземноморской и европейской кухне для заправки салатов, приготовления соусов, маринадов для рыбы и птицы.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — мягкий, с лёгкой кислинкой, фруктовыми и цветочными оттенками</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — виноградный, с тонкими нотками</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — прозрачный, светло-соломенный</li><li class=\"ingredient-list-item\"><strong>Кислотность</strong> — 6-7% (обычно мягче столового уксуса)</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — уксусная кислота (из белого вина), вода</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в стеклянной таре</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салатные заправки</strong> — в составе винегретов, дрессингов, с оливковым маслом</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — для мяса, рыбы, овощей</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для рыбы, морепродуктов, птицы</li><li class=\"ingredient-list-item\"><strong>Овощные блюда</strong> — для придания лёгкой кислинки</li><li class=\"ingredient-list-item\"><strong>Деглассировка</strong> — для соусов на сковороде</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Масла</strong> — оливковое масло, растительное масло</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — салаты, помидоры, огурцы, перец</li><li class=\"ingredient-list-item\"><strong>Рыба</strong> — лосось, морской окунь, треска</li><li class=\"ingredient-list-item\"><strong>Морепродукты</strong> — креветки, мидии</li><li class=\"ingredient-list-item\"><strong>Птица</strong> — курица, индейка</li><li class=\"ingredient-list-item\"><strong>Травы</strong> — эстрагон, базилик, тимьян</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Яблочный уксус</strong> — более фруктовый, кислый</li><li class=\"ingredient-list-item\"><strong>Бальзамический уксус</strong> — тёмный, сладковатый</li><li class=\"ingredient-list-item\"><strong>Лимонный сок</strong> — для заправки салатов</li><li class=\"ingredient-list-item\"><strong>Рисовый уксус</strong> — мягкий, азиатский</li><li class=\"ingredient-list-item\"><strong>Белый винный уксус (заменитель)</strong> — смесь столового уксуса и белого вина</li></ul>",
+  "category": "Уксусы",
+  "semantic_data": {
+    "properties": [
+      "уксус",
+      "винный",
+      "белый",
+      "мягкий",
+      "фруктовый",
+      "цветочный",
+      "средиземноморская_кухня"
+    ],
+    "preparations": [
+      "хранение_в_закрытой_стеклянной_бутылке",
+      "не_хранить_в_металлической_таре"
+    ],
+    "cooking_methods": [
+      {
+        "method": "салатные_заправки",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_соусов",
+        "priority": "high"
+      },
+      {
+        "method": "маринование_рыбы_и_птицы",
+        "priority": "high"
+      },
+      {
+        "method": "деглассировка",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "заправки",
+      "соусы",
+      "маринады",
+      "овощные_блюда"
+    ],
+    "pairings": {
+      "protein": ["лосось", "морской_окунь", "треска", "креветки", "мидии", "курица", "индейка"],
+      "vegetables": ["салат", "помидоры", "огурцы", "перец"],
+      "oils": ["оливковое_масло", "растительное_масло"],
+      "herbs": ["эстрагон", "базилик", "тимьян"]
+    },
+    "substitutes": [
+      {
+        "name": "Яблочный уксус",
+        "similarity": "medium"
+      },
+      {
+        "name": "Бальзамический уксус",
+        "similarity": "low"
+      },
+      {
+        "name": "Лимонный сок",
+        "similarity": "medium"
+      },
+      {
+        "name": "Рисовый уксус",
+        "similarity": "medium"
+      },
+      {
+        "name": "Смесь столового уксуса и белого вина",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "уксус",
+    "винный_уксус",
+    "белый_винный_уксус",
+    "заправка",
+    "соус",
+    "маринад",
+    "средиземноморская_кухня"
+  ]
+}

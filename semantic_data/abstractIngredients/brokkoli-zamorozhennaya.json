@@ -1,0 +1,57 @@
+{
+  "name": "Брокколи замороженная",
+  "name_normalized": "brokkoli-zamorozhennaya",
+  "synonyms": "замороженная брокколи, брокколи в заморозке, брокколи быстрозамороженная, frozen broccoli, брокколи для заморозки",
+  "short_description": "Свежая брокколи, подвергнутая шоковой заморозке для сохранения питательных веществ, цвета и текстуры. Удобный полуфабрикат для быстрого приготовления супов, гарниров, запеканок и салатов круглый год.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Брокколи замороженная — это свежие соцветия брокколи, прошедшие шоковую заморозку при очень низких температурах. Этот метод позволяет сохранить все питательные вещества, витамины, яркий зелёный цвет и упругую текстуру на длительный срок. Отличается от свежей тем, что не требует предварительной подготовки — достаточно отварить, обжарить или добавить в блюдо. Идеальный вариант для использования брокколи в любое время года, когда свежая брокколи недоступна или дорога.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — после разморозки сохраняет упругость, но становится немного мягче</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — свежий, сладковатый, с лёгкой горчинкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — ярко-зелёный (после варки сохраняется)</li><li class=\"ingredient-list-item\"><strong>Сохранность витаминов</strong> — до 90% витаминов при шоковой заморозке</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 12 месяцев в морозильной камере</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — не требуется, можно готовить сразу</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — опустить в кипящую воду на 3-5 минут (без предварительной разморозки)</li><li class=\"ingredient-list-item\"><strong>Бланширование</strong> — 2-3 минуты</li><li class=\"ingredient-list-item\"><strong>Обжарка</strong> — на сковороде с маслом</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Супы</strong> — крем-супы, овощные супы</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — с маслом, чесноком, специями</li><li class=\"ingredient-list-item\"><strong>Запеканки</strong> — с сыром, сливочным соусом</li><li class=\"ingredient-list-item\"><strong>Омлеты</strong> — добавление в омлет</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью и маслом</li><li class=\"ingredient-list-item\"><strong>Рагу</strong> — с картофелем и морковью</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — пармезан, чеддер, моцарелла</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук, чеснок</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочный, сметанный, томатный</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, говядина, рыба</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, гречка, паста</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежая брокколи</strong> — более хрустящая</li><li class=\"ingredient-list-item\"><strong>Замороженная цветная капуста</strong> — похожая текстура</li><li class=\"ingredient-list-item\"><strong>Замороженная зелёная фасоль</strong> — как гарнир</li><li class=\"ingredient-list-item\"><strong>Замороженный шпинат</strong> — для супов</li></ul>",
+  "category": "Овощи быстрозамороженные",
+  "semantic_data": {
+    "properties": [
+      "замороженный",
+      "овощ",
+      "быстрозамороженный",
+      "удобный",
+      "длительное_хранение",
+      "витаминный"
+    ],
+    "preparations": [
+      "варка_без_разморозки",
+      "бланширование_2-3_минуты",
+      "обжарка_на_сковороде"
+    ],
+    "cooking_methods": [
+      {"method": "варка", "priority": "high"},
+      {"method": "обжарка", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "варка_для_супов", "priority": "high"}
+    ],
+    "applications": [
+      "супы",
+      "гарниры",
+      "запеканки",
+      "омлеты",
+      "салаты",
+      "рагу"
+    ],
+    "pairings": {
+      "protein": ["пармезан", "чеддер", "моцарелла", "курица", "говядина", "рыба"],
+      "vegetables": ["картофель", "морковь", "лук", "чеснок"],
+      "sauces": ["сливочный", "сметанный", "томатный"],
+      "grains": ["рис", "гречка", "паста"]
+    },
+    "substitutes": [
+      {"name": "Свежая брокколи", "similarity": "high"},
+      {"name": "Замороженная цветная капуста", "similarity": "high"},
+      {"name": "Замороженная зелёная фасоль", "similarity": "medium"},
+      {"name": "Замороженный шпинат", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "заморозка",
+    "брокколи",
+    "овощи",
+    "гарнир",
+    "диетический",
+    "витамины"
+  ]
+}

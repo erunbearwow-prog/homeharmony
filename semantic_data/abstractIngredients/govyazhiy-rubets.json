@@ -1,0 +1,69 @@
+{
+  "name": "Говяжий рубец",
+  "name_normalized": "govyazhiy-rubets",
+  "synonyms": "рубец говяжий, говяжий желудок, свиной рубец, рубец в кулинарии, говяжий рубец для супа, мясной субпродукт",
+  "short_description": "Субпродукт из говядины — один из отделов желудка крупного рогатого скота. Имеет плотную, эластичную текстуру с характерным ворсистым внутренним слоем. Требует длительной подготовки и варки, используется в супах, салатах и горячих блюдах.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Говяжий рубец — это съедобный субпродукт, представляющий собой один из отделов желудка крупного рогатого скота. Внутренняя поверхность рубца покрыта мелкими ворсинками, которые придают ему характерную текстуру. Рубец требует длительной подготовки: замачивания, промывания, варки в несколько этапов. Цвет рубца варьируется от серого до коричневого. После длительной варки он становится мягким и упругим, приобретая нейтральный вкус, который впитывает ароматы специй и соусов. Говяжий рубец широко используется в европейской, русской и азиатской кухне.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, с характерными ворсинками</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, мягкий (после правильной подготовки)</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от серого до коричневого</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — богат коллагеном, белками</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 дней в холодильнике (после варки)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — вымочить в холодной воде 3-4 часа с солью и уксусом для удаления запаха</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — тщательно промыть под проточной водой, удалить тёмные участки</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — варить в подсоленной воде с луком, морковью и специями (3-4 часа)</li><li class=\"ingredient-list-item\"><strong>Обработка</strong> — после варки нарезать полосками или кубиками</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Супы</strong> — рассольник, солянка, традиционный рубец-суп</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, овощами и соусом</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — тушение с овощами, сметаной</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — холодный рубец с хреном и горчицей</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, картофель, чеснок, томаты</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, лавровый лист, гвоздика</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, томатный, чесночный</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свиной желудок</strong> — схожий субпродукт</li><li class=\"ingredient-list-item\"><strong>Говяжий желудок</strong> — другой отдел</li><li class=\"ingredient-list-item\"><strong>Куриные желудки</strong> — для тушения</li></ul>",
+  "category": "Субпродукты",
+  "semantic_data": {
+    "properties": [
+      "субпродукт",
+      "говядина",
+      "плотный",
+      "упругий",
+      "коллаген",
+      "длительное_приготовление"
+    ],
+    "preparations": [
+      "замачивание_3-4_часа",
+      "промывка",
+      "варка_3-4_часа"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "свежее_употребление",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "супы",
+      "салаты",
+      "горячие_блюда"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["лук", "морковь", "картофель", "чеснок", "томаты"],
+      "spices": ["черный_перец", "лавровый_лист", "гвоздика"],
+      "sauces": ["сметанный", "томатный", "чесночный"]
+    },
+    "substitutes": [
+      {
+        "name": "Свиной желудок",
+        "similarity": "high"
+      },
+      {
+        "name": "Говяжий желудок",
+        "similarity": "high"
+      },
+      {
+        "name": "Куриные желудки",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "субпродукты",
+    "говяжий_рубец",
+    "суп",
+    "холодец",
+    "субпродукты_говядины"
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "name": "Душица",
+  "name_normalized": "dushitsa",
+  "synonyms": "орегано, душица обыкновенная, орегано обыкновенное, материнка, ладанка, душмянка, душица душистая, Origanum vulgare, дикий майоран, пчелиная трава, блошница",
+  "short_description": "Ароматная пряная трава семейства Яснотковых с характерным тёплым, слегка горьковатым и перечным вкусом. Широко используется в средиземноморской, итальянской и греческой кухне, незаменима для пиццы, соусов и мясных блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Душица (орегано) — это многолетнее травянистое растение семейства Яснотковых, которое произрастает в Европе, Средиземноморье и Азии. В кулинарии используют высушенные листья и цветущие верхушки растения, которые обладают ярким, тёплым, слегка горьковатым и перечным ароматом с мятно-камфорными нотками. Душица — одна из ключевых пряностей итальянской и греческой кухни, незаменимый ингредиент для пиццы, пасты, соусов, заправок, мяса и рыбы. Свежие листья более деликатны по вкусу, а сушёные — более интенсивны и концентрированы.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Аромат</strong> — тёплый, пряный, с мятно-камфорными нотками</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — слегка горьковатый, перечный, с лёгкой сладостью</li><li class=\"ingredient-list-item\"><strong>Цвет сушёного</strong> — серовато-зелёный, коричневатый</li><li class=\"ingredient-list-item\"><strong>Цвет свежего</strong> — насыщенный зелёный</li><li class=\"ingredient-list-item\"><strong>Интенсивность</strong> — сушёная в 2-3 раза сильнее свежей</li><li class=\"ingredient-list-item\"><strong>Сочетаемость</strong> — отлично сочетается с томатами, чесноком, оливковым маслом</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сушка</strong> — для длительного хранения (можно собрать, связать в пучки и сушить в тени)</li><li class=\"ingredient-list-item\"><strong>Измельчение</strong> — перед использованием перетереть пальцами для раскрытия аромата</li><li class=\"ingredient-list-item\"><strong>Свежая душица</strong> — промыть и обсушить, листья отделить от стеблей</li><li class=\"ingredient-list-item\"><strong>Приправа</strong> — добавлять в горячие блюда в конце приготовления</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Пицца</strong> — классическая итальянская пицца с орегано</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, песто, маринара</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — баранина, говядина, свинина, курица</li><li class=\"ingredient-list-item\"><strong>Паста</strong> — в соусы для макаронных изделий</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — запечённые овощи, рагу</li><li class=\"ingredient-list-item\"><strong>Заправки</strong> — для салатов и винегретов</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для мяса и рыбы</li><li class=\"ingredient-list-item\"><strong>Греческая кухня</strong> — мусака, сувлаки, запеканки</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Травы</strong> — базилик, тимьян, розмарин, шалфей, майоран</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, чёрный перец, паприка, красный перец</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, лук, чеснок, баклажаны, цукини</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — говядина, баранина, курица, свинина, утка</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — моцарелла, пармезан, пекорино, фета</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сливочный, масляный</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Майоран</strong> — близкий родственник, более сладкий и мягкий</li><li class=\"ingredient-list-item\"><strong>Тимьян</strong> — похожий аромат, но более землистый</li><li class=\"ingredient-list-item\"><strong>Смесь итальянских трав</strong> — содержит орегано в составе</li><li class=\"ingredient-list-item\"><strong>Базилик + майоран</strong> — смесь для имитации орегано</li><li class=\"ingredient-list-item\"><strong>Чабер садовый</strong> — более острый, перечный</li></ul>",
+  "category": "Специи и травы",
+  "semantic_data": {
+    "properties": [
+      "ароматная",
+      "пряная",
+      "горьковатая",
+      "перечная",
+      "тёплый аромат",
+      "средиземноморская",
+      "итальянская",
+      "греческая",
+      "универсальная",
+      "лекарственная"
+    ],
+    "preparations": [
+      "сбор в период цветения (для сушки)",
+      "сушка в тени, в хорошо проветриваемом месте",
+      "измельчение вручную или с помощью ступки",
+      "хранение в герметичной таре в тёмном месте",
+      "промывка и обсушивание свежих листьев"
+    ],
+    "cooking_methods": [
+      {
+        "method": "добавление в конце приготовления (в горячие блюда)",
+        "priority": "high"
+      },
+      {
+        "method": "добавление в соусы в процессе варки",
+        "priority": "high"
+      },
+      {
+        "method": "использование в маринадах (перед приготовлением)",
+        "priority": "high"
+      },
+      {
+        "method": "посыпка в сухом виде (прямо перед подачей)",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "пицца",
+      "паста и соусы",
+      "мясные блюда (баранина, говядина, курица)",
+      "овощные рагу и запеканки",
+      "салаты и заправки",
+      "маринады",
+      "греческие блюда (мусака, сувлаки)",
+      "итальянская кухня",
+      "средиземноморская кухня"
+    ],
+    "pairings": {
+      "protein": ["говядина", "баранина", "курица", "свинина", "рыба (тунец)", "сыр (моцарелла, пармезан, фета)"],
+      "vegetables": ["помидоры", "лук", "чеснок", "баклажаны", "цукини", "болгарский перец", "оливки"],
+      "sauces": ["томатный соус", "песто", "маринара", "сливочный соус", "оливковое масло"],
+      "herbs": ["базилик", "тимьян", "розмарин", "майоран", "шалфей", "петрушка"],
+      "spices": ["чеснок", "чёрный перец", "паприка", "красный перец", "сушеный лук"]
+    },
+    "substitutes": [
+      {
+        "name": "Майоран",
+        "similarity": "high"
+      },
+      {
+        "name": "Тимьян",
+        "similarity": "medium"
+      },
+      {
+        "name": "Смесь итальянских трав",
+        "similarity": "medium"
+      },
+      {
+        "name": "Чабер садовый",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "специи",
+    "травы",
+    "душица",
+    "орегано",
+    "итальянская кухня",
+    "греческая кухня",
+    "средиземноморская кухня",
+    "приправа",
+    "пряность",
+    "пицца",
+    "паста",
+    "мясные блюда",
+    "лекарственные травы",
+    "сушеные травы"
+  ]
+}

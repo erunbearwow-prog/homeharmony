@@ -1,0 +1,114 @@
+{
+  "name": "Армянский лаваш",
+  "name_normalized": "armyanskiy-lavash",
+  "synonyms": "",
+  "short_description": "Тонкий, эластичный пресный хлеб из пшеничной муки, выпекаемый в традиционной печи (тонире). Имеет характерные пузырьки, мягкую текстуру и универсальное кулинарное применение.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Армянский лаваш — это тонкий пресный хлеб из пшеничной муки, традиционный для армянской и кавказской кухни. Выпекается в специальной печи (тонире) в виде больших тонких лепёшек овальной или прямоугольной формы. Характерными признаками армянского лаваша являются пузырьки на поверхности, эластичная текстура и мягкий вкус. В отличие от грузинского лаваша (пури), армянский лаваш более тонкий и гибкий, что позволяет сворачивать его с начинкой.</p><h2 class=\"ingredient-title\">Виды лаваша</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Традиционный армянский</strong> — тонкий, эластичный, без начинки, для сворачивания</li><li class=\"ingredient-list-item\"><strong>Грузинский (пури)</strong> — более толстый, пышный, подаётся к столу отдельно</li><li class=\"ingredient-list-item\"><strong>Сырный лаваш</strong> — с начинкой из сыра (сулугуни, брынза)</li><li class=\"ingredient-list-item\"><strong>Лаваш с зеленью</strong> — с начинкой из свежей зелени</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — тонкая, эластичная, мягкая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — пресный, нейтральный, слегка солоноватый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от бледно-жёлтого до золотисто-коричневого (с пузырьками)</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — мука, вода, соль (без дрожжей)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 7 дней (свежий), до нескольких месяцев (сушёный)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сворачивание с начинкой</strong> — шаурма, дурма, кебаб</li><li class=\"ingredient-list-item\"><strong>К столу</strong> — как замена хлебу</li><li class=\"ingredient-list-item\"><strong>Сэндвичи и рулеты</strong> — с мясом, сыром, зеленью</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с сыром и зеленью (сырный лаваш)</li><li class=\"ingredient-list-item\"><strong>Сушёный</strong> — для долгого хранения (размачивается перед подачей)</li><li class=\"ingredient-list-item\"><strong>Вместо лепёшки</strong> — для подачи к соусам и закускам</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — шашлык, люля-кебаб, курица, говядина</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — сулугуни, брынза, моцарелла, адыгейский</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, кинза, мята</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, огурцы, лук, перец, салат</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — ткемали, мацони, сметана, чесночный соус</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — мясной фарш, картофель, грибы, бобовые</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тортилья</strong> — мексиканский аналог, более плотная</li><li class=\"ingredient-list-item\"><strong>Пита</strong> — с кармашком, для наполнения</li><li class=\"ingredient-list-item\"><strong>Лепёшка</strong> — более толстая, пышная</li><li class=\"ingredient-list-item\"><strong>Багет</strong> — для тостов и сэндвичей</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/lavash-domashniy/'>Домашний армянский лаваш — рецепт</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/rulet-iz-lavasha/'>Рулет из лаваша с начинкой — идеи и рецепты</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/tonir-i-lavash/'>Тонир и лаваш: традиции армянской кухни</a></li></ul>",
+  "category": "ХЛЕБ, ВЫПЕЧКА, ХЛЕБОБУЛОЧНЫЕ ИЗДЕЛИЯ",
+  "semantic_data": {
+    "properties": [
+      "тонкий",
+      "эластичный",
+      "пресный",
+      "бездрожжевой",
+      "пшеничный",
+      "пузырьки_на_поверхности",
+      "универсальный",
+      "кавказская_кухня"
+    ],
+    "preparations": [
+      "хранение_в_сухом_прохладном_месте",
+      "смачивание_водой_для_восстановления_эластичности",
+      "подогрев_на_сковороде"
+    ],
+    "cooking_methods": [
+      {
+        "method": "выпечка_в_тонире",
+        "priority": "high"
+      },
+      {
+        "method": "сворачивание_с_начинкой",
+        "priority": "high"
+      },
+      {
+        "method": "запекание_с_начинкой",
+        "priority": "high"
+      },
+      {
+        "method": "сушка",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "замена_хлеба",
+      "основа_для_рулетов",
+      "обёртка_для_шаурмы",
+      "закуска_к_соусам"
+    ],
+    "pairings": {
+      "protein": [
+        "шашлык",
+        "люля-кебаб",
+        "курица",
+        "говядина",
+        "сулугуни",
+        "брынза",
+        "моцарелла",
+        "адыгейский_сыр"
+      ],
+      "vegetables": [
+        "помидоры",
+        "огурцы",
+        "лук",
+        "перец",
+        "салат"
+      ],
+      "herbs": [
+        "укроп",
+        "петрушка",
+        "кинза",
+        "мята"
+      ],
+      "sauces": [
+        "ткемали",
+        "мацони",
+        "сметана",
+        "чесночный_соус"
+      ],
+      "fillings": [
+        "мясной_фарш",
+        "картофель",
+        "грибы",
+        "бобовые"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Тортилья",
+        "similarity": "high"
+      },
+      {
+        "name": "Пита",
+        "similarity": "high"
+      },
+      {
+        "name": "Лепёшка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Багет",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "хлеб",
+    "лаваш",
+    "армянская_кухня",
+    "кавказская_кухня",
+    "тонкий_хлеб",
+    "бездрожжевой",
+    "шаурма",
+    "рулеты"
+  ]
+}

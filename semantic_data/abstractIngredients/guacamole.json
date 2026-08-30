@@ -1,0 +1,67 @@
+{
+  "name": "Гуакамоле",
+  "name_normalized": "guacamole",
+  "synonyms": "гуакамоле, соус гуакамоле, мексиканский соус, авокадо-паста, гуак, мексиканская закуска, guacamole, соус из авокадо",
+  "short_description": "Традиционный мексиканский соус-закуска из авокадо, лука, помидоров, кинзы, сока лайма и специй. Имеет кремовую текстуру, яркий зелёный цвет, свежий кисло-соленый вкус с лёгкой остринкой. Идеален с кукурузными чипсами (начос), в буррито, тако и как самостоятельная закуска.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Гуакамоле — это классический мексиканский соус-закуска, основным ингредиентом которого является авокадо. В классический состав входят размятое авокадо, сок лайма или лимона, мелко нарезанный репчатый лук, помидоры, кинза, чеснок, соль и перец. Текстура гуакамоле варьируется от грубой (с кусочками авокадо) до полностью однородной, но всегда кремовая и маслянистая. Гуакамоле подают к кукурузным чипсам (начос), используют как начинку для тако, буррито и тостадос, а также как самостоятельную закуску.</p><h2 class=\"ingredient-title\">Состав</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Авокадо</strong> — основа соуса, 2-3 плода</li><li class=\"ingredient-list-item\"><strong>Лайм или лимон</strong> — сок, для кислоты и сохранения цвета</li><li class=\"ingredient-list-item\"><strong>Лук репчатый</strong> — мелко нарезанный, для остроты</li><li class=\"ingredient-list-item\"><strong>Помидоры</strong> — свежие, нарезанные кубиками</li><li class=\"ingredient-list-item\"><strong>Кинза</strong> — свежая, измельчённая</li><li class=\"ingredient-list-item\"><strong>Чеснок</strong> — для аромата</li><li class=\"ingredient-list-item\"><strong>Соль, перец</strong> — по вкусу</li><li class=\"ingredient-list-item\"><strong>Халапеньо (по желанию)</strong> — для остроты</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — кремовая, маслянистая, с кусочками (или однородная)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — свежий, кисло-солёный, с лёгкой остринкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — зелёный, от салатового до тёмно-зелёного</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 1-2 дня в холодильнике (с плёнкой)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>С начос (чипсами)</strong> — классическая подача</li><li class=\"ingredient-list-item\"><strong>В тако и буррито</strong> — в качестве начинки</li><li class=\"ingredient-list-item\"><strong>С тостами</strong> — как намазка</li><li class=\"ingredient-list-item\"><strong>С овощами</strong> — как дип для свежих овощей</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Начос</strong> — кукурузные чипсы</li><li class=\"ingredient-list-item\"><strong>Тако, буррито, кесадилья</strong> — мексиканская выпечка</li><li class=\"ingredient-list-item\"><strong>Тосты, хлеб</strong> — для намазывания</li><li class=\"ingredient-list-item\"><strong>Свежие овощи</strong> — морковь, огурец, перец</li><li class=\"ingredient-list-item\"><strong>Сметана, сыр</strong> — для подачи</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соус из авокадо (простой)</strong> — авокадо + соль + лимон</li><li class=\"ingredient-list-item\"><strong>Сальса</strong> — более жидкая</li><li class=\"ingredient-list-item\"><strong>Гуакамоле заменитель</strong> — из зелёного горошка (для веганов)</li></ul>",
+  "category": "Соусы европейские",
+  "semantic_data": {
+    "properties": [
+      "соус",
+      "авокадо",
+      "мексиканский",
+      "кремовый",
+      "свежий",
+      "закуска"
+    ],
+    "preparations": [
+      "размятие_авокадо",
+      "нарезка_овощей",
+      "смешивание_ингредиентов"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_приготовление",
+        "priority": "high"
+      },
+      {
+        "method": "охлаждение",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "закуска",
+      "соус",
+      "начинка"
+    ],
+    "pairings": {
+      "protein": ["сыр"],
+      "vegetables": ["морковь", "огурец", "перец"],
+      "chips": ["начос"],
+      "breads": ["тосты", "хлеб", "тортилья"],
+      "dairy": ["сметана"]
+    },
+    "substitutes": [
+      {
+        "name": "Соус из авокадо (простой)",
+        "similarity": "high"
+      },
+      {
+        "name": "Сальса",
+        "similarity": "low"
+      },
+      {
+        "name": "Гуакамоле заменитель (горошек)",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "соус",
+    "гуакамоле",
+    "авокадо",
+    "мексиканская_кухня",
+    "закуска",
+    "начос"
+  ]
+}

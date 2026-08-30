@@ -1,0 +1,84 @@
+{
+  "name": "Вырезка телячья",
+  "name_normalized": "vyrezka-telyachya",
+  "synonyms": "телячья вырезка, филе телятины, телячий филей, veal tenderloin, телячье филе, вырезка из телятины",
+  "short_description": "Самая нежная и деликатесная часть телятины, расположенная вдоль позвоночника. Имеет мелкую волокнистую структуру, практически не содержит жира, отличается мягкостью, нежностью и тонким вкусом. Идеальна для жарки целиком, медальонов, стейков и быстрого приготовления.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Телячья вырезка — это самая ценная, нежная и деликатесная часть телятины, представляющая собой длинный узкий кусок филейного мяса, расположенный вдоль позвоночника. Это мясо молодого бычка (телятины) — самое мягкое, нежное и практически не содержащее жира. Структура волокон очень мелкая и плотная, что обеспечивает нежность и сочность при правильной тепловой обработке. Телячья вырезка считается одним из лучших мясных отрубов, используется в ресторанах высокого уровня. Идеально подходит для быстрой жарки, запекания, приготовления медальонов и стейков. В англоязычной кухне известна как veal tenderloin.</p><h2 class=\"ingredient-title\">Характеристики</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Форма</strong> — длинная, узкая, заострённая с одного конца</li><li class=\"ingredient-list-item\"><strong>Вес</strong> — 200-500 г (целая вырезка)</li><li class=\"ingredient-list-item\"><strong>Отруб</strong> — филейная часть, вдоль позвоночника</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — минимальная (очень постная)</li><li class=\"ingredient-list-item\"><strong>Структура</strong> — мелкая, нежная, плотная</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — самая дорогая и деликатная часть телятины</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Медальоны</strong> — нарезка поперёк волокон толщиной 2-3 см</li><li class=\"ingredient-list-item\"><strong>Стейки</strong> — жарка целиком или кусками</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде с маслом, на гриле</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с травами и маслом</li><li class=\"ingredient-list-item\"><strong>Фаршировка</strong> — с грибами, сыром, орехами</li><li class=\"ingredient-list-item\"><strong>Тартар</strong> — в сыром виде (очень высокое качество)</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочный, грибной, трюфельный, горчичный, ягодный</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофель (пюре, жареный), овощи-гриль, спаржа, рис</li><li class=\"ingredient-list-item\"><strong>Травы</strong> — розмарин, тимьян, шалфей, петрушка</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, белый перец, чеснок</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свиная вырезка</strong> — похожая текстура, более доступная</li><li class=\"ingredient-list-item\"><strong>Говяжья вырезка</strong> — более плотная, с ярким вкусом</li><li class=\"ingredient-list-item\"><strong>Куриное филе</strong> — диетический вариант</li><li class=\"ingredient-list-item\"><strong>Стейк из телятины</strong> — другой отруб</li></ul>",
+  "category": "Телятина",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "телятина",
+      "нежный",
+      "постный",
+      "филей",
+      "деликатес",
+      "быстрое_приготовление"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "удаление_плёночек",
+      "нарезка_медальонами",
+      "отбивание_при_необходимости"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "гриль",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_медальонов",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "медальоны",
+      "стейки",
+      "запекание",
+      "фаршировка",
+      "тартар"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "овощи_гриль", "спаржа"],
+      "grains": ["рис"],
+      "sauces": ["сливочный", "грибной", "трюфельный", "горчичный", "ягодный"],
+      "herbs": ["розмарин", "тимьян", "шалфей", "петрушка"],
+      "spices": ["черный_перец", "белый_перец", "чеснок"]
+    },
+    "substitutes": [
+      {
+        "name": "Свиная вырезка",
+        "similarity": "high"
+      },
+      {
+        "name": "Говяжья вырезка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Куриное филе",
+        "similarity": "low"
+      },
+      {
+        "name": "Стейк из телятины",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "телятина",
+    "вырезка",
+    "медальоны",
+    "стейк",
+    "деликатес"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "name": "Гусиный жир",
+  "name_normalized": "gusinyy-zhir",
+  "synonyms": "гусиный жир, жир гусиный, топленый гусиный жир, гусиное сало, рендерный гусиный жир, гусиный жир для жарки",
+  "short_description": "Жир, вытопленный из гусиной тушки, с характерным нежным ароматом и высокой температурой дымления. Классический ингредиент французской и европейской кухни, идеален для жарки, запекания, тушения и фритюра.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Гусиный жир — это традиционный кулинарный жир, получаемый путём вытапливания из гусиной тушки. Он имеет нежную, кремовую консистенцию, светло-жёлтый цвет и характерный деликатный аромат. Гусиный жир ценится за высокую температуру дымления, которая позволяет использовать его для жарки и фритюра без риска пригорания, а также за его способность придавать блюдам неповторимый вкус. Классический ингредиент французской кухни, особенно известный как основа для конфи (confit) — медленного запекания мяса в жире.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — кремовая, мягкая при комнатной температуре</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нежный, с лёгким гусиным ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — светло-жёлтый, золотистый</li><li class=\"ingredient-list-item\"><strong>Температура дымления</strong> — 190-200°C</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 6 месяцев в холодильнике</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Приготовление конфи</strong> — классическое использование</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — картофеля, овощей, мяса</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с овощами, птицей</li><li class=\"ingredient-list-item\"><strong>Фритюр</strong> — благодаря высокой температуре дымления</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — для придания насыщенности</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гусь, утка</strong> — классическое сочетание</li><li class=\"ingredient-list-item\"><strong>Картофель</strong> — жареный, запеченный</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, чеснок</li><li class=\"ingredient-list-item\"><strong>Грибы</strong> — для тушения</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Утиный жир</strong> — схожее применение</li><li class=\"ingredient-list-item\"><strong>Сливочное масло</strong> — для жарки</li><li class=\"ingredient-list-item\"><strong>Растительное масло</strong> — нейтральный вкус</li><li class=\"ingredient-list-item\"><strong>Говяжий жир</strong> — более насыщенный</li></ul>",
+  "category": "Животные жиры",
+  "semantic_data": {
+    "properties": [
+      "жир",
+      "гусиный",
+      "высокая_температура_дымления",
+      "нежный_вкус",
+      "французская_кухня"
+    ],
+    "preparations": [
+      "вытапливание_на_медленном_огне",
+      "хранение_в_холодильнике"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_конфи",
+        "priority": "high"
+      },
+      {
+        "method": "фритюр",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "конфи",
+      "жарка",
+      "запекание",
+      "соусы"
+    ],
+    "pairings": {
+      "protein": ["гусь", "утка"],
+      "vegetables": ["картофель", "лук", "морковь", "чеснок"],
+      "mushrooms": ["грибы"]
+    },
+    "substitutes": [
+      {
+        "name": "Утиный жир",
+        "similarity": "high"
+      },
+      {
+        "name": "Сливочное масло",
+        "similarity": "medium"
+      },
+      {
+        "name": "Растительное масло",
+        "similarity": "low"
+      },
+      {
+        "name": "Говяжий жир",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "жир",
+    "гусиный_жир",
+    "животные_жиры",
+    "французская_кухня",
+    "конфи"
+  ]
+}

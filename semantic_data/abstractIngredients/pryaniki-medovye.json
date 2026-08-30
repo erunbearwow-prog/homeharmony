@@ -1,0 +1,65 @@
+{
+  "name": "Пряники медовые",
+  "name_normalized": "pryaniki-medovye",
+  "synonyms": "медовые пряники, пряники на меду, медовики, пряники медовые глазированные, медовые пряники с начинкой, пряники медовые в шоколаде",
+  "short_description": "Ароматные мучные кондитерские изделия на основе ржаной или пшеничной муки с добавлением мёда, специй и сахара. Отличаются мягкой текстурой, насыщенным пряно-сладким вкусом и ярким медовым ароматом. Традиционное русское лакомство к чаю и праздничному столу.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Медовые пряники — это традиционные русские мучные кондитерские изделия, которые готовят из муки (ржаной или пшеничной), мёда, сахара, яиц и пряных специй (корица, гвоздика, имбирь, мускатный орех). В отличие от имбирных пряников, медовые имеют более мягкую и нежную текстуру, характерный медовый вкус и аромат. Медовые пряники могут быть с глазурью, шоколадной или сахарной, а также с начинкой из варёной сгущёнки, джема или орехов. Являются неотъемлемой частью русской кулинарной традиции, особенно на Рождество и другие праздники.</p><h2 class=\"ingredient-title\">Виды медовых пряников</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Классические медовые пряники</strong> — без глазури, с пряным вкусом</li><li class=\"ingredient-list-item\"><strong>Глазированные</strong> — с сахарной или шоколадной глазурью</li><li class=\"ingredient-list-item\"><strong>С начинкой</strong> — с варёной сгущёнкой, джемом, орехами</li><li class=\"ingredient-list-item\"><strong>Медовики (торт)</strong> — слоёные пряники с кремом</li><li class=\"ingredient-list-item\"><strong>Печатные</strong> — с рисунком на поверхности</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мягкая, нежная, слегка плотная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — пряно-сладкий, с выраженным медовым ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от золотистого до тёмно-коричневого</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 1-3 месяцев в сухом прохладном месте</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>К чаю</strong> — классическое сочетание</li><li class=\"ingredient-list-item\"><strong>Праздничный стол</strong> — Рождество, Пасха, Новый год</li><li class=\"ingredient-list-item\"><strong>Подарок</strong> — как сладкий презент</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — в составе других блюд</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Напитки</strong> — чёрный чай, травяной чай, молоко, кофе</li><li class=\"ingredient-list-item\"><strong>Варенье</strong> — клюквенное, вишнёвое, яблочное</li><li class=\"ingredient-list-item\"><strong>Мёд</strong> — для усиления вкуса</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Имбирные пряники</strong> — более острые</li><li class=\"ingredient-list-item\"><strong>Коврижка</strong> — медовый пирог</li><li class=\"ingredient-list-item\"><strong>Печенье имбирное</strong> — хрустящее</li></ul>",
+  "category": "Пряники, коврижка",
+  "semantic_data": {
+    "properties": [
+      "пряник",
+      "медовый",
+      "мягкий",
+      "пряный",
+      "сладкий",
+      "русская_кухня"
+    ],
+    "preparations": [
+      "хранение_в_сухом_прохладном_месте",
+      "подача_к_чаю"
+    ],
+    "cooking_methods": [
+      {
+        "method": "выпечка",
+        "priority": "high"
+      },
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "чай",
+      "праздничный_стол",
+      "подарок"
+    ],
+    "pairings": {
+      "protein": [],
+      "drinks": ["черный_чай", "травяной_чай", "молоко", "кофе"],
+      "jams": ["клюквенное", "вишневое", "яблочное"],
+      "sweeteners": ["мёд"]
+    },
+    "substitutes": [
+      {
+        "name": "Имбирные пряники",
+        "similarity": "medium"
+      },
+      {
+        "name": "Коврижка",
+        "similarity": "high"
+      },
+      {
+        "name": "Печенье имбирное",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "пряники",
+    "медовые_пряники",
+    "русская_кухня",
+    "десерт",
+    "чай",
+    "выпечка"
+  ]
+}

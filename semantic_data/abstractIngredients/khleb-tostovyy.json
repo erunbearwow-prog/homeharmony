@@ -1,0 +1,72 @@
+
+{
+  "name": "Хлеб тостовый",
+  "name_normalized": "khleb-tostovyy",
+  "synonyms": "тостовый хлеб, хлеб для тостов, белый хлеб для тостов, тостовый батон, хлеб для сэндвичей, sandwich bread, toast bread",
+  "short_description": "Специальный белый хлеб с мелкопористой, однородной структурой, предназначенный для приготовления тостов. Имеет мягкую, нежную текстуру, тонкую корочку и нейтральный вкус. Идеален для завтраков, сэндвичей и горячих бутербродов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Тостовый хлеб — это разновидность белого хлеба, специально разработанная для приготовления тостов. В отличие от обычного белого хлеба, тостовый имеет более мелкопористую, однородную структуру, мягкую, нежную текстуру и тонкую корочку, которая при поджаривании становится хрустящей. Обычно выпекается в форме «кирпичика» и нарезается на равномерные ломтики. Благодаря своей нейтральности и способности хорошо впитывать масло, тостовый хлеб идеально подходит для завтраков, сэндвичей и горячих бутербродов.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мягкая, нежная, мелкопористая, однородная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, слегка сладковатый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — корочка бледно-золотистая, мякиш белый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — пшеничная мука, вода, соль, сахар, дрожжи, иногда молоко</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 2-4 дня</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тосты</strong> — с маслом, джемом, яйцом, авокадо</li><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — холодные и горячие</li><li class=\"ingredient-list-item\"><strong>Сэндвичи</strong> — с разнообразными начинками</li><li class=\"ingredient-list-item\"><strong>Гренки</strong> — для супов и салатов</li><li class=\"ingredient-list-item\"><strong>Завтраки</strong> — яичница с тостами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Масло, маргарин</strong> — для тостов</li><li class=\"ingredient-list-item\"><strong>Джемы, варенье, мёд</strong> — для сладких тостов</li><li class=\"ingredient-list-item\"><strong>Яйца</strong> — яичница, омлет</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — для горячих бутербродов</li><li class=\"ingredient-list-item\"><strong>Авокадо, помидоры, зелень</strong> — для сэндвичей</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Белый батон</strong> — похожая текстура</li><li class=\"ingredient-list-item\"><strong>Формовой хлеб</strong> — более плотный</li><li class=\"ingredient-list-item\"><strong>Цельнозерновой хлеб</strong> — для полезных тостов</li></ul>",
+  "category": "ХЛЕБ, ВЫПЕЧКА, ХЛЕБОБУЛОЧНЫЕ ИЗДЕЛИЯ",
+  "semantic_data": {
+    "properties": [
+      "хлеб",
+      "тостовый",
+      "мелкопористый",
+      "мягкий",
+      "нейтральный_вкус",
+      "тонкая_корочка"
+    ],
+    "preparations": [
+      "хранение_в_хлебнице",
+      "поджаривание_в_тостере",
+      "нарезка_ломтиками"
+    ],
+    "cooking_methods": [
+      {
+        "method": "поджаривание",
+        "priority": "high"
+      },
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_бутербродов",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "тосты",
+      "бутерброды",
+      "сэндвичи",
+      "завтраки"
+    ],
+    "pairings": {
+      "protein": ["яйца", "сыр", "ветчина"],
+      "dairy": ["масло", "маргарин"],
+      "sweet": ["джем", "варенье", "мёд"],
+      "vegetables": ["авокадо", "помидоры", "зелень"]
+    },
+    "substitutes": [
+      {
+        "name": "Белый батон",
+        "similarity": "high"
+      },
+      {
+        "name": "Формовой хлеб",
+        "similarity": "medium"
+      },
+      {
+        "name": "Цельнозерновой хлеб",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "хлеб",
+    "тостовый_хлеб",
+    "тосты",
+    "бутерброды",
+    "завтрак",
+    "сэндвичи"
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "name": "Авокадо",
+  "name_normalized": "avokado",
+  "synonyms": "",
+  "short_description": "Маслянистый плод с тёмно-зелёной бугристой кожицей и нежной зеленовато-жёлтой мякотью. Богат полезными мононенасыщенными жирами, витаминами и минералами.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Авокадо — это крупный ягодообразный плод вечнозелёного дерева рода Персея. Имеет грушевидную или округлую форму, тёмно-зелёную бугристую кожицу и маслянистую мякоть с характерным орехово-травянистым вкусом. Благодаря высокому содержанию полезных мононенасыщенных жиров (олеиновая кислота) и низкому содержанию углеводов широко используется в вегетарианской и здоровой кухне.</p><h2 class=\"ingredient-title\">Сорта и виды</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хасс (Hass)</strong> — самый популярный сорт, с тёмной бугристой кожицей, маслянистой мякотью</li><li class=\"ingredient-list-item\"><strong>Фуэрте (Fuerte)</strong> — грушевидной формы, с гладкой зелёной кожицей, менее жирный</li><li class=\"ingredient-list-item\"><strong>Бэкон (Bacon)</strong> — светлая гладкая кожица, водянистая мякоть</li></ul><h2 class=\"ingredient-title\">Состав и свойства</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жиры</strong> — 15-20%, преимущественно полезные мононенасыщенные</li><li class=\"ingredient-list-item\"><strong>Калий</strong> — больше, чем в бананах</li><li class=\"ingredient-list-item\"><strong>Витамины</strong> — K, E, C, B6, фолаты</li><li class=\"ingredient-list-item\"><strong>Клетчатка</strong> — 7-8% от массы</li></ul><h2 class=\"ingredient-title\">Способы подготовки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Определение зрелости</strong> — лёгкое нажатие: плод должен немного проминаться</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — разрезать вдоль вокруг косточки, повернуть половинки, удалить косточку</li><li class=\"ingredient-list-item\"><strong>Очистка</strong> — мякоть легко отделяется ложкой</li><li class=\"ingredient-list-item\"><strong>Сбрызнуть лимонным соком</strong> — чтобы не темнела</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гуакамоле</strong> — классический мексиканский соус</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с помидорами, огурцами, красным луком</li><li class=\"ingredient-list-item\"><strong>Тосты</strong> — намазка на хлеб с солью и перцем</li><li class=\"ingredient-list-item\"><strong>Смузи</strong> — придаёт кремовую текстуру</li><li class=\"ingredient-list-item\"><strong>Роллы и суши</strong> — классическая начинка</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Цитрусовые:</strong> лайм, лимон, апельсин</li><li class=\"ingredient-list-item\"><strong>Овощи:</strong> помидоры, огурцы, красный лук, кукуруза</li><li class=\"ingredient-list-item\"><strong>Зелень:</strong> кинза, базилик, мята</li><li class=\"ingredient-list-item\"><strong>Морепродукты:</strong> креветки, краб, лосось</li><li class=\"ingredient-list-item\"><strong>Хлеб и тосты:</strong> заквасочный, ржаной</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>В гуакамоле</strong> — зелёный горошек (пюре), эдамаме</li><li class=\"ingredient-list-item\"><strong>В салатах</strong> — оливковое масло, сыр тофу</li><li class=\"ingredient-list-item\"><strong>В смузи</strong> — банан, манго</li><li class=\"ingredient-list-item\"><strong>На тосты</strong> — хумус, рикотта</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/nutrition/polza-avokado/'>Польза авокадо</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/guacamole/'>Классический гуакамоле</a></li></ul>",
+  "category": "Фрукты",
+  "semantic_data": {
+    "properties": [
+      "маслянистый",
+      "кремовый",
+      "орехово-травянистый",
+      "богатый_жирами",
+      "богатый_калием",
+      "витаминный",
+      "низкоуглеводный"
+    ],
+    "preparations": [
+      "определение_зрелости",
+      "разрезание_вокруг_косточки",
+      "удаление_косточки",
+      "очистка_от_кожицы",
+      "сбрызгивание_лимонным_соком"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "измельчение_в_пюре",
+        "priority": "high"
+      },
+      {
+        "method": "нарезка_кубиками",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "гуакамоле",
+      "салаты",
+      "тосты",
+      "смузи",
+      "суши_и_роллы"
+    ],
+    "pairings": {
+      "protein": [
+        "креветки",
+        "краб",
+        "лосось",
+        "курица"
+      ],
+      "vegetables": [
+        "помидоры",
+        "огурцы",
+        "красный_лук",
+        "кукуруза"
+      ],
+      "fruits": [
+        "лайм",
+        "лимон",
+        "апельсин"
+      ],
+      "herbs": [
+        "кинза",
+        "базилик",
+        "мята"
+      ],
+      "breads": [
+        "заквасочный_хлеб",
+        "ржаной_хлеб"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Зелёный горошек (пюре)",
+        "similarity": "low"
+      },
+      {
+        "name": "Банан (в смузи)",
+        "similarity": "low"
+      },
+      {
+        "name": "Хумус (на тосты)",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "фрукт",
+    "авокадо",
+    "гуакамоле",
+    "здоровое_питание",
+    "вегетарианство",
+    "мексиканская_кухня"
+  ]
+}

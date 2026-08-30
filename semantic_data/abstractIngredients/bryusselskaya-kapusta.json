@@ -1,0 +1,55 @@
+{
+  "name": "Брюссельская капуста",
+  "name_normalized": "bryusselskaya-kapusta",
+  "synonyms": "брюссельская капуста, капуста брюссельская, кочанчиковая капуста, Brussels sprouts, sprout",
+  "short_description": "Миниатюрные кочанчики, растущие на высоком стебле, — овощ семейства Капустные с плотной структурой и сладковато-ореховым вкусом. Богата витаминами C и K, клетчаткой, фолатами. Используется как гарнир, в салатах и запеканках.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Брюссельская капуста — это овощное растение семейства Капустные, которое образует на высоком стебле множество мелких кочанчиков размером с грецкий орех. Каждый кочанчик состоит из плотно прилегающих друг к другу листьев. Брюссельская капуста отличается ярким зелёным цветом, плотной текстурой и нежным сладковато-ореховым вкусом с лёгкой горчинкой. Это один из самых полезных овощей — богата витаминами C и K, фолатами, клетчаткой, калием и антиоксидантами. Популярна в европейской кухне как гарнир, в салатах, запеканках и супах.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, с характерной слоистой структурой</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, с лёгкой горчинкой и ореховыми нотками</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — ярко-зелёный</li><li class=\"ingredient-list-item\"><strong>Размер</strong> — 2-4 см в диаметре</li><li class=\"ingredient-list-item\"><strong>Витамины</strong> — C, K, A, фолаты</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — осень-зима</li></ul><h2 class=\"ingredient-title\">Сорта и виды</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Ранние сорта</strong> — более мелкие, сладкие</li><li class=\"ingredient-list-item\"><strong>Поздние сорта</strong> — более плотные, с выраженной горчинкой</li><li class=\"ingredient-list-item\"><strong>Фиолетовая брюссельская капуста</strong> — редкий сорт с фиолетовыми листьями</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойка</strong> — тщательно промыть под проточной водой</li><li class=\"ingredient-list-item\"><strong>Удаление внешних листьев</strong> — снять пожелтевшие или повреждённые листья</li><li class=\"ingredient-list-item\"><strong>Обрезка</strong> — срезать твёрдую кочерыжку</li><li class=\"ingredient-list-item\"><strong>Надрезание крестом</strong> — для равномерного пропекания (рекомендуется)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с оливковым маслом, чесноком, специями</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — 5-10 минут до мягкости</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде, с беконом или орехами</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — к мясу, птице, рыбе</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — в сыром виде, с маслом и лимоном</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — овощные супы, крем-супы</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — пармезан, чеддер</li><li class=\"ingredient-list-item\"><strong>Бекон</strong> — классическое сочетание</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — кедровые, грецкие, пекан</li><li class=\"ingredient-list-item\"><strong>Масла</strong> — оливковое, сливочное</li><li class=\"ingredient-list-item\"><strong>Клюква</strong> — сушёная, для контраста</li><li class=\"ingredient-list-item\"><strong>Чеснок</strong> — для аромата</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Цветная капуста</strong> — похожая текстура</li><li class=\"ingredient-list-item\"><strong>Брокколи</strong> — схожий вкус</li><li class=\"ingredient-list-item\"><strong>Капуста белокочанная</strong> — в супах</li></ul>",
+  "category": "Капуста белокачанная, краснокачанная",
+  "semantic_data": {
+    "properties": [
+      "овощ",
+      "кочанчики",
+      "зелёный",
+      "плотный",
+      "сладковатый",
+      "витаминный"
+    ],
+    "preparations": [
+      "мойка_и_обрезка",
+      "удаление_внешних_листьев",
+      "надрезание_крестом"
+    ],
+    "cooking_methods": [
+      {"method": "запекание", "priority": "high"},
+      {"method": "варка", "priority": "high"},
+      {"method": "жарка", "priority": "high"},
+      {"method": "свежее_употребление_в_салатах", "priority": "medium"}
+    ],
+    "applications": [
+      "гарниры",
+      "салаты",
+      "супы",
+      "запеканки"
+    ],
+    "pairings": {
+      "protein": ["пармезан", "чеддер", "бекон", "курица"],
+      "nuts": ["кедровые_орехи", "грецкие_орехи", "пекан"],
+      "oils": ["оливковое_масло", "сливочное_масло"],
+      "fruits": ["клюква"],
+      "herbs": ["чеснок", "тимьян", "розмарин"]
+    },
+    "substitutes": [
+      {"name": "Цветная капуста", "similarity": "high"},
+      {"name": "Брокколи", "similarity": "high"},
+      {"name": "Капуста белокочанная", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "овощ",
+    "брюссельская_капуста",
+    "гарнир",
+    "запекание",
+    "витамины",
+    "диетический"
+  ]
+}

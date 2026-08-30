@@ -1,0 +1,95 @@
+{
+  "name": "Куриная печень",
+  "name_normalized": "kurinaya-pechen",
+  "synonyms": "",
+  "short_description": "Субпродукт с нежной текстурой и мягким сладковатым вкусом. Богата железом, витаминами A и группы B, быстро готовится и подходит для жарки, тушения и паштетов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Куриная печень — это субпродукт, который отличается нежной, рыхлой текстурой и мягким сладковатым вкусом, свойственным печени, но без выраженной горечи. Она богата железом, витаминами A, D, E и группы B, а также фолиевой кислотой, что делает её ценным продуктом для питания. Благодаря небольшим размерам и рыхлой структуре, печень готовится очень быстро — всего 5-10 минут, что является её главным преимуществом.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, рыхлая, мягкая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — мягкий, сладковатый, печёночный</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — низкая (3-5%)</li><li class=\"ingredient-list-item\"><strong>Белки</strong> — до 18%</li><li class=\"ingredient-list-item\"><strong>Железо</strong> — богатый источник</li><li class=\"ingredient-list-item\"><strong>Витамины</strong> — A, D, E, группы B, фолиевая кислота</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Промывка</strong> — холодной водой, обсушить</li><li class=\"ingredient-list-item\"><strong>Удаление жира и плёнок</strong> — для удаления горечи</li><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — в молоке (по желанию, для мягкости)</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — полосками или оставить целой</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде с луком, в панировке</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в сметанном, сливочном соусе</li><li class=\"ingredient-list-item\"><strong>Паштет</strong> — с маслом, луком</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью и яйцом</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — для бульона</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, чеснок, картофель</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, сливочный, томатный</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, паприка, чеснок, тимьян</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжья печень</strong> — плотнее, с более выраженным вкусом</li><li class=\"ingredient-list-item\"><strong>Свиная печень</strong> — горьковатая</li><li class=\"ingredient-list-item\"><strong>Куриные желудки</strong> — для тушения</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/pechen-kurinaya/'>Жареная куриная печень с луком</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/pashtet-pechenochnyy/'>Паштет из куриной печени</a></li></ul>",
+  "category": "Субпродукты птицы",
+  "semantic_data": {
+    "properties": [
+      "субпродукт",
+      "курица",
+      "печень",
+      "нежный",
+      "быстрое_приготовление",
+      "богат_железом",
+      "витаминный"
+    ],
+    "preparations": [
+      "промыть_и_обсушить",
+      "удалить_жир_и_плёнки",
+      "замочить_в_молоке_по_желанию"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "паштет",
+        "priority": "high"
+      },
+      {
+        "method": "варка_для_салатов",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "вторые_блюда",
+      "закуски",
+      "паштеты",
+      "салаты"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "лук",
+        "морковь",
+        "чеснок",
+        "картофель"
+      ],
+      "sauces": [
+        "сметанный",
+        "сливочный",
+        "томатный"
+      ],
+      "spices": [
+        "черный_перец",
+        "паприка",
+        "чеснок",
+        "тимьян"
+      ],
+      "herbs": [
+        "петрушка",
+        "укроп"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Говяжья печень",
+        "similarity": "medium"
+      },
+      {
+        "name": "Свиная печень",
+        "similarity": "medium"
+      },
+      {
+        "name": "Куриные желудки",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "субпродукты",
+    "курица",
+    "печень",
+    "жарка",
+    "паштет",
+    "железо",
+    "быстрое_приготовление"
+  ]
+}

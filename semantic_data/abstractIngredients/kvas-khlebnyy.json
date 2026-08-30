@@ -1,0 +1,69 @@
+{
+  "name": "Квас хлебный",
+  "name_normalized": "kvas-khlebnyy",
+  "synonyms": "хлебный квас, квас, квас на ржаном хлебе, квас домашний, классический квас, квас из сухарей, русский квас",
+  "short_description": "Традиционный русский прохладительный напиток, приготовленный путем брожения ржаного хлеба (сухарей) с добавлением сахара и дрожжей. Имеет характерный кисловато-сладкий вкус, темно-коричневый цвет и насыщенный хлебный аромат. Один из самых древних и популярных напитков в русской кухне.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Хлебный квас — это традиционный русский прохладительный напиток, который готовят путем брожения ржаного хлеба (обычно сухарей или корочек) с добавлением сахара, воды и дрожжей. В процессе брожения образуется характерный кисловато-сладкий вкус, легкая газированность и насыщенный хлебный аромат. Квас считается одним из самых древних напитков в русской кухне, известным с X-XI веков. Он не только утоляет жажду, но и обладает полезными свойствами благодаря содержанию витаминов группы B, ферментов и молочной кислоты.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисловато-сладкий, освежающий, с хлебным ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — темно-коричневый, янтарный</li><li class=\"ingredient-list-item\"><strong>Газированность</strong> — слабая или умеренная (естественное брожение)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 3-5 дней в холодильнике (домашний), до 3-6 месяцев (бутилированный)</li><li class=\"ingredient-list-item\"><strong>Алкоголь</strong> — минимальное содержание (0,5-1,2%), в промышленном менее 0,5%</li></ul><h2 class=\"ingredient-title\">Виды хлебного кваса</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Домашний (классический)</strong> — на ржаных сухарях, с сахаром и дрожжами, натуральное брожение</li><li class=\"ingredient-list-item\"><strong>Промышленный (бутилированный)</strong> — пастеризованный, с длительным сроком хранения</li><li class=\"ingredient-list-item\"><strong>Сухой квас</strong> — концентрат для быстрого приготовления</li><li class=\"ingredient-list-item\"><strong>Квас с добавками</strong> — с мятой, изюмом, ягодами, медом</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Напиток</strong> — в чистом виде, с льдом</li><li class=\"ingredient-list-item\"><strong>Основа для окрошки</strong> — классический ингредиент</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — для мяса, рыбы</li><li class=\"ingredient-list-item\"><strong>Тушение мяса</strong> — придает кисловатый оттенок</li><li class=\"ingredient-list-item\"><strong>Коктейли</strong> — с фруктами, ягодами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — шашлык, свинина, говядина</li><li class=\"ingredient-list-item\"><strong>Окрошка</strong> — классическая подача</li><li class=\"ingredient-list-item\"><strong>Мед, мята, изюм</strong> — для добавления в напиток</li><li class=\"ingredient-list-item\"><strong>Лед</strong> — для подачи</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Квасной напиток</strong> — безалкогольный аналог</li><li class=\"ingredient-list-item\"><strong>Тархун</strong> — другой травяной напиток</li><li class=\"ingredient-list-item\"><strong>Лимонад</strong> — сладкий</li></ul>",
+  "category": "БЕЗАЛКОГОЛЬНЫЕ НАПИТКИ",
+  "semantic_data": {
+    "properties": [
+      "напиток",
+      "квас",
+      "хлебный",
+      "освежающий",
+      "кисловато-сладкий",
+      "полезный",
+      "традиционный"
+    ],
+    "preparations": [
+      "приготовление_в_домашних_условиях",
+      "хранение_в_холодильнике",
+      "подача_с_льдом"
+    ],
+    "cooking_methods": [
+      {
+        "method": "брожение",
+        "priority": "high"
+      },
+      {
+        "method": "охлаждение",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "напиток",
+      "основа_для_окрошки",
+      "соусы",
+      "тушение_мяса"
+    ],
+    "pairings": {
+      "protein": ["мясо", "говядина", "свинина"],
+      "herbs": ["мята"],
+      "fruits": ["изюм", "ягоды"],
+      "sweeteners": ["мёд"],
+      "other": ["лед"]
+    },
+    "substitutes": [
+      {
+        "name": "Квасной напиток",
+        "similarity": "high"
+      },
+      {
+        "name": "Тархун",
+        "similarity": "low"
+      },
+      {
+        "name": "Лимонад",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "напиток",
+    "квас",
+    "хлебный_квас",
+    "русская_кухня",
+    "освежающий",
+    "окрошка"
+  ]
+}

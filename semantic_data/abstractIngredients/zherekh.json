@@ -1,0 +1,70 @@
+{
+  "name": "Жерех",
+  "name_normalized": "zherekh",
+  "synonyms": "жерех, обыкновенный жерех, шереспёр, шелеспёр, жерих, черех, белесть, белезна, красногубый жерех, аральский жерех, шилишпёр, Aspius aspius, Leuciscus aspius, хищная рыба, речная рыба, карповые",
+  "short_description": "Крупная хищная рыба семейства карповых с веретенообразным серебристым телом, характерным бугром на нижней челюсти и тёмной синевато-серой спиной. Отличается плотным белым мясом, ценится в копчёном, вяленом виде, а также для запекания и жарки.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Жерех — крупная хищная рыба семейства карповых, которая обитает в реках бассейнов Чёрного, Каспийского и Балтийского морей, а также в Средней Азии. Тело удлинённое, веретенообразное, покрыто мелкой чешуёй. Спина темно-синевато-серая, бока серебристо-сероватые, брюхо белое. Голова крупная, с выдающейся кверху нижней челюстью и характерным бугорком. Достигает длины до 80-120 см и массы до 12 кг, обычно 1,5-2 кг. Обитает в больших и средних реках, избегает стоячей воды, держится у поверхности.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — белое, плотное, вкусное, с содержанием жира до 8%</li><li class=\"ingredient-list-item\"><strong>Костистость</strong> — как и у большинства карповых, жерех костистый, содержит мелкие кости</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный рыбный, без выраженного запаха тины</li><li class=\"ingredient-list-item\"><strong>Размер</strong> — до 120 см, вес до 12 кг (редко), обычно 1,5-2 кг</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — не имеет зубов, добычу оглушает ударом хвоста</li><li class=\"ingredient-list-item\"><strong>Среды обитания</strong> — пресноводные водоёмы, крупные реки с чистой проточной водой</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Чистка</strong> — удалить чешую, выпотрошить, удалить жабры</li><li class=\"ingredient-list-item\"><strong>Удаление плавников</strong> — срезать плавники ножницами</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — тщательно промыть внутри и снаружи</li><li class=\"ingredient-list-item\"><strong>Удаление костей</strong> — при необходимости удалять мелкие кости</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — рекомендуется для запекания (с лимоном, травами)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Копчение</strong> — горячее и холодное копчение</li><li class=\"ingredient-list-item\"><strong>Вяление</strong> — классическое применение для жереха</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — целиком или порционными кусками с овощами, лимоном</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — в панировке до хрустящей корочки</li><li class=\"ingredient-list-item\"><strong>Фарширование</strong> — как щуку, с овощами или грибами</li><li class=\"ingredient-list-item\"><strong>Уха</strong> — из головы, хвоста и плавников</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в сметане или томатном соусе</li><li class=\"ingredient-list-item\"><strong>Салат «Хе»</strong> — с уксусом и овощами</li><li class=\"ingredient-list-item\"><strong>Маринование и консервация</strong> — в томатном маринаде</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, лук, морковь, помидоры, перец, сельдерей</li><li class=\"ingredient-list-item\"><strong>Грибы</strong> — опята, шампиньоны</li><li class=\"ingredient-list-item\"><strong>Коренья</strong> — корень петрушки, корень сельдерея</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, томатный, чесночный, белый соус</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, тимьян</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, лавровый лист, лимон, бальзамический уксус</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — вино, лимонный сок, уксус</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Щука</strong> — схожая плотность мяса, также пригодна для фарширования</li><li class=\"ingredient-list-item\"><strong>Судак</strong> — нежная, менее костистая текстура</li><li class=\"ingredient-list-item\"><strong>Окунь</strong> — схожая семейная принадлежность</li><li class=\"ingredient-list-item\"><strong>Сазан</strong> — также карповая рыба, но более жирная</li></ul>",
+  "category": "Рыба и морепродукты",
+  "semantic_data": {
+    "properties": [
+      "пресноводная",
+      "хищная",
+      "крупная",
+      "белое мясо",
+      "плотное",
+      "жирное",
+      "костистое",
+      "карповые",
+      "речная",
+      "для копчения",
+      "для запекания"
+    ],
+    "preparations": [
+      "чистка и удаление чешуи",
+      "потрошение и удаление жабр",
+      "срезание плавников",
+      "тщательная промывка",
+      "удаление мелких костей"
+    ],
+    "cooking_methods": [
+      {"method": "копчение", "priority": "high"},
+      {"method": "вяление", "priority": "high"},
+      {"method": "запекание в духовке", "priority": "high"},
+      {"method": "жарка в панировке", "priority": "high"},
+      {"method": "фарширование", "priority": "medium"},
+      {"method": "тушение", "priority": "medium"},
+      {"method": "консервация в маринаде", "priority": "medium"},
+      {"method": "варка ухи", "priority": "medium"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "закуски (копченые, вяленые)",
+      "супы и бульоны",
+      "консервация"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "лук", "морковь", "помидоры", "перец", "сельдерей"],
+      "sauces": ["сметанный", "томатный", "чесночный", "белый соус"],
+      "herbs": ["петрушка", "укроп", "тимьян"],
+      "spices": ["черный перец", "лавровый лист", "лимон", "бальзамический уксус"]
+    },
+    "substitutes": [
+      {"name": "Щука", "similarity": "high"},
+      {"name": "Судак", "similarity": "medium"},
+      {"name": "Окунь", "similarity": "medium"},
+      {"name": "Сазан", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "рыба",
+    "пресноводная",
+    "жерех",
+    "хищная рыба",
+    "карповые",
+    "копчение",
+    "запекание",
+    "вяление",
+    "речная рыба"
+  ]
+}

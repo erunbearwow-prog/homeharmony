@@ -1,0 +1,91 @@
+{
+  "name": "Сыр Тильзитер",
+  "name_normalized": "syr_tilziter",
+  "synonyms": "тильзитер, Tilsiter, тильзитский сыр, Tilsit, сыр Тильзитер, полутвердый сыр, сыр с дырочками, сыр для бутербродов, сыр для пиццы, швейцарский сыр, немецкий сыр, сыр из Калининграда",
+  "short_description": "Светло-желтый полутвердый сыр с умеренно плотной текстурой, неровными глазками и пикантным, слегка островатым вкусом. Имеет богатую историю: был создан в середине XIX века в городе Тильзит (ныне Советск Калининградской области). Универсален в кулинарии.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Тильзитер — это светло-желтый полутвердый сыр, который был создан в середине XIX века в городе Тильзит (ныне Советск в Калининградской области) прусско-швейцарскими поселенцами. Сегодня его производят в Швейцарии, Германии и России. Сыр имеет умеренно плотную текстуру с характерными неровными глазками и трещинками. Вкус — пикантный, слегка островатый, с пряными нотками. Часто в состав добавляют тмин или черный перец. Тильзитер — универсальный сыр: его используют для бутербродов, салатов, соусов, пиццы и горячих блюд.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тип</strong> — полутвердый</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — умеренно плотная, эластичная, с неровными глазками и трещинами</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — пикантный, слегка островатый, пряный</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — светло-желтый, золотистый</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — 30-60% (в российских магазинах обычно 45%)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 180 суток</li></ul><h2 class=\"ingredient-title\">Состав (типичный для российских производителей)</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\">Молоко пастеризованное (нормализованное)</li><li class=\"ingredient-list-item\">Соль пищевая</li><li class=\"ingredient-list-item\">Бактериальная закваска (мезофильных и термофильных молочнокислых микроорганизмов)</li><li class=\"ingredient-list-item\">Молокосвертывающий ферментный препарат</li><li class=\"ingredient-list-item\">Уплотнитель — хлорид кальция</li><li class=\"ingredient-list-item\">Консервант — нитрат натрия или нитрат калия</li><li class=\"ingredient-list-item\">Краситель — каротины или аннато</li></ul><h2 class=\"ingredient-title\">Подготовка и хранение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике при температуре от +2 до +6°C</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — ломтиками, кубиками, соломкой</li><li class=\"ingredient-list-item\"><strong>Тёрка</strong> — хорошо натирается</li><li class=\"ingredient-list-item\"><strong>Подача</strong> — рекомендуется достать за 15-20 минут до подачи</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды и сэндвичи</strong> — классическое использование</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — добавляет пикантность</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — в расплавленном виде</li><li class=\"ingredient-list-item\"><strong>Пицца и запеканки</strong> — хорошо плавится</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — с картофелем, в пирогах</li><li class=\"ingredient-list-item\"><strong>Сырная тарелка</strong> — в сочетании с ржаным хлебом и темным пивом</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, черный хлеб, багет</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, лук, картофель</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — колбасы, ветчина</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — темное пиво</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыр гауда</strong> — схожая текстура</li><li class=\"ingredient-list-item\"><strong>Сыр эдам</strong> — похожий вкус</li><li class=\"ingredient-list-item\"><strong>Сыр маасдам</strong> — с глазками</li><li class=\"ingredient-list-item\"><strong>Сыр российский</strong> — доступный аналог</li></ul>",
+  "category": "Молочные продукты",
+  "semantic_data": {
+    "properties": [
+      "полутвердый",
+      "светло-желтый",
+      "пикантный",
+      "островатый",
+      "пряный",
+      "с глазками",
+      "исторический",
+      "универсальный",
+      "для бутербродов",
+      "для соусов",
+      "для пиццы"
+    ],
+    "preparations": [
+      "хранение в холодильнике при +2-6°C",
+      "нарезка ломтиками или кубиками",
+      "натирание на тёрке",
+      "достать за 15-20 минут до подачи"
+    ],
+    "cooking_methods": [
+      {
+        "method": "использование в бутербродах",
+        "priority": "high"
+      },
+      {
+        "method": "плавление в соусах и горячих блюдах",
+        "priority": "high"
+      },
+      {
+        "method": "использование в салатах",
+        "priority": "medium"
+      },
+      {
+        "method": "подача в сырной тарелке",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "бутерброды и сэндвичи",
+      "салаты",
+      "соусы",
+      "пицца и запеканки",
+      "горячие блюда",
+      "сырная тарелка"
+    ],
+    "pairings": {
+      "protein": ["колбасы", "ветчина"],
+      "vegetables": ["помидоры", "лук", "картофель"],
+      "sauces": [],
+      "herbs": [],
+      "spices": ["тмин", "черный перец"]
+    },
+    "substitutes": [
+      {
+        "name": "Сыр гауда",
+        "similarity": "high"
+      },
+      {
+        "name": "Сыр эдам",
+        "similarity": "high"
+      },
+      {
+        "name": "Сыр маасдам",
+        "similarity": "medium"
+      },
+      {
+        "name": "Сыр российский",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "сыр",
+    "тильзитер",
+    "полутвердый сыр",
+    "исторический сыр",
+    "прусский сыр",
+    "швейцарский сыр",
+    "сыр для бутербродов",
+    "сыр для пиццы",
+    "сырная тарелка"
+  ]
+}

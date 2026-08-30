@@ -1,0 +1,75 @@
+{
+  "name": "Говяжья тазобедренная часть",
+  "name_normalized": "govyazhya-tazobedrennaya-chast",
+  "synonyms": "тазобедренная часть говядины, говяжий окорок, бедренная часть, кострец, огузок, говядина задняя часть",
+  "short_description": "Мясной полуфабрикат из тазобедренной части говяжьей туши, содержащий постное мясо с тонкими жировыми прослойками. Идеален для жарки, запекания, приготовления бифштексов, рулетов и тушёных блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Говяжья тазобедренная часть — это часть туши, расположенная в области таза и бедра. Мясо этой части отличается постной структурой с небольшими жировыми прослойками, что делает его идеальным для жарки, запекания и приготовления бифштексов. Благодаря нежному вкусу и плотной текстуре, тазобедренная часть широко используется для приготовления стейков, рулетов, тушёных блюд, а также для вяления и копчения.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, постная, с тонкими жировыми прослойками</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, мясной</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — низкая (5-10%)</li><li class=\"ingredient-list-item\"><strong>Структура</strong> — волокнистая, плотная</li><li class=\"ingredient-list-item\"><strong>Время приготовления</strong> — 15-40 минут (жарка), 1-2 часа (тушение)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — бифштексы, стейки, медальоны</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — целиком или крупными кусками</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с овощами и соусом</li><li class=\"ingredient-list-item\"><strong>Вяление</strong> — для сыровяленых деликатесов</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — для копчёных продуктов</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук, спаржа, перец</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — красный винный, перечный, грибной, сливочный</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, розмарин, тимьян, чеснок</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжий кострец</strong> — похожая часть</li><li class=\"ingredient-list-item\"><strong>Говяжья вырезка</strong> — более нежная</li><li class=\"ingredient-list-item\"><strong>Свиная тазобедренная часть</strong> — жирнее</li></ul>",
+  "category": "Говядина",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "говядина",
+      "тазобедренная",
+      "постный",
+      "универсальный",
+      "плотный"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "нарезка_стейками",
+      "запекание_целиком"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "medium"
+      },
+      {
+        "method": "вяление",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "стейки",
+      "бифштексы",
+      "рулеты",
+      "вяленые_деликатесы"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "морковь", "лук", "спаржа", "перец"],
+      "sauces": ["красный_винный", "перечный", "грибной", "сливочный"],
+      "spices": ["черный_перец", "розмарин", "тимьян", "чеснок"]
+    },
+    "substitutes": [
+      {
+        "name": "Говяжий кострец",
+        "similarity": "high"
+      },
+      {
+        "name": "Говяжья вырезка",
+        "similarity": "high"
+      },
+      {
+        "name": "Свиная тазобедренная часть",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "говядина",
+    "тазобедренная_часть",
+    "стейк",
+    "жарка",
+    "запекание"
+  ]
+}

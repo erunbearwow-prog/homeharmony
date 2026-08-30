@@ -1,0 +1,55 @@
+{
+  "name": "Салями",
+  "name_normalized": "salyami",
+  "synonyms": "salami, салями итальянская, салями вяленая, сыровяленая колбаса (в широком смысле), пепперони (острая разновидность)",
+  "short_description": "Традиционная итальянская сыровяленая колбаса из свинины, говядины или смеси мяса, с добавлением соли, специй, чеснока и ферментов. Имеет плотную твёрдую текстуру, насыщенный пряный вкус, характерный рисунок жировых вкраплений и длительный срок хранения.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Салями — это традиционная итальянская сыровяленая колбаса, которая изготавливается из свинины, говядины или их смеси с добавлением соли, специй (обычно чеснок, перец, фенхель, паприка) и ферментов. Салями имеет характерный рисунок на срезе: плотное тёмное мясо с белыми жировыми вкраплениями. Процесс созревания занимает от 2 до 6 недель, при этом колбаса медленно теряет влагу, приобретая плотную, твёрдую текстуру и насыщенный, пряный, слегка пикантный вкус с лёгкой кислинкой ферментации. Салями — это не просто продукт, а целая категория с множеством региональных разновидностей по всей Италии и Европе.</p><h2 class=\"ingredient-title\">Виды салями</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Миланская салями</strong> — классическая, с чесноком и перцем</li><li class=\"ingredient-list-item\"><strong>Пепперони</strong> — острая, с большим количеством перца и паприки</li><li class=\"ingredient-list-item\"><strong>Наполитанская</strong> — с вином и чесноком</li><li class=\"ingredient-list-item\"><strong>Генуэзская</strong> — крупного помола, мягкая</li><li class=\"ingredient-list-item\"><strong>Унгарская салями</strong> — с паприкой, пикантная</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, твёрдая, упругая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, пряный, с нотами ферментации</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — тёмно-красный с белыми жировыми вкраплениями</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — свинина, говядина, соль, специи, ферменты</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 6 месяцев при комнатной температуре, до 9 месяцев в холодильнике</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — тонкие ломтики на хлеб с маслом</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — классическая нарезка с сыром и вином</li><li class=\"ingredient-list-item\"><strong>Пицца</strong> — добавка к пицце</li><li class=\"ingredient-list-item\"><strong>Паста</strong> — в соусы (вместе с томатами)</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью и овощами</li><li class=\"ingredient-list-item\"><strong>Брускетта</strong> — на гренках</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — пармезан, моцарелла, горгонзола</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — виноград, инжир, дыня</li><li class=\"ingredient-list-item\"><strong>Оливки</strong> — маслины, оливки</li><li class=\"ingredient-list-item\"><strong>Вино</strong> — красное сухое (кианти, бароло), вермут</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — чиабатта, багет, фокачча</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Чоризо</strong> — испанская острая колбаса</li><li class=\"ingredient-list-item\"><strong>Сыровяленая колбаса</strong> — любой аналог</li><li class=\"ingredient-list-item\"><strong>Сервелат</strong> — немецкая сыровяленая</li><li class=\"ingredient-list-item\"><strong>Пеперони</strong> — острая разновидность салями</li></ul>",
+  "category": "Колбасы сырокопченые и сыровяленые",
+  "semantic_data": {
+    "properties": [
+      "сыровяленая",
+      "итальянская",
+      "плотный",
+      "пряный",
+      "жирные_вкрапления",
+      "длительное_созревание"
+    ],
+    "preparations": [
+      "нарезка_тонкими_ломтиками",
+      "хранение_в_холодильнике"
+    ],
+    "cooking_methods": [
+      {"method": "свежее_употребление", "priority": "high"},
+      {"method": "добавление_в_пиццу", "priority": "high"},
+      {"method": "добавление_в_пасту", "priority": "medium"}
+    ],
+    "applications": [
+      "бутерброды",
+      "закуски",
+      "пицца",
+      "паста",
+      "салаты"
+    ],
+    "pairings": {
+      "protein": ["пармезан", "моцарелла", "горгонзола"],
+      "fruits": ["виноград", "инжир", "дыня"],
+      "vegetables": ["оливки", "маслины"],
+      "wines": ["кианти", "бароло", "вермут"],
+      "breads": ["чиабатта", "багет", "фокачча"]
+    },
+    "substitutes": [
+      {"name": "Чоризо", "similarity": "high"},
+      {"name": "Сыровяленая колбаса", "similarity": "high"},
+      {"name": "Сервелат", "similarity": "medium"},
+      {"name": "Пеперони", "similarity": "high"}
+    ]
+  },
+  "tags": [
+    "колбаса",
+    "салями",
+    "сыровяленая",
+    "итальянская_кухня",
+    "закуска",
+    "пицца"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "name": "Гречка",
+  "name_normalized": "grechka",
+  "synonyms": "гречневая крупа, гречка ядрица, гречка продел, гречневая каша, гречиха, гречневая крупа ядрица, гречневая крупа продел, buckwheat",
+  "short_description": "Популярная крупяная культура из семян гречихи. Имеет характерный коричневый цвет, плотную текстуру и яркий ореховый вкус. Богата железом, магнием, витаминами группы B и растительным белком. Широко используется для каш, гарниров, супов и выпечки.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Гречка — это крупа, получаемая из семян гречихи (Fagopyrum esculentum). В отличие от многих других круп, гречка не является злаком и не содержит глютен, что делает её подходящей для безглютенового питания. Она имеет характерный коричневый цвет (после обжарки) и яркий ореховый вкус. Гречка богата железом, магнием, фосфором, калием, витаминами группы B и растительным белком. Широко используется для приготовления каш, гарниров, супов, а также в качестве начинки и в выпечке. Является важным продуктом в русской, украинской и белорусской кухне.</p><h2 class=\"ingredient-title\">Виды гречки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Ядрица</strong> — цельные зёрна гречки, наиболее распространённый вид</li><li class=\"ingredient-list-item\"><strong>Продел</strong> — колотые зёрна, для быстрой варки</li><li class=\"ingredient-list-item\"><strong>Зелёная гречка</strong> — необжаренная, с более мягким вкусом</li><li class=\"ingredient-list-item\"><strong>Гречневая мука</strong> — молотые зёрна, для выпечки</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, рассыпчатая (ядрица), более мягкая (продел)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — ореховый, насыщенный</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — коричневый (обжаренная), светло-зелёный (зелёная)</li><li class=\"ingredient-list-item\"><strong>Глютен</strong> — не содержит</li><li class=\"ingredient-list-item\"><strong>Белки</strong> — до 12%</li><li class=\"ingredient-list-item\"><strong>Время варки</strong> — 15-20 минут</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Переборка</strong> — удалить мусор и некачественные зёрна</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — тщательно промыть в холодной воде</li><li class=\"ingredient-list-item\"><strong>Обжарка</strong> — для усиления орехового вкуса (зелёная гречка)</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — в кипящей воде</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Каша</strong> — классическое блюдо</li><li class=\"ingredient-list-item\"><strong>Гарнир</strong> — к мясу, рыбе, птице</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — в качестве добавки</li><li class=\"ingredient-list-item\"><strong>Начинка</strong> — для пирогов, голубцов</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — гречневая мука</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — свинина, говядина, курица</li><li class=\"ingredient-list-item\"><strong>Грибы</strong> — классическое сочетание</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, чеснок</li><li class=\"ingredient-list-item\"><strong>Масло</strong> — сливочное, растительное</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Рис</strong> — в гарнирах</li><li class=\"ingredient-list-item\"><strong>Булгур</strong> — похожая текстура</li><li class=\"ingredient-list-item\"><strong>Киноа</strong> — безглютеновый</li></ul>",
+  "category": "Крупы",
+  "semantic_data": {
+    "properties": [
+      "крупа",
+      "безглютеновый",
+      "ореховый_вкус",
+      "богат_железом",
+      "питательный"
+    ],
+    "preparations": [
+      "переборка_и_промывка",
+      "варка_15-20_минут",
+      "обжарка_для_усиления_вкуса"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "каши",
+      "гарниры",
+      "супы",
+      "начинки"
+    ],
+    "pairings": {
+      "protein": ["свинина", "говядина", "курица"],
+      "vegetables": ["лук", "морковь", "чеснок", "грибы"],
+      "oils": ["сливочное_масло", "растительное_масло"]
+    },
+    "substitutes": [
+      {
+        "name": "Рис",
+        "similarity": "medium"
+      },
+      {
+        "name": "Булгур",
+        "similarity": "medium"
+      },
+      {
+        "name": "Киноа",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "крупа",
+    "гречка",
+    "каша",
+    "гарнир",
+    "безглютеновый",
+    "русская_кухня"
+  ]
+}

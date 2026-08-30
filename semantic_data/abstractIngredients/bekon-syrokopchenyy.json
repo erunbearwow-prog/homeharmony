@@ -1,0 +1,103 @@
+{
+  "name": "Бекон сырокопченый",
+  "name_normalized": "bekon-syrokopchenyy",
+  "synonyms": "",
+  "short_description": "Сырокопченая свиная грудинка, обработанная солью и специями, затем подвергнутая холодному копчению. Имеет плотную текстуру, интенсивный копченый аромат и солоноватый вкус. Требует тонкой нарезки и широко используется для бутербродов, закусок и горячих блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Сырокопченый бекон — это мясной деликатес, изготавливаемый из свиной грудинки или корейки. Технология включает засолку мяса в рассоле или сухим способом с добавлением специй, затем его выдерживают для созревания и подвергают холодному копчению при температуре 20-25°C. В процессе холодного копчения бекон приобретает насыщенный золотисто-коричневый цвет, характерный аромат дыма и плотную упругую текстуру. В отличие от вареного бекона, сырокопченый имеет более интенсивный вкус и не требует дополнительной термической обработки перед употреблением, хотя часто используется в жареном виде для усиления аромата.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — солоноватый, с интенсивным копченым ароматом</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — умеренная, с жировыми прожилками</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — золотисто-коричневый, с тёмным ободком</li><li class=\"ingredient-list-item\"><strong>Температура копчения</strong> — 20-25°C</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 3 недель в холодильнике</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — тонкими ломтиками, поперёк волокон (для холодных закусок)</li><li class=\"ingredient-list-item\"><strong>Обжарка</strong> — для раскрытия аромата (1-2 минуты с каждой стороны)</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике, в вакуумной упаковке</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды и сэндвичи</strong> — с маслом, горчицей, овощами</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — с сыром, маслинами, солёными огурцами</li><li class=\"ingredient-list-item\"><strong>Паста</strong> — в крем-соусах (карбонара, аматричана)</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, яйцом, сыром</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — к яичнице, омлету, бобам, картофелю</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — пармезан, пекорино, чеддер</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, перец, лук, шпинат</li><li class=\"ingredient-list-item\"><strong>Яйца</strong> — в яичнице и омлете</li><li class=\"ingredient-list-item\"><strong>Макароны</strong> — в пасте</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, розмарин, тимьян</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бекон вареный</strong> — более нежный</li><li class=\"ingredient-list-item\"><strong>Панчетта</strong> — итальянский аналог</li><li class=\"ingredient-list-item\"><strong>Грудинка копченая</strong> — похожий продукт</li><li class=\"ingredient-list-item\"><strong>Шейка копченая</strong> — менее жирная</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/bekon-kak-vybrat/'>Как выбрать бекон</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/karbonara/'>Паста карбонара</a></li></ul>",
+  "category": "Сыровяленые деликатесы",
+  "semantic_data": {
+    "properties": [
+      "сырокопченый",
+      "свинина",
+      "грудинка",
+      "плотный",
+      "копченый_аромат",
+      "солоноватый",
+      "жирный",
+      "длительный_срок_хранения"
+    ],
+    "preparations": [
+      "нарезка_тонкими_ломтиками",
+      "обжарка_1-2_минуты_с_каждой_стороны",
+      "хранение_в_холодильнике"
+    ],
+    "cooking_methods": [
+      {
+        "method": "холодное_копчение",
+        "priority": "high"
+      },
+      {
+        "method": "обжарка",
+        "priority": "medium"
+      },
+      {
+        "method": "добавление_в_холодные_блюда",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_соусы_и_пасту",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "бутерброды",
+      "сэндвичи",
+      "закуски",
+      "паста",
+      "салаты",
+      "горячие_блюда"
+    ],
+    "pairings": {
+      "protein": [
+        "пармезан",
+        "пекорино",
+        "чеддер"
+      ],
+      "vegetables": [
+        "помидоры",
+        "перец",
+        "лук",
+        "шпинат"
+      ],
+      "eggs": [
+        "яйца"
+      ],
+      "pasta": [
+        "макароны"
+      ],
+      "herbs": [
+        "петрушка",
+        "розмарин",
+        "тимьян"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Бекон вареный",
+        "similarity": "medium"
+      },
+      {
+        "name": "Панчетта",
+        "similarity": "high"
+      },
+      {
+        "name": "Грудинка копченая",
+        "similarity": "high"
+      },
+      {
+        "name": "Шейка копченая",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "деликатесы",
+    "бекон",
+    "сырокопченый",
+    "копчености",
+    "свинина",
+    "бутерброды",
+    "паста",
+    "закуски"
+  ]
+}

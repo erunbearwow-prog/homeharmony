@@ -1,0 +1,52 @@
+{
+  "name": "Сервелат",
+  "name_normalized": "servelat",
+  "synonyms": "сервелат, сервелат сырокопченый, сервелат варено-копченый (редко), салями (в широком смысле), cervelat (нем.), колбаса сервелат",
+  "short_description": "Классическая сырокопченая (иногда варено-копченая) колбаса из свинины, говядины и шпика с характерным пряным вкусом, чесночным ароматом и умеренной жирностью. Популярный продукт для бутербродов и закусок.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Сервелат — это популярная колбаса, обычно сырокопченая, но иногда встречается и варено-копченая разновидность. Изготавливается из свинины, говядины и шпика с добавлением соли, чеснока, перца, мускатного ореха и других специй. В отличие от салями, сервелат имеет более мягкий, гармоничный вкус, не такую плотную текстуру и более высокое содержание жира. Имеет характерный рисунок на срезе — розовое мясо с белыми жировыми вкраплениями. Широко распространен в России, странах СНГ и Восточной Европы, используется для бутербродов, закусок и салатов.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, с жировыми прожилками</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — пряный, чесночный, сбалансированный</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — розово-красный с белыми вкраплениями жира</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — свинина, говядина, шпик, соль, чеснок, специи</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 3-4 недель в холодильнике</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом, сыром, зеленью, горчицей</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — нарезка к столу</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, яйцом, овощами</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — в тушёном виде, с картофелем</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — твёрдые, полутвёрдые, плавленые</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — огурцы, помидоры, лук, перец</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — горчица, хрен, майонез</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, белый, багет</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — пиво, крепкий алкоголь</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Краковская колбаса</strong> — похожий вкус, более пряная</li><li class=\"ingredient-list-item\"><strong>Салями</strong> — более плотная, менее жирная</li><li class=\"ingredient-list-item\"><strong>Варено-копченая колбаса</strong> — более мягкая</li><li class=\"ingredient-list-item\"><strong>Сыровяленая колбаса</strong> — более твёрдая</li></ul>",
+  "category": "Колбасы сырокопченые и сыровяленые",
+  "semantic_data": {
+    "properties": [
+      "колбаса",
+      "сырокопченая",
+      "пряный",
+      "чесночный",
+      "плотный",
+      "жирный",
+      "универсальный"
+    ],
+    "preparations": [
+      "нарезка_ломтиками",
+      "хранение_в_холодильнике"
+    ],
+    "cooking_methods": [
+      {"method": "свежее_употребление", "priority": "high"},
+      {"method": "добавление_в_салаты", "priority": "high"}
+    ],
+    "applications": [
+      "бутерброды",
+      "закуски",
+      "салаты"
+    ],
+    "pairings": {
+      "protein": ["сыр_твердый", "сыр_полутвердый", "сыр_плавленый"],
+      "vegetables": ["огурцы", "помидоры", "лук", "перец"],
+      "sauces": ["горчица", "хрен", "майонез"],
+      "breads": ["ржаной_хлеб", "белый_хлеб", "багет"],
+      "drinks": ["пиво", "крепкий_алкоголь"]
+    },
+    "substitutes": [
+      {"name": "Краковская колбаса", "similarity": "high"},
+      {"name": "Салями", "similarity": "medium"},
+      {"name": "Варено-копченая колбаса", "similarity": "low"},
+      {"name": "Сыровяленая колбаса", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "колбаса",
+    "сервелат",
+    "сырокопченая",
+    "закуска",
+    "бутерброды"
+  ]
+}

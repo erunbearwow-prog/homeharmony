@@ -1,0 +1,97 @@
+{
+  "name": "Сыр Эмменталь",
+  "name_normalized": "syr_emmentalskiy",
+  "synonyms": "эмменталь, эмменталер, emmental, швейцарский сыр, сыр с дырочками, сыр с большими глазками, твердый сыр, сыр для фондю, сыр для бутербродов, сырная тарелка, швейцарский твердый сыр",
+  "short_description": "Знаменитый швейцарский твердый сыр с крупными «глазками» (дырочками), плотной эластичной текстурой и сладковатым, ореховым вкусом. Классический сыр для фондю, бутербродов, горячих блюд и сырных тарелок.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Эмменталь (Emmentaler) — это самый известный швейцарский твердый сыр, который легко узнать по крупным «глазкам» (дырочкам). Название происходит от долины Эммен в кантоне Берн, где этот сыр начали производить в XIII веке. Эмменталь изготавливается из натурального коровьего молока, имеет плотную, эластичную, слегка маслянистую консистенцию и характерный сладковатый, ореховый вкус с легкой пряностью. Крупные глазки образуются в процессе созревания благодаря выделению углекислого газа пропионовокислыми бактериями. Сыр созревает от 4 до 18 месяцев и более. Эмменталь — универсальный сыр: он идеален для фондю, бутербродов, пиццы, горячих блюд и сырных тарелок. В российских магазинах часто продается отечественный сыр «Эмменталь», изготовленный по схожей технологии.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тип</strong> — твердый сыр</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, эластичная, слегка маслянистая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, ореховый, с легкой пряностью</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — бледно-желтый, золотистый</li><li class=\"ingredient-list-item\"><strong>Рисунок</strong> — крупные круглые глазки («дырочки»), от 1 до 3 см в диаметре</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — 45-50% в сухом веществе</li><li class=\"ingredient-list-item\"><strong>Созревание</strong> — от 4 до 18 месяцев и более</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 6 месяцев в холодильнике</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — отлично плавится, идеален для фондю</li></ul><h2 class=\"ingredient-title\">Подготовка и хранение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике при +2-6°C в герметичной упаковке</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — ломтиками, кубиками, соломкой</li><li class=\"ingredient-list-item\"><strong>Тёрка</strong> — хорошо трется</li><li class=\"ingredient-list-item\"><strong>Подача</strong> — рекомендуется достать за 20-30 минут до подачи</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Фондю</strong> — классическое швейцарское блюдо (в смеси с грюйером)</li><li class=\"ingredient-list-item\"><strong>Бутерброды и сэндвичи</strong> — классическое использование</li><li class=\"ingredient-list-item\"><strong>Пицца и запеканки</strong> — хорошо плавится</li><li class=\"ingredient-list-item\"><strong>Паста и ризотто</strong> — в тертом виде</li><li class=\"ingredient-list-item\"><strong>Сырная тарелка</strong> — самостоятельная закуска</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сырные соусы</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, зерновой, багет, чиабатта</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, перец, лук, брокколи</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, говядина, ветчина, колбасы</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — виноград, груши, яблоки</li><li class=\"ingredient-list-item\"><strong>Вино</strong> — белое сухое (шардоне, рислинг), красное</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Маасдам</strong> — голландский, с крупными глазками, близкий вкус, более мягкий</li><li class=\"ingredient-list-item\"><strong>Швейцарский сыр (российский)</strong> — с мелкими глазками, схожая технология</li><li class=\"ingredient-list-item\"><strong>Грюйер</strong> — более пикантный швейцарский сыр, для фондю</li><li class=\"ingredient-list-item\"><strong>Советский сыр</strong> — твердый отечественный</li></ul>",
+  "category": "Молочные продукты",
+  "semantic_data": {
+    "properties": [
+      "твердый",
+      "швейцарский",
+      "с крупными глазками",
+      "сладковатый",
+      "ореховый",
+      "эластичный",
+      "для фондю",
+      "для бутербродов",
+      "хорошо плавится",
+      "сырная тарелка",
+      "универсальный"
+    ],
+    "preparations": [
+      "хранение в холодильнике при +2-6°C",
+      "нарезка ломтиками или кубиками",
+      "натирание на тёрке",
+      "достать за 20-30 минут до подачи"
+    ],
+    "cooking_methods": [
+      {
+        "method": "использование для фондю",
+        "priority": "high"
+      },
+      {
+        "method": "использование в бутербродах",
+        "priority": "high"
+      },
+      {
+        "method": "плавление в горячих блюдах (пицца, запеканки)",
+        "priority": "high"
+      },
+      {
+        "method": "подача в сырной тарелке",
+        "priority": "high"
+      },
+      {
+        "method": "использование в тёртом виде (паста, ризотто)",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "фондю",
+      "бутерброды и сэндвичи",
+      "пицца и запеканки",
+      "паста и ризотто",
+      "сырная тарелка",
+      "соусы"
+    ],
+    "pairings": {
+      "protein": ["курица", "говядина", "ветчина"],
+      "vegetables": ["помидоры", "перец", "лук", "брокколи"],
+      "sauces": [],
+      "herbs": [],
+      "spices": []
+    },
+    "substitutes": [
+      {
+        "name": "Маасдам",
+        "similarity": "high"
+      },
+      {
+        "name": "Швейцарский сыр (российский)",
+        "similarity": "medium"
+      },
+      {
+        "name": "Грюйер",
+        "similarity": "medium"
+      },
+      {
+        "name": "Советский сыр",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "сыр",
+    "эмменталь",
+    "швейцарский сыр",
+    "твердый сыр",
+    "сыр с дырочками",
+    "сыр с глазками",
+    "сыр для фондю",
+    "сыр для бутербродов",
+    "сырная тарелка",
+    "универсальный",
+    "молочные продукты"
+  ]
+}

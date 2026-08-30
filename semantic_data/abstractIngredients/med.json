@@ -1,0 +1,80 @@
+{
+  "name": "Мед",
+  "name_normalized": "med",
+  "synonyms": "мёд, мед натуральный, мёд цветочный, мёд липовый, мёд гречишный, мёд акациевый, мёд майский, мёд сотовый, мед лесной, горный мёд, honey",
+  "short_description": "Сладкий, вязкий продукт, вырабатываемый пчёлами из нектара цветов. Имеет богатый состав из углеводов, витаминов, минералов и ферментов. Используется в кулинарии, народной медицине и косметологии.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Мёд — это сладкий, вязкий продукт, который вырабатывают пчёлы из цветочного нектара. Он представляет собой природный концентрат углеводов (глюкозы и фруктозы), богатый витаминами, минералами, ферментами и антиоксидантами. Цвет, аромат и вкус мёда зависят от того, с каких растений собран нектар. Мёд широко используется в кулинарии, народной медицине и косметологии. Это один из самых древних и полезных продуктов, известных человечеству.</p><h2 class=\"ingredient-title\">Виды мёда</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Цветочный</strong> — собран с цветов различных растений, самый распространённый</li><li class=\"ingredient-list-item\"><strong>Липовый</strong> — с липы, имеет мягкий вкус и яркий аромат</li><li class=\"ingredient-list-item\"><strong>Гречишный</strong> — с гречихи, тёмный, с пряным вкусом</li><li class=\"ingredient-list-item\"><strong>Акациевый</strong> — светлый, с деликатным вкусом, долго не кристаллизуется</li><li class=\"ingredient-list-item\"><strong>Майский</strong> — ранний мёд, собранный в мае</li><li class=\"ingredient-list-item\"><strong>Горный</strong> — с горных трав, очень ароматный</li><li class=\"ingredient-list-item\"><strong>Падевый</strong> — собран с пади (сладких выделений насекомых), менее сладкий</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Консистенция</strong> — вязкая, густая, может быть жидкой или засахарившейся</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, может иметь оттенки разных растений</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от светлого (белый, янтарный) до тёмного (коричневый, почти чёрный)</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — углеводы, витамины (группы B, C), минералы (калий, кальций, магний), ферменты</li><li class=\"ingredient-list-item\"><strong>Кристаллизация</strong> — естественный процесс засахаривания</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в тёмном, сухом месте</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Самостоятельный продукт</strong> — как десерт, с чаем, хлебом</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — в пряники, коврижки, печенье, торты</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — для мяса, особенно для утки и свинины</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — в чай, кофе, молоко, сбитень, лимонады</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — с фруктами, ягодами, орехами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Напитки</strong> — чай, кофе, травяные чаи</li><li class=\"ingredient-list-item\"><strong>Фрукты и ягоды</strong> — яблоки, груши, цитрусы, малина</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль, фундук</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, имбирь, гвоздика</li><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — йогурт, творог, сливки</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сахар</strong> — более сладкий, без полезных свойств</li><li class=\"ingredient-list-item\"><strong>Кленовый сироп</strong> — жидкий, с карамельным вкусом</li><li class=\"ingredient-list-item\"><strong>Сироп агавы</strong> — растительный, с нейтральным вкусом</li><li class=\"ingredient-list-item\"><strong>Сироп топинамбура</strong> — с низким гликемическим индексом</li></ul>",
+  "category": "Мед",
+  "semantic_data": {
+    "properties": [
+      "сладкий",
+      "вязкий",
+      "полезный",
+      "натуральный",
+      "витаминный",
+      "антибактериальный"
+    ],
+    "preparations": [
+      "хранение_в_тёмном_сухом_месте",
+      "подогрев_на_водяной_бане_при_кристаллизации"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "выпечка",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_соусов",
+        "priority": "medium"
+      },
+      {
+        "method": "добавление_в_напитки",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "десерт",
+      "выпечка",
+      "соусы",
+      "напитки",
+      "консервация"
+    ],
+    "pairings": {
+      "protein": ["птица", "свинина", "утка"],
+      "fruits": ["яблоки", "груши", "цитрусы", "малина"],
+      "nuts": ["грецкие_орехи", "миндаль", "фундук"],
+      "spices": ["корица", "имбирь", "гвоздика"],
+      "dairy": ["йогурт", "творог", "сливки"],
+      "drinks": ["чай", "кофе", "травяные_чаи"]
+    },
+    "substitutes": [
+      {
+        "name": "Сахар",
+        "similarity": "low"
+      },
+      {
+        "name": "Кленовый сироп",
+        "similarity": "medium"
+      },
+      {
+        "name": "Сироп агавы",
+        "similarity": "medium"
+      },
+      {
+        "name": "Сироп топинамбура",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "мёд",
+    "сладкое",
+    "пчеловодство",
+    "десерт",
+    "здоровое_питание"
+  ]
+}

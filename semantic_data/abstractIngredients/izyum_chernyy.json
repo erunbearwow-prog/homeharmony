@@ -1,0 +1,72 @@
+{
+  "name": "Изюм черный",
+  "name_normalized": "izyum_chernyy",
+  "synonyms": "изюм черный, изюм темный, изюм синий, шигани, бидана, сухофрукты, черный изюм, изюм с косточкой, изюм виноградный, изюм для компота, изюм для выпечки",
+  "short_description": "Сухофрукт из темных сортов винограда, получаемый путем сушки на солнце или в сушильных камерах. Имеет темно-синий или черный цвет, плотную, слегка сморщенную текстуру и насыщенный сладкий вкус с карамельными и виноградными нотками. Используется в выпечке, десертах, компотах, мясных блюдах и как самостоятельный перекус.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Черный изюм — это сухофрукт, получаемый из темных сортов винограда, который сушат на солнце или в сушильных камерах. В отличие от желтого изюма, черный изюм обладает более насыщенным, плотным вкусом с карамельными и виноградными нотками. Он также содержит больше антиоксидантов и сохраняет больше полезных веществ благодаря технологии сушки. Черный изюм часто продается с косточками, но существует и бескосточковый вариант. Он активно используется в выпечке (куличи, сдоба, пряники), компотах, мясных блюдах (плов, тушеное мясо) и в качестве перекуса. Темный изюм считается более полезным, чем светлый, благодаря высокому содержанию железа и калия.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, слегка сморщенная, упругая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, сладкий, с карамельными и виноградными нотками</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — темно-синий, черный, фиолетово-черный</li><li class=\"ingredient-list-item\"><strong>Калорийность</strong> — 260-290 ккал на 100 г</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 6-12 месяцев в сухом прохладном месте</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — может содержать косточки (в зависимости от сорта)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Промывка</strong> — тщательно промыть в теплой воде (особенно если есть следы масла или песка)</li><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — для размягчения и набухания залить горячей водой на 10-15 минут</li><li class=\"ingredient-list-item\"><strong>Удаление косточек</strong> — при необходимости (для сортов с косточками)</li><li class=\"ingredient-list-item\"><strong>Просушка</strong> — обсушить на бумажном полотенце</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в герметичной таре в сухом, темном, прохладном месте</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — куличи, пасхи, сдоба, пряники, кексы, маффины</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — мороженое, пудинги, запеканки, компоты, кисели</li><li class=\"ingredient-list-item\"><strong>Мясные блюда</strong> — плов, тушеное мясо (говядина, баранина), к мясу птицы</li><li class=\"ingredient-list-item\"><strong>Каши и мюсли</strong> — овсянка, рисовая каша, гранола</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — в составе фруктовых и овощных салатов</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — компоты, морсы, узвары (особенно рождественский взвар)</li><li class=\"ingredient-list-item\"><strong>Самостоятельный перекус</strong> — для быстрого перекуса</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — говядина, баранина, курица, утка</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, булгур, овсянка</li><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — творог, йогурт, сметана, сливки</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль, кедровые, кешью</li><li class=\"ingredient-list-item\"><strong>Сухофрукты</strong> — курага, чернослив, финики, инжир</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, кардамон, гвоздика, мускатный орех</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Изюм желтый</strong> — более светлый и сладкий</li><li class=\"ingredient-list-item\"><strong>Курага</strong> — другой вкус, более плотная текстура</li><li class=\"ingredient-list-item\"><strong>Чернослив</strong> — плотная текстура, сладкий вкус</li><li class=\"ingredient-list-item\"><strong>Финики</strong> — более сладкие</li></ul>",
+  "category": "Фрукты",
+  "semantic_data": {
+    "properties": [
+      "сухофрукт",
+      "черный",
+      "темный",
+      "насыщенный вкус",
+      "карамельный",
+      "плотный",
+      "с косточкой",
+      "для выпечки",
+      "для компота",
+      "для плова",
+      "полезный"
+    ],
+    "preparations": [
+      "промывка в теплой воде (при необходимости)",
+      "замачивание в горячей воде на 10-15 минут",
+      "удаление косточек (для сортов с косточками)",
+      "просушка на бумажном полотенце",
+      "хранение в герметичной таре"
+    ],
+    "cooking_methods": [
+      {"method": "использование в выпечке (без замачивания)", "priority": "high"},
+      {"method": "замачивание для размягчения (в каши, компоты)", "priority": "high"},
+      {"method": "использование в мясных блюдах (плов, тушеное мясо)", "priority": "high"},
+      {"method": "использование в сыром виде (перекусы)", "priority": "high"},
+      {"method": "приготовление компотов и узваров", "priority": "medium"}
+    ],
+    "applications": [
+      "выпечка",
+      "десерты",
+      "мясные блюда",
+      "каши и мюсли",
+      "напитки",
+      "перекусы"
+    ],
+    "pairings": {
+      "protein": ["говядина", "баранина", "курица", "утка", "творог", "йогурт"],
+      "vegetables": [],
+      "grains": ["рис", "булгур", "овсянка"],
+      "nuts": ["грецкие", "миндаль", "кедровые", "кешью"],
+      "fruits": ["курага", "чернослив", "финики", "инжир"],
+      "sauces": [],
+      "herbs": [],
+      "spices": ["корица", "кардамон", "гвоздика", "мускатный орех"]
+    },
+    "substitutes": [
+      {"name": "Изюм желтый", "similarity": "high"},
+      {"name": "Курага", "similarity": "medium"},
+      {"name": "Чернослив", "similarity": "medium"},
+      {"name": "Финики", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "сухофрукт",
+    "изюм",
+    "черный изюм",
+    "темный изюм",
+    "шигани",
+    "выпечка",
+    "компот",
+    "плов",
+    "полезный перекус"
+  ]
+}

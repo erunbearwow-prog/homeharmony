@@ -1,0 +1,66 @@
+{
+  "name": "Икра белужья зернистая",
+  "name_normalized": "ikra_beluzhya_zernistaya",
+  "synonyms": "черная икра, икра белужья, икра белуги, черная икра, белужья черная икра, зернистая белужья икра, икра осетровая, икра белужья зернистая, caviar, beluga caviar",
+  "short_description": "Самый ценный и дорогой вид черной икры, получаемый от белуги (Huso huso) — крупнейшей рыбы семейства осетровых. Отличается крупными икринками (до 2,5–4 мм), нежной кремовой текстурой и изысканным сливочно-ореховым вкусом. Истинный деликатес, считающийся эталоном икры.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Белужья икра — это самый ценный и дорогой вид черной икры, который получают от белуги (Huso huso), крупнейшей рыбы семейства осетровых. В отличие от икры других осетровых, белужья икра отличается особенно крупными икринками (до 2,5–4 мм в диаметре), нежной, буквально тающей во рту текстурой и изысканным вкусом с отчетливыми сливочными и ореховыми нотками. Именно эти качества делают ее эталоном икры и одним из самых желанных деликатесов в мире.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Размер икринок</strong> — крупные, 2,5–4 мм в диаметре (самые крупные среди осетровых)</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от темно-серого до жемчужно-серого и платинового (самая ценная — светлая)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нежный, сливочный, с ярким ореховым послевкусием, без рыбного запаха</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, маслянистая, икринки лопаются и «тают» на языке</li><li class=\"ingredient-list-item\"><strong>Калорийность</strong> — 237 ккал на 100 г</li><li class=\"ingredient-list-item\"><strong>Белки</strong> — 27,2 г на 100 г</li><li class=\"ingredient-list-item\"><strong>Жиры</strong> — 14,2 г на 100 г</li><li class=\"ingredient-list-item\"><strong>Углеводы</strong> — 0 г</li></ul><h2 class=\"ingredient-title\">Состав и полезные свойства</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\">Богата легкоусвояемыми белками и полиненасыщенными жирными кислотами Омега-3</li><li class=\"ingredient-list-item\">Содержит витамины: A, D, E, группы B (тиамин, рибофлавин, пиридоксин, фолиевая кислота)</li><li class=\"ingredient-list-item\">Минералы: калий, кальций, натрий, магний, фосфор, железо, йод, цинк, кремний</li></ul><h2 class=\"ingredient-title\">Градация по цвету</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>«0»</strong> — икра темного цвета</li><li class=\"ingredient-list-item\"><strong>«00»</strong> — икра средне-темного цвета</li><li class=\"ingredient-list-item\"><strong>«000»</strong> — икра светлого, жемчужно-серого цвета (самая ценная и вкусная)</li></ul><h2 class=\"ingredient-title\">Особые сорта</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>«Золотая икра» (Golden caviar)</strong> — редчайший сорт от белуги-альбиноса, расфасовывается в золотые банки</li></ul><h2 class=\"ingredient-title\">Правила подачи</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\">Хранить при температуре 0–4°C</li><li class=\"ingredient-list-item\">Избегать металлической посуды (икра приобретает металлический привкус)</li><li class=\"ingredient-list-item\">Избегать соседства с продуктами с сильным запахом (икра быстро пропитывается)</li><li class=\"ingredient-list-item\">Традиционно подается к охлажденной водке или шампанскому</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Самостоятельная закуска</strong> — в чистом виде, как деликатес</li><li class=\"ingredient-list-item\"><strong>Тарталетки и волованы</strong> — с икрой, сливочным маслом и зеленью</li><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом на белом хлебе или блинах</li><li class=\"ingredient-list-item\"><strong>Блинчики</strong> — с икрой и сметаной</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — для изысканных рыбных блюд</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Икра осетровая</strong> — более мелкая, менее жирная</li><li class=\"ingredient-list-item\"><strong>Икра калужская</strong> — близкая по текстуре, но мельче икринки</li><li class=\"ingredient-list-item\"><strong>Икра севрюжья</strong> — более мелкая, с другим вкусовым профилем</li><li class=\"ingredient-list-item\"><strong>Икра лососевая (красная)</strong> — другой вкус и текстура</li></ul>",
+  "category": "Рыба и морепродукты",
+  "semantic_data": {
+    "properties": [
+      "икра",
+      "черная икра",
+      "деликатес",
+      "крупная",
+      "сливочная",
+      "ореховый вкус",
+      "осетровая",
+      "элитная",
+      "редкая",
+      "праздничная",
+      "благородная"
+    ],
+    "preparations": [
+      "хранение при 0–4°C",
+      "подача в стеклянной или фарфоровой посуде",
+      "избегать металлических приборов и посуды",
+      "достать из холодильника за 10-15 минут до подачи"
+    ],
+    "cooking_methods": [
+      {"method": "подача в чистом виде (деликатес)", "priority": "high"},
+      {"method": "использование в тарталетках", "priority": "high"},
+      {"method": "подача на бутербродах с маслом", "priority": "high"},
+      {"method": "добавление в соусы", "priority": "low"}
+    ],
+    "applications": [
+      "закуски",
+      "праздничные блюда",
+      "деликатесы",
+      "соусы"
+    ],
+    "pairings": {
+      "protein": ["сливочное масло", "сметана"],
+      "vegetables": [],
+      "sauces": [],
+      "herbs": ["зелень"],
+      "spices": [],
+      "beverages": ["шампанское", "охлажденная водка"]
+    },
+    "substitutes": [
+      {"name": "Икра осетровая", "similarity": "high"},
+      {"name": "Икра калужская", "similarity": "high"},
+      {"name": "Икра севрюжья", "similarity": "medium"},
+      {"name": "Икра лососевая", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "икра",
+    "белужья икра",
+    "черная икра",
+    "деликатес",
+    "осетровая",
+    "элитный продукт",
+    "праздничный стол",
+    "закуска",
+    "икра зернистая"
+  ]
+}

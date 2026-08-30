@@ -1,0 +1,65 @@
+{
+  "name": "Кефаль",
+  "name_normalized": "kefal",
+  "synonyms": "кефаль, кефаль обыкновенная, кефаль черноморская, кефаль азовская, кефаль дальневосточная, кефаль лобан, кефаль сингиль, кефаль остронос, рыба кефаль, Mugil cephalus, бычок (ошибочно), пеленгас (азиатская кефаль)",
+  "short_description": "Морская и пресноводная рыба семейства кефалевых с удлинённым телом, крупной чешуёй и плотным белым мясом. Отличается умеренной жирностью, нежным вкусом и отсутствием мелких костей. Ценится для жарки, запекания, вяления и копчения.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Кефаль — это семейство промысловых рыб, обитающих в прибрежных водах тёплых морей. У кефали вытянутое, веретенообразное тело, покрытое крупной, плотно сидящей чешуёй. Мясо белое, плотное, с характерным нежным сладковатым вкусом и низким содержанием жира. Кефаль не имеет мелких межмышечных костей, что делает её удобной для разделки и употребления. Она используется для жарки, запекания, вяления, копчения и приготовления ухи. В Азово-Черноморском бассейне наиболее известны кефаль-лобан, сингиль и остронос, а на Дальнем Востоке — пеленгас.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — белое, плотное, нежное, без мелких костей</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нежный, сладковатый, без резкого запаха</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — 3-8% (зависит от сезона и вида)</li><li class=\"ingredient-list-item\"><strong>Размер</strong> — до 50-90 см (в зависимости от вида)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — содержит крупную чешую, которая легко счищается</li></ul><h2 class=\"ingredient-title\">Виды кефали</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Лобан (Mugil cephalus)</strong> — самый крупный вид, до 90 см, ценится за жирное мясо</li><li class=\"ingredient-list-item\"><strong>Сингиль (Liza aurata)</strong> — средний размер, золотистая полоса на жаберной крышке</li><li class=\"ingredient-list-item\"><strong>Остронос (Mugil saliens)</strong> — мелкий, с заострённым рылом</li><li class=\"ingredient-list-item\"><strong>Пеленгас (Mugil so-iuy)</strong> — дальневосточный вид, успешно акклиматизирован в Азово-Черноморском бассейне</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Чистка</strong> — удалить чешую (у кефали она крупная, легко счищается)</li><li class=\"ingredient-list-item\"><strong>Потрошение</strong> — удалить внутренности, промыть</li><li class=\"ingredient-list-item\"><strong>Филетирование</strong> — отделить филе от хребта</li><li class=\"ingredient-list-item\"><strong>Удаление костей</strong> — хребет и рёберные кости легко отделяются</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде в панировке до хрустящей корочки</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с лимоном, травами, овощами</li><li class=\"ingredient-list-item\"><strong>Вяление</strong> — тарань из кефали</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — горячее и холодное</li><li class=\"ingredient-list-item\"><strong>Уха</strong> — из голов и хвостов</li><li class=\"ingredient-list-item\"><strong>Консервирование</strong> — в масле или томатном соусе</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, помидоры, лук, перец</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — лимонный, сметанный, чесночный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, кинза</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, лимон, лавровый лист</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Скумбрия</strong> — более жирная, с другим вкусом</li><li class=\"ingredient-list-item\"><strong>Ставрида</strong> — схожее мясо</li><li class=\"ingredient-list-item\"><strong>Камбала</strong> — белое мясо, но другая текстура</li><li class=\"ingredient-list-item\"><strong>Минтай</strong> — постное мясо</li></ul>",
+  "category": "Рыба и морепродукты",
+  "semantic_data": {
+    "properties": [
+      "морская",
+      "пресноводная",
+      "белое мясо",
+      "плотное",
+      "без мелких костей",
+      "нежное",
+      "для жарки",
+      "для запекания",
+      "для вяления",
+      "для копчения"
+    ],
+    "preparations": [
+      "чистка от чешуи",
+      "потрошение",
+      "филетирование",
+      "удаление хребта и рёберных костей"
+    ],
+    "cooking_methods": [
+      {"method": "жарка", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "вяление", "priority": "high"},
+      {"method": "копчение", "priority": "high"},
+      {"method": "варка ухи", "priority": "medium"},
+      {"method": "консервирование", "priority": "medium"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "закуски",
+      "супы",
+      "консервы"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "помидоры", "лук", "перец"],
+      "sauces": ["лимонный", "сметанный", "чесночный"],
+      "herbs": ["укроп", "петрушка", "кинза"],
+      "spices": ["черный перец", "лимон", "лавровый лист"]
+    },
+    "substitutes": [
+      {"name": "Скумбрия", "similarity": "medium"},
+      {"name": "Ставрида", "similarity": "high"},
+      {"name": "Камбала", "similarity": "medium"},
+      {"name": "Минтай", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "рыба",
+    "кефаль",
+    "морская рыба",
+    "белая рыба",
+    "жарка",
+    "запекание",
+    "вяление",
+    "копчение"
+  ]
+}

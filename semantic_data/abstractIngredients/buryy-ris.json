@@ -1,0 +1,58 @@
+{
+  "name": "Бурый рис",
+  "name_normalized": "buryy-ris",
+  "synonyms": "нешлифованный рис, коричневый рис, цельнозерновой рис, рис с отрубями, brown rice, неочищенный рис",
+  "short_description": "Цельнозерновой рис, сохранивший отрубевую оболочку, что придаёт ему слегка ореховый вкус и более плотную текстуру по сравнению с белым рисом. Богат клетчаткой, витаминами группы B и минералами.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Бурый рис — это нешлифованный рис, который сохраняет отрубевую оболочку (шелуху) и зародыш. Именно эта оболочка придаёт ему характерный светло-коричневый цвет, слегка ореховый вкус и более плотную, жёсткую текстуру по сравнению с белым рисом. Благодаря сохранению отрубей, бурый рис содержит значительно больше клетчатки, витаминов группы B, магния, фосфора и других полезных веществ. Он считается более полезным, чем белый рис, и рекомендуется для здорового и диетического питания. Используется в гарнирах, пловах, салатах, супах и как самостоятельное блюдо.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, с характерной жёсткостью</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — слегка ореховый, насыщенный</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — светло-коричневый</li><li class=\"ingredient-list-item\"><strong>Клетчатка</strong> — высокое содержание (в 3-4 раза больше, чем у белого риса)</li><li class=\"ingredient-list-item\"><strong>Витамины</strong> — B1, B3, B6, магний, фосфор, селен</li><li class=\"ingredient-list-item\"><strong>Время варки</strong> — 40-50 минут</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 6 месяцев</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Промывка</strong> — тщательно промыть в холодной воде (3-4 раза)</li><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — замочить на 30 минут для ускорения варки</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — соотношение 1:2 (рис:вода), варить 40-50 минут на медленном огне</li><li class=\"ingredient-list-item\"><strong>Настаивание</strong> — дать постоять 5-10 минут после варки</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — к мясу, птице, рыбе</li><li class=\"ingredient-list-item\"><strong>Плов</strong> — с мясом и овощами</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, овощами, орехами</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — в овощные и куриные супы</li><li class=\"ingredient-list-item\"><strong>Запеканки</strong> — с овощами, сыром</li><li class=\"ingredient-list-item\"><strong>Смузи</strong> — в виде рисового молока</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, перец, томаты</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, говядина, свинина</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — куркума, зира, кориандр</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, кинза, укроп</li><li class=\"ingredient-list-item\"><strong>Бобовые</strong> — фасоль, нут</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Дикий рис</strong> — еще более полезный, с ореховым вкусом</li><li class=\"ingredient-list-item\"><strong>Киноа</strong> — безглютеновая альтернатива</li><li class=\"ingredient-list-item\"><strong>Белый рис</strong> — менее полезный, но быстрее готовится</li><li class=\"ingredient-list-item\"><strong>Перловка</strong> — похожая текстура</li></ul>",
+  "category": "Крупы",
+  "semantic_data": {
+    "properties": [
+      "крупа",
+      "рис",
+      "нешлифованный",
+      "цельнозерновой",
+      "ореховый_вкус",
+      "плотный",
+      "богат_клетчаткой",
+      "безглютеновый"
+    ],
+    "preparations": [
+      "промывка_холодной_водой",
+      "замачивание_30_минут",
+      "варка_40-50_минут"
+    ],
+    "cooking_methods": [
+      {"method": "варка", "priority": "high"},
+      {"method": "тушение", "priority": "high"},
+      {"method": "запекание", "priority": "medium"}
+    ],
+    "applications": [
+      "гарниры",
+      "плов",
+      "салаты",
+      "супы",
+      "запеканки"
+    ],
+    "pairings": {
+      "protein": ["курица", "говядина", "свинина"],
+      "vegetables": ["лук", "морковь", "перец", "томаты"],
+      "spices": ["куркума", "зира", "кориандр"],
+      "herbs": ["петрушка", "кинза", "укроп"],
+      "legumes": ["фасоль", "нут"]
+    },
+    "substitutes": [
+      {"name": "Дикий рис", "similarity": "high"},
+      {"name": "Киноа", "similarity": "high"},
+      {"name": "Белый рис", "similarity": "medium"},
+      {"name": "Перловка", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "крупа",
+    "бурый_рис",
+    "коричневый_рис",
+    "цельнозерновой",
+    "здоровое_питание",
+    "гарнир"
+  ]
+}

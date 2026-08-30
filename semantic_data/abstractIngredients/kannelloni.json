@@ -1,0 +1,114 @@
+{
+  "name": "Каннеллони",
+  "name_normalized": "kannelloni",
+  "synonyms": "",
+  "short_description": "Крупные трубчатые макароны итальянской кухни для запекания с начинкой, диаметром 2-3 см и длиной 8-10 см.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Крупные трубчатые макаронные изделия итальянской кухни из пшеничной муки, диаметром 2–3 см и длиной 8–10 см. В сухом виде имеют плотную гладкую поверхность и светло-жёлтый цвет. После варки приобретают эластичную текстуру, становятся мягкими, но сохраняют форму, что делает их идеальной 'оболочкой' для начинок. Относятся к категории пасты <em>pasta ripiena</em>.</p><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\">Перед использованием отварить в подсоленной воде 8–10 минут до состояния <em>al dente</em></li><li class=\"ingredient-list-item\">После варки промыть холодной водой и обсушить</li><li class=\"ingredient-list-item\">Для запекания без предварительной варки — залить горячим соусом и запекать 30–40 минут при 180 °C</li><li class=\"ingredient-list-item\">Фаршировать удобнее всего с помощью кондитерского мешка или ложки</li></ul><h2 class=\"ingredient-title\">Способы приготовления</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Запекание</strong> — основной метод, чаще в соусе с сыром</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — подготовительный этап</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в соусе</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — для создания корочки после варки</li></ul><h2 class=\"ingredient-title\">Применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\">Мясной фарш с томатами</li><li class=\"ingredient-list-item\">Рикотта со шпинатом</li><li class=\"ingredient-list-item\">Грибы со сливочным соусом</li><li class=\"ingredient-list-item\">Лосось с крем-сыром</li><li class=\"ingredient-list-item\">Запечённые овощи с ореховой пастой</li><li class=\"ingredient-list-item\">Тыква с рикоттой и шалфеем</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соусы:</strong> томатный, бешамель, сливочный, песто, сырный</li><li class=\"ingredient-list-item\"><strong>Сыры:</strong> моцарелла, пармезан, рикотта</li><li class=\"ingredient-list-item\"><strong>Овощи:</strong> шпинат, грибы, баклажаны, тыква</li><li class=\"ingredient-list-item\"><strong>Травы:</strong> базилик, орегано, тимьян</li><li class=\"ingredient-list-item\"><strong>Специи:</strong> мускатный орех, чёрный перец, чеснок</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Маникотти</strong> — наиболее близкий аналог, но требует варки</li><li class=\"ingredient-list-item\"><strong>Лазанья</strong> — в запеканках</li><li class=\"ingredient-list-item\"><strong>Конкильони</strong> — крупные ракушки</li><li class=\"ingredient-list-item\"><strong>Овощные роллы</strong> из баклажанов или цукини — низкоуглеводная версия</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/pasta-ripiena/'>Паста рипьена — история и виды</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/kak-varit-makarony/'>Как правильно варить макароны</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/sousy-dlya-pasty/'>Соусы для пасты</a></li></ul>",
+  "category": "С начинкой",
+  "semantic_data": {
+    "properties": [
+      "крупный",
+      "трубчатый",
+      "гладкий",
+      "эластичный",
+      "нейтральный_вкус",
+      "впитывающий_соус",
+      "держит_форму"
+    ],
+    "preparations": [
+      "варка_до_al_dente",
+      "промывание_и_сушка",
+      "фаршировка",
+      "запекание_в_соусе"
+    ],
+    "cooking_methods": [
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "варка",
+        "priority": "medium"
+      },
+      {
+        "method": "тушение",
+        "priority": "medium"
+      },
+      {
+        "method": "жарка",
+        "priority": "low"
+      }
+    ],
+    "applications": [
+      "основное_блюдо",
+      "праздничное_блюдо",
+      "закуска"
+    ],
+    "pairings": {
+      "protein": [
+        "говядина",
+        "свинина",
+        "курица",
+        "лосось",
+        "креветки",
+        "рикотта",
+        "моцарелла",
+        "пармезан"
+      ],
+      "vegetables": [
+        "шпинат",
+        "томаты",
+        "грибы",
+        "тыква",
+        "баклажаны",
+        "цукини"
+      ],
+      "sauces": [
+        "томатный",
+        "бешамель",
+        "сливочный",
+        "песто",
+        "сырный"
+      ],
+      "herbs": [
+        "базилик",
+        "петрушка",
+        "орегано",
+        "тимьян",
+        "розмарин"
+      ],
+      "spices": [
+        "мускатный_орех",
+        "черный_перец",
+        "чеснок",
+        "паприка"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Маникотти",
+        "similarity": "high"
+      },
+      {
+        "name": "Лазанья",
+        "similarity": "medium"
+      },
+      {
+        "name": "Конкильони",
+        "similarity": "medium"
+      },
+      {
+        "name": "Овощные_роллы",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "итальянская_кухня",
+    "паста",
+    "паста_с_начинкой",
+    "запеканка",
+    "праздничный_ужин",
+    "сытный"
+  ]
+}

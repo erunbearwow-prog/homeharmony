@@ -1,0 +1,70 @@
+{
+  "name": "Греческие травы",
+  "name_normalized": "grecheskie-travy",
+  "synonyms": "греческая смесь трав, травы греческие, средиземноморские травы, греческие пряности, греческие специи, микс трав греческий",
+  "short_description": "Смесь ароматных сушёных трав, типичных для греческой и средиземноморской кухни. Обычно включает орегано, тимьян, майоран, мяту, базилик и розмарин. Используется для придания блюдам средиземноморского характера, аромата и пряного вкуса.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Греческие травы — это ароматная смесь сушёных трав, которая широко используется в греческой и средиземноморской кухне. В состав обычно входят орегано, тимьян, майоран, мята, базилик, розмарин и иногда чабер. Эта смесь придаёт блюдам характерный средиземноморский аромат, пряный вкус и лёгкую сладость. Греческие травы универсальны и подходят к мясу, рыбе, овощам, салатам, соусам и маринадам.</p><h2 class=\"ingredient-title\">Состав</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Орегано</strong> — основной компонент, характерный для греческой кухни</li><li class=\"ingredient-list-item\"><strong>Тимьян</strong> — придаёт пряный аромат</li><li class=\"ingredient-list-item\"><strong>Майоран</strong> — мягкий, сладковатый</li><li class=\"ingredient-list-item\"><strong>Мята</strong> — свежесть, лёгкая прохлада</li><li class=\"ingredient-list-item\"><strong>Базилик</strong> — итальянская нота</li><li class=\"ingredient-list-item\"><strong>Розмарин</strong> — хвойный, насыщенный</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — баранина, свинина, курица</li><li class=\"ingredient-list-item\"><strong>Рыба</strong> — лосось, треска, дорада</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, баклажаны, кабачки</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — греческий салат</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатные, йогуртовые</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для мяса и рыбы</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Оливковое масло</strong> — основа средиземноморской кухни</li><li class=\"ingredient-list-item\"><strong>Лимон</strong> — свежесть</li><li class=\"ingredient-list-item\"><strong>Чеснок</strong> — аромат</li><li class=\"ingredient-list-item\"><strong>Соль, перец</strong> — базовые приправы</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Прованские травы</strong> — похожий состав</li><li class=\"ingredient-list-item\"><strong>Итальянские травы</strong> — акцент на базилик</li><li class=\"ingredient-list-item\"><strong>Орегано + тимьян</strong> — минимальная замена</li></ul>",
+  "category": "ПРЯНОСТИ",
+  "semantic_data": {
+    "properties": [
+      "пряность",
+      "сушеный",
+      "греческий",
+      "средиземноморский",
+      "ароматный"
+    ],
+    "preparations": [
+      "хранение_в_сухом_темном_месте",
+      "добавление_в_конце_приготовления"
+    ],
+    "cooking_methods": [
+      {
+        "method": "добавление_в_мясные_блюда",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_салаты",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_маринадов",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "мясо",
+      "рыба",
+      "овощи",
+      "салаты",
+      "соусы"
+    ],
+    "pairings": {
+      "protein": ["баранина", "свинина", "курица", "лосось", "треска", "дорада"],
+      "vegetables": ["помидоры", "баклажаны", "кабачки"],
+      "oils": ["оливковое_масло"],
+      "spices": ["соль", "перец", "чеснок"],
+      "fruits": ["лимон"]
+    },
+    "substitutes": [
+      {
+        "name": "Прованские травы",
+        "similarity": "high"
+      },
+      {
+        "name": "Итальянские травы",
+        "similarity": "medium"
+      },
+      {
+        "name": "Орегано + тимьян",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "пряности",
+    "греческие_травы",
+    "средиземноморская_кухня",
+    "специи",
+    "греческая_кухня"
+  ]
+}

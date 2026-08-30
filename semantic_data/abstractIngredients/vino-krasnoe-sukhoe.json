@@ -1,0 +1,73 @@
+{
+  "name": "Вино красное сухое",
+  "name_normalized": "vino-krasnoe-sukhoe",
+  "synonyms": "",
+  "short_description": "Красное вино с минимальным содержанием сахара (менее 4 г/л), отличающееся сухим, терпким вкусом с яркой кислотностью и насыщенным танинным послевкусием. Имеет рубиновый цвет, фруктово-пряный аромат и считается классикой среди красных вин.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Красное сухое вино — это алкогольный напиток, в котором содержание сахара не превышает 4 г/л, что делает его одним из самых «сухих» и менее сладких видов вин. Благодаря минимальному содержанию сахара, сухое красное вино имеет выраженную кислотность, терпкий, иногда даже танинный вкус и насыщенный, продолжительное послевкусие. Оно обладает глубоким рубиновым или гранатовым цветом, а аромат раскрывается нотами тёмных ягод (вишня, ежевика, чёрная смородина), специй, дуба и пряностей. Красное сухое вино считается классикой виноделия и является идеальным сопровождением к мясным блюдам, сырам и пасте.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Содержание сахара</strong> — менее 4 г/л</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сухой, терпкий, с яркой кислотностью</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — фруктовый (вишня, ежевика, чёрная смородина), пряный, дубовый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — рубиновый, гранатовый</li><li class=\"ingredient-list-item\"><strong>Танины</strong> — выраженные, структурирующие</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 2-10 лет в бутылке</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Напиток</strong> — самостоятельное употребление, к мясным блюдам, сырам</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — основа для красных соусов к мясу, дичи</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для мяса, птицы</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — в некоторых рецептах (например, груши в вине)</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — говядина, баранина, свинина, дичь</li><li class=\"ingredient-list-item\"><strong>Птица</strong> — утка, курица (в соусах)</li><li class=\"ingredient-list-item\"><strong>Паста</strong> — с мясными соусами</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — твёрдые, выдержанные, голубые</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Красное полусухое вино</strong> — с лёгкой сладостью</li><li class=\"ingredient-list-item\"><strong>Красное полусладкое вино</strong> — более сладкое</li><li class=\"ingredient-list-item\"><strong>Красный вермут</strong> — сладкий, ароматизированный</li><li class=\"ingredient-list-item\"><strong>Гранатовый сок</strong> — безалкогольная альтернатива</li></ul>",
+  "category": "Красное вино",
+  "semantic_data": {
+    "properties": [
+      "алкоголь",
+      "красное_вино",
+      "сухое",
+      "терпкий",
+      "танинный",
+      "фруктовый",
+      "пряный",
+      "классический"
+    ],
+    "preparations": [
+      "декантация_при_необходимости",
+      "охлаждение_до_16-18_°C"
+    ],
+    "cooking_methods": [
+      {
+        "method": "напиток",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_соусов",
+        "priority": "high"
+      },
+      {
+        "method": "маринование",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "напиток",
+      "соусы",
+      "маринады"
+    ],
+    "pairings": {
+      "protein": ["говядина", "баранина", "свинина", "дичь", "утка", "курица", "твердые_сыры", "выдержанные_сыры", "голубые_сыры"],
+      "pasta": ["паста_с_мясным_соусом"]
+    },
+    "substitutes": [
+      {
+        "name": "Красное полусухое вино",
+        "similarity": "high"
+      },
+      {
+        "name": "Красное полусладкое вино",
+        "similarity": "medium"
+      },
+      {
+        "name": "Красный вермут",
+        "similarity": "low"
+      },
+      {
+        "name": "Гранатовый сок",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "алкоголь",
+    "вино",
+    "красное_вино",
+    "сухое_вино",
+    "соус",
+    "маринад"
+  ]
+}

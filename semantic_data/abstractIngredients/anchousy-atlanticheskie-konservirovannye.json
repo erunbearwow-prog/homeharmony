@@ -1,0 +1,123 @@
+{
+  "name": "Анчоусы атлантические, консервированные",
+  "name_normalized": "anchousy-atlanticheskie-konservirovannye",
+  "synonyms": "",
+  "short_description": "Консервированная мелкая жирная рыба семейства анчоусовых, залитая маслом или рассолом. Сохраняет плотную текстуру, насыщенный солёно-пряный вкус и характерный аромат.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Анчоусы атлантические консервированные — это мелкая рыба семейства анчоусовых (Engraulis encrasicolus), прошедшая термическую обработку и залитая маслом (оливковым или растительным) или рассолом. В отличие от солёных анчоусов, консервированные имеют менее выраженный солёный вкус и более мягкую текстуру. Сохраняют плотную структуру, характерный пряный аромат и насыщенный вкус умами. Идеальны для быстрого использования в салатах, пасте, пицце и закусках без предварительной подготовки.</p><h2 class=\"ingredient-title\">Виды консервации</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>В масле</strong> — классический вариант, залитые оливковым или подсолнечным маслом</li><li class=\"ingredient-list-item\"><strong>В рассоле</strong> — в солёном растворе, более солёный вариант</li><li class=\"ingredient-list-item\"><strong>В томатном соусе</strong> — с добавлением томатного соуса</li><li class=\"ingredient-list-item\"><strong>Филе анчоусов</strong> — без костей, готовое к употреблению</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, солёно-пряный, с нотками умами</li><li class=\"ingredient-list-item\"><strong>Масло</strong> — пропитывает рыбу, добавляет жирность</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 3-5 лет в закрытой банке</li><li class=\"ingredient-list-item\"><strong>Пищевая ценность</strong> — высокое содержание белка, омега-3, витаминов B12 и D</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — цезарь, нисуаз, греческий</li><li class=\"ingredient-list-item\"><strong>Паста</strong> — спагетти с анчоусами, чесноком и оливковым маслом</li><li class=\"ingredient-list-item\"><strong>Пицца</strong> — классическая пицца с анчоусами</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — соус тартар, соус песто с анчоусами</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — на хлебе с маслом, в тарталетках, брускеттах</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для канапе, мини-пицц</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, лук, каперсы, оливки, перец</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, базилик, укроп, мята</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — пармезан, моцарелла, пекорино</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — багет, чиабатта, тостовый хлеб</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, орегано, базилик, тимьян, чёрный перец</li><li class=\"ingredient-list-item\"><strong>Масло</strong> — оливковое масло, сливочное масло</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Солёные анчоусы</strong> — более солёные, требуют вымачивания</li><li class=\"ingredient-list-item\"><strong>Сардины консервированные</strong> — крупнее, менее пряные</li><li class=\"ingredient-list-item\"><strong>Хамса консервированная</strong> — черноморский аналог</li><li class=\"ingredient-list-item\"><strong>Рыбный соус</strong> — для имитации вкуса умами в соусах</li><li class=\"ingredient-list-item\"><strong>Килька консервированная</strong> — менее пряный вкус</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/anchousy-v-kulinarii/'>Анчоусы в кулинарии: рецепты и советы</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/nutrition/polza-anchousov/'>Польза анчоусов: омега-3, витамины, минералы</a></li></ul>",
+  "category": "Рыбные консервы",
+  "semantic_data": {
+    "properties": [
+      "консервированный",
+      "в_масле",
+      "в_рассоле",
+      "филе",
+      "плотная_текстура",
+      "солёно-пряный",
+      "насыщенный",
+      "богат_омега-3",
+      "готовый_к_употреблению",
+      "длительный_срок_хранения"
+    ],
+    "preparations": [
+      "открыть_банку",
+      "слить_масло_или_рассол",
+      "использовать_в_блюдах_как_есть"
+    ],
+    "cooking_methods": [
+      {
+        "method": "использование_как_есть",
+        "priority": "high"
+      },
+      {
+        "method": "измельчение_в_пасту",
+        "priority": "medium"
+      },
+      {
+        "method": "добавление_в_салаты",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_соусы",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "салаты",
+      "паста",
+      "пицца",
+      "соусы",
+      "закуски",
+      "начинки"
+    ],
+    "pairings": {
+      "protein": [
+        "пармезан",
+        "моцарелла",
+        "пекорино"
+      ],
+      "vegetables": [
+        "помидоры",
+        "лук",
+        "каперсы",
+        "оливки",
+        "перец"
+      ],
+      "herbs": [
+        "петрушка",
+        "базилик",
+        "укроп",
+        "мята"
+      ],
+      "breads": [
+        "багет",
+        "чиабатта",
+        "тостовый_хлеб"
+      ],
+      "spices": [
+        "чеснок",
+        "орегано",
+        "базилик",
+        "тимьян",
+        "черный_перец"
+      ],
+      "oils": [
+        "оливковое_масло",
+        "сливочное_масло"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Солёные анчоусы",
+        "similarity": "high"
+      },
+      {
+        "name": "Сардины консервированные",
+        "similarity": "medium"
+      },
+      {
+        "name": "Хамса консервированная",
+        "similarity": "high"
+      },
+      {
+        "name": "Рыбный соус",
+        "similarity": "low"
+      },
+      {
+        "name": "Килька консервированная",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "консервы",
+    "рыбные_консервы",
+    "анчоусы",
+    "в_масле",
+    "средиземноморская_кухня",
+    "салат_цезарь",
+    "пицца",
+    "паста",
+    "омега-3",
+    "готовый_продукт"
+  ]
+}

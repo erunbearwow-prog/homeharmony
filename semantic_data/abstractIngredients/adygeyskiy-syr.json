@@ -1,0 +1,69 @@
+{
+  "name": "Адыгейский сыр",
+  "name_normalized": "adygeyskiy-syr",
+  "synonyms": "адыгейский, сыр адыгейский, черкесский сыр, кругляш",
+  "short_description": "Мягкий рассольный сыр из коровьего или козьего молока с нежной творожистой текстурой, кисломолочным вкусом и лёгкой солоноватостью. Традиционный сыр адыгской (черкесской) кухни.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Адыгейский сыр — это мягкий рассольный сыр из коровьего (иногда козьего или овечьего) молока, традиционный для адыгской (черкесской) кухни. Имеет нежную творожистую текстуру, белый или слегка кремовый цвет, кисломолочный вкус с лёгкой солоноватостью и тонким сливочным ароматом. Относится к категории сыров, которые не требуют длительного созревания. Своё название получил от Адыгеи — республики на Северном Кавказе. Благодаря низкой калорийности и богатому составу (кальций, фосфор, витамины группы B) широко используется в диетическом и здоровом питании.</p><h2 class=\"ingredient-title\">Состав и свойства</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Молоко</strong> — коровье, козье или овечье, пастеризованное</li><li class=\"ingredient-list-item\"><strong>Кисломолочная закваска</strong> — сычужный фермент или молочная кислота</li><li class=\"ingredient-list-item\"><strong>Соль</strong> — в рассоле или в процессе формования</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — 14-18% (сухого вещества)</li><li class=\"ingredient-list-item\"><strong>Белки</strong> — 16-18 г на 100 г</li><li class=\"ingredient-list-item\"><strong>Кальций</strong> — 400-500 мг на 100 г</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>В свежем виде</strong> — с зеленью, овощами, хлебом, лавашем</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — особенно с помидорами, огурцами, зеленью</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — обжаривают на сковороде (сыр не плавится, а подрумянивается)</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в запеканках, пирогах, хачапури</li><li class=\"ingredient-list-item\"><strong>Начинка</strong> — для вареников, чебуреков, мантов, пирогов</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — соус песто с адыгейским сыром</li><li class=\"ingredient-list-item\"><strong>Сэндвичи и тосты</strong> — с зеленью, огурцом, помидором</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, огурцы, перец, зелень, лук, баклажаны</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — кинза, укроп, петрушка, базилик, мята</li><li class=\"ingredient-list-item\"><strong>Хлеб и выпечка</strong> — лаваш, лепёшки, ржаной хлеб, хачапури</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — арбуз, дыня (необычное, но очень вкусное сочетание)</li><li class=\"ingredient-list-item\"><strong>Мёд</strong> — классическое сочетание на закуску</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, чабрец, орегано, паприка</li><li class=\"ingredient-list-item\"><strong>Масла</strong> — оливковое, сливочное, топлёное</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыр фета</strong> — более солёный и рассыпчатый</li><li class=\"ingredient-list-item\"><strong>Сыр сулугуни</strong> — более плотный, слоистый, плавится</li><li class=\"ingredient-list-item\"><strong>Панир</strong> — индийский мягкий сыр, менее солёный</li><li class=\"ingredient-list-item\"><strong>Рикотта</strong> — более нежная и мягкая</li><li class=\"ingredient-list-item\"><strong>Козий сыр</strong> — более выраженный аромат</li><li class=\"ingredient-list-item\"><strong>Тофу</strong> — для веганской альтернативы</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/adygeyskiy-syr-v-domashnih-usloviyah/'>Как приготовить адыгейский сыр в домашних условиях</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/salaty-s-adygeyskim-syrom/'>Салаты с адыгейским сыром — идеи и рецепты</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/zharenyy-adygeyskiy-syr/'>Жареный адыгейский сыр — как приготовить</a></li></ul>",
+  "category": "Сыры",
+  "semantic_data": {
+    "properties": [
+      "мягкий",
+      "творожистый",
+      "белый",
+      "кисломолочный",
+      "солоноватый",
+      "нежный",
+      "диетический",
+      "низкокалорийный",
+      "богат_кальцием",
+      "без_созревания",
+      "рассольный"
+    ],
+    "preparations": [
+      "хранение_в_холодильнике",
+      "хранение_в_рассоле_для_сохранения_свежести"
+    ],
+    "cooking_methods": [
+      {"method": "свежее_употребление", "priority": "high"},
+      {"method": "жарка", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "измельчение_в_салатах", "priority": "high"}
+    ],
+    "applications": [
+      "закуска",
+      "салаты",
+      "горячие_блюда",
+      "начинки",
+      "сэндвичи",
+      "соусы"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["помидоры", "огурцы", "перец", "баклажаны", "лук"],
+      "herbs": ["кинза", "укроп", "петрушка", "базилик", "мята"],
+      "fruits": ["арбуз", "дыня"],
+      "breads": ["лаваш", "лепёшки", "ржаной_хлеб"],
+      "other": ["мёд", "оливковое_масло", "сливочное_масло"],
+      "spices": ["черный_перец", "чабрец", "орегано", "паприка"]
+    },
+    "substitutes": [
+      {"name": "Сыр фета", "similarity": "high"},
+      {"name": "Сыр сулугуни", "similarity": "medium"},
+      {"name": "Панир", "similarity": "high"},
+      {"name": "Рикотта", "similarity": "medium"},
+      {"name": "Козий сыр", "similarity": "medium"},
+      {"name": "Тофу", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "сыр",
+    "адыгейский",
+    "рассольный_сыр",
+    "кавказская_кухня",
+    "диетический",
+    "богат_кальцием",
+    "закуска",
+    "салаты",
+    "жареный_сыр"
+  ]
+}

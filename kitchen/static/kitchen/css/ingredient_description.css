@@ -1,0 +1,87 @@
+/* homeharmony/kitchen/static/kitchen/css/ingredient_description.css */
+
+/* ===== ЗАГОЛОВКИ ===== */
+.ingredient-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 32px 0 12px 0;
+    color: #1d1d1f;
+}
+
+.ingredient-title:first-child {
+    margin-top: 0;
+}
+
+/* ===== ТЕКСТ ===== */
+.ingredient-text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #1d1d1f;
+    margin-bottom: 12px;
+}
+
+/* ===== СПИСКИ (ОБЩЕЕ) ===== */
+.ingredient-list {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 16px 0;
+}
+
+.ingredient-list-item {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #1d1d1f;
+    padding: 6px 0 6px 28px;
+    position: relative;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.ingredient-list-item:last-child {
+    border-bottom: none;
+}
+
+/* ===== МАРКЕРЫ ДЛЯ UL ===== */
+.ingredient-list-bulleted .ingredient-list-item::before {
+    content: "●";
+    position: absolute;
+    left: 4px;
+    top: 6px;
+    color: #007aff;
+    font-size: 14px;
+}
+
+/* ===== МАРКЕРЫ ДЛЯ OL ===== */
+.ingredient-list-numbered {
+    counter-reset: item;
+}
+
+.ingredient-list-numbered .ingredient-list-item {
+    padding-left: 38px;
+    counter-increment: item;
+}
+
+.ingredient-list-numbered .ingredient-list-item::before {
+    content: counter(item) ".";
+    position: absolute;
+    left: 4px;
+    top: 6px;
+    color: #007aff;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* ===== ЖИРНЫЙ ТЕКСТ В СПИСКАХ ===== */
+.ingredient-list-item strong {
+    font-weight: 600;
+    color: #1d1d1f;
+}
+
+/* ===== ССЫЛКИ ===== */
+.ingredient-list-item a {
+    color: #007aff;
+    text-decoration: none;
+}
+
+.ingredient-list-item a:hover {
+    text-decoration: underline;
+}

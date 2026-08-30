@@ -1,0 +1,65 @@
+{
+  "name": "Колбаски Мюнхенские",
+  "name_normalized": "kolbaski-myunhenskie",
+  "synonyms": "мюнхенские колбаски, мюнхенские сосиски, мюнхенские белые колбаски, weißwurst, мюнхенские колбаски для гриля, баварские колбаски",
+  "short_description": "Традиционные баварские колбаски из свинины и телятины, вареные или приготовленные на гриле. Имеют нежную светлую текстуру, мягкий вкус с пряными травами. Подаются с горчицей и кренделями, классика мюнхенской кухни.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Мюнхенские колбаски (Weißwurst) — это традиционные баварские колбаски из свинины и телятины, отличающиеся светлым цветом и нежной текстурой. В отличие от охотничьих или копченых колбас, они вареные и имеют тонкую оболочку, которую обычно не едят. Мюнхенские колбаски приправлены травами (петрушка, лук, лимонная цедра), имбирем и мускатным орехом, что придает им мягкий, изысканный вкус. Традиционно подаются в горячем виде с хлебом, соленым кренделем (брецелем) и сладкой горчицей. Популярны в баварской кухне и на пивных фестивалях.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, мягкая, с тонкой оболочкой</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — мягкий, с пряными травами, лимонной цедрой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — светло-розовый, беловатый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — свинина, телятина, лед, специи, травы</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 5-7 дней в холодильнике</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Варка</strong> — нагревание в горячей воде (не кипятить)</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — легкое обжаривание для хрустящей корочки</li><li class=\"ingredient-list-item\"><strong>Подача</strong> — с кренделем, сладкой горчицей</li><li class=\"ingredient-list-item\"><strong>Завтрак</strong> — традиционное баварское утро</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Горчица</strong> — сладкая или горчица с хреном</li><li class=\"ingredient-list-item\"><strong>Крендель</strong> — соленый брецель</li><li class=\"ingredient-list-item\"><strong>Пиво</strong> — светлое баварское</li><li class=\"ingredient-list-item\"><strong>Ржаной хлеб</strong> — классическая подача</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Охотничьи колбаски</strong> — более плотные, копченые</li><li class=\"ingredient-list-item\"><strong>Вареные колбаски</strong> — похожая консистенция</li><li class=\"ingredient-list-item\"><strong>Купаты</strong> — для гриля</li></ul>",
+  "category": "Колбаски и сосиски сырые",
+  "semantic_data": {
+    "properties": [
+      "колбаски",
+      "баварские",
+      "светлые",
+      "нежные",
+      "варенье",
+      "традиционные"
+    ],
+    "preparations": [
+      "нагрев_в_горячей_воде",
+      "жарка_на_гриле"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "гриль",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "завтрак",
+      "закуска",
+      "праздничный_стол"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [],
+      "sauces": ["горчица_сладкая"],
+      "breads": ["крендель", "ржаной_хлеб"],
+      "drinks": ["светлое_пиво"]
+    },
+    "substitutes": [
+      {
+        "name": "Охотничьи колбаски",
+        "similarity": "low"
+      },
+      {
+        "name": "Вареные колбаски",
+        "similarity": "medium"
+      },
+      {
+        "name": "Купаты",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "колбаски",
+    "мюнхенские",
+    "баварская_кухня",
+    "белые_колбаски",
+    "пиво"
+  ]
+}

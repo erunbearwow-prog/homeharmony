@@ -1,0 +1,69 @@
+{
+  "name": "Горчица баварская",
+  "name_normalized": "gorchitsa-bavarskaya",
+  "synonyms": "баварская горчица, сладкая горчица, баварская сладкая горчица, weißwurstsenf, bayrische senf, горчица для белых сосисок",
+  "short_description": "Традиционная немецкая горчица из Баварии, отличающаяся сладковатым вкусом с лёгкой остринкой и карамельно-пряным ароматом. Классически подаётся к мюнхенским белым колбаскам (вайсвурст) и кренделям.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Баварская горчица — это традиционная немецкая горчица из Баварии, которая отличается от других видов сладковатым вкусом с лёгкой остринкой и характерным карамельно-пряным ароматом. Её изготавливают из семян горчицы с добавлением сахара, карамелизированного сиропа, уксуса и специй. Благодаря добавлению сахара, она значительно мягче и слаще как русской острой, так и дижонской горчицы. В Баварии её традиционно подают к мюнхенским белым колбаскам (вайсвурст), кренделям и другим местным деликатесам.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, с лёгкой остринкой и карамельными нотками</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от светло-жёлтого до янтарного</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — однородная, густая</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — семена горчицы, сахар, карамельный сироп, уксус, специи</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 1-2 лет в холодильнике</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>К мюнхенским белым колбаскам (вайсвурст)</strong> — классическое сочетание</li><li class=\"ingredient-list-item\"><strong>К кренделям и брецелям</strong> — традиционная закуска к пиву</li><li class=\"ingredient-list-item\"><strong>К свинине и ветчине</strong> — в бутербродах и закусках</li><li class=\"ingredient-list-item\"><strong>Соусы и заправки</strong> — для придания сладковато-острого вкуса</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для мяса</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — свинина, колбасы, ветчина</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — крендели, брецели, ржаной хлеб</li><li class=\"ingredient-list-item\"><strong>Пиво</strong> — светлое баварское пиво</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — полутвёрдые сыры (эменталь, гауда)</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Дижонская горчица + мёд</strong> — для имитации сладости</li><li class=\"ingredient-list-item\"><strong>Острая русская горчица + сахар</strong> — более жгучая</li><li class=\"ingredient-list-item\"><strong>Зернистая горчица</strong> — с целыми семенами</li></ul>",
+  "category": "Соусы европейские",
+  "semantic_data": {
+    "properties": [
+      "горчица",
+      "немецкая",
+      "сладкая",
+      "карамельная",
+      "мягкая",
+      "баварская_кухня"
+    ],
+    "preparations": [
+      "хранение_в_холодильнике",
+      "размешивание_перед_использованием"
+    ],
+    "cooking_methods": [
+      {
+        "method": "добавление_в_бутерброды",
+        "priority": "high"
+      },
+      {
+        "method": "подача_к_колбаскам",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_соусов",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "бутерброды",
+      "мясные_блюда",
+      "колбаски",
+      "пивные_закуски"
+    ],
+    "pairings": {
+      "protein": ["свинина", "колбасы", "ветчина", "эменталь", "гауда"],
+      "breads": ["крендели", "брецели", "ржаной_хлеб"],
+      "drinks": ["светлое_пиво"]
+    },
+    "substitutes": [
+      {
+        "name": "Дижонская горчица + мёд",
+        "similarity": "medium"
+      },
+      {
+        "name": "Острая русская горчица + сахар",
+        "similarity": "medium"
+      },
+      {
+        "name": "Зернистая горчица",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "горчица",
+    "баварская_горчица",
+    "немецкая_кухня",
+    "сладкая_горчица",
+    "вайсвурст",
+    "пивная_закуска"
+  ]
+}

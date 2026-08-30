@@ -1,0 +1,85 @@
+{
+  "name": "Вишня",
+  "name_normalized": "vishnya",
+  "synonyms": "вишня, вишня садовая, черешня (отличается, но часто путают), кислая вишня, ягоды вишни, вишня обыкновенная",
+  "short_description": "Сочная тёмно-красная ягода с кисло-сладким вкусом, характерной терпкостью и ароматом. Богата витаминами C, A, калием, антоцианами и органическими кислотами. Используется в свежем виде, для варенья, компотов, десертов, соусов и домашних заготовок.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Вишня — это сочная костянка (ягода) с тёмно-красной кожицей и мякотью, кисло-сладкого вкуса с характерной терпкостью. Плоды имеют округлую или слегка приплюснутую форму, сочную мякоть и косточку внутри. Вишня богата витаминами C и A, калием, антоцианами (природные антиоксиданты), органическими кислотами (яблочная, лимонная). Благодаря своему яркому вкусу и аромату, вишня широко используется в кулинарии для приготовления десертов, выпечки, варенья, компотов, соусов и как самостоятельный продукт.</p><h2 class=\"ingredient-title\">Сорта и виды</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Обыкновенная вишня</strong> — кисло-сладкая, для варенья и выпечки</li><li class=\"ingredient-list-item\"><strong>Сладкая вишня (черешня)</strong> — более сладкая, десертная</li><li class=\"ingredient-list-item\"><strong>Вишня шпанка</strong> — крупная, сладковатая</li><li class=\"ingredient-list-item\"><strong>Вишня чёрная</strong> — тёмно-фиолетовая, терпкая</li><li class=\"ingredient-list-item\"><strong>Вишня кислая</strong> — для консервации</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисло-сладкий, с терпкостью</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочная, упругая, с косточкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — тёмно-красный, бордовый</li><li class=\"ingredient-list-item\"><strong>Витамины</strong> — C, A, группы B, калий</li><li class=\"ingredient-list-item\"><strong>Антиоксиданты</strong> — антоцианы</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — июнь-июль</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Переборка</strong> — удалить листья, веточки</li><li class=\"ingredient-list-item\"><strong>Мойка</strong> — промыть в проточной воде</li><li class=\"ingredient-list-item\"><strong>Удаление косточек</strong> — для варенья и выпечки</li><li class=\"ingredient-list-item\"><strong>Заморозка</strong> — для длительного хранения</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежая</strong> — самостоятельный фрукт</li><li class=\"ingredient-list-item\"><strong>Варенье и джем</strong> — классическое лакомство</li><li class=\"ingredient-list-item\"><strong>Компоты</strong> — освежающий напиток</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — начинка для пирогов, пирожков</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — с мороженым, йогуртом</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к мясу (особенно дичи)</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сахар</strong> — для сладости</li><li class=\"ingredient-list-item\"><strong>Шоколад</strong> — в десертах</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — дичь, утка, свинина</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, ваниль, гвоздика</li><li class=\"ingredient-list-item\"><strong>Кисломолочное</strong> — йогурт, творог, сметана</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Черешня</strong> — слаще, менее терпкая</li><li class=\"ingredient-list-item\"><strong>Красная смородина</strong> — кислая</li><li class=\"ingredient-list-item\"><strong>Малина</strong> — сладкая, ягодная</li><li class=\"ingredient-list-item\"><strong>Слива</strong> — для выпечки</li></ul>",
+  "category": "Косточковые",
+  "semantic_data": {
+    "properties": [
+      "ягода",
+      "кисло-сладкий",
+      "терпкий",
+      "красный",
+      "антиоксидантный",
+      "витаминный"
+    ],
+    "preparations": [
+      "переборка_и_мойка",
+      "удаление_косточек",
+      "замораживание"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "варка_варенья",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_компота",
+        "priority": "high"
+      },
+      {
+        "method": "замораживание",
+        "priority": "high"
+      },
+      {
+        "method": "выпечка",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "десерты",
+      "выпечка",
+      "варенье",
+      "соусы_к_мясу",
+      "напитки"
+    ],
+    "pairings": {
+      "protein": ["дичь", "утка", "свинина"],
+      "fruits": [],
+      "chocolate": ["шоколад"],
+      "spices": ["корица", "ваниль", "гвоздика"],
+      "dairy": ["йогурт", "творог", "сметана"]
+    },
+    "substitutes": [
+      {
+        "name": "Черешня",
+        "similarity": "medium"
+      },
+      {
+        "name": "Красная смородина",
+        "similarity": "medium"
+      },
+      {
+        "name": "Малина",
+        "similarity": "low"
+      },
+      {
+        "name": "Слива",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "фрукты",
+    "ягоды",
+    "вишня",
+    "варенье",
+    "выпечка",
+    "компот"
+  ]
+}

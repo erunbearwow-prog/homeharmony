@@ -1,0 +1,72 @@
+{
+  "name": "Горошек зеленый консервированный",
+  "name_normalized": "goroshek-zelenyy-konservirovannyy",
+  "synonyms": "консервированный горошек, зеленый горошек в банке, горошек консервированный, консервы горошек, зеленый горошек консервный, canned green peas",
+  "short_description": "Зеленый горошек, законсервированный в рассоле или заливке. Сохраняет яркий цвет, сладкий вкус и плотную текстуру. Готов к употреблению, удобен для салатов, супов, гарниров и быстрых блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Консервированный зеленый горошек — это отборные зерна зеленого горошка, прошедшие тепловую обработку и законсервированные в легком рассоле (вода, соль, сахар). В отличие от замороженного горошка, консервированный полностью готов к употреблению и не требует варки. Сохраняет яркий зеленый цвет, сладковатый вкус и плотную текстуру. Широко используется в кулинарии для салатов, супов, гарниров, закусок и как самостоятельное блюдо. Популярен благодаря удобству и длительному сроку хранения.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, сочная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, с легкой солоноватостью</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — зеленый</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в закрытой банке</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — горошек, вода, соль, сахар</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — оливье, винегрет, овощные салаты</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — овощные, с мясом</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — к мясу, рыбе, птице</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — самостоятельное блюдо</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для пирогов, запеканок</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук, перец</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, свинина, говядина</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — перец, укроп, петрушка</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — майонез, сметана, масло</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Замороженный зеленый горошек</strong> — требует варки</li><li class=\"ingredient-list-item\"><strong>Свежий зеленый горошек</strong> — в сезон</li><li class=\"ingredient-list-item\"><strong>Кукуруза консервированная</strong> — в салатах</li></ul>",
+  "category": "Бобовые, крупы, мука, макароны",
+  "semantic_data": {
+    "properties": [
+      "консервированный",
+      "горошек",
+      "готовый_к_употреблению",
+      "сладкий",
+      "универсальный",
+      "длительное_хранение"
+    ],
+    "preparations": [
+      "открыть_банку",
+      "слить_жидкость",
+      "промыть_при_необходимости"
+    ],
+    "cooking_methods": [
+      {
+        "method": "использование_как_есть",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_салаты",
+        "priority": "high"
+      },
+      {
+        "method": "подогрев",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "салаты",
+      "супы",
+      "гарниры",
+      "закуски",
+      "начинки"
+    ],
+    "pairings": {
+      "protein": ["курица", "свинина", "говядина"],
+      "vegetables": ["картофель", "морковь", "лук", "перец"],
+      "sauces": ["майонез", "сметана", "масло"],
+      "herbs": ["укроп", "петрушка"]
+    },
+    "substitutes": [
+      {
+        "name": "Замороженный зеленый горошек",
+        "similarity": "high"
+      },
+      {
+        "name": "Свежий зеленый горошек",
+        "similarity": "high"
+      },
+      {
+        "name": "Кукуруза консервированная",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "консервы",
+    "горошек",
+    "зеленый_горошек",
+    "салаты",
+    "гарнир",
+    "длительное_хранение"
+  ]
+}

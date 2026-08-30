@@ -1,0 +1,81 @@
+{
+  "name": "Йогурт греческий",
+  "name_normalized": "yogurt-grecheskiy",
+  "synonyms": "греческий йогурт, йогурт греческий, густой йогурт, греческий йогурт 0%, греческий йогурт 5%, греческий йогурт 10%, strained yogurt, greek yogurt",
+  "short_description": "Густой, кремообразный йогурт, полученный путём многократного процеживания для удаления сыворотки. Отличается высокой плотностью, насыщенным кисломолочным вкусом, кремовой текстурой и высоким содержанием белка. Популярен как самостоятельный продукт, в соусах, заправках и десертах.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Греческий йогурт — это густой, кремообразный кисломолочный продукт, который получают путём многократного процеживания (удаления сыворотки) из обычного йогурта. Благодаря этому он становится значительно более плотным, насыщенным и белковым, чем обычный йогурт. Вкус греческого йогурта — насыщенный, кисломолочный, с лёгкой кислинкой и кремовым оттенком. Жирность варьируется от 0% до 10%, что делает его универсальным для разных целей. Широко используется как самостоятельный продукт, в соусах, заправках, десертах, выпечке и как основа для смузи.</p><h2 class=\"ingredient-title\">Виды греческого йогурта</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>0% жирности</strong> — самый диетический, для здорового питания</li><li class=\"ingredient-list-item\"><strong>2-5% жирности</strong> — сбалансированный, для повседневного использования</li><li class=\"ingredient-list-item\"><strong>10% жирности</strong> — самый густой и кремовый, для десертов и соусов</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — густая, кремовая, плотная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, кисломолочный, с лёгкой кислинкой</li><li class=\"ingredient-list-item\"><strong>Белки</strong> — высокое содержание (до 10 г на 100 г)</li><li class=\"ingredient-list-item\"><strong>Пробиотики</strong> — полезные бактерии</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 5-7 дней в холодильнике</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Самостоятельный продукт</strong> — с мёдом, фруктами, ягодами</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — на основе греческого йогурта (tzatziki)</li><li class=\"ingredient-list-item\"><strong>Заправки</strong> — для салатов</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — для кексов, маффинов, хлеба</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — в муссах, чизкейках</li><li class=\"ingredient-list-item\"><strong>Смузи</strong> — для густоты и белка</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мёд</strong> — классическое сочетание</li><li class=\"ingredient-list-item\"><strong>Фрукты и ягоды</strong> — клубника, черника, манго, банан</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль, фисташки</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, ваниль</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — огурец, чеснок (в соусах)</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Обычный йогурт</strong> — более жидкий</li><li class=\"ingredient-list-item\"><strong>Сметана</strong> — более жирная</li><li class=\"ingredient-list-item\"><strong>Кефир</strong> — жидкий, кислый</li><li class=\"ingredient-list-item\"><strong>Творожный сыр</strong> — для выпечки</li></ul>",
+  "category": "Молоко",
+  "semantic_data": {
+    "properties": [
+      "кисломолочный",
+      "густой",
+      "кремовый",
+      "белковый",
+      "пробиотический",
+      "универсальный"
+    ],
+    "preparations": [
+      "хранение_в_холодильнике",
+      "использовать_для_соусов_и_заправок"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_соусов",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_заправок",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_выпечку",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "завтраки",
+      "соусы",
+      "десерты",
+      "выпечка",
+      "смузи"
+    ],
+    "pairings": {
+      "protein": [],
+      "fruits": ["клубника", "черника", "манго", "банан"],
+      "nuts": ["грецкие_орехи", "миндаль", "фисташки"],
+      "sweeteners": ["мёд"],
+      "spices": ["корица", "ваниль"],
+      "vegetables": ["огурец", "чеснок"]
+    },
+    "substitutes": [
+      {
+        "name": "Обычный йогурт",
+        "similarity": "high"
+      },
+      {
+        "name": "Сметана",
+        "similarity": "medium"
+      },
+      {
+        "name": "Кефир",
+        "similarity": "low"
+      },
+      {
+        "name": "Творожный сыр",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "кисломолочные_продукты",
+    "йогурт",
+    "греческий_йогурт",
+    "соусы",
+    "заправки",
+    "завтрак"
+  ]
+}

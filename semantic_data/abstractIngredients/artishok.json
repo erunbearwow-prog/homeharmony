@@ -1,0 +1,117 @@
+{
+  "name": "Артишок",
+  "name_normalized": "artishok",
+  "synonyms": "",
+  "short_description": "Необычный овощ — нераскрывшиеся соцветия многолетнего растения с плотными зелёными чешуйками, мясистым цветоложем и нежным, слегка ореховым вкусом. Деликатес средиземноморской кухни.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Артишок — это съедобное нераскрывшееся соцветие (корзинка) многолетнего травянистого растения семейства Астровые. Имеет плотные зелёные чешуйки, защищающие мясистое цветоложе и основание лепестков — съедобные части. Обладает нежным, слегка ореховым вкусом с лёгкой горчинкой. Широко используется в средиземноморской кухне (Италия, Испания, Франция, Греция) как деликатесный овощ. Богат антиоксидантами, клетчаткой, калием и магнием.</p><h2 class=\"ingredient-title\">Сорта и виды</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Крупный зелёный (глобус)</strong> — самый распространённый, округлой формы</li><li class=\"ingredient-list-item\"><strong>Лиловый (фиолетовый)</strong> — с лиловыми чешуйками, более нежный</li><li class=\"ingredient-list-item\"><strong>Маленькие артишоки (мини)</strong> — молодые, съедаются целиком</li><li class=\"ingredient-list-item\"><strong>Римский (маммоло)</strong> — плоский, с фиолетовым оттенком</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нежный, ореховый, с лёгкой горчинкой</li><li class=\"ingredient-list-item\"><strong>Съедобные части</strong> — мясистое цветоложе (сердцевина) и основания чешуек</li><li class=\"ingredient-list-item\"><strong>Клетчатка</strong> — богат инулином (пребиотик)</li><li class=\"ingredient-list-item\"><strong>Витамины</strong> — C, K, фолаты, ниацин</li><li class=\"ingredient-list-item\"><strong>Минералы</strong> — калий, магний, фосфор, железо</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойка</strong> — тщательно вымыть, удалить грязь</li><li class=\"ingredient-list-item\"><strong>Обрезка</strong> — отрезать верхнюю колючую часть, удалить жёсткие внешние чешуйки</li><li class=\"ingredient-list-item\"><strong>Удаление сердцевины</strong> — вскрыть и удалить жёсткую центральную часть (с ворсинками)</li><li class=\"ingredient-list-item\"><strong>Предотвращение потемнения</strong> — сбрызнуть лимонным соком</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — в подсоленной воде с лимоном 20-40 минут</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Варёный</strong> — соус (голландский, винегрет), масло</li><li class=\"ingredient-list-item\"><strong>Жареный</strong> — в масле на сковороде</li><li class=\"ingredient-list-item\"><strong>Запечённый</strong> — с оливковым маслом и чесноком</li><li class=\"ingredient-list-item\"><strong>В салатах</strong> — с зеленью, пармезаном, лимоном</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — артишоковый соус для пасты</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для пиццы, пирогов</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соусы</strong> — голландский, винегрет, сливочный, чесночный</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — пармезан, пекорино, моцарелла, фета</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, перец, лук, баклажаны</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, базилик, орегано, укроп</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, лимон, чёрный перец, оливковое масло</li><li class=\"ingredient-list-item\"><strong>Паста и крупы</strong> — рис, булгур, паста</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сердцевина пальмы</strong> — похожая текстура</li><li class=\"ingredient-list-item\"><strong>Спаржа</strong> — в салатах и закусках</li><li class=\"ingredient-list-item\"><strong>Сельдерей</strong> — для хруста</li><li class=\"ingredient-list-item\"><strong>Баклажан</strong> — в запеканках</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/kak-gotovit-artishok/'>Как приготовить артишок — пошаговое руководство</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/nutrition/polza-artishoka/'>Польза артишока: клетчатка, антиоксиданты</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/salat-s-artishokom/'>Салаты с артишоком — рецепты</a></li></ul>",
+  "category": "Артишоки",
+  "semantic_data": {
+    "properties": [
+      "овощ",
+      "соцветие",
+      "плотный",
+      "зелёный",
+      "ореховый_вкус",
+      "горчинка",
+      "антиоксидантный",
+      "богат_клетчаткой",
+      "деликатес"
+    ],
+    "preparations": [
+      "мытьё_и_обрезка",
+      "удаление_колючих_кончиков",
+      "сбрызгивание_лимонным_соком",
+      "варка_в_подсоленной_воде",
+      "удаление_ворсистой_сердцевины"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_в_салатах",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "закуска",
+      "салаты",
+      "горячие_блюда",
+      "соусы",
+      "начинки_для_пиццы"
+    ],
+    "pairings": {
+      "protein": [
+        "пармезан",
+        "пекорино",
+        "моцарелла",
+        "фета"
+      ],
+      "vegetables": [
+        "помидоры",
+        "перец",
+        "лук",
+        "баклажаны"
+      ],
+      "herbs": [
+        "петрушка",
+        "базилик",
+        "орегано",
+        "укроп"
+      ],
+      "sauces": [
+        "голландский",
+        "винегрет",
+        "сливочный",
+        "чесночный"
+      ],
+      "spices": [
+        "чеснок",
+        "лимон",
+        "черный_перец",
+        "оливковое_масло"
+      ],
+      "grains": [
+        "рис",
+        "булгур",
+        "паста"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Сердцевина пальмы",
+        "similarity": "high"
+      },
+      {
+        "name": "Спаржа",
+        "similarity": "medium"
+      },
+      {
+        "name": "Сельдерей",
+        "similarity": "low"
+      },
+      {
+        "name": "Баклажан",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "овощ",
+    "артишок",
+    "средиземноморская_кухня",
+    "деликатес",
+    "итальянская_кухня",
+    "антиоксидант",
+    "соцветие"
+  ]
+}

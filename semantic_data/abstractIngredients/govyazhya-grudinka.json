@@ -1,0 +1,72 @@
+{
+  "name": "Говяжья грудинка",
+  "name_normalized": "govyazhya-grudinka",
+  "synonyms": "грудинка говяжья, говяжья грудинка для варки, грудинка для супа, грудинка для борща, мясо для бульона, говяжья грудинка для тушения",
+  "short_description": "Мясной полуфабрикат из грудной части говяжьей туши, содержащий кости, хрящи и прослойки жира. Идеален для наваристых бульонов, супов, борщей и тушёных блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Говяжья грудинка — это часть туши, расположенная в грудной клетке, включающая рёберные кости, хрящи и мясо с жировыми прослойками. Благодаря содержанию костей и хрящей, грудинка даёт наваристый, ароматный бульон, а мясо становится мягким и сочным при длительной варке или тушении. Широко используется для приготовления супов, борщей, холодцов, а также для тушения и запекания.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, с жировыми прослойками</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный мясной, с ароматом жира</li><li class=\"ingredient-list-item\"><strong>Коллаген</strong> — высокое содержание</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — средняя (15-25%)</li><li class=\"ingredient-list-item\"><strong>Время варки</strong> — 2-3 часа</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бульоны</strong> — основа для супов, борщей</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — для холодца, студня</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с овощами и соусом</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с картофелем, специями</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, картофель, капуста, свёкла</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, лавровый лист, чеснок, тимьян</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свиная грудинка</strong> — жирнее</li><li class=\"ingredient-list-item\"><strong>Говяжья лопатка</strong> — для тушения</li><li class=\"ingredient-list-item\"><strong>Говяжьи ребрышки</strong> — для бульона</li></ul>",
+  "category": "Говядина",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "говядина",
+      "грудинка",
+      "на_кости",
+      "наваристый",
+      "суп",
+      "тушение"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "варка_2-3_часа",
+      "тушение_1-2_часа"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "супы",
+      "борщи",
+      "холодец",
+      "тушеные_блюда"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["лук", "морковь", "картофель", "капуста", "свёкла"],
+      "spices": ["черный_перец", "лавровый_лист", "чеснок", "тимьян"],
+      "herbs": ["петрушка", "укроп"]
+    },
+    "substitutes": [
+      {
+        "name": "Свиная грудинка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Говяжья лопатка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Говяжьи ребрышки",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "говядина",
+    "грудинка",
+    "суп",
+    "борщ",
+    "холодец"
+  ]
+}

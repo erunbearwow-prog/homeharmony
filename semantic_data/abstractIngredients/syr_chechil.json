@@ -1,0 +1,91 @@
+{
+  "name": "Сыр Чечил",
+  "name_normalized": "syr_chechil",
+  "synonyms": "чечил, chechil, армянский сыр, рассольный сыр, волокнистый сыр, нитевидный сыр, сыр косичка, косичка, сыр в рассоле, кавказский сыр, сыр для закусок, сыр для салатов, сыр для закусок к пиву",
+  "short_description": "Армянский рассольный сыр с волокнистой, нитевидной текстурой, который часто заплетают в косичку. Относится к категории вытяжных сыров (паста филата). Имеет солоноватый, слегка кисловатый вкус и плотную, упругую структуру. Идеален к пиву, в салатах и как самостоятельная закуска.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Чечил — это традиционный армянский рассольный сыр, который относится к категории вытяжных сыров (паста филата). Его главная особенность — волокнистая, нитевидная текстура: сырную массу вытягивают в тонкие нити, которые затем заплетают в косички или формируют в клубки. Чечил хранится в рассоле, что придает ему солоноватый, слегка кисловатый вкус. Сыр имеет плотную, упругую, немного резинистую текстуру, которая при жевании приятно сопротивляется. Чечил часто коптят, придавая ему дополнительный аромат. Он широко используется как закуска к пиву, в салатах, горячих блюдах и как самостоятельная закуска.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тип</strong> — рассольный, вытяжной (паста филата)</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — волокнистая, нитевидная, упругая, плотная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — солоноватый, слегка кисловатый, с молочными нотками</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый, у копченого — золотистый</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — 10-30% (обычно 15-20%)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — в рассоле до 1 месяца в холодильнике</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — не плавится при нагревании (только размягчается)</li></ul><h2 class=\"ingredient-title\">Виды чечила</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Классический чечил</strong> — белый, в рассоле, нитевидный</li><li class=\"ingredient-list-item\"><strong>Копченый чечил</strong> — золотистый, с дымным ароматом</li><li class=\"ingredient-list-item\"><strong>Чечил косичка</strong> — заплетенный в косичку, часто копченый</li></ul><h2 class=\"ingredient-title\">Подготовка и хранение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в рассоле в холодильнике (до 1 месяца)</li><li class=\"ingredient-list-item\"><strong>Перед использованием</strong> — при необходимости промыть водой для уменьшения солености</li><li class=\"ingredient-list-item\"><strong>Порционирование</strong> — разобрать на волокна, нарезать</li><li class=\"ingredient-list-item\"><strong>Подача</strong> — при комнатной температуре (достать за 10-15 минут)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Закуска к пиву</strong> — классическое использование</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — добавляет солоноватый вкус и интересную текстуру</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — в омлетах, на пицце, в запеканках</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — в нарезке, на шпажках</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, огурцы, перец, зелень</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — кинза, петрушка, укроп</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — лаваш, багет, ржаной</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — пиво, белое вино</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сулугуни</strong> — схожая технология, более слоистый</li><li class=\"ingredient-list-item\"><strong>Моцарелла</strong> — нежная текстура, менее соленая</li><li class=\"ingredient-list-item\"><strong>Брынза</strong> — более плотная и соленая</li><li class=\"ingredient-list-item\"><strong>Адыгейский сыр</strong> — менее соленый, мягкий</li></ul>",
+  "category": "Молочные продукты",
+  "semantic_data": {
+    "properties": [
+      "рассольный",
+      "вытяжной",
+      "волокнистый",
+      "нитевидный",
+      "армянский",
+      "солоноватый",
+      "упругий",
+      "косичка",
+      "для закусок",
+      "к пиву",
+      "копченый",
+      "паста филата"
+    ],
+    "preparations": [
+      "хранение в рассоле в холодильнике",
+      "промывание водой для уменьшения солености (при необходимости)",
+      "разбор на волокна",
+      "подача при комнатной температуре"
+    ],
+    "cooking_methods": [
+      {
+        "method": "подача в качестве закуски к пиву",
+        "priority": "high"
+      },
+      {
+        "method": "использование в салатах",
+        "priority": "high"
+      },
+      {
+        "method": "добавление в горячие блюда",
+        "priority": "medium"
+      },
+      {
+        "method": "в нарезке, на шпажках",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "закуска к пиву",
+      "салаты",
+      "горячие блюда (омлеты, пицца, запеканки)",
+      "закуски"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["помидоры", "огурцы", "перец"],
+      "sauces": [],
+      "herbs": ["кинза", "петрушка", "укроп"],
+      "spices": ["черный перец", "паприка"]
+    },
+    "substitutes": [
+      {
+        "name": "Сулугуни",
+        "similarity": "high"
+      },
+      {
+        "name": "Моцарелла",
+        "similarity": "high"
+      },
+      {
+        "name": "Брынза",
+        "similarity": "medium"
+      },
+      {
+        "name": "Адыгейский сыр",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "сыр",
+    "чечил",
+    "армянский сыр",
+    "рассольный сыр",
+    "волокнистый сыр",
+    "косичка",
+    "закуска к пиву",
+    "кавказская кухня",
+    "паста филата",
+    "молочные продукты"
+  ]
+}

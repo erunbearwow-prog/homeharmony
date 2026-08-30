@@ -1,0 +1,76 @@
+{
+  "name": "Хлеб белый формовой",
+  "name_normalized": "khleb-belyy-formovoy",
+  "synonyms": "белый формовой хлеб, формовой хлеб, белый кирпичик, хлеб в форме, белый хлеб в форме, батон формовой, хлеб тостовый формовой",
+  "short_description": "Классический белый хлеб, выпекаемый в прямоугольных формах (кирпичиком), из пшеничной муки высшего или первого сорта. Отличается мягким, воздушным мякишем, тонкой золотистой корочкой и нейтральным вкусом. Идеален для бутербродов, тостов и сэндвичей.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Белый формовой хлеб — это классический хлеб, выпекаемый в прямоугольных формах (кирпичиком), из пшеничной муки высшего или первого сорта. Мякиш у него мягкий, воздушный, пористый, а корочка — тонкая, золотистая и нежная. Вкус нейтральный, слегка сладковатый, без выраженной кислинки, что делает его идеальной основой для бутербродов, тостов, сэндвичей и различных закусок. Белый формовой хлеб — один из самых распространённых видов хлеба в России, его часто можно встретить в магазинах под названием «кирпичик».</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мягкая, воздушная, пористая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, слегка сладковатый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — корочка золотистая, мякиш белый или кремовый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — пшеничная мука, вода, соль, сахар, дрожжи</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 2-3 дня</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом, сыром, колбасой, рыбой, паштетом</li><li class=\"ingredient-list-item\"><strong>Тосты</strong> — для завтрака, с джемом, яйцом</li><li class=\"ingredient-list-item\"><strong>Сэндвичи</strong> — с разнообразными начинками</li><li class=\"ingredient-list-item\"><strong>Гренки</strong> — для супов и салатов</li><li class=\"ingredient-list-item\"><strong>Панировка</strong> — сухари из белого хлеба</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Масло, маргарин</strong> — для бутербродов</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — все виды</li><li class=\"ingredient-list-item\"><strong>Колбасы, ветчина</strong> — в бутербродах</li><li class=\"ingredient-list-item\"><strong>Варенье, джем, мёд</strong> — для сладких бутербродов</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — как дополнение</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Белый подовый хлеб</strong> — более хрустящая корочка</li><li class=\"ingredient-list-item\"><strong>Батон</strong> — более длинный</li><li class=\"ingredient-list-item\"><strong>Тостовый хлеб</strong> — специально для тостов</li><li class=\"ingredient-list-item\"><strong>Цельнозерновой хлеб</strong> — более полезный</li></ul>",
+  "category": "ХЛЕБ, ВЫПЕЧКА, ХЛЕБОБУЛОЧНЫЕ ИЗДЕЛИЯ",
+  "semantic_data": {
+    "properties": [
+      "хлеб",
+      "белый",
+      "формовой",
+      "мягкий",
+      "воздушный",
+      "нейтральный_вкус",
+      "бутербродный"
+    ],
+    "preparations": [
+      "хранение_в_хлебнице",
+      "нарезка_ломтиками",
+      "подогрев_в_тостере"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "подогрев_в_тостере",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_гренок",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "бутерброды",
+      "тосты",
+      "сэндвичи",
+      "гренки"
+    ],
+    "pairings": {
+      "protein": ["сыр", "колбаса", "ветчина", "паштет"],
+      "sweet": ["варенье", "джем", "мёд"],
+      "dairy": ["масло", "маргарин"],
+      "soups": ["супы"]
+    },
+    "substitutes": [
+      {
+        "name": "Белый подовый хлеб",
+        "similarity": "high"
+      },
+      {
+        "name": "Батон",
+        "similarity": "high"
+      },
+      {
+        "name": "Тостовый хлеб",
+        "similarity": "high"
+      },
+      {
+        "name": "Цельнозерновой хлеб",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "хлеб",
+    "белый_хлеб",
+    "формовой_хлеб",
+    "кирпичик",
+    "бутерброды",
+    "тосты"
+  ]
+}

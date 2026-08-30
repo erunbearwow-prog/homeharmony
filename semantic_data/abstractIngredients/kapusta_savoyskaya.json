@@ -1,0 +1,62 @@
+{
+  "name": "Капуста савойская",
+  "name_normalized": "kapusta_savoyskaya",
+  "synonyms": "савойская капуста, капуста савойская, итальянская капуста, гофрированная капуста, капуста кудрявая, савойская капуста для голубцов, савойская капуста для супов, савойская капуста для салатов, Brassica oleracea var. sabauda, Savoy cabbage",
+  "short_description": "Разновидность капусты с рыхлым кочаном из гофрированных, пузырчатых темно-зеленых листьев. Отличается более нежной текстурой и сладковатым вкусом по сравнению с белокочанной капустой. Идеальна для голубцов, салатов, супов и как гарнир.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Савойская капуста — это разновидность капусты с рыхлым кочаном, состоящим из гофрированных, пузырчатых листьев темно-зеленого цвета. В отличие от белокочанной капусты, листья савойской капусты более тонкие, нежные и имеют сладковатый, слегка ореховый вкус. Благодаря мягким листьям, савойская капуста идеально подходит для голубцов (листья легко сворачиваются), салатов, супов и как гарнир. Она также содержит больше каротина, витамина C и кальция, чем белокочанная капуста. Савойская капуста популярна в европейской и итальянской кухне.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, мягкая, рыхлая, листья тонкие</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, с ореховыми нотками, без горечи</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — темно-зеленый, с гофрированной поверхностью</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — рыхлый кочан, листья пузырчатые</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — осень-зима</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 недель в холодильнике</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — не подходит для квашения, быстро разваривается</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойка</strong> — тщательно промыть под проточной водой</li><li class=\"ingredient-list-item\"><strong>Удаление внешних листьев</strong> — снять 1-2 верхних листа, если они повреждены</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — шинковка (для салатов), отделение листьев для голубцов</li><li class=\"ingredient-list-item\"><strong>Бланширование</strong> — для голубцов листья опустить в кипяток на 1-2 минуты</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Голубцы</strong> — идеальна благодаря тонким и эластичным листьям</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — свежая капуста с маслом, лимонным соком</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — овощные супы, щи (быстро разваривается)</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с мясом, овощами, в сливочном или томатном соусе</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — запеканки, гратен</li><li class=\"ingredient-list-item\"><strong>Гарнир</strong> — к мясу и рыбе</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — говядина, свинина, курица, фарш</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — морковь, лук, картофель, помидоры, грибы</li><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — сливки, сметана, сливочное масло</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочный, томатный, сметанный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, базилик</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, мускатный орех, тмин</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Белокочанная капуста</strong> — для голубцов (более жесткая)</li><li class=\"ingredient-list-item\"><strong>Пекинская капуста</strong> — для салатов</li><li class=\"ingredient-list-item\"><strong>Листья салата</strong> — для салатов</li></ul>",
+  "category": "Овощи",
+  "semantic_data": {
+    "properties": [
+      "овощ",
+      "гофрированная",
+      "нежная",
+      "сладковатая",
+      "для голубцов",
+      "для салатов",
+      "для супов",
+      "европейская кухня"
+    ],
+    "preparations": [
+      "мойка под проточной водой",
+      "удаление верхних листьев",
+      "шинковка или отделение листьев",
+      "бланширование для голубцов"
+    ],
+    "cooking_methods": [
+      {"method": "приготовление голубцов", "priority": "high"},
+      {"method": "использование в салатах", "priority": "high"},
+      {"method": "варка (супы)", "priority": "high"},
+      {"method": "тушение", "priority": "high"},
+      {"method": "запекание", "priority": "medium"},
+      {"method": "приготовление гарниров", "priority": "medium"}
+    ],
+    "applications": [
+      "голубцы",
+      "салаты",
+      "супы",
+      "вторые блюда",
+      "гарниры"
+    ],
+    "pairings": {
+      "protein": ["говядина", "свинина", "курица", "фарш"],
+      "vegetables": ["морковь", "лук", "картофель", "помидоры", "грибы"],
+      "sauces": ["сливочный", "томатный", "сметанный"],
+      "herbs": ["петрушка", "укроп", "базилик"],
+      "spices": ["черный перец", "мускатный орех", "тмин"]
+    },
+    "substitutes": [
+      {"name": "Белокочанная капуста", "similarity": "medium"},
+      {"name": "Пекинская капуста", "similarity": "medium"},
+      {"name": "Листья салата", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "овощ",
+    "савойская капуста",
+    "гофрированная капуста",
+    "голубцы",
+    "салаты",
+    "супы",
+    "итальянская кухня"
+  ]
+}

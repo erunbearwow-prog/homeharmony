@@ -1,0 +1,53 @@
+{
+  "name": "Бифштекс из мраморной говядины",
+  "name_normalized": "bifshteks-iz-mramornoy-govyadiny",
+  "synonyms": "мраморный бифштекс, бифштекс из мраморной говядины, стейк из мраморной говядины, премиальный бифштекс",
+  "short_description": "Премиальный мясной полуфабрикат из мраморной говядины — мяса с тонкими жировыми прослойками, которые при жарке тают, делая его невероятно сочным и ароматным. Идеален для приготовления стейков высокой степени прожарки.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Бифштекс из мраморной говядины — это полуфабрикат из высококачественного мяса, полученного от специальных пород скота (в основном японской породы вагю или её гибридов). Характерная особенность — тонкие жировые прожилки, равномерно пронизывающие мышечную ткань. При тепловой обработке жир плавится, пропитывая мясо и делая его невероятно сочным, нежным и ароматным. В отличие от обычной говядины, бифштекс из мраморного мяса не требует длительного маринования и быстро готовится. Это премиальный продукт для ресторанного уровня и особых случаев.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, маслянистая, тающая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, с ярким мясным и ореховым оттенком</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — высокая (20-30%), жир мраморный</li><li class=\"ingredient-list-item\"><strong>Сорт мяса</strong> — вагю, ангус, гибриды</li><li class=\"ingredient-list-item\"><strong>Прожарка</strong> — medium rare, medium (не выше!)</li><li class=\"ingredient-list-item\"><strong>Время приготовления</strong> — 5-10 минут</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде, в масле, до средней или слабой прожарки</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — на открытом огне, на решётке</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке после обжарки</li><li class=\"ingredient-list-item\"><strong>Су-вид</strong> — для точной температуры</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочный, перечный, трюфельный</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — овощи-гриль, картофель, спаржа</li><li class=\"ingredient-list-item\"><strong>Травы</strong> — розмарин, тимьян</li><li class=\"ingredient-list-item\"><strong>Вино</strong> — красное сухое, крепкое</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Классический бифштекс</strong> — менее жирный</li><li class=\"ingredient-list-item\"><strong>Стейк рибай</strong> — близкий аналог</li><li class=\"ingredient-list-item\"><strong>Говядина на кости</strong> — другой вкус</li></ul>",
+  "category": "Мясные полуфабрикаты",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "мраморное_мясо",
+      "говядина",
+      "премиальный",
+      "нежный",
+      "сочный",
+      "жирный"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "оставить_при_комнатной_температуре_30_мин",
+      "обжарка_на_сильном_огне"
+    ],
+    "cooking_methods": [
+      {"method": "жарка", "priority": "high"},
+      {"method": "гриль", "priority": "high"},
+      {"method": "су-вид", "priority": "medium"}
+    ],
+    "applications": [
+      "основное_блюдо",
+      "праздничное_блюдо"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["спаржа", "овощи_гриль"],
+      "sauces": ["сливочный", "перечный", "трюфельный"],
+      "herbs": ["розмарин", "тимьян"],
+      "wines": ["красное_сухое"]
+    },
+    "substitutes": [
+      {"name": "Классический бифштекс", "similarity": "medium"},
+      {"name": "Стейк рибай", "similarity": "high"},
+      {"name": "Говядина на кости", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "мраморное_мясо",
+    "говядина",
+    "бифштекс",
+    "премиум",
+    "стейк"
+  ]
+}

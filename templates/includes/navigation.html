@@ -5,8 +5,8 @@
         <div class="flex justify-between items-center h-16">
             <!-- Логотип -->
             <div class="flex items-center space-x-2">
-                <i class="fas fa-home text-amber-700 text-xl"></i>
-                <a href="{% url 'pages:home' %}" class="text-xl font-bold text-gray-800 serif">Семейные <span class="text-amber-700">ценности</span></a>
+                <i class=" text-amber-700 text-xl"></i>
+                <a href="{% url 'pages:home' %}" class="text-xl font-bold text-gray-800 serif">Вкус <span class="text-amber-700">и</span> Порядок</a>
             </div>
 
             <!-- Десктопное меню -->
@@ -91,7 +91,7 @@
             <form action="{% url 'accounts:auth-logout' %}" method="post" class="block">
                 {% csrf_token %}
                 <button type="submit" class="w-full text-left py-2 px-3 text-red-600 hover:bg-red-50 rounded-lg transition">
-                    🚪 Выйти
+                    Выйти
                 </button>
             </form>
             {% else %}
@@ -102,31 +102,3 @@
     </div>
 </nav>
 
-<!--<script>-->
-<!--    // Мобильное меню-->
-<!--    const mobileMenuBtn = document.getElementById('mobileMenuBtn');-->
-<!--    const mobileMenu = document.getElementById('mobileMenu');-->
-<!--    if (mobileMenuBtn && mobileMenu) {-->
-<!--        mobileMenuBtn.addEventListener('click', () => {-->
-<!--            mobileMenu.classList.toggle('hidden');-->
-<!--        });-->
-<!--    }-->
-
-<!--    // Закрытие мобильного меню при клике вне его-->
-<!--    document.addEventListener('click', function(event) {-->
-<!--        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {-->
-<!--            const isClickInside = mobileMenu.contains(event.target) || mobileMenuBtn.contains(event.target);-->
-<!--            if (!isClickInside) {-->
-<!--                mobileMenu.classList.add('hidden');-->
-<!--            }-->
-<!--        }-->
-<!--    });-->
-
-<!--    // Поиск (пока заглушка)-->
-<!--    const searchIcon = document.getElementById('searchIcon');-->
-<!--    if (searchIcon) {-->
-<!--        searchIcon.addEventListener('click', function() {-->
-<!--            alert('Функция поиска в разработке');-->
-<!--        });-->
-<!--    }-->
-<!--</script>-->

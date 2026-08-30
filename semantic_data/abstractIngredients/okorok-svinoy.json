@@ -1,0 +1,82 @@
+{
+  "name": "Окорок свиной",
+  "name_normalized": "okorok-svinoy",
+  "synonyms": "Свиной окорок",
+  "short_description": "Мясной полуфабрикат из свинины — крупный кусок из тазобедренной части туши, с костью или без. Сочное, мясистое мясо с умеренным содержанием жира, идеально подходит для запекания, варки, копчения и приготовления ветчины.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Свиной окорок — это мясной полуфабрикат из свинины, представляющий собой крупный кусок мяса из тазобедренной (задней) части туши. Это один из самых ценных и универсальных отрубов свинины. Окорок может продаваться как с костью, так и в виде бескостного мяса. Мясо имеет плотную, но нежную структуру с тонкими прослойками жира, которые при запекании делают его сочным и ароматным. Окорок — идеальный выбор для запекания целиком, варки, копчения и приготовления ветчины, буженины и других мясных деликатесов.</p><h2 class=\"ingredient-title\">Характеристики</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вес</strong> — 3-8 кг (целый окорок)</li><li class=\"ingredient-list-item\"><strong>Отруб</strong> — тазобедренная часть</li><li class=\"ingredient-list-item\"><strong>Варианты</strong> — с костью или бескостный</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — умеренная (8-15%)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — универсальный, для длительного приготовления</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Запекание</strong> — целиком в духовке, в фольге</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — для ветчины, холодца</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — для деликатесных продуктов</li><li class=\"ingredient-list-item\"><strong>Буженина</strong> — классический вариант</li><li class=\"ingredient-list-item\"><strong>Ветчина</strong> — основа для ветчины</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соусы</strong> — горчичный, медово-горчичный, чесночный</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофель, квашеная капуста, тушёные овощи</li><li class=\"ingredient-list-item\"><strong>Травы</strong> — розмарин, тимьян, чеснок</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, паприка, тмин</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свиная лопатка</strong> — более жирная</li><li class=\"ingredient-list-item\"><strong>Свиная грудинка</strong> — более жирная</li><li class=\"ingredient-list-item\"><strong>Говяжий окорок</strong> — говядина</li><li class=\"ingredient-list-item\"><strong>Бараний окорок</strong> — баранина</li></ul>",
+  "category": "Мясные полуфабрикаты",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "свинина",
+      "окорок",
+      "крупный",
+      "сочный",
+      "универсальный",
+      "праздничный"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "запекание_целиком",
+      "варка_для_ветчины"
+    ],
+    "cooking_methods": [
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "копчение",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "запекание",
+      "ветчина",
+      "буженина",
+      "холодец",
+      "копчености"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "квашеная_капуста", "тушеные_овощи"],
+      "sauces": ["горчичный", "медово-горчичный", "чесночный"],
+      "herbs": ["розмарин", "тимьян", "чеснок"],
+      "spices": ["черный_перец", "паприка", "тмин"]
+    },
+    "substitutes": [
+      {
+        "name": "Свиная лопатка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Свиная грудинка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Говяжий окорок",
+        "similarity": "low"
+      },
+      {
+        "name": "Бараний окорок",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "свинина",
+    "окорок",
+    "запекание",
+    "ветчина",
+    "буженина"
+  ]
+}

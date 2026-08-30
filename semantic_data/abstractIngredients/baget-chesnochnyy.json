@@ -1,0 +1,96 @@
+{
+  "name": "Багет чесночный",
+  "name_normalized": "baget-chesnochnyy",
+  "synonyms": "",
+  "short_description": "Ароматный багет с добавлением чеснока и масла, имеющий хрустящую корочку и мягкий, пропитанный чесночным маслом мякиш. Идеален как закуска, к супам и для приготовления гренок.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Чесночный багет — это разновидность французского багета, в тесто которого добавляют чеснок (свежий, сушёный или в виде масла) или которым пропитывают готовый багет перед подачей. Имеет хрустящую золотистую корочку и мягкий, пористый мякиш с ярким чесночным ароматом и маслянистой текстурой. Часто подается в качестве закуски, к супам, салатам, а также используется для приготовления чесночных гренок и крутонов.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — хрустящая корочка, мягкий маслянистый мякиш</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — чесночный, маслянистый, солоноватый</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — интенсивный, чесночный</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — золотистая корочка</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 1-2 дня (при комнатной температуре), до 5 дней в холодильнике</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Закуска</strong> — к вину, пиву, безалкогольным напиткам</li><li class=\"ingredient-list-item\"><strong>К супам</strong> — луковый суп, грибные супы, томатный суп</li><li class=\"ingredient-list-item\"><strong>Гренки</strong> — для салатов (цезарь), супов</li><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с сыром, зеленью, томатами</li><li class=\"ingredient-list-item\"><strong>Подача к пасте</strong> — в итальянской кухне</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Супы</strong> — луковый, грибной, томатный, чечевичный</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — цезарь, греческий, овощные салаты</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сырный, сливочный</li><li class=\"ingredient-list-item\"><strong>Сыр</strong> — пармезан, моцарелла, фета</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, базилик, орегано</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Классический багет</strong> — без чеснока</li><li class=\"ingredient-list-item\"><strong>Багет с луком</strong> — луковый аромат</li><li class=\"ingredient-list-item\"><strong>Чиабатта</strong> — итальянский хлеб</li><li class=\"ingredient-list-item\"><strong>Гренки</strong> — готовые чесночные гренки</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/baget-chesnochnyy/'>Домашний чесночный багет</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/grenki/'>Чесночные гренки</a></li></ul>",
+  "category": "ХЛЕБ, ВЫПЕЧКА, ХЛЕБОБУЛОЧНЫЕ ИЗДЕЛИЯ",
+  "semantic_data": {
+    "properties": [
+      "багет",
+      "чесночный",
+      "хрустящий",
+      "маслянистый",
+      "ароматный",
+      "закуска"
+    ],
+    "preparations": [
+      "хранение_в_бумажном_пакете",
+      "подогрев_в_духовке",
+      "нарезка_в_косую"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "подогрев_в_духовке",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_гренок",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "закуска",
+      "к_супам",
+      "гренки",
+      "бутерброды"
+    ],
+    "pairings": {
+      "protein": [
+        "пармезан",
+        "моцарелла",
+        "фета"
+      ],
+      "vegetables": [
+        "томаты",
+        "зелень"
+      ],
+      "soups": [
+        "луковый_суп",
+        "грибной_суп",
+        "томатный_суп",
+        "чечевичный_суп"
+      ],
+      "sauces": [
+        "томатный",
+        "сырный",
+        "сливочный"
+      ],
+      "herbs": [
+        "петрушка",
+        "базилик",
+        "орегано"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Классический багет",
+        "similarity": "high"
+      },
+      {
+        "name": "Багет с луком",
+        "similarity": "medium"
+      },
+      {
+        "name": "Чиабатта",
+        "similarity": "medium"
+      },
+      {
+        "name": "Готовые чесночные гренки",
+        "similarity": "high"
+      }
+    ]
+  },
+  "tags": [
+    "хлеб",
+    "багет",
+    "чесночный_багет",
+    "закуска",
+    "гренки",
+    "к_супу"
+  ]
+}

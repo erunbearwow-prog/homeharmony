@@ -1,0 +1,76 @@
+{
+  "name": "Бородинский хлеб",
+  "name_normalized": "borodinskiy-khleb",
+  "synonyms": "бородинский хлеб, бородинский, хлеб бородинский, ржаной хлеб с кориандром, черный хлеб с кориандром, заварной ржаной хлеб, бородинский ржаной хлеб, хлеб с солодом",
+  "short_description": "Знаменитый российский ржаной хлеб с характерным темно-коричневым цветом, сладковато-пряным вкусом и ароматом кориандра. Выпекается заварным способом с добавлением ржаного солода, патоки и кориандра. Один из самых узнаваемых и любимых сортов хлеба в России.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Бородинский хлеб — это легендарный российский ржаной хлеб, который отличается характерным темно-коричневым цветом, плотной влажной текстурой и неповторимым сладковато-пряным вкусом с ярким ароматом кориандра. Его уникальность заключается в заварной технологии приготовления: часть ржаной муки заваривается кипятком с добавлением ржаного солода, что придает хлебу особую сладость и насыщенный цвет. Кориандр и патока дополняют вкус, делая его одним из самых узнаваемых сортов хлеба в России.</p><h2 class=\"ingredient-title\">История и легенды</h2><p class=\"ingredient-text\">Существует несколько версий происхождения бородинского хлеба. По одной из них, рецепт был создан в Троице-Сергиевой лавре после Бородинского сражения 1812 года. По другой — изобретен пекарями в Москве в XIX веке. Однако сам рецепт в его современном виде был стандартизирован в СССР в 1933 году и с тех пор остается неизменным.</p><h2 class=\"ingredient-title\">Технология приготовления</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Заварка</strong> — смесь ржаной муки и ржаного солода заваривается кипятком, что придает хлебу сладость и темный цвет</li><li class=\"ingredient-list-item\"><strong>Закваска</strong> — используется ржаная закваска, обеспечивающая кисловатый вкус и пористую структуру</li><li class=\"ingredient-list-item\"><strong>Добавки</strong> — патока (или сахар) для сладости, кориандр (целый или молотый) для аромата</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — в формах, при высокой влажности, что обеспечивает характерную плотную текстуру</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, влажная, упругая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, с легкой кислинкой и пряными нотками кориандра</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — темно-коричневый, почти черный</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — ржаной с ярким ароматом кориандра</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 3-5 дней</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>К супам</strong> — борщ, щи, солянка, грибной суп</li><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом, соленой рыбой, селедкой, шпротами, сливочным сыром</li><li class=\"ingredient-list-item\"><strong>Гренки</strong> — к пиву, к супам</li><li class=\"ingredient-list-item\"><strong>Основа для закусок</strong> — с паштетом, икрой, крем-сыром</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сливочное масло</strong> — классическая пара</li><li class=\"ingredient-list-item\"><strong>Сельдь и шпроты</strong> — традиционная закуска</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — мягкие сливочные, плавленые, творожные</li><li class=\"ingredient-list-item\"><strong>Квашеная капуста</strong> — классическое сочетание</li><li class=\"ingredient-list-item\"><strong>Красная икра</strong> — праздничная подача</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Дарницкий хлеб</strong> — без кориандра, более простой вкус</li><li class=\"ingredient-list-item\"><strong>Черный хлеб (ржаной)</strong> — без сладости и кориандра</li><li class=\"ingredient-list-item\"><strong>Ржаной заварной хлеб</strong> — похожий, но без кориандра</li></ul>",
+  "category": "ХЛЕБ, ВЫПЕЧКА, ХЛЕБОБУЛОЧНЫЕ ИЗДЕЛИЯ",
+  "semantic_data": {
+    "properties": [
+      "хлеб",
+      "ржаной",
+      "заварной",
+      "сладковатый",
+      "пряный",
+      "плотный",
+      "традиционный",
+      "кориандр",
+      "бородинский"
+    ],
+    "preparations": [
+      "хранение_в_хлебнице",
+      "нарезка_ломтиками",
+      "подача_к_столу"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "подогрев_в_тостере",
+        "priority": "medium"
+      },
+      {
+        "method": "приготовление_гренок",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "к_супам",
+      "бутерброды",
+      "гренки",
+      "закуски"
+    ],
+    "pairings": {
+      "protein": ["сельдь", "шпроты", "сыр_мягкий", "сыр_плавленый", "сыр_творожный"],
+      "vegetables": ["квашеная_капуста"],
+      "dairy": ["сливочное_масло"],
+      "other": ["красная_икра"],
+      "soups": ["борщ", "щи", "солянка", "грибной_суп"]
+    },
+    "substitutes": [
+      {
+        "name": "Дарницкий хлеб",
+        "similarity": "medium"
+      },
+      {
+        "name": "Черный хлеб (ржаной)",
+        "similarity": "medium"
+      },
+      {
+        "name": "Ржаной заварной хлеб",
+        "similarity": "high"
+      }
+    ]
+  },
+  "tags": [
+    "хлеб",
+    "бородинский_хлеб",
+    "ржаной_хлеб",
+    "русская_кухня",
+    "кориандр",
+    "заварной_хлеб",
+    "черный_хлеб"
+  ]
+}

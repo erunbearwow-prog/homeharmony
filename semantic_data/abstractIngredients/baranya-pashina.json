@@ -1,0 +1,99 @@
+{
+  "name": "Баранья пашина",
+  "name_normalized": "baranya-pashina",
+  "synonyms": "",
+  "short_description": "Мясной полуфабрикат из баранины, нарезанный на порционные куски из пашины (брюшной части). Сочное мясо с прослойками жира, отличное для варки, тушения и жарки.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Баранья пашина (или брюшная часть) — это мясной полуфабрикат из баранины, представляющий собой порционные куски мяса из брюшной части туши. Эта часть баранины отличается наличием большого количества жировых прослоек, которые при варке и тушении делают мясо невероятно сочным и ароматным. Пашина — одна из самых доступных и бюджетных частей баранины, но при правильном приготовлении даёт отличный результат. Идеальна для супов, бульонов, варки, тушения с овощами и запекания.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мягкая, с прослойками жира</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, характерный для баранины, с жирным оттенком</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — высокая (от 20 до 30%)</li><li class=\"ingredient-list-item\"><strong>Бюджетность</strong> — одна из самых доступных частей баранины</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Супы и бульоны</strong> — наваристые шурпа, бешбармак, похлёбка</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — для холодца</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с овощами, соусом</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде (в небольших количествах из-за жирности)</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с картофелем и овощами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, лук, морковь, томаты, перец</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, булгур</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — зира, кориандр, чёрный перец, чеснок, лавровый лист</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — кинза, петрушка, укроп</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — холодной водой, обсушить</li><li class=\"ingredient-list-item\"><strong>Удаление излишнего жира</strong> — по желанию</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Баранья грудинка</strong> — похожая часть, с костью</li><li class=\"ingredient-list-item\"><strong>Баранья лопатка</strong> — менее жирная, для тушения</li><li class=\"ingredient-list-item\"><strong>Свиная грудинка</strong> — для варки</li><li class=\"ingredient-list-item\"><strong>Говяжий жирный фарш</strong> — для фарширования</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/shurpa-iz-baraniny/'>Шурпа из баранины с пашиной</a></li></ul>",
+  "category": "Баранина",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "баранина",
+      "пашина",
+      "жирный",
+      "сочный",
+      "бюджетный",
+      "наваристый"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "промыть_холодной_водой"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "жарка",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "супы_и_бульоны",
+      "тушение",
+      "запекание",
+      "холодец"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "картофель",
+        "лук",
+        "морковь",
+        "томаты",
+        "перец"
+      ],
+      "grains": [
+        "рис",
+        "булгур"
+      ],
+      "herbs": [
+        "кинза",
+        "петрушка",
+        "укроп"
+      ],
+      "spices": [
+        "зира",
+        "кориандр",
+        "черный_перец",
+        "чеснок",
+        "лавровый_лист"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Баранья грудинка",
+        "similarity": "high"
+      },
+      {
+        "name": "Баранья лопатка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Свиная грудинка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Говяжий фарш",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "баранина",
+    "пашина",
+    "жирное_мясо",
+    "суп",
+    "тушение"
+  ]
+}

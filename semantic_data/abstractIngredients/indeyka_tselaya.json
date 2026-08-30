@@ -1,0 +1,70 @@
+{
+  "name": "Индейка целая",
+  "name_normalized": "indeyka_tselaya",
+  "synonyms": "индейка, целая индейка, тушка индейки, индейка целиком, индейка запеченная, индейка для праздника, индейка на Рождество, индейка фаршированная, индейка домашняя, индейка фермерская, цыпленок индейки (молодая)",
+  "short_description": "Крупная домашняя птица с плотным, постным мясом, которое считается диетическим и полезным. Отличается нежным вкусом, низким содержанием жира и высоким содержанием белка. Традиционное праздничное блюдо на День благодарения, Рождество и Новый год.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Индейка — это крупная домашняя птица семейства фазановых, мясо которой ценится за диетические свойства, нежный вкус и высокое содержание белка. Целая тушка индейки — это традиционное праздничное блюдо во многих странах, особенно популярное на День благодарения в США и на Рождество в Европе. Мясо индейки светлое (грудка) и темное (ножки, бедра), причем светлое мясо более постное, а темное — чуть жирнее и сочнее. В зависимости от размера, индейка может весить от 3 до 12 кг и более.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — плотное, нежное, постное (особенно грудка)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — мягкий, нейтральный, без выраженного птичьего запаха</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — светлое мясо (грудка) и темное (ножки, бедра)</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — низкая (грудка 1-2%, ножки 5-7%)</li><li class=\"ingredient-list-item\"><strong>Вес</strong> — от 3 до 12 кг и более</li><li class=\"ingredient-list-item\"><strong>Время запекания</strong> — 2-4 часа (в зависимости от веса)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике (2-3 дня для крупной тушки)</li><li class=\"ingredient-list-item\"><strong>Мойка</strong> — тщательно промыть внутри и снаружи</li><li class=\"ingredient-list-item\"><strong>Обсушивание</strong> — промокнуть бумажным полотенцем</li><li class=\"ingredient-list-item\"><strong>Удаление</strong> — удалить шею и потроха (если есть)</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — рекомендуется для сочности (в рассоле, масле с травами)</li><li class=\"ingredient-list-item\"><strong>Натирание</strong> — солью, перцем, маслом, специями</li><li class=\"ingredient-list-item\"><strong>Фарширование</strong> — по желанию (фарш, овощи, фрукты, крупы)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Запекание</strong> — классический способ приготовления целиком</li><li class=\"ingredient-list-item\"><strong>Фарширование</strong> — с овощами, крупами, грибами, фруктами</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на гриле или во фритюре (только для частей)</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — для бульона (кости, шея)</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — горячее и холодное</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук, сельдерей, тыква, сладкий перец</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — яблоки, груши, апельсины, клюква, инжир</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — клюквенный, брусничный, сливочный, грибной, мясной</li><li class=\"ingredient-list-item\"><strong>Травы</strong> — розмарин, тимьян, шалфей, орегано, петрушка</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, черный перец, паприка, мускатный орех</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — рис, гречка, хлебные крошки, грибы, орехи, сухофрукты</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Курица</strong> — более мелкая, с более выраженным вкусом</li><li class=\"ingredient-list-item\"><strong>Цесарка</strong> — диетическое мясо, похожее на индейку</li><li class=\"ingredient-list-item\"><strong>Гусь</strong> — более жирный, с насыщенным вкусом</li><li class=\"ingredient-list-item\"><strong>Утка</strong> — более жирная и темная</li><li class=\"ingredient-list-item\"><strong>Кролик</strong> — диетическое мясо</li></ul>",
+  "category": "Мясо и мясные продукты",
+  "semantic_data": {
+    "properties": [
+      "птица",
+      "крупная",
+      "диетическая",
+      "постная",
+      "нежное мясо",
+      "праздничное блюдо",
+      "запекание",
+      "фарширование",
+      "Рождество",
+      "День благодарения"
+    ],
+    "preparations": [
+      "разморозка в холодильнике",
+      "мойка и обсушивание",
+      "удаление шеи и потрохов",
+      "маринование (в рассоле или масле)",
+      "натирание солью и специями",
+      "фарширование",
+      "запекание в духовке"
+    ],
+    "cooking_methods": [
+      {"method": "запекание целиком", "priority": "high"},
+      {"method": "фарширование", "priority": "high"},
+      {"method": "копчение", "priority": "medium"},
+      {"method": "варка бульона", "priority": "medium"},
+      {"method": "гриль", "priority": "low"}
+    ],
+    "applications": [
+      "праздничные блюда",
+      "вторые блюда",
+      "супы и бульоны",
+      "закуски"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "морковь", "лук", "сельдерей", "тыква", "сладкий перец"],
+      "fruits": ["яблоки", "груши", "апельсины", "клюква", "инжир"],
+      "sauces": ["клюквенный", "брусничный", "сливочный", "грибной", "мясной"],
+      "herbs": ["розмарин", "тимьян", "шалфей", "орегано", "петрушка"],
+      "spices": ["чеснок", "черный перец", "паприка", "мускатный орех"]
+    },
+    "substitutes": [
+      {"name": "Курица", "similarity": "high"},
+      {"name": "Цесарка", "similarity": "high"},
+      {"name": "Гусь", "similarity": "medium"},
+      {"name": "Утка", "similarity": "medium"},
+      {"name": "Кролик", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "мясо",
+    "птица",
+    "индейка",
+    "целая индейка",
+    "праздничное блюдо",
+    "запекание",
+    "диетическое мясо",
+    "Рождество",
+    "День благодарения"
+  ]
+}

@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'kitchen/css/ingredient_description.css' %}">
+{% endblock %}
+
 {% block title %}{{ ingredient.name }} | База ингредиентов{% endblock %}
 
 {% block content %}
@@ -99,7 +104,13 @@
             {% endif %}
 
             <h1 class="text-3xl md:text-4xl font-bold serif mb-4">{{ ingredient.name }}</h1>
-            <p class="text-gray-600 mb-6">{{ ingredient.description|default:"Описание ингредиента будет добавлено позже."|safe }}</p>
+            <div class="ingredient-description mb-6">
+                {% if ingredient.description %}
+                    {{ ingredient.description|safe }}
+                {% else %}
+                    <p class="text-gray-500 italic">Описание ингредиента будет добавлено позже.</p>
+                {% endif %}
+            </div>
 
             <!-- ПИТАТЕЛЬНАЯ ЦЕННОСТЬ (динамическая) -->
             <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden mb-6">
@@ -233,7 +244,7 @@
                 </div>
             </div>
 
-            <!-- Рецепты с этим ингредиентом (исправлено: используем recipes, а не page_obj) -->
+            <!-- Рецепты с этим ингредиентом -->
             {% if recipes %}
             <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
                 <div class="bg-gray-50 px-6 py-3 border-b border-gray-200">
@@ -295,7 +306,6 @@
                 <div class="space-y-4">
                     <div>
                         <h3 class="font-semibold text-gray-700 mb-1">Категория</h3>
-                        <!-- ИСПРАВЛЕНО: используем ingredient.category вместо ingredient.abstract.category -->
                         <p class="text-gray-600">{{ ingredient.category.name|default:"Не указана" }}</p>
                     </div>
 

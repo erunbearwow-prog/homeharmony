@@ -1,0 +1,71 @@
+{
+  "name": "Говяжий жир",
+  "name_normalized": "govyazhiy-z hir",
+  "synonyms": "говяжий жир, топленый говяжий жир, говяжье сало, рендерный говяжий жир, говяжий жир для жарки, говяжий шпик",
+  "short_description": "Жир, получаемый из говяжьей туши, главным образом из почечной и брюшной части. Обладает высокой температурой дымления, что делает его идеальным для жарки, фритюра и запекания. В топлёном виде известен как говяжий жир и ценится за насыщенный вкус и аромат, который он придаёт блюдам.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Говяжий жир — это жировой продукт, получаемый из тканей крупного рогатого скота. Чаще всего его вытапливают из почечной, брюшной и других частей туши. Говяжий жир имеет плотную, сальную консистенцию при комнатной температуре, а при нагревании превращается в прозрачную жидкость. Обладает высокой температурой дымления, что позволяет использовать его для жарки и запекания. В топлёном виде (рендерный жир) он приобретает более чистый вкус и аромат, который ценят в различных кухнях мира.</p><h2 class=\"ingredient-title\">Виды говяжьего жира</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сырой говяжий жир</strong> — необработанный, используется для вытапливания</li><li class=\"ingredient-list-item\"><strong>Топлёный говяжий жир</strong> — очищенный, для жарки, фритюра</li><li class=\"ingredient-list-item\"><strong>Почечный жир</strong> — наиболее чистый, с высоким качеством</li><li class=\"ingredient-list-item\"><strong>Говяжий шпик</strong> — жир с прослойками мяса</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, мясной, с лёгким ароматом</li><li class=\"ingredient-list-item\"><strong>Температура дымления</strong> — 190-200°C (высокая)</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, сальная (при комнатной температуре)</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый или светло-кремовый</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 6 месяцев в холодильнике</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде для мяса, овощей</li><li class=\"ingredient-list-item\"><strong>Фритюр</strong> — для картофеля, рыбы</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — смазывание противней</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — для глубины вкуса</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — говядина, баранина, свинина</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, паприка, чеснок</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свиной жир</strong> — более мягкий вкус</li><li class=\"ingredient-list-item\"><strong>Сливочное масло</strong> — для жарки</li><li class=\"ingredient-list-item\"><strong>Растительное масло</strong> — нейтральный вкус</li></ul>",
+  "category": "Животные жиры",
+  "semantic_data": {
+    "properties": [
+      "жир",
+      "говядина",
+      "высокая_температура_дымления",
+      "насыщенный_вкус",
+      "универсальный"
+    ],
+    "preparations": [
+      "вытапливание_на_медленном_огне",
+      "хранение_в_холодильнике"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "фритюр",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      },
+      {
+        "method": "тушение",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "жарка",
+      "фритюр",
+      "запекание",
+      "тушение"
+    ],
+    "pairings": {
+      "protein": ["говядина", "баранина", "свинина"],
+      "vegetables": ["картофель", "морковь", "лук"],
+      "spices": ["черный_перец", "паприка", "чеснок"]
+    },
+    "substitutes": [
+      {
+        "name": "Свиной жир",
+        "similarity": "medium"
+      },
+      {
+        "name": "Сливочное масло",
+        "similarity": "medium"
+      },
+      {
+        "name": "Растительное масло",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "жир",
+    "говяжий_жир",
+    "животные_жиры",
+    "жарка",
+    "фритюр"
+  ]
+}

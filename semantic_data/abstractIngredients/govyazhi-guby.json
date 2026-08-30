@@ -1,0 +1,65 @@
+{
+  "name": "Говяжьи губы",
+  "name_normalized": "govyazhi-guby",
+  "synonyms": "говяжьи губы, губы говяжьи, говяжьи губы субпродукт, говяжья губа, субпродукт говяжий",
+  "short_description": "Субпродукт из говядины, представляющий собой губы крупного рогатого скота. Имеют плотную упругую текстуру, содержат много коллагена. Требуют длительного приготовления, используются для супов, холодцов и тушёных блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Говяжьи губы — это специфический субпродукт из говядины, который относится к категории мясных обрезей и деликатесных частей туши. Губы содержат большое количество коллагена и эластина, что придаёт им характерную упруго-плотную текстуру. После длительной варки они становятся мягкими, желеобразными и приобретают насыщенный мясной вкус. Широко используются в некоторых кухнях мира для приготовления супов, холодцов, заливного, а также в составе колбасных изделий и фаршей.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, с лёгким мясным оттенком</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от розового до сероватого</li><li class=\"ingredient-list-item\"><strong>Коллаген</strong> — высокое содержание</li><li class=\"ingredient-list-item\"><strong>Время варки</strong> — 2-3 часа</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Холодец</strong> — придаёт бульону желеобразную консистенцию</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — для наваристых бульонов</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с овощами и соусом</li><li class=\"ingredient-list-item\"><strong>В составе фарша</strong> — для сочности</li><li class=\"ingredient-list-item\"><strong>Заливное</strong> — для праздничного стола</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, чеснок, корень петрушки</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, лавровый лист, гвоздика</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, томатный, чесночный</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжьи ноги</strong> — для холодца</li><li class=\"ingredient-list-item\"><strong>Свиные уши</strong> — субпродукт</li><li class=\"ingredient-list-item\"><strong>Говяжий рубец</strong> — для супов</li></ul>",
+  "category": "Субпродукты",
+  "semantic_data": {
+    "properties": [
+      "субпродукт",
+      "говядина",
+      "губы",
+      "коллаген",
+      "холодец",
+      "суп"
+    ],
+    "preparations": [
+      "вымачивание_в_холодной_воде",
+      "промывка",
+      "варка_2-3_часа"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "холодец",
+      "супы",
+      "заливное"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["лук", "морковь", "чеснок", "корень_петрушки"],
+      "spices": ["черный_перец", "лавровый_лист", "гвоздика"],
+      "sauces": ["сметанный", "томатный", "чесночный"]
+    },
+    "substitutes": [
+      {
+        "name": "Говяжьи ноги",
+        "similarity": "high"
+      },
+      {
+        "name": "Свиные уши",
+        "similarity": "medium"
+      },
+      {
+        "name": "Говяжий рубец",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "субпродукты",
+    "говядина",
+    "губы",
+    "холодец",
+    "суп"
+  ]
+}

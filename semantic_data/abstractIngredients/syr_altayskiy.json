@@ -1,0 +1,96 @@
+{
+  "name": "Сыр алтайский",
+  "name_normalized": "syr_altayskiy",
+  "synonyms": "алтайский сыр, алтайский, сыр Алтайский, Алтайский сыр, сыр алтайский 50%, алтайский твердый сыр, алтайский полутвердый сыр, алтайское сыроделие",
+  "short_description": "Твердый сыр с плотной, эластичной консистенцией и сладковатым, слегка пряным вкусом. Относится к группе твердых сыров с высокой температурой второго нагревания, считается \"младшим братом\" Швейцарского сыра.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Сыр «Алтайский» — это твердый сыр, который считается «младшим братом» Швейцарского сыра. Он изготавливается из натурального пастеризованного коровьего молока с использованием специальных бактериальных заквасок. По технологии относится к группе твердых сыров с высокой температурой второго нагревания. Продолжительность созревания составляет от 60 до 120 суток и более, в зависимости от сорта. Имеет массовую долю жира 50% в сухом веществе.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, эластичная, пластичная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — выраженный сырный, сладковатый, слегка пряный, с ореховыми и карамельными оттенками при длительной выдержке</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — слабо-желтый, нежно-желтый</li><li class=\"ingredient-list-item\"><strong>Рисунок</strong> — глазки круглой или овальной формы, равномерно расположенные по всей массе</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — 50% в сухом веществе</li><li class=\"ingredient-list-item\"><strong>Калорийность</strong> — 360-375 ккал на 100 г</li><li class=\"ingredient-list-item\"><strong>Срок созревания</strong> — 60-120+ суток</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 195-270 суток при правильных условиях</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — при температуре от 0 до +6°C, в герметичной упаковке</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — ломтиками, кубиками, соломкой</li><li class=\"ingredient-list-item\"><strong>Тёрка</strong> — на крупной или мелкой тёрке</li><li class=\"ingredient-list-item\"><strong>Подача</strong> — рекомендуется достать за 20-30 минут до подачи</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сырная тарелка</strong> — самостоятельная закуска с фруктами и вином</li><li class=\"ingredient-list-item\"><strong>Паста и ризотто</strong> — в тёртом виде</li><li class=\"ingredient-list-item\"><strong>Пицца</strong> — в составе начинки</li><li class=\"ingredient-list-item\"><strong>Горячие бутерброды и сэндвичи</strong></li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сырные соусы с чесноком</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — с медом, виноградом, другими фруктами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — виноград, яблоки, груши, инжир</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — багет, зерновой, ржаной</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль</li><li class=\"ingredient-list-item\"><strong>Мед</strong> — как дополнение</li><li class=\"ingredient-list-item\"><strong>Вино</strong> — красное</li><li class=\"ingredient-list-item\"><strong>Чеснок</strong> — для соусов и закусок</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Швейцарский сыр</strong> — эталон группы, более выраженный вкус</li><li class=\"ingredient-list-item\"><strong>Советский сыр</strong> — близкий по технологии</li><li class=\"ingredient-list-item\"><strong>Маасдам</strong> — схожая текстура</li><li class=\"ingredient-list-item\"><strong>Голландский сыр</strong> — для бутербродов</li></ul><h2 class=\"ingredient-title\">История и особенности производства</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Регион</strong> — Алтайский край, сырная столица России</li><li class=\"ingredient-list-item\"><strong>Традиция</strong> — более 120 лет сыроварения на Алтае</li><li class=\"ingredient-list-item\"><strong>Сырье</strong> — молоко коров, пасущихся в предгорьях Алтая, богатое кальцием и белками</li><li class=\"ingredient-list-item\"><strong>Технология</strong> — высокая температура второго нагревания</li><li class=\"ingredient-list-item\"><strong>Рецептура</strong> — воссоздана по старым рецептам алтайских сыроваров</li></ul>",
+  "category": "Молочные продукты",
+  "semantic_data": {
+    "properties": [
+      "твердый",
+      "плотный",
+      "эластичный",
+      "сладковатый вкус",
+      "пряный",
+      "ореховые нотки",
+      "карамельные оттенки",
+      "высокая температура нагревания",
+      "длительное созревание",
+      "алтайское молоко",
+      "региональный бренд",
+      "универсальный"
+    ],
+    "preparations": [
+      "хранение в холодильнике при 0-6°C",
+      "нарезка ломтиками, кубиками",
+      "натирание на тёрке",
+      "достать за 20-30 минут до подачи",
+      "использование в горячих блюдах"
+    ],
+    "cooking_methods": [
+      {
+        "method": "подача в сырной тарелке",
+        "priority": "high"
+      },
+      {
+        "method": "использование в бутербродах и сэндвичах",
+        "priority": "high"
+      },
+      {
+        "method": "плавление в горячих блюдах (пицца, запеканки)",
+        "priority": "medium"
+      },
+      {
+        "method": "использование в тёртом виде (паста, ризотто)",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "сырная тарелка",
+      "бутерброды и сэндвичи",
+      "паста и ризотто",
+      "пицца",
+      "запеканки",
+      "соусы",
+      "закуски (с фруктами, медом, орехами)"
+    ],
+    "pairings": {
+      "protein": ["курица", "говядина", "яйца"],
+      "vegetables": ["помидоры", "перец", "лук", "грибы"],
+      "sauces": ["томатный соус", "сливочный соус", "чесночный соус"],
+      "herbs": ["петрушка", "базилик", "орегано"],
+      "spices": ["черный перец", "паприка", "чеснок"]
+    },
+    "substitutes": [
+      {
+        "name": "Швейцарский сыр",
+        "similarity": "high"
+      },
+      {
+        "name": "Советский сыр",
+        "similarity": "high"
+      },
+      {
+        "name": "Маасдам",
+        "similarity": "medium"
+      },
+      {
+        "name": "Голландский сыр",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "сыр",
+    "алтайский сыр",
+    "твердый сыр",
+    "алтайское сыроделие",
+    "российский сыр",
+    "региональный продукт",
+    "швейцарский тип",
+    "сырная тарелка",
+    "бутерброды",
+    "паста",
+    "пицца"
+  ]
+}

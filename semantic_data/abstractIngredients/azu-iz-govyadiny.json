@@ -1,0 +1,121 @@
+{
+  "name": "Азу из говядины",
+  "name_normalized": "azu-iz-govyadiny",
+  "synonyms": "",
+  "short_description": "Мясной полуфабрикат из говядины, нарезанный брусочками поперёк волокон, толщиной 1,5–2 см и длиной 4–6 см. Готовый продукт для быстрого приготовления блюда азу.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Азу из говядины — это мясной полуфабрикат, представляющий собой говядину, нарезанную брусочками толщиной 1,5–2 см и длиной 4–6 см строго поперёк волокон. Такая нарезка обеспечивает быстрое приготовление и сохранение сочности мяса. Используется для приготовления одноимённого татарского блюда, а также для быстрого тушения, жарки и в блюдах с соусом.</p><h2 class=\"ingredient-title\">Характеристики нарезки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Форма</strong> — брусочки</li><li class=\"ingredient-list-item\"><strong>Толщина</strong> — 1,5–2 см</li><li class=\"ingredient-list-item\"><strong>Длина</strong> — 4–6 см</li><li class=\"ingredient-list-item\"><strong>Направление нарезки</strong> — строго поперёк волокон</li><li class=\"ingredient-list-item\"><strong>Вес</strong> — стандартная упаковка 400–500 г</li></ul><h2 class=\"ingredient-title\">Какое мясо используют</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжья лопатка</strong> — сочная, с прожилками, идеальна для тушения</li><li class=\"ingredient-list-item\"><strong>Говяжья задняя часть</strong> — плотная, для жарки и тушения</li><li class=\"ingredient-list-item\"><strong>Говяжья шея</strong> — мягкая, жирная, нежная</li><li class=\"ingredient-list-item\"><strong>Говяжий антрекот</strong> — быстрое приготовление на сковороде</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Классическое азу</strong> — тушение с луком, помидорами и солёными огурцами</li><li class=\"ingredient-list-item\"><strong>Быстрая обжарка</strong> — на сковороде с луком и соусом</li><li class=\"ingredient-list-item\"><strong>Гуляш</strong> — тушение в томатном или сметанном соусе</li><li class=\"ingredient-list-item\"><strong>Жаркое</strong> — в казане с картофелем и овощами</li><li class=\"ingredient-list-item\"><strong>Рагу</strong> — с овощами в соусе</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, помидоры, солёные огурцы, перец</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, сливочный, грибной</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофель (пюре, жареный), рис, гречка, паста</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, паприка, тмин, лавровый лист, чеснок, тимьян</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гуляш</strong> — кубики 3–4 см, для длительного тушения</li><li class=\"ingredient-list-item\"><strong>Бефстроганов</strong> — тонкая соломка, для быстрой жарки</li><li class=\"ingredient-list-item\"><strong>Шашлык</strong> — крупные куски, для гриля</li><li class=\"ingredient-list-item\"><strong>Рагу</strong> — куски 3–4 см, для тушения</li><li class=\"ingredient-list-item\"><strong>Лопатка (целым куском)</strong> — для запекания</li><li class=\"ingredient-list-item\"><strong>Стейк (антрекот)</strong> — целый кусок, для жарки</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/azu-klassicheskiy/'>Классический рецепт азу из говядины с пошаговыми фото</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/kak-vybrat-myaso-dlya-azu/'>Как выбрать говядину для нарезки азу</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/vidy-myasa-dlya-vtoryh-blyud/'>Виды нарезки мяса для вторых блюд</a></li></ul>",
+  "category": "Мясные полуфабрикаты",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "говядина",
+      "брусочки",
+      "поперёк_волокон",
+      "тушение",
+      "жарка",
+      "быстрое_приготовление",
+      "универсальный",
+      "замороженный",
+      "охлажденный"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "промыть_обсушить_бумажным_полотенцем",
+      "обжарить_на_сильном_огне_до_корочки"
+    ],
+    "cooking_methods": [
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "обжаривание_с_последующим_тушением",
+        "priority": "high"
+      },
+      {
+        "method": "запекание_в_соусе",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "азу",
+      "гуляш",
+      "жаркое",
+      "рагу",
+      "мясо_в_соусе"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "лук",
+        "морковь",
+        "помидоры",
+        "солёные_огурцы",
+        "болгарский_перец",
+        "картофель"
+      ],
+      "sauces": [
+        "томатный",
+        "сметанный",
+        "сливочный",
+        "грибной"
+      ],
+      "grains": [
+        "рис",
+        "гречка"
+      ],
+      "pasta": [
+        "паста"
+      ],
+      "spices": [
+        "черный_перец",
+        "паприка",
+        "тмин",
+        "лавровый_лист",
+        "чеснок",
+        "тимьян"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Гуляш",
+        "similarity": "medium"
+      },
+      {
+        "name": "Бефстроганов",
+        "similarity": "low"
+      },
+      {
+        "name": "Шашлык",
+        "similarity": "low"
+      },
+      {
+        "name": "Рагу",
+        "similarity": "low"
+      },
+      {
+        "name": "Лопатка (целым куском)",
+        "similarity": "low"
+      },
+      {
+        "name": "Стейк (антрекот)",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "говядина",
+    "азу",
+    "нарезка",
+    "тушение",
+    "жарка",
+    "мясо",
+    "быстрое_приготовление",
+    "мясной_полуфабрикат"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "name": "Грузинский лаваш",
+  "name_normalized": "gruzinskiy-lavash",
+  "synonyms": "грузинский лаваш, лаваш грузинский, пури, грузинский хлеб, пшеничный лаваш, тбилисский лаваш, традиционный грузинский хлеб",
+  "short_description": "Традиционный грузинский хлеб, выпекаемый в печи (тонире). Имеет характерную лодочкообразную или круглую форму, хрустящую корочку и мягкий, пористый мякиш. В отличие от тонкого армянского лаваша, грузинский — пышный, с толстым мякишем.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Грузинский лаваш — это традиционный хлеб грузинской кухни, который выпекают в специальной печи-тонире. В отличие от тонкого армянского лаваша, грузинский имеет пышную, объёмную форму, толстый мякиш и хрустящую корочку. В зависимости от региона, грузинский лаваш может быть круглым, овальным или иметь характерную лодочкообразную форму (как хачапури по-аджарски). Традиционно готовится из пшеничной муки, воды, соли и дрожжей. Популярен как замена хлеба к супам, мясным блюдам и салатам, а также используется для приготовления сэндвичей, тостов и как основа для закусок.</p><h2 class=\"ingredient-title\">Виды грузинского лаваша</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Пшеничный лаваш</strong> — классический вариант</li><li class=\"ingredient-list-item\"><strong>Кукурузный лаваш (мчади)</strong> — из кукурузной муки, без дрожжей</li><li class=\"ingredient-list-item\"><strong>Лаваш на мацони</strong> — с кисломолочной закваской</li><li class=\"ingredient-list-item\"><strong>Пекарский (тостерный)</strong> — для тостов и сэндвичей</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — пышная, пористая, с хрустящей корочкой</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, слегка сладковатый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — золотистый, кремовый</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — пшеничная мука, вода, соль, дрожжи</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 1-2 дня при комнатной температуре</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>К столу</strong> — к супам, салатам, мясным блюдам</li><li class=\"ingredient-list-item\"><strong>Основа для сэндвичей</strong> — с маслом, сыром, зеленью</li><li class=\"ingredient-list-item\"><strong>Гренки</strong> — для супов и салатов</li><li class=\"ingredient-list-item\"><strong>Основа для закусок</strong> — с паштетом, икрой</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — шашлык, люля-кебаб, жаркое</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — сулугуни, брынза, адыгейский</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — ткемали, сацибели, аджика</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, огурцы, перец</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Армянский лаваш</strong> — тонкий</li><li class=\"ingredient-list-item\"><strong>Белый хлеб</strong> — для бутербродов</li><li class=\"ingredient-list-item\"><strong>Пита</strong> — для сэндвичей</li><li class=\"ingredient-list-item\"><strong>Тортилья</strong> — в мексиканской кухне</li></ul>",
+  "category": "ХЛЕБ, ВЫПЕЧКА, ХЛЕБОБУЛОЧНЫЕ ИЗДЕЛИЯ",
+  "semantic_data": {
+    "properties": [
+      "хлеб",
+      "грузинский",
+      "пышный",
+      "пористый",
+      "хрустящий",
+      "традиционный"
+    ],
+    "preparations": [
+      "хранение_в_бумажном_пакете",
+      "подогрев_в_духовке_или_тостере"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "подогрев",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_гренок",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "к_столу",
+      "сэндвичи",
+      "гренки",
+      "закуски"
+    ],
+    "pairings": {
+      "protein": ["сулугуни", "брынза", "адыгейский_сыр", "шашлык", "люля-кебаб"],
+      "vegetables": ["помидоры", "огурцы", "перец"],
+      "sauces": ["ткемали", "сацибели", "аджика"],
+      "soups": ["супы", "бульоны"]
+    },
+    "substitutes": [
+      {
+        "name": "Армянский лаваш",
+        "similarity": "medium"
+      },
+      {
+        "name": "Белый хлеб",
+        "similarity": "medium"
+      },
+      {
+        "name": "Пита",
+        "similarity": "medium"
+      },
+      {
+        "name": "Тортилья",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "хлеб",
+    "лаваш",
+    "грузинский_лаваш",
+    "грузинская_кухня",
+    "выпечка",
+    "хлебобулочные_изделия"
+  ]
+}

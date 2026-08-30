@@ -1,0 +1,74 @@
+{
+  "name": "Нут консервированный",
+  "name_normalized": "nut-konservirovannyy",
+  "synonyms": "консервированный нут, турецкий горох консервированный, бараний горох, консервы нут, готовый нут, chickpeas canned",
+  "short_description": "Консервированный нут — готовый к употреблению продукт из отварных бобов нута в воде или рассоле. Сохраняет плотную текстуру и нежный ореховый вкус. Удобен для салатов, хумуса, супов и гарниров.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Консервированный нут (турецкий или бараний горох) — это готовые к употреблению бобы нута, прошедшие варку и законсервированные в воде или легком рассоле. В отличие от сухого нута, консервированный не требует замачивания и длительной варки, что делает его идеальным для быстрых блюд. Бобы имеют плотную, маслянистую текстуру и нежный ореховый вкус. Широко используется в средиземноморской, ближневосточной и вегетарианской кухне для салатов, хумуса, супов, рагу и как самостоятельный гарнир.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, маслянистая, нежная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — ореховый, слегка сладковатый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — бежевый, светло-коричневый</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в закрытой банке</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — нут, вода, соль</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хумус</strong> — классическая паста из нута</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, овощами, оливками</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — овощные, с томатами</li><li class=\"ingredient-list-item\"><strong>Рагу</strong> — с мясом или овощами</li><li class=\"ingredient-list-item\"><strong>Гарнир</strong> — к мясу, рыбе</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — обжаренный с пряностями</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — томаты, лук, чеснок, перец</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, кинза, мята</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — кумин, паприка, куркума</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — тахини, лимонный, оливковое масло</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сухой нут</strong> — требует замачивания и варки</li><li class=\"ingredient-list-item\"><strong>Консервированная белая фасоль</strong> — схожая текстура</li><li class=\"ingredient-list-item\"><strong>Консервированная чечевица</strong> — для супов</li></ul>",
+  "category": "Бобовые, крупы, мука, макароны",
+  "semantic_data": {
+    "properties": [
+      "консервированный",
+      "нут",
+      "бобовый",
+      "ореховый_вкус",
+      "готовый_к_употреблению",
+      "вегетарианский"
+    ],
+    "preparations": [
+      "открыть_банку",
+      "слить_жидкость",
+      "промыть_при_необходимости"
+    ],
+    "cooking_methods": [
+      {
+        "method": "использование_как_есть",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_хумуса",
+        "priority": "high"
+      },
+      {
+        "method": "обжарка_с_пряностями",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "хумус",
+      "салаты",
+      "супы",
+      "рагу",
+      "гарниры",
+      "закуски"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["томаты", "лук", "чеснок", "перец"],
+      "herbs": ["петрушка", "кинза", "мята"],
+      "spices": ["кумин", "паприка", "куркума"],
+      "sauces": ["тахини", "лимонный_сок", "оливковое_масло"]
+    },
+    "substitutes": [
+      {
+        "name": "Сухой нут",
+        "similarity": "high"
+      },
+      {
+        "name": "Консервированная белая фасоль",
+        "similarity": "medium"
+      },
+      {
+        "name": "Консервированная чечевица",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "консервы",
+    "нут",
+    "турецкий_горох",
+    "бобовые",
+    "хумус",
+    "вегетарианский"
+  ]
+}

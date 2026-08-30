@@ -1,0 +1,93 @@
+{
+  "name": "Сыр Фета",
+  "name_normalized": "syr_feta",
+  "synonyms": "фета, feta, греческий сыр, рассольный сыр, сыр из овечьего молока, сыр из козьего молока, сыр для греческого салата, сыр для салатов, сыр для закусок, PDO, защищенное наименование происхождения",
+  "short_description": "Классический греческий рассольный сыр, традиционно изготавливаемый из овечьего молока с добавлением козьего. Имеет солоноватый, сливочный, слегка кисловатый вкус и рассыпчатую, маслянистую текстуру. Незаменим в греческом салате, закусках и горячих блюдах.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Фета — это традиционный греческий рассольный сыр, который имеет статус PDO (защищенное наименование места происхождения). По классической технологии фету изготавливают из овечьего молока (не менее 70%) с добавлением козьего (до 30%). Сыр созревает и хранится в рассоле, что придает ему характерный солоноватый вкус и маслянистую, слегка рассыпчатую текстуру. Вкус феты — сливочный, с легкой кислинкой и острой солоноватой ноткой. Благодаря своей универсальности фета широко используется в кулинарии: в салатах (особенно в греческом), закусках, пасте, выпечке и как самостоятельное блюдо.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тип</strong> — рассольный сыр</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — маслянистая, рассыпчатая, нежная, крошливая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — солоноватый, сливочный, с легкой кислинкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый</li><li class=\"ingredient-list-item\"><strong>Молоко</strong> — овечье (не менее 70%) + козье (до 30%)</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — 30-45%</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — в рассоле до 1-2 месяцев в холодильнике</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — хранится в рассоле, не плавится при нагревании</li></ul><h2 class=\"ingredient-title\">Подготовка и хранение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике в рассоле (хранится до 1-2 месяцев)</li><li class=\"ingredient-list-item\"><strong>Перед использованием</strong> — при необходимости промыть водой для уменьшения солености</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — кубиками, ломтиками, крошкой</li><li class=\"ingredient-list-item\"><strong>Подача</strong> — при комнатной температуре (достать за 15-20 минут)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Греческий салат</strong> — классическое сочетание с помидорами, огурцами, перцем и оливками</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — другие салаты с зеленью и овощами</li><li class=\"ingredient-list-item\"><strong>Паста</strong> — добавляется в горячие соусы для пасты</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — в составе пирогов, слоек, рулетов</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — на хлебе, в оливковом масле, на шпажках</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — можно запекать с овощами, рыбой</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, огурцы, перец, лук, оливки</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — орегано, петрушка, кинза</li><li class=\"ingredient-list-item\"><strong>Оливковое масло</strong> — классическая заправка</li><li class=\"ingredient-list-item\"><strong>Лимон</strong> — выжимка сока для салатов</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — багет, чиабатта, питу</li><li class=\"ingredient-list-item\"><strong>Вино</strong> — белое (совиньон блан, грильо)</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Брынза</strong> — более плотная и соленая, из коровьего или козьего молока</li><li class=\"ingredient-list-item\"><strong>Адыгейский сыр</strong> — менее соленый, более нежный</li><li class=\"ingredient-list-item\"><strong>Козий сыр</strong> — более насыщенный козий привкус</li><li class=\"ingredient-list-item\"><strong>Осетинский сыр</strong> — схожий по текстуре</li></ul>",
+  "category": "Молочные продукты",
+  "semantic_data": {
+    "properties": [
+      "рассольный",
+      "греческий",
+      "овечье молоко",
+      "козье молоко",
+      "PDO",
+      "солоноватый",
+      "маслянистый",
+      "рассыпчатый",
+      "для греческого салата",
+      "для закусок",
+      "не плавится",
+      "длительное хранение"
+    ],
+    "preparations": [
+      "хранение в рассоле в холодильнике",
+      "промывание водой для уменьшения солености (при необходимости)",
+      "нарезка кубиками или крошкой",
+      "достать за 15-20 минут до подачи"
+    ],
+    "cooking_methods": [
+      {
+        "method": "использование в салатах (греческий салат)",
+        "priority": "high"
+      },
+      {
+        "method": "подача в закусках (с хлебом, в оливковом масле)",
+        "priority": "high"
+      },
+      {
+        "method": "добавление в выпечку и запеканки",
+        "priority": "medium"
+      },
+      {
+        "method": "использование в пасте и соусах",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "греческий салат",
+      "салаты",
+      "паста",
+      "выпечка (пироги, слойки)",
+      "закуски",
+      "запекание с овощами"
+    ],
+    "pairings": {
+      "protein": ["курица", "рыба"],
+      "vegetables": ["помидоры", "огурцы", "перец", "лук", "оливки"],
+      "sauces": ["оливковое масло", "лимонный сок"],
+      "herbs": ["орегано", "петрушка", "кинза"],
+      "spices": ["черный перец"]
+    },
+    "substitutes": [
+      {
+        "name": "Брынза",
+        "similarity": "high"
+      },
+      {
+        "name": "Адыгейский сыр",
+        "similarity": "high"
+      },
+      {
+        "name": "Козий сыр",
+        "similarity": "medium"
+      },
+      {
+        "name": "Осетинский сыр",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "сыр",
+    "фета",
+    "греческий сыр",
+    "рассольный сыр",
+    "овечий сыр",
+    "козий сыр",
+    "PDO",
+    "греческий салат",
+    "закуски",
+    "молочные продукты"
+  ]
+}

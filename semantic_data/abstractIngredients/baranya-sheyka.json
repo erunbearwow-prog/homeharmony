@@ -1,0 +1,105 @@
+{
+  "name": "Баранья шейка",
+  "name_normalized": "baranya-sheyka",
+  "synonyms": "",
+  "short_description": "Мясной полуфабрикат из баранины, нарезанный на порционные куски из шейной части с костью. Сочное, жирное мясо с высокой концентрацией коллагена, идеальное для супов, бульонов, тушения и запекания.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Баранья шейка — это мясной полуфабрикат из баранины, представляющий собой куски мяса из шейной части туши с костью. Шейка отличается большим количеством соединительной ткани, коллагена и жировых прослоек, что делает мясо особенно сочным и ароматным при длительном приготовлении. Эта часть баранины требует медленного тушения или варки, чтобы коллаген превратился в желатин, делая мясо нежным и мягким. Идеально подходит для супов, бульонов, рагу, тушения и запекания.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, с жировыми прослойками</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, с характерным бараний ароматом</li><li class=\"ingredient-list-item\"><strong>Коллаген</strong> — высокое содержание, при варке бульон становится желеобразным</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — высокая, мясо сочное и мягкое после тушения</li><li class=\"ingredient-list-item\"><strong>Применение</strong> — супы, бульоны, рагу, тушение</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Супы и бульоны</strong> — наваристый бульон для шурпы, бешбармака, харчо</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с овощами, специями, соусом</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с овощами, в фольге</li><li class=\"ingredient-list-item\"><strong>Рагу</strong> — с картофелем и овощами</li><li class=\"ingredient-list-item\"><strong>Холодец</strong> — благодаря высокому содержанию коллагена</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук, томаты, перец, баклажаны</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, булгур, кус-кус</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — зира, кориандр, тимьян, чёрный перец, лавровый лист, чеснок</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — кинза, петрушка, укроп, мята</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — холодной водой, обсушить</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — залить холодной водой, довести до кипения, снять пену</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — предварительно обжарить до золотистого цвета</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Баранья лопатка</strong> — похожее применение</li><li class=\"ingredient-list-item\"><strong>Баранья грудинка</strong> — для бульонов</li><li class=\"ingredient-list-item\"><strong>Говяжья шейка</strong> — для тушения</li><li class=\"ingredient-list-item\"><strong>Свиная шейка</strong> — для тушения</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/shurpa-iz-baraniny/'>Шурпа из бараньей шейки</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/baraniy-harcho/'>Харчо с бараньей шейкой</a></li></ul>",
+  "category": "Баранина",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "баранина",
+      "шейка",
+      "жирный",
+      "богат_коллагеном",
+      "наваристый",
+      "суповой"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "промыть_холодной_водой",
+      "залить_холодной_водой_для_варки"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      },
+      {
+        "method": "варка_для_холодца",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "супы_и_бульоны",
+      "тушение",
+      "запекание",
+      "рагу",
+      "холодец"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [
+        "картофель",
+        "морковь",
+        "лук",
+        "томаты",
+        "перец",
+        "баклажаны"
+      ],
+      "grains": [
+        "рис",
+        "булгур",
+        "кус-кус"
+      ],
+      "herbs": [
+        "кинза",
+        "петрушка",
+        "укроп",
+        "мята"
+      ],
+      "spices": [
+        "зира",
+        "кориандр",
+        "тимьян",
+        "черный_перец",
+        "лавровый_лист",
+        "чеснок"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Баранья лопатка",
+        "similarity": "high"
+      },
+      {
+        "name": "Баранья грудинка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Говяжья шейка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Свиная шейка",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "баранина",
+    "шейка",
+    "суп",
+    "тушение",
+    "холодец"
+  ]
+}

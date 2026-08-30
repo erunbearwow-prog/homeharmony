@@ -1,0 +1,68 @@
+{
+  "name": "Икра минтая",
+  "name_normalized": "ikra_mintaya",
+  "synonyms": "икра минтая, минтаевая икра, икра из минтая, икра рыбная, икра пастеризованная, икра в банках, закуска из минтая, икра для бутербродов, икра для салатов",
+  "short_description": "Доступный вид рыбной икры, получаемый от минтая. Отличается мелкими, но плотными икринками кремово-желтого цвета, мягким сливочно-рыбным вкусом и универсальностью в кулинарии. Широко используется как бюджетная альтернатива лососевой икре.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Икра минтая — это доступный и популярный вид рыбной икры, которую получают от тихоокеанского минтая (Theragra chalcogramma). В отличие от элитной красной икры лососевых, минтаевая икра имеет кремово-желтый цвет, мелкие, но плотные икринки и мягкий, сливочно-рыбный вкус с легкой солоноватостью. Это один из самых распространенных и доступных видов икры в России, который продается в виде пастеризованных банок или замороженных блоков. Икра минтая универсальна: она подходит для бутербродов, салатов, фаршированных яиц и используется как гарнир или закуска.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Размер икринок</strong> — мелкие, 1–2 мм в диаметре</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от кремово-желтого до светло-коричневого</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — мягкий, сливочный, с легкой солоноватостью</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, рассыпчатая, икринки не слипаются</li><li class=\"ingredient-list-item\"><strong>Калорийность</strong> — 130–150 ккал на 100 г</li><li class=\"ingredient-list-item\"><strong>Белки</strong> — 14–16 г на 100 г</li><li class=\"ingredient-list-item\"><strong>Жиры</strong> — 8–10 г на 100 г</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 24 месяцев (в закрытой банке), 3–5 дней (в открытой)</li></ul><h2 class=\"ingredient-title\">Формы выпуска</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Пастеризованная (в банках)</strong> — готовая к употреблению, с добавлением соли, масла и консервантов</li><li class=\"ingredient-list-item\"><strong>Замороженная (блоки)</strong> — используется для переработки, салатов и горячих блюд</li><li class=\"ingredient-list-item\"><strong>Соленая (бочковая)</strong> — традиционный способ засола, требует вымачивания</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Пастеризованная икра</strong> — готова к употреблению, подается охлажденной</li><li class=\"ingredient-list-item\"><strong>Замороженная икра</strong> — разморозить в холодильнике, использовать для салатов и горячих блюд</li><li class=\"ingredient-list-item\"><strong>Соленая икра</strong> — перед употреблением вымочить в воде или молоке для удаления излишней соли</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — с маслом на хлебе или тостах</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с яйцами, картофелем, луком</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — в тарталетках, на гренках</li><li class=\"ingredient-list-item\"><strong>Фаршированные яйца</strong> — с майонезом и зеленью</li><li class=\"ingredient-list-item\"><strong>Гарнир</strong> — к картофелю, мясу</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к рыбным блюдам</li><li class=\"ingredient-list-item\"><strong>Паштеты</strong> — смешивать с маслом, сливочным сыром</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — белый, зерновой, тостовый</li><li class=\"ingredient-list-item\"><strong>Масло сливочное</strong> — классика</li><li class=\"ingredient-list-item\"><strong>Яйца</strong> — вареные, в омлетах</li><li class=\"ingredient-list-item\"><strong>Картофель</strong> — вареный, в салатах</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, зеленый лук</li><li class=\"ingredient-list-item\"><strong>Майонез</strong> — в салатах</li><li class=\"ingredient-list-item\"><strong>Лук репчатый</strong> — в салатах</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Икра трески</strong> — схожая текстура, более светлая</li><li class=\"ingredient-list-item\"><strong>Икра щуки</strong> — мелкая, светлая</li><li class=\"ingredient-list-item\"><strong>Икра палтуса</strong> — крупнее, светлая</li><li class=\"ingredient-list-item\"><strong>Икра лососевая</strong> — красная, более дорогая</li></ul>",
+  "category": "Рыба и морепродукты",
+  "semantic_data": {
+    "properties": [
+      "икра",
+      "минтай",
+      "рыбная икра",
+      "доступная",
+      "мелкая",
+      "плотная",
+      "сливочный вкус",
+      "пастеризованная",
+      "замороженная",
+      "соленая",
+      "универсальная"
+    ],
+    "preparations": [
+      "хранение в холодильнике",
+      "подача охлажденной",
+      "разморозка в холодильнике (для замороженной)",
+      "вымачивание (для соленой)"
+    ],
+    "cooking_methods": [
+      {"method": "использование в бутербродах", "priority": "high"},
+      {"method": "использование в салатах", "priority": "high"},
+      {"method": "использование в качестве закуски", "priority": "high"},
+      {"method": "использование в фаршированных яйцах", "priority": "medium"},
+      {"method": "добавление в соусы", "priority": "medium"}
+    ],
+    "applications": [
+      "закуски",
+      "салаты",
+      "бутерброды",
+      "гарниры",
+      "соусы",
+      "фаршированные яйца"
+    ],
+    "pairings": {
+      "protein": ["сливочное масло", "майонез", "яйца"],
+      "vegetables": ["картофель", "лук"],
+      "sauces": [],
+      "herbs": ["укроп", "петрушка", "зеленый лук"],
+      "spices": ["черный перец", "соль"]
+    },
+    "substitutes": [
+      {"name": "Икра трески", "similarity": "high"},
+      {"name": "Икра щуки", "similarity": "high"},
+      {"name": "Икра палтуса", "similarity": "medium"},
+      {"name": "Икра лососевая", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "икра",
+    "минтай",
+    "рыбная икра",
+    "закуска",
+    "салаты",
+    "бутерброды",
+    "доступный продукт",
+    "пастеризованная икра",
+    "рыбные продукты"
+  ]
+}

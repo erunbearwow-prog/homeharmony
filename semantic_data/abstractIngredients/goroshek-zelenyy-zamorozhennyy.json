@@ -1,0 +1,72 @@
+{
+  "name": "Горошек зеленый замороженный",
+  "name_normalized": "goroshek-zelenyy-zamorozhennyy",
+  "synonyms": "зеленый горошек замороженный, мороженый горошек, замороженный горох, зеленый горох, горошек в заморозке, frozen peas",
+  "short_description": "Специально отобранный зеленый горошек, подвергнутый шоковой заморозке для сохранения цвета, вкуса и питательных свойств. Удобный полуфабрикат для супов, гарниров, салатов и овощных блюд круглый год.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Замороженный зеленый горошек — это отборные зерна зеленого горошка, прошедшие шоковую заморозку при очень низких температурах. Этот метод позволяет сохранить яркий зеленый цвет, сладкий вкус, плотную текстуру и все полезные вещества (витамины C, группы B, каротин, клетчатку и растительный белок). Горошек не требует предварительной разморозки и может быть использован в различных блюдах сразу после варки или тушения. Популярен в супах, гарнирах, салатах и как отдельное блюдо.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, сочная, упругая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, свежий, с лёгким травянистым оттенком</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — ярко-зеленый</li><li class=\"ingredient-list-item\"><strong>Сохранность витаминов</strong> — до 90% при шоковой заморозке</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 12 месяцев в морозильной камере</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — не требуется, можно готовить сразу</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — опустить в кипящую воду на 3-5 минут</li><li class=\"ingredient-list-item\"><strong>Бланширование</strong> — 2-3 минуты</li><li class=\"ingredient-list-item\"><strong>Обжарка</strong> — на сковороде с маслом</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Супы</strong> — овощные супы, крем-супы</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — с маслом, мятой, специями</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью и маслом</li><li class=\"ingredient-list-item\"><strong>Омлеты</strong> — добавление в омлет</li><li class=\"ingredient-list-item\"><strong>Пюре</strong> — для детского питания</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — морковь, картофель, лук, перец</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, свинина, говядина</li><li class=\"ingredient-list-item\"><strong>Масла</strong> — сливочное, оливковое</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — мята, чёрный перец, чеснок</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежий зеленый горошек</strong> — в сезон</li><li class=\"ingredient-list-item\"><strong>Стручковая фасоль</strong> — похожая текстура</li><li class=\"ingredient-list-item\"><strong>Кукуруза замороженная</strong> — для гарниров</li></ul>",
+  "category": "Овощи быстрозамороженные",
+  "semantic_data": {
+    "properties": [
+      "замороженный",
+      "овощ",
+      "горошек",
+      "быстрозамороженный",
+      "сладкий",
+      "витаминный"
+    ],
+    "preparations": [
+      "варка_без_разморозки",
+      "бланширование_2-3_минуты",
+      "обжарка_на_сковороде"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "обжарка",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_пюре",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "супы",
+      "гарниры",
+      "салаты",
+      "омлеты",
+      "детское_питание"
+    ],
+    "pairings": {
+      "protein": ["курица", "свинина", "говядина"],
+      "vegetables": ["морковь", "картофель", "лук", "перец"],
+      "oils": ["сливочное_масло", "оливковое_масло"],
+      "spices": ["мята", "черный_перец", "чеснок"]
+    },
+    "substitutes": [
+      {
+        "name": "Свежий зеленый горошек",
+        "similarity": "high"
+      },
+      {
+        "name": "Стручковая фасоль",
+        "similarity": "medium"
+      },
+      {
+        "name": "Кукуруза замороженная",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "заморозка",
+    "горошек",
+    "зеленый_горошек",
+    "гарнир",
+    "суп",
+    "диетический"
+  ]
+}

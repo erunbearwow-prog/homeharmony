@@ -1,0 +1,73 @@
+{
+  "name": "Лечо смесь",
+  "name_normalized": "lecho-smes-zamorozhennaya",
+  "synonyms": "лечо, лечо замороженное, овощная смесь лечо, лечо по-венгерски, замороженное лечо, смесь для рагу",
+  "short_description": "Замороженная овощная смесь для приготовления лечо. В основе — сладкий перец и томаты, дополненные луком, кабачками, а иногда и морковью со стручковой фасолью. Идеальна для рагу, супов, гарниров и как основа для венгерского лечо.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Лечо — это замороженная овощная смесь, которая воспроизводит классическое венгерское блюдо. В основе лежат сладкий перец (иногда до 60% состава), томаты и репчатый лук. В зависимости от производителя (Мираторг, Agama) в смесь могут добавляться кабачки, морковь и даже стручковая фасоль, что делает её более сытной. Благодаря низкой калорийности (18-42 ккал на 100 г) и высокому содержанию витамина C и бета-каротина, смесь идеально подходит для здорового питания и быстрого приготовления.</p><h2 class=\"ingredient-title\">Состав</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сладкий перец</strong> — основа, 40-60%</li><li class=\"ingredient-list-item\"><strong>Томаты</strong> — 20-30%</li><li class=\"ingredient-list-item\"><strong>Лук репчатый</strong> — 20%</li><li class=\"ingredient-list-item\"><strong>Кабачок (цукини)</strong> — у некоторых производителей </li><li class=\"ingredient-list-item\"><strong>Морковь</strong> — у некоторых производителей </li><li class=\"ingredient-list-item\"><strong>Стручковая фасоль</strong> — у некоторых производителей </li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочная, с хрустящими элементами</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковато-пряный, томатный</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — яркий (красный, зеленый, оранжевый)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 24 месяцев при -18°C</li><li class=\"ingredient-list-item\"><strong>Калорийность</strong> — 18-42 ккал на 100 г</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Венгерское лечо</strong> — с яйцом, колбасой или самостоятельно</li><li class=\"ingredient-list-item\"><strong>Рагу</strong> — с мясом, курицей</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — овощные, томатные</li><li class=\"ingredient-list-item\"><strong>Гарнир</strong> — к мясу, рыбе</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — основа для томатных соусов</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Яйца</strong> — классическое лечо с яйцом</li><li class=\"ingredient-list-item\"><strong>Колбасы</strong> — венгерские колбаски</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — свинина, курица, говядина</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — паприка, чеснок, тимьян</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежие овощи для лечо</strong> — самостоятельная нарезка</li><li class=\"ingredient-list-item\"><strong>Мексиканская смесь</strong> — с кукурузой и фасолью</li><li class=\"ingredient-list-item\"><strong>Итальянская смесь</strong> — с брокколи и пастой</li></ul>",
+  "category": "Овощи быстрозамороженные",
+  "semantic_data": {
+    "properties": [
+      "замороженный",
+      "овощной",
+      "венгерский",
+      "пряный",
+      "томатный",
+      "низкокалорийный",
+      "витаминный"
+    ],
+    "preparations": [
+      "жарка_на_сковороде",
+      "тушение",
+      "варка_в_подсоленной_воде",
+      "приготовление_в_микроволновке"
+    ],
+    "cooking_methods": [
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "варка",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "венгерское_лечо",
+      "рагу",
+      "супы",
+      "гарниры",
+      "соусы"
+    ],
+    "pairings": {
+      "protein": ["яйца", "колбасы", "свинина", "курица", "говядина"],
+      "spices": ["паприка", "чеснок", "тимьян"],
+      "vegetables": []
+    },
+    "substitutes": [
+      {
+        "name": "Свежие овощи для лечо",
+        "similarity": "high"
+      },
+      {
+        "name": "Мексиканская смесь",
+        "similarity": "medium"
+      },
+      {
+        "name": "Итальянская смесь",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "заморозка",
+    "овощи",
+    "лечо",
+    "венгерская_кухня",
+    "рагу",
+    "гарнир"
+  ]
+}

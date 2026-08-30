@@ -1,0 +1,106 @@
+{
+  "name": "Ацидофилин",
+  "name_normalized": "atsidofilin",
+  "synonyms": "",
+  "short_description": "Кисломолочный напиток, сквашенный чистыми культурами ацидофильной палочки (Lactobacillus acidophilus). Обладает нежной консистенцией, кисловатым вкусом и высокими пробиотическими свойствами.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Ацидофилин — это кисломолочный напиток, получаемый путём сквашивания пастеризованного молока чистыми культурами ацидофильной палочки (Lactobacillus acidophilus). Имеет нежную, однородную консистенцию, белый или слегка кремовый цвет и характерный кисловатый вкус с лёгкой остротой. Благодаря ацидофильной палочке обладает выраженными пробиотическими свойствами, способствует нормализации микрофлоры кишечника и улучшению пищеварения. Широко используется в диетическом и лечебно-профилактическом питании.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Консистенция</strong> — однородная, нежная, слегка вязкая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисловатый, с лёгкой остротой, освежающий</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый или кремовый</li><li class=\"ingredient-list-item\"><strong>Пробиотики</strong> — содержит живые ацидофильные бактерии</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — от 1% до 3,2% (в зависимости от вида)</li><li class=\"ingredient-list-item\"><strong>Пищевая ценность</strong> — белки, витамины A и группы B</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Напиток</strong> — самостоятельный продукт для употребления</li><li class=\"ingredient-list-item\"><strong>Смузи</strong> — с фруктами, ягодами и зеленью</li><li class=\"ingredient-list-item\"><strong>Завтраки</strong> — с мюсли, гранолой, овсянкой</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — основа для холодных соусов и заправок</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — в кексах, бисквитах, блинах</li><li class=\"ingredient-list-item\"><strong>Диетическое питание</strong> — для нормализации микрофлоры</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Фрукты и ягоды</strong> — клубника, малина, черника, банан, персик</li><li class=\"ingredient-list-item\"><strong>Злаки</strong> — мюсли, гранола, овсянка</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — миндаль, грецкий, кешью</li><li class=\"ingredient-list-item\"><strong>Мёд и сиропы</strong> — натуральный подсластитель</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, кинза (в соусах)</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Кефир</strong> — более жидкий, с другими бактериями</li><li class=\"ingredient-list-item\"><strong>Ряженка</strong> — сладковатый, с карамельным вкусом</li><li class=\"ingredient-list-item\"><strong>Йогурт</strong> — гуще, разные вариации</li><li class=\"ingredient-list-item\"><strong>Простокваша</strong> — кислая, традиционная</li><li class=\"ingredient-list-item\"><strong>Сметана (жидкая)</strong> — для соусов</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/nutrition/polza-atsidofilina/'>Польза ацидофилина: пробиотики, микрофлора, иммунитет</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/atsidofilin-s-fruktami/'>Ацидофилин с фруктами — рецепт полезного завтрака</a></li></ul>",
+  "category": "Молоко",
+  "semantic_data": {
+    "properties": [
+      "кисломолочный",
+      "пробиотический",
+      "нежный",
+      "кисловатый",
+      "полезный_для_пищеварения",
+      "диетический"
+    ],
+    "preparations": [
+      "хранение_в_холодильнике",
+      "употреблять_свежим"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "смешивание_с_фруктами",
+        "priority": "high"
+      },
+      {
+        "method": "добавление_в_выпечку",
+        "priority": "medium"
+      },
+      {
+        "method": "основа_для_соусов",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "напиток",
+      "завтраки",
+      "смузи",
+      "соусы",
+      "выпечка"
+    ],
+    "pairings": {
+      "protein": [],
+      "fruits": [
+        "клубника",
+        "малина",
+        "черника",
+        "банан",
+        "персик"
+      ],
+      "grains": [
+        "мюсли",
+        "гранола",
+        "овсянка"
+      ],
+      "nuts": [
+        "миндаль",
+        "грецкий_орех",
+        "кешью"
+      ],
+      "sweeteners": [
+        "мёд",
+        "кленовый_сироп"
+      ],
+      "herbs": [
+        "укроп",
+        "петрушка",
+        "кинза"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Кефир",
+        "similarity": "high"
+      },
+      {
+        "name": "Ряженка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Йогурт",
+        "similarity": "medium"
+      },
+      {
+        "name": "Простокваша",
+        "similarity": "medium"
+      },
+      {
+        "name": "Сметана (жидкая)",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "кисломолочные_продукты",
+    "ацидофилин",
+    "пробиотики",
+    "полезные_бактерии",
+    "диетическое_питание",
+    "напиток"
+  ]
+}

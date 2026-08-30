@@ -1,0 +1,67 @@
+{
+  "name": "Говяжья голяшка",
+  "name_normalized": "govyazhya-golyashka",
+  "synonyms": "голяшка говяжья, говяжья ножка, голяшка для бульона, голяшка для холодца, говяжья рулька",
+  "short_description": "Часть говяжьей туши из нижней части ноги, содержащая кость, мозг, сухожилия и мясо. Богата коллагеном и желатином, идеальна для наваристых бульонов, холодцов и студней.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Говяжья голяшка — это часть туши из нижней части ноги (рулька), включающая кость с костным мозгом, мясо и большое количество сухожилий. Мясо имеет плотную текстуру и содержит много коллагена, который при длительной варке превращается в желатин. Идеальна для приготовления наваристых бульонов, холодцов, студней и других блюд, требующих длительного нагревания.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, волокнистая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, с мясными и костными нотами</li><li class=\"ingredient-list-item\"><strong>Коллаген</strong> — высокое содержание</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — умеренная (от 8 до 15%)</li><li class=\"ingredient-list-item\"><strong>Время варки</strong> — 3-5 часов</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — даёт желеобразный бульон</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бульоны</strong> — наваристые, ароматные</li><li class=\"ingredient-list-item\"><strong>Холодец</strong> — для заливного и студня</li><li class=\"ingredient-list-item\"><strong>Рагу</strong> — с овощами и соусом</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — для насыщенного вкуса</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — целиком</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, чеснок, корень петрушки</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, лавровый лист, гвоздика</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, горчичный, хрен</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свиная голяшка</strong> — жирнее</li><li class=\"ingredient-list-item\"><strong>Говяжий хвост</strong> — похожие свойства</li><li class=\"ingredient-list-item\"><strong>Говяжья грудинка</strong> — для бульона</li></ul>",
+  "category": "Говядина",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "говядина",
+      "голяшка",
+      "на_кости",
+      "бульон",
+      "холодец"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "замачивание_в_холодной_воде",
+      "варка_3-5_часов"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "бульоны",
+      "холодец",
+      "рагу",
+      "супы"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["лук", "морковь", "чеснок", "корень_петрушки"],
+      "spices": ["черный_перец", "лавровый_лист", "гвоздика"],
+      "sauces": ["сметанный", "горчичный", "хрен"]
+    },
+    "substitutes": [
+      {
+        "name": "Свиная голяшка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Говяжий хвост",
+        "similarity": "high"
+      },
+      {
+        "name": "Говяжья грудинка",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "говядина",
+    "голяшка",
+    "бульон",
+    "холодец",
+    "суп"
+  ]
+}

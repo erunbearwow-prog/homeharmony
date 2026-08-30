@@ -1,0 +1,65 @@
+{
+  "name": "Говяжьи кости",
+  "name_normalized": "govyazhi-kosti",
+  "synonyms": "говяжьи кости, кости говяжьи, мослы, кости для бульона, говяжий костный мозг, кости для супа, кости для холодца",
+  "short_description": "Кости крупного рогатого скота (трубчатые, позвонки, ребра), используемые для приготовления наваристых бульонов, супов, холодцов и соусов. Содержат коллаген, костный мозг и другие питательные вещества.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Говяжьи кости — это ценный субпродукт, состоящий из костной ткани с остатками мяса, сухожилий и костного мозга. Используются для приготовления наваристых бульонов, супов, холодцов, соусов и подлив. При длительной варке кости отдают в бульон коллаген, желатин, минералы и питательные вещества, придавая блюдам насыщенный вкус и густую консистенцию.</p><h2 class=\"ingredient-title\">Виды костей</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Трубчатые кости</strong> — ноги, голени, с костным мозгом</li><li class=\"ingredient-list-item\"><strong>Позвонки</strong> — с мясными прослойками</li><li class=\"ingredient-list-item\"><strong>Ребра</strong> — с остатками мяса</li><li class=\"ingredient-list-item\"><strong>Тазобедренные кости</strong> — для холодца</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Коллаген</strong> — придаёт бульону густоту, желирующие свойства</li><li class=\"ingredient-list-item\"><strong>Костный мозг</strong> — богат железом, жирами, витаминами</li><li class=\"ingredient-list-item\"><strong>Минералы</strong> — кальций, фосфор, магний</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, мясной</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бульоны и супы</strong> — основа для первых блюд</li><li class=\"ginger\"><strong>Холодец</strong> — благодаря желирующим свойствам</li><li class=\"ingredient-list-item\"><strong>Соусы и подливы</strong> — для насыщенности</li><li class=\"ingredient-list-item\"><strong>Костный мозг</strong> — извлекается после варки или запекается отдельно</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, сельдерей, корень петрушки</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, лавровый лист, гвоздика</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, сельдерей</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свиные кости</strong> — более жирные</li><li class=\"ingredient-list-item\"><strong>Куриные кости</strong> — менее наваристые</li><li class=\"ingredient-list-item\"><strong>Бульонные кубики</strong> — для быстрого приготовления</li></ul>",
+  "category": "Субпродукты",
+  "semantic_data": {
+    "properties": [
+      "субпродукт",
+      "говядина",
+      "кости",
+      "бульон",
+      "холодец",
+      "наваристый"
+    ],
+    "preparations": [
+      "запекание_для_бульона",
+      "варка_4-6_часов"
+    ],
+    "cooking_methods": [
+      {
+        "method": "варка",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "бульоны",
+      "супы",
+      "холодец",
+      "соусы"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["лук", "морковь", "сельдерей", "корень_петрушки"],
+      "spices": ["черный_перец", "лавровый_лист", "гвоздика"],
+      "herbs": ["петрушка", "укроп", "сельдерей"]
+    },
+    "substitutes": [
+      {
+        "name": "Свиные кости",
+        "similarity": "medium"
+      },
+      {
+        "name": "Куриные кости",
+        "similarity": "low"
+      },
+      {
+        "name": "Бульонные кубики",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "субпродукты",
+    "говядина",
+    "кости",
+    "бульон",
+    "холодец"
+  ]
+}

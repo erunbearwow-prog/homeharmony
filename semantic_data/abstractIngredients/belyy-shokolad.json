@@ -1,0 +1,105 @@
+{
+  "name": "Белый шоколад",
+  "name_normalized": "belyy-shokolad",
+  "synonyms": "",
+  "short_description": "Кондитерский продукт на основе масла какао, сухого молока и сахара с добавлением ванили. Имеет кремовый цвет, маслянистую текстуру и сладкий сливочный вкус с нотками ванили и карамели.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Белый шоколад — это кондитерский продукт, который, в отличие от молочного и тёмного шоколада, содержит масло какао, сахар, сухое молоко и ваниль, но не содержит какао-порошка. Именно поэтому он имеет характерный кремовый или слегка желтоватый цвет и не обладает типичной шоколадной горечью. Вкус белого шоколада — сладкий, сливочный, с нотками карамели и ванили. Благодаря высокому содержанию масла какао он легко плавится при температуре 37-40 °C, что делает его идеальным для глазирования, выпечки и десертов.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Цвет</strong> — кремовый, белый</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — маслянистая, нежная, тающая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, сливочный, с нотками ванили и карамели</li><li class=\"ingredient-list-item\"><strong>Температура плавления</strong> — 37-40 °C</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — масло какао (не менее 20%), сухое молоко, сахар, ваниль</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 12 месяцев</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Глазурь</strong> — для тортов, пирожных, кексов</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — добавление в печенье, брауни, маффины</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — муссы, суфле, ганаш</li><li class=\"ingredient-list-item\"><strong>Конфеты</strong> — домашние трюфели и конфеты</li><li class=\"ingredient-list-item\"><strong>Горячие напитки</strong> — белый горячий шоколад</li><li class=\"ingredient-list-item\"><strong>Украшение</strong> — стружка, фигурки, капли</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Ягоды</strong> — клубника, малина, голубика, клюква</li><li class=\"ingredient-list-item\"><strong>Цитрусовые</strong> — апельсин, лимон, лайм</li><li class=\"ingredient-list-item\"><strong>Карамель</strong> — солёная карамель</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — миндаль, фундук, пекан</li><li class=\"ingredient-list-item\"><strong>Кокос</strong> — стружка, молоко</li><li class=\"ingredient-list-item\"><strong>Кофе</strong> — в напитках и десертах</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Молочный шоколад</strong> — сладкий, но с какао-вкусом</li><li class=\"ingredient-list-item\"><strong>Белая шоколадная глазурь (заменитель)</strong> — на основе растительных жиров</li><li class=\"ingredient-list-item\"><strong>Карамель</strong> — для сладости и текстуры</li><li class=\"ingredient-list-item\"><strong>Ванильный ганаш</strong> — в десертах</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/belyy-shokolad/'>Белый шоколад в кулинарии</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/shokoladnyy-ganash/'>Ганаш из белого шоколада</a></li></ul>",
+  "category": "Шоколад",
+  "semantic_data": {
+    "properties": [
+      "сладкий",
+      "сливочный",
+      "кремовый",
+      "маслянистый",
+      "тающий",
+      "без_какао-порошка",
+      "ванильный"
+    ],
+    "preparations": [
+      "темперирование_для_глазури",
+      "растапливание_на_водяной_бане",
+      "хранение_в_сухом_прохладном_месте"
+    ],
+    "cooking_methods": [
+      {
+        "method": "темперирование",
+        "priority": "high"
+      },
+      {
+        "method": "растапливание",
+        "priority": "high"
+      },
+      {
+        "method": "запекание_в_выпечке",
+        "priority": "medium"
+      },
+      {
+        "method": "приготовление_ганаша",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "глазурь",
+      "выпечка",
+      "десерты",
+      "конфеты",
+      "напитки",
+      "украшение"
+    ],
+    "pairings": {
+      "protein": [
+        "сухое_молоко",
+        "сливки"
+      ],
+      "fruits": [
+        "клубника",
+        "малина",
+        "голубика",
+        "клюква",
+        "апельсин",
+        "лимон",
+        "лайм"
+      ],
+      "nuts": [
+        "миндаль",
+        "фундук",
+        "пекан"
+      ],
+      "caramel": [
+        "соленая_карамель"
+      ],
+      "coconut": [
+        "кокосовая_стружка"
+      ],
+      "drinks": [
+        "кофе"
+      ]
+    },
+    "substitutes": [
+      {
+        "name": "Молочный шоколад",
+        "similarity": "medium"
+      },
+      {
+        "name": "Белая шоколадная глазурь (заменитель)",
+        "similarity": "high"
+      },
+      {
+        "name": "Карамель",
+        "similarity": "low"
+      },
+      {
+        "name": "Ванильный ганаш",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "шоколад",
+    "белый_шоколад",
+    "десерт",
+    "глазурь",
+    "выпечка",
+    "кондитерка"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "name": "Сыр Ломбардо",
+  "name_normalized": "syr_lombardo",
+  "synonyms": "ломбардо, ломбардо эксельсиор, excelsior lombardo, сыр с козьим молоком, сыр ломбардо с козьим молоком, полуьтвердый сыр, сыр 45%, российский сыр, семикаракорский сыр, сыр для закусок, сыр для горячих блюд",
+  "short_description": "Российский полутвердый сыр бренда EXCELSIOR с добавлением козьего молока, жирностью 45% и выдержкой 2 месяца. Обладает приятным ароматом и легким пикантным вкусом. Универсален для употребления в охлажденном виде и приготовления различных блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Сыр «Ломбардо» (EXCELSIOR Lombardo) — это российский полутвердый сыр, который производится ООО «Семикаракорский сыродельный комбинат» под брендом EXCELSIOR. Продукт изготавливается из смеси коровьего и козьего молока, имеет жирность 45% и выдержку 2 месяца. Сыр обладает приятным молочным ароматом и легким пикантным вкусом. Благодаря своей универсальности он подходит как для употребления в охлажденном виде (в нарезке, бутербродах), так и для приготовления горячих блюд.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тип</strong> — полутвердый</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, пластичная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — легкий пикантный, сливочный, с козьими нотками</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — бледно-желтый, кремовый</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — 45%</li><li class=\"ingredient-list-item\"><strong>Калорийность</strong> — 307 ккал на 100 г</li><li class=\"ingredient-list-item\"><strong>Белки</strong> — 24.2 г на 100 г</li><li class=\"ingredient-list-item\"><strong>Жиры</strong> — 23.4 г на 100 г</li><li class=\"ingredient-list-item\"><strong>Углеводы</strong> — 0 г</li><li class=\"ingredient-list-item\"><strong>Выдержка</strong> — 2 месяца</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — в холодильнике от 0 до +6°C</li></ul><h2 class=\"ingredient-title\">Состав</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Молоко</strong> — цельное коровье, козье, обезжиренное</li><li class=\"ingredient-list-item\"><strong>Соль</strong> — пищевая</li><li class=\"ingredient-list-item\"><strong>Фермент</strong> — молокосвертывающий ферментный препарат животного происхождения</li><li class=\"ingredient-list-item\"><strong>Закваски</strong> — смешанные закваски мезофильных и термофильных молочнокислых микроорганизмов</li><li class=\"ingredient-list-item\"><strong>Лизоцим</strong> — ферментный препарат</li><li class=\"ingredient-list-item\"><strong>Корка</strong> — обработана консервантом Е235</li></ul><h2 class=\"ingredient-title\">Подготовка и хранение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике при температуре от 0 до +6°C и относительной влажности не выше 85%</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — ломтиками, кубиками</li><li class=\"ingredient-list-item\"><strong>Тёрка</strong> — хорошо натирается</li><li class=\"ingredient-list-item\"><strong>Подача</strong> — рекомендуется достать за 20-30 минут до подачи</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Закуски</strong> — нарезка, бутерброды</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — кубиками или тертый</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — пицца, запеканки</li><li class=\"ingredient-list-item\"><strong>Паста и ризотто</strong> — в тертом виде</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — багет, зерновой, ржаной</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, огурцы, перец</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, базилик</li><li class=\"ingredient-list-item\"><strong>Вино</strong> — белое и красное</li></ul><h2 class=\"ingredient-title\">О названии</h2><p class=\"ingredient-text\">Следует отметить, что название «Ломбардо» также используется для традиционного итальянского мягкого сыра «Quartirolo Lombardo» (Квартироло Ломбардо), который имеет статус PDO и производится в регионе Ломбардия из коровьего молока. Однако продукт EXCELSIOR Lombardo — это самостоятельный российский продукт, не имеющий отношения к итальянскому сыру.</p>",
+  "category": "Молочные продукты",
+  "semantic_data": {
+    "properties": [
+      "полутвердый",
+      "с козьим молоком",
+      "45%",
+      "российский",
+      "семикаракорский",
+      "плотный",
+      "упругий",
+      "пикантный",
+      "сливочный",
+      "универсальный",
+      "хорошо плавится"
+    ],
+    "preparations": [
+      "хранение в холодильнике при 0-6°C",
+      "нарезка ломтиками или кубиками",
+      "натирание на тёрке",
+      "достать за 20-30 минут до подачи"
+    ],
+    "cooking_methods": [
+      {
+        "method": "подача в нарезке (закуски, бутерброды)",
+        "priority": "high"
+      },
+      {
+        "method": "использование в салатах",
+        "priority": "high"
+      },
+      {
+        "method": "плавление в горячих блюдах",
+        "priority": "medium"
+      },
+      {
+        "method": "использование в тёртом виде",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "нарезка",
+      "бутерброды и сэндвичи",
+      "салаты",
+      "пицца",
+      "запеканки",
+      "паста"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["помидоры", "огурцы", "перец", "лук"],
+      "sauces": [],
+      "herbs": ["петрушка", "укроп", "базилик"],
+      "spices": ["черный перец"]
+    },
+    "substitutes": [
+      {
+        "name": "Сыр гауда",
+        "similarity": "high"
+      },
+      {
+        "name": "Сыр эдам",
+        "similarity": "high"
+      },
+      {
+        "name": "Сыр российский",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "сыр",
+    "ломбардо",
+    "эксельсиор",
+    "полутвердый сыр",
+    "сыр с козьим молоком",
+    "российский сыр",
+    "семикаракорский сыр",
+    "45%",
+    "сыр для закусок",
+    "сыр для горячих блюд"
+  ]
+}

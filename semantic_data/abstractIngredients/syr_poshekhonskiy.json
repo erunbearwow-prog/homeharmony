@@ -1,0 +1,92 @@
+{
+  "name": "Сыр Пошехонский",
+  "name_normalized": "syr_poshekhonskiy",
+  "synonyms": "пошехонский сыр, пошехонский, сыр Пошехонский, пошехонский твердый сыр, пошехонский полутвердый сыр, российский сыр, сыр с глазками, сыр для бутербродов, сыр для закусок, сыр для салатов",
+  "short_description": "Классический российский твердый сыр с плотной, эластичной консистенцией и характерным рисунком из мелких глазков. Имеет мягкий сливочный вкус с легкой кислинкой, близок к голландским и костромскому сырам. Один из самых популярных и доступных сыров в России.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Пошехонский сыр — это классический российский твердый сыр, который был разработан в СССР в 60-х годах XX века. Свое название он получил по месту производства в Пошехонском районе Ярославской области. По технологии этот сыр близок к голландским сырам и Костромскому — он также относится к группе твердых сыров с низкой температурой второго нагревания. Сыр имеет плотную, эластичную консистенцию, бледно-желтый цвет и мелкие круглые глазки, равномерно расположенные по всей массе. Вкус Пошехонского сыра — мягкий, сливочный, с легкой кислинкой и ореховыми нотками. Благодаря доступной цене и универсальности этот сыр стал одним из самых популярных в России.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тип</strong> — твердый сыр</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, эластичная, пластичная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — мягкий сливочный, с легкой кислинкой и ореховыми нотками</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — бледно-желтый, соломенный</li><li class=\"ingredient-list-item\"><strong>Рисунок</strong> — мелкие круглые глазки</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — 45% в сухом веществе</li><li class=\"ingredient-list-item\"><strong>Срок созревания</strong> — 30-45 суток</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 3-4 месяцев в холодильнике</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — доступная цена, широко представлен в магазинах</li></ul><h2 class=\"ingredient-title\">Подготовка и хранение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике при температуре от +2 до +6°C в герметичной упаковке</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — ломтиками, кубиками, соломкой</li><li class=\"ingredient-list-item\"><strong>Тёрка</strong> — на крупной или мелкой тёрке</li><li class=\"ingredient-list-item\"><strong>Подача</strong> — рекомендуется достать за 20-30 минут до подачи</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бутерброды и сэндвичи</strong> — классическое использование</li><li class=\"ingredient-list-item\"><strong>Сырная тарелка</strong> — самостоятельная закуска</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — кубиками или тертый</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — пицца, запеканки, лазанья</li><li class=\"ingredient-list-item\"><strong>Паста и ризотто</strong> — в тертом виде</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сырные соусы</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, зерновой, багет, бородинский</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, огурцы, перец, лук</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, говядина, ветчина, колбасы</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — виноград, яблоки, груши</li><li class=\"ingredient-list-item\"><strong>Вино</strong> — красное и белое</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыр российский</strong> — похожий по текстуре и вкусу</li><li class=\"ingredient-list-item\"><strong>Сыр костромской</strong> — схожая технология</li><li class=\"ingredient-list-item\"><strong>Сыр голландский</strong> — близкий по консистенции</li><li class=\"ingredient-list-item\"><strong>Сыр эдам</strong> — для бутербродов</li></ul><h2 class=\"ingredient-title\">Отличия от схожих сыров</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>От российского</strong> — более плотная текстура и мелкие глазки</li><li class=\"ingredient-list-item\"><strong>От костромского</strong> — более мягкий вкус и менее выраженный рисунок глазков</li><li class=\"ingredient-list-item\"><strong>От голландского</strong> — более нежный и сливочный вкус</li></ul>",
+  "category": "Молочные продукты",
+  "semantic_data": {
+    "properties": [
+      "твердый",
+      "российский",
+      "плотный",
+      "эластичный",
+      "с глазками",
+      "сливочный вкус",
+      "слегка кисловатый",
+      "доступный",
+      "универсальный",
+      "хорошо плавится",
+      "сырная тарелка"
+    ],
+    "preparations": [
+      "хранение в холодильнике при +2-6°C",
+      "нарезка ломтиками или кубиками",
+      "натирание на тёрке",
+      "достать за 20-30 минут до подачи"
+    ],
+    "cooking_methods": [
+      {
+        "method": "использование в бутербродах",
+        "priority": "high"
+      },
+      {
+        "method": "подача в сырной тарелке",
+        "priority": "high"
+      },
+      {
+        "method": "плавление в горячих блюдах",
+        "priority": "high"
+      },
+      {
+        "method": "использование в тёртом виде",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "бутерброды и сэндвичи",
+      "сырная тарелка",
+      "салаты",
+      "пицца и запеканки",
+      "паста и ризотто",
+      "соусы"
+    ],
+    "pairings": {
+      "protein": ["курица", "говядина", "ветчина", "колбасы"],
+      "vegetables": ["помидоры", "огурцы", "перец", "лук"],
+      "sauces": [],
+      "herbs": [],
+      "spices": []
+    },
+    "substitutes": [
+      {
+        "name": "Сыр российский",
+        "similarity": "high"
+      },
+      {
+        "name": "Сыр костромской",
+        "similarity": "high"
+      },
+      {
+        "name": "Сыр голландский",
+        "similarity": "medium"
+      },
+      {
+        "name": "Сыр эдам",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "сыр",
+    "пошехонский сыр",
+    "твердый сыр",
+    "российский сыр",
+    "сыр с глазками",
+    "сыр для бутербродов",
+    "сырная тарелка",
+    "универсальный",
+    "молочные продукты",
+    "доступный"
+  ]
+}

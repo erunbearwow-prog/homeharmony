@@ -1,0 +1,67 @@
+{
+  "name": "Тритикале",
+  "name_normalized": "tritikale",
+  "synonyms": "тритикале, пшенично-ржаной гибрид, тритикале зерно, тритикале мука, тритикале крупа, хлебная культура, кормовая культура, Triticosecale, triticale, амфидиплоид пшеницы и ржи",
+  "short_description": "Искусственно выведенная зерновая культура, гибрид пшеницы и ржи, сочетающий высокую урожайность и питательные свойства пшеницы с морозостойкостью и неприхотливостью ржи. Используется для производства муки, хлебобулочных изделий, макарон, круп, а также как кормовая культура.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Тритикале (× Triticosecale Wittmack) — это искусственно созданная зерновая культура, полученная в результате скрещивания пшеницы (Triticum) и ржи (Secale). Название образовано из частей латинских названий родительских растений. Целью селекции было объединить высокую урожайность и хорошие хлебопекарные свойства пшеницы с морозостойкостью, устойчивостью к болезням и неприхотливостью ржи. Тритикале выращивают во многих странах мира, лидерами производства являются Польша, Германия, Беларусь, Франция и Россия.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тип</strong> — зерновая культура, амфиплоидный гибрид пшеницы и ржи</li><li class=\"ingredient-list-item\"><strong>Зерно</strong> — крупное, морщинистое, по форме напоминает пшеницу, но с более плотной оболочкой</li><li class=\"ingredient-list-item\"><strong>Мука</strong> — имеет более темный цвет по сравнению с пшеничной</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — легкий ореховый оттенок, менее выраженный, чем у ржи</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — содержит глютен, не подходит для целиакии</li></ul><h2 class=\"ingredient-title\">Пищевая ценность</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Белки</strong> — выше, чем у пшеницы на 1–1,5%, и на 3–4% выше, чем у ржи</li><li class=\"ingredient-list-item\"><strong>Лизин</strong> — содержание выше, чем у других зерновых, что улучшает аминокислотный состав</li><li class=\"ingredient-list-item\"><strong>Клетчатка</strong> — способствует улучшению пищеварения</li><li class=\"ingredient-list-item\"><strong>Гликемический индекс</strong> — ниже, чем у белого пшеничного хлеба</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Помол</strong> — требует специальной регулировки мельничного оборудования из-за особенностей зерна</li><li class=\"ingredient-list-item\"><strong>Замес теста</strong> — требует сокращения времени замеса и ферментации из-за высокой активности α-амилазы</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — для хлеба рекомендуется смешивать с пшеничной мукой в пропорции 1:3</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хлебобулочные изделия</strong> — хлеб, булочки (в смеси с пшеничной мукой)</li><li class=\"ingredient-list-item\"><strong>Кондитерские изделия</strong> — печенье, кексы, пряники (из муки тритикале получаются более качественными)</li><li class=\"ingredient-list-item\"><strong>Макаронные изделия</strong> — тесто для пасты</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — для каш и гарниров</li><li class=\"ingredient-list-item\"><strong>Солод и напитки</strong> — для производства пива, виски, йогуртов</li><li class=\"ingredient-list-item\"><strong>Булгур</strong> — из цельного зерна тритикале</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мука</strong> — пшеничная (для улучшения хлебопекарных свойств)</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, гречка (в гарнирах)</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — в качестве гарнира</li><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — в кашах и запеканках</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Пшеница</strong> — для хлеба и выпечки</li><li class=\"ingredient-list-item\"><strong>Рожь</strong> — для ржаного хлеба</li><li class=\"ingredient-list-item\"><strong>Полба</strong> — схожий гибридный характер</li><li class=\"ingredient-list-item\"><strong>Овес</strong> — для каш и гарниров</li></ul>",
+  "category": "Крупы и злаки",
+  "semantic_data": {
+    "properties": [
+      "гибрид",
+      "пшеница",
+      "рожь",
+      "зерновая культура",
+      "амфиплоид",
+      "морозостойкая",
+      "урожайная",
+      "содержит глютен",
+      "высокобелковая"
+    ],
+    "preparations": [
+      "помол зерна в муку",
+      "смешивание с пшеничной мукой",
+      "корректировка времени замеса",
+      "короткая ферментация"
+    ],
+    "cooking_methods": [
+      {"method": "выпечка хлеба (в смеси с пшеничной мукой)", "priority": "high"},
+      {"method": "приготовление кондитерских изделий", "priority": "high"},
+      {"method": "приготовление макаронных изделий", "priority": "medium"},
+      {"method": "варка каши", "priority": "medium"},
+      {"method": "производство солода и напитков", "priority": "low"}
+    ],
+    "applications": [
+      "хлебопечение",
+      "кондитерские изделия",
+      "макаронные изделия",
+      "крупы",
+      "напитки"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [],
+      "grains": ["пшеничная мука", "рис", "гречка"],
+      "sauces": [],
+      "herbs": [],
+      "spices": []
+    },
+    "substitutes": [
+      {"name": "Пшеница", "similarity": "high"},
+      {"name": "Рожь", "similarity": "high"},
+      {"name": "Полба", "similarity": "medium"},
+      {"name": "Овес", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "злак",
+    "крупа",
+    "тритикале",
+    "пшеница",
+    "рожь",
+    "гибрид",
+    "мука",
+    "хлеб",
+    "каша",
+    "кормовая культура"
+  ]
+}

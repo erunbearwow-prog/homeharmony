@@ -1,0 +1,69 @@
+{
+  "name": "Горчичное масло",
+  "name_normalized": "gorchichnoe-maslo",
+  "synonyms": "масло горчичное, масло из семян горчицы, mustard oil, горчичное растительное масло, масло горчичное нерафинированное",
+  "short_description": "Растительное масло, получаемое из семян горчицы методом холодного прессования. Имеет характерный острый запах, жгучий вкус и янтарный цвет. Широко используется в индийской и азиатской кухне для жарки, маринадов и заправок.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Горчичное масло — это растительное масло, получаемое из семян горчицы (в основном чёрной или сарептской) методом холодного прессования. Имеет характерный ярко выраженный острый запах и жгучий вкус, напоминающий горчицу. Цвет масла варьируется от светло-жёлтого до янтарного. Горчичное масло богато олеиновой, линолевой и эруковой кислотами, а также витамином E. Традиционно используется в индийской, бангладешской и пакистанской кухне, особенно для жарки, маринования и в качестве ароматной заправки.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — острый, жгучий, с характерным горчичным ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от светло-жёлтого до янтарного</li><li class=\"ingredient-list-item\"><strong>Температура дымления</strong> — 250°C (высокая)</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — жирные кислоты, витамин E</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 12 месяцев в тёмном месте</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — во фритюре, вока, на сковороде (индийская кухня)</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для мяса, рыбы</li><li class=\"ingredient-list-item\"><strong>Заправки</strong> — для салатов</li><li class=\"ingredient-list-item\"><strong>Приготовление дала</strong> — в индийской кухне</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Специи</strong> — карри, куркума, кумин, кориандр</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — баклажаны, картофель, цветная капуста</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, баранина</li><li class=\"ingredient-list-item\"><strong>Бобовые</strong> — чечевица, нут</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Кунжутное масло</strong> — в азиатской кухне</li><li class=\"ingredient-list-item\"><strong>Рафинированное подсолнечное масло</strong> — для жарки</li><li class=\"ingredient-list-item\"><strong>Оливковое масло</strong> — для заправки</li></ul>",
+  "category": "Масла растительные",
+  "semantic_data": {
+    "properties": [
+      "растительное_масло",
+      "горчичное",
+      "острое",
+      "жгучее",
+      "высокая_температура_дымления",
+      "ароматное"
+    ],
+    "preparations": [
+      "хранение_в_темном_месте",
+      "нагревание_до_температуры_дымления"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "маринование",
+        "priority": "high"
+      },
+      {
+        "method": "заправка",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "жарка",
+      "маринады",
+      "салаты",
+      "индийская_кухня"
+    ],
+    "pairings": {
+      "protein": ["курица", "баранина"],
+      "vegetables": ["баклажаны", "картофель", "цветная_капуста"],
+      "legumes": ["чечевица", "нут"],
+      "spices": ["карри", "куркума", "кумин", "кориандр"]
+    },
+    "substitutes": [
+      {
+        "name": "Кунжутное масло",
+        "similarity": "medium"
+      },
+      {
+        "name": "Рафинированное подсолнечное масло",
+        "similarity": "low"
+      },
+      {
+        "name": "Оливковое масло",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "масло",
+    "горчичное_масло",
+    "индийская_кухня",
+    "жарка",
+    "маринад"
+  ]
+}

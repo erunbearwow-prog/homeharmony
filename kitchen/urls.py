@@ -12,6 +12,7 @@ urlpatterns = [
     path('api/ingredient/<int:pk>/', views.api_ingredient_detail, name='api_ingredient_detail'),
     path('api/recipes/', views.api_recipe_list, name='api_recipe_list'),
     path('api/recipes/<int:pk>/', views.api_recipe_detail, name='api_recipe_detail'),
+path('api/recipes/<int:pk>/nutrition/', views.api_recipe_nutrition, name='api_recipe_nutrition'),
     path('api/recipes/suitable/', views.api_recipe_suitable, name='api_recipe_suitable'),
     path('api/ingredients/', views.api_ingredient_list, name='api_ingredient_list'),
     path('api/cuisines/', views.api_cuisine_list, name='api_cuisine_list'),

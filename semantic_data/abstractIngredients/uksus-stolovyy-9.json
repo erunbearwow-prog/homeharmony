@@ -1,0 +1,86 @@
+{
+  "name": "Уксус столовый 9%",
+  "name_normalized": "uksus-stolovyy-9",
+  "synonyms": "",
+  "short_description": "Раствор уксусной кислоты (9%) в воде, получаемый путём спиртового брожения. Прозрачная жидкость с характерным резким кислым запахом и вкусом. Широко используется в кулинарии для маринадов, консервации, заправок и придания кислинки блюдам.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Столовый уксус 9% — это водный раствор уксусной кислоты концентрацией 9%, получаемый путём уксуснокислого брожения спиртосодержащих жидкостей (обычно из зерна, яблок или вина). Представляет собой бесцветную прозрачную жидкость с характерным резким кислым запахом и кислым вкусом. Является самым распространённым и универсальным видом уксуса в домашней кулинарии. Используется для консервирования овощей, приготовления маринадов для мяса, заправки салатов, добавления в соусы и для мытья посуды (в бытовых целях).</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Концентрация</strong> — 9% (стандартная для кулинарии)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кислый, с характерным уксусным привкусом</li><li class=\"ingredient-list-item\"><strong>Запах</strong> — резкий, уксусный</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — уксусная кислота, вода</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в стеклянной таре</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Консервация</strong> — засолка огурцов, помидоров, грибов</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для мяса, рыбы, птицы</li><li class=\"ingredient-list-item\"><strong>Салатные заправки</strong> — в составе винегретов, соусов</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — для придания кислинки</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — для гашения соды</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — огурцы, помидоры, перец, лук, капуста</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — свинина, говядина, курица</li><li class=\"ingredient-list-item\"><strong>Рыба</strong> — в маринадах</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — соль, перец, лавровый лист, гвоздика, укроп</li><li class=\"ingredient-list-item\"><strong>Масла</strong> — в заправках</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Уксус 6%</strong> — более слабый, потребуется больше</li><li class=\"ingredient-list-item\"><strong>Уксус 12%</strong> — более крепкий, потребуется меньше</li><li class=\"ingredient-list-item\"><strong>Яблочный уксус</strong> — более мягкий, с фруктовым оттенком</li><li class=\"ingredient-list-item\"><strong>Винный уксус</strong> — с винным ароматом</li><li class=\"ingredient-list-item\"><strong>Лимонная кислота</strong> — для кислинки без запаха</li></ul>",
+  "category": "Уксусы",
+  "semantic_data": {
+    "properties": [
+      "уксус",
+      "столовый",
+      "9%",
+      "бесцветный",
+      "кислый",
+      "универсальный",
+      "консервация"
+    ],
+    "preparations": [
+      "хранение_в_закрытой_стеклянной_бутылке",
+      "разведение_водой_при_необходимости"
+    ],
+    "cooking_methods": [
+      {
+        "method": "маринование",
+        "priority": "high"
+      },
+      {
+        "method": "консервирование",
+        "priority": "high"
+      },
+      {
+        "method": "салатные_заправки",
+        "priority": "high"
+      },
+      {
+        "method": "гашение_соды",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "консервация",
+      "маринады",
+      "соусы",
+      "заправки",
+      "выпечка"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["огурцы", "помидоры", "перец", "лук", "капуста"],
+      "meat": ["свинина", "говядина", "курица"],
+      "fish": ["рыба"],
+      "spices": ["соль", "перец", "лавровый_лист", "гвоздика", "укроп"],
+      "oils": ["масло_растительное", "оливковое_масло"]
+    },
+    "substitutes": [
+      {
+        "name": "Уксус 6%",
+        "similarity": "high"
+      },
+      {
+        "name": "Уксус 12%",
+        "similarity": "high"
+      },
+      {
+        "name": "Яблочный уксус",
+        "similarity": "medium"
+      },
+      {
+        "name": "Винный уксус",
+        "similarity": "medium"
+      },
+      {
+        "name": "Лимонная кислота",
+        "similarity": "low"
+      }
+    ]
+  },
+  "tags": [
+    "уксус",
+    "столовый_уксус",
+    "консервация",
+    "маринад",
+    "заправка",
+    "соус"
+  ]
+}

@@ -3,7 +3,7 @@ from django.core.paginator import Paginator
 
 def home(request):
     """Главная страница"""
-    return render(request, 'pages/home.html', {'title': 'Семейные ценности'})
+    return render(request, 'pages/home.html', {'title': 'Вкус и Порядок'})
 
 def about(request):
     """О проекте"""

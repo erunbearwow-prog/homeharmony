@@ -1,0 +1,68 @@
+{
+  "name": "Аджика",
+  "name_normalized": "adzhika",
+  "synonyms": "абхазская аджика, грузинская аджика, аджика острая, аджика красная",
+  "short_description": "Острая ароматная паста из перца, чеснока, пряных трав и соли. Классический соус кавказской и абхазской кухни с ярким красно-оранжевым цветом и жгучим вкусом.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Аджика — это острая приправа в виде густой пасты или соуса, традиционная для абхазской и грузинской кухни. Готовится из острого перца, чеснока, пряных трав (кинза, укроп, базилик), соли и специй (кориандр, хмели-сунели). Имеет яркий красно-оранжевый цвет, густую пастообразную консистенцию, жгучий вкус и насыщенный пряный аромат. Название происходит от абхазского \"аџьыка\" — \"соль\", что подчёркивает историческую роль аджики как солёной приправы. В современной кулинарии существует множество вариантов аджики: от классической острой до мягкой, с добавлением томатов и сладкого перца.</p><h2 class=\"ingredient-title\">Виды аджики</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Абхазская (классическая)</strong> — только перец, чеснок, соль, пряные травы; самый острый вариант</li><li class=\"ingredient-list-item\"><strong>Грузинская</strong> — с добавлением хмели-сунели, уцхо-сунели и других специй</li><li class=\"ingredient-list-item\"><strong>Краснодарская</strong> — с томатами, сладким перцем, более мягкий вкус</li><li class=\"ingredient-list-item\"><strong>Зелёная аджика</strong> — из зелёного острого перца и свежей зелени</li><li class=\"ingredient-list-item\"><strong>Домашняя</strong> — вариации по семейным рецептам</li></ul><h2 class=\"ingredient-title\">Состав и свойства</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Острый перец</strong> — основа, от 40 до 80% состава</li><li class=\"ingredient-list-item\"><strong>Чеснок</strong> — 10-20%, придаёт остроту и аромат</li><li class=\"ingredient-list-item\"><strong>Соль</strong> — 5-10%, консервант</li><li class=\"ingredient-list-item\"><strong>Пряные травы</strong> — кинза, укроп, базилик, петрушка</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — кориандр, хмели-сунели, уцхо-сунели</li><li class=\"ingredient-list-item\"><strong>Витамины</strong> — C, A, группы B, капсаицин</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Маринад</strong> — для мяса, птицы, рыбы перед жаркой или запеканием</li><li class=\"ingredient-list-item\"><strong>Соус</strong> — к шашлыку, люля-кебаб, жареному мясу</li><li class=\"ingredient-list-item\"><strong>Заправка</strong> — для супов, борщей, солянки (в небольшом количестве)</li><li class=\"ingredient-list-item\"><strong>Добавка</strong> — в тушёные овощи, рагу, бобовые</li><li class=\"ingredient-list-item\"><strong>Намазка</strong> — на хлеб, лаваш, лепёшки (с маслом или сыром)</li><li class=\"ingredient-list-item\"><strong>Консервация</strong> — как отдельная заготовка на зиму</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — баранина, говядина, свинина, курица, индейка</li><li class=\"ingredient-list-item\"><strong>Рыба</strong> — особенно жирные сорта (лосось, скумбрия)</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, баклажаны, кабачки, помидоры</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, гречка, булгур</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — лаваш, лепёшки, ржаной хлеб</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — сулугуни, брынза, фета, адыгейский</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Чили-паста (самбал)</strong> — более простой острый соус</li><li class=\"ingredient-list-item\"><strong>Срирача</strong> — более жидкий, с добавлением чеснока</li><li class=\"ingredient-list-item\"><strong>Острая томатная паста</strong> — с добавлением чили и чеснока</li><li class=\"ingredient-list-item\"><strong>Харриса</strong> — североафриканский острый соус</li><li class=\"ingredient-list-item\"><strong>Смесь острых специй</strong> — в сухом виде (молотый перец+чеснок+соль)</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/klassicheskaya-adzhika/'>Классическая абхазская аджика — рецепт</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/adzhika-na-zimu/'>Аджика на зиму — лучшие рецепты</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/shashlyk-s-adzhikoy/'>Шашлык с аджикой — маринад и подача</a></li></ul>",
+  "category": "Соусы и заправки",
+  "semantic_data": {
+    "properties": [
+      "острый",
+      "пряный",
+      "чесночный",
+      "красный",
+      "густой",
+      "пастообразный",
+      "жгучий",
+      "пикантный",
+      "кавказская_кухня",
+      "абхазская_кухня",
+      "длительный_срок_хранения"
+    ],
+    "preparations": [
+      "измельчение_всех_ингредиентов",
+      "перетирание_в_пасту",
+      "выдерживание_для_раскрытия_вкуса",
+      "хранение_в_холодильнике"
+    ],
+    "cooking_methods": [
+      {"method": "холодное_измельчение", "priority": "high"},
+      {"method": "смешивание", "priority": "high"},
+      {"method": "выдержка_в_холодильнике", "priority": "medium"}
+    ],
+    "applications": [
+      "маринад_для_мяса",
+      "соус_к_шашлыку",
+      "заправка_для_супов",
+      "добавка_в_рагу",
+      "намазка_на_хлеб",
+      "консервация"
+    ],
+    "pairings": {
+      "protein": ["баранина", "говядина", "свинина", "курица", "индейка", "лосось", "скумбрия"],
+      "vegetables": ["картофель", "баклажаны", "кабачки", "помидоры"],
+      "grains": ["рис", "гречка", "булгур"],
+      "breads": ["лаваш", "лепёшки", "ржаной_хлеб"],
+      "cheeses": ["сулугуни", "брынза", "фета", "адыгейский"],
+      "herbs": ["кинза", "укроп", "базилик", "петрушка"]
+    },
+    "substitutes": [
+      {"name": "Чили-паста (самбал)", "similarity": "medium"},
+      {"name": "Срирача", "similarity": "medium"},
+      {"name": "Острая томатная паста", "similarity": "low"},
+      {"name": "Харриса", "similarity": "medium"},
+      {"name": "Сухая смесь острых специй", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "аджика",
+    "соус",
+    "острая_приправа",
+    "кавказская_кухня",
+    "абхазская_кухня",
+    "грузинская_кухня",
+    "маринад",
+    "заготовки",
+    "консервация"
+  ]
+}

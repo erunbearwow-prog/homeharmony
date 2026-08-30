@@ -1,0 +1,83 @@
+{
+  "name": "Вырезка свиная",
+  "name_normalized": "vyrezka-svinaya",
+  "synonyms": "свиная вырезка, свиная филейная часть, филе свиное, pork tenderloin, свиное филе, корейка без кости",
+  "short_description": "Самая нежная и постная часть свинины, расположенная вдоль позвоночника. Имеет мелкую волокнистую структуру, практически не содержит жира, отличается нежностью и мягким вкусом. Идеальна для жарки целиком, медальонов, стейков и быстрого приготовления.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Свиная вырезка — это самая ценная, нежная и диетическая часть свиной туши, представляющая собой длинный узкий кусок филейного мяса, расположенный вдоль позвоночника. Практически не содержит жира и соединительной ткани, имеет мелкую, плотную волокнистую структуру. В отличие от других частей свинины, вырезка очень постная, но при правильном приготовлении остается сочной и мягкой. Благодаря своему нейтральному вкусу и нежной текстуре, вырезка идеально подходит для быстрой жарки, запекания, приготовления медальонов и стейков. В англоязычной кухне называется pork tenderloin.</p><h2 class=\"ingredient-title\">Характеристики</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Форма</strong> — длинная, узкая</li><li class=\"ingredient-list-item\"><strong>Вес</strong> — 300-600 г (целая вырезка)</li><li class=\"ingredient-list-item\"><strong>Отруб</strong> — филейная часть, вдоль позвоночника</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — минимальная (постная)</li><li class=\"ingredient-list-item\"><strong>Структура</strong> — мелкая, плотная</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — самая нежная часть свинины</li></ul><h2 class=\"ingredient-title\">Применение в кулинарии</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Медальоны</strong> — нарезка поперёк волокон толщиной 2-3 см</li><li class=\"ingredient-list-item\"><strong>Стейки</strong> — жарка целиком или кусками</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде, на гриле</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с травами</li><li class=\"ingredient-list-item\"><strong>Фаршировка</strong> — с грибами, сыром, орехами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочный, грибной, горчичный, ягодный</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофель (пюре, жареный), рис, овощи-гриль</li><li class=\"ingredient-list-item\"><strong>Травы</strong> — розмарин, тимьян, шалфей, петрушка</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, чеснок, паприка</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Телячья вырезка</strong> — похожая нежность</li><li class=\"ingredient-list-item\"><strong>Куриное филе</strong> — диетический вариант</li><li class=\"ingredient-list-item\"><strong>Свиная корейка</strong> — более жирная</li><li class=\"ingredient-list-item\"><strong>Свиной карбонад</strong> — другой отруб</li></ul>",
+  "category": "Мясные полуфабрикаты",
+  "semantic_data": {
+    "properties": [
+      "полуфабрикат",
+      "свинина",
+      "нежный",
+      "постный",
+      "филей",
+      "медальоны",
+      "быстрое_приготовление"
+    ],
+    "preparations": [
+      "разморозка_в_холодильнике",
+      "удаление_плёночек_и_жира",
+      "нарезка_медальонами",
+      "отбивание_при_необходимости"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка",
+        "priority": "high"
+      },
+      {
+        "method": "гриль",
+        "priority": "high"
+      },
+      {
+        "method": "запекание",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление_медальонов",
+        "priority": "high"
+      }
+    ],
+    "applications": [
+      "медальоны",
+      "стейки",
+      "запекание",
+      "фаршировка"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "овощи_гриль"],
+      "grains": ["рис"],
+      "sauces": ["сливочный", "грибной", "горчичный", "ягодный"],
+      "herbs": ["розмарин", "тимьян", "шалфей", "петрушка"],
+      "spices": ["черный_перец", "чеснок", "паприка"]
+    },
+    "substitutes": [
+      {
+        "name": "Телячья вырезка",
+        "similarity": "high"
+      },
+      {
+        "name": "Куриное филе",
+        "similarity": "medium"
+      },
+      {
+        "name": "Свиная корейка",
+        "similarity": "medium"
+      },
+      {
+        "name": "Свиной карбонад",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "полуфабрикат",
+    "свинина",
+    "вырезка",
+    "медальоны",
+    "стейк",
+    "диетическое_мясо"
+  ]
+}

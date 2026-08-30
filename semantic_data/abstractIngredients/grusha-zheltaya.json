@@ -1,0 +1,80 @@
+{
+  "name": "Груша Желтая",
+  "name_normalized": "grusha-zheltaya",
+  "synonyms": "желтая груша, груша золотистая, груша солнечная, груша желтая летняя, груша желтая осенняя, груша желтая зимняя, yellow pear",
+  "short_description": "Сочный сладкий плод с ярко-жёлтой кожицей, характерной грушевидной формой и ароматной маслянистой мякотью. Богата витаминами, клетчаткой и калием. Употребляется свежей, в десертах, выпечке и сушёном виде.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Желтая груша — это один из самых распространённых видов груш, который отличается яркой жёлтой окраской кожицы при созревании. Плоды имеют характерную грушевидную форму, тонкую, гладкую кожицу и сочную, маслянистую или хрустящую мякоть в зависимости от сорта. Вкус сладкий, с лёгкой кислинкой, и ярким фруктовым ароматом. Жёлтые груши чаще всего встречаются в летних и осенних сортах, но есть и зимние разновидности. Универсальны в применении: хороши в свежем виде, для выпечки, десертов и заготовок.</p><h2 class=\"ingredient-title\">Сорта жёлтых груш</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вильямс (Бартлетт)</strong> — классический летний сорт, сочный и ароматный</li><li class=\"ingredient-list-item\"><strong>Конференция</strong> — зимний сорт, плотный, для хранения</li><li class=\"ingredient-list-item\"><strong>Дюшес</strong> — маслянистая, с мускатным ароматом</li><li class=\"ingredient-list-item\"><strong>Люкас</strong> — твёрдая, для запекания</li></ul><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочная, может быть маслянистой или хрустящей</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, с лёгкой кислинкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — ярко-жёлтый, золотистый</li><li class=\"ingredient-list-item\"><strong>Витамины</strong> — C, K, калий, медь</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 1-2 недели (в зависимости от сорта)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежая</strong> — как самостоятельный фрукт</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — пироги, тарты, крамблы</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — с медом, орехами, в карамели</li><li class=\"ingredient-list-item\"><strong>Сушка</strong> — для компотов, вяленая груша</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к мясу</li><li class=\"ingredient-list-item\"><strong>Джемы и варенье</strong> — для зимних заготовок</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — голубые, мягкие</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, гвоздика, ваниль</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — утка, свинина</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Груша зелёная</strong> — менее сладкая</li><li class=\"ingredient-list-item\"><strong>Яблоки</strong> — в выпечке</li><li class=\"ingredient-list-item\"><strong>Айва</strong> — для запекания</li></ul>",
+  "category": "Семечковые",
+  "semantic_data": {
+    "properties": [
+      "фрукт",
+      "груша",
+      "желтый",
+      "сочный",
+      "сладкий",
+      "ароматный"
+    ],
+    "preparations": [
+      "мытьё",
+      "очистка_от_кожицы",
+      "нарезка",
+      "удаление_сердцевины"
+    ],
+    "cooking_methods": [
+      {
+        "method": "свежее_употребление",
+        "priority": "high"
+      },
+      {
+        "method": "выпечка",
+        "priority": "high"
+      },
+      {
+        "method": "сушка",
+        "priority": "medium"
+      },
+      {
+        "method": "варка_варенья",
+        "priority": "medium"
+      },
+      {
+        "method": "карамелизация",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "десерты",
+      "выпечка",
+      "соусы",
+      "джемы"
+    ],
+    "pairings": {
+      "protein": ["голубые_сыры", "мягкие_сыры"],
+      "nuts": ["грецкие_орехи", "миндаль"],
+      "spices": ["корица", "гвоздика", "ваниль"],
+      "meat": ["утка", "свинина"]
+    },
+    "substitutes": [
+      {
+        "name": "Груша зелёная",
+        "similarity": "high"
+      },
+      {
+        "name": "Яблоки",
+        "similarity": "high"
+      },
+      {
+        "name": "Айва",
+        "similarity": "medium"
+      }
+    ]
+  },
+  "tags": [
+    "фрукт",
+    "груша",
+    "желтая_груша",
+    "десерт",
+    "выпечка",
+    "сочный"
+  ]
+}
