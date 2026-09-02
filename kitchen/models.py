@@ -198,6 +198,17 @@ class AbstractIngredient(models.Model):
         verbose_name="Категория"
     )
 
+    # ===== КАТЕГОРИЯ =====
+    # ===== Скурихин И. М., Тутельян В. А.
+    # ===== Таблицы химического состава и калорийности российских продуктов питания : справочник.
+    # ===== М. : ДеЛи принт, 2008. — 275 с. — ISBN 5-943431-22-5.
+    skurikhin_category = models.JSONField(
+        verbose_name="Категории справочника Скурихина",
+        help_text="Иерархия категорий из справочника в формате JSON",
+        null=True,
+        blank=True
+    )
+
     # ===== СЕМАНТИЧЕСКИЕ ТЕГИ =====
     semantic_tags = models.ManyToManyField(
         'SemanticTag',
@@ -279,7 +290,7 @@ class AbstractIngredient(models.Model):
     omega_3 = models.FloatField(null=True, blank=True, verbose_name="Омега-3, г")
     omega_6 = models.FloatField(null=True, blank=True, verbose_name="Омега-6, г")
 
-    # ===== ДРУГИЕ ПОЛЯ =====
+    # ===== ОРГАНИЧЕСКИЕ КИСЛОТЫ =====
     organic_acids = models.FloatField(null=True, blank=True, verbose_name="Органические кислоты, г")
 
     # ===== ИСТОЧНИК =====

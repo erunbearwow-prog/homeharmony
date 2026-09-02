@@ -7,149 +7,7 @@
 {% endblock %}
 
 {% block extra_css %}
-<style>
-    .card-hover { transition: all 0.3s ease; }
-    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.1); }
-
-    .step-card {
-        transition: all 0.3s ease;
-        cursor: pointer;
-    }
-    .step-card:hover {
-        background-color: #fef9e6;
-    }
-    .step-card.completed {
-        background-color: #f4f9e8;
-        border-left: 4px solid #8bc34a;
-    }
-    .step-checkbox:checked + .step-title,
-    .step-checkbox:checked ~ .step-title {
-        text-decoration: line-through;
-        color: #9ca3af;
-    }
-
-    .progress-bar {
-        height: 0.5rem;
-        background-color: #e5e7eb;
-        border-radius: 9999px;
-        overflow: hidden;
-    }
-    .progress-fill {
-        height: 100%;
-        background-color: #d97706;
-        border-radius: 9999px;
-        transition: width 0.3s ease;
-    }
-
-    /* Переключатель режимов */
-    .mode-switch {
-        transition: all 0.2s ease;
-    }
-
-    /* Кастомный ползунок */
-    input[type="range"] {
-        -webkit-appearance: none;
-        appearance: none;
-        background: #e5e7eb;
-        border-radius: 9999px;
-    }
-    input[type="range"]::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        width: 18px;
-        height: 18px;
-        background: #d97706;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .ingredient-row {
-        transition: all 0.2s ease;
-    }
-    .ingredient-row.completed {
-        opacity: 0.6;
-    }
-
-    /* Переключение панелей */
-.mode-panel.hidden {
-    display: none;
-}
-
-#portionsPanel, #productsPanel {
-    transition: all 0.2s ease;
-}
-
-/* Зебра для списка ингредиентов (тёплая палитра) */
-.ingredient-row:nth-child(even) {
-    background-color: #fffbeb;  /* очень светлый янтарный */
-}
-
-.ingredient-row:nth-child(odd) {
-    background-color: #ffffff;
-}
-
-.ingredient-row {
-    transition: background-color 0.2s ease;
-    padding: 0.75rem;
-    margin: 0 -0.75rem;
-    border-radius: 0.5rem;
-}
-
-.ingredient-row:hover {
-    background-color: #fef3c7 !important;  /* янтарный при наведении */
-}
-🎯 Полный блок extra_css в recipe_detail.html
-css
-
-    .card-hover { transition: all 0.3s ease; }
-    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.1); }
-
-    .step-card {
-        transition: all 0.3s ease;
-        cursor: pointer;
-    }
-    .step-card:hover {
-        background-color: #fef9e6;
-    }
-    .step-card.completed {
-        background-color: #f4f9e8;
-        border-left: 4px solid #8bc34a;
-    }
-    .step-checkbox:checked + .step-title,
-    .step-checkbox:checked ~ .step-title {
-        text-decoration: line-through;
-        color: #9ca3af;
-    }
-
-    .progress-bar {
-        height: 0.5rem;
-        background-color: #e5e7eb;
-        border-radius: 9999px;
-        overflow: hidden;
-    }
-    .progress-fill {
-        height: 100%;
-        background-color: #d97706;
-        border-radius: 9999px;
-        transition: width 0.3s ease;
-    }
-
-    /* Зебра для списка ингредиентов */
-    .ingredient-row:nth-child(even) {
-        background-color: #fffbeb;
-    }
-    .ingredient-row:nth-child(odd) {
-        background-color: #ffffff;
-    }
-    .ingredient-row {
-        transition: background-color 0.2s ease;
-        padding: 0.75rem;
-        margin: 0 -0.75rem;
-        border-radius: 0.5rem;
-    }
-    .ingredient-row:hover {
-        background-color: #fef3c7 !important;
-    }
-</style>
+<link rel="stylesheet" href="{% static 'kitchen/css/recipe.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -218,8 +76,8 @@ css
             <!-- Описание -->
             {% if recipe.description %}
             <div class="mt-8">
-                <h2 class="text-xl font-bold serif mb-3">Описание</h2>
-                <p class="text-gray-700 leading-relaxed">{{ recipe.description }}</p>
+                <h2 class="text-xl font-bold serif mb-3">Описание 123</h2>
+                <div class="text-gray-700 leading-relaxed">{{ recipe.description|safe }}</div>
             </div>
             {% endif %}
 
@@ -532,7 +390,7 @@ css
                     <div id="baseIngredientRow" class="hidden">
                         <div class="flex flex-wrap items-center gap-2 mt-2">
                             <span class="text-sm text-gray-500 line-through" id="baseOriginalValue">0</span>
-                            <input type="number" id="baseIngredientWeight" step="10" class="w-24 px-2 py-1 border border-gray-300 rounded-lg text-center">
+                            <input type="number" id="baseIngredientWeight" step="1" class="w-24 px-2 py-1 border border-gray-300 rounded-lg text-center">
                             <span id="baseIngredientUnit" class="text-sm"></span>
                             <button id="applyBaseBtn" class="bg-amber-700 text-white px-3 py-1 rounded-lg text-sm">Пересчитать</button>
                             <button id="resetBaseBtn" class="text-gray-500 text-sm underline ml-auto">Сбросить</button>
