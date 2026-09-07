@@ -1,0 +1,69 @@
+{
+  "name": "Кокосовая стружка",
+  "name_normalized": "kokosovaya_struzhka",
+  "synonyms": "кокосовая стружка, стружка кокосовая, кокос сушеный, кокосовая крошка, кокос для выпечки, кокос для десертов, кокосовая посыпка, кокос для украшения, кокос для конфет, кокос для тортов, кокос для печенья, кокосовая мука (мелкого помола), shredded coconut, desiccated coconut",
+  "short_description": "Сушеная измельченная мякоть кокосового ореха белого цвета с характерным сладковатым кокосовым вкусом и ароматом. Широко используется в кондитерских изделиях, выпечке, десертах, для украшения и в качестве добавки в салаты и йогурты.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Кокосовая стружка — это сушеная и измельченная мякоть кокосового ореха. Она имеет белый или кремовый цвет, маслянистую, слегка хрустящую текстуру и характерный сладковатый кокосовый вкус и аромат. В зависимости от степени помола, стружка может быть крупной (хлопья) или мелкой (порошок, кокосовая мука). Кокосовая стружка является популярным ингредиентом в кондитерских изделиях, выпечке, десертах, а также используется для украшения тортов и других блюд.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сухая, маслянистая, слегка хрустящая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, кокосовый, с ореховыми нотами</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый, кремовый</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — стружка (хлопья) или мелкая крошка (мука)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 6-12 месяцев в герметичной упаковке</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — может быть сладкой или несладкой (в зависимости от производителя)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в герметичной упаковке в сухом прохладном месте</li><li class=\"ingredient-list-item\"><strong>Использование</strong> — добавлять в блюда без подготовки</li><li class=\"ingredient-list-item\"><strong>Обжаривание</strong> — для усиления вкуса и аромата на сухой сковороде 1-2 минуты</li><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — для размягчения залить теплой водой на 10-15 минут</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — кексы, печенье, пироги, макаруны, булочки, хлеб</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — пудинги, муссы, панна-котта, мороженое</li><li class=\"ingredient-list-item\"><strong>Кондитерские изделия</strong> — конфеты, рафаэлло, трюфели, безе</li><li class=\"ingredient-list-item\"><strong>Украшение</strong> — посыпка тортов, пирожных, кексов</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — фруктовые и овощные салаты</li><li class=\"ingredient-list-item\"><strong>Йогурты и каши</strong> — добавка для вкуса и текстуры</li><li class=\"ingredient-list-item\"><strong>Гранола и мюсли</strong> — добавка к завтракам</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Шоколад</strong> — белый, молочный, темный</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — ананас, манго, банан, клубника, цитрусовые</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — миндаль, грецкие, кешью, фисташки</li><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — сливки, йогурт, сгущенное молоко</li><li class=\"ingredient-list-item\"><strong>Ваниль, корица</strong> — для аромата</li><li class=\"ingredient-list-item\"><strong>Мука</strong> — в выпечке</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Миндальная мука</strong> — для выпечки</li><li class=\"ingredient-list-item\"><strong>Ореховая мука</strong> — для выпечки</li><li class=\"ingredient-list-item\"><strong>Свежий кокос (натертый)</strong> — для вкуса</li><li class=\"ingredient-list-item\"><strong>Овсяные хлопья</strong> — для выпечки и гранолы</li></ul>",
+  "category": "Бакалея",
+  "semantic_data": {
+    "properties": [
+      "кокос",
+      "стружка",
+      "сушеный",
+      "белый",
+      "сладкий",
+      "выпечка",
+      "десерты",
+      "украшение",
+      "кондитерские изделия",
+      "маслянистая"
+    ],
+    "preparations": [
+      "хранение в герметичной упаковке",
+      "использование без подготовки",
+      "обжаривание на сухой сковороде",
+      "замачивание в теплой воде"
+    ],
+    "cooking_methods": [
+      {"method": "использование в выпечке", "priority": "high"},
+      {"method": "использование в десертах", "priority": "high"},
+      {"method": "использование для украшения", "priority": "high"},
+      {"method": "добавление в салаты", "priority": "medium"},
+      {"method": "добавление в йогурты и каши", "priority": "medium"},
+      {"method": "использование в конфетах", "priority": "high"}
+    ],
+    "applications": [
+      "выпечка",
+      "десерты",
+      "украшения",
+      "кондитерские изделия",
+      "салаты",
+      "завтраки"
+    ],
+    "pairings": {
+      "protein": ["сливки", "йогурт", "сгущенное молоко"],
+      "vegetables": [],
+      "fruits": ["ананас", "манго", "банан", "клубника", "цитрусовые"],
+      "nuts": ["миндаль", "грецкие", "кешью", "фисташки"],
+      "sauces": [],
+      "herbs": [],
+      "spices": ["ваниль", "корица"]
+    },
+    "substitutes": [
+      {"name": "Миндальная мука", "similarity": "medium"},
+      {"name": "Ореховая мука", "similarity": "medium"},
+      {"name": "Свежий кокос (натертый)", "similarity": "high"},
+      {"name": "Овсяные хлопья", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "кокос",
+    "кокосовая стружка",
+    "выпечка",
+    "десерты",
+    "украшение",
+    "кондитерские изделия",
+    "сладкий",
+    "бакалея"
+  ]
+}

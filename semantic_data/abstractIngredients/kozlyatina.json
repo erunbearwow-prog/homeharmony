@@ -1,0 +1,65 @@
+{
+  "name": "Козлятина",
+  "name_normalized": "kozlyatina",
+  "synonyms": "козлятина, мясо козы, козье мясо, мясо домашней козы, козлятина молодая, козлятина тушеная, козлятина запеченная, козлятина для рагу, диетическое мясо, постное мясо, каприна, chevon, cabrito",
+  "short_description": "Нежное, постное мясо домашней козы с плотной текстурой и характерным, слегка сладковатым вкусом. Содержит меньше жира и холестерина, чем говядина или баранина. Широко используется в кавказской, средиземноморской и азиатской кухнях.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Козлятина — это мясо домашней козы, которое ценится за свои диетические свойства и нежный вкус. В отличие от баранины, козлятина содержит меньше жира и холестерина, имеет более светлый цвет и менее выраженный специфический запах. Мясо молодых коз (до 1 года) особенно нежное и сочное, тогда как мясо взрослых животных требует более длительной термической обработки. Козлятина широко используется в кавказской, средиземноморской, индийской, африканской и азиатской кухнях для приготовления рагу, жаркого, шашлыка, тушеных и запеченных блюд.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — плотное, нежное, постное, с низким содержанием жира</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, мягкий, без резкого запаха (у молодых животных)</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — светло-розовый, бледно-красный (молодая), темно-красный (взрослая)</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — низкая (3-5%)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — мясо молодых коз не имеет специфического запаха, требует маринования при приготовлении</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выбор</strong> — предпочтение мясу молодых коз (до 1 года), оно более нежное</li><li class=\"ingredient-list-item\"><strong>Вымачивание</strong> — при наличии специфического запаха замочить в молоке или воде с уксусом на 2-4 часа</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — рекомендуется для сочности и размягчения (с травами, чесноком, вином, лимоном)</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — на порционные куски для тушения или шашлыка</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тушение</strong> — рагу, жаркое, гуляш с овощами</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с картофелем и травами</li><li class=\"ingredient-list-item\"><strong>Шашлык</strong> — маринованный на углях</li><li class=\"ingredient-list-item\"><strong>Плов</strong> — в качестве основного мяса</li><li class=\"ingredient-list-item\"><strong>Котлеты и фрикадельки</strong> — из фарша с добавлением жира</li><li class=\"ingredient-list-item\"><strong>Паштеты</strong> — с добавлением специй</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, лук, морковь, помидоры, перец, баклажаны</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — кинза, петрушка, базилик, мята</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, имбирь, черный перец, кориандр, кумин, паприка, розмарин</li><li class=\"ingredient-list-item\"><strong>Кислые продукты</strong> — лимон, уксус, вино (для маринада)</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, кисло-сладкий</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Баранина</strong> — более жирная, с характерным запахом</li><li class=\"ingredient-list-item\"><strong>Телятина</strong> — более нежная, менее постная</li><li class=\"ingredient-list-item\"><strong>Дичь</strong> — для тушеных блюд</li><li class=\"ingredient-list-item\"><strong>Оленина</strong> — более плотное мясо</li></ul>",
+  "category": "Мясо и мясные продукты",
+  "semantic_data": {
+    "properties": [
+      "мясо",
+      "козье",
+      "диетическое",
+      "постное",
+      "нежное",
+      "плотное",
+      "маложирное",
+      "для тушения",
+      "для запекания",
+      "для шашлыка"
+    ],
+    "preparations": [
+      "выбор мяса молодых коз",
+      "вымачивание в молоке или воде с уксусом",
+      "маринование с травами и чесноком",
+      "нарезка на порционные куски"
+    ],
+    "cooking_methods": [
+      {"method": "тушение", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "приготовление шашлыка", "priority": "high"},
+      {"method": "приготовление плова", "priority": "medium"},
+      {"method": "приготовление котлет", "priority": "medium"},
+      {"method": "приготовление паштетов", "priority": "low"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "супы",
+      "закуски",
+      "праздничные блюда"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "лук", "морковь", "помидоры", "перец", "баклажаны"],
+      "sauces": ["томатный", "сметанный", "кисло-сладкий"],
+      "herbs": ["кинза", "петрушка", "базилик", "мята"],
+      "spices": ["чеснок", "имбирь", "черный перец", "кориандр", "кумин", "паприка", "розмарин"]
+    },
+    "substitutes": [
+      {"name": "Баранина", "similarity": "high"},
+      {"name": "Телятина", "similarity": "high"},
+      {"name": "Дичь", "similarity": "medium"},
+      {"name": "Оленина", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "мясо",
+    "козлятина",
+    "диетическое мясо",
+    "постное мясо",
+    "кавказская кухня",
+    "тушение",
+    "запекание",
+    "шашлык"
+  ]
+}

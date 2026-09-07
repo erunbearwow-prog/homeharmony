@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'imagekit',
     'django_localekit',
     'django_ckeditor_5',
+    'core.apps.CoreConfig',
     'accounts.apps.AccountsConfig',   # ← ВРЕМЕННО
     'kitchen.apps.KitchenConfig',        # ← ОСТАВЛЯЕМ
     'cleaning.apps.CleaningConfig',   # ← ВРЕМЕННО
@@ -77,6 +78,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'core.context_processors.logo_colors',
             ],
         },
     },

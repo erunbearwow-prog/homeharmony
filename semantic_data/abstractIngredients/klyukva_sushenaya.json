@@ -1,0 +1,68 @@
+{
+  "name": "Клюква сушеная",
+  "name_normalized": "klyukva_sushenaya",
+  "synonyms": "сушеная клюква, клюква вяленая, клюква сушеная, сушеная клюква с сахаром, клюква для выпечки, клюква для салатов, клюква для мюслей, клюква для компота, клюква для соусов, клюква для десертов, dried cranberries, craisins",
+  "short_description": "Сушеная ягода клюквы с сохранением характерного кисло-сладкого вкуса и упругой текстуры. Идеальный ингредиент для выпечки, салатов, мюслей и в качестве полезного перекуса. Часто продается с добавлением сахара для смягчения кислоты.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Сушеная клюква — это ягода клюквы, из которой удалена большая часть влаги путем термической сушки. В процессе сушки клюква сохраняет свои полезные свойства, но становится более сладкой и плотной по текстуре. Обычно сушеную клюкву слегка подслащивают (добавляют сахар или яблочный сок) для смягчения естественной кислоты, поэтому она приобретает приятный кисло-сладкий вкус. Сушеная клюква популярна в выпечке (кексы, печенье, булочки), салатах, мюслях, а также как полезный перекус.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — упругая, слегка жевательная, плотная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисло-сладкий, с характерной клюквенной терпкостью</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — тёмно-красный, бордовый, рубиновый</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — сморщенные ягоды, круглые или овальные</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 12-18 месяцев в герметичной упаковке</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — часто продается с добавлением сахара (сладкая клюква)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Промывка</strong> — при необходимости промыть</li><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — для размягчения залить теплой водой на 10-15 минут</li><li class=\"ingredient-list-item\"><strong>Использование</strong> — добавлять в блюда без подготовки (для выпечки и мюслей)</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в герметичной упаковке, в сухом прохладном месте</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — кексы, маффины, печенье, булочки, пироги</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, сыром, орехами, курицей</li><li class=\"ingredient-list-item\"><strong>Мюсли и гранола</strong> — добавка к завтракам</li><li class=\"ingredient-list-item\"><strong>Компоты</strong> — придает кислинку</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к мясу (вместе с другими ингредиентами)</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — мороженое, йогурт, творог</li><li class=\"ingredient-list-item\"><strong>Снэки</strong> — как самостоятельный перекус</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль, пекан, кешью</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — голубые, козий, сливочный, фета</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — яблоки, апельсины, изюм</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — овсянка, мюсли, гранола</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, индейка, утка (в соусах)</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, имбирь, ваниль, кардамон</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежая клюква</strong> — для варенья и соусов</li><li class=\"ingredient-list-item\"><strong>Сушеная брусника</strong> — похожий вкус</li><li class=\"ingredient-list-item\"><strong>Изюм</strong> — в выпечке и мюслях</li><li class=\"ingredient-list-item\"><strong>Сушеная вишня</strong> — похожая текстура</li></ul>",
+  "category": "Фрукты",
+  "semantic_data": {
+    "properties": [
+      "сухофрукт",
+      "клюква",
+      "кисло-сладкий",
+      "упругий",
+      "для выпечки",
+      "для салатов",
+      "для мюслей",
+      "для соусов",
+      "полезный перекус"
+    ],
+    "preparations": [
+      "промывка (при необходимости)",
+      "замачивание в теплой воде для размягчения",
+      "хранение в герметичной упаковке"
+    ],
+    "cooking_methods": [
+      {"method": "использование в выпечке", "priority": "high"},
+      {"method": "использование в салатах", "priority": "high"},
+      {"method": "использование в мюслях", "priority": "high"},
+      {"method": "использование в соусах", "priority": "medium"},
+      {"method": "использование в десертах", "priority": "medium"},
+      {"method": "самостоятельный перекус", "priority": "high"}
+    ],
+    "applications": [
+      "выпечка",
+      "салаты",
+      "завтраки",
+      "соусы",
+      "десерты",
+      "перекусы"
+    ],
+    "pairings": {
+      "protein": ["курица", "индейка", "утка", "голубые сыры", "козий сыр", "фета"],
+      "vegetables": [],
+      "fruits": ["яблоки", "апельсины", "изюм"],
+      "grains": ["овсянка", "мюсли", "гранола"],
+      "nuts": ["грецкие", "миндаль", "пекан", "кешью"],
+      "sauces": [],
+      "herbs": [],
+      "spices": ["корица", "имбирь", "ваниль", "кардамон"]
+    },
+    "substitutes": [
+      {"name": "Свежая клюква", "similarity": "medium"},
+      {"name": "Сушеная брусника", "similarity": "high"},
+      {"name": "Изюм", "similarity": "medium"},
+      {"name": "Сушеная вишня", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "сухофрукт",
+    "клюква",
+    "сушеная клюква",
+    "выпечка",
+    "салаты",
+    "мюсли",
+    "полезный перекус",
+    "кисло-сладкий"
+  ]
+}

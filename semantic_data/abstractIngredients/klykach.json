@@ -1,0 +1,67 @@
+{
+  "name": "Клыкач",
+  "name_normalized": "klykach",
+  "synonyms": "клыкач, патагонский клыкач, антарктический клыкач, чилийский сибас, морской окунь (ошибочно), Dissostichus eleginoides, Dissostichus mawsoni, белое золото, нототениевые, глубоководная рыба, премиум-рыба, рыба для запекания, рыба для гриля, рыба для жарки",
+  "short_description": "Крупная глубоководная рыба семейства нототениевых, обитающая в антарктических и субантарктических водах. Имеет плотное, жирное (до 30%) белое мясо с нежным вкусом и высокой пищевой ценностью. Ценится как премиальный деликатес, известный как «белое золото».",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Клыкач — это род крупных морских рыб из семейства нототениевых, обитающих в холодных водах Южного океана и у побережья Южной Америки. В роде выделяют два вида: патагонский клыкач (Dissostichus eleginoides) и антарктический клыкач (Dissostichus mawsoni). Это глубоководные рыбы, способные опускаться на глубину до 2000-2250 м и достигать длины 160-200 см, веса до 135 кг. За высокую пищевую ценность и отличные вкусовые качества клыкача называют «белым золотом» — его мясо является деликатесом премиум-класса. Промысел клыкача регулируется международной Конвенцией по сохранению морских живых ресурсов Антарктики (АНТКОМ).</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — плотное, белое, жирное, нежное, без мелких костей</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, маслянистый, деликатный</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — высокая (до 30%)</li><li class=\"ingredient-list-item\"><strong>Размер</strong> — до 200 см, масса до 135 кг</li><li class=\"ingredient-list-item\"><strong>Глубина обитания</strong> — от 300 до 2250 м</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — относится к премиальным видам рыб, регулируемый промысел</li></ul><h2 class=\"ingredient-title\">Виды клыкача</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Патагонский клыкач (Dissostichus eleginoides)</strong> — обитает у побережья Чили и Аргентины, Фолклендских островов, Южной Георгии, Кергелена и других субантарктических островов на глубинах 300-2000 м</li><li class=\"ingredient-list-item\"><strong>Антарктический клыкач (Dissostichus mawsoni)</strong> — обитает в высоких широтах Антарктики, редко встречается севернее 60° ю. ш.</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Размораживание</strong> — в холодильнике при низкой температуре, медленная разморозка</li><li class=\"ingredient-list-item\"><strong>Разделка</strong> — на стейки или филе, кости легко отделяются</li><li class=\"ingredient-list-item\"><strong>Снятие кожи</strong> — при необходимости</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — в оливковом масле с лимоном и травами (для запекания и гриля)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с овощами, травами, лимоном</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — стейки на гриле, сохраняет сочность</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде с маслом, без панировки</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в сливочном или белом винном соусе</li><li class=\"ingredient-list-item\"><strong>Пар</strong> — диетический способ приготовления</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — горячее и холодное</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, спаржа, брокколи, цукини, помидоры</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочный, лимонный, белое вино, каперсы</li><li class=\"ingredient-list-item\"><strong>Травы</strong> — тимьян, розмарин, петрушка, укроп</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, морская соль, лимонная цедра</li><li class=\"ingredient-list-item\"><strong>Вино</strong> — белое сухое</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Палтус</strong> — похожая текстура, менее жирный</li><li class=\"ingredient-list-item\"><strong>Морской окунь</strong> — белое мясо, схожая консистенция</li><li class=\"ingredient-list-item\"><strong>Зубатка</strong> — плотное белое мясо</li><li class=\"ingredient-list-item\"><strong>Лосось</strong> — для запекания и гриля, но другой вкус</li></ul>",
+  "category": "Рыба и морепродукты",
+  "semantic_data": {
+    "properties": [
+      "глубоководная",
+      "антарктическая",
+      "белое мясо",
+      "жирное",
+      "плотное",
+      "деликатес",
+      "премиум-рыба",
+      "для запекания",
+      "для гриля",
+      "без мелких костей"
+    ],
+    "preparations": [
+      "размораживание в холодильнике",
+      "разделка на стейки",
+      "удаление кожи",
+      "маринование в оливковом масле с травами"
+    ],
+    "cooking_methods": [
+      {"method": "запекание", "priority": "high"},
+      {"method": "гриль", "priority": "high"},
+      {"method": "жарка на сковороде", "priority": "high"},
+      {"method": "тушение", "priority": "medium"},
+      {"method": "приготовление на пару", "priority": "medium"},
+      {"method": "копчение", "priority": "medium"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "праздничные блюда",
+      "ресторанная кухня",
+      "диетическое питание"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "спаржа", "брокколи", "цукини", "помидоры"],
+      "sauces": ["сливочный", "лимонный", "белое вино", "каперсы"],
+      "herbs": ["тимьян", "розмарин", "петрушка", "укроп"],
+      "spices": ["черный перец", "морская соль", "лимонная цедра"]
+    },
+    "substitutes": [
+      {"name": "Палтус", "similarity": "high"},
+      {"name": "Морской окунь", "similarity": "high"},
+      {"name": "Зубатка", "similarity": "medium"},
+      {"name": "Лосось", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "рыба",
+    "глубоководная",
+    "клыкач",
+    "патагонский клыкач",
+    "антарктический клыкач",
+    "белое золото",
+    "деликатес",
+    "премиум-рыба",
+    "запекание",
+    "гриль"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AbstractIngredient Schema (Full Skurikhin)",
+  "description": "Полная JSON-схема для импорта данных из справочника Скурихина и Тутельяна",
+  "type": "object",
+  "required": ["name", "code"],
+
+  "properties": {
+    "code": {
+      "type": "string",
+      "description": "Код продукта по справочнику"
+    },
+    "name": {
+      "type": "string",
+      "description": "Название продукта"
+    },
+    "portion": {
+      "type": ["integer", "null"],
+      "description": "Размер порции, г",
+      "minimum": 0
+    },
+
+    "water": { "type": ["number", "null"], "description": "Вода, %", "minimum": 0, "maximum": 100 },
+    "protein": { "type": ["number", "null"], "description": "Белки, %", "minimum": 0 },
+    "fat": { "type": ["number", "null"], "description": "Жиры, %", "minimum": 0 },
+    "saturated_fat": { "type": ["number", "null"], "description": "Насыщенные жирные кислоты (НЖК), %", "minimum": 0 },
+    "polyunsaturated_fat": { "type": ["number", "null"], "description": "Полиненасыщенные жирные кислоты (ПНЖК), %", "minimum": 0 },
+    "cholesterol": { "type": ["number", "null"], "description": "Холестерин, мг%", "minimum": 0 },
+    "sugar": { "type": ["number", "null"], "description": "Моно- и дисахариды (МДС), %", "minimum": 0 },
+    "starch": { "type": ["number", "null"], "description": "Крахмал (Кр), %", "minimum": 0 },
+    "carbohydrates": { "type": ["number", "null"], "description": "Усвояемые углеводы (Угл), %", "minimum": 0 },
+    "fiber": { "type": ["number", "null"], "description": "Пищевые волокна (ПВ), %", "minimum": 0 },
+    "organic_acids": { "type": ["number", "null"], "description": "Органические кислоты (ОК), %", "minimum": 0 },
+    "ash": { "type": ["number", "null"], "description": "Зола, %", "minimum": 0 },
+
+    "sodium": { "type": ["number", "null"], "description": "Натрий (Na), мг%", "minimum": 0 },
+    "potassium": { "type": ["number", "null"], "description": "Калий (K), мг%", "minimum": 0 },
+    "calcium": { "type": ["number", "null"], "description": "Кальций (Ca), мг%", "minimum": 0 },
+    "magnesium": { "type": ["number", "null"], "description": "Магний (Mg), мг%", "minimum": 0 },
+    "phosphorus": { "type": ["number", "null"], "description": "Фосфор (P), мг%", "minimum": 0 },
+    "iron": { "type": ["number", "null"], "description": "Железо (Fe), мг%", "minimum": 0 },
+
+    "vitamin_a": { "type": ["number", "null"], "description": "Ретинол (A), мг%", "minimum": 0 },
+    "beta_carotene": { "type": ["number", "null"], "description": "β-каротин (Кар), мг%", "minimum": 0 },
+    "retinol_equivalent": { "type": ["number", "null"], "description": "Ретиноловый эквивалент (РЭ), мг%", "minimum": 0 },
+    "vitamin_e": { "type": ["number", "null"], "description": "Токоферолэквивалент (ТЭ), мг%", "minimum": 0 },
+    "vitamin_b1": { "type": ["number", "null"], "description": "Тиамин (B1), мг%", "minimum": 0 },
+    "vitamin_b2": { "type": ["number", "null"], "description": "Рибофлавин (B2), мг%", "minimum": 0 },
+    "vitamin_b3": { "type": ["number", "null"], "description": "Ниацин (PP), мг%", "minimum": 0 },
+    "niacin_equivalent": { "type": ["number", "null"], "description": "Ниациновый эквивалент (НЭ), мг%", "minimum": 0 },
+    "vitamin_c": { "type": ["number", "null"], "description": "Аскорбиновая кислота (C), мг%", "minimum": 0 },
+
+    "calories": { "type": ["number", "null"], "description": "Энергетическая ценность (ЭЦ), ккал", "minimum": 0 },
+
+    "alcohol": { "type": ["number", "null"], "description": "Этиловый спирт (Алк), % вес.", "minimum": 0 },
+    "soluble_fiber": { "type": ["number", "null"], "description": "Растворимые пищевые волокна (РПВ), %", "minimum": 0 },
+    "insoluble_fiber": { "type": ["number", "null"], "description": "Нерастворимые пищевые волокна (НПВ), %", "minimum": 0 }
+  }
+}

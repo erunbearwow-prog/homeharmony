@@ -1,0 +1,68 @@
+{
+  "name": "Кольраби",
+  "name_normalized": "kolrabi",
+  "synonyms": "кольраби, капуста кольраби, кольраби капуста, репная капуста, капуста-репа, кочанная капуста, овощ кольраби, кольраби для салата, кольраби для супа, кольраби для тушения, Brassica oleracea var. gongylodes",
+  "short_description": "Стеблеплод семейства капустных с плотной, сочной мякотью и нежным, слегка сладковатым вкусом, напоминающим кочерыжку белокочанной капусты, но более нежным. Употребляется в сыром виде в салатах, а также тушится, запекается, используется в супах и гарнирах.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Кольраби — это разновидность капусты, у которой в пищу употребляется не листья, а стеблеплод — утолщенная надземная часть стебля, имеющая форму шара или репы. Мякоть кольраби плотная, сочная, белая или кремовая, с нежным сладковатым вкусом, напоминающим кочерыжку белокочанной капусты, но более нежным и без характерной остроты. Кольраби богата витамином C, калием и клетчаткой. Ее употребляют в сыром виде в салатах, тушат, запекают, добавляют в супы и используют как гарнир. Молодые листья кольраби также съедобны и их можно добавлять в салаты.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, сочная, хрустящая (в сыром виде), мягкая (после термообработки)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, нежный, с легким ореховым оттенком</li><li class=\"ingredient-list-item\"><strong>Цвет мякоти</strong> — от белого до кремового, зеленоватого</li><li class=\"ingredient-list-item\"><strong>Цвет кожуры</strong> — светло-зеленый, желтоватый, фиолетовый</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — лето-осень</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике до 2-3 недель</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — молодые плоды более нежные и сочные, старые — жесткие и волокнистые</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойка</strong> — тщательно промыть под проточной водой</li><li class=\"ingredient-list-item\"><strong>Очистка</strong> — удалить кожуру и жесткие волокна (для старых плодов)</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — соломкой, кубиками, ломтиками, на терке</li><li class=\"ingredient-list-item\"><strong>Листья</strong> — молодые листья можно использовать в салатах или тушить</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — в сыром виде с маслом, сметаной, лимонным соком, с морковью, яблоком</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с овощами, мясом, в сливочном или сметанном соусе</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с сыром, травами</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — овощные супы, крем-супы</li><li class=\"ingredient-list-item\"><strong>Гарнир</strong> — к мясу, рыбе, птице</li><li class=\"ingredient-list-item\"><strong>Фарширование</strong> — плоды кольраби можно фаршировать</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — морковь, картофель, лук, редька, редис</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, говядина, свинина</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — яблоки</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, сливочный, лимонный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, кинза, зеленый лук</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, мускатный орех, чабер</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Редька</strong> — в салатах, но более острая</li><li class=\"ingredient-list-item\"><strong>Белокочанная капуста</strong> — в салатах и супах</li><li class=\"ingredient-list-item\"><strong>Цветная капуста</strong> — для тушения и запекания</li><li class=\"ingredient-list-item\"><strong>Брокколи</strong> — для горячих блюд</li></ul>",
+  "category": "Овощи",
+  "semantic_data": {
+    "properties": [
+      "овощ",
+      "стеблеплод",
+      "хрустящий",
+      "сочный",
+      "сладковатый",
+      "нежный",
+      "для салатов",
+      "для супов",
+      "для тушения",
+      "диетический"
+    ],
+    "preparations": [
+      "мойка под проточной водой",
+      "очистка от кожуры (для старых плодов)",
+      "нарезка соломкой, кубиками или ломтиками",
+      "измельчение на терке"
+    ],
+    "cooking_methods": [
+      {"method": "использование в сыром виде (салаты)", "priority": "high"},
+      {"method": "тушение", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "варка (супы)", "priority": "medium"},
+      {"method": "фарширование", "priority": "medium"},
+      {"method": "гриль", "priority": "low"}
+    ],
+    "applications": [
+      "салаты",
+      "супы",
+      "вторые блюда",
+      "гарниры",
+      "фаршированные блюда"
+    ],
+    "pairings": {
+      "protein": ["курица", "говядина", "свинина"],
+      "vegetables": ["морковь", "картофель", "лук", "редис", "репа"],
+      "fruits": ["яблоки"],
+      "sauces": ["сметанный", "сливочный", "лимонный"],
+      "herbs": ["укроп", "петрушка", "кинза", "зеленый лук"],
+      "spices": ["черный перец", "мускатный орех", "чабер"]
+    },
+    "substitutes": [
+      {"name": "Редька", "similarity": "medium"},
+      {"name": "Белокочанная капуста", "similarity": "low"},
+      {"name": "Цветная капуста", "similarity": "low"},
+      {"name": "Брокколи", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "овощ",
+    "кольраби",
+    "капуста",
+    "салаты",
+    "супы",
+    "тушение",
+    "запекание",
+    "диетический",
+    "стеблеплод"
+  ]
+}

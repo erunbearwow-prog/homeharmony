@@ -1,0 +1,70 @@
+{
+  "name": "Коктейль из морепродуктов",
+  "name_normalized": "kokteyl_iz_moreproduktov",
+  "synonyms": "коктейль из морепродуктов, морской коктейль, морепродукты замороженные, смесь морепродуктов, коктейль морской, мидии с креветками, кальмары с осьминогом, морепродукты для супа, морепродукты для салата, морепродукты для пасты, морепродукты для ризотто, seafood mix, frozen seafood mix, морской ассорти",
+  "short_description": "Готовая замороженная смесь из различных морепродуктов: креветок, мидий, кальмаров, осьминогов, гребешков и других моллюсков. Универсальный полуфабрикат для быстрого приготовления салатов, супов, пасты, ризотто и горячих закусок.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Коктейль из морепродуктов — это готовая замороженная смесь различных морских моллюсков и ракообразных. В состав обычно входят креветки (очищенные или неочищенные), мидии (в створках или без), кольца кальмаров, кусочки осьминога, гребешки и иногда другие морепродукты. Состав и пропорции могут варьироваться в зависимости от производителя. Коктейль из морепродуктов является удобным полуфабрикатом, который позволяет быстро приготовить разнообразные блюда без необходимости чистить и разделывать каждый вид морепродуктов по отдельности. Он широко используется для приготовления салатов, супов, пасты, ризотто, закусок и горячих блюд.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — разнообразная (упругие кальмары, нежные мидии, плотные креветки)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — характерный морской, сладковатый, с легкой солоноватостью</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый, розовый, оранжевый, серый (в зависимости от состава)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 12-18 месяцев в замороженном виде при -18°C</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — не требует разделки, готовится быстро (2-5 минут варки)</li></ul><h2 class=\"ingredient-title\">Типичный состав</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Креветки</strong> — очищенные или в панцире (40-60% состава)</li><li class=\"ingredient-list-item\"><strong>Кольца кальмаров</strong> — 15-25%</li><li class=\"ingredient-list-item\"><strong>Мидии</strong> — в створках или без (15-20%)</li><li class=\"ingredient-list-item\"><strong>Гребешки</strong> — 5-10%</li><li class=\"ingredient-list-item\"><strong>Осьминог</strong> — 5-10%</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике или под холодной водой</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — в кипящей подсоленной воде 2-5 минут (не переваривать)</li><li class=\"ingredient-list-item\"><strong>Обжаривание</strong> — на сковороде с маслом и чесноком</li><li class=\"ingredient-list-item\"><strong>Добавление в блюда</strong> — в конце приготовления, чтобы не пересушить</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с майонезом, зеленью, яйцом, рисом</li><li class=\"ingredient-list-item\"><strong>Паста</strong> — с томатным или сливочным соусом</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — бульоны, уха, супы-пюре</li><li class=\"ingredient-list-item\"><strong>Ризотто</strong> — с овощами и белым вином</li><li class=\"ingredient-list-item\"><strong>Горячие закуски</strong> — с чесноком, маслом, зеленью</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — во фритюре или на сковороде</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с сыром, панировкой</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Чеснок</strong> — классическое сочетание</li><li class=\"ingredient-list-item\"><strong>Лимон</strong> — для свежести</li><li class=\"ingredient-list-item\"><strong>Оливковое масло</strong> — для обжаривания</li><li class=\"ingredient-list-item\"><strong>Белое вино</strong> — для соусов</li><li class=\"ingredient-list-item\"><strong>Помидоры</strong> — в томатных соусах</li><li class=\"ingredient-list-item\"><strong>Сливки</strong> — для кремовых соусов</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, базилик</li><li class=\"ingredient-list-item\"><strong>Рис и паста</strong> — как основа блюд</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Отдельные морепродукты</strong> — креветки, мидии, кальмары (по отдельности)</li><li class=\"ingredient-list-item\"><strong>Мидии и креветки</strong> — для простых блюд</li><li class=\"ingredient-list-item\"><strong>Креветки + кальмары</strong> — для пасты и салатов</li></ul>",
+  "category": "Рыба и морепродукты",
+  "semantic_data": {
+    "properties": [
+      "морепродукты",
+      "замороженные",
+      "смесь",
+      "ассорти",
+      "креветки",
+      "кальмары",
+      "мидии",
+      "полуфабрикат",
+      "для салатов",
+      "для пасты",
+      "для супов"
+    ],
+    "preparations": [
+      "разморозка в холодильнике",
+      "варка в кипящей воде 2-5 минут",
+      "обжаривание на сковороде с маслом",
+      "добавление в блюда в конце приготовления"
+    ],
+    "cooking_methods": [
+      {"method": "варка", "priority": "high"},
+      {"method": "обжаривание", "priority": "high"},
+      {"method": "использование в салатах", "priority": "high"},
+      {"method": "использование в пасте", "priority": "high"},
+      {"method": "использование в супах", "priority": "medium"},
+      {"method": "запекание", "priority": "medium"},
+      {"method": "жарка во фритюре", "priority": "low"}
+    ],
+    "applications": [
+      "салаты",
+      "паста",
+      "супы",
+      "ризотто",
+      "горячие закуски",
+      "вторые блюда"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["помидоры", "лук", "чеснок", "перец"],
+      "grains": ["рис", "паста"],
+      "sauces": ["сливочный", "томатный", "чесночный", "белое вино"],
+      "herbs": ["петрушка", "укроп", "базилик"],
+      "spices": ["черный перец", "паприка", "тимьян"]
+    },
+    "substitutes": [
+      {"name": "Креветки отдельно", "similarity": "medium"},
+      {"name": "Мидии и креветки", "similarity": "medium"},
+      {"name": "Кальмары и креветки", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "морепродукты",
+    "коктейль из морепродуктов",
+    "морской коктейль",
+    "замороженные морепродукты",
+    "салаты",
+    "паста",
+    "супы",
+    "полуфабрикат",
+    "ассорти"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "name": "Клубника замороженная",
+  "name_normalized": "klubnika_zamorozhennaya",
+  "synonyms": "замороженная клубника, клубника в заморозке, клубника шоковой заморозки, ягоды клубники замороженные, клубника для зимних десертов, замороженная ягода, frozen strawberries, strawberry frozen",
+  "short_description": "Свежая клубника, подвергнутая быстрой заморозке для сохранения цвета, текстуры, витаминов и полезных свойств. Идеальный продукт для использования в выпечке, десертах, смузи и соусах круглый год. Удобный полуфабрикат, требующий минимальной подготовки.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Замороженная клубника — это свежие ягоды, которые были подвергнуты быстрой (шоковой) заморозке при температуре от -35°C до -40°C. Такая технология позволяет максимально сохранить структуру ягод, их цвет, вкус, аромат и питательные вещества. В отличие от свежей клубники, замороженная доступна круглый год и не требует немедленного использования. Она идеально подходит для приготовления десертов, выпечки, смузи, соусов, варенья и джемов. После разморозки ягоды становятся мягче и выделяют сок, поэтому их обычно используют без предварительной разморозки в термической обработке.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура после разморозки</strong> — мягкая, сочная, выделяет сок</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, с легкой кислинкой, сохраняется как у свежей</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — ярко-красный</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — сохраняется форма ягоды (при правильной заморозке)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 12 месяцев при -18°C</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — не требует мытья, готова к использованию без разморозки</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в морозильной камере при -18°C</li><li class=\"ingredient-list-item\"><strong>Использование без разморозки</strong> — для выпечки, варенья, соусов</li><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — при необходимости (в холодильнике, при комнатной температуре или в микроволновке)</li><li class=\"ingredient-list-item\"><strong>Слив сока</strong> — при необходимости слить лишний сок после разморозки</li><li class=\"ingredient-list-item\"><strong>Не замораживать повторно</strong> — после разморозки использовать сразу</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — пироги, тарты, кексы, маффины, булочки</li><li class=\"ingredient-list-item\"><strong>Варенье и джемы</strong> — зимние заготовки</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — муссы, пудинги, желе, йогурты</li><li class=\"ingredient-list-item\"><strong>Смузи и коктейли</strong> — добавляет цвет и вкус</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к мясу, птице, сырам</li><li class=\"ingredient-list-item\"><strong>Мороженое</strong> — фруктовое мороженое, сорбет</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для пирогов, блинчиков, вареников</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Фрукты и ягоды</strong> — банан, малина, черника, апельсин, лимон</li><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — сливки, йогурт, творог, мороженое</li><li class=\"ingredient-list-item\"><strong>Шоколад</strong> — белый, молочный, темный</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, ваниль, имбирь, кардамон</li><li class=\"ingredient-list-item\"><strong>Сахар, мед</strong> — для подслащивания</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежая клубника</strong> — в сезон, но срок хранения короче</li><li class=\"ingredient-list-item\"><strong>Замороженная малина</strong> — более кислая, похожая текстура</li><li class=\"ingredient-list-item\"><strong>Замороженная вишня</strong> — для выпечки и десертов</li><li class=\"ingredient-list-item\"><strong>Клубничное варенье</strong> — в начинках</li></ul>",
+  "category": "Фрукты",
+  "semantic_data": {
+    "properties": [
+      "замороженная",
+      "ягода",
+      "зимний продукт",
+      "быстрая заморозка",
+      "витаминная",
+      "сладкая",
+      "сочная",
+      "удобная",
+      "длительное хранение"
+    ],
+    "preparations": [
+      "хранение при -18°C",
+      "использование без разморозки в термообработке",
+      "разморозка в холодильнике при необходимости",
+      "отсутствие повторной заморозки"
+    ],
+    "cooking_methods": [
+      {"method": "использование в выпечке (без разморозки)", "priority": "high"},
+      {"method": "приготовление варенья и джемов", "priority": "high"},
+      {"method": "использование в смузи и коктейлях", "priority": "high"},
+      {"method": "приготовление десертов", "priority": "high"},
+      {"method": "приготовление соусов", "priority": "medium"}
+    ],
+    "applications": [
+      "выпечка",
+      "варенье и джемы",
+      "десерты",
+      "смузи и коктейли",
+      "соусы",
+      "мороженое",
+      "начинки"
+    ],
+    "pairings": {
+      "protein": ["сливки", "йогурт", "творог", "мороженое"],
+      "vegetables": [],
+      "fruits": ["банан", "малина", "черника", "апельсин", "лимон"],
+      "sauces": ["шоколад", "мед"],
+      "herbs": [],
+      "spices": ["корица", "ваниль", "имбирь", "кардамон"]
+    },
+    "substitutes": [
+      {"name": "Свежая клубника", "similarity": "high"},
+      {"name": "Замороженная малина", "similarity": "high"},
+      {"name": "Замороженная вишня", "similarity": "medium"},
+      {"name": "Клубничное варенье", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "ягода",
+    "клубника",
+    "замороженная",
+    "зимняя ягода",
+    "выпечка",
+    "варенье",
+    "десерты",
+    "смузи",
+    "удобный продукт",
+    "длительное хранение"
+  ]
+}

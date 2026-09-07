@@ -1,0 +1,62 @@
+{
+  "name": "Конопляное масло",
+  "name_normalized": "konoplyanoe_maslo",
+  "synonyms": "конопляное масло, масло из семян конопли, масло конопляное, hemp seed oil, масло каннабиса, масло конопли, сыродавленное конопляное масло, нерафинированное конопляное масло, масло для салатов, масло для заправок, масло для смузи",
+  "short_description": "Зеленоватое масло с легким ореховым вкусом, получаемое из семян конопли холодным отжимом. Обладает уникальным составом омега-3 и омега-6 жирных кислот (в соотношении 3:1). Не подходит для жарки, используется для заправки салатов, в соусах, пастах и смузи.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Конопляное масло — это растительное масло, получаемое из семян конопли методом холодного отжима. Оно имеет характерный зеленоватый цвет и легкий ореховый, травянистый вкус. Отличается уникальным соотношением жирных кислот омега-3 и омега-6 (3:1), которое считается идеальным для здоровья. Конопляное масло не содержит психоактивных веществ (ТГК) и является безопасным продуктом. Из-за низкой температуры дымления масло не подходит для жарки, но идеально подходит для заправки салатов, приготовления соусов и добавления в готовые блюда.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Цвет</strong> — зеленоватый, травянистый</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — ореховый, травянистый, слегка горьковатый</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — маслянистый, с травяными нотами</li><li class=\"ingredient-list-item\"><strong>Консистенция</strong> — жидкая, маслянистая</li><li class=\"ingredient-list-item\"><strong>Температура дымления</strong> — низкая (около 160°C)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 6-12 месяцев в холодильнике</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — не подходит для жарки, хранить в темном прохладном месте</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике, в темной стеклянной бутылке</li><li class=\"ingredient-list-item\"><strong>Использование</strong> — добавлять в холодные блюда</li><li class=\"ingredient-list-item\"><strong>Дозировка</strong> — 1-2 ст. ложки в день</li><li class=\"ingredient-list-item\"><strong>Смешивание</strong> — хорошо сочетается с лимонным соком, уксусом, горчицей</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — заправка для зеленых и овощных салатов</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — в составе винегретов, песто, айоли</li><li class=\"ingredient-list-item\"><strong>Смузи</strong> — добавка для полезных жиров</li><li class=\"ingredient-list-item\"><strong>Пасты и крупы</strong> — добавление в готовые блюда</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — поливка перед подачей</li><li class=\"ingredient-list-item\"><strong>Рыба и морепродукты</strong> — дополнение к рыбным блюдам</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — листовые, овощные</li><li class=\"ingredient-list-item\"><strong>Лимон</strong> — усиливает вкус</li><li class=\"ingredient-list-item\"><strong>Уксус</strong> — яблочный, бальзамический</li><li class=\"ingredient-list-item\"><strong>Чеснок</strong> — в заправках</li><li class=\"ingredient-list-item\"><strong>Горчица</strong> — в соусах</li><li class=\"ingredient-list-item\"><strong>Свежие травы</strong> — петрушка, базилик</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Оливковое масло</strong> — для салатов и соусов</li><li class=\"ingredient-list-item\"><strong>Льняное масло</strong> — схожие полезные свойства</li><li class=\"ingredient-list-item\"><strong>Грецкого ореха масло</strong> — ореховый вкус</li><li class=\"ingredient-list-item\"><strong>Кунжутное масло</strong> — для азиатских блюд</li></ul>",
+  "category": "Бакалея",
+  "semantic_data": {
+    "properties": [
+      "масло",
+      "растительное",
+      "конопляное",
+      "холодный отжим",
+      "нерафинированное",
+      "омега-3",
+      "омега-6",
+      "для салатов",
+      "для соусов",
+      "здоровое питание"
+    ],
+    "preparations": [
+      "хранение в холодильнике",
+      "использование в холодных блюдах",
+      "добавление в салаты и соусы"
+    ],
+    "cooking_methods": [
+      {"method": "использование в салатах", "priority": "high"},
+      {"method": "использование в соусах", "priority": "high"},
+      {"method": "добавление в смузи", "priority": "high"},
+      {"method": "поливка готовых блюд", "priority": "medium"}
+    ],
+    "applications": [
+      "салаты",
+      "соусы",
+      "смузи",
+      "готовые блюда"
+    ],
+    "pairings": {
+      "protein": ["рыба", "морепродукты"],
+      "vegetables": ["салаты", "овощи"],
+      "sauces": ["лимонный", "чесночный", "горчичный"],
+      "herbs": ["петрушка", "базилик"],
+      "spices": ["черный перец"]
+    },
+    "substitutes": [
+      {"name": "Оливковое масло", "similarity": "medium"},
+      {"name": "Льняное масло", "similarity": "high"},
+      {"name": "Масло грецкого ореха", "similarity": "medium"},
+      {"name": "Кунжутное масло", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "масло",
+    "конопляное масло",
+    "растительное масло",
+    "салаты",
+    "соусы",
+    "здоровое питание",
+    "омега-3",
+    "холодный отжим"
+  ]
+}

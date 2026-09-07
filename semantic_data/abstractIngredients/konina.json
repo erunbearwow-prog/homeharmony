@@ -1,0 +1,65 @@
+{
+  "name": "Конина",
+  "name_normalized": "konina",
+  "synonyms": "конина, мясо лошади, конина молодая, конина конина, horse meat, конское мясо, мясо жеребенка, конина для вяления, конина для колбасы, конина для тушения, конина для жарки, конина для запекания",
+  "short_description": "Диетическое, но плотное мясо лошади, богатое белком и железом, с низким содержанием жира и холестерина. Имеет характерный сладковатый вкус и плотную текстуру. Традиционно используется для приготовления колбас, вяления, тушения и жарки в кухнях Центральной Азии, Кавказа, Сибири и Монголии.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Конина — это мясо лошадей, которое ценится за свои диетические свойства и высокое содержание белка. В отличие от говядины или свинины, конина содержит меньше жира, но богата железом и витаминами группы B. Мясо молодых жеребят (до 1 года) особенно нежное и сочное, тогда как мясо взрослых лошадей более плотное и волокнистое. Конина имеет характерный сладковатый привкус и специфический запах, который становится менее выраженным при правильной обработке. Широко используется в кухнях Центральной Азии, Кавказа, Монголии, Сибири, а также в Италии и Франции.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — плотное, постное, волокнистое</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, с легким пряным оттенком</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — темно-красный, коричневатый</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — низкая (2-5%)</li><li class=\"ingredient-list-item\"><strong>Калорийность</strong> — 140-160 ккал на 100 г</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — быстро портится, требует правильного хранения и обработки</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выбор</strong> — предпочтение мясу молодых жеребят (до 1 года)</li><li class=\"ingredient-list-item\"><strong>Вымачивание</strong> — при наличии специфического запаха замочить в молоке или воде на 2-4 часа</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — рекомендуется для размягчения (с уксусом, вином, травами)</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — на порционные куски или тонкие ломтики</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тушение</strong> — классический способ приготовления, с луком и морковью</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде, на гриле</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с овощами</li><li class=\"ingredient-list-item\"><strong>Колбасы</strong> — традиционный способ использования</li><li class=\"ingredient-list-item\"><strong>Вяление</strong> — для приготовления закусок</li><li class=\"ingredient-list-item\"><strong>Паштеты</strong> — с пряностями</li><li class=\"ingredient-list-item\"><strong>Бифштексы и эскалопы</strong> — быстрое приготовление</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, лук, морковь, чеснок, помидоры</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, тмин, кориандр, мускатный орех, паприка</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, кинза</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, горчичный</li><li class=\"ingredient-list-item\"><strong>Вино</strong> — красное сухое для маринада</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говядина</strong> — для тушеных блюд</li><li class=\"ingredient-list-item\"><strong>Оленина</strong> — схожая текстура и диетические свойства</li><li class=\"ingredient-list-item\"><strong>Телятина</strong> — более нежная</li><li class=\"ingredient-list-item\"><strong>Баранина</strong> — для кухонь Центральной Азии</li></ul>",
+  "category": "Мясо и мясные продукты",
+  "semantic_data": {
+    "properties": [
+      "мясо",
+      "конское",
+      "диетическое",
+      "постное",
+      "плотное",
+      "сладковатый вкус",
+      "центральноазиатская кухня",
+      "для тушения",
+      "для колбас",
+      "для вяления"
+    ],
+    "preparations": [
+      "выбор мяса молодых жеребят",
+      "вымачивание в молоке или воде",
+      "маринование с травами и вином",
+      "нарезка на порционные куски"
+    ],
+    "cooking_methods": [
+      {"method": "тушение", "priority": "high"},
+      {"method": "жарка", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "приготовление колбас", "priority": "high"},
+      {"method": "вяление", "priority": "high"},
+      {"method": "приготовление паштетов", "priority": "medium"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "закуски",
+      "колбасные изделия",
+      "мясная гастрономия"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "лук", "морковь", "чеснок", "помидоры"],
+      "sauces": ["томатный", "сметанный", "горчичный"],
+      "herbs": ["петрушка", "укроп", "кинза"],
+      "spices": ["черный перец", "тмин", "кориандр", "мускатный орех", "паприка"]
+    },
+    "substitutes": [
+      {"name": "Говядина", "similarity": "high"},
+      {"name": "Оленина", "similarity": "high"},
+      {"name": "Телятина", "similarity": "medium"},
+      {"name": "Баранина", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "мясо",
+    "конина",
+    "диетическое мясо",
+    "постное мясо",
+    "центральноазиатская кухня",
+    "тушение",
+    "колбасы",
+    "вяление"
+  ]
+}

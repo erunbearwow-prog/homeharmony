@@ -255,6 +255,20 @@ class AbstractIngredient(models.Model):
     vitamin_e = models.FloatField(null=True, blank=True, verbose_name="Витамин E, мг")
     vitamin_k = models.FloatField(null=True, blank=True, verbose_name="Витамин K, мкг")
 
+    # ===== ВИТАМИНЫ (дополнительные) =====
+    retinol_equivalent = models.FloatField(
+        blank=True,
+        null=True,
+        verbose_name="Ретиноловый эквивалент (РЭ)",
+        help_text="Витамин А в ретиноловом эквиваленте, мкг"
+    )
+    niacin_equivalent = models.FloatField(
+        blank=True,
+        null=True,
+        verbose_name="Ниациновый эквивалент (НЭ)",
+        help_text="Ниациновый эквивалент (витамин РР), мг"
+    )
+
     # ===== МАКРОЭЛЕМЕНТЫ =====
     potassium = models.FloatField(null=True, blank=True, verbose_name="Калий, мг")
     calcium = models.FloatField(null=True, blank=True, verbose_name="Кальций, мг")
@@ -292,6 +306,24 @@ class AbstractIngredient(models.Model):
 
     # ===== ОРГАНИЧЕСКИЕ КИСЛОТЫ =====
     organic_acids = models.FloatField(null=True, blank=True, verbose_name="Органические кислоты, г")
+
+    # ===== ДОПОЛНИТЕЛЬНЫЕ ПОЛЯ ИЗ СПРАВОЧНИКА =====
+    polyunsaturated_fat = models.FloatField(
+        null=True, blank=True,
+        verbose_name="Полиненасыщенные жирные кислоты (ПНЖК), %"
+    )
+    alcohol = models.FloatField(
+        null=True, blank=True,
+        verbose_name="Этиловый спирт (Алк), % вес."
+    )
+    soluble_fiber = models.FloatField(
+        null=True, blank=True,
+        verbose_name="Растворимые пищевые волокна (РПВ), %"
+    )
+    insoluble_fiber = models.FloatField(
+        null=True, blank=True,
+        verbose_name="Нерастворимые пищевые волокна (НПВ), %"
+    )
 
     # ===== ИСТОЧНИК =====
     data_source = models.CharField(max_length=500, default='pbprog.ru', blank=True, verbose_name="Источник данных")

@@ -1,0 +1,76 @@
+{
+  "name": "Княженика",
+  "name_normalized": "knyazhenika",
+  "synonyms": "княженика, поляника, мамура, арктическая малина, поленика, княженика обыкновенная, Rubus arcticus, костяника арктическая, хохлянка, полуденица, княжница, малина арктическая, полянина, хохлушка, бружица, бружница",
+  "short_description": "Редкая северная ягода, которую за изысканный вкус называют «жемчужиной тундры» и «полярным ананасом». Многолетнее растение семейства розоцветных, ценится за уникальный ананасово-малиновый аромат и тонкий кисло-сладкий вкус. Считается одной из самых вкусных и ароматных ягод Севера.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Княженика (арктическая малина) — это многолетнее травянистое растение, которое традиционно произрастает в северных регионах Евразии и Северной Америки. Высота растения не превышает 25–30 см. Ягода известна на Руси с древних времен, ее называли «царской ягодой» за изысканный вкус. Ее очень ценили еще древние народы Севера, она считалась деликатесом. В Скандинавии ее подавали знатным гостям и даже шведской королевской семье.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, сочная, ягода легко повреждается</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий с освежающей кислинкой, дегустаторы описывают его как изысканный, сбалансированный, с тропическими нотками</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — сложный, фруктово-цветочный с нотами ананаса, малины, персика и даже розы</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — тёмно-красный, пурпуровый, рубиновый</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — сочная многокостянка, похожа на малину, но цвет более сложный</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — июль-август</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — обладает ярким ананасным ароматом, не подходит для сушки</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сбор</strong> — ягоду собирают вручную в июле-августе, плоды сочные и нежные</li><li class=\"ingredient-list-item\"><strong>Мойка</strong> — промывать осторожно, не повреждая ягоды</li><li class=\"ingredient-list-item\"><strong>Термическая обработка</strong> — минимальная, так как ягода быстро разрушается при нагреве, выделяя сок и теряя аромат</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — свежие ягоды хранятся недолго, лучше использовать сразу или замораживать</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежее употребление</strong> — лучший способ насладиться уникальным вкусом</li><li class=\"ingredient-list-item\"><strong>Варенье и джем</strong> — с другими ягодами, например, черникой и малиной</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к сырам, дичи, утке</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — муссы, сорбеты, мороженое, чизкейки</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — морсы, соки, настойки, ликеры</li><li class=\"ingredient-list-item\"><strong>Чай</strong> — из листьев и сушёных ягод</li><li class=\"ingredient-list-item\"><strong>Йогурты и творожные десерты</strong> — создает кисло-сладкий акцент</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сыры</strong> — бри, камамбер, рикотта, козий сыр</li><li class=\"ingredient-list-item\"><strong>Ягоды и фрукты</strong> — голубика, черника, земляника, брусника, кисло-сладкие яблоки, цитрусовые</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — кедровые, грецкие, фундук</li><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — натуральный йогурт, творожные кремы, мороженое, пломбир</li><li class=\"ingredient-list-item\"><strong>Специи и травы</strong> — мята, розмарин, ваниль</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — дичь, утка</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — игристые и розовые вина, выдержанный яблочный сидр</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Малина + ананас</strong> — для имитации аромата</li><li class=\"ingredient-list-item\"><strong>Костяника</strong> — по форме, но вкус кислее</li><li class=\"ingredient-list-item\"><strong>Морошка</strong> — северная ягода, но другой вкус</li><li class=\"ingredient-list-item\"><strong>Клубника</strong> — в десертах</li></ul>",
+  "category": "Фрукты",
+  "semantic_data": {
+    "properties": [
+      "ягода",
+      "северная",
+      "ароматная",
+      "ананасный аромат",
+      "кисло-сладкая",
+      "редкая",
+      "деликатесная",
+      "лесная",
+      "царская ягода",
+      "для десертов",
+      "для соусов",
+      "для варенья"
+    ],
+    "preparations": [
+      "ручной сбор",
+      "осторожная мойка",
+      "минимальная тепловая обработка",
+      "использование в свежем виде"
+    ],
+    "cooking_methods": [
+      {"method": "свежее употребление", "priority": "high"},
+      {"method": "приготовление варенья", "priority": "high"},
+      {"method": "приготовление соусов", "priority": "high"},
+      {"method": "приготовление десертов", "priority": "high"},
+      {"method": "приготовление напитков", "priority": "medium"},
+      {"method": "заморозка", "priority": "medium"},
+      {"method": "сушка листьев для чая", "priority": "low"}
+    ],
+    "applications": [
+      "десерты",
+      "соусы",
+      "варенье и джемы",
+      "напитки",
+      "чай",
+      "йогурты и творожные десерты"
+    ],
+    "pairings": {
+      "protein": ["бри", "камамбер", "рикотта", "козий сыр", "дичь", "утка"],
+      "vegetables": [],
+      "fruits": ["голубика", "черника", "земляника", "брусника", "яблоки кисло-сладкие", "апельсины", "лаймы", "лимоны"],
+      "sauces": [],
+      "herbs": ["мята", "розмарин", "ваниль"],
+      "spices": ["ваниль"]
+    },
+    "substitutes": [
+      {"name": "Малина + ананас (аромат)", "similarity": "medium"},
+      {"name": "Костяника", "similarity": "low"},
+      {"name": "Морошка", "similarity": "low"},
+      {"name": "Клубника", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "ягода",
+    "княженика",
+    "северная ягода",
+    "арктическая малина",
+    "поляника",
+    "мамура",
+    "редкая ягода",
+    "деликатес",
+    "царская ягода",
+    "ананасный аромат",
+    "варенье",
+    "соусы",
+    "десерты"
+  ]
+}

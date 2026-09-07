@@ -1,0 +1,73 @@
+{
+  "name": "Клюква",
+  "name_normalized": "klyukva",
+  "synonyms": "клюква, клюква болотная, клюква садовая, клюква крупноплодная, ягода клюква, клюква для морса, клюква для соуса, клюква для компота, клюква для варенья, клюква для выпечки, клюква для заморозки, клюква сушеная, Vaccinium oxycoccos, Oxycoccus",
+  "short_description": "Мелкая кислая ягода ярко-красного цвета, произрастающая на болотах и в лесах Северного полушария. Имеет терпкий, кислый вкус и характерный хруст. Богата витамином C, антиоксидантами и органическими кислотами. Используется для морсов, соусов, варенья, выпечки и как добавка к мясным блюдам.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Клюква — это мелкая ягода, которая растет на вечнозеленых стелющихся кустарничках в болотистой местности. Ягоды имеют ярко-красный цвет, округлую или овальную форму и плотную кожицу. Мякоть кислая, терпкая, с характерным хрустом и освежающим ароматом. Клюква богата витамином C, органическими кислотами (бензойная, уксусная, яблочная), пектинами и флавоноидами. Благодаря содержанию бензойной кислоты, клюква обладает природными консервирующими свойствами и долго хранится. Она используется для приготовления морсов, соусов к мясу, варенья, компотов, а также в выпечке и десертах.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, с характерным хрустом при надкусывании</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кислый, терпкий, освежающий</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — ярко-красный, тёмно-вишневый (спелая)</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — округлая, овальная</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — осень (сентябрь-ноябрь)</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике до 2-3 недель, в заморозке до 12 месяцев</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — содержит природный консервант (бензойную кислоту), хорошо хранится</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойка</strong> — промыть под проточной водой</li><li class=\"ingredient-list-item\"><strong>Переборка</strong> — удалить поврежденные и недозревшие ягоды</li><li class=\"ingredient-list-item\"><strong>Измельчение</strong> — для соусов и морсов (блендером)</li><li class=\"ingredient-list-item\"><strong>Заморозка</strong> — разложить в один слой, заморозить, переложить в пакет</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Морс</strong> — классический русский напиток</li><li class=\"ingredient-list-item\"><strong>Соус</strong> — к мясу (особенно к птице, дичи)</li><li class=\"ingredient-list-item\"><strong>Варенье и джем</strong> — с сахаром</li><li class=\"ingredient-list-item\"><strong>Компот</strong> — с яблоками, цитрусовыми</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — пироги, кексы, маффины, печенье</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — муссы, пудинги, йогурты</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — смузи, лимонады</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с зеленью, сыром, орехами</li><li class=\"ingredient-list-item\"><strong>Сухофрукты</strong> — сушеная клюква</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — индейка, курица, свинина, дичь (в соусах)</li><li class=\"ingredient-list-item\"><strong>Фрукты и ягоды</strong> — яблоки, апельсины, смородина, брусника</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — козий, сливочный, голубые сыры</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, пекан, миндаль</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, имбирь, гвоздика, ваниль</li><li class=\"ingredient-list-item\"><strong>Сахар, мед</strong> — для уменьшения кислоты</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Брусника</strong> — менее кислая, схожее применение</li><li class=\"ingredient-list-item\"><strong>Красная смородина</strong> — кислая, но более мягкая</li><li class=\"ingredient-list-item\"><strong>Вишня</strong> — для соусов и выпечки</li><li class=\"ingredient-list-item\"><strong>Клюква сушеная</strong> — для выпечки и салатов</li></ul>",
+  "category": "Фрукты",
+  "semantic_data": {
+    "properties": [
+      "ягода",
+      "красная",
+      "кислая",
+      "терпкая",
+      "хрустящая",
+      "лесная",
+      "витаминная",
+      "для морса",
+      "для соусов",
+      "для варенья"
+    ],
+    "preparations": [
+      "мойка под проточной водой",
+      "переборка ягод",
+      "измельчение блендером",
+      "заморозка в один слой"
+    ],
+    "cooking_methods": [
+      {"method": "приготовление морса", "priority": "high"},
+      {"method": "приготовление соусов к мясу", "priority": "high"},
+      {"method": "приготовление варенья и джема", "priority": "high"},
+      {"method": "заморозка", "priority": "high"},
+      {"method": "использование в выпечке", "priority": "high"},
+      {"method": "сушка", "priority": "medium"},
+      {"method": "приготовление компотов", "priority": "medium"},
+      {"method": "использование в салатах", "priority": "medium"}
+    ],
+    "applications": [
+      "напитки",
+      "соусы",
+      "варенье",
+      "выпечка",
+      "десерты",
+      "салаты",
+      "сухофрукты"
+    ],
+    "pairings": {
+      "protein": ["индейка", "курица", "свинина", "дичь", "козий сыр", "сливочный сыр"],
+      "vegetables": [],
+      "fruits": ["яблоки", "апельсины", "смородина", "брусника"],
+      "sauces": ["мед", "сахар"],
+      "herbs": [],
+      "spices": ["корица", "имбирь", "гвоздика", "ваниль"]
+    },
+    "substitutes": [
+      {"name": "Брусника", "similarity": "high"},
+      {"name": "Красная смородина", "similarity": "medium"},
+      {"name": "Вишня", "similarity": "medium"},
+      {"name": "Клюква сушеная", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "ягода",
+    "клюква",
+    "красная ягода",
+    "кислая ягода",
+    "лесная ягода",
+    "морс",
+    "соусы к мясу",
+    "варенье",
+    "выпечка",
+    "витаминная"
+  ]
+}

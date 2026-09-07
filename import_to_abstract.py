@@ -127,6 +127,15 @@ NUTRIENT_MAPPING = {
     'Ниацин': 'vitamin_b3',
     'Бетаин': 'vitamin_b4',
 
+    # ===== ДОПОЛНИТЕЛЬНЫЕ ВИТАМИНЫ =====
+    'Ретиноловый эквивалент': 'retinol_equivalent',
+    'РЭ': 'retinol_equivalent',
+    'РЭ (мкг)': 'retinol_equivalent',
+    'Ниациновый эквивалент': 'niacin_equivalent',
+    'НЭ': 'niacin_equivalent',
+    'НЭ (мг)': 'niacin_equivalent',
+    'Ниациновый эквивалент (НЭ)': 'niacin_equivalent',
+
     # ===== МАКРОЭЛЕМЕНТЫ =====
     'Калий, K': 'potassium',
     'Калий': 'potassium',
@@ -223,6 +232,8 @@ MODEL_FIELDS = {
     'vitamin_b1', 'vitamin_b2', 'vitamin_b3', 'vitamin_b4',
     'vitamin_b5', 'vitamin_b6', 'vitamin_b7', 'vitamin_b9_folate', 'vitamin_b12',
     'vitamin_c', 'vitamin_d', 'vitamin_e', 'vitamin_k',
+    'retinol_equivalent',
+    'niacin_equivalent',
     'potassium', 'calcium', 'magnesium', 'sodium', 'phosphorus',
     'sulfur', 'silicon', 'chlorine',
     'iron', 'manganese', 'copper', 'selenium', 'zinc',

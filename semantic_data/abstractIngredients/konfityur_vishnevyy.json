@@ -1,0 +1,67 @@
+{
+  "name": "Конфитюр вишневый",
+  "name_normalized": "konfityur_vishnevyy",
+  "synonyms": "вишневый конфитюр, конфитюр из вишни, вишневое варенье, джем из вишни, вишня в сиропе, вишневый десерт, конфитюр для выпечки, вишневый наполнитель, начинка для пирогов, конфитюр для торта, вишневый соус, cherry jam, cherry preserve",
+  "short_description": "Густой, вязкий десерт из вишни, сваренный с сахаром до желеобразной консистенции. Сохраняет целые ягоды или их кусочки, имеет кисло-сладкий вкус и яркий вишневый аромат. Используется для начинок, прослойки тортов, десертов и выпечки.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Вишневый конфитюр — это желеобразный десерт из вишни, сваренный с сахаром и иногда с добавлением желирующих агентов (пектин, агар-агар). В отличие от варенья, в конфитюре ягоды или их кусочки сохраняют форму, а сироп имеет густую, вязкую консистенцию. Конфитюр обладает насыщенным кисло-сладким вкусом и ярким вишневым ароматом. Он является идеальной начинкой для выпечки, прослойкой для тортов, а также используется как самостоятельный десерт или добавка к мороженому и йогуртам.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Консистенция</strong> — густая, желеобразная, с целыми ягодами или кусочками</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисло-сладкий, с насыщенным вишневым ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — темно-красный, рубиновый, бордовый</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 24 месяцев (в закрытом виде), 2-3 недели (в открытом)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — хорошо держит форму, не растекается при выпечке</li></ul><h2 class=\"ingredient-title\">Состав (типичный)</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вишня</strong> — свежая или замороженная (с косточкой или без)</li><li class=\"ingredient-list-item\"><strong>Сахар</strong> — для сладости и консервации</li><li class=\"ingredient-list-item\"><strong>Желирующий агент</strong> — пектин, агар-агар (по желанию)</li><li class=\"ingredient-list-item\"><strong>Лимонный сок</strong> — для баланса вкуса и сохранения цвета</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — начинка для пирогов, пирожков, слоек, булочек</li><li class=\"ingredient-list-item\"><strong>Торты</strong> — прослойка между коржами, украшение</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — к мороженому, сырникам, запеканкам, йогурту</li><li class=\"ingredient-list-item\"><strong>Блины и оладьи</strong> — в качестве топпинга</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к мясу (утке, птице)</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — песочное, слоеное, дрожжевое тесто</li><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — йогурт, творог, мороженое, сливки</li><li class=\"ingredient-list-item\"><strong>Шоколад</strong> — темный, молочный, белый</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — утка, курица (в соусах)</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, гвоздика, ваниль, имбирь</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вишневое варенье</strong> — более жидкое, с целыми ягодами</li><li class=\"ingredient-list-item\"><strong>Вишневый джем</strong> — более однородный</li><li class=\"ingredient-list-item\"><strong>Свежая вишня с сахаром</strong> — для начинок</li><li class=\"ingredient-list-item\"><strong>Смородиновый конфитюр</strong> — для выпечки</li></ul>",
+  "category": "Фрукты",
+  "semantic_data": {
+    "properties": [
+      "конфитюр",
+      "вишневый",
+      "густой",
+      "кисло-сладкий",
+      "для выпечки",
+      "для тортов",
+      "для десертов",
+      "ягоды в сиропе",
+      "начинка"
+    ],
+    "preparations": [
+      "варка вишни с сахаром",
+      "добавление желирующего агента",
+      "охлаждение до желеобразной консистенции",
+      "хранение в банках"
+    ],
+    "cooking_methods": [
+      {"method": "использование в выпечке (начинка)", "priority": "high"},
+      {"method": "использование в тортах (прослойка)", "priority": "high"},
+      {"method": "подача к десертам", "priority": "high"},
+      {"method": "использование как соус к мясу", "priority": "medium"},
+      {"method": "подача к блинам и оладьям", "priority": "medium"}
+    ],
+    "applications": [
+      "выпечка",
+      "торты",
+      "десерты",
+      "соусы",
+      "блины",
+      "йогурты"
+    ],
+    "pairings": {
+      "protein": ["йогурт", "творог", "мороженое", "утка", "курица"],
+      "vegetables": [],
+      "fruits": ["вишня"],
+      "sauces": [],
+      "herbs": [],
+      "spices": ["корица", "гвоздика", "ваниль", "имбирь"]
+    },
+    "substitutes": [
+      {"name": "Вишневое варенье", "similarity": "high"},
+      {"name": "Вишневый джем", "similarity": "high"},
+      {"name": "Свежая вишня с сахаром", "similarity": "medium"},
+      {"name": "Смородиновый конфитюр", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "конфитюр",
+    "вишневый",
+    "варенье",
+    "джем",
+    "начинка",
+    "выпечка",
+    "десерты",
+    "торты",
+    "вишня"
+  ]
+}
