@@ -4,62 +4,140 @@
       .part { transition: all 0.3s ease; cursor: pointer; }
       .part:hover { filter: brightness(1.08) drop-shadow(0 4px 12px rgba(0,0,0,0.1)); }
     </style>
+
+    <!-- Паттерны для изображений -->
+    {% if logo_colors.left_top_fill_type == 'image' %}
+    <pattern id="pattern-r1" patternUnits="userSpaceOnUse" width="100%" height="100%">
+      <image href="{{ logo_colors.left_top_fill }}" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+    </pattern>
+    {% endif %}
+
+    {% if logo_colors.right_top_fill_type == 'image' %}
+    <pattern id="pattern-r2" patternUnits="userSpaceOnUse" width="100%" height="100%">
+      <image href="{{ logo_colors.right_top_fill }}" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+    </pattern>
+    {% endif %}
+
+    {% if logo_colors.bottom_triangle_fill_type == 'image' %}
+    <pattern id="pattern-r3" patternUnits="userSpaceOnUse" width="100%" height="100%">
+      <image href="{{ logo_colors.bottom_triangle_fill }}" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+    </pattern>
+    {% endif %}
+
+    {% if logo_colors.circle_fill_type == 'image' %}
+    <pattern id="pattern-r4" patternUnits="userSpaceOnUse" width="100%" height="100%">
+      <image href="{{ logo_colors.circle_fill }}" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+    </pattern>
+    {% endif %}
+
+    {% if logo_colors.curved_left_fill_type == 'image' %}
+    <pattern id="pattern-r5" patternUnits="userSpaceOnUse" width="100%" height="100%">
+      <image href="{{ logo_colors.curved_left_fill }}" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+    </pattern>
+    {% endif %}
+
+    {% if logo_colors.curved_top_fill_type == 'image' %}
+    <pattern id="pattern-r6" patternUnits="userSpaceOnUse" width="100%" height="100%">
+      <image href="{{ logo_colors.curved_top_fill }}" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+    </pattern>
+    {% endif %}
+
+    {% if logo_colors.curved_right_fill_type == 'image' %}
+    <pattern id="pattern-r7" patternUnits="userSpaceOnUse" width="100%" height="100%">
+      <image href="{{ logo_colors.curved_right_fill }}" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+    </pattern>
+    {% endif %}
   </defs>
 
-  <!-- ===== R1: ПЕРВАЯ ФИГУРА (левый верхний угол) ===== -->
+  <!-- R1: Левый верхний угол -->
   <path class="part"
     d="M65.72,1.93l-31.75,118.49c-.27.92-.52,1.85-.75,2.78L1.41,241.93V1.93h64.31Z"
-    fill="{{ logo_colors.left_top_fill|default:'#FF6B6B' }}"
-    stroke="{{ logo_colors.stroke_color|default:'#333' }}"
-    stroke-width="{{ logo_colors.stroke_width|default:2 }}"
+    fill="{% if logo_colors.left_top_fill_type == 'image' %}url(#pattern-r1){% else %}{{ logo_colors.left_top_fill }}{% endif %}"
+    fill-opacity="{{ logo_colors.left_top_opacity|default:1 }}"
+    stroke="{{ logo_colors.stroke_color }}"
+    stroke-width="{{ logo_colors.stroke_width }}"
+    stroke-opacity="{{ logo_colors.stroke_opacity }}"
+    stroke-dasharray="{{ logo_colors.stroke_dasharray }}"
+    stroke-linecap="{{ logo_colors.stroke_linecap }}"
+    stroke-linejoin="{{ logo_colors.stroke_linejoin }}"
   />
 
-  <!-- ===== R2: ВТОРАЯ ФИГУРА (правый верхний угол) ===== -->
+  <!-- R2: Правый верхний угол -->
   <path class="part"
     d="M241.41,1.93v175.69l-87.44-87.44c-.26-.28-.53-.55-.81-.81L65.72,1.93h175.69Z"
-    fill="{{ logo_colors.right_top_fill|default:'#4ECDC4' }}"
-    stroke="{{ logo_colors.stroke_color|default:'#333' }}"
-    stroke-width="{{ logo_colors.stroke_width|default:2 }}"
+    fill="{% if logo_colors.right_top_fill_type == 'image' %}url(#pattern-r2){% else %}{{ logo_colors.right_top_fill }}{% endif %}"
+    fill-opacity="{{ logo_colors.right_top_opacity|default:1 }}"
+    stroke="{{ logo_colors.stroke_color }}"
+    stroke-width="{{ logo_colors.stroke_width }}"
+    stroke-opacity="{{ logo_colors.stroke_opacity }}"
+    stroke-dasharray="{{ logo_colors.stroke_dasharray }}"
+    stroke-linecap="{{ logo_colors.stroke_linecap }}"
+    stroke-linejoin="{{ logo_colors.stroke_linejoin }}"
   />
 
-  <!-- ===== R3: ТРЕТЬЯ ФИГУРА (нижняя область) ===== -->
+  <!-- R3: Нижняя область -->
   <polygon class="part"
     points="241.41 177.62 241.41 241.93 1.41 241.93 120.14 210.12 122.92 209.37 241.41 177.62"
-    fill="{{ logo_colors.bottom_triangle_fill|default:'#FFE66D' }}"
-    stroke="{{ logo_colors.stroke_color|default:'#333' }}"
-    stroke-width="{{ logo_colors.stroke_width|default:2 }}"
+    fill="{% if logo_colors.bottom_triangle_fill_type == 'image' %}url(#pattern-r3){% else %}{{ logo_colors.bottom_triangle_fill }}{% endif %}"
+    fill-opacity="{{ logo_colors.bottom_triangle_opacity|default:1 }}"
+    stroke="{{ logo_colors.stroke_color }}"
+    stroke-width="{{ logo_colors.stroke_width }}"
+    stroke-opacity="{{ logo_colors.stroke_opacity }}"
+    stroke-dasharray="{{ logo_colors.stroke_dasharray }}"
+    stroke-linecap="{{ logo_colors.stroke_linecap }}"
+    stroke-linejoin="{{ logo_colors.stroke_linejoin }}"
   />
 
-  <!-- ===== R4: ЧЕТВЁРТАЯ ФИГУРА (круг) ===== -->
+  <!-- R4: Круг -->
   <path class="part"
     d="M174.58,140.49c0,32.64-21.81,60.2-51.66,68.88l-2.78.75c-5.54,1.37-11.33,2.1-17.29,2.1-39.61,0-71.73-32.12-71.73-71.73,0-5.96.73-11.75,2.1-17.29l.75-2.78c8.68-29.85,36.24-51.66,68.88-51.66,19.6,0,37.37,7.86,50.31,20.61.28.26.55.53.81.81,12.75,12.94,20.61,30.71,20.61,50.31Z"
-    fill="{{ logo_colors.circle_fill|default:'#FF6B6B' }}"
-    stroke="{{ logo_colors.circle_stroke|default:'#333' }}"
-    stroke-width="{{ logo_colors.circle_stroke_width|default:2 }}"
+    fill="{% if logo_colors.circle_fill_type == 'image' %}url(#pattern-r4){% else %}{{ logo_colors.circle_fill }}{% endif %}"
+    fill-opacity="{{ logo_colors.circle_opacity }}"
+    stroke="{{ logo_colors.circle_stroke }}"
+    stroke-width="{{ logo_colors.circle_stroke_width }}"
+    stroke-opacity="{{ logo_colors.stroke_opacity }}"
+    stroke-dasharray="{{ logo_colors.circle_stroke_dasharray|default:logo_colors.stroke_dasharray }}"
+    stroke-linecap="{{ logo_colors.stroke_linecap }}"
+    stroke-linejoin="{{ logo_colors.stroke_linejoin }}"
   />
 
-  <!-- ===== R5: ПЯТАЯ ФИГУРА (левая часть треугольника) ===== -->
+  <!-- R5: Левая часть треугольника -->
   <path class="part"
     d="M153.16,89.37c-12.94-12.75-30.71-20.61-50.31-20.61-32.64,0-60.2,21.81-68.88,51.66L65.72,1.93l87.44,87.44Z"
-    fill="{{ logo_colors.curved_left_fill|default:'#A29BFE' }}"
-    stroke="{{ logo_colors.stroke_color|default:'#333' }}"
-    stroke-width="{{ logo_colors.stroke_width|default:2 }}"
+    fill="{% if logo_colors.curved_left_fill_type == 'image' %}url(#pattern-r5){% else %}{{ logo_colors.curved_left_fill }}{% endif %}"
+    fill-opacity="{{ logo_colors.curved_left_opacity|default:1 }}"
+    stroke="{{ logo_colors.stroke_color }}"
+    stroke-width="{{ logo_colors.stroke_width }}"
+    stroke-opacity="{{ logo_colors.stroke_opacity }}"
+    stroke-dasharray="{{ logo_colors.stroke_dasharray }}"
+    stroke-linecap="{{ logo_colors.stroke_linecap }}"
+    stroke-linejoin="{{ logo_colors.stroke_linejoin }}"
   />
 
-  <!-- ===== R6: ШЕСТАЯ ФИГУРА (верхняя часть треугольника) ===== -->
+  <!-- R6: Верхняя часть треугольника -->
   <path class="part"
     d="M120.14,210.12L1.41,241.93l31.81-118.73c-1.37,5.54-2.1,11.33-2.1,17.29,0,39.61,32.12,71.73,71.73,71.73,5.96,0,11.75-.73,17.29-2.1Z"
-    fill="{{ logo_colors.curved_top_fill|default:'#55EFC4' }}"
-    stroke="{{ logo_colors.stroke_color|default:'#333' }}"
-    stroke-width="{{ logo_colors.stroke_width|default:2 }}"
+    fill="{% if logo_colors.curved_top_fill_type == 'image' %}url(#pattern-r6){% else %}{{ logo_colors.curved_top_fill }}{% endif %}"
+    fill-opacity="{{ logo_colors.curved_top_opacity|default:1 }}"
+    stroke="{{ logo_colors.stroke_color }}"
+    stroke-width="{{ logo_colors.stroke_width }}"
+    stroke-opacity="{{ logo_colors.stroke_opacity }}"
+    stroke-dasharray="{{ logo_colors.stroke_dasharray }}"
+    stroke-linecap="{{ logo_colors.stroke_linecap }}"
+    stroke-linejoin="{{ logo_colors.stroke_linejoin }}"
   />
 
-  <!-- ===== R7: СЕДЬМАЯ ФИГУРА (правая часть треугольника) ===== -->
+  <!-- R7: Правая часть треугольника -->
   <path class="part"
     d="M174.58,140.49c0-19.6-7.86-37.37-20.61-50.31l87.44,87.44-118.49,31.75c29.85-8.68,51.66-36.24,51.66-68.88Z"
-    fill="{{ logo_colors.curved_right_fill|default:'#FDCB6E' }}"
-    stroke="{{ logo_colors.stroke_color|default:'#333' }}"
-    stroke-width="{{ logo_colors.stroke_width|default:2 }}"
+    fill="{% if logo_colors.curved_right_fill_type == 'image' %}url(#pattern-r7){% else %}{{ logo_colors.curved_right_fill }}{% endif %}"
+    fill-opacity="{{ logo_colors.curved_right_opacity|default:1 }}"
+    stroke="{{ logo_colors.stroke_color }}"
+    stroke-width="{{ logo_colors.stroke_width }}"
+    stroke-opacity="{{ logo_colors.stroke_opacity }}"
+    stroke-dasharray="{{ logo_colors.stroke_dasharray }}"
+    stroke-linecap="{{ logo_colors.stroke_linecap }}"
+    stroke-linejoin="{{ logo_colors.stroke_linejoin }}"
   />
 
 </svg>
