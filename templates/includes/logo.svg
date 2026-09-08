@@ -1,163 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241.67 241.97" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 243.35 243.35" width="100%" height="100%">
   <defs>
     <style>
       .part { transition: all 0.3s ease; cursor: pointer; }
       .part:hover { filter: brightness(1.08) drop-shadow(0 4px 12px rgba(0,0,0,0.1)); }
     </style>
-
-    <!-- Определяем паттерны для изображений (если используются) -->
-    {% if logo_colors.circle_fill_type == 'image' %}
-    <pattern id="pattern-circle" patternUnits="userSpaceOnUse" width="100%" height="100%">
-      <image href="{{ logo_colors.circle_fill }}" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
-    </pattern>
-    {% endif %}
-
-    {% if logo_colors.curved_top_fill_type == 'image' %}
-    <pattern id="pattern-curved-top" patternUnits="userSpaceOnUse" width="100%" height="100%">
-      <image href="{{ logo_colors.curved_top_fill }}" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
-    </pattern>
-    {% endif %}
-
-    {% if logo_colors.bottom_triangle_fill_type == 'image' %}
-    <pattern id="pattern-bottom-triangle" patternUnits="userSpaceOnUse" width="100%" height="100%">
-      <image href="{{ logo_colors.bottom_triangle_fill }}" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
-    </pattern>
-    {% endif %}
-
-    {% if logo_colors.left_top_fill_type == 'image' %}
-    <pattern id="pattern-left-top" patternUnits="userSpaceOnUse" width="100%" height="100%">
-      <image href="{{ logo_colors.left_top_fill }}" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
-    </pattern>
-    {% endif %}
-
-    {% if logo_colors.right_top_fill_type == 'image' %}
-    <pattern id="pattern-right-top" patternUnits="userSpaceOnUse" width="100%" height="100%">
-      <image href="{{ logo_colors.right_top_fill }}" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
-    </pattern>
-    {% endif %}
-
-    {% if logo_colors.curved_left_fill_type == 'image' %}
-    <pattern id="pattern-curved-left" patternUnits="userSpaceOnUse" width="100%" height="100%">
-      <image href="{{ logo_colors.curved_left_fill }}" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
-    </pattern>
-    {% endif %}
-
-    {% if logo_colors.curved_right_fill_type == 'image' %}
-    <pattern id="pattern-curved-right" patternUnits="userSpaceOnUse" width="100%" height="100%">
-      <image href="{{ logo_colors.curved_right_fill }}" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
-    </pattern>
-    {% endif %}
-
-    <mask id="circle-mask">
-      <rect width="250" height="250" fill="white" />
-      <circle cx="102.15" cy="139.53" r="71.73" fill="black" />
-    </mask>
-
-    <clipPath id="clip-curved-1">
-      <polygon points="65.02,0.97 0.71,240.97 240.71,176.66" />
-      <rect x="0" y="0" width="250" height="139.53" />
-    </clipPath>
-
-    <clipPath id="clip-curved-2">
-      <polygon points="0.71,240.97 240.71,176.66 65.02,0.97" />
-      <polygon points="0.71,139.53 102.15,139.53 0.71,240.97" />
-    </clipPath>
-
-    <clipPath id="clip-curved-3">
-      <polygon points="240.71,176.66 65.02,0.97 0.71,240.97" />
-      <polygon points="102.15,139.53 240.71,139.53 240.71,240.97 0.71,240.97" />
-    </clipPath>
   </defs>
 
-  <!-- 1. КРУГ -->
-  <circle
-    cx="102.15" cy="139.53" r="71.73"
-    fill="{% if logo_colors.circle_fill_type == 'image' %}url(#pattern-circle){% else %}{{ logo_colors.circle_fill }}{% endif %}"
-    opacity="{{ logo_colors.circle_opacity }}"
-    stroke="{{ logo_colors.circle_stroke }}"
-    stroke-width="{{ logo_colors.circle_stroke_width }}"
-    stroke-opacity="{{ logo_colors.stroke_opacity }}"
-    stroke-dasharray="{{ logo_colors.circle_stroke_dasharray|default:logo_colors.stroke_dasharray }}"
-    stroke-linecap="{{ logo_colors.stroke_linecap }}"
-    stroke-linejoin="{{ logo_colors.stroke_linejoin }}"
+  <!-- ===== R1: ПЕРВАЯ ФИГУРА (левый верхний угол) ===== -->
+  <path class="part"
+    d="M65.72,1.93l-31.75,118.49c-.27.92-.52,1.85-.75,2.78L1.41,241.93V1.93h64.31Z"
+    fill="{{ logo_colors.left_top_fill|default:'#FF6B6B' }}"
+    stroke="{{ logo_colors.stroke_color|default:'#333' }}"
+    stroke-width="{{ logo_colors.stroke_width|default:2 }}"
   />
 
-  <!-- 2. Верхний криволинейный треугольник -->
-  <polygon
-    points="65.02,0.97 0.71,240.97 240.71,176.66"
-    fill="{% if logo_colors.curved_top_fill_type == 'image' %}url(#pattern-curved-top){% else %}{{ logo_colors.curved_top_fill }}{% endif %}"
-    clip-path="url(#clip-curved-1)"
-    mask="url(#circle-mask)"
-    stroke="{{ logo_colors.stroke_color }}"
-    stroke-width="{{ logo_colors.stroke_width }}"
-    stroke-opacity="{{ logo_colors.stroke_opacity }}"
-    stroke-dasharray="{{ logo_colors.stroke_dasharray }}"
-    stroke-linecap="{{ logo_colors.stroke_linecap }}"
-    stroke-linejoin="{{ logo_colors.stroke_linejoin }}"
+  <!-- ===== R2: ВТОРАЯ ФИГУРА (правый верхний угол) ===== -->
+  <path class="part"
+    d="M241.41,1.93v175.69l-87.44-87.44c-.26-.28-.53-.55-.81-.81L65.72,1.93h175.69Z"
+    fill="{{ logo_colors.right_top_fill|default:'#4ECDC4' }}"
+    stroke="{{ logo_colors.stroke_color|default:'#333' }}"
+    stroke-width="{{ logo_colors.stroke_width|default:2 }}"
   />
 
-  <!-- 3. Нижний треугольник -->
-  <polygon
-    points="0.71,240.97 240.71,240.97 240.71,176.66"
-    fill="{% if logo_colors.bottom_triangle_fill_type == 'image' %}url(#pattern-bottom-triangle){% else %}{{ logo_colors.bottom_triangle_fill }}{% endif %}"
-    stroke="{{ logo_colors.stroke_color }}"
-    stroke-width="{{ logo_colors.stroke_width }}"
-    stroke-opacity="{{ logo_colors.stroke_opacity }}"
-    stroke-dasharray="{{ logo_colors.stroke_dasharray }}"
-    stroke-linecap="{{ logo_colors.stroke_linecap }}"
-    stroke-linejoin="{{ logo_colors.stroke_linejoin }}"
+  <!-- ===== R3: ТРЕТЬЯ ФИГУРА (нижняя область) ===== -->
+  <polygon class="part"
+    points="241.41 177.62 241.41 241.93 1.41 241.93 120.14 210.12 122.92 209.37 241.41 177.62"
+    fill="{{ logo_colors.bottom_triangle_fill|default:'#FFE66D' }}"
+    stroke="{{ logo_colors.stroke_color|default:'#333' }}"
+    stroke-width="{{ logo_colors.stroke_width|default:2 }}"
   />
 
-  <!-- 4. Левый верхний треугольник -->
-  <polygon
-    points="0.71,0.97 65.02,0.97 0.71,240.97"
-    fill="{% if logo_colors.left_top_fill_type == 'image' %}url(#pattern-left-top){% else %}{{ logo_colors.left_top_fill }}{% endif %}"
-    stroke="{{ logo_colors.stroke_color }}"
-    stroke-width="{{ logo_colors.stroke_width }}"
-    stroke-opacity="{{ logo_colors.stroke_opacity }}"
-    stroke-dasharray="{{ logo_colors.stroke_dasharray }}"
-    stroke-linecap="{{ logo_colors.stroke_linecap }}"
-    stroke-linejoin="{{ logo_colors.stroke_linejoin }}"
+  <!-- ===== R4: ЧЕТВЁРТАЯ ФИГУРА (круг) ===== -->
+  <path class="part"
+    d="M174.58,140.49c0,32.64-21.81,60.2-51.66,68.88l-2.78.75c-5.54,1.37-11.33,2.1-17.29,2.1-39.61,0-71.73-32.12-71.73-71.73,0-5.96.73-11.75,2.1-17.29l.75-2.78c8.68-29.85,36.24-51.66,68.88-51.66,19.6,0,37.37,7.86,50.31,20.61.28.26.55.53.81.81,12.75,12.94,20.61,30.71,20.61,50.31Z"
+    fill="{{ logo_colors.circle_fill|default:'#FF6B6B' }}"
+    stroke="{{ logo_colors.circle_stroke|default:'#333' }}"
+    stroke-width="{{ logo_colors.circle_stroke_width|default:2 }}"
   />
 
-  <!-- 5. Правый верхний треугольник -->
-  <polygon
-    points="65.02,0.97 240.71,0.97 240.71,176.66"
-    fill="{% if logo_colors.right_top_fill_type == 'image' %}url(#pattern-right-top){% else %}{{ logo_colors.right_top_fill }}{% endif %}"
-    stroke="{{ logo_colors.stroke_color }}"
-    stroke-width="{{ logo_colors.stroke_width }}"
-    stroke-opacity="{{ logo_colors.stroke_opacity }}"
-    stroke-dasharray="{{ logo_colors.stroke_dasharray }}"
-    stroke-linecap="{{ logo_colors.stroke_linecap }}"
-    stroke-linejoin="{{ logo_colors.stroke_linejoin }}"
+  <!-- ===== R5: ПЯТАЯ ФИГУРА (левая часть треугольника) ===== -->
+  <path class="part"
+    d="M153.16,89.37c-12.94-12.75-30.71-20.61-50.31-20.61-32.64,0-60.2,21.81-68.88,51.66L65.72,1.93l87.44,87.44Z"
+    fill="{{ logo_colors.curved_left_fill|default:'#A29BFE' }}"
+    stroke="{{ logo_colors.stroke_color|default:'#333' }}"
+    stroke-width="{{ logo_colors.stroke_width|default:2 }}"
   />
 
-  <!-- 6. Левый криволинейный треугольник -->
-  <polygon
-    points="0.71,240.97 240.71,176.66 65.02,0.97"
-    fill="{% if logo_colors.curved_left_fill_type == 'image' %}url(#pattern-curved-left){% else %}{{ logo_colors.curved_left_fill }}{% endif %}"
-    clip-path="url(#clip-curved-2)"
-    mask="url(#circle-mask)"
-    stroke="{{ logo_colors.stroke_color }}"
-    stroke-width="{{ logo_colors.stroke_width }}"
-    stroke-opacity="{{ logo_colors.stroke_opacity }}"
-    stroke-dasharray="{{ logo_colors.stroke_dasharray }}"
-    stroke-linecap="{{ logo_colors.stroke_linecap }}"
-    stroke-linejoin="{{ logo_colors.stroke_linejoin }}"
+  <!-- ===== R6: ШЕСТАЯ ФИГУРА (верхняя часть треугольника) ===== -->
+  <path class="part"
+    d="M120.14,210.12L1.41,241.93l31.81-118.73c-1.37,5.54-2.1,11.33-2.1,17.29,0,39.61,32.12,71.73,71.73,71.73,5.96,0,11.75-.73,17.29-2.1Z"
+    fill="{{ logo_colors.curved_top_fill|default:'#55EFC4' }}"
+    stroke="{{ logo_colors.stroke_color|default:'#333' }}"
+    stroke-width="{{ logo_colors.stroke_width|default:2 }}"
   />
 
-  <!-- 7. Правый криволинейный треугольник -->
-  <polygon
-    points="240.71,176.66 65.02,0.97 0.71,240.97"
-    fill="{% if logo_colors.curved_right_fill_type == 'image' %}url(#pattern-curved-right){% else %}{{ logo_colors.curved_right_fill }}{% endif %}"
-    clip-path="url(#clip-curved-3)"
-    mask="url(#circle-mask)"
-    stroke="{{ logo_colors.stroke_color }}"
-    stroke-width="{{ logo_colors.stroke_width }}"
-    stroke-opacity="{{ logo_colors.stroke_opacity }}"
-    stroke-dasharray="{{ logo_colors.stroke_dasharray }}"
-    stroke-linecap="{{ logo_colors.stroke_linecap }}"
-    stroke-linejoin="{{ logo_colors.stroke_linejoin }}"
+  <!-- ===== R7: СЕДЬМАЯ ФИГУРА (правая часть треугольника) ===== -->
+  <path class="part"
+    d="M174.58,140.49c0-19.6-7.86-37.37-20.61-50.31l87.44,87.44-118.49,31.75c29.85-8.68,51.66-36.24,51.66-68.88Z"
+    fill="{{ logo_colors.curved_right_fill|default:'#FDCB6E' }}"
+    stroke="{{ logo_colors.stroke_color|default:'#333' }}"
+    stroke-width="{{ logo_colors.stroke_width|default:2 }}"
   />
 
 </svg>

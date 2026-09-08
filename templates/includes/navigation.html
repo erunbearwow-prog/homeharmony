@@ -5,8 +5,14 @@
         <div class="flex justify-between items-center h-16">
             <!-- Логотип -->
             <div class="flex items-center space-x-2">
-                <i class=" text-amber-700 text-xl"></i>
-                <a href="{% url 'pages:home' %}" class="text-xl font-bold text-gray-800 serif">Вкус <span class="text-amber-700">и</span> Порядок</a>
+                <a href="{% url 'pages:home' %}" class="flex items-center space-x-2 text-xl font-bold text-gray-800 serif">
+                    <!-- Логотип -->
+                    <span style="display: inline-block; width: 36px; height: 36px;">
+                        {% include 'includes/logo.svg' %}
+                    </span>
+                    <!-- Текст -->
+                    <span>Вкус <span class="text-amber-700">и</span> Порядок</span>
+                </a>
             </div>
 
             <!-- Десктопное меню -->
