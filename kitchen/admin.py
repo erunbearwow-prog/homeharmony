@@ -312,14 +312,45 @@ def register_if_not_registered(model, admin_class):
 
 
 # ======================= ADMIN CLASSES =======================
+class RecipeAdminForm(forms.ModelForm):
+    """Форма с CKEditor 5 для текстовых полей"""
+
+    class Meta:
+        model = Recipe
+        fields = '__all__'
+        widgets = {
+            'description': CKEditor5Widget(
+                attrs={'class': 'django_ckeditor_5'},
+                config_name='recipe_editor'
+            ),
+            'technological_process': CKEditor5Widget(
+                attrs={'class': 'django_ckeditor_5'},
+                config_name='recipe_editor'
+            ),
+            'quality_requirements': CKEditor5Widget(
+                attrs={'class': 'django_ckeditor_5'},
+                config_name='recipe_editor'
+            ),
+            'plating': CKEditor5Widget(
+                attrs={'class': 'django_ckeditor_5'},
+                config_name='recipe_editor'
+            ),
+            'storage_conditions': CKEditor5Widget(
+                attrs={'class': 'django_ckeditor_5'},
+                config_name='recipe_editor'
+            ),
+        }
 
 @admin.register(Recipe)
 class RecipeAdmin(admin.ModelAdmin):
+    form = RecipeAdminForm
+
     list_display = [
         'id', 'title', 'recipe_type', 'is_saved_variant', 'original_recipe',
         'ttk_code', 'cuisine', 'author', 'difficulty', 'servings',
         'total_time', 'created_at', 'ingredients_count', 'steps_count'
     ]
+
     list_filter = [
         RecipeTypeFilter,
         'is_saved_variant',
@@ -329,6 +360,7 @@ class RecipeAdmin(admin.ModelAdmin):
         'created_at',
         RecipeWithSubrecipeFilter
     ]
+
     search_fields = ['title', 'description', 'author', 'ttk_code']
 
     readonly_fields = [
@@ -380,6 +412,7 @@ class RecipeAdmin(admin.ModelAdmin):
         ProfessionalIngredientInline,
         RecipeFoodItemInline,
     ]
+
     filter_horizontal = ['diet_tags', 'related_recipes', 'components']
     autocomplete_fields = ['cuisine', 'original_recipe']
     save_on_top = True

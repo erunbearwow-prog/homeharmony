@@ -1,0 +1,66 @@
+{
+  "name": "Утиный окорочок",
+  "name_normalized": "utinyy_okorochok",
+  "synonyms": "окорочок утиный, утиная ножка, голень утки, бедро утки, duck leg, duck drumstick, утиная голень, утиное бедро",
+  "short_description": "Сочная часть тушки утки, включающая бедро и голень с кожей. Мясо темно-розового цвета, более жирное и насыщенное по вкусу, чем грудка. Идеально для запекания, тушения и конфи.",
+  "description": "<h2 class='ingredient-title'>Краткая характеристика</h2><p class='ingredient-text'>Утиный окорочок — это часть тушки, состоящая из бедра и голени с сохраненной кожей. Мясо окорочка имеет более темный цвет и насыщенный вкус по сравнению с грудкой, содержит больше жира, что делает его идеальным для длительной термической обработки. Традиционно используется для приготовления утиного конфи, запекания, тушения и гриля.</p><h2 class='ingredient-title'>Пищевая ценность (на 100 г, запеченный)</h2><ul class='ingredient-list ingredient-list-bulleted'><li class='ingredient-list-item'><strong>Калорийность:</strong> 217 ккал</li><li class='ingredient-list-item'><strong>Белки:</strong> 26.8 г</li><li class='ingredient-list-item'><strong>Жиры:</strong> 11.4 г (насыщенные — 2.98 г, мононенасыщенные — 5.62 г, полиненасыщенные — 1.90 г)</li><li class='ingredient-list-item'><strong>Углеводы:</strong> 0 г</li><li class='ingredient-list-item'><strong>Вода:</strong> 60.9 г</li></ul><h2 class='ingredient-title'>Свойства и особенности</h2><ul class='ingredient-list ingredient-list-bulleted'><li class='ingredient-list-item'><strong>Внешний вид</strong> — темно-розовое мясо с бело-желтой кожей</li><li class='ingredient-list-item'><strong>Консистенция</strong> — плотная, но нежная, волокнистая</li><li class='ingredient-list-item'><strong>Вкус и аромат</strong> — насыщенный, мясной, с легкой дичью</li><li class='ingredient-list-item'><strong>Особенность</strong> — требует длительного приготовления для полного размягчения</li></ul><h2 class='ingredient-title'>Способы приготовления</h2><ul class='ingredient-list ingredient-list-bulleted'><li class='ingredient-list-item'><strong>Конфи</strong> — медленное томление в жире (классический французский метод)</li><li class='ingredient-list-item'><strong>Запекание</strong> — в духовке при 160-180°C 1.5-2 часа</li><li class='ingredient-list-item'><strong>Тушение</strong> — с овощами, в соусе</li><li class='ingredient-list-item'><strong>Жарка на гриле</strong> — предварительно отварив или замариновав</li></ul><h2 class='ingredient-title'>Подготовка</h2><ul class='ingredient-list ingredient-list-bulleted'><li class='ingredient-list-item'><strong>Маринование</strong> — рекомендуется на 6-12 часов для размягчения</li><li class='ingredient-list-item'><strong>Обсушивание</strong> — кожу нужно тщательно обсушить для хрустящей корочки</li><li class='ingredient-list-item'><strong>Надрезание кожи</strong> — для лучшего вытапливания жира</li></ul><h2 class='ingredient-title'>Кулинарное применение</h2><ul class='ingredient-list ingredient-list-bulleted'><li class='ingredient-list-item'><strong>Основное блюдо</strong> — с гарниром из картофеля, овощей</li><li class='ingredient-list-item'><strong>Утиное конфи</strong> — классическое блюдо французской кухни</li><li class='ingredient-list-item'><strong>Паштеты</strong> — после варки и измельчения мяса</li><li class='ingredient-list-item'><strong>Салаты</strong> — с теплыми овощами, зеленью</li></ul><h2 class='ingredient-title'>С чем сочетается</h2><ul class='ingredient-list ingredient-list-bulleted'><li class='ingredient-list-item'><strong>Соусы</strong> — апельсиновый, вишневый, клюквенный, горчичный, медово-соевый</li><li class='ingredient-list-item'><strong>Фрукты и ягоды</strong> — апельсин, вишня, клюква, инжир</li><li class='ingredient-list-item'><strong>Овощи</strong> — картофель, морковь, лук, сельдерей, фенхель, спаржа</li><li class='ingredient-list-item'><strong>Специи</strong> — тимьян, розмарин, шалфей, можжевельник, чеснок, перец</li></ul><h2 class='ingredient-title'>Чем заменить</h2><ul class='ingredient-list ingredient-list-bulleted'><li class='ingredient-list-item'><strong>Гусиный окорочок</strong> — более крупный, более жирный</li><li class='ingredient-list-item'><strong>Утиная грудка</strong> — более постная, быстрее готовится</li><li class='ingredient-list-item'><strong>Куриная ножка</strong> — менее жирная, нейтральный вкус</li><li class='ingredient-list-item'><strong>Индейка бедро</strong> — более крупное, постнее</li></ul>",
+  "category": "Мясо и мясные продукты",
+  "semantic_data": {
+    "properties": [
+      "утка",
+      "окорочок",
+      "ножка",
+      "бедро",
+      "голень",
+      "с кожей",
+      "темное мясо",
+      "сочно",
+      "волокнистое"
+    ],
+    "preparations": [
+      "маринование 6-12 часов",
+      "обсушивание кожи",
+      "надрезание кожи сеткой",
+      "exitмедленное запекание"
+    ],
+    "cooking_methods": [
+      {"method": "конфи", "priority": "high"},
+      {"method": "запекание в духовке", "priority": "high"},
+      {"method": "тушение", "priority": "high"},
+      {"method": "гриль", "priority": "medium"},
+      {"method": "варка (для супов)", "priority": "low"}
+    ],
+    "applications": [
+      "основные блюда",
+      "конфи",
+      "паштеты",
+      "салаты"
+    ],
+    "pairings": {
+      "protein": ["бекон", "куриная печень"],
+      "vegetables": ["картофель", "морковь", "лук", "сельдерей", "фенхель", "спаржа"],
+      "fruits": ["апельсин", "вишня", "клюква", "инжир", "слива"],
+      "sauces": ["апельсиновый", "вишневый", "клюквенный", "горчичный", "медово-соевый"],
+      "herbs": ["тимьян", "розмарин", "шалфей"],
+      "spices": ["можжевельник", "черный перец", "чеснок"]
+    },
+    "substitutes": [
+      {"name": "Гусиный окорочок", "similarity": "high"},
+      {"name": "Утиная грудка", "similarity": "medium"},
+      {"name": "Куриная ножка", "similarity": "low"},
+      {"name": "Бедро индейки", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "утка",
+    "окорочок",
+    "птица",
+    "мясо",
+    "темное мясо",
+    "конфи",
+    "запекание",
+    "тушение",
+    "сочно",
+    "дичь"
+  ]
+}

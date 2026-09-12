@@ -1,0 +1,69 @@
+{
+  "name": "Конфитюр из ежевики",
+  "name_normalized": "konfityur_iz_ezheviki",
+  "synonyms": "ежевичный конфитюр, конфитюр из ежевики, ежевичное варенье, джем из ежевики, ежевика в сиропе, ежевичный десерт, конфитюр для выпечки, ежевичный наполнитель, начинка для пирогов, конфитюр для торта, ежевичный соус, blackberry jam, blackberry preserve",
+  "short_description": "Густой, ароматный десерт из ежевики, сваренный с сахаром до желеобразной консистенции. Сохраняет целые ягоды или их кусочки, имеет насыщенный кисло-сладкий вкус с легкой терпкостью и яркий ежевичный аромат. Используется для начинок, прослойки тортов, десертов и выпечки.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Конфитюр из ежевики — это желеобразный десерт из ежевики, сваренный с сахаром и иногда с добавлением желирующих агентов (пектин, агар-агар). В отличие от варенья, в конфитюре ягоды или их кусочки сохраняют форму, а сироп имеет густую, вязкую консистенцию. Конфитюр обладает насыщенным кисло-сладким вкусом с легкой терпкостью и ярким ежевичным ароматом. Он является идеальной начинкой для выпечки, прослойкой для тортов, а также используется как самостоятельный десерт или добавка к мороженому и йогуртам.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Консистенция</strong> — густая, желеобразная, с целыми ягодами или кусочками</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисло-сладкий, с легкой терпкостью и ярким ежевичным ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — темно-фиолетовый, почти черный, с рубиновым оттенком</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 24 месяцев (в закрытом виде), 2-3 недели (в открытом)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — хорошо держит форму, не растекается при выпечке</li></ul><h2 class=\"ingredient-title\">Состав (типичный)</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Ежевика</strong> — свежая или замороженная</li><li class=\"ingredient-list-item\"><strong>Сахар</strong> — для сладости и консервации</li><li class=\"ingredient-list-item\"><strong>Желирующий агент</strong> — пектин, агар-агар (по желанию)</li><li class=\"ingredient-list-item\"><strong>Лимонный сок</strong> — для баланса вкуса и сохранения цвета</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — начинка для пирогов, пирожков, слоек, булочек</li><li class=\"ingredient-list-item\"><strong>Торты</strong> — прослойка между коржами, украшение</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — к мороженому, сырникам, запеканкам, йогурту</li><li class=\"ingredient-list-item\"><strong>Блины и оладьи</strong> — в качестве топпинга</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к мясу (дичи, утке, свинине)</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — песочное, слоеное, дрожжевое тесто</li><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — йогурт, творог, мороженое, сливки</li><li class=\"ingredient-list-item\"><strong>Шоколад</strong> — темный, молочный, белый</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — дичь, утка, свинина (в соусах)</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, гвоздика, ваниль, имбирь, кардамон</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — грецкие, миндаль, фундук</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Ежевичное варенье</strong> — более жидкое, с целыми ягодами</li><li class=\"ingredient-list-item\"><strong>Ежевичный джем</strong> — более однородный</li><li class=\"ingredient-list-item\"><strong>Свежая ежевика с сахаром</strong> — для начинок</li><li class=\"ingredient-list-item\"><strong>Конфитюр из черной смородины</strong> — для выпечки</li><li class=\"ingredient-list-item\"><strong>Конфитюр из малины</strong> — для десертов</li></ul>",
+  "category": "Фрукты",
+  "semantic_data": {
+    "properties": [
+      "конфитюр",
+      "ежевичный",
+      "густой",
+      "кисло-сладкий",
+      "терпкий",
+      "для выпечки",
+      "для тортов",
+      "для десертов",
+      "ягоды в сиропе",
+      "начинка"
+    ],
+    "preparations": [
+      "варка ежевики с сахаром",
+      "добавление желирующего агента",
+      "охлаждение до желеобразной консистенции",
+      "хранение в банках"
+    ],
+    "cooking_methods": [
+      {"method": "использование в выпечке (начинка)", "priority": "high"},
+      {"method": "использование в тортах (прослойка)", "priority": "high"},
+      {"method": "подача к десертам", "priority": "high"},
+      {"method": "использование как соус к мясу", "priority": "medium"},
+      {"method": "подача к блинам и оладьям", "priority": "medium"}
+    ],
+    "applications": [
+      "выпечка",
+      "торты",
+      "десерты",
+      "соусы",
+      "блины",
+      "йогурты"
+    ],
+    "pairings": {
+      "protein": ["йогурт", "творог", "мороженое", "дичь", "утка", "свинина"],
+      "vegetables": [],
+      "fruits": ["ежевика"],
+      "sauces": [],
+      "herbs": [],
+      "spices": ["корица", "гвоздика", "ваниль", "имбирь", "кардамон"]
+    },
+    "substitutes": [
+      {"name": "Ежевичное варенье", "similarity": "high"},
+      {"name": "Ежевичный джем", "similarity": "high"},
+      {"name": "Свежая ежевика с сахаром", "similarity": "medium"},
+      {"name": "Конфитюр из черной смородины", "similarity": "medium"},
+      {"name": "Конфитюр из малины", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "конфитюр",
+    "ежевичный",
+    "варенье",
+    "джем",
+    "начинка",
+    "выпечка",
+    "десерты",
+    "торты",
+    "ежевика"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "name": "Конфитюр из клубники",
+  "name_normalized": "konfityur_iz_klubniki",
+  "synonyms": "клубничный конфитюр, конфитюр из клубники, клубничное варенье, джем из клубники, клубника в сиропе, клубничный десерт, конфитюр для выпечки, клубничный наполнитель, начинка для пирогов, конфитюр для торта, клубничный соус, strawberry jam, strawberry preserve",
+  "short_description": "Густой, ароматный десерт из клубники, сваренный с сахаром до желеобразной консистенции. Сохраняет целые ягоды или их кусочки, имеет яркий кисло-сладкий вкус и насыщенный клубничный аромат. Используется для начинок, прослойки тортов, десертов и выпечки.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Клубничный конфитюр — это желеобразный десерт из клубники, сваренный с сахаром и иногда с добавлением желирующих агентов (пектин, агар-агар). В отличие от варенья, в конфитюре ягоды или их кусочки сохраняют форму, а сироп имеет густую, вязкую консистенцию. Конфитюр обладает ярким кисло-сладким вкусом и насыщенным клубничным ароматом. Он является идеальной начинкой для выпечки, прослойкой для тортов, а также используется как самостоятельный десерт или добавка к мороженому и йогуртам.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Консистенция</strong> — густая, желеобразная, с целыми ягодами или кусочками</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисло-сладкий, с ярким клубничным ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — ярко-красный, рубиновый</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 24 месяцев (в закрытом виде), 2-3 недели (в открытом)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — хорошо держит форму, не растекается при выпечке</li></ul><h2 class=\"ingredient-title\">Состав (типичный)</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Клубника</strong> — свежая или замороженная</li><li class=\"ingredient-list-item\"><strong>Сахар</strong> — для сладости и консервации</li><li class=\"ingredient-list-item\"><strong>Желирующий агент</strong> — пектин, агар-агар (по желанию)</li><li class=\"ingredient-list-item\"><strong>Лимонный сок</strong> — для баланса вкуса и сохранения цвета</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — начинка для пирогов, пирожков, слоек, булочек</li><li class=\"ingredient-list-item\"><strong>Торты</strong> — прослойка между коржами, украшение</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — к мороженому, сырникам, запеканкам, йогурту</li><li class=\"ingredient-list-item\"><strong>Блины и оладьи</strong> — в качестве топпинга</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к мясу (птице, свинине)</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — песочное, слоеное, дрожжевое тесто</li><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — йогурт, творог, мороженое, сливки</li><li class=\"ingredient-list-item\"><strong>Шоколад</strong> — темный, молочный, белый</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, утка, свинина (в соусах)</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, ваниль, имбирь, кардамон</li><li class=\"ingredient-list-item\"><strong>Цитрусовые</strong> — лимон, апельсин</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Клубничное варенье</strong> — более жидкое, с целыми ягодами</li><li class=\"ingredient-list-item\"><strong>Клубничный джем</strong> — более однородный</li><li class=\"ingredient-list-item\"><strong>Свежая клубника с сахаром</strong> — для начинок</li><li class=\"ingredient-list-item\"><strong>Конфитюр из малины</strong> — для десертов</li><li class=\"ingredient-list-item\"><strong>Конфитюр из вишни</strong> — для выпечки</li></ul>",
+  "category": "Фрукты",
+  "semantic_data": {
+    "properties": [
+      "конфитюр",
+      "клубничный",
+      "густой",
+      "кисло-сладкий",
+      "для выпечки",
+      "для тортов",
+      "для десертов",
+      "ягоды в сиропе",
+      "начинка"
+    ],
+    "preparations": [
+      "варка клубники с сахаром",
+      "добавление желирующего агента",
+      "охлаждение до желеобразной консистенции",
+      "хранение в банках"
+    ],
+    "cooking_methods": [
+      {"method": "использование в выпечке (начинка)", "priority": "high"},
+      {"method": "использование в тортах (прослойка)", "priority": "high"},
+      {"method": "подача к десертам", "priority": "high"},
+      {"method": "использование как соус к мясу", "priority": "medium"},
+      {"method": "подача к блинам и оладьям", "priority": "medium"}
+    ],
+    "applications": [
+      "выпечка",
+      "торты",
+      "десерты",
+      "соусы",
+      "блины",
+      "йогурты"
+    ],
+    "pairings": {
+      "protein": ["йогурт", "творог", "мороженое", "курица", "утка", "свинина"],
+      "vegetables": [],
+      "fruits": ["клубника", "лимон", "апельсин"],
+      "sauces": [],
+      "herbs": [],
+      "spices": ["корица", "ваниль", "имбирь", "кардамон"]
+    },
+    "substitutes": [
+      {"name": "Клубничное варенье", "similarity": "high"},
+      {"name": "Клубничный джем", "similarity": "high"},
+      {"name": "Свежая клубника с сахаром", "similarity": "medium"},
+      {"name": "Конфитюр из малины", "similarity": "medium"},
+      {"name": "Конфитюр из вишни", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "конфитюр",
+    "клубничный",
+    "варенье",
+    "джем",
+    "начинка",
+    "выпечка",
+    "десерты",
+    "торты",
+    "клубника"
+  ]
+}

@@ -58,8 +58,6 @@
     stroke-width="{{ logo_colors.stroke_width }}"
     stroke-opacity="{{ logo_colors.stroke_opacity }}"
     stroke-dasharray="{{ logo_colors.stroke_dasharray }}"
-    stroke-linecap="{{ logo_colors.stroke_linecap }}"
-    stroke-linejoin="{{ logo_colors.stroke_linejoin }}"
   />
 
   <!-- R2: Правый верхний угол -->
@@ -71,8 +69,6 @@
     stroke-width="{{ logo_colors.stroke_width }}"
     stroke-opacity="{{ logo_colors.stroke_opacity }}"
     stroke-dasharray="{{ logo_colors.stroke_dasharray }}"
-    stroke-linecap="{{ logo_colors.stroke_linecap }}"
-    stroke-linejoin="{{ logo_colors.stroke_linejoin }}"
   />
 
   <!-- R3: Нижняя область -->
@@ -84,8 +80,6 @@
     stroke-width="{{ logo_colors.stroke_width }}"
     stroke-opacity="{{ logo_colors.stroke_opacity }}"
     stroke-dasharray="{{ logo_colors.stroke_dasharray }}"
-    stroke-linecap="{{ logo_colors.stroke_linecap }}"
-    stroke-linejoin="{{ logo_colors.stroke_linejoin }}"
   />
 
   <!-- R4: Круг -->
@@ -97,8 +91,6 @@
     stroke-width="{{ logo_colors.circle_stroke_width }}"
     stroke-opacity="{{ logo_colors.stroke_opacity }}"
     stroke-dasharray="{{ logo_colors.circle_stroke_dasharray|default:logo_colors.stroke_dasharray }}"
-    stroke-linecap="{{ logo_colors.stroke_linecap }}"
-    stroke-linejoin="{{ logo_colors.stroke_linejoin }}"
   />
 
   <!-- R5: Левая часть треугольника -->
@@ -110,8 +102,6 @@
     stroke-width="{{ logo_colors.stroke_width }}"
     stroke-opacity="{{ logo_colors.stroke_opacity }}"
     stroke-dasharray="{{ logo_colors.stroke_dasharray }}"
-    stroke-linecap="{{ logo_colors.stroke_linecap }}"
-    stroke-linejoin="{{ logo_colors.stroke_linejoin }}"
   />
 
   <!-- R6: Верхняя часть треугольника -->
@@ -123,8 +113,6 @@
     stroke-width="{{ logo_colors.stroke_width }}"
     stroke-opacity="{{ logo_colors.stroke_opacity }}"
     stroke-dasharray="{{ logo_colors.stroke_dasharray }}"
-    stroke-linecap="{{ logo_colors.stroke_linecap }}"
-    stroke-linejoin="{{ logo_colors.stroke_linejoin }}"
   />
 
   <!-- R7: Правая часть треугольника -->
@@ -136,8 +124,6 @@
     stroke-width="{{ logo_colors.stroke_width }}"
     stroke-opacity="{{ logo_colors.stroke_opacity }}"
     stroke-dasharray="{{ logo_colors.stroke_dasharray }}"
-    stroke-linecap="{{ logo_colors.stroke_linecap }}"
-    stroke-linejoin="{{ logo_colors.stroke_linejoin }}"
   />
 
 </svg>

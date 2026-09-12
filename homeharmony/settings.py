@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django_ckeditor_5',
     'core.apps.CoreConfig',
     'accounts.apps.AccountsConfig',   # ← ВРЕМЕННО
-    'kitchen.apps.KitchenConfig',        # ← ОСТАВЛЯЕМ
+    'kitchen.apps.KitchenConfig',     # ← ОСТАВЛЯЕМ
     'cleaning.apps.CleaningConfig',   # ← ВРЕМЕННО
     'budget.apps.BudgetConfig',       # ← ВРЕМЕННО
     'repair.apps.RepairConfig',       # ← ВРЕМЕННО
@@ -84,17 +84,107 @@ TEMPLATES = [
     },
 ]
 
+# Настройки CKEditor 5
 CKEDITOR_5_CONFIGS = {
     'default': {
-        'toolbar': ['heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote', 'imageUpload'],
-        'language': 'ru',
+        'toolbar': {
+            'items': [
+                'heading', '|',
+                'bold', 'italic', 'underline', 'strikethrough', '|',
+                'link', 'bulletedList', 'numberedList', 'blockQuote', '|',
+                'alignment', '|',
+                'fontColor', 'fontBackgroundColor', '|',
+                'imageUpload', 'insertTable', '|',
+                'sourceEditing', '|',
+                'undo', 'redo'
+            ]
+        },
         'image': {
-            'upload': {
-                'types': ['jpg', 'jpeg', 'png', 'gif', 'webp'],
-            }
+            'toolbar': [
+                'imageTextAlternative', '|',
+                'imageStyle:alignLeft', 'imageStyle:alignRight',
+                'imageStyle:alignCenter', 'imageStyle:side', '|',
+                'resizeImage'
+            ],
+            'styles': [
+                'full',
+                'side',
+                'alignLeft',
+                'alignRight',
+                'alignCenter',
+            ]
+        },
+        'table': {
+            'contentToolbar': [
+                'tableColumn', 'tableRow', 'mergeTableCells',
+                'tableProperties', 'tableCellProperties'
+            ]
+        },
+        'heading': {
+            'options': [
+                {'model': 'paragraph', 'title': 'Paragraph', 'class': 'ck-heading_paragraph'},
+                {'model': 'heading1', 'view': 'h1', 'title': 'Heading 1', 'class': 'ck-heading_heading1'},
+                {'model': 'heading2', 'view': 'h2', 'title': 'Heading 2', 'class': 'ck-heading_heading2'},
+                {'model': 'heading3', 'view': 'h3', 'title': 'Heading 3', 'class': 'ck-heading_heading3'},
+                {'model': 'heading4', 'view': 'h4', 'title': 'Heading 4', 'class': 'ck-heading_heading4'},
+            ]
+        },
+        'fontColor': {
+            'colors': [
+                {'color': 'hsl(0, 0%, 0%)', 'label': 'Black'},
+                {'color': 'hsl(0, 0%, 30%)', 'label': 'Dim grey'},
+                {'color': 'hsl(0, 0%, 60%)', 'label': 'Grey'},
+                {'color': 'hsl(0, 0%, 100%)', 'label': 'White'},
+                {'color': 'hsl(0, 100%, 50%)', 'label': 'Red'},
+                {'color': 'hsl(30, 100%, 50%)', 'label': 'Orange'},
+                {'color': 'hsl(60, 100%, 50%)', 'label': 'Yellow'},
+                {'color': 'hsl(120, 100%, 50%)', 'label': 'Green'},
+                {'color': 'hsl(240, 100%, 50%)', 'label': 'Blue'},
+            ]
+        }
+    },
+    'recipe_editor': {
+        'toolbar': {
+            'items': [
+                'heading', '|',
+                'bold', 'italic', 'underline', 'strikethrough', '|',
+                'bulletedList', 'numberedList', '|',
+                'alignment', '|',
+                'link', 'blockQuote', '|',
+                'imageUpload', 'insertTable', '|',
+                'fontColor', 'fontBackgroundColor', '|',
+                'sourceEditing', '|',
+                'undo', 'redo'
+            ]
+        },
+        'image': {
+            'toolbar': [
+                'imageTextAlternative', '|',
+                'imageStyle:alignLeft', 'imageStyle:alignRight',
+                'imageStyle:alignCenter', 'imageStyle:side', '|',
+                'resizeImage'
+            ],
+            'styles': [
+                'full',
+                'side',
+                'alignLeft',
+                'alignRight',
+                'alignCenter',
+            ]
+        },
+        'table': {
+            'contentToolbar': [
+                'tableColumn', 'tableRow', 'mergeTableCells',
+                'tableProperties', 'tableCellProperties'
+            ]
         }
     }
 }
+
+# Для загрузки изображений
+CKEDITOR_5_FILE_UPLOAD_PERMISSION = 'staff'  # или 'authenticated'
+CKEDITOR_5_UPLOAD_PATH = 'uploads/ckeditor5/'
+CKEDITOR_5_LANGUAGE = 'ru'
 
 CKEDITOR_5_FILE_STORAGE = "django.core.files.storage.DefaultStorage"
 

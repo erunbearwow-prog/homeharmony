@@ -4,47 +4,12 @@
 {% block title %}Кулинария — рецепты на любой вкус | Вкус и Порядок{% endblock %}
 
 {% block extra_css %}
-<style>
-    .hero-gradient {
-        background: linear-gradient(135deg, #fdf8f0 0%, #f0f4f0 100%);
-    }
-    .recipe-card {
-        transition: all 0.3s ease;
-    }
-    .recipe-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.1);
-    }
-    .collection-badge {
-        transition: all 0.2s ease;
-    }
-    .collection-badge:hover {
-        background-color: #d97706;
-        color: white;
-        border-color: #d97706;
-    }
 
-    .custom-select {
-        appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-        background-repeat: no-repeat;
-        background-position: right 0.75rem center;
-        background-size: 1rem;
-        padding-right: 2rem !important;
-    }
-    .custom-select:focus {
-        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d97706' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-        outline: none;
-    }
-    .custom-select::-ms-expand {
-        display: none;
-    }
-</style>
 {% endblock %}
 
 {% block content %}
+
+
 
 <!-- Hero секция с поддержкой изображения -->
 <section class="hero-gradient py-16 md:py-20 relative overflow-hidden">
@@ -60,6 +25,11 @@
 
     <!-- Контент поверх фона -->
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+        <div style="width: 150x; height: 150px; margin: 0 auto;">
+            {% include 'includes/logo.svg' %}
+        </div>
+
         <h1 class="text-4xl md:text-5xl font-bold
                    {% if hero_image %}text-white{% else %}text-gray-800{% endif %} mb-4">
             Готовьте с удовольствием вместе с <span class="{% if hero_image %}text-amber-300{% else %}text-amber-700{% endif %}">Семейными ценностями</span>

@@ -1,22 +1,20 @@
 /* static/css/style.css */
 
-
-```css
 /* ==========================================================
    ТЕМА (ЦВЕТОВАЯ СХЕМА ПРОЕКТА)
    ========================================================== */
 :root {
   /* ===== ОСНОВНОЙ ЦВЕТ (янтарный) ===== */
-  --primary: #d97706;           /* основной цвет */
-  --primary-dark: #b45309;      /* тёмный вариант */
-  --primary-darker: #92400e;    /* ещё темнее */
-  --primary-light: #fef3c7;     /* светлый фон */
-  --primary-lighter: #fffbeb;   /* очень светлый */
-  --primary-border: #fde68a;    /* граница */
-  --primary-text: #b45309;      /* текст на основном цвете */
-  --primary-text-light: #92400e; /* текст светлее */
-  --primary-accent: #f59e0b;    /* акцент */
-  --primary-rgb: 217, 119, 6;   /* RGB для прозрачности */
+  --primary: #d97706;
+  --primary-dark: #b45309;
+  --primary-darker: #92400e;
+  --primary-light: #fef3c7;
+  --primary-lighter: #fffbeb;
+  --primary-border: #fde68a;
+  --primary-text: #b45309;
+  --primary-text-light: #92400e;
+  --primary-accent: #f59e0b;
+  --primary-rgb: 217, 119, 6;
 
   /* ===== ВТОРИЧНЫЙ ЦВЕТ (для про-режима) ===== */
   --secondary: #2563eb;
@@ -87,15 +85,15 @@
 
   /* ===== ШРИФТЫ ===== */
   --font-sans: 'Inter', sans-serif;
-  --font-serif: 'Georgia', serif;
+  --font-serif: 'Merriweather', serif;
   --font-mono: 'Courier New', monospace;
 
   /* ===== РАЗМЕРЫ ===== */
-  --radius-sm: 0.375rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 0.75rem;
-  --radius-xl: 1rem;
-  --radius-full: 9999px;
+  --radius-sm: 0px;      /* ✅ изменено */
+  --radius-md: 0px;      /* ✅ изменено */
+  --radius-lg: 0px;      /* ✅ изменено */
+  --radius-xl: 0px;      /* ✅ изменено */
+  --radius-full: 0px;    /* ✅ изменено (было 9999px) */
   --container-max: 1280px;
   --navbar-height: 64px;
 
@@ -115,6 +113,43 @@
   --transition-slow: 0.5s ease;
 }
 
+
+.hero-gradient {
+        background: linear-gradient(135deg, #fdf8f0 0%, #f0f4f0 100%);
+    }
+    .recipe-card {
+        transition: all 0.3s ease;
+    }
+    .recipe-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.1);
+    }
+    .collection-badge {
+        transition: all 0.2s ease;
+    }
+    .collection-badge:hover {
+        background-color: #d97706;
+        color: white;
+        border-color: #d97706;
+    }
+
+    .custom-select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: right 0.75rem center;
+        background-size: 1rem;
+        padding-right: 2rem !important;
+    }
+    .custom-select:focus {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d97706' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+        outline: none;
+    }
+    .custom-select::-ms-expand {
+        display: none;
+    }
 
 
 /* ======================= БАЗОВЫЕ НАСТРОЙКИ ======================= */
@@ -367,7 +402,7 @@ h1, h2, h3, h4, .serif {
     background-color: #d97706;
     color: white;
     padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
+    border-radius: 0px;   /* ✅ изменено */
     font-weight: 600;
     transition: background-color 0.2s;
     border: none;
@@ -382,7 +417,7 @@ h1, h2, h3, h4, .serif {
     background-color: white;
     color: #92400e;
     padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
+    border-radius: 0px;   /* ✅ изменено */
     font-weight: 600;
     border: 1px solid #fde68a;
     transition: background-color 0.2s;
@@ -395,7 +430,7 @@ h1, h2, h3, h4, .serif {
 /* Карточки */
 .card {
     background-color: white;
-    border-radius: 0.75rem;
+    border-radius: 0px;   /* ✅ изменено (было 0.75rem) */
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
     text-align: center;
@@ -464,7 +499,7 @@ h1, h2, h3, h4, .serif {
 
 .recipe-image {
     width: 100%;
-    border-radius: 1rem;
+    border-radius: 0px;   /* ✅ изменено (было 1rem) */
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     object-fit: cover;
 }
@@ -480,7 +515,7 @@ h1, h2, h3, h4, .serif {
 
 .tag {
     padding: 0.25rem 0.75rem;
-    border-radius: 9999px;
+    border-radius: 0px;   /* ✅ изменено (было 9999px) */
 }
 
 .tag-amber {
@@ -522,7 +557,7 @@ h1, h2, h3, h4, .serif {
 .ingredients-panel {
     background-color: #f9fafb;
     padding: 1.5rem;
-    border-radius: 1rem;
+    border-radius: 0px;   /* ✅ изменено (было 1rem) */
     align-self: start;
 }
 
@@ -539,7 +574,7 @@ h1, h2, h3, h4, .serif {
     font-family: monospace;
     background-color: white;
     padding: 0.125rem 0.5rem;
-    border-radius: 0.375rem;
+    border-radius: 0px;   /* ✅ изменено (было 0.375rem) */
     border: 1px solid #e5e7eb;
 }
 
@@ -549,7 +584,7 @@ h1, h2, h3, h4, .serif {
     gap: 1.25rem;
     background-color: white;
     padding: 1rem;
-    border-radius: 0.75rem;
+    border-radius: 0px;   /* ✅ изменено (было 0.75rem) */
     border: 1px solid #e5e7eb;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
@@ -592,7 +627,7 @@ h1, h2, h3, h4, .serif {
 .progress-bar {
     height: 0.5rem;
     background-color: #e5e7eb;
-    border-radius: 9999px;
+    border-radius: 0px;   /* ✅ изменено (было 9999px) */
     overflow: hidden;
     margin-bottom: 1rem;
 }
@@ -600,7 +635,7 @@ h1, h2, h3, h4, .serif {
 .progress-fill {
     height: 100%;
     background-color: #d97706;
-    border-radius: 9999px;
+    border-radius: 0px;   /* ✅ изменено (было 9999px) */
     transition: width 0.3s ease;
 }
 
@@ -695,9 +730,9 @@ h1, h2, h3, h4, .serif {
 .bg-amber-100 { background-color: #fef3c7; }
 .bg-amber-700 { background-color: #b45309; }
 
-.rounded-lg { border-radius: 0.5rem; }
-.rounded-xl { border-radius: 0.75rem; }
-.rounded-full { border-radius: 9999px; }
+.rounded-lg { border-radius: 0px; }   /* ✅ изменено (было 0.5rem) */
+.rounded-xl { border-radius: 0px; }   /* ✅ изменено (было 0.75rem) */
+.rounded-full { border-radius: 0px; } /* ✅ изменено (было 9999px) */
 
 .shadow-sm { box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); }
 .shadow-md { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }

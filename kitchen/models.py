@@ -10,6 +10,7 @@ import os
 from django.db.models.signals import post_delete, pre_save
 from django.dispatch import receiver
 from django.conf import settings
+from django_ckeditor_5.fields import CKEditor5Field
 
 # ======================= ГЛОБАЛЬНЫЕ КОНСТАНТЫ =======================
 UNIT_CHOICES = [
@@ -722,7 +723,11 @@ class Recipe(models.Model):
     title = models.CharField(max_length=200)
     cuisine = models.ForeignKey(Cuisine, on_delete=models.SET_NULL, null=True, blank=True)
     author = models.CharField(max_length=100, blank=True)
-    description = models.TextField(blank=True)
+    description = CKEditor5Field(
+        verbose_name='Описание',
+        blank=True,
+        config_name='recipe_editor'
+    )
     serving_the_dish = models.TextField(blank=True)
     storage_conditions = models.TextField(blank=True)
     total_time = models.IntegerField(default=0)
@@ -763,17 +768,17 @@ class Recipe(models.Model):
     )
 
     # Поле для хранения технологического процесса (для ТТК)
-    technological_process = models.TextField(
-        blank=True,
+    technological_process = CKEditor5Field(
         verbose_name='Технологический процесс',
-        help_text='Подробное описание технологического процесса для ТТК'
+        blank=True,
+        config_name='recipe_editor'
     )
 
     # Поле для хранения требований к качеству (для ТТК)
-    quality_requirements = models.TextField(
-        blank=True,
+    quality_requirements = CKEditor5Field(
         verbose_name='Требования к качеству',
-        help_text='Органолептические показатели, сроки хранения и т.д.'
+        blank=True,
+        config_name='recipe_editor'
     )
 
     # Поле для хранения норм расхода (для ТТК)
@@ -807,10 +812,10 @@ class Recipe(models.Model):
     )
 
     # Поле для оформления и подачи (текст)
-    plating = models.TextField(
-        blank=True,
+    plating = CKEditor5Field(
         verbose_name='Оформление и подача',
-        help_text='Рекомендации по оформлению и подаче блюда'
+        blank=True,
+        config_name='recipe_editor'
     )
 
     # Изображение для оформления
@@ -871,10 +876,10 @@ class Recipe(models.Model):
     )
 
     # ===== УСЛОВИЯ И СРОКИ ХРАНЕНИЯ =====
-    storage_conditions = models.TextField(
+    storage_conditions = CKEditor5Field(
+        verbose_name='Условия хранения',
         blank=True,
-        verbose_name="Условия и сроки хранения",
-        help_text="Температура, влажность, срок годности готового блюда"
+        config_name='recipe_editor'
     )
 
     is_favorite = models.BooleanField(default=False, verbose_name='В избранном')
