@@ -764,7 +764,7 @@ class Recipe(models.Model):
         config_name='recipe_editor'
     )
     serving_the_dish = models.TextField(blank=True)
-    storage_conditions = models.TextField(blank=True)
+    # storage_conditions = models.TextField(blank=True)
     total_time = models.IntegerField(default=0)
     servings = models.IntegerField(default=4)
     difficulty = models.CharField(max_length=10, choices=DIFFICULTY_CHOICES, default='medium')
@@ -772,7 +772,7 @@ class Recipe(models.Model):
     components = models.ManyToManyField('self', symmetrical=False, blank=True, related_name='parent_recipes')
     image = models.ImageField(upload_to=recipe_main_image_path, null=True, blank=True)
     video = models.URLField(blank=True)
-    calories = models.IntegerField(default=None)
+    calories = models.IntegerField(null=True, blank=True, verbose_name='Калории на порцию, ккал')
     protein = models.IntegerField(default=0)
     fat = models.IntegerField(default=0)
     carbs = models.IntegerField(default=0)
@@ -973,8 +973,8 @@ class Recipe(models.Model):
 
         super().save(*args, **kwargs)
 
-    def __str__(self):
-        return self.title
+    # def __str__(self):
+    #     return self.title
 
 
 # ======================= 9. ПРОДУКТЫ =======================
