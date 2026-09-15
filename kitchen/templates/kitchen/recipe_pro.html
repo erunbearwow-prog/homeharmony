@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'kitchen/css/recipe_pro.css' %}">
+    <link rel="stylesheet" href="{% static 'kitchen/css/recipe.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -221,8 +221,8 @@
                     <h2><i class="fas fa-cogs"></i> Технология приготовления</h2>
                 </div>
                 <div class="tech-section-body">
-                    <div class="description-text">
-                        {{ recipe.description|default:"Технология приготовления будет добавлена позже."|linebreaks }}
+                    <div class="technological_process description-text">
+                        {{ recipe.technological_process|default:"Технология приготовления будет добавлена позже."|safe }}
                     </div>
                 </div>
             </div>
@@ -276,12 +276,12 @@
             <!-- ОФОРМЛЕНИЕ И ПОДАЧА -->
             <div class="tech-section">
                 <div class="tech-section-header">
-                    <h2><i class="fas fa-plate-wheat"></i> Оформление и подача</h2>
+                    <h2><i class="fas fa-plate-wheat"></i> (recipe_pro.html) Оформление и подача</h2>
                 </div>
                 <div class="tech-section-body">
                     {% if recipe.plating %}
                     <div class="description-text mb-4">
-                        {{ recipe.plating|linebreaks }}
+                        {{ recipe.plating|safe }}
                     </div>
                     {% endif %}
                     {% if recipe.plating_image %}

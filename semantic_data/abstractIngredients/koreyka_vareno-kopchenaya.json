@@ -1,0 +1,94 @@
+{
+  "name": "Корейка варено-копченая",
+  "name_normalized": "koreyka_vareno-kopchenaya",
+  "synonyms": "корейка варено-копченая, корейка в/к, варено-копченая корейка, свиная корейка варено-копченая, корейка копчено-вареная, деликатесная корейка, мясной деликатес, корейка для нарезки, корейка для бутербродов",
+  "short_description": "Деликатесный мясной продукт из спинной части свинины, прошедший посол, варку и копчение. Имеет упругую консистенцию, розово-красный цвет на разрезе, тонкие прослойки шпика и выраженный аромат копчения. Готовый к употреблению продукт для нарезки и закусок.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Корейка варено-копченая — это цельномышечный мясной деликатес из спинной части свиной туши. В отличие от копчено-запеченной корейки, этот продукт проходит сначала посол, затем варку и только потом копчение. Благодаря такой технологии мясо получается более нежным и сочным, с мягким ароматом копчения. Корейка имеет упругую, плотную консистенцию, на разрезе — равномерный розово-красный цвет с тонкими прослойками белого шпика. Это готовый к употреблению продукт, который идеален для нарезки, бутербродов и праздничных закусок.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — упругая, плотная, нежная, сочная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — слабосоленый, с мягким ароматом копчения и ветчинности</li><li class=\"ingredient-list-item\"><strong>Цвет на разрезе</strong> — розово-красный, равномерный; шпик белый</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — прямоугольный кусок без кости</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — в вакуумной упаковке до 30 суток при 0-6°C; после вскрытия — 3 суток</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — готов к употреблению, не требует термической обработки</li></ul><h2 class=\"ingredient-title\">Состав (типичный)</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Основное сырье</strong> — свинина (спинная часть)</li><li class=\"ingredient-list-item\"><strong>Посолочные ингредиенты</strong> — соль, нитрит натрия, сахар</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — перец черный, чеснок, пряности (по рецептуре)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике при 0-6°C в вакуумной упаковке</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — тонкими ломтиками перед подачей</li><li class=\"ingredient-list-item\"><strong>Подача</strong> — в охлажденном виде</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Самостоятельная закуска</strong> — в нарезке на праздничный стол</li><li class=\"ingredient-list-item\"><strong>Бутерброды и сэндвичи</strong> — с хлебом, горчицей, зеленью</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — в составе мясных салатов</li><li class=\"ingredient-list-item\"><strong>Мясная тарелка</strong> — в ассорти с другими деликатесами</li><li class=\"ingredient-list-item\"><strong>Начинка</strong> — для блинов, пирогов</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, бородинский, багет</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — свежие и соленые огурцы, помидоры, перец, лук</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — горчица, хрен, аджика</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, зеленый лук</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — твердые сыры, сливочный сыр</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Корейка копчено-запеченная</strong> — более выраженный аромат копчения</li><li class=\"ingredient-list-item\"><strong>Окорок варено-копченый</strong> — схожая технология, более постный</li><li class=\"ingredient-list-item\"><strong>Грудинка варено-копченая</strong> — более жирная</li><li class=\"ingredient-list-item\"><strong>Карбонад варено-копченый</strong> — из мышечной ткани без жира</li></ul>",
+
+  "category": "Мясо и мясные продукты",
+
+  "data_source": "health-diet.ru",
+
+  "calories": 308.4,
+  "protein": 6.9,
+  "fat": 30.4,
+  "carbohydrates": 2.8,
+
+  "vitamin_a": 2,
+  "vitamin_b1": 0.989,
+  "vitamin_b2": 0.267,
+  "vitamin_b4": 75.6,
+  "vitamin_b5": 0.781,
+  "vitamin_b6": 0.527,
+  "vitamin_b9_folate": 5,
+  "vitamin_b12": 0.63,
+  "vitamin_c": 0.6,
+  "vitamin_d": 0.5,
+  "vitamin_e": 0.18,
+  "vitamin_b3": 4.915,
+
+  "potassium": 389,
+  "calcium": 17,
+  "magnesium": 23,
+  "sodium": 52,
+  "phosphorus": 211,
+  "sulfur": 214.3,
+  "iron": 0.84,
+  "manganese": 0.012,
+
+  "semantic_data": {
+    "properties": [
+      "свинина",
+      "варено-копченая",
+      "деликатес",
+      "бескостная",
+      "упругая консистенция",
+      "розово-красный цвет",
+      "аромат копчения",
+      "ветчинный вкус",
+      "готовый продукт"
+    ],
+    "preparations": [
+      "нарезка тонкими ломтиками",
+      "подача в охлажденном виде",
+      "хранение при 0-6°C"
+    ],
+    "cooking_methods": [
+      {"method": "холодная нарезка (закуска)", "priority": "high"},
+      {"method": "использование в бутербродах", "priority": "high"},
+      {"method": "использование в салатах", "priority": "medium"},
+      {"method": "добавление в мясную тарелку", "priority": "medium"}
+    ],
+    "applications": [
+      "закуски",
+      "бутерброды",
+      "салаты",
+      "праздничные блюда",
+      "мясная тарелка"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["огурцы свежие", "огурцы соленые", "помидоры", "перец", "лук"],
+      "sauces": ["горчица", "хрен", "аджика"],
+      "herbs": ["укроп", "петрушка", "зеленый лук"],
+      "spices": ["черный перец", "чеснок"]
+    },
+    "substitutes": [
+      {"name": "Корейка копчено-запеченная", "similarity": "high"},
+      {"name": "Окорок варено-копченый", "similarity": "high"},
+      {"name": "Грудинка варено-копченая", "similarity": "medium"},
+      {"name": "Карбонад варено-копченый", "similarity": "medium"}
+    ]
+  },
+
+  "tags": [
+    "мясо",
+    "свинина",
+    "варено-копченая",
+    "корейка",
+    "деликатес",
+    "закуска",
+    "праздничное блюдо",
+    "мясная нарезка"
+  ]
+}

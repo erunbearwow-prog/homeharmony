@@ -327,8 +327,43 @@ class AbstractIngredient(models.Model):
     )
 
     # ===== ИСТОЧНИК =====
-    data_source = models.CharField(max_length=500, default='pbprog.ru', blank=True, verbose_name="Источник данных")
-    fdc_id = models.IntegerField(unique=True, null=True, blank=True, db_index=True, verbose_name="FDC ID")
+    data_source = models.CharField(
+        max_length=500,
+        default='pbprog.ru',
+        blank=True,
+        verbose_name="Источник данных"
+    )
+    data_source_reference = models.TextField(
+        blank=True,
+        verbose_name="Библиографическая ссылка на источник",
+        help_text="Полная ссылка на справочник или базу данных"
+    )
+    fdc_id = models.IntegerField(
+        unique=True,
+        null=True,
+        blank=True,
+        db_index=True,
+        verbose_name="FDC ID"
+    )
+    source_table = models.CharField(
+        max_length=50,
+        blank=True,
+        null=True,
+        verbose_name="Номер таблицы в справочнике",
+        help_text="Например: 1.1.1.1, 3.1.15.7"
+    )
+    source_page = models.IntegerField(
+        blank=True,
+        null=True,
+        verbose_name="Номер страницы в справочнике",
+        help_text="Номер страницы в PDF"
+    )
+    portion = models.IntegerField(
+        blank=True,
+        null=True,
+        verbose_name="Размер порции, г",
+        help_text="Размер порции из справочника"
+    )
 
     # ===== ИЗОБРАЖЕНИЕ =====
     image = models.ImageField(
@@ -737,11 +772,22 @@ class Recipe(models.Model):
     components = models.ManyToManyField('self', symmetrical=False, blank=True, related_name='parent_recipes')
     image = models.ImageField(upload_to=recipe_main_image_path, null=True, blank=True)
     video = models.URLField(blank=True)
-    calories = models.IntegerField(default=0)
+    calories = models.IntegerField(default=None)
     protein = models.IntegerField(default=0)
     fat = models.IntegerField(default=0)
     carbs = models.IntegerField(default=0)
     diet_tags = models.ManyToManyField(Diet, blank=True)
+    rating = models.DecimalField(
+        max_digits=3,
+        decimal_places=1,
+        default=0,
+        verbose_name='Рейтинг',
+        help_text='Средняя оценка от 0.0 до 5.0'
+    )
+    rating_count = models.PositiveIntegerField(
+        default=0,
+        verbose_name='Количество оценок'
+    )
     related_recipes = models.ManyToManyField('self', blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

@@ -1,0 +1,112 @@
+{
+  "name": "Перец чили молотый",
+  "name_normalized": "perets_chili_molotyy",
+  "synonyms": "перец чили молотый, чили молотый, молотый острый перец, порошок чили, сушёный молотый чили, кайенский перец, красный молотый перец, острый молотый перец, chili powder, cayenne pepper, ground chili",
+  "short_description": "Пряность, получаемая путем высушивания и измельчения острых стручков перца чили. Обладает интенсивным жгучим вкусом, обусловленным капсаицином, и насыщенным красно-оранжевым цветом. Используется для придания блюдам остроты и аромата.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Перец чили молотый — это пряность, которую получают из высушенных и измельченных стручков острого перца рода Capsicum. В отличие от свежего перца, молотый чили имеет более концентрированный, жгучий вкус и длительный срок хранения. Он широко используется в кулинарии разных народов для придания блюдам остроты: в мексиканской, азиатской, кавказской, индийской и европейской кухнях. Молотый чили является основой для многих смесей специй, соусов и маринадов.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Аромат</strong> — острый, жгучий, с землистыми и фруктовыми нотками</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — жгучий, интенсивный, с разной степенью остроты в зависимости от сорта</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от ярко-красного до красно-оранжевого, темно-красного</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — мелкий однородный порошок</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2 лет в герметичной упаковке</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — жгучесть измеряется по шкале Сковилла</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в герметичной таре в темном сухом месте</li><li class=\"ingredient-list-item\"><strong>Использование</strong> — добавлять в блюда в сухом виде</li><li class=\"ingredient-list-item\"><strong>Дозировка</strong> — от щепотки до 1 ч.л. в зависимости от желаемой остроты</li><li class=\"ingredient-list-item\"><strong>Раскрытие аромата</strong> — добавлять в начале приготовления или обжаривать в масле</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясные блюда</strong> — маринады, тушеное мясо, карри, чили кон карне</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — острые соусы, табаско, шрирача, харисса</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — острые супы, рагу, чили</li><li class=\"ingredient-list-item\"><strong>Овощные блюда</strong> — рагу, запеканки, жареные овощи</li><li class=\"ingredient-list-item\"><strong>Смеси специй</strong> — карри, гарам масала, чили порошок, каджунская приправа</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для мяса, рыбы, птицы</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — говядина, свинина, курица, баранина</li><li class=\"ingredient-list-item\"><strong>Рыба и морепродукты</strong> — в маринадах и соусах</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, лук, чеснок, перец болгарский</li><li class=\"ingredient-list-item\"><strong>Бобовые</strong> — фасоль, нут, чечевица</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — кумин, кориандр, паприка, орегано, чеснок, куркума</li><li class=\"ingredient-list-item\"><strong>Кислые продукты</strong> — лайм, лимон, уксус</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежий перец чили</strong> — более мягкий вкус, требуется больше по объему</li><li class=\"ingredient-list-item\"><strong>Паприка (острая)</strong> — менее жгучая</li><li class=\"ingredient-list-item\"><strong>Каенский перец</strong> — схожая острота</li><li class=\"ingredient-list-item\"><strong>Хлопья красного перца</strong> — для пиццы и пасты</li></ul>",
+
+  "category": "Специи и травы",
+
+  "data_source": "usda",
+
+  "calories": 282,
+  "protein": 13.0,
+  "fat": 14.0,
+  "carbohydrates": 50.0,
+
+  "fiber": 27.2,
+  "water": 8.1,
+  "ash": 6.0,
+
+  "vitamin_a": 1483,
+  "beta_carotene": 15.0,
+  "vitamin_b1": 0.25,
+  "vitamin_b2": 0.94,
+  "vitamin_b3": 11.6,
+  "vitamin_b4": 66.5,
+  "vitamin_b5": 2.094,
+  "vitamin_b6": 2.45,
+  "vitamin_b9_folate": 28,
+  "vitamin_c": 0.7,
+  "vitamin_e": 41.79,
+  "vitamin_k": 105.7,
+
+  "potassium": 1950,
+  "calcium": 330,
+  "magnesium": 149,
+  "sodium": 1640,
+  "phosphorus": 300,
+  "iron": 17.3,
+  "manganese": 1.7,
+  "copper": 1.0,
+  "zinc": 4.3,
+  "selenium": 20.4,
+
+  "saturated_fat": 3.26,
+  "polyunsaturated_fat": 8.37,
+  "omega_3": 0.66,
+  "omega_6": 7.71,
+
+  "semantic_data": {
+    "properties": [
+      "острый",
+      "жгучий",
+      "пряный",
+      "сушёный",
+      "молотый",
+      "мексиканская кухня",
+      "азиатская кухня",
+      "кавказская кухня",
+      "индийская кухня",
+      "для соусов",
+      "для маринадов"
+    ],
+    "preparations": [
+      "хранение в герметичной упаковке",
+      "использование в сухом виде",
+      "добавление в начале приготовления или обжаривание в масле"
+    ],
+    "cooking_methods": [
+      {"method": "использование в маринадах", "priority": "high"},
+      {"method": "добавление в соусы", "priority": "high"},
+      {"method": "использование в мясных блюдах", "priority": "high"},
+      {"method": "добавление в супы и рагу", "priority": "high"},
+      {"method": "использование в смесях специй", "priority": "high"}
+    ],
+    "applications": [
+      "мясные блюда",
+      "соусы",
+      "супы",
+      "овощные блюда",
+      "смеси специй",
+      "маринады"
+    ],
+    "pairings": {
+      "protein": ["говядина", "свинина", "курица", "баранина", "рыба", "морепродукты"],
+      "vegetables": ["помидоры", "лук", "чеснок", "перец болгарский"],
+      "fruits": ["лайм", "лимон"],
+      "sauces": ["соевый соус", "уксус", "томатный соус"],
+      "herbs": ["кинза", "петрушка", "орегано"],
+      "spices": ["кумин", "кориандр", "паприка", "чеснок", "куркума"]
+    },
+    "substitutes": [
+      {"name": "Свежий перец чили", "similarity": "high"},
+      {"name": "Паприка (острая)", "similarity": "medium"},
+      {"name": "Каенский перец", "similarity": "high"},
+      {"name": "Хлопья красного перца", "similarity": "medium"}
+    ]
+  },
+
+  "tags": [
+    "специи",
+    "перец",
+    "чили",
+    "чили молотый",
+    "острый перец",
+    "жгучий перец",
+    "мексиканская кухня",
+    "азиатская кухня",
+    "соусы",
+    "маринады"
+  ]
+}

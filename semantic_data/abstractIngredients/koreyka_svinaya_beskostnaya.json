@@ -1,0 +1,98 @@
+{
+  "name": "Корейка свиная бескостная",
+  "name_normalized": "koreyka_svinaya_beskostnaya",
+  "synonyms": "корейка свиная бескостная, карбонад, корейка без кости, свиная корейка бескостная, мясо спинной части свинины, свинина для запекания, свинина для жарки, свинина для гриля, корейка для отбивных, корейка для шашлыка",
+  "short_description": "Бескостная часть свиной спинной туши с плотным, нежным мясом и тонкими прослойками жира. Имеет выраженный свиной вкус, умеренную жирность и универсальна в кулинарии: подходит для запекания, жарки, гриля и отбивных.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Корейка свиная бескостная (карбонад) — это спинная часть свиной туши, из которой удалены позвонки и ребра. Мясо имеет плотную, нежную текстуру с тонкими прослойками жира, которые придают сочность при приготовлении. В отличие от корейки на кости, бескостный вариант удобен для нарезки порционных кусков, отбивных и рулетов. Это универсальный продукт, который подходит для запекания, жарки, гриля, тушения и копчения.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — плотное, нежное, с тонкими жировыми прослойками</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — выраженный свиной, насыщенный</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от бледно-розового до красноватого</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — умеренная (зависит от части)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — бескостная, удобна для нарезки и порционирования</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — порционные куски, отбивные, кубики для шашлыка</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — рекомендуется для сочности (с травами, чесноком, вином, лимоном)</li><li class=\"ingredient-list-item\"><strong>Отбивание</strong> — для отбивных</li><li class=\"ingredient-list-item\"><strong>Удаление лишнего жира</strong> — по желанию</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Запекание</strong> — целиком, порционными кусками, с овощами</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — отбивные, медальоны, на сковороде и гриле</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в соусах, с овощами</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — горячее и холодное</li><li class=\"ingredient-list-item\"><strong>Шашлык</strong> — маринованные куски на углях</li><li class=\"ingredient-list-item\"><strong>Рулеты</strong> — с начинкой из грибов, сыра, зелени</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, лук, морковь, помидоры, перец, баклажаны</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, сливочный, горчичный, барбекю</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — розмарин, тимьян, петрушка, укроп</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, черный перец, паприка, кориандр, кумин</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Шея свиная</strong> — более жирная, для шашлыка</li><li class=\"ingredient-list-item\"><strong>Лопатка свиная</strong> — для тушения</li><li class=\"ingredient-list-item\"><strong>Куриная грудка</strong> — менее жирная</li><li class=\"ingredient-list-item\"><strong>Индейка (бедро)</strong> — диетическая альтернатива</li></ul>",
+
+  "category": "Мясо и мясные продукты",
+
+  "data_source": "health-diet.ru",
+
+  "calories": 180,
+  "protein": 16,
+  "fat": 13,
+  "carbohydrates": 0,
+
+  "vitamin_b1": 0.62,
+  "vitamin_b2": 0.27,
+  "vitamin_b3": 7.68,
+  "vitamin_b4": 94.8,
+  "vitamin_b5": 1.5,
+  "vitamin_b6": 0.49,
+  "vitamin_b12": 0.85,
+  "vitamin_d": 0.5,
+  "vitamin_e": 0.23,
+
+  "potassium": 457,
+  "calcium": 11,
+  "magnesium": 24,
+  "sodium": 68,
+  "phosphorus": 275,
+  "sulfur": 275.8,
+  "iron": 0.74,
+  "manganese": 0.009,
+  "copper": 53,
+  "selenium": 37.1,
+
+  "semantic_data": {
+    "properties": [
+      "свинина",
+      "бескостная",
+      "карбонад",
+      "нежная",
+      "плотная",
+      "с тонкими жировыми прослойками",
+      "для запекания",
+      "для жарки",
+      "для гриля",
+      "для шашлыка"
+    ],
+    "preparations": [
+      "нарезка порционными кусками",
+      "маринование с травами и специями",
+      "отбивание для отбивных",
+      "удаление лишнего жира"
+    ],
+    "cooking_methods": [
+      {"method": "запекание", "priority": "high"},
+      {"method": "жарка на сковороде", "priority": "high"},
+      {"method": "гриль", "priority": "high"},
+      {"method": "тушение", "priority": "medium"},
+      {"method": "копчение", "priority": "medium"},
+      {"method": "шашлык", "priority": "high"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "закуски",
+      "шашлык",
+      "рулеты",
+      "отбивные"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "лук", "морковь", "помидоры", "перец", "баклажаны"],
+      "sauces": ["томатный", "сметанный", "сливочный", "горчичный", "барбекю"],
+      "herbs": ["розмарин", "тимьян", "петрушка", "укроп"],
+      "spices": ["чеснок", "черный перец", "паприка", "кориандр", "кумин"]
+    },
+    "substitutes": [
+      {"name": "Шея свиная", "similarity": "medium"},
+      {"name": "Лопатка свиная", "similarity": "medium"},
+      {"name": "Куриная грудка", "similarity": "low"},
+      {"name": "Индейка (бедро)", "similarity": "low"}
+    ]
+  },
+
+  "tags": [
+    "мясо",
+    "свинина",
+    "корейка",
+    "карбонад",
+    "бескостная",
+    "для запекания",
+    "для жарки",
+    "для гриля",
+    "для шашлыка"
+  ]
+}

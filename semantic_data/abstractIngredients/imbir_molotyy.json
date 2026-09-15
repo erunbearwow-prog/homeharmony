@@ -1,0 +1,106 @@
+{
+  "name": "Имбирь молотый",
+  "name_normalized": "imbir_molotyy",
+  "synonyms": "имбирь молотый, порошок имбиря, сушеный имбирь, молотый корень имбиря, имбирь сушеный молотый, пряность имбирь, Zingiber officinale, ground ginger, ginger powder",
+  "short_description": "Пряность, получаемая путем высушивания и измельчения корневища имбиря. Обладает более острым, теплым и концентрированным ароматом по сравнению со свежим корнем. Широко используется в выпечке, десертах, мясных блюдах, соусах и напитках.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Имбирь молотый — это пряность, которую получают из высушенного и измельченного корневища растения Zingiber officinale. В отличие от свежего корня, молотый имбирь имеет более интенсивный, теплый и острый аромат, а также длительный срок хранения. Он широко используется в кулинарии разных народов: в выпечке, десертах, мясных блюдах, соусах, маринадах и горячих напитках. Молотый имбирь является классическим компонентом смесей специй, таких как гарам масала, карри и пять специй.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Аромат</strong> — теплый, пряный, острый, с цитрусовыми и древесными нотками</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — жгучий, пряный, более концентрированный, чем у свежего корня</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от светло-бежевого до желтовато-коричневого</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — мелкий однородный порошок</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в герметичной упаковке</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — аромат раскрывается при нагревании</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в герметичной таре в темном сухом месте</li><li class=\"ingredient-list-item\"><strong>Использование</strong> — добавлять в блюда в сухом виде</li><li class=\"ingredient-list-item\"><strong>Дозировка</strong> — 1/4 ч.л. молотого имбиря ≈ 1 ст.л. свежего тертого</li><li class=\"ingredient-list-item\"><strong>Раскрытие аромата</strong> — добавлять в начале приготовления горячих блюд</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — пряники, печенье, кексы, пироги, имбирные пряники</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — пудинги, мороженое, фруктовые десерты</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — чай, кофе, смузи, глинтвейн</li><li class=\"ingredient-list-item\"><strong>Мясные блюда</strong> — маринады, тушеное мясо, карри</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — для мяса, рыбы, азиатских блюд</li><li class=\"ingredient-list-item\"><strong>Смеси специй</strong> — гарам масала, карри, пять специй</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, свинина, говядина, баранина</li><li class=\"ingredient-list-item\"><strong>Рыба</strong> — лосось, тунец</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — морковь, тыква, картофель, капуста</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — яблоки, груши, бананы, цитрусовые</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, гвоздика, кардамон, куркума, кориандр, кумин</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — чай, кофе, какао</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежий имбирь</strong> — более мягкий вкус, требуется больше по объему</li><li class=\"ingredient-list-item\"><strong>Галангал</strong> — близкий родственник, более цитрусовый</li><li class=\"ingredient-list-item\"><strong>Корица + мускатный орех</strong> — для выпечки</li><li class=\"ingredient-list-item\"><strong>Кардамон</strong> — для десертов и напитков</li></ul>",
+
+  "category": "Специи и травы",
+
+  "data_source": "usda",
+
+  "calories": 335,
+  "protein": 8.98,
+  "fat": 4.24,
+  "carbohydrates": 71.62,
+
+  "fiber": 14.1,
+  "sugar": 3.39,
+  "sodium": 27,
+  "potassium": 1320,
+  "calcium": 114,
+  "magnesium": 214,
+  "phosphorus": 168,
+  "iron": 19.8,
+  "manganese": 33.3,
+  "copper": 0.48,
+  "zinc": 3.64,
+  "selenium": 55.8,
+
+  "vitamin_b1": 0.046,
+  "vitamin_b2": 0.17,
+  "vitamin_b3": 9.62,
+  "vitamin_b5": 0.477,
+  "vitamin_b6": 0.626,
+  "vitamin_b9_folate": 13,
+  "vitamin_c": 0.7,
+  "vitamin_e": 0,
+  "vitamin_k": 0.8,
+
+  "saturated_fat": 2.599,
+  "polyunsaturated_fat": 0.929,
+  "monounsaturated_fat": 0.479,
+
+  "semantic_data": {
+    "properties": [
+      "пряность",
+      "острый",
+      "теплый",
+      "ароматный",
+      "концентрированный",
+      "для выпечки",
+      "для десертов",
+      "для мясных блюд",
+      "для напитков",
+      "компонент смесей"
+    ],
+    "preparations": [
+      "хранение в герметичной упаковке",
+      "использование в сухом виде",
+      "добавление в начале приготовления горячих блюд"
+    ],
+    "cooking_methods": [
+      {"method": "использование в выпечке", "priority": "high"},
+      {"method": "добавление в десерты", "priority": "high"},
+      {"method": "использование в мясных блюдах", "priority": "high"},
+      {"method": "добавление в напитки", "priority": "high"},
+      {"method": "использование в смесях специй", "priority": "high"},
+      {"method": "добавление в соусы", "priority": "medium"}
+    ],
+    "applications": [
+      "выпечка",
+      "десерты",
+      "напитки",
+      "мясные блюда",
+      "соусы",
+      "смеси специй"
+    ],
+    "pairings": {
+      "protein": ["курица", "свинина", "говядина", "баранина", "лосось", "тунец"],
+      "vegetables": ["морковь", "тыква", "картофель", "капуста"],
+      "fruits": ["яблоки", "груши", "бананы", "цитрусовые"],
+      "sauces": [],
+      "herbs": [],
+      "spices": ["корица", "гвоздика", "кардамон", "куркума", "кориандр", "кумин"]
+    },
+    "substitutes": [
+      {"name": "Свежий имбирь", "similarity": "high"},
+      {"name": "Галангал", "similarity": "medium"},
+      {"name": "Корица + мускатный орех", "similarity": "low"},
+      {"name": "Кардамон", "similarity": "low"}
+    ]
+  },
+
+  "tags": [
+    "специи",
+    "имбирь",
+    "имбирь молотый",
+    "пряность",
+    "выпечка",
+    "десерты",
+    "мясные блюда",
+    "напитки",
+    "гарам масала",
+    "карри"
+  ]
+}

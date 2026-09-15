@@ -83,49 +83,72 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
         {% for recipe in recipes %}
         <a href="{% url 'kitchen:recipe_detail' recipe.id %}" class="recipe-card bg-white rounded-xl border border-gray-100 overflow-hidden cursor-pointer hover:shadow-lg transition block">
-            <div class="h-32 overflow-hidden relative">
-                {% if recipe.image %}
-                <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}" class="w-full h-full object-cover">
-                {% else %}
-                <div class="w-full h-full bg-gradient-to-br
-                    {% if forloop.counter0|divisibleby:5 %}from-orange-100 to-orange-200
-                    {% elif forloop.counter0|divisibleby:4 %}from-green-100 to-green-200
-                    {% elif forloop.counter0|divisibleby:3 %}from-yellow-100 to-yellow-200
-                    {% elif forloop.counter0|divisibleby:2 %}from-blue-100 to-blue-200
-                    {% else %}from-purple-100 to-purple-200{% endif %}">
-                </div>
-                {% endif %}
+    <div class="h-32 overflow-hidden relative">
+        {% if recipe.image %}
+        <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}" class="w-full h-full object-cover">
+        {% else %}
+        <div class="w-full h-full bg-gradient-to-br
+            {% if forloop.counter0|divisibleby:5 %}from-orange-100 to-orange-200
+            {% elif forloop.counter0|divisibleby:4 %}from-green-100 to-green-200
+            {% elif forloop.counter0|divisibleby:3 %}from-yellow-100 to-yellow-200
+            {% elif forloop.counter0|divisibleby:2 %}from-blue-100 to-blue-200
+            {% else %}from-purple-100 to-purple-200{% endif %}">
+        </div>
+        {% endif %}
 
-                <!-- Бейдж "Профессиональный" -->
-                {% if recipe.is_professional %}
-                <div class="absolute top-2 right-2 bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded-full shadow-md flex items-center gap-1">
-                    <i class="fas fa-clipboard-list text-xs"></i>
-                    ТТК
-                </div>
-                {% endif %}
+        <!-- Бейдж "Профессиональный" -->
+        {% if recipe.is_professional %}
+        <div class="absolute top-2 right-2 bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded-full shadow-md flex items-center gap-1">
+            <i class="fas fa-clipboard-list text-xs"></i>
+            ТТК
+        </div>
+        {% endif %}
 
+        <!-- Бейдж калорий: белый, внизу слева от угла -->
+        {% if recipe.calories %}
+        <div class="absolute bottom-2 right-2 bg-amber/95 backdrop-blur-sm text-gray-700 text-xs font-semibold px-2 py-0.5 rounded-full shadow-md border border-gray-100">
+            {{ recipe.calories }} К
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="p-4 flex flex-col">
+        <!-- Название: до 2 строк -->
+        <h3 class="font-semibold text-gray-800 text-[15px] leading-snug line-clamp-2 min-h-[2.5rem]">
+            {{ recipe.title }}
+        </h3>
+
+        <!-- Автор -->
+        {% if recipe.author %}
+        <div class="flex items-center gap-1 text-xs text-gray-500 mt-1">
+            <i class="fas fa-user text-[10px]"></i>
+            <span class="truncate">{{ recipe.author }}</span>
+        </div>
+        {% endif %}
+
+        <!-- Кухня -->
+        {% if recipe.cuisine %}
+        <div class="flex items-center gap-2 text-xs text-gray-500 mt-1">
+            <span>{{ recipe.cuisine.name }} кухня</span>
+        </div>
+        {% endif %}
+
+        <!-- Время + рейтинг -->
+        <div class="flex justify-between items-center mt-3 text-sm">
+            <span class="text-gray-500 whitespace-nowrap">⏱ {{ recipe.total_time }} мин</span>
+            <span class="text-amber-600 whitespace-nowrap">{{ recipe.rating }}★</span>
+        </div>
+
+        <!-- Сложность (буллеты) + "Смотреть" -->
+        <div class="flex justify-between items-center mt-1 text-sm">
+            <div class="flex items-center gap-1" title="{{ recipe.get_difficulty_display }}">
+                <span class="w-2 h-2 rounded-full {% if recipe.difficulty == 'easy' or recipe.difficulty == 'medium' or recipe.difficulty == 'hard' %}bg-green-500{% else %}bg-gray-200{% endif %}"></span>
+                <span class="w-2 h-2 rounded-full {% if recipe.difficulty == 'medium' or recipe.difficulty == 'hard' %}bg-yellow-500{% else %}bg-gray-200{% endif %}"></span>
+                <span class="w-2 h-2 rounded-full {% if recipe.difficulty == 'hard' %}bg-red-500{% else %}bg-gray-200{% endif %}"></span>
             </div>
-            <div class="p-4">
-                <div class="flex justify-between items-start">
-                    <h3 class="font-semibold text-gray-800 line-clamp-2">{{ recipe.title }}</h3>
-                    <span class="bg-{% if recipe.difficulty == 'easy' %}green{% elif recipe.difficulty == 'medium' %}yellow{% else %}red{% endif %}-100
-                               text-{% if recipe.difficulty == 'easy' %}green{% elif recipe.difficulty == 'medium' %}yellow{% else %}red{% endif %}-800
-                               text-xs px-2 py-1 rounded-full whitespace-nowrap ml-2">
-                        {{ recipe.get_difficulty_display }}
-                    </span>
-                </div>
-                {% if recipe.cuisine %}
-                <div class="flex items-center gap-2 text-xs text-gray-500 mt-1">
-                    <span>{{ recipe.cuisine.name }} кухня</span>
-                </div>
-                {% endif %}
-                <div class="flex justify-between items-center mt-3 text-sm">
-                    <span class="text-gray-500">⏱ {{ recipe.total_time }} мин</span>
-                    <span class="text-amber-600">⭐ {{ recipe.calories|default:"4.5" }}★</span>
-                </div>
-                <span class="inline-block mt-3 text-amber-700 text-sm font-medium">Смотреть →</span>
-            </div>
-        </a>
+        </div>
+    </div>
+</a>
         {% endfor %}
     </div>
     {% else %}

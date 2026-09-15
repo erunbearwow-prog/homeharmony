@@ -1,0 +1,94 @@
+{
+  "name": "5 специй",
+  "name_normalized": "5_speciy",
+  "synonyms": "5 специй, пять специй, усянфэнь, усяньмянь, китайская смесь пяти специй, китайская приправа пять специй, wuxiangfen, five-spice powder, five spice, смесь пяти специй, китайская смесь специй",
+  "short_description": "Традиционная китайская пряная смесь, состоящая из пяти ключевых специй: бадьяна, гвоздики, корицы (кассии), семян фенхеля и сычуаньского перца. Обладает сложным, сбалансированным ароматом с нотками аниса, дерева и перца. Универсальная приправа для мяса, птицы, морепродуктов и соусов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Пять специй (усянфэнь или усяньмянь) — это традиционная китайская приправа, широко применяющаяся в большинстве региональных разновидностей китайской кухни. Согласно философии у-син, пять компонентов смеси олицетворяют пять элементов мироздания (дерево, огонь, земля, металл, вода) и пять классических вкусов: соленый, горький, пряный, сладкий и кислый. Смесь имеет яркий, сложный аромат с преобладанием анисовых, древесных и перечных нот.</p><h2 class=\"ingredient-title\">Классический состав</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Бадьян (звездчатый анис)</strong> — придает сладковатый, лакричный аромат</li><li class=\"ingredient-list-item\"><strong>Гвоздика</strong> — добавляет теплоту и остроту</li><li class=\"ingredient-list-item\"><strong>Корица (кассия)</strong> — дает древесные, сладкие ноты</li><li class=\"ingredient-list-item\"><strong>Семена фенхеля</strong> — привносят свежий, анисовый оттенок</li><li class=\"ingredient-list-item\"><strong>Сычуаньский перец</strong> — обеспечивает легкую цитрусовую остроту и покалывание</li></ul><p class=\"ingredient-text\">Некоторые вариации приправы содержат семена аниса, имбирь, мускатный орех, солодку, куркуму.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Аромат</strong> — сложный, сладковато-пряный, с нотами аниса, дерева и перца</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сбалансированный, с легкой остротой и сладостью</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от светло-коричневого до темно-коричневого</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — мелкий порошок</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2 лет в герметичной упаковке</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — свинина, утка, гусь, говядина, баранина (особенно жирные сорта)</li><li class=\"ingredient-list-item\"><strong>Птица</strong> — курица, утка, индейка</li><li class=\"ingredient-list-item\"><strong>Морепродукты</strong> — в составе соусов и маринадов</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — для лапши, маринады, соусы для макания</li><li class=\"ingredient-list-item\"><strong>Выпечка и десерты</strong> — для придания пикантности сладостям</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в азиатских рецептах «красного тушения»</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соевый соус</strong> — классическая пара для маринадов</li><li class=\"ingredient-list-item\"><strong>Чеснок</strong> — усиливает пряный аромат</li><li class=\"ingredient-list-item\"><strong>Имбирь</strong> — в азиатских блюдах</li><li class=\"ingredient-list-item\"><strong>Мед</strong> — для глазури и запекания утки</li><li class=\"ingredient-list-item\"><strong>Рисовый уксус</strong> — для соусов</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гарам масала</strong> — индийская смесь, схожая по назначению</li><li class=\"ingredient-list-item\"><strong>Бадьян + корица + гвоздика</strong> — основа смеси</li><li class=\"ingredient-list-item\"><strong>Анис + черный перец + корица</strong> — для приближенного вкуса</li></ul>",
+
+  "category": "Специи и травы",
+
+  "data_source": "health-diet.ru",
+  "data_source_reference": "Данные о пищевой ценности и нутриентном составе собраны из открытых источников и баз данных (Health-Diet, USDA, Food.ru).",
+
+  "calories": 290,
+  "protein": 10.9,
+  "fat": 11.6,
+  "carbohydrates": 62.4,
+
+  "fiber": 5.3,
+  "sodium": 27,
+  "potassium": 1138,
+  "calcium": 181,
+  "magnesium": 88,
+  "phosphorus": 66,
+  "iron": 34.4,
+  "copper": 1.25,
+  "zinc": 2.79,
+  "selenium": 5.7,
+
+  "vitamin_b1": 9.59,
+  "vitamin_b2": 0.03,
+  "vitamin_b3": 1.5,
+  "vitamin_e": 9.59,
+
+  "semantic_data": {
+    "properties": [
+      "смесь специй",
+      "китайская кухня",
+      "азиатская кухня",
+      "пряная",
+      "ароматная",
+      "сложный аромат",
+      "анисовые ноты",
+      "для мяса",
+      "для птицы",
+      "универсальная"
+    ],
+    "preparations": [
+      "хранение в герметичной упаковке",
+      "использование в сухом виде",
+      "добавление в маринады и соусы",
+      "использование для натирания мяса"
+    ],
+    "cooking_methods": [
+      {"method": "использование в маринадах", "priority": "high"},
+      {"method": "добавление в соусы", "priority": "high"},
+      {"method": "натирание мяса и птицы", "priority": "high"},
+      {"method": "использование в тушении", "priority": "high"},
+      {"method": "добавление в выпечку и десерты", "priority": "medium"}
+    ],
+    "applications": [
+      "мясные блюда",
+      "птица",
+      "морепродукты",
+      "соусы",
+      "маринады",
+      "десерты"
+    ],
+    "pairings": {
+      "protein": ["свинина", "утка", "гусь", "говядина", "баранина", "курица", "морепродукты"],
+      "vegetables": [],
+      "sauces": ["соевый соус", "рисовый уксус", "мед"],
+      "herbs": [],
+      "spices": ["чеснок", "имбирь"]
+    },
+    "substitutes": [
+      {"name": "Гарам масала", "similarity": "medium"},
+      {"name": "Бадьян + корица + гвоздика", "similarity": "high"},
+      {"name": "Анис + черный перец + корица", "similarity": "medium"}
+    ]
+  },
+
+  "tags": [
+    "специи",
+    "смесь специй",
+    "5 специй",
+    "пять специй",
+    "усянфэнь",
+    "китайская кухня",
+    "азиатская кухня",
+    "приправа",
+    "для мяса",
+    "для птицы"
+  ]
+}

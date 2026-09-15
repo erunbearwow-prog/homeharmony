@@ -1,0 +1,104 @@
+{
+  "name": "Корица молотая",
+  "name_normalized": "koritsa_molotaya",
+  "synonyms": "корица молотая, корица, порошок корицы, молотая корица, цейлонская корица, кассия, китайская корица, индийская корица, вьетнамская корица, мадагаскарская корица, коричник, Cinnamomum verum, Cinnamomum cassia, cinnamon powder",
+  "short_description": "Ароматная пряность, получаемая из внутреннего слоя коры вечнозеленого дерева коричника. В розничной торговле встречаются два основных типа: цейлонская корица (Cinnamomum verum) с деликатным, сладковатым ароматом и кассия (Cinnamomum cassia) с более резким, жгучим вкусом. Широко используется в выпечке, десертах, напитках и мясных блюдах.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Корица молотая — это порошок, получаемый из высушенной и измельченной коры коричных деревьев. В розничной торговле под названием «корица» чаще всего продаются два вида, которые отличаются по вкусу, аромату и происхождению: цейлонская корица (Cinnamomum verum) и кассия (Cinnamomum cassia).</p><p class=\"ingredient-text\">Цейлонская корица родом из Шри-Ланки. Она имеет светлый, почти желтоватый цвет порошка, тонкий и мягкий вкус с легкими цитрусовыми нотками, не горчит. Кассия (китайская, вьетнамская, индийская, мадагаскарская корица) — более доступный по цене аналог. Порошок кассии более яркий, красно-коричневый, вкус резкий, жгучий, с выраженной остротой. Именно кассия чаще всего встречается на полках магазинов под названием «корица молотая».</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Цвет</strong> — цейлонская: светло-коричневый, желтоватый; кассия: красно-коричневый, темный</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — цейлонская: деликатный, сладковатый, с цитрусовыми нотками; кассия: насыщенный, жгучий, теплый</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — цейлонская: мягкий, сладковато-пряный; кассия: резкий, жгучий, более острый</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — мелкий однородный порошок</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 1–2 года в герметичной упаковке</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — кассия содержит значительно больше кумарина, чем цейлонская корица</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — булочки с корицей, пироги, печенье, кексы, штрудели</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — яблочные десерты, пудинги, мороженое, шоколад</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — кофе, чай, какао, глинтвейн, смузи</li><li class=\"ingredient-list-item\"><strong>Мясные блюда</strong> — тушеное мясо, карри, плов (щепотка для теплого акцента)</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — запеченные яблоки, груши, фруктовые салаты</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к мясу, для маринадов</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — яблоки, груши, бананы, апельсины</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, свинина, баранина</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — тесто, творог, орехи</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — гвоздика, мускатный орех, имбирь, кардамон, бадьян</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — кофе, чай, какао, красное вино</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Кассия (если нужна цейлонская)</strong> — более резкий вкус, требует меньшего количества</li><li class=\"ingredient-list-item\"><strong>Цейлонская корица (если нужна кассия)</strong> — более деликатный вкус, потребуется больше</li><li class=\"ingredient-list-item\"><strong>Мускатный орех + гвоздика</strong> — для выпечки</li><li class=\"ingredient-list-item\"><strong>Бадьян</strong> — для мясных блюд</li></ul>",
+
+  "category": "Специи и травы",
+
+  "data_source": "usda",
+
+  "calories": 247,
+  "protein": 4.0,
+  "fat": 1.2,
+  "carbohydrates": 80.6,
+
+  "fiber": 53.1,
+  "water": 10.6,
+  "ash": 3.6,
+
+  "vitamin_a": 15,
+  "beta_carotene": 0.112,
+  "vitamin_b1": 0.022,
+  "vitamin_b2": 0.041,
+  "vitamin_b4": 11,
+  "vitamin_b5": 0.358,
+  "vitamin_b6": 0.158,
+  "vitamin_b9_folate": 6,
+  "vitamin_c": 3.8,
+  "vitamin_e": 2.32,
+  "vitamin_k": 31.2,
+  "vitamin_b3": 1.332,
+
+  "potassium": 431,
+  "calcium": 1002,
+  "magnesium": 60,
+  "phosphorus": 64,
+  "sodium": 10,
+  "iron": 8.32,
+  "manganese": 17.466,
+  "copper": 0.339,
+  "zinc": 1.83,
+  "selenium": 3.1,
+
+  "semantic_data": {
+    "properties": [
+      "пряность",
+      "ароматная",
+      "сладковатая",
+      "теплая",
+      "для выпечки",
+      "для десертов",
+      "для напитков",
+      "цейлонская",
+      "кассия",
+      "универсальная"
+    ],
+    "preparations": [
+      "хранение в герметичной упаковке",
+      "использование в сухом виде",
+      "добавление в конце приготовления"
+    ],
+    "cooking_methods": [
+      {"method": "использование в выпечке", "priority": "high"},
+      {"method": "добавление в десерты", "priority": "high"},
+      {"method": "добавление в напитки", "priority": "high"},
+      {"method": "использование в мясных блюдах", "priority": "medium"},
+      {"method": "добавление во фруктовые блюда", "priority": "medium"}
+    ],
+    "applications": [
+      "выпечка",
+      "десерты",
+      "напитки",
+      "мясные блюда",
+      "соусы"
+    ],
+    "pairings": {
+      "protein": ["курица", "свинина", "баранина"],
+      "vegetables": [],
+      "fruits": ["яблоки", "груши", "бананы", "апельсины"],
+      "sauces": [],
+      "herbs": [],
+      "spices": ["гвоздика", "мускатный орех", "имбирь", "кардамон", "бадьян"]
+    },
+    "substitutes": [
+      {"name": "Кассия", "similarity": "high"},
+      {"name": "Цейлонская корица", "similarity": "high"},
+      {"name": "Мускатный орех + гвоздика", "similarity": "low"},
+      {"name": "Бадьян", "similarity": "low"}
+    ]
+  },
+
+  "tags": [
+    "специи",
+    "корица",
+    "корица молотая",
+    "цейлонская корица",
+    "кассия",
+    "выпечка",
+    "десерты",
+    "напитки",
+    "пряность"
+  ]
+}

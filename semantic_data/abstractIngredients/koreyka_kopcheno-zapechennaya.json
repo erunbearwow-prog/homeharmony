@@ -4,7 +4,27 @@
   "synonyms": "корейка копчено-запеченная, корейка по ГОСТ, корейка в шкуре, свиная корейка копчено-запеченная, корейка с ребрами, копчено-запеченный мясной продукт, деликатесная корейка, корейка высшего сорта",
   "short_description": "Традиционный копчено-запеченный деликатес из спинной части свинины с ребрами, изготовленный по ГОСТ 18256-2017. Имеет упругую консистенцию, бледно-розовое мясо с белым или розоватым шпиком и характерный аромат копчения. Готовый продукт, предназначенный для непосредственного употребления.",
   "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Корейка копчено-запеченная — это цельномышечный мясной продукт из спинной части свиных полутуш I и II категорий, который изготавливают в соответствии с требованиями ГОСТ 18256-2017. Для производства используют спинной отруб с ребрами шириной 14–15 см, выделенный по всей длине отруба. После удаления позвонков края тщательно заправляют, сохраняя ребра. Толщина подкожного слоя шпика не должна превышать 4 см, а толщина в тонкой части — быть не менее 3 см.</p><p class=\"ingredient-text\">Технологический процесс включает посол (в течение 15–20 суток при 2–4°C), копчение (2–3 часа горячим дымом при 75–85°C или 10–12 часов холодным дымом при 30–36°C) и запекание (при 85–95°C в течение 6–7 часов). Выход готового продукта составляет 86% от массы несоленого сырья. Готовый продукт охлаждают до температуры в толще 0–8°C.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Внешний вид</strong> — в шкуре, поверхность чистая, сухая, без пятен, бахромок и остатков щетины; форма прямоугольная, с ребрами; перевязана шпагатом с петлей для подвешивания</li><li class=\"ingredient-list-item\"><strong>Консистенция</strong> — упругая, нежная</li><li class=\"ingredient-list-item\"><strong>Цвет на разрезе</strong> — мышечная ткань бледно-розовая, равномерно окрашенная, без серых пятен; шпик белый или с розоватым оттенком</li><li class=\"ingredient-list-item\"><strong>Вкус и аромат</strong> — слабосоленый, без посторонних привкусов, с выраженным ароматом копчения и ветчинности</li><li class=\"ingredient-list-item\"><strong>Толщина шпика</strong> — подкожный слой шпика при прямом срезе не более 4 см</li><li class=\"ingredient-list-item\"><strong>Масса</strong> — единицы готового продукта не менее 1,5 кг</li></ul><h2 class=\"ingredient-title\">Состав (по ГОСТ 18256-2017)</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Основное сырье</strong> — спинная часть свиных полутуш I и II категорий в шкуре</li><li class=\"ingredient-list-item\"><strong>Посолочные ингредиенты</strong> — соль, нитрит натрия, сахар (глюкоза)</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — перец черный, перец красный, чеснок (по рецептуре)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Готов к употреблению</strong> — продукт прошел полную термическую обработку, не требует дополнительного приготовления</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — при температуре от 0 до 8°C и относительной влажности воздуха 75±5% не более 5 суток; в вакуумной упаковке до 6 суток</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — перед подачей нарезать тонкими ломтиками</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Самостоятельная закуска</strong> — в нарезке, на праздничный стол</li><li class=\"ingredient-list-item\"><strong>Бутерброды и сэндвичи</strong> — с хлебом, горчицей, зеленью</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — в составе мясных салатов</li><li class=\"ingredient-list-item\"><strong>Гарнир</strong> — к картофелю, овощам</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — ржаной, зерновой, багет</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — свежие и соленые огурцы, помидоры, перец, лук</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — горчица, хрен, аджика</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, зеленый лук</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Грудинка копчено-запеченная</strong> — более жирная, из брюшной части</li><li class=\"ingredient-list-item\"><strong>Окорок копчено-запеченный</strong> — из тазобедренной части</li><li class=\"ingredient-list-item\"><strong>Бекон Столичный</strong> — по ГОСТ 18256-2017</li><li class=\"ingredient-list-item\"><strong>Карбонад копчено-запеченный</strong> — из мышечной ткани без жира</li></ul>",
+
   "category": "Мясо и мясные продукты",
+
+  "data_source": "skurikhin_tutelyan_2002",
+
+  "calories": 475,
+  "protein": 10.2,
+  "fat": 48.2,
+  "carbohydrates": 0,
+
+  "sodium": 1134,
+  "potassium": 255,
+  "calcium": 23,
+  "magnesium": 31,
+  "phosphorus": 176,
+  "iron": 2.1,
+
+  "vitamin_b1": 0.32,
+  "vitamin_b2": 0.06,
+  "vitamin_b3": 2.2,
+
   "semantic_data": {
     "properties": [
       "свинина",
@@ -50,6 +70,7 @@
       {"name": "Карбонад копчено-запеченный", "similarity": "medium"}
     ]
   },
+
   "tags": [
     "мясо",
     "свинина",

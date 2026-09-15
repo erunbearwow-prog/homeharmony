@@ -1,0 +1,111 @@
+{
+  "name": "Корень петрушки",
+  "name_normalized": "koren_petrushki",
+  "synonyms": "корень петрушки, петрушка корневая, корень петрушки свежий, петрушка корень, корнеплод петрушки, петрушка для супа, петрушка для бульона, петрушка для тушения, петрушка для запекания, петрушка для гарнира, белый корень",
+  "short_description": "Корнеплод петрушки с плотной, сочной мякотью и сладковатым, пряным вкусом, напоминающим сельдерей и морковь одновременно. Используется в кулинарии как ароматный корнеплод для супов, бульонов, тушеных блюд и гарниров.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Корень петрушки — это корнеплод растения Petroselinum crispum, который по вкусу напоминает смесь моркови и сельдерея с легким пряным оттенком. Корнеплод имеет удлиненную, конусовидную форму, кремово-белую кожицу и плотную, сочную мякоть. В отличие от листовой петрушки, корень используется преимущественно для ароматизации супов, бульонов, тушеных блюд и гарниров. Он хорошо хранится и является классическим компонентом европейской кухни.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, хрустящая (сырая), мягкая (после варки)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, пряный, с нотками сельдерея и моркови</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — кремово-белый, светло-бежевый</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — удлиненная, конусовидная</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — в холодильнике до 2-3 недель, в песке/опилках до 3-4 месяцев</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — аромат раскрывается при термической обработке</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойка</strong> — тщательно промыть под проточной водой</li><li class=\"ingredient-list-item\"><strong>Очистка</strong> — удалить кожицу и мелкие корешки</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — соломкой, кубиками, ломтиками</li><li class=\"ingredient-list-item\"><strong>Для бульона</strong> — добавлять целиком или крупными кусками</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Супы и бульоны</strong> — ароматизация куриных, мясных и овощных бульонов</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с мясом, овощами, в рагу</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с картофелем, корнеплодами</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — пюре, запеканки, рагу</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — в сыром виде с маслом и лимонным соком</li><li class=\"ingredient-list-item\"><strong>Консервирование</strong> — для ароматизации заготовок</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — морковь, сельдерей, лук, картофель, пастернак</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, говядина, свинина, баранина</li><li class=\"ingredient-list-item\"><strong>Рыба</strong> — для бульонов и тушения</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, тимьян, лавровый лист</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, мускатный орех, чеснок</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Корень сельдерея</strong> — более выраженный вкус</li><li class=\"ingredient-list-item\"><strong>Пастернак</strong> — сладковатый, менее пряный</li><li class=\"ingredient-list-item\"><strong>Морковь</strong> — менее ароматная</li><li class=\"ingredient-list-item\"><strong>Петрушка листовая</strong> — для аромата, но не для текстуры</li></ul>",
+
+  "category": "Овощи",
+
+  "data_source": "skurikhin_tutelyan_2002",
+
+  "calories": 51,
+  "protein": 1.5,
+  "fat": 0.6,
+  "carbohydrates": 10.1,
+  "fiber": 3.2,
+  "water": 83,
+  "ash": 1.5,
+  "starch": 4,
+  "sugar": 6.1,
+  "organic_acids": 0.1,
+
+  "vitamin_a": 2,
+  "beta_carotene": 0.01,
+  "vitamin_b1": 0.08,
+  "vitamin_b2": 0.1,
+  "vitamin_b4": 7.7,
+  "vitamin_b5": 0.4,
+  "vitamin_b6": 0.6,
+  "vitamin_b9_folate": 24,
+  "vitamin_c": 35,
+  "vitamin_e": 0.1,
+  "vitamin_k": 164,
+  "vitamin_b3": 1.3,
+
+  "potassium": 342,
+  "calcium": 57,
+  "magnesium": 22,
+  "sodium": 8,
+  "phosphorus": 73,
+  "iron": 0.7,
+  "manganese": 0.2,
+  "copper": 0.1,
+  "zinc": 0.2,
+  "selenium": 0.1,
+
+  "saturated_fat": 0.2,
+  "omega_3": 0.042,
+  "omega_6": 0.283,
+
+  "semantic_data": {
+    "properties": [
+      "корнеплод",
+      "пряный",
+      "сладковатый",
+      "ароматный",
+      "плотный",
+      "для супов",
+      "для бульонов",
+      "для тушения",
+      "для гарниров",
+      "для запекания"
+    ],
+    "preparations": [
+      "мойка под проточной водой",
+      "очистка от кожицы",
+      "нарезка соломкой, кубиками или ломтиками"
+    ],
+    "cooking_methods": [
+      {"method": "варка (супы, бульоны)", "priority": "high"},
+      {"method": "тушение", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "приготовление пюре", "priority": "medium"},
+      {"method": "использование в сыром виде (салаты)", "priority": "medium"},
+      {"method": "консервирование", "priority": "low"}
+    ],
+    "applications": [
+      "супы",
+      "бульоны",
+      "тушеные блюда",
+      "гарниры",
+      "салаты",
+      "запеканки"
+    ],
+    "pairings": {
+      "protein": ["курица", "говядина", "свинина", "баранина", "рыба"],
+      "vegetables": ["морковь", "сельдерей", "лук", "картофель", "пастернак"],
+      "sauces": [],
+      "herbs": ["петрушка", "укроп", "тимьян", "лавровый лист"],
+      "spices": ["черный перец", "мускатный орех", "чеснок"]
+    },
+    "substitutes": [
+      {"name": "Корень сельдерея", "similarity": "high"},
+      {"name": "Пастернак", "similarity": "high"},
+      {"name": "Морковь", "similarity": "medium"},
+      {"name": "Петрушка листовая", "similarity": "low"}
+    ]
+  },
+
+  "tags": [
+    "овощ",
+    "корнеплод",
+    "петрушка",
+    "корень петрушки",
+    "пряный корнеплод",
+    "для супов",
+    "для бульонов",
+    "для тушения",
+    "для гарниров"
+  ]
+}

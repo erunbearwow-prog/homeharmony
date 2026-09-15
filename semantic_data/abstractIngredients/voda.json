@@ -1,0 +1,69 @@
+{
+  "name": "Вода",
+  "name_normalized": "voda",
+  "synonyms": "вода, вода питьевая, вода очищенная, вода негазированная, вода столовая, вода для питья, вода для приготовления, вода для кулинарии, вода для напитков, питьевая вода, вода без газа",
+  "short_description": "Прозрачная, без цвета, запаха и вкуса жидкость, необходимая для жизни и используемая в кулинарии для питья, приготовления блюд, варки, тушения и разбавления. Не содержит калорий и питательных веществ.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Вода — это универсальная жидкость, без которой невозможно приготовление большинства блюд. В кулинарии используется питьевая вода, которая может быть очищенной, минеральной или из природных источников. В зависимости от источника, вода может содержать растворенные минеральные соли (кальций, магний, натрий, калий) и микроэлементы.</p><p class=\"ingredient-text\">Вода не содержит калорий, белков, жиров и углеводов, поэтому ее пищевая ценность нулевая. Однако она является основой для бульонов, супов, соусов, напитков и теста, а также используется для варки, тушения, пропаривания и замачивания продуктов.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, без выраженного привкуса</li><li class=\"ingredient-list-item\"><strong>Запах</strong> — отсутствует</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — прозрачный, бесцветный</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — жидкость</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — в закрытой бутылке до 12 месяцев, в открытой — 1-2 дня</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — не имеет питательной ценности, но является обязательным компонентом для гидратации и приготовления пищи</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в прохладном темном месте, в закрытой таре</li><li class=\"ingredient-list-item\"><strong>Использование</strong> — для питья, варки, тушения, замачивания, разбавления</li><li class=\"ingredient-list-item\"><strong>Кипячение</strong> — для обеззараживания и приготовления горячих напитков</li><li class=\"ingredient-list-item\"><strong>Фильтрация</strong> — при необходимости для улучшения вкуса</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Питьё</strong> — как самостоятельный напиток</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — для приготовления супов, бульонов, макарон, круп, овощей</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — для приготовления рагу, мяса, овощей</li><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — для бобовых, круп, сухофруктов</li><li class=\"ingredient-list-item\"><strong>Разбавление</strong> — для соусов, соков, напитков</li><li class=\"ingredient-list-item\"><strong>Тесто</strong> — для замеса хлеба, блинов, пельменей</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — чай, кофе, компоты, морсы</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Все продукты</strong> — вода является универсальным компонентом для любых блюд</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — для варки</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — для варки и тушения</li><li class=\"ingredient-list-item\"><strong>Мясо и рыба</strong> — для бульонов и тушения</li><li class=\"ingredient-list-item\"><strong>Мука</strong> — для замеса теста</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Минеральная вода</strong> — для питья и напитков</li><li class=\"ingredient-list-item\"><strong>Бульон</strong> — для более насыщенного вкуса в супах</li><li class=\"ingredient-list-item\"><strong>Молоко или растительное молоко</strong> — для замены в некоторых рецептах</li><li class=\"ingredient-list-item\"><strong>Кокосовая вода</strong> — для питья и смузи</li></ul>",
+
+  "category": "Напитки",
+
+  "semantic_data": {
+    "properties": [
+      "жидкость",
+      "прозрачная",
+      "без цвета",
+      "без запаха",
+      "без вкуса",
+      "универсальная",
+      "основа для блюд",
+      "для питья",
+      "для варки",
+      "для тушения"
+    ],
+    "preparations": [
+      "хранение в прохладном темном месте",
+      "кипячение для обеззараживания",
+      "фильтрация при необходимости"
+    ],
+    "cooking_methods": [
+      {"method": "питьё", "priority": "high"},
+      {"method": "варка", "priority": "high"},
+      {"method": "тушение", "priority": "high"},
+      {"method": "замачивание", "priority": "high"},
+      {"method": "разбавление", "priority": "high"},
+      {"method": "замес теста", "priority": "high"}
+    ],
+    "applications": [
+      "напитки",
+      "супы и бульоны",
+      "вторые блюда",
+      "выпечка",
+      "соусы",
+      "замачивание"
+    ],
+    "pairings": {
+      "protein": ["мясо", "рыба", "птица"],
+      "vegetables": ["все овощи"],
+      "sauces": ["для разбавления"],
+      "herbs": [],
+      "spices": []
+    },
+    "substitutes": [
+      {"name": "Минеральная вода", "similarity": "high"},
+      {"name": "Бульон", "similarity": "medium"},
+      {"name": "Молоко", "similarity": "low"},
+      {"name": "Кокосовая вода", "similarity": "low"}
+    ]
+  },
+
+  "tags": [
+    "вода",
+    "напиток",
+    "жидкость",
+    "без калорий",
+    "основа для блюд",
+    "для варки",
+    "для питья",
+    "универсальная"
+  ]
+}
