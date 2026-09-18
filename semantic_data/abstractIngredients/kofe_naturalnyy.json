@@ -1,0 +1,106 @@
+{
+  "name": "Кофе натуральный",
+  "name_normalized": "kofe_naturalnyy",
+  "synonyms": "кофе натуральный, кофе жареный, кофе в зернах, кофе молотый, кофе арабика, кофе робуста, кофе натуральный жареный, кофе для варки, кофе для турки, кофе для кофемашины, coffee, roasted coffee, Coffea arabica, Coffea canephora",
+  "short_description": "Обжаренные и измельченные зерна кофейного дерева, используемые для приготовления напитка. Обладает насыщенным ароматом, горьковато-кислым вкусом и тонизирующим действием благодаря содержанию кофеина. Широко используется в кулинарии для напитков и десертов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Кофе натуральный — это продукт, получаемый из обжаренных и измельченных зерен кофейного дерева. В продажу поступает в виде цельных зерен или молотого порошка. Натуральный кофе делится на две основные группы: кофе в зернах (цельные обжаренные зерна) и молотый кофе (измельченные обжаренные зерна). Высшие сорта кофе производятся исключительно из арабики, которая дает богатый вкус с тонким ароматом. Первый сорт может вырабатываться как из арабики, так и из робусты.</p><p class=\"ingredient-text\">Степень обжарки напрямую влияет на вкус и аромат напитка: от светлообжаренного (легкая кислотность) до высшей степени обжаривания (на грани обугливания). Кофе содержит кофеин, который оказывает тонизирующее действие на организм.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Аромат</strong> — насыщенный, ярко выраженный, зависит от сорта и обжарки</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — горьковатый, с кислинкой, зависит от сорта и способа приготовления</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от светло-коричневого до темно-коричневого и черного</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — цельные зерна или молотый порошок</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — в вакуумной упаковке до 12-18 месяцев</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — содержит кофеин, оказывающий тонизирующее действие</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Помол</strong> — грубый (для кофейника), средний (для френч-пресса), тонкий (для эспрессо), мельчайший (для турки)</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в герметичной упаковке, в темном прохладном месте</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — в турке, кофемашине, френч-прессе, гейзерной кофеварке</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Напитки</strong> — эспрессо, американо, капучино, латте, мокко</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — тирамису, кофейные торты, мороженое</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — кофейные кексы, печенье, брауни</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — кофейные соусы к мясу</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для мяса и дичи</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — молоко, сливки, сливочное масло</li><li class=\"ingredient-list-item\"><strong>Шоколад</strong> — темный, молочный</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, кардамон, мускатный орех, ваниль</li><li class=\"ingredient-list-item\"><strong>Алкоголь</strong> — коньяк, ром, ликеры</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — миндаль, фундук</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Цикорий</strong> — без кофеина, схожий вкус</li><li class=\"ingredient-list-item\"><strong>Кофейный напиток</strong> — из ячменя, ржи, овса</li><li class=\"ingredient-list-item\"><strong>Декофеинизированный кофе</strong> — без кофеина</li><li class=\"ingredient-list-item\"><strong>Какао</strong> — для десертов, другой вкус</li></ul>",
+
+  "category": "Напитки",
+
+  "data_source": "usda",
+
+  "calories": 218,
+  "protein": 13.9,
+  "fat": 14.4,
+  "carbohydrates": 2.8,
+
+  "water": 3.5,
+  "ash": 4.5,
+  "fiber": 19.0,
+  "sugar": 0.0,
+
+  "vitamin_b1": 0.041,
+  "vitamin_b2": 0.076,
+  "vitamin_b3": 22.6,
+  "vitamin_b5": 0.254,
+  "vitamin_b6": 0.001,
+  "vitamin_b9_folate": 0,
+  "vitamin_c": 0,
+  "vitamin_e": 0.02,
+  "vitamin_k": 0.1,
+
+  "potassium": 3500,
+  "calcium": 140,
+  "magnesium": 240,
+  "sodium": 30,
+  "phosphorus": 190,
+  "iron": 5.5,
+  "manganese": 1.3,
+  "copper": 0.5,
+  "zinc": 0.5,
+
+  "saturated_fat": 5.0,
+  "trans_fat": 0,
+  "cholesterol": 0,
+  "omega_3": 0.1,
+  "omega_6": 2.0,
+
+  "semantic_data": {
+    "properties": [
+      "напиток",
+      "кофеин",
+      "тонизирующий",
+      "ароматный",
+      "горьковатый",
+      "обжаренный",
+      "арабика",
+      "робуста",
+      "для напитков",
+      "для десертов"
+    ],
+    "preparations": [
+      "помол зерен",
+      "хранение в герметичной упаковке",
+      "варка в турке или кофемашине"
+    ],
+    "cooking_methods": [
+      {"method": "варка в турке", "priority": "high"},
+      {"method": "приготовление в кофемашине", "priority": "high"},
+      {"method": "заваривание во френч-прессе", "priority": "high"},
+      {"method": "использование в десертах", "priority": "medium"},
+      {"method": "использование в выпечке", "priority": "medium"}
+    ],
+    "applications": [
+      "напитки",
+      "десерты",
+      "выпечка",
+      "соусы",
+      "маринады"
+    ],
+    "pairings": {
+      "protein": ["молоко", "сливки", "сливочное масло"],
+      "vegetables": [],
+      "sauces": [],
+      "herbs": [],
+      "spices": ["корица", "кардамон", "мускатный орех", "ваниль"]
+    },
+    "substitutes": [
+      {"name": "Цикорий", "similarity": "medium"},
+      {"name": "Кофейный напиток", "similarity": "medium"},
+      {"name": "Декофеинизированный кофе", "similarity": "high"},
+      {"name": "Какао", "similarity": "low"}
+    ]
+  },
+
+  "tags": [
+    "напиток",
+    "кофе",
+    "кофе натуральный",
+    "арабика",
+    "робуста",
+    "кофеин",
+    "тонизирующий",
+    "для напитков",
+    "для десертов"
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "name": "Фасоль красная в томатном соусе",
+  "name_normalized": "fasol_krasnaya_v_tomatnom_souse",
+  "synonyms": "фасоль красная в томатном соусе, фасоль в томате, красная фасоль в томатной заливке, фасоль консервированная в томатном соусе, фасоль в томатном соусе консервированная, фасоль с томатами, готовая фасоль в томате, фасоль для гарнира, фасоль для супа, фасоль для рагу",
+  "short_description": "Готовый к употреблению продукт из отварной красной фасоли, консервированной в томатном соусе с добавлением сахара, соли и специй. Имеет мягкую, нежную текстуру и насыщенный кисло-сладкий вкус с томатными нотками. Универсальный гарнир и основа для блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Фасоль красная в томатном соусе — это готовый к употреблению продукт, получаемый путем замачивания, варки и консервирования спелой красной фасоли в томатном соусе. В состав соуса обычно входят томатная паста, вода, сахар, соль, растительное масло и специи (перец, паприка, чеснок, лук). Благодаря томатной заливке фасоль приобретает насыщенный кисло-сладкий вкус и мягкую, нежную текстуру. Продукт широко используется как самостоятельное блюдо, а также как ингредиент для супов, рагу, гарниров и закусок.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мягкая, нежная, но сохраняющая форму</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, кисло-сладкий, с томатными и пряными нотками</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — темно-красный, бордовый</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — целые или половинки бобов в густом соусе</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 24-36 месяцев (в закрытой банке), 2-3 дня (в открытой)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — готова к употреблению, не требует варки</li></ul><h2 class=\"ingredient-title\">Состав (типичный)</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Основное сырье</strong> — фасоль красная</li><li class=\"ingredient-list-item\"><strong>Томатная заливка</strong> — томатная паста, вода</li><li class=\"ingredient-list-item\"><strong>Добавки</strong> — сахар, соль, растительное масло, специи (перец, паприка, чеснок, лук)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Открытие</strong> — открыть банку</li><li class=\"ingredient-list-item\"><strong>Использование</strong> — добавить в блюдо или разогреть как самостоятельное блюдо</li><li class=\"ingredient-list-item\"><strong>Прогрев</strong> — при подаче в горячем виде разогреть на сковороде или в микроволновке</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гарнир</strong> — к мясу, рыбе, птице</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — добавка в овощные и мясные супы</li><li class=\"ingredient-list-item\"><strong>Рагу</strong> — с овощами и мясом</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — на хлебе, в тарталетках</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — для пасты и риса</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, помидоры, перец, чеснок</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — говядина, свинина, курица</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, кинза</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, паприка, кумин, кориандр</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, чесночный</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Фасоль красная консервированная в собственном соку</strong> — без томатного соуса</li><li class=\"ingredient-list-item\"><strong>Белая фасоль в томатном соусе</strong> — более нежная текстура</li><li class=\"ingredient-list-item\"><strong>Фасоль отварная с томатной пастой</strong> — домашний вариант</li><li class=\"ingredient-list-item\"><strong>Нут в томатном соусе</strong> — другой вкус</li></ul>",
+
+  "category": "Бобовые",
+
+  "data_source": "health-diet.ru",
+
+  "calories": 87.6,
+  "protein": 6.2,
+  "fat": 0.0,
+  "carbohydrates": 15.7,
+
+  "fiber": 4.3,
+  "water": 78,
+  "ash": 1.6,
+
+  "vitamin_b1": 0.106,
+  "vitamin_b2": 0.067,
+  "vitamin_b4": 30.5,
+  "vitamin_b5": 0.13,
+  "vitamin_b6": 0.08,
+  "vitamin_b9_folate": 23,
+  "vitamin_c": 0.8,
+  "vitamin_e": 0.02,
+  "vitamin_k": 4.1,
+  "vitamin_b3": 0.494,
+
+  "potassium": 260,
+  "calcium": 29,
+  "magnesium": 30,
+  "sodium": 256,
+  "sulfur": 52.2,
+
+  "semantic_data": {
+    "properties": [
+      "бобовые",
+      "красная фасоль",
+      "консервированная",
+      "в томатном соусе",
+      "готовая",
+      "мягкая",
+      "нежная",
+      "кисло-сладкий вкус",
+      "для гарниров",
+      "для супов",
+      "для рагу"
+    ],
+    "preparations": [
+      "открытие банки",
+      "прогрев при необходимости",
+      "использование без дополнительной обработки"
+    ],
+    "cooking_methods": [
+      {"method": "использование как гарнир", "priority": "high"},
+      {"method": "добавление в супы", "priority": "high"},
+      {"method": "приготовление рагу", "priority": "high"},
+      {"method": "использование в закусках", "priority": "medium"},
+      {"method": "приготовление соусов", "priority": "medium"}
+    ],
+    "applications": [
+      "гарниры",
+      "супы",
+      "рагу",
+      "закуски",
+      "соусы"
+    ],
+    "pairings": {
+      "protein": ["говядина", "свинина", "курица"],
+      "vegetables": ["лук", "морковь", "помидоры", "перец", "чеснок"],
+      "sauces": ["сметанный", "чесночный"],
+      "herbs": ["петрушка", "укроп", "кинза"],
+      "spices": ["черный перец", "паприка", "кумин", "кориандр"]
+    },
+    "substitutes": [
+      {"name": "Фасоль красная консервированная в собственном соку", "similarity": "high"},
+      {"name": "Белая фасоль в томатном соусе", "similarity": "medium"},
+      {"name": "Фасоль отварная с томатной пастой", "similarity": "high"},
+      {"name": "Нут в томатном соусе", "similarity": "medium"}
+    ]
+  },
+
+  "tags": [
+    "бобовые",
+    "фасоль",
+    "красная фасоль",
+    "томатный соус",
+    "консервы",
+    "готовая",
+    "гарниры",
+    "супы",
+    "рагу"
+  ]
+}

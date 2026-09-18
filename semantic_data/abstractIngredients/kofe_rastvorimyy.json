@@ -1,0 +1,91 @@
+{
+  "name": "Кофе растворимый",
+  "name_normalized": "kofe_rastvorimyy",
+  "synonyms": "кофе растворимый, растворимый кофе, кофе сублимированный, кофе порошковый, кофе гранулированный, растворимый кофе сублимированный, кофе быстрого приготовления, кофе в гранулах, кофе в порошке, instant coffee, soluble coffee",
+  "short_description": "Продукт, получаемый из обжаренных и измельченных зерен кофе путем экстракции и последующего высушивания. Обладает насыщенным кофейным вкусом и ароматом, быстро растворяется в воде. Используется для приготовления напитков и как ингредиент в десертах, выпечке и соусах.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Кофе растворимый — это продукт, получаемый из обжаренных и измельченных зерен кофе. Технология производства включает экстракцию растворимых веществ из кофейного сырья горячей водой под давлением, а затем высушивание полученного экстракта. В зависимости от способа сушки различают порошковый, гранулированный и сублимированный кофе. Сублимированный кофе считается наиболее качественным, так как при его производстве используется метод сублимационной сушки (лиофилизации), который максимально сохраняет вкус и аромат натурального кофе.</p><p class=\"ingredient-text\">Растворимый кофе широко используется как для приготовления напитков, так и в кулинарии: его добавляют в выпечку, десерты (брауни, чизкейки, пудинги), кремы, соусы и даже алкогольные напитки. Растворимый кофе удобен в использовании, имеет длительный срок хранения и быстро растворяется в горячей воде.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Аромат</strong> — кофейный, зависит от типа (порошковый менее ароматный, сублимированный более)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — горьковатый, с разной степенью насыщенности</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от светло-коричневого до темно-коричневого</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — порошок, гранулы или кристаллы</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — в герметичной упаковке до 18-24 месяцев</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — быстрорастворимый, не требует варки</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Растворение</strong> — залить горячей водой (не кипятком) и размешать</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в герметичной упаковке, в сухом месте</li><li class=\"ingredient-list-item\"><strong>Для кулинарии</strong> — растворяется в горячей воде или добавляется в сухом виде в тесто</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Напитки</strong> — быстрорастворимый кофе, кофейные коктейли</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — брауни, кофейные кексы, печенье, бисквиты [citation:8][citation:12]</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — чизкейк, пудинги, муссы, мороженое, зефир [citation:4][citation:12]</li><li class=\"ingredient-list-item\"><strong>Кремы</strong> — кофейный крем для тортов и профитролей [citation:4]</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — кофейные соусы к мясу</li><li class=\"ingredient-list-item\"><strong>Ликеры</strong> — домашние кофейные ликеры [citation:12]</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — молоко, сливки, масло, творог</li><li class=\"ingredient-list-item\"><strong>Шоколад</strong> — темный, молочный (усиливает вкус) [citation:8]</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, кардамон, мускатный орех, ваниль [citation:5]</li><li class=\"ingredient-list-item\"><strong>Алкоголь</strong> — ром, коньяк, ликеры</li><li class=\"ingredient-list-item\"><strong>Орехи</strong> — миндаль, фундук</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Кофе натуральный (молотый)</strong> — более насыщенный вкус</li><li class=\"ingredient-list-item\"><strong>Цикорий</strong> — без кофеина</li><li class=\"ingredient-list-item\"><strong>Какао</strong> — для десертов, другой вкус</li><li class=\"ingredient-list-item\"><strong>Декофеинизированный кофе</strong> — без кофеина</li></ul>",
+
+  "category": "Напитки",
+
+  "data_source": "health-diet.ru",
+
+  "calories": 305.6,
+  "protein": 5.0,
+  "fat": 1.2,
+  "carbohydrates": 68.9,
+
+  "water": 2.4,
+  "ash": 0.4,
+  "sugar": 66.5,
+
+  "vitamin_b2": 0.333,
+  "vitamin_b3": 8.0,
+  "vitamin_pp": 8.83,
+
+  "potassium": 2.0,
+  "calcium": 35.33,
+  "sodium": 1.67,
+  "phosphorus": 83.3,
+
+  "iron": 2.233,
+
+  "semantic_data": {
+    "properties": [
+      "напиток",
+      "кофеин",
+      "растворимый",
+      "сублимированный",
+      "порошковый",
+      "гранулированный",
+      "быстрорастворимый",
+      "для напитков",
+      "для десертов",
+      "для выпечки"
+    ],
+    "preparations": [
+      "растворение в горячей воде",
+      "хранение в герметичной упаковке",
+      "добавление в сухом виде в тесто"
+    ],
+    "cooking_methods": [
+      {"method": "приготовление напитка", "priority": "high"},
+      {"method": "использование в выпечке", "priority": "high"},
+      {"method": "использование в десертах", "priority": "high"},
+      {"method": "приготовление кремов", "priority": "medium"},
+      {"method": "приготовление ликеров", "priority": "medium"}
+    ],
+    "applications": [
+      "напитки",
+      "выпечка",
+      "десерты",
+      "кремы",
+      "соусы",
+      "ликеры"
+    ],
+    "pairings": {
+      "protein": ["молоко", "сливки", "масло", "творог"],
+      "vegetables": [],
+      "sauces": [],
+      "herbs": [],
+      "spices": ["корица", "кардамон", "мускатный орех", "ваниль"]
+    },
+    "substitutes": [
+      {"name": "Кофе натуральный (молотый)", "similarity": "high"},
+      {"name": "Цикорий", "similarity": "medium"},
+      {"name": "Какао", "similarity": "low"},
+      {"name": "Декофеинизированный кофе", "similarity": "high"}
+    ]
+  },
+
+  "tags": [
+    "напиток",
+    "кофе",
+    "кофе растворимый",
+    "сублимированный",
+    "быстрорастворимый",
+    "кофеин",
+    "для напитков",
+    "для десертов",
+    "для выпечки"
+  ]
+}

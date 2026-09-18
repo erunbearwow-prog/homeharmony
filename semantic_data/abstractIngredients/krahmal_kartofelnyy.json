@@ -1,0 +1,110 @@
+{
+  "name": "Крахмал картофельный",
+  "name_normalized": "krahmal_kartofelnyy",
+  "synonyms": "крахмал картофельный, картофельный крахмал, крахмал, картофельная мука, крахмал для киселя, крахмал для соусов, крахмал для выпечки, загуститель, potato starch",
+  "short_description": "Безвкусный белый порошок, получаемый из клубней картофеля. Используется в кулинарии как загуститель для соусов, супов, киселей и начинок. При нагревании с водой образует прозрачный вязкий гель.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Крахмал картофельный — это безвкусный порошок, полученный из картофеля. Он не содержит витаминов или минералов, но почти на 90% состоит из углеводов. В холодной воде крахмал не растворяется, но при нагревании до 45-47 °С он набухает, а при 62 °С образует стойкую крахмалистую пасту («клейстер»).</p><p class=\"ingredient-text\">Картофельный крахмал обладает самыми крупными гранулами среди всех растительных крахмалов, что позволяет ему связывать воду мгновенно и при относительно низкой температуре. Он создает прозрачный, вязкий гель и требует в 1,5-2 раза меньше объема, чем кукурузный крахмал, чтобы связать одно и то же количество жидкости.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мелкий, однородный порошок</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, без выраженного вкуса</li><li class=\"ingredient-list-item\"><strong>Запах</strong> — свойственный крахмалу, без постороннего</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый (сорт Экстра — с кристаллическим блеском, остальные — белый с сероватым оттенком)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2 лет при относительной влажности воздуха не более 75%</li></ul><h2 class=\"ingredient-title\">Сорта картофельного крахмала</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Экстра</strong> — белый с кристаллическим блеском, для фармацевтики и пищевых целей</li><li class=\"ingredient-list-item\"><strong>Высший</strong> — белый, для пищевых целей</li><li class=\"ingredient-list-item\"><strong>Первый</strong> — белый с сероватым оттенком</li><li class=\"ingredient-list-item\"><strong>Второй</strong> — для технических целей или промышленной переработки</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разведение</strong> — перед добавлением в блюдо развести в холодной воде (пропорция 1:1 или 1:2) непосредственно перед использованием</li><li class=\"ingredient-list-item\"><strong>Введение</strong> — вводить разведенную смесь в кипящую жидкость тонкой струйкой, непрерывно помешивая</li><li class=\"ingredient-list-item\"><strong>Завершение</strong> — снять с огня сразу после закипания или через 5-10 секунд</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Загущение</strong> — для соусов, супов, подливок, киселей</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для ягодных и фруктовых пирогов</li><li class=\"ingredient-list-item\"><strong>Связывание</strong> — для фарша фрикаделек и тефтелей</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — для улучшения текстуры вафель, темпуры, бисквитов</li><li class=\"ingredient-list-item\"><strong>Панировка</strong> — для предотвращения прилипания продуктов при жарке</li><li class=\"ingredient-list-item\"><strong>Глазури и топпинги</strong> — для придания плотной обволакивающей текстуры</li><li class=\"ingredient-list-item\"><strong>Сорбеты</strong> — как основа для фруктовых сорбетов</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жидкости</strong> — вода, бульон, сок, молоко</li><li class=\"ingredient-list-item\"><strong>Ягоды и фрукты</strong> — для начинок и киселей</li><li class=\"ingredient-list-item\"><strong>Мясной фарш</strong> — для связывания и удержания влаги</li><li class=\"ingredient-list-item\"><strong>Мука</strong> — в выпечке (замена части пшеничной муки)</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Кукурузный крахмал</strong> — менее вязкий, требует в 1,5-2 раза больше объема, дает менее прозрачный гель</li><li class=\"ingredient-list-item\"><strong>Мука</strong> — для загущения, но дает менее прозрачную текстуру</li><li class=\"ingredient-list-item\"><strong>Тапиоковый крахмал</strong> — для прозрачных гелей</li><li class=\"ingredient-list-item\"><strong>Аррорут</strong> — для загущения без глютена</li></ul>",
+
+  "category": "Бакалея",
+
+  "data_source": "usda",
+
+  "calories": 332,
+  "protein": 0.1,
+  "fat": 0.1,
+  "carbohydrates": 83.1,
+
+  "water": 15.0,
+  "ash": 0.3,
+  "fiber": 0.0,
+  "sugar": 0.0,
+
+  "vitamin_b1": 0.228,
+  "vitamin_b2": 0.051,
+  "vitamin_b4": 39.5,
+  "vitamin_b5": 0.474,
+  "vitamin_b6": 0.769,
+  "vitamin_b9_folate": 25,
+  "vitamin_c": 3.8,
+  "vitamin_e": 0.25,
+  "vitamin_b3": 3.507,
+
+  "potassium": 1001,
+  "calcium": 65,
+  "magnesium": 65,
+  "sodium": 55,
+  "phosphorus": 168,
+  "sulfur": 69,
+
+  "iron": 1.38,
+  "manganese": 0.313,
+  "copper": 197,
+  "selenium": 1.1,
+  "zinc": 0.54,
+
+  "semantic_data": {
+    "properties": [
+      "загуститель",
+      "порошок",
+      "безвкусный",
+      "углеводный",
+      "картофельный",
+      "для соусов",
+      "для супов",
+      "для киселей",
+      "для выпечки",
+      "для начинок"
+    ],
+    "preparations": [
+      "разведение в холодной воде",
+      "введение в кипящую жидкость",
+      "быстрое снятие с огня"
+    ],
+    "cooking_methods": [
+      {"method": "загущение соусов и супов", "priority": "high"},
+      {"method": "приготовление киселей", "priority": "high"},
+      {"method": "связывание фарша", "priority": "high"},
+      {"method": "использование в выпечке", "priority": "high"},
+      {"method": "панировка", "priority": "medium"},
+      {"method": "приготовление глазури", "priority": "medium"},
+      {"method": "приготовление сорбетов", "priority": "medium"}
+    ],
+    "applications": [
+      "соусы",
+      "супы",
+      "кисели",
+      "начинки для пирогов",
+      "фрикадельки и тефтели",
+      "выпечка",
+      "панировка",
+      "глазурь",
+      "сорбеты"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [],
+      "fruits": ["ягоды", "фрукты"],
+      "sauces": ["бульон", "сок", "молоко"],
+      "herbs": [],
+      "spices": []
+    },
+    "substitutes": [
+      {"name": "Кукурузный крахмал", "similarity": "high"},
+      {"name": "Мука", "similarity": "medium"},
+      {"name": "Тапиоковый крахмал", "similarity": "medium"},
+      {"name": "Аррорут", "similarity": "medium"}
+    ]
+  },
+
+  "tags": [
+    "бакалея",
+    "крахмал",
+    "картофельный крахмал",
+    "загуститель",
+    "соусы",
+    "супы",
+    "кисели",
+    "выпечка",
+    "начинки"
+  ]
+}

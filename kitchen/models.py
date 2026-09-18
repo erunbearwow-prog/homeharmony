@@ -22,6 +22,9 @@ UNIT_CHOICES = [
     ('ст.л.', 'столовая ложка'),
     ('ч.л.', 'чайная ложка'),
     ('щеп.', 'щепотка'),
+    ('пучок', 'пучок'),
+    ('стакан 250', 'стакан 250 мл (чайный)'),
+    ('стакан 200', 'стакан 200 мл (гранёный)'),
 ]
 
 
@@ -576,15 +579,18 @@ class CookingMethod(models.Model):
         help_text='Формат: {"продукт": 0.08, "продукт2": 0.12}'
     )
 
+    default_oil = models.ForeignKey(
+        'AbstractIngredient',
+        on_delete=models.SET_NULL,
+        null=True, blank=True,
+        related_name='default_for_methods',
+        verbose_name='Масло по умолчанию',
+        help_text='Если пусто — используется растительное масло (9 ккал/г)'
+    )
+
     recommended_temperature_min = models.IntegerField(null=True, blank=True, verbose_name='Мин. температура, °C')
     recommended_temperature_max = models.IntegerField(null=True, blank=True, verbose_name='Макс. температура, °C')
 
-    cut_shape_factors = models.JSONField(
-        default=dict,
-        blank=True,
-        verbose_name='Коэффициенты для форм нарезки',
-        help_text='Формат: {"брусочками": 1.0, "соломкой": 1.5, "кубиками": 1.2, "кружочками": 0.8}'
-    )
 
     BREADING_CHOICES = [
         ('none', 'Без панировки'),
@@ -680,30 +686,73 @@ class ProductLossNorm(models.Model):
         ('egg', 'Яйца'),
     ]
 
-    product_name = models.CharField(max_length=200, verbose_name='Продукт')
-    product_category = models.CharField(max_length=50, choices=CATEGORY_CHOICES, verbose_name='Категория')
-    processing_method = models.ForeignKey(CookingMethod, on_delete=models.CASCADE, verbose_name='Способ обработки')
+    # ===== ИНГРЕДИЕНТ (основной источник) =====
+    ingredient = models.ForeignKey(
+        'AbstractIngredient',
+        on_delete=models.CASCADE,
+        null=True, blank=True,
+        related_name='loss_norms',
+        verbose_name='Ингредиент',
+        help_text='Основной источник. Если пусто — используется product_name'
+    )
 
-    cold_loss_percent = models.DecimalField(max_digits=5, decimal_places=1, default=0, verbose_name='Потери при холодной обработке, %')
-    heat_loss_percent = models.DecimalField(max_digits=5, decimal_places=1, default=0, verbose_name='Потери при тепловой обработке, %')
-    season_note = models.CharField(max_length=100, blank=True, verbose_name='Сезон/Примечание')
-    source = models.CharField(max_length=100, default='Сборник рецептур', verbose_name='Источник')
+    # ===== FALLBACK =====
+    product_name = models.CharField(
+        max_length=200, blank=True,
+        verbose_name='Продукт (текстом)',
+        help_text='Fallback, если не выбран ингредиент'
+    )
+    product_category = models.CharField(
+        max_length=50, choices=CATEGORY_CHOICES, blank=True,
+        verbose_name='Категория (устаревшее)',
+        help_text='Оставлено для legacy-записей. Для новых используйте ingredient.category'
+    )
+
+    # ===== МЕТОД ОБРАБОТКИ =====
+    processing_method = models.ForeignKey(
+        CookingMethod, on_delete=models.CASCADE,
+        verbose_name='Способ обработки'
+    )
+
+    # ===== ПОТЕРИ =====
+    cold_loss_percent = models.DecimalField(
+        max_digits=5, decimal_places=1, default=0,
+        verbose_name='Потери при холодной обработке, %'
+    )
+    heat_loss_percent = models.DecimalField(
+        max_digits=5, decimal_places=1, default=0,
+        verbose_name='Потери при тепловой обработке, %'
+    )
+    season_note = models.CharField(
+        max_length=100, blank=True,
+        verbose_name='Сезон/Примечание'
+    )
+    source = models.CharField(
+        max_length=100, default='Сборник рецептур',
+        verbose_name='Источник'
+    )
 
     PROCESSING_BEHAVIOR = [
         ('loss', 'Потери (уменьшение веса)'),
         ('gain', 'Увеличение веса (впитывание воды)'),
     ]
-
-    processing_behavior = models.CharField(max_length=10, choices=PROCESSING_BEHAVIOR, default='loss', verbose_name='Поведение при обработке')
-    gain_factor = models.DecimalField(max_digits=5, decimal_places=2, null=True, blank=True, verbose_name='Коэффициент увеличения веса')
+    processing_behavior = models.CharField(
+        max_length=10, choices=PROCESSING_BEHAVIOR, default='loss',
+        verbose_name='Поведение при обработке'
+    )
+    gain_factor = models.DecimalField(
+        max_digits=5, decimal_places=2, null=True, blank=True,
+        verbose_name='Коэффициент увеличения веса'
+    )
 
     class Meta:
         verbose_name = 'Норма потерь'
         verbose_name_plural = 'Нормы потерь'
-        unique_together = ['product_name', 'processing_method', 'season_note']
+        unique_together = ['ingredient', 'processing_method', 'season_note']
 
     def __str__(self):
-        return f'{self.product_name} → {self.processing_method.name}'
+        name = self.ingredient.name if self.ingredient else self.product_name
+        return f'{name} → {self.processing_method.name}'
 
     @property
     def total_loss_percent(self):
@@ -713,6 +762,146 @@ class ProductLossNorm(models.Model):
     def yield_coefficient(self):
         return 1 - self.total_loss_percent / 100
 
+
+# ======================= 5.2 ПЕРЕСЧЁТ ЕДИНИЦ =======================
+class MeasurementSystem(models.TextChoices):
+    METRIC = 'metric', 'Метрическая (г, мл, кг, л)'
+    IMPERIAL = 'imperial', 'Имперская (oz, lb, fl oz, cup)'
+    RUSSIAN = 'russian', 'Русская (ст.л., ч.л., щеп., шт.)'
+    ASIAN = 'asian', 'Азиатская (го, щеп., пинь)'
+
+
+class UnitConversion(models.Model):
+    """
+    Правила перевода мер в граммы.
+    Основано на Приложениях 2 и 3 Скурихина + расширения.
+    """
+    CONVERSION_TYPES = [
+        ('volume', 'Объём (мл → г)'),
+        ('spoon', 'Ложки/щепотки (ст.л./ч.л./щеп. → г)'),
+        ('piece', 'Штуки (шт → г)'),
+    ]
+
+    conversion_type = models.CharField(
+        max_length=10, choices=CONVERSION_TYPES,
+        default='volume', verbose_name='Тип конвертации'
+    )
+
+    system = models.CharField(
+        max_length=20, choices=MeasurementSystem.choices,
+        default=MeasurementSystem.RUSSIAN,
+        verbose_name='Система мер'
+    )
+
+    ingredient = models.ForeignKey(
+        'AbstractIngredient',
+        on_delete=models.CASCADE,
+        null=True, blank=True,
+        related_name='unit_conversions',
+        verbose_name='Ингредиент',
+        help_text='Пусто = правило по умолчанию для этой единицы'
+    )
+
+    category = models.ForeignKey(
+        'IngredientCategory',
+        on_delete=models.CASCADE,
+        null=True, blank=True,
+        related_name='unit_conversions',
+        verbose_name='Категория',
+        help_text='Правило применяется ко всем ингредиентам этой категории'
+    )
+
+    from_unit = models.CharField(
+        max_length=20, db_index=True,
+        verbose_name='Из единицы'
+    )
+
+    grams_per_unit = models.FloatField(
+        verbose_name='Грамм в 1 единице',
+        help_text='Например: 1 ст.л. муки = 25 г; 1 oz = 28.35 г; 1 шт яйца = 55 г'
+    )
+
+    note = models.CharField(max_length=200, blank=True, verbose_name='Примечание')
+    is_active = models.BooleanField(default=True, verbose_name='Активно')
+
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        verbose_name = 'Пересчёт единиц'
+        verbose_name_plural = 'Пересчёты единиц'
+        unique_together = [
+            ('ingredient', 'from_unit', 'system'),
+            ('category', 'from_unit', 'system'),
+        ]
+        indexes = [
+            models.Index(fields=['from_unit']),
+            models.Index(fields=['ingredient', 'from_unit']),
+            models.Index(fields=['category', 'from_unit']),
+        ]
+
+    def clean(self):
+        if self.ingredient and self.category:
+            raise ValidationError(
+                'Укажите либо ингредиент, либо категорию, но не оба одновременно'
+            )
+
+    def __str__(self):
+        if self.ingredient:
+            return f"{self.ingredient.name}: 1 {self.from_unit} = {self.grams_per_unit} г"
+        return f"1 {self.from_unit} = {self.grams_per_unit} г (по умолчанию)"
+
+
+# ======================= 5.3 ФОРМЫ НАРЕЗКИ =======================
+class CutShape(models.Model):
+    """Форма нарезки продукта."""
+
+    name = models.CharField(max_length=100, unique=True, verbose_name='Название')
+    slug = models.SlugField(unique=True, blank=True, verbose_name='URL')
+
+    factor = models.FloatField(
+        default=1.0,
+        verbose_name='Множитель впитываемости',
+        help_text='1.0 = базовая; 1.5 = впитывает в 1.5 раза больше; 0.8 = меньше'
+    )
+
+    icon = models.CharField(max_length=50, blank=True, verbose_name='Иконка (Emoji)')
+    description = models.TextField(blank=True, verbose_name='Описание')
+    short_description = models.CharField(
+        max_length=300, blank=True,
+        verbose_name='Краткое описание'
+    )
+
+    image = models.ImageField(
+        upload_to='cut_shapes/', null=True, blank=True,
+        verbose_name='Изображение'
+    )
+    video_url = models.URLField(blank=True, verbose_name='Видео-урок')
+
+    typical_dishes = models.ManyToManyField(
+        'Recipe', blank=True,
+        related_name='typical_cut_shapes',
+        verbose_name='Типичные блюда'
+    )
+
+    sort_order = models.IntegerField(default=0, verbose_name='Порядок')
+    is_active = models.BooleanField(default=True, verbose_name='Активно')
+
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        verbose_name = 'Форма нарезки'
+        verbose_name_plural = 'Формы нарезки'
+        ordering = ['sort_order', 'name']
+
+    def __str__(self):
+        return self.name
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.name)
+        super().save(*args, **kwargs)
 
 # ======================= 6. ПОДГОТОВКА ПРОДУКТОВ =======================
 class IngredientPreparation(models.Model):
@@ -937,6 +1126,27 @@ class Recipe(models.Model):
     saved_fat = models.IntegerField(default=0)
     saved_carbs = models.IntegerField(default=0)
 
+    # ===== РАСЧЁТ КБЖУ =====
+    calories_per_100g = models.FloatField(
+        null=True, blank=True,
+        verbose_name='Калории на 100 г',
+        help_text='Заполняется автоматически при пересчёте КБЖУ'
+    )
+    protein_per_100g = models.FloatField(null=True, blank=True, verbose_name='Белки на 100 г')
+    fat_per_100g = models.FloatField(null=True, blank=True, verbose_name='Жиры на 100 г')
+    carbs_per_100g = models.FloatField(null=True, blank=True, verbose_name='Углеводы на 100 г')
+
+    total_weight = models.IntegerField(
+        null=True, blank=True,
+        verbose_name='Общий вес блюда, г',
+        help_text='Заполняется автоматически при пересчёте КБЖУ'
+    )
+
+    nutrition_calculated_at = models.DateTimeField(
+        null=True, blank=True,
+        verbose_name='КБЖУ пересчитано'
+    )
+
     def __str__(self):
         if self.is_saved_variant:
             return f"{self.title} (сохраненный вариант)"
@@ -972,6 +1182,14 @@ class Recipe(models.Model):
             pass
 
         super().save(*args, **kwargs)
+
+    def recalculate_nutrition(self, save=True):
+        """
+        Пересчитывает КБЖУ рецепта из состава.
+        Учитывает потери, впитываемость масла, форму нарезки, полуфабрикаты.
+        """
+        from kitchen.utils.nutrition import recalculate_recipe_nutrition
+        return recalculate_recipe_nutrition(self)
 
     # def __str__(self):
     #     return self.title
@@ -1045,48 +1263,164 @@ class ProfessionalIngredient(models.Model):
         return f'{self.ingredient.name}: {self.net_weight}/{self.gross_weight}{self.unit}'
 
 
-# ======================= 12. СВЯЗЬ РЕЦЕПТА С ИНГРЕДИЕНТОМ/ПРОДУКТОМ =======================
+# ======================= 12. СВЯЗЬ РЕЦЕПТА С ИНГРЕДИЕНТОМ =======================
 class RecipeFoodItem(models.Model):
-    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name='food_items')
-    # ✅ ИСПРАВЛЕНО: Ingredient → AbstractIngredient
-    ingredient = models.ForeignKey(
-        'AbstractIngredient',
-        on_delete=models.CASCADE,
-        null=True,
-        blank=True
+    recipe = models.ForeignKey(
+        Recipe, on_delete=models.CASCADE,
+        related_name='food_items'
     )
-    product = models.ForeignKey(Product, on_delete=models.CASCADE, null=True, blank=True)
+
+    # ===== ИСТОЧНИКИ (взаимоисключающие) =====
+    abstract_ingredient = models.ForeignKey(
+        'AbstractIngredient',
+        on_delete=models.PROTECT,
+        related_name='used_in_recipes',
+        verbose_name='Абстрактный ингредиент',
+        null=True, blank=True,
+        help_text='Обязателен для новых записей. Пусто для legacy-записей'
+    )
+    branded_ingredient = models.ForeignKey(
+        'BrandedIngredient',
+        on_delete=models.SET_NULL,
+        null=True, blank=True,
+        related_name='used_in_recipes',
+        verbose_name='Брендированный продукт',
+        help_text='Override КБЖУ. Не может быть указан одновременно с subrecipe'
+    )
+    subrecipe = models.ForeignKey(
+        'Recipe',
+        on_delete=models.SET_NULL,
+        null=True, blank=True,
+        related_name='used_as_ingredient',
+        verbose_name='Полуфабрикат',
+        limit_choices_to={'recipe_type__in': ['semi_finished', 'home']}
+    )
+
+    # ===== КОЛИЧЕСТВО =====
     quantity = models.FloatField(validators=[MinValueValidator(0.01)])
     unit = models.CharField(max_length=20, choices=UNIT_CHOICES, default='г')
+
+    # ===== ФОРМА НАРЕЗКИ =====
+    cut_shape = models.ForeignKey(
+        'CutShape',
+        on_delete=models.SET_NULL,
+        null=True, blank=True,
+        related_name='food_items',
+        verbose_name='Форма нарезки'
+    )
+
+    # ===== ПЕРЕОПРЕДЕЛЕНИЕ МЕТОДА ОБРАБОТКИ =====
+    override_cooking_method = models.ForeignKey(
+        'CookingMethod',
+        on_delete=models.SET_NULL,
+        null=True, blank=True,
+        related_name='overridden_food_items',
+        verbose_name='Переопределить метод обработки',
+        help_text='Если пусто — берётся метод из StepIngredient'
+    )
+
+    # ===== СЛУЖЕБНОЕ =====
     notes = models.CharField(max_length=500, blank=True)
     is_scalable = models.BooleanField(default=True)
 
     class Meta:
-        verbose_name = "Ингредиент/продукт в рецепте"
-        verbose_name_plural = "Ингредиенты/продукты в рецептах"
+        verbose_name = 'Ингредиент в рецепте'
+        verbose_name_plural = 'Ингредиенты в рецептах'
 
     def clean(self):
-        if not self.ingredient and not self.product:
-            raise ValidationError("Укажите либо ингредиент, либо готовый продукт")
-        if self.ingredient and self.product:
-            raise ValidationError("Нельзя указать и ингредиент, и продукт одновременно")
+        # Проверка: должен быть указан хотя бы один источник
+        sources = [self.abstract_ingredient, self.branded_ingredient, self.subrecipe]
+        if not any(sources):
+            raise ValidationError('Укажите абстрактный ингредиент, бренд или полуфабрикат')
+
+        # Бренд и полуфабрикат — взаимоисключающие
+        if self.branded_ingredient and self.subrecipe:
+            raise ValidationError('Нельзя одновременно указать бренд и полуфабрикат')
+
+        # Бренд должен соответствовать абстрактному
+        if self.branded_ingredient and self.abstract_ingredient:
+            if self.branded_ingredient.abstract_id != self.abstract_ingredient_id:
+                raise ValidationError('Бренд не соответствует абстрактному ингредиенту')
 
     @property
     def food_item(self):
-        return self.ingredient or self.product
+        """Основной источник для отображения."""
+        return self.subrecipe or self.branded_ingredient or self.abstract_ingredient
 
     @property
     def food_name(self):
         item = self.food_item
-        return item.name
+        if item is None:
+            return '—'
+        # Recipe использует title, остальные — name
+        return getattr(item, 'title', None) or getattr(item, 'name', '—')
 
     @property
     def food_type(self):
-        return 'ingredient' if self.ingredient else 'product'
+        if self.subrecipe:
+            return 'subrecipe'
+        if self.branded_ingredient:
+            return 'branded'
+        if self.abstract_ingredient:
+            return 'abstract'
+        return 'unknown'
 
     def __str__(self):
         return f"{self.food_name}: {self.quantity} {self.unit}"
 
+
+# ======================= 12.1 ВАРИАНТЫ ИНГРЕДИЕНТА В РЕЦЕПТЕ (ТТК) =======================
+class RecipeIngredientOption(models.Model):
+    """
+    Варианты ингредиента в рецепте (из ТТК: «говяжья или баранья или свиная»).
+    """
+    food_item = models.ForeignKey(
+        'RecipeFoodItem',
+        on_delete=models.CASCADE,
+        related_name='options',
+        verbose_name='Ингредиент рецепта'
+    )
+
+    alternative_ingredient = models.ForeignKey(
+        'AbstractIngredient',
+        on_delete=models.PROTECT,
+        related_name='alternative_for_options',
+        verbose_name='Альтернативный ингредиент'
+    )
+    alternative_branded = models.ForeignKey(
+        'BrandedIngredient',
+        on_delete=models.SET_NULL,
+        null=True, blank=True,
+        related_name='alternative_for_options',
+        verbose_name='Альтернативный бренд'
+    )
+
+    ratio = models.FloatField(
+        default=1.0,
+        verbose_name='Коэффициент',
+        help_text='1.0 = 1:1; 0.3 = в 3 раза меньше'
+    )
+
+    notes = models.TextField(
+        blank=True,
+        verbose_name='Примечание',
+        help_text='Например: «объём станет больше», «отжать и уварить»'
+    )
+
+    priority = models.IntegerField(default=0, verbose_name='Приоритет')
+    is_active = models.BooleanField(default=True, verbose_name='Активно')
+
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        verbose_name = 'Вариант ингредиента'
+        verbose_name_plural = 'Варианты ингредиентов'
+        ordering = ['-priority', 'alternative_ingredient__name']
+        unique_together = ['food_item', 'alternative_ingredient']
+
+    def __str__(self):
+        return f"{self.food_item.food_name} → {self.alternative_ingredient.name}"
 
 # ======================= 13. СЕМАНТИЧЕСКИЙ ТЕГ =======================
 class SemanticTag(models.Model):
@@ -1389,10 +1723,8 @@ class RecipeStep(models.Model):
     temperature = models.IntegerField(null=True, blank=True)
     recipe_step_image = models.ImageField(upload_to=recipe_step_image_path, null=True, blank=True)
     subrecipe = models.ForeignKey(Recipe, on_delete=models.SET_NULL, null=True, blank=True, related_name='used_in_steps')
-    subrecipe_base_ingredient = models.ForeignKey(HomeIngredient, on_delete=models.SET_NULL, null=True, blank=True, related_name='base_for_steps')
+    subrecipe_base_ingredient = models.ForeignKey('RecipeFoodItem', on_delete=models.SET_NULL, null=True, blank=True, related_name='base_for_steps')
     subrecipe_base_quantity = models.FloatField(null=True, blank=True, validators=[MinValueValidator(0)])
-    cooking_method = models.ForeignKey(CookingMethod, on_delete=models.SET_NULL, null=True, blank=True, related_name='steps')
-    ingredient_preparation = models.ForeignKey(IngredientPreparation, on_delete=models.SET_NULL, null=True, blank=True, related_name='steps')
     recommended_utensils = models.ManyToManyField(RecommendedUtensil, blank=True, related_name='steps')
 
     class Meta:
@@ -1421,24 +1753,161 @@ def delete_recipe_step_image(sender, instance, **kwargs):
             os.remove(instance.recipe_step_image.path)
 
 
-# ======================= 16. ЗАМЕНЫ =======================
-class IngredientSubstitution(models.Model):
-    recipe_ingredient = models.ForeignKey(HomeIngredient, on_delete=models.CASCADE, related_name='substitutions')
-    # ✅ ИСПРАВЛЕНО: Ingredient → AbstractIngredient
-    substitute_ingredient = models.ForeignKey(
-        'AbstractIngredient',
+# ======================= 15.1 ИНГРЕДИЕНТ В ШАГЕ =======================
+class StepIngredient(models.Model):
+    """
+    Связь: какой ингредиент в каком шаге обрабатывается.
+    Используется для модалок «Подготовка» и «Способ обработки».
+    """
+    step = models.ForeignKey(
+        'RecipeStep',
         on_delete=models.CASCADE,
-        related_name='substitutions'
+        related_name='step_ingredients',
+        verbose_name='Шаг рецепта'
     )
-    substitute_unit = models.CharField(max_length=20, choices=UNIT_CHOICES)
-    ratio = models.FloatField(default=1.0)
-    notes = models.CharField(max_length=500, blank=True)
+    food_item = models.ForeignKey(
+        'RecipeFoodItem',
+        on_delete=models.CASCADE,
+        null=True, blank=True,
+        related_name='step_usages',
+        verbose_name='Ингредиент рецепта',
+        help_text='Пусто для старых записей — привяжите вручную'
+    )
+
+    preparation = models.ForeignKey(
+        'IngredientPreparation',
+        on_delete=models.SET_NULL,
+        null=True, blank=True,
+        verbose_name='Подготовка',
+        help_text='Очистка, нарезка, удаление пленок, отжим сока'
+    )
+    cooking_method = models.ForeignKey(
+        'CookingMethod',
+        on_delete=models.SET_NULL,
+        null=True, blank=True,
+        verbose_name='Способ обработки',
+        help_text='Жарка, варка, тушение — если ингредиент обрабатывается в этом шаге'
+    )
+    cooking_note = models.CharField(
+        max_length=300, blank=True,
+        verbose_name='Примечание по обработке',
+        help_text='Например: «до золотистого цвета», «до мягкости»'
+    )
+
+    order = models.IntegerField(default=0, verbose_name='Порядок')
 
     class Meta:
-        unique_together = ['recipe_ingredient', 'substitute_ingredient']
+        verbose_name = 'Ингредиент в шаге'
+        verbose_name_plural = 'Ингредиенты в шагах'
+        ordering = ['order', 'id']
+        indexes = [
+            models.Index(fields=['step']),
+            models.Index(fields=['food_item']),
+        ]
 
     def __str__(self):
-        return f"{self.recipe_ingredient.ingredient.name} → {self.substitute_ingredient.name}"
+        item = self.food_item.food_name if self.food_item else '—'
+        return f"{self.step.title}: {item}"
+
+
+# ======================= 16. ЗАМЕНА ИНГРЕДИЕНТА =======================
+class IngredientSubstitution(models.Model):
+    """Конкретная замена ингредиента в конкретном рецепте."""
+
+    food_item = models.ForeignKey(
+        'RecipeFoodItem',
+        on_delete=models.CASCADE,
+        related_name='applied_substitutions',
+        verbose_name='Ингредиент рецепта',
+        null=True, blank=True,  # ← ВРЕМЕННО, уберём после data-миграции
+    )
+
+    # ===== ТРИ ВАРИАНТА ЗАМЕНЫ =====
+    substitute_ingredient = models.ForeignKey(
+        'AbstractIngredient',
+        on_delete=models.PROTECT,
+        null=True, blank=True,
+        related_name='substitutions_as_abstract',
+        verbose_name='Заменяющий ингредиент (абстрактный)'
+    )
+    substitute_branded = models.ForeignKey(
+        'BrandedIngredient',
+        on_delete=models.SET_NULL,
+        null=True, blank=True,
+        related_name='substitutions_as_branded',
+        verbose_name='Заменяющий продукт (брендированный)'
+    )
+    substitute_subrecipe = models.ForeignKey(
+        'Recipe',
+        on_delete=models.SET_NULL,
+        null=True, blank=True,
+        related_name='substitutions_as_subrecipe',
+        verbose_name='Заменяющий полуфабрикат'
+    )
+
+    # ===== ИСТОЧНИК ЗАМЕНЫ =====
+    SOURCE_CHOICES = [
+        ('ttk', 'Из ТТК (вариант из рецепта)'),
+        ('rule', 'Из правила замены'),
+        ('semantic', 'По семантике (автоподбор)'),
+        ('manual', 'Вручную'),
+    ]
+    source = models.CharField(
+        max_length=20, choices=SOURCE_CHOICES, default='manual',
+        verbose_name='Источник замены'
+    )
+
+    # ===== ПРИМЕНЁННОЕ ПРАВИЛО =====
+    applied_rule = models.ForeignKey(
+        'IngredientSubstitutionRule',
+        on_delete=models.SET_NULL,
+        null=True, blank=True,
+        related_name='applied_in',
+        verbose_name='Применённое правило'
+    )
+
+    # ===== КОЛИЧЕСТВО =====
+    ratio = models.FloatField(default=1.0, verbose_name='Коэффициент')
+    substitute_quantity = models.FloatField(
+        null=True, blank=True,
+        verbose_name='Количество замены'
+    )
+    substitute_unit = models.CharField(
+        max_length=20, choices=UNIT_CHOICES, default='г',
+        verbose_name='Единица замены'
+    )
+
+    # ===== ПРИМЕЧАНИЕ =====
+    notes = models.TextField(blank=True, verbose_name='Примечание')
+
+    # ===== СЛУЖЕБНОЕ =====
+    created_at = models.DateTimeField(auto_now_add=True)
+    created_by = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.SET_NULL,
+        null=True, blank=True,
+        verbose_name='Создал'
+    )
+
+    class Meta:
+        verbose_name = 'Замена ингредиента'
+        verbose_name_plural = 'Замены ингредиентов'
+        ordering = ['-created_at']
+
+    def clean(self):
+        sources = [self.substitute_ingredient, self.substitute_branded, self.substitute_subrecipe]
+        if not any(sources):
+            raise ValidationError('Укажите хотя бы один вариант замены')
+
+    @property
+    def substitute_name(self):
+        item = self.substitute_subrecipe or self.substitute_branded or self.substitute_ingredient
+        if item is None:
+            return '—'
+        return getattr(item, 'title', None) or getattr(item, 'name', '—')
+
+    def __str__(self):
+        return f"{self.food_item.food_name} → {self.substitute_name}"
 
 
 class CookingMethodSubstitution(models.Model):
@@ -1576,12 +2045,6 @@ class SemanticRelation(models.Model):
     )
     notes = models.TextField(blank=True, verbose_name="Примечания")
 
-
-@receiver(pre_save, sender=Recipe)
-def update_recipe_nutrition(sender, instance, **kwargs):
-    if instance.pk:
-        pass
-
 #=============== 18. ЗАМЕНА ИНГРЕДИЕНТА =================================
 class IngredientSubstitutionRule(models.Model):
     """Универсальное правило замены ингредиента"""
@@ -1681,6 +2144,20 @@ class IngredientSubstitutionRule(models.Model):
     )
 
     is_active = models.BooleanField(default=True, verbose_name='Активна')
+
+    # ===== СТАТИСТИКА =====
+    usage_count = models.PositiveIntegerField(
+        default=0,
+        verbose_name='Использований',
+        help_text='Сколько раз правило было применено'
+    )
+
+    # ===== ПУБЛИЧНОСТЬ =====
+    is_public = models.BooleanField(
+        default=True,
+        verbose_name='Публичное',
+        help_text='Публичные правила видны всем пользователям'
+    )
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

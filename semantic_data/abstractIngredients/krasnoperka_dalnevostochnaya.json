@@ -1,0 +1,103 @@
+{
+  "name": "Красноперка дальневосточная",
+  "name_normalized": "krasnoperka_dalnevostochnaya",
+  "synonyms": "красноперка дальневосточная, красноперка-угай, угай, мелкочешуйная красноперка, дальневосточная красноперка, крупночешуйная красноперка, сахалинская красноперка, Tribolodon brandtii, Tribolodon hakonensis, Tribolodon ezoe, Pseudaspius, Far Eastern dace, Japanese dace",
+  "short_description": "Проходная рыба семейства карповых, обитающая в прибрежных водах Дальнего Востока и заходящая на нерест в реки. Имеет плотное, белое мясо с высоким содержанием белка (до 20,5%) и умеренной жирностью (до 4,1%). Ценится как промысловая и любительская рыба, используется для жарки, запекания и соления.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Дальневосточная красноперка (угай) — это род проходных рыб семейства карповых (Tribolodon), распространенных в реках, эстуариях и морских бухтах от острова Тайвань на юге до Шантарских и Курильских островов на севере. В роде выделяют четыре вида, из которых в России наиболее обычна мелкочешуйная красноперка-угай (T. brandtii). Длина тела составляет 20–55 см, масса достигает 1,7 кг. Тело вальковатое, покрыто мелкой овальной чешуей. Спина темная, бока и брюхо светлые. Во время нереста у рыб появляется брачная окраска: на теле возникает продольная красная полоса.</p><p class=\"ingredient-text\">Мясо красноперки имеет высокую пищевую ценность: содержание белка достигает 20,5%, липидов — 4,1%. По содержанию белка рыба относится к высокобелковым, по жирности — к среднежирным. Мясо вкусное, но содержит межмышечные кости.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, свойственный карповым рыбам</li><li class=\"ingredient-list-item\"><strong>Цвет мяса</strong> — белый, светлый</li><li class=\"ingredient-list-item\"><strong>Костистость</strong> — содержит межмышечные кости</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — весенний нерестовый ход (апрель–июнь)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — проходная рыба, способная жить как в пресной, так и в морской воде</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Чистка</strong> — удалить чешую, выпотрошить, удалить жабры</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — тщательно промыть под проточной водой</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — на порционные куски или филе</li><li class=\"ingredient-list-item\"><strong>Удаление костей</strong> — при необходимости удалить межмышечные кости</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — в панировке на сковороде</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с овощами и травами</li><li class=\"ingredient-list-item\"><strong>Соление</strong> — сухим посолом</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — горячее и холодное</li><li class=\"ingredient-list-item\"><strong>Уха</strong> — наваристый бульон</li><li class=\"ingredient-list-item\"><strong>Вяление</strong> — как закуска</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, лук, морковь, помидоры</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, томатный, лимонный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, кинза</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, лавровый лист, лимон</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Кефаль</strong> — схожая экология, другой вкус</li><li class=\"ingredient-list-item\"><strong>Лещ</strong> — схожая текстура мяса</li><li class=\"ingredient-list-item\"><strong>Язь</strong> — близкий родственник</li><li class=\"ingredient-list-item\"><strong>Плотва</strong> — более мелкая</li></ul>",
+
+  "category": "Рыба и морепродукты",
+
+  "data_source": "health-diet.ru",
+
+  "calories": 127.5,
+  "protein": 23.1,
+  "fat": 3.9,
+  "carbohydrates": 0,
+
+  "water": 71.2,
+  "ash": 1.6,
+
+  "vitamin_e": 0.295,
+  "vitamin_b3": 1.7114,
+  "vitamin_b4": 0.02,
+  "vitamin_k": 0.6,
+
+  "potassium": 292.35,
+  "calcium": 37.05,
+  "magnesium": 33.83,
+  "sodium": 89.93,
+  "sulfur": 230.87,
+  "phosphorus": 214.5,
+
+  "iron": 0.462,
+  "iodine": 23.22,
+  "cobalt": 23.087,
+  "manganese": 0.0456,
+  "zinc": 0.8475,
+
+  "omega_6": 0.401,
+
+  "semantic_data": {
+    "properties": [
+      "рыба",
+      "проходная",
+      "дальневосточная",
+      "карповые",
+      "высокобелковая",
+      "среднежирная",
+      "плотное мясо",
+      "межмышечные кости",
+      "промысловая",
+      "для жарки",
+      "для запекания",
+      "для соления"
+    ],
+    "preparations": [
+      "чистка и удаление чешуи",
+      "потрошение",
+      "промывка",
+      "нарезка порционными кусками",
+      "удаление межмышечных костей"
+    ],
+    "cooking_methods": [
+      {"method": "жарка", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "соление", "priority": "high"},
+      {"method": "копчение", "priority": "medium"},
+      {"method": "варка ухи", "priority": "medium"},
+      {"method": "вяление", "priority": "medium"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "закуски",
+      "супы",
+      "соленья"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "лук", "морковь", "помидоры"],
+      "sauces": ["сметанный", "томатный", "лимонный"],
+      "herbs": ["укроп", "петрушка", "кинза"],
+      "spices": ["черный перец", "лавровый лист", "лимон"]
+    },
+    "substitutes": [
+      {"name": "Кефаль", "similarity": "medium"},
+      {"name": "Лещ", "similarity": "high"},
+      {"name": "Язь", "similarity": "high"},
+      {"name": "Плотва", "similarity": "medium"}
+    ]
+  },
+
+  "tags": [
+    "рыба",
+    "красноперка",
+    "дальневосточная красноперка",
+    "угай",
+    "проходная рыба",
+    "карповые",
+    "жарка",
+    "запекание",
+    "соление",
+    "копчение"
+  ]
+}

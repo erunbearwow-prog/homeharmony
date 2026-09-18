@@ -1,0 +1,101 @@
+{
+  "name": "Говяжий кострец",
+  "name_normalized": "govyazhiy_kostrets",
+  "synonyms": "говяжий кострец, кострец говяжий, говядина кострец, верхняя часть тазобедренного отруба, кострец без кости, мясо для жарки, мясо для тушения, мясо для запекания, кострец для стейков, кострец для ростбифа",
+  "short_description": "Часть тазобедренного отруба говядины, расположенная в верхней части задней ляжки. Имеет плотную, упругую текстуру с тонкими прослойками жира и хорошо удерживает влагу. Относится к первому сорту и используется для жарки, тушения, запекания и приготовления рубленых изделий.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Говяжий кострец — это часть тазобедренного отруба, которая расположена в верхней части задней ляжки. В кулинарной классификации относится к первому сорту. Кострец имеет округлую, немного приплюснутую форму и состоит из хорошо удерживающих влагу волокон. Текстура упругая, но довольно мягкая, с тонкими прослойками жира. Мясо имеет ярко выраженный вкус и аромат, при этом сравнительно постное и сочное.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, с тонкими прослойками жира</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, ярко выраженный мясной</li><li class=\"ingredient-list-item\"><strong>Сорт</strong> — первый</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — хорошо удерживает влагу, подходит для большинства способов приготовления</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — порционные куски, стейки, медальоны, кубики для тушения</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — рекомендуется для сочности (с травами, чесноком, вином)</li><li class=\"ingredient-list-item\"><strong>Отбивание</strong> — для отбивных и эскалопов</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — большим куском в духовке, на открытом огне, для эскалопов и медальонов</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — для рагу, азу, гуляша, бефстроганова</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — ростбиф, целиком или порционными кусками</li><li class=\"ingredient-list-item\"><strong>Рубленые изделия</strong> — биточки, котлеты, фрикадельки</li><li class=\"ingredient-list-item\"><strong>Стейки</strong> — идеальная прожарка Medium</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, лук, морковь, помидоры, перец</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, сливочный, горчичный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — розмарин, тимьян, петрушка, укроп</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, черный перец, паприка, кориандр</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Оковалок</strong> — схожая часть, более рыхлая структура</li><li class=\"ingredient-list-item\"><strong>Огузок</strong> — из той же части туши</li><li class=\"ingredient-list-item\"><strong>Лопатка</strong> — для тушения</li></ul>",
+
+  "category": "Мясо и мясные продукты",
+
+  "data_source": "health-diet.ru",
+
+  "calories": 142,
+  "protein": 21.3,
+  "fat": 5.6,
+  "carbohydrates": 0,
+
+  "water": 72.4,
+  "ash": 1.1,
+
+  "vitamin_b1": 0.065,
+  "vitamin_b2": 0.107,
+  "vitamin_b4": 88.8,
+  "vitamin_b5": 0.629,
+  "vitamin_b6": 0.595,
+  "vitamin_b9_folate": 13,
+  "vitamin_b12": 1.04,
+  "vitamin_e": 0.29,
+  "vitamin_k": 1.2,
+  "vitamin_b3": 6.585,
+
+  "potassium": 333,
+  "calcium": 23,
+  "magnesium": 22,
+  "sodium": 54,
+  "sulfur": 212.6,
+  "phosphorus": 198,
+
+  "iron": 1.54,
+
+  "semantic_data": {
+    "properties": [
+      "говядина",
+      "тазобедренная часть",
+      "первый сорт",
+      "плотная текстура",
+      "упругая",
+      "с тонкими прослойками жира",
+      "для жарки",
+      "для тушения",
+      "для запекания",
+      "для стейков",
+      "для рубленых изделий"
+    ],
+    "preparations": [
+      "нарезка порционными кусками",
+      "маринование с травами и специями",
+      "отбивание для отбивных"
+    ],
+    "cooking_methods": [
+      {"method": "жарка большим куском", "priority": "high"},
+      {"method": "жарка на открытом огне", "priority": "high"},
+      {"method": "тушение", "priority": "high"},
+      {"method": "запекание (ростбиф)", "priority": "high"},
+      {"method": "приготовление эскалопов и медальонов", "priority": "high"},
+      {"method": "приготовление рубленых изделий", "priority": "medium"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "ростбиф",
+      "рагу",
+      "гуляш",
+      "бефстроганов",
+      "котлеты",
+      "биточки"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "лук", "морковь", "помидоры", "перец"],
+      "sauces": ["томатный", "сметанный", "сливочный", "горчичный"],
+      "herbs": ["розмарин", "тимьян", "петрушка", "укроп"],
+      "spices": ["чеснок", "черный перец", "паприка", "кориандр"]
+    },
+    "substitutes": [
+      {"name": "Оковалок", "similarity": "high"},
+      {"name": "Огузок", "similarity": "high"},
+      {"name": "Лопатка", "similarity": "medium"}
+    ]
+  },
+
+  "tags": [
+    "мясо",
+    "говядина",
+    "кострец",
+    "тазобедренная часть",
+    "первый сорт",
+    "для жарки",
+    "для тушения",
+    "для запекания",
+    "ростбиф"
+  ]
+}

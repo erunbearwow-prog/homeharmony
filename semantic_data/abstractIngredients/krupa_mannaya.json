@@ -1,0 +1,114 @@
+{
+  "name": "Крупа манная",
+  "name_normalized": "krupa_mannaya",
+  "synonyms": "манная крупа, манка, крупа манная, манная каша, semolina, манка для каши, манка для запеканки, манка для оладий, манка для пудинга",
+  "short_description": "Крупа, получаемая в результате помола пшеницы, с частицами размером 0,25–0,75 мм. Имеет светлый кремовый цвет и нейтральный вкус. Широко используется для варки каш, запеканок, пудингов, оладий и как загуститель в кулинарии.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Манная крупа — это пшеничная крупа, которая представляет собой частицы эндосперма пшеницы размером 0,25–0,75 мм. Она производится по ГОСТ 7022-2019 из мягких сортов пшеницы (марка М), из мягких с примесью твёрдых (марка МТ) или из твёрдых сортов (марка Т). Манная крупа имеет кремовый или желтоватый цвет, нейтральный вкус и высокую калорийность.</p><p class=\"ingredient-text\">Манная крупа быстро готовится, хорошо усваивается, но содержит мало клетчатки. Её используют для варки каш, запеканок, пудингов, оладий, а также как загуститель для соусов и супов. Манная каша — традиционное блюдо детского и диетического питания.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мелкая, однородная, сыпучая крупа</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, слегка пшеничный</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — кремовый, желтоватый, белый</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — частицы размером 0,25–0,75 мм</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 12 месяцев в сухом прохладном месте</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — быстро разваривается, хорошо усваивается</li></ul><h2 class=\"ingredient-title\">Марки манной крупы</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>М</strong> — из мягкой пшеницы, наиболее распространенная, для каш и запеканок</li><li class=\"ingredient-list-item\"><strong>МТ</strong> — из мягкой пшеницы с примесью твёрдой, универсальная</li><li class=\"ingredient-list-item\"><strong>Т</strong> — из твёрдой пшеницы, для пудингов и запеканок, менее разваривается</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Просеивание</strong> — для удаления комков и посторонних примесей</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — засыпать тонкой струйкой в кипящее молоко или воду, непрерывно помешивая</li><li class=\"ingredient-list-item\"><strong>Пропорции</strong> — 1:5 для жидкой каши, 1:4 для вязкой</li><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — не требуется</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Каши</strong> — манная каша на молоке или воде</li><li class=\"ingredient-list-item\"><strong>Запеканки</strong> — с творогом, яйцом, изюмом</li><li class=\"ingredient-list-item\"><strong>Пудинги</strong> — молочные и фруктовые</li><li class=\"ingredient-list-item\"><strong>Оладьи и блины</strong> — добавка в тесто</li><li class=\"ingredient-list-item\"><strong>Загуститель</strong> — для соусов, супов, начинок</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — добавка в тесто для печенья, кексов</li><li class=\"ingredient-list-item\"><strong>Панировка</strong> — для рыбы, мяса, овощей</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — молоко, сливки, масло, творог</li><li class=\"ingredient-list-item\"><strong>Фрукты и ягоды</strong> — изюм, курага, яблоки, ягоды</li><li class=\"ingredient-list-item\"><strong>Сахар и мед</strong> — для подслащивания</li><li class=\"ingredient-list-item\"><strong>Яйца</strong> — для запеканок и пудингов</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, ваниль, кардамон</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Кукурузная крупа</strong> — для каш и запеканок</li><li class=\"ingredient-list-item\"><strong>Рисовая крупа</strong> — для каш и пудингов</li><li class=\"ingredient-list-item\"><strong>Овсяные хлопья</strong> — для каш</li><li class=\"ingredient-list-item\"><strong>Мука пшеничная</strong> — для загущения, но не для каш</li></ul>",
+
+  "category": "Крупы и злаки",
+
+  "data_source": "usda",
+
+  "calories": 333,
+  "protein": 10.3,
+  "fat": 1.0,
+  "carbohydrates": 70.6,
+
+  "water": 14.0,
+  "ash": 0.5,
+  "fiber": 3.9,
+  "sugar": 0.0,
+
+  "vitamin_b1": 0.11,
+  "vitamin_b2": 0.04,
+  "vitamin_b3": 1.0,
+  "vitamin_b4": 15.0,
+  "vitamin_b5": 0.5,
+  "vitamin_b6": 0.1,
+  "vitamin_b9_folate": 20.0,
+  "vitamin_e": 0.1,
+  "vitamin_k": 0.1,
+
+  "potassium": 190,
+  "calcium": 17,
+  "magnesium": 47,
+  "sodium": 1,
+  "phosphorus": 136,
+
+  "iron": 1.2,
+  "manganese": 0.6,
+  "copper": 0.2,
+  "selenium": 20.0,
+  "zinc": 1.0,
+
+  "saturated_fat": 0.2,
+  "trans_fat": 0.0,
+  "cholesterol": 0,
+  "omega_3": 0.03,
+  "omega_6": 0.4,
+
+  "semantic_data": {
+    "properties": [
+      "крупа",
+      "пшеничная",
+      "манная",
+      "нейтральный вкус",
+      "быстроразваривающаяся",
+      "высококалорийная",
+      "для каш",
+      "для запеканок",
+      "для пудингов",
+      "для оладий",
+      "загуститель"
+    ],
+    "preparations": [
+      "просеивание",
+      "засыпание тонкой струйкой в кипящую жидкость",
+      "непрерывное помешивание при варке"
+    ],
+    "cooking_methods": [
+      {"method": "варка каши", "priority": "high"},
+      {"method": "приготовление запеканок", "priority": "high"},
+      {"method": "приготовление пудингов", "priority": "high"},
+      {"method": "добавление в тесто для оладий", "priority": "high"},
+      {"method": "использование как загуститель", "priority": "medium"},
+      {"method": "панировка", "priority": "medium"}
+    ],
+    "applications": [
+      "каши",
+      "запеканки",
+      "пудинги",
+      "оладьи",
+      "блины",
+      "соусы",
+      "супы",
+      "выпечка"
+    ],
+    "pairings": {
+      "protein": ["молоко", "сливки", "масло", "творог", "яйца"],
+      "vegetables": [],
+      "fruits": ["изюм", "курага", "яблоки", "ягоды"],
+      "sauces": ["сахар", "мед"],
+      "herbs": [],
+      "spices": ["корица", "ваниль", "кардамон"]
+    },
+    "substitutes": [
+      {"name": "Кукурузная крупа", "similarity": "medium"},
+      {"name": "Рисовая крупа", "similarity": "medium"},
+      {"name": "Овсяные хлопья", "similarity": "medium"},
+      {"name": "Мука пшеничная", "similarity": "low"}
+    ]
+  },
+
+  "tags": [
+    "крупа",
+    "манная крупа",
+    "манка",
+    "пшеничная крупа",
+    "каши",
+    "запеканки",
+    "пудинги",
+    "оладьи",
+    "загуститель"
+  ]
+}

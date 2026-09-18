@@ -1,0 +1,86 @@
+{
+  "name": "Костяника",
+  "name_normalized": "kostyanika",
+  "synonyms": "костяника, костяника каменистая, костяника обыкновенная, каменистая малина, каменика, костянка, костяница, кострица, костика, костянига, северный гранат, сибирский гранат, Rubus saxatilis, stone bramble",
+  "short_description": "Небольшая лесная ягода ярко-красного цвета, состоящая из нескольких сросшихся костянок с крупными косточками. Имеет кисло-сладкий, терпкий вкус и ценится за высокое содержание витамина C. Используется для варенья, желе, морсов, киселей и как начинка для выпечки.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Костяника — это многолетнее травянистое растение семейства Розовые, ближайший родственник малины, ежевики и морошки. Плоды костяники представляют собой сборную костянку, состоящую из нескольких (обычно 4-6) сросшихся между собой красных плодиков, внутри каждого из которых находится крупная косточка. Именно из-за этой косточки ягода и получила свое название. Растет костяника в лесной и лесостепной зоне Европы, Сибири и Дальнего Востока, предпочитая влажные хвойные и смешанные леса, склоны оврагов и кустарники.</p><p class=\"ingredient-text\">Ягоды костяники имеют кислый, терпкий вкус, который становится слаще по мере созревания. Благодаря высокому содержанию витамина C и органических кислот, костянику называют «северным гранатом» и используют не только в кулинарии, но и в народной медицине.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочная, с крупными твердыми косточками внутри</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кислый, терпкий, с легкой сладостью у спелых ягод</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — ярко-красный, алый</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — сборная костянка из 4-6 сросшихся плодиков</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — июль-август</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — свежая в холодильнике 2-3 дня, замороженная до 12 месяцев</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — содержит крупные косточки, которые необходимо удалять перед использованием</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Переборка</strong> — удалить листья, веточки и поврежденные ягоды</li><li class=\"ingredient-list-item\"><strong>Мойка</strong> — аккуратно промыть в прохладной воде</li><li class=\"ingredient-list-item\"><strong>Удаление косточек</strong> — протереть через сито или выбрать косточки вручную</li><li class=\"ingredient-list-item\"><strong>Заморозка</strong> — разложить в один слой, заморозить, переложить в пакет</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Варенье и желе</strong> — классическое применение костяники</li><li class=\"ingredient-list-item\"><strong>Морсы и кисели</strong> — освежающие напитки</li><li class=\"ingredient-list-item\"><strong>Сиропы</strong> — для десертов и напитков</li><li class=\"ingredient-list-item\"><strong>Начинка для выпечки</strong> — пироги, пирожки</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — к мясу и рыбе</li><li class=\"ingredient-list-item\"><strong>Сушка</strong> — для добавления в чай</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — сливки, сметана, молоко, йогурт</li><li class=\"ingredient-list-item\"><strong>Мед и сахар</strong> — для подслащивания</li><li class=\"ingredient-list-item\"><strong>Другие ягоды</strong> — малина, черника, земляника</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, ваниль, имбирь</li><li class=\"ingredient-list-item\"><strong>Мука</strong> — для выпечки</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Малина</strong> — схожая текстура, менее терпкая</li><li class=\"ingredient-list-item\"><strong>Ежевика</strong> — похожая структура, более кислая</li><li class=\"ingredient-list-item\"><strong>Клюква</strong> — для морсов и соусов</li><li class=\"ingredient-list-item\"><strong>Красная смородина</strong> — для варенья и желе</li></ul>",
+
+  "category": "Фрукты",
+
+  "data_source": "health-diet.ru",
+
+  "calories": 40,
+  "protein": 0.8,
+  "fat": 0.9,
+  "carbohydrates": 7.4,
+
+  "fiber": 4.6,
+  "water": 87,
+
+  "vitamin_c": 44,
+
+  "semantic_data": {
+    "properties": [
+      "ягода",
+      "лесная",
+      "красная",
+      "кислая",
+      "терпкая",
+      "северная",
+      "витаминная",
+      "для варенья",
+      "для желе",
+      "для морсов",
+      "для киселей"
+    ],
+    "preparations": [
+      "переборка ягод",
+      "мойка в прохладной воде",
+      "удаление косточек через сито",
+      "заморозка в один слой"
+    ],
+    "cooking_methods": [
+      {"method": "приготовление варенья и желе", "priority": "high"},
+      {"method": "приготовление морсов и киселей", "priority": "high"},
+      {"method": "приготовление сиропов", "priority": "medium"},
+      {"method": "использование в выпечке", "priority": "medium"},
+      {"method": "приготовление соусов", "priority": "medium"},
+      {"method": "сушка", "priority": "low"}
+    ],
+    "applications": [
+      "варенье и желе",
+      "напитки",
+      "десерты",
+      "выпечка",
+      "соусы"
+    ],
+    "pairings": {
+      "protein": ["сливки", "сметана", "молоко", "йогурт"],
+      "vegetables": [],
+      "fruits": ["малина", "черника", "земляника"],
+      "sauces": ["мед", "сахар"],
+      "herbs": [],
+      "spices": ["корица", "ваниль", "имбирь"]
+    },
+    "substitutes": [
+      {"name": "Малина", "similarity": "high"},
+      {"name": "Ежевика", "similarity": "high"},
+      {"name": "Клюква", "similarity": "medium"},
+      {"name": "Красная смородина", "similarity": "medium"}
+    ]
+  },
+
+  "tags": [
+    "ягода",
+    "костяника",
+    "лесная ягода",
+    "северная ягода",
+    "северный гранат",
+    "кислая ягода",
+    "варенье",
+    "желе",
+    "морс",
+    "кисель",
+    "витаминная"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "name": "Сахар",
+  "name_normalized": "sahar",
+  "synonyms": "сахар, сахар-песок, сахарный песок, белый сахар, сахароза, свекловичный сахар, тростниковый сахар, сахар кристаллический, сахар для выпечки, сахар для десертов, сахар для напитков, sugar, white sugar, sucrose",
+  "short_description": "Кристаллический пищевой продукт, представляющий собой чистую сахарозу, получаемую из сахарной свеклы или тростникового сахара-сырца. Обладает сладким вкусом, используется как подсластитель и важный компонент в кулинарии, выпечке и консервировании.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Сахар (сахар-песок) — это кристаллический пищевой продукт, который представляет собой практически чистую сахарозу, полученную в результате переработки сахаросодержащего сырья (сахарной свеклы или тростникового сахара-сырца). По ГОСТ 33222-2015 сахар белый — это пищевой продукт без вкусоароматических добавок, предназначенный для реализации в розничной сети, использования в общественном питании и пищевой промышленности.</p><p class=\"ingredient-text\">Сахар-песок представляет собой сыпучий продукт, состоящий из кристаллов сахарозы. Массовая доля сахарозы составляет не менее 99,75%. Сахар широко используется в кулинарии как подсластитель, а также выполняет важные технологические функции: карамелизация, стабилизация, консервация, брожение в тесте.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, чистый, без посторонних привкусов</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый, блестящий</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — кристаллический сыпучий продукт</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в сухом помещении</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — при нагревании плавится и карамелизуется, образуя коричневую массу с характерным ароматом</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в сухом месте, в герметичной таре</li><li class=\"ingredient-list-item\"><strong>Использование</strong> — добавлять в блюда по вкусу или по рецепту</li><li class=\"ingredient-list-item\"><strong>Карамелизация</strong> — нагревать на сухой сковороде до коричневого цвета</li><li class=\"ingredient-list-item\"><strong>Растворение</strong> — в горячих жидкостях (вода, молоко, чай)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — кексы, печенье, пироги, торты, хлеб</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — мороженое, пудинги, муссы, кремы</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — чай, кофе, компоты, лимонады</li><li class=\"ingredient-list-item\"><strong>Консервирование</strong> — варенье, джемы, компоты</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сладкие соусы, карамель</li><li class=\"ingredient-list-item\"><strong>Тесто</strong> — для активации дрожжей</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Все продукты</strong> — сахар является универсальным подсластителем</li><li class=\"ingredient-list-item\"><strong>Фрукты и ягоды</strong> — для варенья, джемов, десертов</li><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — для кремов, мороженого, йогуртов</li><li class=\"ingredient-list-item\"><strong>Мука и крупы</strong> — для выпечки и каш</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — чай, кофе, какао, соки</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мед</strong> — более ароматный, сладость с нюансами</li><li class=\"ingredient-list-item\"><strong>Кленовый сироп</strong> — для десертов и выпечки</li><li class=\"ingredient-list-item\"><strong>Сироп агавы</strong> — более сладкий, чем сахар</li><li class=\"ingredient-list-item\"><strong>Стевия</strong> — натуральный заменитель без калорий</li><li class=\"ingredient-list-item\"><strong>Фруктоза</strong> — для диабетического питания</li></ul>",
+
+  "category": "Бакалея",
+
+  "data_source": "skurikhin_tutelyan_2002",
+
+  "calories": 399,
+  "protein": 0,
+  "fat": 0,
+  "carbohydrates": 99.8,
+
+  "water": 0.1,
+  "ash": 0.1,
+  "sugar": 99.8,
+  "fiber": 0,
+
+  "potassium": 3,
+  "calcium": 3,
+  "magnesium": 0,
+  "sodium": 1,
+  "phosphorus": 0,
+  "iron": 0.3,
+
+  "semantic_data": {
+    "properties": [
+      "подсластитель",
+      "кристаллический",
+      "сладкий",
+      "универсальный",
+      "для выпечки",
+      "для десертов",
+      "для напитков",
+      "для консервирования",
+      "карамелизуется"
+    ],
+    "preparations": [
+      "хранение в сухом месте",
+      "использование по вкусу",
+      "карамелизация на сухой сковороде",
+      "растворение в горячих жидкостях"
+    ],
+    "cooking_methods": [
+      {"method": "добавление в выпечку", "priority": "high"},
+      {"method": "использование в десертах", "priority": "high"},
+      {"method": "добавление в напитки", "priority": "high"},
+      {"method": "приготовление варенья и джемов", "priority": "high"},
+      {"method": "карамелизация", "priority": "medium"},
+      {"method": "активация дрожжей", "priority": "medium"}
+    ],
+    "applications": [
+      "выпечка",
+      "десерты",
+      "напитки",
+      "консервирование",
+      "соусы",
+      "тесто"
+    ],
+    "pairings": {
+      "protein": ["молоко", "сливки", "яйца", "творог"],
+      "vegetables": [],
+      "fruits": ["яблоки", "ягоды", "цитрусовые"],
+      "sauces": ["карамель", "шоколад"],
+      "herbs": [],
+      "spices": ["корица", "ваниль", "кардамон"]
+    },
+    "substitutes": [
+      {"name": "Мед", "similarity": "medium"},
+      {"name": "Кленовый сироп", "similarity": "medium"},
+      {"name": "Сироп агавы", "similarity": "medium"},
+      {"name": "Стевия", "similarity": "low"},
+      {"name": "Фруктоза", "similarity": "low"}
+    ]
+  },
+
+  "tags": [
+    "сахар",
+    "бакалея",
+    "подсластитель",
+    "сахароза",
+    "выпечка",
+    "десерты",
+    "напитки",
+    "консервирование",
+    "карамелизация"
+  ]
+}

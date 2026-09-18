@@ -1,0 +1,119 @@
+{
+  "name": "Крупа пионерская",
+  "name_normalized": "krupa_pionerskaya",
+  "synonyms": "крупа пионерская, пионерская крупа, крупа повышенной питательной ценности, крупа для детского питания, крупа для диетического питания, крупа артек, крупа для каши, крупа для запеканки",
+  "short_description": "Крупа повышенной питательной ценности, изготовляемая из рисовой, гречневой или овсяной муки с добавлением сухого обезжиренного молока, сахара и соевой муки. Обогащена витаминами и минералами, хорошо разваривается и удобна для детского и диетического питания.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Пионерская крупа — это крупа повышенной питательной ценности, которая относится к группе обогащённых круп. Её изготовляют из рисовой, гречневой (продел) или овсяной дробленой крупы, измельченных в муку, с добавлением в качестве обогатителей сухого обезжиренного молока, сахара и соевой муки. Полученную смесь пропаривают, формуют в крупу, сушат и расфасовывают в картонные или бумажные коробки.</p><p class=\"ingredient-text\">Такие крупы хорошо развариваются и удобны для приготовления различных блюд, особенно для детского и диетического питания. Пионерская крупа имеет повышенную пищевую ценность благодаря обогащению молочными и соевыми компонентами, а также сахару.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мелкая, однородная, сыпучая крупа</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, молочный, благодаря добавлению сухого молока и сахара</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от кремового до светло-бежевого</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — формованные частицы (гранулы) из обогащённой смеси</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 9 месяцев со дня выработки при соблюдении условий транспортирования и хранения</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — относится к крупам повышенной питательной ценности, не требует длительной варки</li></ul><h2 class=\"ingredient-title\">Состав (типичный)</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Основное сырьё</strong> — рисовая, гречневая (продел) или овсяная дробленая крупа, измельченная в муку</li><li class=\"ingredient-list-item\"><strong>Обогатители</strong> — сухое обезжиренное молоко, сахар, соевая мука</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Пропорции для варки</strong> — на каждые 50 г крупы 0,25 л воды</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — засыпать в кипящую подсоленную воду, варить до готовности на тихом огне при слабом кипении</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — не требуется</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Каши</strong> — молочные и водные, для детского и диетического питания</li><li class=\"ingredient-list-item\"><strong>Запеканки</strong> — с творогом, яйцом, фруктами</li><li class=\"ingredient-list-item\"><strong>Пудинги</strong> — молочные и фруктовые</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — к мясу, рыбе, птице</li><li class=\"ingredient-list-item\"><strong>Детское питание</strong> — для первого прикорма и питания ослабленных детей</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — молоко, сливки, масло, творог</li><li class=\"ingredient-list-item\"><strong>Фрукты и ягоды</strong> — яблоки, бананы, ягоды, изюм, курага</li><li class=\"ingredient-list-item\"><strong>Сахар и мед</strong> — для подслащивания</li><li class=\"ingredient-list-item\"><strong>Яйца</strong> — для запеканок и пудингов</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, ваниль, кардамон</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Крупа Здоровье</strong> — аналогичная крупа повышенной питательной ценности</li><li class=\"ingredient-list-item\"><strong>Крупа Спортивная</strong> — аналогичная крупа повышенной питательной ценности</li><li class=\"ingredient-list-item\"><strong>Манная крупа</strong> — для каш и запеканок</li><li class=\"ingredient-list-item\"><strong>Рисовая крупа</strong> — для каш и пудингов</li></ul>",
+
+  "category": "Крупы и злаки",
+
+  "data_source": "health-diet.ru",
+
+  "calories": 331,
+  "protein": 17.7,
+  "fat": 2.2,
+  "carbohydrates": 64.1,
+
+  "water": 13.0,
+  "ash": 2.2,
+  "fiber": 0.3,
+  "sugar": 2.0,
+  "starch": 52.4,
+
+  "vitamin_a": 10,
+  "retinol_equivalent": 10,
+  "vitamin_b1": 0.4,
+  "vitamin_b2": 0.5,
+  "vitamin_b4": 90,
+  "vitamin_b5": 1.1,
+  "vitamin_b6": 0.5,
+  "vitamin_b9_folate": 37.5,
+  "vitamin_e": 6.1,
+  "vitamin_b7": 10.4,
+  "vitamin_b3": 6.9382,
+
+  "potassium": 245,
+  "calcium": 278,
+  "magnesium": 118,
+  "sodium": 23,
+  "phosphorus": 415,
+  "sulfur": 100,
+  "silicon": 48,
+  "chlorine": 29,
+
+  "iron": 1.7,
+  "manganese": 3.76,
+  "copper": 470,
+  "selenium": 19,
+  "zinc": 2.79,
+  "aluminum": 1445,
+  "boron": 196,
+  "vanadium": 172,
+  "iodine": 8,
+  "cobalt": 5.4,
+  "molybdenum": 23.6,
+  "nickel": 42.8,
+  "rubidium": 24.5,
+  "fluorine": 36.1,
+
+  "semantic_data": {
+    "properties": [
+      "крупа",
+      "повышенной питательной ценности",
+      "обогащённая",
+      "сладковатая",
+      "молочная",
+      "для детского питания",
+      "для диетического питания",
+      "для каш",
+      "для запеканок",
+      "для пудингов",
+      "быстроразваривающаяся"
+    ],
+    "preparations": [
+      "засыпание в кипящую подсоленную воду",
+      "варка на тихом огне при слабом кипении"
+    ],
+    "cooking_methods": [
+      {"method": "варка каши", "priority": "high"},
+      {"method": "приготовление запеканок", "priority": "high"},
+      {"method": "приготовление пудингов", "priority": "high"},
+      {"method": "использование как гарнир", "priority": "medium"},
+      {"method": "детское питание", "priority": "high"}
+    ],
+    "applications": [
+      "каши",
+      "запеканки",
+      "пудинги",
+      "гарниры",
+      "детское питание",
+      "диетическое питание"
+    ],
+    "pairings": {
+      "protein": ["молоко", "сливки", "масло", "творог", "яйца"],
+      "vegetables": [],
+      "fruits": ["яблоки", "бананы", "ягоды", "изюм", "курага"],
+      "sauces": ["сахар", "мед"],
+      "herbs": [],
+      "spices": ["корица", "ваниль", "кардамон"]
+    },
+    "substitutes": [
+      {"name": "Крупа Здоровье", "similarity": "high"},
+      {"name": "Крупа Спортивная", "similarity": "high"},
+      {"name": "Манная крупа", "similarity": "medium"},
+      {"name": "Рисовая крупа", "similarity": "medium"}
+    ]
+  },
+
+  "tags": [
+    "крупа",
+    "пионерская крупа",
+    "крупа повышенной питательной ценности",
+    "обогащённая крупа",
+    "детское питание",
+    "диетическое питание",
+    "каши",
+    "запеканки",
+    "пудинги"
+  ]
+}

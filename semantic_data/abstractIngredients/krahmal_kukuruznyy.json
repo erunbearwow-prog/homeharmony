@@ -1,0 +1,119 @@
+{
+  "name": "Крахмал кукурузный",
+  "name_normalized": "krahmal_kukuruznyy",
+  "synonyms": "крахмал кукурузный, кукурузный крахмал, крахмал, кукурузная мука, крахмал для соусов, крахмал для выпечки, крахмал для киселей, загуститель, corn starch, cornstarch, maize starch",
+  "short_description": "Белый или слегка желтоватый порошок, получаемый из кукурузных зерен. Используется в кулинарии как загуститель для соусов, супов, киселей и начинок. При нагревании с водой образует вязкий, слегка матовый гель.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Крахмал кукурузный — это безвкусный порошок, получаемый из кукурузных зерен (эндосперма). Он широко используется в кулинарии как загуститель для соусов, супов, подливок, киселей и начинок. В отличие от картофельного крахмала, кукурузный дает менее прозрачный гель и требует в 1,5-2 раза больше объема для достижения той же вязкости.</p><p class=\"ingredient-text\">Кукурузный крахмал является важным ингредиентом в азиатской кухне, где используется для загущения соусов, маринадов и для обваливания продуктов перед жаркой (для хрустящей корочки). В европейской кухне применяется для загущения соусов, кремов, пудингов и начинок для пирогов.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мелкий, однородный порошок (при сжатии скрипит)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, без выраженного вкуса</li><li class=\"ingredient-list-item\"><strong>Запах</strong> — отсутствует или очень слабый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый, иногда с желтоватым оттенком</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2 лет в герметичной упаковке при относительной влажности не более 75%</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — дает менее прозрачный гель, чем картофельный крахмал; не переносит замораживания (гель разрушается)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разведение</strong> — перед добавлением в блюдо развести в холодной воде (пропорция 1:2 или 1:3) непосредственно перед использованием</li><li class=\"ingredient-list-item\"><strong>Введение</strong> — вводить разведенную смесь в кипящую жидкость тонкой струйкой, непрерывно помешивая</li><li class=\"ingredient-list-item\"><strong>Завершение</strong> — снять с огня сразу после закипания (при длительном нагреве гель разрушается)</li><li class=\"ingredient-list-item\"><strong>Для жарки</strong> — использовать в сухом виде для обваливания продуктов</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Загущение</strong> — для соусов, супов, подливок, киселей</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для ягодных и фруктовых пирогов</li><li class=\"ingredient-list-item\"><strong>Связывание</strong> — для фарша фрикаделек и тефтелей</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — для улучшения текстуры бисквитов, печенья, вафель</li><li class=\"ingredient-list-item\"><strong>Панировка</strong> — для хрустящей корочки при жарке</li><li class=\"ingredient-list-item\"><strong>Пудинги и кремы</strong> — как загуститель</li><li class=\"ingredient-list-item\"><strong>Азиатская кухня</strong> — для загущения соусов и маринадов</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жидкости</strong> — вода, бульон, сок, молоко</li><li class=\"ingredient-list-item\"><strong>Ягоды и фрукты</strong> — для начинок и киселей</li><li class=\"ingredient-list-item\"><strong>Мясной фарш</strong> — для связывания и удержания влаги</li><li class=\"ingredient-list-item\"><strong>Мука</strong> — в выпечке (замена части пшеничной муки)</li><li class=\"ingredient-list-item\"><strong>Соевый соус</strong> — для азиатских соусов</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Картофельный крахмал</strong> — более вязкий, дает более прозрачный гель, требует меньше объема</li><li class=\"ingredient-list-item\"><strong>Мука</strong> — для загущения, но дает менее прозрачную текстуру</li><li class=\"ingredient-list-item\"><strong>Тапиоковый крахмал</strong> — для прозрачных гелей</li><li class=\"ingredient-list-item\"><strong>Аррорут</strong> — для загущения без глютена</li><li class=\"ingredient-list-item\"><strong>Рисовая мука</strong> — для азиатских соусов</li></ul>",
+
+  "category": "Бакалея",
+
+  "data_source": "usda",
+
+  "calories": 381,
+  "protein": 0.26,
+  "fat": 0.05,
+  "carbohydrates": 91.27,
+
+  "water": 8.32,
+  "ash": 0.09,
+  "fiber": 0.9,
+  "sugar": 0.0,
+
+  "vitamin_b1": 0.0,
+  "vitamin_b2": 0.0,
+  "vitamin_b4": 0.4,
+  "vitamin_b5": 0.0,
+  "vitamin_b6": 0.0,
+  "vitamin_b9_folate": 0.0,
+  "vitamin_c": 0.0,
+  "vitamin_e": 0.0,
+  "vitamin_k": 0.0,
+  "vitamin_b3": 0.0,
+
+  "potassium": 9,
+  "calcium": 2,
+  "magnesium": 3,
+  "sodium": 9,
+  "phosphorus": 13,
+
+  "iron": 0.47,
+  "manganese": 0.0,
+  "copper": 0.05,
+  "selenium": 2.8,
+  "zinc": 0.06,
+
+  "saturated_fat": 0.009,
+  "trans_fat": 0.0,
+  "cholesterol": 0,
+  "omega_3": 0.0,
+  "omega_6": 0.0,
+  "polyunsaturated_fat": 0.026,
+
+  "semantic_data": {
+    "properties": [
+      "загуститель",
+      "порошок",
+      "безвкусный",
+      "углеводный",
+      "кукурузный",
+      "для соусов",
+      "для супов",
+      "для киселей",
+      "для выпечки",
+      "для начинок",
+      "для панировки"
+    ],
+    "preparations": [
+      "разведение в холодной воде",
+      "введение в кипящую жидкость",
+      "быстрое снятие с огня",
+      "использование в сухом виде для панировки"
+    ],
+    "cooking_methods": [
+      {"method": "загущение соусов и супов", "priority": "high"},
+      {"method": "приготовление киселей и пудингов", "priority": "high"},
+      {"method": "связывание фарша", "priority": "high"},
+      {"method": "использование в выпечке", "priority": "high"},
+      {"method": "панировка для жарки", "priority": "high"},
+      {"method": "загущение азиатских соусов", "priority": "medium"}
+    ],
+    "applications": [
+      "соусы",
+      "супы",
+      "кисели",
+      "пудинги",
+      "начинки для пирогов",
+      "фрикадельки и тефтели",
+      "выпечка",
+      "панировка",
+      "азиатские соусы"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [],
+      "fruits": ["ягоды", "фрукты"],
+      "sauces": ["бульон", "сок", "молоко", "соевый соус"],
+      "herbs": [],
+      "spices": []
+    },
+    "substitutes": [
+      {"name": "Картофельный крахмал", "similarity": "high"},
+      {"name": "Мука", "similarity": "medium"},
+      {"name": "Тапиоковый крахмал", "similarity": "medium"},
+      {"name": "Аррорут", "similarity": "medium"},
+      {"name": "Рисовая мука", "similarity": "low"}
+    ]
+  },
+
+  "tags": [
+    "бакалея",
+    "крахмал",
+    "кукурузный крахмал",
+    "загуститель",
+    "соусы",
+    "супы",
+    "кисели",
+    "выпечка",
+    "панировка"
+  ]
+}

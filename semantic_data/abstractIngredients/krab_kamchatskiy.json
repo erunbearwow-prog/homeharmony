@@ -1,0 +1,107 @@
+{
+  "name": "Краб камчатский",
+  "name_normalized": "krab_kamchatskiy",
+  "synonyms": "краб камчатский, камчатский краб, королевский краб, Paralithodes camtschaticus, красный королевский краб, камчатский королевский краб, краб-паук (ошибочно), мясо камчатского краба, фаланги краба, клешни краба, king crab",
+  "short_description": "Крупный морской ракообразный с длинными конечностями и ценным белым мясом. Обладает нежным сладковатым вкусом, плотной текстурой и считается деликатесом. Мясо богато белком, витаминами группы B, магнием, цинком и омега-3.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Камчатский краб (Paralithodes camtschaticus) — это крупный морской ракообразный, обитающий в холодных водах северной части Тихого океана и акклиматизированный в Баренцевом море. Несмотря на название, с точки зрения биологии он является не настоящим крабом, а представителем надсемейства раков-отшельников. Камчатский краб имеет массивное тело с длинными ходильными ногами и крупными клешнями. Размах конечностей взрослой особи может достигать 1,5 метров, а вес — 3-5 килограммов. Мясо камчатского краба ценится за нежную, сочную текстуру и сладковатый вкус. У каждой части свои особенности: мясо клешней плотное и сладкое, плечо сочное, фаланги солоноватые и нежные, а коленце считается изысканной закуской с деликатными волокнами.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, сочная, нежная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, деликатный</li><li class=\"ingredient-list-item\"><strong>Цвет мяса</strong> — белый с розоватым оттенком</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — круглый год, пик промысла осень-весна</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — живые крабы в морской воде, вареные в холодильнике 1-2 дня</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — относится к премиальным морепродуктам, мясо легко усваивается</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Варка</strong> — живого краба опустить в кипящую подсоленную воду, варить 15-20 минут</li><li class=\"ingredient-list-item\"><strong>Очистка</strong> — отделить конечности, извлечь мясо из панциря</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — мясо разобрать на волокна или нарезать кусочками</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — вареное мясо хранить в холодильнике не более 48 часов</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Варка</strong> — классический способ приготовления</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с авокадо, огурцом, майонезом, имбирем</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — крем-супы, гаспачо, холодные супы</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — брускетты, тарталетки, холодец</li><li class=\"ingredient-list-item\"><strong>Паста и ризотто</strong> — с кремовыми соусами</li><li class=\"ingredient-list-item\"><strong>Запеканки</strong> — с сыром и сливками</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — фаланги и клешни на гриле</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — авокадо, огурцы, сельдерей, спаржа, молодые кабачки</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — манго, лимон, лайм</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — майонез, японский майонез, соус ким-чи, оливково-бальзамическая заправка, соус Шампань</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — лук-резанец, кинза, микрозелень</li><li class=\"ingredient-list-item\"><strong>Икра</strong> — красная икра, икра Тобико</li><li class=\"ingredient-list-item\"><strong>Алкоголь</strong> — виски, белое вино</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Краб камчатский (другие части)</strong> — фаланги, клешни, плечо</li><li class=\"ingredient-list-item\"><strong>Краб-стригун</strong> — более мелкий, схожий вкус</li><li class=\"ingredient-list-item\"><strong>Лангустины</strong> — схожая текстура</li><li class=\"ingredient-list-item\"><strong>Креветки королевские</strong> — более доступная альтернатива</li><li class=\"ingredient-list-item\"><strong>Сурими (имитация)</strong> — бюджетный вариант, другой вкус</li></ul>",
+
+  "category": "Рыба и морепродукты",
+
+  "data_source": "health-diet.ru",
+
+  "calories": 82,
+  "protein": 18.2,
+  "fat": 1.0,
+  "carbohydrates": 0,
+
+  "water": 78.9,
+  "ash": 1.9,
+  "cholesterol": 70,
+
+  "vitamin_a": 30,
+  "retinol_equivalent": 30,
+  "vitamin_b1": 0.05,
+  "vitamin_b2": 0.08,
+  "vitamin_c": 1,
+  "vitamin_e": 1.5,
+  "vitamin_b3": 5.656,
+
+  "potassium": 310,
+  "calcium": 100,
+  "magnesium": 50,
+  "sodium": 250,
+  "sulfur": 160,
+  "phosphorus": 260,
+
+  "iron": 0.7,
+
+  "saturated_fat": 0.2,
+
+  "semantic_data": {
+    "properties": [
+      "морепродукт",
+      "ракообразное",
+      "деликатес",
+      "премиальный",
+      "белое мясо",
+      "сладковатый вкус",
+      "нежная текстура",
+      "низкокалорийный",
+      "высокобелковый",
+      "для салатов",
+      "для супов",
+      "для закусок"
+    ],
+    "preparations": [
+      "варка живого краба",
+      "очистка от панциря",
+      "извлечение мяса",
+      "разбор на волокна",
+      "нарезка кусочками"
+    ],
+    "cooking_methods": [
+      {"method": "варка", "priority": "high"},
+      {"method": "использование в салатах", "priority": "high"},
+      {"method": "приготовление супов", "priority": "high"},
+      {"method": "закуски", "priority": "high"},
+      {"method": "паста и ризотто", "priority": "medium"},
+      {"method": "запеканки", "priority": "medium"},
+      {"method": "гриль", "priority": "medium"}
+    ],
+    "applications": [
+      "салаты",
+      "супы",
+      "закуски",
+      "паста",
+      "ризотто",
+      "запеканки",
+      "гриль"
+    ],
+    "pairings": {
+      "protein": ["краб камчатский (другие части)", "креветки", "икра"],
+      "vegetables": ["авокадо", "огурцы", "сельдерей", "спаржа", "кабачки"],
+      "fruits": ["манго", "лимон", "лайм"],
+      "sauces": ["майонез", "японский майонез", "соус ким-чи", "оливково-бальзамическая заправка", "соус Шампань"],
+      "herbs": ["лук-резанец", "кинза", "микрозелень"],
+      "spices": ["розовый перец", "соль"]
+    },
+    "substitutes": [
+      {"name": "Краб-стригун", "similarity": "high"},
+      {"name": "Лангустины", "similarity": "medium"},
+      {"name": "Креветки королевские", "similarity": "medium"},
+      {"name": "Сурими (имитация)", "similarity": "low"}
+    ]
+  },
+
+  "tags": [
+    "морепродукты",
+    "краб",
+    "камчатский краб",
+    "королевский краб",
+    "деликатес",
+    "премиальный продукт",
+    "салаты",
+    "супы",
+    "закуски"
+  ]
+}

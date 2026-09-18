@@ -1,0 +1,102 @@
+{
+  "name": "Красная фасоль консервированная",
+  "name_normalized": "krasnaya_fasol_konservirovannaya",
+  "synonyms": "красная фасоль консервированная, фасоль красная в банке, консервированная красная фасоль, фасоль в томатном соусе, фасоль в собственном соку, фасоль консервированная, готовая фасоль, фасоль для салатов, фасоль для супа, фасоль для гарнира",
+  "short_description": "Готовый к употреблению продукт из отварной красной фасоли, консервированной в собственном соку или томатном соусе. Имеет мягкую, нежную текстуру и насыщенный вкус. Используется для салатов, супов, гарниров и вторых блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Красная фасоль консервированная — это готовый к употреблению продукт, получаемый путем замачивания, варки и консервирования спелой красной фасоли. В зависимости от производителя, фасоль может быть консервирована в собственном соку (с добавлением соли и воды) или в томатном соусе с добавлением сахара, специй и пряностей. Консервированная фасоль имеет мягкую, нежную текстуру и насыщенный, слегка сладковатый вкус. Она широко используется в кулинарии как самостоятельное блюдо, а также как ингредиент для салатов, супов, рагу и гарниров.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мягкая, нежная, но сохраняющая форму</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, слегка сладковатый (в томатном соусе — с кислинкой)</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — темно-красный, бордовый</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — целые или половинки бобов</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 24-36 месяцев (в закрытой банке), 2-3 дня (в открытой)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — готова к употреблению, не требует варки</li></ul><h2 class=\"ingredient-title\">Состав (типичный)</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Основное сырье</strong> — фасоль красная</li><li class=\"ingredient-list-item\"><strong>Жидкость</strong> — вода, томатный сок (для варианта в соусе)</li><li class=\"ingredient-list-item\"><strong>Добавки</strong> — соль, сахар, специи (для варианта в соусе)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Открытие</strong> — открыть банку</li><li class=\"ingredient-list-item\"><strong>Слив жидкости</strong> — при необходимости слить жидкость</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — промыть водой для удаления лишней соли</li><li class=\"ingredient-list-item\"><strong>Использование</strong> — добавить в блюдо в конце приготовления или использовать сразу</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с луком, зеленью, яйцом, сухариками</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — добавка в овощные и мясные супы</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — к мясу, рыбе, птице</li><li class=\"ingredient-list-item\"><strong>Рагу</strong> — с овощами и мясом</li><li class=\"ingredient-list-item\"><strong>Паштеты</strong> — как основа для вегетарианских паштетов</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — для пасты и риса</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, помидоры, перец, чеснок</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — говядина, свинина, курица</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, кинза</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, паприка, кумин, кориандр</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, чесночный</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Белая фасоль консервированная</strong> — более нежная текстура</li><li class=\"ingredient-list-item\"><strong>Фасоль отварная</strong> — из сухой фасоли</li><li class=\"ingredient-list-item\"><strong>Нут консервированный</strong> — другой вкус</li><li class=\"ingredient-list-item\"><strong>Чечевица отварная</strong> — для супов и рагу</li></ul>",
+
+  "category": "Бобовые",
+
+  "data_source": "usda",
+
+  "calories": 81,
+  "protein": 5.2,
+  "fat": 0.36,
+  "carbohydrates": 14.8,
+
+  "fiber": 4.3,
+  "sugar": 1.9,
+  "sodium": 256,
+  "potassium": 260,
+  "calcium": 29,
+  "phosphorus": 106,
+  "iron": 1.3,
+
+  "vitamin_c": 0.8,
+  "vitamin_b1": 0.1,
+  "vitamin_b2": 0.1,
+  "vitamin_b3": 0.5,
+  "vitamin_b6": 0.1,
+  "vitamin_b9_folate": 23,
+  "vitamin_b12": 0,
+  "vitamin_d": 0,
+  "vitamin_e": 0.03,
+  "vitamin_k": 4,
+  "vitamin_b4": 31,
+  "vitamin_b5": 0.1,
+
+  "saturated_fat": 0.13,
+  "trans_fat": 0,
+  "cholesterol": 0,
+
+  "semantic_data": {
+    "properties": [
+      "бобовые",
+      "красная фасоль",
+      "консервированная",
+      "готовая",
+      "мягкая",
+      "нежная",
+      "насыщенный вкус",
+      "для салатов",
+      "для супов",
+      "для гарниров"
+    ],
+    "preparations": [
+      "открытие банки",
+      "слив жидкости",
+      "промывка водой",
+      "добавление в блюдо"
+    ],
+    "cooking_methods": [
+      {"method": "использование в салатах", "priority": "high"},
+      {"method": "добавление в супы", "priority": "high"},
+      {"method": "использование как гарнир", "priority": "high"},
+      {"method": "приготовление рагу", "priority": "medium"},
+      {"method": "приготовление паштетов", "priority": "medium"}
+    ],
+    "applications": [
+      "салаты",
+      "супы",
+      "гарниры",
+      "рагу",
+      "паштеты",
+      "соусы"
+    ],
+    "pairings": {
+      "protein": ["говядина", "свинина", "курица"],
+      "vegetables": ["лук", "морковь", "помидоры", "перец", "чеснок"],
+      "sauces": ["томатный", "сметанный", "чесночный"],
+      "herbs": ["петрушка", "укроп", "кинза"],
+      "spices": ["черный перец", "паприка", "кумин", "кориандр"]
+    },
+    "substitutes": [
+      {"name": "Белая фасоль консервированная", "similarity": "high"},
+      {"name": "Фасоль отварная", "similarity": "high"},
+      {"name": "Нут консервированный", "similarity": "medium"},
+      {"name": "Чечевица отварная", "similarity": "medium"}
+    ]
+  },
+
+  "tags": [
+    "бобовые",
+    "фасоль",
+    "красная фасоль",
+    "консервы",
+    "готовая",
+    "салаты",
+    "супы",
+    "гарниры",
+    "рагу"
+  ]
+}

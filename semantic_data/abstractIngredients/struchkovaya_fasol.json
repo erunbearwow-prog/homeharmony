@@ -1,0 +1,116 @@
+{
+  "name": "Стручковая фасоль",
+  "name_normalized": "struchkovaya_fasol",
+  "synonyms": "стручковая фасоль, зеленая фасоль, спаржевая фасоль, фасоль стручковая, зеленая стручковая фасоль, фасоль спаржевая, French beans, green beans, string beans, snap beans, Phaseolus vulgaris",
+  "short_description": "Молодые недозрелые стручки зеленой фасоли, используемые в пищу целиком вместе с семенами. Обладают нежной, хрустящей текстурой и нейтральным, слегка сладковатым вкусом. Богаты клетчаткой, витаминами C, K, A и фолиевой кислотой. Универсальный овощ для гарниров, супов, рагу и салатов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Стручковая фасоль — это молодые, недозрелые стручки фасоли обыкновенной (Phaseolus vulgaris), которые употребляют в пищу целиком, вместе с семенами. В отличие от зерновой фасоли, у стручковой в пищу идут именно зеленые лопатки. Стручки имеют удлиненную, слегка изогнутую форму, нежную хрустящую текстуру и нейтральный, слегка сладковатый травянистый вкус. Стручковая фасоль — низкокалорийный продукт, богатый клетчаткой, витаминами C, K, A, фолиевой кислотой и минералами (калий, магний, кальций, железо). Она широко используется в кулинарии: как гарнир, в супах, рагу, салатах, запеканках и как самостоятельное блюдо.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — хрустящая, нежная (свежая), мягкая (после термообработки)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, слегка сладковатый, травянистый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — ярко-зеленый (также желтый, фиолетовый в зависимости от сорта)</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — удлиненные стручки</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — свежая в холодильнике 3-5 дней, замороженная до 12 месяцев</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — сырая фасоль содержит лектины, требует термической обработки</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойка</strong> — промыть под проточной водой</li><li class=\"ingredient-list-item\"><strong>Обрезка</strong> — удалить кончики с двух сторон</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — на кусочки 2-4 см или оставить целыми</li><li class=\"ingredient-list-item\"><strong>Бланширование</strong> — для сохранения цвета и текстуры (1-2 минуты)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гарнир</strong> — к мясу, рыбе, птице</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — овощные, куриные, грибные</li><li class=\"ingredient-list-item\"><strong>Рагу</strong> — с картофелем, морковью, томатами, мясом</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — овощные, с яйцом, с орехами</li><li class=\"ingredient-list-item\"><strong>Запеканки</strong> — с сыром, яйцом, сливками</li><li class=\"ingredient-list-item\"><strong>Обжаривание</strong> — на сковороде с чесноком и маслом</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в томатном или сливочном соусе</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, говядина, свинина, баранина</li><li class=\"ingredient-list-item\"><strong>Рыба</strong> — лосось, треска, скумбрия</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук, помидоры, перец, кабачки</li><li class=\"ingredient-list-item\"><strong>Грибы</strong> — шампиньоны, лесные грибы</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочный, томатный, сметанный, чесночный</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, чёрный перец, орегано, тимьян</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, базилик</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Замороженная стручковая фасоль</strong> — аналогичный продукт</li><li class=\"ingredient-list-item\"><strong>Консервированная стручковая фасоль</strong> — более мягкая, готова к употреблению</li><li class=\"ingredient-list-item\"><strong>Спаржа зеленая</strong> — более деликатный вкус, другая текстура</li><li class=\"ingredient-list-item\"><strong>Зеленый горошек замороженный</strong> — сладкий, менее волокнистый</li><li class=\"ingredient-list-item\"><strong>Брокколи замороженная</strong> — плотная, похожая консистенция</li></ul>",
+
+  "category": "Овощи",
+
+  "data_source": "usda",
+
+  "calories": 39,
+  "protein": 2.31,
+  "fat": 0.5,
+  "carbohydrates": 6.41,
+
+  "fiber": 3.4,
+  "sugar": 3.22,
+  "water": 90.04,
+  "ash": 0.74,
+  "starch": 0.88,
+
+  "vitamin_a": 35,
+  "beta_carotene": 0.379,
+  "vitamin_b1": 0.082,
+  "vitamin_b2": 0.104,
+  "vitamin_b3": 0.734,
+  "vitamin_b4": 15.3,
+  "vitamin_b5": 0.225,
+  "vitamin_b6": 0.141,
+  "vitamin_b9_folate": 33,
+  "vitamin_c": 12.2,
+  "vitamin_e": 0.41,
+  "vitamin_k": 43,
+
+  "potassium": 211,
+  "calcium": 37,
+  "magnesium": 25,
+  "sodium": 6,
+  "phosphorus": 38,
+  "iron": 1.03,
+  "manganese": 0.214,
+  "copper": 0.069,
+  "zinc": 0.24,
+  "selenium": 0.6,
+
+  "saturated_fat": 0.1,
+  "trans_fat": 0,
+  "cholesterol": 0,
+  "omega_3": 0.056,
+  "omega_6": 0.04,
+
+  "semantic_data": {
+    "properties": [
+      "овощ",
+      "бобовые",
+      "стручковая фасоль",
+      "зеленая",
+      "хрустящая",
+      "низкокалорийная",
+      "богата клетчаткой",
+      "витаминная",
+      "для гарниров",
+      "для супов",
+      "для рагу"
+    ],
+    "preparations": [
+      "мойка под проточной водой",
+      "обрезка кончиков",
+      "нарезка на кусочки",
+      "бланширование для сохранения цвета"
+    ],
+    "cooking_methods": [
+      {"method": "варка", "priority": "high"},
+      {"method": "обжаривание", "priority": "high"},
+      {"method": "тушение", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "использование в супах", "priority": "high"},
+      {"method": "использование в салатах", "priority": "medium"}
+    ],
+    "applications": [
+      "гарниры",
+      "супы",
+      "рагу",
+      "салаты",
+      "запеканки"
+    ],
+    "pairings": {
+      "protein": ["курица", "говядина", "свинина", "баранина", "лосось", "треска", "скумбрия"],
+      "vegetables": ["картофель", "морковь", "лук", "помидоры", "перец", "кабачки"],
+      "sauces": ["сливочный", "томатный", "сметанный", "чесночный"],
+      "herbs": ["петрушка", "укроп", "базилик"],
+      "spices": ["чеснок", "черный перец", "орегано", "тимьян"]
+    },
+    "substitutes": [
+      {"name": "Замороженная стручковая фасоль", "similarity": "high"},
+      {"name": "Консервированная стручковая фасоль", "similarity": "medium"},
+      {"name": "Спаржа зеленая", "similarity": "medium"},
+      {"name": "Зеленый горошек замороженный", "similarity": "low"},
+      {"name": "Брокколи замороженная", "similarity": "low"}
+    ]
+  },
+
+  "tags": [
+    "овощ",
+    "бобовые",
+    "стручковая фасоль",
+    "зеленая фасоль",
+    "спаржевая фасоль",
+    "гарнир",
+    "суп",
+    "рагу",
+    "салат",
+    "диетический"
+  ]
+}

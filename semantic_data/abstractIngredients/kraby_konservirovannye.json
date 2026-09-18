@@ -1,0 +1,112 @@
+{
+  "name": "Крабы консервированные",
+  "name_normalized": "kraby_konservirovannye",
+  "synonyms": "крабы консервированные, консервированные крабы, краб натуральный, краб в собственном соку, мясо краба консервированное, крабовые консервы, краб камчатский консервированный, краб-стригун консервированный, canned crab, canned crab meat",
+  "short_description": "Готовый к употреблению продукт из вареного мяса крабов, консервированного в собственном соку с добавлением соли. Имеет плотную, суховатую консистенцию и сладковатый вкус, свойственный мясу крабов. Деликатесный продукт, богатый белком и минералами.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Крабы консервированные — это готовый к употреблению продукт, который изготавливают из вареного мяса конечностей крабов, уложенного в банки и стерилизованного. Согласно ГОСТ 7403-2015, для производства консервов используют мясо съедобных видов крабов: камчатского, синего, краба-стригуна. Мясо укладывают в банки без добавления пищевых добавок, кроме соли, герметично укупоривают и стерилизуют при температуре выше 100°C. В зависимости от характеристики органолептических показателей и количественного соотношения частей мяса, консервы подразделяют на сорта: «Экстра», «Высший» и «Первый».</p><p class=\"ingredient-text\">Для консервов используют различные части крабовых конечностей: плечевую часть (розочка), второй членик (толстое мясо), третий членик (коленце), четвертый членик (тонкое мясо), клешни и приклешневой членик (шейка). Мясо краба имеет плотную, суховатую консистенцию и сладковатый вкус без посторонних привкусов и запахов.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, суховатая, слоистая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, свойственный мясу крабов, без посторонних привкусов</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от белого до розовато-красного</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — целые куски мяса, разделенные на членики или не разделенные</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2-3 лет в закрытой банке, до 2 суток после вскрытия</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — готов к употреблению, не требует термической обработки</li></ul><h2 class=\"ingredient-title\">Состав (типичный)</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Основное сырье</strong> — мясо крабов (камчатский, синий, стригун)</li><li class=\"ingredient-list-item\"><strong>Добавки</strong> — соль, вода (собственный сок)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Открытие</strong> — открыть банку</li><li class=\"ingredient-list-item\"><strong>Слив жидкости</strong> — при необходимости слить бульон</li><li class=\"ingredient-list-item\"><strong>Использование</strong> — добавить в блюдо или использовать сразу</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с авокадо, огурцом, майонезом, рисом</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — тарталетки, канапе, брускетты</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — крем-супы, гаспачо</li><li class=\"ingredient-list-item\"><strong>Паста и ризотто</strong> — с кремовыми соусами</li><li class=\"ingredient-list-item\"><strong>Запеканки</strong> — с сыром и сливками</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — авокадо, огурцы, сельдерей, спаржа</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — манго, лимон, лайм</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — майонез, японский майонез, оливковое масло, лимонный сок</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — лук-резанец, кинза, микрозелень</li><li class=\"ingredient-list-item\"><strong>Икра</strong> — красная икра</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Краб камчатский (другие части)</strong> — фаланги, клешни, плечо</li><li class=\"ingredient-list-item\"><strong>Краб-стригун</strong> — более мелкий, схожий вкус</li><li class=\"ingredient-list-item\"><strong>Лангустины</strong> — схожая текстура</li><li class=\"ingredient-list-item\"><strong>Креветки королевские</strong> — более доступная альтернатива</li></ul>",
+
+  "category": "Рыба и морепродукты",
+
+  "data_source": "usda",
+
+  "calories": 83,
+  "protein": 17.88,
+  "fat": 0.74,
+  "carbohydrates": 0,
+
+  "water": 79.69,
+  "fiber": 0,
+  "sugar": 0,
+  "cholesterol": 97,
+
+  "vitamin_a": 2.5,
+  "retinol_equivalent": 2.5,
+  "vitamin_b1": 0.023,
+  "vitamin_b2": 0.093,
+  "vitamin_b3": 2.747,
+  "vitamin_b5": 0.45,
+  "vitamin_b6": 0.156,
+  "vitamin_b9_folate": 53.75,
+  "vitamin_b12": 0.57,
+  "vitamin_c": 3.3,
+  "vitamin_e": 2.3,
+  "vitamin_k": 0.12,
+
+  "calcium": 91,
+  "iron": 0.5,
+  "magnesium": 36,
+  "phosphorus": 234,
+  "potassium": 259,
+  "sodium": 563,
+  "zinc": 3.81,
+  "copper": 0.95,
+  "manganese": 0.24,
+  "selenium": 39.75,
+
+  "saturated_fat": 0.2,
+  "trans_fat": 0.01,
+  "polyunsaturated_fat": 0.55,
+  "omega_3": 0.32,
+  "omega_6": 0.04,
+
+  "semantic_data": {
+    "properties": [
+      "морепродукт",
+      "консервы",
+      "деликатес",
+      "белое мясо",
+      "сладковатый вкус",
+      "плотная текстура",
+      "низкокалорийный",
+      "высокобелковый",
+      "готовая",
+      "для салатов",
+      "для закусок"
+    ],
+    "preparations": [
+      "открытие банки",
+      "слив жидкости",
+      "использование без дополнительной обработки"
+    ],
+    "cooking_methods": [
+      {"method": "использование в салатах", "priority": "high"},
+      {"method": "использование в закусках", "priority": "high"},
+      {"method": "приготовление супов", "priority": "medium"},
+      {"method": "паста и ризотто", "priority": "medium"},
+      {"method": "запеканки", "priority": "medium"}
+    ],
+    "applications": [
+      "салаты",
+      "закуски",
+      "супы",
+      "паста",
+      "ризотто",
+      "запеканки"
+    ],
+    "pairings": {
+      "protein": ["икра красная", "креветки"],
+      "vegetables": ["авокадо", "огурцы", "сельдерей", "спаржа"],
+      "fruits": ["манго", "лимон", "лайм"],
+      "sauces": ["майонез", "японский майонез", "оливковое масло", "лимонный сок"],
+      "herbs": ["лук-резанец", "кинза", "микрозелень"],
+      "spices": ["розовый перец", "соль"]
+    },
+    "substitutes": [
+      {"name": "Краб камчатский (другие части)", "similarity": "high"},
+      {"name": "Краб-стригун", "similarity": "high"},
+      {"name": "Лангустины", "similarity": "medium"},
+      {"name": "Креветки королевские", "similarity": "medium"}
+    ]
+  },
+
+  "tags": [
+    "морепродукты",
+    "крабы",
+    "консервы",
+    "краб натуральный",
+    "деликатес",
+    "салаты",
+    "закуски",
+    "готовая"
+  ]
+}

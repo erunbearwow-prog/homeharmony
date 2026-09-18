@@ -1,0 +1,85 @@
+{
+  "name": "Корюшка",
+  "name_normalized": "koryushka",
+  "synonyms": "корюшка, европейская корюшка, азиатская зубатая корюшка, беломорская корюшка, ладожская корюшка, корюшка свежая, корюшка для жарки, корюшка для запекания, корюшка для соления, корюшка для копчения, огуренник, Osmerus eperlanus, Osmerus mordax, rainbow smelt",
+  "short_description": "Небольшая серебристая рыбка семейства корюшковых с характерным ароматом свежего огурца. Имеет нежное, сочное мясо и мягкие мелкие кости, что позволяет готовить её целиком. Сезонный деликатес весеннего лова, популярный в северной и русской кухне.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Корюшка — это небольшая стайная рыба семейства корюшковых, которая обитает в прибрежных морских водах и нерестится в пресных реках. Длина тела обычно составляет 10–20 см, масса — до 350 г. Спина тёмная, бока серебристые, тело покрыто мелкой чешуёй. Характерная особенность корюшки — запах свежего огурца, за что её называют «огуренником». Этот аромат обусловлен особыми летучими соединениями в тканях рыбы и считается признаком свежести продукта.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Размер</strong> — обычно 10–20 см, масса до 350 г</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — нежное, сочное, с мягкими мелкими костями</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, с характерным огуречным ароматом</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — весенний лов (апрель–май), когда рыба особенно жирная</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — можно готовить целиком, не удаляя хребет и плавники</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Чистка</strong> — удалить чешую, голову и внутренности</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — тщательно промыть под проточной водой</li><li class=\"ingredient-list-item\"><strong>Обсушивание</strong> — обсушить на бумажном полотенце</li><li class=\"ingredient-list-item\"><strong>Для жарки</strong> — обвалять в муке, посолить и поперчить</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — классический способ, на сковороде в муке до хрустящей корочки</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с лимоном, луком и пряностями</li><li class=\"ingredient-list-item\"><strong>Соление</strong> — сухим посолом с солью и специями</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — в белом маринаде с луком и морковью</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — горячее и холодное копчение</li><li class=\"ingredient-list-item\"><strong>Вяление</strong> — как закуска к пиву</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — на решётке с овощами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, лук, морковь, цукини, брокколи</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — йогуртовый, травяной, лимонный, сальбитчада</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, кинза, черемша</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, паприка, розмарин, лимонная цедра</li><li class=\"ingredient-list-item\"><strong>Цитрусовые</strong> — лимон, лайм</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойва</strong> — схожий размер, но другой вкус</li><li class=\"ingredient-list-item\"><strong>Снеток</strong> — мелкая форма корюшки</li><li class=\"ingredient-list-item\"><strong>Салака</strong> — мелкая сельдь</li><li class=\"ingredient-list-item\"><strong>Мелкая сельдь</strong> — для жарки и засолки</li></ul>",
+
+  "category": "Рыба и морепродукты",
+
+  "data_source": "health-diet.ru",
+
+  "calories": 97,
+  "protein": 17.5,
+  "fat": 2.5,
+  "carbohydrates": 0,
+
+  "sodium": 568,
+  "potassium": 313,
+  "calcium": 31,
+  "magnesium": 31,
+  "phosphorus": 489,
+  "iron": 2.1,
+
+  "semantic_data": {
+    "properties": [
+      "морская рыба",
+      "пресноводная",
+      "северная рыба",
+      "мелкая",
+      "серебристая",
+      "огуречный аромат",
+      "нежное мясо",
+      "мягкие кости",
+      "сезонная",
+      "весенняя"
+    ],
+    "preparations": [
+      "чистка и удаление головы",
+      "промывка под проточной водой",
+      "обсушивание",
+      "обваливание в муке"
+    ],
+    "cooking_methods": [
+      {"method": "жарка", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "соление", "priority": "high"},
+      {"method": "маринование", "priority": "high"},
+      {"method": "копчение", "priority": "high"},
+      {"method": "вяление", "priority": "medium"},
+      {"method": "гриль", "priority": "medium"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "закуски",
+      "супы",
+      "соленья"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "лук", "морковь", "цукини", "брокколи"],
+      "sauces": ["йогуртовый", "травяной", "лимонный", "сальбитчада"],
+      "herbs": ["укроп", "петрушка", "кинза", "черемша"],
+      "spices": ["черный перец", "паприка", "розмарин", "лимонная цедра"]
+    },
+    "substitutes": [
+      {"name": "Мойва", "similarity": "medium"},
+      {"name": "Снеток", "similarity": "high"},
+      {"name": "Салака", "similarity": "medium"},
+      {"name": "Мелкая сельдь", "similarity": "medium"}
+    ]
+  },
+
+  "tags": [
+    "рыба",
+    "корюшка",
+    "северная рыба",
+    "сезонная рыба",
+    "весенняя рыба",
+    "огуречный аромат",
+    "жарка",
+    "запекание",
+    "соление",
+    "копчение"
+  ]
+}

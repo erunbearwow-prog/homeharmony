@@ -1,0 +1,114 @@
+{
+  "name": "Крупа перловая",
+  "name_normalized": "krupa_perlovaya",
+  "synonyms": "крупа перловая, перловка, перловая крупа, перловка для супа, перловка для каши, перловка для гарнира, ячменная крупа, pearl barley, barley groats, Hordeum vulgare",
+  "short_description": "Крупа, получаемая из ячменя путем снятия оболочек и шлифования. Имеет светлый кремовый или сероватый цвет, плотную, упругую текстуру и нейтральный вкус с легкими ореховыми нотками. Богата клетчаткой, белком и минералами. Используется для каш, супов, гарниров и рассольника.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Перловая крупа — это крупа, получаемая из зерна ячменя (Hordeum vulgare) путем удаления цветочных пленок и шлифования. Свое название крупа получила из-за жемчужного (перламутрового) блеска обработанных зерен. Перловка имеет светлый кремовый, сероватый или желтоватый цвет, плотную, упругую текстуру и нейтральный вкус с легкими ореховыми нотками.</p><p class=\"ingredient-text\">Перловая крупа содержит клетчатку, белок, витамины группы B (B1, B2, B3, B5, B6, B9), витамин E, а также минералы: фосфор, магний, кальций, калий, железо, медь, марганец, цинк, селен. Она богата бета-глюканами, которые способствуют снижению уровня холестерина. Перловка — это один из самых популярных и доступных видов круп в русской и восточноевропейской кухне.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, круглая или овальная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, слегка ореховый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — кремовый, сероватый, желтоватый</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — целые или дробленые зерна</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 12 месяцев в сухом прохладном месте</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — требует длительного замачивания и варки</li></ul><h2 class=\"ingredient-title\">Виды перловой крупы</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Перловка целая (шлифованная)</strong> — округлые зерна, требует замачивания 4-6 часов и варки 1,5-2 часа</li><li class=\"ingredient-list-item\"><strong>Перловка дробленая (ячневая)</strong> — более мелкая, варится 40-50 минут</li><li class=\"ingredient-list-item\"><strong>Перловка быстрого приготовления</strong> — предварительно обработанная, варится 15-20 минут</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Промывка</strong> — промыть холодной водой</li><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — залить холодной водой на 4-6 часов (или на ночь)</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — в соотношении 1:3 (крупа:жидкость), варить 1,5-2 часа до мягкости</li><li class=\"ingredient-list-item\"><strong>Для супа</strong> — замочить заранее или использовать дробленую перловку</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Супы</strong> — рассольник, перловый суп, щи</li><li class=\"ingredient-list-item\"><strong>Каши</strong> — перловая каша на молоке или воде</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — к мясу, рыбе, птице</li><li class=\"ingredient-list-item\"><strong>Запеканки</strong> — с мясом, грибами, овощами</li><li class=\"ingredient-list-item\"><strong>Котлеты</strong> — перловые котлеты (постные)</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — холодные салаты с перловкой</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — говядина, свинина, курица, баранина</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, картофель, грибы, капуста</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, сливочный, грибной</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, зеленый лук</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, лавровый лист, тимьян, розмарин</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Ячневая крупа</strong> — более мелкая, быстрее варится</li><li class=\"ingredient-list-item\"><strong>Пшеничная крупа</strong> — схожая текстура</li><li class=\"ingredient-list-item\"><strong>Рис</strong> — для гарниров и супов</li><li class=\"ingredient-list-item\"><strong>Булгур</strong> — для гарниров и салатов</li></ul>",
+
+  "category": "Крупы и злаки",
+
+  "data_source": "usda",
+
+  "calories": 352,
+  "protein": 9.9,
+  "fat": 1.2,
+  "carbohydrates": 77.7,
+
+  "water": 10.1,
+  "ash": 1.1,
+  "fiber": 15.6,
+  "sugar": 0.8,
+  "starch": 61.0,
+
+  "vitamin_b1": 0.19,
+  "vitamin_b2": 0.11,
+  "vitamin_b3": 4.6,
+  "vitamin_b4": 37.8,
+  "vitamin_b5": 0.28,
+  "vitamin_b6": 0.26,
+  "vitamin_b9_folate": 23,
+  "vitamin_c": 0.0,
+  "vitamin_e": 0.02,
+  "vitamin_k": 2.2,
+
+  "potassium": 452,
+  "calcium": 32,
+  "magnesium": 133,
+  "sodium": 12,
+  "phosphorus": 264,
+
+  "iron": 3.6,
+  "manganese": 1.32,
+  "copper": 0.42,
+  "selenium": 37.7,
+  "zinc": 2.13,
+
+  "saturated_fat": 0.24,
+  "trans_fat": 0.0,
+  "cholesterol": 0,
+  "omega_3": 0.06,
+  "omega_6": 0.43,
+
+  "semantic_data": {
+    "properties": [
+      "крупа",
+      "ячменная",
+      "перловая",
+      "плотная",
+      "упругая",
+      "нейтральный вкус",
+      "клетчатка",
+      "бета-глюканы",
+      "для супов",
+      "для каш",
+      "для гарниров",
+      "для запеканок"
+    ],
+    "preparations": [
+      "промывка холодной водой",
+      "замачивание на 4-6 часов",
+      "варка в соотношении 1:3"
+    ],
+    "cooking_methods": [
+      {"method": "варка каши", "priority": "high"},
+      {"method": "добавление в супы", "priority": "high"},
+      {"method": "приготовление гарниров", "priority": "high"},
+      {"method": "приготовление запеканок", "priority": "high"},
+      {"method": "приготовление котлет", "priority": "medium"},
+      {"method": "использование в салатах", "priority": "medium"}
+    ],
+    "applications": [
+      "супы",
+      "каши",
+      "гарниры",
+      "запеканки",
+      "котлеты",
+      "салаты"
+    ],
+    "pairings": {
+      "protein": ["говядина", "свинина", "курица", "баранина"],
+      "vegetables": ["лук", "морковь", "картофель", "грибы", "капуста"],
+      "sauces": ["томатный", "сметанный", "сливочный", "грибной"],
+      "herbs": ["петрушка", "укроп", "зеленый лук"],
+      "spices": ["черный перец", "лавровый лист", "тимьян", "розмарин"]
+    },
+    "substitutes": [
+      {"name": "Ячневая крупа", "similarity": "high"},
+      {"name": "Пшеничная крупа", "similarity": "medium"},
+      {"name": "Рис", "similarity": "medium"},
+      {"name": "Булгур", "similarity": "medium"}
+    ]
+  },
+
+  "tags": [
+    "крупа",
+    "перловая крупа",
+    "перловка",
+    "ячмень",
+    "супы",
+    "каши",
+    "гарниры",
+    "запеканки",
+    "клетчатка"
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "name": "Креветка",
+  "name_normalized": "krevetka",
+  "synonyms": "креветка, креветки, королевская креветка, тигровая креветка, северная креветка, варено-мороженая креветка, креветка в панцире, креветка очищенная, креветка для салата, креветка для пасты, креветка для гриля, shrimp, prawn, Crangon crangon, Penaeus monodon",
+  "short_description": "Морской ракообразный отряда десятиногих с нежным сладковатым мясом и упругой текстурой. Богат легкоусвояемым белком, йодом, омега-3 и витаминами. Универсальный морепродукт для салатов, пасты, супов, гриля и самостоятельных блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Креветка — это морской ракообразный отряда десятиногих (Decapoda), который широко распространен в морях по всему миру, а некоторые виды освоили пресные воды. Размер взрослых особей разных представителей варьирует от 2 до 30 см. Мясо креветок имеет нежную, упругую текстуру и сладковатый вкус. Креветки — это низкокалорийный продукт, богатый легкоусвояемым белком, йодом, омега-3 и витаминами.</p><p class=\"ingredient-text\">Креветки содержат все незаменимые аминокислоты, а по содержанию йода почти в сто раз превосходят говядину. В их составе присутствуют кальций, калий, магний, натрий, фосфор, железо, цинк, селен, а также витамины A, E, D, K, C, B1, B2, B9, PP.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — упругая, нежная, сочная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, насыщенный, морской</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — сероватый (сырые), розово-оранжевый (после термической обработки)</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — целые креветки в панцире, очищенные, с хвостом или без</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — замороженные до 6-12 месяцев при -18°C; вареные в холодильнике до 24 часов</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — низкокалорийный продукт с высоким содержанием белка и йода</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике 4-5 часов или при комнатной температуре 1-2 часа</li><li class=\"ingredient-list-item\"><strong>Очистка</strong> — удалить панцирь, голову (по желанию), хвост (по желанию)</li><li class=\"ingredient-list-item\"><strong>Удаление кишечной вены</strong> — сделать надрез по спинке и удалить темную вену</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — ополоснуть холодной водой</li><li class=\"ingredient-list-item\"><strong>Повторная заморозка</strong> — не рекомендуется</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Варка</strong> — 2-4 минуты в подсоленной воде</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде с чесноком, маслом, травами (1-2 минуты с каждой стороны)</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — крупные креветки на решетке</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с авокадо, цитрусовыми, зеленью</li><li class=\"ingredient-list-item\"><strong>Паста и ризотто</strong> — с кремовыми или томатными соусами</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — крем-супы, азиатские супы</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — тарталетки, канапе, коктейль из креветок</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — авокадо, огурцы, помидоры, лук-порей, сельдерей, спаржа</li><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — лимон, лайм, манго</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — майонез, соевый соус, сливочный, томатный, чесночный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, кинза, базилик</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, черный перец, паприка, чили</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Крабовые палочки</strong> — имитация, другой вкус</li><li class=\"ingredient-list-item\"><strong>Лангустины</strong> — схожая текстура</li><li class=\"ingredient-list-item\"><strong>Раки</strong> — пресноводный вариант</li><li class=\"ingredient-list-item\"><strong>Кальмар</strong> — более плотная текстура</li></ul>",
+
+  "category": "Рыба и морепродукты",
+
+  "data_source": "usda",
+
+  "calories": 99,
+  "protein": 24,
+  "fat": 0.3,
+  "carbohydrates": 0.2,
+
+  "water": 75.2,
+  "ash": 1.3,
+  "cholesterol": 195,
+
+  "vitamin_a": 54,
+  "retinol_equivalent": 54,
+  "vitamin_b1": 0.02,
+  "vitamin_b2": 0.07,
+  "vitamin_b3": 2.9,
+  "vitamin_b5": 0.23,
+  "vitamin_b6": 0.09,
+  "vitamin_b9_folate": 2.55,
+  "vitamin_b12": 0.99,
+  "vitamin_c": 1.7,
+  "vitamin_d": 129.2,
+  "vitamin_e": 0.94,
+
+  "calcium": 83,
+  "iron": 2.0,
+  "magnesium": 45,
+  "phosphorus": 139,
+  "potassium": 250,
+  "sodium": 172,
+  "zinc": 1.18,
+  "copper": 0.5,
+  "manganese": 0.05,
+  "selenium": 39.7,
+
+  "saturated_fat": 0.28,
+  "trans_fat": 0,
+  "omega_3": 0.34,
+  "omega_6": 0.04,
+
+  "semantic_data": {
+    "properties": [
+      "морепродукт",
+      "ракообразное",
+      "белок",
+      "йод",
+      "омега-3",
+      "низкокалорийный",
+      "нежная текстура",
+      "сладковатый вкус",
+      "универсальный",
+      "для салатов",
+      "для пасты",
+      "для гриля"
+    ],
+    "preparations": [
+      "разморозка в холодильнике",
+      "очистка от панциря",
+      "удаление кишечной вены",
+      "промывка"
+    ],
+    "cooking_methods": [
+      {"method": "варка", "priority": "high"},
+      {"method": "жарка", "priority": "high"},
+      {"method": "гриль", "priority": "high"},
+      {"method": "использование в салатах", "priority": "high"},
+      {"method": "паста и ризотто", "priority": "high"},
+      {"method": "супы", "priority": "medium"},
+      {"method": "закуски", "priority": "medium"}
+    ],
+    "applications": [
+      "салаты",
+      "паста",
+      "ризотто",
+      "супы",
+      "закуски",
+      "гриль"
+    ],
+    "pairings": {
+      "protein": ["крабовые палочки", "лангустины", "кальмар"],
+      "vegetables": ["авокадо", "огурцы", "помидоры", "лук-порей", "сельдерей", "спаржа"],
+      "fruits": ["лимон", "лайм", "манго"],
+      "sauces": ["майонез", "соевый соус", "сливочный", "томатный", "чесночный"],
+      "herbs": ["укроп", "петрушка", "кинза", "базилик"],
+      "spices": ["чеснок", "черный перец", "паприка", "чили"]
+    },
+    "substitutes": [
+      {"name": "Крабовые палочки", "similarity": "low"},
+      {"name": "Лангустины", "similarity": "high"},
+      {"name": "Раки", "similarity": "medium"},
+      {"name": "Кальмар", "similarity": "medium"}
+    ]
+  },
+
+  "tags": [
+    "морепродукты",
+    "креветка",
+    "ракообразное",
+    "белок",
+    "йод",
+    "салаты",
+    "паста",
+    "гриль",
+    "диетический"
+  ]
+}

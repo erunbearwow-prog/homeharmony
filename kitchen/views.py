@@ -348,11 +348,11 @@ def recipe_detail(request, recipe_id):
 
         # получаем все шаги
         all_steps = recipe.steps.all().order_by('order').select_related(
-            'cooking_method',
-            'ingredient_preparation',
             'subrecipe'
         ).prefetch_related(
-            'recommended_utensils'
+            'recommended_utensils',
+            'step_ingredients__cooking_method',
+            'step_ingredients__preparation',
         )
 
         # ========== ОТЛАДКА: проверяем наличие изображений в all_steps ==========
@@ -497,7 +497,13 @@ def recipe_detail(request, recipe_id):
     # Весь ваш существующий код для обычных рецептов
 
     print(f'Код обычного режима')
-    food_items = recipe.food_items.select_related('ingredient', 'product').all()
+    food_items = recipe.food_items.select_related(
+        'abstract_ingredient',
+        'branded_ingredient',
+        'subrecipe',
+        'cut_shape',
+        'override_cooking_method',
+    ).all()
 
     # Для обратной совместимости (если есть старые RecipeIngredient)
     # можно объединить или использовать только новый способ
@@ -518,11 +524,11 @@ def recipe_detail(request, recipe_id):
             })
 
     steps = recipe.steps.all().order_by('order').select_related(
-        'cooking_method',
-        'ingredient_preparation',
         'subrecipe'
     ).prefetch_related(
-        'recommended_utensils'
+        'recommended_utensils',
+        'step_ingredients__cooking_method',
+        'step_ingredients__preparation',
     )
 
     # ========== ОТЛАДКА: проверяем наличие изображений в steps ==========
@@ -1016,13 +1022,17 @@ def api_recipe_nutrition(request, pk):
                 total_carbs += (ingredient.carbohydrates or 0) * factor
 
         # Считаем для food_items (домашние ингредиенты)
-        for item in recipe.food_items.all():
-            if item.ingredient:
-                factor = item.quantity / 100
-                total_calories += (item.ingredient.calories or 0) * factor
-                total_protein += (item.ingredient.protein or 0) * factor
-                total_fat += (item.ingredient.fat or 0) * factor
-                total_carbs += (item.ingredient.carbohydrates or 0) * factor
+        for item in recipe.food_items.select_related('abstract_ingredient', 'branded_ingredient').all():
+            # Определяем источник КБЖУ
+            source = item.branded_ingredient or item.abstract_ingredient
+            if not source:
+                continue
+
+            factor = item.quantity / 100
+            total_calories += (source.calories or 0) * factor
+            total_protein += (source.protein or 0) * factor
+            total_fat += (source.fat or 0) * factor
+            total_carbs += (source.carbohydrates or 0) * factor
 
         servings = recipe.servings or 1
 
@@ -1665,8 +1675,6 @@ def save_recipe_variant(request):
                 instruction=original_step.instruction,
                 duration=original_step.duration,
                 temperature=original_step.temperature,
-                cooking_method=original_step.cooking_method,
-                ingredient_preparation=original_step.ingredient_preparation,
                 subrecipe=original_step.subrecipe,
             )
             # Добавляем many-to-many связи для утвари
@@ -1687,45 +1695,54 @@ def save_recipe_variant(request):
             )
 
         # ======================= КОПИРУЕМ ИНГРЕДИЕНТЫ (food_items) =======================
+        # Копируем food_items с сохранением источников
         for original_item in original_recipe.food_items.all():
             ing_data = replacements.get(str(original_item.id))
 
             if ing_data:
-                ingredient_id = ing_data.get('ingredient_id')
-                product_id = ing_data.get('product_id')
-                quantity = ing_data.get('quantity')
-                unit = ing_data.get('unit')
-
+                # Замена: определяем источник
                 ingredient_obj = None
-                product_obj = None
+                branded_obj = None
+                subrecipe_obj = None
 
-                if ingredient_id:
+                if ing_data.get('ingredient_id'):
                     try:
-                        ingredient_obj = AbstractIngredient.objects.get(id=ingredient_id)
+                        ingredient_obj = AbstractIngredient.objects.get(id=ing_data['ingredient_id'])
                     except AbstractIngredient.DoesNotExist:
                         pass
-                elif product_id:
+                elif ing_data.get('branded_id'):
                     try:
-                        product_obj = Product.objects.get(id=product_id)
-                    except Product.DoesNotExist:
+                        branded_obj = BrandedIngredient.objects.get(id=ing_data['branded_id'])
+                    except BrandedIngredient.DoesNotExist:
+                        pass
+                elif ing_data.get('subrecipe_id'):
+                    try:
+                        subrecipe_obj = Recipe.objects.get(id=ing_data['subrecipe_id'])
+                    except Recipe.DoesNotExist:
                         pass
 
                 RecipeFoodItem.objects.create(
                     recipe=saved_recipe,
-                    ingredient=ingredient_obj,
-                    product=product_obj,
-                    quantity=quantity,
-                    unit=unit,
-                    notes=original_item.notes
+                    abstract_ingredient=ingredient_obj,
+                    branded_ingredient=branded_obj,
+                    subrecipe=subrecipe_obj,
+                    quantity=ing_data.get('quantity', original_item.quantity),
+                    unit=ing_data.get('unit', original_item.unit),
+                    notes=original_item.notes,
                 )
             else:
+                # Без замены — копируем как есть
                 RecipeFoodItem.objects.create(
                     recipe=saved_recipe,
-                    ingredient=original_item.ingredient,
-                    product=original_item.product,
+                    abstract_ingredient=original_item.abstract_ingredient,
+                    branded_ingredient=original_item.branded_ingredient,
+                    subrecipe=original_item.subrecipe,
                     quantity=original_item.quantity,
                     unit=original_item.unit,
-                    notes=original_item.notes
+                    cut_shape=original_item.cut_shape,
+                    override_cooking_method=original_item.override_cooking_method,
+                    notes=original_item.notes,
+                    is_scalable=original_item.is_scalable,
                 )
 
         return JsonResponse({
@@ -1743,80 +1760,24 @@ def save_recipe_variant(request):
         traceback.print_exc()
         return JsonResponse({'error': str(e)}, status=500)
 
+
 def recalculate_nutrition(recipe_id, replacements):
     """
-    Пересчитать КБЖУ рецепта с учетом замен
+    Пересчитывает КБЖУ рецепта с учётом замен.
+    Использует основную утилиту из kitchen.utils.nutrition.
     """
+    from kitchen.utils.nutrition import recalculate_recipe_nutrition
+
     recipe = get_object_or_404(Recipe, id=recipe_id)
 
-    total_calories = 0
-    total_protein = 0
-    total_fat = 0
-    total_carbs = 0
-
-    # ======================= ПЕРЕСЧЕТ ДЛЯ ПРОФЕССИОНАЛЬНЫХ ИНГРЕДИЕНТОВ (брутто/нетто) =======================
-    for pro_ing in recipe.pro_ingredients.all():
-        ingredient = pro_ing.ingredient
-        if ingredient:
-            # Используем нетто вес для расчета
-            weight = float(pro_ing.net_weight) if pro_ing.net_weight else float(pro_ing.gross_weight)
-            factor = weight / 100
-            total_calories += (ingredient.calories or 0) * factor
-            total_protein += (ingredient.protein or 0) * factor
-            total_fat += (ingredient.fat or 0) * factor
-            total_carbs += (ingredient.carbohydrates or 0) * factor
-
-    # ======================= ПЕРЕСЧЕТ ДЛЯ FOOD_ITEMS =======================
-    for original_item in recipe.food_items.all():
-        ing_data = replacements.get(str(original_item.id))
-
-        if ing_data:
-            ingredient_id = ing_data.get('ingredient_id')
-            product_id = ing_data.get('product_id')
-            quantity = ing_data.get('quantity', 0)
-
-            if ingredient_id:
-                try:
-                    ingredient = AbstractIngredient.objects.get(id=ingredient_id)
-                    calories = ingredient.calories or 0
-                    protein = ingredient.protein or 0
-                    fat = ingredient.fat or 0
-                    carbs = ingredient.carbohydrates or 0
-                except AbstractIngredient.DoesNotExist:
-                    calories = protein = fat = carbs = 0
-            elif product_id:
-                try:
-                    product = Product.objects.get(id=product_id)
-                    # У продуктов пока нет КБЖУ, используем 0
-                    calories = protein = fat = carbs = 0
-                except Product.DoesNotExist:
-                    calories = protein = fat = carbs = 0
-            else:
-                continue
-        else:
-            if original_item.ingredient:
-                ingredient = original_item.ingredient
-                calories = ingredient.calories or 0
-                protein = ingredient.protein or 0
-                fat = ingredient.fat or 0
-                carbs = ingredient.carbohydrates or 0
-            else:
-                continue
-            quantity = original_item.quantity
-
-        # Пересчитываем на 100г
-        if quantity and quantity > 0:
-            factor = quantity / 100
-            total_calories += calories * factor
-            total_protein += protein * factor
-            total_fat += fat * factor
-            total_carbs += carbs * factor
+    # TODO: учесть replacements (когда система замен будет доработана)
+    recalculate_recipe_nutrition(recipe)
 
     return {
-        'calories': round(total_calories),
-        'protein': round(total_protein, 1),
-        'fat': round(total_fat, 1),
-        'carbs': round(total_carbs, 1),
+        'calories': recipe.calories,
+        'protein': recipe.protein,
+        'fat': recipe.fat,
+        'carbs': recipe.carbs,
     }
 
 def get_saved_recipes(request):

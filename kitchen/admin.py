@@ -1,5 +1,9 @@
 # kitchen/admin.py
 
+# ======================= ВРЕМЕННОЕ ОТКЛЮЧЕНИЕ АДМИНОК ДО МИГРАЦИЙ =======================
+# TODO: вернуть после миграций и переписать под новые модели
+SKIP_BROKEN_ADMIN = True
+
 from django.contrib import admin
 from django import forms
 from django.urls import reverse
@@ -15,6 +19,11 @@ from .models import (
     IngredientCategory, SemanticTag, CookingMethod,
     IngredientPreparation, RecommendedUtensil, ProfessionalIngredient,
     IngredientSubstitutionRule,
+    UnitConversion,
+    CutShape,
+    StepIngredient,
+    RecipeIngredientOption,
+    MeasurementSystem,
 )
 
 
@@ -125,18 +134,18 @@ class AbstractIngredientForm(forms.ModelForm):
 
 
 # ======================= INLINE FORMS =======================
+if not SKIP_BROKEN_ADMIN:
+    class HomeIngredientInlineForm(forms.ModelForm):
+        class Meta:
+            model = HomeIngredient
+            fields = ['ingredient', 'quantity', 'unit', 'notes', 'is_scalable']
+            widgets = {
+                'notes': forms.TextInput(attrs={'style': 'width: 200px;'}),
+            }
 
-class HomeIngredientInlineForm(forms.ModelForm):
-    class Meta:
-        model = HomeIngredient
-        fields = ['ingredient', 'quantity', 'unit', 'notes', 'is_scalable']
-        widgets = {
-            'notes': forms.TextInput(attrs={'style': 'width: 200px;'}),
-        }
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.fields['ingredient'].queryset = AbstractIngredient.objects.filter(is_active=True).order_by('name')
+        def __init__(self, *args, **kwargs):
+            super().__init__(*args, **kwargs)
+            self.fields['ingredient'].queryset = AbstractIngredient.objects.filter(is_active=True).order_by('name')
 
 
 class ProfessionalIngredientInline(admin.TabularInline):
@@ -150,20 +159,6 @@ class ProfessionalIngredientInline(admin.TabularInline):
         return super().get_queryset(request).select_related('ingredient')
 
 
-class RecipeFoodItemInlineForm(forms.ModelForm):
-    class Meta:
-        model = RecipeFoodItem
-        fields = ['ingredient', 'product', 'quantity', 'unit', 'notes', 'is_scalable']
-        widgets = {
-            'notes': forms.TextInput(attrs={'style': 'width: 200px;'}),
-        }
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.fields['ingredient'].queryset = AbstractIngredient.objects.filter(is_active=True).order_by('name')
-        self.fields['product'].queryset = Product.objects.all().order_by('name')
-
-
 class RecipeStepForm(forms.ModelForm):
     class Meta:
         model = RecipeStep
@@ -171,7 +166,7 @@ class RecipeStepForm(forms.ModelForm):
             'order', 'title', 'instruction', 'duration', 'temperature',
             'recipe_step_image', 'subrecipe',
             'subrecipe_base_ingredient', 'subrecipe_base_quantity',
-            'cooking_method', 'ingredient_preparation', 'recommended_utensils'
+            'recommended_utensils'
         ]
         widgets = {
             'instruction': forms.Textarea(attrs={'rows': 4, 'cols': 80}),
@@ -181,50 +176,73 @@ class RecipeStepForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields['subrecipe'].queryset = Recipe.objects.all().order_by('title')
-        self.fields['subrecipe_base_ingredient'].queryset = HomeIngredient.objects.select_related('ingredient').all()
+        # RecipeFoodItem вместо HomeIngredient
+        self.fields['subrecipe_base_ingredient'].queryset = RecipeFoodItem.objects.select_related('abstract_ingredient').all()
 
 
 # ======================= INLINES =======================
 
-class HomeIngredientInline(admin.TabularInline):
-    model = HomeIngredient
-    form = HomeIngredientInlineForm
-    extra = 3
-    fields = ['ingredient', 'quantity', 'unit', 'notes', 'is_scalable']
-    show_change_link = True
-    autocomplete_fields = ['ingredient']
+if not SKIP_BROKEN_ADMIN:
+    class HomeIngredientInline(admin.TabularInline):
+        model = HomeIngredient
+        form = HomeIngredientInlineForm
+        extra = 3
+        fields = ['ingredient', 'quantity', 'unit', 'notes', 'is_scalable']
+        show_change_link = True
+        autocomplete_fields = ['ingredient']
 
-    def get_queryset(self, request):
-        return super().get_queryset(request).select_related('ingredient')
-
-
-class RecipeFoodItemInline(admin.TabularInline):
-    model = RecipeFoodItem
-    form = RecipeFoodItemInlineForm
-    extra = 2
-    fields = ['ingredient', 'product', 'quantity', 'unit', 'notes', 'is_scalable']
-    show_change_link = True
-    autocomplete_fields = ['ingredient', 'product']
-
-    def get_queryset(self, request):
-        return super().get_queryset(request).select_related('ingredient', 'product')
+        def get_queryset(self, request):
+            return super().get_queryset(request).select_related('ingredient')
 
 
-class IngredientSubstitutionInline(admin.TabularInline):
-    model = IngredientSubstitution
-    extra = 1
-    fields = ['substitute_ingredient', 'substitute_unit', 'ratio', 'notes']
-    autocomplete_fields = ['substitute_ingredient']
 
-    def get_queryset(self, request):
-        return super().get_queryset(request).select_related('substitute_ingredient')
+
+if not SKIP_BROKEN_ADMIN:
+    class IngredientSubstitutionInline(admin.TabularInline):
+        model = IngredientSubstitution
+        extra = 1
+        fields = ['substitute_ingredient', 'substitute_unit', 'ratio', 'notes']
+        autocomplete_fields = ['substitute_ingredient']
+
+        def get_queryset(self, request):
+            return super().get_queryset(request).select_related('substitute_ingredient')
+
+
+class StepIngredientForm(forms.ModelForm):
+    """Форма для ингредиента в шаге — фильтрует food_item по рецепту."""
+
+    class Meta:
+        model = StepIngredient
+        fields = ['order', 'food_item', 'preparation', 'cooking_method', 'cooking_note']
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        # Ограничиваем food_item — только ингредиенты этого же рецепта
+        if self.instance and self.instance.step_id:
+            recipe_id = self.instance.step.recipe_id
+        elif self.data.get('step'):
+            recipe_id = None  # не всегда доступно
+        else:
+            recipe_id = None
+
+        # Пытаемся достать recipe_id из initial/parent
+        step = self.instance.step if self.instance and self.instance.pk else None
+        if step:
+            self.fields['food_item'].queryset = RecipeFoodItem.objects.filter(
+                recipe=step.recipe
+            ).select_related('abstract_ingredient', 'branded_ingredient', 'subrecipe')
+        else:
+            self.fields['food_item'].queryset = RecipeFoodItem.objects.none()
+
+        self.fields['preparation'].queryset = IngredientPreparation.objects.all().order_by('name')
+        self.fields['cooking_method'].queryset = CookingMethod.objects.all().order_by('name')
 
 
 class RecipeStepInline(admin.StackedInline):
     model = RecipeStep
     form = RecipeStepForm
     fk_name = 'recipe'
-    extra = 3
+    extra = 1
     fieldsets = (
         ('Основная информация', {
             'fields': ('order', 'title', 'instruction', 'duration', 'temperature', 'recipe_step_image')
@@ -233,15 +251,16 @@ class RecipeStepInline(admin.StackedInline):
             'fields': ('subrecipe', 'subrecipe_base_ingredient', 'subrecipe_base_quantity'),
             'classes': ('collapse',),
         }),
-        ('Методы и утварь', {
-            'fields': ('cooking_method', 'ingredient_preparation', 'recommended_utensils'),
+        ('Утварь', {
+            'fields': ('recommended_utensils',),
         }),
     )
-    autocomplete_fields = ['subrecipe', 'cooking_method', 'ingredient_preparation']
+    autocomplete_fields = ['subrecipe']
+    show_change_link = True  # ← добавили — ведёт на страницу шага
 
     def get_queryset(self, request):
         return super().get_queryset(request).select_related(
-            'cooking_method', 'ingredient_preparation', 'subrecipe', 'subrecipe_base_ingredient'
+            'subrecipe', 'subrecipe_base_ingredient'
         ).prefetch_related('recommended_utensils')
 
 
@@ -311,7 +330,167 @@ def register_if_not_registered(model, admin_class):
         pass
 
 
+# ======================= РЕЦЕПТ: ИНГРЕДИЕНТЫ =======================
+
+class RecipeFoodItemInlineForm(forms.ModelForm):
+    """Форма ингредиента рецепта с учётом абстрактных/брендированных/полуфабрикатов."""
+
+    class Meta:
+        model = RecipeFoodItem
+        fields = [
+            'abstract_ingredient', 'branded_ingredient', 'subrecipe',
+            'quantity', 'unit', 'cut_shape', 'override_cooking_method',
+            'notes', 'is_scalable',
+        ]
+        widgets = {
+            'notes': forms.TextInput(attrs={'style': 'width: 200px;'}),
+            'quantity': forms.NumberInput(attrs={'style': 'width: 80px;', 'step': '0.01'}),
+        }
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['abstract_ingredient'].queryset = AbstractIngredient.objects.filter(
+            is_active=True
+        ).order_by('name')
+        self.fields['branded_ingredient'].queryset = BrandedIngredient.objects.all().order_by('brand', 'product_name')
+        self.fields['subrecipe'].queryset = Recipe.objects.filter(
+            recipe_type__in=['semi_finished', 'home']
+        ).order_by('title')
+        self.fields['cut_shape'].queryset = CutShape.objects.filter(is_active=True).order_by('sort_order')
+        self.fields['override_cooking_method'].queryset = CookingMethod.objects.all().order_by('name')
+
+    def clean(self):
+        cleaned = super().clean()
+        abs_ing = cleaned.get('abstract_ingredient')
+        branded = cleaned.get('branded_ingredient')
+        subrecipe = cleaned.get('subrecipe')
+
+        sources = [abs_ing, branded, subrecipe]
+        if not any(sources):
+            raise forms.ValidationError(
+                'Укажите абстрактный ингредиент, брендированный продукт или полуфабрикат'
+            )
+        if branded and subrecipe:
+            raise forms.ValidationError(
+                'Нельзя одновременно указать бренд и полуфабрикат'
+            )
+        if branded and abs_ing and branded.abstract_id != abs_ing.id:
+            raise forms.ValidationError(
+                'Брендированный продукт не соответствует абстрактному ингредиенту'
+            )
+        return cleaned
+
+
+class RecipeFoodItemInline(admin.TabularInline):
+    """Inline для домашних рецептов."""
+    model = RecipeFoodItem
+    form = RecipeFoodItemInlineForm
+    fk_name = 'recipe'
+    extra = 1
+    fields = [
+        'abstract_ingredient', 'branded_ingredient', 'subrecipe',
+        'quantity', 'unit', 'cut_shape', 'override_cooking_method',
+        'notes', 'is_scalable',
+    ]
+    show_change_link = True
+    autocomplete_fields = ['abstract_ingredient', 'branded_ingredient', 'subrecipe', 'cut_shape',
+                           'override_cooking_method']
+
+    def get_queryset(self, request):
+        return super().get_queryset(request).select_related(
+            'abstract_ingredient', 'branded_ingredient', 'subrecipe',
+            'cut_shape', 'override_cooking_method',
+        )
+
+
 # ======================= ADMIN CLASSES =======================
+
+class FoodTypeFilter(admin.SimpleListFilter):
+    title = 'тип источника'
+    parameter_name = 'food_type'
+
+    def lookups(self, request, model_admin):
+        return (
+            ('abstract', '🔸 Абстрактный'),
+            ('branded', '🏷️ Брендированный'),
+            ('subrecipe', '🥣 Полуфабрикат'),
+        )
+
+    def queryset(self, request, queryset):
+        v = self.value()
+        if v == 'abstract':
+            return queryset.filter(
+                abstract_ingredient__isnull=False,
+                branded_ingredient__isnull=True,
+                subrecipe__isnull=True,
+            )
+        if v == 'branded':
+            return queryset.filter(branded_ingredient__isnull=False)
+        if v == 'subrecipe':
+            return queryset.filter(subrecipe__isnull=False)
+        return queryset
+
+
+@admin.register(RecipeFoodItem)
+class RecipeFoodItemAdmin(admin.ModelAdmin):
+    list_display = [
+        'id', 'recipe', 'get_food_name', 'get_food_type',
+        'quantity', 'unit', 'cut_shape', 'get_weight_hint',
+    ]
+    list_filter = [FoodTypeFilter, 'unit', 'cut_shape']
+    search_fields = [
+        'recipe__title', 'abstract_ingredient__name',
+        'branded_ingredient__product_name', 'subrecipe__title',
+    ]
+    autocomplete_fields = ['recipe', 'abstract_ingredient', 'branded_ingredient', 'subrecipe', 'cut_shape',
+                           'override_cooking_method']
+
+    fieldsets = (
+        ('Рецепт', {'fields': ('recipe',)}),
+        ('Источник', {
+            'fields': ('abstract_ingredient', 'branded_ingredient', 'subrecipe'),
+            'description': 'Укажите <b>абстрактный ингредиент</b>, опционально уточните <b>бренд</b> или <b>полуфабрикат</b>',
+        }),
+        ('Количество', {
+            'fields': ('quantity', 'unit', 'is_scalable'),
+        }),
+        ('Обработка', {
+            'fields': ('cut_shape', 'override_cooking_method'),
+            'description': 'Форма нарезки и переопределение метода обработки',
+        }),
+        ('Примечание', {'fields': ('notes',)}),
+    )
+
+    @admin.display(description='Название')
+    def get_food_name(self, obj):
+        return obj.food_name
+
+    @admin.display(description='Тип')
+    def get_food_type(self, obj):
+        type_map = {
+            'abstract': '🔸 Абстрактный',
+            'branded': '🏷️ Брендированный',
+            'subrecipe': '🥣 Полуфабрикат',
+            'unknown': '❓ —',
+        }
+        return type_map.get(obj.food_type, obj.food_type)
+
+    @admin.display(description='Вес, г')
+    def get_weight_hint(self, obj):
+        """Приблизительный вес без учёта потерь и масла."""
+        from kitchen.utils.nutrition import convert_to_grams
+        try:
+            grams = convert_to_grams(obj.quantity, obj.unit, obj.abstract_ingredient)
+            return f"{grams:.1f}"
+        except Exception:
+            return '—'
+
+    def get_queryset(self, request):
+        return super().get_queryset(request).select_related(
+            'recipe', 'abstract_ingredient', 'branded_ingredient', 'subrecipe',
+        )
+
+
 class RecipeAdminForm(forms.ModelForm):
     """Форма с CKEditor 5 для текстовых полей"""
 
@@ -341,6 +520,7 @@ class RecipeAdminForm(forms.ModelForm):
             ),
         }
 
+
 @admin.register(Recipe)
 class RecipeAdmin(admin.ModelAdmin):
     form = RecipeAdminForm
@@ -348,7 +528,8 @@ class RecipeAdmin(admin.ModelAdmin):
     list_display = [
         'id', 'title', 'recipe_type', 'is_saved_variant', 'original_recipe',
         'ttk_code', 'cuisine', 'author', 'difficulty', 'servings',
-        'total_time', 'created_at', 'ingredients_count', 'steps_count'
+        'get_calories_summary', 'total_weight',
+        'created_at', 'ingredients_count', 'steps_count',
     ]
 
     list_filter = [
@@ -358,23 +539,28 @@ class RecipeAdmin(admin.ModelAdmin):
         'difficulty',
         'cuisine',
         'created_at',
-        RecipeWithSubrecipeFilter
+        RecipeWithSubrecipeFilter,
     ]
 
     search_fields = ['title', 'description', 'author', 'ttk_code']
 
     readonly_fields = [
-        'total_time', 'calories', 'protein', 'fat', 'carbs',
-        'created_at', 'updated_at', 'saved_at'
+        'total_time',
+        'calories', 'protein', 'fat', 'carbs',
+        'calories_per_100g', 'protein_per_100g', 'fat_per_100g', 'carbs_per_100g',
+        'total_weight',
+        'nutrition_calculated_at',
+        'created_at', 'updated_at', 'saved_at',
+        'get_nutrition_summary',
     ]
 
     fieldsets = (
         ('Тип рецепта', {
             'fields': ('recipe_type', 'ttk_code'),
-            'description': 'Выберите тип рецепта'
+            'description': 'Выберите тип рецепта',
         }),
         ('Основная информация', {
-            'fields': ('title', 'author', 'cuisine', 'description', 'difficulty', 'servings', 'is_professional')
+            'fields': ('title', 'author', 'cuisine', 'description', 'difficulty', 'servings', 'is_professional'),
         }),
         ('Для ТТК (Технико-технологическая карта)', {
             'fields': (
@@ -384,17 +570,35 @@ class RecipeAdmin(admin.ModelAdmin):
                 'portion_size',
             ),
             'classes': ('collapse',),
-            'description': 'Заполняется только для ТТК и полуфабрикатов'
+            'description': 'Заполняется только для ТТК и полуфабрикатов',
+        }),
+        ('📊 Расчёт КБЖУ', {
+            'fields': (
+                'get_nutrition_summary',
+                'total_weight',
+                'nutrition_calculated_at',
+            ),
+            'description': (
+                'КБЖУ рассчитывается автоматически из состава рецепта. '
+                'Используйте действие «Пересчитать КБЖУ» в списке рецептов.'
+            ),
+        }),
+        ('КБЖУ на порцию', {
+            'fields': ('calories', 'protein', 'fat', 'carbs'),
+            'classes': ('collapse',),
+        }),
+        ('КБЖУ на 100 г', {
+            'fields': ('calories_per_100g', 'protein_per_100g', 'fat_per_100g', 'carbs_per_100g'),
+            'classes': ('collapse',),
         }),
         ('Оформление и подача', {
             'fields': ('plating', 'plating_image'),
             'classes': ('wide',),
-            'description': 'Рекомендации по оформлению и фото готового блюда'
+            'description': 'Рекомендации по оформлению и фото готового блюда',
         }),
         ('Условия и сроки хранения', {
             'fields': ('storage_conditions',),
             'classes': ('wide',),
-            'description': 'Условия хранения, температура, срок годности'
         }),
         ('Визуальные материалы', {
             'fields': ('image', 'video'),
@@ -406,32 +610,98 @@ class RecipeAdmin(admin.ModelAdmin):
         }),
     )
 
-    inlines = [
-        RecipeStepInline,
-        ComponentInline,
-        ProfessionalIngredientInline,
-        RecipeFoodItemInline,
-    ]
-
     filter_horizontal = ['diet_tags', 'related_recipes', 'components']
     autocomplete_fields = ['cuisine', 'original_recipe']
     save_on_top = True
+    actions = ['action_recalculate_nutrition']
+
+    def get_inlines(self, request, obj):
+        """Разные наборы инлайн-форм для разных типов рецептов."""
+        base = [RecipeStepInline, ComponentInline]
+
+        if obj and obj.recipe_type in ('ttk', 'semi_finished'):
+            # ТТК и полуфабрикаты: профессиональные ингредиенты (брутто/нетто)
+            return base + [ProfessionalIngredientInline]
+
+        # Домашние рецепты: обычные ингредиенты
+        return base + [RecipeFoodItemInline]
 
     def get_queryset(self, request):
         return super().get_queryset(request).annotate(
-            ingredients_count=Count('home_ingredients', distinct=True),
-            steps_count=Count('steps', distinct=True)
+            ingredients_count=Count('food_items', distinct=True),
+            steps_count=Count('steps', distinct=True),
         )
 
+    # ==================== Отображаемые поля ====================
+
+    @admin.display(description='Ингредиентов')
     def ingredients_count(self, obj):
         return obj.ingredients_count
 
-    ingredients_count.short_description = 'Ингредиентов'
-
+    @admin.display(description='Шагов')
     def steps_count(self, obj):
         return obj.steps_count
 
-    steps_count.short_description = 'Шагов'
+    @admin.display(description='КБЖУ')
+    def get_calories_summary(self, obj):
+        if obj.calories is None or obj.calories == 0:
+            return '—'
+        return format_html(
+            '<b>{} ккал</b> / порция',
+            obj.calories,
+        )
+
+    @admin.display(description='Сводка по расчёту КБЖУ')
+    def get_nutrition_summary(self, obj):
+        if not obj or not obj.pk:
+            return 'Сохраните рецепт, чтобы увидеть расчёт'
+
+        if not obj.nutrition_calculated_at:
+            return format_html(
+                '<div style="padding: 10px; background: #fff3cd; border-radius: 6px;">'
+                '⚠️ КБЖУ ещё не рассчитывалось. Используйте действие «Пересчитать КБЖУ» в списке рецептов.'
+                '</div>'
+            )
+
+        items = obj.food_items.count()
+        pro = obj.pro_ingredients.count()
+        steps = obj.steps.count()
+
+        # Форматируем числа ЗАРАНЕЕ, чтобы не передавать их в format_html
+        calc_at = obj.nutrition_calculated_at.strftime('%d.%m.%Y %H:%M')
+        calories = obj.calories or 0
+        servings = obj.servings or 1
+        total_weight = obj.total_weight or 0
+        cal_100 = f"{(obj.calories_per_100g or 0):.1f}"
+        prot_100 = f"{(obj.protein_per_100g or 0):.1f}"
+        fat_100 = f"{(obj.fat_per_100g or 0):.1f}"
+        carbs_100 = f"{(obj.carbs_per_100g or 0):.1f}"
+
+        port_word = 'порция' if servings == 1 else ('порции' if 2 <= servings <= 4 else 'порций')
+
+        return format_html(
+            '<div style="padding: 12px; background: #d4edda; border-radius: 6px; line-height: 1.6;">'
+            '<b>Последний пересчёт:</b> {}<br>'
+            '<b>Ингредиентов (RecipeFoodItem):</b> {}<br>'
+            '<b>Профессиональных ингредиентов:</b> {}<br>'
+            '<b>Шагов:</b> {}<br>'
+            '<b>Итог:</b> {} ккал на порцию ({} {})<br>'
+            '<b>Всего веса:</b> {} г<br>'
+            '<b>На 100 г:</b> {} ккал / Б {} / Ж {} / У {}'
+            '</div>',
+            calc_at,
+            items,
+            pro,
+            steps,
+            calories,
+            servings,
+            port_word,
+            total_weight,
+            cal_100,
+            prot_100,
+            fat_100,
+            carbs_100,
+        )
 
     @admin.display(description='Вложенные рецепты')
     def components_list(self, obj):
@@ -443,13 +713,50 @@ class RecipeAdmin(admin.ModelAdmin):
                     for c in components
                 ])
             )
-        return '-'
+        return '—'
+
+    # ==================== Действия ====================
+
+    @admin.action(description='🔄 Пересчитать КБЖУ выбранных рецептов')
+    def action_recalculate_nutrition(self, request, queryset):
+        from kitchen.utils.nutrition import recalculate_recipe_nutrition
+
+        success = 0
+        errors = 0
+
+        # Сначала полуфабрикаты (чтобы родители могли их использовать)
+        order = {'semi_finished': 0, 'home': 1, 'ttk': 2}
+        ordered = sorted(queryset, key=lambda r: order.get(r.recipe_type, 99))
+
+        for recipe in ordered:
+            try:
+                recalculate_recipe_nutrition(recipe)
+                success += 1
+            except Exception as e:
+                errors += 1
+                self.message_user(
+                    request,
+                    f'❌ {recipe.title}: {e}',
+                    level='ERROR',
+                )
+
+        if success:
+            self.message_user(
+                request,
+                f'✅ Пересчитано рецептов: {success}',
+                level='SUCCESS',
+            )
+        if errors:
+            self.message_user(
+                request,
+                f'⚠️ Ошибок: {errors}',
+                level='WARNING',
+            )
 
     def save_model(self, request, obj, form, change):
         if obj.recipe_type in ['ttk', 'semi_finished']:
             obj.is_professional = True
         super().save_model(request, obj, form, change)
-        obj.save()
 
 
 class CuisineAdmin(admin.ModelAdmin):
@@ -658,14 +965,120 @@ class ProductAdmin(admin.ModelAdmin):
 register_if_not_registered(Product, ProductAdmin)
 
 
+# ======================= ПЕРЕСЧЁТ ЕДИНИЦ =======================
+
+@admin.register(UnitConversion)
+class UnitConversionAdmin(admin.ModelAdmin):
+    list_display = [
+        'get_target', 'from_unit', 'grams_per_unit',
+        'system', 'conversion_type', 'is_active', 'note_short',
+    ]
+    list_filter = [
+        'system', 'conversion_type', 'from_unit', 'is_active',
+    ]
+    search_fields = [
+        'ingredient__name', 'category__name', 'note',
+    ]
+    autocomplete_fields = ['ingredient', 'category']
+    list_editable = ['grams_per_unit', 'is_active']
+
+    fieldsets = (
+        ('Что пересчитываем', {
+            'fields': ('ingredient', 'category'),
+            'description': (
+                'Укажите <b>либо ингредиент</b>, <b>либо категорию</b>, '
+                'либо <b>ничего</b> (тогда правило общее). '
+                'Нельзя указывать оба одновременно.'
+            ),
+        }),
+        ('Правило', {
+            'fields': ('from_unit', 'grams_per_unit', 'conversion_type', 'system'),
+        }),
+        ('Служебное', {
+            'fields': ('note', 'is_active', 'created_at', 'updated_at'),
+        }),
+    )
+    readonly_fields = ['created_at', 'updated_at']
+
+    @admin.display(description='К чему применяется')
+    def get_target(self, obj):
+        if obj.ingredient:
+            return f"🔸 {obj.ingredient.name}"
+        if obj.category:
+            return f"📁 {obj.category.full_hierarchy}"
+        return "🌐 Общее правило"
+
+    @admin.display(description='Примечание')
+    def note_short(self, obj):
+        if obj.note and len(obj.note) > 50:
+            return obj.note[:50] + '…'
+        return obj.note or '—'
+
+    def get_queryset(self, request):
+        return super().get_queryset(request).select_related('ingredient', 'category', 'category__parent')
+
+
+# ======================= ФОРМЫ НАРЕЗКИ =======================
+
+@admin.register(CutShape)
+class CutShapeAdmin(admin.ModelAdmin):
+    save_on_top = True
+    list_display = [
+        'preview_icon', 'name', 'slug', 'factor',
+        'dish_count', 'is_active', 'sort_order',
+    ]
+    list_display_links = ['preview_icon', 'name']
+    list_filter = ['is_active']
+    search_fields = ['name', 'slug', 'description', 'short_description']
+    prepopulated_fields = {'slug': ('name',)}
+    list_editable = ['factor', 'is_active', 'sort_order']
+    filter_horizontal = ['typical_dishes']
+    readonly_fields = ['created_at', 'updated_at', 'preview_image_large']
+
+    fieldsets = (
+        ('Основное', {
+            'fields': ('name', 'slug', 'icon', 'factor', 'sort_order', 'is_active')
+        }),
+        ('Описание', {
+            'fields': ('short_description', 'description'),
+        }),
+        ('Медиа', {
+            'fields': ('image', 'video_url', 'preview_image_large'),
+        }),
+        ('Типичные блюда', {
+            'fields': ('typical_dishes',),
+            'classes': ('collapse',),
+        }),
+        ('Служебное', {
+            'fields': ('created_at', 'updated_at'),
+            'classes': ('collapse',),
+        }),
+    )
+
+    @admin.display(description='Иконка')
+    def preview_icon(self, obj):
+        return format_html('<span style="font-size: 20px;">{}</span>', obj.icon or '—')
+
+    @admin.display(description='Превью')
+    def preview_image_large(self, obj):
+        if obj.image and obj.image.url:
+            return format_html(
+                '<img src="{}" style="max-height: 200px; border-radius: 8px;" />',
+                obj.image.url
+            )
+        return '—'
+
+    @admin.display(description='Блюд')
+    def dish_count(self, obj):
+        return obj.typical_dishes.count()
+
+
 class BrandedIngredientAdmin(admin.ModelAdmin):
     list_display = ['brand', 'product_name', 'abstract', 'barcode', 'store', 'is_available']
     search_fields = ['brand', 'product_name', 'barcode']
     list_filter = ['brand', 'store', 'is_available', 'created_at']
     autocomplete_fields = ['abstract', 'created_by']
     readonly_fields = ['price_per_100g', 'price_per_kg', 'created_at', 'updated_at']
-
-
 register_if_not_registered(BrandedIngredient, BrandedIngredientAdmin)
 
 
@@ -687,8 +1100,6 @@ class IngredientCategoryAdmin(admin.ModelAdmin):
     @admin.display(description='Полная иерархия')
     def full_hierarchy(self, obj):
         return obj.full_hierarchy
-
-
 register_if_not_registered(IngredientCategory, IngredientCategoryAdmin)
 
 
@@ -732,7 +1143,7 @@ class CookingMethodAdmin(admin.ModelAdmin):
             'classes': ('collapse',),
         }),
         ('Данные для расчётов', {
-            'fields': ('oil_absorption_rates', 'cut_shape_factors'),
+            'fields': ('oil_absorption_rates', 'default_oil'),
             'classes': ('collapse',),
         }),
         ('Лучшие ингредиенты', {
@@ -769,53 +1180,117 @@ class RecommendedUtensilAdmin(admin.ModelAdmin):
 register_if_not_registered(RecommendedUtensil, RecommendedUtensilAdmin)
 
 
-class RecipeStepAdmin(admin.ModelAdmin):
-    list_display = ['id', 'recipe', 'order', 'title', 'duration', 'cooking_method']
-    list_filter = ['cooking_method', 'ingredient_preparation']
-    search_fields = ['title', 'instruction']
-    autocomplete_fields = ['recipe', 'subrecipe', 'cooking_method', 'ingredient_preparation']
-    filter_horizontal = ['recommended_utensils']
+class StepIngredientInline(admin.TabularInline):
+    """Inline для ингредиентов внутри шага."""
+    model = StepIngredient
+    form = StepIngredientForm
+    fk_name = 'step'
+    extra = 1
+    fields = [
+        'order', 'food_item', 'preparation', 'cooking_method', 'cooking_note',
+    ]
+    autocomplete_fields = ['food_item', 'preparation', 'cooking_method']
+    show_change_link = True
 
-    @admin.display(description='Картинка')
-    def preview_step_image(self, obj):
-        if obj.recipe_step_image and obj.recipe_step_image.url:
-            return format_html(
-                '<img src="{}" style="max-height: 50px; max-width: 50px; border-radius: 4px; object-fit: cover;" />',
-                obj.recipe_step_image.url
-            )
-        return '-'
+    def get_queryset(self, request):
+        return super().get_queryset(request).select_related(
+            'food_item', 'preparation', 'cooking_method',
+        )
+
+    def formfield_for_foreignkey(self, db_field, request, **kwargs):
+        """Ограничиваем food_item ингредиентами того же рецепта."""
+        if db_field.name == 'food_item':
+            # Получаем step_id из URL или POST
+            step_id = None
+            if 'step_id' in request.resolver_match.kwargs:
+                step_id = request.resolver_match.kwargs['step_id']
+            elif request.resolver_match.kwargs.get('object_id'):
+                # Если мы на странице шага
+                from kitchen.models import RecipeStep
+                step = RecipeStep.objects.filter(
+                    pk=request.resolver_match.kwargs['object_id']
+                ).first()
+                if step:
+                    step_id = step.pk
+
+            if step_id:
+                from kitchen.models import RecipeStep
+                step = RecipeStep.objects.filter(pk=step_id).first()
+                if step:
+                    kwargs['queryset'] = RecipeFoodItem.objects.filter(
+                        recipe=step.recipe
+                    ).select_related('abstract_ingredient', 'branded_ingredient', 'subrecipe')
+                else:
+                    kwargs['queryset'] = RecipeFoodItem.objects.none()
+            else:
+                kwargs['queryset'] = RecipeFoodItem.objects.none()
+
+        return super().formfield_for_foreignkey(db_field, request, **kwargs)
+
+
+@admin.register(RecipeStep)
+class RecipeStepAdmin(admin.ModelAdmin):
+    list_display = [
+        'id', 'recipe', 'order', 'title', 'duration',
+        'step_ingredients_count',
+    ]
+    list_filter = ['recipe__recipe_type']
+    search_fields = ['title', 'instruction', 'recipe__title']
+    autocomplete_fields = ['recipe', 'subrecipe']
+    filter_horizontal = ['recommended_utensils']
+    inlines = [StepIngredientInline]
+    save_on_top = True
+
+    fieldsets = (
+        ('Основное', {
+            'fields': ('recipe', 'order', 'title', 'instruction'),
+        }),
+        ('Тайминг и температура', {
+            'fields': ('duration', 'temperature'),
+        }),
+        ('Медиа', {
+            'fields': ('recipe_step_image',),
+        }),
+        ('Вложенный рецепт (полуфабрикат)', {
+            'fields': ('subrecipe', 'subrecipe_base_ingredient', 'subrecipe_base_quantity'),
+            'classes': ('collapse',),
+        }),
+        ('Утварь', {
+            'fields': ('recommended_utensils',),
+        }),
+    )
+
+    @admin.display(description='Ингредиентов')
+    def step_ingredients_count(self, obj):
+        return obj.step_ingredients.count()
+
+    def get_queryset(self, request):
+        return super().get_queryset(request).select_related(
+            'recipe', 'subrecipe',
+        ).prefetch_related('step_ingredients')
 
 
 register_if_not_registered(RecipeStep, RecipeStepAdmin)
 
-
-class HomeIngredientAdmin(admin.ModelAdmin):
-    list_display = ['recipe', 'ingredient', 'quantity', 'unit', 'is_scalable']
-    list_filter = ['unit', 'is_scalable']
-    search_fields = ['ingredient__name', 'recipe__title']
-    autocomplete_fields = ['recipe', 'ingredient']
-
-
-register_if_not_registered(HomeIngredient, HomeIngredientAdmin)
+if not SKIP_BROKEN_ADMIN:
+    class HomeIngredientAdmin(admin.ModelAdmin):
+        list_display = ['recipe', 'ingredient', 'quantity', 'unit', 'is_scalable']
+        list_filter = ['unit', 'is_scalable']
+        search_fields = ['ingredient__name', 'recipe__title']
+        autocomplete_fields = ['recipe', 'ingredient']
 
 
-class IngredientSubstitutionAdmin(admin.ModelAdmin):
-    list_display = ['recipe_ingredient', 'substitute_ingredient', 'ratio', 'substitute_unit']
-    list_filter = ['substitute_unit']
-    autocomplete_fields = ['recipe_ingredient', 'substitute_ingredient']
+    register_if_not_registered(HomeIngredient, HomeIngredientAdmin)
+
+if not SKIP_BROKEN_ADMIN:
+    class IngredientSubstitutionAdmin(admin.ModelAdmin):
+        list_display = ['recipe_ingredient', 'substitute_ingredient', 'ratio', 'substitute_unit']
+        list_filter = ['substitute_unit']
+        autocomplete_fields = ['recipe_ingredient', 'substitute_ingredient']
 
 
-register_if_not_registered(IngredientSubstitution, IngredientSubstitutionAdmin)
+    register_if_not_registered(IngredientSubstitution, IngredientSubstitutionAdmin)
 
-
-class RecipeFoodItemAdmin(admin.ModelAdmin):
-    list_display = ['recipe', 'food_name', 'food_type', 'quantity', 'unit', 'is_scalable']
-    list_filter = ['unit', 'is_scalable']
-    search_fields = ['ingredient__name', 'product__name', 'recipe__title']
-    autocomplete_fields = ['recipe', 'ingredient', 'product']
-
-
-register_if_not_registered(RecipeFoodItem, RecipeFoodItemAdmin)
 
 
 @admin.register(IngredientSubstitutionRule)

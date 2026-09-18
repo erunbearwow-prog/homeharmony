@@ -1,0 +1,107 @@
+{
+  "name": "Мука рисовая",
+  "name_normalized": "muka_risovaya",
+  "synonyms": "мука рисовая, рисовая мука, мука из риса, рисовая мука белая, рисовая мука цельнозерновая, мука для выпечки без глютена, рисовая мука для панировки, рисовая мука для лапши, rice flour, white rice flour, brown rice flour",
+  "short_description": "Мука, получаемая путем измельчения риса (белого или бурого). Не содержит глютен, имеет нейтральный вкус и легкую, рассыпчатую текстуру. Используется для выпечки, панировки, приготовления лапши, соусов и блюд азиатской кухни.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Рисовая мука — это продукт, получаемый путем измельчения рисовых зерен. В зависимости от сырья, мука бывает белой (из шлифованного риса) и цельнозерновой (из бурого риса). Белая рисовая мука имеет тонкий помол, нейтральный вкус и кремово-белый цвет; цельнозерновая — более грубый помол, бежевый оттенок и легкий ореховый привкус.</p><p class=\"ingredient-text\">Рисовая мука не содержит глютен, что делает ее незаменимой для людей с целиакией и аллергией на пшеницу. Однако из-за отсутствия глютена тесто на основе рисовой муки не имеет эластичности, поэтому в выпечке ее часто комбинируют с другими видами муки или крахмалами. Рисовая мука широко используется в азиатской кухне (для лапши, десертов, панировки) и в диетическом питании.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — тонкий, однородный порошок (белая); более грубый помол (цельнозерновая)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный (белая); слегка ореховый (цельнозерновая)</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый, кремовый (белая); бежевый (цельнозерновая)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 12 месяцев в сухом прохладном месте</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — не содержит глютен; хорошо поглощает влагу; требует больше жидкости в тесте</li></ul><h2 class=\"ingredient-title\">Виды рисовой муки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Белая рисовая мука</strong> — из шлифованного белого риса, тонкий помол, нейтральный вкус</li><li class=\"ingredient-list-item\"><strong>Цельнозерновая рисовая мука</strong> — из бурого риса, более грубый помол, ореховый привкус, больше клетчатки</li><li class=\"ingredient-list-item\"><strong>Клейкая рисовая мука</strong> — из клейкого риса, для приготовления моти и азиатских десертов</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в герметичной упаковке в сухом прохладном месте</li><li class=\"ingredient-list-item\"><strong>Просеивание</strong> — рекомендуется перед использованием для удаления комков</li><li class=\"ingredient-list-item\"><strong>Замес теста</strong> — требует больше жидкости, чем пшеничная мука</li><li class=\"ingredient-list-item\"><strong>Комбинирование</strong> — с пшеничной мукой (4:1) или крахмалами для улучшения текстуры</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — хлеб, печенье, кексы, блины (без глютена)</li><li class=\"ingredient-list-item\"><strong>Лапша</strong> — рисовая лапша, азиатские супы</li><li class=\"ingredient-list-item\"><strong>Панировка</strong> — для рыбы, мяса, овощей (хрустящая корочка)</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — загуститель для азиатских соусов</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — моти, рисовые пирожные, пудинги</li><li class=\"ingredient-list-item\"><strong>Детское питание</strong> — для первого прикорма</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — молоко, сливки, масло, яйца</li><li class=\"ingredient-list-item\"><strong>Фрукты и ягоды</strong> — бананы, яблоки, ягоды, изюм</li><li class=\"ingredient-list-item\"><strong>Сахар и мед</strong> — для подслащивания</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, ваниль, кардамон</li><li class=\"ingredient-list-item\"><strong>Другие виды муки</strong> — кукурузная, картофельный крахмал (для выпечки)</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Кукурузная мука</strong> — без глютена, другой вкус</li><li class=\"ingredient-list-item\"><strong>Картофельный крахмал</strong> — для загущения, не для выпечки</li><li class=\"ingredient-list-item\"><strong>Миндальная мука</strong> — без глютена, более жирная</li><li class=\"ingredient-list-item\"><strong>Пшеничная мука</strong> — содержит глютен, не для безглютеновой диеты</li></ul>",
+
+  "category": "Бакалея",
+
+  "data_source": "usda",
+
+  "calories": 366,
+  "protein": 5.95,
+  "fat": 1.42,
+  "carbohydrates": 80.13,
+
+  "water": 11.89,
+  "ash": 0.61,
+  "fiber": 2.4,
+  "sugar": 0.12,
+
+  "vitamin_b1": 0.138,
+  "vitamin_b2": 0.021,
+  "vitamin_b3": 2.59,
+  "vitamin_b5": 0.819,
+  "vitamin_b6": 0.436,
+  "vitamin_b9_folate": 4,
+  "vitamin_e": 0.11,
+
+  "calcium": 10,
+  "iron": 0.35,
+  "magnesium": 35,
+  "phosphorus": 98,
+  "potassium": 76,
+  "sodium": 0,
+  "zinc": 0.8,
+  "copper": 0.13,
+  "manganese": 1.2,
+  "selenium": 15.1,
+
+  "saturated_fat": 0.386,
+  "trans_fat": 0.0,
+  "cholesterol": 0,
+  "polyunsaturated_fat": 0.379,
+
+  "semantic_data": {
+    "properties": [
+      "мука",
+      "рисовая",
+      "без глютена",
+      "нейтральный вкус",
+      "тонкий помол",
+      "для выпечки",
+      "для панировки",
+      "для лапши",
+      "для соусов",
+      "для детского питания"
+    ],
+    "preparations": [
+      "хранение в герметичной упаковке",
+      "просеивание перед использованием",
+      "замес теста с добавлением большего количества жидкости",
+      "комбинирование с другими видами муки"
+    ],
+    "cooking_methods": [
+      {"method": "выпечка", "priority": "high"},
+      {"method": "приготовление лапши", "priority": "high"},
+      {"method": "панировка", "priority": "high"},
+      {"method": "загущение соусов", "priority": "medium"},
+      {"method": "приготовление десертов", "priority": "medium"},
+      {"method": "детское питание", "priority": "medium"}
+    ],
+    "applications": [
+      "выпечка",
+      "лапша",
+      "панировка",
+      "соусы",
+      "десерты",
+      "детское питание"
+    ],
+    "pairings": {
+      "protein": ["молоко", "сливки", "масло", "яйца"],
+      "vegetables": [],
+      "fruits": ["бананы", "яблоки", "ягоды", "изюм"],
+      "sauces": ["сахар", "мед"],
+      "herbs": [],
+      "spices": ["корица", "ваниль", "кардамон"]
+    },
+    "substitutes": [
+      {"name": "Кукурузная мука", "similarity": "medium"},
+      {"name": "Картофельный крахмал", "similarity": "low"},
+      {"name": "Миндальная мука", "similarity": "low"},
+      {"name": "Пшеничная мука", "similarity": "low"}
+    ]
+  },
+
+  "tags": [
+    "бакалея",
+    "мука",
+    "рисовая мука",
+    "без глютена",
+    "выпечка",
+    "панировка",
+    "лапша",
+    "детское питание"
+  ]
+}
