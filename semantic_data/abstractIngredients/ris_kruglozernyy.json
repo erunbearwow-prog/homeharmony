@@ -1,0 +1,105 @@
+{
+  "name": "Рис круглозерный",
+  "name_normalized": "ris_kruglozernyy",
+  "synonyms": "рис круглозерный, круглозерный рис, рис круглый, круглый рис, рис шлифованный круглозерный, рис кубанский, рис для каши, рис для суши, рис для пудинга, рис для запеканки, short grain rice, round rice, japonica rice",
+  "short_description": "Шлифованный рис с короткими, округлыми зернами, содержащий большое количество крахмала. После варки становится мягким и клейким, образуя кремообразную массу. Идеален для каш, пудингов, запеканок, суши и супов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Рис круглозерный — это шлифованный рис с короткими, почти округлыми зернами, длина которых обычно не превышает 4-5 мм. Этот сорт относится к подвиду Oryza sativa japonica и содержит большое количество крахмала, в частности амилопектина, который придает готовому рису клейкость и способность развариваться в кремообразную массу.</p><p class=\"ingredient-text\">Круглозерный рис — самый популярный сорт в России, его выращивают в Краснодарском крае. Благодаря высокой клейкости он идеален для приготовления вязких каш, пудингов, запеканок, суши, а также для добавления в супы. В отличие от длиннозерного, круглозерный рис сильнее разваривается и впитывает больше влаги.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — твердая, гладкая (до варки); мягкая, клейкая, кремообразная (после варки)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, слегка сладковатый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый, непрозрачный</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — короткие округлые зерна</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 12-18 месяцев в сухом прохладном месте</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — содержит много крахмала, сильно разваривается, хорошо впитывает влагу</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Промывка</strong> — тщательно промыть холодной водой до прозрачности</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — в соотношении 1:2,5 или 1:3 (рис:вода) для каши</li><li class=\"ingredient-list-item\"><strong>Для суши</strong> — использовать специальный рисовый уксус после варки</li><li class=\"ingredient-list-item\"><strong>Для пудингов и запеканок</strong> — можно варить в молоке</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Каши</strong> — молочные и водные, вязкие и жидкие</li><li class=\"ingredient-list-item\"><strong>Пудинги</strong> — молочные, фруктовые, шоколадные</li><li class=\"ingredient-list-item\"><strong>Запеканки</strong> — с творогом, яйцом, фруктами</li><li class=\"ingredient-list-item\"><strong>Суши и роллы</strong> — как основа</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — добавка в овощные и мясные супы</li><li class=\"ingredient-list-item\"><strong>Голубцы и фаршированные овощи</strong> — как начинка</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — молоко, сливки, масло, творог</li><li class=\"ingredient-list-item\"><strong>Фрукты и ягоды</strong> — яблоки, изюм, курага, ягоды</li><li class=\"ingredient-list-item\"><strong>Сахар и мед</strong> — для подслащивания</li><li class=\"ingredient-list-item\"><strong>Яйца</strong> — для запеканок и пудингов</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — корица, ваниль, кардамон</li><li class=\"ingredient-list-item\"><strong>Мясо и овощи</strong> — для супов и голубцов</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Рис среднезерный</strong> — менее клейкий</li><li class=\"ingredient-list-item\"><strong>Рис длиннозерный</strong> — для рассыпчатых блюд</li><li class=\"ingredient-list-item\"><strong>Булгур</strong> — для гарниров и супов</li><li class=\"ingredient-list-item\"><strong>Киноа</strong> — безглютеновая альтернатива</li></ul>",
+
+  "category": "Крупы и злаки",
+
+  "data_source": "health-diet.ru",
+
+  "calories": 330,
+  "protein": 6.5,
+  "fat": 0.5,
+  "carbohydrates": 75.0,
+
+  "water": 14.0,
+  "ash": 0.7,
+  "fiber": 3.0,
+
+  "vitamin_b1": 0.08,
+  "vitamin_b2": 0.04,
+  "vitamin_b4": 78.0,
+  "vitamin_b5": 0.4,
+  "vitamin_b6": 0.2,
+  "vitamin_b9_folate": 19.0,
+  "vitamin_e": 0.4,
+  "vitamin_h": 3.5,
+  "vitamin_k": 0.1,
+  "vitamin_b3": 3.3,
+
+  "potassium": 100,
+  "calcium": 8,
+  "magnesium": 50,
+  "sodium": 12,
+  "phosphorus": 150,
+  "silicon": 100,
+
+  "iron": 1.0,
+
+  "semantic_data": {
+    "properties": [
+      "крупа",
+      "рис",
+      "круглозерный",
+      "белый",
+      "клейкий",
+      "крахмалистый",
+      "нейтральный вкус",
+      "без глютена",
+      "для каш",
+      "для пудингов",
+      "для запеканок",
+      "для суши"
+    ],
+    "preparations": [
+      "промывка холодной водой до прозрачности",
+      "варка в соотношении 1:2,5 или 1:3",
+      "использование рисового уксуса для суши",
+      "варка в молоке для пудингов"
+    ],
+    "cooking_methods": [
+      {"method": "варка каши", "priority": "high"},
+      {"method": "приготовление пудингов", "priority": "high"},
+      {"method": "приготовление запеканок", "priority": "high"},
+      {"method": "приготовление суши", "priority": "high"},
+      {"method": "добавление в супы", "priority": "high"},
+      {"method": "фарширование овощей", "priority": "medium"}
+    ],
+    "applications": [
+      "каши",
+      "пудинги",
+      "запеканки",
+      "суши",
+      "супы",
+      "голубцы"
+    ],
+    "pairings": {
+      "protein": ["молоко", "сливки", "масло", "творог", "яйца"],
+      "vegetables": ["морковь", "лук", "перец"],
+      "fruits": ["яблоки", "изюм", "курага", "ягоды"],
+      "sauces": ["сахар", "мед"],
+      "herbs": [],
+      "spices": ["корица", "ваниль", "кардамон"]
+    },
+    "substitutes": [
+      {"name": "Рис среднезерный", "similarity": "high"},
+      {"name": "Рис длиннозерный", "similarity": "medium"},
+      {"name": "Булгур", "similarity": "medium"},
+      {"name": "Киноа", "similarity": "low"}
+    ]
+  },
+
+  "tags": [
+    "крупа",
+    "рис",
+    "круглозерный рис",
+    "кубанский рис",
+    "клейкий",
+    "каши",
+    "пудинги",
+    "запеканки",
+    "суши"
+  ]
+}
