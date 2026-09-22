@@ -1,0 +1,116 @@
+{
+  "name": "Лук белый",
+  "name_normalized": "luk_belyy",
+  "synonyms": "белый лук, лук ялтинский, ялтинский лук, лук белый репчатый, белый репчатый лук, Allium cepa, лук сладкий, лук салатный, лук для салатов, белый крымский лук",
+  "short_description": "Сладкий и мягкий сорт репчатого лука с белоснежной сочной мякотью. Не такой острый и жгучий, как желтый, не вызывает слез и отличается хрустящей текстурой. Идеален для салатов, маринадов и французского лукового супа.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Белый лук — это сорт репчатого лука (Allium cepa) с белоснежной, сочной и хрустящей мякотью. Его главное отличие от привычного желтого лука — мягкий, сладковатый вкус без резкой горечи и остроты. Белый лук практически не вызывает слез при нарезке, а его тонкая кожица и высокое содержание воды делают текстуру особенно нежной. Благодаря этим свойствам белый лук широко используется в свежем виде: в салатах, сальсах, бутербродах и маринадах. Французский луковый суп традиционно готовят именно из белого лука — он хорошо разваривается, не «скрипит» на зубах и придает блюду наваристость и аромат.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — сочная, хрустящая, нежная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, мягкий, без резкой горечи</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый, иногда с легким кремовым оттенком</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — округлая, приплюснутая, иногда плоская</li><li class=\"ingredient-list-item\"><strong>Кожица</strong> — тонкая, белая или полупрозрачная</li><li class=\"ingredient-list-item\"><strong>Содержание воды</strong> — высокое</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — недолгий, требует прохладного и сухого места</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — не вызывает слез при нарезке</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Очистка</strong> — удаление тонкой кожицы</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — кольцами, полукольцами, кубиками, тонкими ломтиками</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — для салатов можно промыть холодной водой для удаления остаточной остроты</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — в уксусе, лимонном соке или вине для смягчения вкуса</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — свежие овощные салаты, сальса, тартар</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — французский луковый суп, овощные бульоны</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для мяса, рыбы, овощей</li><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — как свежая добавка</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — целиком или крупными кусками</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — половинками или кольцами</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — как ароматная основа</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, огурцы, болгарский перец, брокколи</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — кинза, петрушка, укроп, зеленый лук</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — говядина, курица, свинина</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — оливковое масло, лимонный сок, сметана, йогурт</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, паприка, чеснок</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Лук красный</strong> — более сладкий, но с более выраженной остротой</li><li class=\"ingredient-list-item\"><strong>Лук-шалот</strong> — более нежный и деликатный вкус</li><li class=\"ingredient-list-item\"><strong>Лук желтый</strong> — более острый и жгучий</li><li class=\"ingredient-list-item\"><strong>Лук-порей</strong> — другой вкус, но подходит для супов</li></ul>",
+  "category": "Овощи",
+  "calories": 42,
+  "protein": 1.4,
+  "fat": 0.2,
+  "carbohydrates": 9.0,
+  "water": 89.6,
+  "ash": 0.4,
+  "fiber": 1.5,
+  "sugar": 5.0,
+  "sodium": 3,
+  "potassium": 160,
+  "calcium": 20,
+  "magnesium": 10,
+  "phosphorus": 30,
+  "iron": 0.3,
+  "zinc": 0.2,
+  "copper": 0.05,
+  "manganese": 0.1,
+  "selenium": 0.5,
+  "vitamin_b1": 0.04,
+  "vitamin_b2": 0.02,
+  "vitamin_b3": 0.2,
+  "vitamin_b5": 0.1,
+  "vitamin_b6": 0.1,
+  "vitamin_b9_folate": 16,
+  "vitamin_c": 7.6,
+  "vitamin_e": 0.02,
+  "semantic_data": {
+    "properties": [
+      "сладкий",
+      "мягкий вкус",
+      "сочный",
+      "хрустящий",
+      "белый",
+      "не вызывает слез",
+      "низкокалорийный",
+      "источник витамина C",
+      "содержит флавоноиды",
+      "универсальный",
+      "салатный"
+    ],
+    "preparations": [
+      "очистка от тонкой кожицы",
+      "нарезка кольцами, полукольцами, кубиками",
+      "промывка холодной водой (для салатов)",
+      "маринование в уксусе или лимонном соке"
+    ],
+    "cooking_methods": [
+      {
+        "method": "сырой (в салатах и закусках)",
+        "priority": "high"
+      },
+      {
+        "method": "варка (для супов)",
+        "priority": "high"
+      },
+      {
+        "method": "запекание целиком или крупными кусками",
+        "priority": "high"
+      },
+      {
+        "method": "маринование",
+        "priority": "medium"
+      },
+      {
+        "method": "жарка на гриле",
+        "priority": "medium"
+      },
+      {
+        "method": "пассерование",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "салаты (свежие овощные, сальса)",
+      "французский луковый суп",
+      "маринады для мяса и рыбы",
+      "бутерброды и канапе",
+      "запеченные блюда",
+      "соусы и заправки"
+    ],
+    "pairings": {
+      "protein": ["говядина", "курица", "свинина", "рыба"],
+      "vegetables": ["помидоры", "огурцы", "болгарский перец", "брокколи"],
+      "sauces": ["оливковое масло", "лимонный сок", "сметана", "йогурт"],
+      "herbs": ["кинза", "петрушка", "укроп", "зеленый лук"],
+      "spices": ["черный перец", "паприка", "чеснок"]
+    },
+    "substitutes": [
+      {"name": "Лук красный", "similarity": "high"},
+      {"name": "Лук-шалот", "similarity": "high"},
+      {"name": "Лук желтый", "similarity": "medium"},
+      {"name": "Лук-порей", "similarity": "low"}
+    ]
+  },
+  "data_source": "health-diet.ru",
+  "tags": [
+    "овощ",
+    "лук",
+    "белый лук",
+    "ялтинский лук",
+    "салатный лук",
+    "сладкий лук",
+    "низкокалорийный",
+    "витамин C",
+    "салаты",
+    "супы",
+    "маринады"
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "name": "Свиные мозги",
+  "name_normalized": "svinye_mozgi",
+  "synonyms": "свиные мозги, мозги свиные, свиной мозг, мозги поросёнка, субпродукт свиной, мозги для жарки, мозги для паштета, мозги для тушения, мозги для начинки, pork brain",
+  "short_description": "Мягкий, нежный субпродукт с кремовой текстурой и деликатным, слегка сладковатым вкусом. Богат фосфором, железом, витаминами группы B и холином. Требует тщательной подготовки: удаления горькой плёнки и предварительного отваривания.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Свиные мозги — это субпродукт, который ценится за нежную, кремовую текстуру и деликатный вкус, напоминающий рыбьи молоки или печень трески. По вкусу мозги практически нейтральны, поэтому при приготовлении их важно дополнять специями, чесноком и лавровым листом. Свиные мозги богаты фосфором, железом, витаминами группы B (особенно B12, B5 и B2), а также холином, необходимым для работы нервной системы.</p><p class=\"ingredient-text\">Главная особенность этого субпродукта — наличие тонкой чёрной плёнки, которая горчит и может испортить всё блюдо. Её необходимо удалять с сырых мозгов или после кратковременного бланширования. Также мозги дают обильную пену при варке, что является нормальным явлением.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мягкая, нежная, кремовая (после приготовления)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — деликатный, слегка сладковатый, нейтральный</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — серовато-розовый (сырые), серый (готовые)</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — дольки неправильной формы</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — требует удаления чёрной плёнки и предварительного отваривания</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Промывка</strong> — тщательно промыть в холодной воде</li><li class=\"ingredient-list-item\"><strong>Удаление плёнки</strong> — снять чёрную плёнку (начиная с середины, чтобы мозги не разваливались)</li><li class=\"ingredient-list-item\"><strong>Отваривание</strong> — 15–20 минут в подсоленной воде с лавровым листом и специями</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — на порционные куски</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — в муке или кляре до румяной корочки</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с луком, чесноком, лавровым листом</li><li class=\"ingredient-list-item\"><strong>Паштет</strong> — пюрированные мозги с обжаренными овощами</li><li class=\"ingredient-list-item\"><strong>Начинка</strong> — для пирогов, блинов, тако</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с яйцом и сыром</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — в составе бульонов</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, чеснок, помидоры, перец</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, сливочный, томатный, горчичный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, лавровый лист, тимьян</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, черный перец, паприка, мускатный орех</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — гречка, рис, картофельное пюре</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжьи мозги</strong> — схожая текстура, более плотные</li><li class=\"ingredient-list-item\"><strong>Телячьи мозги</strong> — более нежные</li><li class=\"ingredient-list-item\"><strong>Бараньи мозги</strong> — более жирные</li><li class=\"ingredient-list-item\"><strong>Куриная печень</strong> — для паштета</li></ul>",
+
+  "category": "Мясо и мясные продукты",
+
+  "data_source": "usda",
+
+  "calories": 127,
+  "protein": 10.3,
+  "fat": 9.2,
+  "carbohydrates": 0,
+
+  "water": 79.0,
+  "ash": 1.5,
+
+  "vitamin_c": 13.5,
+  "vitamin_b1": 0.16,
+  "vitamin_b2": 0.28,
+  "vitamin_b3": 4.0,
+  "vitamin_b5": 2.8,
+  "vitamin_b6": 0.19,
+  "vitamin_b9_folate": 6,
+  "vitamin_b12": 2.0,
+  "vitamin_a": 0,
+
+  "phosphorus": 282,
+  "potassium": 258,
+  "sodium": 120,
+  "calcium": 10,
+  "magnesium": 14,
+  "iron": 1.6,
+  "zinc": 1.0,
+  "copper": 0.2,
+  "manganese": 0.09,
+  "selenium": 16,
+
+  "saturated_fat": 2.1,
+  "monounsaturated_fat": 2.0,
+  "polyunsaturated_fat": 1.0,
+  "cholesterol": 2195,
+  "omega_3": 1.0,
+  "omega_6": 0,
+
+  "semantic_data": {
+    "properties": [
+      "субпродукт",
+      "свинина",
+      "нежный",
+      "кремовый",
+      "источник фосфора",
+      "источник витаминов B",
+      "источник холина",
+      "для жарки",
+      "для тушения",
+      "для паштета",
+      "для начинки"
+    ],
+    "preparations": [
+      "промывка в холодной воде",
+      "удаление черной пленки",
+      "отваривание 15-20 минут",
+      "нарезка на порционные куски"
+    ],
+    "cooking_methods": [
+      {"method": "жарка", "priority": "high"},
+      {"method": "тушение", "priority": "high"},
+      {"method": "приготовление паштета", "priority": "high"},
+      {"method": "использование в начинках", "priority": "medium"},
+      {"method": "запекание", "priority": "medium"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "закуски",
+      "паштеты",
+      "начинки",
+      "супы"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["лук", "морковь", "чеснок", "помидоры", "перец"],
+      "sauces": ["сметанный", "сливочный", "томатный", "горчичный"],
+      "herbs": ["петрушка", "укроп", "лавровый лист", "тимьян"],
+      "spices": ["чеснок", "черный перец", "паприка", "мускатный орех"]
+    },
+    "substitutes": [
+      {"name": "Говяжьи мозги", "similarity": "high"},
+      {"name": "Телячьи мозги", "similarity": "high"},
+      {"name": "Бараньи мозги", "similarity": "medium"},
+      {"name": "Куриная печень", "similarity": "low"}
+    ]
+  },
+
+  "tags": [
+    "мясо",
+    "субпродукт",
+    "свинина",
+    "мозги",
+    "источник фосфора",
+    "источник витаминов B",
+    "для жарки",
+    "для паштета"
+  ]
+}

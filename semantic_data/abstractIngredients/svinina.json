@@ -1,0 +1,113 @@
+{
+  "name": "Свинина",
+  "name_normalized": "svinina",
+  "synonyms": "свинина, свиное мясо, мясо свиньи, свинина свежая, свинина охлаждённая, свинина для жарки, свинина для тушения, свинина для запекания, свинина для шашлыка, свинина для бульона, pork, pig meat",
+  "short_description": "Мясо домашней свиньи, один из самых популярных видов мяса в мире. Отличается высокой питательностью, насыщенным вкусом и универсальностью в кулинарии. Содержит полноценный белок, витамины группы B, цинк и селен. В зависимости от части туши различается по жирности и кулинарному назначению.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Свинина — это мясо домашних свиней, которое занимает одно из ведущих мест в кулинарных традициях многих народов мира. Она ценится за нежный вкус, сочность и универсальность: в зависимости от части туши свинину жарят, варят, тушат, запекают, коптят и солят.</p><p class=\"ingredient-text\">Свинина богата полноценным белком, содержащим все незаменимые аминокислоты, а также витаминами группы B (особенно B1, B3, B6, B12), цинком, селеном и железом. В зависимости от части туши, содержание жира варьируется от 10% до 35%. Свиное мясо легко усваивается организмом и является источником энергии.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, сочная, с тонкими жировыми прослойками (зависит от части)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, мясной, с лёгкой сладостью</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от бледно-розового до красноватого</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — варьируется от 10% (постная) до 35% и выше (жирная)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — содержит больше тиамина (B1), чем другие виды мяса</li></ul><h2 class=\"ingredient-title\">Классификация по частям туши</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>1-я категория</strong> — лопатка, грудинка, корейка, пашина, поясничная часть, окорок</li><li class=\"ingredient-list-item\"><strong>2-я категория</strong> — шейный зарез, предплечье (рулька), голяшка</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике при низкой температуре</li><li class=\"ingredient-list-item\"><strong>Зачистка</strong> — удаление плёнок, сухожилий, лишнего жира</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — в зависимости от блюда (куски, ломтики, кубики)</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — для сочности и аромата</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Варка</strong> — бульоны, супы, борщи, щи, рассольники</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — котлеты, эскалопы, шницели, отбивные</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — рагу, жаркое, гуляш</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — буженина, рулька, окорок</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — окорок, лопатка, грудинка, бекон</li><li class=\"ingredient-list-item\"><strong>Фарш</strong> — котлеты, пельмени, колбасы</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, капуста, лук, морковь, свёкла, помидоры, перец</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, гречка, перловка</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, сливочный, горчичный, барбекю</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, тимьян, розмарин, лавровый лист</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, черный перец, паприка, кориандр, кумин</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говядина</strong> — менее жирная, более плотная</li><li class=\"ingredient-list-item\"><strong>Телятина</strong> — более нежная, диетическая</li><li class=\"ingredient-list-item\"><strong>Баранина</strong> — более жирная, с характерным вкусом</li><li class=\"ingredient-list-item\"><strong>Курица</strong> — менее жирная, диетическая</li></ul>",
+
+  "category": "Мясо и мясные продукты",
+
+  "data_source": "usda",
+
+  "calories": 242,
+  "protein": 27.3,
+  "fat": 13.9,
+  "carbohydrates": 0,
+
+  "water": 57.9,
+  "ash": 0.9,
+
+  "vitamin_b1": 0.877,
+  "vitamin_b2": 0.321,
+  "vitamin_b3": 5.037,
+  "vitamin_b4": 93.9,
+  "vitamin_b5": 0.698,
+  "vitamin_b6": 0.464,
+  "vitamin_b9_folate": 5,
+  "vitamin_b12": 0.7,
+  "vitamin_c": 0.6,
+  "vitamin_d": 1.3,
+  "vitamin_e": 0.29,
+
+  "potassium": 423,
+  "calcium": 19,
+  "magnesium": 28,
+  "sodium": 62,
+  "phosphorus": 246,
+  "iron": 0.87,
+  "manganese": 0.012,
+  "copper": 0.062,
+  "zinc": 2.39,
+  "selenium": 45.3,
+
+  "saturated_fat": 5.23,
+  "monounsaturated_fat": 6.19,
+  "polyunsaturated_fat": 1.2,
+  "cholesterol": 80,
+
+  "semantic_data": {
+    "properties": [
+      "мясо",
+      "свинина",
+      "красное мясо",
+      "высокобелковый",
+      "источник витаминов B",
+      "источник селена",
+      "источник цинка",
+      "универсальный",
+      "для варки",
+      "для жарки",
+      "для тушения",
+      "для запекания",
+      "для копчения"
+    ],
+    "preparations": [
+      "разморозка в холодильнике",
+      "зачистка от плёнок и сухожилий",
+      "нарезка в зависимости от блюда",
+      "маринование для сочности"
+    ],
+    "cooking_methods": [
+      {"method": "варка", "priority": "high"},
+      {"method": "жарка", "priority": "high"},
+      {"method": "тушение", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "копчение", "priority": "high"},
+      {"method": "приготовление фарша", "priority": "high"}
+    ],
+    "applications": [
+      "супы и бульоны",
+      "вторые блюда",
+      "закуски",
+      "колбасные изделия",
+      "копчёности",
+      "фарш"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "капуста", "лук", "морковь", "свёкла", "помидоры", "перец"],
+      "sauces": ["томатный", "сметанный", "сливочный", "горчичный", "барбекю"],
+      "herbs": ["петрушка", "укроп", "тимьян", "розмарин", "лавровый лист"],
+      "spices": ["чеснок", "черный перец", "паприка", "кориандр", "кумин"]
+    },
+    "substitutes": [
+      {"name": "Говядина", "similarity": "medium"},
+      {"name": "Телятина", "similarity": "medium"},
+      {"name": "Баранина", "similarity": "medium"},
+      {"name": "Курица", "similarity": "low"}
+    ]
+  },
+
+  "tags": [
+    "мясо",
+    "свинина",
+    "красное мясо",
+    "высокобелковый",
+    "источник витаминов B",
+    "для варки",
+    "для жарки",
+    "для тушения",
+    "для запекания",
+    "для копчения"
+  ]
+}

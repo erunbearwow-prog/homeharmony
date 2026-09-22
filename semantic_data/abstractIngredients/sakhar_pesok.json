@@ -1,0 +1,38 @@
+{
+  "name": "Сахар-песок",
+  "name_normalized": "sakhar_pesok",
+  "synonyms": "сахар-песок, сахарный песок, сахар кристаллический, песок сахарный, сахар свекловичный, сахар тростниковый",
+  "short_description": "Кристаллический сахар с размером кристаллов от 0,5 до 2,5 мм. Основная форма сахара в розничной торговле. Состоит из сахарозы, легко растворяется в воде, используется для выпечки, напитков и консервирования.",
+  "description": "<h2 class=\"ingredient-title\">Что такое сахароза</h2><p class=\"ingredient-text\">Сахароза (C₁₂H₂₂O₁₁) — это дисахарид, состоящий из одной молекулы глюкозы и одной молекулы фруктозы, соединённых α-1,2-гликозидной связью. Это бесцветное кристаллическое вещество, очень легко растворимое в воде, со сладким вкусом без посторонних привкусов и запахов. Сахароза — основной компонент сахара, который получают из сахарного тростника или сахарной свёклы. При нагревании выше 160°C сахароза плавится, при 190–220°C карамелизуется, образуя характерный коричневый цвет и аромат. Сахароза не является восстанавливающим (редуцирующим) сахаром.</p><h2 class=\"ingredient-title\">Сахар-песок</h2><p class=\"ingredient-text\">Сахар-песок — это сахароза в виде отдельных кристаллов размером от 0,5 до 2,5 мм. Это самая распространённая форма сахара, которая продаётся в магазинах. Кристаллы сахарного песка сыпучие, без комков, белого цвета, допускается голубоватый оттенок. Сахар-песок легко растворяется в воде, что делает его универсальным для добавления в напитки, тесто и консервы.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Размер кристаллов</strong> — 0,5–2,5 мм</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, без посторонних привкусов</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый, чистый</li><li class=\"ingredient-list-item\"><strong>Сыпучесть</strong> — сыпучий, без комков</li><li class=\"ingredient-list-item\"><strong>Растворимость</strong> — очень легко растворим в воде</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — тесто, кремы, глазури</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — чай, кофе, компоты</li><li class=\"ingredient-list-item\"><strong>Консервирование</strong> — варенье, джемы</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — мороженое, конфеты</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сахар-рафинад</strong> — для порционного использования</li><li class=\"ingredient-list-item\"><strong>Сахарная пудра</strong> — для глазурей</li><li class=\"ingredient-list-item\"><strong>Мёд</strong> — натуральный подсластитель</li></ul>",
+  "category": "Бакалея",
+  "data_source": "usda",
+  "calories": 399,
+  "protein": 0,
+  "fat": 0,
+  "carbohydrates": 99.8,
+  "water": 0.1,
+  "ash": 0.1,
+  "potassium": 3,
+  "calcium": 3,
+  "sodium": 1,
+  "iron": 0.3,
+  "sugar": 99.8,
+  "semantic_data": {
+    "properties": ["подсластитель", "сахароза", "кристаллический", "сыпучий", "белый", "сладкий"],
+    "preparations": ["хранение в сухом месте", "добавление в сухом виде", "растворение в жидкости"],
+    "cooking_methods": [
+      {"method": "добавление в напитки", "priority": "high"},
+      {"method": "использование в выпечке", "priority": "high"},
+      {"method": "консервирование", "priority": "high"},
+      {"method": "приготовление глазури", "priority": "medium"}
+    ],
+    "applications": ["выпечка", "напитки", "десерты", "консервирование"],
+    "pairings": {"protein": [], "vegetables": [], "fruits": ["яблоки", "ягоды", "цитрусовые"], "sauces": [], "herbs": [], "spices": ["корица", "ваниль"]},
+    "substitutes": [
+      {"name": "Сахар-рафинад", "similarity": "high"},
+      {"name": "Сахарная пудра", "similarity": "medium"},
+      {"name": "Мёд", "similarity": "medium"}
+    ]
+  },
+  "tags": ["сахар", "сахар-песок", "сахароза", "подсластитель", "бакалея", "выпечка", "напитки"]
+}

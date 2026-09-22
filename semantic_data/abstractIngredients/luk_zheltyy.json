@@ -1,0 +1,122 @@
+{
+  "name": "Лук желтый",
+  "name_normalized": "luk_zheltyy",
+  "synonyms": "желтый лук, лук жёлтый, лук репчатый желтый, репчатый лук, лук репка, Allium cepa, лук острый, лук горький, лук для жарки, лук для супа, лук для тушения",
+  "short_description": "Самый распространённый сорт репчатого лука с золотисто-жёлтой шелухой и острым, пикантным вкусом. Содержит эфирные масла и фитонциды, за что ценится в кулинарии и народной медицине. Универсален: жарка, тушение, супы, маринады.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Жёлтый лук — это наиболее распространённый сорт репчатого лука (Allium cepa), который занимает основное место в кулинарных традициях большинства стран. Его луковицы покрыты золотисто-жёлтой или коричневатой шелухой, а сочная белая мякоть имеет острый, пикантный вкус с характерной горчинкой. Именно жёлтый лук считается «универсальным»: он хорошо переносит тепловую обработку, при жарке и тушении приобретает сладость, а в сыром виде придаёт блюдам остроту и аромат. Жгучий вкус и резкий запах обусловлены содержанием эфирных масел и фитонцидов — летучих веществ, обладающих бактерицидными свойствами. Жёлтый лук богат витаминами группы B, C, PP, а также калием, фосфором, железом и другими минералами. Его используют практически во всех кухнях мира: для супов, соусов, рагу, маринадов и как самостоятельную закуску.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, сочная, хрустящая (в сыром виде)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — острый, пикантный, с горчинкой; при тепловой обработке становится сладковатым</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — золотисто-жёлтая или коричневатая шелуха, белая или кремовая мякоть</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — округлая, овальная, иногда приплюснутая</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — резкий, характерный луковый, с эфирными маслами</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — длительный (до 6-8 месяцев в сухом прохладном месте)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — содержит фитонциды, обладает бактерицидными свойствами</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Очистка</strong> — удаление сухой шелухи и корневой мочки</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — кубиками, кольцами, полукольцами, соломкой</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — для снижения остроты можно промыть холодной водой</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — в уксусе, лимонном соке или вине</li><li class=\"ingredient-list-item\"><strong>Пассерование</strong> — обжарка до прозрачности или золотистого цвета</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — пассерование для супов, соусов, вторых блюд</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в рагу, овощных блюдах, мясных подливах</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — основа для бульонов, луковый суп</li><li class=\"ingredient-list-item\"><strong>Маринады</strong> — для мяса, рыбы, овощей, грибов</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — в свежем виде (с промывкой для смягчения)</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — целиком или крупными кусками</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — половинками или кольцами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — морковь, картофель, помидоры, болгарский перец, капуста</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — говядина, свинина, курица, баранина</li><li class=\"ingredient-list-item\"><strong>Рыба</strong> — сельдь, скумбрия, треска</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, кинза, зеленый лук</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, лавровый лист, гвоздика, тимьян</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, сливочный</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Лук белый</strong> — более сладкий, менее острый</li><li class=\"ingredient-list-item\"><strong>Лук красный</strong> — более сладкий, с пикантной остротой</li><li class=\"ingredient-list-item\"><strong>Лук-шалот</strong> — более нежный и деликатный вкус</li><li class=\"ingredient-list-item\"><strong>Лук-порей</strong> — другой вкус, для супов</li></ul>",
+  "category": "Овощи",
+  "calories": 41,
+  "protein": 1.4,
+  "fat": 0.2,
+  "carbohydrates": 8.2,
+  "water": 86.0,
+  "ash": 0.9,
+  "fiber": 3.0,
+  "sugar": 8.1,
+  "starch": 0.1,
+  "sodium": 4,
+  "potassium": 175,
+  "calcium": 31,
+  "magnesium": 14,
+  "phosphorus": 58,
+  "iron": 0.8,
+  "zinc": 0.85,
+  "copper": 0.09,
+  "manganese": 0.23,
+  "selenium": 0.5,
+  "vitamin_b1": 0.05,
+  "vitamin_b2": 0.02,
+  "vitamin_b3": 0.2,
+  "vitamin_b5": 0.1,
+  "vitamin_b6": 0.12,
+  "vitamin_b9_folate": 9,
+  "vitamin_c": 10.0,
+  "vitamin_e": 0.2,
+  "semantic_data": {
+    "properties": [
+      "острый",
+      "пикантный",
+      "с горчинкой",
+      "сочный",
+      "хрустящий",
+      "золотистая шелуха",
+      "содержит фитонциды",
+      "бактерицидные свойства",
+      "низкокалорийный",
+      "универсальный",
+      "острый сорт"
+    ],
+    "preparations": [
+      "очистка от шелухи",
+      "нарезка кубиками, кольцами, полукольцами",
+      "промывка холодной водой для снижения остроты",
+      "пассерование до прозрачности",
+      "маринование в уксусе или лимонном соке"
+    ],
+    "cooking_methods": [
+      {
+        "method": "жарка (пассерование)",
+        "priority": "high"
+      },
+      {
+        "method": "тушение",
+        "priority": "high"
+      },
+      {
+        "method": "варка (для супов и бульонов)",
+        "priority": "high"
+      },
+      {
+        "method": "маринование",
+        "priority": "medium"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      },
+      {
+        "method": "сырой (в салатах, с промывкой)",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "супы и бульоны",
+      "соусы и подливы",
+      "тушёные блюда и рагу",
+      "маринады для мяса и рыбы",
+      "салаты (с промывкой)",
+      "запечённые блюда",
+      "жарка и пассерование"
+    ],
+    "pairings": {
+      "protein": ["говядина", "свинина", "курица", "баранина", "рыба"],
+      "vegetables": ["морковь", "картофель", "помидоры", "болгарский перец", "капуста"],
+      "sauces": ["томатный соус", "сметанный соус", "сливочный соус"],
+      "herbs": ["петрушка", "укроп", "кинза", "зелёный лук"],
+      "spices": ["чёрный перец", "лавровый лист", "гвоздика", "тимьян"]
+    },
+    "substitutes": [
+      {"name": "Лук белый", "similarity": "high"},
+      {"name": "Лук красный", "similarity": "high"},
+      {"name": "Лук-шалот", "similarity": "medium"},
+      {"name": "Лук-порей", "similarity": "low"}
+    ]
+  },
+  "data_source": "skurikhin_tutelyan_2002",
+  "data_source_reference": "Химический состав российских пищевых продуктов : Справочник / Под ред. член-корр. МАИ, проф. И. М. Скурихина и академика РАМН, проф. В. А. Тутельяна. — М. : ДеЛи принт, 2002. — 236 с. — ISBN 5-94343-028-8.",
+  "tags": [
+    "овощ",
+    "лук",
+    "лук репчатый",
+    "желтый лук",
+    "лук репка",
+    "острый лук",
+    "низкокалорийный",
+    "витамин C",
+    "фитонциды",
+    "супы",
+    "жарка",
+    "тушение",
+    "маринады"
+  ]
+}

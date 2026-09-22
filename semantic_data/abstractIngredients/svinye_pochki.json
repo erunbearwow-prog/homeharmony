@@ -1,0 +1,108 @@
+{
+  "name": "Свиные почки",
+  "name_normalized": "svinye_pochki",
+  "synonyms": "свиные почки, почки свиные, свиная почка, почки поросёнка, субпродукт свиной, почки для тушения, почки для жарки, почки для супа, почки для рассольника, pork kidneys",
+  "short_description": "Плотный, питательный субпродукт тёмно-красного цвета с характерным вкусом и высокой концентрацией витаминов группы B, железа и селена. Требует тщательной подготовки: вымачивания и удаления специфического запаха.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Свиные почки — это субпродукт, который ценится за высокую пищевую плотность и богатый нутриентный состав. Они содержат значительное количество полноценного белка, витаминов группы B (особенно B12, B2 и B5), селена, железа и фосфора. По содержанию белка почки близки к мясу: в 100 г сырого продукта около 15–17 г белка.</p><p class=\"ingredient-text\">Главная особенность свиных почек — специфический запах и вкус, которые обусловлены содержанием мочевины и других веществ. Чтобы избавиться от них, почки необходимо тщательно вымачивать в холодной воде (2–4 часа), несколько раз меняя воду, а также удалять плёнку, мочеточники и внутренние протоки. После правильной подготовки почки становятся нежными и приобретают приятный вкус.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, однородная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — специфический, слегка горьковатый, требует вымачивания</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — тёмно-красный, коричневато-красный</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — бобовидная, крупные дольки</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — требует длительного вымачивания и удаления плёнок</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Зачистка</strong> — удалить плёнку, мочеточники, внутренние протоки и крупные сосуды</li><li class=\"ingredient-list-item\"><strong>Вымачивание</strong> — в холодной воде 2–4 часа, несколько раз меняя воду (можно добавить уксус)</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — ломтиками или кубиками</li><li class=\"ingredient-list-item\"><strong>Обжарка или варка</strong> — до полной готовности</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в сметанном или томатном соусе</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — с луком, чесноком, специями</li><li class=\"ingredient-list-item\"><strong>Рассольник</strong> — классическое применение</li><li class=\"ingredient-list-item\"><strong>Паштеты</strong> — домашний паштет из почек</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для пирогов, блинов</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — в составе бульонов</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, картофель, огурцы соленые, помидоры</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, томатный, сливочный, горчичный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, лавровый лист, тимьян</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, черный перец, паприка, кориандр</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — гречка, рис, перловка</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжьи почки</strong> — схожая текстура, более крупные</li><li class=\"ingredient-list-item\"><strong>Телячьи почки</strong> — более нежные</li><li class=\"ingredient-list-item\"><strong>Бараньи почки</strong> — более выраженный вкус</li><li class=\"ingredient-list-item\"><strong>Свиная печень</strong> — для паштета</li></ul>",
+
+  "category": "Мясо и мясные продукты",
+
+  "data_source": "usda",
+
+  "calories": 100,
+  "protein": 16.5,
+  "fat": 3.3,
+  "carbohydrates": 0,
+
+  "water": 79.0,
+  "ash": 1.2,
+
+  "vitamin_a": 59,
+  "retinol_equivalent": 59,
+  "vitamin_b1": 0.39,
+  "vitamin_b2": 1.92,
+  "vitamin_b3": 9.31,
+  "vitamin_b4": 0,
+  "vitamin_b5": 3.55,
+  "vitamin_b6": 0.5,
+  "vitamin_b9_folate": 42,
+  "vitamin_b12": 9.63,
+  "vitamin_c": 13.3,
+  "vitamin_d": 1.7,
+  "vitamin_e": 0.2,
+  "vitamin_k": 8,
+
+  "potassium": 229,
+  "calcium": 9,
+  "magnesium": 17,
+  "sodium": 121,
+  "phosphorus": 204,
+  "iron": 4.89,
+  "manganese": 0.14,
+  "copper": 0.71,
+  "zinc": 3.12,
+  "selenium": 190,
+
+  "saturated_fat": 1.0,
+  "monounsaturated_fat": 0.9,
+  "polyunsaturated_fat": 0.4,
+  "cholesterol": 319,
+
+  "semantic_data": {
+    "properties": [
+      "субпродукт",
+      "свинина",
+      "высокобелковый",
+      "источник витаминов B",
+      "источник селена",
+      "источник железа",
+      "для тушения",
+      "для жарки",
+      "для рассольника",
+      "требует вымачивания"
+    ],
+    "preparations": [
+      "зачистка от пленок и протоков",
+      "вымачивание в холодной воде 2-4 часа",
+      "нарезка ломтиками или кубиками",
+      "обжарка или варка до готовности"
+    ],
+    "cooking_methods": [
+      {"method": "тушение", "priority": "high"},
+      {"method": "жарка", "priority": "high"},
+      {"method": "варка (рассольник, супы)", "priority": "high"},
+      {"method": "приготовление паштета", "priority": "medium"},
+      {"method": "использование в начинках", "priority": "medium"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "супы",
+      "паштеты",
+      "начинки"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["лук", "морковь", "картофель", "огурцы соленые", "помидоры"],
+      "sauces": ["сметанный", "томатный", "сливочный", "горчичный"],
+      "herbs": ["петрушка", "укроп", "лавровый лист", "тимьян"],
+      "spices": ["чеснок", "черный перец", "паприка", "кориандр"]
+    },
+    "substitutes": [
+      {"name": "Говяжьи почки", "similarity": "high"},
+      {"name": "Телячьи почки", "similarity": "high"},
+      {"name": "Бараньи почки", "similarity": "medium"},
+      {"name": "Свиная печень", "similarity": "low"}
+    ]
+  },
+
+  "tags": [
+    "мясо",
+    "субпродукт",
+    "свинина",
+    "почки",
+    "источник витаминов B",
+    "источник селена",
+    "для тушения",
+    "для рассольника"
+  ]
+}

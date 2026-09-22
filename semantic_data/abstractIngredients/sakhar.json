@@ -1,0 +1,40 @@
+{
+  "name": "Сахар",
+  "name_normalized": "sakhar",
+  "synonyms": "сахар, сахароза, столовый сахар, свекловичный сахар, тростниковый сахар, сахар белый, сахар кристаллический",
+  "short_description": "Базовый абстрактный ингредиент, объединяющий все формы сахара — песок, рафинад, пудру. Основное вещество — сахароза, дисахарид, получаемый из сахарной свёклы или тростника. Универсальный подсластитель с нулевой питательной ценностью кроме углеводов.",
+  "description": "<h2 class=\"ingredient-title\">Что такое сахароза</h2><p class=\"ingredient-text\">Сахароза (C₁₂H₂₂O₁₁) — это дисахарид, состоящий из одной молекулы глюкозы и одной молекулы фруктозы, соединённых α-1,2-гликозидной связью. Это бесцветное кристаллическое вещество, очень легко растворимое в воде, со сладким вкусом без посторонних привкусов и запахов. Сахароза — основной компонент сахара, который получают из сахарного тростника или сахарной свёклы. При нагревании выше 160°C сахароза плавится, при 190–220°C карамелизуется, образуя характерный коричневый цвет и аромат. Сахароза не является восстанавливающим (редуцирующим) сахаром.</p><h2 class=\"ingredient-title\">Формы сахара</h2><p class=\"ingredient-text\">Сахар как абстрактный ингредиент существует в нескольких формах: сахар-песок (кристаллы 0,5–2,5 мм), сахар-рафинад (спрессованные кубики, рафинированный песок, рафинадная пудра), сахарная пудра (измельчённые кристаллы не более 0,1–0,2 мм). Каждая форма отличается размером кристаллов и областью применения, но химически это одна и та же сахароза.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, без посторонних привкусов</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый, чистый, допускается голубоватый оттенок</li><li class=\"ingredient-list-item\"><strong>Растворимость</strong> — очень легко растворим в воде</li><li class=\"ingredient-list-item\"><strong>Плавление</strong> — 160°C</li><li class=\"ingredient-list-item\"><strong>Карамелизация</strong> — 190–220°C</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — тесто, кремы, глазури</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — чай, кофе, компоты, лимонады</li><li class=\"ingredient-list-item\"><strong>Консервирование</strong> — варенье, джемы, соленья</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — мороженое, конфеты, карамель</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сладкие соусы, маринады</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мёд</strong> — натуральный подсластитель</li><li class=\"ingredient-list-item\"><strong>Сахарная пудра</strong> — для украшения и глазурей</li><li class=\"ingredient-list-item\"><strong>Сахар-рафинад</strong> — для порционного добавления</li><li class=\"ingredient-list-item\"><strong>Фруктоза</strong> — для диетического питания</li></ul>",
+  "category": "Бакалея",
+  "data_source": "usda",
+  "calories": 399,
+  "protein": 0,
+  "fat": 0,
+  "carbohydrates": 99.8,
+  "water": 0.1,
+  "ash": 0.1,
+  "potassium": 3,
+  "calcium": 3,
+  "sodium": 1,
+  "iron": 0.3,
+  "sugar": 99.8,
+  "semantic_data": {
+    "properties": ["подсластитель", "сахароза", "дисахарид", "кристаллический", "белый", "сладкий", "растворимый", "карамелизуется"],
+    "preparations": ["хранение в сухом месте", "использование в сухом виде", "растворение в жидкости", "нагревание для карамелизации"],
+    "cooking_methods": [
+      {"method": "добавление в напитки", "priority": "high"},
+      {"method": "использование в выпечке", "priority": "high"},
+      {"method": "консервирование", "priority": "high"},
+      {"method": "карамелизация", "priority": "medium"},
+      {"method": "приготовление глазури", "priority": "medium"}
+    ],
+    "applications": ["выпечка", "напитки", "десерты", "консервирование", "соусы"],
+    "pairings": {"protein": [], "vegetables": [], "fruits": ["яблоки", "ягоды", "цитрусовые"], "sauces": [], "herbs": [], "spices": ["корица", "ваниль", "кардамон", "гвоздика"]},
+    "substitutes": [
+      {"name": "Мёд", "similarity": "medium"},
+      {"name": "Сахарная пудра", "similarity": "high"},
+      {"name": "Сахар-рафинад", "similarity": "high"},
+      {"name": "Фруктоза", "similarity": "low"}
+    ]
+  },
+  "tags": ["сахар", "сахароза", "подсластитель", "бакалея", "выпечка", "напитки", "консервирование"]
+}

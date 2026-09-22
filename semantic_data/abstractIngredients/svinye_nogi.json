@@ -1,0 +1,97 @@
+{
+  "name": "Свиные ноги",
+  "name_normalized": "svinye_nogi",
+  "synonyms": "свиные ноги, свиные ножки, ноги свиные, ножки свиные, копытца свиные, свиные копытца, свиная нога, отруб нижних конечностей свиньи, свиные ноги для холодца, свиные ноги для бульона, свиные ноги для супа, pork feet",
+  "short_description": "Отруб нижних конечностей свиньи с высоким содержанием соединительной ткани, коллагена и эластина. При длительной варке желирует бульон, что делает продукт незаменимым для холодца и заливного. Отличается насыщенным вкусом и доступной ценой.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Свиные ноги — это отруб нижних конечностей свиньи, который включает кожу, подкожный слой, плотную соединительную ткань, связки и кости. Это не источник «сухого» мышечного белка, а поставщик структурных белков — коллагена и эластина. Именно поэтому бульон из свиных ног застывает без добавления желатина, образуя плотное желе.</p><p class=\"ingredient-text\">Свиные ноги — традиционное сырьё для холодца и заливного в русской и восточноевропейской кухнях. Они содержат значительное количество коллагена, который при длительной термической обработке превращается в глютин, придающий бульону желирующие свойства. Продукт доступен по цене и широко используется для приготовления наваристых супов и бульонов.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, с большим количеством соединительной ткани</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, мясной</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — бледно-розовый с желтоватым оттенком кожи</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — отруб нижней конечности длиной до 15-18 см</li><li class=\"ingredient-list-item\"><strong>Вес</strong> — передняя ножка 300-500 г, задняя до 700-800 г</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — при длительной варке бульон желирует без желатина</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойка</strong> — тщательно промыть холодной водой</li><li class=\"ingredient-list-item\"><strong>Очистка кожи</strong> — поскрести ножом, удалить остатки щетины (можно обжечь открытым пламенем)</li><li class=\"ingredient-list-item\"><strong>Разрубка</strong> — разрубить на части для удобства варки</li><li class=\"ingredient-list-item\"><strong>Вымачивание</strong> — замочить в холодной воде на 2-4 часа для удаления крови</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — длительная, 4-6 часов на медленном огне</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Холодец</strong> — классическое применение, застывает без желатина</li><li class=\"ingredient-list-item\"><strong>Заливное</strong> — с мясом и овощами</li><li class=\"ingredient-list-item\"><strong>Бульоны</strong> — наваристые супы, солянка, борщ</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — для последующей подачи с гарниром</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с специями и соусами</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с овощами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, чеснок, сельдерей, петрушка (корень)</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — горчица, хрен, аджика</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — лавровый лист, петрушка, укроп, тимьян</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, душистый перец, гвоздика, кориандр</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свиная рулька</strong> — больше мяса, меньше костей</li><li class=\"ingredient-list-item\"><strong>Говяжьи ноги</strong> — для холодца из говядины</li><li class=\"ingredient-list-item\"><strong>Куриные лапки</strong> — для более легкого бульона</li><li class=\"ingredient-list-item\"><strong>Свиные уши</strong> — схожее содержание коллагена</li></ul>",
+
+  "category": "Мясо и мясные продукты",
+
+  "data_source": "usda",
+
+  "calories": 212,
+  "protein": 23.2,
+  "fat": 12.6,
+  "carbohydrates": 0,
+
+  "water": 65.0,
+  "ash": 0.7,
+
+  "vitamin_b1": 0.026,
+  "vitamin_b2": 0.106,
+  "vitamin_b5": 0.303,
+  "vitamin_b6": 0.053,
+  "vitamin_b9_folate": 10,
+  "vitamin_b12": 0.52,
+  "vitamin_e": 0.02,
+  "vitamin_b3": 1.13,
+
+  "potassium": 63,
+  "calcium": 70,
+  "magnesium": 6,
+  "sodium": 132,
+  "phosphorus": 75,
+  "sulfur": 231.6,
+  "iron": 0.58,
+  "copper": 70,
+  "selenium": 23.3,
+  "zinc": 0.76,
+
+  "semantic_data": {
+    "properties": [
+      "свинина",
+      "субпродукт",
+      "ноги",
+      "копытца",
+      "коллаген",
+      "желирующий",
+      "для холодца",
+      "для бульона",
+      "для заливного",
+      "доступный"
+    ],
+    "preparations": [
+      "мойка холодной водой",
+      "очистка кожи от щетины",
+      "разрубка на части",
+      "вымачивание 2-4 часа",
+      "длительная варка 4-6 часов"
+    ],
+    "cooking_methods": [
+      {"method": "варка (холодец, бульон)", "priority": "high"},
+      {"method": "запекание", "priority": "medium"},
+      {"method": "тушение", "priority": "medium"}
+    ],
+    "applications": [
+      "холодец",
+      "заливное",
+      "бульоны",
+      "супы",
+      "вторые блюда"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["лук", "морковь", "чеснок", "сельдерей", "петрушка (корень)"],
+      "sauces": ["горчица", "хрен", "аджика"],
+      "herbs": ["лавровый лист", "петрушка", "укроп", "тимьян"],
+      "spices": ["черный перец", "душистый перец", "гвоздика", "кориандр"]
+    },
+    "substitutes": [
+      {"name": "Свиная рулька", "similarity": "high"},
+      {"name": "Говяжьи ноги", "similarity": "medium"},
+      {"name": "Куриные лапки", "similarity": "low"},
+      {"name": "Свиные уши", "similarity": "medium"}
+    ]
+  },
+
+  "tags": [
+    "мясо",
+    "свинина",
+    "субпродукт",
+    "ноги",
+    "копытца",
+    "коллаген",
+    "для холодца",
+    "для бульона"
+  ]
+}

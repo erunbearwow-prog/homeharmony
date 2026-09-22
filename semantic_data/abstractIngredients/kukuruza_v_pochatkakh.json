@@ -1,0 +1,114 @@
+{
+  "name": "Кукуруза в початках",
+  "name_normalized": "kukuruza_v_pochatkakh",
+  "synonyms": "кукуруза в початках, кукуруза сахарная, кукуруза сладкая, початки кукурузы, молодая кукуруза, кукуруза в молочной спелости, кукуруза вареная, кукуруза отварная, кукуруза для гриля, кукуруза для запекания, corn on the cob, sweet corn, Zea mays",
+  "short_description": "Молодые початки сахарной кукурузы в стадии молочной спелости с нежными, сочными зёрнами и сладким, сливочным вкусом. Употребляются в отварном, запечённом или гриль-виде как самостоятельное блюдо и гарнир. Богаты клетчаткой, витаминами группы B и антиоксидантами.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Кукуруза в початках — это молодые початки сахарной кукурузы (Zea mays), собранные в стадии молочной спелости, когда зёрна наиболее сочные и сладкие. В отличие от кормовой (полевой) кукурузы, которая идёт на зерно и корм скоту, сахарная кукуруза выращивается специально для употребления в пищу в свежем, отварном или консервированном виде. Сладкая кукуруза составляет лишь около 1% всего выращиваемого в мире объёма кукурузы, остальные 99% — это полевая кукуруза.</p><p class=\"ingredient-text\">Початки покрыты зелёными листьями (обёрткой) и шелковистыми нитями (рыльцами). В пищу употребляются зёрна, расположенные на стержне початка. Кукуруза в початках ценится за сладкий, сливочный вкус и нежную текстуру. Её варят, запекают, готовят на гриле, добавляют в салаты и супы.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, сочная, хрустящая (свежая), мягкая (варёная)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, сливочный, с лёгкими ореховыми нотками</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — ярко-жёлтый, золотистый</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — удлинённый початок с зёрнами на стержне</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — июль-сентябрь (в средней полосе), круглый год (консервированная/замороженная)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — сладость быстро теряется после сбора, поэтому свежую кукурузу рекомендуется готовить сразу</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Очистка</strong> — удалить листья и шелковистые нити</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — в подсоленной воде 15-20 минут (молодые початки — 10 минут)</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в фольге или рукаве при 200°C 20-30 минут</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — на решётке до румяных подпалин, периодически переворачивая</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Отварная кукуруза</strong> — классическое блюдо с солью и маслом</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — с маслом, специями, сыром</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с овощами, зеленью, заправками</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — в составе овощных и мясных супов</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — к мясу, рыбе, птице</li><li class=\"ingredient-list-item\"><strong>Консервирование</strong> — заготовки на зиму</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Масло сливочное</strong> — классика для отварной кукурузы</li><li class=\"ingredient-list-item\"><strong>Соль, перец</strong> — базовые приправы</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — паприка, чеснок, чили, кориандр, куркума</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — пармезан, чеддер, фета (для гриля и запекания)</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, свинина, говядина (как гарнир)</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — перец, помидоры, лук, кабачки</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, кинза, укроп, базилик</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Консервированная кукуруза</strong> — для салатов и супов</li><li class=\"ingredient-list-item\"><strong>Замороженная кукуруза</strong> — для гарниров</li><li class=\"ingredient-list-item\"><strong>Кукуруза в зёрнах</strong> — для быстрого приготовления</li><li class=\"ingredient-list-item\"><strong>Горошек зелёный</strong> — в салатах и гарнирах</li></ul>",
+
+  "category": "Овощи",
+
+  "data_source": "usda",
+
+  "calories": 86,
+  "protein": 3.27,
+  "fat": 1.35,
+  "carbohydrates": 18.7,
+
+  "fiber": 2.0,
+  "sugar": 6.26,
+  "water": 76.05,
+  "ash": 0.62,
+
+  "vitamin_a": 9,
+  "beta_carotene": 0.047,
+  "vitamin_b1": 0.155,
+  "vitamin_b2": 0.055,
+  "vitamin_b4": 23,
+  "vitamin_b5": 0.717,
+  "vitamin_b6": 0.093,
+  "vitamin_b9_folate": 42,
+  "vitamin_c": 6.8,
+  "vitamin_e": 0.07,
+  "vitamin_k": 0.3,
+  "vitamin_b3": 1.77,
+
+  "potassium": 270,
+  "calcium": 2,
+  "magnesium": 37,
+  "sodium": 15,
+  "phosphorus": 89,
+  "iron": 0.52,
+  "manganese": 0.163,
+  "copper": 0.054,
+  "zinc": 0.46,
+  "selenium": 0.6,
+
+  "saturated_fat": 0.325,
+  "monounsaturated_fat": 0.432,
+  "polyunsaturated_fat": 0.487,
+  "omega_3": 0.014,
+  "omega_6": 0.468,
+
+  "semantic_data": {
+    "properties": [
+      "овощ",
+      "злак",
+      "сахарная кукуруза",
+      "сладкая",
+      "сочная",
+      "летний овощ",
+      "для варки",
+      "для гриля",
+      "для запекания",
+      "для салатов",
+      "для гарниров"
+    ],
+    "preparations": [
+      "очистка от листьев и нитей",
+      "варка 15-20 минут",
+      "запекание в фольге",
+      "гриль на решётке"
+    ],
+    "cooking_methods": [
+      {"method": "варка", "priority": "high"},
+      {"method": "гриль", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "консервирование", "priority": "medium"},
+      {"method": "использование в салатах", "priority": "medium"},
+      {"method": "добавление в супы", "priority": "medium"}
+    ],
+    "applications": [
+      "гарниры",
+      "салаты",
+      "супы",
+      "закуски",
+      "консервация"
+    ],
+    "pairings": {
+      "protein": ["курица", "свинина", "говядина", "пармезан", "чеддер", "фета"],
+      "vegetables": ["перец", "помидоры", "лук", "кабачки"],
+      "sauces": ["сливочное масло", "сметанный соус", "чесночный соус"],
+      "herbs": ["петрушка", "кинза", "укроп", "базилик"],
+      "spices": ["соль", "перец", "паприка", "чеснок", "чили", "кориандр", "куркума"]
+    },
+    "substitutes": [
+      {"name": "Консервированная кукуруза", "similarity": "medium"},
+      {"name": "Замороженная кукуруза", "similarity": "medium"},
+      {"name": "Кукуруза в зёрнах", "similarity": "high"},
+      {"name": "Горошек зелёный", "similarity": "low"}
+    ]
+  },
+
+  "tags": [
+    "овощ",
+    "кукуруза",
+    "кукуруза в початках",
+    "сахарная кукуруза",
+    "сладкая кукуруза",
+    "варка",
+    "гриль",
+    "запекание",
+    "гарнир",
+    "летний овощ"
+  ]
+}

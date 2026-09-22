@@ -1,0 +1,133 @@
+{
+  "name": "Форель",
+  "name_normalized": "forel",
+  "synonyms": "форель радужная, радужная форель, форель речная, форель морская, Oncorhynchus mykiss, красная рыба, лососевая рыба, рыбка форель, форель свежая, форель охлажденная",
+  "short_description": "Пресноводная и морская рыба семейства лососевых с нежным, сочным мясом розово-оранжевого цвета. Ценится за высокое содержание белка, омега-3 жирных кислот и витамина D. Универсальна в приготовлении: запекание, гриль, жарка, соление.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Форель — это общее название нескольких видов рыб семейства лососевых, наиболее известная из которых — радужная форель (Oncorhynchus mykiss). Она обитает как в пресных водоемах (реки, ручьи, озера), так и в морской воде. Мясо форели имеет нежный, сочный вкус, розово-оранжевый цвет и плотную, но мягкую текстуру. Благодаря высокому содержанию белка, омега-3 жирных кислот, витаминов группы B и витамина D, форель считается ценным диетическим продуктом. Она широко используется в кулинарии: её запекают, жарят, готовят на гриле, солят, коптят и добавляют в салаты.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, сочная, упругая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — мягкий, сладковатый, с чистым рыбным ароматом</li><li class=\"ingredient-list-item\"><strong>Цвет мяса</strong> — от бледно-розового до ярко-оранжевого (зависит от корма)</li><li class=\"ingredient-list-item\"><strong>Костистость</strong> — средняя, кости хорошо отделяются</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — умеренная (3-7% в зависимости от вида и корма)</li><li class=\"ingredient-list-item\"><strong>Калорийность</strong> — низкая (около 120-150 ккал/100г)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — богата омега-3, витамином D и B12</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Очистка</strong> — удаление чешуи (мелкая, плотная)</li><li class=\"ingredient-list-item\"><strong>Потрошение</strong> — удаление внутренностей</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — тщательное промывание внутри и снаружи</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — филе, стейки, порционные куски</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — в лимонном соке, оливковом масле, травах</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Запекание</strong> — целиком, стейками, филе с овощами и травами</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — на решетке, с лимоном и специями</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде с хрустящей корочкой</li><li class=\"ingredient-list-item\"><strong>Соление</strong> — слабосоленая форель (домашний посол)</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — горячее и холодное</li><li class=\"ingredient-list-item\"><strong>Паровое приготовление</strong> — диетический вариант</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с форелью, авокадо, цитрусовыми</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Цитрусовые</strong> — лимон, лайм, апельсин</li><li class=\"ingredient-list-item\"><strong>Травы</strong> — укроп, петрушка, розмарин, тимьян, базилик</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — цукини, баклажаны, помидоры, спаржа, картофель</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочный, лимонный, тартар, песто</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — белое вино (совиньон блан, шардоне)</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Лосось</strong> — схожая текстура, более жирный</li><li class=\"ingredient-list-item\"><strong>Семга</strong> — более жирная и нежная</li><li class=\"ingredient-list-item\"><strong>Кета</strong> — более плотная, менее жирная</li><li class=\"ingredient-list-item\"><strong>Сибас</strong> — белая рыба, другая текстура</li><li class=\"ingredient-list-item\"><strong>Дорадо</strong> — белая рыба, схожая универсальность</li></ul>",
+  "category": "Рыба, морепродукты, икра",
+  "calories": 148,
+  "protein": 20.8,
+  "fat": 6.6,
+  "carbohydrates": 0,
+  "water": 71.4,
+  "ash": 1.2,
+  "cholesterol": 58,
+  "saturated_fat": 1.2,
+  "monounsaturated_fat": 2.4,
+  "polyunsaturated_fat": 1.8,
+  "omega_3": 1.0,
+  "omega_6": 0.2,
+  "sodium": 52,
+  "potassium": 361,
+  "calcium": 43,
+  "magnesium": 22,
+  "phosphorus": 245,
+  "iron": 1.5,
+  "zinc": 0.7,
+  "copper": 0.2,
+  "manganese": 0.9,
+  "selenium": 12.6,
+  "vitamin_a": 17,
+  "retinol_equivalent": 17,
+  "vitamin_b1": 0.4,
+  "vitamin_b2": 0.3,
+  "vitamin_b3": 4.5,
+  "niacin_equivalent": 4.5,
+  "vitamin_b4": 65,
+  "vitamin_b5": 1.9,
+  "vitamin_b6": 0.2,
+  "vitamin_b9_folate": 13,
+  "vitamin_b12": 7.8,
+  "vitamin_c": 0.5,
+  "vitamin_d": 3.9,
+  "vitamin_e": 0.2,
+  "vitamin_k": 0.1,
+  "semantic_data": {
+    "properties": [
+      "лососевые",
+      "красная рыба",
+      "нежное мясо",
+      "сочная",
+      "диетическая",
+      "богата омега-3",
+      "источник витамина D",
+      "источник B12",
+      "универсальная",
+      "пресноводная",
+      "морская"
+    ],
+    "preparations": [
+      "очистка от чешуи",
+      "потрошение",
+      "промывка",
+      "нарезка на филе и стейки",
+      "маринование в лимонном соке и травах",
+      "удаление плавников"
+    ],
+    "cooking_methods": [
+      {
+        "method": "запекание в духовке (целиком, стейки, филе)",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление на гриле",
+        "priority": "high"
+      },
+      {
+        "method": "жарка на сковороде",
+        "priority": "high"
+      },
+      {
+        "method": "соление (слабосоленая форель)",
+        "priority": "medium"
+      },
+      {
+        "method": "копчение (горячее и холодное)",
+        "priority": "medium"
+      },
+      {
+        "method": "приготовление на пару",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "основное блюдо",
+      "праздничный стол",
+      "диетическое питание",
+      "салаты",
+      "закуски (слабосоленая)",
+      "бутерброды и канапе",
+      "супы (уха, рыбные супы)"
+    ],
+    "pairings": {
+      "protein": ["морепродукты", "креветки", "мидии", "яйца"],
+      "vegetables": ["цукини", "баклажаны", "помидоры", "спаржа", "картофель", "лук", "чеснок", "перец болгарский"],
+      "sauces": ["сливочный соус", "лимонный соус", "соус тартар", "песто", "томатный соус"],
+      "herbs": ["укроп", "петрушка", "розмарин", "тимьян", "базилик", "зеленый лук"],
+      "spices": ["черный перец", "паприка", "чеснок", "лимонная цедра", "морская соль"]
+    },
+    "substitutes": [
+      {"name": "Лосось", "similarity": "high"},
+      {"name": "Семга", "similarity": "high"},
+      {"name": "Кета", "similarity": "medium"},
+      {"name": "Сибас", "similarity": "medium"},
+      {"name": "Дорадо", "similarity": "medium"}
+    ]
+  },
+  "data_source": "skurikhin_tutelyan_2002",
+  "data_source_reference": "Химический состав российских пищевых продуктов : Справочник / Под ред. член-корр. МАИ, проф. И. М. Скурихина и академика РАМН, проф. В. А. Тутельяна. — М. : ДеЛи принт, 2002. — 236 с. — ISBN 5-94343-028-8.",
+  "tags": [
+    "рыба",
+    "красная рыба",
+    "лососевые",
+    "форель",
+    "радужная форель",
+    "диетическая",
+    "омега-3",
+    "витамин D",
+    "витамин B12",
+    "запекание",
+    "гриль",
+    "слабосоленая"
+  ]
+}

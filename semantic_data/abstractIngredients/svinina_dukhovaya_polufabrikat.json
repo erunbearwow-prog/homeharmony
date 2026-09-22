@@ -1,0 +1,68 @@
+{
+  "name": "Свинина духовая (полуфабрикат)",
+  "name_normalized": "svinina_dukhovaya_polufabrikat",
+  "synonyms": "свинина духовая, свинина духовая в маринаде, свинина духовая для запекания, полуфабрикат свинина духовая, мясной полуфабрикат крупнокусковой, свинина духовая охлажденная, свинина духовая замороженная, свинина для запекания целиком, свинина лопаточная часть, свинина тазобедренная часть",
+  "short_description": "Мясной крупнокусковой полуфабрикат из свинины (лопаточная или тазобедренная часть), зачищенный от грубых пленок и сухожилий, с сохранением межмышечной соединительной и жировой ткани. Может быть в маринаде или без него. Требует термической обработки.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Свинина духовая — это мясной крупнокусковой бескостный полуфабрикат, который продаётся в охлаждённом или замороженном виде и предназначен для запекания в духовке. Согласно нормативной документации, это порционный полуфабрикат из свинины, представляющий собой один или два куска мякоти массой 80–125 г, толщиной 10–25 мм, неправильной овальной формы из шейной или лопаточной частей туши.</p><p class=\"ingredient-text\">В розничной торговле под этим названием чаще всего продаётся крупный кусок свинины из лопаточной или тазобедренной части, зачищенный от сухожилий и грубых поверхностных плёнок, но с сохранением межмышечной соединительной и жировой ткани. Продукт может быть в маринаде с добавлением специй (чеснок, розмарин, перец, орегано, тимьян, кориандр, зира) или без него.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мышечная ткань упругая, плотная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — свойственный свинине, с ароматом специй (если в маринаде)</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — свойственный продукту данного наименования</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — цельный кусок или порционные куски неправильной овальной формы</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — охлаждённый при 0–6°C до 60 суток (в вакууме), замороженный при -18°C до 90 суток</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — требует термической обработки перед употреблением</li></ul><h2 class=\"ingredient-title\">Состав (типичный)</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Основное сырьё</strong> — свинина (лопаточная или тазобедренная часть)</li><li class=\"ingredient-list-item\"><strong>Маринад</strong> — соль, сахар, пряности (чеснок, розмарин, перец чёрный, орегано, тимьян, кориандр, зира), фиксатор окраски (нитрит натрия)</li><li class=\"ingredient-list-item\"><strong>Без маринада</strong> — только свинина и соль</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике при низкой температуре (если заморожен)</li><li class=\"ingredient-list-item\"><strong>Обсушивание</strong> — промокнуть бумажным полотенцем</li><li class=\"ingredient-list-item\"><strong>Натирание</strong> — солью, перцем, специями (если не в маринаде)</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — при 180°C, примерно 20 минут на каждые 500 г + дополнительное время</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Запекание в духовке</strong> — целиком или порционными кусками</li><li class=\"ingredient-list-item\"><strong>Запекание в рукаве или фольге</strong> — для сочности</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — крупным куском с овощами</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — как горячее блюдо или холодная закуска</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофель, гречка, рис, тушёная капуста</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — морковь, лук, чеснок, помидоры, перец</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, горчичный, хрен</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, тимьян, розмарин</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, черный перец, паприка, кориандр</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свинина духовая (приготовленная)</strong> — готовое блюдо</li><li class=\"ingredient-list-item\"><strong>Свиная лопатка б/к</strong> — аналогичный отруб</li><li class=\"ingredient-list-item\"><strong>Свиная шея</strong> — более жирная</li><li class=\"ingredient-list-item\"><strong>Свиная корейка б/к</strong> — более постная</li></ul>",
+
+  "category": "Мясо и мясные продукты",
+
+  "data_source": "health-diet.ru",
+
+  "calories": 205,
+  "protein": 16,
+  "fat": 15,
+  "carbohydrates": 0,
+
+  "semantic_data": {
+    "properties": [
+      "свинина",
+      "полуфабрикат",
+      "крупнокусковой",
+      "бескостный",
+      "для запекания",
+      "требует термической обработки",
+      "охлаждённый",
+      "замороженный"
+    ],
+    "preparations": [
+      "разморозка в холодильнике",
+      "обсушивание бумажным полотенцем",
+      "натирание солью и специями",
+      "запекание в духовке"
+    ],
+    "cooking_methods": [
+      {"method": "запекание в духовке", "priority": "high"},
+      {"method": "запекание в рукаве или фольге", "priority": "high"},
+      {"method": "тушение крупным куском", "priority": "medium"}
+    ],
+    "applications": [
+      "горячее блюдо",
+      "холодная закуска",
+      "праздничный стол"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "морковь", "лук", "чеснок", "помидоры", "перец"],
+      "sauces": ["томатный", "сметанный", "горчичный", "хрен"],
+      "herbs": ["петрушка", "укроп", "тимьян", "розмарин"],
+      "spices": ["чеснок", "черный перец", "паприка", "кориандр"]
+    },
+    "substitutes": [
+      {"name": "Свинина духовая (приготовленная)", "similarity": "high"},
+      {"name": "Свиная лопатка б/к", "similarity": "high"},
+      {"name": "Свиная шея", "similarity": "medium"},
+      {"name": "Свиная корейка б/к", "similarity": "medium"}
+    ]
+  },
+
+  "tags": [
+    "мясо",
+    "свинина",
+    "полуфабрикат",
+    "духовая",
+    "для запекания",
+    "крупнокусковой",
+    "требует термической обработки"
+  ]
+}

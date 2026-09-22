@@ -1,0 +1,117 @@
+{
+  "name": "Кукуруза консервированная",
+  "name_normalized": "kukuruza_konservirovannaya",
+  "synonyms": "кукуруза консервированная, консервированная кукуруза, кукуруза в банке, кукуруза сладкая консервированная, зерна кукурузы консервированные, кукуруза для салата, кукуруза для супа, кукуруза для гарнира, canned corn, sweet corn canned, Zea mays",
+  "short_description": "Готовый к употреблению продукт из сладких зерен кукурузы, консервированных в собственном соку с добавлением соли и сахара. Имеет мягкую, сочную текстуру и сладкий, насыщенный вкус. Широко используется для салатов, супов, гарниров, закусок и выпечки.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Кукуруза консервированная — это готовый к употреблению продукт, получаемый путем замачивания, варки и консервирования спелых зерен сахарной кукурузы. В зависимости от производителя, кукуруза может быть консервирована в собственном соку (с добавлением соли и воды), в сладком сиропе или с добавлением сахара. Консервированная кукуруза имеет мягкую, сочную текстуру и сладкий, насыщенный вкус. Она широко используется в кулинарии как самостоятельное блюдо, а также как ингредиент для салатов, супов, рагу, закусок и выпечки.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мягкая, сочная, нежная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, насыщенный, сливочный</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — ярко-желтый</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — целые зерна или дробленые</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 24-36 месяцев (в закрытой банке), 2-3 дня (в открытой)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — готова к употреблению, не требует варки</li></ul><h2 class=\"ingredient-title\">Состав (типичный)</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Основное сырье</strong> — кукуруза сахарная (зерна)</li><li class=\"ingredient-list-item\"><strong>Жидкость</strong> — вода, собственный сок</li><li class=\"ingredient-list-item\"><strong>Добавки</strong> — соль, сахар (по рецептуре)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Открытие</strong> — открыть банку</li><li class=\"ingredient-list-item\"><strong>Слив жидкости</strong> — при необходимости слить жидкость</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — промыть водой для удаления лишней соли (по желанию)</li><li class=\"ingredient-list-item\"><strong>Использование</strong> — добавить в блюдо или использовать сразу</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — оливье, крабовый, овощные, с курицей</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — овощные, куриные, крем-супы</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — к мясу, рыбе, птице</li><li class=\"ingredient-list-item\"><strong>Рагу</strong> — с овощами и мясом</li><li class=\"ingredient-list-item\"><strong>Запеканки</strong> — с сыром, яйцом, сливками</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — тарталетки, канапе</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — начинка для пирогов, блинчиков</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, говядина, свинина, индейка</li><li class=\"ingredient-list-item\"><strong>Рыба</strong> — лосось, треска, скумбрия</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук, горошек, перец, кабачки</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — пармезан, моцарелла, чеддер</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочный, сметанный, томатный, чесночный</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, паприка, куркума, чеснок</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, зеленый лук</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Замороженная кукуруза</strong> — требует варки</li><li class=\"ingredient-list-item\"><strong>Свежая кукуруза</strong> — в сезон, требует варки</li><li class=\"ingredient-list-item\"><strong>Консервированный горошек</strong> — другой вкус</li><li class=\"ingredient-list-item\"><strong>Консервированная фасоль</strong> — другой вкус</li></ul>",
+
+  "category": "Овощи",
+
+  "data_source": "usda",
+
+  "calories": 81,
+  "protein": 2.7,
+  "fat": 0.6,
+  "carbohydrates": 17.1,
+
+  "fiber": 1.8,
+  "sugar": 4.4,
+  "water": 78.4,
+  "ash": 1.2,
+  "starch": 10.0,
+
+  "vitamin_a": 5,
+  "beta_carotene": 0.03,
+  "vitamin_b1": 0.03,
+  "vitamin_b2": 0.06,
+  "vitamin_b3": 1.2,
+  "vitamin_b4": 20.0,
+  "vitamin_b5": 0.5,
+  "vitamin_b6": 0.1,
+  "vitamin_b9_folate": 35.0,
+  "vitamin_c": 4.0,
+  "vitamin_e": 0.1,
+  "vitamin_k": 0.3,
+
+  "potassium": 186,
+  "calcium": 4,
+  "magnesium": 20,
+  "sodium": 222,
+  "phosphorus": 67,
+  "iron": 0.3,
+  "manganese": 0.1,
+  "copper": 35,
+  "zinc": 0.4,
+  "selenium": 0.5,
+
+  "saturated_fat": 0.1,
+  "trans_fat": 0,
+  "cholesterol": 0,
+  "omega_3": 0.01,
+  "omega_6": 0.2,
+  "polyunsaturated_fat": 0.2,
+
+  "semantic_data": {
+    "properties": [
+      "овощ",
+      "кукуруза",
+      "консервированная",
+      "готовая",
+      "сладкая",
+      "мягкая",
+      "сочная",
+      "для салата",
+      "для супа",
+      "для гарнира",
+      "для закусок"
+    ],
+    "preparations": [
+      "открытие банки",
+      "слив жидкости",
+      "промывка водой (по желанию)"
+    ],
+    "cooking_methods": [
+      {"method": "использование в салатах", "priority": "high"},
+      {"method": "добавление в супы", "priority": "high"},
+      {"method": "использование как гарнир", "priority": "high"},
+      {"method": "приготовление рагу", "priority": "medium"},
+      {"method": "запеканки", "priority": "medium"},
+      {"method": "закуски", "priority": "medium"},
+      {"method": "начинки для выпечки", "priority": "medium"}
+    ],
+    "applications": [
+      "салаты",
+      "супы",
+      "гарниры",
+      "рагу",
+      "запеканки",
+      "закуски",
+      "выпечка"
+    ],
+    "pairings": {
+      "protein": ["курица", "говядина", "свинина", "индейка", "лосось", "треска", "скумбрия", "пармезан", "моцарелла", "чеддер"],
+      "vegetables": ["картофель", "морковь", "лук", "горошек", "перец", "кабачки"],
+      "sauces": ["сливочный", "сметанный", "томатный", "чесночный"],
+      "herbs": ["петрушка", "укроп", "зеленый лук"],
+      "spices": ["черный перец", "паприка", "куркума", "чеснок"]
+    },
+    "substitutes": [
+      {"name": "Замороженная кукуруза", "similarity": "high"},
+      {"name": "Свежая кукуруза", "similarity": "high"},
+      {"name": "Консервированный горошек", "similarity": "medium"},
+      {"name": "Консервированная фасоль", "similarity": "medium"}
+    ]
+  },
+
+  "tags": [
+    "овощ",
+    "кукуруза",
+    "консервированная кукуруза",
+    "сладкая кукуруза",
+    "готовая",
+    "салаты",
+    "супы",
+    "гарниры",
+    "закуски"
+  ]
+}

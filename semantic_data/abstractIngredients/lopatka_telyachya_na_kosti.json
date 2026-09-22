@@ -1,0 +1,100 @@
+{
+  "name": "Лопатка телячья на кости",
+  "name_normalized": "lopatka_telyachya_na_kosti",
+  "synonyms": "лопатка телячья на кости, телячья лопатка с костью, лопатка из телятины на кости, лопаточный отруб телятины на кости, лопатка теленка на кости, veal shoulder with bone",
+  "short_description": "Часть передней четвертины телячьей туши, включающая лопаточную кость, хрящи и прилегающие мышцы. Отличается нежным мясом с умеренной жирностью и высоким содержанием коллагена. Идеальна для длительного тушения, запекания и приготовления бульонов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Лопатка телячья на кости — это отруб передней четвертины телячьей туши, который выделяют круговым подрезом: с наружной стороны в виде полукруга по верхнему краю лопаточного хряща, с внутренней — по естественной линии сращения передней конечности с рёберной частью. В отличие от бескостного варианта, лопатка на кости сохраняет лопаточную кость, хрящи и соединительную ткань, которые при длительной термической обработке придают бульону наваристость, а мясу — сочность и насыщенный вкус.</p><p class=\"ingredient-text\">Мясо телячьей лопатки нежное, светлое, с тонкими прослойками жира. Благодаря высокому содержанию коллагена и эластина, этот отруб требует длительного приготовления — тушения, томления или медленного запекания. При этом кость и хрящи отдают бульону желатин, делая его густым и ароматным. Лопатка на кости — традиционное сырьё для бульонов, холодца, рагу и тушёных блюд.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, с соединительной тканью; после длительной готовки — нежная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нежный, телячий, с лёгкой сладостью</li><li class=\"ingredient-list-item\"><strong>Цвет мяса</strong> — бледно-розовый, светлый</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — крупный кусок на лопаточной кости с хрящами</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — требует длительной термической обработки (2–4 часа)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике при низкой температуре</li><li class=\"ingredient-list-item\"><strong>Зачистка</strong> — удалить грубые плёнки и сухожилия</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — крупными кусками вместе с костью</li><li class=\"ingredient-list-item\"><strong>Обжарка</strong> — для карамелизации корочки перед тушением</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — при низкой температуре в жидкости с овощами и специями</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тушение</strong> — рагу, жаркое, осси-буко (телячья голяшка, но принцип схож)</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — целиком в фольге или рукаве при низкой температуре</li><li class=\"ingredient-list-item\"><strong>Бульоны</strong> — наваристые супы, соусы</li><li class=\"ingredient-list-item\"><strong>Холодец</strong> — благодаря коллагену бульон застывает без желатина</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — морковь, лук, сельдерей, картофель, помидоры</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сливочный, сметанный, винный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, тимьян, розмарин, лавровый лист</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, паприка, чеснок, гвоздика</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжья лопатка на кости</strong> — более плотное мясо, дольше готовится</li><li class=\"ingredient-list-item\"><strong>Телячья грудинка на кости</strong> — более жирная</li><li class=\"ingredient-list-item\"><strong>Телячья голяшка</strong> — больше коллагена, для холодца</li></ul>",
+
+  "category": "Мясо и мясные продукты",
+
+  "data_source": "usda",
+
+  "calories": 137,
+  "protein": 19.4,
+  "fat": 6.6,
+  "carbohydrates": 0,
+
+  "water": 73.2,
+  "ash": 1.0,
+
+  "vitamin_b1": 0.14,
+  "vitamin_b2": 0.23,
+  "vitamin_b4": 105,
+  "vitamin_b5": 1.0,
+  "vitamin_b6": 0.4,
+  "vitamin_b9_folate": 5.8,
+  "vitamin_b12": 2.1,
+  "vitamin_e": 0.15,
+  "vitamin_b7": 5,
+  "vitamin_b3": 9.9,
+
+  "potassium": 345,
+  "calcium": 12,
+  "magnesium": 24,
+  "sodium": 108,
+  "sulfur": 213,
+  "phosphorus": 206,
+  "chlorine": 72,
+  "iron": 2.9,
+  "iodine": 2.7,
+  "cobalt": 5,
+  "manganese": 0.0339,
+  "copper": 228,
+
+  "semantic_data": {
+    "properties": [
+      "мясо",
+      "телятина",
+      "лопатка",
+      "на кости",
+      "коллаген",
+      "для тушения",
+      "для запекания",
+      "для бульона",
+      "для холодца",
+      "диетическое"
+    ],
+    "preparations": [
+      "разморозка в холодильнике",
+      "зачистка от пленок",
+      "нарезка крупными кусками",
+      "обжарка перед тушением",
+      "длительное тушение при низкой температуре"
+    ],
+    "cooking_methods": [
+      {"method": "тушение", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "варка бульона", "priority": "high"},
+      {"method": "приготовление холодца", "priority": "medium"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "супы",
+      "бульоны",
+      "холодец"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["морковь", "лук", "сельдерей", "картофель", "помидоры"],
+      "sauces": ["томатный", "сливочный", "сметанный", "винный"],
+      "herbs": ["петрушка", "тимьян", "розмарин", "лавровый лист"],
+      "spices": ["черный перец", "паприка", "чеснок", "гвоздика"]
+    },
+    "substitutes": [
+      {"name": "Говяжья лопатка на кости", "similarity": "high"},
+      {"name": "Телячья грудинка на кости", "similarity": "high"},
+      {"name": "Телячья голяшка", "similarity": "medium"}
+    ]
+  },
+
+  "tags": [
+    "мясо",
+    "телятина",
+    "лопатка",
+    "на кости",
+    "для тушения",
+    "для бульона",
+    "для холодца",
+    "коллаген"
+  ]
+}

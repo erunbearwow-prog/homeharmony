@@ -1,0 +1,109 @@
+{
+  "name": "Свиная лопатка б/к",
+  "name_normalized": "svinaya_lopatka_bk",
+  "synonyms": "свиная лопатка б/к, лопатка свиная бескостная, свиная лопатка без кости, мясо свиной лопатки, лопатка свиная охлажденная, свинина для тушения, свинина для запекания, свинина для рагу, свинина для шашлыка, свинина для фарша, мясо для рваной свинины",
+  "short_description": "Бескостная мякоть из верхней части передней ноги свиньи с нежными волокнами и умеренной жировой прослойкой. Отличается сочностью при длительном тушении и запекании, подходит для рагу, фарша, шашлыка и рваной свинины.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Свиная лопатка без кости (б/к) — это мякоть, выделенная из верхней части передней ноги животного, прилегающей к плечевому суставу. Отруб содержит небольшое количество жировых прослоек, но при этом не имеет грубых мышц и сухожилий. Благодаря умеренной жирности и нежной текстуре, лопатка считается универсальным отрубом: она остаётся сочной при длительном тушении, хорошо запекается цельным куском и подходит для приготовления фарша.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, с нежными волокнами и тонкими жировыми прослойками</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — выраженный свиной, насыщенный</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от бледно-розового до красноватого</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — кусок мякоти без кости</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — умеренная (зависит от производителя)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — при длительном тушении становится мягкой и легко разделяется на волокна</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике при низкой температуре</li><li class=\"ingredient-list-item\"><strong>Зачистка</strong> — удаление лишнего жира и плёнок</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — кубиками для рагу, ломтиками для запекания, кусками для шашлыка</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — рекомендуется для сочности (с травами, чесноком, кефиром, соевым соусом, киви)</li><li class=\"ingredient-list-item\"><strong>Томление</strong> — для мягкости запекать при низкой температуре 2-5 часов</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тушение</strong> — рагу, гуляш, жаркое, рваная свинина</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — цельным куском в фольге или рукаве, при низкой температуре</li><li class=\"ingredient-list-item\"><strong>Шашлык</strong> — маринованные куски на углях или гриле</li><li class=\"ingredient-list-item\"><strong>Фарш</strong> — котлеты, тефтели, начинки для пельменей</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — харчо, солянка, борщ</li><li class=\"ingredient-list-item\"><strong>Рваная свинина</strong> — для сэндвичей, буррито, такос</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, лук, морковь, помидоры, перец, баклажаны, капуста</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, сливочный, соевый, барбекю, горчичный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — розмарин, тимьян, петрушка, укроп, лавровый лист</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, черный перец, паприка, кориандр, кумин, чили</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, гречка, перловка</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свиная шея</strong> — более жирная, для шашлыка</li><li class=\"ingredient-list-item\"><strong>Свиной окорок</strong> — более постный</li><li class=\"ingredient-list-item\"><strong>Говяжья лопатка</strong> — для тушения и запекания</li><li class=\"ingredient-list-item\"><strong>Куриное бедро</strong> — менее жирное, диетическое</li></ul>",
+
+  "category": "Мясо и мясные продукты",
+
+  "data_source": "usda",
+
+  "calories": 236,
+  "protein": 17.18,
+  "fat": 17.99,
+  "carbohydrates": 0,
+
+  "water": 64.0,
+  "ash": 0.8,
+
+  "vitamin_b1": 0.767,
+  "vitamin_b2": 0.275,
+  "vitamin_b3": 3.833,
+  "vitamin_b4": 60.6,
+  "vitamin_b5": 0.719,
+  "vitamin_b6": 0.348,
+  "vitamin_b9_folate": 5,
+  "vitamin_b12": 0.74,
+  "vitamin_c": 0.7,
+  "vitamin_d": 1.7,
+  "vitamin_e": 0.19,
+
+  "potassium": 302,
+  "calcium": 15,
+  "magnesium": 18,
+  "sodium": 65,
+  "phosphorus": 182,
+  "iron": 1.05,
+  "manganese": 0.011,
+  "copper": 84,
+  "zinc": 2.7,
+  "selenium": 25.5,
+
+  "saturated_fat": 6.24,
+  "monounsaturated_fat": 8.01,
+  "polyunsaturated_fat": 1.92,
+  "cholesterol": 71,
+
+  "semantic_data": {
+    "properties": [
+      "свинина",
+      "бескостная",
+      "лопатка",
+      "нежная",
+      "умеренно жирная",
+      "для тушения",
+      "для запекания",
+      "для шашлыка",
+      "для фарша",
+      "для рваной свинины"
+    ],
+    "preparations": [
+      "разморозка в холодильнике",
+      "зачистка от лишнего жира и пленок",
+      "нарезка кубиками или ломтиками",
+      "маринование с травами и специями",
+      "томление при низкой температуре"
+    ],
+    "cooking_methods": [
+      {"method": "тушение", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "шашлык", "priority": "high"},
+      {"method": "приготовление фарша", "priority": "high"},
+      {"method": "варка (супы)", "priority": "medium"},
+      {"method": "рваная свинина", "priority": "medium"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "супы",
+      "закуски",
+      "шашлык",
+      "фарш",
+      "рваная свинина"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "лук", "морковь", "помидоры", "перец", "баклажаны", "капуста"],
+      "sauces": ["томатный", "сметанный", "сливочный", "соевый", "барбекю", "горчичный"],
+      "herbs": ["розмарин", "тимьян", "петрушка", "укроп", "лавровый лист"],
+      "spices": ["чеснок", "черный перец", "паприка", "кориандр", "кумин", "чили"]
+    },
+    "substitutes": [
+      {"name": "Свиная шея", "similarity": "medium"},
+      {"name": "Свиной окорок", "similarity": "medium"},
+      {"name": "Говяжья лопатка", "similarity": "medium"},
+      {"name": "Куриное бедро", "similarity": "low"}
+    ]
+  },
+
+  "tags": [
+    "мясо",
+    "свинина",
+    "лопатка",
+    "бескостная",
+    "для тушения",
+    "для запекания",
+    "для шашлыка",
+    "для фарша"
+  ]
+}

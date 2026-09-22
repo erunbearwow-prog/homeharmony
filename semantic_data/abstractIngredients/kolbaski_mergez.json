@@ -1,0 +1,74 @@
+{
+  "name": "Колбаски Мергез",
+  "name_normalized": "kolbaski_mergez",
+  "synonyms": "мергез, merguez, колбаски мергез, колбаски меркез (ошибочно), североафриканские колбаски, марокканские колбаски, алжирские колбаски, халяльные колбаски, острые колбаски, колбаски для гриля, колбаски для мангала, колбаски без свинины",
+  "short_description": "Традиционные североафриканские остро-пряные колбаски из баранины или говядины с характерным красным цветом и ароматом кумина, паприки и хариссы. Обычно не содержат свинины (халяль). Идеальны для гриля, мангала и запекания.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Колбаски Мергез (Merguez) — это традиционные колбаски, которые происходят из стран Северной Африки (Марокко, Алжир, Тунис) и имеют глубокие исторические корни, уходящие в средневековую Испанию периода арабского владычества. Главная их особенность — это яркий, острый и пряный вкус, а также характерный красный цвет, который придаёт паприка. Традиционно мергез готовят из баранины или говядины, часто в смеси, и они не содержат свинины, что делает их популярными среди мусульман и всех, кто следит за составом продуктов.</p><p class=\"ingredient-text\">В отличие от многих других колбас, мергез не вялят и не коптят — это сырые колбаски, предназначенные исключительно для термической обработки. Их жарят на гриле, мангале или сковороде до полной готовности, пока они не покроются румяной корочкой. Благодаря высокому содержанию жира, они остаются сочными внутри, а специи создают неповторимый аромат.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, сочная, с грубо рубленым мясом</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — острый, пряный, с выраженным кумином и паприкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — ярко-красный (за счёт паприки)</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — тонкие колбаски в натуральной оболочке</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — охлаждённые недолго, замороженные до 3 месяцев</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — обычно без свинины (халяль), требуют полной прожарки</li></ul><h2 class=\"ingredient-title\">Состав (типичный)</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Основное сырьё</strong> — баранина, говядина или их смесь</li><li class=\"ingredient-list-item\"><strong>Дополнительно</strong> — животный жир (курдючный или говяжий)</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — паприка, кумин (зира), кориандр, перец чили, харисса, чеснок, тмин, корица (иногда)</li><li class=\"ingredient-list-item\"><strong>Оболочка</strong> — натуральная баранья или говяжья черева</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике при 0–4°C</li><li class=\"ingredient-list-item\"><strong>Жарка на сковороде</strong> — на среднем огне обжарить со всех сторон по 3–4 минуты до румяной корочки</li><li class=\"ingredient-list-item\"><strong>Гриль / мангал</strong> — на среднем жару 8–12 минут, переворачивая каждые 3–4 минуты</li><li class=\"ingredient-list-item\"><strong>Запекание в духовке</strong> — при 200°C в течение 15–20 минут</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гриль и мангал</strong> — основное применение</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — с хлебом и соусами</li><li class=\"ingredient-list-item\"><strong>Кускус</strong> — классическое сочетание в североафриканской кухне</li><li class=\"ingredient-list-item\"><strong>Сэндвичи</strong> — в лепёшке с овощами</li><li class=\"ingredient-list-item\"><strong>Рагу и тажины</strong> — как компонент</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — лепёшка, пита, багет</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — харисса, айвар, томатный, йогуртовый</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, перец, лук, огурцы</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — кускус, рис</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — пиво, айран, чай</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Суджук</strong> — турецкая острая колбаса</li><li class=\"ingredient-list-item\"><strong>Чоризо</strong> — испанская пикантная колбаса</li><li class=\"ingredient-list-item\"><strong>Купаты</strong> — кавказские колбаски для жарки</li><li class=\"ingredient-list-item\"><strong>Чевапчичи</strong> — балканские колбаски без оболочки</li></ul>",
+  "category": "Мясо и мясные продукты",
+  "data_source": "health-diet.ru",
+  "calories": 191,
+  "protein": 14.0,
+  "fat": 15.0,
+  "carbohydrates": 0.0,
+  "saturated_fat": 6.4,
+  "sodium": 640,
+  "semantic_data": {
+    "properties": [
+      "колбасное изделие",
+      "североафриканская кухня",
+      "баранина",
+      "говядина",
+      "халяль",
+      "острый",
+      "пряный",
+      "кумин",
+      "паприка",
+      "для гриля",
+      "для мангала"
+    ],
+    "preparations": [
+      "хранение в холодильнике",
+      "жарка на сковороде",
+      "гриль на решётке",
+      "запекание в духовке"
+    ],
+    "cooking_methods": [
+      {"method": "гриль", "priority": "high"},
+      {"method": "мангал", "priority": "high"},
+      {"method": "жарка на сковороде", "priority": "high"},
+      {"method": "запекание в духовке", "priority": "medium"}
+    ],
+    "applications": [
+      "гриль",
+      "мангал",
+      "закуски",
+      "кускус",
+      "сэндвичи",
+      "рагу"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["помидоры", "перец", "лук", "огурцы"],
+      "sauces": ["харисса", "айвар", "томатный соус", "йогуртовый соус"],
+      "herbs": ["кинза", "петрушка", "мята"],
+      "spices": ["кумин", "паприка", "кориандр", "чили", "чеснок"]
+    },
+    "substitutes": [
+      {"name": "Суджук", "similarity": "high"},
+      {"name": "Чоризо", "similarity": "high"},
+      {"name": "Купаты", "similarity": "medium"},
+      {"name": "Чевапчичи", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "мясо",
+    "колбаски",
+    "мергез",
+    "merguez",
+    "североафриканская кухня",
+    "халяль",
+    "острый",
+    "для гриля",
+    "для мангала"
+  ]
+}

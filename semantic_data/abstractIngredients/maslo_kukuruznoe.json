@@ -1,0 +1,90 @@
+{
+  "name": "Масло кукурузное",
+  "name_normalized": "maslo_kukuruznoe",
+  "synonyms": "масло кукурузное, кукурузное масло, масло из кукурузы, масло из зародышей кукурузы, масло для жарки, масло для фритюра, масло для салатов, масло для выпечки, corn oil, maize oil",
+  "short_description": "Растительное масло, получаемое из зародышей кукурузы. Обладает нейтральным вкусом и высокой температурой дымления, что делает его идеальным для жарки и фритюра. Богато витамином E и полиненасыщенными жирными кислотами.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Кукурузное масло — это растительное масло, которое получают из зародышей кукурузы, отделяемых при производстве кукурузной муки и крупы. Масло имеет прозрачный золотисто-жёлтый цвет, нейтральный вкус и едва уловимый сладковатый оттенок, напоминающий запах кукурузных палочек. Благодаря нейтральному вкусу кукурузное масло не перебивает ароматы других продуктов и отлично впитывает их — его можно настаивать на травах, специях и чесноке для получения ароматных соусов.</p><p class=\"ingredient-text\">Кукурузное масло обладает одной из самых высоких температур дымления среди растительных масел, что делает его идеальным для жарки, фритюра и выпечки. Оно не горит, не пенится и не передаёт блюдам горелый вкус. При жарке масло почти не проникает внутрь продукта, что позволяет получать хрустящую корочку без излишней жирности. Кукурузное масло богато витамином E и полиненасыщенными жирными кислотами, особенно линолевой кислотой.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Цвет</strong> — прозрачный, золотисто-жёлтый</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, слегка сладковатый</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — лёгкий кукурузный (у нерафинированного)</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — жидкая, маслянистая</li><li class=\"ingredient-list-item\"><strong>Температура дымления</strong> — одна из самых высоких среди растительных масел</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 12 месяцев в закрытой бутылке, до 1 месяца после вскрытия</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — не горит при жарке, не пенится, не передаёт горелый вкус</li></ul><h2 class=\"ingredient-title\">Виды кукурузного масла</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Нерафинированное</strong> — сохраняет лёгкий кукурузный аромат и максимум полезных веществ</li><li class=\"ingredient-list-item\"><strong>Рафинированное дезодорированное</strong> — без запаха и вкуса, для жарки и фритюра</li></ul><h2 class=\"ingredient-title\">Подготовка и хранение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в тёмном прохладном месте, в закрытой бутылке</li><li class=\"ingredient-list-item\"><strong>После вскрытия</strong> — использовать в течение 1 месяца</li><li class=\"ingredient-list-item\"><strong>Замерзание</strong> — застывает только при -10°C</li><li class=\"ingredient-list-item\"><strong>Настаивание</strong> — можно настаивать на травах, специях, чесноке для ароматных соусов</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — мясо, рыба, овощи, картофель</li><li class=\"ingredient-list-item\"><strong>Фритюр</strong> — картофель фри, чебуреки, пончики, курица</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — тесто, хлебобулочные и кондитерские изделия</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — заправка для овощных салатов, винегретов</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — майонез, заправки</li><li class=\"ingredient-list-item\"><strong>Консервирование</strong> — домашние заготовки</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — мясо, рыба, овощи</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, капуста, морковь, свёкла, салаты</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, свинина, говядина</li><li class=\"ingredient-list-item\"><strong>Рыба</strong> — для жарки и запекания</li><li class=\"ingredient-list-item\"><strong>Тесто</strong> — для выпечки</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, перец, прованские травы, базилик, петрушка (для настаивания)</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Подсолнечное масло</strong> — схожие свойства, ниже температура дымления</li><li class=\"ingredient-list-item\"><strong>Рапсовое масло</strong> — для жарки</li><li class=\"ingredient-list-item\"><strong>Виноградное масло</strong> — высокая температура дымления</li><li class=\"ingredient-list-item\"><strong>Оливковое масло (рафинированное)</strong> — для жарки</li></ul>",
+
+  "category": "Бакалея",
+
+  "data_source": "usda",
+
+  "calories": 900,
+  "protein": 0,
+  "fat": 100,
+  "carbohydrates": 0,
+
+  "water": 0,
+  "ash": 0,
+
+  "vitamin_e": 14.3,
+  "vitamin_k": 1.9,
+
+  "saturated_fat": 12.948,
+  "monounsaturated_fat": 27.576,
+  "polyunsaturated_fat": 54.677,
+  "omega_3": 1.161,
+  "omega_6": 53.23,
+  "cholesterol": 0,
+
+  "semantic_data": {
+    "properties": [
+      "масло",
+      "растительное",
+      "кукурузное",
+      "нейтральный вкус",
+      "высокая температура дымления",
+      "для жарки",
+      "для фритюра",
+      "для салатов",
+      "для выпечки",
+      "богато витамином E"
+    ],
+    "preparations": [
+      "хранение в темном прохладном месте",
+      "использование в течение 1 месяца после вскрытия",
+      "настаивание на травах и специях"
+    ],
+    "cooking_methods": [
+      {"method": "жарка", "priority": "high"},
+      {"method": "фритюр", "priority": "high"},
+      {"method": "выпечка", "priority": "high"},
+      {"method": "заправка салатов", "priority": "high"},
+      {"method": "тушение", "priority": "medium"},
+      {"method": "консервирование", "priority": "medium"}
+    ],
+    "applications": [
+      "жарка",
+      "фритюр",
+      "выпечка",
+      "салаты",
+      "соусы",
+      "тушение",
+      "консервирование"
+    ],
+    "pairings": {
+      "protein": ["курица", "свинина", "говядина", "рыба"],
+      "vegetables": ["картофель", "капуста", "морковь", "свёкла"],
+      "sauces": ["майонез", "заправки"],
+      "herbs": ["прованские травы", "базилик", "петрушка"],
+      "spices": ["чеснок", "перец"]
+    },
+    "substitutes": [
+      {"name": "Подсолнечное масло", "similarity": "high"},
+      {"name": "Рапсовое масло", "similarity": "high"},
+      {"name": "Виноградное масло", "similarity": "medium"},
+      {"name": "Оливковое масло (рафинированное)", "similarity": "medium"}
+    ]
+  },
+
+  "tags": [
+    "масло",
+    "кукурузное масло",
+    "растительное масло",
+    "для жарки",
+    "для фритюра",
+    "для салатов",
+    "для выпечки",
+    "витамин E"
+  ]
+}

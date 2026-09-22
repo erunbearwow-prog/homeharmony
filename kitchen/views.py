@@ -989,16 +989,17 @@ def ingredient_detail(request, pk):
     return _render_ingredient_detail(request, ingredient)
 
 
-# def ingredient_detail_by_slug(request, slug):
-#     """Детальная страница ингредиента по slug"""
-#     ingredient = get_object_or_404(
-#         AbstractIngredient,  # <-- исправили с Ingredient на AbstractIngredient
-#         slug=slug
-#     )
-#     return _render_ingredient_detail(request, ingredient)
+def ingredient_detail_by_slug(request, slug):
+    """Детальная страница ингредиента по slug"""
+    ingredient = get_object_or_404(
+        AbstractIngredient,  # <-- исправили с Ingredient на AbstractIngredient
+        slug=slug
+    )
+    print(f'ingredient = {ingredient}')
+    return _render_ingredient_detail(request, ingredient)
 
 
-# kitchen/views.py
+    # kitchen/views.py
 
 def api_recipe_nutrition(request, pk):
     """API: расчёт КБЖУ для рецепта (для профессионального режима)"""

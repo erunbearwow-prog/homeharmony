@@ -1,0 +1,120 @@
+{
+  "name": "Форель натуральная",
+  "name_normalized": "forel_naturalnaya",
+  "synonyms": "лосось, форель натуральная, форель консервированная, консервы из форели, форель в собственном соку, форель натуральная в собственном соку, консервы рыбные натуральные, форель радужная консервированная, форель кусочки в собственном соку, форель консервированная натуральная",
+  "short_description": "Рыбные консервы из кусочков радужной форели, приготовленные в собственном соку с добавлением соли. Готовый к употреблению продукт, сохраняющий нежную текстуру, розово-оранжевый цвет и все полезные свойства свежей рыбы.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Форель натуральная — это рыбные консервы, изготовленные из кусочков радужной форели (Oncorhynchus mykiss) в собственном соку. Продукт готовится путём стерилизации в герметичной таре, что обеспечивает длительный срок хранения без потери питательных свойств. В составе консервов только рыба и соль, без добавления масла, соусов или консервантов. Кусочки форели сохраняют нежную, сочную текстуру, яркий розово-оранжевый цвет и насыщенный рыбный вкус. Консервы готовы к употреблению без дополнительной обработки и широко используются для салатов, бутербродов, паштетов и как самостоятельное блюдо.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, сочная, кусочки сохраняют форму</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — натуральный рыбный, сладковатый, с лёгкой солёностью</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — розово-оранжевый, свойственный варёному мясу форели</li><li class=\"ingredient-list-item\"><strong>Состав</strong> — форель, соль (без масла и консервантов)</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — умеренная (6-8 г на 100 г)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 24 месяцев при температуре от 0 до +25°C</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — сохраняет омега-3, витамины D и B12 после стерилизации</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вскрытие</strong> — открыть банку ключом или консервным ножом</li><li class=\"ingredient-list-item\"><strong>Отделение</strong> — аккуратно отделить кусочки рыбы от бульона (при необходимости)</li><li class=\"ingredient-list-item\"><strong>Разминание</strong> — для паштета или салата размять вилкой</li><li class=\"ingredient-list-item\"><strong>Хранение после вскрытия</strong> — не более 24 часов в холодильнике в закрытой таре</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с овощами, яйцом, рисом, картофелем</li><li class=\"ingredient-list-item\"><strong>Бутерброды и канапе</strong> — с маслом, крем-сыром, зеленью</li><li class=\"ingredient-list-item\"><strong>Паштеты</strong> — размять с маслом и специями</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — добавка в рыбные супы в конце приготовления</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для пирогов, блинов, тарталеток</li><li class=\"ingredient-list-item\"><strong>Самостоятельное блюдо</strong> — с гарниром или свежими овощами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — огурцы, помидоры, картофель, лук, зелень</li><li class=\"ingredient-list-item\"><strong>Яйца</strong> — варёные, для салатов и паштетов</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, для салатов и запеканок</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — багет, бородинский, тосты</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — майонез, сметана, лимонный сок</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, укроп, петрушка, лимонная цедра</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Лосось натуральный (консервы)</strong> — схожая текстура, более жирный</li><li class=\"ingredient-list-item\"><strong>Горбуша натуральная</strong> — более плотная, менее жирная</li><li class=\"ingredient-list-item\"><strong>Кета натуральная</strong> — более плотная текстура</li><li class=\"ingredient-list-item\"><strong>Скумбрия натуральная</strong> — другой вкус, более жирная</li></ul>",
+  "category": "Рыба, морепродукты, икра",
+  "calories": 142,
+  "protein": 21.0,
+  "fat": 8.0,
+  "carbohydrates": 0,
+  "water": 69,
+  "ash": 2.0,
+  "cholesterol": 58,
+  "saturated_fat": 1.5,
+  "monounsaturated_fat": 2.8,
+  "polyunsaturated_fat": 2.2,
+  "omega_3": 1.5,
+  "omega_6": 0.3,
+  "sodium": 380,
+  "potassium": 350,
+  "calcium": 25,
+  "magnesium": 25,
+  "phosphorus": 220,
+  "iron": 0.4,
+  "zinc": 0.5,
+  "selenium": 18,
+  "vitamin_a": 20,
+  "vitamin_b1": 0.1,
+  "vitamin_b2": 0.1,
+  "vitamin_b3": 4.5,
+  "vitamin_b5": 1.2,
+  "vitamin_b6": 0.25,
+  "vitamin_b9_folate": 10,
+  "vitamin_b12": 4.0,
+  "vitamin_d": 8.0,
+  "vitamin_e": 1.5,
+  "semantic_data": {
+    "properties": [
+      "консервы",
+      "натуральная",
+      "в собственном соку",
+      "лососевые",
+      "красная рыба",
+      "готовый к употреблению",
+      "длительное хранение",
+      "без масла",
+      "без консервантов",
+      "источник омега-3",
+      "источник витамина D",
+      "источник B12"
+    ],
+    "preparations": [
+      "вскрытие банки",
+      "отделение кусочков от бульона",
+      "разминание вилкой для паштета",
+      "хранение после вскрытия не более 24 часов в холодильнике"
+    ],
+    "cooking_methods": [
+      {
+        "method": "подача в готовом виде (самостоятельное блюдо)",
+        "priority": "high"
+      },
+      {
+        "method": "использование в салатах",
+        "priority": "high"
+      },
+      {
+        "method": "приготовление бутербродов и канапе",
+        "priority": "high"
+      },
+      {
+        "method": "изготовление паштета",
+        "priority": "medium"
+      },
+      {
+        "method": "добавление в супы и начинки",
+        "priority": "medium"
+      }
+    ],
+    "applications": [
+      "салаты",
+      "бутерброды и канапе",
+      "паштеты",
+      "супы",
+      "начинки для пирогов и блинов",
+      "самостоятельное блюдо",
+      "походные условия",
+      "быстрое питание"
+    ],
+    "pairings": {
+      "protein": ["яйца", "крем-сыр", "сливочное масло"],
+      "vegetables": ["огурцы", "помидоры", "картофель", "лук", "зелень"],
+      "sauces": ["майонез", "сметана", "лимонный сок"],
+      "herbs": ["укроп", "петрушка", "зелёный лук"],
+      "spices": ["чёрный перец", "лимонная цедра"]
+    },
+    "substitutes": [
+      {"name": "Лосось натуральный (консервы)", "similarity": "high"},
+      {"name": "Горбуша натуральная", "similarity": "medium"},
+      {"name": "Кета натуральная", "similarity": "medium"},
+      {"name": "Скумбрия натуральная", "similarity": "low"}
+    ]
+  },
+  "data_source": "health-diet.ru",
+  "tags": [
+    "рыба",
+    "красная рыба",
+    "лососевые",
+    "форель",
+    "консервы",
+    "натуральная",
+    "в собственном соку",
+    "готовый к употреблению",
+    "длительное хранение",
+    "омега-3",
+    "витамин D",
+    "витамин B12"
+  ]
+}

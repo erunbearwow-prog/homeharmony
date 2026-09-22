@@ -1,0 +1,112 @@
+{
+  "name": "Личи",
+  "name_normalized": "lichi",
+  "synonyms": "личи, лиджи, лиси, лайси, китайская слива, глаз дракона, личи китайское, Litchi chinensis, lychee, litchi",
+  "short_description": "Экзотический тропический фрукт с бугристой красно-розовой кожурой и сочной желеобразной мякотью. Обладает освежающим кисло-сладким вкусом с нотками винограда, клубники и смородины. Богат витамином C, медью и калием.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Личи (Litchi chinensis) — это небольшой косточковый плод вечнозелёного дерева семейства Сапиндовые, родиной которого является Южный Китай. В Китае личи известен более двух тысяч лет и поэтически называется «глазом дракона» — из-за сходства разрезанного плода с глазом, где розовая бугристая кожура напоминает веко, белая мякоть — глазное яблоко, а тёмная косточка — зрачок. Другие названия фрукта — «китайская слива», лиджи, лиси.</p><p class=\"ingredient-text\">Плоды личи растут гроздьями на деревьях высотой до 15–20 метров. Снаружи они покрыты плотной кожистой коркой от розового до красно-клубничного цвета, которая легко отделяется от мякоти. Внутри находится сочная, желеобразная мякоть белого или кремового цвета с приятным цветочным ароматом, напоминающим розу, и продолговатая косточка, непригодная в пищу. Вкус личи освежающий, кисло-сладкий, с лёгким терпким послевкусием, напоминает сочетание винограда, клубники и смородины.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — желеобразная, сочная, нежная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — кисло-сладкий, освежающий, с лёгкой терпкостью</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — цветочный, напоминает розу</li><li class=\"ingredient-list-item\"><strong>Цвет кожуры</strong> — розовый, красный, красно-клубничный</li><li class=\"ingredient-list-item\"><strong>Цвет мякоти</strong> — белый, кремовый, полупрозрачный</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — округлая, овальная, размером с крупную сливу</li><li class=\"ingredient-list-item\"><strong>Сезон</strong> — май-июнь (в Северном полушарии), декабрь-январь (Мадагаскар)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 1-2 дня при комнатной температуре, до 2 недель в холодильнике</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойка</strong> — промыть под проточной водой</li><li class=\"ingredient-list-item\"><strong>Очистка</strong> — сделать неглубокий надрез на кожуре и снять её руками (у спелых плодов отходит легко)</li><li class=\"ingredient-list-item\"><strong>Удаление косточки</strong> — разрезать мякоть пополам и извлечь косточку</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — очищенную мякоть можно заморозить для длительного хранения</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свежее употребление</strong> — как самостоятельный десерт</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — смузи, коктейли, лимонады, вина, ликёры</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — мороженое, желе, муссы, фруктовые салаты</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — кисло-сладкие соусы к мясу и морепродуктам</li><li class=\"ingredient-list-item\"><strong>Горячие блюда</strong> — в азиатской кухне с курицей, креветками, рыбой</li><li class=\"ingredient-list-item\"><strong>Консервация</strong> — личи в сиропе</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Фрукты</strong> — ананас, манго, маракуйя, цитрусовые</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, утка, свинина (в кисло-сладких соусах)</li><li class=\"ingredient-list-item\"><strong>Морепродукты</strong> — креветки, рыба</li><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — сливки, йогурт, мороженое</li><li class=\"ingredient-list-item\"><strong>Мята</strong> — для освежающих напитков и салатов</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — имбирь, чили (в азиатских блюдах)</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Лонган</strong> — близкий родственник, более сладкий</li><li class=\"ingredient-list-item\"><strong>Рамбутан</strong> — схожая текстура, волосатая кожура</li><li class=\"ingredient-list-item\"><strong>Виноград (крупный)</strong> — схожая сочность и сладость</li><li class=\"ingredient-list-item\"><strong>Мангостин</strong> — тропический фрукт с нежной мякотью</li></ul>",
+
+  "category": "Фрукты",
+
+  "data_source": "usda",
+
+  "calories": 66,
+  "protein": 0.83,
+  "fat": 0.44,
+  "carbohydrates": 16.53,
+
+  "fiber": 1.3,
+  "sugar": 15.23,
+  "water": 81.76,
+  "ash": 0.44,
+
+  "vitamin_c": 71.5,
+  "vitamin_b1": 0.011,
+  "vitamin_b2": 0.065,
+  "vitamin_b3": 0.603,
+  "vitamin_b5": 0.217,
+  "vitamin_b6": 0.1,
+  "vitamin_b9_folate": 14,
+  "vitamin_e": 0.07,
+  "vitamin_k": 0.4,
+  "vitamin_b4": 7.1,
+
+  "potassium": 171,
+  "calcium": 5,
+  "magnesium": 10,
+  "phosphorus": 31,
+  "sodium": 1,
+  "iron": 0.31,
+  "copper": 0.148,
+  "manganese": 0.055,
+  "zinc": 0.07,
+  "selenium": 0.6,
+
+  "semantic_data": {
+    "properties": [
+      "фрукт",
+      "экзотический",
+      "тропический",
+      "косточковый",
+      "сочный",
+      "желеобразный",
+      "кисло-сладкий",
+      "ароматный",
+      "богат витамином C",
+      "источник меди",
+      "источник калия",
+      "для десертов",
+      "для напитков",
+      "для соусов"
+    ],
+    "preparations": [
+      "мойка под проточной водой",
+      "надрез кожуры",
+      "снятие кожуры руками",
+      "удаление косточки",
+      "заморозка очищенной мякоти"
+    ],
+    "cooking_methods": [
+      {"method": "свежее употребление", "priority": "high"},
+      {"method": "приготовление смузи и коктейлей", "priority": "high"},
+      {"method": "использование в десертах", "priority": "high"},
+      {"method": "приготовление соусов", "priority": "medium"},
+      {"method": "использование в горячих блюдах", "priority": "medium"},
+      {"method": "консервация в сиропе", "priority": "medium"}
+    ],
+    "applications": [
+      "десерты",
+      "напитки",
+      "соусы",
+      "горячие блюда",
+      "консервация",
+      "фруктовые салаты"
+    ],
+    "pairings": {
+      "protein": ["курица", "утка", "свинина", "креветки", "рыба"],
+      "vegetables": [],
+      "fruits": ["ананас", "манго", "маракуйя", "цитрусовые"],
+      "sauces": ["кисло-сладкий соус", "сливочный соус"],
+      "herbs": ["мята"],
+      "spices": ["имбирь", "чили"]
+    },
+    "substitutes": [
+      {"name": "Лонган", "similarity": "high"},
+      {"name": "Рамбутан", "similarity": "high"},
+      {"name": "Виноград (крупный)", "similarity": "medium"},
+      {"name": "Мангостин", "similarity": "medium"}
+    ]
+  },
+
+  "tags": [
+    "фрукт",
+    "личи",
+    "экзотический",
+    "тропический",
+    "китайская слива",
+    "глаз дракона",
+    "витамин C",
+    "десерты",
+    "напитки",
+    "соусы"
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "name": "Уши свиные",
+  "name_normalized": "ushi_svinye",
+  "synonyms": "уши свиные, свиные уши, свиные ушки, ушки свиные, свиные уши вареные, свиные уши копченые, свиные уши для закуски, свиные уши для пива, свиные уши для холодца, свиные уши для бульона, хрящи свиные, pork ears",
+  "short_description": "Субпродукт из хрящевой ткани свиных ушей с высоким содержанием коллагена. После варки становится мягким и желейным, сохраняя лёгкое похрустывание хрящиков. Популярная закуска, особенно к пиву, а также основа для холодца и наваристых бульонов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Свиные уши — это субпродукт, который ценится за уникальную текстуру и высокое содержание коллагена. Они состоят из хрящевой ткани между прослойками кожи, которая после варки становится желейной и мягкой, сохраняя лёгкое похрустывание. Свиные уши богаты коллагеном — белком, являющимся основой сухожилий и хрящей, а также кальцием и фосфором, которые хорошо усваиваются благодаря сбалансированному соотношению. Вареные уши можно есть просто так, обжаривать, мариновать или коптить.</p><p class=\"ingredient-text\">Свиные уши — традиционный продукт в кухнях многих народов, особенно популярный в азиатских странах (Корея, Китай) как закуска к пиву и вторым блюдам. В России и Восточной Европе уши используют преимущественно для холодца и наваристых бульонов, а также как самостоятельную закуску.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — хрящевая, упругая (сырые); мягкая, желейная с похрустыванием (варёные)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, с лёгким мясным оттенком</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — бледно-розовый, кремовый</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — крупные плоские хрящевые пластины</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — требуют длительной варки (2-3 часа) до мягкости</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Опаливание</strong> — опалить остатки щетины огнём, соскрести ножом</li><li class=\"ingredient-list-item\"><strong>Замачивание</strong> — в холодной воде 1-2 часа для удаления крови и специфического запаха</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — 2-3 часа на медленном огне с лавровым листом, перцем и специями</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — тонкой соломкой после варки</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Холодец</strong> — классическое применение, застывает без желатина</li><li class=\"ingredient-list-item\"><strong>Закуска</strong> — вареные или копчёные уши к пиву</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — с луком, чесноком, специями до румяной корочки</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — горячее и холодное</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — по-корейски, по-китайски</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — с хрустящими ушками и овощами</li><li class=\"ingredient-list-item\"><strong>Бульоны</strong> — наваристые супы</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Соусы</strong> — острый соус чили, соевый соус, горчица, хрен</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, чеснок, перец</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, кинза, лавровый лист</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, черный перец, паприка, кориандр, гвоздика, бадьян</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — пиво (классическая закуска)</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свиные ноги</strong> — схожее содержание коллагена</li><li class=\"ingredient-list-item\"><strong>Свиная рулька</strong> — для холодца</li><li class=\"ingredient-list-item\"><strong>Куриные лапки</strong> — для бульона</li><li class=\"ingredient-list-item\"><strong>Говяжьи уши</strong> — аналогичный субпродукт</li></ul>",
+
+  "category": "Мясо и мясные продукты",
+
+  "data_source": "usda",
+
+  "calories": 234,
+  "protein": 22.0,
+  "fat": 15.0,
+  "carbohydrates": 0.6,
+
+  "water": 62.0,
+  "ash": 0.4,
+
+  "vitamin_b1": 0.1,
+  "vitamin_b2": 0.1,
+  "vitamin_b3": 1.0,
+  "vitamin_b5": 0.1,
+  "vitamin_b6": 0.0,
+  "vitamin_b12": 0.1,
+  "vitamin_c": 0.0,
+
+  "calcium": 21,
+  "iron": 2.4,
+  "magnesium": 7,
+  "phosphorus": 41,
+  "potassium": 55,
+  "sodium": 191,
+  "zinc": 0.19,
+  "copper": 0.01,
+  "manganese": 0.0,
+  "selenium": 4.0,
+
+  "saturated_fat": 5.0,
+  "monounsaturated_fat": 7.0,
+  "polyunsaturated_fat": 2.0,
+  "cholesterol": 82,
+
+  "semantic_data": {
+    "properties": [
+      "субпродукт",
+      "свинина",
+      "хрящевая ткань",
+      "коллаген",
+      "высокобелковый",
+      "для холодца",
+      "для закуски",
+      "для бульона",
+      "для копчения",
+      "для жарки"
+    ],
+    "preparations": [
+      "опаливание щетины",
+      "замачивание в холодной воде",
+      "длительная варка 2-3 часа",
+      "нарезка тонкой соломкой"
+    ],
+    "cooking_methods": [
+      {"method": "варка (холодец, бульон)", "priority": "high"},
+      {"method": "копчение", "priority": "high"},
+      {"method": "жарка", "priority": "high"},
+      {"method": "маринование", "priority": "medium"},
+      {"method": "использование в салатах", "priority": "medium"}
+    ],
+    "applications": [
+      "холодец",
+      "закуски",
+      "салаты",
+      "бульоны",
+      "вторые блюда"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["лук", "морковь", "чеснок", "перец"],
+      "sauces": ["острый соус чили", "соевый соус", "горчица", "хрен"],
+      "herbs": ["петрушка", "укроп", "кинза", "лавровый лист"],
+      "spices": ["чеснок", "черный перец", "паприка", "кориандр", "гвоздика", "бадьян"]
+    },
+    "substitutes": [
+      {"name": "Свиные ноги", "similarity": "high"},
+      {"name": "Свиная рулька", "similarity": "medium"},
+      {"name": "Куриные лапки", "similarity": "low"},
+      {"name": "Говяжьи уши", "similarity": "medium"}
+    ]
+  },
+
+  "tags": [
+    "мясо",
+    "субпродукт",
+    "свинина",
+    "уши",
+    "хрящи",
+    "коллаген",
+    "для холодца",
+    "закуска к пиву"
+  ]
+}

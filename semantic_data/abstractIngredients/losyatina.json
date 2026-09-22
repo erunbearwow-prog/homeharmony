@@ -1,0 +1,121 @@
+{
+  "name": "Лосятина",
+  "name_normalized": "losyatina",
+  "synonyms": "мясо лося, лось, мясо дикого лося, дикий лось, лосиное мясо, лосятина свежая, лосятина замороженная, мясо дичи, дикое мясо, Alces alces",
+  "short_description": "Постное мясо дикого лося с высоким содержанием полноценного белка и минимальным количеством жира. Обладает плотной текстурой, насыщенным вкусом дичи и считается диетическим продуктом. Богато железом, цинком, витаминами группы B.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Лосятина — это мясо дикого лося (Alces alces), которое традиционно используется в кухнях северных регионов Европы, России, Канады и США. Мясо лося отличается высоким содержанием полноценного белка и крайне низким содержанием жира, что делает его одним из самых постных видов мяса. По биологической ценности белок лосятины близок к говядине, а по содержанию железа, цинка и витаминов группы B превосходит многие виды домашнего мяса. Лосятина имеет плотную текстуру и выраженный вкус дичи, который хорошо сочетается с кислыми и сладкими компонентами: лесными ягодами, корнеплодами, грибами, квашеными овощами.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, волокнистая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, с характерной «дикой» нотой, слегка сладковатый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — тёмно-красный, бордовый</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — очень низкая</li><li class=\"ingredient-list-item\"><strong>Содержание белка</strong> — высокое</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — не содержит углеводов, богато железом и цинком</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разделка</strong> — удаление плёнок и сухожилий</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — в кислых маринадах (уксус, вино, кефир) для смягчения</li><li class=\"ingredient-list-item\"><strong>Выдержка</strong> — мясо дичи рекомендуется выдерживать для улучшения вкуса</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — порционными кусками, для тушения и запекания</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с овощами, ягодами, в тёмных соусах</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — крупными кусками, с корнеплодами</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — наваристые бульоны, рагу</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — деликатесные изделия</li><li class=\"ingredient-list-item\"><strong>Колбасы</strong> — домашние колбасы с добавлением жира</li><li class=\"ingredient-list-item\"><strong>Строганина</strong> — замороженное мясо тонкой нарезки (Якутия)</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Ягоды</strong> — брусника, клюква, черника</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук, грибы</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — брусничный, клюквенный, тёмный мясной соус</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — можжевельник, тимьян, розмарин, чёрный перец</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — красное вино, крепкие напитки</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо северного оленя</strong> — схожая текстура и вкус дичи</li><li class=\"ingredient-list-item\"><strong>Мясо кабана</strong> — более жирное, схожая плотность</li><li class=\"ingredient-list-item\"><strong>Говяжья лопатка</strong> — более привычный вариант, требует добавления жира</li><li class=\"ingredient-list-item\"><strong>Телятина</strong> — менее плотная, но подходит для тушения</li></ul>",
+  "category": "Мясо, птица, субпродукты",
+  "calories": 111,
+  "protein": 21.3,
+  "fat": 1.7,
+  "carbohydrates": 0,
+  "water": 74.7,
+  "ash": 1.2,
+  "cholesterol": 72,
+  "saturated_fat": 0.22,
+  "monounsaturated_fat": 0.97,
+  "polyunsaturated_fat": 0.24,
+  "sodium": 58,
+  "potassium": 371,
+  "calcium": 12,
+  "magnesium": 25,
+  "phosphorus": 179,
+  "iron": 3.0,
+  "zinc": 2.95,
+  "copper": 0.249,
+  "manganese": 0.063,
+  "selenium": 10.5,
+  "vitamin_b1": 0.2,
+  "vitamin_b2": 0.2,
+  "vitamin_b3": 5.1,
+  "vitamin_b5": 1.3,
+  "vitamin_b6": 0.4,
+  "vitamin_b9_folate": 9,
+  "vitamin_b12": 1.3,
+  "vitamin_e": 0.55,
+  "semantic_data": {
+    "properties": [
+      "дичь",
+      "постное мясо",
+      "высокое содержание белка",
+      "низкое содержание жира",
+      "диетический продукт",
+      "богато железом",
+      "богато цинком",
+      "источник витаминов группы B",
+      "плотная текстура",
+      "северная кухня"
+    ],
+    "preparations": [
+      "удаление плёнок и сухожилий",
+      "маринование в кислых маринадах",
+      "выдержка мяса дичи",
+      "нарезка порционными кусками"
+    ],
+    "cooking_methods": [
+      {
+        "method": "тушение с овощами и ягодами",
+        "priority": "high"
+      },
+      {
+        "method": "запекание крупными кусками",
+        "priority": "high"
+      },
+      {
+        "method": "варка бульонов и супов",
+        "priority": "high"
+      },
+      {
+        "method": "копчение",
+        "priority": "medium"
+      },
+      {
+        "method": "изготовление колбас",
+        "priority": "medium"
+      },
+      {
+        "method": "строганина (для замороженного мяса)",
+        "priority": "low"
+      }
+    ],
+    "applications": [
+      "тушёные блюда",
+      "запечённое мясо",
+      "супы и рагу",
+      "копчёности",
+      "домашние колбасы",
+      "паштеты",
+      "строганина"
+    ],
+    "pairings": {
+      "protein": ["говядина (для колбас)", "свиной жир (для сочности)"],
+      "vegetables": ["картофель", "морковь", "лук", "грибы", "корнеплоды"],
+      "sauces": ["брусничный соус", "клюквенный соус", "тёмный мясной соус"],
+      "herbs": ["тимьян", "розмарин", "можжевельник", "петрушка"],
+      "spices": ["чёрный перец", "лавровый лист", "гвоздика", "можжевельник"]
+    },
+    "substitutes": [
+      {"name": "Мясо северного оленя", "similarity": "high"},
+      {"name": "Мясо кабана", "similarity": "medium"},
+      {"name": "Говяжья лопатка", "similarity": "medium"},
+      {"name": "Телятина", "similarity": "low"}
+    ]
+  },
+  "data_source": "skurikhin_tutelyan_2002",
+  "data_source_reference": "Химический состав российских пищевых продуктов : Справочник / Под ред. член-корр. МАИ, проф. И. М. Скурихина и академика РАМН, проф. В. А. Тутельяна. — М. : ДеЛи принт, 2002. — 236 с. — ISBN 5-94343-028-8.",
+  "tags": [
+    "мясо",
+    "дичь",
+    "лосятина",
+    "мясо лося",
+    "дикое мясо",
+    "северная кухня",
+    "диетическое",
+    "постное",
+    "высокий белок",
+    "низкий жир",
+    "богато железом",
+    "богато цинком",
+    "витамин B12"
+  ]
+}

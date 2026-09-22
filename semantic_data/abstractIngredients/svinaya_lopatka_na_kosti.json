@@ -1,0 +1,107 @@
+{
+  "name": "Свиная лопатка на кости",
+  "name_normalized": "svinaya_lopatka_na_kosti",
+  "synonyms": "свиная лопатка на кости, лопатка свиная на кости, лопатка свиная с костью, лопаточная часть свиная на кости, мясо свиной лопатки на кости, свинина для тушения, свинина для запекания, свинина для бульона",
+  "short_description": "Отруб из передней части свиной туши, включающий лопаточную кость, хрящи и прилегающие мышцы с тонкими жировыми прослойками. Отличается сочным, насыщенным вкусом и универсален в кулинарии: подходит для тушения, запекания, варки бульонов и приготовления фарша.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Свиная лопатка на кости — это отруб из передней части свиной туши, который выделяют круговым подрезом по верхнему краю лопаточного хряща. Мясо этой части отличается выраженной волокнистостью, но это скорее преимущество: плотное мясо с тонкими прослойками жира даёт глубокий, насыщенный вкус и тающую текстуру после длительного приготовления.</p><p class=\"ingredient-text\">Присутствие кости в лопатке играет ключевую роль — она обогащает блюдо интенсивным ароматом и помогает удерживать влагу во время томления или запекания. Лопатка на кости требует терпеливого подхода: её тушат в ароматных соусах, запекают до золотистой корочки, варят для получения насыщенных бульонов или готовят на гриле. Доступная цена делает этот отруб привлекательным для любого бюджета.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, волокнистая, с тонкими жировыми прослойками</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный свиной, глубокий, с лёгкой сладостью</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от бледно-розового до красноватого</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — крупный кусок на лопаточной кости с хрящами</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — кость удерживает влагу и обогащает блюдо ароматом</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике при низкой температуре</li><li class=\"ingredient-list-item\"><strong>Зачистка</strong> — удалить грубые плёнки и сухожилия</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — крупными кусками вместе с костью</li><li class=\"ingredient-list-item\"><strong>Обжарка</strong> — для карамелизации корочки перед тушением</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — с травами, чесноком, специями для сочности</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тушение</strong> — рагу, жаркое, в соусах</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — целиком в фольге или рукаве при низкой температуре</li><li class=\"ingredient-list-item\"><strong>Бульоны</strong> — наваристые супы, борщи</li><li class=\"ingredient-list-item\"><strong>Фарш</strong> — для котлет и домашних колбас</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — на углях или решётке</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, лук, морковь, капуста, помидоры, перец</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, сливочный, барбекю, горчичный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — розмарин, тимьян, петрушка, укроп, лавровый лист</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, черный перец, паприка, кориандр, кумин</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свиная лопатка б/к</strong> — бескостный вариант, удобнее для нарезки</li><li class=\"ingredient-list-item\"><strong>Свиная шея</strong> — более жирная, для шашлыка</li><li class=\"ingredient-list-item\"><strong>Свиная рулька</strong> — больше коллагена, для холодца</li><li class=\"ingredient-list-item\"><strong>Говяжья лопатка на кости</strong> — для тушения и бульонов</li></ul>",
+
+  "category": "Мясо и мясные продукты",
+
+  "data_source": "usda",
+
+  "calories": 236,
+  "protein": 17.2,
+  "fat": 18.0,
+  "carbohydrates": 0,
+
+  "water": 64.0,
+  "ash": 0.8,
+
+  "vitamin_b1": 0.767,
+  "vitamin_b2": 0.275,
+  "vitamin_b3": 3.833,
+  "vitamin_b4": 60.6,
+  "vitamin_b5": 0.719,
+  "vitamin_b6": 0.348,
+  "vitamin_b9_folate": 5,
+  "vitamin_b12": 0.74,
+  "vitamin_c": 0.7,
+  "vitamin_d": 1.7,
+  "vitamin_e": 0.19,
+
+  "potassium": 302,
+  "calcium": 15,
+  "magnesium": 18,
+  "sodium": 65,
+  "phosphorus": 182,
+  "iron": 1.05,
+  "manganese": 0.011,
+  "copper": 0.084,
+  "zinc": 2.7,
+  "selenium": 25.5,
+
+  "saturated_fat": 6.24,
+  "monounsaturated_fat": 8.01,
+  "polyunsaturated_fat": 1.92,
+  "cholesterol": 71,
+
+  "semantic_data": {
+    "properties": [
+      "свинина",
+      "лопатка",
+      "на кости",
+      "волокнистая",
+      "с жировыми прослойками",
+      "для тушения",
+      "для запекания",
+      "для бульона",
+      "для фарша",
+      "универсальная"
+    ],
+    "preparations": [
+      "разморозка в холодильнике",
+      "зачистка от пленок",
+      "нарезка крупными кусками",
+      "обжарка перед тушением",
+      "маринование с травами и специями"
+    ],
+    "cooking_methods": [
+      {"method": "тушение", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "варка бульона", "priority": "high"},
+      {"method": "гриль", "priority": "medium"},
+      {"method": "приготовление фарша", "priority": "medium"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "супы",
+      "бульоны",
+      "фарш",
+      "гриль"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "лук", "морковь", "капуста", "помидоры", "перец"],
+      "sauces": ["томатный", "сметанный", "сливочный", "барбекю", "горчичный"],
+      "herbs": ["розмарин", "тимьян", "петрушка", "укроп", "лавровый лист"],
+      "spices": ["чеснок", "черный перец", "паприка", "кориандр", "кумин"]
+    },
+    "substitutes": [
+      {"name": "Свиная лопатка б/к", "similarity": "high"},
+      {"name": "Свиная шея", "similarity": "medium"},
+      {"name": "Свиная рулька", "similarity": "medium"},
+      {"name": "Говяжья лопатка на кости", "similarity": "medium"}
+    ]
+  },
+
+  "tags": [
+    "мясо",
+    "свинина",
+    "лопатка",
+    "на кости",
+    "для тушения",
+    "для запекания",
+    "для бульона",
+    "универсальная"
+  ]
+}

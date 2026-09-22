@@ -1,0 +1,99 @@
+{
+  "name": "Лещ",
+  "name_normalized": "leshch",
+  "synonyms": "лещ, обыкновенный лещ, Abramis brama, лещ восточный, лещ каспийский, лещ аральский, речная рыба, пресноводная рыба, рыба для запекания, рыба для вяления, рыба для копчения",
+  "short_description": "Пресноводная рыба семейства карповых с высоким телом и мелкой чешуёй. Мясо белое, сочное, с большим количеством мелких костей, но при правильной подготовке кости размягчаются. Ценится за насыщенный вкус и используется для запекания, вяления, копчения и жарки.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Лещ (Abramis brama) — это пресноводная рыба семейства карповых, широко распространённая в реках и озёрах Европы и Сибири. Лещ имеет высокое, сжатое с боков тело и мелкую чешую. Мясо леща белое, сочное, с характерным речным вкусом, но содержит большое количество мелких межмышечных костей. Однако при правильной термической обработке — жарке или длительном запекании — коллаген в костях превращается в желатин, и они становятся практически неощутимыми.</p><p class=\"ingredient-text\">Лещ — ценная промысловая рыба, которую используют для запекания целиком, жарки, вяления, копчения и приготовления ухи. Особой популярностью пользуется вяленый и копчёный лещ, который считается классической закуской к пиву. При запекании целиком в фольге или рукаве мясо получается особенно сочным и ароматным.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, сочная, с мелкими костями (размягчаются при термообработке)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, речной, с лёгким запахом тины (устраняется вымачиванием)</li><li class=\"ingredient-list-item\"><strong>Цвет мяса</strong> — белый, светло-розовый</li><li class=\"ingredient-list-item\"><strong>Размер</strong> — обычно 25–45 см, масса 0,5–2 кг</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — запах тины устраняется удалением тёмной плёнки из брюшка и вымачиванием в молоке</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Очистка</strong> — удалить чешую (удобнее в воде или в пакете)</li><li class=\"ingredient-list-item\"><strong>Потрошение</strong> — удалить внутренности и тёмную плёнку из брюшка</li><li class=\"ingredient-list-item\"><strong>Удаление жабр</strong> — обязательно, иначе будет горчить</li><li class=\"ingredient-list-item\"><strong>Надрезы</strong> — сделать частые надрезы по спинке для размягчения костей</li><li class=\"ingredient-list-item\"><strong>Вымачивание</strong> — в молоке или воде с лимоном для удаления запаха тины</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — с солью, перцем, лимонным соком, травами</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Запекание</strong> — целиком в фольге, рукаве, с овощами</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — в муке или кукурузной муке до хрустящей корочки</li><li class=\"ingredient-list-item\"><strong>Вяление</strong> — классическая закуска к пиву</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — горячее и холодное</li><li class=\"ingredient-list-item\"><strong>Уха</strong> — наваристый бульон</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в казане со сметаной и луком</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, лук, морковь, кабачки, капуста</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, сливочный, томатный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — укроп, петрушка, тимьян</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, паприка, чеснок, лавровый лист, лимон</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, гречка (для гарнира)</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Карп</strong> — схожее мясо, но более жирный</li><li class=\"ingredient-list-item\"><strong>Карась</strong> — более мелкий, менее жирный</li><li class=\"ingredient-list-item\"><strong>Сазан</strong> — более крупный, схожая текстура</li><li class=\"ingredient-list-item\"><strong>Щука</strong> — менее костистая, но более сухая</li></ul>",
+  "category": "Рыба и морепродукты",
+  "data_source": "usda",
+  "calories": 105,
+  "protein": 17.1,
+  "fat": 4.1,
+  "carbohydrates": 0,
+  "water": 75.3,
+  "ash": 1.25,
+  "vitamin_a": 30,
+  "vitamin_b1": 0.12,
+  "vitamin_b2": 0.1,
+  "vitamin_b3": 6.2,
+  "vitamin_b6": 0.1,
+  "vitamin_b9_folate": 100,
+  "vitamin_b12": 2.0,
+  "vitamin_c": 1.0,
+  "vitamin_e": 1.0,
+  "potassium": 265,
+  "calcium": 25,
+  "magnesium": 30,
+  "sodium": 70,
+  "phosphorus": 220,
+  "sulfur": 171,
+  "chlorine": 165,
+  "iron": 0.3,
+  "manganese": 0.1,
+  "chromium": 55,
+  "fluorine": 430,
+  "molybdenum": 4,
+  "nickel": 6,
+  "semantic_data": {
+    "properties": [
+      "пресноводная",
+      "речная",
+      "карповые",
+      "белое мясо",
+      "сочное",
+      "костистое",
+      "речной вкус",
+      "для запекания",
+      "для жарки",
+      "для вяления",
+      "для копчения",
+      "для ухи"
+    ],
+    "preparations": [
+      "очистка от чешуи",
+      "потрошение и удаление пленки",
+      "удаление жабр",
+      "надрезы по спинке",
+      "вымачивание в молоке",
+      "маринование"
+    ],
+    "cooking_methods": [
+      {"method": "запекание целиком в фольге", "priority": "high"},
+      {"method": "жарка в муке", "priority": "high"},
+      {"method": "вяление", "priority": "high"},
+      {"method": "копчение", "priority": "high"},
+      {"method": "тушение в казане", "priority": "medium"},
+      {"method": "варка ухи", "priority": "medium"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "закуски",
+      "супы",
+      "вяленые и копченые деликатесы"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "лук", "морковь", "кабачки", "капуста"],
+      "sauces": ["сметанный", "сливочный", "томатный"],
+      "herbs": ["укроп", "петрушка", "тимьян"],
+      "spices": ["черный перец", "паприка", "чеснок", "лавровый лист", "лимон"]
+    },
+    "substitutes": [
+      {"name": "Карп", "similarity": "high"},
+      {"name": "Карась", "similarity": "medium"},
+      {"name": "Сазан", "similarity": "medium"},
+      {"name": "Щука", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "рыба",
+    "пресноводная",
+    "лещ",
+    "речная рыба",
+    "карповые",
+    "запекание",
+    "вяление",
+    "копчение",
+    "жарка"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "name": "Ледяная рыба",
+  "name_normalized": "ledyanaya_ryba",
+  "synonyms": "ледяная рыба, белокровная рыба, белокровная щука, ледяная, щек, жек, Champsocephalus gunnari, icefish, white-blooded fish, mackerel icefish",
+  "short_description": "Антарктическая рыба семейства белокровных с полупрозрачным телом, белой кровью и нежным, сладковатым мясом, напоминающим по вкусу креветок. Не имеет чешуи и мелких костей. Ценится за диетические свойства и отсутствие специфического рыбного запаха.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Ледяная рыба (белокровная щука, Champsocephalus gunnari) — это уникальная антарктическая рыба семейства белокровных (Channichthyidae), обитающая в холодных водах Южного океана. Её главная биологическая особенность — отсутствие гемоглобина и эритроцитов: кровь ледяной рыбы бесцветна, что делает её единственным известным взрослым позвоночным с белой кровью. Это компенсируется повышенным объёмом крови и более крупным сердцем.</p><p class=\"ingredient-text\">Ледяная рыба не имеет чешуи, а её скелет состоит практически только из хребта — мелкие кости отсутствуют. Мясо белое, плотное, нежирное, с легким сладковатым вкусом, напоминающим креветку. Благодаря питанию крилем, в мясе присутствует тонкий креветочный оттенок. Специфический «рыбный» запах полностью отсутствует, что делает ледяную рыбу универсальной для любых блюд.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, нежирная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нежный, сладковатый, с креветочным оттенком</li><li class=\"ingredient-list-item\"><strong>Цвет мяса</strong> — белый, полупрозрачный</li><li class=\"ingredient-list-item\"><strong>Костистость</strong> — только хребет, мелких костей нет</li><li class=\"ingredient-list-item\"><strong>Чешуя</strong> — отсутствует</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — белая кровь, экологически чистая среда обитания</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике в течение нескольких часов (медленная разморозка сохраняет текстуру)</li><li class=\"ingredient-list-item\"><strong>Потрошение</strong> — удалить внутренности и жабры</li><li class=\"ingredient-list-item\"><strong>Удаление плавников</strong> — срезать, чтобы не уколоться</li><li class=\"ingredient-list-item\"><strong>Обваливание в муке</strong> — для сохранения сочности при жарке</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — классический способ, в муке до хрустящей корочки</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с овощами и травами</li><li class=\"ingredient-list-item\"><strong>Уха</strong> — наваристый бульон</li><li class=\"ingredient-list-item\"><strong>Фарш</strong> — для пельменей и рыбных палочек</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — на открытом огне</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с овощами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — морковь, картофель, фенхель, лук, кабачки</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сливочный, лимонный, зеленый горошек</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, цедра лимона</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — паприка, черный перец, соль</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофельное пюре, морковное пюре с чесноком</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Морской гребешок</strong> — схожая текстура и отсутствие запаха (дороже)</li><li class=\"ingredient-list-item\"><strong>Зубатка пестрая</strong> — похожая желеобразная текстура после термообработки</li><li class=\"ingredient-list-item\"><strong>Тиляпия</strong> — сладковатое белое мясо, но разваривается</li><li class=\"ingredient-list-item\"><strong>Пангасиус</strong> — бюджетная замена, требует очистки от привкуса</li></ul>",
+  "category": "Рыба и морепродукты",
+  "data_source": "usda",
+  "calories": 91,
+  "protein": 18.2,
+  "fat": 1.9,
+  "carbohydrates": 0,
+  "water": 79.0,
+  "ash": 1.7,
+  "vitamin_b1": 0.08,
+  "vitamin_b2": 0.10,
+  "vitamin_b3": 1.8,
+  "vitamin_b5": 0.94,
+  "vitamin_b6": 0.12,
+  "vitamin_b9_folate": 58,
+  "vitamin_b12": 3.3,
+  "vitamin_c": 4,
+  "vitamin_d": 1.0,
+  "vitamin_e": 1.8,
+  "potassium": 250,
+  "calcium": 150,
+  "magnesium": 39,
+  "phosphorus": 270,
+  "sodium": 170,
+  "iron": 0.4,
+  "zinc": 1.2,
+  "copper": 0.03,
+  "manganese": 0.09,
+  "cholesterol": 220,
+  "semantic_data": {
+    "properties": [
+      "морская рыба",
+      "антарктическая",
+      "белокровная",
+      "диетическая",
+      "нежирная",
+      "без чешуи",
+      "без мелких костей",
+      "сладковатый вкус",
+      "креветочный оттенок",
+      "для жарки",
+      "для запекания",
+      "для ухи"
+    ],
+    "preparations": [
+      "медленная разморозка в холодильнике",
+      "потрошение и удаление жабр",
+      "срезание плавников",
+      "обваливание в муке перед жаркой"
+    ],
+    "cooking_methods": [
+      {"method": "жарка в муке", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "варка ухи", "priority": "medium"},
+      {"method": "гриль", "priority": "medium"},
+      {"method": "тушение", "priority": "medium"},
+      {"method": "приготовление фарша", "priority": "low"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "супы",
+      "закуски",
+      "фарш для пельменей"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["морковь", "картофель", "фенхель", "лук", "кабачки"],
+      "sauces": ["сливочный", "лимонный", "зеленый горошек"],
+      "herbs": ["петрушка", "укроп", "цедра лимона"],
+      "spices": ["паприка", "черный перец", "соль"]
+    },
+    "substitutes": [
+      {"name": "Морской гребешок", "similarity": "high"},
+      {"name": "Зубатка пестрая", "similarity": "high"},
+      {"name": "Тиляпия", "similarity": "medium"},
+      {"name": "Пангасиус", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "рыба",
+    "морская рыба",
+    "ледяная рыба",
+    "белокровная",
+    "антарктическая",
+    "диетическая",
+    "без костей",
+    "жарка",
+    "запекание",
+    "уха"
+  ]
+}

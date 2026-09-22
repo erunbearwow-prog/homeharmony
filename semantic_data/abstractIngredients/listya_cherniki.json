@@ -1,0 +1,92 @@
+{
+  "name": "Листья черники",
+  "name_normalized": "listya_cherniki",
+  "synonyms": "листья черники, лист черники, побеги черники, черничный лист, листья черники обыкновенной, Vaccinium myrtillus leaves, черника лист, фито-чай из черники, черничные побеги",
+  "short_description": "Высушенные листья и молодые побеги кустарника черники обыкновенной, используемые для приготовления фито-чая и в народной медицине. Содержат дубильные вещества, арбутин, неомиртиллин и органические кислоты. Обладают вяжущим, противовоспалительным и сахароснижающим действием.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Листья черники — это высушенные листья и молодые побеги кустарника Vaccinium myrtillus, которые традиционно используются для приготовления фито-чая и в народной медицине многих стран. В отличие от ягод черники, листья содержат уникальный комплекс биологически активных веществ: дубильные вещества (до 18–20%), арбутин (0,47–0,58%), гидрохинон (0,047%), сапонины (2,2–2,8%), органические кислоты (галловую, бензойную, лимонную, яблочную, уксусную, щавелевую, винную), а также гликозид неомиртиллин (до 2%), который является растительным инсулиноподобным веществом.</p><p class=\"ingredient-text\">Основное лечебное свойство листьев черники — сахароснижающее действие, обусловленное наличием неомиртиллина. Кроме того, они обладают вяжущим, противовоспалительным, антисептическим, мочегонным и желчегонным действием. Листья черники применяются при нарушениях обмена веществ (сахарный диабет, метаболический синдром), как вяжущее средство при расстройствах пищеварения, а также как кровоостанавливающее средство при маточных и геморроидальных кровотечениях.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Аромат</strong> — травянистый, слегка вяжущий</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — терпкий, вяжущий, с легкой кислинкой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от светло-зелёного до коричневато-зелёного</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — высушенные листья и побеги</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 2 лет в сухом тёмном месте</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — содержит неомиртиллин (растительный инсулин)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Настой</strong> — 10 г (1 ст.л.) сырья залить 200 мл кипятка, настоять 2 часа, процедить</li><li class=\"ingredient-list-item\"><strong>Отвар</strong> — кипятить 15 минут на водяной бане, настоять 45 минут</li><li class=\"ingredient-list-item\"><strong>Приём</strong> — по 1/4 стакана 3–4 раза в день за 30 минут до еды</li><li class=\"ingredient-list-item\"><strong>Хранение настоя</strong> — в прохладном месте не более 2 суток</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Фито-чай</strong> — как самостоятельный напиток или в составе травяных сборов</li><li class=\"ingredient-list-item\"><strong>Травяные смеси</strong> — с другими лекарственными растениями</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — добавка к чаю для придания терпкости</li><li class=\"ingredient-list-item\"><strong>Настои</strong> — для лечебных целей</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Травы</strong> — ромашка, мята, мелисса, шиповник</li><li class=\"ingredient-list-item\"><strong>Ягоды</strong> — плоды черники, шиповник, брусника</li><li class=\"ingredient-list-item\"><strong>Листья</strong> — брусничный лист, земляничный лист</li><li class=\"ingredient-list-item\"><strong>Мёд</strong> — для смягчения вкуса</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Листья брусники</strong> — схожее мочегонное действие</li><li class=\"ingredient-list-item\"><strong>Листья земляники</strong> — вяжущее действие</li><li class=\"ingredient-list-item\"><strong>Плоды черники</strong> — схожие свойства, но меньше дубильных веществ</li><li class=\"ingredient-list-item\"><strong>Листья ежевики</strong> — вяжущее действие</li></ul>",
+  "category": "Лекарственные травы",
+  "data_source": "usda",
+  "calories": 64,
+  "protein": 1.5,
+  "fat": 0.7,
+  "carbohydrates": 2.5,
+  "water": 89.9,
+  "fiber": 3.8,
+  "vitamin_c": 209.0,
+  "vitamin_b1": 0.02,
+  "vitamin_b2": 0.15,
+  "vitamin_b5": 0.865,
+  "vitamin_b6": 0.34,
+  "vitamin_b9_folate": 17,
+  "vitamin_e": 1.3,
+  "vitamin_b3": 3.0,
+  "beta_carotene": 0.75,
+  "potassium": 51,
+  "calcium": 16,
+  "magnesium": 6,
+  "phosphorus": 13,
+  "sodium": 6,
+  "iron": 6.0,
+  "manganese": 0.14,
+  "boron": 0.16,
+  "semantic_data": {
+    "properties": [
+      "лекарственное растение",
+      "фито-чай",
+      "вяжущее",
+      "противовоспалительное",
+      "сахароснижающее",
+      "мочегонное",
+      "желчегонное",
+      "антисептическое",
+      "кровоостанавливающее",
+      "содержит неомиртиллин",
+      "содержит арбутин",
+      "содержит дубильные вещества"
+    ],
+    "preparations": [
+      "заваривание кипятком",
+      "настаивание 2 часа",
+      "отвар на водяной бане",
+      "процеживание",
+      "хранение в прохладном месте не более 2 суток"
+    ],
+    "cooking_methods": [
+      {"method": "приготовление настоя", "priority": "high"},
+      {"method": "приготовление отвара", "priority": "high"},
+      {"method": "использование в травяных сборах", "priority": "high"},
+      {"method": "добавление в чай", "priority": "medium"}
+    ],
+    "applications": [
+      "фито-чай",
+      "травяные сборы",
+      "лечебные настои",
+      "напитки"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [],
+      "fruits": ["плоды черники", "шиповник", "брусника"],
+      "sauces": [],
+      "herbs": ["ромашка", "мята", "мелисса", "брусничный лист", "земляничный лист"],
+      "spices": []
+    },
+    "substitutes": [
+      {"name": "Листья брусники", "similarity": "high"},
+      {"name": "Листья земляники", "similarity": "high"},
+      {"name": "Плоды черники", "similarity": "medium"},
+      {"name": "Листья ежевики", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "лекарственные травы",
+    "листья черники",
+    "черничный лист",
+    "фито-чай",
+    "сахароснижающее",
+    "вяжущее",
+    "противовоспалительное",
+    "неомиртиллин",
+    "арбутин"
+  ]
+}

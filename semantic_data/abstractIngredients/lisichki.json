@@ -1,0 +1,94 @@
+{
+  "name": "Лисички",
+  "name_normalized": "lisichki",
+  "synonyms": "лисички, лисичка обыкновенная, лисичка настоящая, петушок, Cantharellus cibarius, лисички свежие, лисички лесные, грибы лисички",
+  "short_description": "Съедобные грибы ярко-жёлтого или оранжевого цвета с характерной волнистой шляпкой и плотной мякотью. Обладают приятным фруктовым ароматом и не бывают червивыми. Ценный источник витамина D, калия и меди.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Лисички (Cantharellus cibarius) — это съедобные грибы, которые ценятся за яркий цвет, плотную текстуру и уникальные полезные свойства. Шляпка лисички диаметром от 2 до 12 см имеет волнистый, слегка воронковидный край и плавно переходит в ножку. Мякоть плотная, упругая, с приятным фруктовым ароматом, напоминающим абрикос или персик. Важная особенность лисичек — они практически никогда не бывают червивыми благодаря содержанию хитинманнозы, которая губительно действует на личинки насекомых.</p><p class=\"ingredient-text\">Лисички — один из немногих растительных источников витамина D, необходимого для здоровья костей, иммунитета и нервной системы. Они богаты витаминами A, B1, B2, B3, B5, B6, C, E, PP, аминокислотами, клетчаткой и минералами: калием, медью, цинком, селеном, железом, марганцем и хромом. Полисахаридная фракция лисичек проявляет противораковую активность, а хитинманноза обладает антигельминтными свойствами.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, мясистая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нежный, с лёгкой кислинкой и фруктовыми нотками</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — приятный, фруктовый (напоминает абрикос)</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от бледно-жёлтого до ярко-оранжевого</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — шляпка волнистая, воронковидная, плавно переходит в ножку</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — не бывают червивыми, содержат витамин D</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Очистка</strong> — удалить лесной мусор, срезать загрязнённые места</li><li class=\"ingredient-list-item\"><strong>Мойка</strong> — тщательно промыть, при необходимости замочить на 30 минут</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — крупные грибы нарезать, мелкие оставить целыми</li><li class=\"ingredient-list-item\"><strong>Термическая обработка</strong> — варка 15–20 минут, жарка до золотистой корочки</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — со сметаной, луком, картофелем</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в соусах, с овощами</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — грибной суп, крем-суп</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с сыром, в пирогах</li><li class=\"ingredient-list-item\"><strong>Соление и маринование</strong> — заготовки на зиму</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — грибной соус к пасте, мясу</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, лук, морковь, кабачки</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, говядина, свинина</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, гречка, перловка</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, сливочный, томатный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, тимьян</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, чеснок, лавровый лист</li><li class=\"ingredient-list-item\"><strong>Сыры</strong> — пармезан, чеддер, моцарелла</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Шампиньоны</strong> — более нейтральный вкус</li><li class=\"ingredient-list-item\"><strong>Вешенки</strong> — схожая текстура</li><li class=\"ingredient-list-item\"><strong>Опята</strong> — другие лесные грибы</li><li class=\"ingredient-list-item\"><strong>Белые грибы</strong> — более благородный вкус</li></ul>",
+  "category": "Грибы",
+  "data_source": "usda",
+  "calories": 38,
+  "protein": 1.5,
+  "fat": 0.5,
+  "carbohydrates": 6.9,
+  "fiber": 3.8,
+  "water": 89.9,
+  "vitamin_a": 44.1,
+  "vitamin_b1": 0.12,
+  "vitamin_b2": 0.11,
+  "vitamin_b3": 6.42,
+  "vitamin_b6": 0.9,
+  "vitamin_c": 1.96,
+  "vitamin_b9_folate": 96.83,
+  "vitamin_d": 0.1,
+  "calcium": 16.9,
+  "iron": 5.2,
+  "selenium": 7.2,
+  "potassium": 450,
+  "copper": 0.4,
+  "semantic_data": {
+    "properties": [
+      "гриб",
+      "съедобный",
+      "лесной",
+      "жёлтый",
+      "оранжевый",
+      "плотный",
+      "ароматный",
+      "источник витамина D",
+      "источник калия",
+      "источник меди",
+      "не бывает червивым",
+      "для жарки",
+      "для супа",
+      "для соуса",
+      "для соления"
+    ],
+    "preparations": [
+      "очистка от лесного мусора",
+      "мойка",
+      "нарезка крупных грибов",
+      "варка 15-20 минут",
+      "жарка до золотистой корочки"
+    ],
+    "cooking_methods": [
+      {"method": "жарка", "priority": "high"},
+      {"method": "тушение", "priority": "high"},
+      {"method": "варка (супы)", "priority": "high"},
+      {"method": "запекание", "priority": "medium"},
+      {"method": "соление и маринование", "priority": "medium"},
+      {"method": "приготовление соусов", "priority": "medium"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "супы",
+      "соусы",
+      "закуски",
+      "начинки",
+      "заготовки"
+    ],
+    "pairings": {
+      "protein": ["курица", "говядина", "свинина", "пармезан", "чеддер", "моцарелла"],
+      "vegetables": ["картофель", "лук", "морковь", "кабачки"],
+      "sauces": ["сметанный", "сливочный", "томатный"],
+      "herbs": ["петрушка", "укроп", "тимьян"],
+      "spices": ["черный перец", "чеснок", "лавровый лист"]
+    },
+    "substitutes": [
+      {"name": "Шампиньоны", "similarity": "medium"},
+      {"name": "Вешенки", "similarity": "medium"},
+      {"name": "Опята", "similarity": "medium"},
+      {"name": "Белые грибы", "similarity": "low"}
+    ]
+  },
+  "tags": [
+    "гриб",
+    "лисички",
+    "лисичка обыкновенная",
+    "лесной гриб",
+    "источник витамина D",
+    "жарка",
+    "суп",
+    "соус",
+    "соление"
+  ]
+}

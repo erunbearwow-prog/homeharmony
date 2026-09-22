@@ -1,0 +1,108 @@
+{
+  "name": "Куропатка",
+  "name_normalized": "kuropatka",
+  "synonyms": "куропатка, серая куропатка, белая куропатка, тундряная куропатка, дикая куропатка, лесная куропатка, куропатка вольерная, дичь, пернатая дичь, боровая дичь, Perdix perdix, Lagopus lagopus, Lagopus muta",
+  "short_description": "Мясо дикой или вольерной птицы семейства фазановых с тёмно-розовым цветом, нежной консистенцией и высоким содержанием белка. Отличается низким содержанием жира, богатым минеральным составом и диетическими свойствами. Ценится за деликатный вкус без специфического привкуса дичи.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Куропатка — это птица семейства фазановых, которая относится к боровой дичи. В кулинарии наибольшее распространение получили серая куропатка (Perdix perdix), белая куропатка (Lagopus lagopus) и тундряная куропатка (Lagopus muta). Мясо куропатки отличается от мяса домашней птицы более высоким содержанием белков (22–25%) и меньшим количеством жира (1–3%), а также значительным содержанием ненасыщенных жирных кислот, что способствует его легкому усвоению.</p><p class=\"ingredient-text\">Мясо серой куропатки отличается большей нежностью и отсутствием специфического привкуса, характерного для некоторых видов дичи. Оно имеет тёмно-розовый цвет и довольно нежную консистенцию. Куропатки, выращенные в вольерах, сохраняют диетические свойства, но имеют более высокое содержание жира по сравнению с дикими особями.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, плотная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — деликатный, без специфического привкуса дичи (у серой куропатки)</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — тёмно-розовый</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — низкая (1–3% у дикой, до 20% у вольерной)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — богата железом, витаминами группы B, микроэлементами</li></ul><h2 class=\"ingredient-title\">Виды куропаток</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Серая куропатка (Perdix perdix)</strong> — наиболее нежное мясо, отсутствует специфический привкус</li><li class=\"ingredient-list-item\"><strong>Белая куропатка (Lagopus lagopus)</strong> — мясо тёмно-розового цвета, нежной консистенции</li><li class=\"ingredient-list-item\"><strong>Тундряная куропатка (Lagopus muta)</strong> — обитает в тундре, мясо богато железом и микроэлементами</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Ощипывание</strong> — удалить перья</li><li class=\"ingredient-list-item\"><strong>Опаливание</strong> — обжечь остатки перьев</li><li class=\"ingredient-list-item\"><strong>Потрошение</strong> — удалить внутренности</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — тщательно промыть холодной водой</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — для сочности (в вине, уксусе, масле с травами)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — классический способ, на сковороде или в духовке</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с овощами, в соусе</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — целиком в духовке с травами</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — наваристые бульоны</li><li class=\"ingredient-list-item\"><strong>Паштеты</strong> — из печени и мяса куропатки</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, лук, морковь, капуста</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, сливочный, томатный, винный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, тимьян, розмарин</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, паприка, чеснок, лавровый лист</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, гречка</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Рябчик</strong> — схожая боровая дичь</li><li class=\"ingredient-list-item\"><strong>Тетерев</strong> — более крупная птица</li><li class=\"ingredient-list-item\"><strong>Перепел</strong> — более мелкая птица</li><li class=\"ingredient-list-item\"><strong>Курица</strong> — менее диетическая альтернатива</li></ul>",
+
+  "category": "Мясо и мясные продукты",
+
+  "data_source": "health-diet.ru",
+
+  "calories": 254,
+  "protein": 18.0,
+  "fat": 20.0,
+  "carbohydrates": 0.5,
+
+  "potassium": 342,
+  "calcium": 16,
+  "magnesium": 25,
+  "sodium": 89,
+  "phosphorus": 264,
+  "iron": 6.4,
+  "manganese": 120,
+  "molybdenum": 29.4,
+  "cobalt": 26.6,
+  "copper": 100,
+  "zinc": 1.5,
+  "selenium": 15,
+
+  "vitamin_a": 38.6,
+  "vitamin_b1": 0.123,
+  "vitamin_b2": 0.244,
+  "vitamin_b4": 76.78,
+  "vitamin_b5": 0.319,
+  "vitamin_b6": 0.583,
+  "vitamin_b9_folate": 5.04,
+  "vitamin_b12": 1.042,
+  "vitamin_d": 0.168,
+  "vitamin_e": 0.353,
+  "vitamin_k": 3.5,
+  "vitamin_b3": 7.77,
+  "vitamin_c": 8.6,
+
+  "saturated_fat": 5.0,
+  "cholesterol": 81,
+
+  "semantic_data": {
+    "properties": [
+      "дичь",
+      "боровая дичь",
+      "птица",
+      "высокобелковая",
+      "низкожирная",
+      "диетическая",
+      "источник железа",
+      "источник витаминов B",
+      "нежная",
+      "для жарки",
+      "для тушения",
+      "для запекания"
+    ],
+    "preparations": [
+      "ощипывание",
+      "опаливание",
+      "потрошение",
+      "промывка",
+      "маринование"
+    ],
+    "cooking_methods": [
+      {"method": "жарка", "priority": "high"},
+      {"method": "тушение", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "варка бульона", "priority": "medium"},
+      {"method": "приготовление паштета", "priority": "medium"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "супы",
+      "закуски",
+      "паштеты"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "лук", "морковь", "капуста"],
+      "sauces": ["сметанный", "сливочный", "томатный", "винный"],
+      "herbs": ["петрушка", "укроп", "тимьян", "розмарин"],
+      "spices": ["черный перец", "паприка", "чеснок", "лавровый лист"]
+    },
+    "substitutes": [
+      {"name": "Рябчик", "similarity": "high"},
+      {"name": "Тетерев", "similarity": "medium"},
+      {"name": "Перепел", "similarity": "medium"},
+      {"name": "Курица", "similarity": "low"}
+    ]
+  },
+
+  "tags": [
+    "мясо",
+    "птица",
+    "куропатка",
+    "дичь",
+    "боровая дичь",
+    "диетическое мясо",
+    "источник железа",
+    "для жарки",
+    "для тушения"
+  ]
+}

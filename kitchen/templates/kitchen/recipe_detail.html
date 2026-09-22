@@ -430,18 +430,19 @@
                             <i class="fas fa-link"></i>
                         </button>
                         <!-- Кнопка замены только для ингредиентов, не для продуктов -->
-                        {% if item.food_type == 'ingredient' %}
+                        {% if item.food_type == 'abstract' %}
+
                         <button class="replace-btn text-gray-400 hover:text-blue-600 transition p-1"
-                                data-id="{{ item.ingredient.id }}"
+                                data-id="{{ item.abstract_ingredient.id }}"
                                 data-name="{{ item.food_name }}"
                                 title="Заменить ингредиент">
                             <i class="fas fa-exchange-alt"></i>
                         </button>
                         {% endif %}
                         <button class="info-btn text-gray-400 hover:text-amber-600 transition p-1"
-                                data-id="{% if item.food_type == 'ingredient' %}{{ item.ingredient.id }}{% else %}{{ item.product.id }}{% endif %}"
+                                data-id="{% if item.food_type == 'abstract' %}{{ item.abstract_ingredient.id }}{% else %}{{ item.product.id }}{% endif %}"
                                 data-name="{{ item.food_name }}"
-                                title="Информация">
+                                title="Информация {{item.food_type}}">
                             <i class="fas fa-info-circle"></i>
                         </button>
                     </div>

@@ -1,0 +1,91 @@
+{
+  "name": "Лангет",
+  "name_normalized": "langet",
+  "synonyms": "лангет, лангет из говядины, лангет из телятины, лангет из свинины, лангет из вырезки, лангет из индейки, лангет куриный, languette, язычок",
+  "short_description": "Тонкий продолговатый ломтик мяса (обычно говяжьей или телячьей вырезки), слегка отбитый и обжаренный на сковороде. Название происходит от французского «languette» — «язычок», из-за характерной формы куска. Ресторанное блюдо, требующее быстрого приготовления.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Лангет — это мясное блюдо, которое готовят из тонких продолговатых ломтиков мяса, по форме напоминающих язычок. Слово происходит от французского «languette» (язычок), и действительно, каждый порционный кусок имеет вытянутую, языкообразную форму. Традиционно лангет готовят из говяжьей или телячьей вырезки — самой нежной части туши, которая не требует длительной термической обработки.</p><p class=\"ingredient-text\">В отличие от других мясных блюд, лангет обжаривают быстро, на хорошо разогретой сковороде, часто в панировке из сухарей. Настоящий лангет можно приготовить с кровью или до средней прожарки, но пережаренный лангет становится сухим и жёстким, что считается кулинарной ошибкой. Это блюдо ресторанной кухни, которое требует качественного мяса и точного соблюдения времени приготовления.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, мягкая (при правильном приготовлении)</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — тонкие продолговатые ломтики («язычки») толщиной 15–20 мм</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный мясной, зависит от вида мяса и панировки</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от розового (с кровью) до коричневого (полная прожарка)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — требует быстрого приготовления на сильном огне</li></ul><h2 class=\"ingredient-title\">Виды лангета</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Лангет из говядины</strong> — классический вариант, из вырезки или мякоти</li><li class=\"ingredient-list-item\"><strong>Лангет из телятины</strong> — более нежный и мягкий вариант</li><li class=\"ingredient-list-item\"><strong>Лангет из свинины</strong> — более жирный, доступный вариант</li><li class=\"ingredient-list-item\"><strong>Лангет из индейки</strong> — диетический вариант</li><li class=\"ingredient-list-item\"><strong>Лангет куриный</strong> — самый нежный и быстрый в приготовлении</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — мясо нарезать поперёк волокон на ломтики толщиной 15–20 мм</li><li class=\"ingredient-list-item\"><strong>Отбивание</strong> — слегка отбить для размягчения</li><li class=\"ingredient-list-item\"><strong>Панировка</strong> — обвалять в сухарях (по желанию)</li><li class=\"ingredient-list-item\"><strong>Обжарка</strong> — на разогретой сковороде с маслом, быстро, по 2–3 минуты с каждой стороны</li><li class=\"ingredient-list-item\"><strong>Подача</strong> — сразу после приготовления, с гарниром</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — основной способ приготовления</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке (реже)</li><li class=\"ingredient-list-item\"><strong>Подача</strong> — с картофелем, овощами, рисом, гречкой</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, томатный, сливочный, грибной</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофель (пюре, жареный), гречка, рис, макароны</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — морковь, лук, кабачки, помидоры, перец</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, томатный, сливочный, грибной</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, тимьян</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, паприка, чеснок, лавровый лист</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Эскалоп</strong> — более толстый кусок мяса</li><li class=\"ingredient-list-item\"><strong>Медальон</strong> — круглая форма</li><li class=\"ingredient-list-item\"><strong>Отбивная</strong> — более крупный кусок</li><li class=\"ingredient-list-item\"><strong>Стейк</strong> — более толстый и крупный</li></ul>",
+  "category": "Мясо и мясные продукты",
+  "data_source": "health-diet.ru",
+  "calories": 167,
+  "protein": 15.75,
+  "fat": 11.62,
+  "carbohydrates": 0,
+
+  "vitamin_b1": 0.067,
+  "vitamin_b2": 0.177,
+  "vitamin_b4": 85.37,
+  "vitamin_b5": 0.61,
+  "vitamin_b6": 0.488,
+  "vitamin_b9_folate": 10.244,
+  "vitamin_b12": 3.171,
+  "vitamin_e": 0.488,
+  "vitamin_b7": 3.659,
+  "vitamin_b3": 10,
+
+  "potassium": 298.17,
+  "calcium": 10.87,
+  "magnesium": 26.02,
+  "sodium": 65.79,
+  "phosphorus": 220.1,
+  "sulfur": 280.49,
+  "chlorine": 71.95,
+  "iron": 3.227,
+  "iodine": 8.78,
+  "cobalt": 8.537,
+  "manganese": 0.0427,
+  "copper": 221.95,
+
+  "semantic_data": {
+    "properties": [
+      "мясо",
+      "говядина",
+      "телятина",
+      "вырезка",
+      "ресторанное блюдо",
+      "нежное",
+      "быстрое приготовление",
+      "продолговатая форма",
+      "для жарки",
+      "для гарнира"
+    ],
+    "preparations": [
+      "нарезка поперёк волокон на ломтики 15-20 мм",
+      "отбивание для размягчения",
+      "панировка в сухарях (по желанию)",
+      "обжарка на разогретой сковороде"
+    ],
+    "cooking_methods": [
+      {"method": "жарка на сковороде", "priority": "high"},
+      {"method": "запекание", "priority": "medium"},
+      {"method": "подача с гарниром", "priority": "high"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "ресторанная кухня",
+      "праздничный стол"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["морковь", "лук", "кабачки", "помидоры", "перец"],
+      "sauces": ["сметанный", "томатный", "сливочный", "грибной"],
+      "herbs": ["петрушка", "укроп", "тимьян"],
+      "spices": ["черный перец", "паприка", "чеснок", "лавровый лист"]
+    },
+    "substitutes": [
+      {"name": "Эскалоп", "similarity": "high"},
+      {"name": "Медальон", "similarity": "high"},
+      {"name": "Отбивная", "similarity": "medium"},
+      {"name": "Стейк", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "мясо",
+    "лангет",
+    "говядина",
+    "телятина",
+    "вырезка",
+    "жарка",
+    "ресторанное блюдо",
+    "второе блюдо"
+  ]
+}

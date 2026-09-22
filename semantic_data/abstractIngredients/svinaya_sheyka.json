@@ -1,0 +1,98 @@
+{
+  "name": "Свиная шейка",
+  "name_normalized": "svinaya_sheyka",
+  "synonyms": "свиная шейка, шейка свиная, шея свиная, свинина шейная часть, мясо свиной шеи, шейка для шашлыка, шейка для жарки, шейка для запекания, шейка для тушения, свинина для шашлыка, свинина для гриля",
+  "short_description": "Мясо из шейной части свиной туши с выраженной мраморностью — тонкими прослойками жира, которые придают сочность и насыщенный вкус. Один из самых популярных отрубов для шашлыка, жарки и запекания благодаря нежной текстуре и способности оставаться сочным при термической обработке.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Свиная шейка — это отруб из шейной части свиной туши, который ценится за выраженную мраморность: мясо пронизано тонкими прослойками жира, что делает его особенно сочным и ароматным. Шейка занимает промежуточное положение между жирной грудинкой и постной корейкой. Благодаря высокой жирности и нежной текстуре, она идеально подходит для шашлыка, жарки и запекания — мясо остаётся мягким даже при интенсивной термической обработке.</p><p class=\"ingredient-text\">Шейка может продаваться как целиком, так и порционными кусками. Для шашлыка её обычно нарезают кубиками и маринуют. Для запекания используют крупные куски. Шейка также хорошо подходит для тушения, но из-за жирности её реже используют для бульонов.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — нежная, с выраженной мраморностью и тонкими жировыми прослойками</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный свиной, сочный, с лёгкой сладостью</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от бледно-розового до красноватого</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — крупный кусок или порционная нарезка</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — высокая (варьируется в зависимости от производителя)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — мраморность делает шейку идеальной для шашлыка и гриля</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике при низкой температуре</li><li class=\"ingredient-list-item\"><strong>Зачистка</strong> — удаление лишних плёнок и грубых сухожилий</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — кубиками для шашлыка, крупными кусками для запекания</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — рекомендуется для сочности (с луком, специями, уксусом, кефиром, вином)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Шашлык</strong> — классическое применение, маринованные куски на углях</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде, гриле, во фритюре</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — целиком, порционными кусками, в фольге или рукаве</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в соусах, с овощами</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — горячее и холодное</li><li class=\"ingredient-list-item\"><strong>Фарш</strong> — для котлет и тефтелей</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, картофель, помидоры, перец, баклажаны, кабачки</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, сливочный, барбекю, горчичный, соевый</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — розмарин, тимьян, петрушка, укроп, лавровый лист</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, черный перец, паприка, кориандр, кумин, чили</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, гречка, перловка</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свиная лопатка б/к</strong> — менее жирная, для тушения</li><li class=\"ingredient-list-item\"><strong>Свиная корейка б/к</strong> — более постная</li><li class=\"ingredient-list-item\"><strong>Свиная грудинка</strong> — более жирная</li><li class=\"ingredient-list-item\"><strong>Куриное бедро</strong> — диетическая альтернатива</li></ul>",
+
+  "category": "Мясо и мясные продукты",
+
+  "data_source": "health-diet.ru",
+
+  "calories": 232,
+  "protein": 13.0,
+  "fat": 20.0,
+  "carbohydrates": 0,
+
+  "water": 53.7,
+  "ash": 0.8,
+
+  "vitamin_b1": 0.71,
+  "vitamin_b2": 0.16,
+  "vitamin_b4": 75,
+  "vitamin_b5": 0.7,
+  "vitamin_b6": 0.5,
+  "vitamin_b9_folate": 6.1,
+  "vitamin_b12": 1.1,
+  "vitamin_e": 0.5,
+  "vitamin_b7": 4.5,
+  "vitamin_b3": 1.75,
+
+  "potassium": 190,
+  "calcium": 7,
+  "magnesium": 18,
+  "sodium": 41,
+  "phosphorus": 144,
+  "sulfur": 220,
+  "chlorine": 48.6,
+
+  "semantic_data": {
+    "properties": [
+      "свинина",
+      "шейная часть",
+      "мраморная",
+      "нежная",
+      "сочная",
+      "жирная",
+      "для шашлыка",
+      "для жарки",
+      "для запекания",
+      "для гриля"
+    ],
+    "preparations": [
+      "разморозка в холодильнике",
+      "зачистка от пленок и сухожилий",
+      "нарезка кубиками или крупными кусками",
+      "маринование с луком и специями"
+    ],
+    "cooking_methods": [
+      {"method": "шашлык", "priority": "high"},
+      {"method": "жарка", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "гриль", "priority": "high"},
+      {"method": "тушение", "priority": "medium"},
+      {"method": "копчение", "priority": "medium"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "шашлык",
+      "закуски",
+      "копчености",
+      "фарш"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["лук", "морковь", "картофель", "помидоры", "перец", "баклажаны", "кабачки"],
+      "sauces": ["томатный", "сметанный", "сливочный", "барбекю", "горчичный", "соевый"],
+      "herbs": ["розмарин", "тимьян", "петрушка", "укроп", "лавровый лист"],
+      "spices": ["чеснок", "черный перец", "паприка", "кориандр", "кумин", "чили"]
+    },
+    "substitutes": [
+      {"name": "Свиная лопатка б/к", "similarity": "medium"},
+      {"name": "Свиная корейка б/к", "similarity": "medium"},
+      {"name": "Свиная грудинка", "similarity": "medium"},
+      {"name": "Куриное бедро", "similarity": "low"}
+    ]
+  },
+
+  "tags": [
+    "мясо",
+    "свинина",
+    "шейка",
+    "мраморная",
+    "для шашлыка",
+    "для жарки",
+    "для запекания",
+    "для гриля"
+  ]
+}

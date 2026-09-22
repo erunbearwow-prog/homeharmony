@@ -1,0 +1,107 @@
+{
+  "name": "Кукурузная мука",
+  "name_normalized": "kukuruznaya_muka",
+  "synonyms": "кукурузная мука, мука кукурузная, мука из кукурузы, полента (крупный помол), corn flour, cornmeal, кукурузная мука тонкого помола, кукурузная мука крупного помола, обойная кукурузная мука",
+  "short_description": "Мука из высушенных и измельчённых зёрен кукурузы жёлтого или белого цвета со сладковатым вкусом и характерным кукурузным ароматом. Не содержит глютена. Используется для выпечки, панировки, поленты, мамалыги и безглютеновых блюд.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Кукурузная мука — это продукт переработки зёрен кукурузы, получаемый путём их очистки, сушки и измельчения. В зависимости от сырья мука бывает жёлтой (из желтозерной кукурузы) и белой (из белозерной). Жёлтая мука ценится за характерный цвет и аромат, белая — за более деликатную текстуру.</p><p class=\"ingredient-text\">Кукурузная мука не содержит глютена, что делает её важным продуктом для людей с целиакией и непереносимостью глютена. Однако отсутствие клейковины означает, что тесто из неё не обладает эластичностью и упругостью — поэтому в выпечке кукурузную муку обычно комбинируют с пшеничной или используют специальные безглютеновые смеси.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Цвет</strong> — ярко-жёлтый (из желтозерной кукурузы) или белый (из белозерной)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладковатый, с характерным кукурузным ароматом</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — зависит от помола: тонкий (для выпечки), средний, крупный (для поленты и панировки)</li><li class=\"ingredient-list-item\"><strong>Влагоёмкость</strong> — высокая (130% от собственного веса)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 6-12 месяцев в сухом прохладном месте</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — не содержит глютена, тесто требует добавления связующих компонентов</li></ul><h2 class=\"ingredient-title\">Виды кукурузной муки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тонкого помола</strong> — для блинов, оладий, лепёшек, сдобной выпечки</li><li class=\"ingredient-list-item\"><strong>Среднего помола</strong> — универсальная, для кексов и хлеба</li><li class=\"ingredient-list-item\"><strong>Крупного помола (обойная)</strong> — для панировки, запеканок, поленты, мамалыги</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Просушивание</strong> — хранить в сухом месте, перед использованием просеять</li><li class=\"ingredient-list-item\"><strong>Смешивание</strong> — для выпечки комбинировать с пшеничной мукой (пропорция 1:3 или 1:4)</li><li class=\"ingredient-list-item\"><strong>Добавление жидкости</strong> — увеличить количество жидкости на 20-25% по сравнению с пшеничной мукой</li><li class=\"ingredient-list-item\"><strong>Связующие</strong> — добавлять яйца, крахмал или ксантановую камедь для безглютеновой выпечки</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — хлеб, лепёшки, тортильи, кексы, маффины, блины, оладьи</li><li class=\"ingredient-list-item\"><strong>Полента</strong> — итальянская кукурузная каша</li><li class=\"ingredient-list-item\"><strong>Мамалыга</strong> — молдавское и румынское блюдо</li><li class=\"ingredient-list-item\"><strong>Панировка</strong> — для мяса, рыбы, овощей</li><li class=\"ingredient-list-item\"><strong>Запеканки</strong> — с овощами, мясом, сыром</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — как загуститель (реже)</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Молочные продукты</strong> — молоко, сливки, сметана, сыр, масло</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — курица, свинина, говядина</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, помидоры, перец</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — соль, перец, паприка, чеснок</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, базилик</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Кукурузная крупа (смолотая)</strong> — один и тот же продукт разного помола</li><li class=\"ingredient-list-item\"><strong>Рисовая мука + кукурузный крахмал</strong> — смесь 1:1 для безглютеновой выпечки</li><li class=\"ingredient-list-item\"><strong>Пшеничная мука</strong> — для выпечки, но теряется безглютеновость и кукурузный вкус</li><li class=\"ingredient-list-item\"><strong>Полента</strong> — готовая кукурузная мука крупного помола</li></ul>",
+
+  "category": "Бакалея",
+
+  "data_source": "usda",
+
+  "calories": 375,
+  "protein": 5.59,
+  "fat": 1.39,
+  "carbohydrates": 82.75,
+
+  "fiber": 1.9,
+  "sugar": 0.64,
+  "water": 9.81,
+  "ash": 0.46,
+
+  "vitamin_a": 11,
+  "beta_carotene": 0.097,
+  "vitamin_b1": 0.074,
+  "vitamin_b2": 0.058,
+  "vitamin_b3": 2.656,
+  "vitamin_b5": 0.05,
+  "vitamin_b6": 0.097,
+  "vitamin_b9_folate": 48,
+  "vitamin_c": 0,
+  "vitamin_e": 0.15,
+
+  "calcium": 2,
+  "iron": 0.91,
+  "magnesium": 18,
+  "phosphorus": 60,
+  "potassium": 90,
+  "sodium": 1,
+  "zinc": 0.37,
+  "copper": 0.14,
+  "manganese": 0.06,
+  "selenium": 8,
+
+  "saturated_fat": 0.17,
+  "monounsaturated_fat": 0.36,
+  "polyunsaturated_fat": 0.66,
+
+  "semantic_data": {
+    "properties": [
+      "мука",
+      "кукуруза",
+      "безглютеновая",
+      "жёлтая",
+      "сладковатая",
+      "для выпечки",
+      "для панировки",
+      "для поленты",
+      "для мамалыги"
+    ],
+    "preparations": [
+      "просеивание перед использованием",
+      "смешивание с пшеничной мукой для выпечки",
+      "увеличение жидкости на 20-25%",
+      "добавление связующих для безглютеновой выпечки"
+    ],
+    "cooking_methods": [
+      {"method": "использование в выпечке", "priority": "high"},
+      {"method": "приготовление поленты", "priority": "high"},
+      {"method": "приготовление мамалыги", "priority": "high"},
+      {"method": "использование для панировки", "priority": "high"},
+      {"method": "приготовление запеканок", "priority": "medium"},
+      {"method": "использование как загуститель", "priority": "low"}
+    ],
+    "applications": [
+      "выпечка",
+      "полента",
+      "мамалыга",
+      "панировка",
+      "запеканки",
+      "соусы"
+    ],
+    "pairings": {
+      "protein": ["курица", "свинина", "говядина", "молоко", "сливки", "сыр", "сметана"],
+      "vegetables": ["лук", "морковь", "помидоры", "перец"],
+      "sauces": [],
+      "herbs": ["петрушка", "укроп", "базилик"],
+      "spices": ["соль", "перец", "паприка", "чеснок"]
+    },
+    "substitutes": [
+      {"name": "Кукурузная крупа (смолотая)", "similarity": "high"},
+      {"name": "Рисовая мука + кукурузный крахмал (1:1)", "similarity": "medium"},
+      {"name": "Пшеничная мука", "similarity": "medium"},
+      {"name": "Полента", "similarity": "high"}
+    ]
+  },
+
+  "tags": [
+    "мука",
+    "кукурузная мука",
+    "кукуруза",
+    "безглютеновая",
+    "полента",
+    "мамалыга",
+    "выпечка",
+    "панировка"
+  ]
+}

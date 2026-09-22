@@ -1,0 +1,112 @@
+{
+  "name": "Говядина",
+  "name_normalized": "govyadina",
+  "synonyms": "говядина, мясо говядины, мясо крупного рогатого скота, говяжье мясо, красное мясо, говядина свежая, говядина для тушения, говядина для жарки, говядина для запекания, говядина для супа, говядина для бульона",
+  "short_description": "Мясо крупного рогатого скота, один из самых популярных видов красного мяса. Отличается высоким содержанием полноценного белка, железа и витаминов группы B. Обладает насыщенным вкусом и плотной текстурой, универсально в кулинарии.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Говядина — это мясо крупного рогатого скота, которое является одним из основных видов мяса в кулинарии многих народов мира. В русском языке слово «мясо» традиционно ассоциируется именно с говядиной. Свежее мясо имеет насыщенный красно-бордовый цвет, плотную структуру и чуть сладковатый аромат крови. Чем темнее цвет, тем старше животное, соответственно, мясо более сухое и жёсткое.</p><p class=\"ingredient-text\">Говядина является ценным источником высококачественного белка, необходимого для строительства клеток, особенно мышечных. Сбалансированный состав аминокислот, включающий аргинин и глютамин, а также наличие цинка, селена и железа, ставят говядину в разряд необходимых человеку продуктов. Гемовое железо насыщает кислородом клетки, препятствует развитию железодефицитной анемии, повышает уровень гемоглобина в крови.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, волокнистая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, мясной, с лёгкой сладостью</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от ярко-красного до тёмно-бордового</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — варьируется от 2% до 28% в зависимости от части туши</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — содержит коллаген, который размягчается при длительной термической обработке</li></ul><h2 class=\"ingredient-title\">Сорта и части говядины</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Высший сорт</strong> — филей, грудная и спинная части, огузок, кострец, оковалок (для вторых блюд)</li><li class=\"ingredient-list-item\"><strong>Первый сорт</strong> — пашина, плечевая часть, лопатка (для супов и бульонов)</li><li class=\"ingredient-list-item\"><strong>Второй сорт</strong> — задняя и передняя голяшки, зарез (для студней и холодца)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике при низкой температуре</li><li class=\"ingredient-list-item\"><strong>Зачистка</strong> — удаление плёнок, сухожилий, лишнего жира</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — поперёк волокон для мягкости</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — для размягчения и сочности</li><li class=\"ingredient-list-item\"><strong>Отбивание</strong> — для порционных кусков</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Варка</strong> — бульоны, супы, отварная говядина</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — рагу, гуляш, жаркое</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — стейки, отбивные, медальоны</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — ростбиф, целиком в духовке</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — стейки на углях</li><li class=\"ingredient-list-item\"><strong>Фарш</strong> — котлеты, тефтели, зразы, начинки</li><li class=\"ingredient-list-item\"><strong>Студень</strong> — холодец</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук, свёкла, капуста, помидоры, перец</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, гречка, перловка</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, сливочный, красное вино</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, тимьян, розмарин, лавровый лист</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, паприка, чеснок, кориандр, кумин</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Телятина</strong> — более нежная, менее жирная</li><li class=\"ingredient-list-item\"><strong>Баранина</strong> — более жирная, с характерным вкусом</li><li class=\"ingredient-list-item\"><strong>Свинина</strong> — более жирная, мягкая</li><li class=\"ingredient-list-item\"><strong>Индейка</strong> — диетическая альтернатива</li></ul>",
+
+  "category": "Мясо и мясные продукты",
+
+  "data_source": "usda",
+
+  "calories": 218,
+  "protein": 18.6,
+  "fat": 16.0,
+  "carbohydrates": 0.0,
+
+  "water": 65.4,
+  "ash": 1.0,
+
+  "vitamin_b1": 0.06,
+  "vitamin_b2": 0.2,
+  "vitamin_b3": 4.7,
+  "vitamin_b4": 70,
+  "vitamin_b5": 0.5,
+  "vitamin_b6": 0.4,
+  "vitamin_b9_folate": 8.4,
+  "vitamin_b12": 2.6,
+  "vitamin_e": 0.6,
+  "vitamin_b7": 3,
+
+  "potassium": 325,
+  "calcium": 9,
+  "magnesium": 22,
+  "sodium": 65,
+  "phosphorus": 188,
+  "sulfur": 230,
+  "chlorine": 59,
+  "iron": 2.7,
+  "zinc": 3.24,
+  "copper": 182,
+  "manganese": 0.035,
+  "iodine": 7.2,
+  "chromium": 8.2,
+  "fluorine": 63,
+  "molybdenum": 11.6,
+  "cobalt": 7,
+  "nickel": 8.6,
+
+  "semantic_data": {
+    "properties": [
+      "мясо",
+      "красное мясо",
+      "говядина",
+      "высокобелковый",
+      "источник железа",
+      "источник витаминов B",
+      "универсальный",
+      "для варки",
+      "для тушения",
+      "для жарки",
+      "для запекания"
+    ],
+    "preparations": [
+      "разморозка в холодильнике",
+      "зачистка от плёнок и сухожилий",
+      "нарезка поперёк волокон",
+      "маринование",
+      "отбивание"
+    ],
+    "cooking_methods": [
+      {"method": "варка", "priority": "high"},
+      {"method": "тушение", "priority": "high"},
+      {"method": "жарка", "priority": "high"},
+      {"method": "запекание", "priority": "high"},
+      {"method": "гриль", "priority": "high"},
+      {"method": "приготовление фарша", "priority": "high"},
+      {"method": "приготовление студня", "priority": "medium"}
+    ],
+    "applications": [
+      "супы и бульоны",
+      "вторые блюда",
+      "закуски",
+      "начинки",
+      "холодец"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["картофель", "морковь", "лук", "свёкла", "капуста", "помидоры", "перец"],
+      "sauces": ["томатный", "сметанный", "сливочный", "красное вино"],
+      "herbs": ["петрушка", "укроп", "тимьян", "розмарин", "лавровый лист"],
+      "spices": ["черный перец", "паприка", "чеснок", "кориандр", "кумин"]
+    },
+    "substitutes": [
+      {"name": "Телятина", "similarity": "high"},
+      {"name": "Баранина", "similarity": "medium"},
+      {"name": "Свинина", "similarity": "medium"},
+      {"name": "Индейка", "similarity": "low"}
+    ]
+  },
+
+  "tags": [
+    "мясо",
+    "говядина",
+    "красное мясо",
+    "высокобелковый",
+    "источник железа",
+    "для варки",
+    "для тушения",
+    "для жарки",
+    "для запекания"
+  ]
+}

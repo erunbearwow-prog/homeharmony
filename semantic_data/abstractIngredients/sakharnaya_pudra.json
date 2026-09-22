@@ -1,0 +1,39 @@
+{
+  "name": "Сахарная пудра",
+  "name_normalized": "sakharnaya_pudra",
+  "synonyms": "сахарная пудра, пудра сахарная, сахарная пыль, рафинадная пудра, пудра рафинадная, сахар измельчённый",
+  "short_description": "Мелко измельчённые кристаллы сахарозы размером не более 0,1–0,2 мм. Обладает лёгкой, воздушной текстурой. Используется для украшения выпечки, приготовления глазурей, кремов и десертов. Быстро растворяется и не требует нагревания.",
+  "description": "<h2 class=\"ingredient-title\">Что такое сахароза</h2><p class=\"ingredient-text\">Сахароза (C₁₂H₂₂O₁₁) — это дисахарид, состоящий из одной молекулы глюкозы и одной молекулы фруктозы, соединённых α-1,2-гликозидной связью. Это бесцветное кристаллическое вещество, очень легко растворимое в воде, со сладким вкусом без посторонних привкусов и запахов. Сахароза — основной компонент сахара, который получают из сахарного тростника или сахарной свёклы. При нагревании выше 160°C сахароза плавится, при 190–220°C карамелизуется, образуя характерный коричневый цвет и аромат. Сахароза не является восстанавливающим (редуцирующим) сахаром.</p><h2 class=\"ingredient-title\">Сахарная пудра</h2><p class=\"ingredient-text\">Сахарная пудра — это сахароза, измельчённая до состояния мелкого порошка с размером частиц не более 0,1–0,2 мм. Благодаря мелкому помолу пудра имеет лёгкую, воздушную текстуру, быстро растворяется в жидкостях и не требует нагревания. В кондитерском производстве пудру часто смешивают с небольшим количеством крахмала (кукурузного или рисового) для предотвращения слёживания и комкования.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Размер частиц</strong> — не более 0,1–0,2 мм</li><li class=\"ingredient-list-item\"><strong>Текстура</strong> — лёгкая, воздушная, пылеобразная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — сладкий, без посторонних привкусов</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый</li><li class=\"ingredient-list-item\"><strong>Растворимость</strong> — очень быстро растворяется</li><li class=\"ingredient-list-item\"><strong>Склонность к слёживанию</strong> — может комкаться, часто смешивается с крахмалом</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Украшение</strong> — посыпка выпечки, десертов, тортов</li><li class=\"ingredient-list-item\"><strong>Глазури</strong> — основа для сахарных глазурей и помадок</li><li class=\"ingredient-list-item\"><strong>Кремы</strong> — добавка в сливочные и белковые кремы</li><li class=\"ingredient-list-item\"><strong>Десерты</strong> — безе, меренги, зефир</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — быстрое подслащивание холодных напитков</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сахар-песок (измельчённый в кофемолке)</strong> — домашняя замена</li><li class=\"ingredient-list-item\"><strong>Сахар-рафинад (рафинадная пудра)</strong> — более чистый вариант</li><li class=\"ingredient-list-item\"><strong>Мёд</strong> — для десертов</li></ul>",
+  "category": "Бакалея",
+  "data_source": "usda",
+  "calories": 389,
+  "protein": 0,
+  "fat": 0,
+  "carbohydrates": 99.7,
+  "water": 0.1,
+  "ash": 0.1,
+  "potassium": 3,
+  "calcium": 3,
+  "sodium": 1,
+  "iron": 0.3,
+  "sugar": 99.7,
+  "semantic_data": {
+    "properties": ["подсластитель", "сахароза", "пудра", "измельчённый", "воздушный", "быстрорастворимый", "белый"],
+    "preparations": ["хранение в сухом месте", "просеивание перед использованием", "смешивание с крахмалом для предотвращения слёживания"],
+    "cooking_methods": [
+      {"method": "посыпка десертов", "priority": "high"},
+      {"method": "приготовление глазури", "priority": "high"},
+      {"method": "добавление в кремы", "priority": "high"},
+      {"method": "подслащивание напитков", "priority": "medium"},
+      {"method": "приготовление безе и меренг", "priority": "medium"}
+    ],
+    "applications": ["украшение", "глазури", "кремы", "десерты", "напитки"],
+    "pairings": {"protein": [], "vegetables": [], "fruits": [], "sauces": [], "herbs": [], "spices": ["ваниль", "корица"]},
+    "substitutes": [
+      {"name": "Сахар-песок (измельчённый)", "similarity": "high"},
+      {"name": "Рафинадная пудра", "similarity": "high"},
+      {"name": "Мёд", "similarity": "low"}
+    ]
+  },
+  "tags": ["сахар", "сахарная пудра", "пудра", "сахароза", "подсластитель", "бакалея", "украшение", "глазурь"]
+}

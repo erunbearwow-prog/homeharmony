@@ -1,0 +1,103 @@
+{
+  "name": "Свиное котлетное мясо",
+  "name_normalized": "svinoe_kotletnoe_myaso",
+  "synonyms": "свиное котлетное мясо, котлетное мясо свиное, мясо свиное котлетное, свинина котлетная, свинина для фарша, свиной фарш, мясо для котлет, свинина для котлет, свинина для тефтелей, свинина для фрикаделек, мясной полуфабрикат свиной",
+  "short_description": "Мелкокусковой мясной полуфабрикат из свинины, представляющий собой обрезь мякоти с разных частей туши. Используется преимущественно для приготовления фарша, котлет, тефтелей и фрикаделек. Отличается сочностью и универсальностью в кулинарии.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Свиное котлетное мясо — это мясной полуфабрикат, который представляет собой мелкокусковую обрезь мякоти свинины, взятую с разных частей туши. Обычно это смесь мяса от лопаточной, шейной и других частей, которые не пошли на порционную нарезку. Продукт производится из свиней мясных пород, что обеспечивает невысокое содержание жира и хорошую текстуру готовых изделий.</p><p class=\"ingredient-text\">Котлетное мясо почти не выделяет влагу при термической обработке, поэтому изделия из него отлично сохраняют форму и остаются сочными. Это делает его идеальной основой для домашнего фарша: котлет, тефтелей, фрикаделек, а также для гуляша, первых блюд и жаркого.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мелкокусковая, неоднородная (смесь разных частей)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — свойственный свинине, насыщенный</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от бледно-розового до красноватого</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — мелкие кусочки мякоти, обрезь</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — варьируется в зависимости от производителя (от 12% до 42%)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — не выделяет влагу при готовке, сохраняет текстуру изделий</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике при низкой температуре (если заморожено)</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — при необходимости промыть холодной водой</li><li class=\"ingredient-list-item\"><strong>Измельчение</strong> — перемолоть в мясорубке или блендере для фарша</li><li class=\"ingredient-list-item\"><strong>Добавление</strong> — лук, хлеб, яйцо, специи (для котлет)</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — кубиками для гуляша</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Фарш</strong> — котлеты, тефтели, фрикадельки, зразы</li><li class=\"ingredient-list-item\"><strong>Гуляш</strong> — мелкокусковое тушение с соусом</li><li class=\"ingredient-list-item\"><strong>Первые блюда</strong> — супы, борщи, харчо</li><li class=\"ingredient-list-item\"><strong>Жаркое</strong> — тушение с картофелем и овощами</li><li class=\"ingredient-list-item\"><strong>Макароны по-флотски</strong> — с мясным фаршем</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для пирогов, блинов, пельменей</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, картофель, капуста, помидоры, перец</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, гречка, перловка</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, сливочный, горчичный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, тимьян, розмарин</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, черный перец, паприка, кориандр, кумин</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свиная лопатка б/к</strong> — для самостоятельного измельчения</li><li class=\"ingredient-list-item\"><strong>Свиная шея</strong> — более жирная</li><li class=\"ingredient-list-item\"><strong>Готовый свиной фарш</strong> — если не нужно измельчать самостоятельно</li><li class=\"ingredient-list-item\"><strong>Смесь свинины и говядины</strong> — для более постного фарша</li></ul>",
+
+  "category": "Мясо и мясные продукты",
+
+  "data_source": "health-diet.ru",
+
+  "calories": 266,
+  "protein": 17.0,
+  "fat": 22.0,
+  "carbohydrates": 0.0,
+
+  "vitamin_b1": 0.59,
+  "vitamin_b2": 0.12,
+  "vitamin_b4": 75,
+  "vitamin_b5": 0.7,
+  "vitamin_b6": 0.5,
+  "vitamin_b9_folate": 6.1,
+  "vitamin_b12": 1.1,
+  "vitamin_e": 0.5,
+  "vitamin_b7": 4.5,
+  "vitamin_b3": 2.5,
+
+  "potassium": 170,
+  "calcium": 8,
+  "magnesium": 19,
+  "sodium": 42,
+  "phosphorus": 114,
+  "sulfur": 220,
+  "chlorine": 48.6,
+
+  "iron": 1.3,
+  "iodine": 6.6,
+  "cobalt": 8,
+  "manganese": 0.0285,
+  "copper": 96,
+
+  "semantic_data": {
+    "properties": [
+      "свинина",
+      "котлетное мясо",
+      "полуфабрикат",
+      "мелкокусковой",
+      "для фарша",
+      "для котлет",
+      "для гуляша",
+      "для супов",
+      "универсальный"
+    ],
+    "preparations": [
+      "разморозка в холодильнике",
+      "промывка холодной водой",
+      "измельчение в мясорубке",
+      "добавление лука, хлеба, яйца",
+      "нарезка кубиками для гуляша"
+    ],
+    "cooking_methods": [
+      {"method": "приготовление фарша", "priority": "high"},
+      {"method": "жарка котлет", "priority": "high"},
+      {"method": "тушение гуляша", "priority": "high"},
+      {"method": "варка супов", "priority": "high"},
+      {"method": "приготовление тефтелей", "priority": "high"},
+      {"method": "приготовление начинок", "priority": "medium"}
+    ],
+    "applications": [
+      "котлеты",
+      "тефтели",
+      "фрикадельки",
+      "гуляш",
+      "супы",
+      "макароны по-флотски",
+      "начинки"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["лук", "морковь", "картофель", "капуста", "помидоры", "перец"],
+      "sauces": ["томатный", "сметанный", "сливочный", "горчичный"],
+      "herbs": ["петрушка", "укроп", "тимьян", "розмарин"],
+      "spices": ["чеснок", "черный перец", "паприка", "кориандр", "кумин"]
+    },
+    "substitutes": [
+      {"name": "Свиная лопатка б/к", "similarity": "high"},
+      {"name": "Свиная шея", "similarity": "medium"},
+      {"name": "Готовый свиной фарш", "similarity": "high"},
+      {"name": "Смесь свинины и говядины", "similarity": "medium"}
+    ]
+  },
+
+  "tags": [
+    "мясо",
+    "свинина",
+    "котлетное мясо",
+    "полуфабрикат",
+    "для фарша",
+    "для котлет",
+    "для гуляша",
+    "для супов"
+  ]
+}

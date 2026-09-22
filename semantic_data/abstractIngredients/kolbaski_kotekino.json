@@ -1,0 +1,71 @@
+{
+  "name": "Колбаски Котекино",
+  "name_normalized": "kolbaski_kotekino",
+  "synonyms": "котекино, cotechino, котекино моденский, котекино IGP, итальянская колбаса для варки, свиная колбаса с кожей, колбаса для чечевицы, новогодняя колбаса, колбаса для варки, cotechino di Modena",
+  "short_description": "Традиционная итальянская свиная колбаса из провинции Модена с добавлением свиной кожи (cotenna), которая придаёт фаршу желеобразную текстуру после варки. Жирная, пряная, требует длительной варки. Подаётся с тушёной чечевицей или картофельным пюре.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Котекино (cotechino) — это традиционная итальянская свиная колбаса, которая происходит из провинции Модена в регионе Эмилия-Романья. В 2001 году котекино из Модены получил статус IGP (Защищённое географическое указание). Главная особенность котекино — использование свиной кожи (cotenna), которая после длительной варки превращается в желе, придавая фаршу уникальную мягкую, тающую текстуру.</p><p class=\"ingredient-text\">Котекино — обязательное блюдо на новогоднем столе в Италии. Его подают с тушёной чечевицей, которая символизирует достаток и удачу в новом году, либо с картофельным пюре и зеленью. В отличие от большинства колбас, котекино не жарят, а варят — сырой продукт требует 2–3 часов варки, готовый (precotto) достаточно разогреть.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, желеобразная после варки, тающая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный свиной, пряный, с ароматом специй</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — розово-коричневый, с вкраплениями кожи</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — толстая колбаса в натуральной оболочке, часто в виде «салями»</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — сырой в холодильнике до 2 недель, готовый в вакууме до 3 месяцев</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — обязательное присутствие свиной кожи (cotenna)</li></ul><h2 class=\"ingredient-title\">Состав (типичный по IGP)</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Основное сырьё</strong> — свинина (шея, лопатка, нежирная часть)</li><li class=\"ingredient-list-item\"><strong>Обязательный компонент</strong> — свиная кожа (cotenna)</li><li class=\"ingredient-list-item\"><strong>Дополнительно</strong> — свиной жир, шпик</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — соль, чёрный перец, чеснок, мускатный орех, гвоздика, корица</li><li class=\"ingredient-list-item\"><strong>Оболочка</strong> — натуральная свиная кишка крупного диаметра</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике при 0–4°C</li><li class=\"ingredient-list-item\"><strong>Прокол</strong> — перед варкой обязательно проколоть оболочку вилкой в нескольких местах</li><li class=\"ingredient-list-item\"><strong>Варка сырого котекино</strong> — 2–3 часа в слегка кипящей воде</li><li class=\"ingredient-list-item\"><strong>Разогрев готового (precotto)</strong> — 20–30 минут в горячей (не кипящей) воде или на пару</li><li class=\"ingredient-list-item\"><strong>Подача</strong> — нарезать толстыми ломтями</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Новогодний стол</strong> — с тушёной чечевицей</li><li class=\"ingredient-list-item\"><strong>С картофельным пюре</strong> — традиционная подача</li><li class=\"ingredient-list-item\"><strong>С зелёной чечевицей</strong> — классическое сочетание</li><li class=\"ingredient-list-item\"><strong>В рагу и супах</strong> — как компонент сложных блюд</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — чечевица, картофельное пюре, зелёный горошек</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — горчица, томатный соус, луковый соус</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, капуста</li><li class=\"ingredient-list-item\"><strong>Хлеб</strong> — багет, деревенский хлеб</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — красное вино (Ламбруско), пиво</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Домашняя свиная колбаса с кожей</strong> — по своему рецепту</li><li class=\"ingredient-list-item\"><strong>Зельц или холодец</strong> — схожая желеобразная текстура</li><li class=\"ingredient-list-item\"><strong>Сальсича свежая</strong> — менее жирная, без кожи</li></ul>",
+  "category": "Мясо и мясные продукты",
+  "data_source": "usda",
+  "calories": 288,
+  "protein": 22,
+  "fat": 22,
+  "carbohydrates": 0,
+  "saturated_fat": 9,
+  "sodium": 1200,
+  "cholesterol": 70,
+  "semantic_data": {
+    "properties": [
+      "колбасное изделие",
+      "итальянская кухня",
+      "свинина",
+      "свиная кожа",
+      "для варки",
+      "желеобразная текстура",
+      "новогоднее блюдо",
+      "IGP",
+      "подача с чечевицей"
+    ],
+    "preparations": [
+      "хранение в холодильнике",
+      "прокол оболочки перед варкой",
+      "варка 2-3 часа (сырой)",
+      "разогрев 20-30 минут (готовый)",
+      "подача толстыми ломтями"
+    ],
+    "cooking_methods": [
+      {"method": "варка", "priority": "high"},
+      {"method": "разогрев на пару", "priority": "high"},
+      {"method": "разогрев в горячей воде", "priority": "high"}
+    ],
+    "applications": [
+      "новогодний стол",
+      "вторые блюда",
+      "рагу",
+      "супы"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["лук", "морковь", "капуста"],
+      "fruits": [],
+      "sauces": ["горчица", "томатный соус", "луковый соус"],
+      "herbs": ["петрушка", "тимьян", "лавровый лист"],
+      "spices": ["чёрный перец", "мускатный орех", "гвоздика", "корица"]
+    },
+    "substitutes": [
+      {"name": "Домашняя свиная колбаса с кожей", "similarity": "high"},
+      {"name": "Зельц или холодец", "similarity": "medium"},
+      {"name": "Сальсича свежая", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "мясо",
+    "колбаски",
+    "котекино",
+    "cotechino",
+    "итальянская кухня",
+    "свинина",
+    "для варки",
+    "новогоднее блюдо",
+    "IGP"
+  ]
+}

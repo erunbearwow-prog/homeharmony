@@ -1,0 +1,73 @@
+{
+  "name": "Лимонная кислота",
+  "name_normalized": "limonnaya_kislota",
+  "synonyms": "лимонная кислота, кислота лимонная, пищевая лимонная кислота, E330, лимонка, регулятор кислотности, лимонная кислота моногидрат, citric acid",
+  "short_description": "Белое кристаллическое вещество без запаха, с ярко выраженным кислым вкусом. Органическая кислота, естественно содержащаяся в цитрусовых, ягодах и некоторых овощах. Широко используется в кулинарии как регулятор кислотности, консервант и антиоксидант.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Лимонная кислота (E330) — это органическая трёхосновная карбоновая кислота с химической формулой C₆H₈O₇, которая естественным образом содержится в цитрусовых, ягодах и некоторых овощах. Впервые она была выделена из сока лимона, отсюда и получила своё название. В настоящее время 95% мировой лимонной кислоты производится промышленно методом глубинной ферментации с использованием плесневого гриба Aspergillus niger, что делает её производство дешёвым и экологически чистым. Пищевая лимонная кислота представляет собой бесцветные кристаллы или белый кристаллический порошок без запаха, с сильно кислым вкусом, хорошо растворимый в воде.</p><p class=\"ingredient-text\">В кулинарии лимонная кислота используется как регулятор кислотности, консервант и антиоксидант. Она придаёт блюдам и напиткам кислый вкус, заменяет уксус в консервации, предотвращает потемнение фруктов и овощей, а также улучшает вкусовые качества готовых продуктов. Лимонная кислота широко применяется в производстве напитков, кондитерских изделий, консервов, соусов и майонезов. Рекомендуемая суточная норма потребления для взрослых составляет не более 5 граммов (примерно 1 чайная ложка), с учётом использования в составе блюд и напитков.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Форма</strong> — бесцветные кристаллы или белый кристаллический порошок</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — ярко-кислый, без посторонних привкусов</li><li class=\"ingredient-list-item\"><strong>Запах</strong> — отсутствует</li><li class=\"ingredient-list-item\"><strong>Растворимость</strong> — хорошо растворима в воде</li><li class=\"ingredient-list-item\"><strong>Химическая формула</strong> — C₆H₈O₇</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — не ограничен при соблюдении условий хранения</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — не содержит значимых количеств витаминов и минералов</li></ul><h2 class=\"ingredient-title\">Подготовка и хранение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в сухом месте, в герметичной упаковке (защита от влаги)</li><li class=\"ingredient-list-item\"><strong>Дозировка</strong> — щепотка или 1/4 ч.л. на блюдо (очень концентрированная)</li><li class=\"ingredient-list-item\"><strong>Растворение</strong> — растворить в небольшом количестве воды или жидкости перед добавлением</li><li class=\"ingredient-list-item\"><strong>Замена уксуса</strong> — 1 ч.л. лимонной кислоты ≈ 1 ст.л. 9% уксуса (растворить в воде)</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Консервация</strong> — замена уксуса в маринадах и соленьях</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — лимонады, компоты, соки (придание кислинки)</li><li class=\"ingredient-list-item\"><strong>Кондитерские изделия</strong> — добавка в тесто, кремы, желе</li><li class=\"ingredient-list-item\"><strong>Соусы и майонезы</strong> — регулятор кислотности</li><li class=\"ingredient-list-item\"><strong>Домашние заготовки</strong> — варенья, джемы, консервы</li><li class=\"ingredient-list-item\"><strong>Предотвращение потемнения</strong> — для фруктов и овощей (сбрызгивание раствором)</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Напитки</strong> — вода, соки, лимонады</li><li class=\"ingredient-list-item\"><strong>Консервы</strong> — огурцы, помидоры, капуста</li><li class=\"ingredient-list-item\"><strong>Кондитерские изделия</strong> — тесто, кремы</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — майонез, томатные соусы</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Лимонный сок</strong> — натуральная замена (1 лимон ≈ 1/2 ч.л. кислоты)</li><li class=\"ingredient-list-item\"><strong>Уксус (9%)</strong> — 1 ст.л. уксуса ≈ 1 ч.л. лимонной кислоты</li><li class=\"ingredient-list-item\"><strong>Лаймовый сок</strong> — схожая кислотность</li><li class=\"ingredient-list-item\"><strong>Аскорбиновая кислота</strong> — для консервации (другой вкус)</li></ul>",
+  "category": "Бакалея",
+  "data_source": "usda",
+  "calories": 247,
+  "protein": 0,
+  "fat": 0,
+  "carbohydrates": 99,
+  "water": 0.5,
+  "ash": 0,
+  "semantic_data": {
+    "properties": [
+      "кислота",
+      "органическая",
+      "кристаллическая",
+      "порошок",
+      "регулятор кислотности",
+      "консервант",
+      "антиоксидант",
+      "E330",
+      "для консервации",
+      "для напитков",
+      "для кондитерских изделий"
+    ],
+    "preparations": [
+      "хранение в сухом месте",
+      "растворение в жидкости",
+      "дозировка щепоткой или 1/4 ч.л."
+    ],
+    "cooking_methods": [
+      {"method": "использование в консервации (замена уксуса)", "priority": "high"},
+      {"method": "добавление в напитки", "priority": "high"},
+      {"method": "использование в кондитерских изделиях", "priority": "high"},
+      {"method": "добавление в соусы и майонезы", "priority": "high"},
+      {"method": "предотвращение потемнения фруктов и овощей", "priority": "medium"}
+    ],
+    "applications": [
+      "консервация",
+      "напитки",
+      "кондитерские изделия",
+      "соусы",
+      "домашние заготовки"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": [],
+      "fruits": [],
+      "sauces": [],
+      "herbs": [],
+      "spices": []
+    },
+    "substitutes": [
+      {"name": "Лимонный сок", "similarity": "high"},
+      {"name": "Уксус (9%)", "similarity": "high"},
+      {"name": "Лаймовый сок", "similarity": "high"},
+      {"name": "Аскорбиновая кислота", "similarity": "medium"}
+    ]
+  },
+  "tags": [
+    "бакалея",
+    "лимонная кислота",
+    "E330",
+    "регулятор кислотности",
+    "консервант",
+    "консервация",
+    "напитки",
+    "кондитерские изделия"
+  ]
+}

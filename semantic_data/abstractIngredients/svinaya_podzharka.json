@@ -1,0 +1,103 @@
+{
+  "name": "Свиная поджарка",
+  "name_normalized": "svinaya_podzharka",
+  "synonyms": "свиная поджарка, поджарка из свинины, мясо для поджарки, свинина для жарки, свинина для тушения, свинина для рагу, свинина для гуляша, нарезанная свинина, мясной полуфабрикат, свинина кусочками",
+  "short_description": "Нарезанная небольшими кусочками или брусочками свинина, предназначенная для быстрого приготовления — жарки, тушения и рагу. Обычно используется мякоть окорока, лопатки или корейки. Универсальный полуфабрикат для домашних блюд и столовских рецептов.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Свиная поджарка — это мясной полуфабрикат, представляющий собой нарезанную небольшими кусочками (кубиками или брусочками) свинину. Для поджарки обычно используют мякоть окорока, лопатки, корейки или шеи. Такая нарезка позволяет быстро приготовить блюдо: мясо равномерно прожаривается, а небольшие кусочки легко тушатся до мягкости.</p><p class=\"ingredient-text\">В советское время «поджарка» была популярным блюдом столовых — мясо нарезали узкими полосками, обжаривали с луком и томатной пастой, подавали с гарниром [citation:1]. Сегодня под названием «свиная поджарка» в магазинах продаётся уже нарезанное мясо, готовое к быстрому приготовлению [citation:2][citation:7].</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая (зависит от части туши)</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — выраженный свиной, насыщенный</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от бледно-розового до красноватого</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — кусочки, брусочки, кубики</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — варьируется в зависимости от исходной части туши</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — готова к быстрому приготовлению без дополнительной нарезки</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разморозка</strong> — в холодильнике при низкой температуре (если мясо заморожено)</li><li class=\"ingredient-list-item\"><strong>Обсушивание</strong> — промокнуть бумажным полотенцем перед жаркой</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — рекомендуется для сочности (с травами, чесноком, соевым соусом, кефиром)</li><li class=\"ingredient-list-item\"><strong>Обжарка</strong> — на хорошо разогретой сковороде до румяной корочки</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — с луком, морковью, томатной пастой</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — рагу, гуляш, жаркое</li><li class=\"ingredient-list-item\"><strong>Поджарка по-советски</strong> — мясо с луком и томатом, подаётся с гречкой, рисом или картофелем [citation:1]</li><li class=\"ingredient-list-item\"><strong>Шашлык</strong> — маринованные куски на углях</li><li class=\"ingredient-list-item\"><strong>Фарш</strong> — перемолоть для котлет</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, картофель, помидоры, перец</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, сливочный, соевый</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — гречка, рис, картофель, макароны</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, тимьян, розмарин</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, черный перец, паприка, лавровый лист</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свиная лопатка б/к</strong> — для тушения и рагу</li><li class=\"ingredient-list-item\"><strong>Свиная корейка б/к</strong> — для быстрой жарки</li><li class=\"ingredient-list-item\"><strong>Свиная шея</strong> — для шашлыка и жарки</li><li class=\"ingredient-list-item\"><strong>Куриное бедро</strong> — диетическая альтернатива</li></ul>",
+
+  "category": "Мясо и мясные продукты",
+
+  "data_source": "health-diet.ru",
+
+  "calories": 226,
+  "protein": 16.0,
+  "fat": 18.0,
+  "carbohydrates": 0.0,
+
+  "water": 64.0,
+  "ash": 0.8,
+
+  "vitamin_b1": 0.841,
+  "vitamin_b2": 0.254,
+  "vitamin_b5": 0.73,
+  "vitamin_b6": 0.445,
+  "vitamin_b9_folate": 5,
+  "vitamin_b12": 0.66,
+  "vitamin_c": 0.5,
+  "vitamin_b3": 4.504,
+
+  "potassium": 335,
+  "calcium": 19,
+  "magnesium": 21,
+  "sodium": 55,
+  "phosphorus": 200,
+  "sulfur": 189.5,
+  "iron": 0.86,
+  "manganese": 0.011,
+  "copper": 64,
+  "selenium": 28.4,
+  "zinc": 2.01,
+
+  "saturated_fat": 5.28,
+  "cholesterol": 67,
+
+  "semantic_data": {
+    "properties": [
+      "свинина",
+      "нарезанная",
+      "полуфабрикат",
+      "для жарки",
+      "для тушения",
+      "для рагу",
+      "для гуляша",
+      "для шашлыка",
+      "универсальная"
+    ],
+    "preparations": [
+      "разморозка в холодильнике",
+      "обсушивание бумажным полотенцем",
+      "маринование с травами и специями",
+      "обжарка на разогретой сковороде"
+    ],
+    "cooking_methods": [
+      {"method": "жарка", "priority": "high"},
+      {"method": "тушение", "priority": "high"},
+      {"method": "приготовление рагу", "priority": "high"},
+      {"method": "приготовление гуляша", "priority": "high"},
+      {"method": "шашлык", "priority": "medium"},
+      {"method": "приготовление фарша", "priority": "medium"}
+    ],
+    "applications": [
+      "вторые блюда",
+      "рагу",
+      "гуляш",
+      "жаркое",
+      "шашлык",
+      "фарш"
+    ],
+    "pairings": {
+      "protein": [],
+      "vegetables": ["лук", "морковь", "картофель", "помидоры", "перец"],
+      "sauces": ["томатный", "сметанный", "сливочный", "соевый"],
+      "herbs": ["петрушка", "укроп", "тимьян", "розмарин"],
+      "spices": ["чеснок", "черный перец", "паприка", "лавровый лист"]
+    },
+    "substitutes": [
+      {"name": "Свиная лопатка б/к", "similarity": "high"},
+      {"name": "Свиная корейка б/к", "similarity": "high"},
+      {"name": "Свиная шея", "similarity": "medium"},
+      {"name": "Куриное бедро", "similarity": "low"}
+    ]
+  },
+
+  "tags": [
+    "мясо",
+    "свинина",
+    "поджарка",
+    "нарезанная свинина",
+    "полуфабрикат",
+    "для жарки",
+    "для тушения",
+    "для рагу"
+  ]
+}
