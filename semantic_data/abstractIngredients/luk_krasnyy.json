@@ -1,0 +1,114 @@
+{
+  "name": "Лук красный",
+  "name_normalized": "luk_krasnyy",
+  "synonyms": "красный лук, лук красный, красный репчатый лук, лук фиолетовый, фиолетовый лук, ялтинский красный лук, красный сладкий лук, салатный красный лук, Allium cepa, лук для салатов, лук для маринования",
+  "short_description": "Сорт репчатого лука с фиолетово-красной шелухой и бело-розовой мякотью. Обладает более мягким и сладковатым вкусом, чем жёлтый, и содержит больше антиоксидантов. Идеален для свежих салатов, маринования и гриля.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Красный лук — это сорт репчатого лука (Allium cepa), который легко узнать по характерной фиолетово-красной или пурпурной шелухе. Мякоть у него белая с розовато-фиолетовыми прожилками. По сравнению с жёлтым луком, красный имеет более мягкий, сладковатый и менее острый вкус, за что его ценят в свежих салатах и маринадах. Именно красный лук чаще всего используют для маринования — он сохраняет хрустящую текстуру и приобретает красивый розовый оттенок. Помимо кулинарных качеств, красный лук известен высоким содержанием антоцианов и кверцетина — мощных антиоксидантов, которые придают ему насыщенный цвет и полезные свойства.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — хрустящая, сочная, плотная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — мягкий, сладковатый, с лёгкой остротой</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — фиолетово-красная шелуха, бело-розовая мякоть</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — округлая, овальная</li><li class=\"ingredient-list-item\"><strong>Аромат</strong> — луковый, менее резкий, чем у жёлтого</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — средний, хуже жёлтого (до 3-4 месяцев)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — богат антоцианами и кверцетином</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Очистка</strong> — удаление сухой шелухи</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — тонкими кольцами или полукольцами для салатов</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — холодной водой для удаления лишней остроты</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — в уксусе, лимонном соке или вине</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Салаты</strong> — свежие овощные, греческий, с тунцом</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — закуска к мясу, для бургеров, тако</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — половинками или толстыми кольцами</li><li class=\"ingredient-list-item\"><strong>Бутерброды</strong> — как свежая добавка</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сальса, чатни, релиш</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с другими овощами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — помидоры, огурцы, болгарский перец, авокадо</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — кинза, петрушка, базилик, мята</li><li class=\"ingredient-list-item\"><strong>Сыр</strong> — фета, брынза, козий сыр</li><li class=\"ingredient-list-item\"><strong>Мясо</strong> — говядина, курица, свинина</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — оливковое масло, лимонный сок, бальзамик</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, паприка, орегано</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Лук белый</strong> — более сладкий, менее острый</li><li class=\"ingredient-list-item\"><strong>Лук-шалот</strong> — более деликатный вкус</li><li class=\"ingredient-list-item\"><strong>Лук жёлтый</strong> — более острый, требует обработки</li><li class=\"ingredient-list-item\"><strong>Лук-порей</strong> — другой вкус, для супов</li></ul>",
+  "category": "Овощи",
+  "calories": 41,
+  "protein": 1.4,
+  "fat": 0.2,
+  "carbohydrates": 8.2,
+  "water": 86.0,
+  "ash": 0.9,
+  "fiber": 3.0,
+  "sugar": 4.8,
+  "sodium": 4,
+  "potassium": 175,
+  "calcium": 31,
+  "magnesium": 14,
+  "phosphorus": 58,
+  "iron": 0.8,
+  "zinc": 0.85,
+  "copper": 0.09,
+  "manganese": 0.23,
+  "selenium": 0.5,
+  "vitamin_b1": 0.05,
+  "vitamin_b2": 0.02,
+  "vitamin_b3": 0.2,
+  "vitamin_b5": 0.1,
+  "vitamin_b6": 0.12,
+  "vitamin_b9_folate": 9,
+  "vitamin_c": 10.0,
+  "vitamin_e": 0.2,
+  "semantic_data": {
+    "properties": [
+      "сладковатый",
+      "мягкий вкус",
+      "менее острый",
+      "хрустящий",
+      "сочный",
+      "фиолетовый",
+      "богат антоцианами",
+      "богат кверцетином",
+      "антиоксиданты",
+      "низкокалорийный",
+      "салатный сорт"
+    ],
+    "preparations": [
+      "очистка от сухой шелухи",
+      "нарезка тонкими кольцами или полукольцами",
+      "промывка холодной водой",
+      "маринование в уксусе или лимонном соке"
+    ],
+    "cooking_methods": [
+      {
+        "method": "сырой (в салатах)",
+        "priority": "high"
+      },
+      {
+        "method": "маринование",
+        "priority": "high"
+      },
+      {
+        "method": "гриль",
+        "priority": "medium"
+      },
+      {
+        "method": "запекание",
+        "priority": "medium"
+      },
+      {
+        "method": "жарка (пассерование)",
+        "priority": "low"
+      }
+    ],
+    "applications": [
+      "салаты (свежие овощные)",
+      "маринованные закуски",
+      "бургеры и сэндвичи",
+      "гриль",
+      "соусы (сальса, чатни)",
+      "запечённые овощи"
+    ],
+    "pairings": {
+      "protein": ["говядина", "курица", "свинина", "сыр (фета, брынза)"],
+      "vegetables": ["помидоры", "огурцы", "болгарский перец", "авокадо"],
+      "sauces": ["оливковое масло", "лимонный сок", "бальзамический уксус"],
+      "herbs": ["кинза", "петрушка", "базилик", "мята"],
+      "spices": ["чёрный перец", "паприка", "орегано"]
+    },
+    "substitutes": [
+      {"name": "Лук белый", "similarity": "high"},
+      {"name": "Лук-шалот", "similarity": "high"},
+      {"name": "Лук жёлтый", "similarity": "medium"},
+      {"name": "Лук-порей", "similarity": "low"}
+    ]
+  },
+  "data_source": "health-diet.ru",
+  "tags": [
+    "овощ",
+    "лук",
+    "лук репчатый",
+    "красный лук",
+    "фиолетовый лук",
+    "салатный лук",
+    "сладкий лук",
+    "низкокалорийный",
+    "антиоксиданты",
+    "антоцианы",
+    "кверцетин",
+    "салаты",
+    "маринады"
+  ]
+}
