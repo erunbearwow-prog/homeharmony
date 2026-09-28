@@ -657,7 +657,7 @@ class RecipeAdmin(admin.ModelAdmin):
             return 'Сохраните рецепт, чтобы увидеть расчёт'
 
         if not obj.nutrition_calculated_at:
-            return format_html(
+            return mark_safe(
                 '<div style="padding: 10px; background: #fff3cd; border-radius: 6px;">'
                 '⚠️ КБЖУ ещё не рассчитывалось. Используйте действие «Пересчитать КБЖУ» в списке рецептов.'
                 '</div>'
@@ -707,12 +707,17 @@ class RecipeAdmin(admin.ModelAdmin):
     def components_list(self, obj):
         components = obj.components.all()
         if components:
-            return format_html(
-                '<br>'.join([
-                    f'<a href="{reverse("admin:kitchen_recipe_change", args=[c.id])}">{c.title}</a>'
-                    for c in components
-                ])
-            )
+            links = [
+                format_html(
+                    '<a href="{}">{}</a>',
+                    reverse('admin:kitchen_recipe_change', args=[c.id]),
+                    c.title,
+                )
+                for c in components
+            ]
+            return format_html('<br>'.join(['{}'] * len(links)), *links)
+            # или проще:
+            # return mark_safe('<br>'.join(str(link) for link in links))
         return '—'
 
     # ==================== Действия ====================

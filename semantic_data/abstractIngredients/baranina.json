@@ -1,102 +1,96 @@
 {
   "name": "Баранина",
   "name_normalized": "baranina",
-  "synonyms": "",
-  "short_description": "Мясо овцы или барана, один из древнейших видов мяса в кулинарии. Имеет насыщенный, характерный аромат и сочную текстуру. Ценится за вкус, богатство коллагеном и использование в кавказской, ближневосточной и средиземноморской кухнях.",
-  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Баранина — это мясо овцы или барана, которое отличается насыщенным, характерным ароматом, плотной текстурой и высоким содержанием жира. Цвет мяса варьируется от светло-красного до тёмно-красного, в зависимости от возраста животного. Мясо молодого ягнёнка (до 1 года) более нежное, светлое и имеет мягкий вкус. Баранина взрослых животных обладает более плотной текстурой, выраженным ароматом и требует длительного приготовления. Благодаря высокому содержанию коллагена, баранина идеально подходит для медленного тушения, варки и запекания.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, сочная, с жировыми прослойками</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, характерный</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от розового до тёмно-красного</li><li class=\"ingredient-list-item\"><strong>Белки</strong> — до 18%</li><li class=\"ingredient-list-item\"><strong>Коллаген</strong> — высокое содержание</li><li class=\"ingredient-list-item\"><strong>Классические блюда</strong> — шашлык, шурпа, плов, люля-кебаб, рагу</li></ul><h2 class=\"ingredient-title\">Способы приготовления</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с овощами, в казане</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — для супов и бульонов</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке с овощами</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — шашлык, стейки на кости</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде (молодое мясо)</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Специи</strong> — зира, кориандр, розмарин, мята, тимьян, чеснок</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, картофель, томаты, баклажаны</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — мятный, ткемали, гранатовый, чесночный</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, булгур, кус-кус</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говядина</strong> — другой вкус, менее жирная</li><li class=\"ingredient-list-item\"><strong>Свинина</strong> — жирнее, мягче</li><li class=\"ingredient-list-item\"><strong>Козлятина</strong> — более плотная</li></ul><h2 class=\"ingredient-title\">Полезные ссылки</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/shashlyk-iz-baraniny/'>Шашлык из баранины</a></li><li class=\"ingredient-list-item\"><a href='/knowledge/articles/cooking/shurpa/'>Шурпа из баранины</a></li></ul>",
-  "category": "Баранина",
+  "synonyms": "баранина, мясо барана, мясо баранины, бараний, баранина свежая, баранина охлажденная, баранина охлаждённая, баранина замороженная, lamb, mutton, mutton meat",
+  "short_description": "Мясо барана или овцы. Тёмно-красный цвет, плотная текстура, насыщенный вкус. Богато белком, железом, цинком и витамином B12. Основа для множества блюд: от плова до запекания.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Баранина — это мясо барана или овцы. Оно имеет тёмно-красный цвет, плотную текстуру и насыщенный, слегка сладковатый вкус с характерным «бараним» ароматом. В кулинарной традиции многих народов баранина занимает одно из главных мест: её запекают, тушат, жарят, варят и используют для приготовления самых разных блюд — от плова и шашлыка до супов и рагу.</p><p class=\"ingredient-text\">Баранина — питательное мясо. Оно богато полноценным белком, железом, цинком, витамином B12 и другими полезными веществами. По содержанию железа и цинка баранина превосходит многие виды мяса. Бараний жир содержит меньше холестерина, чем говяжий и свиной, а по усвояемости баранина считается одним из самых лёгких видов мяса.</p><p class=\"ingredient-text\">В зависимости от возраста животного различают: <strong>ягнятину</strong> (мясо молодых ягнят до 1 года — самое нежное и светлое), <strong>молодую баранину</strong> (мясо овец до 2 лет) и <strong>баранину</strong> (мясо взрослых животных — более тёмное и с выраженным вкусом). Для домашней кухни чаще всего используется молодая баранина или ягнятина.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, с прослойками жира</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, слегка сладковатый, с характерным бараним оттенком</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от светло-красного (ягнятина) до тёмно-красного (взрослая баранина)</li><li class=\"ingredient-list-item\"><strong>Запах</strong> — характерный, бараний</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 1–2 суток в холодильнике, до 6 месяцев в морозильнике</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — универсальное мясо; из него готовят отрубы на любой вкус</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Разделка</strong> — на отрубы: лопатка, нога, окорок, корейка, шейка, грудинка, рёбра</li><li class=\"ingredient-list-item\"><strong>Зачистка</strong> — удаление плёнок, лишнего жира, сухожилий</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — промыть холодной водой и обсушить</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — в травах, чесноке, вине, кефире для смягчения вкуса</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Запекание</strong> — нога, окорок, лопатка целиком или порционно</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — шейка, грудинка, лопатка с овощами и специями</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — корейка, каре, стейки, котлеты</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — для наваристых бульонов и супов</li><li class=\"ingredient-list-item\"><strong>Плов</strong> — классика на основе баранины</li><li class=\"ingredient-list-item\"><strong>Шашлык</strong> — из маринованной баранины на гриле</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук, чеснок, кабачки, баклажаны, помидоры</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, булгур, кускус, перловка</li><li class=\"ingredient-list-item\"><strong>Травы</strong> — розмарин, тимьян, орегано, петрушка, кинза, мята</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — кумин, кориандр, паприка, чёрный перец, куркума, сумах</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, винный, чесночный, йогуртовый, ткемали, наршараб</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говядина</strong> — схожая текстура, другой вкус</li><li class=\"ingredient-list-item\"><strong>Телятина</strong> — более нежная, менее выраженный вкус</li><li class=\"ingredient-list-item\"><strong>Козлятина</strong> — схожий вкус, менее жирная</li><li class=\"ingredient-list-item\"><strong>Мясо индейки</strong> — диетический вариант</li></ul>",
+  "category": "Мясо, птица, субпродукты",
+  "calories": 209,
+  "protein": 18.0,
+  "fat": 15.0,
+  "carbohydrates": 0,
+  "water": 66.0,
+  "ash": 1.0,
+  "cholesterol": 75,
+  "saturated_fat": 6.5,
+  "monounsaturated_fat": 6.0,
+  "polyunsaturated_fat": 1.5,
+  "sodium": 65,
+  "potassium": 280,
+  "calcium": 12,
+  "magnesium": 22,
+  "phosphorus": 170,
+  "iron": 1.8,
+  "zinc": 3.0,
+  "copper": 0.1,
+  "manganese": 0.02,
+  "selenium": 20,
+  "vitamin_b1": 0.1,
+  "vitamin_b2": 0.2,
+  "vitamin_b3": 4.5,
+  "vitamin_b5": 0.7,
+  "vitamin_b6": 0.2,
+  "vitamin_b9_folate": 20,
+  "vitamin_b12": 2.0,
+  "vitamin_d": 0.1,
+  "vitamin_e": 0.3,
   "semantic_data": {
     "properties": [
       "мясо",
-      "сочный",
-      "плотный",
-      "жирный",
-      "коллаген",
-      "характерный_вкус"
+      "баранина",
+      "высокое содержание белка",
+      "богато железом",
+      "богато цинком",
+      "источник витамина B12",
+      "насыщенный вкус",
+      "плотная текстура",
+      "универсальное"
     ],
     "preparations": [
-      "разделка",
-      "удаление_жира",
+      "разделка на отрубы",
+      "зачистка от плёнок",
+      "промывка и обсушивание",
       "маринование"
     ],
     "cooking_methods": [
-      {
-        "method": "тушение",
-        "priority": "high"
-      },
-      {
-        "method": "варка",
-        "priority": "high"
-      },
-      {
-        "method": "запекание",
-        "priority": "high"
-      },
-      {
-        "method": "гриль",
-        "priority": "high"
-      },
-      {
-        "method": "жарка",
-        "priority": "medium"
-      }
+      {"method": "запекание", "priority": "high"},
+      {"method": "тушение", "priority": "high"},
+      {"method": "жарка", "priority": "high"},
+      {"method": "варка бульона", "priority": "medium"},
+      {"method": "гриль", "priority": "medium"}
     ],
     "applications": [
-      "шашлык",
+      "запечённая баранина",
+      "тушёная баранина",
+      "жареная баранина",
+      "бульоны и супы",
       "плов",
-      "супы",
-      "рагу",
-      "запеканки"
+      "шашлык"
     ],
     "pairings": {
       "protein": [],
-      "vegetables": [
-        "лук",
-        "морковь",
-        "картофель",
-        "томаты",
-        "баклажаны"
-      ],
-      "spices": [
-        "зира",
-        "кориандр",
-        "розмарин",
-        "мята",
-        "тимьян",
-        "чеснок"
-      ],
-      "sauces": [
-        "мятный",
-        "ткемали",
-        "гранатовый",
-        "чесночный"
-      ],
-      "grains": [
-        "рис",
-        "булгур",
-        "кус-кус"
-      ]
+      "vegetables": ["картофель", "морковь", "лук", "чеснок", "кабачки", "баклажаны", "помидоры"],
+      "sauces": ["томатный соус", "винный соус", "чесночный соус", "йогуртовый соус", "ткемали", "наршараб"],
+      "herbs": ["розмарин", "тимьян", "орегано", "петрушка", "кинза", "мята"],
+      "spices": ["кумин", "кориандр", "паприка", "чёрный перец", "куркума", "сумах"]
     },
     "substitutes": [
-      {
-        "name": "Говядина",
-        "similarity": "medium"
-      },
-      {
-        "name": "Свинина",
-        "similarity": "medium"
-      },
-      {
-        "name": "Козлятина",
-        "similarity": "high"
-      }
+      {"name": "Говядина", "similarity": "high"},
+      {"name": "Телятина", "similarity": "high"},
+      {"name": "Козлятина", "similarity": "high"},
+      {"name": "Мясо индейки", "similarity": "low"}
     ]
   },
+  "data_source": "gost_34200_2017",
+  "data_source_reference": "ГОСТ 34200-2017. Мясо и субпродукты. Баранина и козлятина. Торговые и производственные отрубы.",
   "tags": [
     "мясо",
     "баранина",
-    "шашлык",
-    "плов",
-    "тушение"
+    "основное сырьё",
+    "универсальное",
+    "для запекания",
+    "для тушения",
+    "для жарки",
+    "для бульона"
   ]
 }
