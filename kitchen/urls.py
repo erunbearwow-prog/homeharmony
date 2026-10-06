@@ -1,5 +1,5 @@
 from django.urls import path
-from kitchen import views
+from . import views  # ✅ лучше относительный импорт, чтобы избежать части проблем с путями
 
 app_name = 'kitchen'
 
@@ -12,7 +12,7 @@ urlpatterns = [
     path('api/ingredient/<int:pk>/', views.api_ingredient_detail, name='api_ingredient_detail'),
     path('api/recipes/', views.api_recipe_list, name='api_recipe_list'),
     path('api/recipes/<int:pk>/', views.api_recipe_detail, name='api_recipe_detail'),
-path('api/recipes/<int:pk>/nutrition/', views.api_recipe_nutrition, name='api_recipe_nutrition'),
+    path('api/recipes/<int:pk>/nutrition/', views.api_recipe_nutrition, name='api_recipe_nutrition'),
     path('api/recipes/suitable/', views.api_recipe_suitable, name='api_recipe_suitable'),
     path('api/ingredients/', views.api_ingredient_list, name='api_ingredient_list'),
     path('api/cuisines/', views.api_cuisine_list, name='api_cuisine_list'),
@@ -41,21 +41,26 @@ path('api/recipes/<int:pk>/nutrition/', views.api_recipe_nutrition, name='api_re
     path('ingredients/', views.ingredient_list, name='ingredient_list'),
     path('ingredient/<int:pk>/', views.ingredient_detail, name='ingredient_detail'),
     path('ingredient/<slug:slug>/', views.ingredient_detail_by_slug, name='ingredient_detail_by_slug'),
+
     path('utensils/', views.utensil_list, name='utensil_list'),
-    path('utensil/<int:utensil_id>/', views.utensil_detail, name='utensil_detail'),
+
+    # ЕДИНСТВЕННЫЙ путь для карточки утвари — по коду
+    # ✅ name='utensil_detail' — теперь reverse('kitchen:utensil_detail') будет работать
+    path('utensils/<str:code>/', views.UtensilDetailView.as_view(), name='utensil_detail'),
+
     path('methods/', views.cooking_method_list, name='cooking_method_list'),
     path('method/<int:method_id>/', views.cooking_method_detail, name='cooking_method_detail'),
     path('preparations/', views.preparation_list, name='preparation_list'),
     path('preparation/<int:preparation_id>/', views.preparation_detail, name='preparation_detail'),
     path('cuisine/<slug:slug>/', views.cuisine_detail, name='cuisine_detail'),
-# ТТК
+
+    # ТТК
     path('ttk/', views.ttk_list, name='ttk_list'),
     path('ttk/<int:pk>/', views.ttk_detail, name='ttk_detail'),
 
-# Сохраненные рецепты
+    # Сохранённые рецепты
     path('api/save-recipe/', views.save_recipe_variant, name='save_recipe_variant'),
     path('api/saved-recipes/', views.get_saved_recipes, name='get_saved_recipes'),
     path('api/delete-saved-recipe/', views.delete_saved_recipe, name='delete_saved_recipe'),
     path('saved-recipes/', views.saved_recipes_page, name='saved_recipes'),
-
 ]

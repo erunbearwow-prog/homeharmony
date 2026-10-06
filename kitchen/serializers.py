@@ -7,6 +7,9 @@ from .models import (
     AbstractIngredient, BrandedIngredient
 )
 
+from kitchen.utils import build_utensil_url_map, render_description
+
+
 
 class CuisineSerializer(serializers.ModelSerializer):
     """Сериализатор для кухонь мира"""

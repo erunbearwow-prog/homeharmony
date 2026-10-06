@@ -1,35 +1,57 @@
 from .models import (
-    CookingMethod, HomeIngredient,
-    RecommendedUtensil, Recipe,
-    IngredientPreparation, RecipeStep,
-    Cuisine, CookingMethodSubstitution,
-    UtensilSubstitution, IngredientCategory, HomeIngredient,
-    BrandedIngredient, AbstractIngredient,
-    Product,                    # <-- добавить
-    RecipeFoodItem,             # <-- добавить
-    ProfessionalIngredient      # <-- добавить
+    CookingMethod,
+    RecommendedUtensil,
+    Recipe,
+    IngredientPreparation,
+    RecipeStep,
+    Cuisine,
+    CookingMethodSubstitution,
+    UtensilSubstitution,
+    IngredientCategory,
+    BrandedIngredient,
+    AbstractIngredient,
+    Product,
+    RecipeFoodItem,
+    ProfessionalIngredient,
+    HomeIngredient,  # ✅ оставили один раз, в конце — так чище
 )
+
 from constants.nutrients import NUTRIENTS_MAP, CATEGORY_NAMES, CATEGORY_ORDER
-from django.db.models import Count
-from django.shortcuts import render
+
+from django.db.models import Count, Q
+from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator
-from rest_framework import viewsets, status
-from rest_framework.decorators import action
-from rest_framework.response import Response
-from django.db.models import Q
-import json
+from django.utils import timezone
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_http_methods
 from django.http import JsonResponse
-from django.shortcuts import get_object_or_404
-from django.utils import timezone
+
+from rest_framework import viewsets, status
+from rest_framework.decorators import action
+from rest_framework.response import Response
+
+import json
+
+from django.views.generic import DetailView
+
+# ✅ относительный импорт внутри приложения
+from .utils import (
+    build_utensil_url_map,
+    build_method_url_map,
+    render_description,
+    render_utensil_links,
+)
 
 from .serializers import (
-    RecipeListSerializer, RecipeDetailSerializer,
-    IngredientSerializer, CuisineSerializer,
-    IngredientCategorySerializer, AbstractIngredientSerializer,
-    BrandedIngredientSerializer
+    RecipeListSerializer,
+    RecipeDetailSerializer,
+    IngredientSerializer,
+    CuisineSerializer,
+    IngredientCategorySerializer,
+    AbstractIngredientSerializer,
+    BrandedIngredientSerializer,
 )
+
 
 
 def home(request):
@@ -1246,6 +1268,42 @@ def utensil_detail(request, utensil_id):
     return render(request, 'kitchen/utensil_detail.html', context)
 
 
+def get_method_context(methods):
+    """Готовит список (метод, отрендеренное описание, ссылка) для шаблонов."""
+    utensil_map = build_utensil_url_map()
+    method_map = build_method_url_map()
+    result = []
+    for m in methods:
+        result.append({
+            'obj': m,
+            'name': m.name,
+            'description': render_description(m, utensil_map, method_map),
+            'url': method_map.get(getattr(m, 'code', None) and m.code.strip().casefold()) or '',
+        })
+    return result
+
+
+class UtensilDetailView(DetailView):
+    model = RecommendedUtensil
+    context_object_name = 'utensil'
+    slug_field = 'code'
+    slug_url_kwarg = 'code'
+    template_name = 'kitchen/utensil_detail.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        utensil_map = build_utensil_url_map()
+
+        # альтернатива — рендерим маркеры в ссылки
+        context['alternative'] = render_utensil_links(
+            self.object.alternative or '', utensil_map
+        )
+
+        methods_qs = self.object.cooking_methods.order_by('name')
+        context['methods'] = get_method_context(methods_qs)
+        return context
+
+
 # ======================= МЕТОДЫ ПРИГОТОВЛЕНИЯ =======================
 
 def cooking_method_list(request):
@@ -1271,26 +1329,16 @@ def cooking_method_list(request):
 
 
 def cooking_method_detail(request, method_id):
-    """Детальная страница метода приготовления"""
-    method = get_object_or_404(CookingMethod, id=method_id)
-
-    # Рецепты, где используется этот метод
-    recipes = Recipe.objects.filter(
-        steps__cooking_method=method
-    ).distinct().order_by('-created_at')
-
-    # Замены для этого метода
-    substitutions = method.substitutions.all()
-
-    paginator = Paginator(recipes, 12)
-    page_number = request.GET.get('page')
-    page_obj = paginator.get_page(page_number)
+    method = get_object_or_404(CookingMethod, pk=method_id)
+    # Тут можно аналогично подготовить описание с рендером, если нужно
+    from .utils import render_description, build_utensil_url_map, build_method_url_map
+    utensil_map = build_utensil_url_map()
+    method_map = build_method_url_map()
+    description = render_description(method, utensil_map, method_map)
 
     context = {
         'method': method,
-        'page_obj': page_obj,
-        'substitutions': substitutions,
-        'title': method.name,
+        'description': description,
     }
     return render(request, 'kitchen/cooking_method_detail.html', context)
 

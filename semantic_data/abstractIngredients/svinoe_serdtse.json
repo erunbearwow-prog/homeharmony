@@ -1,23 +1,32 @@
 {
   "name": "Свиное сердце",
   "name_normalized": "svinoe_serdtse",
-  "synonyms": "свиное сердце, сердце свиное, свиное сердечко, субпродукт свиной, сердце свиньи, свиное сердце охлажденное, свиное сердце для тушения, свиное сердце для паштета, свиное сердце для начинки",
+  "synonyms": "свиное сердце, сердце свиное, свиное сердечко, субпродукт свиной, сердце свиньи, свиное сердце охлажденное, свиное сердце для тушения, свиное сердце для паштета, свиное сердце для начинки, pork heart",
   "short_description": "Плотный, питательный субпродукт тёмно-красного цвета с высоким содержанием белка, железа и витаминов группы B. Отличается низкой жирностью и нежным, слегка сладковатым вкусом. Требует предварительного вымачивания и длительной термической обработки.",
-  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Свиное сердце — это субпродукт, который по пищевой ценности белков практически не уступает мясу, но содержит значительно меньше жира. В 100 г сырого свиного сердца около 17 г полноценного белка и всего 4–5 г жира, что делает его привлекательным для диетического и спортивного питания. Свиное сердце богато железом, витаминами группы B (особенно B2, B3, B6, B12), фосфором, калием и цинком.</p><p class=\"ingredient-text\">Мясо сердца имеет плотную, упругую текстуру и тёмно-красный цвет. Вкус — насыщенный, слегка сладковатый, без резкого специфического запаха, характерного для некоторых других субпродуктов. Сердце требует тщательной подготовки: его необходимо вымочить в холодной воде для удаления остатков крови, зачистить от плёнок и сосудов, а затем готовить длительное время — тушить, варить или запекать.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, волокнистая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, слегка сладковатый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — тёмно-красный, бордовый</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — низкая (4–5%)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — требует вымачивания и длительной термической обработки</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Зачистка</strong> — удалить плёнки, сосуды и сгустки крови</li><li class=\"ingredient-list-item\"><strong>Вымачивание</strong> — в холодной воде 2–4 часа (можно с добавлением уксуса или молока)</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — ломтиками или кубиками</li><li class=\"ingredient-list-item\"><strong>Термическая обработка</strong> — варка 1,5–2 часа, тушение 1–1,5 часа</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в сметанном или томатном соусе, с овощами</li><li class=\"ingredient-list-item\"><strong>Паштеты</strong> — домашний печёночно-сердечный паштет</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для пирогов, блинов, пирожков</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — тёплые салаты с сердцем</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — в составе бульонов и супов</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с овощами и специями</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, картофель, капуста, помидоры, перец</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, томатный, сливочный, горчичный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, тимьян, лавровый лист</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, черный перец, паприка, кориандр</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — гречка, рис, перловка</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжье сердце</strong> — схожая текстура, более крупное</li><li class=\"ingredient-list-item\"><strong>Куриное сердце</strong> — более мелкое, нежное</li><li class=\"ingredient-list-item\"><strong>Свиная печень</strong> — другой вкус, более рыхлая текстура</li><li class=\"ingredient-list-item\"><strong>Говяжий язык</strong> — более нежный, жирный</li></ul>",
-
-  "category": "Мясо и мясные продукты",
-
-  "data_source": "usda",
-
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Свиное сердце — это субпродукт, который по пищевой ценности белков практически не уступает мясу, но содержит значительно меньше жира. В 100 г сырого свиного сердца около 17 г полноценного белка и всего 4–5 г жира, что делает его привлекательным для диетического и спортивного питания. Свиное сердце богато железом, витаминами группы B (особенно B2, B3, B6, B12), фосфором, калием и цинком.</p><p class=\"ingredient-text\">Мясо сердца имеет плотную, упругую текстуру и тёмно-красный цвет. Вкус — насыщенный, слегка сладковатый, без резкого специфического запаха, характерного для некоторых других субпродуктов. Сердце требует тщательной подготовки: его необходимо вымочить в холодной воде для удаления остатков крови, зачистить от плёнок и сосудов, а затем готовить длительное время — тушить, варить или запекать. В мировой кухне свиное сердце известно как <strong>Pork Heart (Порк Харт)</strong>.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, волокнистая</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, слегка сладковатый</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — тёмно-красный, бордовый</li><li class=\"ingredient-list-item\"><strong>Жирность</strong> — низкая, 4,36 г на 100 г</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 1–2 суток в холодильнике, до 3 месяцев в морозильнике</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — требует вымачивания и длительной термической обработки; Pork Heart (Порк Харт)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Зачистка</strong> — удалить плёнки, сосуды и сгустки крови</li><li class=\"ingredient-list-item\"><strong>Вымачивание</strong> — в холодной воде 2–4 часа (можно с добавлением уксуса или молока)</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — ломтиками или кубиками</li><li class=\"ingredient-list-item\"><strong>Термическая обработка</strong> — варка 1,5–2 часа, тушение 1–1,5 часа</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в сметанном или томатном соусе, с овощами</li><li class=\"ingredient-list-item\"><strong>Паштеты</strong> — домашний печёночно-сердечный паштет</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для пирогов, блинов, пирожков</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — тёплые салаты с сердцем</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — в составе бульонов и супов</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — с овощами и специями</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, картофель, капуста, помидоры, перец</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, томатный, сливочный, горчичный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, тимьян, лавровый лист</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, чёрный перец, паприка, кориандр</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — гречка, рис, перловка</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжье сердце</strong> — схожая текстура, более крупное</li><li class=\"ingredient-list-item\"><strong>Куриное сердце</strong> — более мелкое, нежное</li><li class=\"ingredient-list-item\"><strong>Свиная печень</strong> — другой вкус, более рыхлая текстура</li><li class=\"ingredient-list-item\"><strong>Говяжий язык</strong> — более нежный, жирный</li></ul>",
+  "category": "Мясо, птица, субпродукты",
   "calories": 118,
   "protein": 17.27,
   "fat": 4.36,
   "carbohydrates": 1.33,
-
   "water": 76.21,
   "ash": 1.0,
-
+  "cholesterol": 131,
+  "saturated_fat": 1.16,
+  "polyunsaturated_fat": 1.12,
+  "sodium": 56,
+  "potassium": 294,
+  "calcium": 5,
+  "magnesium": 19,
+  "phosphorus": 169,
+  "iron": 4.68,
+  "zinc": 2.8,
+  "copper": 0.41,
+  "manganese": 0.06,
+  "selenium": 10.4,
   "vitamin_a": 8,
+  "beta_carotene": 0,
+  "retinol_equivalent": 8,
   "vitamin_b1": 0.613,
   "vitamin_b2": 1.185,
   "vitamin_b3": 6.765,
@@ -27,27 +36,13 @@
   "vitamin_b12": 3.79,
   "vitamin_c": 5.3,
   "vitamin_e": 0.63,
-
-  "potassium": 294,
-  "calcium": 5,
-  "magnesium": 19,
-  "sodium": 56,
-  "phosphorus": 169,
-  "iron": 4.68,
-  "manganese": 0.06,
-  "copper": 0.41,
-  "zinc": 2.8,
-  "selenium": 10.4,
-
-  "saturated_fat": 1.16,
-  "monounsaturated_fat": 1.02,
-  "polyunsaturated_fat": 1.12,
-  "cholesterol": 131,
-
   "semantic_data": {
     "properties": [
-      "субпродукт",
+      "мясо",
       "свинина",
+      "субпродукт",
+      "сердце",
+      "свиное сердце",
       "высокобелковый",
       "низкожирный",
       "источник железа",
@@ -57,17 +52,22 @@
       "для начинки"
     ],
     "preparations": [
-      "зачистка от пленок и сосудов",
+      "зачистка от плёнок и сосудов",
       "вымачивание в холодной воде 2-4 часа",
       "нарезка ломтиками или кубиками",
       "варка 1,5-2 часа или тушение 1-1,5 часа"
     ],
+    "styles": [
+      {"code": "stew", "priority": "high"},
+      {"code": "pate", "priority": "medium"},
+      {"code": "soup", "priority": "medium"},
+      {"code": "broth", "priority": "medium"}
+    ],
     "cooking_methods": [
-      {"method": "тушение", "priority": "high"},
-      {"method": "варка", "priority": "high"},
-      {"method": "приготовление паштета", "priority": "high"},
-      {"method": "запекание", "priority": "medium"},
-      {"method": "использование в начинках", "priority": "medium"}
+      {"code": "pan_fry", "priority": "high"},
+      {"code": "braise", "priority": "high"},
+      {"code": "boil", "priority": "high"},
+      {"code": "oven", "priority": "medium"}
     ],
     "applications": [
       "вторые блюда",
@@ -80,9 +80,9 @@
     "pairings": {
       "protein": [],
       "vegetables": ["лук", "морковь", "картофель", "капуста", "помидоры", "перец"],
-      "sauces": ["сметанный", "томатный", "сливочный", "горчичный"],
+      "sauces": ["сметанный соус", "томатный соус", "сливочный соус", "горчичный соус"],
       "herbs": ["петрушка", "укроп", "тимьян", "лавровый лист"],
-      "spices": ["чеснок", "черный перец", "паприка", "кориандр"]
+      "spices": ["чеснок", "чёрный перец", "паприка", "кориандр"]
     },
     "substitutes": [
       {"name": "Говяжье сердце", "similarity": "high"},
@@ -91,15 +91,22 @@
       {"name": "Говяжий язык", "similarity": "low"}
     ]
   },
-
+  "data_source": "usda_sr_legacy",
+  "data_source_reference": "USDA FoodData Central, SR Legacy. Pork, fresh, variety meats and by-products, heart, raw. FDC ID 168352.",
+  "source_table": null,
+  "source_page": null,
+  "fdc_id": 168352,
+  "portion": 100,
   "tags": [
     "мясо",
-    "субпродукт",
     "свинина",
+    "субпродукт",
     "сердце",
+    "свиное сердце",
     "источник железа",
     "источник витаминов B",
     "для тушения",
-    "для паштета"
+    "для паштета",
+    "cut:heart"
   ]
 }

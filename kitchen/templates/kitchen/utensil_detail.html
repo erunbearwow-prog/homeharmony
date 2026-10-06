@@ -1,0 +1,37 @@
+<!-- homeharmony/templates/kitchen/utensil_detail.html -->
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>{{ utensil.name }}</h1>
+
+  {% if utensil.description %}
+    <p>{{ utensil.description }}</p>
+  {% endif %}
+
+  {% if alternative %}
+    <p><strong>Альтернатива:</strong> {{ alternative|safe }}</p>
+  {% endif %}
+
+  {% if methods %}
+    <h2>Методы, где используется эта утварь</h2>
+    <div class="methods-list">
+      {% for item in methods %}
+        <article class="method-card">
+          {% if item.url %}
+            <a href="{{ item.url }}" class="method-name-link">
+              {{ item.name }}
+            </a>
+          {% else %}
+            <span class="method-name">{{ item.name }}</span>
+          {% endif %}
+
+          <div class="description">
+            {{ item.description|safe }}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>Пока нет методов, где явно указана эта утварь.</p>
+  {% endif %}
+{% endblock %}

@@ -342,11 +342,11 @@ class AbstractIngredient(models.Model):
         help_text="Полная ссылка на справочник или базу данных"
     )
     fdc_id = models.IntegerField(
-        unique=True,
         null=True,
         blank=True,
         db_index=True,
-        verbose_name="FDC ID"
+        verbose_name="FDC ID",
+        help_text="FDC ID из USDA FoodData Central. Может повторяться у разных карточек (например, корейка и котлета из неё)."
     )
     source_table = models.CharField(
         max_length=50,
@@ -562,6 +562,7 @@ class Diet(models.Model):
 # ======================= 5. МЕТОДЫ ПРИГОТОВЛЕНИЯ =======================
 class CookingMethod(models.Model):
     name = models.CharField(max_length=100, verbose_name='Название')
+    synonyms = models.JSONField(default=list, blank=True, verbose_name='Синонимы')
     code = models.CharField(max_length=50, unique=True, verbose_name='Код')
     description = models.TextField(blank=True, verbose_name='Описание')
     is_heat_treatment = models.BooleanField(default=True, verbose_name='Тепловая обработка')
@@ -571,6 +572,13 @@ class CookingMethod(models.Model):
     common_mistakes = models.TextField(blank=True, verbose_name='Типичные ошибки')
     scientific_background = models.TextField(blank=True, verbose_name='Научная база')
     advanced_notes = models.TextField(blank=True, verbose_name='Для продвинутых')
+
+    recommended_utensils = models.ManyToManyField(
+        'kitchen.RecommendedUtensil',
+        blank=True,
+        related_name='cooking_methods',
+        verbose_name='Рекомендуемая утварь',
+    )
 
     oil_absorption_rates = models.JSONField(
         default=dict,
@@ -903,6 +911,156 @@ class CutShape(models.Model):
             self.slug = slugify(self.name)
         super().save(*args, **kwargs)
 
+
+# ======================= 5.4 ФОРМАТ / СТИЛЬ ПРОДУКТА =======================
+class CookingStyle(models.Model):
+    """
+    Формат / стиль продукта (стейк, ростбиф, фарш, гуляш и т.д.).
+    Используется для классификации абстрактных ингредиентов через semantic_data.styles.
+    """
+    # ===== ОСНОВНЫЕ ПОЛЯ =====
+    code = models.CharField(
+        max_length=50,
+        unique=True,
+        db_index=True,
+        verbose_name='Код',
+        help_text='Уникальный код для локализации и ссылок: steak, roast, medallion'
+    )
+    name = models.CharField(
+        max_length=100,
+        verbose_name='Название',
+        help_text='Отображаемое название: Стейк, Ростбиф, Медальон'
+    )
+    description = models.TextField(
+        blank=True,
+        verbose_name='Описание',
+        help_text='Полное описание формата / стиля'
+    )
+    short_description = models.CharField(
+        max_length=300,
+        blank=True,
+        verbose_name='Краткое описание',
+        help_text='Для превью и карточек'
+    )
+
+    # ===== ГРУППИРОВКА =====
+    group = models.CharField(
+        max_length=100,
+        blank=True,
+        db_index=True,
+        verbose_name='Группа',
+        help_text='Например: Стейки, Тушение, Полуфабрикаты'
+    )
+    sort_order = models.IntegerField(
+        default=0,
+        db_index=True,
+        verbose_name='Порядок сортировки'
+    )
+
+    # ===== СТРАНИЦА СТИЛЯ =====
+    history = models.TextField(
+        blank=True,
+        verbose_name='История',
+        help_text='История возникновения и развития стиля'
+    )
+    features = models.TextField(
+        blank=True,
+        verbose_name='Особенности',
+        help_text='Ключевые особенности приготовления и подачи'
+    )
+    variations = models.TextField(
+        blank=True,
+        verbose_name='Вариации',
+        help_text='Региональные и кулинарные вариации'
+    )
+    cuisine_origin = models.CharField(
+        max_length=200,
+        blank=True,
+        verbose_name='Кухня происхождения',
+        help_text='Например: французская, итальянская, американская'
+    )
+    difficulty = models.CharField(
+        max_length=20,
+        choices=[
+            ('easy', '🟢 Простая'),
+            ('medium', '🟡 Средняя'),
+            ('hard', '🔴 Сложная'),
+        ],
+        default='medium',
+        blank=True,
+        verbose_name='Сложность'
+    )
+
+    # ===== СВЯЗИ =====
+    related_methods = models.ManyToManyField(
+        'CookingMethod',
+        blank=True,
+        related_name='styles',
+        verbose_name='Связанные методы обработки',
+        help_text='Методы, которыми обычно готовят этот стиль'
+    )
+    typical_cuts = models.ManyToManyField(
+        'AbstractIngredient',
+        blank=True,
+        related_name='typical_styles',
+        verbose_name='Типичные отрубы',
+        help_text='Отрубы, из которых чаще всего делают этот стиль'
+    )
+    related_styles = models.ManyToManyField(
+        'self',
+        blank=True,
+        symmetrical=False,
+        related_name='similar_styles',
+        verbose_name='Похожие стили',
+        help_text='Стили, похожие по назначению или технике'
+    )
+
+    # ===== ВИЗУАЛЬНЫЕ ПОЛЯ =====
+    icon = models.CharField(
+        max_length=50,
+        blank=True,
+        verbose_name='Иконка (Emoji)',
+        help_text='Например: 🥩, 🍖, 🍔'
+    )
+    image = models.ImageField(
+        upload_to='cooking_styles/',
+        null=True,
+        blank=True,
+        verbose_name='Изображение'
+    )
+
+    # ===== СЛУЖЕБНЫЕ =====
+    is_active = models.BooleanField(default=True, db_index=True, verbose_name='Активен')
+    is_public = models.BooleanField(default=True, verbose_name='Публичный')
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name='Дата создания')
+    updated_at = models.DateTimeField(auto_now=True, verbose_name='Дата обновления')
+
+    class Meta:
+        verbose_name = 'Формат / стиль продукта'
+        verbose_name_plural = 'Форматы / стили продуктов'
+        ordering = ['sort_order', 'name']
+        indexes = [
+            models.Index(fields=['code']),
+            models.Index(fields=['group']),
+            models.Index(fields=['is_active']),
+        ]
+
+    def __str__(self):
+        if self.group:
+            return f'{self.group}: {self.name}'
+        return self.name
+
+    @property
+    def display_name_with_icon(self):
+        if self.icon:
+            return f'{self.icon} {self.name}'
+        return self.name
+
+    @property
+    def style_group_display(self):
+        return self.group or 'Без группы'
+
+
 # ======================= 6. ПОДГОТОВКА ПРОДУКТОВ =======================
 class IngredientPreparation(models.Model):
     name = models.CharField(max_length=100)
@@ -928,6 +1086,11 @@ class RecommendedUtensil(models.Model):
     image = models.ImageField(upload_to='utensils/', null=True, blank=True)
     alternative = models.CharField(max_length=200, blank=True)
     care_instructions = models.TextField(blank=True)
+
+    code = models.CharField(
+        max_length=50, null=True, blank=True, unique=True,
+        verbose_name='Код', help_text='Стабильный идентификатор для синхронизации',
+    )
 
     class Meta:
         verbose_name = 'Утварь'

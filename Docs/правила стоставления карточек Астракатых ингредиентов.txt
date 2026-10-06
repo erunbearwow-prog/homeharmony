@@ -1,0 +1,377 @@
+# ПРАВИЛА СОЗДАНИЯ КАРТОЧЕК АБСТРАКТНЫХ ИНГРЕДИЕНТОВ
+# Проект: HomeHarmony
+# Версия: финальная (2026-10-01)
+
+================================================================
+1. ФОРМАТ КАРТОЧКИ (КАНОНИЧЕСКИЙ)
+================================================================
+
+Порядок полей в JSON:
+
+name → name_normalized → synonyms → short_description → description →
+category → КБЖУ/нутриенты → semantic_data → data_source →
+data_source_reference → source_table → source_page → fdc_id → portion → tags
+
+
+================================================================
+2. ОСНОВНЫЕ ПОЛЯ
+================================================================
+
+| Поле             | Тип           | Правило                                              |
+|------------------|---------------|------------------------------------------------------|
+| name             | строка        | Без буквы Ё (Свекла, Ежики, Говяжья печень)          |
+| name_normalized  | строка        | Транслит латиницей (govyazhya_vyrezka)               |
+| synonyms         | строка        | Через запятую, до 500 символов. Включает Ё-варианты, |
+|                  |               | английские названия, разговорные                     |
+| short_description| строка        | До 500 символов, для превью                          |
+| description      | HTML          | См. раздел 3                                         |
+| category         | строка        | «Мясо, птица, субпродукты»                           |
+
+ВСЕГДА:
+- Citation — никогда (ни в description, ни в примечаниях, ни в data_source_reference).
+- КБЖУ в description не пишем.
+- «Русский», не «россиянин».
+
+
+================================================================
+3. СТРУКТУРА description (HTML)
+================================================================
+
+<h2 class="ingredient-title">Краткая характеристика</h2>
++ <p class="ingredient-text">…</p>
+
+<h2 class="ingredient-title">Свойства и особенности</h2>
++ <ul class="ingredient-list ingredient-list-bulleted">
++ <li class="ingredient-list-item"><strong>…</strong> — …</li>
+
+<h2 class="ingredient-title">Подготовка</h2>
++ <ul> + <li class="ingredient-list-item"><strong>…</strong> — …</li>
+
+<h2 class="ingredient-title">Кулинарное применение</h2>
++ <ul> + <li class="ingredient-list-item"><strong>…</strong> — …</li>
+
+<h2 class="ingredient-title">С чем сочетается</h2>
++ <ul> + <li class="ingredient-list-item"><strong>…</strong> — …</li>
+
+<h2 class="ingredient-title">Чем заменить</h2>
++ <ul> + <li class="ingredient-list-item"><strong>…</strong> — …</li>
+
+Правила:
+- Стейки — через EnglishName (Русское произношение): <strong>Ribeye (Рибай)</strong>.
+- В semantic_data.properties — просто EnglishName без русского: "Brisket", "Striploin".
+- Никаких <li class="ingredient-list-item"> с дублированием в <p>.
+
+
+================================================================
+4. КБЖУ И НУТРИЕНТЫ
+================================================================
+
+- Плоские поля в корне JSON.
+- Только те, что есть в модели AbstractIngredient.
+- Если данных нет — null.
+- monounsaturated_fat — НЕ используем (нет в модели).
+- vitamin_b4 — НЕ используем, если нет в источнике.
+- В description не пишем.
+
+Приоритет источников:
+1. bls (Bundeslebensmittelschlüssel)
+2. usda_sr_legacy (USDA FoodData Central)
+3. skurikhin_tutelyan_2002
+4. producers_average / calorizator
+
+Правила для свиных субпродуктов (вариант Б):
+- fdc_id — точный, если найден в USDA SR Legacy. Если не найден — null.
+- data_source_reference — с FDC ID, БЕЗ «ориентировочно», если ID точный.
+- beta_carotene, retinol_equivalent — включаем, если есть в источнике.
+- monounsaturated_fat, vitamin_b4 — не включаем.
+
+
+================================================================
+5. ЕДИНАЯ СИСТЕМА КЛАССИФИКАЦИИ
+================================================================
+
+Четыре сущности:
+
+| Что                | Где хранится          | Как ссылаться                              |
+|--------------------|-----------------------|--------------------------------------------|
+| Часть туши (cut:)  | SemanticTag           | В tags: "cut:tenderloin"                   |
+|                    | tag_type='cut'        |                                            |
+| Формат / стиль     | CookingStyle          | В semantic_data.styles:                    |
+|                    | (таблица)             | {"code": "steak", "priority": "high"}      |
+| Метод обработки    | CookingMethod         | В semantic_data.cooking_methods:           |
+|                    | (таблица)             | {"code": "pan_fry", "priority": "high"}    |
+| Прочие теги        | SemanticTag           | В tags: "мясо", "говядина", …              |
+|                    | tag_type='property'   |                                            |
+
+ПРАВИЛА tags:
+- Только cut: + property: (русские/описательные).
+- style: и method: в tags НЕ пишем.
+- Английские названия стейков — только в cut: / styles / cooking_methods.
+- property — только русские/описательные, без дублей с cut:/styles/methods.
+
+
+================================================================
+6. СТРУКТУРА semantic_data
+================================================================
+
+"semantic_data": {
+  "properties": [...],           // русские/описательные
+  "preparations": [...],         // подготовка
+  "styles": [                    // ссылки на CookingStyle.code
+    {"code": "steak", "priority": "high"}
+  ],
+  "cooking_methods": [           // ссылки на CookingMethod.code
+    {"code": "pan_fry", "priority": "high", "note": "..."}
+  ],
+  "applications": [...],         // с EnglishName (Русское произношение)
+  "pairings": {
+    "protein": [],
+    "vegetables": [...],
+    "sauces": [...],
+    "herbs": [...],
+    "spices": [...]
+  },
+  "substitutes": [
+    {"name": "...", "similarity": "high|medium|low"}
+  ]
+}
+
+priority: high | medium | low
+note: опциональный
+
+
+================================================================
+7. CookingMethod — 54 метода
+================================================================
+
+Холодная обработка (0–9):
+peel, cut, mince, debone, fillet, grate, grind, mash, press, whisk
+
+Базовая тепловая (10–29):
+blanching, boil, boil_in_skin, boil_peeled, poach, simmer, steam,
+fry, fry_deep, pan_fry, saute, stew, braise, bake, roast,
+roast_whole, oven
+
+Специализированная тепловая (30–49):
+broil, grill, char_grill, confit, dehydrate, smoke, smoke_hot,
+smoke_cold, tandoor, teppanyaki, wok, reduce
+
+Современные методы (50–69):
+air_fry, sous_vide, tempering, torch
+
+Консервация и ферментация (70–89):
+brine, cure, ferment, infuse, marinate, pickle
+
+Прочее / финальная обработка (90–99):
+bread, glaze, knead, proofing, truss
+
+
+================================================================
+8. CookingStyle — 36 стилей
+================================================================
+
+Стейки (10–19):
+steak, medallion, escalope, langet, chop, entrecote,
+beefsteak, romsteck, schnitzel, carbonade
+
+Запекание (30–32):
+roast, buzhenina, ham
+
+Тушение (50–56):
+stew, goulash, ragu, azu, stroganoff, pot-roast, oven-cut
+
+Фарш (70–72):
+ground, cutlet, meatball
+
+Колбасы (80–84):
+sausage, pastrami, corned-beef, bacon, jerky
+
+Паштеты (90–91):
+pate, terrine
+
+Супы (100–101):
+soup, broth
+
+Прочее (110–113):
+kebab, shashlik, roulade, breaded
+
+
+================================================================
+9. ИМПОРТ-КОМАНДА
+================================================================
+
+Команда импорта:
+python manage.py import_ingredient semantic_data/abstractIngredients/<name_normalized>.json --force
+
+Что делает:
+1. Читает JSON.
+2. Проверяет обязательные поля: name, short_description, description, semantic_data.
+3. Валидирует semantic_data.cooking_methods — все code должны быть
+   в CookingMethod. Иначе CommandError со списком доступных.
+4. Валидирует semantic_data.styles — все code должны быть в CookingStyle.
+   Иначе CommandError.
+5. Импортирует/обновляет ингредиент.
+6. Обрабатывает теги: TAG_PREFIX_MAP = {'cut:': ('cut', 'Часть туши')}.
+   style: и method: не обрабатываются.
+7. Выводит статистику.
+
+Проверка после импорта:
+python manage.py shell -c "
+from kitchen.models import AbstractIngredient, CookingMethod, CookingStyle
+i = AbstractIngredient.objects.get(name_normalized='<name_normalized>')
+print(f'{i.name}:')
+for tag_type in ['cut', 'style', 'method', 'property']:
+    tags = i.semantic_tags.filter(tag_type=tag_type).values_list('name', flat=True)
+    print(f'  {tag_type}: {list(tags)}')
+print('Styles:')
+for s in i.semantic_data.get('styles', []):
+    cs = CookingStyle.objects.filter(code=s.get('code')).first()
+    print(f'  {s.get(\"code\")} | {cs.name if cs else \"НЕ НАЙДЕН\"}')
+print('Cooking methods:')
+for m in i.semantic_data.get('cooking_methods', []):
+    cm = CookingMethod.objects.filter(code=m.get('code')).first()
+    print(f'  {m.get(\"code\")} | {cm.name if cm else \"НЕ НАЙДЕН\"}')
+"
+
+
+================================================================
+10. КЛЮЧЕВЫЕ ПОЛЯ МОДЕЛИ AbstractIngredient
+================================================================
+
+Основные: name, name_normalized, synonyms, short_description,
+          description, category
+Служебные категории: skurikhin_category (JSONField)
+Связи: semantic_tags (M2M), semantic_data (JSONField)
+
+КБЖУ: calories, protein, fat, carbohydrates
+
+Макро: water, ash, fiber, sugar, starch, organic_acids
+
+Жирные кислоты: saturated_fat, trans_fat, cholesterol,
+                omega_3, omega_6, polyunsaturated_fat
+
+Минералы: sodium, potassium, calcium, magnesium, phosphorus,
+          sulfur, silicon, chlorine, iron, manganese, copper,
+          selenium, zinc, aluminum, boron, vanadium, iodine,
+          cobalt, lithium, molybdenum, nickel, rubidium,
+          fluorine, chromium
+
+Витамины: vitamin_a, beta_carotene, retinol_equivalent,
+          vitamin_b1, vitamin_b2, vitamin_b3, niacin_equivalent,
+          vitamin_b4, vitamin_b5, vitamin_b6, vitamin_b7,
+          vitamin_b9_folate, vitamin_b12, vitamin_c, vitamin_d,
+          vitamin_e, vitamin_k
+
+Прочее: choline, alcohol, soluble_fiber, insoluble_fiber
+
+Источник: data_source, data_source_reference, source_table,
+          source_page, fdc_id, portion
+
+Служебные: semantic_data, semantic_tags
+
+ВАЖНО:
+- fdc_id — IntegerField(unique=True, null=True). Нельзя дважды.
+- В модели НЕТ поля monounsaturated_fat — не используем.
+- name_normalized генерируется автоматически в save(), если пусто.
+
+
+================================================================
+11. ПРАВИЛА ИСПОЛЬЗОВАНИЯ БУКВЫ Ё
+================================================================
+
+В русских названиях — НЕ используем букву Ё:
+✅ Свекла, Ежики, Топленое, Говяжья печень, Печенка, Легкое
+
+В русском произношении английских названий — Ё ДОПУСКАЕТСЯ:
+✅ Bird (Бёрд)
+✅ Burger (Бёргер)
+✅ Turkey (Тёрки)
+✅ Cure (Кюр)
+✅ Confit (Конфи) — без Ё, потому что так произносится
+
+В английских названиях — только оригинальное написание:
+✅ Bird, Burger, Turkey, Cure, Confit
+
+
+================================================================
+12. УПОМИНАНИЕ ИНОСТРАННЫХ НАЗВАНИЙ
+================================================================
+
+Правило: EnglishName (Русское произношение)
+
+Примеры:
+✅ Ribeye (Рибай)
+✅ Filet Mignon (Филе-миньон)
+✅ T-bone (Ти-боун)
+✅ Porterhouse (Портерхаус)
+✅ Brisket (Брискет)
+
+В semantic_data.properties — просто EnglishName без русского:
+"Brisket", "Striploin".
+
+Не используем транслит латиницей в русском произношении (только кириллица).
+
+
+================================================================
+13. ШПАРГАЛКА ПО СТЕЙКАМ
+================================================================
+
+| Отруб         | Основное название       | Альтернативы                                  |
+|---------------|-------------------------|-----------------------------------------------|
+| Тонкий край   | Striploin (Стриплойн)   | Strip Steak, New York Strip, Kansas City Strip, Club Steak |
+| Толстый край  | Ribeye (Рибай)          | Bone-in Ribeye, Cowboy Steak, Tomahawk, Prime Rib |
+| Вырезка       | Tenderloin (Тендерлойн) | Filet Mignon, Chateaubriand                   |
+| Кострец       | Sirloin (Сирлойн)       | Rump Steak, Vegas Strip, Picanha, Tri-tip     |
+| Лопатка       | Chuck (Чак)             | Denver, Flat Iron, Top Blade, Chuck Roll, Oyster Blade |
+| Шея           | Chuck (Чак)             | Chuck Eye, Pot Roast                          |
+| Пашина        | Flank Steak (Фланк)     | Skirt Steak, Bavette, London Broil            |
+| Покромка      | Plate (Плейт)           | Skirt Steak, Pastrami, Corned Beef            |
+| Рёбра         | Short Ribs (Шорт Рибс)  | Bone-in Short Ribs, Flanken Ribs, Korean Kalbi |
+| Голяшка       | Osso Buco (Оссобуко)    | (не стейк)                                    |
+| Огузок        | Rump Steak (Рамп Стейк) | Sirloin, Butcher's Cut                        |
+| Корейка       | Striploin (Стриплойн)   | New York Strip, Kansas City Strip, Club Steak |
+
+
+================================================================
+14. ПРАВИЛА РАБОТЫ С ТЕГАМИ (ЗАПРЕТЫ)
+================================================================
+
+❌ НЕ переносить современные географические названия
+   на исторические периоды.
+
+❌ НЕ создавать SemanticTag с tag_type='method' — используем CookingMethod.
+
+❌ НЕ создавать SemanticTag с tag_type='style' — используем CookingStyle.
+
+❌ НЕ писать в tags строки с префиксами style: и method:.
+
+❌ НЕ использовать monounsaturated_fat (нет в модели).
+
+❌ НЕ использовать vitamin_b4, если нет в источнике.
+
+❌ НЕ оставлять дубли между property и cut:/styles/methods.
+
+✅ ВСЕГДА проверять code в CookingMethod и CookingStyle до импорта.
+
+✅ ВСЕГДА обновлять все поля карточки при --force.
+
+✅ ВСЕГДА проверять результат через shell после импорта.
+
+
+================================================================
+15. ПРОЦЕДУРА СОЗДАНИЯ НОВОЙ КАРТОЧКИ
+================================================================
+
+1. Собрать данные из приоритетного источника (bls → usda → Скурихин).
+2. Заполнить JSON по каноническому формату (раздел 1).
+3. Проверить все code в semantic_data.styles против CookingStyle.
+4. Проверить все code в semantic_data.cooking_methods против CookingMethod.
+5. Сохранить в файл semantic_data/abstractIngredients/<name_normalized>.json.
+6. Импортировать:
+   python manage.py import_ingredient semantic_data/abstractIngredients/<name_normalized>.json --force
+7. Проверить через shell (раздел 9).
+8. Если ошибка — исправить JSON и повторить.
+
+================================================================
+КОНЕЦ ФАЙЛА
+================================================================

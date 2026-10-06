@@ -1,24 +1,36 @@
 {
   "name": "Свиная печень",
   "name_normalized": "svinaya_pechen",
-  "synonyms": "свиная печень, печень свиная, свиная печёнка, печень поросёнка, субпродукт свиной, свиная печень охлаждённая, свиная печень для жарки, свиная печень для паштета, свиная печень для тушения",
+  "synonyms": "свиная печень, печень свиная, свиная печёнка, печень поросёнка, субпродукт свиной, свиная печень охлаждённая, свиная печень для жарки, свиная печень для паштета, свиная печень для тушения, pork liver",
   "short_description": "Плотный, питательный субпродукт тёмно-красного цвета с характерным вкусом и высокой концентрацией витаминов группы B, железа и витамина A. Требует правильной подготовки и тщательной термической обработки.",
-  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Свиная печень — это субпродукт, который ценится за высокую пищевую плотность и богатый нутриентный состав. Она содержит значительное количество полноценного белка, гемового железа, витаминов группы B (особенно B12 и B2) и витамина A. По биологической ценности белков свиная печень превосходит говяжью, телячью и куриную. Однако из-за высокого содержания витамина A и холестерина её рекомендуется употреблять умеренно — не чаще 1–2 раз в неделю.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, однородная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, слегка горьковатый, с характерным печёночным оттенком</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — тёмно-красный, бордовый</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — крупные куски неправильной формы</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — в холодильнике до 2 суток, в заморозке до 2 месяцев</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — требует вымачивания и тщательной термической обработки</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Зачистка</strong> — удалить плёнки, протоки и крупные сосуды</li><li class=\"ingredient-list-item\"><strong>Вымачивание</strong> — в молоке или воде 30–60 минут для удаления горечи</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — ломтиками или кубиками</li><li class=\"ingredient-list-item\"><strong>Обжарка</strong> — на сильном огне до полной готовности</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — печень по-строгановски, с луком и сметаной</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в соусах, с овощами</li><li class=\"ingredient-list-item\"><strong>Паштеты</strong> — домашний печёночный паштет</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для пирогов, блинов, пирожков</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — тёплые салаты с печенью</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — в составе бульонов и супов-пюре</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, картофель, свёкла, кабачки</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, томатный, сливочный, горчичный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, тимьян, розмарин</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, черный перец, паприка, лавровый лист, мускатный орех</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — гречка, рис, перловка</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжья печень</strong> — схожая текстура, более выраженный вкус</li><li class=\"ingredient-list-item\"><strong>Телячья печень</strong> — более нежная и мягкая</li><li class=\"ingredient-list-item\"><strong>Куриная печень</strong> — более мелкая, нежная</li><li class=\"ingredient-list-item\"><strong>Индейка (печень)</strong> — диетическая альтернатива</li></ul>",
-
-  "category": "Мясо и мясные продукты",
-
-  "data_source": "usda",
-
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Свиная печень — это субпродукт, который ценится за высокую пищевую плотность и богатый нутриентный состав. Она содержит значительное количество полноценного белка, гемового железа, витаминов группы B (особенно B12 и B2) и витамина A. По биологической ценности белков свиная печень превосходит говяжью, телячью и куриную. Однако из-за высокого содержания витамина A и холестерина её рекомендуется употреблять умеренно — не чаще 1–2 раз в неделю.</p><p class=\"ingredient-text\">Свиная печень имеет плотную, упругую текстуру и тёмно-красный цвет. Вкус — насыщенный, слегка горьковатый, с характерным печёночным оттенком. Печень требует правильной подготовки: зачистки от плёнок и протоков, вымачивания в молоке или воде для удаления горечи, а затем тщательной термической обработки. В мировой кухне свиная печень известна как <strong>Pork Liver (Порк Ливер)</strong>.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, однородная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, слегка горьковатый, с характерным печёночным оттенком</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — тёмно-красный, бордовый</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — крупные куски неправильной формы</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 1–2 суток в холодильнике, до 2 месяцев в морозильнике</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — требует вымачивания и тщательной термической обработки; Pork Liver (Порк Ливер)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Зачистка</strong> — удалить плёнки, протоки и крупные сосуды</li><li class=\"ingredient-list-item\"><strong>Вымачивание</strong> — в молоке или воде 30–60 минут для удаления горечи</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — ломтиками или кубиками</li><li class=\"ingredient-list-item\"><strong>Обжарка</strong> — на сильном огне до полной готовности</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — печень по-строгановски, с луком и сметаной</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в соусах, с овощами</li><li class=\"ingredient-list-item\"><strong>Паштеты</strong> — домашний печёночный паштет</li><li class=\"ingredient-list-item\"><strong>Начинки</strong> — для пирогов, блинов, пирожков</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — тёплые салаты с печенью</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — в составе бульонов и супов-пюре</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, картофель, свёкла, кабачки</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — сметанный, томатный, сливочный, горчичный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, тимьян, розмарин</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, чёрный перец, паприка, лавровый лист, мускатный орех</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — гречка, рис, перловка</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжья печень</strong> — схожая текстура, более выраженный вкус</li><li class=\"ingredient-list-item\"><strong>Телячья печень</strong> — более нежная и мягкая</li><li class=\"ingredient-list-item\"><strong>Куриная печень</strong> — более мелкая, нежная</li><li class=\"ingredient-list-item\"><strong>Индейка (печень)</strong> — диетическая альтернатива</li></ul>",
+  "category": "Мясо, птица, субпродукты",
   "calories": 134,
   "protein": 21.4,
   "fat": 3.7,
   "carbohydrates": 2.5,
-
   "water": 71.4,
   "ash": 1.4,
-
+  "cholesterol": 301,
+  "saturated_fat": 1.16,
+  "monounsaturated_fat": 0.84,
+  "polyunsaturated_fat": 0.52,
+  "omega_3": 0.33,
+  "sodium": 87,
+  "potassium": 273,
+  "calcium": 9,
+  "magnesium": 18,
+  "phosphorus": 288,
+  "iron": 23.3,
+  "zinc": 5.8,
+  "copper": 0.68,
+  "manganese": 0.34,
+  "selenium": 52.7,
+  "iodine": 1,
+  "molybdenum": 120,
   "vitamin_a": 6502,
   "beta_carotene": 0,
+  "retinol_equivalent": 6502,
   "vitamin_b1": 0.28,
   "vitamin_b2": 3.0,
   "vitamin_b3": 15.3,
@@ -30,28 +42,13 @@
   "vitamin_d": 1.3,
   "vitamin_e": 0.4,
   "vitamin_k": 0.5,
-
-  "potassium": 273,
-  "calcium": 9,
-  "magnesium": 18,
-  "sodium": 87,
-  "phosphorus": 288,
-  "iron": 23.3,
-  "manganese": 0.34,
-  "copper": 0.68,
-  "zinc": 5.8,
-  "selenium": 52.7,
-  "iodine": 1,
-  "molybdenum": 120,
-
-  "saturated_fat": 1.2,
-  "cholesterol": 301,
-  "omega_3": 0.33,
-
   "semantic_data": {
     "properties": [
-      "субпродукт",
+      "мясо",
       "свинина",
+      "субпродукт",
+      "печень",
+      "свиная печень",
       "высокобелковый",
       "источник железа",
       "источник витамина A",
@@ -61,17 +58,22 @@
       "для паштета"
     ],
     "preparations": [
-      "зачистка от пленок и протоков",
+      "зачистка от плёнок и протоков",
       "вымачивание в молоке или воде",
       "нарезка ломтиками или кубиками",
       "обжарка до полной готовности"
     ],
+    "styles": [
+      {"code": "pate", "priority": "high"},
+      {"code": "terrine", "priority": "medium"},
+      {"code": "stew", "priority": "medium"},
+      {"code": "soup", "priority": "medium"}
+    ],
     "cooking_methods": [
-      {"method": "жарка", "priority": "high"},
-      {"method": "тушение", "priority": "high"},
-      {"method": "приготовление паштета", "priority": "high"},
-      {"method": "использование в начинках", "priority": "medium"},
-      {"method": "варка (супы)", "priority": "medium"}
+      {"code": "pan_fry", "priority": "high"},
+      {"code": "braise", "priority": "high"},
+      {"code": "oven", "priority": "medium"},
+      {"code": "boil", "priority": "medium"}
     ],
     "applications": [
       "вторые блюда",
@@ -84,9 +86,9 @@
     "pairings": {
       "protein": [],
       "vegetables": ["лук", "морковь", "картофель", "свёкла", "кабачки"],
-      "sauces": ["сметанный", "томатный", "сливочный", "горчичный"],
+      "sauces": ["сметанный соус", "томатный соус", "сливочный соус", "горчичный соус"],
       "herbs": ["петрушка", "укроп", "тимьян", "розмарин"],
-      "spices": ["чеснок", "черный перец", "паприка", "лавровый лист", "мускатный орех"]
+      "spices": ["чеснок", "чёрный перец", "паприка", "лавровый лист", "мускатный орех"]
     },
     "substitutes": [
       {"name": "Говяжья печень", "similarity": "high"},
@@ -95,15 +97,22 @@
       {"name": "Печень индейки", "similarity": "medium"}
     ]
   },
-
+  "data_source": "usda_sr_legacy",
+  "data_source_reference": "USDA FoodData Central, SR Legacy. Pork, fresh, variety meats and by-products, liver, raw. FDC ID 168353.",
+  "source_table": null,
+  "source_page": null,
+  "fdc_id": 168353,
+  "portion": 100,
   "tags": [
     "мясо",
-    "субпродукт",
     "свинина",
+    "субпродукт",
     "печень",
+    "свиная печень",
     "источник железа",
     "источник витамина A",
     "для жарки",
-    "для паштета"
+    "для паштета",
+    "cut:liver"
   ]
 }

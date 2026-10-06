@@ -1,50 +1,43 @@
 {
   "name": "Тушенка из свинины",
   "name_normalized": "tushenka_iz_svininy",
-  "synonyms": "тушенка из свинины, свинина тушеная, тушеная свинина, консервы свинина тушеная, мясные консервы, свинина тушеная высший сорт, свинина тушеная первый сорт, тушенка ГОСТ, консервы мясные кусковые, свинина в собственном соку, тушенка свиная",
+  "synonyms": "тушенка из свинины, свинина тушеная, тушеная свинина, консервы свинина тушеная, мясные консервы, свинина тушеная высший сорт, свинина тушеная первый сорт, тушенка ГОСТ, консервы мясные кусковые, свинина в собственном соку, тушенка свиная, canned pork, pork stew",
   "short_description": "Мясные консервы из кускового свиного мяса, тушенного в собственном соку с добавлением соли, лука и специй. Готовый к употреблению продукт с высоким содержанием мяса, сочной текстурой и насыщенным вкусом. Используется как самостоятельное блюдо и ингредиент для супов, рагу и закусок.",
-  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Тушенка из свинины — это мясные консервы, изготовленные из кускового свиного мяса, тушенного в собственном соку. Согласно ГОСТ 32125-2013, консервы выпускаются высшим и первым сортом, при этом массовая доля мяса и жира должна составлять не менее 59% для высшего сорта и не менее 56-57% для первого сорта. Продукт готов к употреблению, не требует дополнительной термической обработки и широко используется как в повседневном питании, так и в походах, экспедициях и экстренных ситуациях.</p><p class=\"ingredient-text\">В состав классической тушенки по ГОСТ входят: свинина, лук репчатый, соль пищевая, лист лавровый, перец черный. В зависимости от производителя, массовая доля белка варьируется от 13 до 17 г, жира — от 18 до 33 г на 100 г продукта. Высший сорт отличается несколько большим содержанием мяса и меньшим содержанием жира по сравнению с первым сортом.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мясо кусочками, сочное, непереваренное; кусочки сохраняют форму</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — свойственный тушеному свиному мясу с пряностями, без посторонних привкусов</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от желтоватого до светло-коричневого, бульон с легкой мутноватостью</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — кусочки мяса произвольной формы массой более 30 г, в бульоне</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 3-5 лет при комнатной температуре (в герметичной таре)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — массовая доля мяса и жира не менее 59% (высший сорт)</li></ul><h2 class=\"ingredient-title\">Состав (типичный по ГОСТ)</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Основное сырьё</strong> — свинина кусковая</li><li class=\"ingredient-list-item\"><strong>Дополнительное сырьё</strong> — лук репчатый</li><li class=\"ingredient-list-item\"><strong>Посолочные</strong> — соль пищевая</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — лавровый лист, перец черный</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в прохладном темном месте, в герметичной таре</li><li class=\"ingredient-list-item\"><strong>Перед употреблением</strong> — рекомендуется разогреть</li><li class=\"ingredient-list-item\"><strong>Открытая банка</strong> — хранить в холодильнике не более 2-3 суток</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Самостоятельное блюдо</strong> — разогретая тушенка с гарниром</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — добавка в борщ, щи, солянку, супы-пюре</li><li class=\"ingredient-list-item\"><strong>Рагу</strong> — с картофелем, овощами, крупой</li><li class=\"ingredient-list-item\"><strong>Макароны по-флотски</strong> — с тушенкой</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — на бутербродах, в салатах</li><li class=\"ingredient-list-item\"><strong>Походные блюда</strong> — разогрев на костре, в котелке</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофель (пюре, жареный, отварной), гречка, рис, макароны</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, картофель, капуста, помидоры, перец</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, горчичный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, лавровый лист</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — черный перец, паприка, лавровый лист</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжья тушенка</strong> — схожий продукт, менее жирный</li><li class=\"ingredient-list-item\"><strong>Домашняя тушеная свинина</strong> — свежеприготовленное блюдо</li><li class=\"ingredient-list-item\"><strong>Свинина духовая</strong> — запеченное мясо</li><li class=\"ingredient-list-item\"><strong>Свиная поджарка</strong> — для быстрого приготовления</li></ul>",
-
-  "category": "Мясо и мясные продукты",
-
-  "data_source": "health-diet.ru",
-
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Тушенка из свинины — это мясные консервы, изготовленные из кускового свиного мяса, тушенного в собственном соку. Согласно ГОСТ 32125-2013, консервы выпускаются высшим и первым сортом, при этом массовая доля мяса и жира должна составлять не менее 59% для высшего сорта и не менее 56–57% для первого сорта. Продукт готов к употреблению, не требует дополнительной термической обработки и широко используется как в повседневном питании, так и в походах, экспедициях и экстренных ситуациях.</p><p class=\"ingredient-text\">В состав классической тушенки по ГОСТ входят: свинина, лук репчатый, соль пищевая, лист лавровый, перец чёрный. В зависимости от производителя, массовая доля белка варьируется от 13 до 17 г, жира — от 18 до 33 г на 100 г продукта. Высший сорт отличается несколько большим содержанием мяса и меньшим содержанием жира по сравнению с первым сортом.</p><p class=\"ingredient-text\">В мировой кухне аналогичный продукт известен как <strong>Canned Pork (Каннед Порк)</strong> или <strong>Pork Stew (Порк Стью)</strong>.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мясо кусочками, сочное, непереваренное; кусочки сохраняют форму</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — свойственный тушёному свиному мясу с пряностями, без посторонних привкусов</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — от желтоватого до светло-коричневого, бульон с лёгкой мутноватостью</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — кусочки мяса произвольной формы массой более 30 г, в бульоне</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 3–5 лет при комнатной температуре (в герметичной таре)</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — массовая доля мяса и жира не менее 59% (высший сорт); Canned Pork (Каннед Порк)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в прохладном тёмном месте, в герметичной таре</li><li class=\"ingredient-list-item\"><strong>Перед употреблением</strong> — рекомендуется разогреть</li><li class=\"ingredient-list-item\"><strong>Открытая банка</strong> — хранить в холодильнике не более 2–3 суток</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Самостоятельное блюдо</strong> — разогретая тушенка с гарниром</li><li class=\"ingredient-list-item\"><strong>Супы</strong> — добавка в борщ, щи, солянку, супы-пюре</li><li class=\"ingredient-list-item\"><strong>Рагу</strong> — с картофелем, овощами, крупой</li><li class=\"ingredient-list-item\"><strong>Макароны по-флотски</strong> — с тушенкой</li><li class=\"ingredient-list-item\"><strong>Закуски</strong> — на бутербродах, в салатах</li><li class=\"ingredient-list-item\"><strong>Походные блюда</strong> — разогрев на костре, в котелке</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофель (пюре, жареный, отварной), гречка, рис, макароны</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — лук, морковь, картофель, капуста, помидоры, перец</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, горчичный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, лавровый лист</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, паприка, лавровый лист</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжья тушенка</strong> — схожий продукт, менее жирный</li><li class=\"ingredient-list-item\"><strong>Домашняя тушёная свинина</strong> — свежеприготовленное блюдо</li><li class=\"ingredient-list-item\"><strong>Свинина духовая</strong> — запечённое мясо</li><li class=\"ingredient-list-item\"><strong>Свиная поджарка</strong> — для быстрого приготовления</li></ul>",
+  "category": "Мясо, птица, субпродукты",
   "calories": 226,
   "protein": 16,
   "fat": 18,
   "carbohydrates": 0,
-
   "water": 64,
   "ash": 2.6,
-
+  "cholesterol": 71,
+  "saturated_fat": 5.5,
+  "polyunsaturated_fat": null,
+  "sodium": 826,
+  "potassium": 242,
+  "calcium": 7,
+  "magnesium": 21,
+  "phosphorus": 164,
+  "iron": 1.6,
+  "zinc": 2.3,
+  "copper": null,
+  "manganese": null,
+  "selenium": 24.5,
   "vitamin_b1": 0.2,
   "vitamin_b2": 0.1,
   "vitamin_b3": 1.5,
   "vitamin_b6": 0.5,
   "vitamin_b12": 0.7,
+  "vitamin_c": null,
   "vitamin_d": 1,
   "vitamin_e": 0.2,
-
-  "potassium": 242,
-  "calcium": 7,
-  "magnesium": 21,
-  "sodium": 826,
-  "phosphorus": 164,
-  "sulfur": 118,
-  "chlorine": 1273,
-  "iron": 1.6,
-  "iodine": 7,
-  "zinc": 2.3,
-  "selenium": 24.5,
-
-  "saturated_fat": 5.5,
-  "cholesterol": 71,
-
   "semantic_data": {
     "properties": [
-      "мясные консервы",
+      "мясо",
       "свинина",
-      "тушеная",
+      "тушенка",
+      "консервы",
       "готовый продукт",
       "высокий белок",
       "источник витаминов B",
@@ -59,12 +52,16 @@
       "разогрев перед употреблением",
       "открытая банка хранится в холодильнике 2-3 суток"
     ],
+    "styles": [
+      {"code": "stew", "priority": "high"},
+      {"code": "goulash", "priority": "high"},
+      {"code": "ragu", "priority": "high"},
+      {"code": "soup", "priority": "medium"}
+    ],
     "cooking_methods": [
-      {"method": "разогрев как самостоятельное блюдо", "priority": "high"},
-      {"method": "добавление в супы", "priority": "high"},
-      {"method": "тушение с овощами и крупами", "priority": "high"},
-      {"method": "использование в макаронах по-флотски", "priority": "high"},
-      {"method": "закуска на бутербродах", "priority": "medium"}
+      {"code": "braise", "priority": "high"},
+      {"code": "oven", "priority": "medium"},
+      {"code": "boil", "priority": "medium"}
     ],
     "applications": [
       "вторые блюда",
@@ -77,18 +74,23 @@
     "pairings": {
       "protein": [],
       "vegetables": ["лук", "морковь", "картофель", "капуста", "помидоры", "перец"],
-      "sauces": ["томатный", "сметанный", "горчичный"],
+      "sauces": ["томатный соус", "сметанный соус", "горчичный соус"],
       "herbs": ["петрушка", "укроп", "лавровый лист"],
-      "spices": ["черный перец", "паприка", "лавровый лист"]
+      "spices": ["чёрный перец", "паприка", "лавровый лист"]
     },
     "substitutes": [
       {"name": "Говяжья тушенка", "similarity": "high"},
-      {"name": "Домашняя тушеная свинина", "similarity": "high"},
+      {"name": "Домашняя тушёная свинина", "similarity": "high"},
       {"name": "Свинина духовая", "similarity": "medium"},
       {"name": "Свиная поджарка", "similarity": "medium"}
     ]
   },
-
+  "data_source": "health-diet.ru",
+  "data_source_reference": "Усреднённые данные российских справочников по пищевой ценности тушенки из свинины. Тушенка — готовый консервированный продукт, а не отруб, поэтому точного FDC ID нет.",
+  "source_table": null,
+  "source_page": null,
+  "fdc_id": null,
+  "portion": 100,
   "tags": [
     "мясо",
     "свинина",
@@ -97,6 +99,8 @@
     "готовый продукт",
     "для супов",
     "для рагу",
-    "походные блюда"
+    "походные блюда",
+    "cut:pork-shoulder",
+    "cut:pork-belly"
   ]
 }

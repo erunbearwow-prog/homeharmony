@@ -1,101 +1,117 @@
 {
   "name": "Говяжий кострец",
   "name_normalized": "govyazhiy_kostrets",
-  "synonyms": "говяжий кострец, кострец говяжий, говядина кострец, верхняя часть тазобедренного отруба, кострец без кости, мясо для жарки, мясо для тушения, мясо для запекания, кострец для стейков, кострец для ростбифа",
-  "short_description": "Часть тазобедренного отруба говядины, расположенная в верхней части задней ляжки. Имеет плотную, упругую текстуру с тонкими прослойками жира и хорошо удерживает влагу. Относится к первому сорту и используется для жарки, тушения, запекания и приготовления рубленых изделий.",
-  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Говяжий кострец — это часть тазобедренного отруба, которая расположена в верхней части задней ляжки. В кулинарной классификации относится к первому сорту. Кострец имеет округлую, немного приплюснутую форму и состоит из хорошо удерживающих влагу волокон. Текстура упругая, но довольно мягкая, с тонкими прослойками жира. Мясо имеет ярко выраженный вкус и аромат, при этом сравнительно постное и сочное.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, с тонкими прослойками жира</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, ярко выраженный мясной</li><li class=\"ingredient-list-item\"><strong>Сорт</strong> — первый</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — хорошо удерживает влагу, подходит для большинства способов приготовления</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — порционные куски, стейки, медальоны, кубики для тушения</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — рекомендуется для сочности (с травами, чесноком, вином)</li><li class=\"ingredient-list-item\"><strong>Отбивание</strong> — для отбивных и эскалопов</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — большим куском в духовке, на открытом огне, для эскалопов и медальонов</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — для рагу, азу, гуляша, бефстроганова</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — ростбиф, целиком или порционными кусками</li><li class=\"ingredient-list-item\"><strong>Рубленые изделия</strong> — биточки, котлеты, фрикадельки</li><li class=\"ingredient-list-item\"><strong>Стейки</strong> — идеальная прожарка Medium</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, лук, морковь, помидоры, перец</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, сливочный, горчичный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — розмарин, тимьян, петрушка, укроп</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, черный перец, паприка, кориандр</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Оковалок</strong> — схожая часть, более рыхлая структура</li><li class=\"ingredient-list-item\"><strong>Огузок</strong> — из той же части туши</li><li class=\"ingredient-list-item\"><strong>Лопатка</strong> — для тушения</li></ul>",
-
-  "category": "Мясо и мясные продукты",
-
-  "data_source": "health-diet.ru",
-
-  "calories": 142,
-  "protein": 21.3,
-  "fat": 5.6,
+  "synonyms": "говяжий кострец, кострец говядины, кострец говяжий, кострец, говяжий кострец без кости, говяжий кострец на кости, beef sirloin, sirloin of beef, сирлойн, кострец без голяшки, верхняя часть тазобедренного отруба, rump steak, picanha, bife de chorizo",
+  "short_description": "Верхняя часть тазобедренного отруба говядины. Плотное мясо с умеренными прослойками жира. Премиальный отруб для стейков и запекания. Классика для ростбифа. По ГОСТ 31797-2012 — верхняя часть тазобедренного отруба.",
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Говяжий кострец — это верхняя часть тазобедренного отруба говядины. По ГОСТ 31797-2012 соответствует верхней части тазобедренного отруба. В стейковой культуре известен как <strong>Sirloin (Сирлойн)</strong>. Мясо на костреце плотное, с умеренными прослойками жира, что делает его идеальным для стейков, запекания и ростбифа.</p><p class=\"ingredient-text\">Кострец — премиальный отруб. Именно из него делают классические стейки: <strong>Rump Steak (Рамп Стейк)</strong>, <strong>Vegas Strip (Вегас Стрип)</strong>, <strong>Picanha (Пиканья)</strong> и <strong>Tri-tip (Трай-тип)</strong>. Часть костреца используется для стейков <strong>Strip Steak (Стриплойн)</strong> и <strong>T-bone (Ти-боун)</strong> — они захватывают соседние отрубы (тонкий край и вырезку). Также из костреца готовят ростбиф, который подают как горячим, так и холодным. Благодаря плотной текстуре и умеренной жирности мясо остаётся сочным при жарке и запекании.</p><p class=\"ingredient-text\">Кострец делится на несколько частей: <strong>верхний кострец</strong> (top sirloin) — самый ценный, для стейков; <strong>нижний кострец</strong> (bottom sirloin) — для жарки и тушения; <strong>боковой кострец</strong> — для тушения. В России кострец традиционно используется для ростбифа, стейков и запекания целиком. В Аргентине из костреца делают <strong>Bife de Chorizo (Бифе де Чоризо)</strong> — толстый стейк, аналог Нью-Йорк Стрип. В России из костреца также делают <strong>Beefsteak (Бифштекс)</strong> — плоский кусок без кости, и <strong>Romsteck (Ромштекс)</strong> — панированный в сухарях.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, упругая, с умеренными прослойками жира</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, говяжий, с лёгкой сладостью</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — тёмно-красный, с белыми прожилками жира</li><li class=\"ingredient-list-item\"><strong>Кость</strong> — отсутствует или минимальное количество</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 1–3 суток в холодильнике, до 6 месяцев в морозильнике</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — премиальный отруб; Sirloin (Сирлойн); для стейков и ростбифа; Bife de Chorizo (Бифе де Чоризо), Beefsteak (Бифштекс), Romsteck (Ромштекс)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Зачистка</strong> — удалить плёнки, лишний жир, крупные сухожилия</li><li class=\"ingredient-list-item\"><strong>Промывка</strong> — промыть холодной водой и обсушить</li><li class=\"ingredient-list-item\"><strong>Нарезка</strong> — порционными стейками, целым куском для запекания или кубиками для тушения</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — в травах, чесноке, вине, соевом соусе</li><li class=\"ingredient-list-item\"><strong>Отбивание</strong> — при необходимости для тонких стейков и ромштекса</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — стейки Rump Steak (Рамп Стейк), Vegas Strip (Вегас Стрип), Picanha (Пиканья), Bife de Chorizo (Бифе де Чоризо)</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — ростбиф, целым куском</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — стейки и порционные куски</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — порционными кусками</li><li class=\"ingredient-list-item\"><strong>Ростбиф</strong> — классическое блюдо</li><li class=\"ingredient-list-item\"><strong>Бифштекс</strong> — Beefsteak (Бифштекс), плоский кусок без кости</li><li class=\"ingredient-list-item\"><strong>Ромштекс</strong> — Romsteck (Ромштекс), панированный в сухарях</li><li class=\"ingredient-list-item\"><strong>Холодная нарезка</strong> — для бутербродов и салатов</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, морковь, лук, чеснок, кабачки, баклажаны, помидоры, спаржа</li><li class=\"ingredient-list-item\"><strong>Крупы</strong> — рис, булгур, кускус</li><li class=\"ingredient-list-item\"><strong>Травы</strong> — розмарин, тимьян, орегано, петрушка, лавровый лист</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, паприка, куркума, кумин, кориандр</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, винный, сливочный, чесночный, горчичный, перечный</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжья вырезка</strong> — Tenderloin (Тендерлойн), более нежная</li><li class=\"ingredient-list-item\"><strong>Говяжий толстый край</strong> — Ribeye (Рибай), более жирный</li><li class=\"ingredient-list-item\"><strong>Говяжий тонкий край</strong> — Strip Steak (Стриплойн), схожая текстура</li><li class=\"ingredient-list-item\"><strong>Тазобедренный отруб говядины</strong> — более бюджетный вариант</li></ul>",
+  "category": "Мясо, птица, субпродукты",
+  "calories": 205,
+  "protein": 20.0,
+  "fat": 13.5,
   "carbohydrates": 0,
-
-  "water": 72.4,
-  "ash": 1.1,
-
-  "vitamin_b1": 0.065,
-  "vitamin_b2": 0.107,
-  "vitamin_b4": 88.8,
-  "vitamin_b5": 0.629,
-  "vitamin_b6": 0.595,
-  "vitamin_b9_folate": 13,
-  "vitamin_b12": 1.04,
-  "vitamin_e": 0.29,
-  "vitamin_k": 1.2,
-  "vitamin_b3": 6.585,
-
-  "potassium": 333,
-  "calcium": 23,
+  "water": 66.0,
+  "ash": 1.0,
+  "cholesterol": 75,
+  "saturated_fat": 5.5,
+  "monounsaturated_fat": 6.0,
+  "polyunsaturated_fat": 0.5,
+  "sodium": 65,
+  "potassium": 320,
+  "calcium": 10,
   "magnesium": 22,
-  "sodium": 54,
-  "sulfur": 212.6,
-  "phosphorus": 198,
-
-  "iron": 1.54,
-
+  "phosphorus": 190,
+  "iron": 2.0,
+  "zinc": 3.2,
+  "copper": 0.1,
+  "manganese": 0.02,
+  "selenium": 20,
+  "vitamin_b1": 0.06,
+  "vitamin_b2": 0.15,
+  "vitamin_b3": 4.5,
+  "vitamin_b5": 0.7,
+  "vitamin_b6": 0.4,
+  "vitamin_b9_folate": 9,
+  "vitamin_b12": 2.0,
+  "vitamin_d": 0.1,
+  "vitamin_e": 0.3,
   "semantic_data": {
     "properties": [
+      "мясо",
       "говядина",
-      "тазобедренная часть",
-      "первый сорт",
-      "плотная текстура",
-      "упругая",
-      "с тонкими прослойками жира",
-      "для жарки",
-      "для тушения",
-      "для запекания",
+      "кострец",
+      "говяжий кострец",
+      "отруб",
+      "бескостный",
+      "верхняя часть тазобедренного отруба",
+      "премиальный отруб",
+      "плотное мясо",
+      "с прослойками жира",
       "для стейков",
-      "для рубленых изделий"
+      "для запекания",
+      "для ростбифа",
+      "для гриля"
     ],
     "preparations": [
-      "нарезка порционными кусками",
-      "маринование с травами и специями",
-      "отбивание для отбивных"
+      "зачистка от плёнок",
+      "удаление лишнего жира",
+      "промывка и обсушивание",
+      "нарезка порционными стейками",
+      "маринование",
+      "отбивание при необходимости"
+    ],
+    "styles": [
+      {"code": "steak", "priority": "high"},
+      {"code": "roast", "priority": "high"},
+      {"code": "beefsteak", "priority": "medium"},
+      {"code": "romsteck", "priority": "medium"}
     ],
     "cooking_methods": [
-      {"method": "жарка большим куском", "priority": "high"},
-      {"method": "жарка на открытом огне", "priority": "high"},
-      {"method": "тушение", "priority": "high"},
-      {"method": "запекание (ростбиф)", "priority": "high"},
-      {"method": "приготовление эскалопов и медальонов", "priority": "high"},
-      {"method": "приготовление рубленых изделий", "priority": "medium"}
+      {"code": "pan_fry", "priority": "high"},
+      {"code": "grill", "priority": "high"},
+      {"code": "roast", "priority": "high"},
+      {"code": "braise", "priority": "medium"},
+      {"code": "broil", "priority": "medium"}
     ],
     "applications": [
-      "вторые блюда",
+      "стейки Rump Steak (Рамп Стейк)",
+      "стейки Vegas Strip (Вегас Стрип)",
+      "стейки Picanha (Пиканья)",
+      "стейки Tri-tip (Трай-тип)",
+      "стейки Bife de Chorizo (Бифе де Чоризо)",
+      "бифштекс Beefsteak",
+      "ромштекс Romsteck",
       "ростбиф",
-      "рагу",
-      "гуляш",
-      "бефстроганов",
-      "котлеты",
-      "биточки"
+      "запечённая говядина",
+      "холодная нарезка"
     ],
     "pairings": {
       "protein": [],
-      "vegetables": ["картофель", "лук", "морковь", "помидоры", "перец"],
-      "sauces": ["томатный", "сметанный", "сливочный", "горчичный"],
-      "herbs": ["розмарин", "тимьян", "петрушка", "укроп"],
-      "spices": ["чеснок", "черный перец", "паприка", "кориандр"]
+      "vegetables": ["картофель", "морковь", "лук", "чеснок", "кабачки", "баклажаны", "помидоры", "спаржа"],
+      "sauces": ["томатный соус", "винный соус", "сливочный соус", "чесночный соус", "горчичный соус", "перечный соус"],
+      "herbs": ["розмарин", "тимьян", "орегано", "петрушка", "лавровый лист"],
+      "spices": ["чёрный перец", "паприка", "куркума", "кумин", "кориандр"]
     },
     "substitutes": [
-      {"name": "Оковалок", "similarity": "high"},
-      {"name": "Огузок", "similarity": "high"},
-      {"name": "Лопатка", "similarity": "medium"}
+      {"name": "Говяжья вырезка", "similarity": "high"},
+      {"name": "Говяжий толстый край", "similarity": "high"},
+      {"name": "Говяжий тонкий край", "similarity": "high"},
+      {"name": "Тазобедренный отруб говядины", "similarity": "medium"}
     ]
   },
-
+  "data_source": "skurikhin_tutelyan_2002",
+  "data_source_reference": "Химический состав российских пищевых продуктов : Справочник / Под ред. член-корр. МАИ, проф. И. М. Скурихина и академика РАМН, проф. В. А. Тутельяна. — М. : ДеЛи принт, 2002. — 236 с. — ISBN 5-94343-028-8.",
   "tags": [
     "мясо",
     "говядина",
     "кострец",
-    "тазобедренная часть",
-    "первый сорт",
-    "для жарки",
-    "для тушения",
+    "говяжий кострец",
+    "отруб",
+    "бескостный",
+    "премиальный отруб",
+    "для стейков",
     "для запекания",
-    "ростбиф"
+    "для гриля",
+    "ростбиф",
+    "cut:sirloin"
   ]
 }

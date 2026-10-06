@@ -1,50 +1,57 @@
 {
   "name": "Свиные сосиски",
   "name_normalized": "svinye_sosiski",
-  "synonyms": "свиные сосиски, сосиски свиные, сосиски из свинины, варёные сосиски, сосиски ГОСТ, сосиски свиные ГОСТ, колбасные изделия, сосиски для жарки, сосиски для варки, сосиски для гриля, сосиски в натуральной оболочке",
+  "synonyms": "свиные сосиски, сосиски свиные, сосиски из свинины, варёные сосиски, сосиски ГОСТ, сосиски свиные ГОСТ, колбасные изделия, сосиски для жарки, сосиски для варки, сосиски для гриля, сосиски в натуральной оболочке, pork sausages",
   "short_description": "Варёное колбасное изделие из свиного мяса в натуральной или искусственной оболочке. Отличается сочной, упругой текстурой и насыщенным свиным вкусом. Готовы к употреблению, но часто дополнительно обжариваются или запекаются.",
-  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Свиные сосиски — это разновидность варёных колбасных изделий, изготовленных преимущественно из свиного мяса. Они представляют собой небольшие тонкие колбаски в натуральной (черева) или искусственной оболочке. По ГОСТ 23670-2019 сосиски свиные должны содержать не менее 10 г белка и не более 30 г жира на 100 г продукта. Классический состав включает жилованную свинину, воду, свиную грудинку или боковой жир-сырец, молоко, соль, сахар, специи (чёрный перец, мускатный орех) и нитрит натрия для фиксации цвета.</p><p class=\"ingredient-text\">Сосиски имеют упругую, сочную консистенцию и характерный аромат специй. Они готовы к употреблению, но чаще всего их дополнительно обжаривают, варят или запекают. Сосиски широко используются в повседневном питании: как самостоятельное блюдо, в составе горячих бутербродов, салатов, яичницы и макаронных блюд.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — упругая, сочная, плотная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный свиной, с лёгкой сладостью и ароматом специй</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — розовый, равномерный на разрезе</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — тонкие короткие колбаски</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — в холодильнике до 5-7 суток (в вакууме), после вскрытия — 2-3 суток</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — готовый продукт, не требует длительной термической обработки</li></ul><h2 class=\"ingredient-title\">Состав (типичный по ГОСТ)</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Основное сырьё</strong> — свинина жилованная</li><li class=\"ingredient-list-item\"><strong>Дополнительное сырьё</strong> — грудинка свиная, жир-сырец боковой</li><li class=\"ingredient-list-item\"><strong>Связующее</strong> — вода, молоко коровье (иногда обезвоженное)</li><li class=\"ingredient-list-item\"><strong>Посолочные</strong> — соль, нитрит натрия, сахар</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — перец чёрный, мускатный орех, кориандр</li><li class=\"ingredient-list-item\"><strong>Оболочка</strong> — натуральная (черева) или искусственная</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике при 0-6°C</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — 3-5 минут в кипящей воде (не переваривать)</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде до румяной корочки</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке при 180-200°C 10-15 минут</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — на решётке до подрумянивания</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Самостоятельное блюдо</strong> — варёные или жареные сосиски</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — с картофельным пюре, тушёной капустой, гречкой</li><li class=\"ingredient-list-item\"><strong>Горячие бутерброды</strong> — с сосисками и сыром</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — в составе мясных салатов</li><li class=\"ingredient-list-item\"><strong>Яичница</strong> — с сосисками на завтрак</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с овощами и соусами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофель, капуста, гречка, рис, макароны</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — капуста тушёная, лук, морковь, помидоры, огурцы</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, горчичный, кетчуп</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, зелёный лук</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, паприка, лавровый лист</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сардельки свиные</strong> — более крупные, плотнее</li><li class=\"ingredient-list-item\"><strong>Сосиски молочные</strong> — менее жирные</li><li class=\"ingredient-list-item\"><strong>Колбаски для гриля</strong> — более крупные, плотнее</li><li class=\"ingredient-list-item\"><strong>Домашние колбаски</strong> — из фарша в оболочке</li></ul>",
-
-  "category": "Мясо и мясные продукты",
-
-  "data_source": "health-diet.ru",
-
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Свиные сосиски — это разновидность варёных колбасных изделий, изготовленных преимущественно из свиного мяса. Они представляют собой небольшие тонкие колбаски в натуральной (черева) или искусственной оболочке. По ГОСТ 23670-2019 сосиски свиные должны содержать не менее 10 г белка и не более 30 г жира на 100 г продукта. Классический состав включает жилованную свинину, воду, свиную грудинку или боковой жир-сырец, молоко, соль, сахар, специи (чёрный перец, мускатный орех) и нитрит натрия для фиксации цвета.</p><p class=\"ingredient-text\">Сосиски имеют упругую, сочную консистенцию и характерный аромат специй. Они готовы к употреблению, но чаще всего их дополнительно обжаривают, варят или запекают. Сосиски широко используются в повседневном питании: как самостоятельное блюдо, в составе горячих бутербродов, салатов, яичницы и макаронных блюд.</p><p class=\"ingredient-text\">В мировой кухне аналогичный продукт известен как <strong>Pork Sausages (Порк Сосиджес)</strong> — варёные свиные сосиски.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — упругая, сочная, плотная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный свиной, с лёгкой сладостью и ароматом специй</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — розовый, равномерный на разрезе</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — тонкие короткие колбаски</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — в холодильнике до 5–7 суток (в вакууме), после вскрытия — 2–3 суток</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — готовый продукт, не требует длительной термической обработки; Pork Sausages (Порк Сосиджес)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в холодильнике при 0–6 °C</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — 3–5 минут в кипящей воде (не переваривать)</li><li class=\"ingredient-list-item\"><strong>Жарка</strong> — на сковороде до румяной корочки</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке при 180–200 °C 10–15 минут</li><li class=\"ingredient-list-item\"><strong>Гриль</strong> — на решётке до подрумянивания</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Самостоятельное блюдо</strong> — варёные или жареные сосиски</li><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — с картофельным пюре, тушёной капустой, гречкой</li><li class=\"ingredient-list-item\"><strong>Горячие бутерброды</strong> — с сосисками и сыром</li><li class=\"ingredient-list-item\"><strong>Салаты</strong> — в составе мясных салатов</li><li class=\"ingredient-list-item\"><strong>Яичница</strong> — с сосисками на завтрак</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — с овощами и соусами</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Гарниры</strong> — картофель, капуста, гречка, рис, макароны</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — капуста тушёная, лук, морковь, помидоры, огурцы</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — томатный, сметанный, горчичный, кетчуп</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп, зелёный лук</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чёрный перец, паприка, лавровый лист</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Сардельки свиные</strong> — более крупные, плотнее</li><li class=\"ingredient-list-item\"><strong>Сосиски молочные</strong> — менее жирные</li><li class=\"ingredient-list-item\"><strong>Колбаски для гриля</strong> — более крупные, плотнее</li><li class=\"ingredient-list-item\"><strong>Домашние колбаски</strong> — из фарша в оболочке</li></ul>",
+  "category": "Мясо, птица, субпродукты",
   "calories": 263,
   "protein": 13.1,
   "fat": 23.0,
   "carbohydrates": 1.0,
-
   "water": 54.8,
   "ash": 2.6,
-
-  "vitamin_b1": 0.2,
-  "vitamin_b2": 0.1,
-  "vitamin_b3": 1.5,
-  "vitamin_pp": 1.0,
-
+  "cholesterol": null,
+  "saturated_fat": 8.5,
+  "monounsaturated_fat": 9.8,
+  "polyunsaturated_fat": null,
+  "sodium": 826,
   "potassium": 242,
   "calcium": 7,
   "magnesium": 21,
-  "sodium": 826,
   "phosphorus": 164,
-  "sulfur": 118,
-  "chlorine": 1273,
   "iron": 1.6,
-  "iodine": 7,
-
-  "saturated_fat": 8.5,
-
+  "zinc": null,
+  "copper": null,
+  "manganese": null,
+  "selenium": null,
+  "vitamin_a": 0,
+  "beta_carotene": 0,
+  "retinol_equivalent": 0,
+  "vitamin_b1": 0.2,
+  "vitamin_b2": 0.1,
+  "vitamin_b3": 1.5,
+  "vitamin_b4": 55,
+  "vitamin_b5": 0.5,
+  "vitamin_b6": 0.2,
+  "vitamin_b9_folate": 3,
+  "vitamin_b12": 0.5,
+  "vitamin_c": 0,
+  "vitamin_d": 0.3,
+  "vitamin_e": 0.3,
   "semantic_data": {
     "properties": [
-      "колбасное изделие",
+      "мясо",
       "свинина",
+      "сосиски",
+      "колбасное изделие",
       "варёные",
       "готовый продукт",
+      "упругая текстура",
+      "сочные",
       "для жарки",
       "для гриля",
-      "для варки",
-      "упругая текстура",
-      "сочные"
+      "для варки"
     ],
     "preparations": [
       "хранение в холодильнике",
@@ -53,12 +60,17 @@
       "запекание в духовке",
       "гриль на решётке"
     ],
+    "styles": [
+      {"code": "sausage", "priority": "high"},
+      {"code": "kebab", "priority": "medium"},
+      {"code": "shashlik", "priority": "medium"}
+    ],
     "cooking_methods": [
-      {"method": "варка", "priority": "high"},
-      {"method": "жарка", "priority": "high"},
-      {"method": "запекание", "priority": "high"},
-      {"method": "гриль", "priority": "medium"},
-      {"method": "тушение с овощами", "priority": "medium"}
+      {"code": "boil", "priority": "high"},
+      {"code": "pan_fry", "priority": "high"},
+      {"code": "oven", "priority": "high"},
+      {"code": "grill", "priority": "medium"},
+      {"code": "smoke", "priority": "low"}
     ],
     "applications": [
       "вторые блюда",
@@ -70,7 +82,7 @@
     "pairings": {
       "protein": [],
       "vegetables": ["капуста тушёная", "лук", "морковь", "помидоры", "огурцы"],
-      "sauces": ["томатный", "сметанный", "горчичный", "кетчуп"],
+      "sauces": ["томатный соус", "сметанный соус", "горчичный соус", "кетчуп"],
       "herbs": ["петрушка", "укроп", "зелёный лук"],
       "spices": ["чёрный перец", "паприка", "лавровый лист"]
     },
@@ -81,7 +93,12 @@
       {"name": "Домашние колбаски", "similarity": "low"}
     ]
   },
-
+  "data_source": "manual_avg",
+  "data_source_reference": "Усреднённые данные российских справочников по пищевой ценности свиных сосисок (ГОСТ 23670-2019). Сосиски — готовое колбасное изделие, а не отруб, поэтому точного FDC ID нет.",
+  "source_table": null,
+  "source_page": null,
+  "fdc_id": null,
+  "portion": 100,
   "tags": [
     "мясо",
     "свинина",
@@ -90,6 +107,8 @@
     "варёные",
     "для жарки",
     "для гриля",
-    "готовый продукт"
+    "готовый продукт",
+    "cut:pork-shoulder",
+    "cut:pork-neck"
   ]
 }

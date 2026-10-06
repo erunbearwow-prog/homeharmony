@@ -1,52 +1,51 @@
 {
   "name": "Свиная рулька",
   "name_normalized": "svinaya_rulka",
-  "synonyms": "свиная рулька, рулька, свиная голяшка, голяшка свиная, свиная нога, свиная рулька на кости, рулька для запекания, рулька для холодца, рулька для бульона, рулька для тушения, вепрево колено, айсбайн, Schweinshaxe, Eisbein",
+  "synonyms": "свиная рулька, рулька, свиная голяшка, голяшка свиная, свиная нога, свиная рулька на кости, рулька для запекания, рулька для холодца, рулька для бульона, рулька для тушения, вепрево колено, айсбайн, Schweinshaxe, Eisbein, pork hock, pork knuckle",
   "short_description": "Нижняя часть свиной ноги (передней или задней) с кожей, плотным слоем соединительной ткани и небольшим количеством мяса. Отличается высоким содержанием коллагена, который при длительной термической обработке превращается в нежный гель. Идеальна для холодца, наваристых бульонов, тушения и запекания.",
-  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Свиная рулька — это часть свиного окорока, прилегающая к коленному или локтевому суставу. Она состоит преимущественно из соединительной ткани, грубых мышц, кожи и костей, с небольшим количеством темного мяса с насыщенным вкусом. Передняя рулька более «поджарая» — в ней больше костей, связок и сухожилий, она отлично подходит для бульонов и холодца. Задняя рулька крупнее и мясистее, её часто используют для запекания и вторых блюд.</p><p class=\"ingredient-text\">Из-за высокого содержания коллагена рульку нельзя быстро жарить — ей требуется длительная варка, томление или запекание. При длительной термической обработке соединительная ткань размягчается и превращается в нежнейший гель, а мясо становится мягким и сочным. Это свойство делает рульку идеальной основой для холодца, который застывает без добавления желатина.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, с большим количеством соединительной ткани; после длительной готовки — нежная, желеобразная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, мясной, с легкой сладостью</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — мясо темно-красное, кожа кремово-белая или розоватая</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — крупный кусок на кости с кожей</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — в холодильнике до 3-5 суток, в заморозке до 6 месяцев</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — требует длительной термической обработки (2-5 часов)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойка</strong> — тщательно промыть холодной водой, удалить осколки костей</li><li class=\"ingredient-list-item\"><strong>Очистка кожи</strong> — поскрести ножом, удалить остатки щетины (можно обжечь открытым пламенем)</li><li class=\"ingredient-list-item\"><strong>Надрезы</strong> — сделать надрезы на коже для лучшего проникновения маринада и вытапливания жира</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — рекомендуется для сочности и аромата (с чесноком, травами, пивом, квашеной капустой)</li><li class=\"ingredient-list-item\"><strong>Вымачивание</strong> — при необходимости вымочить в воде или слабом уксусном растворе</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Холодец</strong> — классическое применение, застывает без желатина</li><li class=\"ingredient-list-item\"><strong>Бульоны</strong> — наваристые супы, солянка, борщ</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке, в пиве, с квашеной капустой (вепрево колено)</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в соусах, с овощами</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — горячее и холодное</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — для последующего запекания или подачи с гарниром</li><li class=\"ingredient-list-item\"><strong>Су-вид</strong> — современная технология для сохранения сочности</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — квашеная капуста, картофель, лук, морковь, чеснок, свёкла</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — горчичный, хрен, томатный, пивной, сметанный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — розмарин, тимьян, лавровый лист, петрушка, укроп</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, черный перец, паприка, кориандр, кумин, тмин, зира, фенхель</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — пиво (для тушения и маринада), красное вино</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свиная голяшка</strong> — задняя часть, более мясистая</li><li class=\"ingredient-list-item\"><strong>Свиные ребра</strong> — для бульонов и тушения</li><li class=\"ingredient-list-item\"><strong>Говяжья голяшка</strong> — для холодца и бульонов</li><li class=\"ingredient-list-item\"><strong>Куриные ножки</strong> — менее коллагеновые, для бульона</li></ul>",
-
-  "category": "Мясо и мясные продукты",
-
-  "data_source": "usda",
-
-  "calories": 171,
-  "protein": 19.1,
-  "fat": 10.5,
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Свиная рулька — это часть свиного окорока, прилегающая к коленному или локтевому суставу. Она состоит преимущественно из соединительной ткани, грубых мышц, кожи и костей, с небольшим количеством тёмного мяса с насыщенным вкусом. Передняя рулька более «поджарая» — в ней больше костей, связок и сухожилий, она отлично подходит для бульонов и холодца. Задняя рулька крупнее и мясистее, её часто используют для запекания и вторых блюд.</p><p class=\"ingredient-text\">Из-за высокого содержания коллагена рульку нельзя быстро жарить — ей требуется длительная варка, томление или запекание. При длительной термической обработке соединительная ткань размягчается и превращается в нежнейший гель, а мясо становится мягким и сочным. Это свойство делает рульку идеальной основой для холодца, который застывает без добавления желатина.</p><p class=\"ingredient-text\">В мировой кухне рулька известна как <strong>Pork Hock (Порк Хок)</strong> или <strong>Pork Knuckle (Порк Накл)</strong>. В немецкой кухне из неё готовят <strong>Schweinshaxe (Швайнсхаксе)</strong> — запечённую рульку с пивом, и <strong>Eisbein (Айсбайн)</strong> — отварную рульку с квашеной капустой. В чешской кухне это <strong>Vepřové koleno (Вепрево колено)</strong>.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — плотная, с большим количеством соединительной ткани; после длительной готовки — нежная, желеобразная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — насыщенный, мясной, с лёгкой сладостью</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — мясо темно-красное, кожа кремово-белая или розоватая</li><li class=\"ingredient-list-item\"><strong>Кость</strong> — крупная кость с кожей (в варианте на кости)</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — 1–3 суток в холодильнике, до 6 месяцев в морозильнике</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — требует длительной термической обработки (2–5 часов); Schweinshaxe (Швайнсхаксе), Eisbein (Айсбайн)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мойка</strong> — тщательно промыть холодной водой, удалить осколки костей</li><li class=\"ingredient-list-item\"><strong>Очистка кожи</strong> — поскрести ножом, удалить остатки щетины (можно обжечь открытым пламенем)</li><li class=\"ingredient-list-item\"><strong>Надрезы</strong> — сделать надрезы на коже для лучшего проникновения маринада и вытапливания жира</li><li class=\"ingredient-list-item\"><strong>Маринование</strong> — рекомендуется для сочности и аромата (с чесноком, травами, пивом, квашеной капустой)</li><li class=\"ingredient-list-item\"><strong>Вымачивание</strong> — при необходимости вымочить в воде или слабом уксусном растворе</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Холодец</strong> — классическое применение, застывает без желатина</li><li class=\"ingredient-list-item\"><strong>Бульоны</strong> — наваристые супы, солянка, борщ</li><li class=\"ingredient-list-item\"><strong>Запекание</strong> — в духовке, в пиве, с квашеной капустой (вепрево колено)</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — в соусах, с овощами</li><li class=\"ingredient-list-item\"><strong>Копчение</strong> — горячее и холодное</li><li class=\"ingredient-list-item\"><strong>Варка</strong> — для последующего запекания или подачи с гарниром</li><li class=\"ingredient-list-item\"><strong>Су-вид</strong> — современная технология для сохранения сочности</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Овощи</strong> — квашеная капуста, картофель, лук, морковь, чеснок, свёкла</li><li class=\"ingredient-list-item\"><strong>Соусы</strong> — горчичный, хрен, томатный, пивной, сметанный</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — розмарин, тимьян, лавровый лист, петрушка, укроп</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, чёрный перец, паприка, кориандр, кумин, тмин, зира, фенхель</li><li class=\"ingredient-list-item\"><strong>Напитки</strong> — пиво (для тушения и маринада), красное вино</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Свиная голяшка</strong> — задняя часть, более мясистая</li><li class=\"ingredient-list-item\"><strong>Свиные рёбра</strong> — для бульонов и тушения</li><li class=\"ingredient-list-item\"><strong>Говяжья голяшка</strong> — для холодца и бульонов</li><li class=\"ingredient-list-item\"><strong>Куриные ножки</strong> — менее коллагеновые, для бульона</li></ul>",
+  "category": "Мясо, птица, субпродукты",
+  "calories": 193,
+  "protein": 19.0,
+  "fat": 12.5,
   "carbohydrates": 0,
-
-  "water": 68,
-  "ash": 2.3,
-
-  "vitamin_a": 23,
-  "vitamin_b1": 0.08,
-  "vitamin_b2": 0.068,
-  "vitamin_b3": 1.1,
-  "vitamin_b5": 0.344,
-  "vitamin_b6": 0.064,
-  "vitamin_b9_folate": 1,
-  "vitamin_b12": 0.51,
-  "vitamin_d": 0.2,
-  "vitamin_e": 0.17,
-
-  "potassium": 47,
-  "calcium": 19,
-  "magnesium": 6,
-  "sodium": 1050,
-  "phosphorus": 60,
-  "iron": 1.14,
-  "manganese": 0.022,
-  "copper": 0.082,
-  "zinc": 2.38,
-  "selenium": 26.3,
-
-  "saturated_fat": 3.23,
-  "monounsaturated_fat": 5.13,
-  "polyunsaturated_fat": 1.2,
-  "cholesterol": 89,
-
+  "water": 68.2,
+  "ash": 0.9,
+  "cholesterol": 71,
+  "saturated_fat": 4.3,
+  "monounsaturated_fat": 4.42,
+  "polyunsaturated_fat": 1.3,
+  "sodium": 55,
+  "potassium": 357,
+  "calcium": 8,
+  "magnesium": 21,
+  "phosphorus": 213,
+  "iron": 0.9,
+  "zinc": 2.4,
+  "copper": 0.06,
+  "manganese": 0.01,
+  "selenium": 32.0,
+  "vitamin_a": 0,
+  "beta_carotene": 0,
+  "retinol_equivalent": 0,
+  "vitamin_b1": 0.88,
+  "vitamin_b2": 0.27,
+  "vitamin_b3": 4.6,
+  "vitamin_b4": 71.2,
+  "vitamin_b5": 0.73,
+  "vitamin_b6": 0.44,
+  "vitamin_b9_folate": 5,
+  "vitamin_b12": 0.6,
+  "vitamin_c": 0.6,
+  "vitamin_d": 0.7,
+  "vitamin_e": 0.2,
   "semantic_data": {
     "properties": [
+      "мясо",
       "свинина",
+      "рулька",
+      "свиная рулька",
+      "отруб",
       "на кости",
       "с кожей",
       "коллагеновая",
@@ -63,44 +62,62 @@
       "маринование с травами и специями",
       "вымачивание при необходимости"
     ],
+    "styles": [
+      {"code": "roast", "priority": "high"},
+      {"code": "stew", "priority": "high"},
+      {"code": "soup", "priority": "high"},
+      {"code": "broth", "priority": "high"},
+      {"code": "ham", "priority": "medium"}
+    ],
     "cooking_methods": [
-      {"method": "варка (холодец, бульон)", "priority": "high"},
-      {"method": "запекание в духовке", "priority": "high"},
-      {"method": "тушение", "priority": "high"},
-      {"method": "копчение", "priority": "medium"},
-      {"method": "су-вид", "priority": "medium"}
+      {"code": "oven", "priority": "high"},
+      {"code": "braise", "priority": "high"},
+      {"code": "boil", "priority": "high"},
+      {"code": "smoke", "priority": "medium"},
+      {"code": "sous_vide", "priority": "medium"}
     ],
     "applications": [
       "холодец",
       "бульоны",
       "вторые блюда",
       "закуски",
-      "копчености"
+      "копчёности",
+      "вепрево колено Vepřové koleno",
+      "Schweinshaxe (Швайнсхаксе)",
+      "Eisbein (Айсбайн)"
     ],
     "pairings": {
       "protein": [],
       "vegetables": ["квашеная капуста", "картофель", "лук", "морковь", "чеснок", "свёкла"],
-      "sauces": ["горчичный", "хрен", "томатный", "пивной", "сметанный"],
+      "sauces": ["горчичный соус", "хрен", "томатный соус", "пивной соус", "сметанный соус"],
       "herbs": ["розмарин", "тимьян", "лавровый лист", "петрушка", "укроп"],
-      "spices": ["чеснок", "черный перец", "паприка", "кориандр", "кумин", "тмин", "зира", "фенхель"]
+      "spices": ["чеснок", "чёрный перец", "паприка", "кориандр", "кумин", "тмин", "зира", "фенхель"]
     },
     "substitutes": [
       {"name": "Свиная голяшка", "similarity": "high"},
-      {"name": "Свиные ребра", "similarity": "medium"},
+      {"name": "Свиные рёбра", "similarity": "medium"},
       {"name": "Говяжья голяшка", "similarity": "medium"},
       {"name": "Куриные ножки", "similarity": "low"}
     ]
   },
-
+  "data_source": "usda_sr_legacy",
+  "data_source_reference": "USDA FoodData Central, SR Legacy. Pork, fresh, leg (ham), shank half, separable lean and fat, raw. FDC ID 168247.",
+  "source_table": null,
+  "source_page": null,
+  "fdc_id": 168247,
+  "portion": 100,
   "tags": [
     "мясо",
     "свинина",
     "рулька",
-    "голяшка",
+    "свиная рулька",
+    "отруб",
     "на кости",
+    "с кожей",
+    "коллагеновая",
     "для холодца",
     "для бульона",
     "для запекания",
-    "коллаген"
+    "cut:pork-hock"
   ]
 }

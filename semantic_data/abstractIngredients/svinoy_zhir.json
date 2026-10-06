@@ -3,49 +3,49 @@
   "name_normalized": "svinoy_zhir",
   "synonyms": "свиной жир, жир свиной, свиное сало, сало свиное, топленый свиной жир, смалец, лярд, свиной жир топленый, жир-сырец свиной, подкожный свиной жир, нутряной свиной жир, lard, pork fat",
   "short_description": "Продукт животного происхождения, получаемый из подкожной или внутренней жировой ткани свиньи. При топлении превращается в прозрачный или слегка желтоватый жир с нейтральным вкусом. Широко используется в кулинарии для жарки, выпечки и как основа для паштетов.",
-  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Свиной жир — это животный жир, который получают из подкожной (сало) или внутренней (нутряной) жировой ткани свиньи. В зависимости от способа обработки различают сырой жир-сырец и топленый жир (смалец, лярд). Топленый свиной жир представляет собой прозрачную или слегка желтоватую массу с нейтральным вкусом и характерным ароматом. Согласно ГОСТ 25292-2017, свиной топленый жир высшего сорта должен иметь белый цвет, допускается бледно-голубой оттенок, мазеобразную, зернистую или плотную консистенцию и характерные для животного жира запах и вкус.</p><p class=\"ingredient-text\">Свиной жир отличается высоким содержанием жирных кислот: около 39% насыщенных, 45% мононенасыщенных и 10% полиненасыщенных. Основные жирные кислоты — пальмитиновая, стеариновая и олеиновая. Благодаря высокому содержанию жира, продукт обладает высокой калорийностью (около 900 ккал на 100 г) и используется в кулинарии как энергетически ценная добавка.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мазеобразная, зернистая или плотная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, характерный для животного жира</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый, допускается бледно-голубой оттенок</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — топленый жир или сырой жир-сырец</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — высокая температура дымления, подходит для жарки</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вытапливание</strong> — нарезать жир-сырец кусочками, вытапливать на медленном огне, отделяя шкварки</li><li class=\"ingredient-list-item\"><strong>Фильтрация</strong> — процедить через марлю или сито</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в стеклянной банке в холодильнике до 6 месяцев</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — картофель, мясо, овощи</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — песочное тесто, печенье, пироги</li><li class=\"ingredient-list-item\"><strong>Паштеты</strong> — основа для домашних паштетов</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — добавка для сочности блюд</li><li class=\"ingredient-list-item\"><strong>Фритюр</strong> — для жарки во фритюре</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — свинина, говядина, птица</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, лук, капуста, морковь</li><li class=\"ingredient-list-item\"><strong>Тесто</strong> — для выпечки</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, черный перец, паприка, лавровый лист</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжий жир</strong> — схожие свойства</li><li class=\"ingredient-list-item\"><strong>Куриный жир</strong> — более мягкий</li><li class=\"ingredient-list-item\"><strong>Растительное масло</strong> — для жарки</li><li class=\"ingredient-list-item\"><strong>Сливочное масло</strong> — для выпечки</li></ul>",
-
-  "category": "Мясо и мясные продукты",
-
-  "data_source": "usda",
-
-  "calories": 897,
+  "description": "<h2 class=\"ingredient-title\">Краткая характеристика</h2><p class=\"ingredient-text\">Свиной жир — это животный жир, который получают из подкожной (сало) или внутренней (нутряной) жировой ткани свиньи. В зависимости от способа обработки различают сырой жир-сырец и топленый жир (смалец, лярд). Топленый свиной жир представляет собой прозрачную или слегка желтоватую массу с нейтральным вкусом и характерным ароматом.</p><p class=\"ingredient-text\">Согласно ГОСТ 25292-2017, свиной топленый жир высшего сорта должен иметь белый цвет, допускается бледно-голубой оттенок, мазеобразную, зернистую или плотную консистенцию и характерные для животного жира запах и вкус. Свиной жир отличается высоким содержанием жирных кислот: около 39% насыщенных, 45% мононенасыщенных и 10% полиненасыщенных. Основные жирные кислоты — пальмитиновая, стеариновая и олеиновая.</p><p class=\"ingredient-text\">Благодаря высокому содержанию жира, продукт обладает высокой калорийностью (около 900 ккал на 100 г) и используется в кулинарии как энергетически ценная добавка. В мировой кухне свиной жир известен как <strong>Lard (Лярд)</strong> или <strong>Pork Fat (Порк Фэт)</strong>.</p><h2 class=\"ingredient-title\">Свойства и особенности</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Текстура</strong> — мазеобразная, зернистая или плотная</li><li class=\"ingredient-list-item\"><strong>Вкус</strong> — нейтральный, характерный для животного жира</li><li class=\"ingredient-list-item\"><strong>Цвет</strong> — белый, допускается бледно-голубой оттенок</li><li class=\"ingredient-list-item\"><strong>Форма</strong> — топленый жир или сырой жир-сырец</li><li class=\"ingredient-list-item\"><strong>Срок хранения</strong> — до 6 месяцев в холодильнике, до 12 месяцев в морозильнике</li><li class=\"ingredient-list-item\"><strong>Особенность</strong> — высокая температура дымления, подходит для жарки; Lard (Лярд)</li></ul><h2 class=\"ingredient-title\">Подготовка</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Вытапливание</strong> — нарезать жир-сырец кусочками, вытапливать на медленном огне, отделяя шкварки</li><li class=\"ingredient-list-item\"><strong>Фильтрация</strong> — процедить через марлю или сито</li><li class=\"ingredient-list-item\"><strong>Хранение</strong> — в стеклянной банке в холодильнике до 6 месяцев</li></ul><h2 class=\"ingredient-title\">Кулинарное применение</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Жарка</strong> — картофель, мясо, овощи</li><li class=\"ingredient-list-item\"><strong>Выпечка</strong> — песочное тесто, печенье, пироги</li><li class=\"ingredient-list-item\"><strong>Паштеты</strong> — основа для домашних паштетов</li><li class=\"ingredient-list-item\"><strong>Тушение</strong> — добавка для сочности блюд</li><li class=\"ingredient-list-item\"><strong>Фритюр</strong> — для жарки во фритюре</li></ul><h2 class=\"ingredient-title\">С чем сочетается</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Мясо</strong> — свинина, говядина, птица</li><li class=\"ingredient-list-item\"><strong>Овощи</strong> — картофель, лук, капуста, морковь</li><li class=\"ingredient-list-item\"><strong>Тесто</strong> — для выпечки</li><li class=\"ingredient-list-item\"><strong>Специи</strong> — чеснок, чёрный перец, паприка, лавровый лист</li><li class=\"ingredient-list-item\"><strong>Зелень</strong> — петрушка, укроп</li></ul><h2 class=\"ingredient-title\">Чем заменить</h2><ul class=\"ingredient-list ingredient-list-bulleted\"><li class=\"ingredient-list-item\"><strong>Говяжий жир</strong> — схожие свойства</li><li class=\"ingredient-list-item\"><strong>Куриный жир</strong> — более мягкий</li><li class=\"ingredient-list-item\"><strong>Растительное масло</strong> — для жарки</li><li class=\"ingredient-list-item\"><strong>Сливочное масло</strong> — для выпечки</li></ul>",
+  "category": "Мясо, птица, субпродукты",
+  "calories": 902,
   "protein": 0,
-  "fat": 99.7,
+  "fat": 100,
   "carbohydrates": 0,
-
-  "water": 0.2,
-  "ash": 0.1,
-
-  "vitamin_a": 26,
-  "retinol_equivalent": 26,
-  "vitamin_b1": 0.2,
-  "vitamin_b2": 0.1,
-  "vitamin_b3": 3.0,
-  "vitamin_b4": 31,
-  "vitamin_b5": 0.4,
-  "vitamin_b6": 0.1,
-  "vitamin_b12": 1.0,
-  "vitamin_d": 2.0,
-  "vitamin_e": 0.4,
-
-  "phosphorus": 84,
-  "magnesium": 6,
-  "zinc": 1.0,
-  "copper": 0.1,
-  "selenium": 9.0,
-
-  "saturated_fat": 39.6,
-  "monounsaturated_fat": 45.6,
-  "polyunsaturated_fat": 10.6,
-  "cholesterol": 100,
-
+  "water": 0,
+  "ash": 0,
+  "cholesterol": 95,
+  "saturated_fat": 39.2,
+  "monounsaturated_fat": 45.1,
+  "polyunsaturated_fat": 11.2,
+  "sodium": 0,
+  "potassium": 0,
+  "calcium": 0,
+  "magnesium": 0,
+  "phosphorus": 0,
+  "iron": 0,
+  "zinc": 0.11,
+  "copper": 0,
+  "manganese": 0,
+  "selenium": 0.2,
+  "vitamin_a": 0,
+  "beta_carotene": 0,
+  "retinol_equivalent": 0,
+  "vitamin_b1": 0,
+  "vitamin_b2": 0,
+  "vitamin_b3": 0,
+  "vitamin_b4": 49.7,
+  "vitamin_b5": 0,
+  "vitamin_b6": 0,
+  "vitamin_b9_folate": 0,
+  "vitamin_b12": 0,
+  "vitamin_c": 0,
+  "vitamin_d": 2.5,
+  "vitamin_e": 0.6,
+  "vitamin_k": 0,
   "semantic_data": {
     "properties": [
       "жир",
-      "животный",
-      "свиной",
-      "топленый",
+      "животный жир",
+      "свиной жир",
+      "топленый жир",
       "высококалорийный",
       "для жарки",
       "для выпечки",
@@ -58,12 +58,15 @@
       "фильтрация",
       "хранение в стеклянной банке"
     ],
+    "styles": [
+      {"code": "roast", "priority": "medium"},
+      {"code": "stew", "priority": "medium"},
+      {"code": "ground", "priority": "low"}
+    ],
     "cooking_methods": [
-      {"method": "жарка", "priority": "high"},
-      {"method": "выпечка", "priority": "high"},
-      {"method": "приготовление паштетов", "priority": "high"},
-      {"method": "тушение", "priority": "medium"},
-      {"method": "фритюр", "priority": "medium"}
+      {"code": "pan_fry", "priority": "high"},
+      {"code": "fry_deep", "priority": "high"},
+      {"code": "oven", "priority": "high"}
     ],
     "applications": [
       "жарка",
@@ -77,7 +80,7 @@
       "vegetables": ["картофель", "лук", "капуста", "морковь"],
       "sauces": [],
       "herbs": ["петрушка", "укроп"],
-      "spices": ["чеснок", "черный перец", "паприка", "лавровый лист"]
+      "spices": ["чеснок", "чёрный перец", "паприка", "лавровый лист"]
     },
     "substitutes": [
       {"name": "Говяжий жир", "similarity": "high"},
@@ -86,7 +89,12 @@
       {"name": "Сливочное масло", "similarity": "low"}
     ]
   },
-
+  "data_source": "usda_sr_legacy",
+  "data_source_reference": "USDA FoodData Central, SR Legacy. Lard. FDC ID 171401.",
+  "source_table": null,
+  "source_page": null,
+  "fdc_id": 171401,
+  "portion": 100,
   "tags": [
     "мясо",
     "свинина",
